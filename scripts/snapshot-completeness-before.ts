@@ -5,16 +5,14 @@ import { fileURLToPath } from "node:url";
 import { getCollectableBrands, loadBrandRegistry } from "../src/registry";
 import { loadMarketplaceRegistry } from "../src/registry/data/marketplaces";
 import type { PilotProduct } from "../src/collector/types";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const products = JSON.parse(
   await readFile(join(ROOT, "data", "multibrand", "products.json"), "utf-8"),
 ) as PilotProduct[];
-const families = JSON.parse(
-  await readFile(join(ROOT, "data", "multibrand", "model-families.json"), "utf-8"),
-) as ModelFamily[];
+const families = await loadModelFamilies();
 
 const byBrand: Record<string, number> = {};
 const bySource: Record<string, number> = {};

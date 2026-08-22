@@ -10,9 +10,68 @@ function extractLarroudeStyleCode(value: string): string | null {
   return match ? match[1]!.toUpperCase() : null;
 }
 
+const PARIS_TEXAS_COLOR_SUFFIXES = [
+  "BORGOGNA",
+  "AMARENA",
+  "TUNDRA",
+  "EBANO",
+  "CREAM",
+  "CREMA",
+  "BIANCO",
+  "NERO",
+  "ROSSO",
+  "CUOIO",
+  "SAHARA",
+  "IVORY",
+  "BLACK",
+  "WHITE",
+  "BROWN",
+  "TAUPE",
+  "BEIGE",
+  "GOLD",
+  "SILVER",
+  "NUDE",
+  "CAMEL",
+  "OLIVE",
+  "GREEN",
+  "PINK",
+  "BLUE",
+  "WINE",
+  "BORDEAUX",
+  "MARRONE",
+  "GRIGIO",
+  "NAVY",
+  "COGNAC",
+  "STONE",
+  "MOSS",
+  "KHAKI",
+  "LILAC",
+  "PURPLE",
+  "ORANGE",
+  "YELLOW",
+  "MUSE",
+  "ECRU",
+  "TAN",
+  "RED",
+].sort((a, b) => b.length - a.length);
+
+export function extractParisTexasStyleCode(sku: string): string | null {
+  const upper = sku.trim().toUpperCase().replace(/_\d{1,2}$/, "");
+  if (!/^PX\d{4}X/.test(upper)) return null;
+  for (const color of PARIS_TEXAS_COLOR_SUFFIXES) {
+    if (upper.endsWith(color) && upper.length - color.length >= 10) {
+      return upper.slice(0, -color.length);
+    }
+  }
+  return upper.length >= 10 ? upper : null;
+}
+
 export function extractBaseSku(sku: string): string | null {
   const trimmed = sku.trim();
   if (!trimmed) return null;
+
+  const parisTexas = extractParisTexasStyleCode(trimmed);
+  if (parisTexas) return parisTexas;
 
   const larroude = extractLarroudeStyleCode(trimmed);
   if (larroude) return larroude;
@@ -36,6 +95,9 @@ export function extractBaseSku(sku: string): string | null {
 }
 
 export function extractStyleCodeFromUrl(productUrl: string): string | null {
+  const zara = productUrl.match(/-p(\d{5,})(?:\.html|$|\?)/i);
+  if (zara) return `ZARA-${zara[1]}`;
+
   const larroude = extractLarroudeStyleCode(productUrl);
   if (larroude) return larroude;
 

@@ -22,7 +22,7 @@ import {
   renderCloudRefreshMarkdown,
   shouldStageCloudRefreshPath,
   summarizeSourceOutcomes,
-} from "../cloudRefresh";
+} from "../refreshPolicy";
 
 function brand(overrides: Partial<BrandRegistryEntry> = {}): BrandRegistryEntry {
   return {
@@ -163,9 +163,12 @@ describe("cloud refresh sequence", () => {
 describe("cloud refresh git staging", () => {
   it("stages only tracked CAPONE data files", () => {
     expect(shouldStageCloudRefreshPath("data/multibrand/products.json")).toBe(true);
-    expect(shouldStageCloudRefreshPath("data/multibrand/model-families.json")).toBe(true);
+    expect(shouldStageCloudRefreshPath("data/multibrand/model-families.json")).toBe(false);
+    expect(shouldStageCloudRefreshPath("data/multibrand/model-families/manifest.json")).toBe(true);
+    expect(shouldStageCloudRefreshPath("data/multibrand/model-families/part-000.json")).toBe(true);
     expect(shouldStageCloudRefreshPath("data/registry/source-coverage-report.json")).toBe(true);
     expect(isCloudRefreshCoreDataPath("data/multibrand/products.json")).toBe(true);
+    expect(isCloudRefreshCoreDataPath("data/multibrand/model-families/part-001.json")).toBe(true);
     expect(isCloudRefreshCoreDataPath("data/multibrand/collection-report.json")).toBe(false);
     expect(CLOUD_REFRESH_TRACKED_DATA_PATHS.length).toBeGreaterThan(5);
   });

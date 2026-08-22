@@ -13,7 +13,7 @@ import { loadProductDateEnrichment } from "../src/productDates/loadEnrichment";
 import { mergeProductDatesBatch } from "../src/productDates/merge";
 import type { ProductDateEnrichmentEntry, ProductDateEnrichmentSidecar } from "../src/productDates/types";
 import type { AnalyzedProduct } from "../src/types/marketAnalysis";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -77,7 +77,6 @@ async function loadSnapshotFirstSeen(): Promise<Map<string, string>> {
 
 const productsPath = join(MULTIBRAND_DIR, "products.json");
 const sidecarPath = join(MULTIBRAND_DIR, "product-date-enrichment.json");
-const familiesPath = join(MULTIBRAND_DIR, "model-families.json");
 const analyzedPath = join(MULTIBRAND_DIR, "analyzed-products.json");
 
 const products = JSON.parse(await readFile(productsPath, "utf-8")) as Array<{
@@ -126,7 +125,7 @@ const mergedProducts = mergeProductDatesBatch(products, sidecar);
 const withPublishedAt = mergedProducts.filter((product) => product.publishedAt).length;
 const withCreatedAt = mergedProducts.filter((product) => product.createdAt).length;
 
-const families = JSON.parse(await readFile(familiesPath, "utf-8")) as ModelFamily[];
+const families = await loadModelFamilies();
 const analyzed = JSON.parse(await readFile(analyzedPath, "utf-8")) as AnalyzedProduct[];
 const mergedAnalyzed = mergeProductDatesBatch(analyzed, sidecar);
 const productByUrl = new Map(

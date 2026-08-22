@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildSourceCoverageReport } from "../src/source/buildCoverageReport";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 import type { PilotProduct } from "../src/collector/types";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -18,14 +18,7 @@ const STATUS_ORDER: Record<string, number> = {
 };
 
 async function main() {
-  let families: ModelFamily[] = [];
-  try {
-    families = JSON.parse(
-      await readFile(join(ROOT, "data", "multibrand", "model-families.json"), "utf-8"),
-    ) as ModelFamily[];
-  } catch {
-    families = [];
-  }
+  const families = await loadModelFamilies();
 
   let products: PilotProduct[] = [];
   try {

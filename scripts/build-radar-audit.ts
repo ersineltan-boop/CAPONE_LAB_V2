@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { buildMasterRadar, buildRadarSignalAudit } from "../src/radar/master/buildMasterRadar";
 import type { RawAnalyzedProduct } from "../src/modelFamily/types";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 import type { ChangeReport } from "../src/history/types";
 import { buildProvenanceMap } from "../src/radar/productProfile";
 
@@ -14,9 +14,7 @@ const ROOT = join(__dirname, "..");
 const analyzed = JSON.parse(
   await readFile(join(ROOT, "data/multibrand/analyzed-products.json"), "utf-8"),
 ) as RawAnalyzedProduct[];
-const families = JSON.parse(
-  await readFile(join(ROOT, "data/multibrand/model-families.json"), "utf-8"),
-) as ModelFamily[];
+const families = await loadModelFamilies();
 const changeReport = JSON.parse(
   await readFile(join(ROOT, "data/history/latest-change-report.json"), "utf-8"),
 ) as ChangeReport;

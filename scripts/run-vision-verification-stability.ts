@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import "./loadEnv";
 import { runVerificationStabilityTest } from "../src/vision/verification/runVerificationStabilityTest";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 import type { AnalyzedProduct } from "../src/types/marketAnalysis";
 import type { VerificationPilotReport } from "../src/vision/verification/types";
 
@@ -15,9 +15,7 @@ const V1_REPORT_PATH = join(ROOT, "data", "vision", "verification-pilot-report.j
 
 const forceOffline = process.argv.includes("--offline");
 
-const families = JSON.parse(
-  await readFile(join(ROOT, "data/multibrand/model-families.json"), "utf-8"),
-) as ModelFamily[];
+const families = await loadModelFamilies();
 
 const products = JSON.parse(
   await readFile(join(ROOT, "data/multibrand/analyzed-products.json"), "utf-8"),

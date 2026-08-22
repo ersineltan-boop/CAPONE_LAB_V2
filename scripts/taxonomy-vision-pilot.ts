@@ -3,8 +3,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import "./loadEnv.ts";
-import { buildModelFamilies, buildProductLookup } from "../src/modelFamily/buildModelFamilies";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { buildModelFamilies, buildProductLookup } from "../src/modelFamily/buildFamilies";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 import type { RawAnalyzedProduct } from "../src/modelFamily/types";
 import { runTaxonomyVisionPilot } from "../src/taxonomy/vision/runPilot";
 
@@ -21,9 +21,7 @@ function parseLimit(argv: string[]): number {
 }
 
 const limit = parseLimit(process.argv);
-const families = JSON.parse(
-  await readFile(join(MULTIBRAND_DIR, "model-families.json"), "utf-8"),
-) as ModelFamily[];
+const families = await loadModelFamilies();
 const products = JSON.parse(
   await readFile(join(MULTIBRAND_DIR, "analyzed-products.json"), "utf-8"),
 ) as RawAnalyzedProduct[];

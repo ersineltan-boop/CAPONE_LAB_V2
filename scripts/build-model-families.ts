@@ -1,8 +1,9 @@
 import { readFile, writeFile, mkdir, unlink, rename } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildModelFamilies } from "../src/modelFamily/buildModelFamilies";
-import type { ModelFamily, RawAnalyzedProduct } from "../src/modelFamily/types";
+import { buildModelFamilies } from "../src/modelFamily/buildFamilies";
+import { loadModelFamilies, writeModelFamilies } from "../src/modelFamily/dataset";
+import type { RawAnalyzedProduct } from "../src/modelFamily/types";
 import {
   getVisionEnrichmentMap,
 } from "../src/taxonomy/vision/cache";
@@ -27,15 +28,7 @@ const analyzedPath = join(MULTIBRAND_DIR, "analyzed-products.json");
 const raw = await readFile(analyzedPath, "utf-8");
 const products = JSON.parse(raw) as RawAnalyzedProduct[];
 const productImageGalleries = await loadProductImageGalleries();
-
-let priorFamilies: ModelFamily[] = [];
-try {
-  priorFamilies = JSON.parse(
-    await readFile(join(MULTIBRAND_DIR, "model-families.json"), "utf-8"),
-  ) as ModelFamily[];
-} catch {
-  priorFamilies = [];
-}
+const priorFamilies = await loadModelFamilies();
 
 const visionCacheRaw = await readFile(
   join(MULTIBRAND_DIR, "taxonomy-vision-cache.json"),
@@ -55,7 +48,6 @@ const { families, report } = buildModelFamilies(products, {
 
 await mkdir(MULTIBRAND_DIR, { recursive: true });
 
-const familiesPath = join(MULTIBRAND_DIR, "model-families.json");
 const reportPath = join(MULTIBRAND_DIR, "model-family-report.json");
 
 async function writeWithRetry(path: string, body: string): Promise<void> {
@@ -78,12 +70,17 @@ async function writeWithRetry(path: string, body: string): Promise<void> {
   await writeFile(path, body, "utf-8");
 }
 
-await writeWithRetry(familiesPath, JSON.stringify(families, null, 2));
+const manifest = await writeModelFamilies(families);
 await writeWithRetry(reportPath, JSON.stringify(report, null, 2));
 
 console.log("\n=== CAPONE LAB Model Family Deduplication ===");
 console.log(`Raw products: ${report.rawProductCount}`);
 console.log(`Canonical models: ${report.modelFamilyCount}`);
+console.log(`Shards: ${manifest.shardCount}`);
+console.log(
+  `Largest shard: ${(Math.max(0, ...manifest.shards.map((shard) => shard.bytes)) / (1024 * 1024)).toFixed(2)} MB`,
+);
+console.log(`Manifest: data/multibrand/model-families/manifest.json`);
 console.log(
   `Duplicate/variant products collapsed: ${report.collapsedVariantProducts}`,
 );

@@ -6,9 +6,8 @@
 # gates pass. Vercel deploys from GitHub main, so a successful push is the
 # production update. No OPENAI_API_KEY is used.
 #
-# Scalability: data/multibrand/model-families.json is already ~55 MB. Do not
-# add Git LFS here. Before CAPONE scales to hundreds of brands/marketplaces,
-# generated catalog/state should move from Git history to durable object storage.
+# Model Families persist as data/multibrand/model-families/ shards.
+# Do not commit data/multibrand/model-families.json. Do not add Git LFS.
 
 name: CAPONE daily refresh
 

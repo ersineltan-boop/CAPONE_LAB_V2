@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { PilotProduct } from "../src/collector/types";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 import { loadBrandRegistry } from "../src/registry/data/index";
 import { filterFamiliesForBrandOfficial } from "../src/source/sourceProductQuery";
 import {
@@ -32,10 +32,7 @@ async function main() {
     join(ROOT, "data", "multibrand", "products.json"),
     [],
   );
-  const families = await readJson<ModelFamily[]>(
-    join(ROOT, "data", "multibrand", "model-families.json"),
-    [],
-  );
+  const families = await loadModelFamilies();
   const registry = loadBrandRegistry();
   const productsByBrand = new Map<string, PilotProduct[]>();
   for (const product of products) {

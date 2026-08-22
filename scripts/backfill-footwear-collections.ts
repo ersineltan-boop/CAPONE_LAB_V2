@@ -24,12 +24,8 @@ await execFileAsync("npm", ["run", "build:model-families"], {
   shell: true,
 });
 
-const { readFile } = await import("node:fs/promises");
-const familiesRaw = await readFile(
-  join(ROOT, "data", "multibrand", "model-families.json"),
-  "utf-8",
-);
-const families = JSON.parse(familiesRaw) as Array<{ brand: string }>;
+const { loadModelFamilies } = await import("../src/modelFamily/dataset");
+const families = await loadModelFamilies();
 report.modelFamiliesAfter = families.length;
 
 for (const stat of report.brandStats) {

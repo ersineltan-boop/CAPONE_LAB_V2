@@ -12,8 +12,9 @@ import { DRIES_BRAND_NAME } from "../collector/driesVanNoten";
 import { globalDedupe } from "../collector/dedupe";
 import { mergeProductCatalog } from "../collector/mergeProducts";
 import type { CollectionReport, PilotProduct, SourceCollectionReport } from "../collector/types";
-import { buildModelFamilies } from "../modelFamily/buildModelFamilies";
-import type { ModelFamily, RawAnalyzedProduct } from "../modelFamily/types";
+import { buildModelFamilies } from "../modelFamily/buildFamilies";
+import { loadModelFamilies, writeModelFamilies } from "../modelFamily/dataset";
+import type { RawAnalyzedProduct } from "../modelFamily/types";
 import { loadBrandRegistry } from "../registry/data/index";
 import { brandToPilotSourceConfig } from "../registry/collection/brandToCollector";
 import { loadMarketplaceRegistry } from "../registry/data/marketplaces";
@@ -42,7 +43,7 @@ import {
   summarizeSourceOutcomes,
   type CloudRefreshSummary,
   type CloudSourceOutcome,
-} from "./cloudRefresh";
+} from "./refreshPolicy";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const MULTIBRAND_DIR = join(ROOT, "data", "multibrand");
@@ -397,10 +398,7 @@ async function rebuildModelFamilies(): Promise<number> {
     join(MULTIBRAND_DIR, "product-image-galleries.json"),
     {},
   );
-  const priorFamilies = await readJson<ModelFamily[]>(
-    join(MULTIBRAND_DIR, "model-families.json"),
-    [],
-  );
+  const priorFamilies = await loadModelFamilies();
   const visionCacheRaw = await readJson<TaxonomyVisionCacheFile | null>(
     join(MULTIBRAND_DIR, "taxonomy-vision-cache.json"),
     null,
@@ -419,17 +417,14 @@ async function rebuildModelFamilies(): Promise<number> {
     throw new Error("Cloud refresh aborted: Model Family rebuild produced zero families.");
   }
 
-  await writeJson(join(MULTIBRAND_DIR, "model-families.json"), families);
+  await writeModelFamilies(families);
   await writeJson(join(MULTIBRAND_DIR, "model-family-report.json"), report);
   console.log(`Model families rebuilt: ${report.modelFamilyCount}`);
   return report.modelFamilyCount;
 }
 
 async function writeCoverageReports(): Promise<void> {
-  const families = await readJson<ModelFamily[]>(
-    join(MULTIBRAND_DIR, "model-families.json"),
-    [],
-  );
+  const families = await loadModelFamilies();
   const products = await readJson<PilotProduct[]>(PRODUCTS_PATH, []);
   const collectionReport = await readJson<CollectionReport | null>(COLLECTION_REPORT_PATH, null);
   const coverage = buildSourceCoverageReport(families, collectionReport, products);

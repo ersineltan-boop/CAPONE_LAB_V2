@@ -1,7 +1,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractStyleCode } from "../src/modelFamily/extractStyleCode";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
+import { extractStyleCode } from "../src/modelFamily/styleCode";
 import { normalizeModelName } from "../src/modelFamily/normalizeModelName";
 import type { ModelFamily, RawAnalyzedProduct } from "../src/modelFamily/types";
 
@@ -197,9 +198,7 @@ export function buildMediumFamilyAudit(input: {
   };
 }
 
-const families = JSON.parse(
-  await readFile(join(MULTIBRAND_DIR, "model-families.json"), "utf-8"),
-) as ModelFamily[];
+const families = await loadModelFamilies();
 const products = JSON.parse(
   await readFile(join(MULTIBRAND_DIR, "analyzed-products.json"), "utf-8"),
 ) as RawAnalyzedProduct[];

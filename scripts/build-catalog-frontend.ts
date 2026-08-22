@@ -1,28 +1,25 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildCatalogDelivery } from "../src/catalog/buildCatalogDelivery";
 import { buildVisualDelivery } from "../src/visual/buildVisualDelivery";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies, modelFamilyDatasetMtimeMs } from "../src/modelFamily/dataset";
 import { loadBrandRegistry } from "../src/registry/data/index";
 import { browsableMarketplaces } from "../src/registry/data/marketplaces";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const FAMILIES_PATH = join(ROOT, "data", "multibrand", "model-families.json");
 const OUT_DIR = join(ROOT, "public", "data", "catalog");
 
 async function isFresh(): Promise<boolean> {
   try {
-    const [summaryStat, visualStat, familiesStat] = await Promise.all([
+    const familiesMtime = await modelFamilyDatasetMtimeMs();
+    if (familiesMtime == null) return false;
+    const [summaryStat, visualStat] = await Promise.all([
       stat(join(OUT_DIR, "summary.json")),
       stat(join(OUT_DIR, "visual-summary.json")),
-      stat(FAMILIES_PATH),
     ]);
-    return (
-      summaryStat.mtimeMs >= familiesStat.mtimeMs &&
-      visualStat.mtimeMs >= familiesStat.mtimeMs
-    );
+    return summaryStat.mtimeMs >= familiesMtime && visualStat.mtimeMs >= familiesMtime;
   } catch {
     return false;
   }
@@ -34,7 +31,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     return;
   }
 
-  const families = JSON.parse(await readFile(FAMILIES_PATH, "utf-8")) as ModelFamily[];
+  const families = await loadModelFamilies();
   const artifacts = buildCatalogDelivery({
     families,
     brands: loadBrandRegistry().all(),

@@ -68,6 +68,13 @@ describe("extractBaseSku", () => {
     expect(extractBaseSku("L422-VERO-5.0-DEEP-3064")).toBe("L422-VERO");
     expect(extractBaseSku("L422-PAVL-5.0-SEAW-3069")).toBe("L422-PAVL");
   });
+
+  it("derives shared Paris Texas style across color SKUs", () => {
+    expect(extractBaseSku("PX2027XNPPSCREAM_35")).toBe("PX2027XNPPS");
+    expect(extractBaseSku("PX2027XNPPSBORGOGNA_35")).toBe("PX2027XNPPS");
+    expect(extractBaseSku("PX2030XV003TUNDRA_35")).toBe("PX2030XV003");
+    expect(extractBaseSku("PX2030XV003EBANO_35")).not.toBe(extractBaseSku("PX2027XV003TUNDRA_35"));
+  });
 });
 
 describe("buildModelFamilies", () => {

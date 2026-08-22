@@ -8,6 +8,11 @@ import {
   buildRepresentativeImages,
   resolveProductImageUrls,
 } from "./productImages";
+import { hasDistinctiveModelToken, isGenericModelTitle } from "./genericModelTitle";
+import {
+  listingIdentityKey,
+  MARKETPLACE_SOURCE_IDS,
+} from "./sourceIdentity";
 import type {
   GroupingConfidence,
   ModelFamily,
@@ -22,6 +27,9 @@ interface ProductGroupingMeta {
   styleCode: string | null;
   normalizedName: string;
   structuralSignature: string;
+  listingKey: string;
+  source: string;
+  isMarketplace: boolean;
 }
 
 interface PendingGroup {
@@ -138,11 +146,15 @@ function buildFamilyFromProducts(
 }
 
 function buildGroupingMeta(product: RawAnalyzedProduct): ProductGroupingMeta {
+  const source = product.source.trim().toLowerCase();
   return {
     product,
     styleCode: extractStyleCode(product),
     normalizedName: normalizeNameForProduct(product),
     structuralSignature: buildStructuralSignature(product),
+    listingKey: listingIdentityKey(product),
+    source,
+    isMarketplace: MARKETPLACE_SOURCE_IDS.has(source),
   };
 }
 
@@ -151,6 +163,7 @@ function canMergeByStyleCode(
   b: ProductGroupingMeta,
 ): boolean {
   if (!a.styleCode || !b.styleCode || a.styleCode !== b.styleCode) return false;
+  if (a.styleCode.startsWith("ZARA-") && a.listingKey !== b.listingKey) return false;
   return a.structuralSignature === b.structuralSignature;
 }
 
@@ -158,8 +171,12 @@ function canMergeByName(
   a: ProductGroupingMeta,
   b: ProductGroupingMeta,
 ): boolean {
+  if (a.source !== b.source) return false;
+  if (a.isMarketplace || b.isMarketplace) return false;
+  if (a.source === "zara" || b.source === "zara") return false;
   if (!a.normalizedName || a.normalizedName !== b.normalizedName) return false;
-  if (a.normalizedName.length < 3) return false;
+  if (isGenericModelTitle(a.normalizedName)) return false;
+  if (!hasDistinctiveModelToken(a.normalizedName)) return false;
   return a.structuralSignature === b.structuralSignature;
 }
 
@@ -234,7 +251,7 @@ function groupProductsWithinBrand(
       brand,
       confidence: "MEDIUM",
       reason: "singleton",
-      groupKey: `singleton-${seed.product.productUrl}`,
+      groupKey: `id-${seed.listingKey}`,
       products: [seed.product],
     });
   }

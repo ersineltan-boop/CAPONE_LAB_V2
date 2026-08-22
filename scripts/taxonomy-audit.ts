@@ -4,13 +4,12 @@ import { fileURLToPath } from "node:url";
 
 import { buildTaxonomyCompletenessReport } from "../src/taxonomy/completeness";
 import { buildTaxonomyQaReport } from "../src/taxonomy/qaReport";
-import type { ModelFamily } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const FAMILIES_PATH = join(ROOT, "data", "multibrand", "model-families.json");
 const REPORT_PATH = join(ROOT, "data", "multibrand", "taxonomy-audit-report.json");
 
-const families = JSON.parse(await readFile(FAMILIES_PATH, "utf-8")) as ModelFamily[];
+const families = await loadModelFamilies();
 const qa = buildTaxonomyQaReport(families);
 const report = {
   generatedAt: new Date().toISOString(),

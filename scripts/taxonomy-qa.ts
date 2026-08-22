@@ -2,7 +2,8 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import type { ModelFamily, RawAnalyzedProduct } from "../src/modelFamily/types";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
+import type { RawAnalyzedProduct } from "../src/modelFamily/types";
 import {
   buildTaxonomyQaReport,
   buildTaxonomyQaSamples,
@@ -12,12 +13,11 @@ import {
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MULTIBRAND_DIR = join(ROOT, "data", "multibrand");
-const FAMILIES_PATH = join(MULTIBRAND_DIR, "model-families.json");
 const PRODUCTS_PATH = join(MULTIBRAND_DIR, "analyzed-products.json");
 const REPORT_PATH = join(MULTIBRAND_DIR, "taxonomy-qa-report.json");
 const SAMPLES_PATH = join(MULTIBRAND_DIR, "taxonomy-qa-samples.json");
 
-const families = JSON.parse(await readFile(FAMILIES_PATH, "utf-8")) as ModelFamily[];
+const families = await loadModelFamilies();
 let products: RawAnalyzedProduct[] = [];
 try {
   products = JSON.parse(await readFile(PRODUCTS_PATH, "utf-8")) as RawAnalyzedProduct[];
