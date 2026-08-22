@@ -53,6 +53,8 @@ jobs:
 
       - name: Production build
         id: build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
 
       - name: Commit and push refreshed data

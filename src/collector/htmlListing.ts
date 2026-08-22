@@ -1,6 +1,11 @@
 import { fetchText, sleep } from "./http";
 import { parseProductPageSchema } from "./schemaOrg";
 import type { PilotProduct, PilotSourceConfig } from "./types";
+import {
+  FULL_HTML_LISTING_PAGE_CAP,
+  LEGACY_HTML_LISTING_PAGE_CAP,
+  fullModeIgnoresProductCap,
+} from "./fullCoveragePaths";
 
 const PRODUCT_LINK =
   /href=["']([^"']*(?:\/products\/[^"'#?]+|\/en(?:-[a-z]{2})?\/products\/[^"'#?]+))["']/gi;
@@ -46,11 +51,14 @@ export async function collectHtmlListingProducts(
   const discoveredAt = new Date().toISOString();
   const seenProducts = new Set<string>();
 
+  const ignoreProductCap = fullModeIgnoresProductCap(config.collectMode);
+  const pageCap = ignoreProductCap ? FULL_HTML_LISTING_PAGE_CAP : LEGACY_HTML_LISTING_PAGE_CAP;
+
   for (const collectionPath of collectionPaths) {
-    if (products.length >= config.maxProducts) break;
+    if (!ignoreProductCap && products.length >= config.maxProducts) break;
 
     let page = 1;
-    while (products.length < config.maxProducts && page <= 4) {
+    while ((ignoreProductCap || products.length < config.maxProducts) && page <= pageCap) {
       const suffix = page === 1 ? "" : `?page=${page}`;
       const listingUrl = `${config.baseUrl.replace(/\/$/, "")}${collectionPath}${suffix}`;
       const result = await fetchText(listingUrl, { delayMs: 1400 });
@@ -66,7 +74,7 @@ export async function collectHtmlListingProducts(
       for (const productUrl of productUrls) {
         discoveredLinks.add(productUrl);
         if (seenProducts.has(productUrl)) continue;
-        if (products.length >= config.maxProducts) break;
+        if (!ignoreProductCap && products.length >= config.maxProducts) break;
 
         seenProducts.add(productUrl);
         try {

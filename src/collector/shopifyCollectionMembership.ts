@@ -8,7 +8,23 @@ import type { PilotProduct, PilotSourceConfig } from "./types";
 import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { slugifyCategoryId } from "../source/sourceCategories";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
-import { FULL_COLLECTION_PAGE_CAP, FULL_PRODUCTS_PER_PAGE } from "./fullCoveragePaths";
+import {
+  FULL_COLLECTION_CRAWL_CAP,
+  FULL_COLLECTION_PAGE_CAP,
+  FULL_PRODUCTS_PER_PAGE,
+} from "./fullCoveragePaths";
+import {
+  collectionCrawlRank,
+  isLikelyProductNamedCollection,
+  isPromoFootwearCollection,
+  isWomensFootwearCollection,
+} from "./shopifyCollectionFilter";
+
+export {
+  isLikelyProductNamedCollection,
+  isPromoFootwearCollection,
+  isWomensFootwearCollection,
+};
 
 interface ShopifyListingProduct {
   title: string;
@@ -17,69 +33,12 @@ interface ShopifyListingProduct {
   variants?: Array<{ featured_image?: { src?: string } | null }>;
 }
 
-const FOOTWEAR =
-  /shoe|footwear|boot|sandal|pump|loafer|sneaker|heel|flat|mule|clog|espadr|oxford|derby|ballerin|slipper|slide|wedge|trainer|mary.?jane|platform|stiletto|moccasin|brogue|court|thong|flip.?flop|wellington|rain.?boot|ankle|knee.?high|over.?the.?knee|ballet|clog/i;
-
-const NOT_FOOTWEAR =
-  /\b(bag|handbag|dress|skirt|pant|trouser|jean|shirt|jacket|coat|fragrance|beauty|jewelry|jewellery|candle|gift.?card|ready.?to.?wear|apparel|clothing|lingerie|swim)\b/i;
-
-const MEN = /\b(men'?s?|mens|homme)\b/i;
-const WOMEN = /\b(women'?s?|womens|woman|ladies)\b/i;
-
 export interface ShopifyCollectionMeta {
   handle: string;
   title: string;
   productsCount: number;
   path: string;
   url: string;
-}
-
-const PROMO_COLLECTION =
-  /sale|black[- ]?friday|under[- ]?\d|promo|flash[- ]?sale|deal of|vip\b|bf23|\d+%-off|extra-\d+|starting at|caroussel|carousel|sms\b|gift[- ]?guide|holiday-glam/i;
-
-export function isLikelyProductNamedCollection(
-  handle: string,
-  title: string,
-  productsCount: number,
-): boolean {
-  if (productsCount >= 25) return false;
-  if (/^the-/.test(handle)) return true;
-  if (/\bthe [a-z0-9'’-]+ (sandal|boot|flat|loafer|sneaker|clog|mule|pump|heel)\b/i.test(title)) {
-    return true;
-  }
-  return false;
-}
-
-export function isPromoFootwearCollection(handle: string, title: string): boolean {
-  return PROMO_COLLECTION.test(`${handle} ${title}`);
-}
-
-function collectionCrawlRank(collection: ShopifyCollectionMeta): number {
-  const handle = collection.handle.toLowerCase();
-  if (
-    /^(pumps?|boots?|sandals?|flats?|loafers?|sneakers?|mules?|booties?|heels?|ballet-flats?|ballerinas?|mary-janes?|platforms?|slides?|espadrilles?|oxfords?|clogs?|wedges?)$/.test(
-      handle,
-    )
-  ) {
-    return 0;
-  }
-  if (isPromoFootwearCollection(collection.handle, collection.title)) return 2;
-  return 1;
-}
-
-export function isWomensFootwearCollection(handle: string, title: string): boolean {
-  const hay = `${handle} ${title}`.toLowerCase().replace(/-/g, " ");
-  if (/^color-/.test(handle)) return false;
-  if (handle === "default-category") return false;
-  if (MEN.test(hay) && !WOMEN.test(hay)) return false;
-  if (NOT_FOOTWEAR.test(hay) && !FOOTWEAR.test(hay)) return false;
-  if (FOOTWEAR.test(hay)) return true;
-  if (isNewArrivalsCollectionPath(handle) || /new arrival|new in|just landed/.test(hay)) return true;
-  if (/^(all|shop all|view all|all products|shop)$/.test(hay.trim())) return true;
-  if (/shop all shoes|all shoes|womens shoes|women shoes|women s shoes|all footwear/.test(hay)) {
-    return true;
-  }
-  return false;
 }
 
 function canonicalProductUrl(baseUrl: string, handle: string): string {
@@ -226,11 +185,14 @@ export async function collectShopifyCollectionMembership(
           collection.productsCount,
         ),
     )
+    .filter((collection) =>
+      isWomensFootwearCollection(collection.handle, collection.title),
+    )
     .sort(
       (a, b) =>
         collectionCrawlRank(a) - collectionCrawlRank(b) || b.productsCount - a.productsCount,
     );
-  const maxCollections = options?.maxCollections ?? 80;
+  const maxCollections = options?.maxCollections ?? FULL_COLLECTION_CRAWL_CAP;
   const crawled = footwear.slice(0, maxCollections);
   const skipped = footwear.slice(maxCollections);
   const knownUrls = new Set(

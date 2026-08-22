@@ -2,6 +2,7 @@ import { evaluateFootwearProduct } from "./footwearGate";
 import { fetchText, sleep } from "./http";
 import { parseProductFieldsFromHtml } from "./parseHtmlFields";
 import type { PilotProduct, PilotSourceConfig } from "./types";
+import { fullModeIgnoresProductCap } from "./fullCoveragePaths";
 
 type JsonLdNode = Record<string, unknown>;
 
@@ -185,8 +186,10 @@ export async function collectSchemaOrgProducts(
   const discoveredAt = new Date().toISOString();
   const seen = new Set<string>();
 
+  const ignoreProductCap = fullModeIgnoresProductCap(config.collectMode);
+
   for (const collectionPath of collectionPaths) {
-    if (products.length >= config.maxProducts) break;
+    if (!ignoreProductCap && products.length >= config.maxProducts) break;
 
     const url = `${config.baseUrl.replace(/\/$/, "")}${collectionPath}`;
     const result = await fetchText(url, { delayMs: 1400 });
@@ -199,7 +202,7 @@ export async function collectSchemaOrgProducts(
     for (const product of mapped) {
       discoveredLinks.add(product.productUrl);
       if (seen.has(product.productUrl)) continue;
-      if (products.length >= config.maxProducts) break;
+      if (!ignoreProductCap && products.length >= config.maxProducts) break;
       seen.add(product.productUrl);
       products.push(product);
     }

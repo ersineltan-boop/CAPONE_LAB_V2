@@ -70,6 +70,9 @@ export function applyProbeCacheToEntry(
   if (!cacheEntry || !isProbeCacheValidForBrand({ entry, cacheEntry: cacheEntry })) {
     return { entry, applied: false };
   }
+  if (entry.isActive && entry.collectionStatus === "READY_AUTOMATIC") {
+    return { entry, applied: false };
+  }
 
   return {
     entry: {

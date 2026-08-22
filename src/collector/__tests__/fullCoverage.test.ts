@@ -1,10 +1,14 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  FULL_COLLECTION_CRAWL_CAP,
   FULL_COLLECTION_PAGE_CAP,
+  FULL_HTML_LISTING_PAGE_CAP,
   LEGACY_BACKFILL_CAP,
   LEGACY_COLLECTION_PAGE_CAP,
+  LEGACY_HTML_LISTING_PAGE_CAP,
   LEGACY_SAMPLE_PRODUCT_CAP,
+  fullModeIgnoresProductCap,
   isFullCatalogRootPath,
   mergeFullCoverageCollectionPaths,
 } from "../fullCoveragePaths";
@@ -36,9 +40,13 @@ describe("full coverage collector caps", () => {
   it("full mode ignores the old 100-product backfill cap", () => {
     expect(fullModeIgnoresLegacyCaps("full")).toBe(true);
     expect(fullModeIgnoresLegacyCaps("backfill")).toBe(false);
+    expect(fullModeIgnoresProductCap("full")).toBe(true);
+    expect(fullModeIgnoresProductCap("legacy")).toBe(false);
     expect(LEGACY_BACKFILL_CAP).toBe(100);
     expect(LEGACY_SAMPLE_PRODUCT_CAP).toBe(100);
     expect(shopifyPerPageForMode("full")).toBe(250);
+    expect(FULL_HTML_LISTING_PAGE_CAP).toBeGreaterThan(LEGACY_HTML_LISTING_PAGE_CAP);
+    expect(FULL_COLLECTION_CRAWL_CAP).toBeGreaterThan(40);
   });
 
   it("later pagination pages remain available in full mode", () => {
@@ -72,5 +80,18 @@ describe("full coverage collector caps", () => {
       "/collections/shop-all",
     );
     expect(mapped).toBeNull();
+  });
+});
+
+describe("footwear collection discovery selection", () => {
+  it("keeps every verified collection in full coverage instead of sampling two", async () => {
+    const { selectDiscoveredFootwearPaths } = await import("../discoverFootwearCollections");
+    const verified = [
+      { path: "/collections/boots" },
+      { path: "/collections/sandals" },
+      { path: "/collections/heels" },
+    ];
+    expect(selectDiscoveredFootwearPaths(verified, [], true)).toHaveLength(3);
+    expect(selectDiscoveredFootwearPaths(verified, [], false)).toHaveLength(2);
   });
 });

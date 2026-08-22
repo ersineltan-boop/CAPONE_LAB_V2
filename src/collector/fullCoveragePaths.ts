@@ -57,5 +57,15 @@ export function mergeFullCoverageCollectionPaths(input: {
 export const LEGACY_SAMPLE_PRODUCT_CAP = 100;
 export const LEGACY_BACKFILL_CAP = 100;
 export const LEGACY_COLLECTION_PAGE_CAP = 5;
+export const LEGACY_HTML_LISTING_PAGE_CAP = 4;
 export const FULL_COLLECTION_PAGE_CAP = 80;
+export const FULL_COLLECTION_CRAWL_CAP = 200;
+export const FULL_HTML_LISTING_PAGE_CAP = 80;
 export const FULL_PRODUCTS_PER_PAGE = 250;
+export const FULL_VARIANT_CAP = 80;
+
+export function fullModeIgnoresProductCap(
+  collectMode: "legacy" | "backfill" | "incremental" | "full" | undefined,
+): boolean {
+  return collectMode === "full";
+}

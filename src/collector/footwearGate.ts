@@ -116,6 +116,34 @@ const FOOTWEAR_ALLOWLIST_TERMS = [
   "SLINGBACK",
   "THONG",
   "FLIP FLOP",
+  "SAPATO",
+  "SAPATOS",
+  "SAPATILHA",
+  "BOTA",
+  "BOTAS",
+  "SANDALIA",
+  "SANDÁLIA",
+  "SANDALIAS",
+  "SOCA",
+  "SOCAS",
+  "SALTO",
+  "SALTOS",
+  "RASTEIRA",
+  "RASTEIRAS",
+  "TENIS",
+  "TÉNIS",
+  "CHINELO",
+  "CHINELOS",
+  "MOCASSIM",
+  "MOCASSINS",
+  "CHAUSSURE",
+  "CHAUSSURES",
+  "BOTTINE",
+  "BOTTINES",
+  "ESCARPIN",
+  "ESCARPINS",
+  "BALLERINE",
+  "SABOT",
 ];
 
 const NON_FOOTWEAR_PATTERNS = [
@@ -173,7 +201,7 @@ const NON_FOOTWEAR_PATTERNS = [
 ];
 
 const FOOTWEAR_COLLECTION_HINT =
-  /shoe|footwear|heel|sandal|boot|flat|pump|mule|loafer|sneaker|women|womens/i;
+  /shoe|footwear|heel|sandal|boot|flat|pump|mule|loafer|sneaker|sapato|sapatos|soca|socas|salto|bota|botas|sapatilha|rasteira|chinelo|mocassim|escarpin|chaussure|bottine|ballerine/i;
 
 const MENS_ONLY_HINT = /\bmen'?s\b|\bmens\b|\bhomme\b|\bman\b|\bboy?s\b/i;
 const WOMENS_HINT = /\bwomen'?s\b|\bwomens\b|\bfemme\b|\bladies\b|\bwoman\b|\bgirl?s\b/i;
@@ -218,11 +246,16 @@ export function extractHandleFromProductUrl(productUrl: string): string {
   }
 }
 
+export function isMerchandisingTag(tag: string): boolean {
+  return /^(collection|badge|color|colour|size)\s*:/i.test(tag.trim());
+}
+
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
+  const evidenceTags = (input.tags ?? []).filter((tag) => !isMerchandisingTag(tag));
   const haystack = joinSignals([
     input.title,
     input.productType,
-    ...(input.tags ?? []),
+    ...evidenceTags,
     input.handle,
   ]);
 
@@ -251,7 +284,7 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   const typeHit = containsTerm(input.productType ?? "", STRONG_NON_FOOTWEAR_TERMS);
   if (typeHit) return `product_type:${typeHit}`;
 
-  for (const tag of input.tags ?? []) {
+  for (const tag of evidenceTags) {
     const tagHit = containsTerm(tag, STRONG_NON_FOOTWEAR_TERMS);
     if (tagHit) return `tag:${tagHit}`;
   }
@@ -266,7 +299,8 @@ export function hasStrongFootwearSignal(input: FootwearGateInput): {
   const typeHit = containsTerm(input.productType ?? "", FOOTWEAR_ALLOWLIST_TERMS);
   if (typeHit) return { method: "PRODUCT_TYPE", signal: typeHit };
 
-  for (const tag of input.tags ?? []) {
+  const evidenceTags = (input.tags ?? []).filter((tag) => !isMerchandisingTag(tag));
+  for (const tag of evidenceTags) {
     const tagHit = containsTerm(tag, FOOTWEAR_ALLOWLIST_TERMS);
     if (tagHit) return { method: "TAGS", signal: tagHit };
   }
@@ -277,18 +311,19 @@ export function hasStrongFootwearSignal(input: FootwearGateInput): {
 export function inferFootwearCategoryFromSignals(input: FootwearGateInput): FootwearCategory | null {
   const text = joinSignals([input.title, input.productType, ...(input.tags ?? [])]).toLowerCase();
 
-  if (/\bthong\b|\bflip flop\b/.test(text)) return "THONG";
+  if (/\bthong\b|\bflip flop\b|\bchinelo\b/.test(text)) return "THONG";
   if (/\bankle boot|\bankle-boot/.test(text)) return "ANKLE_BOOT";
-  if (/\bknee[- ]high boot|\bknee boot|\bboot\b/.test(text)) return "BOOT";
+  if (/\bknee[- ]high boot|\bknee boot|\bboot\b|\bbota\b|\bbotas\b|\bbottine/.test(text)) return "BOOT";
   if (/\bsling[- ]?back|\bslingback/.test(text)) return "SLINGBACK";
-  if (/\bballerin|\bballet flat|\bflat shoe|\bcasual flat/.test(text)) return "BALLERINA";
+  if (/\bballerin|\bballet flat|\bflat shoe|\bcasual flat|\bsapatilha|\bballerine/.test(text)) return "BALLERINA";
   if (/\bmary jane/.test(text)) return "MARY_JANE";
-  if (/\bloafer/.test(text)) return "LOAFER";
+  if (/\bloafer|\bmocassim/.test(text)) return "LOAFER";
   if (/\bmule/.test(text)) return "MULE";
   if (/\bwedge/.test(text)) return "WEDGE";
-  if (/\bsneaker|\btrainer/.test(text)) return "SNEAKER";
-  if (/\bsandal|\bslide/.test(text)) return "SANDAL";
-  if (/\bpump|\bheel|\bstiletto|\bkitten/.test(text)) return "PUMP";
+  if (/\bsneaker|\btrainer|\btenis\b|\bténis\b/.test(text)) return "SNEAKER";
+  if (/\bsandal|\bslide|\bsandalia|\bsandália|\brasteira/.test(text)) return "SANDAL";
+  if (/\bpump|\bheel|\bstiletto|\bkitten|\bsalto|\bescarpin/.test(text)) return "PUMP";
+  if (/\bclog|\bsoca\b|\bsocas\b|\bsabot/.test(text)) return "MULE";
 
   const strong = hasStrongFootwearSignal(input);
   if (strong) return "OTHER_FOOTWEAR";
@@ -365,19 +400,14 @@ export function evaluateFootwearProduct(input: FootwearGateInput): FootwearGateR
   }
 
   if (input.fromVerifiedFootwearCollection) {
-    const titleSupport = hasTitleHandleFootwearSupport(input);
-    if (titleSupport) {
-      matchedSignals.push(`title:${titleSupport}`);
-      const category = inferFootwearCategoryFromSignals(input);
-      if (category) {
-        return {
-          decision: "ACCEPT_FOOTWEAR",
-          category,
-          validationMethod: "VERIFIED_FOOTWEAR_COLLECTION",
-          matchedSignals,
-        };
-      }
-    }
+    const category = inferFootwearCategoryFromSignals(input) ?? "OTHER_FOOTWEAR";
+    matchedSignals.push("verified-footwear-collection");
+    return {
+      decision: "ACCEPT_FOOTWEAR",
+      category,
+      validationMethod: "VERIFIED_FOOTWEAR_COLLECTION",
+      matchedSignals,
+    };
   }
 
   const titleSupport = hasTitleHandleFootwearSupport(input);

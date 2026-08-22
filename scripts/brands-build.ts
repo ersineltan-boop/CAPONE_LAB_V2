@@ -55,10 +55,6 @@ if (result.report.duplicateWarnings.length > 0) {
   }
 }
 
-const reportPath = join(ROOT, "data", "registry", "brand-universe-report.json");
-await mkdir(dirname(reportPath), { recursive: true });
-await writeFile(reportPath, JSON.stringify(result.report, null, 2), "utf-8");
-
 if (result.ok && result.brandsTsContent) {
   const brandsTsPath = join(ROOT, "src", "registry", "data", "brands.ts");
   await writeFile(brandsTsPath, result.brandsTsContent, "utf-8");
@@ -66,7 +62,14 @@ if (result.ok && result.brandsTsContent) {
   console.log("  - src/registry/data/brands.ts");
 }
 
-console.log("  - data/registry/brand-universe-report.json");
+const reportPath = join(ROOT, "data", "registry", "brand-universe-report.json");
+await mkdir(dirname(reportPath), { recursive: true });
+try {
+  await writeFile(reportPath, JSON.stringify(result.report, null, 2), "utf-8");
+  console.log("  - data/registry/brand-universe-report.json");
+} catch (error) {
+  console.warn("Could not write brand-universe-report.json", error);
+}
 
 if (!result.ok) {
   process.exitCode = 1;

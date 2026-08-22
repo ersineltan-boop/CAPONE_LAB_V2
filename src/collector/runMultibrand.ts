@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildSourceReport, globalDedupe } from "./dedupe";
-import { mergeProductCatalog } from "./mergeProducts";
+import { mergeCatalogPreservingFailedSources } from "./mergeProducts";
 import {
   loadCollectState,
   saveCollectState,
@@ -48,7 +48,10 @@ function pilotProductsForBrand(
 }
 
 export async function runMultibrandCollection(
-  options: { mode?: "legacy" | "backfill" | "incremental" | "full" } = {},
+  options: {
+    mode?: "legacy" | "backfill" | "incremental" | "full";
+    brandIds?: readonly string[];
+  } = {},
 ): Promise<CollectionReport> {
   const runStartedAt = new Date().toISOString();
   const incomingProducts: PilotProduct[] = [];
@@ -56,7 +59,17 @@ export async function runMultibrandCollection(
   const pilotProducts = await loadPilotProducts();
   const existingProducts = await loadExistingMultibrandProducts();
   const registry = loadBrandRegistry();
-  const collectableBrands = getCollectableBrands(registry.all());
+  let collectableBrands = getCollectableBrands(registry.all());
+  if (options.brandIds && options.brandIds.length > 0) {
+    const wanted = new Set(
+      options.brandIds.map((id) => id.trim().toLowerCase()).filter(Boolean),
+    );
+    collectableBrands = collectableBrands.filter(
+      (entry) =>
+        wanted.has(entry.id.toLowerCase()) ||
+        wanted.has(entry.brand.trim().toLowerCase()),
+    );
+  }
   const seenBrands = new Set<string>();
   const mode = options.mode ?? "full";
   let collectState = await loadCollectState(COLLECT_STATE_FILE);
@@ -145,6 +158,17 @@ export async function runMultibrandCollection(
       ) {
         report.paginationExhausted = collected.paginationExhausted;
       }
+      if ("hitCollectionCrawlCap" in collected && collected.hitCollectionCrawlCap === true) {
+        report.hitCollectionCrawlCap = true;
+        report.hitLegacyCap = true;
+      }
+      if (
+        "collectionsCrawled" in collected &&
+        Array.isArray(collected.collectionsCrawled)
+      ) {
+        report.collectionsCrawled = collected.collectionsCrawled as string[];
+        report.footwearRoots = collected.collectionsCrawled as string[];
+      }
       if (
         "sourceReportedProductCount" in collected &&
         (typeof collected.sourceReportedProductCount === "number" ||
@@ -193,19 +217,8 @@ export async function runMultibrandCollection(
       .map((report) => report.source.trim().toUpperCase()),
   );
 
-  const preservedFromFailed =
-    failedBrandKeys.size > 0
-      ? existingProducts.filter((product) =>
-          failedBrandKeys.has(product.brand.trim().toUpperCase()),
-        )
-      : [];
-
-  const mergedExisting = existingProducts.filter(
-    (product) => !failedBrandKeys.has(product.brand.trim().toUpperCase()),
-  );
-
   const deduped = globalDedupe(
-    mergeProductCatalog(mergedExisting, [...incomingProducts, ...preservedFromFailed]),
+    mergeCatalogPreservingFailedSources(existingProducts, incomingProducts, failedBrandKeys),
   );
   const runFinishedAt = new Date().toISOString();
   const failedBrands = sourceReports

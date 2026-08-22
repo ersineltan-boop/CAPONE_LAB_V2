@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, unlink, rename } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildModelFamilies } from "../src/modelFamily/buildModelFamilies";
@@ -58,8 +58,28 @@ await mkdir(MULTIBRAND_DIR, { recursive: true });
 const familiesPath = join(MULTIBRAND_DIR, "model-families.json");
 const reportPath = join(MULTIBRAND_DIR, "model-family-report.json");
 
-await writeFile(familiesPath, JSON.stringify(families, null, 2), "utf-8");
-await writeFile(reportPath, JSON.stringify(report, null, 2), "utf-8");
+async function writeWithRetry(path: string, body: string): Promise<void> {
+  const tmp = `${path}.${process.pid}.tmp`;
+  for (let attempt = 0; attempt < 12; attempt += 1) {
+    try {
+      await writeFile(tmp, body, "utf-8");
+      try {
+        await unlink(path);
+      } catch {
+        // ignore
+      }
+      await rename(tmp, path);
+      return;
+    } catch (error) {
+      console.warn(`retry ${attempt + 1} ${path}: ${error instanceof Error ? error.message : error}`);
+      await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
+    }
+  }
+  await writeFile(path, body, "utf-8");
+}
+
+await writeWithRetry(familiesPath, JSON.stringify(families, null, 2));
+await writeWithRetry(reportPath, JSON.stringify(report, null, 2));
 
 console.log("\n=== CAPONE LAB Model Family Deduplication ===");
 console.log(`Raw products: ${report.rawProductCount}`);

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-19T13:29:05.800Z",
-  "totalBrands": 135,
-  "activeBrands": 28,
-  "inactiveBrands": 107,
-  "readyAutomatic": 28,
-  "needsProbe": 75,
-  "needsCustomAdapter": 30,
-  "failed": 2,
+  "generatedAt": "2026-08-22T12:26:40.209Z",
+  "totalBrands": 159,
+  "activeBrands": 50,
+  "inactiveBrands": 109,
+  "readyAutomatic": 51,
+  "needsProbe": 61,
+  "needsCustomAdapter": 41,
+  "failed": 6,
   "countryCounts": {
     "Brezilya": 6,
     "Avustralya": 6,
@@ -19,11 +19,11 @@
     "Almanya": 1,
     "Portekiz": 3,
     "İsveç": 1,
-    "USA": 15,
-    "Italy": 15,
-    "France": 20,
-    "Spain": 9,
-    "Sweden": 5,
+    "USA": 23,
+    "Italy": 19,
+    "France": 21,
+    "Spain": 14,
+    "Sweden": 7,
     "Germany": 2,
     "Belgium": 1,
     "Denmark": 4,
@@ -32,30 +32,34 @@
     "Netherlands": 1,
     "Türkiye": 1,
     "Greece": 1,
-    "Brazil": 11,
+    "Brazil": 12,
     "Portugal": 4,
-    "Singapore": 3
+    "Singapore": 3,
+    "Canada": 1,
+    "UK": 1,
+    "Korea": 1
   },
   "segmentCounts": {
     "CONTEMPORARY": 13,
     "PREMIUM": 10,
     "MASS_MARKET": 6,
     "DIRECTIONAL": 6,
-    "UNCLASSIFIED": 100
+    "UNCLASSIFIED": 124
   },
   "priorityCounts": {
     "P1": 20,
-    "P2": 113,
+    "P2": 137,
     "P3": 2
   },
   "collectorTypeCounts": {
-    "SHOPIFY_PUBLIC": 28,
-    "UNSUPPORTED": 30,
-    "UNKNOWN": 77
+    "SHOPIFY_PUBLIC": 50,
+    "UNSUPPORTED": 46,
+    "UNKNOWN": 62,
+    "CUSTOM_ADAPTER": 1
   },
   "duplicateWarnings": [],
   "validationErrors": [],
-  "probeCacheApplied": 46,
-  "unreviewedBrands": 100,
-  "radarIneligibleBrands": 100
+  "probeCacheApplied": 48,
+  "unreviewedBrands": 124,
+  "radarIneligibleBrands": 124
 }

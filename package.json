@@ -44,7 +44,12 @@
     "verify:vision-pilot-v2": "tsx scripts/run-vision-verification-pilot-v2.ts",
     "verify:vision-stability": "tsx scripts/run-vision-verification-stability.ts",
     "audit:model-family-medium": "tsx scripts/audit-model-family-medium.ts",
-    "refresh:cloud": "tsx scripts/refresh-cloud.ts"
+    "refresh:cloud": "tsx scripts/refresh-cloud.ts",
+    "collect:selected": "tsx scripts/collect-selected-brands.ts",
+    "brands:wave1": "tsx scripts/probe-activate-wave1.ts",
+    "brands:import-candidates": "tsx scripts/import-brand-candidates.ts",
+    "brands:expand": "tsx scripts/probe-activate-expansion.ts",
+    "collect:today-marketplaces": "tsx scripts/collect-today-marketplaces.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

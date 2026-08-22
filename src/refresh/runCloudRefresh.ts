@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { runMultibrandAnalysis } from "../analysis/runMultibrandAnalysis";
 import { runMultibrandCollection } from "../collector/runMultibrand";
 import { collectShopifyCollectionMembership } from "../collector/shopifyCollectionMembership";
+import { FULL_COLLECTION_CRAWL_CAP } from "../collector/fullCoveragePaths";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../collector/levelShoes";
 import { collectMarketplaceListing } from "../collector/marketplaceHtml";
 import { DRIES_BRAND_NAME } from "../collector/driesVanNoten";
@@ -268,7 +269,7 @@ async function refreshBrandMembership(
     console.log(`Refreshing collection membership: ${brand}`);
     const collected = await collectShopifyCollectionMembership(config, {
       knownProductUrls: known,
-      maxCollections: 40,
+          maxCollections: FULL_COLLECTION_CRAWL_CAP,
     });
     const status =
       collected.products.length === 0 && collected.errors.length > 0
@@ -431,7 +432,7 @@ async function writeCoverageReports(): Promise<void> {
   );
   const products = await readJson<PilotProduct[]>(PRODUCTS_PATH, []);
   const collectionReport = await readJson<CollectionReport | null>(COLLECTION_REPORT_PATH, null);
-  const coverage = buildSourceCoverageReport(families, collectionReport);
+  const coverage = buildSourceCoverageReport(families, collectionReport, products);
   await writeJson(join(REGISTRY_DIR, "source-coverage-report.json"), coverage);
 
   const registry = loadBrandRegistry();

@@ -29,11 +29,21 @@ async function main() {
     maxDetailPages: enrichDetails ? 2500 : 0,
   });
   const existing = await loadExisting();
-  const kept = existing.filter((product) => product.source !== LEVEL_SHOES_ID);
-  const merged = globalDedupe(mergeProductCatalog(kept, collected.products));
+  const priorLevel = existing.filter((product) => product.source === LEVEL_SHOES_ID);
+  const others = existing.filter((product) => product.source !== LEVEL_SHOES_ID);
+  const incoming =
+    collected.coverageStatus === "FAILED" || collected.products.length === 0
+      ? priorLevel
+      : collected.products;
+  const merged = globalDedupe(mergeProductCatalog(others, incoming));
   await mkdir(dirname(PRODUCTS), { recursive: true });
   await writeFile(PRODUCTS, JSON.stringify(merged, null, 2), "utf-8");
-  await writeFile(COVERAGE, JSON.stringify(collected, null, 2), "utf-8");
+  const { products: _products, ...coverageMeta } = collected;
+  await writeFile(
+    COVERAGE,
+    JSON.stringify({ ...coverageMeta, collectedProductCount: collected.products.length }, null, 2),
+    "utf-8",
+  );
 
   console.log("\n=== LEVEL SHOES coverage ===");
   console.log(`Method: ${collected.method}`);

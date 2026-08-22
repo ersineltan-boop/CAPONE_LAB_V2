@@ -182,7 +182,7 @@ export function coverageToSourceStatus(
   coverage: "FULL" | "PARTIAL" | "FAILED" | "NEEDS_PROBE" | string,
   parsedProducts: number,
 ): CloudSourceStatus {
-  if (coverage === "NEEDS_PROBE") return "skipped";
+  if (coverage === "NEEDS_PROBE" || coverage === "NEEDS_CUSTOM_ADAPTER") return "skipped";
   if (coverage === "FAILED" || parsedProducts === 0) return "failed";
   if (coverage === "PARTIAL") return "partial";
   if (coverage === "FULL") return "success";

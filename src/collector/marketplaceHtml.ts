@@ -1,4 +1,6 @@
 import { identityFromLevelShoesSlug, collectLevelShoes } from "./levelShoes";
+import { collectFarfetch, FARFETCH_ID } from "./farfetch";
+import { collectFreePeople, FREE_PEOPLE_ID } from "./freePeople";
 import { fetchText } from "./http";
 import type { PilotProduct } from "./types";
 import { slugifyCategoryId, humanizeCollectionHandle } from "../source/sourceCategories";
@@ -139,6 +141,22 @@ export async function collectMarketplaceListing(
       products: collected.products,
       errors: collected.errors,
       blocked: collected.coverageStatus === "FAILED" && collected.errors.some((error) => /anti-bot/i.test(error)),
+    };
+  }
+  if (candidate.id === FARFETCH_ID) {
+    const collected = await collectFarfetch({ maxPagesPerListing: options?.maxPages ?? 80 });
+    return {
+      products: collected.products,
+      errors: collected.errors,
+      blocked: collected.blocked,
+    };
+  }
+  if (candidate.id === FREE_PEOPLE_ID) {
+    const collected = await collectFreePeople();
+    return {
+      products: collected.products,
+      errors: [collected.blocker, ...collected.errors],
+      blocked: collected.blocked,
     };
   }
   const maxPages = options?.maxPages ?? 4;

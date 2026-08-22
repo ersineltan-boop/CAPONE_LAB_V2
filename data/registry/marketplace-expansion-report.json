@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-22T11:55:55.664Z",
+  "levelShoes": {
+    "products": 891,
+    "coverageStatus": "PARTIAL",
+    "errors": [],
+    "paginationExhausted": true,
+    "sourceReportedProductCount": null
+  },
+  "farfetch": {
+    "products": 926,
+    "coverageStatus": "PARTIAL",
+    "blocked": true,
+    "errors": [
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/shoes-1/items.aspx?page=6",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/trainers-1/items.aspx?page=2",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/boots-1/items.aspx",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/pumps-1/items.aspx?page=5",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/loafers-1/items.aspx",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/ballerinas-1/items.aspx",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/mules-1/items.aspx?page=2",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/sandals-1/items.aspx?page=2",
+      "HTTP 429 for https://www.farfetch.com/uk/shopping/women/espadrilles-1/items.aspx"
+    ],
+    "paginationExhausted": false,
+    "listingsCrawled": [
+      "https://www.farfetch.com/uk/shopping/women/shoes-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/trainers-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/boots-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/pumps-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/loafers-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/ballerinas-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/mules-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/sandals-1/items.aspx",
+      "https://www.farfetch.com/uk/shopping/women/espadrilles-1/items.aspx"
+    ]
+  },
+  "freePeople": {
+    "products": 0,
+    "coverageStatus": "FAILED",
+    "blocked": true,
+    "blocker": "freepeople.com returns Akamai/bot-manager 403 on public HTML and catalog endpoints. No stable public JSON listing was reachable without bypassing anti-bot protection.",
+    "errors": [
+      "HTTP 403 anti-bot at https://www.freepeople.com/shoes/",
+      "HTTP 403 anti-bot at https://www.freepeople.com/womens-shoes/",
+      "HTTP 403 anti-bot at https://www.freepeople.com/shoes/?format=json",
+      "HTTP 404 at https://www.freepeople.com/products.json?limit=5"
+    ]
+  }
+}

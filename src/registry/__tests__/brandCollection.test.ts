@@ -126,6 +126,27 @@ describe("registry-driven collection", () => {
     ).toHaveLength(1);
   });
 
+  it("active Shopify NEEDS_FOOTWEAR_CONFIG brands are collectable", () => {
+    expect(
+      isCollectableBrand(entry({ collectionStatus: "NEEDS_FOOTWEAR_CONFIG" })),
+    ).toBe(true);
+    expect(
+      isCollectableBrand(
+        entry({
+          isActive: false,
+          collectionStatus: "NEEDS_FOOTWEAR_CONFIG",
+        }),
+      ),
+    ).toBe(false);
+  });
+
+  it("active CUSTOM_ADAPTER READY_AUTOMATIC brand is collectable", () => {
+    expect(isCollectableBrand(entry({ collectorType: "CUSTOM_ADAPTER" }))).toBe(true);
+    expect(
+      isCollectableBrand(entry({ collectorType: "CUSTOM_ADAPTER", isActive: false })),
+    ).toBe(false);
+  });
+
   it("Shopify brand mevcut shopify collector'ını kullanır", async () => {
     const result = await collectBrandByCollectorType(entry());
     expect(result.method).toBe("shopify");

@@ -79,6 +79,29 @@ export function mergeProductCatalog(
   return [...byUrl.values()];
 }
 
+export function mergeCatalogPreservingFailedSources(
+  existing: readonly PilotProduct[],
+  incoming: readonly PilotProduct[],
+  failedBrandKeys: ReadonlySet<string>,
+): PilotProduct[] {
+  const failed = new Set(
+    [...failedBrandKeys].map((key) => key.trim().toUpperCase()).filter(Boolean),
+  );
+  if (failed.size === 0) {
+    return mergeProductCatalog(existing, incoming);
+  }
+  const preserved = existing.filter((product) =>
+    failed.has(product.brand.trim().toUpperCase()),
+  );
+  const rest = existing.filter(
+    (product) => !failed.has(product.brand.trim().toUpperCase()),
+  );
+  const incomingSafe = incoming.filter(
+    (product) => !failed.has(product.brand.trim().toUpperCase()),
+  );
+  return mergeProductCatalog(rest, [...incomingSafe, ...preserved]);
+}
+
 export function productReleaseTimestamp(product: PilotProduct): number {
   const candidate =
     product.publishedAt ?? product.createdAt ?? product.discoveredAt ?? null;

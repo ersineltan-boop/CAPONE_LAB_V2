@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T13:09:01.298Z",
+  "updatedAt": "2026-08-22T11:38:59.680Z",
   "entries": {
     "christen": {
       "brandId": "christen",
@@ -16,11 +16,11 @@
       "brandId": "jude",
       "brand": "JUDE",
       "officialUrl": "https://thejude.com",
-      "detectedCollectorType": "UNSUPPORTED",
-      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T12:05:20.996Z",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:36:12.899Z",
       "reachable": true,
-      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+      "recommendation": "READY_AUTOMATIC"
     },
     "nodaleto": {
       "brandId": "nodaleto",
@@ -28,7 +28,7 @@
       "officialUrl": "https://nodaleto.com",
       "detectedCollectorType": "UNSUPPORTED",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T12:05:20.996Z",
+      "probedAt": "2026-08-22T11:18:46.393Z",
       "reachable": true,
       "recommendation": "NEEDS_CUSTOM_ADAPTER"
     },
@@ -48,7 +48,7 @@
       "officialUrl": "https://en.reikenen.com",
       "detectedCollectorType": "UNSUPPORTED",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T12:05:20.997Z",
+      "probedAt": "2026-08-22T11:19:08.863Z",
       "reachable": true,
       "recommendation": "NEEDS_CUSTOM_ADAPTER"
     },
@@ -58,7 +58,7 @@
       "officialUrl": "https://yuulyie.com",
       "detectedCollectorType": "UNSUPPORTED",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T12:05:20.997Z",
+      "probedAt": "2026-08-22T11:36:32.646Z",
       "reachable": true,
       "recommendation": "NEEDS_CUSTOM_ADAPTER"
     },
@@ -148,7 +148,7 @@
       "officialUrl": "https://senso.com.au",
       "detectedCollectorType": "UNSUPPORTED",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T12:05:20.997Z",
+      "probedAt": "2026-08-22T11:19:37.431Z",
       "reachable": true,
       "recommendation": "NEEDS_CUSTOM_ADAPTER"
     },
@@ -408,7 +408,7 @@
       "officialUrl": "https://coperni.com",
       "detectedCollectorType": "UNSUPPORTED",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
-      "probedAt": "2026-08-19T13:09:01.298Z",
+      "probedAt": "2026-08-22T11:37:09.158Z",
       "reachable": true,
       "recommendation": "NEEDS_CUSTOM_ADAPTER"
     },
@@ -459,6 +459,396 @@
       "detectedCollectorType": "SHOPIFY_PUBLIC",
       "collectionStatus": "READY_AUTOMATIC",
       "probedAt": "2026-08-19T13:09:01.298Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "zara": {
+      "brandId": "zara",
+      "brand": "ZARA",
+      "officialUrl": "https://www.zara.com",
+      "detectedCollectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:39:00.000Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "mango": {
+      "brandId": "mango",
+      "brand": "MANGO",
+      "officialUrl": "https://shop.mango.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:21:14.833Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "massimo-dutti": {
+      "brandId": "massimo-dutti",
+      "brand": "MASSIMO DUTTI",
+      "officialUrl": "https://www.massimodutti.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:21:28.812Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "cos": {
+      "brandId": "cos",
+      "brand": "COS",
+      "officialUrl": "https://www.cos.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "FAILED",
+      "probedAt": "2026-08-22T08:21:29.751Z",
+      "reachable": false,
+      "recommendation": "FAILED"
+    },
+    "other-stories": {
+      "brandId": "other-stories",
+      "brand": "& OTHER STORIES",
+      "officialUrl": "https://www.stories.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "FAILED",
+      "probedAt": "2026-08-22T08:21:30.827Z",
+      "reachable": false,
+      "recommendation": "FAILED"
+    },
+    "miista": {
+      "brandId": "miista",
+      "brand": "MIISTA",
+      "officialUrl": "https://www.miista.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "FAILED",
+      "probedAt": "2026-08-22T08:21:31.786Z",
+      "reachable": false,
+      "recommendation": "FAILED"
+    },
+    "sam-edelman": {
+      "brandId": "sam-edelman",
+      "brand": "SAM EDELMAN",
+      "officialUrl": "https://www.samedelman.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "FAILED",
+      "probedAt": "2026-08-22T08:21:32.597Z",
+      "reachable": false,
+      "recommendation": "FAILED"
+    },
+    "stuart-weitzman": {
+      "brandId": "stuart-weitzman",
+      "brand": "STUART WEITZMAN",
+      "officialUrl": "https://www.stuartweitzman.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:21:50.879Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "aquazzura": {
+      "brandId": "aquazzura",
+      "brand": "AQUAZZURA",
+      "officialUrl": "https://www.aquazzura.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:22:05.308Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "gianvito-rossi": {
+      "brandId": "gianvito-rossi",
+      "brand": "GIANVITO ROSSI",
+      "officialUrl": "https://www.gianvitorossi.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:22:11.354Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "paris-texas": {
+      "brandId": "paris-texas",
+      "brand": "PARIS TEXAS",
+      "officialUrl": "https://paristexasbrand.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T08:25:30.367Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "ancient-greek-sandals": {
+      "brandId": "ancient-greek-sandals",
+      "brand": "ANCIENT GREEK SANDALS",
+      "officialUrl": "https://www.ancient-greek-sandals.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T08:26:45.448Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "vagabond-shoemakers": {
+      "brandId": "vagabond-shoemakers",
+      "brand": "VAGABOND SHOEMAKERS",
+      "officialUrl": "https://www.vagabond.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:27:03.466Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "ganni": {
+      "brandId": "ganni",
+      "brand": "GANNI",
+      "officialUrl": "https://www.ganni.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T08:27:17.966Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "the-attico": {
+      "brandId": "the-attico",
+      "brand": "THE ATTICO",
+      "officialUrl": "https://www.theattico.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T08:27:49.554Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "by-far": {
+      "brandId": "by-far",
+      "brand": "BY FAR",
+      "officialUrl": "https://byfar.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:16:26.934Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "wandler": {
+      "brandId": "wandler",
+      "brand": "WANDLER",
+      "officialUrl": "https://wandler.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T11:16:44.943Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "reformation": {
+      "brandId": "reformation",
+      "brand": "REFORMATION",
+      "officialUrl": "https://www.thereformation.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T11:17:01.190Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "atp-atelier": {
+      "brandId": "atp-atelier",
+      "brand": "ATP ATELIER",
+      "officialUrl": "https://atpatelier.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:18:29.598Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "gia-borghini": {
+      "brandId": "gia-borghini",
+      "brand": "GIA BORGHINI",
+      "officialUrl": "https://www.giaborghini.it",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:19:51.827Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "malone-souliers": {
+      "brandId": "malone-souliers",
+      "brand": "MALONE SOULIERS",
+      "officialUrl": "https://www.malonesouliers.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:20:34.263Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "emme-parsons": {
+      "brandId": "emme-parsons",
+      "brand": "EMME PARSONS",
+      "officialUrl": "https://emmeparsons.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:22:01.738Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "cult-gaia": {
+      "brandId": "cult-gaia",
+      "brand": "CULT GAIA",
+      "officialUrl": "https://cultgaia.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:23:17.962Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "staud": {
+      "brandId": "staud",
+      "brand": "STAUD",
+      "officialUrl": "https://staud.clothing",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:24:01.905Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "nomasei": {
+      "brandId": "nomasei",
+      "brand": "NOMASEI",
+      "officialUrl": "https://nomasei.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "FAILED",
+      "probedAt": "2026-08-22T11:26:26.739Z",
+      "reachable": false,
+      "recommendation": "FAILED"
+    },
+    "flabelus": {
+      "brandId": "flabelus",
+      "brand": "FLABELUS",
+      "officialUrl": "https://flabelus.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:26:44.950Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "naguisa": {
+      "brandId": "naguisa",
+      "brand": "NAGUISA",
+      "officialUrl": "https://naguisa.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:27:04.926Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "billi-bi": {
+      "brandId": "billi-bi",
+      "brand": "BILLI BI",
+      "officialUrl": "https://billibi.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T11:27:19.033Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "pavement": {
+      "brandId": "pavement",
+      "brand": "PAVEMENT",
+      "officialUrl": "https://pavement-official.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:27:40.280Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "lemon-jelly": {
+      "brandId": "lemon-jelly",
+      "brand": "LEMON JELLY",
+      "officialUrl": "https://www.lemonjelly.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T11:27:56.623Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "softwaves": {
+      "brandId": "softwaves",
+      "brand": "SOFTWAVES",
+      "officialUrl": "https://www.softwavesshop.com",
+      "detectedCollectorType": "UNSUPPORTED",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "probedAt": "2026-08-22T11:28:39.794Z",
+      "reachable": true,
+      "recommendation": "NEEDS_CUSTOM_ADAPTER"
+    },
+    "tuas": {
+      "brandId": "tuas",
+      "brand": "TUAS",
+      "officialUrl": "https://www.tuas-studio.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:28:48.115Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "maria-carlota": {
+      "brandId": "maria-carlota",
+      "brand": "MARIA CARLOTA",
+      "officialUrl": "https://amariacarlota.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:28:59.400Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "carel": {
+      "brandId": "carel",
+      "brand": "CAREL",
+      "officialUrl": "https://www.carel.fr",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:36:54.045Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "cecilie-bahnsen": {
+      "brandId": "cecilie-bahnsen",
+      "brand": "CECILIE BAHNSEN",
+      "officialUrl": "https://ceciliebahnsen.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:37:19.044Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "simone-rocha": {
+      "brandId": "simone-rocha",
+      "brand": "SIMONE ROCHA",
+      "officialUrl": "https://simonerocha.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:37:29.711Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "amina-muaddi": {
+      "brandId": "amina-muaddi",
+      "brand": "AMINA MUADDI",
+      "officialUrl": "https://aminamuaddi.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:38:00.132Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "sophia-webster": {
+      "brandId": "sophia-webster",
+      "brand": "SOPHIA WEBSTER",
+      "officialUrl": "https://www.sophiawebster.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:38:28.024Z",
+      "reachable": true,
+      "recommendation": "READY_AUTOMATIC"
+    },
+    "manu-atelier": {
+      "brandId": "manu-atelier",
+      "brand": "MANU ATELIER",
+      "officialUrl": "https://manuatelier.com",
+      "detectedCollectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "probedAt": "2026-08-22T11:38:59.278Z",
       "reachable": true,
       "recommendation": "READY_AUTOMATIC"
     }

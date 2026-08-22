@@ -13,9 +13,10 @@ import type { CollectionAttemptResult } from "../../collector/collectWithFallbac
 import type { CollectionMethod, PilotSourceConfig } from "../../collector/types";
 import type { BrandRegistryEntry, CollectorType } from "../types/brand";
 import { brandToPilotSourceConfig, resolveBrandBaseUrl } from "./brandToCollector";
-import { mergeFullCoverageCollectionPaths } from "../../collector/fullCoveragePaths";
+import { mergeFullCoverageCollectionPaths, FULL_COLLECTION_CRAWL_CAP } from "../../collector/fullCoveragePaths";
 import { isNewArrivalsCollectionPath } from "../../newArrivals/detectNewness";
 import { collectDriesVanNoten, DRIES_BRAND_ID } from "../../collector/driesVanNoten";
+import { collectZara, ZARA_BRAND_ID } from "../../collector/zara";
 
 export interface FootwearCollectionConfigResult {
   config: PilotSourceConfig | null;
@@ -84,6 +85,19 @@ async function resolveFootwearCollectionConfig(
     };
   }
 
+  if (options?.fullCoverage) {
+    return {
+      config: {
+        ...config,
+        collectionPaths: preferredPaths.length > 0 ? preferredPaths : [...config.collectionPaths],
+        verifiedFootwearPaths: preferredPaths,
+      },
+      discoveryStatus: entry.collectionDiscoveryStatus ?? "UNKNOWN",
+      footwearCollectionPath: preferredPaths[0] ?? null,
+      footwearCollectionUrl: entry.footwearCollectionUrls?.[0] ?? null,
+    };
+  }
+
   const discovered = await discoverVerifiedFootwearCollections({
     baseUrl,
     existingPaths:
@@ -91,7 +105,7 @@ async function resolveFootwearCollectionConfig(
         ? [...preferredPaths, ...config.collectionPaths]
         : await resolveCollectionPaths(config),
     fullCoverage: options?.fullCoverage === true,
-    maxCandidates: options?.fullCoverage ? 40 : 16,
+    maxCandidates: options?.fullCoverage ? FULL_COLLECTION_CRAWL_CAP : 16,
   });
 
   const mergedPaths = mergeFullCoverageCollectionPaths({
@@ -174,6 +188,8 @@ export async function collectBrandByCollectorType(
     duplicateCount?: number;
     paginationExhausted?: boolean;
     sourceReportedProductCount?: number | null;
+    hitCollectionCrawlCap?: boolean;
+    collectionsCrawled?: string[];
   }
 > {
   const config = brandToPilotSourceConfig(entry);
@@ -185,6 +201,14 @@ export async function collectBrandByCollectorType(
 
   if (entry.id === DRIES_BRAND_ID) {
     const collected = await collectDriesVanNoten(entry);
+    return {
+      ...collected,
+      hitBackfillLimit: false,
+    };
+  }
+
+  if (entry.id === ZARA_BRAND_ID) {
+    const collected = await collectZara(entry);
     return {
       ...collected,
       hitBackfillLimit: false,

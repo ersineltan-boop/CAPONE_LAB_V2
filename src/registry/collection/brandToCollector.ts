@@ -4,6 +4,7 @@ import { pickPreferredFootwearCollectionPaths } from "../../collector/discoverFo
 
 const COLLECTABLE_STATUSES = new Set<BrandRegistryEntry["collectionStatus"]>([
   "READY_AUTOMATIC",
+  "NEEDS_FOOTWEAR_CONFIG",
 ]);
 
 export function resolveBrandBaseUrl(entry: BrandRegistryEntry): string | null {
@@ -51,7 +52,6 @@ export function isCollectableBrand(entry: BrandRegistryEntry): boolean {
   if (!COLLECTABLE_STATUSES.has(entry.collectionStatus)) return false;
   if (entry.collectorType === "LINK_ONLY") return false;
   if (entry.collectorType === "UNSUPPORTED") return false;
-  if (entry.collectorType === "CUSTOM_ADAPTER") return false;
   return resolveBrandBaseUrl(entry) !== null;
 }
 

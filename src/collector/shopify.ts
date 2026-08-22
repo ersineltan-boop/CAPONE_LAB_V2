@@ -1,5 +1,15 @@
 import { parseProductFieldsFromHtml, extractPrimaryColor } from "./parseHtmlFields";
-import { evaluateFootwearProduct } from "./footwearGate";
+import { evaluateFootwearProduct, isVerifiedFootwearCollectionPath } from "./footwearGate";
+import {
+  emptyTotemeCollectStats,
+  evaluateTotemeFootwearProduct,
+  isTotemeAuditCollection,
+  isTotemeFootwearCollection,
+  isTotemeFootwearCollectionPath,
+  isTotemeSource,
+  recordTotemeDecision,
+  type TotemeCollectStats,
+} from "./totemeFootwear";
 import { mergeProductCatalog, sortProductsNewestFirst } from "./mergeProducts";
 import type { PilotProduct, PilotProductVariant, PilotSourceConfig } from "./types";
 import { fetchJson, sleep } from "./http";
@@ -15,12 +25,17 @@ import {
 } from "../source/sourceCategories";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
 import {
+  FULL_COLLECTION_CRAWL_CAP,
   FULL_COLLECTION_PAGE_CAP,
   FULL_PRODUCTS_PER_PAGE,
+  FULL_VARIANT_CAP,
   LEGACY_BACKFILL_CAP,
   LEGACY_COLLECTION_PAGE_CAP,
-  isFullCatalogRootPath,
 } from "./fullCoveragePaths";
+import {
+  authoritativeFootwearReportedCount,
+  selectShopifyFootwearCollectionsToCrawl,
+} from "./shopifyCollectionFilter";
 
 interface ShopifyImage {
   src?: string;
@@ -97,7 +112,7 @@ function mapVariants(product: ShopifyProduct): PilotProductVariant[] {
     /color|colour|cor/i.test(o.name),
   )?.name;
 
-  return product.variants.slice(0, 20).map((variant) => {
+  return product.variants.slice(0, FULL_VARIANT_CAP).map((variant) => {
     let color: string | null = null;
     if (colorOptionName && product.options) {
       const idx = product.options.findIndex((o) => o.name === colorOptionName);
@@ -125,16 +140,20 @@ export function shopifyProductToPilot(
   const productType = product.product_type ?? "";
   const verifiedPaths = new Set(config.verifiedFootwearPaths ?? []);
 
-  const gate = evaluateFootwearProduct({
+  const fromVerifiedFootwearCollection = collectionPath
+    ? verifiedPaths.has(collectionPath) || isVerifiedFootwearCollectionPath(collectionPath)
+    : false;
+  const gateInput = {
     title: product.title,
     productType,
     tags,
     handle: product.handle,
     collectionPath,
-    fromVerifiedFootwearCollection: collectionPath
-      ? verifiedPaths.has(collectionPath)
-      : false,
-  });
+    fromVerifiedFootwearCollection,
+  };
+  const gate = isTotemeSource(config)
+    ? evaluateTotemeFootwearProduct(gateInput)
+    : evaluateFootwearProduct(gateInput);
 
   if (gate.decision !== "ACCEPT_FOOTWEAR" || !gate.category) return null;
   const parsed = parseProductFieldsFromHtml(product.body_html ?? "");
@@ -205,6 +224,7 @@ async function paginateShopifyProductsJson(
     maxPages: number;
     perPage: number;
     ignoreProductCap: boolean;
+    onRawProduct?: (product: ShopifyProduct, collectionPath: string | null) => void;
   },
 ): Promise<{
   products: PilotProduct[];
@@ -245,6 +265,7 @@ async function paginateShopifyProductsJson(
       if (!options.ignoreProductCap && products.length >= config.maxProducts) break;
       const productUrl = canonicalProductUrl(config.baseUrl, raw.handle);
       discoveredLinks.add(productUrl);
+      options.onRawProduct?.(raw, collectionPath);
       if (seenUrls.has(productUrl)) {
         duplicateCount += 1;
         continue;
@@ -340,14 +361,7 @@ export function sourceReportedCountForPaths(
   counts: Map<string, number>,
   collectionPaths: readonly string[],
 ): number | null {
-  const rootPaths = collectionPaths.filter((path) => isFullCatalogRootPath(path));
-  const candidates = rootPaths.length > 0 ? rootPaths : [...collectionPaths];
-  let max = 0;
-  for (const path of candidates) {
-    const count = counts.get(path.toLowerCase()) ?? 0;
-    if (count > max) max = count;
-  }
-  return max > 0 ? max : null;
+  return authoritativeFootwearReportedCount(counts, collectionPaths);
 }
 
 export async function collectShopifyCollectionProducts(
@@ -396,6 +410,9 @@ export async function collectShopifyFootwearBackfill(
   duplicateCount: number;
   paginationExhausted: boolean;
   sourceReportedProductCount: number | null;
+  hitCollectionCrawlCap?: boolean;
+  collectionsCrawled?: string[];
+  totemeStats?: TotemeCollectStats;
 }> {
   const fullCoverage = config.collectMode === "full";
   const backfillLimit = config.backfillLimit ?? config.maxProducts ?? LEGACY_BACKFILL_CAP;
@@ -405,38 +422,86 @@ export async function collectShopifyFootwearBackfill(
   let pagesTraversed = 0;
   let duplicateCount = 0;
   let paginationExhausted = true;
+  let hitCollectionCrawlCap = false;
   const collected: PilotProduct[] = [];
+  const totemeSource = isTotemeSource(config);
+  const totemeStats = totemeSource ? emptyTotemeCollectStats() : undefined;
+  const totemeSeen = new Set<string>();
+  const totemeShoesPublished = new Set<string>();
 
-  const countResult = fullCoverage
-    ? await fetchShopifyCollectionCounts(config.baseUrl)
-    : { counts: new Map<string, number>(), errors: [] as string[] };
-  errors.push(...countResult.errors);
-  const sourceReportedProductCount = sourceReportedCountForPaths(
-    countResult.counts,
-    config.collectionPaths,
+  const listed = fullCoverage
+    ? await listShopifyCollections(config.baseUrl)
+    : { collections: [], errors: [] as string[] };
+  errors.push(...listed.errors);
+  const listedForSelect = totemeSource
+    ? listed.collections.filter((collection) =>
+        isTotemeFootwearCollection(collection.handle, collection.title),
+      )
+    : listed.collections;
+  const preferredPaths = totemeSource
+    ? config.collectionPaths.filter((path) => isTotemeFootwearCollectionPath(path))
+    : config.collectionPaths;
+  const selected = selectShopifyFootwearCollectionsToCrawl(
+    listedForSelect,
+    preferredPaths,
+    FULL_COLLECTION_CRAWL_CAP,
   );
-
-  if (fullCoverage) {
-    const storeWide = await paginateShopifyProductsJson(config, null, {
-      discoveredAt,
-      maxPages: FULL_COLLECTION_PAGE_CAP,
-      perPage: FULL_PRODUCTS_PER_PAGE,
-      ignoreProductCap: true,
-    });
-    pagesTraversed += storeWide.pagesTraversed;
-    duplicateCount += storeWide.duplicateCount;
-    paginationExhausted = paginationExhausted && storeWide.exhausted;
-    for (const link of storeWide.discoveredLinks) discoveredLinks.add(link);
-    errors.push(...storeWide.errors);
-    collected.push(...storeWide.products);
+  hitCollectionCrawlCap = selected.hitCollectionCrawlCap;
+  let collectionPaths =
+    fullCoverage && selected.paths.length > 0 ? selected.paths : preferredPaths;
+  if (totemeSource) {
+    collectionPaths = collectionPaths.filter((path) => isTotemeFootwearCollectionPath(path));
+    if (collectionPaths.length === 0) {
+      errors.push("TOTEME: no verified footwear collections; refusing store-wide /products.json");
+    }
   }
 
-  for (const collectionPath of config.collectionPaths) {
+  const counts = new Map<string, number>();
+  for (const collection of listedForSelect) {
+    counts.set(`/collections/${collection.handle}`.toLowerCase(), collection.productsCount);
+  }
+  let sourceReportedProductCount = sourceReportedCountForPaths(counts, collectionPaths);
+  if (totemeStats) {
+    const shoesMeta = listed.collections.find((collection) => collection.handle.toLowerCase() === "shoes");
+    totemeStats.shoesAdminProductCount = shoesMeta?.productsCount ?? counts.get("/collections/shoes") ?? null;
+  }
+
+  const recordTotemeRaw = (raw: ShopifyProduct, collectionPath: string | null, acceptIntoCatalog: boolean) => {
+    if (!totemeStats) return;
+    const productUrl = canonicalProductUrl(config.baseUrl, raw.handle);
+    const tags = normalizeTags(raw.tags);
+    const gateInput = {
+      title: raw.title,
+      productType: raw.product_type ?? "",
+      tags,
+      handle: raw.handle,
+      collectionPath: collectionPath ?? undefined,
+      fromVerifiedFootwearCollection: collectionPath
+        ? isTotemeFootwearCollectionPath(collectionPath)
+        : false,
+    };
+    const gate = evaluateTotemeFootwearProduct(gateInput);
+    recordTotemeDecision(
+      totemeStats,
+      totemeSeen,
+      productUrl,
+      acceptIntoCatalog && gate.decision === "ACCEPT_FOOTWEAR",
+      gateInput,
+    );
+    if (collectionPath?.toLowerCase() === "/collections/shoes") {
+      totemeShoesPublished.add(productUrl);
+    }
+  };
+
+  for (const collectionPath of collectionPaths) {
     const page = await paginateShopifyProductsJson(config, collectionPath, {
       discoveredAt,
       maxPages: fullCoverage ? FULL_COLLECTION_PAGE_CAP : 20,
       perPage: fullCoverage ? FULL_PRODUCTS_PER_PAGE : 50,
       ignoreProductCap: fullCoverage,
+      onRawProduct: totemeSource
+        ? (raw, path) => recordTotemeRaw(raw, path, true)
+        : undefined,
     });
     pagesTraversed += page.pagesTraversed;
     duplicateCount += page.duplicateCount;
@@ -444,6 +509,36 @@ export async function collectShopifyFootwearBackfill(
     for (const link of page.discoveredLinks) discoveredLinks.add(link);
     errors.push(...page.errors);
     collected.push(...page.products);
+  }
+
+  if (totemeSource && totemeStats) {
+    totemeStats.collectionsCrawled = [...collectionPaths];
+    if (totemeShoesPublished.size > 0) {
+      totemeStats.shoesPublishedProductCount = totemeShoesPublished.size;
+    }
+    if (
+      typeof totemeStats.shoesAdminProductCount === "number" &&
+      totemeStats.shoesAdminProductCount > 0
+    ) {
+      sourceReportedProductCount = totemeStats.shoesAdminProductCount;
+    }
+    const auditCollections = listed.collections.filter((collection) =>
+      isTotemeAuditCollection(collection.handle, collection.title),
+    );
+    for (const collection of auditCollections) {
+      const collectionPath = `/collections/${collection.handle}`;
+      totemeStats.auditCollections.push(collectionPath);
+      const page = await paginateShopifyProductsJson(config, collectionPath, {
+        discoveredAt,
+        maxPages: fullCoverage ? FULL_COLLECTION_PAGE_CAP : 20,
+        perPage: fullCoverage ? FULL_PRODUCTS_PER_PAGE : 50,
+        ignoreProductCap: true,
+        onRawProduct: (raw, path) => recordTotemeRaw(raw, path, false),
+      });
+      pagesTraversed += page.pagesTraversed;
+      errors.push(...page.errors);
+      for (const link of page.discoveredLinks) discoveredLinks.add(link);
+    }
   }
 
   const merged = mergeProductCatalog([], collected);
@@ -461,5 +556,8 @@ export async function collectShopifyFootwearBackfill(
     duplicateCount,
     paginationExhausted,
     sourceReportedProductCount,
+    hitCollectionCrawlCap,
+    collectionsCrawled: collectionPaths,
+    totemeStats,
   };
 }

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  mergeCatalogPreservingFailedSources,
   mergeProductCatalog,
   productReleaseTimestamp,
   sortProductsNewestFirst,
@@ -76,6 +77,35 @@ describe("mergeProducts", () => {
     expect(productReleaseTimestamp(newer)).toBeGreaterThan(
       productReleaseTimestamp(older),
     );
+  });
+
+  it("preserves prior products when a source temporarily fails", () => {
+    const existing = [
+      product({ productUrl: "https://brand-a.com/products/kept", brand: "BRAND A" }),
+      product({ productUrl: "https://brand-b.com/products/old", brand: "BRAND B" }),
+    ];
+    const incoming = [
+      product({ productUrl: "https://brand-a.com/products/new", brand: "BRAND A" }),
+    ];
+    const merged = mergeCatalogPreservingFailedSources(
+      existing,
+      incoming,
+      new Set(["BRAND B"]),
+    );
+    expect(merged.map((item) => item.productUrl).sort()).toEqual([
+      "https://brand-a.com/products/kept",
+      "https://brand-a.com/products/new",
+      "https://brand-b.com/products/old",
+    ]);
+  });
+
+  it("does not drop a failed brand even if incoming is empty", () => {
+    const existing = [
+      product({ productUrl: "https://brand-b.com/products/old", brand: "BRAND B" }),
+    ];
+    const merged = mergeCatalogPreservingFailedSources(existing, [], new Set(["BRAND B"]));
+    expect(merged).toHaveLength(1);
+    expect(merged[0]?.productUrl).toBe("https://brand-b.com/products/old");
   });
 });
 

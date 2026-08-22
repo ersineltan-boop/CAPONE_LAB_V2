@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-21T13:05:03.788Z",
-  "digerCount": 266,
-  "totalFamilies": 5372,
+  "generatedAt": "2026-08-22T12:29:35.044Z",
+  "digerCount": 632,
+  "totalFamilies": 9106,
   "reasonCounts": {
-    "MISSING_SOURCE_CATEGORY": 46,
-    "GENERIC_SOURCE_CATEGORY": 25,
-    "CONFLICTING_SOURCE_CATEGORIES": 9,
-    "UNMAPPED_SOURCE_CATEGORY": 186,
+    "MISSING_SOURCE_CATEGORY": 43,
+    "GENERIC_SOURCE_CATEGORY": 47,
+    "CONFLICTING_SOURCE_CATEGORIES": 41,
+    "UNMAPPED_SOURCE_CATEGORY": 501,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -25,15 +25,18 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "AW26 - New Season collection",
+        "Aw26 New Season Collection",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "LUNA SLIPPER LEATHER - Variants",
         "LUNA SLIPPER MESH - Variants",
-        "LUNA SLIPPER SUEDE - Variants",
+        "Luna Slipper Suede Variants",
         "Luna Slippers",
-        "New Season - PF26"
+        "Luna Slippers Variants",
+        "New Season Pf26"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -44,13 +47,17 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26",
+        "New Season Pf26",
+        "New Season Pre Spring Spring 26 Test",
+        "Newarrivals",
         "Pre Spring 26 TEST",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -60,10 +67,38 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes",
         "Flats",
         "New In"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-alexa-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-holli-sling-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--name-sapatos-abf-97-other-footwear-unknown-unknown-unknown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -74,9 +109,14 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "New Season - PF26",
+        "Mica Flat",
+        "New Season Pf26",
+        "New Season Pre Spring Spring 26 Test",
+        "Newarrivals",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -102,6 +142,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--name-begum-sling-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "alma-rae--name-kali-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "ALMA RAE",
       "sourceCategories": [
@@ -111,6 +161,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "pavement--name-panikki-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "hereu--name-plegada-shiny-deconstructed-lace-up-shoe-other-footwear-unknown-unknown-unknown-lace-up",
       "brand": "HEREU",
       "sourceCategories": [
@@ -118,7 +178,48 @@
         "Women's Pre-Fall 2026",
         "Women's Shoes",
         "Women's Soft Shoes",
-        "Womens New In Shoes"
+        "Womens New In",
+        "Womens New In Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--name-2100-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--name-anine-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-anneli-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-begum-sling-70-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -127,8 +228,20 @@
       "modelFamilyId": "neous--name-beid-other-footwear-unknown-unknown-unknown",
       "brand": "NEOUS",
       "sourceCategories": [
+        "Autumn Winter 26 Shoes",
+        "Flats",
         "Shoes",
-        "Shoes New In"
+        "Shoes New In",
+        "Shop New In"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pedro-garc-a--name-braidy-slippers-other-footwear-unknown-unknown-unknown-braided",
+      "brand": "Pedro García",
+      "sourceCategories": [
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -138,6 +251,35 @@
       "brand": "Jimmy Choo",
       "sourceCategories": [
         "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jude--name-floor-slipper-other-footwear-unknown-unknown-unknown",
+      "brand": "JUDE",
+      "sourceCategories": [
+        "Flats For Women",
+        "Footwear For Women"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "scarosso--name-lucrezia-slippers-other-footwear-unknown-unknown-unknown",
+      "brand": "Scarosso",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-lupita-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -182,7 +324,9 @@
       "brand": "HEREU",
       "sourceCategories": [
         "Women's Shoes",
-        "Women's Soft Shoes"
+        "Women's Soft Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -191,8 +335,8 @@
       "modelFamilyId": "aeyde--name-uma-cap-mary-janes-other-footwear-unknown-unknown-unknown",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -203,9 +347,13 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "New Arrivals"
+        "New Arrivals",
+        "Soft Venetian Slipper Variants",
+        "Venetian Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -220,6 +368,34 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--name-ame-other-footwear-unknown-unknown-unknown",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--name-annika-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-anok-sling-105-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "prada--name-ballerinas-other-footwear-unknown-unknown-unknown",
       "brand": "Prada",
       "sourceCategories": [
@@ -229,10 +405,21 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "pedro-garc-a--name-braidy-slippers-other-footwear-unknown-unknown-unknown-braided",
-      "brand": "Pedro García",
+      "modelFamilyId": "staud--name-birkenstock-loma-other-footwear-other-unknown-unknown",
+      "brand": "STAUD",
       "sourceCategories": [
-        "Slippers"
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-camelia-sling-90-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -249,8 +436,8 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes",
         "Flats",
         "New In"
       ],
@@ -262,8 +449,8 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes",
         "Flats",
         "New In"
       ],
@@ -274,35 +461,36 @@
       "modelFamilyId": "aeyde--name-geraldine-toe-cap-flats-other-footwear-flat-unknown-unknown",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--name-kassy-other-footwear-unknown-unknown-unknown",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "amina-muaddi--name-holli-sling-70-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
       "sourceCategories": [
-        "Bestsellers",
-        "Black Heels",
-        "Dress Sandals",
-        "Heels",
-        "Hi Shine Shoes",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals",
-        "Open Toe Heels",
-        "Thong Sandals"
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "scarosso--name-lucrezia-slippers-other-footwear-unknown-unknown-unknown",
-      "brand": "Scarosso",
+      "modelFamilyId": "emme-parsons--style-007-714-other-footwear-unknown-unknown-unknown-chain",
+      "brand": "EMME PARSONS",
       "sourceCategories": [
-        "Slippers"
+        "Vacation Shoe Edit"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-lupita-slipper-70-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -317,6 +505,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--name-malaga-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "khaite--name-milly-flat-other-footwear-flat-unknown-unknown",
       "brand": "KHAITE",
       "sourceCategories": [
@@ -328,11 +525,11 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "neous--name-nervia-other-footwear-unknown-unknown-unknown",
-      "brand": "NEOUS",
+      "modelFamilyId": "staud--name-milo-flat-other-footwear-flat-unknown-unknown",
+      "brand": "STAUD",
       "sourceCategories": [
-        "Shoes",
-        "Shoes New In"
+        "Flats",
+        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -342,8 +539,8 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes",
         "Flats",
         "New In"
       ],
@@ -361,21 +558,51 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-lline--name-pernille-ballerinas-other-footwear-unknown-unknown-unknown",
-      "brand": "The Lline",
+      "modelFamilyId": "pavement--name-pafinka-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
       "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-pamargot-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "jude--name-path-flat-other-footwear-flat-unknown-unknown",
+      "brand": "JUDE",
+      "sourceCategories": [
+        "Flats For Women",
+        "Path Flat"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "neous--name-poera-other-footwear-unknown-unknown-unknown",
-      "brand": "NEOUS",
+      "modelFamilyId": "pavement--name-pavibe-2-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
       "sourceCategories": [
-        "Shoes",
-        "Shoes New In"
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "the-lline--name-pernille-ballerinas-other-footwear-unknown-unknown-unknown",
+      "brand": "The Lline",
+      "sourceCategories": [
+        "Flat Shoes",
+        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -390,10 +617,49 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "staud--name-rue-flat-other-footwear-flat-unknown-unknown",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Flats",
+        "Sale Shoes",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "yuzefi--name-sahra-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "Yuzefi",
       "sourceCategories": [
         "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-salma-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--name-sapatos-ploy-353-other-footwear-unknown-unknown-unknown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--name-smoking-daisy-other-footwear-unknown-unknown-unknown",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -414,20 +680,12 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "neous--name-tapek-other-footwear-unknown-unknown-unknown",
-      "brand": "NEOUS",
-      "sourceCategories": [
-        "Shoes",
-        "Shoes New In"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -436,6 +694,7 @@
       "modelFamilyId": "a-emery--name-the-spencer-flat-other-footwear-flat-unknown-unknown",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Flats Edit",
         "Footwear",
         "Leather Flats",
@@ -465,8 +724,8 @@
       "modelFamilyId": "aeyde--name-uma-eyelet-mary-janes-other-footwear-unknown-unknown-unknown",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -475,8 +734,56 @@
       "modelFamilyId": "aeyde--name-vanna-flats-other-footwear-flat-unknown-unknown",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jude--name-yaga-flat-other-footwear-flat-unknown-unknown",
+      "brand": "JUDE",
+      "sourceCategories": [
+        "Flats For Women",
+        "Yaga Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-attico--name-mochi-and-flatform-other-footwear-flat-unknown-unknown",
+      "brand": "THE ATTICO",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-attico--name-salinas-flatform-other-footwear-flat-unknown-unknown",
+      "brand": "THE ATTICO",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "manu-atelier--name-15-slippers-other-footwear-unknown-unknown-unknown-woven",
+      "brand": "MANU ATELIER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--name-2100-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -493,14 +800,64 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--name-andreea-slipper-45-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-anok-sling-55-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-anok-sling-90-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-anok-slipper-105-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--name-apres-ski-shearling-other-footwear-unknown-unknown-unknown",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--name-azur-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -518,12 +875,16 @@
       "modelFamilyId": "hereu--name-birla-other-footwear-unknown-unknown-unknown-braided",
       "brand": "HEREU",
       "sourceCategories": [
+        "Women Sport Shoes",
         "Women's New In Shoes",
         "Women's Pre-Fall 2026",
         "Women's Shoes",
         "Women's Slim Sport Shoes",
         "Women's Soft Shoes",
-        "Womens New In Shoes"
+        "Womens New In",
+        "Womens New In Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -546,8 +907,8 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes",
         "Flats",
         "Loafers",
         "New In",
@@ -555,6 +916,25 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-brooke-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-camelia-sling-60-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "christian-louboutin--name-chanme-donna-slippers-other-footwear-unknown-unknown-unknown",
@@ -566,13 +946,26 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "sophia-webster--name-chiara-flat-other-footwear-flat-unknown-unknown",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--name-classic-claudia-other-footwear-unknown-unknown-unknown",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
+        "Claudia Slipper",
         "Claudia Slippers - collection",
+        "Claudia Slippers Signatures",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -613,6 +1006,17 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--name-dalida-plateau-slipper-140-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Platform Shoes",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "sophique--name-dama-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "SOPHIQUE",
       "sourceCategories": [
@@ -631,11 +1035,20 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "christen--name-edge-mule-other-footwear-unknown-unknown-unknown-backless",
-      "brand": "CHRISTEN",
+      "modelFamilyId": "flabelus--name-dots-other-footwear-unknown-unknown-unknown",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Edge Mule and Pump",
-        "Shoes"
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jude--name-dusty-flat-other-footwear-flat-unknown-unknown",
+      "brand": "JUDE",
+      "sourceCategories": [
+        "Dusty Flat",
+        "Flats For Women"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -651,12 +1064,56 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--name-eleonora-slipper-45-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-eleonora-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--name-eline-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-elodie-slipper-105-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "hereu--name-esportiu-lace-up-sporty-shoe-other-footwear-unknown-unknown-unknown-lace-up-woven",
       "brand": "HEREU",
       "sourceCategories": [
+        "Women Sport Shoes",
         "Women's Shoes",
         "Women's Slim Sport Shoes",
-        "Women's Soft Shoes"
+        "Women's Soft Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -681,14 +1138,52 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "neous--name-flege-other-footwear-unknown-unknown-unknown",
-      "brand": "NEOUS",
+      "modelFamilyId": "pavement--name-friia-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
       "sourceCategories": [
-        "Shoes",
-        "Shoes New In"
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-gigi-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "staud--name-gino-ballet-glide-other-footwear-unknown-unknown-unknown",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Sale Shoes",
+        "Staud Sport Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--name-gioia-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--name-grace-platform-other-footwear-platform-unknown-unknown",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "christen--name-hand-crochet-ballerina-other-footwear-unknown-unknown-unknown",
@@ -707,10 +1202,21 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "staud--name-joey-sport-ballet-other-footwear-flat-unknown-unknown",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Sale Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--name-kids-venetian-slipper-other-footwear-unknown-unknown-unknown",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
-        "Footwear All new"
+        "Footwear All",
+        "Footwear All new",
+        "Kids Soft Venetian Slippers Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -725,10 +1231,38 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "staud--name-kit-lace-up-flat-other-footwear-flat-unknown-unknown-lace-up",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Sale Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--name-kyra-slipper-breeze-other-footwear-other-unknown-unknown",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "tory-burch--name-leelee-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "Tory Burch",
       "sourceCategories": [
         "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "staud--name-lewis-flat-other-footwear-flat-unknown-unknown",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -743,11 +1277,30 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--name-lucca-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--name-lungo-other-footwear-unknown-unknown-unknown",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-lupita-crystal-net-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "manolo-blahnik--name-lurum-mules-other-footwear-unknown-unknown-unknown-backless",
@@ -766,10 +1319,31 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "alma-rae--name-maia-slippers-other-footwear-unknown-unknown-unknown",
+      "brand": "ALMA RAE",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "sam-edelman--name-michaela-mary-jane-flats-other-footwear-flat-unknown-unknown",
       "brand": "Sam Edelman",
       "sourceCategories": [
-        "Flat Shoes"
+        "Flat Shoes",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-mini-camelia-slipper-95-other-footwear-unknown-unknown-unknown",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Mini Camelia Slipper",
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -814,14 +1388,65 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26",
-        "OLYMPIA SLIPPER - Variants"
+        "New Season Pf26",
+        "Newarrivals",
+        "Olympia Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--name-paelva-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-pajenny-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "emme-parsons--name-parker-other-footwear-unknown-unknown-unknown",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Danielle",
+        "Emme Parsons Ernest Sneaker",
+        "Emme Parsons Flat Mule",
+        "Emme Parsons Monceaux Mule",
+        "Emme Parsons Parker Moccasin",
+        "Emme Parsons Salome Mary Jane",
+        "Loafers Boots",
+        "Raffia",
+        "Suede",
+        "Woven Styles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-patanja-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "lemaire--name-piped-crepe-slippers-other-footwear-unknown-unknown-unknown",
@@ -887,6 +1512,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ex--name-sapatos-emery-215-other-footwear-unknown-unknown-unknown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--name-sapatos-remini-611-other-footwear-unknown-unknown-unknown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--name-sapatos-rimini-512-other-footwear-unknown-unknown-unknown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "fendi--name-scrunch-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "FENDI",
       "sourceCategories": [
@@ -932,6 +1584,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "pavement--name-tamera-long-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "ugg--name-tasman-ii-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "UGG",
       "sourceCategories": [
@@ -953,6 +1615,7 @@
       "modelFamilyId": "a-emery--name-the-jesse-flat-other-footwear-flat-unknown-unknown",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Flats Edit",
         "Footwear",
         "Leather Flats",
@@ -966,6 +1629,7 @@
       "modelFamilyId": "a-emery--name-the-lima-flat-other-footwear-flat-unknown-unknown",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Flats Edit",
         "Footwear",
         "Leather Flats",
@@ -979,7 +1643,9 @@
       "brand": "HEREU",
       "sourceCategories": [
         "Women's Shoes",
-        "Women's Soft Shoes"
+        "Women's Soft Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -988,8 +1654,18 @@
       "modelFamilyId": "aeyde--name-uma-pony-hair-flats-other-footwear-flat-unknown-unknown",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "toteme--name-venetian-slippers-other-footwear-unknown-unknown-unknown",
+      "brand": "TOTEME",
+      "sourceCategories": [
+        "Shoes",
+        "Shoes Flats"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1014,11 +1690,134 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--name-vittoria-other-footwear-unknown-unknown-unknown",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "staud--name-willa-flat-other-footwear-flat-unknown-unknown",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Sale Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "by-far--name-yasha-peep-flat-other-footwear-flat-unknown-unknown",
+      "brand": "BY FAR",
+      "sourceCategories": [
+        "Flats",
+        "Shoes 1"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--name-zevil-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-rose",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-coral",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "toteme--singleton-https-toteme-com-products-wool-cashmere-lounge-slippers-black",
+      "brand": "TOTEME",
+      "sourceCategories": [
+        "Shoes",
+        "Shoes Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-attico--singleton-https-www-theattico-com-products-mini-robin-black-sabot-250wsh00855lbt019aa-100",
+      "brand": "THE ATTICO",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-attico--singleton-https-www-theattico-com-products-mochi-black-flatform-260wsh00905mix071aa-100",
+      "brand": "THE ATTICO",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-adela",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-agatha",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-agnes-sabot-nougat-leather-cream-shearling",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-agustina",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "nike--singleton-https-www-farfetch-com-uk-shopping-women-nike-air-force-1-low-07-lv8-shoes-item-37631509-aspx",
+      "brand": "Nike",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "saint-laurent--singleton-https-www-levelshoes-com-saint-laurent-alain-slippers-black-leather-women-slippers-rrp2pz-html",
@@ -1039,10 +1838,95 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-alexa-glass-slipper-95-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-alexa-slipper-105-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-alexa-slipper-95-black-lace-polka-dot",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "malone-souliers--singleton-https-www-malonesouliers-com-products-alia-flat-beige-leather-lace-up-flat-slingbacks",
+      "brand": "MALONE SOULIERS",
+      "sourceCategories": [
+        "All"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-alice",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "sam-edelman--singleton-https-www-levelshoes-com-sam-edelman-alie-ballerinas-cream-leather-women-ballerinas-i9eeel-html",
       "brand": "Sam Edelman",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-almudena",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-amber",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-amy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-www-levelshoes-com-flabelus-amy-slippers-navy-velvet-women-r873ol-html",
+      "brand": "Flabelus",
+      "sourceCategories": [
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1057,11 +1941,81 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-andrea",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-andreea-glass-slipper-45-black-nappa-and-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-andreea-slipper-95-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-angelina-long-boots-black-crinkle",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "flattered--singleton-https-flattered-com-products-anna",
       "brand": "FLATTERED",
       "sourceCategories": [
         "All Shoes",
+        "All Shoes For Tax",
         "tax:clothing"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-anna",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-anok-plateau-slipper-155-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Platform Shoes",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-antigona",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1076,16 +2030,29 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-antonieta",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-apres-ski-black-leather",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26",
+        "New Season Pf26",
+        "New Season Pre Spring Spring 26 Test",
+        "Newarrivals",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1096,12 +2063,15 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26"
+        "New Season Pf26",
+        "Newarrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1111,12 +2081,15 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26"
+        "New Season Pf26",
+        "Newarrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1125,7 +2098,8 @@
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-apres-ski-plum-leather",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
+        "New Season Pre Spring Spring 26 Test",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1136,10 +2110,40 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-arata",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-arena",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-arwen",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1158,6 +2162,15 @@
       "brand": "Neous",
       "sourceCategories": [
         "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "atp-atelier--singleton-https-atpatelier-com-products-gift-wrapping",
+      "brand": "ATP ATELIER",
+      "sourceCategories": [
+        "Holiday Gift Guide Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1200,6 +2213,7 @@
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-ballet-claudia-slipper-siena-suede",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
+        "New Season Pre Spring Spring 26 Test",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1210,6 +2224,163 @@
       "brand": "MONFARADI MARE",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-beate-boots-brown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-beatrice",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-begum-glass-sling-70-transparent-pvc-c",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-begum-glass-sling-transparent-pvc-cc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bei",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bellefort",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-berceo",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bernarda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "manu-atelier--singleton-https-manuatelier-com-products-beste-slippers-mocha-suede",
+      "brand": "MANU ATELIER",
+      "sourceCategories": [
+        "Beste Slippers",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-beth",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bethany",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bianca",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--singleton-https-www-sophiawebster-com-products-blair-flat-rose-garden-blue",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Flats",
+        "Sale Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-blanche",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-leather-blucher-shoes-p13539810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-soft-leather-blucher-shoes-p11560810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bovary",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1231,6 +2402,34 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-bridget",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--singleton-https-ceciliebahnsen-com-products-2-25ftw30011-brielle-flat-patent-leather-white",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes",
+        "Shoes Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-briony",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "st-agni--singleton-https-www-levelshoes-com-st-agni-bunto-woven-slippers-black-leather-women-slippers-fwcbcp-html",
       "brand": "St Agni",
       "sourceCategories": [
@@ -1240,10 +2439,92 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-butler",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-camelia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-camelia-sling-105-black-suede",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cantabrico",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "flattered--singleton-https-flattered-com-products-cara-sand-suede",
       "brand": "FLATTERED",
       "sourceCategories": [
+        "All Shoes For Tax",
         "tax:clothing"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-carlota",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-caronte",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "by-far--singleton-https-byfar-com-products-carre-89-cyan-banner",
+      "brand": "BY FAR",
+      "sourceCategories": [
+        "Aw26 Our Favorite Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-casandra",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-casilda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1258,10 +2539,56 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cathleen",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cecilia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cedric",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-celestina",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-charlotte",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "bottega-veneta--singleton-https-www-levelshoes-com-bottega-veneta-charlotte-ballerinas-black-calf-leather-women-ballerinas-dfixn4-html",
       "brand": "Bottega Veneta",
       "sourceCategories": [
-        "Flat Shoes"
+        "Flat Shoes",
+        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1276,17 +2603,38 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-chelsea-dolomite-burgundy-leather",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cherise",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-classic-alpaca-crew-knit-pale-blue",
-      "brand": "TOTEME",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-chiara",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "FW26"
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-clara",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-clarissa",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1296,9 +2644,13 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
+        "Claudia Slipper",
         "Claudia Slippers - collection",
+        "Claudia Slippers Signatures",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Season Texture"
       ],
@@ -1310,12 +2662,17 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
+        "Claudia Slipper",
         "Claudia Slippers - collection",
+        "Claudia Slippers Signatures",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26"
+        "New Season Pf26",
+        "Newarrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1335,15 +2692,47 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-classic-daisy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-classic-daria",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-classic-meg",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-regency-classic-fango-leather-snake-effect",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "New Season - PF26"
+        "New Season Pf26",
+        "Newarrivals",
+        "Regency Slipers Collection",
+        "Regency Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1394,18 +2783,23 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-clog-chocolate-leather-mink-shearling",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cleopatra",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-clog-black-leather-shearling",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-braided-leather-mules-p14503810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "prada--singleton-https-www-levelshoes-com-prada-collapse-re-nylon-and-suede-mules-white-recycled-nylon-women-mules-bvem7m-html",
@@ -1446,10 +2840,114 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-connie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ala-a--singleton-https-www-levelshoes-com-ala-a-satin-cord-ballerinas-burgundy-satin-women-ballerinas-mte69x-html",
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cosette",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-cosima",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-crochet-shoes-p12520810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-crusoe",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "staud--singleton-https-staud-clothing-products-custom-abby-slipper-cream",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Custom Abby",
+        "Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-dafne",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-daisy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-dalida-glass-plateau-slipper-140-transparent-pvc-cao",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Platform Shoes",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-daria",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-david",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1483,19 +2981,72 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-dima-turquoise-suedeecru-snake-15730",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-diana",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Bestsellers",
-        "Dress Sandals",
-        "Heels",
-        "New Arrivals",
-        "Open Toe Heels",
-        "Stiletto Heels",
-        "Thong Sandals"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-diggory",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-dolly-net-sling-95-latte-nappa-and-latte-net-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-domani-chocolate-suede",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Domani",
+        "Emme Parsons Stasera",
+        "Suede"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-domani-bordeaux-kidskin",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Domani",
+        "Emme Parsons Stasera"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-dorothy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-dulcinea",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "gucci--singleton-https-www-levelshoes-com-gucci-edgar-slippers-brown-exotic-leather-women-slippers-ejo3eo-html",
@@ -1507,65 +3058,131 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "christen--singleton-https-christen-com-products-edge-stretch-mule",
-      "brand": "CHRISTEN",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-electra",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Edge Mule and Pump",
-        "Shoes"
+        "Seasonal Treats",
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-edgy-indigo-nubuck-14789",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-elinor",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Heels",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals",
-        "Open Toe Heels",
-        "Thong Sandals",
-        "Wedges"
+        "Seasonal Treats",
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-edgy-blush-nubuck-14789",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-elizabeth",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Heels",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals",
-        "Open Toe Heels",
-        "Thong Sandals",
-        "Wedges"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-edgy-willow-nubuck-14789",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-elodie-slipper-90-red-satin",
+      "brand": "AMINA MUADDI",
       "sourceCategories": [
-        "Heels",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals",
-        "Open Toe Heels",
-        "Thong Sandals",
-        "Wedges"
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-eloise",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-elvira",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "simone-rocha--singleton-https-simonerocha-com-products-bbt1b-0755-black-black-pearl-clear",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "miu-miu--singleton-https-www-levelshoes-com-miu-miu-embroidered-mesh-ballerinas-white-mesh-women-ballerinas-bpkz0m-html",
       "brand": "Miu Miu",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-emilia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-emma",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-eowyn",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-eponine",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-esmara-boots-olive",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-ethel",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1580,6 +3197,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "miu-miu--singleton-https-www-levelshoes-com-miu-miu-mesh-fabric-slippers-brown-mesh-women-slippers-usiapm-html",
+      "brand": "Miu Miu",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "bottega-veneta--singleton-https-www-levelshoes-com-bottega-veneta-fantasmina-ballerinas-red-nappa-leather-women-ballerinas-wfq9ey-html",
       "brand": "Bottega Veneta",
       "sourceCategories": [
@@ -1589,10 +3215,65 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-fine-v-neck-knit-fondante",
-      "brand": "TOTEME",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-fantine",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "FW26"
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-federica",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-felicia-crystal-net-sling-100-black-suede-and-black-net-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-felicia-sling-100-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-fermina",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-soft-leather-flats-p13540810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jude--singleton-https-thejude-com-products-floor-slipper-in-black-pony-leather",
+      "brand": "JUDE",
+      "sourceCategories": [
+        "Flats For Women",
+        "Footwear For Women"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1608,11 +3289,113 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-fortunata",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-franny-black-nappa",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "toteme--singleton-https-toteme-com-products-frayed-satin-lounge-slippers-black",
+      "brand": "TOTEME",
+      "sourceCategories": [
+        "Shoes",
+        "Shoes Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "manu-atelier--singleton-https-manuatelier-com-products-freya-xx-white",
+      "brand": "MANU ATELIER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-galice",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "asics--singleton-https-www-farfetch-com-uk-shopping-women-asics-gel-1130-cream-pure-silver-item-22431652-aspx",
+      "brand": "ASICS",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-geraldine",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-gigi-slipper-95-silver-mirror-and-white-crystal",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-gilda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-gilda-slipper-70-ivory-satin-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-gina",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--singleton-https-www-carel-fr-products-gina-mocassins-cuir-marine-bleu-et-noir",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1630,6 +3413,7 @@
       "modelFamilyId": "lemaire--singleton-https-www-lemaire-fr-products-glove-slip-on-men-bk916-beige-grey-ll0259-2-tone-hairy-lamb-leather-fo0299-ll0259-bk916",
       "brand": "LEMAIRE",
       "sourceCategories": [
+        "New Arrivals Shoes W",
         "Shoes",
         "Shoes New Arrivals",
         "Women Shoes",
@@ -1642,10 +3426,175 @@
       "modelFamilyId": "lemaire--singleton-https-www-lemaire-fr-products-glove-slip-on-unisex-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0299-ll0023-br490",
       "brand": "LEMAIRE",
       "sourceCategories": [
+        "New Arrivals Shoes W",
         "Shoes",
         "Shoes New Arrivals",
         "Women Shoes",
         "Women Shoes New Arrivals"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-grace",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--singleton-https-www-giaborghini-it-products-granny-slipper-leopard",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--singleton-https-www-giaborghini-it-products-june-tiramisu-in-leather-copy",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-hamilton",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-heian-green",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-heian-cuero",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-heian-plum",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-heian-teja",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-helena",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-hermione",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-hester",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-holli-glass-sling-transparent-pvc-c",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-hyde",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-iconic-flabelus",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-ines",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-isolda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jamie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jane",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1656,6 +3605,7 @@
       "sourceCategories": [
         "Flats",
         "Jane Flat",
+        "New Arrivals",
         "Private Client Preview",
         "Shoes"
       ],
@@ -1677,10 +3627,38 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "house-of-ballerinas--singleton-https-www-levelshoes-com-house-of-ballerinas-jeanne-ballerinas-black-tweed-women-ballerinas-cg0xnj-html",
-      "brand": "House Of Ballerinas",
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-janis-slipper-45-black-nappa-and-white-crystals",
+      "brand": "AMINA MUADDI",
       "sourceCategories": [
-        "Flat Shoes"
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jaqueline",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jeanne",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jessie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1695,11 +3673,122 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-jo",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-joanna",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-joetta",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-juana",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-julianne-snake-long-boots-black-snake",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-julieta",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-katniss",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-kay",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-klosters-black",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-kristina-sling-105-black-patent",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-kristina-sling-105-mm-sm-heel-white-polka-dot-lace",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Fw25 Shoes 1",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-kyra-slipper-breeze-garnet",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-kyra-slipper-breeze-kakhi",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "givenchy--singleton-https-www-levelshoes-com-givenchy-label-slippers-black-nappa-leather-women-slippers-pzr71y-html",
@@ -1711,11 +3800,93 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--singleton-https-www-zara-com-us-en-leather-lace-up-flats-p13504810-html",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lara-sling-70-white-nappa-and-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lara-sling-95-black-suede-and-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-laura",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-leda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-leeford",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-leticia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-hs0679",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lila-slipper-95-mocha-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-lina",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "sam-edelman--singleton-https-www-levelshoes-com-sam-edelman-linnie-bit-slippers-black-leather-women-rctv4i-html",
@@ -1730,8 +3901,26 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-liya-beige-black-ponyhair",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "golden-goose--singleton-https-www-farfetch-com-uk-shopping-women-golden-goose-logo-print-laces-item-25434488-aspx",
+      "brand": "Golden Goose",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-lola",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1755,10 +3944,37 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lori-crystal-lace-up-95-latte-suede-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "jimmy-choo--singleton-https-www-levelshoes-com-jimmy-choo-love-ballerinas-cream-lace-women-ballerinas-ulksc2-html",
       "brand": "Jimmy Choo",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-lucie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-lucien",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1776,10 +3992,13 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
         "LUNA SLIPPER MESH - Variants",
-        "Luna Slippers"
+        "Luna Slippers",
+        "Luna Slippers Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1790,12 +4009,15 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER LEATHER - Variants",
+        "Luna Slipper Leather Variants",
         "Luna Slippers",
         "New Arrivals",
-        "New Season - PF26"
+        "New Season Pf26",
+        "Newarrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1806,9 +4028,11 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER LEATHER - Variants",
+        "Luna Slipper Leather Variants",
         "Luna Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1820,9 +4044,11 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER LEATHER - Variants",
+        "Luna Slipper Leather Variants",
         "Luna Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1848,12 +4074,16 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER SUEDE - Variants",
+        "Luna Slipper Suede Variants",
         "Luna Slippers",
         "New Arrivals",
-        "New Season - PF26",
+        "New Season Pf26",
+        "New Season Pre Spring Spring 26 Test",
+        "Newarrivals",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1876,6 +4106,85 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-crystal-net-slipper-70-black-suede-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-glass-slipper-70-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-glass-slipper-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-net-70-white-raffia",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-net-95-net-mocha-raffia-retail",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-lupita-slipper-95-red-white-vichy",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-lydia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-mackenzie-slipper-90-black-suede-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ferragamo--singleton-https-www-levelshoes-com-ferragamo-macrame-lace-ballerinas-cream-fabric-women-ballerinas-ff9xwj-html",
       "brand": "Ferragamo",
       "sourceCategories": [
@@ -1885,41 +4194,20 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-maddi-black-nappa-15295",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-magie-long-boots-black",
+      "brand": "PAVEMENT",
       "sourceCategories": [
-        "Ballet Flats",
-        "Bestsellers",
-        "Black Heels",
-        "Flat Shoes",
-        "Heels",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals"
+        "Espadrilles",
+        "Long Boots"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "tony-bianco--singleton-https-tonybianco-com-au-products-maddi-vino-nappa-15295",
-      "brand": "TONY BIANCO",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-mallory",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Ballet Flats",
-        "Bestsellers",
-        "Flat Shoes",
-        "Heels",
-        "Kitten Heels",
-        "Low Heels",
-        "New Arrivals"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "alma-rae--singleton-https-www-levelshoes-com-alma-rae-maia-mules-brown-suede-women-mules-vy6liy-html",
-      "brand": "ALMA RAE",
-      "sourceCategories": [
-        "Slippers"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1934,6 +4222,42 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-margeritte",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-margot",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-marianne",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-marietta",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "giuseppe-zanotti--singleton-https-www-levelshoes-com-giuseppe-zanotti-mariposa-105-mules-brown-leather-women-mules-lzenuy-html",
       "brand": "Giuseppe Zanotti",
       "sourceCategories": [
@@ -1941,6 +4265,107 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-marit-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "staud--singleton-https-staud-clothing-products-marty-flat-black",
+      "brand": "STAUD",
+      "sourceCategories": [
+        "Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-matilde",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-maya",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-maybelle",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-maylie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-medea",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-mediterraneo",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-meg",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-meredith",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-merit",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-mica-flat-burgundy-knotted-leather",
@@ -1986,11 +4411,98 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "gia-borghini--singleton-https-www-giaborghini-it-products-miguela-nappa-leather-in-black",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--singleton-https-www-giaborghini-it-products-miguela-synthetic-leather-in-python",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-minerva",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-mini-camelia-slipper-105-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Mini Camelia Slipper",
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-miranda",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-mocassin2-01",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-mocassins-abf-97",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-mocassins-abf-97-v1392-45-2-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-monroe-black-suede",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Parker Moccasin",
+        "Raffia",
+        "Suede"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-monroe-taupe-suede",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Parker Moccasin",
+        "Raffia",
+        "Suede"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-hb0691",
@@ -2000,15 +4512,22 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-soft-nappa-mules-black",
-      "brand": "TOTEME",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-musgo",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "FW26",
-        "Pumps & Mules",
-        "Shoes"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--singleton-https-www-sophiawebster-com-products-my-book-oh-my-gosh-i-love-your-shoes",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "birkenstock--singleton-https-www-levelshoes-com-birkenstock-naples-wrapped-slippers-pink-suede-women-slippers-qmadvv-html",
@@ -2020,28 +4539,256 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-olympia-slipper-mokka-satin",
-      "brand": "LE MONDE BERYL",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-nara",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "All Footwear",
-        "Flats",
-        "Footwear",
-        "Footwear All new",
-        "New Arrivals",
-        "New Season - PF26",
-        "OLYMPIA SLIPPER - Variants"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aquazzura--singleton-https-www-levelshoes-com-aquazzura-papillon-75-mules-brown-leather-women-mules-bpugzh-html",
-      "brand": "Aquazzura",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-narcissa",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-natty",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-nerissa",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-nicholas",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-nora",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "kurt-geiger-london--singleton-https-www-farfetch-com-uk-shopping-women-kurt-geiger-london-octavia-sling-platforms-item-35214421-aspx",
+      "brand": "Kurt Geiger London",
       "sourceCategories": [
         "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-ofelia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-offred",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-olga",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-oliver",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-olivette",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-olympia-slipper-mokka-satin",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "New Arrivals",
+        "New Season Pf26",
+        "Newarrivals",
+        "Olympia Slipper Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-almira-boots-brown-suede",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-paalmira-buffalo-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-angelina-vintage-long-boots-brown-matte",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-chantal-long-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-edona-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-pagale-boots-black-suede",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-paloma",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-mandy-long-boots-black-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-martina-patent-long-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-panikki-mix-boots-brown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-panord-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-parker-moccasin-carmen-red-nappa",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Danielle",
+        "Emme Parsons Ernest Sneaker",
+        "Emme Parsons Flat Mule",
+        "Emme Parsons Monceaux Mule",
+        "Emme Parsons Parker Moccasin",
+        "Emme Parsons Salome Mary Jane",
+        "Loafers Boots",
+        "Raffia",
+        "Woven Styles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "the-row--singleton-https-www-therow-com-products-parker-slip-on-210",
@@ -2051,11 +4798,76 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "emme-parsons--singleton-https-emmeparsons-com-products-parker-moccasin-taupe-suede",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Emme Parsons Danielle",
+        "Emme Parsons Ernest Sneaker",
+        "Emme Parsons Flat Mule",
+        "Emme Parsons Monceaux Mule",
+        "Emme Parsons Parker Moccasin",
+        "Emme Parsons Salome Mary Jane",
+        "Loafers Boots",
+        "Raffia",
+        "Suede",
+        "Woven Styles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-hb0681-03",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-tella-long-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long Boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-pauline",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-wilma-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-peggotty",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-penelope",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "st-agni--singleton-https-www-st-agni-com-products-perforated-square-toe-flat-black",
@@ -2069,6 +4881,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-petra",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-pia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-pippi",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "hereu--singleton-https-hereustudio-com-products-plegada-suede-deconstructed-lace-up-shoe-dark-brown",
       "brand": "HEREU",
       "sourceCategories": [
@@ -2076,7 +4915,10 @@
         "Women's Pre-Fall 2026",
         "Women's Shoes",
         "Women's Soft Shoes",
-        "Womens New In Shoes"
+        "Womens New In",
+        "Womens New In Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2086,7 +4928,19 @@
       "brand": "HEREU",
       "sourceCategories": [
         "Women's Shoes",
-        "Women's Soft Shoes"
+        "Women's Soft Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-poirot",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2099,10 +4953,38 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-poppyns",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-portia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "gucci--singleton-https-www-levelshoes-com-gucci-w-loli-ballerina-leather-w-hb-beige-calf-leather-women-ballerinas-44lwiz-html",
       "brand": "Gucci",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-prissy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2117,21 +4999,14 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "neous--singleton-https-www-neous-co-uk-products-ran-underknee-stretch-suede-boots-dark-chocolate",
-      "brand": "NEOUS",
-      "sourceCategories": [
-        "Shoes",
-        "Shoes New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-regency-knotted-black-leather",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "Flats",
+        "Flats 1",
+        "Footwear All",
         "Footwear All new",
+        "New Season Pre Spring Spring 26 Test",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2152,8 +5027,19 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-regency-mermaid-silk",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2166,8 +5052,35 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--singleton-https-www-carel-fr-products-regina-mocassins-cuir-marine-bleu",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "tory-burch--singleton-https-www-levelshoes-com-tory-burch-reva-punk-travel-ballerinas-black-leather-women-ballerinas-sedlkr-html",
       "brand": "Tory Burch",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "manu-atelier--singleton-https-manuatelier-com-products-rey-xx-black",
+      "brand": "MANU ATELIER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--singleton-https-www-giaborghini-it-products-riley-nappa-black",
+      "brand": "GIA BORGHINI",
       "sourceCategories": [
         "Flat Shoes"
       ],
@@ -2184,10 +5097,57 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-rita",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "burberry--singleton-https-www-levelshoes-com-burberry-robin-ballerinas-black-lambskin-leather-women-ballerinas-iwxcbo-html",
       "brand": "Burberry",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-rochester",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "valentino-garavani--singleton-https-www-farfetch-com-uk-shopping-women-valentino-garavani-rockstud-rubber-slippers-item-32722038-aspx",
+      "brand": "Valentino Garavani",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-rosie-lace-slipper-95-ivory-satin-and-ivory-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-ruby",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2212,24 +5172,219 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-scarf-nappa-slingbacks-black-ecru",
-      "brand": "TOTEME",
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-sally-slipper-95-black-satin-and-white-crystals",
+      "brand": "AMINA MUADDI",
       "sourceCategories": [
-        "FW26",
-        "New In",
-        "Pumps & Mules",
-        "Shoes"
+        "Slipper",
+        "View All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-scarf-nappa-slingbacks-cashew",
-      "brand": "TOTEME",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sandrine",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "FW26",
-        "Pumps & Mules",
-        "Shoes"
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sandalias-abf-97-riga-230-white-copia",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-abf-97-dilma-400-kaki",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-abf-97-estela-suede-camel",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-befree-anne-1579-brown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-befree-alin-592-celeste",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-corina-118-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-corina-139-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-emery-230-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-exe-bonita-350-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-exe-garda-928-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-exe-viena-500-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-exe-viena-500-tabaco",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-grace-621-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-grace-630-leopard",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-grace-630-taupe-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-kendal-435-black-silver",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sabrina-lynda-583-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sabrina-mina-523-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapato-sonia-818-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-sonia-811-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--singleton-https-exe-pt-products-sapatos-viena-253-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-scarlett",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2254,15 +5409,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "flabelus--singleton-https-www-levelshoes-com-flabelus-sethe-ballerinas-black-velvet-women-ballerinas-itehor-html",
-      "brand": "Flabelus",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "dolce-vita--singleton-https-www-dolcevita-com-products-sheer-illusion-thermal-tights-black",
       "brand": "DOLCE VITA",
       "sourceCategories": [
@@ -2273,11 +5419,39 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sherezade",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-shesh",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-shikibu",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-shimei",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "schutz--singleton-https-schutz-shoes-com-products-routeins",
@@ -2287,21 +5461,28 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "chlo--singleton-https-www-levelshoes-com-chloe-sand-slides-beige-cotton-women-slippers-rkoraq-html",
-      "brand": "Chloé",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sinai",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Slippers"
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "toteme--singleton-https-toteme-com-products-slip-jersey-ballerinas-grey-melange",
-      "brand": "TOTEME",
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sissi",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Flats",
-        "FW26",
-        "Shoes"
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "chlo--singleton-https-www-levelshoes-com-chloe-sand-slides-beige-cotton-women-slippers-rkoraq-html",
+      "brand": "Chloé",
+      "sourceCategories": [
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2316,6 +5497,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-smoking-raffia",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-smoking-silk-golden",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-snow",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "magnanni--singleton-https-www-levelshoes-com-magnanni-sophie-slippers-black-leather-women-hpsa6d-html",
       "brand": "Magnanni",
       "sourceCategories": [
@@ -2325,10 +5533,19 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "monfaradi-mare--singleton-https-www-levelshoes-com-monfaradi-mare-beach-ballerinas-neutral-rubber-women-ballerinas-lnlcce-html",
-      "brand": "MONFARADI MARE",
+      "modelFamilyId": "schutz--singleton-https-www-levelshoes-com-schutz-split-toe-ballerinas-black-other-women-ballerinas-o8r5nc-html",
+      "brand": "Schutz",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--singleton-https-www-carel-fr-products-starter-bottes-cuir-velours-marron-avec-brides-vernies",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2339,10 +5556,12 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2353,10 +5572,12 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2372,6 +5593,7 @@
       "modelFamilyId": "le-monde-beryl--singleton-https-lemondeberyl-com-products-stella-slipper-oxblood-leather-eel-effect",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
+        "New Season Pre Spring Spring 26 Test",
         "Pre Spring 26 TEST"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2383,10 +5605,12 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2405,6 +5629,15 @@
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sun-tzu",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2430,6 +5663,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "melissa--singleton-https-www-levelshoes-com-melissa-sweet-love-chrome-ballerinas-white-rubber-women-ballerinas-k8k37u-html",
+      "brand": "Melissa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-sylvestre",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "christen--singleton-https-www-levelshoes-com-christen-tabi-stretch-ballerinas-beige-leather-women-ballerinas-brnpue-html",
       "brand": "CHRISTEN",
       "sourceCategories": [
@@ -2439,9 +5690,57 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-tatiana",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-taylor-glass-slipper-90-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-teseo",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--singleton-https-www-carel-fr-products-thalia-bottes-cuir-noir-a-boucle",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--singleton-https-ceciliebahnsen-com-products-nf0a8g4znud-tnf-x-cb-bekah-shandal-rubber-white-green",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "a-emery--singleton-https-aemery-com-products-the-park-flat-black",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Footwear",
         "Leather Flats"
       ],
@@ -2452,6 +5751,7 @@
       "modelFamilyId": "a-emery--singleton-https-aemery-com-products-the-pia-flat-beaded-black",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Footwear",
         "Leather Flats"
       ],
@@ -2462,6 +5762,7 @@
       "modelFamilyId": "a-emery--singleton-https-aemery-com-products-the-ward-flat-black-suede",
       "brand": "A.EMERY",
       "sourceCategories": [
+        "Flats",
         "Footwear",
         "Leather Flats"
       ],
@@ -2469,11 +5770,66 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-tilda-vintage-boots-brown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-toby",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "adidas--singleton-https-www-levelshoes-com-adidas-tokyo-mary-jane-shoes-white-fabric-women-low-tops-khkmk0-html",
+      "brand": "adidas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "tod-s--singleton-https-www-farfetch-com-uk-shopping-women-tods-topstitching-calfskin-shoes-item-32985933-aspx",
+      "brand": "Tod's",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "simone-rocha--singleton-https-simonerocha-com-products-bbt1tb-0755-black-pearl-clear",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "simone-rocha--singleton-https-simonerocha-com-products-bbt1tb-0755-ballet-nude-pearl-clear",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-eyelet-black-nappa",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2482,8 +5838,8 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-eyelet-beige-black-ponyhair",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2492,8 +5848,8 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-mini-studs-black-nappa",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2502,8 +5858,8 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-mini-studs-creamy-nappa",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2512,8 +5868,8 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-eyelet-black-ponyhair",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2522,8 +5878,8 @@
       "modelFamilyId": "aeyde--singleton-https-www-aeyde-com-products-uma-hazelnut-snake",
       "brand": "AEYDE",
       "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
+        "Filler Suggested Product Logic Flats",
+        "Filler Suggested Product Logic Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2538,6 +5894,35 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-valentine",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-valeria",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--singleton-https-ceciliebahnsen-com-products-valeria-trueal-embellished-cloque-black-red",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoe Edit",
+        "Shoes",
+        "Shoes Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "valentino-garavani--singleton-https-www-levelshoes-com-valentino-garavani-valet-du-roi-ballerinas-cream-leather-women-ballerinas-konvaj-html",
       "brand": "Valentino Garavani",
       "sourceCategories": [
@@ -2545,6 +5930,18 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--singleton-https-www-sophiawebster-com-products-vanessa-mid-espadille",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Espadrilles",
+        "Sale Mid Heels",
+        "Sandals",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "ferragamo--singleton-https-www-levelshoes-com-ferragamo-vara-jelly-ballerinas-blue-pvc-women-ballerinas-jazmut-html",
@@ -2561,9 +5958,31 @@
       "sourceCategories": [
         "All Footwear",
         "Flats",
+        "Flats 1",
         "Footwear",
+        "Footwear All",
         "Footwear All new",
-        "New Arrivals"
+        "New Arrivals",
+        "Venetian Slipper Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "toteme--singleton-https-toteme-com-products-velvet-venetian-slippers-saffron",
+      "brand": "TOTEME",
+      "sourceCategories": [
+        "Shoes",
+        "Shoes Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-victoria",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2573,6 +5992,39 @@
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-vittoria-slipper-105-silver-mirror-and-multicolors-enamel-flowers",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes",
+        "Vittoria Slipper"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-vittoria-slipper-55-black-satin-and-multicolors-enamel-flowers",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes",
+        "Vittoria Slipper"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--singleton-https-aminamuaddi-com-products-vittoria-slipper-90-mint-satin-and-multicolors-enamel-flowers",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Slipper",
+        "View All Shoes",
+        "Vittoria Slipper"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2612,11 +6064,76 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-watson",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-wendy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "luis-onofre--singleton-https-luisonofre-com-products-wengen-black",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-wilona",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-winnie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-winston",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Seasonal Treats",
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-wonder",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-wybie",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "adidas--singleton-https-www-levelshoes-com-adidas-x-stella-mccartney-dropset-4-training-shoes-burgundy-fabric-women-training-3ews9f-html",
@@ -2628,12 +6145,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "pavement--singleton-https-pavement-official-com-products-zevia-structure-boots-black",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "flabelus--singleton-https-flabelus-com-products-zhou",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "khaite--singleton-https-khaite-com-products-zoe-patchwork-flat-in-chocolate",
       "brand": "KHAITE",
       "sourceCategories": [
         "Flats",
+        "New",
         "New Arrivals",
-        "Shoes"
+        "Shoes",
+        "Zoe Patchwork Flat"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2641,8 +6179,73 @@
   ],
   "topUnmappedSourceCategories": [
     {
+      "sourceCategory": "Slipper Woman",
+      "count": 187,
+      "brands": [
+        "FLABELUS"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "View All Shoes",
+      "count": 60,
+      "brands": [
+        "AMINA MUADDI"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Flats",
+      "count": 57,
+      "brands": [
+        "A.EMERY",
+        "AEYDE",
+        "BY FAR",
+        "KHAITE",
+        "LE MONDE BERYL",
+        "NEOUS",
+        "SOPHIA WEBSTER",
+        "ST. AGNI",
+        "STAUD",
+        "THE ATTICO"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Flat Shoes",
+      "count": 51,
+      "brands": [
+        "Alaïa",
+        "Bottega Veneta",
+        "Burberry",
+        "CHRISTEN",
+        "Ferragamo",
+        "Flabelus",
+        "GIA BORGHINI",
+        "Gucci",
+        "House Of Ballerinas",
+        "Jennifer Chamandi",
+        "Jimmy Choo",
+        "Le Monde Beryl",
+        "MONFARADI MARE",
+        "Maison Margiela",
+        "Melissa",
+        "Miu Miu",
+        "Prada",
+        "Proenza Schouler",
+        "Roger Vivier",
+        "Sam Edelman",
+        "Schutz",
+        "The Lline",
+        "Tony Bianco",
+        "Tory Burch",
+        "Valentino Garavani"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Slippers",
-      "count": 48,
+      "count": 50,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -2654,6 +6257,7 @@
         "Chloé",
         "Christian Louboutin",
         "FENDI",
+        "Flabelus",
         "Givenchy",
         "Good News",
         "Gucci",
@@ -2662,6 +6266,7 @@
         "Magnanni",
         "Manolo Blahnik",
         "Melissa",
+        "Miu Miu",
         "Neous",
         "Pedro García",
         "Prada",
@@ -2682,44 +6287,18 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flat Shoes",
-      "count": 47,
+      "sourceCategory": "Slipper",
+      "count": 39,
       "brands": [
-        "Alaïa",
-        "Bottega Veneta",
-        "Burberry",
-        "CHRISTEN",
-        "Ferragamo",
-        "Flabelus",
-        "Gucci",
-        "House Of Ballerinas",
-        "Jennifer Chamandi",
-        "Jimmy Choo",
-        "Le Monde Beryl",
-        "MONFARADI MARE",
-        "Maison Margiela",
-        "Miu Miu",
-        "Prada",
-        "Proenza Schouler",
-        "Roger Vivier",
-        "Sam Edelman",
-        "Schutz",
-        "The Lline",
-        "Tony Bianco",
-        "Tory Burch",
-        "Valentino Garavani"
+        "AMINA MUADDI"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flats",
-      "count": 39,
+      "sourceCategory": "Footwear All",
+      "count": 28,
       "brands": [
-        "AEYDE",
-        "KHAITE",
-        "LE MONDE BERYL",
-        "ST. AGNI",
-        "TOTEME"
+        "LE MONDE BERYL"
       ],
       "proposedMapping": null
     },
@@ -2732,24 +6311,32 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Filler Suggested Product Logic: Flats",
-      "count": 17,
+      "sourceCategory": "Sapatos",
+      "count": 28,
       "brands": [
-        "AEYDE"
+        "EXÉ"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Filler Suggested Product Logic: Shoes",
-      "count": 17,
+      "sourceCategory": "Flats 1",
+      "count": 27,
       "brands": [
-        "AEYDE"
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Seasonal Treats",
+      "count": 22,
+      "brands": [
+        "FLABELUS"
       ],
       "proposedMapping": null
     },
     {
       "sourceCategory": "New Arrivals",
-      "count": 16,
+      "count": 17,
       "brands": [
         "A.EMERY",
         "KHAITE",
@@ -2759,8 +6346,48 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "New Season - PF26",
+      "sourceCategory": "Filler Suggested Product Logic Flats",
+      "count": 17,
+      "brands": [
+        "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Filler Suggested Product Logic Shoes",
+      "count": 17,
+      "brands": [
+        "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "New Season Pf26",
       "count": 12,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Newarrivals",
+      "count": 11,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Toutes Les Chaussures",
+      "count": 11,
+      "brands": [
+        "CAREL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "New Season Pre Spring Spring 26 Test",
+      "count": 8,
       "brands": [
         "LE MONDE BERYL"
       ],
@@ -2783,6 +6410,14 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Womens Soft Shoes",
+      "count": 7,
+      "brands": [
+        "HEREU"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Luna Slippers",
       "count": 6,
       "brands": [
@@ -2791,10 +6426,10 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Shoes New In",
+      "sourceCategory": "Fw25 Shoes 1",
       "count": 6,
       "brands": [
-        "NEOUS"
+        "AMINA MUADDI"
       ],
       "proposedMapping": null
     },
@@ -2807,7 +6442,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "APRES SKI SHEARLING FLATS - Variants",
+      "sourceCategory": "Apres Ski Shearling Flats Variants",
       "count": 6,
       "brands": [
         "LE MONDE BERYL"
@@ -2815,15 +6450,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "FW26",
-      "count": 6,
-      "brands": [
-        "TOTEME"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "STELLA SLIPPER - collection",
+      "sourceCategory": "Stella Slipper Collection",
       "count": 5,
       "brands": [
         "LE MONDE BERYL"
@@ -2831,27 +6458,34 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "STELLA SLIPPER Leather - Variants",
+      "sourceCategory": "Stella Slipper Leather Variants",
       "count": 5,
       "brands": [
         "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Flats For Women",
+      "count": 5,
+      "brands": [
+        "JUDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Sale Shoes",
+      "count": 5,
+      "brands": [
+        "STAUD"
       ],
       "proposedMapping": null
     },
     {
       "sourceCategory": "New In",
-      "count": 5,
-      "brands": [
-        "AEYDE",
-        "TOTEME"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "LUNA SLIPPER LEATHER - Variants",
       "count": 4,
       "brands": [
-        "LE MONDE BERYL"
+        "AEYDE"
       ],
       "proposedMapping": null
     },
@@ -2866,6 +6500,22 @@
     {
       "sourceCategory": "Women's Pre-Fall 2026",
       "count": 4,
+      "brands": [
+        "HEREU"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Shoes Flats",
+      "count": 4,
+      "brands": [
+        "TOTEME"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Womens New In",
+      "count": 3,
       "brands": [
         "HEREU"
       ],
@@ -2912,130 +6562,26 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Claudia Slippers - collection",
+      "sourceCategory": "Claudia Slipper",
       "count": 3,
       "brands": [
         "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Pumps & Mules",
-      "count": 3,
-      "brands": [
-        "TOTEME"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "LUNA SLIPPER MESH - Variants",
-      "count": 2,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "LUNA SLIPPER SUEDE - Variants",
-      "count": 2,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Edge Mule and Pump",
-      "count": 2,
-      "brands": [
-        "CHRISTEN"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "OLYMPIA SLIPPER - Variants",
-      "count": 2,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "tax:clothing",
-      "count": 2,
-      "brands": [
-        "FLATTERED"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Shoes New Arrivals",
-      "count": 2,
-      "brands": [
-        "LEMAIRE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women Shoes New Arrivals",
-      "count": 2,
-      "brands": [
-        "LEMAIRE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Flip Flops",
-      "count": 2,
-      "brands": [
-        "MARAY"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "AW26 - New Season collection",
-      "count": 1,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Milly Flat",
-      "count": 1,
-      "brands": [
-        "KHAITE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "New Season Texture",
-      "count": 1,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Jane Flat",
-      "count": 1,
-      "brands": [
-        "KHAITE"
       ],
       "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 5372,
-    "babet": 280,
-    "loafer": 410,
-    "topuklu": 1062,
-    "sandal": 1597,
-    "mule": 366,
-    "bot-cizme": 1061,
-    "sneaker": 267,
-    "espadril": 48,
-    "oxford-derby": 3,
-    "clog": 12,
-    "diger": 266
+    "tumu": 9106,
+    "babet": 710,
+    "loafer": 483,
+    "topuklu": 1415,
+    "sandal": 3139,
+    "mule": 683,
+    "bot-cizme": 1376,
+    "sneaker": 555,
+    "espadril": 68,
+    "oxford-derby": 22,
+    "clog": 23,
+    "diger": 632
   }
 }

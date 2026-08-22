@@ -1,553 +1,80 @@
 {
-  "runStartedAt": "2026-08-21T08:52:37.010Z",
-  "runFinishedAt": "2026-08-21T09:00:24.918Z",
-  "totalProducts": 8685,
+  "runStartedAt": "2026-08-22T12:06:44.132Z",
+  "runFinishedAt": "2026-08-22T12:07:13.440Z",
+  "totalProducts": 15384,
   "sources": [
     {
-      "source": "SCHUTZ",
+      "source": "ZARA",
       "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 1385,
-      "parsedProducts": 1361,
-      "productsWithImages": 1361,
-      "productsWithMaterial": 1355,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/womens-shoes",
-        "/collections/clear-vinyl-shoes"
-      ],
-      "rawProductUrlsDiscovered": 1385,
-      "duplicateCount": 24,
-      "pagesTraversed": 13,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 9167
-    },
-    {
-      "source": "TONY BIANCO",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 1264,
-      "parsedProducts": 334,
-      "productsWithImages": 334,
-      "productsWithMaterial": 334,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/womens-loafers",
-        "/collections/casual-sandals"
-      ],
-      "rawProductUrlsDiscovered": 1264,
-      "duplicateCount": 930,
-      "pagesTraversed": 8,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 81
-    },
-    {
-      "source": "ST. AGNI",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 929,
-      "parsedProducts": 133,
-      "productsWithImages": 133,
-      "productsWithMaterial": 132,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/footwear",
-        "/collections/heels"
-      ],
-      "rawProductUrlsDiscovered": 929,
-      "duplicateCount": 796,
-      "pagesTraversed": 6,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 322
-    },
-    {
-      "source": "A.EMERY",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 290,
-      "parsedProducts": 119,
-      "productsWithImages": 119,
-      "productsWithMaterial": 18,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/footwear",
-        "/collections/sandals"
-      ],
-      "rawProductUrlsDiscovered": 290,
-      "duplicateCount": 171,
-      "pagesTraversed": 4,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 118
-    },
-    {
-      "source": "ALIAS MAE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 139,
-      "parsedProducts": 121,
-      "productsWithImages": 121,
-      "productsWithMaterial": 121,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/heels",
-        "/collections/boots"
-      ],
-      "rawProductUrlsDiscovered": 139,
-      "duplicateCount": 18,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 276
-    },
-    {
-      "source": "ALOHAS",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 206,
-      "parsedProducts": 182,
-      "productsWithImages": 182,
-      "productsWithMaterial": 55,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/shoes",
-        "/collections/ballet-flats"
-      ],
-      "rawProductUrlsDiscovered": 206,
-      "duplicateCount": 24,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 200
-    },
-    {
-      "source": "DEAR FRANCES",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 104,
-      "parsedProducts": 54,
-      "productsWithImages": 54,
-      "productsWithMaterial": 42,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/flats",
-        "/collections/boots"
-      ],
-      "rawProductUrlsDiscovered": 104,
-      "duplicateCount": 50,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 78
-    },
-    {
-      "source": "LE MONDE BERYL",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 285,
-      "parsedProducts": 276,
-      "productsWithImages": 276,
+      "method": "custom-adapter",
+      "discoveredProductLinks": 336,
+      "parsedProducts": 336,
+      "productsWithImages": 336,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
-        "/collections/footwear",
-        "/collections/boots"
+        "https://www.zara.com/us/en/woman-shoes-l1251.html",
+        "https://www.zara.com/us/en/woman-shoes-l1251.html",
+        "https://www.zara.com/us/en/woman-shoes-sandals-flat-l1282.html",
+        "https://www.zara.com/us/en/woman-shoes-sandals-heeled-l1284.html",
+        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
+        "https://www.zara.com/us/en/woman-shoes-flat-l1269.html",
+        "https://www.zara.com/us/en/woman-shoes-heeled-l1271.html",
+        "https://www.zara.com/us/en/woman-shoes-sneakers-l1287.html",
+        "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
+        "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 285,
-      "duplicateCount": 9,
-      "pagesTraversed": 4,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 361
-    },
-    {
-      "source": "LARROUDE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 544,
-      "parsedProducts": 511,
-      "productsWithImages": 511,
-      "productsWithMaterial": 335,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/fall-shoes",
-        "/collections/all-shoes"
-      ],
-      "rawProductUrlsDiscovered": 544,
-      "duplicateCount": 33,
-      "pagesTraversed": 4,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 915
-    },
-    {
-      "source": "DOLCE VITA",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 1240,
-      "parsedProducts": 1097,
-      "productsWithImages": 1097,
-      "productsWithMaterial": 1092,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/shoes-view-all",
-        "/collections/shoes-boots-booties"
-      ],
-      "rawProductUrlsDiscovered": 1240,
-      "duplicateCount": 143,
-      "pagesTraversed": 11,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 1186
-    },
-    {
-      "source": "JEFFREY CAMPBELL",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 814,
-      "parsedProducts": 671,
-      "productsWithImages": 671,
-      "productsWithMaterial": 665,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/menu-boots",
-        "/collections/knee-high-boots"
-      ],
-      "rawProductUrlsDiscovered": 814,
-      "duplicateCount": 143,
-      "pagesTraversed": 6,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 571
-    },
-    {
-      "source": "STEVE MADDEN",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 2459,
-      "parsedProducts": 1292,
-      "productsWithImages": 1292,
-      "productsWithMaterial": 1290,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/womens-new-arrivals",
-        "/collections/womens-best-sellers-2"
-      ],
-      "rawProductUrlsDiscovered": 2459,
-      "duplicateCount": 1167,
-      "pagesTraversed": 13,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 539
-    },
-    {
-      "source": "CHRISTEN",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 62,
-      "parsedProducts": 50,
-      "productsWithImages": 50,
-      "productsWithMaterial": 15,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/shoes"
-      ],
-      "rawProductUrlsDiscovered": 62,
-      "duplicateCount": 12,
-      "pagesTraversed": 2,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 98
-    },
-    {
-      "source": "NEOUS",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 129,
-      "parsedProducts": 65,
-      "productsWithImages": 65,
-      "productsWithMaterial": 11,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/shoes-new-in",
-        "/collections/shoes"
-      ],
-      "rawProductUrlsDiscovered": 129,
-      "duplicateCount": 64,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 65
-    },
-    {
-      "source": "STUDIO AMELIA",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 259,
-      "parsedProducts": 217,
-      "productsWithImages": 217,
-      "productsWithMaterial": 81,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/flats",
-        "/collections/shoes"
-      ],
-      "rawProductUrlsDiscovered": 259,
-      "duplicateCount": 42,
-      "pagesTraversed": 4,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 151
-    },
-    {
-      "source": "AEYDE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 701,
-      "parsedProducts": 534,
-      "productsWithImages": 534,
-      "productsWithMaterial": 38,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/flats",
-        "/collections/pumps"
-      ],
-      "rawProductUrlsDiscovered": 701,
-      "duplicateCount": 167,
-      "pagesTraversed": 5,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 110
-    },
-    {
-      "source": "HEREU",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 642,
-      "parsedProducts": 191,
-      "productsWithImages": 191,
-      "productsWithMaterial": 74,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/womens-new-in-shoes",
-        "/collections/womens-loafers"
-      ],
-      "rawProductUrlsDiscovered": 642,
-      "duplicateCount": 451,
-      "pagesTraversed": 5,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 84
-    },
-    {
-      "source": "SOULIERS MARTINEZ",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 79,
-      "parsedProducts": 75,
-      "productsWithImages": 75,
-      "productsWithMaterial": 18,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/designer-flat-shoes",
-        "/collections/designer-boots"
-      ],
-      "rawProductUrlsDiscovered": 79,
-      "duplicateCount": 4,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 29
-    },
-    {
-      "source": "LUIS ONOFRE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 314,
-      "parsedProducts": 314,
-      "productsWithImages": 314,
-      "productsWithMaterial": 0,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/loafers",
-        "/collections/pumps"
-      ],
-      "rawProductUrlsDiscovered": 314,
+      "rawProductUrlsDiscovered": 336,
       "duplicateCount": 0,
-      "pagesTraversed": 4,
+      "pagesTraversed": 19,
       "paginationExhausted": true,
-      "sourceReportedProductCount": 99
-    },
-    {
-      "source": "FLATTERED",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 281,
-      "parsedProducts": 180,
-      "productsWithImages": 180,
-      "productsWithMaterial": 26,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/ballet-flats",
-        "/collections/boots"
+      "collectionsCrawled": [
+        "https://www.zara.com/us/en/woman-shoes-l1251.html",
+        "https://www.zara.com/us/en/woman-shoes-l1251.html",
+        "https://www.zara.com/us/en/woman-shoes-sandals-flat-l1282.html",
+        "https://www.zara.com/us/en/woman-shoes-sandals-heeled-l1284.html",
+        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
+        "https://www.zara.com/us/en/woman-shoes-flat-l1269.html",
+        "https://www.zara.com/us/en/woman-shoes-heeled-l1271.html",
+        "https://www.zara.com/us/en/woman-shoes-sneakers-l1287.html",
+        "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
+        "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 281,
-      "duplicateCount": 101,
-      "pagesTraversed": 4,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 37
-    },
-    {
-      "source": "MARAY",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 193,
-      "parsedProducts": 161,
-      "productsWithImages": 161,
-      "productsWithMaterial": 42,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/sandals",
-        "/collections/mules"
-      ],
-      "rawProductUrlsDiscovered": 193,
-      "duplicateCount": 32,
-      "pagesTraversed": 3,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 63
+      "sourceReportedProductCount": null
     },
     {
       "source": "EXÉ",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 559,
-      "parsedProducts": 6,
-      "productsWithImages": 6,
-      "productsWithMaterial": 0,
+      "discoveredProductLinks": 390,
+      "parsedProducts": 389,
+      "productsWithImages": 389,
+      "productsWithMaterial": 57,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
-        "/collections/socas-e-mules"
+        "/collections/socas-e-mules",
+        "/collections/sapatilhas-e-tenis",
+        "/collections/sandalias",
+        "/collections/sapatos"
       ],
-      "rawProductUrlsDiscovered": 559,
-      "duplicateCount": 553,
+      "rawProductUrlsDiscovered": 390,
+      "duplicateCount": 1,
       "pagesTraversed": 4,
       "paginationExhausted": true,
-      "sourceReportedProductCount": 9
-    },
-    {
-      "source": "THE ROW",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 2525,
-      "parsedProducts": 233,
-      "productsWithImages": 233,
-      "productsWithMaterial": 9,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/women-shoes",
-        "/collections/women-boots"
+      "collectionsCrawled": [
+        "/collections/socas-e-mules",
+        "/collections/sapatilhas-e-tenis",
+        "/collections/sandalias",
+        "/collections/sapatos"
       ],
-      "rawProductUrlsDiscovered": 2525,
-      "duplicateCount": 2292,
-      "pagesTraversed": 13,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 370
-    },
-    {
-      "source": "KHAITE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 1028,
-      "parsedProducts": 166,
-      "productsWithImages": 166,
-      "productsWithMaterial": 24,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/shoes",
-        "/collections/boots"
-      ],
-      "rawProductUrlsDiscovered": 1028,
-      "duplicateCount": 862,
-      "pagesTraversed": 7,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 197
-    },
-    {
-      "source": "LEMAIRE",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 810,
-      "parsedProducts": 90,
-      "productsWithImages": 90,
-      "productsWithMaterial": 35,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/women-shoes"
-      ],
-      "rawProductUrlsDiscovered": 810,
-      "duplicateCount": 720,
-      "pagesTraversed": 5,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 260
-    },
-    {
-      "source": "PROENZA SCHOULER",
-      "status": "success",
-      "method": "shopify",
-      "discoveredProductLinks": 654,
-      "parsedProducts": 130,
-      "productsWithImages": 128,
-      "productsWithMaterial": 126,
-      "errors": [],
-      "hitLegacyCap": false,
-      "footwearRoots": [
-        "/collections/boots",
-        "/collections/sandals"
-      ],
-      "rawProductUrlsDiscovered": 654,
-      "duplicateCount": 524,
-      "pagesTraversed": 5,
-      "paginationExhausted": true,
-      "sourceReportedProductCount": 94
+      "sourceReportedProductCount": 324
     }
   ],
   "failedBrands": [],
   "successfulBrands": [
-    "SCHUTZ",
-    "TONY BIANCO",
-    "ST. AGNI",
-    "A.EMERY",
-    "ALIAS MAE",
-    "ALOHAS",
-    "DEAR FRANCES",
-    "LE MONDE BERYL",
-    "LARROUDE",
-    "DOLCE VITA",
-    "JEFFREY CAMPBELL",
-    "STEVE MADDEN",
-    "CHRISTEN",
-    "NEOUS",
-    "STUDIO AMELIA",
-    "AEYDE",
-    "HEREU",
-    "SOULIERS MARTINEZ",
-    "LUIS ONOFRE",
-    "FLATTERED",
-    "MARAY",
-    "EXÉ",
-    "THE ROW",
-    "KHAITE",
-    "LEMAIRE",
-    "PROENZA SCHOULER"
+    "ZARA",
+    "EXÉ"
   ]
 }

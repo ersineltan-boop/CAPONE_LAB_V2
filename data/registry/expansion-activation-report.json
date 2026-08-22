@@ -1,0 +1,690 @@
+{
+  "generatedAt": "2026-08-22T11:39:00.039Z",
+  "collectableBefore": 38,
+  "collectableAfter": 50,
+  "imported": [],
+  "alreadyPresent": [
+    {
+      "brand": "REFORMATION",
+      "id": "reformation",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "VINCE CAMUTO",
+      "id": "vince-camuto",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "NINE WEST",
+      "id": "nine-west",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "CAMPER",
+      "id": "camper",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "AXEL ARIGATO",
+      "id": "axel-arigato",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "VEJA",
+      "id": "veja",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "GOLDEN GOOSE",
+      "id": "golden-goose",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "AUTRY",
+      "id": "autry",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MOON BOOT",
+      "id": "moon-boot",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "BIRKENSTOCK",
+      "id": "birkenstock",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MELISSA",
+      "id": "melissa",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "JW ANDERSON",
+      "id": "jw-anderson",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "ACNE STUDIOS",
+      "id": "acne-studios",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "ISABEL MARANT",
+      "id": "isabel-marant",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MARNI",
+      "id": "marni",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MAISON MARGIELA",
+      "id": "maison-margiela",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "CHLOÉ",
+      "id": "chlo",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "JIMMY CHOO",
+      "id": "jimmy-choo",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MANOLO BLAHNIK",
+      "id": "manolo-blahnik",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "ROGER VIVIER",
+      "id": "roger-vivier",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "FERRAGAMO",
+      "id": "ferragamo",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "TKEES",
+      "id": "tkees",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MAGUIRE",
+      "id": "maguire",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "LOEFFLER RANDALL",
+      "id": "loeffler-randall",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "FREDA SALVADOR",
+      "id": "freda-salvador",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "SARAH FLINT",
+      "id": "sarah-flint",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "BIBI LOU",
+      "id": "bibi-lou",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "BROTHER VELLIES",
+      "id": "brother-vellies",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "INTENTIONALLY BLANK",
+      "id": "intentionally-blank",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "PALOMA WOOL",
+      "id": "paloma-wool",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "AERA",
+      "id": "aera",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "MARGAUX",
+      "id": "margaux",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "4CCCCEES",
+      "id": "4ccccees",
+      "reason": "duplicate id"
+    },
+    {
+      "brand": "ALEXANDRE BIRMAN",
+      "id": "alexandre-birman",
+      "reason": "duplicate id"
+    }
+  ],
+  "outcomes": [
+    {
+      "brand": "ZARA",
+      "id": "zara",
+      "activated": true,
+      "platform": "CUSTOM_ADAPTER",
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectedCount": 337,
+      "status": "PARTIAL",
+      "reason": "Activated after Zara public ajax collector",
+      "paginationExhausted": true
+    },
+    {
+      "brand": "BY FAR",
+      "id": "by-far",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "WANDLER",
+      "id": "wandler",
+      "activated": false,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "collectorType": "UNSUPPORTED",
+      "reason": "NEEDS_CUSTOM_ADAPTER/UNSUPPORTED: previous probe found no stable generic collector"
+    },
+    {
+      "brand": "REFORMATION",
+      "id": "reformation",
+      "activated": false,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "collectorType": "UNSUPPORTED",
+      "reason": "NEEDS_CUSTOM_ADAPTER/UNSUPPORTED: previous probe found no stable generic collector"
+    },
+    {
+      "brand": "ATP ATELIER",
+      "id": "atp-atelier",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "NODALETO",
+      "id": "nodaleto",
+      "activated": false,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "collectorType": "UNSUPPORTED",
+      "reason": "NEEDS_CUSTOM_ADAPTER/UNSUPPORTED: previous probe found no stable generic collector"
+    },
+    {
+      "brand": "REIKE NEN",
+      "id": "reike-nen",
+      "activated": false,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "collectorType": "UNSUPPORTED",
+      "reason": "NEEDS_CUSTOM_ADAPTER/UNSUPPORTED: previous probe found no stable generic collector"
+    },
+    {
+      "brand": "SENSO",
+      "id": "senso",
+      "activated": false,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "collectorType": "UNSUPPORTED",
+      "reason": "NEEDS_CUSTOM_ADAPTER/UNSUPPORTED: previous probe found no stable generic collector"
+    },
+    {
+      "brand": "GIA BORGHINI",
+      "id": "gia-borghini",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "MALONE SOULIERS",
+      "id": "malone-souliers",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "EMME PARSONS",
+      "id": "emme-parsons",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "CULT GAIA",
+      "id": "cult-gaia",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "STAUD",
+      "id": "staud",
+      "activated": false,
+      "status": "READY_AUTOMATIC",
+      "reason": "Already active"
+    },
+    {
+      "brand": "NOMASEI",
+      "id": "nomasei",
+      "activated": false,
+      "collectedCount": 0,
+      "status": "FAILED",
+      "reason": "Site erişilemedi: HTTP 403"
+    },
+    {
+      "brand": "FLABELUS",
+      "id": "flabelus",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 330,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 8,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "NAGUISA",
+      "id": "naguisa",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 108,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 7,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "BILLI BI",
+      "id": "billi-bi",
+      "activated": false,
+      "platform": "UNSUPPORTED",
+      "collectedCount": 0,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "reason": "Shopify products JSON erişilemedi"
+    },
+    {
+      "brand": "PAVEMENT",
+      "id": "pavement",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 165,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 7,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "LEMON JELLY",
+      "id": "lemon-jelly",
+      "activated": false,
+      "platform": "UNSUPPORTED",
+      "collectedCount": 0,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "reason": "Shopify products JSON erişilemedi"
+    },
+    {
+      "brand": "SOFTWAVES",
+      "id": "softwaves",
+      "activated": false,
+      "platform": "UNSUPPORTED",
+      "collectedCount": 0,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "reason": "Shopify products JSON erişilemedi"
+    },
+    {
+      "brand": "TUAS",
+      "id": "tuas",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 8,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 1,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "MARIA CARLOTA",
+      "id": "maria-carlota",
+      "activated": false,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectedCount": 0,
+      "status": "NEEDS_FOOTWEAR_CONFIG",
+      "reason": "HTTP 404 for https://amariacarlota.com/collections/shoes; HTTP 404 for https://amariacarlota.com/collections/footwear; HTTP 404 for https://amariacarlota.com/collections/all-shoes; HTTP 404 for https://amariacarlota.com/collections/womens-shoes; HTTP 404 for https://amariacarlota.com/collections/shoes; HTTP 404 for https://amariacarlota.com/collections/footwear; HTTP 404 for https://amariacarlota.com/collections/all-shoes; HTTP 404 for https://amariacarlota.com/collections/womens-shoes; Structured collection returned zero footwear products for MARIA CARLOTA"
+    },
+    {
+      "brand": "JUDE",
+      "id": "jude",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 214,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 39,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "YUUL YIE",
+      "id": "yuul-yie",
+      "activated": false,
+      "platform": "UNSUPPORTED",
+      "collectedCount": 0,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "reason": "Shopify products JSON erişilemedi"
+    },
+    {
+      "brand": "CAREL",
+      "id": "carel",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 181,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 10,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "COPERNI",
+      "id": "coperni",
+      "activated": false,
+      "platform": "UNSUPPORTED",
+      "collectedCount": 0,
+      "status": "NEEDS_CUSTOM_ADAPTER",
+      "reason": "Shopify products JSON erişilemedi"
+    },
+    {
+      "brand": "CECILIE BAHNSEN",
+      "id": "cecilie-bahnsen",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 24,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 3,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "SIMONE ROCHA",
+      "id": "simone-rocha",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 16,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 2,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "AMINA MUADDI",
+      "id": "amina-muaddi",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 163,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 14,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "SOPHIA WEBSTER",
+      "id": "sophia-webster",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 141,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 12,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "MANU ATELIER",
+      "id": "manu-atelier",
+      "activated": true,
+      "platform": "SHOPIFY_PUBLIC",
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectedCount": 75,
+      "status": "PARTIAL",
+      "reason": "Activated after probe + test collection",
+      "collectionsCrawled": 17,
+      "paginationExhausted": true
+    },
+    {
+      "brand": "PRETTY BALLERINAS",
+      "id": "pretty-ballerinas",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "TKEES",
+      "id": "tkees",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "MAGUIRE",
+      "id": "maguire",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "LOEFFLER RANDALL",
+      "id": "loeffler-randall",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "FREDA SALVADOR",
+      "id": "freda-salvador",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "SARAH FLINT",
+      "id": "sarah-flint",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "BIBI LOU",
+      "id": "bibi-lou",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "BROTHER VELLIES",
+      "id": "brother-vellies",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "INTENTIONALLY BLANK",
+      "id": "intentionally-blank",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "PALOMA WOOL",
+      "id": "paloma-wool",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "AERA",
+      "id": "aera",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "MARGAUX",
+      "id": "margaux",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "4CCCCEES",
+      "id": "4ccccees",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "ALEXANDRE BIRMAN",
+      "id": "alexandre-birman",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "VINCE CAMUTO",
+      "id": "vince-camuto",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "NINE WEST",
+      "id": "nine-west",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "MARC FISHER",
+      "id": "marc-fisher",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "AXEL ARIGATO",
+      "id": "axel-arigato",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "MELISSA",
+      "id": "melissa",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "BIRKENSTOCK",
+      "id": "birkenstock",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "CAMPER",
+      "id": "camper",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "HISPANITAS",
+      "id": "hispanitas",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "WONDERS",
+      "id": "wonders",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "JONAK",
+      "id": "jonak",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "BOBBIES",
+      "id": "bobbies",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "LUIZA BARCELOS",
+      "id": "luiza-barcelos",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "VICENZA",
+      "id": "vicenza",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "CARRANO",
+      "id": "carrano",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "PETITE JOLIE",
+      "id": "petite-jolie",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "FLY LONDON",
+      "id": "fly-london",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "K.JACQUES",
+      "id": "k-jacques",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "REPETTO",
+      "id": "repetto",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "VEJA",
+      "id": "veja",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "GOLDEN GOOSE",
+      "id": "golden-goose",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "AUTRY",
+      "id": "autry",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    },
+    {
+      "brand": "MOON BOOT",
+      "id": "moon-boot",
+      "status": "SKIPPED_TARGET_REACHED",
+      "reason": "Already at 50 collectable brands"
+    }
+  ]
+}

@@ -229,16 +229,7 @@ export async function discoverVerifiedFootwearCollections(input: {
     (candidate) => candidate.qualityStatus === "REJECT" && candidate.sampleSize > 0,
   );
 
-  const selected =
-    input.fullCoverage === true
-      ? verified.length > 0
-        ? verified
-        : autoDiscovered
-      : verified.length > 0
-        ? verified.slice(0, 2)
-        : autoDiscovered.length > 0
-          ? autoDiscovered.slice(0, 2)
-          : [];
+  const selected = selectDiscoveredFootwearPaths(verified, autoDiscovered, input.fullCoverage === true);
 
   let status: CollectionDiscoveryStatus;
   if (verified.length > 0) {
@@ -260,6 +251,19 @@ export async function discoverVerifiedFootwearCollections(input: {
     urls: selected.map((candidate) => candidate.url),
     candidates,
   };
+}
+
+export function selectDiscoveredFootwearPaths<T>(
+  verified: readonly T[],
+  autoDiscovered: readonly T[],
+  fullCoverage: boolean,
+): T[] {
+  if (fullCoverage) {
+    return verified.length > 0 ? [...verified] : [...autoDiscovered];
+  }
+  if (verified.length > 0) return verified.slice(0, 2);
+  if (autoDiscovered.length > 0) return autoDiscovered.slice(0, 2);
+  return [];
 }
 
 export function pickPreferredFootwearCollectionPaths(

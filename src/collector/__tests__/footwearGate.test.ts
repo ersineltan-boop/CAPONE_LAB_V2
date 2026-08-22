@@ -210,3 +210,41 @@ describe("shopifyProductToPilot strict gate", () => {
     expect(product).toBeNull();
   });
 });
+
+describe("localized footwear completeness", () => {
+  it("accepts Portuguese shoe product types", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Soca Lisboa",
+        productType: "Socas",
+        tags: ["Calçado"],
+        handle: "soca-lisboa",
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+
+  it("accepts products from a verified Portuguese footwear collection even without English terms", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Lisboa Preto",
+        productType: "",
+        tags: [],
+        handle: "lisboa-preto",
+        collectionPath: "/collections/socas-e-mules",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+
+  it("does not treat Shopify collection: merchandising tags as product type", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Nappa over-the-knee boots bark",
+        productType: "Shoes",
+        tags: ["collection:FW26_womenswear", "collection:tote", "collection: New in"],
+        handle: "nappa-over-the-knee-boots-bark",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+});

@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { collectShopifyCollectionMembership } from "../src/collector/shopifyCollectionMembership";
+import { FULL_COLLECTION_CRAWL_CAP } from "../src/collector/fullCoveragePaths";
 import { globalDedupe } from "../src/collector/dedupe";
 import { mergeProductCatalog } from "../src/collector/mergeProducts";
 import type { PilotProduct } from "../src/collector/types";
@@ -44,7 +45,7 @@ async function main() {
     console.log(`\n=== Collection membership recrawl: ${entry.brand} ===`);
     const collected = await collectShopifyCollectionMembership(config, {
       knownProductUrls: known,
-      maxCollections: 40,
+      maxCollections: FULL_COLLECTION_CRAWL_CAP,
     });
     console.log(`Discovered collections: ${collected.discoveredCollections.length}`);
     console.log(`Crawled footwear collections: ${collected.crawledCollections.length}`);

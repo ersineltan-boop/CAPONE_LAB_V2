@@ -34,11 +34,55 @@ describe("source coverage status", () => {
     ).toBe("NEEDS_PROBE");
   });
 
+  it("does not mark FULL when the collection crawl safety ceiling was hit", () => {
+    expect(
+      resolveCoverageStatus({
+        uniqueProductCount: 800,
+        sourceReportedProductCount: 820,
+        paginationExhausted: true,
+        footwearRootDiscovered: true,
+        hitCollectionCrawlCap: true,
+      }),
+    ).toBe("PARTIAL");
+  });
+
+  it("does not mark FULL for NEEDS_CUSTOM_ADAPTER sources", () => {
+    expect(
+      resolveCoverageStatus({
+        uniqueProductCount: 12,
+        paginationExhausted: true,
+        collectionStatus: "NEEDS_CUSTOM_ADAPTER",
+      }),
+    ).toBe("NEEDS_CUSTOM_ADAPTER");
+  });
+
   it("does not mark a listing crawl FULL without pagination exhaustion", () => {
     expect(
       resolveCoverageStatus({
         uniqueProductCount: 40,
         paginationExhausted: false,
+        footwearRootDiscovered: true,
+      }),
+    ).toBe("PARTIAL");
+  });
+
+  it("does not mark FULL when a crawl finished without errors but has no source total", () => {
+    expect(
+      resolveCoverageStatus({
+        uniqueProductCount: 50,
+        paginationExhausted: true,
+        footwearRootDiscovered: true,
+        errors: [],
+      }),
+    ).toBe("PARTIAL");
+  });
+
+  it("does not mark FULL from a tiny reported collection when the catalog is larger", () => {
+    expect(
+      resolveCoverageStatus({
+        uniqueProductCount: 334,
+        sourceReportedProductCount: 81,
+        paginationExhausted: true,
         footwearRootDiscovered: true,
       }),
     ).toBe("PARTIAL");

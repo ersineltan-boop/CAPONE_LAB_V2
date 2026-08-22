@@ -7,7 +7,7 @@ export async function sleep(ms: number): Promise<void> {
 
 export async function fetchText(
   url: string,
-  options?: { delayMs?: number },
+  options?: { delayMs?: number; headers?: Record<string, string> },
 ): Promise<{ ok: boolean; status: number; text: string; url: string; error?: string }> {
   if (options?.delayMs) await sleep(options.delayMs);
 
@@ -16,6 +16,7 @@ export async function fetchText(
       headers: {
         "User-Agent": USER_AGENT,
         Accept: "text/html,application/json;q=0.9,*/*;q=0.8",
+        ...options?.headers,
       },
       redirect: "follow",
     });

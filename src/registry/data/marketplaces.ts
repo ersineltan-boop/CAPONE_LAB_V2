@@ -30,6 +30,7 @@ export interface MarketplaceRegistryEntry {
 
 export interface MarketplacePilotState {
   activePilotId: string | null;
+  activeMarketplaceIds?: string[];
   mytheresaStatus: "ACTIVE" | "BLOCKED" | "NEEDS_BROWSER_OR_ADAPTER" | "NEEDS_PROBE";
   notes?: string;
 }
@@ -88,9 +89,9 @@ const FALLBACK_PILOTS: Record<string, MarketplaceRegistryEntry> = {
     kind: "LUXURY_MARKETPLACE",
     officialUrl: "https://www.farfetch.com",
     isActive: true,
-    discoveryStatus: "ACTIVE",
+    discoveryStatus: "PARTIAL",
     newArrivalDiscoveryStatus: "NEEDS_PROBE",
-    notes: "Fallback luxury marketplace pilot",
+    notes: "Multi-brand marketplace — JSON-LD listing collector",
   },
   "net-a-porter": {
     id: "net-a-porter",
@@ -137,6 +138,17 @@ const FALLBACK_PILOTS: Record<string, MarketplaceRegistryEntry> = {
     newArrivalUrls: ["https://www.levelshoes.com/women/shoes/new.html"],
     notes: "Fallback luxury marketplace pilot",
   },
+  "free-people": {
+    id: "free-people",
+    name: "Free People",
+    country: "US",
+    kind: "LUXURY_MARKETPLACE",
+    officialUrl: "https://www.freepeople.com",
+    isActive: true,
+    discoveryStatus: "BLOCKED",
+    newArrivalDiscoveryStatus: "NOT_SUPPORTED",
+    notes: "Multi-brand retailer — marketplace, never a Brand Registry source",
+  },
 };
 
 export const DEFAULT_MARKETPLACE_PILOT_STATE: MarketplacePilotState = {
@@ -149,9 +161,23 @@ export function readMarketplacePilotState(
 ): MarketplacePilotState {
   return {
     activePilotId: raw.activePilotId ?? "mytheresa",
+    activeMarketplaceIds: raw.activeMarketplaceIds,
     mytheresaStatus: raw.mytheresaStatus ?? "NEEDS_PROBE",
     notes: raw.notes,
   };
+}
+
+export function resolveActiveMarketplaceIds(
+  state: MarketplacePilotState = readMarketplacePilotState(),
+): string[] {
+  const ids: string[] = [];
+  if (state.activePilotId && state.activePilotId !== "mytheresa") {
+    ids.push(state.activePilotId);
+  }
+  for (const id of state.activeMarketplaceIds ?? []) {
+    if (id && id !== "mytheresa") ids.push(id);
+  }
+  return [...new Set(ids)];
 }
 
 export function selectActiveMarketplaceEntries(
@@ -171,21 +197,22 @@ export function selectActiveMarketplaceEntries(
     notes: mytheresaBlocked ? "BLOCKED / NEEDS_BROWSER_OR_ADAPTER" : MYTHERESA.notes,
   };
 
-  const entries: MarketplaceRegistryEntry[] = [];
-  if (mytheresa.isActive) {
-    entries.push(mytheresa);
-  } else if (state.activePilotId && state.activePilotId !== "mytheresa") {
-    entries.push({ ...mytheresa, isActive: false });
-    const fallback = FALLBACK_PILOTS[state.activePilotId];
-    if (fallback) entries.push(fallback);
-  } else {
-    entries.push({ ...mytheresa, isActive: false });
+  const entries: MarketplaceRegistryEntry[] = [mytheresa];
+  if (mytheresa.isActive) return entries;
+
+  const seen = new Set<string>(["mytheresa"]);
+  for (const id of resolveActiveMarketplaceIds(state)) {
+    if (seen.has(id)) continue;
+    const fallback = FALLBACK_PILOTS[id];
+    if (!fallback) continue;
+    seen.add(id);
+    entries.push({ ...fallback, isActive: true });
   }
 
   return entries;
 }
 
-/** One customer-facing active pilot. Blocked Mytheresa is kept internally. */
+/** Customer-facing marketplaces. Blocked Mytheresa is kept internally. */
 export const MARKETPLACE_ENTRIES: readonly MarketplaceRegistryEntry[] =
   selectActiveMarketplaceEntries();
 

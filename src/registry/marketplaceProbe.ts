@@ -31,8 +31,15 @@ export const MARKETPLACE_PROBE_CANDIDATES: MarketplaceProbeCandidate[] = [
   {
     id: "farfetch",
     name: "Farfetch",
-    footwearUrl: "https://www.farfetch.com/shopping/women/shoes-1/items.aspx",
+    footwearUrl: "https://www.farfetch.com/uk/shopping/women/shoes-1/items.aspx",
     productHrefPattern: /href="([^"]*\/shopping\/[^"]+\/item-[^"]+)"/i,
+    pageParam: "page",
+  },
+  {
+    id: "free-people",
+    name: "Free People",
+    footwearUrl: "https://www.freepeople.com/shoes/",
+    productHrefPattern: /href="([^"]*\/shop\/[^"]+)"/i,
   },
   {
     id: "net-a-porter",

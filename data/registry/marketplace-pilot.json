@@ -1,5 +1,9 @@
 {
   "activePilotId": "level-shoes",
+  "activeMarketplaceIds": [
+    "level-shoes",
+    "farfetch"
+  ],
   "mytheresaStatus": "NEEDS_BROWSER_OR_ADAPTER",
-  "notes": "Fallback pilot: Level Shoes"
+  "notes": "Level Shoes + Farfetch after successful collection. Free People remains blocked."
 }

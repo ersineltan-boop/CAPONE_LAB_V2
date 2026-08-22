@@ -71,6 +71,8 @@ export interface SourceCollectionReport {
   sourceCategoriesCollected?: string[];
   paginationExhausted?: boolean;
   hitLegacyCap?: boolean;
+  hitCollectionCrawlCap?: boolean;
+  collectionsCrawled?: string[];
 }
 
 export type CollectionMethod =

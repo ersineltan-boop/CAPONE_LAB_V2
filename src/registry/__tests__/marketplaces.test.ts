@@ -27,4 +27,20 @@ describe("marketplace registry pilot", () => {
     });
     expect(browsableMarketplaces(entries).map((entry) => entry.id)).toEqual(["level-shoes"]);
   });
+
+  it("can expose multiple successfully collected marketplaces together", () => {
+    const entries = selectActiveMarketplaceEntries({
+      activePilotId: "level-shoes",
+      activeMarketplaceIds: ["level-shoes", "farfetch"],
+      mytheresaStatus: "NEEDS_BROWSER_OR_ADAPTER",
+    });
+    expect(entries.filter((entry) => entry.isActive).map((entry) => entry.id)).toEqual([
+      "level-shoes",
+      "farfetch",
+    ]);
+    expect(browsableMarketplaces(entries).map((entry) => entry.id)).toEqual([
+      "level-shoes",
+      "farfetch",
+    ]);
+  });
 });
