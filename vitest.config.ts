@@ -48,6 +48,7 @@ export default defineConfig({
       "src/radar/master/**/*.test.ts",
       "src/radar/__tests__/radarMainCategories.test.ts",
       "src/refresh/**/*.test.ts",
+      "src/onboarding/**/*.test.ts",
     ],
   },
 });

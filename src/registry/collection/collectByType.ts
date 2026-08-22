@@ -17,6 +17,9 @@ import { mergeFullCoverageCollectionPaths, FULL_COLLECTION_CRAWL_CAP } from "../
 import { isNewArrivalsCollectionPath } from "../../newArrivals/detectNewness";
 import { collectDriesVanNoten, DRIES_BRAND_ID } from "../../collector/driesVanNoten";
 import { collectZara, ZARA_BRAND_ID } from "../../collector/zara";
+import { parseInditexLocale } from "../../onboarding/adapters";
+import { collectInditexLikeBrand } from "../../onboarding/inditexLike";
+import { defaultOnboardingHttp } from "../../onboarding/http";
 
 export interface FootwearCollectionConfigResult {
   config: PilotSourceConfig | null;
@@ -209,6 +212,15 @@ export async function collectBrandByCollectorType(
 
   if (entry.id === ZARA_BRAND_ID) {
     const collected = await collectZara(entry);
+    return {
+      ...collected,
+      hitBackfillLimit: false,
+    };
+  }
+
+  const inditexLocale = parseInditexLocale(entry.notes);
+  if (inditexLocale && entry.id !== ZARA_BRAND_ID && entry.id !== DRIES_BRAND_ID) {
+    const collected = await collectInditexLikeBrand(entry, defaultOnboardingHttp, inditexLocale);
     return {
       ...collected,
       hitBackfillLimit: false,

@@ -1,0 +1,102 @@
+# Nightly CAPONE brand onboarding for Vercel production.
+# Schedule: 23:00 Türkiye time = 20:00 UTC (UTC+3, no DST).
+#
+# Separate from CAPONE daily refresh (04:00 UTC / 07:00 Türkiye).
+# Cloud only. No OPENAI_API_KEY. No user PC dependency.
+#
+# Model Families persist as data/multibrand/model-families/ shards.
+# Do not commit data/multibrand/model-families.json. Do not add Git LFS.
+
+name: CAPONE brand onboarding
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: capone-brand-onboarding
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  onboard:
+    name: Probe, validate, and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Brand onboarding
+        run: npm run onboard:brands
+
+      - name: Tests
+        id: tests
+        run: npm test
+
+      - name: Production build
+        id: build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+
+      - name: Commit and push onboarded data
+        if: success() && github.ref == 'refs/heads/main'
+        id: publish
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config http.postBuffer 524288000
+          npx tsx scripts/stage-brand-onboarding-data.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+            echo "commit_created=false" >> "$GITHUB_OUTPUT"
+            echo "No tracked CAPONE onboarding changes to publish."
+            exit 0
+          fi
+          git commit -m "chore(data): automatic CAPONE brand onboarding"
+          git push origin HEAD
+          echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          echo "commit_created=true" >> "$GITHUB_OUTPUT"
+
+      - name: Finalize job summary
+        if: always()
+        env:
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+          DATA_CHANGED: ${{ steps.publish.outputs.data_changed }}
+          COMMIT_CREATED: ${{ steps.publish.outputs.commit_created }}
+        run: |
+          {
+            echo ""
+            echo "## Gates"
+            echo "- Tests: ${TESTS_OUTCOME:-skipped}"
+            echo "- Production build: ${BUILD_OUTCOME:-skipped}"
+            echo "- Data changed: ${DATA_CHANGED:-unknown}"
+            echo "- Commit/push created: ${COMMIT_CREATED:-no}"
+            echo "- Publish step: ${PUBLISH_OUTCOME:-skipped}"
+            echo ""
+            echo "If tests or production build fail, data is not committed and Vercel production stays on the last good main commit."
+            echo "No OpenAI secrets are used."
+          } >> "$GITHUB_STEP_SUMMARY"

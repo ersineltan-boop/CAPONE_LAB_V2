@@ -19,5 +19,5 @@
     "noUncheckedSideEffectImports": true
   },
   "include": ["src"],
-  "exclude": ["src/collector", "src/analysis", "src/refresh", "src/vision", "src/insight", "src/history", "src/radar", "src/productDates/loadEnrichment.ts", "src/taxonomy/vision/runPilot.ts", "src/taxonomy/vision/analyzeFamilyLive.ts", "src/modelFamily/dataset.ts", "src/modelFamily/__tests__/dataset.test.ts"]
+  "exclude": ["src/collector", "src/analysis", "src/refresh", "src/onboarding", "src/vision", "src/insight", "src/history", "src/radar", "src/productDates/loadEnrichment.ts", "src/taxonomy/vision/runPilot.ts", "src/taxonomy/vision/analyzeFamilyLive.ts", "src/modelFamily/dataset.ts", "src/modelFamily/__tests__/dataset.test.ts"]
 }

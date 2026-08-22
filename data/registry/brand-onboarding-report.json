@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-22T16:13:58.438Z",
+  "dryRun": true,
+  "summary": {
+    "activeBrandsBefore": 50,
+    "activeBrandsAfter": 50,
+    "attempted": 3,
+    "activated": 0,
+    "partial": 0,
+    "blocked": 0,
+    "customAdapterRequired": 3,
+    "failed": 0,
+    "storageStatus": "ok"
+  },
+  "attempts": [
+    {
+      "brand": "MAISON MARGIELA",
+      "slug": "maison-margiela",
+      "attemptedAt": "2026-08-22T16:13:58.438Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 19,
+        "levelShoes": 35
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "ISABEL MARANT",
+      "slug": "isabel-marant",
+      "attemptedAt": "2026-08-22T16:13:58.438Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 5,
+        "levelShoes": 4
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    },
+    {
+      "brand": "MASSIMO DUTTI",
+      "slug": "massimo-dutti",
+      "attemptedAt": "2026-08-22T16:13:58.438Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    }
+  ]
+}
