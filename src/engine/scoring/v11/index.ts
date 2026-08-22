@@ -1,0 +1,10 @@
+export { computeTrendMetrics, countAdoptionUnitsInContext } from "./computeTrendMetrics";
+export { computeTrendStrength, aggregateTrendStrength, computeTrendStrengthComponents } from "./trendStrength";
+export { computeMomentumScore, hasSufficientMomentumHistory, aggregateMomentumScore } from "./momentumScore";
+export { computeNoveltyScore } from "./noveltyScore";
+export { computeSaturationScore } from "./saturationScore";
+export { computeOpportunityScore } from "./opportunityScore";
+export { deriveTrendStage } from "./trendStage";
+export { createScoringContext } from "./context";
+export { scoreDedupedBrandCount, countDedupedIndependentBrands } from "./dedupedBrandCount";
+export { scoreSegmentSpread, collectObservedSegments, hasMassMarketPenetration } from "./segmentSpread";

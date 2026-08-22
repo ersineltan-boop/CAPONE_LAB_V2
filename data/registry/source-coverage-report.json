@@ -1,0 +1,940 @@
+{
+  "generatedAt": "2026-08-21T09:14:14.074Z",
+  "entries": [
+    {
+      "sourceId": "schutz",
+      "sourceName": "SCHUTZ",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Brezilya",
+      "officialUrl": "https://schutz-shoes.com",
+      "footwearRoots": [
+        "/collections/womens-shoes",
+        "/collections/clear-vinyl-shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Clear Vinyl Shoes",
+        "Womens Shoes"
+      ],
+      "sourceReportedProductCount": 9167,
+      "rawProductUrlsDiscovered": 1385,
+      "productsDiscovered": 1361,
+      "uniqueProductsAfterDedupe": 1361,
+      "modelFamilyCount": 736,
+      "duplicateCount": 24,
+      "pagesTraversed": 13,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 183,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 9167 ürün bildiriyor, collector 1361 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "tony-bianco",
+      "sourceName": "TONY BIANCO",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Avustralya",
+      "officialUrl": "https://tonybianco.com.au",
+      "footwearRoots": [
+        "/collections/womens-loafers",
+        "/collections/casual-sandals"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Casual Sandals",
+        "Womens Loafers"
+      ],
+      "sourceReportedProductCount": 81,
+      "rawProductUrlsDiscovered": 1264,
+      "productsDiscovered": 334,
+      "uniqueProductsAfterDedupe": 334,
+      "modelFamilyCount": 123,
+      "duplicateCount": 930,
+      "pagesTraversed": 8,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 32,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "st-agni",
+      "sourceName": "ST. AGNI",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Avustralya",
+      "officialUrl": "https://www.st-agni.com",
+      "footwearRoots": [
+        "/collections/footwear",
+        "/collections/heels"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Footwear",
+        "Heels"
+      ],
+      "sourceReportedProductCount": 322,
+      "rawProductUrlsDiscovered": 929,
+      "productsDiscovered": 133,
+      "uniqueProductsAfterDedupe": 133,
+      "modelFamilyCount": 67,
+      "duplicateCount": 796,
+      "pagesTraversed": 6,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 14,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 322 ürün bildiriyor, collector 133 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "a-emery",
+      "sourceName": "A.EMERY",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Avustralya",
+      "officialUrl": "https://aemery.com",
+      "footwearRoots": [
+        "/collections/footwear",
+        "/collections/sandals"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Footwear",
+        "Sandals"
+      ],
+      "sourceReportedProductCount": 118,
+      "rawProductUrlsDiscovered": 290,
+      "productsDiscovered": 119,
+      "uniqueProductsAfterDedupe": 119,
+      "modelFamilyCount": 46,
+      "duplicateCount": 171,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "alias-mae",
+      "sourceName": "ALIAS MAE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Avustralya",
+      "officialUrl": "https://aliasmae.com.au",
+      "footwearRoots": [
+        "/collections/heels",
+        "/collections/boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Boots",
+        "Heels"
+      ],
+      "sourceReportedProductCount": 276,
+      "rawProductUrlsDiscovered": 139,
+      "productsDiscovered": 121,
+      "uniqueProductsAfterDedupe": 121,
+      "modelFamilyCount": 118,
+      "duplicateCount": 18,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 47,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 276 ürün bildiriyor, collector 121 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "alohas",
+      "sourceName": "ALOHAS",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İspanya",
+      "officialUrl": "https://alohas.com",
+      "footwearRoots": [
+        "/collections/shoes",
+        "/collections/ballet-flats"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Ballet Flats",
+        "Shoes"
+      ],
+      "sourceReportedProductCount": 200,
+      "rawProductUrlsDiscovered": 206,
+      "productsDiscovered": 182,
+      "uniqueProductsAfterDedupe": 182,
+      "modelFamilyCount": 119,
+      "duplicateCount": 24,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 6,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "dear-frances",
+      "sourceName": "DEAR FRANCES",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İngiltere",
+      "officialUrl": "https://dearfrances.com",
+      "footwearRoots": [
+        "/collections/flats",
+        "/collections/boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Boots",
+        "Flats"
+      ],
+      "sourceReportedProductCount": 78,
+      "rawProductUrlsDiscovered": 104,
+      "productsDiscovered": 54,
+      "uniqueProductsAfterDedupe": 54,
+      "modelFamilyCount": 27,
+      "duplicateCount": 50,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 21,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 78 ürün bildiriyor, collector 54 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "le-monde-beryl",
+      "sourceName": "LE MONDE BERYL",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İngiltere",
+      "officialUrl": "https://lemondeberyl.com",
+      "footwearRoots": [
+        "/collections/footwear",
+        "/collections/boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Boots",
+        "Footwear"
+      ],
+      "sourceReportedProductCount": 361,
+      "rawProductUrlsDiscovered": 285,
+      "productsDiscovered": 276,
+      "uniqueProductsAfterDedupe": 276,
+      "modelFamilyCount": 149,
+      "duplicateCount": 9,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 35,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 361 ürün bildiriyor, collector 276 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "larroude",
+      "sourceName": "LARROUDE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "ABD",
+      "officialUrl": "https://larroude.com",
+      "footwearRoots": [
+        "/collections/fall-shoes",
+        "/collections/all-shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "All Shoes",
+        "Fall Shoes"
+      ],
+      "sourceReportedProductCount": 915,
+      "rawProductUrlsDiscovered": 544,
+      "productsDiscovered": 511,
+      "uniqueProductsAfterDedupe": 511,
+      "modelFamilyCount": 254,
+      "duplicateCount": 33,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 51,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 915 ürün bildiriyor, collector 511 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "dolce-vita",
+      "sourceName": "DOLCE VITA",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "ABD",
+      "officialUrl": "https://www.dolcevita.com",
+      "footwearRoots": [
+        "/collections/shoes-view-all",
+        "/collections/shoes-boots-booties"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Shoes Boots Booties",
+        "Shoes View All"
+      ],
+      "sourceReportedProductCount": 1186,
+      "rawProductUrlsDiscovered": 1240,
+      "productsDiscovered": 1097,
+      "uniqueProductsAfterDedupe": 1097,
+      "modelFamilyCount": 543,
+      "duplicateCount": 143,
+      "pagesTraversed": 11,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 62,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "jeffrey-campbell",
+      "sourceName": "JEFFREY CAMPBELL",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "ABD",
+      "officialUrl": "https://jeffreycampbellshoes.com",
+      "footwearRoots": [
+        "/collections/menu-boots",
+        "/collections/knee-high-boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Knee High Boots",
+        "Menu Boots"
+      ],
+      "sourceReportedProductCount": 571,
+      "rawProductUrlsDiscovered": 814,
+      "productsDiscovered": 671,
+      "uniqueProductsAfterDedupe": 671,
+      "modelFamilyCount": 625,
+      "duplicateCount": 143,
+      "pagesTraversed": 6,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "steve-madden",
+      "sourceName": "STEVE MADDEN",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "ABD",
+      "officialUrl": "https://www.stevemadden.com",
+      "footwearRoots": [
+        "/collections/womens-new-arrivals",
+        "/collections/womens-best-sellers-2"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Womens Best Sellers 2",
+        "Womens New Arrivals"
+      ],
+      "sourceReportedProductCount": 539,
+      "rawProductUrlsDiscovered": 2459,
+      "productsDiscovered": 1292,
+      "uniqueProductsAfterDedupe": 1292,
+      "modelFamilyCount": 684,
+      "duplicateCount": 1167,
+      "pagesTraversed": 13,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": true,
+      "verifiedNewProductCount": 202,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "christen",
+      "sourceName": "CHRISTEN",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İsviçre",
+      "officialUrl": "https://christen.com",
+      "footwearRoots": [
+        "/collections/shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 1,
+      "categoryNames": [
+        "Shoes"
+      ],
+      "sourceReportedProductCount": 98,
+      "rawProductUrlsDiscovered": 62,
+      "productsDiscovered": 50,
+      "uniqueProductsAfterDedupe": 50,
+      "modelFamilyCount": 20,
+      "duplicateCount": 12,
+      "pagesTraversed": 2,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 98 ürün bildiriyor, collector 50 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "neous",
+      "sourceName": "NEOUS",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İngiltere",
+      "officialUrl": "https://www.neous.co.uk",
+      "footwearRoots": [
+        "/collections/shoes-new-in",
+        "/collections/shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Shoes",
+        "Shoes New In"
+      ],
+      "sourceReportedProductCount": 65,
+      "rawProductUrlsDiscovered": 129,
+      "productsDiscovered": 65,
+      "uniqueProductsAfterDedupe": 65,
+      "modelFamilyCount": 32,
+      "duplicateCount": 64,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": true,
+      "verifiedNewProductCount": 16,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "studio-amelia",
+      "sourceName": "STUDIO AMELIA",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Avustralya",
+      "officialUrl": "https://studioamelia.co",
+      "footwearRoots": [
+        "/collections/flats",
+        "/collections/shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Flats",
+        "Shoes"
+      ],
+      "sourceReportedProductCount": 151,
+      "rawProductUrlsDiscovered": 259,
+      "productsDiscovered": 217,
+      "uniqueProductsAfterDedupe": 217,
+      "modelFamilyCount": 71,
+      "duplicateCount": 42,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 10,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "aeyde",
+      "sourceName": "AEYDE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Almanya",
+      "officialUrl": "https://www.aeyde.com",
+      "footwearRoots": [
+        "/collections/flats",
+        "/collections/pumps"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Flats",
+        "Pumps"
+      ],
+      "sourceReportedProductCount": 110,
+      "rawProductUrlsDiscovered": 701,
+      "productsDiscovered": 534,
+      "uniqueProductsAfterDedupe": 534,
+      "modelFamilyCount": 181,
+      "duplicateCount": 167,
+      "pagesTraversed": 5,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "hereu",
+      "sourceName": "HEREU",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İspanya",
+      "officialUrl": "https://hereustudio.com",
+      "footwearRoots": [
+        "/collections/womens-new-in-shoes",
+        "/collections/womens-loafers"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Womens Loafers",
+        "Womens New In Shoes"
+      ],
+      "sourceReportedProductCount": 84,
+      "rawProductUrlsDiscovered": 642,
+      "productsDiscovered": 191,
+      "uniqueProductsAfterDedupe": 191,
+      "modelFamilyCount": 78,
+      "duplicateCount": 451,
+      "pagesTraversed": 5,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": true,
+      "verifiedNewProductCount": 28,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "souliers-martinez",
+      "sourceName": "SOULIERS MARTINEZ",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Fransa",
+      "officialUrl": "https://souliers-martinez.com",
+      "footwearRoots": [
+        "/collections/designer-flat-shoes",
+        "/collections/designer-boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Designer Boots",
+        "Designer Flat Shoes"
+      ],
+      "sourceReportedProductCount": 29,
+      "rawProductUrlsDiscovered": 79,
+      "productsDiscovered": 75,
+      "uniqueProductsAfterDedupe": 75,
+      "modelFamilyCount": 46,
+      "duplicateCount": 4,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "luis-onofre",
+      "sourceName": "LUIS ONOFRE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Portekiz",
+      "officialUrl": "https://luisonofre.com",
+      "footwearRoots": [
+        "/collections/loafers",
+        "/collections/pumps"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Loafers",
+        "Pumps"
+      ],
+      "sourceReportedProductCount": 99,
+      "rawProductUrlsDiscovered": 314,
+      "productsDiscovered": 314,
+      "uniqueProductsAfterDedupe": 314,
+      "modelFamilyCount": 263,
+      "duplicateCount": 0,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "flattered",
+      "sourceName": "FLATTERED",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "İsveç",
+      "officialUrl": "https://flattered.com",
+      "footwearRoots": [
+        "/collections/ballet-flats",
+        "/collections/boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Ballet Flats",
+        "Boots"
+      ],
+      "sourceReportedProductCount": 37,
+      "rawProductUrlsDiscovered": 281,
+      "productsDiscovered": 180,
+      "uniqueProductsAfterDedupe": 180,
+      "modelFamilyCount": 96,
+      "duplicateCount": 101,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "maray",
+      "sourceName": "MARAY",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Portekiz",
+      "officialUrl": "https://maray.pt",
+      "footwearRoots": [
+        "/collections/sandals",
+        "/collections/mules"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Mules",
+        "Sandals"
+      ],
+      "sourceReportedProductCount": 63,
+      "rawProductUrlsDiscovered": 193,
+      "productsDiscovered": 161,
+      "uniqueProductsAfterDedupe": 161,
+      "modelFamilyCount": 107,
+      "duplicateCount": 32,
+      "pagesTraversed": 3,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "ex-",
+      "sourceName": "EXÉ",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Portekiz",
+      "officialUrl": "https://exe.pt",
+      "footwearRoots": [
+        "/collections/socas-e-mules"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 1,
+      "categoryNames": [
+        "Socas E Mules"
+      ],
+      "sourceReportedProductCount": 9,
+      "rawProductUrlsDiscovered": 559,
+      "productsDiscovered": 6,
+      "uniqueProductsAfterDedupe": 6,
+      "modelFamilyCount": 29,
+      "duplicateCount": 553,
+      "pagesTraversed": 4,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 9 ürün bildiriyor, collector 6 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "the-row",
+      "sourceName": "THE ROW",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "USA",
+      "officialUrl": "https://www.therow.com",
+      "footwearRoots": [
+        "/collections/women-shoes",
+        "/collections/women-boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Women Boots",
+        "Women Shoes"
+      ],
+      "sourceReportedProductCount": 370,
+      "rawProductUrlsDiscovered": 2525,
+      "productsDiscovered": 233,
+      "uniqueProductsAfterDedupe": 233,
+      "modelFamilyCount": 105,
+      "duplicateCount": 2292,
+      "pagesTraversed": 13,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 16,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 370 ürün bildiriyor, collector 233 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "khaite",
+      "sourceName": "KHAITE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "USA",
+      "officialUrl": "https://khaite.com",
+      "footwearRoots": [
+        "/collections/shoes",
+        "/collections/boots"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Boots",
+        "Shoes"
+      ],
+      "sourceReportedProductCount": 197,
+      "rawProductUrlsDiscovered": 1028,
+      "productsDiscovered": 166,
+      "uniqueProductsAfterDedupe": 166,
+      "modelFamilyCount": 68,
+      "duplicateCount": 862,
+      "pagesTraversed": 7,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 19,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 197 ürün bildiriyor, collector 166 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "toteme",
+      "sourceName": "TOTEME",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Sweden",
+      "officialUrl": "https://toteme.com",
+      "footwearRoots": [],
+      "footwearRootDiscovered": false,
+      "footwearCategoryCount": 0,
+      "categoryNames": [],
+      "sourceReportedProductCount": null,
+      "rawProductUrlsDiscovered": 15,
+      "productsDiscovered": 15,
+      "uniqueProductsAfterDedupe": 15,
+      "modelFamilyCount": 15,
+      "duplicateCount": 0,
+      "pagesTraversed": null,
+      "paginationStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Registry status: NEEDS_FOOTWEAR_CONFIG",
+        "Kaynak ayakkabı kategorisi keşfedilemedi"
+      ]
+    },
+    {
+      "sourceId": "lemaire",
+      "sourceName": "LEMAIRE",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "France",
+      "officialUrl": "https://www.lemaire.fr",
+      "footwearRoots": [
+        "/collections/women-shoes"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 1,
+      "categoryNames": [
+        "Women Shoes"
+      ],
+      "sourceReportedProductCount": 260,
+      "rawProductUrlsDiscovered": 810,
+      "productsDiscovered": 90,
+      "uniqueProductsAfterDedupe": 90,
+      "modelFamilyCount": 47,
+      "duplicateCount": 720,
+      "pagesTraversed": 5,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Kaynak 260 ürün bildiriyor, collector 90 benzersiz ürün aldı"
+      ]
+    },
+    {
+      "sourceId": "dries-van-noten",
+      "sourceName": "DRIES VAN NOTEN",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Belgium",
+      "officialUrl": "https://www.driesvannoten.com",
+      "footwearRoots": [],
+      "footwearRootDiscovered": false,
+      "footwearCategoryCount": 0,
+      "categoryNames": [],
+      "sourceReportedProductCount": null,
+      "rawProductUrlsDiscovered": 0,
+      "productsDiscovered": 0,
+      "uniqueProductsAfterDedupe": 0,
+      "modelFamilyCount": 0,
+      "duplicateCount": 0,
+      "pagesTraversed": null,
+      "paginationStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "Registry status: NEEDS_FOOTWEAR_CONFIG",
+        "Kaynak ayakkabı kategorisi keşfedilemedi"
+      ]
+    },
+    {
+      "sourceId": "proenza-schouler",
+      "sourceName": "PROENZA SCHOULER",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "USA",
+      "officialUrl": "https://www.proenzaschouler.com",
+      "footwearRoots": [
+        "/collections/boots",
+        "/collections/sandals"
+      ],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 2,
+      "categoryNames": [
+        "Boots",
+        "Sandals"
+      ],
+      "sourceReportedProductCount": 94,
+      "rawProductUrlsDiscovered": 654,
+      "productsDiscovered": 130,
+      "uniqueProductsAfterDedupe": 130,
+      "modelFamilyCount": 73,
+      "duplicateCount": 524,
+      "pagesTraversed": 5,
+      "paginationStatus": "success",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 27,
+      "collectionStatus": "READY_AUTOMATIC",
+      "coverageStatus": "FULL",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceId": "mytheresa",
+      "sourceName": "Mytheresa",
+      "sourceType": "LUXURY_MARKETPLACE",
+      "country": "DE",
+      "officialUrl": "https://www.mytheresa.com",
+      "footwearRoots": [],
+      "footwearRootDiscovered": false,
+      "footwearCategoryCount": 0,
+      "categoryNames": [],
+      "sourceReportedProductCount": null,
+      "rawProductUrlsDiscovered": 0,
+      "productsDiscovered": 0,
+      "uniqueProductsAfterDedupe": 0,
+      "modelFamilyCount": 0,
+      "duplicateCount": 0,
+      "pagesTraversed": null,
+      "paginationStatus": "BLOCKED",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "collectionStatus": "BLOCKED",
+      "coverageStatus": "FAILED",
+      "errors": [],
+      "warnings": [
+        "Yeni Gelenler keşfi doğrulanmadı",
+        "Henüz toplanmış ürün yok"
+      ]
+    },
+    {
+      "sourceId": "level-shoes",
+      "sourceName": "Level Shoes",
+      "sourceType": "LUXURY_MARKETPLACE",
+      "country": "AE",
+      "officialUrl": "https://www.levelshoes.com",
+      "footwearRoots": [],
+      "footwearRootDiscovered": true,
+      "footwearCategoryCount": 1,
+      "categoryNames": [
+        "Shoes"
+      ],
+      "sourceReportedProductCount": null,
+      "rawProductUrlsDiscovered": 40,
+      "productsDiscovered": 40,
+      "uniqueProductsAfterDedupe": 40,
+      "modelFamilyCount": 40,
+      "duplicateCount": 0,
+      "pagesTraversed": null,
+      "paginationStatus": "ACTIVE",
+      "newArrivalsSourceDiscovered": true,
+      "verifiedNewProductCount": 40,
+      "collectionStatus": "ACTIVE",
+      "coverageStatus": "PARTIAL",
+      "errors": [],
+      "warnings": [
+        "HTML listing collector did not prove full catalog exhaustion"
+      ]
+    }
+  ]
+}

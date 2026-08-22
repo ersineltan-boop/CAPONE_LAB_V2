@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "title": "Leather sneakers",
+      "handle": "leather-sneakers-w",
+      "product_type": "Shoes",
+      "tags": "ACCESSORIES, SHOES, SNEAKERS, WOMEN, DVNWOMEN",
+      "images": [{ "src": "https://www.driesvannoten.com/cdn/shop/files/sneaker.jpg" }],
+      "variants": [{ "title": "Default", "sku": "WS-1" }]
+    },
+    {
+      "title": "Leather slingback pumps",
+      "handle": "leather-pumps-w",
+      "product_type": "Shoes",
+      "tags": "ACCESSORIES, SHOES, WOMEN, DVNWOMEN",
+      "images": [{ "src": "https://www.driesvannoten.com/cdn/shop/files/pump.jpg" }],
+      "variants": [{ "title": "Default", "sku": "WS-2" }]
+    },
+    {
+      "title": "Floral East-West bag",
+      "handle": "floral-bag",
+      "product_type": "Bags & Leather Goods",
+      "tags": "ACCESSORIES, BAGS, WOMEN",
+      "images": [{ "src": "https://www.driesvannoten.com/cdn/shop/files/bag.jpg" }],
+      "variants": [{ "title": "Default", "sku": "BW-1" }]
+    },
+    {
+      "title": "Embroidered wool blazer",
+      "handle": "wool-blazer",
+      "product_type": "Blazers",
+      "tags": "RTW, WOMEN",
+      "images": [{ "src": "https://www.driesvannoten.com/cdn/shop/files/blazer.jpg" }],
+      "variants": [{ "title": "Default", "sku": "WW-1" }]
+    },
+    {
+      "title": "Leather high top sneakers",
+      "handle": "leather-sneakers-m",
+      "product_type": "Shoes",
+      "tags": "ACCESSORIES, SHOES, SNEAKERS, MEN, DVNMEN",
+      "images": [{ "src": "https://www.driesvannoten.com/cdn/shop/files/mens.jpg" }],
+      "variants": [{ "title": "Default", "sku": "MS-1" }]
+    }
+  ]
+}

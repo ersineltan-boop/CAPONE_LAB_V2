@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-08-21T07:33:17.376Z",
+  "totalFamilies": 1188,
+  "completeness": {
+    "totalFamilies": 1188,
+    "categoryKnownCount": 1106,
+    "categoryKnownPercent": 93.1,
+    "unclassifiedCount": 82,
+    "toeShapeKnown": 76,
+    "toeShapeUnknown": 1112,
+    "backConstructionKnown": 192,
+    "backConstructionUnknown": 996,
+    "heelTypeKnown": 264,
+    "heelTypeUnknown": 924,
+    "criticalCompletenessPercent": 34.5,
+    "averageFeatureCompletenessPercent": 11.7
+  },
+  "categoryProvenance": {
+    "PRODUCT_EVIDENCE": 895,
+    "LEGACY_CATEGORY": 211,
+    "INSUFFICIENT": 82
+  },
+  "unclassifiedCount": 82,
+  "fields": [
+    {
+      "field": "global.backConstruction",
+      "status": {
+        "KNOWN": 192,
+        "UNKNOWN": 996,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 192,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.closureFeatures",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.colorFamily",
+      "status": {
+        "KNOWN": 886,
+        "UNKNOWN": 302,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 886,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.embellishmentFeatures",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.hardwareIntensity",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.hardwareType",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.heelHeightClass",
+      "status": {
+        "KNOWN": 186,
+        "UNKNOWN": 1002,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 186,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.heelHeightMm",
+      "status": {
+        "KNOWN": 37,
+        "UNKNOWN": 1151,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 37,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.heelType",
+      "status": {
+        "KNOWN": 264,
+        "UNKNOWN": 924,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 264,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.materialFamily",
+      "status": {
+        "KNOWN": 863,
+        "UNKNOWN": 325,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 863,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.platformConstruction",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.sideConstruction",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.soleProfile",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.strapFeatures",
+      "status": {
+        "KNOWN": 88,
+        "UNKNOWN": 1100,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 88,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.surfacePattern",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.toeLength",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.toeOpening",
+      "status": {
+        "KNOWN": 53,
+        "UNKNOWN": 1135,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 53,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.toeShape",
+      "status": {
+        "KNOWN": 76,
+        "UNKNOWN": 1112,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 76,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    },
+    {
+      "field": "global.vampHeight",
+      "status": {
+        "KNOWN": 0,
+        "UNKNOWN": 1188,
+        "NOT_APPLICABLE": 0
+      },
+      "knownSourceBreakdown": {
+        "PRODUCT_PAGE": 0,
+        "STRUCTURED_DATA": 0,
+        "PRODUCT_TEXT": 0,
+        "COLLECTION_TAG": 0,
+        "DERIVED": 0,
+        "IMAGE": 0,
+        "UNKNOWN": 0
+      },
+      "suspicious": []
+    }
+  ],
+  "valueDistributions": {
+    "primaryCategory": {
+      "SANDAL": 275,
+      "BALLET_FLAT": 90,
+      "PUMP": 229,
+      "BOOT": 282,
+      "UNCLASSIFIED": 82,
+      "SNEAKER": 36,
+      "MULE": 101,
+      "LOAFER": 88,
+      "CLOG": 3,
+      "ESPADRILLE": 1,
+      "OXFORD_DERBY": 1
+    },
+    "backConstruction": {
+      "UNKNOWN": 996,
+      "BACKLESS": 127,
+      "SLINGBACK": 65
+    },
+    "toeShape": {
+      "UNKNOWN": 1112,
+      "ROUND": 29,
+      "SQUARE": 10,
+      "POINTED": 37
+    },
+    "toeLength": {
+      "UNKNOWN": 1188
+    },
+    "heelHeightClass": {
+      "UNKNOWN": 1002,
+      "FLAT": 37,
+      "HIGH": 50,
+      "MID": 44,
+      "LOW": 55
+    },
+    "heelType": {
+      "UNKNOWN": 924,
+      "NONE": 105,
+      "OTHER": 72,
+      "WEDGE": 26,
+      "STILETTO": 21,
+      "KITTEN": 23,
+      "SCULPTURAL": 6,
+      "BLOCK": 11
+    },
+    "soleProfile": {
+      "UNKNOWN": 1188
+    },
+    "platformConstruction": {
+      "UNKNOWN": 1188
+    },
+    "shaftHeight": {
+      "ANKLE": 52,
+      "UNKNOWN": 215,
+      "KNEE_HIGH": 10,
+      "OVER_THE_KNEE": 4,
+      "MID_CALF": 1
+    }
+  },
+  "suspiciousPatterns": [],
+  "invalidKnownFeatures": 0,
+  "newArrivalsDates": {
+    "earliestModelFamilyFirstSeenAt": "2026-08-18T10:03:26.763Z",
+    "latestModelFamilyFirstSeenAt": "2026-08-19T16:07:55.196Z",
+    "countByDate": {
+      "2026-08-19": 1144,
+      "2026-08-18": 44
+    },
+    "countLast24H": 0,
+    "countLast7D": 1188,
+    "countLast30D": 1188,
+    "countLast90D": 1188,
+    "bulkBackfillDates": [
+      {
+        "date": "2026-08-19",
+        "count": 1144,
+        "sharePercent": 96.3
+      },
+      {
+        "date": "2026-08-18",
+        "count": 44,
+        "sharePercent": 3.7
+      }
+    ],
+    "familiesWithoutFirstSeen": 0
+  },
+  "safeCategoryDerivedRules": [
+    {
+      "id": "MULE_BACKLESS",
+      "category": "MULE",
+      "field": "backConstruction",
+      "value": "BACKLESS",
+      "rationale": "Mule primary category requires backless construction by definition; assigned only when category itself is supported."
+    }
+  ]
+}

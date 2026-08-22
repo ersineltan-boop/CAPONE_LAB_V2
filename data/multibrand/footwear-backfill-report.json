@@ -1,0 +1,791 @@
+{
+  "generatedAt": "2026-08-19T16:08:05.047Z",
+  "activeBrands": 26,
+  "verifiedOrAutoDiscovered": 26,
+  "notFoundBrands": [],
+  "needsManualConfigBrands": [
+    "TOTEME",
+    "DRIES VAN NOTEN"
+  ],
+  "discovery": [
+    {
+      "brand": "SCHUTZ",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/womens-shoes",
+      "footwearCollectionUrl": "https://schutz-shoes.com/collections/womens-shoes",
+      "footwearCollectionHandle": "womens-shoes",
+      "topCandidate": {
+        "path": "/collections/womens-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 10
+    },
+    {
+      "brand": "TONY BIANCO",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/womens-loafers",
+      "footwearCollectionUrl": "https://tonybianco.com.au/collections/womens-loafers",
+      "footwearCollectionHandle": "womens-loafers",
+      "topCandidate": {
+        "path": "/collections/womens-loafers",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "ST. AGNI",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/footwear",
+      "footwearCollectionUrl": "https://www.st-agni.com/collections/footwear",
+      "footwearCollectionHandle": "footwear",
+      "topCandidate": {
+        "path": "/collections/footwear",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 5
+    },
+    {
+      "brand": "A.EMERY",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/footwear",
+      "footwearCollectionUrl": "https://aemery.com/collections/footwear",
+      "footwearCollectionHandle": "footwear",
+      "topCandidate": {
+        "path": "/collections/footwear",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 6
+    },
+    {
+      "brand": "ALIAS MAE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/heels",
+      "footwearCollectionUrl": "https://aliasmae.com.au/collections/heels",
+      "footwearCollectionHandle": "heels",
+      "topCandidate": {
+        "path": "/collections/heels",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "ALOHAS",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/shoes",
+      "footwearCollectionUrl": "https://alohas.com/collections/shoes",
+      "footwearCollectionHandle": "shoes",
+      "topCandidate": {
+        "path": "/collections/shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "DEAR FRANCES",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/flats",
+      "footwearCollectionUrl": "https://dearfrances.com/collections/flats",
+      "footwearCollectionHandle": "flats",
+      "topCandidate": {
+        "path": "/collections/flats",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 7
+    },
+    {
+      "brand": "LE MONDE BERYL",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/footwear",
+      "footwearCollectionUrl": "https://lemondeberyl.com/collections/footwear",
+      "footwearCollectionHandle": "footwear",
+      "topCandidate": {
+        "path": "/collections/footwear",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 5
+    },
+    {
+      "brand": "LARROUDE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/fall-shoes",
+      "footwearCollectionUrl": "https://larroude.com/collections/fall-shoes",
+      "footwearCollectionHandle": "fall-shoes",
+      "topCandidate": {
+        "path": "/collections/fall-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "DOLCE VITA",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/shoes-view-all",
+      "footwearCollectionUrl": "https://www.dolcevita.com/collections/shoes-view-all",
+      "footwearCollectionHandle": "shoes-view-all",
+      "topCandidate": {
+        "path": "/collections/shoes-view-all",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "JEFFREY CAMPBELL",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/menu-boots",
+      "footwearCollectionUrl": "https://jeffreycampbellshoes.com/collections/menu-boots",
+      "footwearCollectionHandle": "menu-boots",
+      "topCandidate": {
+        "path": "/collections/menu-boots",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "STEVE MADDEN",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/womens-new-arrivals",
+      "footwearCollectionUrl": "https://www.stevemadden.com/collections/womens-new-arrivals",
+      "footwearCollectionHandle": "womens-new-arrivals",
+      "topCandidate": {
+        "path": "/collections/womens-new-arrivals",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 12
+    },
+    {
+      "brand": "CHRISTEN",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/shoes",
+      "footwearCollectionUrl": "https://christen.com/collections/shoes",
+      "footwearCollectionHandle": "shoes",
+      "topCandidate": {
+        "path": "/collections/shoes",
+        "acceptedCount": 8,
+        "sampleSize": 10,
+        "footwearRatio": 0.8,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 2
+    },
+    {
+      "brand": "NEOUS",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/shoes-new-in",
+      "footwearCollectionUrl": "https://www.neous.co.uk/collections/shoes-new-in",
+      "footwearCollectionHandle": "shoes-new-in",
+      "topCandidate": {
+        "path": "/collections/shoes-new-in",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "STUDIO AMELIA",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/flats",
+      "footwearCollectionUrl": "https://studioamelia.co/collections/flats",
+      "footwearCollectionHandle": "flats",
+      "topCandidate": {
+        "path": "/collections/flats",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 9
+    },
+    {
+      "brand": "AEYDE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/flats",
+      "footwearCollectionUrl": "https://www.aeyde.com/collections/flats",
+      "footwearCollectionHandle": "flats",
+      "topCandidate": {
+        "path": "/collections/flats",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 8
+    },
+    {
+      "brand": "HEREU",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/womens-new-in-shoes",
+      "footwearCollectionUrl": "https://hereustudio.com/collections/womens-new-in-shoes",
+      "footwearCollectionHandle": "womens-new-in-shoes",
+      "topCandidate": {
+        "path": "/collections/womens-new-in-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 16
+    },
+    {
+      "brand": "SOULIERS MARTINEZ",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/designer-flat-shoes",
+      "footwearCollectionUrl": "https://souliers-martinez.com/collections/designer-flat-shoes",
+      "footwearCollectionHandle": "designer-flat-shoes",
+      "topCandidate": {
+        "path": "/collections/designer-flat-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 4
+    },
+    {
+      "brand": "LUIS ONOFRE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/loafers",
+      "footwearCollectionUrl": "https://luisonofre.com/collections/loafers",
+      "footwearCollectionHandle": "loafers",
+      "topCandidate": {
+        "path": "/collections/loafers",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 4
+    },
+    {
+      "brand": "FLATTERED",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/ballet-flats",
+      "footwearCollectionUrl": "https://flattered.com/collections/ballet-flats",
+      "footwearCollectionHandle": "ballet-flats",
+      "topCandidate": {
+        "path": "/collections/ballet-flats",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 7
+    },
+    {
+      "brand": "MARAY",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/sandals",
+      "footwearCollectionUrl": "https://maray.pt/collections/sandals",
+      "footwearCollectionHandle": "sandals",
+      "topCandidate": {
+        "path": "/collections/sandals",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 5
+    },
+    {
+      "brand": "EXÉ",
+      "status": "AUTO_DISCOVERED",
+      "footwearCollectionPath": "/collections/socas-e-mules",
+      "footwearCollectionUrl": "https://exe.pt/collections/socas-e-mules",
+      "footwearCollectionHandle": "socas-e-mules",
+      "topCandidate": {
+        "path": "/collections/socas-e-mules",
+        "acceptedCount": 6,
+        "sampleSize": 6,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "AUTO_DISCOVERED"
+      },
+      "candidateCount": 2
+    },
+    {
+      "brand": "THE ROW",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/women-shoes",
+      "footwearCollectionUrl": "https://www.therow.com/collections/women-shoes",
+      "footwearCollectionHandle": "women-shoes",
+      "topCandidate": {
+        "path": "/collections/women-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 16
+    },
+    {
+      "brand": "KHAITE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/shoes",
+      "footwearCollectionUrl": "https://khaite.com/collections/shoes",
+      "footwearCollectionHandle": "shoes",
+      "topCandidate": {
+        "path": "/collections/shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 6
+    },
+    {
+      "brand": "TOTEME",
+      "status": "NEEDS_MANUAL_CONFIG",
+      "footwearCollectionPath": null,
+      "footwearCollectionUrl": null,
+      "footwearCollectionHandle": null,
+      "topCandidate": {
+        "path": "/en-int/collections/shoes-sneakers",
+        "acceptedCount": 1,
+        "sampleSize": 7,
+        "footwearRatio": 0.14285714285714285,
+        "womensScore": 1,
+        "qualityStatus": "REJECT"
+      },
+      "candidateCount": 7
+    },
+    {
+      "brand": "LEMAIRE",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/women-shoes",
+      "footwearCollectionUrl": "https://www.lemaire.fr/collections/women-shoes",
+      "footwearCollectionHandle": "women-shoes",
+      "topCandidate": {
+        "path": "/collections/women-shoes",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 3,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 15
+    },
+    {
+      "brand": "DRIES VAN NOTEN",
+      "status": "NEEDS_MANUAL_CONFIG",
+      "footwearCollectionPath": null,
+      "footwearCollectionUrl": null,
+      "footwearCollectionHandle": null,
+      "topCandidate": {
+        "path": "/collections/aw26-women",
+        "acceptedCount": 0,
+        "sampleSize": 10,
+        "footwearRatio": 0,
+        "womensScore": 3,
+        "qualityStatus": "REJECT"
+      },
+      "candidateCount": 16
+    },
+    {
+      "brand": "PROENZA SCHOULER",
+      "status": "VERIFIED",
+      "footwearCollectionPath": "/collections/boots",
+      "footwearCollectionUrl": "https://www.proenzaschouler.com/collections/boots",
+      "footwearCollectionHandle": "boots",
+      "topCandidate": {
+        "path": "/collections/boots",
+        "acceptedCount": 10,
+        "sampleSize": 10,
+        "footwearRatio": 1,
+        "womensScore": 1,
+        "qualityStatus": "VERIFIED"
+      },
+      "candidateCount": 8
+    }
+  ],
+  "productsBefore": 656,
+  "productsAfter": 2023,
+  "brandsAtBackfillLimit": [
+    "A.EMERY",
+    "ALOHAS",
+    "LE MONDE BERYL",
+    "LARROUDE",
+    "DOLCE VITA",
+    "JEFFREY CAMPBELL",
+    "STEVE MADDEN",
+    "STUDIO AMELIA",
+    "AEYDE",
+    "THE ROW",
+    "KHAITE"
+  ],
+  "incrementalTrackingReady": true,
+  "brandStats": [
+    {
+      "brand": "SCHUTZ",
+      "productsBefore": 30,
+      "productsAfter": 30,
+      "collectionPath": "/collections/womens-shoes",
+      "collectionUrl": "https://schutz-shoes.com/collections/womens-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 30,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 30,
+      "modelsAfter": 13
+    },
+    {
+      "brand": "TONY BIANCO",
+      "productsBefore": 30,
+      "productsAfter": 30,
+      "collectionPath": "/collections/womens-loafers",
+      "collectionUrl": "https://tonybianco.com.au/collections/womens-loafers",
+      "discoveryStatus": "VERIFIED",
+      "collected": 30,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 30,
+      "modelsAfter": 14
+    },
+    {
+      "brand": "ST. AGNI",
+      "productsBefore": 30,
+      "productsAfter": 30,
+      "collectionPath": "/collections/footwear",
+      "collectionUrl": "https://www.st-agni.com/collections/footwear",
+      "discoveryStatus": "VERIFIED",
+      "collected": 30,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 30,
+      "modelsAfter": 17
+    },
+    {
+      "brand": "A.EMERY",
+      "productsBefore": 20,
+      "productsAfter": 100,
+      "collectionPath": "/collections/footwear",
+      "collectionUrl": "https://aemery.com/collections/footwear",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 117,
+      "modelsAfter": 9
+    },
+    {
+      "brand": "ALIAS MAE",
+      "productsBefore": 20,
+      "productsAfter": 55,
+      "collectionPath": "/collections/heels",
+      "collectionUrl": "https://aliasmae.com.au/collections/heels",
+      "discoveryStatus": "VERIFIED",
+      "collected": 47,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 47,
+      "modelsAfter": 20
+    },
+    {
+      "brand": "ALOHAS",
+      "productsBefore": 20,
+      "productsAfter": 119,
+      "collectionPath": "/collections/shoes",
+      "collectionUrl": "https://alohas.com/collections/shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 181,
+      "modelsAfter": 15
+    },
+    {
+      "brand": "DEAR FRANCES",
+      "productsBefore": 20,
+      "productsAfter": 49,
+      "collectionPath": "/collections/flats",
+      "collectionUrl": "https://dearfrances.com/collections/flats",
+      "discoveryStatus": "VERIFIED",
+      "collected": 46,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 46,
+      "modelsAfter": 12
+    },
+    {
+      "brand": "LE MONDE BERYL",
+      "productsBefore": 20,
+      "productsAfter": 111,
+      "collectionPath": "/collections/footwear",
+      "collectionUrl": "https://lemondeberyl.com/collections/footwear",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 146,
+      "modelsAfter": 9
+    },
+    {
+      "brand": "LARROUDE",
+      "productsBefore": 19,
+      "productsAfter": 105,
+      "collectionPath": "/collections/fall-shoes",
+      "collectionUrl": "https://larroude.com/collections/fall-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 555,
+      "modelsAfter": 10
+    },
+    {
+      "brand": "DOLCE VITA",
+      "productsBefore": 20,
+      "productsAfter": 118,
+      "collectionPath": "/collections/shoes-view-all",
+      "collectionUrl": "https://www.dolcevita.com/collections/shoes-view-all",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 1030,
+      "modelsAfter": 10
+    },
+    {
+      "brand": "JEFFREY CAMPBELL",
+      "productsBefore": 20,
+      "productsAfter": 120,
+      "collectionPath": "/collections/menu-boots",
+      "collectionUrl": "https://jeffreycampbellshoes.com/collections/menu-boots",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 165,
+      "modelsAfter": 20
+    },
+    {
+      "brand": "STEVE MADDEN",
+      "productsBefore": 20,
+      "productsAfter": 120,
+      "collectionPath": "/collections/womens-new-arrivals",
+      "collectionUrl": "https://www.stevemadden.com/collections/womens-new-arrivals",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 417,
+      "modelsAfter": 18
+    },
+    {
+      "brand": "CHRISTEN",
+      "productsBefore": 30,
+      "productsAfter": 54,
+      "collectionPath": "/collections/shoes",
+      "collectionUrl": "https://christen.com/collections/shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 50,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 50,
+      "modelsAfter": 17
+    },
+    {
+      "brand": "NEOUS",
+      "productsBefore": 30,
+      "productsAfter": 64,
+      "collectionPath": "/collections/shoes-new-in",
+      "collectionUrl": "https://www.neous.co.uk/collections/shoes-new-in",
+      "discoveryStatus": "VERIFIED",
+      "collected": 64,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 64,
+      "modelsAfter": 13
+    },
+    {
+      "brand": "STUDIO AMELIA",
+      "productsBefore": 30,
+      "productsAfter": 112,
+      "collectionPath": "/collections/flats",
+      "collectionUrl": "https://studioamelia.co/collections/flats",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 145,
+      "modelsAfter": 9
+    },
+    {
+      "brand": "AEYDE",
+      "productsBefore": 30,
+      "productsAfter": 110,
+      "collectionPath": "/collections/flats",
+      "collectionUrl": "https://www.aeyde.com/collections/flats",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 164,
+      "modelsAfter": 8
+    },
+    {
+      "brand": "HEREU",
+      "productsBefore": 30,
+      "productsAfter": 83,
+      "collectionPath": "/collections/womens-new-in-shoes",
+      "collectionUrl": "https://hereustudio.com/collections/womens-new-in-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 81,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 81,
+      "modelsAfter": 23
+    },
+    {
+      "brand": "SOULIERS MARTINEZ",
+      "productsBefore": 30,
+      "productsAfter": 39,
+      "collectionPath": "/collections/designer-flat-shoes",
+      "collectionUrl": "https://souliers-martinez.com/collections/designer-flat-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 39,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 39,
+      "modelsAfter": 21
+    },
+    {
+      "brand": "LUIS ONOFRE",
+      "productsBefore": 30,
+      "productsAfter": 40,
+      "collectionPath": "/collections/loafers",
+      "collectionUrl": "https://luisonofre.com/collections/loafers",
+      "discoveryStatus": "VERIFIED",
+      "collected": 40,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 40,
+      "modelsAfter": 29
+    },
+    {
+      "brand": "FLATTERED",
+      "productsBefore": 25,
+      "productsAfter": 62,
+      "collectionPath": "/collections/ballet-flats",
+      "collectionUrl": "https://flattered.com/collections/ballet-flats",
+      "discoveryStatus": "VERIFIED",
+      "collected": 47,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 47,
+      "modelsAfter": 16
+    },
+    {
+      "brand": "MARAY",
+      "productsBefore": 30,
+      "productsAfter": 67,
+      "collectionPath": "/collections/sandals",
+      "collectionUrl": "https://maray.pt/collections/sandals",
+      "discoveryStatus": "VERIFIED",
+      "collected": 67,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 67,
+      "modelsAfter": 17
+    },
+    {
+      "brand": "EXÉ",
+      "productsBefore": 30,
+      "productsAfter": 36,
+      "collectionPath": "/collections/socas-e-mules",
+      "collectionUrl": "https://exe.pt/collections/socas-e-mules",
+      "discoveryStatus": "AUTO_DISCOVERED",
+      "collected": 6,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 6,
+      "modelsAfter": 25
+    },
+    {
+      "brand": "THE ROW",
+      "productsBefore": 17,
+      "productsAfter": 100,
+      "collectionPath": "/collections/women-shoes",
+      "collectionUrl": "https://www.therow.com/collections/women-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 178,
+      "modelsAfter": 16
+    },
+    {
+      "brand": "KHAITE",
+      "productsBefore": 30,
+      "productsAfter": 100,
+      "collectionPath": "/collections/shoes",
+      "collectionUrl": "https://khaite.com/collections/shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 100,
+      "hitBackfillLimit": true,
+      "catalogFootwearCount": 166,
+      "modelsAfter": 22
+    },
+    {
+      "brand": "LEMAIRE",
+      "productsBefore": 0,
+      "productsAfter": 64,
+      "collectionPath": "/collections/women-shoes",
+      "collectionUrl": "https://www.lemaire.fr/collections/women-shoes",
+      "discoveryStatus": "VERIFIED",
+      "collected": 64,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 64,
+      "modelsAfter": 0
+    },
+    {
+      "brand": "PROENZA SCHOULER",
+      "productsBefore": 30,
+      "productsAfter": 90,
+      "collectionPath": "/collections/boots",
+      "collectionUrl": "https://www.proenzaschouler.com/collections/boots",
+      "discoveryStatus": "VERIFIED",
+      "collected": 75,
+      "hitBackfillLimit": false,
+      "catalogFootwearCount": 75,
+      "modelsAfter": 21
+    }
+  ],
+  "modelFamiliesAfter": 419
+}

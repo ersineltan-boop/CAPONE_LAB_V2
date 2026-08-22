@@ -1,0 +1,628 @@
+{
+  "runStartedAt": "2026-08-18T13:26:31.565Z",
+  "runFinishedAt": "2026-08-18T14:00:51.072Z",
+  "model": "gpt-5.6-terra",
+  "selectedProducts": 30,
+  "analyzedProducts": 30,
+  "skippedExisting": 5,
+  "failedProducts": 0,
+  "newApiCalls": 25,
+  "toeShapeUnknownBefore": 17,
+  "toeShapeUnknownAfter": 0,
+  "heelTypeUnknownAfter": 0,
+  "newlyFilledToeShape": 17,
+  "newlyDetectedDetails": [
+    {
+      "tag": "ASYMMETRIC",
+      "productCount": 7,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "METAL_HARDWARE",
+      "productCount": 5,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ]
+    },
+    {
+      "tag": "BUCKLE",
+      "productCount": 5,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "THONG",
+      "productCount": 3,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "CUT_OUT",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "LACE_UP",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "conflictsWithText": [
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750004",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "SQUARE",
+      "visionConfidence": 0.88
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750004",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "construction.BACKLESS",
+      "textValue": "BACKLESS",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750004",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750005",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750005",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "construction.BACKLESS",
+      "textValue": "BACKLESS",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP, LOW_VAMP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750005",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP, LOW_VAMP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750001",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750001",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "construction.BACKLESS",
+      "textValue": "BACKLESS",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750001",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750003",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750003",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "construction.BACKLESS",
+      "textValue": "BACKLESS",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750003",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-patent-sandal-u26-heel-height-mid-s2208600750006",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Patent Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-patent-sandal-u26-heel-height-mid-s2208600750006",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Patent Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "SLINGBACK, OPEN_TOE, LOW_VAMP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-metallic-sandal-p26-heel-height-high-s0138101920004",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-metallic-sandal-p26-heel-height-high-s0138101920004",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-patent-sandal-p26-heel-height-high-s0138101920002",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Patent Leather Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-patent-sandal-p26-heel-height-high-s0138101920002",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Patent Leather Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, ANKLE_STRAP, HIGH_VAMP",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/elodie-buckle-bow-leather-sandal-p26-heel-height-high-s2163900270005",
+      "brand": "SCHUTZ",
+      "productName": "Elodie Buckle Bow Leather Sandal",
+      "field": "toeShape",
+      "textValue": "POINTED",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/broadway-leather-sandal-u26-heel-height-high-s2259800030001",
+      "brand": "SCHUTZ",
+      "productName": "Broadway Leather Sandal",
+      "field": "toeShape",
+      "textValue": "ROUND",
+      "visionValue": "OPEN",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/broadway-leather-sandal-u26-heel-height-high-s2259800030001",
+      "brand": "SCHUTZ",
+      "productName": "Broadway Leather Sandal",
+      "field": "construction.CLOSED_TOE",
+      "textValue": "CLOSED_TOE",
+      "visionValue": "OPEN_TOE, T_STRAP, SLINGBACK",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/maddi-black-nappa-15295",
+      "brand": "TONY BIANCO",
+      "productName": "Maddi Black Nappa",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "BLOCK",
+      "visionConfidence": 0.96
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/kassy-black-vintage-15729",
+      "brand": "TONY BIANCO",
+      "productName": "Kassy Black Vintage",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "SCULPTURAL",
+      "visionConfidence": 0.91
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-black-vintage-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Black Vintage",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "STILETTO",
+      "visionConfidence": 0.96
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-chocolate-venice-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Chocolate Venice",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "STILETTO",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/arla-silver-woven-15769",
+      "brand": "TONY BIANCO",
+      "productName": "Arla Silver Woven",
+      "field": "details.WOVEN",
+      "textValue": "WOVEN",
+      "visionValue": "BUCKLE",
+      "visionConfidence": 0.96
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/arla-gold-woven-15769",
+      "brand": "TONY BIANCO",
+      "productName": "Arla Gold Woven",
+      "field": "details.WOVEN",
+      "textValue": "WOVEN",
+      "visionValue": "BUCKLE",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-tan-vintage-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Tan Vintage",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "STILETTO",
+      "visionConfidence": 0.96
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/kassy-turquoise-nappa-patent-15729",
+      "brand": "TONY BIANCO",
+      "productName": "Kassy Turquoise Nappa Patent",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "SCULPTURAL",
+      "visionConfidence": 0.87
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/maddi-vino-nappa-15295",
+      "brand": "TONY BIANCO",
+      "productName": "Maddi Vino Nappa",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "BLOCK",
+      "visionConfidence": 0.97
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/jane-peru-nappa-15914",
+      "brand": "TONY BIANCO",
+      "productName": "Jane Peru Nappa",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "STILETTO",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/jane-peru-nappa-15914",
+      "brand": "TONY BIANCO",
+      "productName": "Jane Peru Nappa",
+      "field": "construction.BACKLESS",
+      "textValue": "BACKLESS",
+      "visionValue": "SLINGBACK, OPEN_TOE",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/opanka-heel-savannah",
+      "brand": "ST. AGNI",
+      "productName": "Opanka Heel - Savannah",
+      "field": "heelType",
+      "textValue": "SCULPTURAL",
+      "visionValue": "BLOCK",
+      "visionConfidence": 0.86
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/opanka-slide-savannah",
+      "brand": "ST. AGNI",
+      "productName": "Opanka Slide - Savannah",
+      "field": "heelType",
+      "textValue": "SCULPTURAL",
+      "visionValue": "FLAT",
+      "visionConfidence": 0.98
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/opanka-slide-savannah",
+      "brand": "ST. AGNI",
+      "productName": "Opanka Slide - Savannah",
+      "field": "details.THONG",
+      "textValue": "THONG",
+      "visionValue": "ASYMMETRIC",
+      "visionConfidence": 0.78
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/high-wedge-black",
+      "brand": "ST. AGNI",
+      "productName": "High Wedge - Black",
+      "field": "details.CUT_OUT",
+      "textValue": "CUT_OUT",
+      "visionValue": "ASYMMETRIC",
+      "visionConfidence": 0.83
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/high-wedge-black",
+      "brand": "ST. AGNI",
+      "productName": "High Wedge - Black",
+      "field": "construction.T_STRAP",
+      "textValue": "T_STRAP",
+      "visionValue": "SLINGBACK, OPEN_TOE",
+      "visionConfidence": 0.99
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/woven-ballerina-flat-off_white",
+      "brand": "ST. AGNI",
+      "productName": "Woven Ballerina Flat - Off White",
+      "field": "construction.LOW_VAMP",
+      "textValue": "LOW_VAMP",
+      "visionValue": "CLOSED_TOE",
+      "visionConfidence": 0.91
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/stitch-pillow-sneaker-black",
+      "brand": "ST. AGNI",
+      "productName": "Stitch Pillow Sneaker - Black",
+      "field": "heelType",
+      "textValue": "OTHER",
+      "visionValue": "FLAT",
+      "visionConfidence": 0.98
+    }
+  ],
+  "lowConfidenceResults": [],
+  "topVisualDetails": [
+    {
+      "tag": "BUCKLE",
+      "productCount": 14,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "ASYMMETRIC",
+      "productCount": 7,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "METAL_HARDWARE",
+      "productCount": 5,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ]
+    },
+    {
+      "tag": "BOW",
+      "productCount": 4,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "THONG",
+      "productCount": 4,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WOVEN",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "CUT_OUT",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "LACE_UP",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "RUCHED",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "topVisualConstructions": [
+    {
+      "tag": "OPEN_TOE",
+      "productCount": 16,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "CLOSED_TOE",
+      "productCount": 14,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SLINGBACK",
+      "productCount": 11,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "ANKLE_STRAP",
+      "productCount": 9,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "LOW_VAMP",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "BACKLESS",
+      "productCount": 7,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "HIGH_VAMP",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "T_STRAP",
+      "productCount": 2,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    }
+  ],
+  "topVisualSurfaceEffects": [
+    {
+      "tag": "METALLIC",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "PATENT",
+      "productCount": 6,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ]
+    },
+    {
+      "tag": "WOVEN",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "MESH",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SUEDE_LOOK",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "apiErrors": [],
+  "usage": {
+    "inputTokens": 103807,
+    "outputTokens": 4790,
+    "totalTokens": 108597
+  }
+}

@@ -1,0 +1,86 @@
+import type { TrendSourceConfig } from "../types";
+import { PRODUCTION_SIGNAL_COUNTRY } from "../constants/markets";
+
+/**
+ * Motor seed kaynakları — UI demo verisinden bağımsız.
+ * Gerçek entegrasyonda scraper/API bu yapıyı doldurur.
+ */
+export const seedSources: readonly TrendSourceConfig[] = [
+  {
+    id: "src-the-row",
+    brand: "The Row",
+    country: "ABD",
+    segment: "Lüks",
+    sourceType: "Runway / Lookbook",
+    sourceUrl: null,
+    weight: 0.95,
+    isActive: true,
+    role: "LEADER",
+  },
+  {
+    id: "src-jacquemus",
+    brand: "Jacquemus",
+    country: "Fransa",
+    segment: "Premium",
+    sourceType: "Koleksiyon lansmanı",
+    sourceUrl: null,
+    weight: 0.85,
+    isActive: true,
+    role: "LEADER",
+  },
+  {
+    id: "src-milan-fw",
+    brand: "Milan Footwear Week",
+    country: "İtalya",
+    segment: "Sektör",
+    sourceType: "Fuar gözlemi",
+    sourceUrl: null,
+    weight: 0.8,
+    isActive: true,
+    role: "MARKET",
+  },
+  {
+    id: "src-vogue-runway",
+    brand: "Vogue Runway",
+    country: "İngiltere",
+    segment: "Medya",
+    sourceType: "Trend raporu",
+    sourceUrl: null,
+    weight: 0.75,
+    isActive: true,
+    role: "EARLY_ADOPTER",
+  },
+  {
+    id: "src-mytheresa",
+    brand: "Mytheresa",
+    country: "Almanya",
+    segment: "Premium Perakende",
+    sourceType: "Perakende vitrin",
+    sourceUrl: null,
+    weight: 0.7,
+    isActive: true,
+    role: "RETAIL",
+  },
+  {
+    id: "src-instagram-signal",
+    brand: "Instagram Trend Havuzu",
+    country: "Global",
+    segment: "Sosyal",
+    sourceType: "Sosyal sinyal",
+    sourceUrl: null,
+    weight: 0.45,
+    isActive: true,
+    role: "SOCIAL",
+  },
+  {
+    id: "src-cn-production",
+    brand: "Guangzhou Footwear Cluster",
+    country: PRODUCTION_SIGNAL_COUNTRY,
+    segment: "Üretim",
+    sourceType: "Üretim / kopyalanma sinyali",
+    sourceUrl: null,
+    weight: 0.6,
+    isActive: false,
+    role: "PRODUCTION_SIGNAL",
+  },
+];

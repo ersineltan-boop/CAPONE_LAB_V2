@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-08-21T09:09:37.108Z",
+  "results": [
+    {
+      "id": "ssense",
+      "name": "SSENSE",
+      "ok": false,
+      "status": 403,
+      "productLinkCount": 0,
+      "blocked": true,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "24s",
+      "name": "24S",
+      "ok": false,
+      "status": 200,
+      "productLinkCount": 0,
+      "blocked": false
+    },
+    {
+      "id": "luisaviaroma",
+      "name": "LuisaViaRoma",
+      "ok": false,
+      "status": 403,
+      "productLinkCount": 0,
+      "blocked": true,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "farfetch",
+      "name": "Farfetch",
+      "ok": false,
+      "status": 403,
+      "productLinkCount": 0,
+      "blocked": true,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "net-a-porter",
+      "name": "Net-a-Porter",
+      "ok": false,
+      "status": 403,
+      "productLinkCount": 0,
+      "blocked": true,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "moda-operandi",
+      "name": "Moda Operandi",
+      "ok": true,
+      "status": 200,
+      "productLinkCount": 10,
+      "blocked": false
+    },
+    {
+      "id": "browns",
+      "name": "Browns",
+      "ok": false,
+      "status": 404,
+      "productLinkCount": 0,
+      "blocked": false,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "level-shoes",
+      "name": "Level Shoes",
+      "ok": true,
+      "status": 200,
+      "productLinkCount": 48,
+      "blocked": false
+    }
+  ],
+  "selectedPilotId": "level-shoes",
+  "collectedProducts": 48,
+  "collectErrors": []
+}

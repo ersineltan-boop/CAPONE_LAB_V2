@@ -1,0 +1,754 @@
+{
+  "totalProducts": 90,
+  "textAnalyzedProducts": 90,
+  "visionAnalyzedProducts": 30,
+  "fullHybridProducts": 30,
+  "topToeShape": [
+    {
+      "tag": "OPEN",
+      "productCount": 15,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 15,
+      "hybridProducts": 15
+    },
+    {
+      "tag": "POINTED",
+      "productCount": 14,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 8,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "ROUND",
+      "productCount": 12,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ],
+      "textSourced": 10,
+      "visionSourced": 2,
+      "hybridProducts": 2
+    },
+    {
+      "tag": "ALMOND",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "SQUARE",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ],
+      "textSourced": 0,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    }
+  ],
+  "topHeelType": [
+    {
+      "tag": "STILETTO",
+      "productCount": 40,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "textSourced": 27,
+      "visionSourced": 13,
+      "hybridProducts": 13
+    },
+    {
+      "tag": "WEDGE",
+      "productCount": 13,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 9,
+      "visionSourced": 4,
+      "hybridProducts": 4
+    },
+    {
+      "tag": "FLAT",
+      "productCount": 9,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 3,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "SCULPTURAL",
+      "productCount": 7,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 4,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "tag": "OTHER",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 6,
+      "visionSourced": 0,
+      "hybridProducts": 0
+    },
+    {
+      "tag": "BLOCK",
+      "productCount": 3,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "tag": "KITTEN",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 0,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    }
+  ],
+  "topDetails": [
+    {
+      "tag": "BUCKLE",
+      "productCount": 26,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 12,
+      "visionSourced": 14,
+      "hybridProducts": 14
+    },
+    {
+      "tag": "THONG",
+      "productCount": 9,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 5,
+      "visionSourced": 4,
+      "hybridProducts": 4
+    },
+    {
+      "tag": "BOW",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "textSourced": 4,
+      "visionSourced": 4,
+      "hybridProducts": 4
+    },
+    {
+      "tag": "ASYMMETRIC",
+      "productCount": 7,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 7,
+      "hybridProducts": 7
+    },
+    {
+      "tag": "METAL_HARDWARE",
+      "productCount": 7,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ],
+      "textSourced": 2,
+      "visionSourced": 5,
+      "hybridProducts": 5
+    },
+    {
+      "tag": "WOVEN",
+      "productCount": 6,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 3,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "tag": "LACE_UP",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 2,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    },
+    {
+      "tag": "CUT_OUT",
+      "productCount": 2,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 1,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    },
+    {
+      "tag": "RUCHED",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 1,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    },
+    {
+      "tag": "PEARL",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 1,
+      "visionSourced": 0,
+      "hybridProducts": 0
+    }
+  ],
+  "topConstruction": [
+    {
+      "tag": "OPEN_TOE",
+      "productCount": 23,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 7,
+      "visionSourced": 16,
+      "hybridProducts": 16
+    },
+    {
+      "tag": "SLINGBACK",
+      "productCount": 23,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 12,
+      "visionSourced": 11,
+      "hybridProducts": 11
+    },
+    {
+      "tag": "CLOSED_TOE",
+      "productCount": 22,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 8,
+      "visionSourced": 14,
+      "hybridProducts": 14
+    },
+    {
+      "tag": "BACKLESS",
+      "productCount": 19,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 12,
+      "visionSourced": 7,
+      "hybridProducts": 7
+    },
+    {
+      "tag": "ANKLE_STRAP",
+      "productCount": 13,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 4,
+      "visionSourced": 9,
+      "hybridProducts": 9
+    },
+    {
+      "tag": "LOW_VAMP",
+      "productCount": 11,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 3,
+      "visionSourced": 8,
+      "hybridProducts": 8
+    },
+    {
+      "tag": "HIGH_VAMP",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ],
+      "textSourced": 0,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "T_STRAP",
+      "productCount": 5,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 3,
+      "visionSourced": 2,
+      "hybridProducts": 2
+    }
+  ],
+  "topSurfaceEffects": [
+    {
+      "tag": "METALLIC",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "PATENT",
+      "productCount": 6,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ],
+      "textSourced": 0,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "tag": "WOVEN",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 0,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "tag": "MESH",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ],
+      "textSourced": 0,
+      "visionSourced": 2,
+      "hybridProducts": 2
+    },
+    {
+      "tag": "SUEDE_LOOK",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 0,
+      "visionSourced": 2,
+      "hybridProducts": 2
+    }
+  ],
+  "brandBreakdown": [
+    {
+      "brand": "SCHUTZ",
+      "productCount": 30,
+      "textOnly": 20,
+      "visionCovered": 10,
+      "fullHybrid": 10,
+      "topCategories": [
+        {
+          "tag": "MULE",
+          "productCount": 13,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ],
+          "textSourced": 13,
+          "visionSourced": 0,
+          "hybridProducts": 4
+        },
+        {
+          "tag": "SANDAL",
+          "productCount": 7,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ],
+          "textSourced": 7,
+          "visionSourced": 0,
+          "hybridProducts": 2
+        },
+        {
+          "tag": "WEDGE",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ],
+          "textSourced": 6,
+          "visionSourced": 0,
+          "hybridProducts": 2
+        },
+        {
+          "tag": "SLINGBACK",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ],
+          "textSourced": 2,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "THONG",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ],
+          "textSourced": 2,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        }
+      ]
+    },
+    {
+      "brand": "ST. AGNI",
+      "productCount": 30,
+      "textOnly": 20,
+      "visionCovered": 10,
+      "fullHybrid": 10,
+      "topCategories": [
+        {
+          "tag": "SANDAL",
+          "productCount": 8,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ],
+          "textSourced": 8,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "BALLERINA",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ],
+          "textSourced": 4,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "MULE",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ],
+          "textSourced": 4,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "PUMP",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ],
+          "textSourced": 4,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "LOAFER",
+          "productCount": 3,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ],
+          "textSourced": 3,
+          "visionSourced": 0,
+          "hybridProducts": 2
+        }
+      ]
+    },
+    {
+      "brand": "TONY BIANCO",
+      "productCount": 30,
+      "textOnly": 20,
+      "visionCovered": 10,
+      "fullHybrid": 10,
+      "topCategories": [
+        {
+          "tag": "SLINGBACK",
+          "productCount": 12,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ],
+          "textSourced": 12,
+          "visionSourced": 0,
+          "hybridProducts": 2
+        },
+        {
+          "tag": "PUMP",
+          "productCount": 8,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ],
+          "textSourced": 8,
+          "visionSourced": 0,
+          "hybridProducts": 3
+        },
+        {
+          "tag": "THONG",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ],
+          "textSourced": 6,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        },
+        {
+          "tag": "BALLERINA",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ],
+          "textSourced": 2,
+          "visionSourced": 0,
+          "hybridProducts": 2
+        },
+        {
+          "tag": "MULE",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ],
+          "textSourced": 1,
+          "visionSourced": 0,
+          "hybridProducts": 1
+        }
+      ]
+    }
+  ],
+  "categoryBreakdown": [
+    {
+      "category": "MULE",
+      "productCount": 18,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 12,
+      "visionSourced": 6,
+      "hybridProducts": 6
+    },
+    {
+      "category": "SANDAL",
+      "productCount": 16,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 12,
+      "visionSourced": 4,
+      "hybridProducts": 4
+    },
+    {
+      "category": "SLINGBACK",
+      "productCount": 14,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "textSourced": 11,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "category": "PUMP",
+      "productCount": 12,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 8,
+      "visionSourced": 4,
+      "hybridProducts": 4
+    },
+    {
+      "category": "THONG",
+      "productCount": 10,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 7,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "category": "WEDGE",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ],
+      "textSourced": 5,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "category": "BALLERINA",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "textSourced": 3,
+      "visionSourced": 3,
+      "hybridProducts": 3
+    },
+    {
+      "category": "LOAFER",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 1,
+      "visionSourced": 2,
+      "hybridProducts": 2
+    },
+    {
+      "category": "SNEAKER",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 1,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    },
+    {
+      "category": "BOOT",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "textSourced": 0,
+      "visionSourced": 1,
+      "hybridProducts": 1
+    }
+  ]
+}

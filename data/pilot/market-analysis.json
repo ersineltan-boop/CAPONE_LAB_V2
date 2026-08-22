@@ -1,0 +1,931 @@
+{
+  "totalProducts": 90,
+  "totalBrands": 3,
+  "categories": [
+    {
+      "tag": "MULE",
+      "productCount": 18,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SANDAL",
+      "productCount": 16,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SLINGBACK",
+      "productCount": 14,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "PUMP",
+      "productCount": 12,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "THONG",
+      "productCount": 10,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WEDGE",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "BALLERINA",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "LOAFER",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "SNEAKER",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "BOOT",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "tag": "BLACK",
+      "productCount": 30,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "BROWN",
+      "productCount": 17,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WHITE",
+      "productCount": 11,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "MULTICOLOR",
+      "productCount": 7,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SILVER",
+      "productCount": 6,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "BLUE",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "CREAM",
+      "productCount": 4,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "BEIGE",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "BURGUNDY",
+      "productCount": 2,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "GOLD",
+      "productCount": 2,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "GREEN",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "PINK",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "TAN",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "tag": "LEATHER",
+      "productCount": 32,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "PATENT",
+      "productCount": 16,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SUEDE",
+      "productCount": 13,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "TEXTILE",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WOVEN_LEATHER",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "NAPPA",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "CROC_EFFECT",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "NUBUCK",
+      "productCount": 3,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SATIN",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "TONY BIANCO"
+      ]
+    }
+  ],
+  "heelTypes": [
+    {
+      "tag": "STILETTO",
+      "productCount": 36,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "OTHER",
+      "productCount": 15,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WEDGE",
+      "productCount": 13,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SCULPTURAL",
+      "productCount": 7,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "FLAT",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "heelHeightGroups": [
+    {
+      "tag": "HIGH",
+      "productCount": 35,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "FLAT",
+      "productCount": 19,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "MID",
+      "productCount": 19,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "LOW",
+      "productCount": 16,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    }
+  ],
+  "details": [
+    {
+      "tag": "BUCKLE",
+      "productCount": 21,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "BOW",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "WOVEN",
+      "productCount": 8,
+      "brandCount": 2,
+      "brands": [
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "THONG",
+      "productCount": 7,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "CUT_OUT",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "LACE_UP",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "METAL_HARDWARE",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ]
+    },
+    {
+      "tag": "RUCHED",
+      "productCount": 2,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "PEARL",
+      "productCount": 1,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "constructions": [
+    {
+      "tag": "BACKLESS",
+      "productCount": 18,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "SLINGBACK",
+      "productCount": 18,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "CLOSED_TOE",
+      "productCount": 16,
+      "brandCount": 1,
+      "brands": [
+        "SCHUTZ"
+      ]
+    },
+    {
+      "tag": "OPEN_TOE",
+      "productCount": 11,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ]
+    },
+    {
+      "tag": "ANKLE_STRAP",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "LOW_VAMP",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    },
+    {
+      "tag": "T_STRAP",
+      "productCount": 4,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ]
+    }
+  ],
+  "brandBreakdown": [
+    {
+      "brand": "SCHUTZ",
+      "productCount": 30,
+      "topCategories": [
+        {
+          "tag": "MULE",
+          "productCount": 13,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "SANDAL",
+          "productCount": 7,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "WEDGE",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "SLINGBACK",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "THONG",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        }
+      ],
+      "topColors": [
+        {
+          "tag": "BLACK",
+          "productCount": 12,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "WHITE",
+          "productCount": 8,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "SILVER",
+          "productCount": 5,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "BROWN",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        },
+        {
+          "tag": "BURGUNDY",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "SCHUTZ"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "ST. AGNI",
+      "productCount": 30,
+      "topCategories": [
+        {
+          "tag": "SANDAL",
+          "productCount": 8,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "BALLERINA",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "MULE",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "PUMP",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "LOAFER",
+          "productCount": 3,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        }
+      ],
+      "topColors": [
+        {
+          "tag": "BLACK",
+          "productCount": 11,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "BROWN",
+          "productCount": 9,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "BEIGE",
+          "productCount": 3,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "WHITE",
+          "productCount": 3,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        },
+        {
+          "tag": "CREAM",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "ST. AGNI"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "TONY BIANCO",
+      "productCount": 30,
+      "topCategories": [
+        {
+          "tag": "SLINGBACK",
+          "productCount": 12,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "PUMP",
+          "productCount": 8,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "THONG",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "BALLERINA",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "MULE",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        }
+      ],
+      "topColors": [
+        {
+          "tag": "BLACK",
+          "productCount": 7,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "BROWN",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "MULTICOLOR",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "BLUE",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        },
+        {
+          "tag": "CREAM",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "TONY BIANCO"
+          ]
+        }
+      ]
+    }
+  ],
+  "topSignals": [
+    {
+      "tag": "STILETTO",
+      "productCount": 36,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "dimension": "heelType",
+      "labelTr": "STİLETTO"
+    },
+    {
+      "tag": "HIGH",
+      "productCount": 35,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "heelHeightGroup",
+      "labelTr": "YÜKSEK TOPUK"
+    },
+    {
+      "tag": "LEATHER",
+      "productCount": 32,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "materialFamily",
+      "labelTr": "DERİ"
+    },
+    {
+      "tag": "BLACK",
+      "productCount": 30,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "colorFamily",
+      "labelTr": "SİYAH"
+    },
+    {
+      "tag": "BUCKLE",
+      "productCount": 21,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI"
+      ],
+      "dimension": "details",
+      "labelTr": "TOKALI"
+    },
+    {
+      "tag": "MID",
+      "productCount": 19,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "dimension": "heelHeightGroup",
+      "labelTr": "ORTA TOPUK"
+    },
+    {
+      "tag": "FLAT",
+      "productCount": 19,
+      "brandCount": 1,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "dimension": "heelHeightGroup",
+      "labelTr": "DÜZ"
+    },
+    {
+      "tag": "MULE",
+      "productCount": 18,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "category",
+      "labelTr": "MULE"
+    },
+    {
+      "tag": "BACKLESS",
+      "productCount": 18,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "construction",
+      "labelTr": "ARKASIZ"
+    },
+    {
+      "tag": "SLINGBACK",
+      "productCount": 18,
+      "brandCount": 2,
+      "brands": [
+        "SCHUTZ",
+        "TONY BIANCO"
+      ],
+      "dimension": "construction",
+      "labelTr": "SLINGBACK"
+    },
+    {
+      "tag": "BROWN",
+      "productCount": 17,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "colorFamily",
+      "labelTr": "KAHVE"
+    },
+    {
+      "tag": "SANDAL",
+      "productCount": 16,
+      "brandCount": 3,
+      "brands": [
+        "SCHUTZ",
+        "ST. AGNI",
+        "TONY BIANCO"
+      ],
+      "dimension": "category",
+      "labelTr": "SANDAL"
+    }
+  ],
+  "unknownCounts": {
+    "colorFamily": 1,
+    "materialFamily": 1,
+    "heelType": 15,
+    "heelHeightGroup": 1,
+    "toeShape": 59
+  }
+}

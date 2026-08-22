@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.env
+.env.local
+.env.*.local
+!.env.example
+logs/
+*.log
+*.tsbuildinfo
+**/products.pre-*.json
+public/data/catalog/**
+
+data/history/*/

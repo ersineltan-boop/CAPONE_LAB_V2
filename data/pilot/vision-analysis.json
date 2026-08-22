@@ -1,0 +1,1592 @@
+{
+  "runStartedAt": "2026-08-18T13:26:31.565Z",
+  "runFinishedAt": "2026-08-18T14:00:49.554Z",
+  "model": "gpt-5.6-terra",
+  "products": [
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750004",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208700750004_01_6881d869-9ffa-4d8d-9ae1-aff75839a5bc.jpg?v=1780927776",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:58:42.411Z",
+      "vision": {
+        "toeShape": {
+          "value": "SQUARE",
+          "confidence": 0.88
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.97
+          },
+          {
+            "tag": "METAL_HARDWARE",
+            "confidence": 0.8
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.98
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 251,
+        "totalTokens": 3268
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-metallic-sandal-p26-heel-height-high-s2208700750005",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208700750005_01_a535029b-3bf5-4d87-8b24-60477918532d.jpg?v=1780927773",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:02.598Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.99
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "METAL_HARDWARE",
+            "confidence": 0.86
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.93
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 129,
+        "totalTokens": 3146
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750001",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208700750001_01_60ce6bd1-f208-4df6-be00-cec6297a2999.jpg?v=1780927776",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:06.389Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.99
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "METAL_HARDWARE",
+            "confidence": 0.9
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 116,
+        "totalTokens": 3133
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-patent-sandal-p26-heel-height-high-s2208700750003",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Patent Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208700750003_01_5b69f2af-de02-41fb-942e-42778f6ba352.jpg?v=1780927774",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:10.808Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "METAL_HARDWARE",
+            "confidence": 0.91
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.86
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 116,
+        "totalTokens": 3133
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-metallic-sandal-p26-heel-height-mid-s2208600750004",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208600750004_01_be92a168-42ba-4053-91f6-bc9164174408.jpg?v=1780927775",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:26:55.719Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-metallic-sandal-p26-heel-height-mid-s2208600750005",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208600750005_01_54285eb1-af64-4247-bc7c-d753b63a3aa4.jpg?v=1780927774",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:27:01.906Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-patent-sandal-p26-heel-height-mid-s2208600750001",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Patent Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208600750001_01_567cf46b-1765-429f-ab8d-d8e6763c61f2.jpg?v=1780928993",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:27:05.923Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/lyra-mid-patent-sandal-u26-heel-height-mid-s2208600750006",
+      "brand": "SCHUTZ",
+      "productName": "Lyra Mid Patent Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2208600750006_01.jpg?v=1783446829",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:52:48.688Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.99
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.99
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.99
+          },
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.86
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 168,
+        "totalTokens": 3185
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-metallic-sandal-p26-heel-height-high-s0138101920004",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S0138101920004_01_69944377-1ecd-4aed-aa58-88083f5c8d00.jpg?v=1780927775",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:53:04.467Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "WEDGE",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.98
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 101,
+        "totalTokens": 3118
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/scarlett-patent-sandal-p26-heel-height-high-s0138101920002",
+      "brand": "SCHUTZ",
+      "productName": "Scarlett Wedge Patent Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S0138101920002_01_64bba617-1201-441b-bc1c-04d49022da93.jpg?v=1780927774",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:58:54.557Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "WEDGE",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "METAL_HARDWARE",
+            "confidence": 0.88
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.87
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 186,
+        "totalTokens": 3203
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/maddi-black-nappa-15295",
+      "brand": "TONY BIANCO",
+      "productName": "Maddi Black Nappa",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Maddi-black-nappa-flat_720_1.jpg?v=1767844751",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:52:53.317Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.82
+        },
+        "heelType": {
+          "value": "BLOCK",
+          "confidence": 0.96
+        },
+        "details": [
+          {
+            "tag": "BOW",
+            "confidence": 0.94
+          }
+        ],
+        "construction": [
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.87
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 137,
+        "totalTokens": 1529
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/kassy-black-vintage-15729",
+      "brand": "TONY BIANCO",
+      "productName": "Kassy Black Vintage",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Kassy-black-vintage-heels_720_1.jpg?v=1779320723",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:15.299Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.97
+        },
+        "heelType": {
+          "value": "SCULPTURAL",
+          "confidence": 0.91
+        },
+        "details": [
+          {
+            "tag": "THONG",
+            "confidence": 0.96
+          },
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.71
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.97
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.82
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 112,
+        "totalTokens": 1504
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-black-vintage-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Black Vintage",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Suave-black-vintage-heels_720_1.jpg?v=1786069930",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:53:08.846Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.96
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.9
+          },
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.84
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.95
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.92
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.82
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 129,
+        "totalTokens": 1521
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-chocolate-venice-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Chocolate Venice",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Suave-chocolate-venice-heels_720_1.jpg?v=1786069789",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:21.356Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.96
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.98
+          },
+          {
+            "tag": "T_STRAP",
+            "confidence": 0.81
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.88
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 229,
+        "totalTokens": 1621
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/arla-silver-woven-15769",
+      "brand": "TONY BIANCO",
+      "productName": "Arla Silver Woven",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Arla-silver-woven-heels_720_1.jpg?v=1785113443",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:45.499Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.96
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.99
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.98
+          },
+          {
+            "tag": "MESH",
+            "confidence": 0.9
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 115,
+        "totalTokens": 1507
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/arla-gold-woven-15769",
+      "brand": "TONY BIANCO",
+      "productName": "Arla Gold Woven",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Arla-gold-woven-heels_720_1.jpg?v=1785114180",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:50.782Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.98
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.99
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.95
+          },
+          {
+            "tag": "MESH",
+            "confidence": 0.88
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 174,
+        "totalTokens": 1566
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-tan-vintage-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Tan Vintage",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Suave-tan-nappa-heels_720_1.jpg?v=1786069586",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:54.599Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.96
+        },
+        "details": [
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.94
+          },
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.83
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.96
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.9
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.72
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 129,
+        "totalTokens": 1521
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/suave-milk-capretto-16109",
+      "brand": "TONY BIANCO",
+      "productName": "Suave Milk Capretto",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Suave-milk-capretto-heels_720_1.jpg?v=1786069854",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:28:01.681Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/kassy-turquoise-nappa-patent-15729",
+      "brand": "TONY BIANCO",
+      "productName": "Kassy Turquoise Nappa Patent",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Kassy-turquoise-nappa-patent-heels_720_1.jpg?v=1786333034",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:40.734Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.96
+        },
+        "heelType": {
+          "value": "SCULPTURAL",
+          "confidence": 0.87
+        },
+        "details": [
+          {
+            "tag": "CUT_OUT",
+            "confidence": 0.8
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.69
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 426,
+        "totalTokens": 1818
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/emily-sky-vintagedenim-15871",
+      "brand": "TONY BIANCO",
+      "productName": "Emily Sky Vintage/Denim",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Emily-sky-vintage-denim-suede-heels_720_1.jpg?v=1784514495",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:28:17.082Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/opanka-heel-savannah",
+      "brand": "ST. AGNI",
+      "productName": "Opanka Heel - Savannah",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S436-W26-40292SVH-25988-St_Agni-F-0208_6ce02139-3286-491a-9214-a69b362b6f8b.jpg?v=1779949778",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:11.518Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.99
+        },
+        "heelType": {
+          "value": "BLOCK",
+          "confidence": 0.86
+        },
+        "details": [
+          {
+            "tag": "THONG",
+            "confidence": 0.98
+          },
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.79
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 240,
+        "totalTokens": 7855
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/opanka-slide-savannah",
+      "brand": "ST. AGNI",
+      "productName": "Opanka Slide - Savannah",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S420-W26-43287SVH-25988-St_Agni-F-0169_8e5c216c-1600-4ca6-a6bb-d536f65da23b.jpg?v=1779949681",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:05.200Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.96
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.78
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.97
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.79
+          },
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.72
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 456,
+        "totalTokens": 8071
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/bunto-woven-loafer-black",
+      "brand": "ST. AGNI",
+      "productName": "Bunto Woven Loafer - Black",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S424-W26-43420BLK-25988-St_Agni-F-0177_03e31ec7-9e36-4f2f-a7de-8287dee4a5e4.jpg?v=1779949969",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:52:59.378Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.72
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ],
+        "construction": [
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.99
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.92
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.95
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 204,
+        "totalTokens": 7819
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/bunto-woven-loafer-chestnut",
+      "brand": "ST. AGNI",
+      "productName": "Bunto Woven Loafer - Chestnut",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S425-W26-43420CST-25988-St_Agni-F-0178_798b3b81-7e35-46d5-9a92-b47946591f4a.jpg?v=1779949789",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:23.116Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.86
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ],
+        "construction": [
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.99
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.96
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 187,
+        "totalTokens": 7802
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/suede-opanka-slide-black_coffee",
+      "brand": "ST. AGNI",
+      "productName": "Suede Opanka Slide - Black/Coffee",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S418-W26-43287BBN-25988-St_Agni-F-0159_c8b86290-d1a3-4591-89f5-262cc16c52d7.jpg?v=1779949596",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:28:53.840Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/suede-opanka-slide-papyrus",
+      "brand": "ST. AGNI",
+      "productName": "Suede Opanka Slide - Papyrus",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S419-W26-43287PYR-25988-St_Agni-F-0164_c839c496-9583-489a-b2e6-9a3dc1fd2f5c.jpg?v=1779949894",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:29:00.061Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/bunto-woven-loafer-chocolate",
+      "brand": "ST. AGNI",
+      "productName": "Bunto Woven Loafer - Chocolate",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S423-W26-43420CHL-25988-St_Agni-F-0177_f80afa25-3dcf-4665-b6e2-b3e3d0c3896e.jpg?v=1779949758",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:29:06.631Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/high-wedge-black",
+      "brand": "ST. AGNI",
+      "productName": "High Wedge - Black",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S442-W26-41296BLK-25988-St_Agni-F-0228_18c2416e-36d0-4028-90de-e4fd291bd9ec.jpg?v=1779949860",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:39.429Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "WEDGE",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.83
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.96
+          },
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 228,
+        "totalTokens": 7843
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/high-wedge-coffee",
+      "brand": "ST. AGNI",
+      "productName": "High Wedge - Coffee",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S441-W26-41296COF-25988-St_Agni-F-0228_8afd9999-592a-4db3-9c6e-25396be3dd03.jpg?v=1779949617",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:29:16.074Z",
+      "vision": {
+        "toeShape": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "heelType": {
+          "value": "UNKNOWN",
+          "confidence": 0
+        },
+        "details": [],
+        "construction": [],
+        "surfaceEffects": []
+      },
+      "error": "OpenAI response missing output_text"
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/soft-boot-black",
+      "brand": "ST. AGNI",
+      "productName": "Soft Boot - Black",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S444-W26-40294BLK-25988-St_Agni-F-0239_9e189d80-a63f-4355-a8e3-c0994483b1fb.jpg?v=1779949727",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:44.020Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.94
+        },
+        "heelType": {
+          "value": "KITTEN",
+          "confidence": 0.91
+        },
+        "details": [],
+        "construction": [
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 108,
+        "totalTokens": 7723
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/elodie-buckle-bow-leather-sandal-p26-heel-height-high-s2163900270005",
+      "brand": "SCHUTZ",
+      "productName": "Elodie Buckle Bow Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2163900270005_01_b8f24c77-32c6-4177-835a-07f524b06f6b.jpg?v=1780927775",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:58:35.675Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BOW",
+            "confidence": 0.96
+          },
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.95
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "ANKLE_STRAP",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.78
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 113,
+        "totalTokens": 3130
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/broadway-leather-sandal-u26-heel-height-high-s2259800030001",
+      "brand": "SCHUTZ",
+      "productName": "Broadway Leather Sandal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2259800030001_01.jpg?v=1783451394",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:58:49.663Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "SCULPTURAL",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "THONG",
+            "confidence": 0.97
+          },
+          {
+            "tag": "ASYMMETRIC",
+            "confidence": 0.78
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "T_STRAP",
+            "confidence": 0.85
+          },
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.77
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "METALLIC",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 314,
+        "totalTokens": 3331
+      }
+    },
+    {
+      "productUrl": "https://schutz-shoes.com/products/liora-bow-pump-p26-heel-height-high-s2263400020005",
+      "brand": "SCHUTZ",
+      "productName": "Liora Bow Patent Leather Pump",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400020005_01_62ac828b-a131-4359-b58b-c9d412f1c08b.jpg?v=1780927774",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:58:58.763Z",
+      "vision": {
+        "toeShape": {
+          "value": "POINTED",
+          "confidence": 0.98
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "BOW",
+            "confidence": 0.98
+          },
+          {
+            "tag": "BUCKLE",
+            "confidence": 0.9
+          }
+        ],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.99
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "LOW_VAMP",
+            "confidence": 0.8
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "PATENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 3017,
+        "outputTokens": 126,
+        "totalTokens": 3143
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/maddi-vino-nappa-15295",
+      "brand": "TONY BIANCO",
+      "productName": "Maddi Vino Nappa",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Maddi-vino-nappa-heel_720_1.jpg?v=1767844736",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:26.204Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.83
+        },
+        "heelType": {
+          "value": "BLOCK",
+          "confidence": 0.97
+        },
+        "details": [
+          {
+            "tag": "BOW",
+            "confidence": 0.92
+          }
+        ],
+        "construction": [
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 153,
+        "totalTokens": 1545
+      }
+    },
+    {
+      "productUrl": "https://tonybianco.com.au/products/jane-peru-nappa-15914",
+      "brand": "TONY BIANCO",
+      "productName": "Jane Peru Nappa",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2273/2141/files/Jane-peru-nappa-heels_720_1.jpg?v=1783578924",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T13:59:31.699Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.96
+        },
+        "heelType": {
+          "value": "STILETTO",
+          "confidence": 0.98
+        },
+        "details": [],
+        "construction": [
+          {
+            "tag": "SLINGBACK",
+            "confidence": 0.91
+          },
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.98
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 1392,
+        "outputTokens": 203,
+        "totalTokens": 1595
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/woven-ballerina-flat-off_white",
+      "brand": "ST. AGNI",
+      "productName": "Woven Ballerina Flat - Off White",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S430-W26-43298OWT-25988-St_Agni-F-0192_e84a8fc9-6af5-4794-92ec-e74a329ddec1.jpg?v=1779949997",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:17.444Z",
+      "vision": {
+        "toeShape": {
+          "value": "ALMOND",
+          "confidence": 0.72
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ],
+        "construction": [
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.91
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "WOVEN",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 216,
+        "totalTokens": 7831
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/suede-mule-coffee",
+      "brand": "ST. AGNI",
+      "productName": "Suede Mule - Coffee",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S28-S26-43120COF-25630-St-Agni-0093.jpg?v=1767920597",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:27.602Z",
+      "vision": {
+        "toeShape": {
+          "value": "ROUND",
+          "confidence": 0.88
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [],
+        "construction": [
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.97
+          },
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.98
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.91
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "SUEDE_LOOK",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 136,
+        "totalTokens": 7751
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/thong-wedge-black",
+      "brand": "ST. AGNI",
+      "productName": "Thong Wedge - Black",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S434-W26-41295BLK-25988-St_Agni-F-0204_4a334b1d-175a-40a7-9ccb-ca86445568da.jpg?v=1779949832",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:32.500Z",
+      "vision": {
+        "toeShape": {
+          "value": "OPEN",
+          "confidence": 0.99
+        },
+        "heelType": {
+          "value": "WEDGE",
+          "confidence": 0.99
+        },
+        "details": [
+          {
+            "tag": "THONG",
+            "confidence": 0.99
+          }
+        ],
+        "construction": [
+          {
+            "tag": "OPEN_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "BACKLESS",
+            "confidence": 0.99
+          }
+        ],
+        "surfaceEffects": []
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 134,
+        "totalTokens": 7749
+      }
+    },
+    {
+      "productUrl": "https://www.st-agni.com/products/stitch-pillow-sneaker-black",
+      "brand": "ST. AGNI",
+      "productName": "Stitch Pillow Sneaker - Black",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1139/4362/files/Ghost_S17-S26-43154BLK-25630-St-Agni-0063.jpg?v=1767920010",
+      "model": "gpt-5.6-terra",
+      "analyzedAt": "2026-08-18T14:00:49.552Z",
+      "vision": {
+        "toeShape": {
+          "value": "ROUND",
+          "confidence": 0.92
+        },
+        "heelType": {
+          "value": "FLAT",
+          "confidence": 0.98
+        },
+        "details": [
+          {
+            "tag": "LACE_UP",
+            "confidence": 0.98
+          },
+          {
+            "tag": "RUCHED",
+            "confidence": 0.8
+          }
+        ],
+        "construction": [
+          {
+            "tag": "CLOSED_TOE",
+            "confidence": 0.99
+          },
+          {
+            "tag": "HIGH_VAMP",
+            "confidence": 0.94
+          }
+        ],
+        "surfaceEffects": [
+          {
+            "tag": "SUEDE_LOOK",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 7615,
+        "outputTokens": 193,
+        "totalTokens": 7808
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 103807,
+    "outputTokens": 4790,
+    "totalTokens": 108597
+  }
+}

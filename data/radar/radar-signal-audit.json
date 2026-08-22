@@ -1,0 +1,2212 @@
+{
+  "generatedAt": "2026-08-19T09:09:41.246Z",
+  "comparisonAvailable": true,
+  "totalSignals": 0,
+  "signals": [],
+  "excludedGlobal": [
+    {
+      "category": "BOOT",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "BLOCK"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BOOT",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "BLOCK"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "FLOWER"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "PEEP_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "OPEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "OPEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "OPEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "ANKLE_STRAP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "STONE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "ANKLE_STRAP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "PUMP",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "ANKLE_STRAP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "PEEP_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SLINGBACK",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "LACE_UP"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "SLINGBACK"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BRAIDED"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "BALLERINA",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "SQUARE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "LOW_VAMP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "RUCHED"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "STONE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "RUCHED"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "STONE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "METALLIC"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "OPEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "OPEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "MULE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "BACKLESS"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "POINTED"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BOW"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "KITTEN"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "STONE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SANDAL",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "KITTEN"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "METAL_HARDWARE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "SCULPTURAL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "CROC_EFFECT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "THONG"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "FLAT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "PATENT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "STILETTO"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "LACE_UP"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "PEARL"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "THONG",
+      "signalAttributes": [
+        {
+          "dimension": "SURFACE_EFFECT",
+          "value": "WOVEN"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "OPEN_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "BUCKLE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "CLOSED_TOE"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "T_STRAP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "CUT_OUT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "T_STRAP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "CUT_OUT"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "WEDGE",
+      "signalAttributes": [
+        {
+          "dimension": "DETAIL",
+          "value": "CUT_OUT"
+        },
+        {
+          "dimension": "CONSTRUCTION",
+          "value": "T_STRAP"
+        },
+        {
+          "dimension": "HEEL_TYPE",
+          "value": "WEDGE"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    },
+    {
+      "category": "SNEAKER",
+      "signalAttributes": [
+        {
+          "dimension": "TOE_SHAPE",
+          "value": "ROUND"
+        },
+        {
+          "dimension": "DETAIL",
+          "value": "LACE_UP"
+        }
+      ],
+      "reason": "Yetersiz bağımsız marka / model ailesi kanıtı",
+      "candidateModelFamilyIds": []
+    }
+  ]
+}

@@ -1,0 +1,4845 @@
+[
+  {
+    "modelFamilyId": "dear-frances--name-topo-flat-other-footwear-flat-flat-unknown",
+    "brand": "DEAR FRANCES",
+    "productName": "Topo Flat, Sand",
+    "productUrl": "https://dearfrances.com/products/topo-flat-sand",
+    "primaryCategory": "BALLET_FLAT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "ballet-flat-architecture",
+    "textEvidence": {
+      "productName": "Topo Flat, Sand",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "FLAT",
+      "cleanedHeelHeight": "8mm"
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": "FLAT",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": 8,
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.95
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SUEDE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BEIGE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "larroude--style-l422-vero-ballerina-flat-unknown-round-low-vamp",
+    "brand": "LARROUDE",
+    "productName": "Verona Ballet Flat Plum Printed Felt",
+    "productUrl": "https://larroude.com/products/verona-ballet-flat-plum-plaid-felt",
+    "primaryCategory": "BALLET_FLAT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "ballet-flat-architecture",
+    "textEvidence": {
+      "productName": "Verona Ballet Flat Plum Printed Felt",
+      "construction": [
+        "LOW_VAMP"
+      ],
+      "legacyCategory": "BALLERINA",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": "ROUND",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "alohas--name-rosalind-ballet-flats-ballerina-flat-unknown-unknown-low-vamp",
+    "brand": "ALOHAS",
+    "productName": "Rosalind Brown Leather Ballet Flats",
+    "productUrl": "https://alohas.com/products/rosalind-brown-leather-ballet-flats",
+    "primaryCategory": "BALLET_FLAT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "ballet-flat-architecture",
+    "textEvidence": {
+      "productName": "Rosalind Brown Leather Ballet Flats",
+      "construction": [
+        "LOW_VAMP"
+      ],
+      "legacyCategory": "BALLERINA",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BROWN"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "the-row--name-casa-slipper-loafer-unknown-unknown-unknown",
+    "brand": "THE ROW",
+    "productName": "Casa Slipper",
+    "productUrl": "https://www.therow.com/products/casa-slipper-black-2",
+    "primaryCategory": "LOAFER",
+    "categoryProvenance": "LEGACY_CATEGORY",
+    "categoryAssignmentReason": "legacy-category:LOAFER",
+    "textEvidence": {
+      "productName": "Casa Slipper",
+      "construction": [],
+      "legacyCategory": "LOAFER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.loaferDetail",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.apronConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "hereu--name-maqueda-interwoven-t-bar-loafer-loafer-unknown-unknown-unknown-woven",
+    "brand": "HEREU",
+    "productName": "MAQUEDA - Interwoven T-Bar Loafer",
+    "productUrl": "https://hereustudio.com/products/maqueda-interwoven-t-bar-loafer-burgundy",
+    "primaryCategory": "LOAFER",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "loafer-architecture",
+    "textEvidence": {
+      "productName": "MAQUEDA - Interwoven T-Bar Loafer",
+      "construction": [],
+      "legacyCategory": "LOAFER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "WOVEN_LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BURGUNDY"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.loaferDetail",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.apronConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "hereu--name-nombela-interwoven-detail-slip-on-loafer-loafer-unknown-unknown-unknown-woven",
+    "brand": "HEREU",
+    "productName": "NOMBELA SUEDE - Interwoven Detail Slip-On Loafer",
+    "productUrl": "https://hereustudio.com/products/nombela-suede-interwoven-detail-slip-on-loafer-dark-brown",
+    "primaryCategory": "LOAFER",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "loafer-architecture",
+    "textEvidence": {
+      "productName": "NOMBELA SUEDE - Interwoven Detail Slip-On Loafer",
+      "construction": [],
+      "legacyCategory": "LOAFER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "WOVEN_LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BROWN"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.loaferDetail",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.apronConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "aeyde--name-cari-pointed-toe-pumps-pump-unknown-unknown-unknown",
+    "brand": "AEYDE",
+    "productName": "Cari Pointed-Toe Pumps",
+    "productUrl": "https://www.aeyde.com/products/cari-moss-mini-snake",
+    "primaryCategory": "PUMP",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "raised-heel-pump-upper",
+    "textEvidence": {
+      "productName": "Cari Pointed-Toe Pumps",
+      "construction": [],
+      "legacyCategory": "PUMP",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "dolce-vita--name-rosha-heels-pump-other-high-unknown-peep-toe",
+    "brand": "DOLCE VITA",
+    "productName": "ROSHA HEELS TRUE WHITE SATIN",
+    "productUrl": "https://www.dolcevita.com/products/rosha-heels-true-white-satin",
+    "primaryCategory": "PUMP",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "raised-heel-pump-upper",
+    "textEvidence": {
+      "productName": "ROSHA HEELS TRUE WHITE SATIN",
+      "construction": [
+        "PEEP_TOE"
+      ],
+      "legacyCategory": "PUMP",
+      "heelHeightGroup": "HIGH",
+      "cleanedHeelHeight": "3.4\""
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": "PEEP",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": "HIGH",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "OTHER",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SATIN"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "WHITE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "christen--name-helix-pump-pump-unknown-unknown-unknown",
+    "brand": "CHRISTEN",
+    "productName": "HELIX PUMP",
+    "productUrl": "https://christen.com/products/helix-pump",
+    "primaryCategory": "PUMP",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "raised-heel-pump-upper",
+    "textEvidence": {
+      "productName": "HELIX PUMP",
+      "construction": [],
+      "legacyCategory": "PUMP",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "CROC_EFFECT"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "proenza-schouler--name-birkenstock-x-proenza-schouler-arizona-slides-sandal-unknown-unknown-unknown",
+    "brand": "PROENZA SCHOULER",
+    "productName": "Birkenstock x Proenza Schouler Arizona Slides",
+    "productUrl": "https://www.proenzaschouler.com/products/arizona-ps-exq-berlin-white-black-narrow-white-black",
+    "primaryCategory": "SANDAL",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "open-strap-footwear",
+    "textEvidence": {
+      "productName": "Birkenstock x Proenza Schouler Arizona Slides",
+      "construction": [],
+      "legacyCategory": "SANDAL",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SUEDE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "proenza-schouler--name-tee-thong-thong-unknown-unknown-unknown-open-toe-buckle-thong",
+    "brand": "PROENZA SCHOULER",
+    "productName": "Tee Thong Sandals in Slick Nappa",
+    "productUrl": "https://www.proenzaschouler.com/products/tee-thong-sandals-black-sh252042a-l004a-001",
+    "primaryCategory": "SANDAL",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "open-strap-footwear",
+    "textEvidence": {
+      "productName": "Tee Thong Sandals in Slick Nappa",
+      "construction": [
+        "OPEN_TOE"
+      ],
+      "legacyCategory": "THONG",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": "OPEN",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "NAPPA"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "christen--name-helix-thong-sandal-thong-unknown-unknown-unknown-open-toe-thong",
+    "brand": "CHRISTEN",
+    "productName": "HELIX THONG SANDAL",
+    "productUrl": "https://christen.com/products/helix-thong-sandal-2",
+    "primaryCategory": "SANDAL",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "open-strap-footwear",
+    "textEvidence": {
+      "productName": "HELIX THONG SANDAL",
+      "construction": [
+        "OPEN_TOE"
+      ],
+      "legacyCategory": "THONG",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": "OPEN",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "christen--name-stretch-mule-mule-unknown-unknown-unknown-backless",
+    "brand": "CHRISTEN",
+    "productName": "STRETCH MULE",
+    "productUrl": "https://christen.com/products/stretch-mule-1",
+    "primaryCategory": "MULE",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "backless-covered-vamp",
+    "textEvidence": {
+      "productName": "STRETCH MULE",
+      "construction": [
+        "BACKLESS"
+      ],
+      "legacyCategory": "MULE",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": "BACKLESS",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "le-monde-beryl--name-venetian-mule-mule-unknown-unknown-unknown-backless",
+    "brand": "LE MONDE BERYL",
+    "productName": "Venetian Mule / Grigio Mesh Crystals",
+    "productUrl": "https://lemondeberyl.com/products/venetian-mule-grigio-mesh-crystals",
+    "primaryCategory": "MULE",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "backless-covered-vamp",
+    "textEvidence": {
+      "productName": "Venetian Mule / Grigio Mesh Crystals",
+      "construction": [
+        "BACKLESS"
+      ],
+      "legacyCategory": "MULE",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": "BACKLESS",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "MESH"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "aeyde--name-rega-round-toe-mules-mule-unknown-unknown-unknown-backless",
+    "brand": "AEYDE",
+    "productName": "Rega Suede Round-Toe Mules",
+    "productUrl": "https://www.aeyde.com/products/rega-black-suede",
+    "primaryCategory": "MULE",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "backless-covered-vamp",
+    "textEvidence": {
+      "productName": "Rega Suede Round-Toe Mules",
+      "construction": [
+        "BACKLESS"
+      ],
+      "legacyCategory": "MULE",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": "BACKLESS",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SUEDE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "dear-frances--name-balla-bootie-ankle-boot-unknown-unknown-unknown",
+    "brand": "DEAR FRANCES",
+    "productName": "Balla Bootie, White Mesh",
+    "productUrl": "https://dearfrances.com/products/balla-bootie-white-mesh",
+    "primaryCategory": "BOOT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "boot-shaft-architecture",
+    "textEvidence": {
+      "productName": "Balla Bootie, White Mesh",
+      "construction": [],
+      "legacyCategory": "ANKLE_BOOT",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "NAPPA"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "WHITE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.bootStyleFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.shaftHeight",
+        "value": "ANKLE",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "proenza-schouler--name-trap-flat-ankle-boot-flat-unknown-unknown",
+    "brand": "PROENZA SCHOULER",
+    "productName": "Trap Flat Ankle Boots in Embossed Python",
+    "productUrl": "https://www.proenzaschouler.com/products/trap-flat-ankle-boots-in-embossed-python-ochre-multi",
+    "primaryCategory": "BOOT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "boot-shaft-architecture",
+    "textEvidence": {
+      "productName": "Trap Flat Ankle Boots in Embossed Python",
+      "construction": [],
+      "legacyCategory": "ANKLE_BOOT",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "MULTICOLOR"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.bootStyleFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.shaftHeight",
+        "value": "ANKLE",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "dolce-vita--style-jazmin-pump-kitten-mid-unknown",
+    "brand": "DOLCE VITA",
+    "productName": "JAZMIN BOOTS BLACK LEATHER",
+    "productUrl": "https://www.dolcevita.com/products/jazmin-boots-black-leather",
+    "primaryCategory": "BOOT",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "boot-shaft-architecture",
+    "textEvidence": {
+      "productName": "JAZMIN BOOTS BLACK LEATHER",
+      "construction": [],
+      "legacyCategory": "PUMP",
+      "heelHeightGroup": "MID",
+      "cleanedHeelHeight": "2.4\""
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": "MID",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "KITTEN",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "TEXTILE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.bootStyleFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.shaftHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "larroude--style-l415-stel-sneaker-other-unknown-round-lace-up",
+    "brand": "LARROUDE",
+    "productName": "Stella Sneaker Maya Suede",
+    "productUrl": "https://larroude.com/products/stella-sneaker-maya-sneaker",
+    "primaryCategory": "SNEAKER",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "sneaker-dominant-construction",
+    "textEvidence": {
+      "productName": "Stella Sneaker Maya Suede",
+      "construction": [],
+      "legacyCategory": "SNEAKER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": "ROUND",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "OTHER",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SUEDE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.styleArchetype",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.sneakerHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "a-emery--name-the-adams-low-sneaker-sneaker-other-unknown-unknown",
+    "brand": "A.EMERY",
+    "productName": "The Adams Low Sneaker",
+    "productUrl": "https://aemery.com/products/the-adams-low-sneaker-black",
+    "primaryCategory": "SNEAKER",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "sneaker-dominant-construction",
+    "textEvidence": {
+      "productName": "The Adams Low Sneaker",
+      "construction": [],
+      "legacyCategory": "SNEAKER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "OTHER",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.styleArchetype",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.sneakerHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "aeyde--name-uma-slim-sneakers-sneaker-unknown-unknown-unknown",
+    "brand": "AEYDE",
+    "productName": "Uma Slim Sneakers",
+    "productUrl": "https://www.aeyde.com/products/uma-sneaker-black-nappa-suede",
+    "primaryCategory": "SNEAKER",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "sneaker-dominant-construction",
+    "textEvidence": {
+      "productName": "Uma Slim Sneakers",
+      "construction": [],
+      "legacyCategory": "SNEAKER",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.styleArchetype",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.sneakerHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "larroude--style-l349-hana-wedge-wedge-low-unknown",
+    "brand": "LARROUDE",
+    "productName": "Hana Espadrille Sandal Maya Denim",
+    "productUrl": "https://larroude.com/products/maya-hana-espadrille-sandal-denim",
+    "primaryCategory": "ESPADRILLE",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "espadrille-sole-architecture",
+    "textEvidence": {
+      "productName": "Hana Espadrille Sandal Maya Denim",
+      "construction": [],
+      "legacyCategory": "WEDGE",
+      "heelHeightGroup": "LOW",
+      "cleanedHeelHeight": "35 mm"
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": "LOW",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": 35,
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.95
+      },
+      {
+        "field": "global.heelType",
+        "value": "WEDGE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "TEXTILE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLUE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.espadrilleSoleHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "the-row--name-nino-derby-shoe-other-footwear-unknown-unknown-unknown",
+    "brand": "THE ROW",
+    "productName": "Nino Derby Shoe",
+    "productUrl": "https://www.therow.com/products/nino-derby-brown-1",
+    "primaryCategory": "OXFORD_DERBY",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "lace-up-dress-shoe",
+    "textEvidence": {
+      "productName": "Nino Derby Shoe",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BROWN"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.lacingConstruction",
+        "value": "DERBY",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "a-emery--name-the-lou-clog-other-footwear-unknown-unknown-unknown",
+    "brand": "A.EMERY",
+    "productName": "The Lou Clog",
+    "productUrl": "https://aemery.com/products/the-lou-clog-black-hair-on",
+    "primaryCategory": "CLOG",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "clog-base-architecture",
+    "textEvidence": {
+      "productName": "The Lou Clog",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.baseConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "larroude--singleton-https-larroude-com-products-floral-larroude-x-markarian-miso-clog-embroidery-black-fabric",
+    "brand": "LARROUDE",
+    "productName": "Larroudé x Markarian Miso Clog In Floral Embroidery Black Fabric",
+    "productUrl": "https://larroude.com/products/floral-larroude-x-markarian-miso-clog-embroidery-black-fabric",
+    "primaryCategory": "CLOG",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "clog-base-architecture",
+    "textEvidence": {
+      "productName": "Larroudé x Markarian Miso Clog In Floral Embroidery Black Fabric",
+      "construction": [
+        "BACKLESS"
+      ],
+      "legacyCategory": "MULE",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": "BACKLESS",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "TEXTILE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.baseConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "larroude--singleton-https-larroude-com-products-russet-miso-low-clog-suede",
+    "brand": "LARROUDE",
+    "productName": "Miso Low Clog In Russet Suede",
+    "productUrl": "https://larroude.com/products/russet-miso-low-clog-suede",
+    "primaryCategory": "CLOG",
+    "categoryProvenance": "PRODUCT_EVIDENCE",
+    "categoryAssignmentReason": "clog-base-architecture",
+    "textEvidence": {
+      "productName": "Miso Low Clog In Russet Suede",
+      "construction": [
+        "BACKLESS"
+      ],
+      "legacyCategory": "MULE",
+      "heelHeightGroup": "LOW",
+      "cleanedHeelHeight": "30 mm"
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": "ROUND",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": "BACKLESS",
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": "LOW",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": 30,
+        "status": "KNOWN",
+        "source": "PRODUCT_TEXT",
+        "confidence": 0.95
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "SUEDE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.baseConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "aeyde--name-ellie-almond-toe-flats-other-footwear-flat-unknown-unknown",
+    "brand": "AEYDE",
+    "productName": "Ellie Almond-Toe Flats",
+    "productUrl": "https://www.aeyde.com/products/ellie-black-nappa",
+    "primaryCategory": "UNCLASSIFIED",
+    "categoryProvenance": "INSUFFICIENT",
+    "categoryAssignmentReason": "insufficient-evidence",
+    "textEvidence": {
+      "productName": "Ellie Almond-Toe Flats",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BEIGE"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "le-monde-beryl--name-luna-slipper-other-footwear-unknown-unknown-unknown",
+    "brand": "LE MONDE BERYL",
+    "productName": "Luna Slipper / Black Leather",
+    "productUrl": "https://lemondeberyl.com/products/luna-slipper-black-leather",
+    "primaryCategory": "UNCLASSIFIED",
+    "categoryProvenance": "INSUFFICIENT",
+    "categoryAssignmentReason": "insufficient-evidence",
+    "textEvidence": {
+      "productName": "Luna Slipper / Black Leather",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": [
+          "LEATHER"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.colorFamily",
+        "value": [
+          "BLACK"
+        ],
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  },
+  {
+    "modelFamilyId": "aeyde--name-uma-mary-jane-flats-other-footwear-flat-unknown-unknown",
+    "brand": "AEYDE",
+    "productName": "Uma Mary-Jane Flats",
+    "productUrl": "https://www.aeyde.com/products/uma-silver-nappa",
+    "primaryCategory": "UNCLASSIFIED",
+    "categoryProvenance": "INSUFFICIENT",
+    "categoryAssignmentReason": "insufficient-evidence",
+    "textEvidence": {
+      "productName": "Uma Mary-Jane Flats",
+      "construction": [],
+      "legacyCategory": "OTHER_FOOTWEAR",
+      "heelHeightGroup": "UNKNOWN",
+      "cleanedHeelHeight": null
+    },
+    "features": [
+      {
+        "field": "global.toeShape",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeLength",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.toeOpening",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.backConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.vampHeight",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightClass",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelHeightMm",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.heelType",
+        "value": "NONE",
+        "status": "KNOWN",
+        "source": "DERIVED",
+        "confidence": 0.75
+      },
+      {
+        "field": "global.soleProfile",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.platformConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.closureFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.strapFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.sideConstruction",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareType",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.hardwareIntensity",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.embellishmentFeatures",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.materialFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.colorFamily",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "global.surfacePattern",
+        "value": null,
+        "status": "UNKNOWN",
+        "source": "UNKNOWN",
+        "confidence": null
+      },
+      {
+        "field": "categorySpecific.strapConfiguration",
+        "value": null,
+        "status": "NOT_APPLICABLE",
+        "source": "UNKNOWN",
+        "confidence": null
+      }
+    ]
+  }
+]

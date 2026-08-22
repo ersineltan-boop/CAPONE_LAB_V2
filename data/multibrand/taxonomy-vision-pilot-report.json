@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-21T07:34:30.143Z",
+  "executed": false,
+  "reason": "Vision provider error: 429 You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+  "promptVersion": "taxonomy-v1-1",
+  "provider": "openai",
+  "limit": 40,
+  "familiesAnalyzed": 0,
+  "imagesAnalyzed": 0,
+  "cachedHits": 0,
+  "liveCalls": 0,
+  "unknownFieldsBefore": 280,
+  "acceptedProposals": 0,
+  "rejectedProposals": 0,
+  "unknownFieldsAfter": 280,
+  "acceptanceRateByField": {},
+  "averageConfidenceByField": {},
+  "coverageDelta": {},
+  "families": []
+}

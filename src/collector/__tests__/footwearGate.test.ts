@@ -1,0 +1,212 @@
+import { describe, expect, it } from "vitest";
+
+import {
+  evaluateFootwearProduct,
+  evaluateStoredPilotProduct,
+} from "../footwearGate";
+import { shopifyProductToPilot } from "../shopify";
+import type { PilotSourceConfig } from "../types";
+
+const config: PilotSourceConfig = {
+  id: "test",
+  brand: "TEST",
+  baseUrl: "https://example.com",
+  collectionPaths: ["/collections/womens-shoes"],
+  verifiedFootwearPaths: ["/collections/womens-shoes"],
+  maxProducts: 30,
+};
+
+describe("footwear gate", () => {
+  it("handbag excluded", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Alys Black Suede",
+        productType: "Clutch",
+        tags: ["Category~Handbags"],
+        handle: "bagalys-black-suede",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("perfume excluded", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Eau de Parfum",
+        productType: "Fragrance",
+        tags: ["PERFUME"],
+        handle: "parfum",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("dress excluded", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Slouch waist dress",
+        productType: "Dress",
+        tags: ["Dresses"],
+        handle: "slouch-waist-dress",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("women's pump accepted via product_type", () => {
+    const gate = evaluateFootwearProduct({
+      title: "Valerie Low Pump",
+      productType: "Pumps",
+      tags: ["Heels"],
+      handle: "valerie-low-pump",
+    });
+    expect(gate.decision).toBe("ACCEPT_FOOTWEAR");
+    expect(gate.category).toBe("PUMP");
+  });
+
+  it("sandal accepted", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Phoebe Sandal",
+        productType: "Sandals",
+        tags: ["Sandals"],
+        handle: "phoebe-sandal",
+      }).category,
+    ).toBe("SANDAL");
+  });
+
+  it("ballet flat accepted", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Classic Ballet Flat",
+        productType: "Flats",
+        tags: ["BALLET FLATS"],
+        handle: "classic-ballet-flat",
+      }).category,
+    ).toBe("BALLERINA");
+  });
+
+  it("boot accepted", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Cindy Boot",
+        productType: "Boots",
+        tags: ["Boots"],
+        handle: "cindy-boot",
+      }).category,
+    ).toBe("BOOT");
+  });
+
+  it("sneaker accepted", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Retro Sneaker",
+        productType: "Sneakers",
+        tags: ["SNEAKERS"],
+        handle: "retro-sneaker",
+      }).category,
+    ).toBe("SNEAKER");
+  });
+
+  it("ambiguous product excluded", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Ribbed waist skirt",
+        productType: "Skirt",
+        tags: ["Skirts"],
+        handle: "ribbed-waist-skirt",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("footwear collection product accepted with title support", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Soft Loafer",
+        productType: "",
+        tags: [],
+        handle: "soft-loafer",
+        collectionPath: "/collections/womens-shoes",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+
+  it("non-footwear product from same brand excluded in stored review", () => {
+    expect(
+      evaluateStoredPilotProduct({
+        productName: "T-lock python-embossed crossbody",
+        productUrl: "https://example.com/products/t-lock-crossbody",
+        category: "PUMP",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("other footwear without title support excluded in stored review", () => {
+    expect(
+      evaluateStoredPilotProduct({
+        productName: "Soie Malaquais",
+        productUrl: "https://example.com/products/001-099009",
+        category: "OTHER_FOOTWEAR",
+      }).decision,
+    ).toBe("EXCLUDE_UNCERTAIN_PRODUCT_TYPE");
+  });
+
+  it("lipstick excluded in stored review", () => {
+    expect(
+      evaluateStoredPilotProduct({
+        productName: "Lipstick duo set",
+        productUrl: "https://example.com/products/lipstick-set",
+        category: "OTHER_FOOTWEAR",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("scarf-named slingback accepted when footwear title signal exists", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Scarf nappa slingbacks black/ecru",
+        productType: "Shoes",
+        tags: ["Slingbacks"],
+        handle: "scarf-nappa-slingbacks",
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+});
+
+describe("shopifyProductToPilot strict gate", () => {
+  it("maps verified footwear shopify product", () => {
+    const product = shopifyProductToPilot(
+      {
+        id: 1,
+        title: "Lyra Sandal",
+        handle: "lyra-sandal",
+        body_html: "<p>Leather sandal</p>",
+        product_type: "Sandals",
+        tags: ["Sandals"],
+        images: [{ src: "https://cdn.example.com/shoe.jpg" }],
+        options: [{ name: "Color", values: ["Platinum"] }],
+        variants: [{ title: "5 / Platinum", option1: "5", option2: "Platinum", sku: "SKU1" }],
+      },
+      config,
+      "2026-08-18T00:00:00.000Z",
+      "/collections/womens-shoes",
+    );
+
+    expect(product?.category).toBe("SANDAL");
+  });
+
+  it("rejects dress from footwear collection context", () => {
+    const product = shopifyProductToPilot(
+      {
+        id: 2,
+        title: "Ribbed waist skirt",
+        handle: "ribbed-waist-skirt",
+        product_type: "Skirt",
+        tags: ["Skirts"],
+      },
+      config,
+      "2026-08-18T00:00:00.000Z",
+      "/collections/womens-shoes",
+    );
+
+    expect(product).toBeNull();
+  });
+});
