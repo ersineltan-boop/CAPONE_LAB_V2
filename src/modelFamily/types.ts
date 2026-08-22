@@ -79,6 +79,8 @@ export interface RawAnalyzedProductVariant {
   title?: string;
   color?: string | null;
   sku?: string;
+  imageUrl?: string | null;
+  images?: string[];
 }
 
 export interface RawAnalyzedProduct {

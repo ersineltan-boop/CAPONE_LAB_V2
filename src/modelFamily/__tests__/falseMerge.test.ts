@@ -3,7 +3,8 @@ import { describe, expect, it } from "vitest";
 import { buildModelFamilies } from "../buildFamilies";
 import { isGenericModelTitle, hasDistinctiveModelToken } from "../genericModelTitle";
 import { extractZaraProductId, extractFarfetchItemId } from "../sourceIdentity";
-import { extractBaseSku } from "../styleCode";
+import { extractBaseSku, extractParisTexasStyleCode, extractParisTexasColorFromSku, extractStaudStyleCode } from "../styleCode";
+import { colorVariantsForFamily } from "../colorVariants";
 import type { RawAnalyzedProduct } from "../types";
 
 function product(
@@ -468,5 +469,471 @@ describe("false merge prevention", () => {
     ]);
     expect(families).toHaveLength(1);
     expect(families[0]?.groupingConfidence).toBe("HIGH");
+  });
+
+  it("keeps Schutz products with conflicting style codes separate", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "schutz",
+        brand: "SCHUTZ",
+        productName: "Julie Suede Pump",
+        productUrl: "https://schutz-shoes.com/products/julie-black",
+        variants: [{ sku: "S2217900140013", color: "Black" }],
+      }),
+      product({
+        source: "schutz",
+        brand: "SCHUTZ",
+        productName: "Julie Suede Pump",
+        productUrl: "https://schutz-shoes.com/products/other-black",
+        variants: [{ sku: "S2208700750004", color: "Black" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+});
+
+describe("verified color recovery", () => {
+  it("groups three Zara colors of the same -p style into one family", () => {
+    const base = {
+      source: "zara",
+      brand: "ZARA",
+      productName: "Split Suede Loafers",
+      productUrl: "https://www.zara.com/us/en/split-suede-loafers-p12504810.html",
+      category: "LOAFER" as const,
+      normalized: {
+        category: "LOAFER" as const,
+        colorFamily: "BROWN",
+        materialFamily: "SUEDE",
+        heelType: "FLAT",
+        heelHeightGroup: "FLAT",
+        toeShape: "ROUND",
+        details: [],
+        construction: ["CLOSED_TOE"],
+      },
+    };
+    const { families } = buildModelFamilies([
+      product({
+        ...base,
+        color: "Sandy Brown",
+        cleaned: { color: "Sandy Brown", heelHeight: null },
+        imageUrl: "https://static.zara.net/brown.jpg",
+        variants: [
+          {
+            color: "Sandy Brown",
+            sku: "ZARA-REF-2504/810",
+            imageUrl: "https://static.zara.net/brown.jpg",
+            images: ["https://static.zara.net/brown.jpg"],
+          },
+          {
+            color: "Ice",
+            sku: "ZARA-REF-2504/810",
+            imageUrl: "https://static.zara.net/ice.jpg",
+            images: ["https://static.zara.net/ice.jpg"],
+          },
+          {
+            color: "Black",
+            sku: "ZARA-REF-2504/810",
+            imageUrl: "https://static.zara.net/black.jpg",
+            images: ["https://static.zara.net/black.jpg"],
+          },
+        ],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(3);
+    const colors = colorVariantsForFamily(families[0]!);
+    expect(colors).toHaveLength(3);
+    expect(colors.map((item) => item.color).sort()).toEqual(["Black", "Ice", "Sandy Brown"]);
+    expect(new Set(colors.map((item) => item.url)).size).toBe(1);
+    expect(new Set(colors.map((item) => item.thumbnail)).size).toBe(3);
+  });
+
+  it("does not merge different Zara -p IDs that only share a generic title", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "Heeled Sandals",
+        productUrl: "https://www.zara.com/us/en/heeled-sandals-p12314710.html",
+      }),
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "Heeled Sandals",
+        productUrl: "https://www.zara.com/us/en/heeled-sandals-p11302810.html",
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("merges Paris Texas colors that share a PX style after color-suffix stripping", () => {
+    expect(extractParisTexasStyleCode("PX1141XVN01DESERTROSE_35")).toBe("PX1141XVN01");
+    expect(extractParisTexasStyleCode("PX1141XVN0169622_35")).toBe("PX1141XVN01");
+    expect(extractParisTexasColorFromSku("PX1141XVN01IVORY_35")).toBe("IVORY");
+    const { families } = buildModelFamilies([
+      product({
+        source: "paris-texas",
+        brand: "PARIS TEXAS",
+        productName: "Patent leather mule",
+        productUrl: "https://paristexasbrand.com/products/mule-ivory",
+        category: "MULE",
+        variants: [{ sku: "PX1141XVN01IVORY_35", color: "Ivory" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "WHITE",
+          materialFamily: "PATENT",
+          heelType: "STILETTO",
+          heelHeightGroup: "HIGH",
+          toeShape: "POINTED",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+      product({
+        source: "paris-texas",
+        brand: "PARIS TEXAS",
+        productName: "Patent leather mule",
+        productUrl: "https://paristexasbrand.com/products/mule-desert",
+        color: "Desert Rose",
+        cleaned: { color: "Desert Rose", heelHeight: null },
+        category: "MULE",
+        variants: [{ sku: "PX1141XVN01DESERTROSE_35", color: "Desert Rose" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "PINK",
+          materialFamily: "PATENT",
+          heelType: "STILETTO",
+          heelHeightGroup: "HIGH",
+          toeShape: "POINTED",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+      product({
+        source: "paris-texas",
+        brand: "PARIS TEXAS",
+        productName: "Patent leather mule",
+        productUrl: "https://paristexasbrand.com/products/mule-69622",
+        color: "Amarena",
+        cleaned: { color: "Amarena", heelHeight: null },
+        category: "MULE",
+        variants: [{ sku: "PX1141XVN0169622_35", color: "Amarena" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "RED",
+          materialFamily: "PATENT",
+          heelType: "STILETTO",
+          heelHeightGroup: "HIGH",
+          toeShape: "POINTED",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(3);
+  });
+
+  it("does not merge Paris Texas PX1141 patent mule with a different PX1141 material style", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "paris-texas",
+        brand: "PARIS TEXAS",
+        productName: "Patent leather mule",
+        productUrl: "https://paristexasbrand.com/products/patent",
+        category: "MULE",
+        variants: [{ sku: "PX1141XVN01NERO_35", color: "Nero" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "BLACK",
+          materialFamily: "PATENT",
+          heelType: "STILETTO",
+          heelHeightGroup: "HIGH",
+          toeShape: "POINTED",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+      product({
+        source: "paris-texas",
+        brand: "PARIS TEXAS",
+        productName: "Mirrored leather mule",
+        productUrl: "https://paristexasbrand.com/products/mirror",
+        category: "MULE",
+        variants: [{ sku: "PX1141XNPMRARGENTO_35", color: "Argento" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "SILVER",
+          materialFamily: "LEATHER",
+          heelType: "STILETTO",
+          heelHeightGroup: "HIGH",
+          toeShape: "POINTED",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("groups Staud colorways that share a verified style code", () => {
+    expect(extractStaudStyleCode("F25F1028LN-TRUF-35")).toBe("F25F1028");
+    expect(extractStaudStyleCode("F25F1028VR-SYR-36")).toBe("F25F1028");
+    const { families } = buildModelFamilies([
+      product({
+        source: "staud",
+        brand: "STAUD",
+        productName: "Sebastian Ankle Boot | Truffle",
+        productUrl: "https://staud.clothing/products/sebastian-ankle-boot-truffle",
+        variants: [{ sku: "F25F1028LN-TRUF-35", color: "Truffle" }],
+      }),
+      product({
+        source: "staud",
+        brand: "STAUD",
+        productName: "Sebastian Ankle Boot | Syrah",
+        productUrl: "https://staud.clothing/products/sebastian-ankle-boot-syrah",
+        color: "Syrah",
+        cleaned: { color: "Syrah", heelHeight: null },
+        variants: [{ sku: "F25F1028VR-SYR-35", color: "Syrah" }],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(2);
+  });
+
+  it("keeps one saved family for a multi-color model", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "jeffrey-campbell",
+        brand: "JEFFREY CAMPBELL",
+        productName: "AGENT",
+        productUrl: "https://jeffreycampbellshoes.com/products/agent",
+        color: "Black",
+        variants: [
+          { sku: "AGENT-460-6", color: "Black", imageUrl: "https://cdn.example.com/black.jpg" },
+          { sku: "AGENT-212-6", color: "White", imageUrl: "https://cdn.example.com/white.jpg" },
+        ],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(2);
+    expect(colorVariantsForFamily(families[0]!)).toHaveLength(2);
+  });
+
+  it("does not family-merge a generic title even when SKUs are missing", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "the-row",
+        brand: "THE ROW",
+        productName: "Loafer",
+        productUrl: "https://www.therow.com/products/loafer-black",
+      }),
+      product({
+        source: "the-row",
+        brand: "THE ROW",
+        productName: "Loafer",
+        productUrl: "https://www.therow.com/products/loafer-brown",
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not name-merge distinctive titles onto conflicting verified styles", () => {
+    const boot = {
+      source: "paris-texas",
+      brand: "PARIS TEXAS",
+      productName: "WESTERN ANKLE BOOT",
+      category: "ANKLE_BOOT" as const,
+      normalized: {
+        category: "ANKLE_BOOT" as const,
+        colorFamily: "BLACK",
+        materialFamily: "LEATHER",
+        heelType: "STILETTO",
+        heelHeightGroup: "HIGH",
+        toeShape: "POINTED",
+        details: [],
+        construction: ["CLOSED_TOE"],
+      },
+    };
+    const { families } = buildModelFamilies([
+      product({
+        ...boot,
+        productUrl: "https://paristexasbrand.com/products/western-unknown",
+      }),
+      product({
+        ...boot,
+        productUrl: "https://paristexasbrand.com/products/western-a",
+        variants: [{ sku: "PX1119XVT0CNERO_35" }],
+      }),
+      product({
+        ...boot,
+        productUrl: "https://paristexasbrand.com/products/western-b",
+        variants: [{ sku: "PX9999XVT0CNERO_35" }],
+      }),
+    ]);
+    expect(families).toHaveLength(3);
+  });
+
+  it("does not merge the same Larroude style code across sneaker and mule", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Stella Sneaker Teal Suede",
+        productUrl: "https://larroude.com/stella-sneaker",
+        category: "SNEAKER",
+        variants: [{ sku: "L415-STEL-5.0-TEAL-3054", color: "Teal" }],
+        normalized: {
+          category: "SNEAKER",
+          colorFamily: "GREEN",
+          materialFamily: "SUEDE",
+          heelType: "OTHER",
+          heelHeightGroup: "UNKNOWN",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["LACE_UP"],
+        },
+      }),
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Stella Mule Teal Suede",
+        productUrl: "https://larroude.com/stella-mule",
+        category: "MULE",
+        variants: [{ sku: "L415-STEL-5.0-TEAL-3055", color: "Teal" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "GREEN",
+          materialFamily: "SUEDE",
+          heelType: "OTHER",
+          heelHeightGroup: "UNKNOWN",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["BACKLESS"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("name-merges distinctive model colors when SKUs are not a verified style identity", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Uma Mary-jane Flats",
+        productUrl: "https://www.aeyde.com/products/uma-black",
+        variants: [{ sku: "UMA-BLK-36", color: "Black" }],
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Uma Mary-jane Flats",
+        productUrl: "https://www.aeyde.com/products/uma-cream",
+        color: "Cream",
+        cleaned: { color: "Cream", heelHeight: null },
+        variants: [{ sku: "UMA-CRM-36", color: "Cream" }],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(2);
+  });
+
+  it("keeps Ancient Greek Aeropi colors that share style 12456", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "ancient-greek-sandals",
+        brand: "ANCIENT GREEK SANDALS",
+        productName: "Aeropi Ballet Flat",
+        productUrl: "https://ancient-greek-sandals.com/products/aeropi",
+        variants: [{ sku: "12456_1069_00039", color: "Black" }],
+      }),
+      product({
+        source: "ancient-greek-sandals",
+        brand: "ANCIENT GREEK SANDALS",
+        productName: "Aeropi Ballet Flat",
+        productUrl: "https://ancient-greek-sandals.com/products/aeropi-13",
+        color: "Gold",
+        cleaned: { color: "Gold", heelHeight: null },
+        variants: [{ sku: "12456_1069_00374", color: "Gold" }],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toContain("styleCode:12456");
+  });
+
+  it("does not keep Alohas Rosalind leather and mesh as one family", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-black-leather-ballet-flats",
+        variants: [{ sku: "S100303-0435", color: "Black" }],
+      }),
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-mesh-black-leather-ballet-flats",
+        color: "Mesh Black",
+        cleaned: { color: "Mesh Black", heelHeight: null },
+        variants: [{ sku: "S101545-0135", color: "Mesh Black" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("splits a name-only 10-color Carel Kina cluster without a shared style ID", () => {
+    const kinas = Array.from({ length: 10 }, (_, index) =>
+      product({
+        source: "carel",
+        brand: "CAREL",
+        productName: "Kina",
+        productUrl: `https://carel.fr/products/kina-${index}`,
+        color: `Color ${index}`,
+        cleaned: { color: `Color ${index}`, heelHeight: null },
+        variants: [{ sku: `36061015891${index.toString().padStart(2, "0")}`, color: `Color ${index}` }],
+      }),
+    );
+    const { families } = buildModelFamilies(kinas);
+    expect(families).toHaveLength(10);
+  });
+
+  it("splits Alias Mae Lana products that only share the name", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "alias-mae",
+        brand: "ALIAS MAE",
+        productName: "Lana",
+        productUrl: "https://aliasmae.com.au/products/lana",
+        variants: [
+          { color: "Black Tumble" },
+          { color: "Choc Tumble" },
+          { color: "Bone Tumble" },
+          { color: "Silver Crinkle" },
+        ],
+      }),
+      product({
+        source: "alias-mae",
+        brand: "ALIAS MAE",
+        productName: "Lana",
+        productUrl: "https://aliasmae.com.au/products/lana-satin",
+        variants: [
+          { color: "Black Satin" },
+          { color: "Petrol Satin" },
+          { color: "Ballet Satin" },
+          { color: "Denim Satin" },
+        ],
+      }),
+      product({
+        source: "alias-mae",
+        brand: "ALIAS MAE",
+        productName: "Lana",
+        productUrl: "https://aliasmae.com.au/products/lana-cracked",
+        variants: [{ color: "Ivory Cracked" }, { color: "Silver Cracked" }],
+      }),
+    ]);
+    expect(families).toHaveLength(3);
   });
 });

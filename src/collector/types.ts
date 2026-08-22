@@ -17,6 +17,8 @@ export interface PilotProductVariant {
   title: string;
   color: string | null;
   sku: string | null;
+  imageUrl?: string | null;
+  images?: string[];
 }
 
 export interface PilotProduct {

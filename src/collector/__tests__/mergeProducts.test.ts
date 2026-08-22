@@ -62,6 +62,40 @@ describe("mergeProducts", () => {
     expect(merged[0]?.isNewArrivalsCollection).toBe(true);
   });
 
+  it("keeps distinct source colors when the same product URL is merged", () => {
+    const existing = product({
+      productUrl: "https://www.zara.com/us/en/split-suede-loafers-p12504810.html",
+      source: "zara",
+      brand: "ZARA",
+      color: "Sandy Brown",
+      variants: [
+        {
+          title: "SPLIT SUEDE LOAFERS Sandy Brown",
+          color: "Sandy Brown",
+          sku: "ZARA-REF-2504/810",
+          imageUrl: "https://static.zara.net/brown.jpg",
+        },
+      ],
+    });
+    const incoming = product({
+      productUrl: "https://www.zara.com/us/en/split-suede-loafers-p12504810.html",
+      source: "zara",
+      brand: "ZARA",
+      color: "Ice",
+      variants: [
+        {
+          title: "SPLIT SUEDE LOAFERS Ice",
+          color: "Ice",
+          sku: "ZARA-REF-2504/810",
+          imageUrl: "https://static.zara.net/ice.jpg",
+        },
+      ],
+    });
+    const merged = mergeProductCatalog([existing], [incoming]);
+    expect(merged).toHaveLength(1);
+    expect(merged[0]?.variants.map((variant) => variant.color).sort()).toEqual(["Ice", "Sandy Brown"]);
+  });
+
   it("sorts newest publishedAt first", () => {
     const older = product({
       productUrl: "https://example.com/products/old",

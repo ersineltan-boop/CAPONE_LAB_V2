@@ -49,6 +49,15 @@ interface ZaraSeo {
   irrelevant?: boolean;
 }
 
+interface ZaraDetailColor {
+  id?: string | number;
+  productId?: string | number;
+  name?: string;
+  stylingId?: string | number;
+  canonicalReference?: string;
+  xmedia?: unknown;
+}
+
 interface ZaraCommercialComponent {
   id?: number | string;
   type?: string;
@@ -60,7 +69,11 @@ interface ZaraCommercialComponent {
   colorList?: string;
   seo?: ZaraSeo;
   xmedia?: unknown;
-  detail?: { colors?: Array<{ name?: string; xmedia?: unknown }> };
+  detail?: {
+    reference?: string;
+    displayReference?: string;
+    colors?: ZaraDetailColor[];
+  };
   availableColors?: Array<{ name?: string }>;
   productTag?: Array<{ type?: string; name?: string } | string>;
   extraInfo?: Record<string, unknown>;
@@ -273,6 +286,10 @@ export function zaraComponentToProduct(
     detail: component.detail,
   });
   const colors = zaraColorNames(component);
+  const displayReference = component.detail?.displayReference?.trim() || null;
+  const styleSku =
+    (displayReference ? `ZARA-REF-${displayReference}` : String(component.reference ?? "").trim()) ||
+    null;
   const tags = (component.productTag ?? []).map((tag) =>
     typeof tag === "string" ? tag : [tag.type, tag.name].filter(Boolean).join(" "),
   );
@@ -312,9 +329,13 @@ export function zaraComponentToProduct(
     ],
     isNewArrivalsCollection: isNewCollection,
     hasNewBadge,
-    variants: colors.length
-      ? colors.map((color) => ({ title: `${name} ${color}`, color, sku: null }))
-      : [{ title: name, color: null, sku: null }],
+    variants: (colors.length ? colors : [null]).map((color) => ({
+      title: color ? `${name} ${color}` : name,
+      color,
+      sku: styleSku,
+      imageUrl: images[0] ?? null,
+      images,
+    })),
   };
 }
 

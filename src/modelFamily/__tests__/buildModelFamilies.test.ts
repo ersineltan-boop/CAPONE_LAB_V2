@@ -74,6 +74,9 @@ describe("extractBaseSku", () => {
     expect(extractBaseSku("PX2027XNPPSBORGOGNA_35")).toBe("PX2027XNPPS");
     expect(extractBaseSku("PX2030XV003TUNDRA_35")).toBe("PX2030XV003");
     expect(extractBaseSku("PX2030XV003EBANO_35")).not.toBe(extractBaseSku("PX2027XV003TUNDRA_35"));
+    expect(extractBaseSku("PX1141XVN01DESERTROSE_35")).toBe("PX1141XVN01");
+    expect(extractBaseSku("PX1141XVN0169622_35")).toBe("PX1141XVN01");
+    expect(extractBaseSku("F25F1028LN-TRUF-35")).toBe("F25F1028");
   });
 });
 

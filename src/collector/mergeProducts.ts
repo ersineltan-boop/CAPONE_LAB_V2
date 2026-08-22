@@ -1,4 +1,4 @@
-import type { PilotProduct } from "./types";
+import type { PilotProduct, PilotProductVariant } from "./types";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
 import { categoryFromProductFields, mergeSourceCategories } from "../source/sourceCategories";
 import type { SourceNativeCategory } from "../source/types";
@@ -16,6 +16,48 @@ function pickDate(
   existing: string | null | undefined,
 ): string | null | undefined {
   return incoming ?? existing ?? undefined;
+}
+
+function variantColorKey(variant: PilotProductVariant): string {
+  return (variant.color ?? "").trim().toLowerCase() || (variant.title ?? "").trim().toLowerCase() || "default";
+}
+
+function mergeVariantImages(
+  existing: PilotProductVariant,
+  incoming: PilotProductVariant,
+): string[] {
+  return normalizeProductImageUrls([
+    ...(incoming.images ?? []),
+    ...(existing.images ?? []),
+    incoming.imageUrl,
+    existing.imageUrl,
+  ]);
+}
+
+export function mergeProductVariants(
+  existing: readonly PilotProductVariant[],
+  incoming: readonly PilotProductVariant[],
+): PilotProductVariant[] {
+  const byKey = new Map<string, PilotProductVariant>();
+  for (const variant of [...existing, ...incoming]) {
+    const key = variantColorKey(variant);
+    const prior = byKey.get(key);
+    if (!prior) {
+      byKey.set(key, variant);
+      continue;
+    }
+    const images = mergeVariantImages(prior, variant);
+    byKey.set(key, {
+      ...prior,
+      ...variant,
+      title: variant.title || prior.title,
+      color: variant.color ?? prior.color,
+      sku: variant.sku ?? prior.sku,
+      images,
+      imageUrl: images[0] ?? variant.imageUrl ?? prior.imageUrl ?? null,
+    });
+  }
+  return [...byKey.values()];
 }
 
 function categoriesFromProduct(product: PilotProduct): SourceNativeCategory[] {
@@ -38,6 +80,12 @@ export function mergeProductRecords(
     incoming.imageUrl,
     existing.imageUrl,
   ]);
+  const variants = mergeProductVariants(existing.variants ?? [], incoming.variants ?? []);
+  const color =
+    incoming.color ??
+    existing.color ??
+    variants.find((variant) => variant.color)?.color ??
+    null;
 
   return {
     ...incoming,
@@ -47,6 +95,8 @@ export function mergeProductRecords(
     updatedAt: pickDate(incoming.updatedAt, existing.updatedAt) ?? existing.updatedAt,
     images,
     imageUrl: images[0] ?? incoming.imageUrl ?? existing.imageUrl,
+    color,
+    variants,
     isNewArrivalsCollection:
       Boolean(existing.isNewArrivalsCollection) || Boolean(incoming.isNewArrivalsCollection),
     hasNewBadge: Boolean(existing.hasNewBadge) || Boolean(incoming.hasNewBadge),

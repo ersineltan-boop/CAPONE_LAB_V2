@@ -2,7 +2,12 @@ import {
   buildCanonicalDisplayName,
   normalizeModelName,
 } from "./normalizeModelName";
-import { extractStyleCode } from "./styleCode";
+import {
+  extractStyleCode,
+  extractStyleIdentity,
+  extractParisTexasColorFromSku,
+  extractSourceProvenStyle,
+} from "./styleCode";
 import { buildStructuralSignature } from "./structuralSignature";
 import {
   buildRepresentativeImages,
@@ -25,6 +30,7 @@ import { enrichModelFamiliesWithTaxonomy } from "../taxonomy/enrichModelFamilies
 interface ProductGroupingMeta {
   product: RawAnalyzedProduct;
   styleCode: string | null;
+  verifiedStyle: boolean;
   normalizedName: string;
   structuralSignature: string;
   listingKey: string;
@@ -61,27 +67,96 @@ function buildPriorFamilyMap(priorFamilies?: ModelFamily[]): Map<string, ModelFa
   return new Map((priorFamilies ?? []).map((family) => [family.modelFamilyId, family]));
 }
 
+function productFallbackImages(
+  product: RawAnalyzedProduct,
+  productImageGalleries?: Record<string, string[]>,
+): string[] {
+  const images = resolveProductImageUrls(product, productImageGalleries);
+  if (images.length === 0 && product.imageUrl) {
+    images.push(product.imageUrl);
+  }
+  return images;
+}
+
 function toVariant(
   product: RawAnalyzedProduct,
   productImageGalleries?: Record<string, string[]>,
 ): ModelFamilyVariant {
   const sku = product.variants?.find((variant) => variant.sku)?.sku;
   const styleCode = extractStyleCode(product);
-  const images = resolveProductImageUrls(product, productImageGalleries);
-  if (images.length === 0 && product.imageUrl) {
-    images.push(product.imageUrl);
-  }
+  const images = productFallbackImages(product, productImageGalleries);
+  const color =
+    product.cleaned.color ??
+    product.color ??
+    (product.source.trim().toLowerCase() === "paris-texas" && sku
+      ? extractParisTexasColorFromSku(sku)
+      : null);
 
   return {
     productId: product.productUrl,
     title: product.productName,
     url: product.productUrl,
-    color: product.cleaned.color ?? product.color,
+    color,
     material: product.material,
     images,
     ...(sku ? { sku } : {}),
     ...(styleCode ? { styleCode } : {}),
   };
+}
+
+function isSizeLikeColor(value: string): boolean {
+  const trimmed = value.trim();
+  if (/^\d{1,2}(?:[.,]\d)?$/.test(trimmed)) return true;
+  return /^(xxs|xs|s|m|l|xl|xxl|xxxl)$/i.test(trimmed);
+}
+
+function explodeProductColorVariants(
+  product: RawAnalyzedProduct,
+  productImageGalleries?: Record<string, string[]>,
+): ModelFamilyVariant[] {
+  const styleCode = extractStyleCode(product);
+  const fallbackImages = productFallbackImages(product, productImageGalleries);
+  const ways = new Map<string, ModelFamilyVariant>();
+
+  const add = (color: string | null | undefined, sku?: string | null, extraImages?: string[]) => {
+    let trimmed = color?.trim() || null;
+    if (!trimmed && sku && product.source.trim().toLowerCase() === "paris-texas") {
+      trimmed = extractParisTexasColorFromSku(sku);
+    }
+    if (!trimmed) return;
+    if (isSizeLikeColor(trimmed)) return;
+    const key = trimmed.toLowerCase();
+    const images = [...new Set([...(extraImages ?? []), ...fallbackImages].filter(Boolean))];
+    const existing = ways.get(key);
+    if (existing) {
+      existing.images = [...new Set([...existing.images, ...images])];
+      if (sku && !existing.sku) existing.sku = sku;
+      return;
+    }
+    ways.set(key, {
+      productId: `${product.productUrl}::${key}`,
+      title: product.productName,
+      url: product.productUrl,
+      color: trimmed,
+      material: product.material,
+      images: images.length ? images : fallbackImages,
+      ...(sku ? { sku } : {}),
+      ...(styleCode ? { styleCode } : {}),
+    });
+  };
+
+  for (const variant of product.variants ?? []) {
+    add(variant.color, variant.sku, [
+      ...(variant.images ?? []),
+      variant.imageUrl ?? "",
+    ]);
+  }
+  if (ways.size === 0) {
+    add(product.cleaned.color ?? product.color, product.variants?.find((variant) => variant.sku)?.sku);
+  }
+
+  if (ways.size <= 1) return [toVariant(product, productImageGalleries)];
+  return [...ways.values()];
 }
 
 function normalizeNameForProduct(product: RawAnalyzedProduct): string {
@@ -110,9 +185,19 @@ function buildFamilyFromProducts(
   productImageGalleries?: Record<string, string[]>,
 ): ModelFamily {
   const representative = pickRepresentative(group.products);
-  const variants = group.products.map((product) =>
-    toVariant(product, productImageGalleries),
+  const variants = group.products.flatMap((product) =>
+    explodeProductColorVariants(product, productImageGalleries),
   );
+  const verifiedStyles = [
+    ...new Set(
+      group.products
+        .map((product) => extractStyleIdentity(product))
+        .filter((identity) => identity.verified && identity.code)
+        .map((identity) => identity.code as string),
+    ),
+  ];
+  const suspicious =
+    verifiedStyles.length > 1 ? " + suspicious-style-conflict" : "";
   const representativeImages = buildRepresentativeImages(
     representative,
     productImageGalleries,
@@ -141,15 +226,30 @@ function buildFamilyFromProducts(
     allImages,
     sourceProductIds: group.products.map((product) => product.productUrl),
     groupingConfidence: group.confidence,
-    groupingReason: group.reason,
+    groupingReason: `${group.reason}${suspicious}`,
   };
+}
+
+function categoryMergeKey(product: RawAnalyzedProduct): string {
+  const category = product.normalized.category ?? product.category ?? "UNKNOWN";
+  if (category === "BOOT" || category === "ANKLE_BOOT") return "BOOT";
+  return category;
+}
+
+function categoriesCompatible(a: ProductGroupingMeta, b: ProductGroupingMeta): boolean {
+  const left = categoryMergeKey(a.product);
+  const right = categoryMergeKey(b.product);
+  if (left === "UNKNOWN" || right === "UNKNOWN") return true;
+  return left === right;
 }
 
 function buildGroupingMeta(product: RawAnalyzedProduct): ProductGroupingMeta {
   const source = product.source.trim().toLowerCase();
+  const identity = extractStyleIdentity(product);
   return {
     product,
-    styleCode: extractStyleCode(product),
+    styleCode: identity.code,
+    verifiedStyle: identity.verified,
     normalizedName: normalizeNameForProduct(product),
     structuralSignature: buildStructuralSignature(product),
     listingKey: listingIdentityKey(product),
@@ -162,9 +262,12 @@ function canMergeByStyleCode(
   a: ProductGroupingMeta,
   b: ProductGroupingMeta,
 ): boolean {
+  if (!a.verifiedStyle || !b.verifiedStyle) return false;
   if (!a.styleCode || !b.styleCode || a.styleCode !== b.styleCode) return false;
-  if (a.styleCode.startsWith("ZARA-") && a.listingKey !== b.listingKey) return false;
-  return a.structuralSignature === b.structuralSignature;
+  if (a.source === "zara" || b.source === "zara" || a.styleCode.startsWith("ZARA-")) {
+    return a.listingKey === b.listingKey;
+  }
+  return categoriesCompatible(a, b);
 }
 
 function canMergeByName(
@@ -174,11 +277,86 @@ function canMergeByName(
   if (a.source !== b.source) return false;
   if (a.isMarketplace || b.isMarketplace) return false;
   if (a.source === "zara" || b.source === "zara") return false;
-  if (a.styleCode !== b.styleCode) return false;
+  if (a.verifiedStyle || b.verifiedStyle) return false;
   if (!a.normalizedName || a.normalizedName !== b.normalizedName) return false;
   if (isGenericModelTitle(a.normalizedName)) return false;
   if (!hasDistinctiveModelToken(a.normalizedName)) return false;
   return a.structuralSignature === b.structuralSignature;
+}
+
+function uniqueExplodedColorCount(products: RawAnalyzedProduct[]): number {
+  const exploded = products.flatMap((product) => explodeProductColorVariants(product));
+  const colors = new Set(
+    exploded
+      .map((variant) => variant.color?.trim().toLowerCase())
+      .filter((color): color is string => Boolean(color)),
+  );
+  return Math.max(colors.size, exploded.length);
+}
+
+function singletonGroup(brand: string, product: RawAnalyzedProduct): PendingGroup {
+  return {
+    brand,
+    confidence: "MEDIUM",
+    reason: "singleton",
+    groupKey: `id-${listingIdentityKey(product)}`,
+    products: [product],
+  };
+}
+
+function refineNameOnlyGroup(group: PendingGroup): PendingGroup[] {
+  if (!group.reason.startsWith("normalizedName:")) return [group];
+
+  const keyed = group.products.map((product) => ({
+    product,
+    code: extractSourceProvenStyle(product),
+  }));
+  const codes = [...new Set(keyed.map((row) => row.code).filter((code): code is string => Boolean(code)))];
+
+  if (codes.length === 1 && keyed.every((row) => row.code === codes[0])) {
+    return [
+      {
+        ...group,
+        confidence: "HIGH",
+        reason: `styleCode:${codes[0]}`,
+      },
+    ];
+  }
+
+  if (codes.length >= 1) {
+    const buckets = new Map<string, RawAnalyzedProduct[]>();
+    for (const row of keyed) {
+      const bucketKey = row.code
+        ? `${group.groupKey}::style-${row.code}`
+        : `id-${listingIdentityKey(row.product)}`;
+      const bucket = buckets.get(bucketKey) ?? [];
+      bucket.push(row.product);
+      buckets.set(bucketKey, bucket);
+    }
+    return [...buckets.entries()].map(([groupKey, products]) => {
+      const code = extractSourceProvenStyle(products[0]!);
+      if (code && products.every((product) => extractSourceProvenStyle(product) === code)) {
+        return {
+          brand: group.brand,
+          confidence: "HIGH" as const,
+          reason: `styleCode:${code}`,
+          groupKey,
+          products,
+        };
+      }
+      if (products.length === 1) return singletonGroup(group.brand, products[0]!);
+      return {
+        brand: group.brand,
+        confidence: "MEDIUM" as const,
+        reason: group.reason,
+        groupKey,
+        products,
+      };
+    });
+  }
+
+  if (uniqueExplodedColorCount(group.products) < 10) return [group];
+  return group.products.map((product) => singletonGroup(group.brand, product));
 }
 
 function mergeGroups(groups: PendingGroup[]): PendingGroup {
@@ -221,7 +399,7 @@ function groupProductsWithinBrand(
         brand,
         confidence: "HIGH",
         reason: `styleCode:${seed.styleCode}`,
-        groupKey: `style-${seed.styleCode}-${seed.structuralSignature}`,
+        groupKey: `style-${seed.styleCode}-${categoryMergeKey(seed.product)}`,
         products: styleMatches.map((match) => match.product),
       });
       continue;
@@ -257,8 +435,10 @@ function groupProductsWithinBrand(
     });
   }
 
+  const splitNameOnly = groups.flatMap((group) => refineNameOnlyGroup(group));
+
   const mergedByKey = new Map<string, PendingGroup>();
-  for (const group of groups) {
+  for (const group of splitNameOnly) {
     const mergeKey = `${group.confidence}:${group.groupKey}`;
     const existing = mergedByKey.get(mergeKey);
     if (!existing) {

@@ -1,0 +1,2901 @@
+{
+  "generatedAt": "2026-08-22T15:52:35.280Z",
+  "totals": {
+    "sourceProducts": 15384,
+    "familiesFinal": 10349,
+    "familiesBefore": null,
+    "familiesCurrentOverSplit": 12941,
+    "multiVariant": 3216,
+    "multiColor": 3198,
+    "multiColorCurrent": 1358,
+    "suspiciousStyleConflicts": 0,
+    "distribution": {
+      "1": 7151,
+      "2": 1725,
+      "3": 788,
+      "4-5": 487,
+      "6-9": 182,
+      "10+": 16
+    },
+    "ge10": [
+      {
+        "brand": "ANCIENT GREEK SANDALS",
+        "family": "Aeropi Ballet Flat",
+        "modelFamilyId": "ancient-greek-sandals--name-aeropi-ballet-flat-ballerina-flat-unknown-unknown-low-vamp",
+        "colors": 12,
+        "variantCount": 12,
+        "styleIdentity": "12456_1069_00374",
+        "groupingReason": "styleCode:12456",
+        "provenSameModel": true
+      },
+      {
+        "brand": "ANCIENT GREEK SANDALS",
+        "family": "Ikaria",
+        "modelFamilyId": "ancient-greek-sandals--name-ikaria-sandal-unknown-unknown-unknown",
+        "colors": 11,
+        "variantCount": 11,
+        "styleIdentity": "10287_1051_00479",
+        "groupingReason": "styleCode:10287",
+        "provenSameModel": true
+      },
+      {
+        "brand": "JEFFREY CAMPBELL",
+        "family": "Agent",
+        "modelFamilyId": "jeffrey-campbell--style-agent-sandal",
+        "colors": 17,
+        "variantCount": 17,
+        "styleIdentity": "AGENT",
+        "groupingReason": "styleCode:AGENT",
+        "provenSameModel": true
+      },
+      {
+        "brand": "JEFFREY CAMPBELL",
+        "family": "Ce-soire",
+        "modelFamilyId": "jeffrey-campbell--style-ce-soire-sandal",
+        "colors": 23,
+        "variantCount": 23,
+        "styleIdentity": "CE-SOIRE",
+        "groupingReason": "styleCode:CE-SOIRE",
+        "provenSameModel": true
+      },
+      {
+        "brand": "JEFFREY CAMPBELL",
+        "family": "Spy-",
+        "modelFamilyId": "jeffrey-campbell--style-spy-kid-sandal",
+        "colors": 16,
+        "variantCount": 16,
+        "styleIdentity": "SPY-KID",
+        "groupingReason": "styleCode:SPY-KID",
+        "provenSameModel": true
+      },
+      {
+        "brand": "JUDE",
+        "family": "Fame Pump",
+        "modelFamilyId": "jude--name-fame-pump-pump-unknown-unknown-unknown",
+        "colors": 11,
+        "variantCount": 11,
+        "styleIdentity": "PS26HC005BR024PH00135",
+        "groupingReason": "styleCode:HC005",
+        "provenSameModel": true
+      },
+      {
+        "brand": "LARROUDE",
+        "family": "Dolly Sandal",
+        "modelFamilyId": "larroude--style-l131-doll-sandal",
+        "colors": 10,
+        "variantCount": 17,
+        "styleIdentity": "L131-DOLL",
+        "groupingReason": "styleCode:L131-DOLL",
+        "provenSameModel": true
+      },
+      {
+        "brand": "LARROUDE",
+        "family": "Stella Sneaker",
+        "modelFamilyId": "larroude--style-l415-stel-sneaker",
+        "colors": 25,
+        "variantCount": 32,
+        "styleIdentity": "L415-STEL",
+        "groupingReason": "styleCode:L415-STEL",
+        "provenSameModel": true
+      },
+      {
+        "brand": "LARROUDE",
+        "family": "Verona Ballet Flat",
+        "modelFamilyId": "larroude--style-l422-vero-ballerina",
+        "colors": 30,
+        "variantCount": 33,
+        "styleIdentity": "L422-VERO",
+        "groupingReason": "styleCode:L422-VERO",
+        "provenSameModel": true
+      },
+      {
+        "brand": "LARROUDE",
+        "family": "Cyprus Boat Shoe",
+        "modelFamilyId": "larroude--style-l545-cypr-loafer",
+        "colors": 14,
+        "variantCount": 20,
+        "styleIdentity": "L545-CYPR",
+        "groupingReason": "styleCode:L545-CYPR",
+        "provenSameModel": true
+      },
+      {
+        "brand": "LE MONDE BERYL",
+        "family": "Luna Slipper",
+        "modelFamilyId": "le-monde-beryl--name-luna-slipper-other-footwear-unknown-unknown-unknown",
+        "colors": 10,
+        "variantCount": 10,
+        "styleIdentity": "LUN-LEA-BLA",
+        "groupingReason": "styleCode:LUN",
+        "provenSameModel": true
+      },
+      {
+        "brand": "PARIS TEXAS",
+        "family": "Mule",
+        "modelFamilyId": "paris-texas--style-px1141xvn01-mule",
+        "colors": 11,
+        "variantCount": 11,
+        "styleIdentity": "PX1141XVN01",
+        "groupingReason": "styleCode:PX1141XVN01",
+        "provenSameModel": true
+      },
+      {
+        "brand": "SCHUTZ",
+        "family": "Lexi Mid Pump",
+        "modelFamilyId": "schutz--style-s221190001-slingback",
+        "colors": 10,
+        "variantCount": 10,
+        "styleIdentity": "S221190001",
+        "groupingReason": "styleCode:S221190001",
+        "provenSameModel": true
+      },
+      {
+        "brand": "SCHUTZ",
+        "family": "Lexi Pump",
+        "modelFamilyId": "schutz--style-s221200001-pump",
+        "colors": 10,
+        "variantCount": 11,
+        "styleIdentity": "S221200001",
+        "groupingReason": "styleCode:S221200001",
+        "provenSameModel": true
+      },
+      {
+        "brand": "STEVE MADDEN",
+        "family": "Bri",
+        "modelFamilyId": "steve-madden--name-bri-slingback-unknown-unknown-unknown-slingback",
+        "colors": 10,
+        "variantCount": 10,
+        "styleIdentity": "BRI-RAF",
+        "groupingReason": "styleCode:BRI",
+        "provenSameModel": true
+      },
+      {
+        "brand": "TONY BIANCO",
+        "family": "Comma",
+        "modelFamilyId": "tony-bianco--name-comma-ballerina-other-flat-round-bow",
+        "colors": 12,
+        "variantCount": 12,
+        "styleIdentity": "COMMA-SND-NAPP",
+        "groupingReason": "styleCode:COMMA",
+        "provenSameModel": true
+      }
+    ]
+  },
+  "zara": {
+    "products": 337,
+    "families": 337,
+    "multiColor": 12,
+    "maxColors": 3,
+    "examples": [
+      {
+        "styleId": "ZARA-12600710",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/crossed-leather-flat-sandals-p12600710.html::gold",
+          "https://www.zara.com/us/en/crossed-leather-flat-sandals-p12600710.html::brown",
+          "https://www.zara.com/us/en/crossed-leather-flat-sandals-p12600710.html::white"
+        ],
+        "colorNames": [
+          "Gold",
+          "Brown",
+          "White"
+        ],
+        "modelFamilyId": "zara--id-zara-12600710",
+        "canonicalName": "Crossover Flat",
+        "colors": 3
+      },
+      {
+        "styleId": "ZARA-15850710",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/havaianas---x-zara-sandals-p15850710.html::off white",
+          "https://www.zara.com/us/en/havaianas---x-zara-sandals-p15850710.html::black",
+          "https://www.zara.com/us/en/havaianas---x-zara-sandals-p15850710.html::burgundy red"
+        ],
+        "colorNames": [
+          "Off White",
+          "Black",
+          "Burgundy Red"
+        ],
+        "modelFamilyId": "zara--id-zara-15850710",
+        "canonicalName": "Havaianas X Zara Sandals",
+        "colors": 3
+      },
+      {
+        "styleId": "ZARA-12372510",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/patent-effect-heeled-sandals-p12372510.html::black",
+          "https://www.zara.com/us/en/patent-effect-heeled-sandals-p12372510.html::gold"
+        ],
+        "colorNames": [
+          "Black",
+          "Gold"
+        ],
+        "modelFamilyId": "zara--id-zara-12372510",
+        "canonicalName": "Effect Heeled Sandals",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-12501810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/floral-crochet-ballet-flats-p12501810.html::off white",
+          "https://www.zara.com/us/en/floral-crochet-ballet-flats-p12501810.html::red"
+        ],
+        "colorNames": [
+          "Off White",
+          "Red"
+        ],
+        "modelFamilyId": "zara--id-zara-12501810",
+        "canonicalName": "Floral Crochet Ballet Flats",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-12504810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/split-suede-loafers-p12504810.html::sandy brown",
+          "https://www.zara.com/us/en/split-suede-loafers-p12504810.html::ice"
+        ],
+        "colorNames": [
+          "Sandy Brown",
+          "Ice"
+        ],
+        "modelFamilyId": "zara--id-zara-12504810",
+        "canonicalName": "Split Loafers",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-12609810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/multi-strap-flat-sandals-p12609810.html::red",
+          "https://www.zara.com/us/en/multi-strap-flat-sandals-p12609810.html::black"
+        ],
+        "colorNames": [
+          "Red",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-12609810",
+        "canonicalName": "-strap Flat",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15013810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/contrast-heel-sneakers-p15013810.html::green",
+          "https://www.zara.com/us/en/contrast-heel-sneakers-p15013810.html::black"
+        ],
+        "colorNames": [
+          "Green",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-15013810",
+        "canonicalName": "Contrast Heel",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15207810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/leather-ballet-flats-p15207810.html::off white",
+          "https://www.zara.com/us/en/leather-ballet-flats-p15207810.html::black"
+        ],
+        "colorNames": [
+          "Off White",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-15207810",
+        "canonicalName": "Ballet Flats",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15236810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/bow-ballet-flats-p15236810.html::off white",
+          "https://www.zara.com/us/en/bow-ballet-flats-p15236810.html::brown"
+        ],
+        "colorNames": [
+          "Off White",
+          "Brown"
+        ],
+        "modelFamilyId": "zara--id-zara-15236810",
+        "canonicalName": "Bow Ballet Flats",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15240810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/sporty-ballet-flats-p15240810.html::pink",
+          "https://www.zara.com/us/en/sporty-ballet-flats-p15240810.html::black"
+        ],
+        "colorNames": [
+          "Pink",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-15240810",
+        "canonicalName": "Sporty Ballet Flats",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15510710",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/contrast-platform-sandals-p15510710.html::multi-color",
+          "https://www.zara.com/us/en/contrast-platform-sandals-p15510710.html::black"
+        ],
+        "colorNames": [
+          "Multi-color",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-15510710",
+        "canonicalName": "Contrast Platform Sandals",
+        "colors": 2
+      },
+      {
+        "styleId": "ZARA-15511810",
+        "colorProductIds": [
+          "https://www.zara.com/us/en/jelly-kitten-heel-sandals-p15511810.html::pink",
+          "https://www.zara.com/us/en/jelly-kitten-heel-sandals-p15511810.html::black"
+        ],
+        "colorNames": [
+          "Pink",
+          "Black"
+        ],
+        "modelFamilyId": "zara--id-zara-15511810",
+        "canonicalName": "Jelly Kitten Heel",
+        "colors": 2
+      }
+    ]
+  },
+  "parisTexas": {
+    "products": 439,
+    "families": 363,
+    "multiColor": 36,
+    "maxColors": 11,
+    "examples": [
+      {
+        "styleId": "PX1141XVN01",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/patent-leather-mule-px1141xvn01ivory",
+          "https://paristexasbrand.com/products/patent-leather-mule-px1141xvn016088texasrose",
+          "https://paristexasbrand.com/products/patent-leather-mulepx1141xvn0169622amarena",
+          "https://paristexasbrand.com/products/mules-in-ebony-patent-leatherpx1141xvn0136079ebano",
+          "https://paristexasbrand.com/products/patent-leather-mule-desert-rose-px1141xvn01",
+          "https://paristexasbrand.com/products/mules-in-honey-patent-leather-px1141xvn01peach",
+          "https://paristexasbrand.com/products/black-patent-leather-mulepx1141xvn01nero",
+          "https://paristexasbrand.com/products/mules-in-optic-white-patent-leather-px1141xvn01white",
+          "https://paristexasbrand.com/products/patent-leather-mulepx1141xvn016827rougenoir",
+          "https://paristexasbrand.com/products/mules-in-caramel-patent-leatherpx1141xvn01caramel",
+          "https://paristexasbrand.com/products/mules-in-mint-patent-leatherpx1141xvn0153982menta"
+        ],
+        "colorNames": [
+          "IVORY",
+          "TEXASROSE",
+          "AMARENA",
+          "EBANO",
+          "DESERTROSE",
+          "PEACH",
+          "NERO",
+          "WHITE",
+          "ROUGENOIR",
+          "CARAMEL",
+          "MENTA"
+        ],
+        "modelFamilyId": "paris-texas--style-px1141xvn01-mule",
+        "canonicalName": "Mule",
+        "colors": 11
+      },
+      {
+        "styleId": "PX959XV003EBANO",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/pointed-ankle-boots-in-smooth-pepper-suede-leatherpx959xv003ebano",
+          "https://paristexasbrand.com/products/black-calf-suede-ankle-boots-px613xv003561nero",
+          "https://paristexasbrand.com/products/pointed-ankle-boots-in-smooth-off-black-suede-leatherpx959xv003offblack",
+          "https://paristexasbrand.com/products/boots-in-angora-suede-leatherpx959xv003angora",
+          "https://paristexasbrand.com/products/square-toe-ankle-boots-in-koala-suede-leatherpx613xv003468koala",
+          "https://paristexasbrand.com/products/pointed-ankle-boots-in-smooth-koala-suede-leatherpx959xv003468koala",
+          "https://paristexasbrand.com/products/angora-calf-suede-ankle-boots-px613xv003angora"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-texan-ankle-boot-ankle-boot-unknown-unknown-unknown",
+        "canonicalName": "Texan Ankle Boot",
+        "colors": 7
+      },
+      {
+        "styleId": "PX836XNPMR08ARGENTO",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/mirrored-leather-mulepx836xnpmr08argento",
+          "https://paristexasbrand.com/products/mules-in-texas-rose-mirror-effect-leather-px836xnpmrtexasrose",
+          "https://paristexasbrand.com/products/mules-in-ebony-mirror-effect-leather-px836xnpmr53brown",
+          "https://paristexasbrand.com/products/mirrored-leather-mule-px836xnpmr11gold",
+          "https://paristexasbrand.com/products/mules-in-red-mirror-effect-leatherpx836xnpmr4red",
+          "https://paristexasbrand.com/products/mules-in-maroon-mirror-effect-leatherpx836xnpmr48wine"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-mirrored-mule-mule-unknown-unknown-unknown-backless",
+        "canonicalName": "Mirrored Mule",
+        "colors": 6
+      },
+      {
+        "styleId": "PX913XNPMR11GOLD",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/mirrored-leather-slingback-px913xnpmr11gold",
+          "https://paristexasbrand.com/products/mirrored-leather-slingback-px913xnpmr08argento",
+          "https://paristexasbrand.com/products/slingbacks-in-ebony-mirror-effect-leather-px913xnpmr53brown",
+          "https://paristexasbrand.com/products/slingbacks-in-texas-rose-mirror-effect-leather-px913xnpmrtexasrose",
+          "https://paristexasbrand.com/products/slingbacks-in-red-mirror-effect-leatherpx913xnpmr4red",
+          "https://paristexasbrand.com/products/slingbacks-in-maroon-mirror-effect-leatherpx913xnpmr48wine"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-mirrored-slingback-slingback-unknown-unknown-unknown-slingback",
+        "canonicalName": "Mirrored Slingback",
+        "colors": 6
+      },
+      {
+        "styleId": "PX1635XVN01",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/slingbacks-in-honey-patent-leather-px1635xvn01peach",
+          "https://paristexasbrand.com/products/slingbacks-in-ivory-patent-leather-px1635xvn01ivory",
+          "https://paristexasbrand.com/products/slingbacks-in-denim-colored-patent-leather-px1635xvn0182907jeans",
+          "https://paristexasbrand.com/products/slingbacks-in-rouge-noir-patent-leatherpx1635xvn016827rougenoir",
+          "https://paristexasbrand.com/products/slingbacks-in-dark-phard-patent-leatherpx1635xvn016088darkphard",
+          "https://paristexasbrand.com/products/slingbacks-in-black-patent-leatherpx1635xvn01nero"
+        ],
+        "colorNames": [
+          "PEACH",
+          "IVORY",
+          "JEANS",
+          "ROUGENOIR",
+          "DARKPHARD",
+          "NERO"
+        ],
+        "modelFamilyId": "paris-texas--style-px1635xvn01-slingback",
+        "canonicalName": "Slingback",
+        "colors": 6
+      },
+      {
+        "styleId": "PX1737XVN01",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/ankle-strap-pumps-in-desert-rose-patent-leather-px1737xvn01darktexasrose",
+          "https://paristexasbrand.com/products/ankle-strap-pumps-in-ivory-patent-leather-px1737xvn01ivory",
+          "https://paristexasbrand.com/products/ankle-strap-pumps-in-dark-phard-patent-leatherpx1737xvn016088darkphard",
+          "https://paristexasbrand.com/products/ankle-strap-pumps-in-rouge-noir-patent-leatherpx1737xvn016827rougenoir",
+          "https://paristexasbrand.com/products/ankle-strap-pumps-in-ebony-patent-leatherpx1737xvn0136079darkchocolate"
+        ],
+        "colorNames": [
+          "DARKTEXASROSE",
+          "IVORY",
+          "DARKPHARD",
+          "ROUGENOIR",
+          "DARKCHOCOLATE"
+        ],
+        "modelFamilyId": "paris-texas--style-px1737xvn01-pump",
+        "canonicalName": "Pump",
+        "colors": 5
+      },
+      {
+        "styleId": "PX613XVTNPC3NATURALE",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/leather-western-ankle-bootpx613xvtnpc3naturale",
+          "https://paristexasbrand.com/products/suede-western-ankle-boot-with-metal-toe-cappx959xv003386wenge",
+          "https://paristexasbrand.com/products/canyon-brown-calf-suede-ankle-boots-px613xv003259marronfonce",
+          "https://paristexasbrand.com/products/slingbacks-in-denim-colored-calf-suede-leather-px959xv003670denim"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-western-ankle-boot-ankle-boot-unknown-unknown-unknown",
+        "canonicalName": "Western Ankle Boot",
+        "colors": 4
+      },
+      {
+        "styleId": "PXNL02XSHPTROSSO",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/red-leather-cut-out-mulepxnl02xshptrosso",
+          "https://paristexasbrand.com/products/white-leather-cut-out-mulepxnl02xshtjbianco",
+          "https://paristexasbrand.com/products/black-leather-cut-out-mulepxnl02xshptnero"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-cut-out-mule-mule-unknown-unknown-pointed-backless-cut-out",
+        "canonicalName": "Cut-out Mule",
+        "colors": 3
+      },
+      {
+        "styleId": "PX965XV003PEPE",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/pointed-knee-high-boots-in-smooth-pepper-suede-leatherpx965xv003pepe",
+          "https://paristexasbrand.com/products/black-suede-texan-bootpx965xv003383offblack",
+          "https://paristexasbrand.com/products/black-leather-embellished-toe-boot-px965xlth3nero"
+        ],
+        "colorNames": [
+          null,
+          null,
+          null
+        ],
+        "modelFamilyId": "paris-texas--name-texan-boot-boot-unknown-unknown-unknown",
+        "canonicalName": "Texan Boot",
+        "colors": 3
+      },
+      {
+        "styleId": "PX1141XNPMR",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/mules-in-denim-colored-mirror-effect-leather-px1141xnpmrlaguna",
+          "https://paristexasbrand.com/products/mules-in-gold-mirror-leather-px1141xnpmrplatino",
+          "https://paristexasbrand.com/products/silver-mirrored-leather-mulepx1141xnpmrargento"
+        ],
+        "colorNames": [
+          "LAGUNA",
+          "PLATINO",
+          "ARGENTO"
+        ],
+        "modelFamilyId": "paris-texas--style-px1141xnpmr-mule",
+        "canonicalName": "Mules Mirror",
+        "colors": 3
+      },
+      {
+        "styleId": "PX1363XV003",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/suede-bootpx1363xv003tundra",
+          "https://paristexasbrand.com/products/boots-in-ebony-calf-suede-leather-px1363xv003fondente",
+          "https://paristexasbrand.com/products/boots-in-black-calf-suede-leather-px1363xv003nero"
+        ],
+        "colorNames": [
+          "TUNDRA",
+          "FONDENTE",
+          "NERO"
+        ],
+        "modelFamilyId": "paris-texas--style-px1363xv003-boot",
+        "canonicalName": "Boot",
+        "colors": 3
+      },
+      {
+        "styleId": "PX1783XVN01",
+        "colorProductIds": [
+          "https://paristexasbrand.com/products/ankle-strap-sandals-in-texas-rose-patent-leather-px1783xvn016088darkphard",
+          "https://paristexasbrand.com/products/ankle-strap-sandals-in-black-patent-leather-px1783xvn01nero",
+          "https://paristexasbrand.com/products/ankle-strap-sandals-in-ivory-patent-leather-px1783xvn01ivory"
+        ],
+        "colorNames": [
+          "DARKPHARD",
+          "NERO",
+          "IVORY"
+        ],
+        "modelFamilyId": "paris-texas--style-px1783xvn01-sandal",
+        "canonicalName": "Sandal",
+        "colors": 3
+      }
+    ]
+  },
+  "perBrand": [
+    {
+      "brand": "A BATHING APE®",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "A.EMERY",
+      "products": 126,
+      "families": 52,
+      "multiColor": 36,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "adidas",
+      "products": 51,
+      "families": 51,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "adidas Yeezy",
+      "products": 10,
+      "families": 10,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ADRIANNA FERETTI",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Aeyde",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "AEYDE",
+      "products": 534,
+      "families": 532,
+      "multiColor": 2,
+      "maxColors": 2,
+      "warnings": []
+    },
+    {
+      "brand": "Alaïa",
+      "products": 34,
+      "families": 34,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Alevì Milano",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Alexander Wang",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ALIAS MAE",
+      "products": 121,
+      "families": 120,
+      "multiColor": 120,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "ALMA RAE",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ALOHAS",
+      "products": 185,
+      "families": 144,
+      "multiColor": 26,
+      "maxColors": 5,
+      "warnings": []
+    },
+    {
+      "brand": "AMINA MUADDI",
+      "products": 163,
+      "families": 99,
+      "multiColor": 36,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "AMIRI",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Amina Muaddi",
+      "products": 34,
+      "families": 34,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ANCIENT GREEK SANDALS",
+      "products": 942,
+      "families": 584,
+      "multiColor": 171,
+      "maxColors": 12,
+      "warnings": []
+    },
+    {
+      "brand": "Ancient Greek Sandals",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Andrea Wazen",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "APL",
+      "products": 16,
+      "families": 16,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Aquazzura",
+      "products": 46,
+      "families": 46,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ARA",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ASICS",
+      "products": 23,
+      "families": 23,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ATP ATELIER",
+      "products": 108,
+      "families": 108,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Autry",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Axel Arigato",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Badgley Mischka",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Balenciaga",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Bally",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Balmain",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "BIMBA Y LOLA",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Bibi Lou",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Birkenstock",
+      "products": 16,
+      "families": 16,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Birkenstock 1774",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "BLOUMME",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Bottega Veneta",
+      "products": 14,
+      "families": 14,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Brooks",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Brunello Cucinelli",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Bruno Frisoni",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Burberry",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "BY FAR",
+      "products": 148,
+      "families": 88,
+      "multiColor": 32,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "Camper",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CamperLab",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CAREL",
+      "products": 181,
+      "families": 93,
+      "multiColor": 42,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "Carel Paris",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Carmens",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CARRANO",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Casadei",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Castagna",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Castañer",
+      "products": 30,
+      "families": 30,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CECILIE BAHNSEN",
+      "products": 24,
+      "families": 20,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Chie Mihara",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Chloé",
+      "products": 15,
+      "families": 15,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CHRISTEN",
+      "products": 57,
+      "families": 23,
+      "multiColor": 14,
+      "maxColors": 4,
+      "warnings": []
+    },
+    {
+      "brand": "Christian Louboutin",
+      "products": 40,
+      "families": 40,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Church's",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Claudie Pierlot",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Coach",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Coccinelle",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Comme Des Garçons Play x Converse",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Converse",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Cornetti",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Courrèges",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Crime London",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Crocs",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "CULT GAIA",
+      "products": 143,
+      "families": 87,
+      "multiColor": 33,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "Cult Gaia",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Dear Frances",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "DEAR FRANCES",
+      "products": 56,
+      "families": 27,
+      "multiColor": 13,
+      "maxColors": 9,
+      "warnings": []
+    },
+    {
+      "brand": "Diesel",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Dolce & Gabbana",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "DOLCE VITA",
+      "products": 1106,
+      "families": 539,
+      "multiColor": 323,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "Dolce&Gabbana",
+      "products": 29,
+      "families": 29,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Dr. Martens",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "DRIES VAN NOTEN",
+      "products": 32,
+      "families": 32,
+      "multiColor": 3,
+      "maxColors": 3,
+      "warnings": []
+    },
+    {
+      "brand": "DSQUARED2",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Elisabetta Franchi",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "EMME PARSONS",
+      "products": 83,
+      "families": 52,
+      "multiColor": 18,
+      "maxColors": 5,
+      "warnings": []
+    },
+    {
+      "brand": "ERES",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "EXÉ",
+      "products": 389,
+      "families": 271,
+      "multiColor": 82,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "exè",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Fabio Rusconi",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "FARM Rio",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Femme La",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Femme LA",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "FENDI",
+      "products": 45,
+      "families": 45,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Ferragamo",
+      "products": 19,
+      "families": 19,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Flabelus",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "FLABELUS",
+      "products": 335,
+      "families": 299,
+      "multiColor": 16,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "FLATTERED",
+      "products": 180,
+      "families": 110,
+      "multiColor": 47,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "Forte Forte",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Furla",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "G.H.BASS",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "GANNI",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Ganni",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "GIA BORGHINI",
+      "products": 102,
+      "families": 78,
+      "multiColor": 21,
+      "maxColors": 3,
+      "warnings": []
+    },
+    {
+      "brand": "Gianvito Rossi",
+      "products": 18,
+      "families": 18,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "gioseppo",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Giuseppe Zanotti",
+      "products": 20,
+      "families": 20,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Givenchy",
+      "products": 10,
+      "families": 10,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Golden Goose",
+      "products": 29,
+      "families": 29,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Good News",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Gucci",
+      "products": 24,
+      "families": 24,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "HARDOT",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "HERBERT LEVINE",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Herbert Levine",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "HEREU",
+      "products": 193,
+      "families": 92,
+      "multiColor": 58,
+      "maxColors": 4,
+      "warnings": []
+    },
+    {
+      "brand": "Hide&Jack",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Hoff",
+      "products": 14,
+      "families": 14,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Hogan",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Hoka",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "HOUSE OF BALLERINAS",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "House Of Ballerinas",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Inuikii",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Isabel Marant",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ISABEL MARANT",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Jacquemus",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JEFFREY CAMPBELL",
+      "products": 671,
+      "families": 626,
+      "multiColor": 430,
+      "maxColors": 23,
+      "warnings": []
+    },
+    {
+      "brand": "Jennifer Chamandi",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Jimmy Choo",
+      "products": 51,
+      "families": 51,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Jordan",
+      "products": 16,
+      "families": 16,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Jude",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JUDE",
+      "products": 214,
+      "families": 70,
+      "multiColor": 59,
+      "maxColors": 11,
+      "warnings": []
+    },
+    {
+      "brand": "Julie Dee",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JVAM",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JW Anderson",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JW PEI",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "JW Pei",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Karl Lagerfeld",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Kat Maconie",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "KEEN FOOTWEAR",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "KHAITE",
+      "products": 169,
+      "families": 78,
+      "multiColor": 48,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "Kurt Geiger London",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "La DoubleJ",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Lacoste",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LARROUDE",
+      "products": 550,
+      "families": 193,
+      "multiColor": 114,
+      "maxColors": 30,
+      "warnings": []
+    },
+    {
+      "brand": "Lauren Ralph Lauren",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Le Monde Beryl",
+      "products": 7,
+      "families": 7,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LE MONDE BERYL",
+      "products": 276,
+      "families": 176,
+      "multiColor": 45,
+      "maxColors": 10,
+      "warnings": []
+    },
+    {
+      "brand": "Le Silla",
+      "products": 10,
+      "families": 10,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LEMAIRE",
+      "products": 90,
+      "families": 52,
+      "multiColor": 24,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "LILI CURIA",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LINDA BAUMANN",
+      "products": 8,
+      "families": 8,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LIU JO",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Loeffler Randall",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LOEWE",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Lola Cruz",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LouLou de Saison",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Love Moschino",
+      "products": 7,
+      "families": 7,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LUCASHEVA",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "LUIS ONOFRE",
+      "products": 314,
+      "families": 267,
+      "multiColor": 36,
+      "maxColors": 4,
+      "warnings": []
+    },
+    {
+      "brand": "Luna",
+      "products": 25,
+      "families": 25,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MACH & MACH",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Magnanni",
+      "products": 7,
+      "families": 7,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Maison Margiela",
+      "products": 13,
+      "families": 13,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Maje",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MALONE SOULIERS",
+      "products": 256,
+      "families": 192,
+      "multiColor": 33,
+      "maxColors": 9,
+      "warnings": []
+    },
+    {
+      "brand": "Malone Souliers",
+      "products": 19,
+      "families": 19,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Manolo Blahnik",
+      "products": 57,
+      "families": 57,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MANU ATELIER",
+      "products": 75,
+      "families": 43,
+      "multiColor": 15,
+      "maxColors": 5,
+      "warnings": []
+    },
+    {
+      "brand": "mara bini",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MARAY",
+      "products": 161,
+      "families": 108,
+      "multiColor": 37,
+      "maxColors": 5,
+      "warnings": []
+    },
+    {
+      "brand": "Marc Ellis",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Marc Jacobs",
+      "products": 7,
+      "families": 7,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Marni",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Marsèll",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "McQueen",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Melissa",
+      "products": 15,
+      "families": 15,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Michael Michael Kors",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Missoni",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Miu Miu",
+      "products": 18,
+      "families": 18,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Mizuno",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MM6 Maison Margiela",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MM6 Maison Margiela X Salomon",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "MONFARADI MARE",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Moon Boot",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Moschino",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Mou",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Mugler",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "NAGUISA",
+      "products": 108,
+      "families": 106,
+      "multiColor": 2,
+      "maxColors": 2,
+      "warnings": []
+    },
+    {
+      "brand": "NAKED WOLFE",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Neous",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "NEOUS",
+      "products": 65,
+      "families": 32,
+      "multiColor": 19,
+      "maxColors": 4,
+      "warnings": []
+    },
+    {
+      "brand": "New Balance",
+      "products": 27,
+      "families": 27,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "NICOLI",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Nicoli",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Nike",
+      "products": 52,
+      "families": 52,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "norda",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "NVL Garde",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Off-White",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "On",
+      "products": 39,
+      "families": 39,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Onitsuka Tiger",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "OUR LEGACY",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PARIS TEXAS",
+      "products": 439,
+      "families": 363,
+      "multiColor": 36,
+      "maxColors": 11,
+      "warnings": [
+        "Mule 11 colors"
+      ]
+    },
+    {
+      "brand": "Paris Texas",
+      "products": 12,
+      "families": 12,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PAVEMENT",
+      "products": 165,
+      "families": 95,
+      "multiColor": 42,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "Pedro García",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Pedro Miralles",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PETER KAISER",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Philipp Plein",
+      "products": 15,
+      "families": 15,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Philippe Model Paris",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Philosophy Di Lorenzo Serafini",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PINKO",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Poche Paris",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Posa",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "POTAMY",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Prada",
+      "products": 62,
+      "families": 62,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Premiata",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Proenza Schouler",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PROENZA SCHOULER",
+      "products": 130,
+      "families": 73,
+      "multiColor": 29,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "Puma",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "PUMA",
+      "products": 14,
+      "families": 14,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Rains",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Reike Nen",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "René Caovilla",
+      "products": 11,
+      "families": 11,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Repetto",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Rick Owens",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Roberto Festa",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Roger Vivier",
+      "products": 22,
+      "families": 22,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ROTATE",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ROTATE BIRGER CHRISTENSEN",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Saint Laurent",
+      "products": 28,
+      "families": 28,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Salomon",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Sam Edelman",
+      "products": 30,
+      "families": 30,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SANDRO",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Santoni",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Saucony",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Scarosso",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Scholl",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Schutz",
+      "products": 8,
+      "families": 8,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SCHUTZ",
+      "products": 1365,
+      "families": 697,
+      "multiColor": 364,
+      "maxColors": 10,
+      "warnings": []
+    },
+    {
+      "brand": "Sebago",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Senso",
+      "products": 16,
+      "families": 16,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SERGIO MORETTI FIRENZE",
+      "products": 34,
+      "families": 34,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Sergio Rossi",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SIMONE ROCHA",
+      "products": 16,
+      "families": 15,
+      "multiColor": 1,
+      "maxColors": 2,
+      "warnings": []
+    },
+    {
+      "brand": "Simon Miller",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Simone Rocha",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SOPHIA WEBSTER",
+      "products": 141,
+      "families": 87,
+      "multiColor": 35,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "SOPHIQUE",
+      "products": 6,
+      "families": 6,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "SOULIERS MARTINEZ",
+      "products": 75,
+      "families": 48,
+      "multiColor": 21,
+      "maxColors": 3,
+      "warnings": []
+    },
+    {
+      "brand": "St Agni",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ST. AGNI",
+      "products": 133,
+      "families": 101,
+      "multiColor": 25,
+      "maxColors": 5,
+      "warnings": []
+    },
+    {
+      "brand": "STAUD",
+      "products": 294,
+      "families": 148,
+      "multiColor": 92,
+      "maxColors": 6,
+      "warnings": []
+    },
+    {
+      "brand": "Stella McCartney",
+      "products": 9,
+      "families": 9,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "STEVE MADDEN",
+      "products": 1302,
+      "families": 693,
+      "multiColor": 355,
+      "maxColors": 10,
+      "warnings": []
+    },
+    {
+      "brand": "strategia shoes",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Stuart Weitzman",
+      "products": 16,
+      "families": 16,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "STUDIO AMELIA",
+      "products": 217,
+      "families": 74,
+      "multiColor": 60,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "Studio Amelia",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Suicoke",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "THE ATTICO",
+      "products": 79,
+      "families": 44,
+      "multiColor": 18,
+      "maxColors": 8,
+      "warnings": []
+    },
+    {
+      "brand": "The Attico",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "The Lline",
+      "products": 29,
+      "families": 29,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "The North Face",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "The Row",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "THE ROW",
+      "products": 233,
+      "families": 134,
+      "multiColor": 50,
+      "maxColors": 7,
+      "warnings": []
+    },
+    {
+      "brand": "TKEES",
+      "products": 4,
+      "families": 4,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Tod's",
+      "products": 8,
+      "families": 8,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Toga Pulla",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Tom Ford",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "TOM FORD",
+      "products": 8,
+      "families": 8,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "TONY BIANCO",
+      "products": 364,
+      "families": 128,
+      "multiColor": 87,
+      "maxColors": 12,
+      "warnings": []
+    },
+    {
+      "brand": "Tony Bianco",
+      "products": 27,
+      "families": 27,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Tory Burch",
+      "products": 29,
+      "families": 29,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "TOTEME",
+      "products": 118,
+      "families": 102,
+      "multiColor": 14,
+      "maxColors": 3,
+      "warnings": []
+    },
+    {
+      "brand": "TUAS",
+      "products": 8,
+      "families": 6,
+      "multiColor": 2,
+      "maxColors": 2,
+      "warnings": []
+    },
+    {
+      "brand": "TWENTY FOURHAITCH",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "TWINSET",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "UGG",
+      "products": 12,
+      "families": 12,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Uma Wang",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "VAGABOND",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Valentino Garavani",
+      "products": 40,
+      "families": 40,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Vanina",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Vans",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "VEJA",
+      "products": 8,
+      "families": 8,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Versace",
+      "products": 11,
+      "families": 11,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Vic Matie",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Victoria Beckham",
+      "products": 3,
+      "families": 3,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Vince",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Y/Project",
+      "products": 2,
+      "families": 2,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Yuzefi",
+      "products": 5,
+      "families": 5,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "Zadig&Voltaire",
+      "products": 1,
+      "families": 1,
+      "multiColor": 0,
+      "maxColors": 1,
+      "warnings": []
+    },
+    {
+      "brand": "ZARA",
+      "products": 337,
+      "families": 337,
+      "multiColor": 12,
+      "maxColors": 3,
+      "warnings": []
+    }
+  ],
+  "sizes": {
+    "productsMb": 50.89,
+    "analyzedMb": 54.4,
+    "familyShardTotalMb": 75.25,
+    "largestFamilyShardMb": 16,
+    "largestFrontendBrandShard": {
+      "file": "public\\data\\catalog\\brands\\steve-madden.json",
+      "mb": 6.06
+    },
+    "largestVisualShard": {
+      "file": "public\\data\\catalog\\visual\\tumu.json",
+      "mb": 21.58
+    }
+  }
+}
