@@ -1,0 +1,102 @@
+# Daily CAPONE data refresh for Vercel production.
+# Schedule: 07:00 Türkiye time = 04:00 UTC (UTC+3, no DST).
+#
+# This job collects registry-driven brand + marketplace data, rebuilds Model
+# Families, then tests + production-builds. It commits/pushes only when those
+# gates pass. Vercel deploys from GitHub main, so a successful push is the
+# production update. No OPENAI_API_KEY is used.
+#
+# Scalability: data/multibrand/model-families.json is already ~55 MB. Do not
+# add Git LFS here. Before CAPONE scales to hundreds of brands/marketplaces,
+# generated catalog/state should move from Git history to durable object storage.
+
+name: CAPONE daily refresh
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: capone-daily-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: Collect, verify, and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cloud data refresh
+        run: npm run refresh:cloud
+
+      - name: Tests
+        id: tests
+        run: npm test
+
+      - name: Production build
+        id: build
+        run: npm run build
+
+      - name: Commit and push refreshed data
+        if: success() && github.ref == 'refs/heads/main'
+        id: publish
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config http.postBuffer 524288000
+          npx tsx scripts/stage-cloud-refresh-data.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+            echo "commit_created=false" >> "$GITHUB_OUTPUT"
+            echo "No tracked CAPONE data changes to publish."
+            exit 0
+          fi
+          git commit -m "chore(data): automatic CAPONE daily refresh"
+          git push origin HEAD
+          echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          echo "commit_created=true" >> "$GITHUB_OUTPUT"
+
+      - name: Finalize job summary
+        if: always()
+        env:
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+          DATA_CHANGED: ${{ steps.publish.outputs.data_changed }}
+          COMMIT_CREATED: ${{ steps.publish.outputs.commit_created }}
+        run: |
+          {
+            echo ""
+            echo "## Gates"
+            echo "- Tests: ${TESTS_OUTCOME:-skipped}"
+            echo "- Production build: ${BUILD_OUTCOME:-skipped}"
+            echo "- Data changed: ${DATA_CHANGED:-unknown}"
+            echo "- Commit/push created: ${COMMIT_CREATED:-no}"
+            echo "- Publish step: ${PUBLISH_OUTCOME:-skipped}"
+            echo ""
+            echo "If tests or production build fail, data is not committed and Vercel production stays on the last good main commit."
+          } >> "$GITHUB_STEP_SUMMARY"

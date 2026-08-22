@@ -31,6 +31,7 @@ export default defineConfig({
       "src/components/visualWall/**/*.test.ts",
       "src/radar/master/**/*.test.ts",
       "src/radar/__tests__/radarMainCategories.test.ts",
+      "src/refresh/**/*.test.ts",
     ],
   },
 });

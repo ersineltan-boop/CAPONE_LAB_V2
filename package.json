@@ -43,7 +43,8 @@
     "verify:vision-pilot": "tsx scripts/run-vision-verification-pilot.ts",
     "verify:vision-pilot-v2": "tsx scripts/run-vision-verification-pilot-v2.ts",
     "verify:vision-stability": "tsx scripts/run-vision-verification-stability.ts",
-    "audit:model-family-medium": "tsx scripts/audit-model-family-medium.ts"
+    "audit:model-family-medium": "tsx scripts/audit-model-family-medium.ts",
+    "refresh:cloud": "tsx scripts/refresh-cloud.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
