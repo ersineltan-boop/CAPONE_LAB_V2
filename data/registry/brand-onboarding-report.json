@@ -1,44 +1,23 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T20:15:16.929Z",
+  "generatedAt": "2026-08-23T20:15:08.876Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
     "activeBrandsAfter": 50,
-    "attempted": 5,
+    "attempted": 3,
     "activated": 0,
     "partial": 0,
-    "blocked": 1,
-    "customAdapterRequired": 4,
+    "blocked": 2,
+    "customAdapterRequired": 1,
     "failed": 0,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "MANGO",
-      "slug": "mango",
-      "attemptedAt": "2026-08-22T20:15:16.929Z",
-      "detectedPlatform": "NEXT.JS PUBLIC DATA",
-      "sourceStrategy": "nextjs-public-data",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
-      "marketplaceCoverage": {
-        "farfetch": 0,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "nextjs"
-    },
-    {
-      "brand": "COS",
-      "slug": "cos",
-      "attemptedAt": "2026-08-22T20:15:16.929Z",
+      "brand": "STUART WEITZMAN",
+      "slug": "stuart-weitzman",
+      "attemptedAt": "2026-08-23T20:15:08.876Z",
       "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "PRIORITY_BLOCKED",
@@ -50,38 +29,38 @@
       "categoriesFound": [],
       "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
       "marketplaceCoverage": {
-        "farfetch": 1,
-        "levelShoes": 0
+        "farfetch": 15,
+        "levelShoes": 1
       },
       "activationDecision": "blocked",
       "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
     },
     {
-      "brand": "GANNI",
-      "slug": "ganni",
-      "attemptedAt": "2026-08-22T20:15:16.929Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "brand": "SAM EDELMAN",
+      "slug": "sam-edelman",
+      "attemptedAt": "2026-08-23T20:15:08.876Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
       "productsFound": 0,
       "families": null,
       "realMultiColorFamilies": null,
       "verifiedNewArrivals": null,
       "galleryImageCoverage": null,
       "categoriesFound": [],
-      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
       "marketplaceCoverage": {
-        "farfetch": 5,
-        "levelShoes": 1
+        "farfetch": 3,
+        "levelShoes": 27
       },
       "activationDecision": "blocked",
-      "notes": "salesforce, jsonld"
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
     },
     {
-      "brand": "AQUAZZURA",
-      "slug": "aquazzura",
-      "attemptedAt": "2026-08-22T20:15:16.929Z",
-      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "brand": "VAGABOND",
+      "slug": "vagabond-shoemakers",
+      "attemptedAt": "2026-08-23T20:15:08.876Z",
+      "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
@@ -92,32 +71,11 @@
       "categoriesFound": [],
       "blocker": "Shopify products.json did not yield women's footwear",
       "marketplaceCoverage": {
-        "farfetch": 15,
-        "levelShoes": 31
+        "farfetch": 10,
+        "levelShoes": 32
       },
       "activationDecision": "blocked",
       "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    },
-    {
-      "brand": "GIANVITO ROSSI",
-      "slug": "gianvito-rossi",
-      "attemptedAt": "2026-08-22T20:15:16.929Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
-      "marketplaceCoverage": {
-        "farfetch": 18,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "salesforce, jsonld"
     }
   ]
 }
