@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 15384,
-  "modelFamilyCount": 10349,
-  "totalVariants": 15384,
-  "multiVariantFamilyCount": 3216,
+  "rawProductCount": 15481,
+  "modelFamilyCount": 10419,
+  "totalVariants": 15481,
+  "multiVariantFamilyCount": 3230,
   "reductionPercent": 32.7,
-  "collapsedVariantProducts": 5035,
+  "collapsedVariantProducts": 5062,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 10307,
-    "averageRepresentativeImageCount": 5.77,
+    "familiesWithMultipleRepresentativeImages": 10375,
+    "averageRepresentativeImageCount": 5.76,
     "maxRepresentativeImageCount": 61
   },
   "largestVariantFamilies": [
@@ -1194,7 +1194,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "a-emery--name-the-lou-clog-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "a-emery--name-the-lou-clog-mule-unknown-unknown-unknown-backless",
       "brand": "A.EMERY",
       "canonicalName": "The Lou Clog",
       "variantCount": 5,
@@ -1542,13 +1542,6 @@
       "canonicalName": "Caret Ballet Flats",
       "variantCount": 4,
       "groupingReason": "normalizedName:caret ballet flats"
-    },
-    {
-      "modelFamilyId": "by-far--name-caroo-ankle-boot-ankle-boot-unknown-unknown-unknown",
-      "brand": "BY FAR",
-      "canonicalName": "Caroo Ankle Boot",
-      "variantCount": 4,
-      "groupingReason": "normalizedName:caroo ankle boot"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-celestian",
@@ -2097,6 +2090,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "flabelus--name-lewis-oxford-other-footwear-unknown-unknown-unknown",
+      "brand": "FLABELUS",
+      "canonicalName": "Lewis Oxford",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:lewis oxford"
+    },
+    {
       "modelFamilyId": "the-row--name-liisa-kitten-two-heel-pump-kitten-unknown-unknown",
       "brand": "THE ROW",
       "canonicalName": "Liisa Kitten Two Heel",
@@ -2123,6 +2123,13 @@
       "canonicalName": "Loop Kitten Heel Sandal",
       "variantCount": 4,
       "groupingReason": "normalizedName:loop kitten heel sandal"
+    },
+    {
+      "modelFamilyId": "pavement--name-lucy-ballerina-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "canonicalName": "Lucy",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:lucy"
     },
     {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-lulu",
@@ -2326,6 +2333,13 @@
       "canonicalName": "Palma",
       "variantCount": 4,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "pavement--name-palucy-ballerina-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "canonicalName": "Palucy",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:palucy"
     },
     {
       "modelFamilyId": "pavement--name-pasinna-pump-unknown-unknown-unknown",
@@ -3462,6 +3476,13 @@
       "groupingReason": "normalizedName:carlotta"
     },
     {
+      "modelFamilyId": "by-far--name-caroo-ankle-boot-ankle-boot-unknown-unknown-unknown",
+      "brand": "BY FAR",
+      "canonicalName": "Caroo Ankle Boot",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:caroo ankle boot"
+    },
+    {
       "modelFamilyId": "by-far--name-caroo-closed-toe-mule-mule-unknown-unknown-unknown-backless-closed-toe",
       "brand": "BY FAR",
       "canonicalName": "Caroo Closed Toe Mule",
@@ -3691,6 +3712,13 @@
       "canonicalName": "Cut-out Mule",
       "variantCount": 3,
       "groupingReason": "normalizedName:cut-out mule"
+    },
+    {
+      "modelFamilyId": "steve-madden--name-daisee-short-other-footwear-unknown-unknown-unknown",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Daisee Short",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:daisee short"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-damsel-crs",
@@ -4519,6 +4547,13 @@
       "groupingReason": "normalizedName:lusco"
     },
     {
+      "modelFamilyId": "by-far--name-lysander-ankle-boot-ankle-boot-unknown-unknown-unknown",
+      "brand": "BY FAR",
+      "canonicalName": "Lysander Ankle Boot",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:lysander ankle boot"
+    },
+    {
       "modelFamilyId": "dolce-vita--name-madow-heels-slingback-other-mid-unknown-open-toe-slingback",
       "brand": "DOLCE VITA",
       "canonicalName": "Madow Heels",
@@ -4895,6 +4930,13 @@
       "canonicalName": "Pafinka",
       "variantCount": 3,
       "groupingReason": "normalizedName:pafinka"
+    },
+    {
+      "modelFamilyId": "pavement--name-pakenny-ballerina-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pakenny",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:pakenny"
     },
     {
       "modelFamilyId": "pavement--name-pakohia-sneaker-unknown-unknown-unknown",
@@ -5968,7 +6010,7 @@
       "groupingReason": "normalizedName:-embossed flip flops"
     },
     {
-      "modelFamilyId": "toteme--name-embossed-heeled-flip-flops-pump-unknown-unknown-unknown",
+      "modelFamilyId": "toteme--name-embossed-heeled-flip-flops-other-footwear-unknown-unknown-unknown",
       "brand": "TOTEME",
       "canonicalName": "-embossed Heeled Flip Flops",
       "variantCount": 2,
@@ -6605,6 +6647,13 @@
       "groupingReason": "normalizedName:balla crystals small"
     },
     {
+      "modelFamilyId": "dear-frances--name-balla-loafer-loafer-unknown-flat-unknown",
+      "brand": "DEAR FRANCES",
+      "canonicalName": "Balla Loafer",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:balla loafer"
+    },
+    {
       "modelFamilyId": "zara--id-zara-15207810",
       "brand": "ZARA",
       "canonicalName": "Ballet Flats",
@@ -6766,11 +6815,25 @@
       "groupingReason": "normalizedName:birla"
     },
     {
+      "modelFamilyId": "hereu--name-birla-for-all-other-footwear-unknown-unknown-unknown-braided",
+      "brand": "HEREU",
+      "canonicalName": "Birla - For All",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:birla - for all"
+    },
+    {
       "modelFamilyId": "hereu--name-birla-chukka-other-footwear-unknown-unknown-unknown-braided",
       "brand": "HEREU",
       "canonicalName": "Birla Chukka",
       "variantCount": 2,
       "groupingReason": "normalizedName:birla chukka"
+    },
+    {
+      "modelFamilyId": "hereu--name-birla-chukka-for-all-other-footwear-unknown-unknown-unknown-braided",
+      "brand": "HEREU",
+      "canonicalName": "Birla Chukka - For All",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:birla chukka - for all"
     },
     {
       "modelFamilyId": "sophia-webster--name-blair-low-mule-mule-unknown-unknown-unknown-backless",
@@ -7004,6 +7067,13 @@
       "groupingReason": "normalizedName:carolyn 45 ankle boots"
     },
     {
+      "modelFamilyId": "by-far--name-carre-creased-pump-pump-unknown-unknown-unknown",
+      "brand": "BY FAR",
+      "canonicalName": "Carre Creased Pump",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:carre creased pump"
+    },
+    {
       "modelFamilyId": "cecilie-bahnsen--name-cbarna-sandals-box-sandal-unknown-unknown-unknown",
       "brand": "CECILIE BAHNSEN",
       "canonicalName": "Cbarna Sandals Box",
@@ -7205,6 +7275,13 @@
       "canonicalName": "Conform-t",
       "variantCount": 2,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "toteme--name-contour-mules-mule-unknown-unknown-unknown-backless",
+      "brand": "TOTEME",
+      "canonicalName": "Contour Mules",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:contour mules"
     },
     {
       "modelFamilyId": "zara--id-zara-15013810",
@@ -7501,7 +7578,7 @@
       "groupingReason": "normalizedName:dune classic ginza sandal"
     },
     {
-      "modelFamilyId": "christen--name-edge-flip-flop-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "christen--name-edge-flip-flop-thong-unknown-unknown-unknown-open-toe",
       "brand": "CHRISTEN",
       "canonicalName": "Edge Flip Flop",
       "variantCount": 2,
@@ -7681,6 +7758,13 @@
       "canonicalName": "Esme Loafers Latex",
       "variantCount": 2,
       "groupingReason": "normalizedName:esme loafers latex"
+    },
+    {
+      "modelFamilyId": "hereu--name-esportiu-for-all-lace-up-sporty-shoe-other-footwear-unknown-unknown-unknown-lace-up-woven",
+      "brand": "HEREU",
+      "canonicalName": "Esportiu - For All - Lace-up Sporty Shoe",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:esportiu - for all - lace-up sporty shoe"
     },
     {
       "modelFamilyId": "hereu--name-esportiu-lace-up-sporty-shoe-other-footwear-unknown-unknown-unknown-lace-up-woven",
@@ -8159,6 +8243,13 @@
       "groupingReason": "normalizedName:glove ballerina"
     },
     {
+      "modelFamilyId": "proenza-schouler--name-glove-lace-up-flats-other-footwear-flat-unknown-unknown-lace-up",
+      "brand": "PROENZA SCHOULER",
+      "canonicalName": "Glove Lace UP Flats",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:glove lace up flats"
+    },
+    {
       "modelFamilyId": "lemaire--name-glove-mules-mule-unknown-unknown-unknown-backless",
       "brand": "LEMAIRE",
       "canonicalName": "Glove Mules",
@@ -8236,7 +8327,7 @@
       "groupingReason": "normalizedName:hamya heels"
     },
     {
-      "modelFamilyId": "christen--name-hand-crochet-ballerina-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "christen--name-hand-crochet-ballerina-ballerina-unknown-unknown-unknown",
       "brand": "CHRISTEN",
       "canonicalName": "Hand Crochet Ballerina",
       "variantCount": 2,
@@ -8943,13 +9034,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-linques-7",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Linques-2",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "dolce-vita--name-linzey-booties-pump-unknown-high-pointed",
       "brand": "DOLCE VITA",
       "canonicalName": "Linzey Booties",
@@ -9146,13 +9230,6 @@
       "groupingReason": "normalizedName:lyndee bead sandals"
     },
     {
-      "modelFamilyId": "by-far--name-lysander-ankle-boot-ankle-boot-unknown-unknown-unknown",
-      "brand": "BY FAR",
-      "canonicalName": "Lysander Ankle Boot",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:lysander ankle boot"
-    },
-    {
       "modelFamilyId": "dolce-vita--name-maclyn-flats-loafer-block-low-unknown",
       "brand": "DOLCE VITA",
       "canonicalName": "Maclyn Flats",
@@ -9305,13 +9382,6 @@
       "canonicalName": "Mavin Rhinestone Ballet Flats",
       "variantCount": 2,
       "groupingReason": "normalizedName:mavin rhinestone ballet flats"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-maximal-11",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Maximal-3",
-      "variantCount": 2,
-      "groupingReason": "singleton"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-maximal-w",
@@ -10959,6 +11029,13 @@
       "groupingReason": "normalizedName:saturday sandal"
     },
     {
+      "modelFamilyId": "toteme--name-scarf-slingbacks-slingback-unknown-unknown-unknown-slingback",
+      "brand": "TOTEME",
+      "canonicalName": "Scarf Slingbacks",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:scarf slingbacks"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-schedule",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Schedule",
@@ -11022,7 +11099,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "toteme--name-sharp-kitten-pumps-pump-kitten-unknown-unknown",
+      "modelFamilyId": "toteme--name-sharp-kitten-pumps-other-footwear-kitten-unknown-unknown",
       "brand": "TOTEME",
       "canonicalName": "Sharp Kitten Pumps",
       "variantCount": 2,
@@ -11127,7 +11204,7 @@
       "groupingReason": "normalizedName:slash organza pumps"
     },
     {
-      "modelFamilyId": "toteme--name-slim-ankle-boots-ankle-boot-unknown-unknown-unknown",
+      "modelFamilyId": "toteme--name-slim-ankle-boots-other-footwear-unknown-unknown-unknown",
       "brand": "TOTEME",
       "canonicalName": "Slim Ankle Boots",
       "variantCount": 2,
@@ -11972,6 +12049,13 @@
       "canonicalName": "Vania",
       "variantCount": 2,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "hereu--name-vedra-for-all-round-toe-fisherman-sandal-sandal-unknown-unknown-unknown",
+      "brand": "HEREU",
+      "canonicalName": "Vedra - For All - Round-toe Fisherman Sandal",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:vedra - for all - round-toe fisherman sandal"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-vellum-2",
