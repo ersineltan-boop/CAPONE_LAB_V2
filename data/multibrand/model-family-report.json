@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 15481,
-  "modelFamilyCount": 10419,
-  "totalVariants": 15481,
-  "multiVariantFamilyCount": 3230,
-  "reductionPercent": 32.7,
-  "collapsedVariantProducts": 5062,
+  "rawProductCount": 15594,
+  "modelFamilyCount": 10474,
+  "totalVariants": 15594,
+  "multiVariantFamilyCount": 3247,
+  "reductionPercent": 32.8,
+  "collapsedVariantProducts": 5120,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 10375,
+    "familiesWithMultipleRepresentativeImages": 10429,
     "averageRepresentativeImageCount": 5.76,
     "maxRepresentativeImageCount": 61
   },
@@ -170,6 +170,13 @@
       "canonicalName": "Peche",
       "variantCount": 8,
       "groupingReason": "normalizedName:peche"
+    },
+    {
+      "modelFamilyId": "dolce-vita--name-relan-ballet-flats-ballerina-flat-unknown-unknown-low-vamp-buckle",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Relan Ballet Flats",
+      "variantCount": 8,
+      "groupingReason": "normalizedName:relan ballet flats"
     },
     {
       "modelFamilyId": "dolce-vita--name-rexa-heels-pump-unknown-mid-unknown",
@@ -340,11 +347,18 @@
       "groupingReason": "normalizedName:prudence 45 pump"
     },
     {
-      "modelFamilyId": "dolce-vita--name-relan-ballet-flats-ballerina-flat-unknown-unknown-low-vamp-buckle",
-      "brand": "DOLCE VITA",
-      "canonicalName": "Relan Ballet Flats",
+      "modelFamilyId": "studio-amelia--name-rhodes-50-pump-pump-unknown-unknown-pointed",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Rhodes 50 Pump",
       "variantCount": 7,
-      "groupingReason": "normalizedName:relan ballet flats"
+      "groupingReason": "normalizedName:rhodes 50 pump"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-rhodes-90-pump-pump-unknown-unknown-pointed",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Rhodes 90 Pump",
+      "variantCount": 7,
+      "groupingReason": "normalizedName:rhodes 90 pump"
     },
     {
       "modelFamilyId": "dolce-vita--name-rosha-heels-pump-other-high-unknown-peep-toe",
@@ -401,6 +415,13 @@
       "canonicalName": "Trust-fund",
       "variantCount": 7,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "maray--name-tuesday-sandal-sandal-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Tuesday Sandal",
+      "variantCount": 7,
+      "groupingReason": "normalizedName:tuesday sandal"
     },
     {
       "modelFamilyId": "sophia-webster--name-vanessa-mule-mule-unknown-unknown-unknown-backless",
@@ -914,6 +935,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "maray--name-full-on-mocassin-loafer-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Full ON Mocassin",
+      "variantCount": 5,
+      "groupingReason": "normalizedName:full on mocassin"
+    },
+    {
       "modelFamilyId": "dolce-vita--name-gibsen-ballet-flats-ballerina-flat-flat-unknown-low-vamp-bow",
       "brand": "DOLCE VITA",
       "canonicalName": "Gibsen Ballet Flats",
@@ -1047,6 +1075,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "maray--name-mary-jane-extrovert-mary-jane-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Mary Jane Extrovert",
+      "variantCount": 5,
+      "groupingReason": "normalizedName:mary jane extrovert"
+    },
+    {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-may",
       "brand": "ALIAS MAE",
       "canonicalName": "May",
@@ -1059,6 +1094,13 @@
       "canonicalName": "Minuit 90 Sandal",
       "variantCount": 5,
       "groupingReason": "normalizedName:minuit 90 sandal"
+    },
+    {
+      "modelFamilyId": "maray--name-mocassin-edit-loafer-unknown-flat-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Mocassin Edit",
+      "variantCount": 5,
+      "groupingReason": "normalizedName:mocassin edit"
     },
     {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-monnie",
@@ -1222,13 +1264,6 @@
       "groupingReason": "normalizedName:thong detail slide"
     },
     {
-      "modelFamilyId": "maray--name-tuesday-sandal-sandal-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Tuesday Sandal",
-      "variantCount": 5,
-      "groupingReason": "normalizedName:tuesday sandal"
-    },
-    {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-tullie",
       "brand": "ALIAS MAE",
       "canonicalName": "Tullie",
@@ -1241,6 +1276,13 @@
       "canonicalName": "Venga",
       "variantCount": 5,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "maray--name-york-mule-mule-unknown-unknown-unknown-backless",
+      "brand": "MARAY",
+      "canonicalName": "York Mule",
+      "variantCount": 5,
+      "groupingReason": "normalizedName:york mule"
     },
     {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-zola",
@@ -1348,6 +1390,13 @@
       "groupingReason": "normalizedName:alto 90 mule"
     },
     {
+      "modelFamilyId": "maray--name-amelia-wedge-wedge-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Amelia",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:amelia"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-android-2",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Android",
@@ -1402,6 +1451,13 @@
       "canonicalName": "Aylee Wedges",
       "variantCount": 4,
       "groupingReason": "normalizedName:aylee wedges"
+    },
+    {
+      "modelFamilyId": "maray--name-ayu-chuncky-iguana-wedge-wedge-low-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Ayu Chuncky Iguana",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:ayu chuncky iguana"
     },
     {
       "modelFamilyId": "dear-frances--name-balla-ballerina-unknown-unknown-unknown",
@@ -1486,6 +1542,13 @@
       "canonicalName": "Birdy",
       "variantCount": 4,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "maray--name-blossom-edit-taupe-mule-unknown-unknown-unknown-backless",
+      "brand": "MARAY",
+      "canonicalName": "Blossom Edit Taupe",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:blossom edit taupe"
     },
     {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-bodie",
@@ -2524,6 +2587,13 @@
       "groupingReason": "normalizedName:ritla wide ballet flats"
     },
     {
+      "modelFamilyId": "maray--name-rome-sandal-sandal-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Rome Sandal",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:rome sandal"
+    },
+    {
       "modelFamilyId": "dolce-vita--name-romie-boots-pump-unknown-high-unknown",
       "brand": "DOLCE VITA",
       "canonicalName": "Romie Boots",
@@ -2627,6 +2697,13 @@
       "canonicalName": "Shiloh",
       "variantCount": 4,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-siena-braided-heel-sandal-unknown-unknown-unknown-braided",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Siena Braided Heel",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:siena braided heel"
     },
     {
       "modelFamilyId": "studio-amelia--name-sierra-50-slingback-slingback-unknown-unknown-unknown-slingback",
@@ -2888,6 +2965,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "studio-amelia--name-wishbone-90-heel-sandal-unknown-unknown-unknown",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Wishbone 90 Heel",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:wishbone 90 heel"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-withstand",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Withstand",
@@ -3070,13 +3154,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "maray--name-amelia-wedge-wedge-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Amelia",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:amelia"
-    },
-    {
       "modelFamilyId": "dolce-vita--name-andey-heels-pump-unknown-low-unknown",
       "brand": "DOLCE VITA",
       "canonicalName": "Andey Heels",
@@ -3180,13 +3257,6 @@
       "canonicalName": "Ayu Chuncky",
       "variantCount": 3,
       "groupingReason": "normalizedName:ayu chuncky"
-    },
-    {
-      "modelFamilyId": "maray--name-ayu-chuncky-iguana-wedge-wedge-low-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Ayu Chuncky Iguana",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:ayu chuncky iguana"
     },
     {
       "modelFamilyId": "dolce-vita--name-b-ntcd-sneakers-sneaker-unknown-unknown-unknown",
@@ -3301,11 +3371,25 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "maray--name-blossom-boot-ankle-boot-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Blossom Boot",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:blossom boot"
+    },
+    {
       "modelFamilyId": "maray--name-blossom-high-piton-mule-unknown-unknown-unknown-backless",
       "brand": "MARAY",
       "canonicalName": "Blossom High Piton",
       "variantCount": 3,
       "groupingReason": "normalizedName:blossom high piton"
+    },
+    {
+      "modelFamilyId": "maray--name-blossom-iguana-wedge-wedge-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Blossom Iguana",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:blossom iguana"
     },
     {
       "modelFamilyId": "the-row--name-boheme-mj-shoe-other-footwear-unknown-unknown-unknown",
@@ -3348,6 +3432,13 @@
       "canonicalName": "Bratty-lo",
       "variantCount": 3,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "maray--name-break-rules-edit-ballerina-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Break Rules Edit",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:break rules edit"
     },
     {
       "modelFamilyId": "sophia-webster--name-breeze-sneaker-sneaker-unknown-unknown-unknown",
@@ -3688,7 +3779,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710",
       "brand": "ZARA",
-      "canonicalName": "Crossover Flat",
+      "canonicalName": "Crossed Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -3698,6 +3789,13 @@
       "canonicalName": "Cruz Booties",
       "variantCount": 3,
       "groupingReason": "normalizedName:cruz booties"
+    },
+    {
+      "modelFamilyId": "maray--name-cuba-sandal-sandal-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Cuba Sandal",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:cuba sandal"
     },
     {
       "modelFamilyId": "souliers-martinez--name-cuenca-pump-block-mid-unknown-braided-woven",
@@ -3957,13 +4055,6 @@
       "canonicalName": "Fresa",
       "variantCount": 3,
       "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "maray--name-full-on-mocassin-loafer-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Full ON Mocassin",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:full on mocassin"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gabbriette",
@@ -4258,6 +4349,20 @@
       "canonicalName": "Izzey Plush Sneakers",
       "variantCount": 3,
       "groupingReason": "normalizedName:izzey plush sneakers"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-jacques-50-mule-mule-unknown-unknown-pointed-backless-peep-toe",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Jacques 50 Mule",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:jacques 50 mule"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-jacques-90-mule-mule-unknown-unknown-pointed-backless-peep-toe",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Jacques 90 Mule",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:jacques 90 mule"
     },
     {
       "modelFamilyId": "dolce-vita--name-jaina-sandals-thong-unknown-unknown-unknown-open-toe",
@@ -4561,6 +4666,13 @@
       "groupingReason": "normalizedName:madow heels"
     },
     {
+      "modelFamilyId": "maray--name-madrid-loafer-loafer-unknown-flat-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Madrid Loafer",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:madrid loafer"
+    },
+    {
       "modelFamilyId": "carel--name-malaga-other-footwear-unknown-unknown-unknown",
       "brand": "CAREL",
       "canonicalName": "Malaga",
@@ -4615,13 +4727,6 @@
       "canonicalName": "Marquis -",
       "variantCount": 3,
       "groupingReason": "normalizedName:marquis -"
-    },
-    {
-      "modelFamilyId": "maray--name-mary-jane-extrovert-mary-jane-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Mary Jane Extrovert",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:mary jane extrovert"
     },
     {
       "modelFamilyId": "dolce-vita--name-marzy-sandals-slingback-unknown-low-unknown-slingback",
@@ -4741,13 +4846,6 @@
       "canonicalName": "Miss-vixen",
       "variantCount": 3,
       "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "maray--name-mocassin-edit-loafer-unknown-flat-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Mocassin Edit",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:mocassin edit"
     },
     {
       "modelFamilyId": "the-row--name-moccasin-loafer-unknown-unknown-unknown",
@@ -4946,6 +5044,13 @@
       "groupingReason": "normalizedName:pakohia"
     },
     {
+      "modelFamilyId": "studio-amelia--name-palmela-ankle-boot-ankle-boot-unknown-unknown-unknown",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Palmela Ankle Boot",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:palmela ankle boot"
+    },
+    {
       "modelFamilyId": "pavement--name-pamargot-other-footwear-unknown-unknown-unknown",
       "brand": "PAVEMENT",
       "canonicalName": "Pamargot",
@@ -5042,6 +5147,13 @@
       "canonicalName": "Peltin Heels",
       "variantCount": 3,
       "groupingReason": "normalizedName:peltin heels"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-petra-calf-boot-boot-unknown-unknown-unknown-chain",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Petra Calf Boot",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:petra calf boot"
     },
     {
       "modelFamilyId": "neous--name-pherg-sandal-unknown-unknown-unknown",
@@ -5147,20 +5259,6 @@
       "canonicalName": "Reyes Wide Ballet Flats",
       "variantCount": 3,
       "groupingReason": "normalizedName:reyes wide ballet flats"
-    },
-    {
-      "modelFamilyId": "studio-amelia--name-rhodes-50-pump-pump-unknown-unknown-pointed",
-      "brand": "STUDIO AMELIA",
-      "canonicalName": "Rhodes 50 Pump",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:rhodes 50 pump"
-    },
-    {
-      "modelFamilyId": "studio-amelia--name-rhodes-90-pump-pump-unknown-unknown-pointed",
-      "brand": "STUDIO AMELIA",
-      "canonicalName": "Rhodes 90 Pump",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:rhodes 90 pump"
     },
     {
       "modelFamilyId": "dolce-vita--name-riggs-boots-pump-unknown-high-unknown",
@@ -5373,6 +5471,13 @@
       "groupingReason": "normalizedName:sardana - lace-up slingback sandal"
     },
     {
+      "modelFamilyId": "maray--name-saturday-sandal-sandal-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Saturday Sandal",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:saturday sandal"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-sculpted",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Sculpted",
@@ -5455,6 +5560,13 @@
       "canonicalName": "Siena 70 Heel",
       "variantCount": 3,
       "groupingReason": "normalizedName:siena 70 heel"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-siena-ballet-flat-ballerina-flat-unknown-unknown-low-vamp",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Siena Ballet Flat",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:siena ballet flat"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-siren-25",
@@ -5968,13 +6080,6 @@
       "groupingReason": "normalizedName:wishbone 50 heel"
     },
     {
-      "modelFamilyId": "studio-amelia--name-wishbone-90-heel-sandal-unknown-unknown-unknown",
-      "brand": "STUDIO AMELIA",
-      "canonicalName": "Wishbone 90 Heel",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:wishbone 90 heel"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-wraith",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Wraith",
@@ -5987,13 +6092,6 @@
       "canonicalName": "Yasha Slingback Pump",
       "variantCount": 3,
       "groupingReason": "normalizedName:yasha slingback pump"
-    },
-    {
-      "modelFamilyId": "maray--name-york-mule-mule-unknown-unknown-unknown-backless",
-      "brand": "MARAY",
-      "canonicalName": "York Mule",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:york mule"
     },
     {
       "modelFamilyId": "dolce-vita--name-yves-heels-thong-unknown-mid-unknown-open-toe",
@@ -6612,6 +6710,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "maray--name-ayu-chuncky-iguana-tobacco-wedge-wedge-low-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Ayu Chuncky Iguana Tobacco",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:ayu chuncky iguana tobacco"
+    },
+    {
       "modelFamilyId": "maray--name-ayu-marroco-premium-wedge-wedge-low-unknown",
       "brand": "MARAY",
       "canonicalName": "Ayu Marroco Premium",
@@ -6640,6 +6745,13 @@
       "groupingReason": "normalizedName:babybow mule"
     },
     {
+      "modelFamilyId": "maray--name-baia-flip-flop-cherry-thong-unknown-unknown-unknown-open-toe",
+      "brand": "MARAY",
+      "canonicalName": "Baia Flip Flop Cherry",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:baia flip flop cherry"
+    },
+    {
       "modelFamilyId": "dear-frances--name-balla-crystals-small-ballerina-unknown-unknown-unknown",
       "brand": "DEAR FRANCES",
       "canonicalName": "Balla Crystals Small",
@@ -6659,6 +6771,13 @@
       "canonicalName": "Ballet Flats",
       "variantCount": 2,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "maray--name-ballet-flats-gabon-taupe-ballerina-flat-unknown-unknown-low-vamp",
+      "brand": "MARAY",
+      "canonicalName": "Ballet Flats Gabon Taupe",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:ballet flats gabon taupe"
     },
     {
       "modelFamilyId": "luis-onofre--name-baltasar-other-footwear-unknown-unknown-unknown",
@@ -6857,18 +6976,18 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "maray--name-blossom-boot-ankle-boot-unknown-unknown-unknown",
+      "modelFamilyId": "maray--name-blossom-edit-mule-unknown-unknown-unknown-backless",
       "brand": "MARAY",
-      "canonicalName": "Blossom Boot",
+      "canonicalName": "Blossom Edit",
       "variantCount": 2,
-      "groupingReason": "normalizedName:blossom boot"
+      "groupingReason": "normalizedName:blossom edit"
     },
     {
-      "modelFamilyId": "maray--name-blossom-edit-taupe-mule-unknown-unknown-unknown-backless",
+      "modelFamilyId": "maray--name-blossom-high-dotted-mule-unknown-unknown-unknown-backless",
       "brand": "MARAY",
-      "canonicalName": "Blossom Edit Taupe",
+      "canonicalName": "Blossom High Dotted",
       "variantCount": 2,
-      "groupingReason": "normalizedName:blossom edit taupe"
+      "groupingReason": "normalizedName:blossom high dotted"
     },
     {
       "modelFamilyId": "maray--name-blossom-high-london-mule-unknown-unknown-unknown-backless",
@@ -6878,11 +6997,11 @@
       "groupingReason": "normalizedName:blossom high london"
     },
     {
-      "modelFamilyId": "maray--name-blossom-iguana-wedge-wedge-unknown-unknown",
+      "modelFamilyId": "maray--name-blossom-high-tobacco-mule-unknown-unknown-unknown-backless",
       "brand": "MARAY",
-      "canonicalName": "Blossom Iguana",
+      "canonicalName": "Blossom High Tobacco",
       "variantCount": 2,
-      "groupingReason": "normalizedName:blossom iguana"
+      "groupingReason": "normalizedName:blossom high tobacco"
     },
     {
       "modelFamilyId": "dolce-vita--name-bodey-ballet-flats-ballerina-block-flat-unknown-low-vamp-buckle",
@@ -6925,13 +7044,6 @@
       "canonicalName": "Bratty-k",
       "variantCount": 2,
       "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "maray--name-break-rules-edit-ballerina-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Break Rules Edit",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:break rules edit"
     },
     {
       "modelFamilyId": "dolce-vita--name-brion-boots-pump-unknown-mid-unknown",
@@ -7387,13 +7499,6 @@
       "canonicalName": "Crowned",
       "variantCount": 2,
       "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "maray--name-cuba-sandal-sandal-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Cuba Sandal",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:cuba sandal"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-dagget",
@@ -8171,13 +8276,6 @@
       "canonicalName": "Gioia",
       "variantCount": 2,
       "groupingReason": "normalizedName:gioia"
-    },
-    {
-      "modelFamilyId": "maray--name-girly-wedge-wedge-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Girly",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:girly"
     },
     {
       "modelFamilyId": "souliers-martinez--name-giulia-pump-unknown-mid-unknown",
@@ -9258,13 +9356,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "maray--name-madrid-loafer-loafer-unknown-flat-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Madrid Loafer",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:madrid loafer"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-magazine",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Magazine",
@@ -9592,6 +9683,13 @@
       "canonicalName": "Monceaux Mule",
       "variantCount": 2,
       "groupingReason": "normalizedName:monceaux mule"
+    },
+    {
+      "modelFamilyId": "maray--name-monday-mocassin-loafer-unknown-flat-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Monday Mocassin",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:monday mocassin"
     },
     {
       "modelFamilyId": "neous--name-mondor-sandal-unknown-unknown-unknown",
@@ -10105,13 +10203,6 @@
       "groupingReason": "normalizedName:petal"
     },
     {
-      "modelFamilyId": "studio-amelia--name-petra-calf-boot-boot-unknown-unknown-unknown-chain",
-      "brand": "STUDIO AMELIA",
-      "canonicalName": "Petra Calf Boot",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:petra calf boot"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pettigrew",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Pettigrew",
@@ -10248,6 +10339,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-process",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Process",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "schutz--id-shopify-schutz-product-it-test-pre-order-copy",
+      "brand": "SCHUTZ",
+      "canonicalName": "Product IT Test",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -10497,18 +10595,18 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "studio-amelia--name-rogue-80-glove-boot-boot-unknown-unknown-unknown",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Rogue 80 Glove Boot",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:rogue 80 glove boot"
+    },
+    {
       "modelFamilyId": "dolce-vita--name-rolan-boots-pump-block-low-unknown",
       "brand": "DOLCE VITA",
       "canonicalName": "Rolan Boots",
       "variantCount": 2,
       "groupingReason": "normalizedName:rolan boots"
-    },
-    {
-      "modelFamilyId": "maray--name-rome-sandal-sandal-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Rome Sandal",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:rome sandal"
     },
     {
       "modelFamilyId": "sophia-webster--name-rosalind-gem-sandal-sandal-unknown-unknown-unknown",
@@ -11022,13 +11120,6 @@
       "groupingReason": "normalizedName:sapatos rimini 512"
     },
     {
-      "modelFamilyId": "maray--name-saturday-sandal-sandal-unknown-unknown-unknown",
-      "brand": "MARAY",
-      "canonicalName": "Saturday Sandal",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:saturday sandal"
-    },
-    {
       "modelFamilyId": "toteme--name-scarf-slingbacks-slingback-unknown-unknown-unknown-slingback",
       "brand": "TOTEME",
       "canonicalName": "Scarf Slingbacks",
@@ -11258,6 +11349,13 @@
       "canonicalName": "Soledad",
       "variantCount": 2,
       "groupingReason": "normalizedName:soledad"
+    },
+    {
+      "modelFamilyId": "studio-amelia--name-solstice-wrapped-70-sandal-sandal-unknown-unknown-unknown",
+      "brand": "STUDIO AMELIA",
+      "canonicalName": "Solstice Wrapped 70 Sandal",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:solstice wrapped 70 sandal"
     },
     {
       "modelFamilyId": "pavement--name-sonja-slingback-unknown-unknown-unknown-slingback",
@@ -11853,6 +11951,13 @@
       "canonicalName": "Tisha Heels",
       "variantCount": 2,
       "groupingReason": "normalizedName:tisha heels"
+    },
+    {
+      "modelFamilyId": "maray--name-tobacco-ankle-boot-unknown-unknown-unknown",
+      "brand": "MARAY",
+      "canonicalName": "Tobacco",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:tobacco"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-topaz",

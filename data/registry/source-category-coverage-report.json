@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-23T07:03:29.349Z",
+  "generatedAt": "2026-08-24T07:07:43.375Z",
   "brands": [
     {
       "brandId": "schutz",
       "brandName": "SCHUTZ",
-      "modelFamilyCount": 705,
-      "sourceProductCount": 1373,
+      "modelFamilyCount": 706,
+      "sourceProductCount": 1374,
       "sourceFootwearCategoryCount": 270,
       "categories": [
         {
@@ -257,14 +257,14 @@
           "categoryId": "bootie",
           "categoryName": "Bootie",
           "categoryPath": "/collections/booties-ab",
-          "productCount": 122,
+          "productCount": 123,
           "generic": false
         },
         {
           "categoryId": "booties-ab",
           "categoryName": "Booties Ab",
           "categoryPath": "/collections/booties-ab",
-          "productCount": 122,
+          "productCount": 123,
           "generic": false
         },
         {
@@ -467,7 +467,7 @@
           "categoryId": "boots-booties",
           "categoryName": "Boots & Booties",
           "categoryPath": "/collections/boots-booties",
-          "productCount": 72,
+          "productCount": 73,
           "generic": false
         },
         {
@@ -475,6 +475,13 @@
           "categoryName": "Boots & Booties caroussel",
           "categoryPath": "/collections/boots-booties-caroussel",
           "productCount": 72,
+          "generic": false
+        },
+        {
+          "categoryId": "last-units-shoes",
+          "categoryName": "Last Units Shoes",
+          "categoryPath": "/collections/last-units-shoes",
+          "productCount": 69,
           "generic": false
         },
         {
@@ -499,17 +506,10 @@
           "generic": false
         },
         {
-          "categoryId": "last-units-shoes",
-          "categoryName": "Last Units Shoes",
-          "categoryPath": "/collections/last-units-shoes",
-          "productCount": 67,
-          "generic": false
-        },
-        {
           "categoryId": "last-pairs",
           "categoryName": "Last Pairs",
           "categoryPath": "/collections/last-units-shoes",
-          "productCount": 66,
+          "productCount": 68,
           "generic": false
         },
         {
@@ -730,6 +730,13 @@
           "generic": false
         },
         {
+          "categoryId": "booties-on",
+          "categoryName": "booties on",
+          "categoryPath": "/collections/booties-on",
+          "productCount": 33,
+          "generic": false
+        },
+        {
           "categoryId": "travel-shoes",
           "categoryName": "Travel Shoes",
           "categoryPath": "/collections/travel-shoes",
@@ -747,13 +754,6 @@
           "categoryId": "booties",
           "categoryName": "Booties",
           "categoryPath": "/collections/booties",
-          "productCount": 32,
-          "generic": false
-        },
-        {
-          "categoryId": "booties-on",
-          "categoryName": "booties on",
-          "categoryPath": "/collections/booties-on",
           "productCount": 32,
           "generic": false
         },
@@ -1899,7 +1899,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 1350,
+      "productsWithMeaningfulCategory": 1351,
       "productsWithNoMeaningfulCategory": 23,
       "categoryCoveragePercent": 98.3,
       "productsOnlyGenericCategory": 19,
@@ -1913,22 +1913,22 @@
     {
       "brandId": "tony-bianco",
       "brandName": "TONY BIANCO",
-      "modelFamilyCount": 155,
-      "sourceProductCount": 391,
+      "modelFamilyCount": 159,
+      "sourceProductCount": 398,
       "sourceFootwearCategoryCount": 59,
       "categories": [
         {
           "categoryId": "flat-shoes",
           "categoryName": "Flat Shoes",
           "categoryPath": "/collections/flat-shoes",
-          "productCount": 282,
+          "productCount": 287,
           "generic": false
         },
         {
           "categoryId": "ballet-flats",
           "categoryName": "Ballet Flats",
           "categoryPath": "/collections/ballet-flats",
-          "productCount": 132,
+          "productCount": 137,
           "generic": false
         },
         {
@@ -2019,7 +2019,7 @@
           "categoryId": "last-pair-shoes",
           "categoryName": "Last Pair Shoes",
           "categoryPath": "/collections/last-pair-shoes",
-          "productCount": 33,
+          "productCount": 34,
           "generic": false
         },
         {
@@ -2096,7 +2096,14 @@
           "categoryId": "mary-jane-shoes",
           "categoryName": "Mary Jane Shoes",
           "categoryPath": "/collections/mary-jane-shoes",
-          "productCount": 20,
+          "productCount": 21,
+          "generic": false
+        },
+        {
+          "categoryId": "last-pairs-old",
+          "categoryName": "Last Pairs Old",
+          "categoryPath": "/collections/last-pairs-old",
+          "productCount": 19,
           "generic": false
         },
         {
@@ -2117,13 +2124,6 @@
           "categoryId": "flatform-sandals",
           "categoryName": "Flatform Sandals",
           "categoryPath": "/collections/flatform-sandals",
-          "productCount": 18,
-          "generic": false
-        },
-        {
-          "categoryId": "last-pairs-old",
-          "categoryName": "Last Pairs Old",
-          "categoryPath": "/collections/last-pairs-old",
           "productCount": 18,
           "generic": false
         },
@@ -2170,6 +2170,13 @@
           "generic": false
         },
         {
+          "categoryId": "pumps",
+          "categoryName": "Pumps",
+          "categoryPath": "/women/shoes/pumps",
+          "productCount": 12,
+          "generic": false
+        },
+        {
           "categoryId": "sling-back-shoes",
           "categoryName": "Sling Back Shoes",
           "categoryPath": "/collections/sling-back-shoes",
@@ -2187,13 +2194,6 @@
           "categoryId": "low-heels",
           "categoryName": "Low Heels",
           "categoryPath": "/collections/low-heels",
-          "productCount": 11,
-          "generic": false
-        },
-        {
-          "categoryId": "pumps",
-          "categoryName": "Pumps",
-          "categoryPath": "/women/shoes/pumps",
           "productCount": 11,
           "generic": false
         },
@@ -2247,6 +2247,13 @@
           "generic": false
         },
         {
+          "categoryId": "metallic-shoes",
+          "categoryName": "Metallic Shoes",
+          "categoryPath": "/collections/metallic-shoes",
+          "productCount": 6,
+          "generic": false
+        },
+        {
           "categoryId": "combat-boots",
           "categoryName": "Combat Boots",
           "categoryPath": "/collections/combat-boots",
@@ -2261,17 +2268,10 @@
           "generic": false
         },
         {
-          "categoryId": "metallic-shoes",
-          "categoryName": "Metallic Shoes",
-          "categoryPath": "/collections/metallic-shoes",
-          "productCount": 5,
-          "generic": false
-        },
-        {
           "categoryId": "sandals",
           "categoryName": "Sandals",
           "categoryPath": "/women/shoes/sandals",
-          "productCount": 3,
+          "productCount": 4,
           "generic": false
         },
         {
@@ -2331,7 +2331,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 391,
+      "productsWithMeaningfulCategory": 398,
       "productsWithNoMeaningfulCategory": 0,
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
@@ -5721,21 +5721,21 @@
       "brandId": "dolce-vita",
       "brandName": "DOLCE VITA",
       "modelFamilyCount": 541,
-      "sourceProductCount": 1108,
+      "sourceProductCount": 1109,
       "sourceFootwearCategoryCount": 90,
       "categories": [
         {
           "categoryId": "shoes-view-all",
           "categoryName": "Shoes View All",
           "categoryPath": "/collections/shoes-view-all",
-          "productCount": 1049,
+          "productCount": 1050,
           "generic": true
         },
         {
           "categoryId": "view-all",
           "categoryName": "VIEW ALL",
           "categoryPath": "/collections/shoes-view-all",
-          "productCount": 1046,
+          "productCount": 1047,
           "generic": true
         },
         {
@@ -5777,14 +5777,14 @@
           "categoryId": "flats-loafers",
           "categoryName": "FLATS + LOAFERS",
           "categoryPath": "/collections/shoes-flats",
-          "productCount": 223,
+          "productCount": 224,
           "generic": false
         },
         {
           "categoryId": "shoes-flats",
           "categoryName": "Shoes Flats",
           "categoryPath": "/collections/shoes-flats",
-          "productCount": 220,
+          "productCount": 221,
           "generic": false
         },
         {
@@ -5847,7 +5847,7 @@
           "categoryId": "ballet",
           "categoryName": "BALLET",
           "categoryPath": "/collections/ballet",
-          "productCount": 153,
+          "productCount": 154,
           "generic": false
         },
         {
@@ -5914,17 +5914,17 @@
           "generic": false
         },
         {
-          "categoryId": "shoes-booties",
-          "categoryName": "Shoes Booties",
-          "categoryPath": "/collections/shoes-booties",
+          "categoryId": "sale-flats",
+          "categoryName": "SALE FLATS",
+          "categoryPath": "/collections/sale-flats",
           "productCount": 99,
           "generic": false
         },
         {
-          "categoryId": "sale-flats",
-          "categoryName": "SALE FLATS",
-          "categoryPath": "/collections/sale-flats",
-          "productCount": 98,
+          "categoryId": "shoes-booties",
+          "categoryName": "Shoes Booties",
+          "categoryPath": "/collections/shoes-booties",
+          "productCount": 99,
           "generic": false
         },
         {
@@ -6015,7 +6015,7 @@
           "categoryId": "mary-janes",
           "categoryName": "MARY JANES",
           "categoryPath": "/collections/mary-janes",
-          "productCount": 63,
+          "productCount": 64,
           "generic": false
         },
         {
@@ -6041,7 +6041,7 @@
         },
         {
           "categoryId": "strappy-heels",
-          "categoryName": "STRAPPY HEELS",
+          "categoryName": "Strappy Heels",
           "categoryPath": "/collections/strappy-heels",
           "productCount": 44,
           "generic": false
@@ -6229,6 +6229,13 @@
           "generic": false
         },
         {
+          "categoryId": "raffia-flats",
+          "categoryName": "RAFFIA FLATS",
+          "categoryPath": "/collections/raffia-flats",
+          "productCount": 17,
+          "generic": false
+        },
+        {
           "categoryId": "block-heel-sandals",
           "categoryName": "BLOCK HEEL SANDALS",
           "categoryPath": "/collections/block-heel-sandals",
@@ -6239,13 +6246,6 @@
           "categoryId": "espadrille-sandals",
           "categoryName": "ESPADRILLE SANDALS",
           "categoryPath": "/collections/espadrille-sandals",
-          "productCount": 16,
-          "generic": false
-        },
-        {
-          "categoryId": "raffia-flats",
-          "categoryName": "RAFFIA FLATS",
-          "categoryPath": "/collections/raffia-flats",
           "productCount": 16,
           "generic": false
         },
@@ -6342,7 +6342,7 @@
         },
         {
           "categoryId": "silver-heels",
-          "categoryName": "SILVER HEELS",
+          "categoryName": "Silver Heels",
           "categoryPath": "/collections/silver-heels",
           "productCount": 2,
           "generic": false
@@ -6355,7 +6355,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 1099,
+      "productsWithMeaningfulCategory": 1100,
       "productsWithNoMeaningfulCategory": 9,
       "categoryCoveragePercent": 99.2,
       "productsOnlyGenericCategory": 5,
@@ -6866,22 +6866,22 @@
     {
       "brandId": "steve-madden",
       "brandName": "STEVE MADDEN",
-      "modelFamilyCount": 706,
-      "sourceProductCount": 1320,
+      "modelFamilyCount": 708,
+      "sourceProductCount": 1324,
       "sourceFootwearCategoryCount": 229,
       "categories": [
         {
           "categoryId": "women-s-heels",
           "categoryName": "WOMEN'S - HEELS",
           "categoryPath": "/collections/womens-heels",
-          "productCount": 419,
+          "productCount": 421,
           "generic": false
         },
         {
           "categoryId": "womens-heels",
           "categoryName": "Womens Heels",
           "categoryPath": "/collections/womens-heels",
-          "productCount": 415,
+          "productCount": 417,
           "generic": false
         },
         {
@@ -6909,7 +6909,7 @@
           "categoryId": "boots-booties",
           "categoryName": "BOOTS & BOOTIES",
           "categoryPath": "/collections/boots-booties",
-          "productCount": 307,
+          "productCount": 309,
           "generic": false
         },
         {
@@ -7084,35 +7084,35 @@
           "categoryId": "women-s-boots",
           "categoryName": "WOMEN'S - BOOTS",
           "categoryPath": "/collections/womens-boots",
-          "productCount": 158,
+          "productCount": 159,
           "generic": false
         },
         {
           "categoryId": "womens-boots",
           "categoryName": "Womens Boots",
           "categoryPath": "/collections/womens-boots",
-          "productCount": 156,
+          "productCount": 157,
           "generic": false
         },
         {
           "categoryId": "women-s-booties",
           "categoryName": "WOMEN'S - BOOTIES",
           "categoryPath": "/collections/womens-booties",
-          "productCount": 154,
+          "productCount": 155,
           "generic": false
         },
         {
           "categoryId": "womens-booties",
           "categoryName": "Womens Booties",
           "categoryPath": "/collections/womens-booties",
-          "productCount": 153,
+          "productCount": 154,
           "generic": false
         },
         {
           "categoryId": "strappy-sandals-heels",
           "categoryName": "STRAPPY SANDALS & HEELS",
           "categoryPath": "/collections/strappy-sandals-heels",
-          "productCount": 152,
+          "productCount": 153,
           "generic": false
         },
         {
@@ -7151,9 +7151,23 @@
           "generic": false
         },
         {
+          "categoryId": "flip-flops",
+          "categoryName": "Flip Flops",
+          "categoryPath": "/collections/flip-flops",
+          "productCount": 131,
+          "generic": false
+        },
+        {
           "categoryId": "graduation-shoes",
           "categoryName": "Graduation Shoes",
           "categoryPath": "/collections/graduation-shoes",
+          "productCount": 131,
+          "generic": false
+        },
+        {
+          "categoryId": "thong-sandals",
+          "categoryName": "THONG SANDALS",
+          "categoryPath": "/collections/flip-flops",
           "productCount": 131,
           "generic": false
         },
@@ -7168,20 +7182,6 @@
           "categoryId": "ballet",
           "categoryName": "BALLET",
           "categoryPath": "/collections/ballet",
-          "productCount": 130,
-          "generic": false
-        },
-        {
-          "categoryId": "flip-flops",
-          "categoryName": "Flip Flops",
-          "categoryPath": "/collections/flip-flops",
-          "productCount": 130,
-          "generic": false
-        },
-        {
-          "categoryId": "thong-sandals",
-          "categoryName": "THONG SANDALS",
-          "categoryPath": "/collections/flip-flops",
           "productCount": 130,
           "generic": false
         },
@@ -7217,7 +7217,7 @@
           "categoryId": "knee-high-boots",
           "categoryName": "KNEE HIGH BOOTS",
           "categoryPath": "/collections/knee-high-boots",
-          "productCount": 113,
+          "productCount": 114,
           "generic": false
         },
         {
@@ -7235,6 +7235,13 @@
           "generic": false
         },
         {
+          "categoryId": "strappy-heels",
+          "categoryName": "STRAPPY HEELS",
+          "categoryPath": "/collections/strappy-heels",
+          "productCount": 106,
+          "generic": false
+        },
+        {
           "categoryId": "sandals-under-50",
           "categoryName": "SANDALS UNDER $50",
           "categoryPath": "/collections/sandals-under-50",
@@ -7245,13 +7252,6 @@
           "categoryId": "spring-wedding-shoes",
           "categoryName": "Spring Wedding Shoes",
           "categoryPath": "/collections/spring-wedding-shoes",
-          "productCount": 105,
-          "generic": false
-        },
-        {
-          "categoryId": "strappy-heels",
-          "categoryName": "STRAPPY HEELS",
-          "categoryPath": "/collections/strappy-heels",
           "productCount": 105,
           "generic": false
         },
@@ -7273,14 +7273,14 @@
           "categoryId": "pointed-toe-boots",
           "categoryName": "POINTED TOE BOOTS",
           "categoryPath": "/collections/pointed-toe-boots",
-          "productCount": 94,
+          "productCount": 95,
           "generic": false
         },
         {
           "categoryId": "pointed-toe-heels",
           "categoryName": "POINTED TOE HEELS",
           "categoryPath": "/collections/pointed-toe-heels",
-          "productCount": 93,
+          "productCount": 94,
           "generic": false
         },
         {
@@ -7341,7 +7341,7 @@
         },
         {
           "categoryId": "chunky-sandals",
-          "categoryName": "Chunky Sandals",
+          "categoryName": "CHUNKY SANDALS",
           "categoryPath": "/collections/chunky-sandals",
           "productCount": 86,
           "generic": false
@@ -7368,6 +7368,13 @@
           "generic": false
         },
         {
+          "categoryId": "stilettos",
+          "categoryName": "STILETTOS",
+          "categoryPath": "/collections/stilettos",
+          "productCount": 82,
+          "generic": false
+        },
+        {
           "categoryId": "kitten-heels",
           "categoryName": "KITTEN HEELS",
           "categoryPath": "/collections/kitten-heel",
@@ -7378,13 +7385,6 @@
           "categoryId": "kitten-heel",
           "categoryName": "Kitten Heel",
           "categoryPath": "/collections/kitten-heel",
-          "productCount": 81,
-          "generic": false
-        },
-        {
-          "categoryId": "stilettos",
-          "categoryName": "STILETTOS",
-          "categoryPath": "/collections/stilettos",
           "productCount": 81,
           "generic": false
         },
@@ -7434,7 +7434,7 @@
           "categoryId": "spring-boots",
           "categoryName": "Spring Boots",
           "categoryPath": "/collections/spring-boots",
-          "productCount": 72,
+          "productCount": 74,
           "generic": false
         },
         {
@@ -7670,7 +7670,7 @@
         },
         {
           "categoryId": "wooden-heels-sandals",
-          "categoryName": "Wooden Heels Sandals",
+          "categoryName": "WOODEN HEELS & SANDALS",
           "categoryPath": "/collections/wooden-heels-sandals",
           "productCount": 41,
           "generic": false
@@ -7781,17 +7781,17 @@
           "generic": false
         },
         {
-          "categoryId": "square-toe-flats",
-          "categoryName": "SQUARE TOE FLATS",
-          "categoryPath": "/collections/square-toe-flats",
+          "categoryId": "mesh-heels",
+          "categoryName": "Mesh Heels",
+          "categoryPath": "/collections/mesh-heels",
           "productCount": 28,
           "generic": false
         },
         {
-          "categoryId": "mesh-heels",
-          "categoryName": "Mesh Heels",
-          "categoryPath": "/collections/mesh-heels",
-          "productCount": 27,
+          "categoryId": "square-toe-flats",
+          "categoryName": "SQUARE TOE FLATS",
+          "categoryPath": "/collections/square-toe-flats",
+          "productCount": 28,
           "generic": false
         },
         {
@@ -7803,7 +7803,7 @@
         },
         {
           "categoryId": "block-heel-sandals",
-          "categoryName": "Block Heel Sandals",
+          "categoryName": "BLOCK HEEL SANDALS",
           "categoryPath": "/collections/block-heel-sandals",
           "productCount": 26,
           "generic": false
@@ -7879,6 +7879,20 @@
           "generic": false
         },
         {
+          "categoryId": "cowboy-boots",
+          "categoryName": "COWBOY BOOTS",
+          "categoryPath": "/collections/cowboy-boots",
+          "productCount": 21,
+          "generic": false
+        },
+        {
+          "categoryId": "cowgirl-boots",
+          "categoryName": "COWGIRL BOOTS",
+          "categoryPath": "/collections/cowgirl-boots",
+          "productCount": 21,
+          "generic": false
+        },
+        {
           "categoryId": "jelly-sandals",
           "categoryName": "JELLY SANDALS",
           "categoryPath": "/collections/jelly-sandals",
@@ -7900,30 +7914,16 @@
           "generic": false
         },
         {
-          "categoryId": "cowboy-boots",
-          "categoryName": "COWBOY BOOTS",
-          "categoryPath": "/collections/cowboy-boots",
-          "productCount": 20,
-          "generic": false
-        },
-        {
-          "categoryId": "cowgirl-boots",
-          "categoryName": "COWGIRL BOOTS",
-          "categoryPath": "/collections/cowgirl-boots",
-          "productCount": 20,
+          "categoryId": "womens-cowboy-booties",
+          "categoryName": "WOMENS COWBOY BOOTIES",
+          "categoryPath": "/collections/womens-cowboy-booties",
+          "productCount": 21,
           "generic": false
         },
         {
           "categoryId": "kitten-heel-boots",
           "categoryName": "KITTEN HEEL BOOTS",
           "categoryPath": "/collections/kitten-heel-boots",
-          "productCount": 20,
-          "generic": false
-        },
-        {
-          "categoryId": "womens-cowboy-booties",
-          "categoryName": "WOMENS COWBOY BOOTIES",
-          "categoryPath": "/collections/womens-cowboy-booties",
           "productCount": 20,
           "generic": false
         },
@@ -8068,16 +8068,16 @@
           "generic": false
         },
         {
-          "categoryId": "chelsea-boots",
-          "categoryName": "Chelsea Boots",
-          "categoryPath": "/collections/chelsea-boots",
-          "productCount": 14,
-          "generic": false
-        },
-        {
           "categoryId": "faux-fur-boots",
           "categoryName": "FAUX FUR BOOTS",
           "categoryPath": "/collections/faux-fur-boots",
+          "productCount": 15,
+          "generic": false
+        },
+        {
+          "categoryId": "chelsea-boots",
+          "categoryName": "Chelsea Boots",
+          "categoryPath": "/collections/chelsea-boots",
           "productCount": 14,
           "generic": false
         },
@@ -8474,7 +8474,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 1312,
+      "productsWithMeaningfulCategory": 1316,
       "productsWithNoMeaningfulCategory": 8,
       "categoryCoveragePercent": 99.4,
       "productsOnlyGenericCategory": 0,
@@ -9135,36 +9135,36 @@
     {
       "brandId": "studio-amelia",
       "brandName": "STUDIO AMELIA",
-      "modelFamilyCount": 75,
-      "sourceProductCount": 218,
+      "modelFamilyCount": 82,
+      "sourceProductCount": 248,
       "sourceFootwearCategoryCount": 34,
       "categories": [
         {
           "categoryId": "shoes-bags",
           "categoryName": "Shoes & Bags",
           "categoryPath": "/collections/shoes-bags",
-          "productCount": 217,
+          "productCount": 247,
           "generic": false
         },
         {
           "categoryId": "sale-footwear",
           "categoryName": "Sale | Footwear",
           "categoryPath": "/collections/sale-shoes",
-          "productCount": 216,
+          "productCount": 246,
           "generic": false
         },
         {
           "categoryId": "sale-shoes",
           "categoryName": "Sale Shoes",
           "categoryPath": "/collections/sale-shoes",
-          "productCount": 216,
+          "productCount": 242,
           "generic": false
         },
         {
           "categoryId": "footwear",
           "categoryName": "Footwear",
           "categoryPath": "/collections/shoes",
-          "productCount": 145,
+          "productCount": 149,
           "generic": true
         },
         {
@@ -9206,7 +9206,7 @@
           "categoryId": "black-friday-footwear",
           "categoryName": "Black Friday - Footwear",
           "categoryPath": "/collections/black-friday-footwear",
-          "productCount": 52,
+          "productCount": 56,
           "generic": false
         },
         {
@@ -9227,7 +9227,7 @@
           "categoryId": "mid-heels",
           "categoryName": "Mid Heels",
           "categoryPath": "/collections/mid-heels",
-          "productCount": 42,
+          "productCount": 43,
           "generic": false
         },
         {
@@ -9245,6 +9245,13 @@
           "generic": false
         },
         {
+          "categoryId": "strappy-sandals",
+          "categoryName": "Strappy Sandals",
+          "categoryPath": "/collections/strappy-sandals",
+          "productCount": 39,
+          "generic": false
+        },
+        {
           "categoryId": "bridal-footwear",
           "categoryName": "Bridal Footwear",
           "categoryPath": "/collections/bridal-footwear",
@@ -9252,17 +9259,10 @@
           "generic": false
         },
         {
-          "categoryId": "strappy-sandals",
-          "categoryName": "Strappy Sandals",
-          "categoryPath": "/collections/strappy-sandals",
-          "productCount": 38,
-          "generic": false
-        },
-        {
           "categoryId": "kitten-heels",
           "categoryName": "Kitten Heels",
           "categoryPath": "/collections/kitten-heels",
-          "productCount": 35,
+          "productCount": 38,
           "generic": false
         },
         {
@@ -9294,6 +9294,20 @@
           "generic": false
         },
         {
+          "categoryId": "black-friday-footwear-boots",
+          "categoryName": "Black Friday - Footwear - Boots",
+          "categoryPath": "/collections/black-friday-footwear-boots",
+          "productCount": 16,
+          "generic": false
+        },
+        {
+          "categoryId": "boots",
+          "categoryName": "Boots",
+          "categoryPath": "/collections/boots",
+          "productCount": 16,
+          "generic": false
+        },
+        {
           "categoryId": "flats",
           "categoryName": "Flats",
           "categoryPath": "/collections/flats",
@@ -9312,20 +9326,6 @@
           "categoryName": "Mid Heels Homepage",
           "categoryPath": "/collections/mid-heels-homepage",
           "productCount": 13,
-          "generic": false
-        },
-        {
-          "categoryId": "black-friday-footwear-boots",
-          "categoryName": "Black Friday - Footwear - Boots",
-          "categoryPath": "/collections/black-friday-footwear-boots",
-          "productCount": 12,
-          "generic": false
-        },
-        {
-          "categoryId": "boots",
-          "categoryName": "Boots",
-          "categoryPath": "/collections/boots",
-          "productCount": 12,
           "generic": false
         },
         {
@@ -9378,7 +9378,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 218,
+      "productsWithMeaningfulCategory": 248,
       "productsWithNoMeaningfulCategory": 0,
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
@@ -9392,8 +9392,8 @@
     {
       "brandId": "aeyde",
       "brandName": "AEYDE",
-      "modelFamilyCount": 538,
-      "sourceProductCount": 540,
+      "modelFamilyCount": 539,
+      "sourceProductCount": 541,
       "sourceFootwearCategoryCount": 35,
       "categories": [
         {
@@ -9617,7 +9617,7 @@
           "categoryId": "boots",
           "categoryName": "Boots",
           "categoryPath": "/women/shoes/boots",
-          "productCount": 2,
+          "productCount": 3,
           "generic": false
         },
         {
@@ -9642,7 +9642,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 540,
+      "productsWithMeaningfulCategory": 541,
       "productsWithNoMeaningfulCategory": 0,
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
@@ -10530,70 +10530,70 @@
     {
       "brandId": "maray",
       "brandName": "MARAY",
-      "modelFamilyCount": 108,
-      "sourceProductCount": 161,
+      "modelFamilyCount": 111,
+      "sourceProductCount": 193,
       "sourceFootwearCategoryCount": 8,
       "categories": [
         {
           "categoryId": "all-shoes",
           "categoryName": "All Shoes",
           "categoryPath": "/collections/all-shoes",
-          "productCount": 161,
+          "productCount": 193,
           "generic": true
         },
         {
           "categoryId": "flats-wedge-shoes",
           "categoryName": "Flats & Wedge Shoes",
           "categoryPath": "/collections/flats-wedge-shoes",
-          "productCount": 85,
+          "productCount": 105,
           "generic": false
         },
         {
           "categoryId": "sandals",
           "categoryName": "Sandals",
           "categoryPath": "/collections/sandals",
-          "productCount": 40,
+          "productCount": 47,
           "generic": false
         },
         {
           "categoryId": "mules",
           "categoryName": "Mules",
           "categoryPath": "/collections/mules",
-          "productCount": 27,
+          "productCount": 31,
           "generic": false
         },
         {
           "categoryId": "boots",
           "categoryName": "Boots",
           "categoryPath": "/collections/boots",
-          "productCount": 23,
+          "productCount": 26,
           "generic": false
         },
         {
           "categoryId": "flip-flops",
           "categoryName": "Flip Flops",
           "categoryPath": "/collections/flip-flops",
-          "productCount": 7,
+          "productCount": 8,
           "generic": false
         },
         {
           "categoryId": "vintage",
           "categoryName": "Vintage",
           "categoryPath": "/collections/vintage",
-          "productCount": 3,
+          "productCount": 5,
           "generic": false
         },
         {
           "categoryId": "vintage-boots",
           "categoryName": "Vintage Boots",
           "categoryPath": "/collections/vintage",
-          "productCount": 3,
+          "productCount": 5,
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 160,
+      "productsWithMeaningfulCategory": 192,
       "productsWithNoMeaningfulCategory": 1,
-      "categoryCoveragePercent": 99.4,
+      "categoryCoveragePercent": 99.5,
       "productsOnlyGenericCategory": 1,
       "collectionUrlsCrawled": [
         "https://maray.pt/collections/sandals",
@@ -10672,9 +10672,9 @@
     {
       "brandId": "the-row",
       "brandName": "THE ROW",
-      "modelFamilyCount": 137,
-      "sourceProductCount": 236,
-      "sourceFootwearCategoryCount": 16,
+      "modelFamilyCount": 138,
+      "sourceProductCount": 237,
+      "sourceFootwearCategoryCount": 17,
       "categories": [
         {
           "categoryId": "w-shoes-view-all",
@@ -10782,6 +10782,13 @@
           "generic": false
         },
         {
+          "categoryId": "boots",
+          "categoryName": "Boots",
+          "categoryPath": "/women/shoes/boots",
+          "productCount": 1,
+          "generic": false
+        },
+        {
           "categoryId": "sandals",
           "categoryName": "Sandals",
           "categoryPath": "/uk/shopping/women/sandals-1/items.aspx",
@@ -10789,9 +10796,9 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 181,
+      "productsWithMeaningfulCategory": 182,
       "productsWithNoMeaningfulCategory": 55,
-      "categoryCoveragePercent": 76.7,
+      "categoryCoveragePercent": 76.8,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://www.therow.com/collections/women-shoes",
@@ -11319,8 +11326,8 @@
     {
       "brandId": "toteme",
       "brandName": "TOTEME",
-      "modelFamilyCount": 105,
-      "sourceProductCount": 123,
+      "modelFamilyCount": 106,
+      "sourceProductCount": 124,
       "sourceFootwearCategoryCount": 15,
       "categories": [
         {
@@ -11331,17 +11338,17 @@
           "generic": true
         },
         {
-          "categoryId": "shoes-sandals",
-          "categoryName": "Shoes Sandals",
-          "categoryPath": "/collections/shoes-sandals",
+          "categoryId": "sandals",
+          "categoryName": "Sandals",
+          "categoryPath": "/women/shoes/sandals",
           "productCount": 35,
           "generic": false
         },
         {
-          "categoryId": "sandals",
-          "categoryName": "Sandals",
-          "categoryPath": "/women/shoes/sandals",
-          "productCount": 34,
+          "categoryId": "shoes-sandals",
+          "categoryName": "Shoes Sandals",
+          "categoryPath": "/collections/shoes-sandals",
+          "productCount": 35,
           "generic": false
         },
         {
@@ -11429,9 +11436,9 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 117,
+      "productsWithMeaningfulCategory": 118,
       "productsWithNoMeaningfulCategory": 6,
-      "categoryCoveragePercent": 95.1,
+      "categoryCoveragePercent": 95.2,
       "productsOnlyGenericCategory": 6,
       "collectionUrlsCrawled": [],
       "collectionUrlsDiscoveredNotCrawled": [],
@@ -11837,8 +11844,8 @@
     {
       "brandId": "amina-muaddi",
       "brandName": "AMINA MUADDI",
-      "modelFamilyCount": 134,
-      "sourceProductCount": 198,
+      "modelFamilyCount": 135,
+      "sourceProductCount": 199,
       "sourceFootwearCategoryCount": 21,
       "categories": [
         {
@@ -11884,6 +11891,13 @@
           "generic": false
         },
         {
+          "categoryId": "mules",
+          "categoryName": "Mules",
+          "categoryPath": "/women/shoes/mules",
+          "productCount": 15,
+          "generic": false
+        },
+        {
           "categoryId": "fall-winter-25-26-shoes",
           "categoryName": "FALL WINTER 25/26 - SHOES",
           "categoryPath": "/collections/fw25-shoes-1",
@@ -11894,13 +11908,6 @@
           "categoryId": "fw25-shoes-1",
           "categoryName": "Fw25 Shoes 1",
           "categoryPath": "/collections/fw25-shoes-1",
-          "productCount": 14,
-          "generic": false
-        },
-        {
-          "categoryId": "mules",
-          "categoryName": "Mules",
-          "categoryPath": "/women/shoes/mules",
           "productCount": 14,
           "generic": false
         },
@@ -11989,7 +11996,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 197,
+      "productsWithMeaningfulCategory": 198,
       "productsWithNoMeaningfulCategory": 1,
       "categoryCoveragePercent": 99.5,
       "productsOnlyGenericCategory": 1,
@@ -16019,22 +16026,22 @@
     {
       "brandId": "zara",
       "brandName": "ZARA",
-      "modelFamilyCount": 337,
-      "sourceProductCount": 337,
+      "modelFamilyCount": 340,
+      "sourceProductCount": 340,
       "sourceFootwearCategoryCount": 1,
       "categories": [
         {
           "categoryId": "view-all",
           "categoryName": "VIEW ALL",
           "categoryPath": "/us/en/woman-shoes-l1251.html",
-          "productCount": 337,
+          "productCount": 340,
           "generic": true
         }
       ],
       "productsWithMeaningfulCategory": 0,
-      "productsWithNoMeaningfulCategory": 337,
+      "productsWithNoMeaningfulCategory": 340,
       "categoryCoveragePercent": 0,
-      "productsOnlyGenericCategory": 337,
+      "productsOnlyGenericCategory": 340,
       "collectionUrlsCrawled": [],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": true

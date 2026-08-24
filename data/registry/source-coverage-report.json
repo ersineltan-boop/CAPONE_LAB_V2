@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T07:03:22.205Z",
+  "generatedAt": "2026-08-24T07:07:34.471Z",
   "entries": [
     {
       "sourceId": "schutz",
@@ -412,16 +412,16 @@
       ],
       "sourceReportedProductCount": 9167,
       "observedExpectedProductCount": 9167,
-      "collectedProductCount": 1373,
-      "rawProductUrlsDiscovered": 1384,
-      "productsDiscovered": 1373,
-      "uniqueProductsAfterDedupe": 1373,
-      "modelFamilyCount": 705,
+      "collectedProductCount": 1374,
+      "rawProductUrlsDiscovered": 1385,
+      "productsDiscovered": 1374,
+      "uniqueProductsAfterDedupe": 1374,
+      "modelFamilyCount": 706,
       "duplicateCount": 23,
       "estimatedCoveragePercent": 15,
       "sourceCategoryCount": 195,
-      "productsWithCategoryMembership": 1369,
-      "galleryCoverage": 99.7,
+      "productsWithCategoryMembership": 1370,
+      "galleryCoverage": 99.6,
       "pagesTraversed": 193,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
@@ -432,17 +432,17 @@
       "evidence": [
         "Pagination exhausted",
         "200 footwear collection path(s) crawled",
-        "1369 / 1373 products have source category membership"
+        "1370 / 1374 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 9167 ürün bildiriyor, collector 1373 benzersiz ürün aldı",
+        "Kaynak 9167 ürün bildiriyor, collector 1374 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 9167 ürün bildiriyor, collector 1373 benzersiz ürün aldı",
+        "Kaynak 9167 ürün bildiriyor, collector 1374 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited"
       ]
@@ -465,8 +465,8 @@
         "/collections/patent-shoes-old",
         "/collections/stiletto-heels",
         "/collections/flat-shoes",
-        "/collections/dress-sandals",
         "/collections/open-toe-heels",
+        "/collections/dress-sandals",
         "/collections/low-heels",
         "/collections/black-heels",
         "/collections/womens-boots",
@@ -485,11 +485,11 @@
         "/collections/bridal-shoes",
         "/collections/white-heels",
         "/collections/mesh-shoes",
-        "/collections/last-pair-shoes",
         "/collections/metallic-shoes",
         "/collections/last-pairs-old",
-        "/collections/flat-and-low-boots",
+        "/collections/last-pair-shoes",
         "/collections/metallic-heels",
+        "/collections/flat-and-low-boots",
         "/collections/platform-shoes",
         "/collections/platform-heels",
         "/collections/flat-sandals",
@@ -499,13 +499,13 @@
         "/collections/mary-jane-shoes",
         "/collections/peep-toe-shoes",
         "/collections/silver-heels",
-        "/collections/snake-shoes",
         "/collections/slide-shoes",
+        "/collections/snake-shoes",
         "/collections/red-heels",
         "/collections/shoe-care",
         "/collections/clear-heels",
-        "/collections/bling-heels",
         "/collections/red-shoes",
+        "/collections/bling-heels",
         "/collections/thigh-high-boots",
         "/collections/combat-boots",
         "/collections/shoe-designer",
@@ -566,35 +566,35 @@
       ],
       "sourceReportedProductCount": 1597,
       "observedExpectedProductCount": 1597,
-      "collectedProductCount": 391,
-      "rawProductUrlsDiscovered": 1224,
-      "productsDiscovered": 391,
-      "uniqueProductsAfterDedupe": 391,
-      "modelFamilyCount": 155,
-      "duplicateCount": 890,
-      "estimatedCoveragePercent": 24.5,
+      "collectedProductCount": 398,
+      "rawProductUrlsDiscovered": 1257,
+      "productsDiscovered": 398,
+      "uniqueProductsAfterDedupe": 398,
+      "modelFamilyCount": 159,
+      "duplicateCount": 918,
+      "estimatedCoveragePercent": 24.9,
       "sourceCategoryCount": 45,
-      "productsWithCategoryMembership": 391,
+      "productsWithCategoryMembership": 398,
       "galleryCoverage": 100,
       "pagesTraversed": 64,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
-      "verifiedNewProductCount": 47,
-      "verifiedNewCount": 295,
+      "verifiedNewProductCount": 49,
+      "verifiedNewCount": 302,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "58 footwear collection path(s) crawled",
-        "391 / 391 products have source category membership"
+        "398 / 398 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 1597 ürün bildiriyor, collector 391 benzersiz ürün aldı",
+        "Kaynak 1597 ürün bildiriyor, collector 398 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 1597 ürün bildiriyor, collector 391 benzersiz ürün aldı"
+        "Kaynak 1597 ürün bildiriyor, collector 398 benzersiz ürün aldı"
       ]
     },
     {
@@ -643,7 +643,7 @@
       "sourceReportedProductCount": 322,
       "observedExpectedProductCount": 322,
       "collectedProductCount": 133,
-      "rawProductUrlsDiscovered": 142,
+      "rawProductUrlsDiscovered": 140,
       "productsDiscovered": 133,
       "uniqueProductsAfterDedupe": 133,
       "modelFamilyCount": 101,
@@ -1424,7 +1424,7 @@
       "pagesTraversed": 69,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
-      "verifiedNewProductCount": 38,
+      "verifiedNewProductCount": 31,
       "verifiedNewCount": 98,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
@@ -1995,17 +1995,17 @@
         "WHITE HEELS",
         "WHITE SANDALS"
       ],
-      "sourceReportedProductCount": 1181,
-      "observedExpectedProductCount": 1181,
-      "collectedProductCount": 1108,
-      "rawProductUrlsDiscovered": 1097,
-      "productsDiscovered": 1108,
-      "uniqueProductsAfterDedupe": 1108,
+      "sourceReportedProductCount": 1173,
+      "observedExpectedProductCount": 1173,
+      "collectedProductCount": 1109,
+      "rawProductUrlsDiscovered": 1089,
+      "productsDiscovered": 1109,
+      "uniqueProductsAfterDedupe": 1109,
       "modelFamilyCount": 541,
-      "duplicateCount": 11,
-      "estimatedCoveragePercent": 93.8,
+      "duplicateCount": 10,
+      "estimatedCoveragePercent": 94.5,
       "sourceCategoryCount": 78,
-      "productsWithCategoryMembership": 1104,
+      "productsWithCategoryMembership": 1105,
       "galleryCoverage": 100,
       "pagesTraversed": 82,
       "paginationStatus": "success",
@@ -2017,7 +2017,7 @@
       "evidence": [
         "Pagination exhausted",
         "81 footwear collection path(s) crawled",
-        "1104 / 1108 products have source category membership"
+        "1105 / 1109 products have source category membership"
       ],
       "limitations": [],
       "errors": [],
@@ -2567,15 +2567,15 @@
       ],
       "sourceReportedProductCount": 4484,
       "observedExpectedProductCount": 4484,
-      "collectedProductCount": 1320,
-      "rawProductUrlsDiscovered": 1947,
-      "productsDiscovered": 1320,
-      "uniqueProductsAfterDedupe": 1320,
-      "modelFamilyCount": 706,
-      "duplicateCount": 661,
-      "estimatedCoveragePercent": 29.4,
+      "collectedProductCount": 1324,
+      "rawProductUrlsDiscovered": 1943,
+      "productsDiscovered": 1324,
+      "uniqueProductsAfterDedupe": 1324,
+      "modelFamilyCount": 708,
+      "duplicateCount": 658,
+      "estimatedCoveragePercent": 29.5,
       "sourceCategoryCount": 182,
-      "productsWithCategoryMembership": 1312,
+      "productsWithCategoryMembership": 1316,
       "galleryCoverage": 100,
       "pagesTraversed": 200,
       "paginationStatus": "success",
@@ -2587,17 +2587,17 @@
       "evidence": [
         "Pagination exhausted",
         "200 footwear collection path(s) crawled",
-        "1312 / 1320 products have source category membership"
+        "1316 / 1324 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 4484 ürün bildiriyor, collector 1320 benzersiz ürün aldı",
+        "Kaynak 4484 ürün bildiriyor, collector 1324 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 4484 ürün bildiriyor, collector 1320 benzersiz ürün aldı",
+        "Kaynak 4484 ürün bildiriyor, collector 1324 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited"
       ]
@@ -2951,15 +2951,15 @@
       ],
       "sourceReportedProductCount": 151,
       "observedExpectedProductCount": 151,
-      "collectedProductCount": 218,
-      "rawProductUrlsDiscovered": 257,
-      "productsDiscovered": 218,
-      "uniqueProductsAfterDedupe": 218,
-      "modelFamilyCount": 75,
-      "duplicateCount": 40,
+      "collectedProductCount": 248,
+      "rawProductUrlsDiscovered": 290,
+      "productsDiscovered": 248,
+      "uniqueProductsAfterDedupe": 248,
+      "modelFamilyCount": 82,
+      "duplicateCount": 47,
       "estimatedCoveragePercent": 100,
       "sourceCategoryCount": 30,
-      "productsWithCategoryMembership": 218,
+      "productsWithCategoryMembership": 248,
       "galleryCoverage": 100,
       "pagesTraversed": 30,
       "paginationStatus": "success",
@@ -2971,7 +2971,7 @@
       "evidence": [
         "Pagination exhausted",
         "33 footwear collection path(s) crawled",
-        "218 / 218 products have source category membership"
+        "248 / 248 products have source category membership"
       ],
       "limitations": [
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
@@ -3060,27 +3060,27 @@
       ],
       "sourceReportedProductCount": 421,
       "observedExpectedProductCount": 421,
-      "collectedProductCount": 540,
+      "collectedProductCount": 541,
       "rawProductUrlsDiscovered": 536,
-      "productsDiscovered": 540,
-      "uniqueProductsAfterDedupe": 540,
-      "modelFamilyCount": 538,
+      "productsDiscovered": 541,
+      "uniqueProductsAfterDedupe": 541,
+      "modelFamilyCount": 539,
       "duplicateCount": 2,
       "estimatedCoveragePercent": 100,
       "sourceCategoryCount": 30,
-      "productsWithCategoryMembership": 540,
+      "productsWithCategoryMembership": 541,
       "galleryCoverage": 100,
       "pagesTraversed": 33,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 90,
-      "verifiedNewCount": 101,
+      "verifiedNewCount": 102,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "35 footwear collection path(s) crawled",
-        "540 / 540 products have source category membership"
+        "541 / 541 products have source category membership"
       ],
       "limitations": [
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
@@ -3448,35 +3448,35 @@
       ],
       "sourceReportedProductCount": 354,
       "observedExpectedProductCount": 354,
-      "collectedProductCount": 161,
+      "collectedProductCount": 193,
       "rawProductUrlsDiscovered": 166,
-      "productsDiscovered": 161,
-      "uniqueProductsAfterDedupe": 161,
-      "modelFamilyCount": 108,
+      "productsDiscovered": 193,
+      "uniqueProductsAfterDedupe": 193,
+      "modelFamilyCount": 111,
       "duplicateCount": 5,
-      "estimatedCoveragePercent": 45.5,
+      "estimatedCoveragePercent": 54.5,
       "sourceCategoryCount": 7,
-      "productsWithCategoryMembership": 161,
-      "galleryCoverage": 99.4,
+      "productsWithCategoryMembership": 193,
+      "galleryCoverage": 99.5,
       "pagesTraversed": 7,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 0,
-      "verifiedNewCount": 8,
+      "verifiedNewCount": 12,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "10 footwear collection path(s) crawled",
-        "161 / 161 products have source category membership"
+        "193 / 193 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 354 ürün bildiriyor, collector 161 benzersiz ürün aldı",
+        "Kaynak 354 ürün bildiriyor, collector 193 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 354 ürün bildiriyor, collector 161 benzersiz ürün aldı"
+        "Kaynak 354 ürün bildiriyor, collector 193 benzersiz ürün aldı"
       ]
     },
     {
@@ -3560,35 +3560,35 @@
       ],
       "sourceReportedProductCount": 370,
       "observedExpectedProductCount": 370,
-      "collectedProductCount": 236,
+      "collectedProductCount": 237,
       "rawProductUrlsDiscovered": 181,
-      "productsDiscovered": 236,
-      "uniqueProductsAfterDedupe": 236,
-      "modelFamilyCount": 137,
+      "productsDiscovered": 237,
+      "uniqueProductsAfterDedupe": 237,
+      "modelFamilyCount": 138,
       "duplicateCount": 3,
-      "estimatedCoveragePercent": 63.8,
+      "estimatedCoveragePercent": 64.1,
       "sourceCategoryCount": 8,
-      "productsWithCategoryMembership": 181,
+      "productsWithCategoryMembership": 182,
       "galleryCoverage": 100,
       "pagesTraversed": 7,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 21,
-      "verifiedNewCount": 30,
+      "verifiedNewCount": 31,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "7 footwear collection path(s) crawled",
-        "181 / 236 products have source category membership"
+        "182 / 237 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 370 ürün bildiriyor, collector 236 benzersiz ürün aldı",
+        "Kaynak 370 ürün bildiriyor, collector 237 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 370 ürün bildiriyor, collector 236 benzersiz ürün aldı"
+        "Kaynak 370 ürün bildiriyor, collector 237 benzersiz ürün aldı"
       ]
     },
     {
@@ -3886,35 +3886,35 @@
       ],
       "sourceReportedProductCount": 218,
       "observedExpectedProductCount": 218,
-      "collectedProductCount": 123,
+      "collectedProductCount": 124,
       "rawProductUrlsDiscovered": 473,
-      "productsDiscovered": 123,
-      "uniqueProductsAfterDedupe": 123,
-      "modelFamilyCount": 105,
+      "productsDiscovered": 124,
+      "uniqueProductsAfterDedupe": 124,
+      "modelFamilyCount": 106,
       "duplicateCount": 364,
-      "estimatedCoveragePercent": 56.4,
+      "estimatedCoveragePercent": 56.9,
       "sourceCategoryCount": 9,
-      "productsWithCategoryMembership": 123,
+      "productsWithCategoryMembership": 124,
       "galleryCoverage": 100,
       "pagesTraversed": 34,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 27,
-      "verifiedNewCount": 114,
+      "verifiedNewCount": 115,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "9 footwear collection path(s) crawled",
-        "123 / 123 products have source category membership"
+        "124 / 124 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 218 ürün bildiriyor, collector 123 benzersiz ürün aldı",
+        "Kaynak 218 ürün bildiriyor, collector 124 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 218 ürün bildiriyor, collector 123 benzersiz ürün aldı"
+        "Kaynak 218 ürün bildiriyor, collector 124 benzersiz ürün aldı"
       ]
     },
     {
@@ -4255,35 +4255,35 @@
       ],
       "sourceReportedProductCount": 797,
       "observedExpectedProductCount": 797,
-      "collectedProductCount": 198,
+      "collectedProductCount": 199,
       "rawProductUrlsDiscovered": 167,
-      "productsDiscovered": 198,
-      "uniqueProductsAfterDedupe": 198,
-      "modelFamilyCount": 134,
+      "productsDiscovered": 199,
+      "uniqueProductsAfterDedupe": 199,
+      "modelFamilyCount": 135,
       "duplicateCount": 3,
-      "estimatedCoveragePercent": 24.8,
+      "estimatedCoveragePercent": 25,
       "sourceCategoryCount": 12,
-      "productsWithCategoryMembership": 198,
+      "productsWithCategoryMembership": 199,
       "galleryCoverage": 99.5,
       "pagesTraversed": 14,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 0,
-      "verifiedNewCount": 8,
+      "verifiedNewCount": 9,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "14 footwear collection path(s) crawled",
-        "198 / 198 products have source category membership"
+        "199 / 199 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 797 ürün bildiriyor, collector 198 benzersiz ürün aldı",
+        "Kaynak 797 ürün bildiriyor, collector 199 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 797 ürün bildiriyor, collector 198 benzersiz ürün aldı"
+        "Kaynak 797 ürün bildiriyor, collector 199 benzersiz ürün aldı"
       ]
     },
     {
@@ -5915,27 +5915,27 @@
       ],
       "sourceReportedProductCount": null,
       "observedExpectedProductCount": null,
-      "collectedProductCount": 337,
-      "rawProductUrlsDiscovered": 331,
-      "productsDiscovered": 337,
-      "uniqueProductsAfterDedupe": 337,
-      "modelFamilyCount": 337,
+      "collectedProductCount": 340,
+      "rawProductUrlsDiscovered": 332,
+      "productsDiscovered": 340,
+      "uniqueProductsAfterDedupe": 340,
+      "modelFamilyCount": 340,
       "duplicateCount": 0,
       "estimatedCoveragePercent": null,
       "sourceCategoryCount": 1,
-      "productsWithCategoryMembership": 337,
+      "productsWithCategoryMembership": 340,
       "galleryCoverage": 100,
       "pagesTraversed": 19,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
-      "verifiedNewProductCount": 37,
-      "verifiedNewCount": 37,
+      "verifiedNewProductCount": 39,
+      "verifiedNewCount": 39,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
         "10 footwear collection path(s) crawled",
-        "337 / 337 products have source category membership"
+        "340 / 340 products have source category membership"
       ],
       "limitations": [
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
@@ -6072,26 +6072,26 @@
       ],
       "sourceReportedProductCount": null,
       "observedExpectedProductCount": null,
-      "collectedProductCount": 922,
-      "rawProductUrlsDiscovered": 922,
-      "productsDiscovered": 922,
-      "uniqueProductsAfterDedupe": 922,
-      "modelFamilyCount": 922,
+      "collectedProductCount": 959,
+      "rawProductUrlsDiscovered": 959,
+      "productsDiscovered": 959,
+      "uniqueProductsAfterDedupe": 959,
+      "modelFamilyCount": 959,
       "duplicateCount": 0,
       "estimatedCoveragePercent": null,
       "sourceCategoryCount": 10,
-      "productsWithCategoryMembership": 922,
+      "productsWithCategoryMembership": 959,
       "galleryCoverage": 100,
       "pagesTraversed": null,
       "paginationStatus": "ACTIVE",
       "newArrivalsSourceDiscovered": true,
-      "verifiedNewProductCount": 861,
-      "verifiedNewCount": 861,
+      "verifiedNewProductCount": 898,
+      "verifiedNewCount": 898,
       "collectionStatus": "ACTIVE",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "922 source products",
-        "922 model families",
+        "959 source products",
+        "959 model families",
         "New In membership verified"
       ],
       "limitations": [

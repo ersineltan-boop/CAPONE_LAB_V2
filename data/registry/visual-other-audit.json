@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-23T07:03:29.349Z",
-  "digerCount": 766,
-  "totalFamilies": 10419,
+  "generatedAt": "2026-08-24T07:07:43.375Z",
+  "digerCount": 775,
+  "totalFamilies": 10474,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 48,
-    "GENERIC_SOURCE_CATEGORY": 58,
+    "GENERIC_SOURCE_CATEGORY": 61,
     "CONFLICTING_SOURCE_CATEGORIES": 43,
-    "UNMAPPED_SOURCE_CATEGORY": 617,
+    "UNMAPPED_SOURCE_CATEGORY": 623,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -752,6 +752,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-black-calf-leather-women-ballerinas-qwfy5o-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-blue-crystal-mesh-women-ballerinas-kyxgiy-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-mesh-women-ballerinas-kvyby0-html",
       "brand": "Alaïa",
       "sourceCategories": [
@@ -763,6 +781,15 @@
     },
     {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-mesh-women-ballerinas-xgjssy-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-burgundy-calf-leather-women-ballerinas-shn2xk-html",
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
@@ -864,7 +891,25 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-merino-shearling-ballerinas-beige-suede-women-ballerinas-tejeqy-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-satin-cord-ballerinas-burgundy-satin-women-ballerinas-mte69x-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-shearling-ballerinas-black-shearling-women-ballerinas-rbesjd-html",
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
@@ -4804,6 +4849,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "house-of-ballerinas--id-level-shoes-house-of-ballerinas-jeanne-ballerinas-black-tweed-women-ballerinas-cg0xnj-html",
+      "brand": "House Of Ballerinas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "house-of-ballerinas--id-level-shoes-house-of-ballerinas-michelle-ballerinas-blue-suede-women-ballerinas-msta1i-html",
       "brand": "House Of Ballerinas",
       "sourceCategories": [
@@ -4829,6 +4883,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-dina-45-mules-burgundy-leather-women-mules-mveyb2-html",
+      "brand": "Jimmy Choo",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-eliot-slippers-animal-print-pony-hair-women-slippers-bww8ca-html",
@@ -6775,6 +6838,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "prada--id-level-shoes-prada-suede-mules-beige-suede-women-slippers-gupq1v-html",
+      "brand": "Prada",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "prada--id-level-shoes-prada-suede-mules-burgundy-suede-women-mules-w5ktmu-html",
       "brand": "Prada",
       "sourceCategories": [
@@ -7771,6 +7843,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--id-zara-11519810",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "zara--id-zara-11560810",
       "brand": "ZARA",
       "sourceCategories": [
@@ -7828,7 +7909,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 284,
+      "count": 285,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7900,7 +7981,7 @@
     },
     {
       "sourceCategory": "Flat Shoes",
-      "count": 68,
+      "count": 73,
       "brands": [
         "Alaïa",
         "Bottega Veneta",
@@ -8223,17 +8304,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 10419,
-    "babet": 830,
-    "loafer": 569,
-    "topuklu": 1659,
-    "sandal": 3375,
-    "mule": 806,
-    "bot-cizme": 1610,
-    "sneaker": 644,
+    "tumu": 10474,
+    "babet": 840,
+    "loafer": 570,
+    "topuklu": 1672,
+    "sandal": 3381,
+    "mule": 808,
+    "bot-cizme": 1620,
+    "sneaker": 648,
     "espadril": 115,
     "oxford-derby": 23,
     "clog": 22,
-    "diger": 766
+    "diger": 775
   }
 }
