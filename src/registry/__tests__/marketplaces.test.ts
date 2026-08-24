@@ -43,4 +43,23 @@ describe("marketplace registry pilot", () => {
       "farfetch",
     ]);
   });
+
+  it("exposes Free People as a browsable retailer marketplace when activated", () => {
+    const entries = selectActiveMarketplaceEntries({
+      activePilotId: "level-shoes",
+      activeMarketplaceIds: ["level-shoes", "farfetch", "free-people"],
+      mytheresaStatus: "NEEDS_BROWSER_OR_ADAPTER",
+    });
+    expect(entries.filter((entry) => entry.isActive).map((entry) => entry.id)).toEqual([
+      "level-shoes",
+      "farfetch",
+      "free-people",
+    ]);
+    expect(browsableMarketplaces(entries).map((entry) => entry.id)).toEqual([
+      "level-shoes",
+      "farfetch",
+      "free-people",
+    ]);
+    expect(entries.find((entry) => entry.id === "free-people")?.kind).toBe("LUXURY_MARKETPLACE");
+  });
 });

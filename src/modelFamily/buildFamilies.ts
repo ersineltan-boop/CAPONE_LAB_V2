@@ -267,6 +267,9 @@ function canMergeByStyleCode(
   if (a.source === "zara" || b.source === "zara" || a.styleCode.startsWith("ZARA-")) {
     return a.listingKey === b.listingKey;
   }
+  if (a.source === "free-people" || b.source === "free-people") {
+    return a.source === b.source && a.isMarketplace === b.isMarketplace && categoriesCompatible(a, b);
+  }
   return categoriesCompatible(a, b);
 }
 

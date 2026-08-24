@@ -1,6 +1,6 @@
 import { identityFromLevelShoesSlug, collectLevelShoes } from "./levelShoes";
 import { collectFarfetch, FARFETCH_ID } from "./farfetch";
-import { collectFreePeople, FREE_PEOPLE_ID } from "./freePeople";
+import { FREE_PEOPLE_ID } from "./freePeople";
 import { fetchText } from "./http";
 import type { PilotProduct } from "./types";
 import { slugifyCategoryId, humanizeCollectionHandle } from "../source/sourceCategories";
@@ -152,11 +152,12 @@ export async function collectMarketplaceListing(
     };
   }
   if (candidate.id === FREE_PEOPLE_ID) {
-    const collected = await collectFreePeople();
     return {
-      products: collected.products,
-      errors: [collected.blocker, ...collected.errors],
-      blocked: collected.blocked,
+      products: [],
+      errors: [
+        "Free People retailer collector is staging-only (npm run collect:free-people-staging). Production catalog merge is disabled.",
+      ],
+      blocked: false,
     };
   }
   const maxPages = options?.maxPages ?? 4;

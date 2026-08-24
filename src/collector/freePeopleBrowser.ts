@@ -1,0 +1,225 @@
+import {
+  FREE_PEOPLE_ID,
+  FREE_PEOPLE_SHOES_URL,
+  isFreePeopleAntiBot,
+  parseFreePeoplePage,
+  type FreePeopleCategoryState,
+  type FreePeopleParseStats,
+} from "./freePeople";
+import type { PilotProduct } from "./types";
+
+export type FreePeopleBrowserStatus = "COLLECTED" | "BLOCKED" | "NEEDS_PLAYWRIGHT";
+
+export interface FreePeopleBrowserResult {
+  status: FreePeopleBrowserStatus;
+  products: PilotProduct[];
+  errors: string[];
+  pagesVisited: number;
+  stats: FreePeopleParseStats;
+  paginationExhausted: boolean;
+  sourceReportedProductCount: number | null;
+}
+
+const DEFAULT_MAX_PAGES = 40;
+
+function shoesPageUrl(page: number): string {
+  return page <= 1 ? FREE_PEOPLE_SHOES_URL : `${FREE_PEOPLE_SHOES_URL}?page=${page}`;
+}
+
+export async function collectFreePeopleWithBrowser(options?: {
+  headless?: boolean;
+  maxPages?: number;
+  startPage?: number;
+  allowHeadedRetry?: boolean;
+}): Promise<FreePeopleBrowserResult> {
+  let playwright: typeof import("playwright") | null = null;
+  try {
+    playwright = await import("playwright");
+  } catch {
+    return {
+      status: "NEEDS_PLAYWRIGHT",
+      products: [],
+      errors: ["Playwright is not installed — Free People browser collector cannot run"],
+      pagesVisited: 0,
+      stats: {
+        tilesSeen: 0,
+        editorialSkipped: 0,
+        nonFootwearRejected: 0,
+        duplicateCount: 0,
+        sourceReportedProductCount: null,
+        totalPages: null,
+        currentPage: null,
+        colorFromPiniaSlice: 0,
+        colorFromImageCode: 0,
+        colorFromUrlQuery: 0,
+        colorEmpty: 0,
+        colorNameCount: 0,
+        colorCodeOnlyCount: 0,
+      },
+      paginationExhausted: false,
+      sourceReportedProductCount: null,
+    };
+  }
+
+  const maxPages = options?.maxPages ?? DEFAULT_MAX_PAGES;
+  const startPage = options?.startPage ?? 1;
+  const discoveredAt = new Date().toISOString();
+  const products: PilotProduct[] = [];
+  const errors: string[] = [];
+  const seen = new Set<string>();
+  const stats: FreePeopleParseStats = {
+    tilesSeen: 0,
+    editorialSkipped: 0,
+    nonFootwearRejected: 0,
+    duplicateCount: 0,
+    sourceReportedProductCount: null,
+    totalPages: null,
+    currentPage: null,
+    colorFromPiniaSlice: 0,
+    colorFromImageCode: 0,
+    colorFromUrlQuery: 0,
+    colorEmpty: 0,
+    colorNameCount: 0,
+    colorCodeOnlyCount: 0,
+  };
+  let pagesVisited = 0;
+  let blocked = false;
+  let sourceReported: number | null = null;
+  let totalPages = maxPages;
+
+  const launchOptions = {
+    headless: options?.headless !== false,
+    ignoreDefaultArgs: ["--enable-automation"],
+    args: ["--disable-blink-features=AutomationControlled", "--disable-dev-shm-usage"],
+  };
+  let browser;
+  try {
+    browser = await playwright.chromium.launch({ ...launchOptions, channel: "chrome" });
+  } catch {
+    browser = await playwright.chromium.launch(launchOptions);
+  }
+  const page = await browser.newPage({
+    userAgent:
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    viewport: { width: 1440, height: 900 },
+    locale: "en-US",
+  });
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, "webdriver", { get: () => undefined });
+  });
+
+  try {
+    for (let pageNum = startPage; pageNum <= Math.min(maxPages, totalPages); pageNum += 1) {
+      const url = shoesPageUrl(pageNum);
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+      await page.waitForTimeout(3500);
+      try {
+        await page.waitForFunction(
+          () => {
+            const urbn = (window as unknown as { urbn?: { initialPiniaState?: { category?: { pages?: unknown } } } })
+              .urbn;
+            const category = urbn?.initialPiniaState?.category;
+            return Boolean(category && category.pages);
+          },
+          { timeout: 45000 },
+        );
+      } catch {
+        const html = await page.content();
+        if (isFreePeopleAntiBot(403, html) || (html.length < 4000 && isFreePeopleAntiBot(0, html))) {
+          blocked = true;
+          errors.push(`Free People anti-bot/challenge page at ${url}`);
+          break;
+        }
+      }
+
+      const html = await page.content();
+      if (html.length < 4000 && isFreePeopleAntiBot(0, html)) {
+        blocked = true;
+        errors.push(`Free People anti-bot/challenge page at ${url}`);
+        break;
+      }
+
+      const piniaCategory = await page.evaluate(() => {
+        const urbn = (window as unknown as { urbn?: { initialPiniaState?: { category?: unknown } } }).urbn;
+        return (urbn?.initialPiniaState?.category ?? null) as FreePeopleCategoryState | null;
+      });
+
+      const parsed = parseFreePeoplePage(
+        { piniaCategory, html },
+        {
+          discoveredAt,
+          collectionUrl: FREE_PEOPLE_SHOES_URL,
+          onlyPage: piniaCategory?.currentPage ?? pageNum,
+        },
+      );
+      pagesVisited += 1;
+      stats.tilesSeen += parsed.stats.tilesSeen;
+      stats.editorialSkipped += parsed.stats.editorialSkipped;
+      stats.nonFootwearRejected += parsed.stats.nonFootwearRejected;
+      stats.duplicateCount += parsed.stats.duplicateCount;
+      stats.colorFromPiniaSlice += parsed.stats.colorFromPiniaSlice;
+      stats.colorFromImageCode += parsed.stats.colorFromImageCode;
+      stats.colorFromUrlQuery += parsed.stats.colorFromUrlQuery;
+      stats.colorEmpty += parsed.stats.colorEmpty;
+      stats.colorNameCount += parsed.stats.colorNameCount;
+      stats.colorCodeOnlyCount += parsed.stats.colorCodeOnlyCount;
+      stats.currentPage = parsed.stats.currentPage ?? pageNum;
+      if (parsed.stats.totalPages) {
+        stats.totalPages = parsed.stats.totalPages;
+        totalPages = parsed.stats.totalPages;
+      }
+      if (parsed.stats.sourceReportedProductCount != null) {
+        sourceReported = parsed.stats.sourceReportedProductCount;
+        stats.sourceReportedProductCount = sourceReported;
+      }
+
+      if (parsed.products.length === 0) {
+        errors.push(`No footwear tiles parsed at ${url}`);
+        break;
+      }
+
+      let added = 0;
+      for (const product of parsed.products) {
+        const key = (product.variants[0]?.sku ?? product.productUrl).replace(/\/$/, "").toLowerCase();
+        const styleKey = key.replace(/_\d{2,3}$/, "");
+        if (seen.has(styleKey) || seen.has(product.productUrl)) {
+          stats.duplicateCount += 1;
+          continue;
+        }
+        seen.add(styleKey);
+        seen.add(product.productUrl.replace(/\/$/, "").toLowerCase());
+        products.push(product);
+        added += 1;
+      }
+      if (added === 0) break;
+    }
+  } catch (error) {
+    errors.push(error instanceof Error ? error.message : String(error));
+  } finally {
+    await browser.close();
+  }
+
+  if (
+    products.length === 0 &&
+    options?.headless !== false &&
+    options?.allowHeadedRetry !== false
+  ) {
+    return collectFreePeopleWithBrowser({
+      ...options,
+      headless: false,
+      allowHeadedRetry: false,
+    });
+  }
+
+  return {
+    status: blocked ? "BLOCKED" : products.length > 0 ? "COLLECTED" : "BLOCKED",
+    products,
+    errors,
+    pagesVisited,
+    stats,
+    paginationExhausted: !blocked && stats.totalPages != null && pagesVisited >= stats.totalPages,
+    sourceReportedProductCount: sourceReported,
+  };
+}
+
+export { FREE_PEOPLE_ID };

@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { collectFarfetch, FARFETCH_ID } from "../src/collector/farfetch";
-import { collectFreePeople, FREE_PEOPLE_ID } from "../src/collector/freePeople";
+import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../src/collector/levelShoes";
 import { globalDedupe } from "../src/collector/dedupe";
 import { mergeCatalogPreservingFailedSources } from "../src/collector/mergeProducts";
@@ -71,16 +71,15 @@ report.farfetch = {
 };
 if (farfetch.products.length === 0) failed.add(FARFETCH_ID);
 
-console.log("Probing Free People...");
-const freePeople = await collectFreePeople();
+console.log("Free People live collector remains staging-only; leaving any existing free-people catalog rows in place.");
 report.freePeople = {
-  products: freePeople.products.length,
-  coverageStatus: freePeople.coverageStatus,
-  blocked: freePeople.blocked,
-  blocker: freePeople.blocker,
-  errors: freePeople.errors,
+  products: products.filter((product) => product.source === FREE_PEOPLE_ID).length,
+  coverageStatus: "ACTIVE",
+  blocked: false,
+  blocker:
+    "Live Playwright collect stays staging-only (npm run collect:free-people-staging). Production updates use npm run merge:free-people-staging.",
+  errors: [],
 };
-failed.add(FREE_PEOPLE_ID);
 
 const incoming = [
   ...(level.products.length > 0 ? level.products : []),
@@ -90,6 +89,9 @@ const merged = globalDedupe(mergeCatalogPreservingFailedSources(products, incomi
 
 const activeMarketplaceIds = ["level-shoes"];
 if (farfetch.products.length > 0) activeMarketplaceIds.push("farfetch");
+if (products.some((product) => product.source === FREE_PEOPLE_ID)) {
+  activeMarketplaceIds.push(FREE_PEOPLE_ID);
+}
 
 const pilot: MarketplacePilotState = {
   activePilotId: "level-shoes",
@@ -97,8 +99,8 @@ const pilot: MarketplacePilotState = {
   mytheresaStatus: "NEEDS_BROWSER_OR_ADAPTER",
   notes:
     farfetch.products.length > 0
-      ? "Level Shoes + Farfetch after successful collection. Free People remains blocked."
-      : "Level Shoes remains the active marketplace. Farfetch/Free People were not activated.",
+      ? "Level Shoes + Farfetch after successful collection. Free People is merged separately from staging."
+      : "Level Shoes remains the active marketplace. Farfetch was not activated. Free People is merged separately from staging.",
 };
 
 await writeJson(PRODUCTS, merged);

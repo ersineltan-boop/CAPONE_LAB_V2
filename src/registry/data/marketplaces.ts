@@ -145,9 +145,10 @@ const FALLBACK_PILOTS: Record<string, MarketplaceRegistryEntry> = {
     kind: "LUXURY_MARKETPLACE",
     officialUrl: "https://www.freepeople.com",
     isActive: true,
-    discoveryStatus: "BLOCKED",
+    discoveryStatus: "ACTIVE",
     newArrivalDiscoveryStatus: "NOT_SUPPORTED",
-    notes: "Multi-brand retailer — marketplace, never a Brand Registry source",
+    notes:
+      "Multi-brand retailer marketplace (not a Brand Registry source). Listed product brands are preserved; source remains free-people.",
   },
 };
 

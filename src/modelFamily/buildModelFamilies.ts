@@ -164,6 +164,10 @@ function canMergeByStyleCode(
 ): boolean {
   if (!a.styleCode || !b.styleCode || a.styleCode !== b.styleCode) return false;
   if (a.styleCode.startsWith("ZARA-") && a.listingKey !== b.listingKey) return false;
+  if (a.isMarketplace !== b.isMarketplace) return false;
+  if (a.source === "free-people" || b.source === "free-people") {
+    return a.source === b.source;
+  }
   return a.structuralSignature === b.structuralSignature;
 }
 

@@ -204,6 +204,7 @@ const MARKETPLACE_SOURCE_IDS = new Set([
   "moda-operandi",
   "browns",
   "level-shoes",
+  "free-people",
 ]);
 
 function isMarketplaceSource(sourceId: string): boolean {
@@ -248,6 +249,8 @@ export function enrichFamilyWithSightings(
         ? "Mytheresa"
         : marketplaceId === "level-shoes"
           ? "Level Shoes"
+          : marketplaceId === "free-people"
+            ? "Free People"
           : marketplaceId.replace(/-/g, " ");
     const marketplaceSighting = buildMarketplaceSourceSighting(
       marketplaceId,

@@ -15,6 +15,7 @@ export type SourceIdentityKind =
   | "SHOPIFY_HANDLE"
   | "FARFETCH_ITEM_ID"
   | "LEVEL_SHOES_SLUG"
+  | "FREE_PEOPLE_STYLE_NUMBER"
   | "CANONICAL_URL";
 
 export interface SourceModelIdentity {
@@ -51,6 +52,20 @@ export function extractShopifyHandle(productUrl: string): string | null {
   }
 }
 
+export function extractFreePeopleStyleNumber(product: {
+  productUrl?: string;
+  imageUrl?: string | null;
+  images?: string[];
+  variants?: Array<{ sku?: string | null }>;
+}): string | null {
+  const sku = product.variants?.find((variant) => variant.sku)?.sku ?? "";
+  const skuMatch = sku.match(/^(\d{6,})(?:[_-]|$)/);
+  if (skuMatch) return skuMatch[1]!;
+  const blob = [product.productUrl, product.imageUrl, ...(product.images ?? [])].filter(Boolean).join(" ");
+  const imageMatch = blob.match(/FreePeople\/(\d{6,})_/i);
+  return imageMatch?.[1] ?? null;
+}
+
 export function extractLevelShoesSlug(productUrl: string): string | null {
   try {
     const path = new URL(productUrl).pathname.replace(/\/$/, "");
@@ -75,6 +90,10 @@ export function listingIdentityKey(product: RawAnalyzedProduct): string {
     const slug = extractLevelShoesSlug(product.productUrl);
     if (slug) return `level-shoes:${slug}`;
   }
+  if (source === "free-people") {
+    const styleNumber = extractFreePeopleStyleNumber(product);
+    if (styleNumber) return `free-people:${styleNumber}`;
+  }
   const handle = extractShopifyHandle(product.productUrl);
   if (handle) return `shopify:${source}:${handle}`;
   return `url:${product.productUrl}`;
@@ -92,9 +111,11 @@ export function extractSourceIdentity(
       ? "FARFETCH_ITEM_ID"
       : key.startsWith("level-shoes:")
         ? "LEVEL_SHOES_SLUG"
-        : key.startsWith("shopify:")
-          ? "SHOPIFY_HANDLE"
-          : "CANONICAL_URL";
+        : key.startsWith("free-people:")
+          ? "FREE_PEOPLE_STYLE_NUMBER"
+          : key.startsWith("shopify:")
+            ? "SHOPIFY_HANDLE"
+            : "CANONICAL_URL";
 
   return { kind, key, source, channel };
 }
