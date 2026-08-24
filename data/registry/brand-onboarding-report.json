@@ -1,81 +1,17 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-23T20:15:08.876Z",
+  "generatedAt": "2026-08-24T20:22:33.671Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
     "activeBrandsAfter": 50,
-    "attempted": 3,
+    "attempted": 0,
     "activated": 0,
     "partial": 0,
-    "blocked": 2,
-    "customAdapterRequired": 1,
+    "blocked": 0,
+    "customAdapterRequired": 0,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": [
-    {
-      "brand": "STUART WEITZMAN",
-      "slug": "stuart-weitzman",
-      "attemptedAt": "2026-08-23T20:15:08.876Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 15,
-        "levelShoes": 1
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "SAM EDELMAN",
-      "slug": "sam-edelman",
-      "attemptedAt": "2026-08-23T20:15:08.876Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 3,
-        "levelShoes": 27
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "VAGABOND",
-      "slug": "vagabond-shoemakers",
-      "attemptedAt": "2026-08-23T20:15:08.876Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Shopify products.json did not yield women's footwear",
-      "marketplaceCoverage": {
-        "farfetch": 10,
-        "levelShoes": 32
-      },
-      "activationDecision": "blocked",
-      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    }
-  ]
+  "attempts": []
 }
