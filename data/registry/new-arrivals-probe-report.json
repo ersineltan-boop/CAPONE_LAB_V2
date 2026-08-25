@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24T07:07:43.386Z",
+  "generatedAt": "2026-08-25T07:05:54.604Z",
   "brandCount": 159,
-  "marketplaceCount": 3,
+  "marketplaceCount": 4,
   "verifiedBrandSources": 8,
   "verifiedMarketplaceSources": 1,
   "brands": [
@@ -1822,6 +1822,17 @@
       "sourceType": "MARKETPLACE",
       "discoveryStatus": "PARTIAL",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
+      "candidateUrls": [],
+      "candidateHandles": [],
+      "verified": false,
+      "evidenceStrategy": null
+    },
+    {
+      "sourceId": "free-people",
+      "sourceLabel": "Free People",
+      "sourceType": "MARKETPLACE",
+      "discoveryStatus": "ACTIVE",
+      "newArrivalDiscoveryStatus": "NOT_SUPPORTED",
       "candidateUrls": [],
       "candidateHandles": [],
       "verified": false,

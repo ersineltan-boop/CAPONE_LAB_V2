@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-24T07:07:43.375Z",
-  "digerCount": 775,
-  "totalFamilies": 10474,
+  "generatedAt": "2026-08-25T07:05:54.593Z",
+  "digerCount": 864,
+  "totalFamilies": 11597,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 48,
-    "GENERIC_SOURCE_CATEGORY": 61,
+    "GENERIC_SOURCE_CATEGORY": 137,
     "CONFLICTING_SOURCE_CATEGORIES": 43,
-    "UNMAPPED_SOURCE_CATEGORY": 623,
+    "UNMAPPED_SOURCE_CATEGORY": 636,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -1743,6 +1743,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "barbour--id-free-people-103751459",
+      "brand": "Barbour",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "barbour--id-free-people-86073996",
+      "brand": "Barbour",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "barbour--id-free-people-90266537",
+      "brand": "Barbour",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "birkenstock--id-level-shoes-birkenstock-naples-wrapped-slippers-pink-suede-women-slippers-qmadvv-html",
       "brand": "Birkenstock",
       "sourceCategories": [
@@ -1825,6 +1852,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "bronx--id-free-people-108267113",
+      "brand": "Bronx",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "burberry--id-level-shoes-burberry-check-opal-slippers-black-calf-leather-women-slippers-hlwaoh-html",
@@ -1965,6 +2001,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "casa-clara--id-free-people-102888559",
+      "brand": "Casa Clara",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "casa-clara--id-free-people-108838707",
+      "brand": "Casa Clara",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-2-25ftw30011-brielle-flat-patent-leather-white",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
@@ -2029,6 +2083,60 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "clarks--id-free-people-105107734",
+      "brand": "Clarks",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "clarks--id-free-people-91571653",
+      "brand": "Clarks",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cloud-nine--id-free-people-95652954",
+      "brand": "Cloud Nine",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "crocs--id-free-people-102365012",
+      "brand": "Crocs",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "crocs--id-free-people-105791495",
+      "brand": "Crocs",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "diba-true--id-free-people-97928642",
+      "brand": "Diba True",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-dg-logo-flat-slides-beige-patent-leather-women-sandals-xuzrkm-html",
@@ -2105,6 +2213,24 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dr-martens--id-free-people-98844277",
+      "brand": "Dr. Martens",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dragon-diffusion--id-level-shoes-dragon-diffusion-woven-leather-mules-blue-leather-women-slippers-yii82m-html",
+      "brand": "Dragon Diffusion",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-262-131716-0106",
@@ -2231,6 +2357,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "emu-australia--id-free-people-101175834",
+      "brand": "EMU Australia",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "ex--id-shopify-exe-mocassins-abf-97",
@@ -2569,6 +2704,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--id-free-people-100982594",
+      "brand": "Flabelus",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "flabelus--id-level-shoes-flabelus-amy-slippers-navy-velvet-women-r873ol-html",
       "brand": "Flabelus",
       "sourceCategories": [
@@ -2597,6 +2741,15 @@
     },
     {
       "modelFamilyId": "flabelus--id-level-shoes-flabelus-edmond-mary-jane-shoes-cream-cotton-women-ballerinas-6a2cxs-html",
+      "brand": "Flabelus",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--id-level-shoes-flabelus-sethe-ballerinas-black-velvet-women-ballerinas-itehor-html",
       "brand": "Flabelus",
       "sourceCategories": [
         "Flat Shoes"
@@ -4283,6 +4436,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "flabelus--id-shopify-flabelus-smoking-daisy-khaki",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman",
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "flabelus--id-shopify-flabelus-smoking-raffia",
       "brand": "FLABELUS",
       "sourceCategories": [
@@ -4547,6 +4710,123 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "fp-collection--id-free-people-103123402",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-103992533",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-105745079",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-106191448",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-36227502",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-60745585",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-84769934",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-93670768",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-96630660",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-99575920",
+      "brand": "FP Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-vegan-collection--id-free-people-106093750",
+      "brand": "FP Vegan Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-vegan-collection--id-free-people-107838971",
+      "brand": "FP Vegan Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "fp-vegan-collection--id-free-people-109548529",
+      "brand": "FP Vegan Collection",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-miguela-nappa-leather-in-black",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
@@ -4590,6 +4870,24 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "givenchy--id-level-shoes-givenchy-crush-ballerinas-black-calf-leather-women-ballerinas-tbbllz-html",
+      "brand": "Givenchy",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "givenchy--id-level-shoes-givenchy-crush-ballerinas-cream-patent-leather-women-ballerinas-rabyvx-html",
+      "brand": "Givenchy",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "givenchy--id-level-shoes-givenchy-label-slippers-black-nappa-leather-women-slippers-pzr71y-html",
@@ -4867,6 +5165,51 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "hunter--id-free-people-112022090",
+      "brand": "Hunter",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hunter--id-free-people-38946661",
+      "brand": "Hunter",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hunter--id-free-people-60055803",
+      "brand": "Hunter",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hunter--id-free-people-62261409",
+      "brand": "Hunter",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hunter--id-free-people-90800137",
+      "brand": "Hunter",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "isabel-marant--id-level-shoes-isabel-marant-malvin-slippers-brown-suede-women-slippers-9jmwct-html",
       "brand": "Isabel Marant",
       "sourceCategories": [
@@ -4874,6 +5217,60 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-100677566",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-104448147",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-106227416",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-109428417",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-80215999",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-free-people-92040740",
+      "brand": "Jeffrey Campbell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "jennifer-chamandi--id-level-shoes-jennifer-chamandi-vittorio-slingback-flats-navy-mesh-women-ballerinas-uhjryq-html",
@@ -5006,6 +5403,33 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "keds--id-free-people-106886633",
+      "brand": "Keds",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "keds--id-free-people-108268475",
+      "brand": "Keds",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "keds--id-free-people-108578717",
+      "brand": "Keds",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "khaite--id-shopify-khaite-jane-flat-in-natural-python",
       "brand": "KHAITE",
       "sourceCategories": [
@@ -5045,6 +5469,42 @@
     {
       "modelFamilyId": "kurt-geiger-london--id-farfetch-35214421",
       "brand": "Kurt Geiger London",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "l-l-bean--id-free-people-101186922",
+      "brand": "L.L.Bean",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "l-l-bean--id-free-people-104093505",
+      "brand": "L.L.Bean",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "lacoste--id-free-people-108751256",
+      "brand": "Lacoste",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "laidback-london--id-free-people-83738146",
+      "brand": "Laidback London",
       "sourceCategories": [
         "Shoes"
       ],
@@ -6205,6 +6665,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "melissa--id-free-people-109201699",
+      "brand": "Melissa",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "melissa--id-level-shoes-melissa-possession-mules-black-rubber-women-slippers-2w3m1a-html",
       "brand": "Melissa",
       "sourceCategories": [
@@ -6223,6 +6692,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "melissa--id-level-shoes-melissa-soft-ballerina-flats-black-rubber-women-ballerinas-weertf-html",
+      "brand": "Melissa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "melissa--id-level-shoes-melissa-sweet-love-chrome-ballerinas-white-rubber-women-ballerinas-k8k37u-html",
       "brand": "Melissa",
       "sourceCategories": [
@@ -6230,6 +6708,42 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "merrell--id-free-people-108010828",
+      "brand": "Merrell",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "miista--id-free-people-106859382",
+      "brand": "Miista",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "minnetonka--id-free-people-110562469",
+      "brand": "Minnetonka",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "minnetonka--id-free-people-58128315",
+      "brand": "Minnetonka",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "miu-miu--id-level-shoes-miu-miu-embroidered-mesh-ballerinas-white-mesh-women-ballerinas-bpkz0m-html",
@@ -6252,6 +6766,15 @@
     {
       "modelFamilyId": "miu-miu--id-level-shoes-miu-miu-satin-ballerinas-black-satin-women-ballerinas-9nb9sk-html",
       "brand": "Miu Miu",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "monfaradi-mare--id-level-shoes-monfaradi-mare-beach-ballerinas-neutral-rubber-women-ballerinas-lnlcce-html",
+      "brand": "MONFARADI MARE",
       "sourceCategories": [
         "Flat Shoes"
       ],
@@ -6916,6 +7439,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "rebecca-minkoff--id-free-people-105783260",
+      "brand": "Rebecca Minkoff",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "roger-vivier--id-level-shoes-roger-vivier-belle-vivier-slingback-ballerinas-cream-calf-leather-women-ballerinas-wwqx81-html",
       "brand": "Roger Vivier",
       "sourceCategories": [
@@ -6942,6 +7474,33 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "salomon--id-free-people-98914252",
+      "brand": "Salomon",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sam-edelman--id-free-people-104259841",
+      "brand": "Sam Edelman",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sam-edelman--id-free-people-105600951",
+      "brand": "Sam Edelman",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-alie-ballerinas-cream-leather-women-ballerinas-i9eeel-html",
@@ -7010,10 +7569,11 @@
       "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-jelly-mary-jane-shoes-black-rubber-women-ballerinas-jbyofy-html",
       "brand": "Sam Edelman",
       "sourceCategories": [
+        "Flat Shoes",
         "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-mary-jane-flats-brown-leather-women-ballerinas-m6m4si-html",
@@ -7125,7 +7685,34 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "schutz--id-level-shoes-schutz-bow-ballerinas-khaki-suede-women-ballerinas-dhxumh-html",
+      "brand": "Schutz",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "schutz--id-level-shoes-schutz-leather-ballerinas-cream-leather-women-ballerinas-kdmy9t-html",
+      "brand": "Schutz",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "schutz--id-level-shoes-schutz-split-toe-ballerinas-black-other-women-ballerinas-o8r5nc-html",
+      "brand": "Schutz",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "schutz--id-level-shoes-schutz-strappy-ballerinas-brown-leather-women-ballerinas-9amdoh-html",
       "brand": "Schutz",
       "sourceCategories": [
         "Flat Shoes"
@@ -7148,6 +7735,15 @@
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "seychelles--id-free-people-105592083",
+      "brand": "Seychelles",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1b-0755-black-black-pearl-clear",
@@ -7264,6 +7860,42 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sperry--id-free-people-106219181",
+      "brand": "Sperry",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sperry--id-free-people-108980582",
+      "brand": "Sperry",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sperry--id-free-people-85202364",
+      "brand": "Sperry",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sperry--id-free-people-98820848",
+      "brand": "Sperry",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "st-agni--id-level-shoes-st-agni-bunto-woven-slippers-black-leather-women-slippers-fwcbcp-html",
@@ -7486,6 +8118,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-beige-leather-women-ballerinas-v5ndiq-html",
+      "brand": "The Lline",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-black-leather-women-ballerinas-bvhfny-html",
       "brand": "The Lline",
       "sourceCategories": [
@@ -7583,6 +8224,15 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "timberland--id-free-people-91682906",
+      "brand": "Timberland",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "tod-s--id-farfetch-32985933",
       "brand": "Tod's",
       "sourceCategories": [
@@ -7649,6 +8299,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "tory-burch--id-level-shoes-tory-burch-cap-toe-ballerinas-black-raffia-women-ballerinas-nx3bwm-html",
+      "brand": "Tory Burch",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "tory-burch--id-level-shoes-tory-burch-leelee-slippers-black-leather-women-slippers-89xjsl-html",
@@ -7762,6 +8421,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "vagabond-shoemakers--id-free-people-105606792",
+      "brand": "Vagabond Shoemakers",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vagabond-shoemakers--id-free-people-96148101",
+      "brand": "Vagabond Shoemakers",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "valentino-garavani--id-farfetch-32722038",
       "brand": "Valentino Garavani",
       "sourceCategories": [
@@ -7778,6 +8455,114 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vans--id-free-people-100763903",
+      "brand": "Vans",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vans--id-free-people-103779658",
+      "brand": "Vans",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vans--id-free-people-41142027",
+      "brand": "Vans",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "verloop--id-free-people-102398484",
+      "brand": "Verloop",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibae--id-free-people-113265904",
+      "brand": "VIBAe",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibae--id-free-people-98059470",
+      "brand": "VIBAe",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibram--id-free-people-102041217",
+      "brand": "Vibram",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibram--id-free-people-104714936",
+      "brand": "Vibram",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibram--id-free-people-104715651",
+      "brand": "Vibram",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibram--id-free-people-113648984",
+      "brand": "Vibram",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vibram--id-free-people-98037351",
+      "brand": "Vibram",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "vicenza--id-free-people-107045213",
+      "brand": "Vicenza",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "vince--id-level-shoes-vince-dakota-ii-slippers-brown-other-women-slippers-ild5ud-html",
@@ -7814,6 +8599,24 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "we-the-free--id-free-people-106052111",
+      "brand": "We The Free",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "we-the-free--id-free-people-96984893",
+      "brand": "We The Free",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "yuzefi--id-level-shoes-yuzefi-sahra-slippers-black-leather-women-slippers-vfxahq-html",
@@ -7909,7 +8712,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 285,
+      "count": 287,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7920,6 +8723,7 @@
         "Burberry",
         "Chloé",
         "Christian Louboutin",
+        "Dragon Diffusion",
         "FENDI",
         "FLABELUS",
         "Flabelus",
@@ -7953,9 +8757,41 @@
     },
     {
       "sourceCategory": "Slipper Woman",
-      "count": 187,
+      "count": 188,
       "brands": [
         "FLABELUS"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Flat Shoes",
+      "count": 84,
+      "brands": [
+        "Alaïa",
+        "Bottega Veneta",
+        "Burberry",
+        "CHRISTEN",
+        "Ferragamo",
+        "Flabelus",
+        "Givenchy",
+        "Gucci",
+        "House Of Ballerinas",
+        "Jennifer Chamandi",
+        "Jimmy Choo",
+        "Le Monde Beryl",
+        "MONFARADI MARE",
+        "Maison Margiela",
+        "Melissa",
+        "Miu Miu",
+        "Prada",
+        "Proenza Schouler",
+        "Roger Vivier",
+        "Sam Edelman",
+        "Schutz",
+        "The Lline",
+        "Tony Bianco",
+        "Tory Burch",
+        "Valentino Garavani"
       ],
       "proposedMapping": null
     },
@@ -7976,37 +8812,6 @@
         "STAUD",
         "THE ATTICO",
         "TOTEME"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Flat Shoes",
-      "count": 73,
-      "brands": [
-        "Alaïa",
-        "Bottega Veneta",
-        "Burberry",
-        "CHRISTEN",
-        "Ferragamo",
-        "Flabelus",
-        "Gucci",
-        "House Of Ballerinas",
-        "Jennifer Chamandi",
-        "Jimmy Choo",
-        "Le Monde Beryl",
-        "MONFARADI MARE",
-        "Maison Margiela",
-        "Melissa",
-        "Miu Miu",
-        "Prada",
-        "Proenza Schouler",
-        "Roger Vivier",
-        "Sam Edelman",
-        "Schutz",
-        "The Lline",
-        "Tony Bianco",
-        "Tory Burch",
-        "Valentino Garavani"
       ],
       "proposedMapping": null
     },
@@ -8304,17 +9109,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 10474,
-    "babet": 840,
-    "loafer": 570,
-    "topuklu": 1672,
-    "sandal": 3381,
-    "mule": 808,
-    "bot-cizme": 1620,
-    "sneaker": 648,
-    "espadril": 115,
-    "oxford-derby": 23,
-    "clog": 22,
-    "diger": 775
+    "tumu": 11597,
+    "babet": 882,
+    "loafer": 594,
+    "topuklu": 1699,
+    "sandal": 3587,
+    "mule": 830,
+    "bot-cizme": 1870,
+    "sneaker": 1048,
+    "espadril": 119,
+    "oxford-derby": 27,
+    "clog": 77,
+    "diger": 864
   }
 }

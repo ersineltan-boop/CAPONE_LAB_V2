@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 16669,
-  "modelFamilyCount": 11549,
-  "totalVariants": 16669,
-  "multiVariantFamilyCount": 3913,
-  "reductionPercent": 30.7,
-  "collapsedVariantProducts": 5120,
+  "rawProductCount": 16747,
+  "modelFamilyCount": 11597,
+  "totalVariants": 16747,
+  "multiVariantFamilyCount": 3921,
+  "reductionPercent": 30.8,
+  "collapsedVariantProducts": 5150,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11504,
+    "familiesWithMultipleRepresentativeImages": 11552,
     "averageRepresentativeImageCount": 6.3,
     "maxRepresentativeImageCount": 80
   },
@@ -15,7 +15,7 @@
       "modelFamilyId": "larroude--style-l422-vero-ballerina",
       "brand": "LARROUDE",
       "canonicalName": "Verona Ballet Flat",
-      "variantCount": 33
+      "variantCount": 35
     },
     {
       "modelFamilyId": "larroude--style-l415-stel-sneaker",
@@ -42,6 +42,12 @@
       "variantCount": 20
     },
     {
+      "modelFamilyId": "larroude--style-l131-doll-sandal",
+      "brand": "LARROUDE",
+      "canonicalName": "Dolly Sandal",
+      "variantCount": 18
+    },
+    {
       "modelFamilyId": "veja--id-free-people-57113664",
       "brand": "Veja",
       "canonicalName": "Veja Campo Sneakers",
@@ -57,12 +63,6 @@
       "modelFamilyId": "coolway--id-free-people-95601712",
       "brand": "Coolway",
       "canonicalName": "Coolway Goal Sneakers",
-      "variantCount": 17
-    },
-    {
-      "modelFamilyId": "larroude--style-l131-doll-sandal",
-      "brand": "LARROUDE",
-      "canonicalName": "Dolly Sandal",
       "variantCount": 17
     },
     {
@@ -112,6 +112,13 @@
       "modelFamilyId": "converse--id-free-people-31771678",
       "brand": "Converse",
       "canonicalName": "Chuck Taylor All Star High-top Converse Sneakers",
+      "variantCount": 13,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Fathom",
       "variantCount": 13,
       "groupingReason": "singleton"
     },
@@ -368,13 +375,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Fathom",
-      "variantCount": 8,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "alias-mae--name-frankie-pump-unknown-unknown-pointed-slingback",
       "brand": "ALIAS MAE",
       "canonicalName": "Frankie",
@@ -555,6 +555,13 @@
       "canonicalName": "Balance 471 Sneakers",
       "variantCount": 7,
       "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "dear-frances--name-balla-bootie-ankle-boot-unknown-unknown-unknown",
+      "brand": "DEAR FRANCES",
+      "canonicalName": "Balla Bootie",
+      "variantCount": 7,
+      "groupingReason": "normalizedName:balla bootie"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-bazaar",
@@ -858,18 +865,18 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesque-2",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Arabesque",
+      "variantCount": 6,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "asics--id-free-people-82454133",
       "brand": "ASICS",
       "canonicalName": "Asics Gel-nyc Sneakers",
       "variantCount": 6,
       "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "dear-frances--name-balla-bootie-ankle-boot-unknown-unknown-unknown",
-      "brand": "DEAR FRANCES",
-      "canonicalName": "Balla Bootie",
-      "variantCount": 6,
-      "groupingReason": "normalizedName:balla bootie"
     },
     {
       "modelFamilyId": "jeffrey-campbell--id-free-people-98441637",
@@ -2027,6 +2034,13 @@
       "groupingReason": "normalizedName:reyes ballet flats"
     },
     {
+      "modelFamilyId": "dolce-vita--name-roslyn-ballet-flats-ballerina-flat-unknown-unknown-low-vamp",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Roslyn Ballet Flats",
+      "variantCount": 5,
+      "groupingReason": "normalizedName:roslyn ballet flats"
+    },
+    {
       "modelFamilyId": "salomon--id-free-people-98917701",
       "brand": "Salomon",
       "canonicalName": "Salomon Xt-6 Sneakers",
@@ -2058,6 +2072,13 @@
       "modelFamilyId": "sam-edelman--id-free-people-104259841",
       "brand": "Sam Edelman",
       "canonicalName": "Shira Flats",
+      "variantCount": 5,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-sleuth",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Sleuth",
       "variantCount": 5,
       "groupingReason": "singleton"
     },
@@ -2664,6 +2685,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "dolce-vita--name-cleo-heels-mule-unknown-unknown-unknown-backless",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Cleo Heels",
+      "variantCount": 4,
+      "groupingReason": "normalizedName:cleo heels"
+    },
+    {
       "modelFamilyId": "khaite--name-clive-ankle-boot-ankle-boot-unknown-unknown-unknown",
       "brand": "KHAITE",
       "canonicalName": "Clive Ankle Boot",
@@ -2972,6 +3000,13 @@
       "groupingReason": "normalizedName:fynn sneaker"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gabbriette",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Gabbriette",
+      "variantCount": 4,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-galaxia",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Galaxia",
@@ -3017,13 +3052,6 @@
       "modelFamilyId": "gola--id-free-people-65144594",
       "brand": "Gola",
       "canonicalName": "Gola Grandslam Sneakers",
-      "variantCount": 4,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-graciela",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Graciela",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
@@ -3931,13 +3959,6 @@
       "groupingReason": "normalizedName:romie boots"
     },
     {
-      "modelFamilyId": "dolce-vita--name-roslyn-ballet-flats-ballerina-flat-unknown-unknown-low-vamp",
-      "brand": "DOLCE VITA",
-      "canonicalName": "Roslyn Ballet Flats",
-      "variantCount": 4,
-      "groupingReason": "normalizedName:roslyn ballet flats"
-    },
-    {
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-rue",
       "brand": "ALIAS MAE",
       "canonicalName": "Rue",
@@ -4085,13 +4106,6 @@
       "groupingReason": "normalizedName:sierra 90 slingback"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-sleuth",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Sleuth",
-      "variantCount": 4,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-soire-o",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Soire-o",
@@ -4116,6 +4130,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-speed-sb",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Speed-sb",
+      "variantCount": 4,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-spy-kid-f-1",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Spy- -F",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
@@ -4655,13 +4676,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-appalachia",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Appalachia",
-      "variantCount": 3,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesque-2",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Arabesque",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5317,13 +5331,6 @@
       "groupingReason": "normalizedName:cleo heels"
     },
     {
-      "modelFamilyId": "dolce-vita--name-cleo-heels-mule-unknown-unknown-unknown-backless",
-      "brand": "DOLCE VITA",
-      "canonicalName": "Cleo Heels",
-      "variantCount": 3,
-      "groupingReason": "normalizedName:cleo heels"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-collene-cp",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Collene-cp",
@@ -5445,7 +5452,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710",
       "brand": "ZARA",
-      "canonicalName": "Crossed Flat",
+      "canonicalName": "Crossover Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5667,6 +5674,13 @@
       "groupingReason": "normalizedName:esportiu mary jane"
     },
     {
+      "modelFamilyId": "dolce-vita--name-faint-h2o-booties-pump-unknown-high-unknown",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Faint H2o Booties",
+      "variantCount": 3,
+      "groupingReason": "normalizedName:faint h2o booties"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fanning",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Fanning",
@@ -5831,13 +5845,6 @@
       "modelFamilyId": "g-h-bass--id-free-people-62218755",
       "brand": "G.H. Bass",
       "canonicalName": "G H Bass Whitney Loafer",
-      "variantCount": 3,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gabbriette",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Gabbriette",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -7847,13 +7854,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-spoiled",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Spoiled",
-      "variantCount": 3,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-spy-kid-f-1",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Spy- -F",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -11036,13 +11036,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "dolce-vita--name-faint-h2o-booties-pump-unknown-high-unknown",
-      "brand": "DOLCE VITA",
-      "canonicalName": "Faint H2o Booties",
-      "variantCount": 2,
-      "groupingReason": "normalizedName:faint h2o booties"
-    },
-    {
       "modelFamilyId": "fp-collection--id-free-people-96728605",
       "brand": "FP Collection",
       "canonicalName": "Faith Fringe Western Boots",
@@ -11750,6 +11743,13 @@
       "groupingReason": "normalizedName:hand crochet ballerina"
     },
     {
+      "modelFamilyId": "dear-frances--name-harlie-boot-ankle-boot-unknown-low-unknown",
+      "brand": "DEAR FRANCES",
+      "canonicalName": "Harlie Boot",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:harlie boot"
+    },
+    {
       "modelFamilyId": "havaianas--id-free-people-103881868",
       "brand": "Havaianas",
       "canonicalName": "Havaianas Flash Fusion Sandals",
@@ -12210,6 +12210,13 @@
       "canonicalName": "Josiah Ankle Boot",
       "variantCount": 2,
       "groupingReason": "normalizedName:josiah ankle boot"
+    },
+    {
+      "modelFamilyId": "dear-frances--name-joss-bootie-ankle-boot-unknown-unknown-unknown",
+      "brand": "DEAR FRANCES",
+      "canonicalName": "Joss Bootie",
+      "variantCount": 2,
+      "groupingReason": "normalizedName:joss bootie"
     },
     {
       "modelFamilyId": "dolce-vita--name-julean-sandals-sandal-unknown-low-unknown",
