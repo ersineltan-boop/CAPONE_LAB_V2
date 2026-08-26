@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-25T07:05:54.593Z",
-  "digerCount": 864,
-  "totalFamilies": 11597,
+  "generatedAt": "2026-08-26T07:00:34.987Z",
+  "digerCount": 874,
+  "totalFamilies": 11649,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 48,
-    "GENERIC_SOURCE_CATEGORY": 137,
-    "CONFLICTING_SOURCE_CATEGORIES": 43,
-    "UNMAPPED_SOURCE_CATEGORY": 636,
+    "GENERIC_SOURCE_CATEGORY": 135,
+    "CONFLICTING_SOURCE_CATEGORIES": 44,
+    "UNMAPPED_SOURCE_CATEGORY": 647,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -742,6 +742,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-criss-cross-ballerinas-black-calf-hair-women-ballerinas-cg27pa-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-beige-mesh-women-ballerinas-ukmlaz-html",
       "brand": "Alaïa",
       "sourceCategories": [
@@ -762,6 +771,15 @@
     },
     {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-blue-crystal-mesh-women-ballerinas-kyxgiy-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-calf-leather-women-ballerinas-wfcar5-html",
       "brand": "Alaïa",
       "sourceCategories": [
         "Flat Shoes"
@@ -898,6 +916,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ala-a--id-level-shoes-ala-a-merino-shearling-mules-beige-suede-women-mules-fbtgtv-html",
+      "brand": "Alaïa",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-satin-cord-ballerinas-burgundy-satin-women-ballerinas-mte69x-html",
@@ -1807,6 +1834,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-palazzo-slippers-black-nappa-leather-women-slippers-jxiwq7-html",
+      "brand": "Bottega Veneta",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-palazzo-slippers-burgundy-nappa-leather-women-slippers-p7gd51-html",
       "brand": "Bottega Veneta",
       "sourceCategories": [
@@ -1884,6 +1920,7 @@
       "modelFamilyId": "by-far--id-shopify-by-far-carre-89-cyan-banner",
       "brand": "BY FAR",
       "sourceCategories": [
+        "All Shoes",
         "AW26 OUR FAVORITE SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1893,6 +1930,7 @@
       "modelFamilyId": "by-far--name-yasha-peep-flat-other-footwear-flat-unknown-unknown",
       "brand": "BY FAR",
       "sourceCategories": [
+        "All Shoes",
         "Flats",
         "Flats Shoes",
         "Shoes",
@@ -2148,7 +2186,7 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-dg-logo-rubber-slide-sandals-black-rubber-women-sandals-xadbl8-html",
+      "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-embroidered-brocade-mules-orange-jacquard-women-mules-bnbhjq-html",
       "brand": "Dolce&Gabbana",
       "sourceCategories": [
         "Shoes"
@@ -2249,6 +2287,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "duha--id-level-shoes-duha-gina-slippers-brown-leather-women-slippers-wykoyr-html",
+      "brand": "DUHA",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-domani-bordeaux-kidskin",
@@ -4845,7 +4892,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-riley-nappa-black",
+      "modelFamilyId": "gia-borghini--style-grsl-lpon-other-footwear",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
         "FLAT SHOES"
@@ -4854,7 +4901,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "gia-borghini--style-grsl-lpon-other-footwear",
+      "modelFamilyId": "gia-borghini--style-rile-lnap-other-footwear",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
         "FLAT SHOES"
@@ -7152,6 +7199,16 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
+      "modelFamilyId": "pavement--name-pawinnie-other-footwear-unknown-unknown-unknown",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "pavement--name-tamera-long-other-footwear-unknown-unknown-unknown",
       "brand": "PAVEMENT",
       "sourceCategories": [
@@ -7737,6 +7794,15 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "senso--id-level-shoes-senso-caela-iii-ballerinas-black-suede-women-ballerinas-byhyxh-html",
+      "brand": "Senso",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "seychelles--id-free-people-105592083",
       "brand": "Seychelles",
       "sourceCategories": [
@@ -7746,34 +7812,55 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-5498p73c-m-1364-black",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1b-0755-black-black-pearl-clear",
       "brand": "SIMONE ROCHA",
       "sourceCategories": [
+        "Flats",
         "Shoes",
         "Women's Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1tb-0755-ballet-nude-pearl-clear",
       "brand": "SIMONE ROCHA",
       "sourceCategories": [
+        "Flats",
         "Shoes",
         "Women's Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1tb-0755-black-pearl-clear",
       "brand": "SIMONE ROCHA",
       "sourceCategories": [
+        "Flats",
         "Shoes",
         "Women's Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "simone-rocha--name-merino-lace-up-hem-jumper-other-footwear-unknown-unknown-unknown-lace-up",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-blair-flat-rose-garden-blue",
@@ -8137,6 +8224,15 @@
     },
     {
       "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-gold-metallic-leather-women-ballerinas-d7gj8g-html",
+      "brand": "The Lline",
+      "sourceCategories": [
+        "Flat Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-silver-metallic-leather-women-ballerinas-gpmd5u-html",
       "brand": "The Lline",
       "sourceCategories": [
         "Flat Shoes"
@@ -8712,7 +8808,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 287,
+      "count": 289,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -8723,6 +8819,7 @@
         "Burberry",
         "Chloé",
         "Christian Louboutin",
+        "DUHA",
         "Dragon Diffusion",
         "FENDI",
         "FLABELUS",
@@ -8765,7 +8862,7 @@
     },
     {
       "sourceCategory": "Flat Shoes",
-      "count": 84,
+      "count": 88,
       "brands": [
         "Alaïa",
         "Bottega Veneta",
@@ -8788,6 +8885,7 @@
         "Roger Vivier",
         "Sam Edelman",
         "Schutz",
+        "Senso",
         "The Lline",
         "Tony Bianco",
         "Tory Burch",
@@ -8797,7 +8895,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 82,
+      "count": 87,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -8807,6 +8905,7 @@
         "LE MONDE BERYL",
         "NEOUS",
         "PROENZA SCHOULER",
+        "SIMONE ROCHA",
         "SOPHIA WEBSTER",
         "ST. AGNI",
         "STAUD",
@@ -9109,17 +9208,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11597,
-    "babet": 882,
+    "tumu": 11649,
+    "babet": 886,
     "loafer": 594,
-    "topuklu": 1699,
-    "sandal": 3587,
-    "mule": 830,
-    "bot-cizme": 1870,
-    "sneaker": 1048,
-    "espadril": 119,
+    "topuklu": 1705,
+    "sandal": 3598,
+    "mule": 833,
+    "bot-cizme": 1881,
+    "sneaker": 1053,
+    "espadril": 121,
     "oxford-derby": 27,
     "clog": 77,
-    "diger": 864
+    "diger": 874
   }
 }
