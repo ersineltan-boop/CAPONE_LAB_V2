@@ -1,13 +1,13 @@
 const COLOR_WORDS =
-  /\b(black|white|brown|tan|nude|gold|silver|platinum|burgundy|red|blue|pink|beige|cream|espresso|chocolate|chestnut|olive|olivine|ecru|ivory|navy|grey|gray|milk|turquoise|denim|sky|metallic|chrome|vintage|mocha|cognac|camel|sand|rose|blush|coral|lilac|purple|green|yellow|orange|multicolor|multi|teal|tulip|oyster|eggplant|mushroom|lipstick|seaweed|puff|champagne|natural|moon|specchio|choc|bordo|bordeaux|maroon|wine|pearl|copper|bronze|charcoal|stone|sage|mint|lavender|fuchsia|magenta|mustard|rust|terracotta|aubergine|deep|light|dark|bright|pale|soft|rich|warm|cool)\b/gi;
+  /\b(black|white|brown|tan|nude|gold|silver|platinum|burgundy|red|blue|pink|beige|cream|espresso|chocolate|chestnut|olive|olivine|ecru|ivory|navy|grey|gray|milk|turquoise|denim|sky|metallic|chrome|vintage|mocha|cognac|camel|sand|rose|blush|coral|lilac|purple|green|yellow|orange|multicolor|multi|teal|tulip|oyster|eggplant|mushroom|lipstick|seaweed|puff|champagne|natural|moon|specchio|choc|bordo|bordeaux|maroon|wine|pearl|copper|bronze|charcoal|stone|sage|mint|lavender|fuchsia|magenta|mustard|rust|terracotta|aubergine|deep|light|dark|bright|pale|soft|rich|warm|cool|buff|leopard|ebony|embossed|printed|print|heeled)\b/gi;
 
 const MATERIAL_WORDS =
-  /\b(leather|suede|patent|nappa|metallic|velvet|satin|mesh|snake|croco|croc|woven|knit|boucle|wool|cashmere|denim|canvas|synthetic|rubber|capretto|venice|vintage|raffia|vinyl|grosgrain|specchio|kid|naplack|brocat|brocade|tpu|clear)\b/gi;
+  /\b(leather|suede|patent|nappa|metallic|velvet|satin|mesh|snake|croco|croc|woven|knit|boucle|wool|cashmere|denim|canvas|synthetic|rubber|capretto|venice|vintage|raffia|vinyl|grosgrain|specchio|kid|naplack|brocat|brocade|tpu|clear|calf|hair|ponyhair)\b/gi;
 
 const SEASON_SIZE_WORDS =
   /\b(p26|p25|p24|p\d+|s\d+|ss\d+|fw\d+|aw\d+|women'?s|mens|unisex|new|sale|in)\b/gi;
 
-const TRAILING_COLOR_SUFFIX = /\s[-–—]\s+[A-Za-z][\w\s/.]+$/;
+const TRAILING_COLOR_SUFFIX = /\s[-–—]\s+.+$/u;
 
 const MODEL_CATEGORY_PATTERNS = [
   /\b(ballet flat)\b/i,
@@ -19,20 +19,20 @@ const MODEL_CATEGORY_PATTERNS = [
   /\b(wedge sandal)\b/i,
   /\b(low sandal)\b/i,
   /\b(high sandal)\b/i,
-  /\b(sneaker)\b/i,
-  /\b(loafer)\b/i,
-  /\b(mule)\b/i,
-  /\b(pump)\b/i,
-  /\b(sandal)\b/i,
-  /\b(bootie)\b/i,
-  /\b(boot)\b/i,
-  /\b(slide)\b/i,
-  /\b(flat)\b/i,
-  /\b(heel)\b/i,
-  /\b(wedge)\b/i,
-  /\b(thong)\b/i,
-  /\b(slingback)\b/i,
-  /\b(ballerina)\b/i,
+  /\b(slingbacks?)\b/i,
+  /\b(ballerinas?)\b/i,
+  /\b(flats?)\b/i,
+  /\b(heels?)\b/i,
+  /\b(pumps?)\b/i,
+  /\b(sandals?)\b/i,
+  /\b(mules?)\b/i,
+  /\b(loafers?)\b/i,
+  /\b(boots?)\b/i,
+  /\b(booties?)\b/i,
+  /\b(sneakers?)\b/i,
+  /\b(slides?)\b/i,
+  /\b(wedges?)\b/i,
+  /\b(thongs?)\b/i,
 ];
 
 export interface NormalizeModelNameInput {
@@ -61,21 +61,38 @@ function stripKnownColorTokens(name: string, color: string | null | undefined): 
 }
 
 function truncateAfterModelCategory(name: string): string {
-  let bestEnd = -1;
+  let best: { index: number; end: number } | null = null;
 
   for (const pattern of MODEL_CATEGORY_PATTERNS) {
     const match = name.match(pattern);
-    if (match?.index !== undefined) {
-      const end = match.index + match[0].length;
-      if (end > bestEnd) bestEnd = end;
+    if (match?.index === undefined) continue;
+    const end = match.index + match[0].length;
+    if (
+      !best ||
+      match.index < best.index ||
+      (match.index === best.index && end > best.end)
+    ) {
+      best = { index: match.index, end };
     }
   }
 
-  if (bestEnd >= 0) {
-    return name.slice(0, bestEnd).trim();
+  if (best) {
+    return name.slice(0, best.end).trim();
   }
 
   return name;
+}
+
+function singularizeCategoryTokens(name: string): string {
+  return name.replace(
+    /\b(slingbacks|ballerinas|flats|heels|pumps|sandals|mules|loafers|booties|boots|sneakers|slides|wedges|thongs)\b/gi,
+    (token) => {
+      const lower = token.toLowerCase();
+      if (lower === "booties") return "bootie";
+      if (lower.endsWith("s")) return lower.slice(0, -1);
+      return lower;
+    },
+  );
 }
 
 function collapseWhitespace(name: string): string {
@@ -95,7 +112,8 @@ export function normalizeModelName(
     .replace(COLOR_WORDS, " ")
     .replace(MATERIAL_WORDS, " ")
     .replace(SEASON_SIZE_WORDS, " ")
-    .replace(/[^a-zA-Z0-9\s'-]/g, " ");
+    .replace(/[^a-zA-Z0-9\s'-]/g, " ")
+    .replace(/(^|\s)-+(\s|$)/g, " ");
 
   name = collapseWhitespace(name)
     .replace(/\bpatent leather\b/gi, " ")
@@ -103,7 +121,7 @@ export function normalizeModelName(
 
   name = truncateAfterModelCategory(collapseWhitespace(name));
 
-  return collapseWhitespace(name).toLowerCase();
+  return singularizeCategoryTokens(collapseWhitespace(name)).toLowerCase();
 }
 
 export function buildCanonicalDisplayName(normalizedNames: string[]): string {

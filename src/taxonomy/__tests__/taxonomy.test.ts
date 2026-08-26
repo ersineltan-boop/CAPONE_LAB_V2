@@ -102,6 +102,27 @@ describe("assignPrimaryCategory boundary cases", () => {
     expect(result.primaryCategory).toBe("CLOG");
   });
 
+  it("Mary Jane / ballet name patterns classify as BALLET_FLAT", () => {
+    expect(assignPrimaryCategory({ productName: "Uma Mary-Jane Flats" }).primaryCategory).toBe(
+      "BALLET_FLAT",
+    );
+    expect(assignPrimaryCategory({ productName: "Leather ballerina" }).primaryCategory).toBe(
+      "BALLET_FLAT",
+    );
+    expect(
+      assignPrimaryCategory({ productName: "Pointed-toe flat in nappa" }).primaryCategory,
+    ).toBe("BALLET_FLAT");
+  });
+
+  it("does not let a sandals collection override a pump title", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Diane Pump",
+        legacyCategory: "SANDAL",
+      }).primaryCategory,
+    ).toBe("PUMP");
+  });
+
   it("Insufficient evidence -> UNCLASSIFIED", () => {
     const result = assignPrimaryCategory({ productName: "Serena" });
     expect(result.primaryCategory).toBe("UNCLASSIFIED");

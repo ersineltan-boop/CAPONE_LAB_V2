@@ -5,7 +5,6 @@ import { selectBrandCardImages } from "../brands/brandCardImages";
 import {
   countVerifiedNewForSource,
   extractMarketplaceBrands,
-  extractSourceCategories,
   filterFamiliesForBrandOfficial,
   filterFamiliesForMarketplaceSource,
   slugifyBrandId,
@@ -18,6 +17,7 @@ import type {
   FamilyLocator,
 } from "./types";
 import { MAX_BRAND_CARD_IMAGES } from "./types";
+import { countFamiliesByBasicCategory } from "../visual/basicCategories";
 
 export interface CatalogDeliveryInput {
   families: ModelFamily[];
@@ -74,7 +74,9 @@ export function buildCatalogDelivery(input: CatalogDeliveryInput): CatalogDelive
         name: entry.name,
         productCount: shard.families.length,
         brandCount: extractMarketplaceBrands(shard.families, shard.id).length,
-        categoryCount: extractSourceCategories(shard.families, shard.id).length,
+        categoryCount: countFamiliesByBasicCategory(shard.families).filter(
+          (item) => item.id !== "tumu" && item.count > 0,
+        ).length,
         verifiedNewCount: countVerifiedNewForSource(shard.families, shard.id),
         images: selectBrandCardImages(shard.families, MAX_BRAND_CARD_IMAGES),
       };

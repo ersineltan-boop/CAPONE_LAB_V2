@@ -191,6 +191,12 @@ const NON_FOOTWEAR_PATTERNS = [
   /\blipstick/i,
   /\bmakeup/i,
   /\bcosmetic/i,
+  /\bshipping protection\b/i,
+  /\bprotection by route\b/i,
+  /\brouteins\b/i,
+  /\bthermal tights\b/i,
+  /\btights\b/i,
+  /\bhosiery\b/i,
   /\bgift[- ]card/i,
   /\beau de parfum/i,
   /\bedp\b/i,
@@ -265,19 +271,29 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   if (input.handle && /^b-/i.test(input.handle) && /\bbag\b/i.test(haystack)) {
     return "handle:bag-prefix";
   }
+  if (/\bshipping protection\b/i.test(haystack) || /\bprotection by route\b/i.test(haystack)) {
+    return "shipping-protection";
+  }
+  if (/\brouteins\b/i.test(haystack)) return "route-protection";
   if (/\bgift[- ]card/i.test(haystack)) return "gift-card";
   if (/\blipstick/i.test(haystack)) return "lipstick";
   if (/\bmakeup/i.test(haystack)) return "makeup";
 
   for (const pattern of NON_FOOTWEAR_PATTERNS) {
     if (pattern.test(haystack)) {
-      if (
-        footwearOverride &&
-        (pattern.source.includes("scarf") || pattern.source.includes("belt"))
-      ) {
+      const source = pattern.source;
+      const overrideSafe =
+        source.includes("scarf") ||
+        source.includes("belt") ||
+        source.includes("cap") ||
+        source.includes("hat") ||
+        source.includes("top") ||
+        source.includes("ring") ||
+        source.includes("sock");
+      if (footwearOverride && overrideSafe) {
         continue;
       }
-      return pattern.source;
+      return source;
     }
   }
 

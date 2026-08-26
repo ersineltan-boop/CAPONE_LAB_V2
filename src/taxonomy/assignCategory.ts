@@ -89,9 +89,26 @@ function isBootDominant(text: string, legacyCategory?: FootwearCategory | null):
   ]);
 }
 
-function isSandalDominant(text: string, legacyCategory?: FootwearCategory | null): boolean {
-  if (legacyCategory === "SANDAL" || legacyCategory === "THONG") return true;
+function hasConflictingSilhouette(text: string): boolean {
   return textIncludesAny(text, [
+    "pump",
+    "loafer",
+    "ballet",
+    "ballerina",
+    "mule",
+    "bootie",
+    "sneaker",
+    "trainer",
+    "mary jane",
+    "mary-jane",
+    "clog",
+    "oxford",
+    "derby",
+  ]);
+}
+
+function isSandalDominant(text: string, legacyCategory?: FootwearCategory | null): boolean {
+  const namedSandal = textIncludesAny(text, [
     " sandal",
     "slide sandal",
     "strappy sandal",
@@ -100,6 +117,9 @@ function isSandalDominant(text: string, legacyCategory?: FootwearCategory | null
     "flip-flop",
     "t-strap sandal",
   ]);
+  if (namedSandal) return true;
+  if (hasConflictingSilhouette(text)) return false;
+  return legacyCategory === "SANDAL" || legacyCategory === "THONG";
 }
 
 function isLoaferArchitecture(text: string): boolean {
@@ -130,12 +150,22 @@ function isBalletFlatArchitecture(
   heelHeightGroup?: string,
   cleanedHeelHeight?: string | null,
 ): boolean {
+  if (textIncludesAny(text, ["mary jane", "mary-jane", "maryjanes"])) return true;
+  if (textIncludesAny(text, ["pointed-toe flat", "pointed toe flat", "pointed flat"])) {
+    return true;
+  }
   const mm = parseExplicitHeelHeightMm(`${text} ${cleanedHeelHeight ?? ""}`);
   if (mm !== null && mm <= 15) return true;
   if (heelHeightGroup === "FLAT" || heelHeightGroup === "LOW") {
     return textIncludesAny(text, ["ballet", "ballerina", "slipper flat", "flat shoe"]);
   }
-  return textIncludesAny(text, ["ballet flat", "ballerina flat", "ballerina slipper"]);
+  return textIncludesAny(text, [
+    "ballet flat",
+    "ballerina flat",
+    "ballerina slipper",
+    "ballet",
+    "ballerina",
+  ]);
 }
 
 function isCoveredVampMule(text: string): boolean {

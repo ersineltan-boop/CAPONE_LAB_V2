@@ -1,4 +1,5 @@
 import type { ModelFamily } from "../modelFamily/types";
+import { MARKETPLACE_SOURCE_IDS } from "../modelFamily/sourceIdentity";
 import { queryVerifiedNewArrivals } from "../newArrivals/verifiedQuery";
 import type { NewArrivalsPeriod } from "../newArrivals/query";
 import { isVerifiedNew } from "../newArrivals/newness";
@@ -14,12 +15,30 @@ export function slugifyBrandId(brand: string): string {
   return slugifyCategoryId(brand);
 }
 
+function isOfficialChannelSighting(
+  family: ModelFamily,
+  sighting: NonNullable<ModelFamily["sourceSightings"]>[number],
+): boolean {
+  if (sighting.sourceKind === "BRAND_OFFICIAL") return true;
+  if (sighting.sourceKind === "LUXURY_MARKETPLACE") return false;
+  if (MARKETPLACE_SOURCE_IDS.has(sighting.sourceId)) return false;
+  return sighting.sourceId === slugifyBrandId(family.brand);
+}
+
+export function familyHasOfficialChannel(family: ModelFamily): boolean {
+  const sightings = family.sourceSightings ?? [];
+  if (sightings.length === 0) return true;
+  return sightings.some((sighting) => isOfficialChannelSighting(family, sighting));
+}
+
 export function filterFamiliesForBrandOfficial(
   families: ModelFamily[],
   brand: string,
 ): ModelFamily[] {
   const key = normalizeBrand(brand);
-  return families.filter((family) => normalizeBrand(family.brand) === key);
+  return families.filter(
+    (family) => normalizeBrand(family.brand) === key && familyHasOfficialChannel(family),
+  );
 }
 
 export function filterFamiliesForMarketplaceSource(

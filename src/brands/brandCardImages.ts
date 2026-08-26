@@ -1,8 +1,14 @@
 import type { ModelFamily } from "../modelFamily/types";
+import { pickBestCoverImage, scoreCoverImageUrl } from "../images/coverImageScore";
 import { imageDedupeKey, normalizeProductImageUrls } from "../images/resolveImageQuality";
 import { collectModelFamilyImages } from "../modelFamily/familyImages";
 
 const MAX_CARD_IMAGES = 3;
+
+function familyCoverCandidate(family: ModelFamily): string | null {
+  const images = normalizeProductImageUrls(collectModelFamilyImages(family));
+  return pickBestCoverImage(images);
+}
 
 export function selectBrandCardImages(
   families: ModelFamily[],
@@ -11,16 +17,20 @@ export function selectBrandCardImages(
   const selected: string[] = [];
   const seen = new Set<string>();
 
-  const ranked = [...families].sort((a, b) => {
-    const aCount = collectModelFamilyImages(a).length;
-    const bCount = collectModelFamilyImages(b).length;
-    return bCount - aCount;
-  });
+  const ranked = [...families]
+    .map((family) => {
+      const cover = familyCoverCandidate(family);
+      return {
+        family,
+        cover,
+        score: cover ? scoreCoverImageUrl(cover) : -100,
+      };
+    })
+    .filter((item) => item.cover)
+    .sort((a, b) => b.score - a.score);
 
-  for (const family of ranked) {
-    const images = normalizeProductImageUrls(collectModelFamilyImages(family));
-    const next = images[0];
-    if (!next) continue;
+  for (const item of ranked) {
+    const next = item.cover!;
     const key = imageDedupeKey(next);
     if (seen.has(key)) continue;
     seen.add(key);
@@ -29,8 +39,8 @@ export function selectBrandCardImages(
   }
 
   if (selected.length < maxImages) {
-    for (const family of ranked) {
-      for (const image of normalizeProductImageUrls(collectModelFamilyImages(family))) {
+    for (const item of ranked) {
+      for (const image of normalizeProductImageUrls(collectModelFamilyImages(item.family))) {
         const key = imageDedupeKey(image);
         if (seen.has(key)) continue;
         seen.add(key);

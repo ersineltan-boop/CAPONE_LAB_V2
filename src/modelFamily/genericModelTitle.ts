@@ -121,6 +121,18 @@ const GENERIC_TOKENS = new Set([
   "nappa",
   "suede",
   "patent",
+  "pointed",
+  "round",
+  "square",
+  "almond",
+  "open",
+  "closed",
+  "block",
+  "stiletto",
+  "toe",
+  "cap",
+  "strap",
+  "cut",
 ]);
 
 function collapse(value: string): string {

@@ -236,6 +236,61 @@ describe("localized footwear completeness", () => {
     ).toBe("ACCEPT_FOOTWEAR");
   });
 
+  it("excludes shipping protection and thermal tights", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Shipping Protection by Route",
+        handle: "routeins",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Sheer Illusion Thermal Tights Black",
+        handle: "sheer-illusion-thermal-tights-black",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("does not exclude belt sandals or cap-toe footwear", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Double Belt Sandal",
+        handle: "double-belt-sandal",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Cap Toe Oxford",
+        handle: "cap-toe-oxford",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Autry Windspin Suede Low-Top Sneakers",
+        handle: "autry-windspin-suede-low-top-sneakers",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Treasures Toe Ring Sandals",
+        handle: "treasures-toe-ring-sandals",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Broken Heel ankle sock boots",
+        handle: "broken-heel-ankle-sock-boots",
+        fromVerifiedFootwearCollection: true,
+      }).decision,
+    ).toBe("ACCEPT_FOOTWEAR");
+  });
+
   it("does not treat Shopify collection: merchandising tags as product type", () => {
     expect(
       evaluateFootwearProduct({

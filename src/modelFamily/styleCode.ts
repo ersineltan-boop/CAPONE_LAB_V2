@@ -202,9 +202,8 @@ function extractVerifiedSkuStyle(sku: string, source: string): string | null {
   const schutz = extractSchutzStyleCode(sku);
   if (schutz) return schutz;
 
-  const jeffreyCampbell = extractJeffreyCampbellStyleCode(sku);
-  if (jeffreyCampbell) return jeffreyCampbell;
-
+  if (source === "jeffrey-campbell") return extractJeffreyCampbellStyleCode(sku);
+  if (source === "malone-souliers") return extractMaloneStyleCode(sku);
   return null;
 }
 
@@ -272,6 +271,11 @@ export function extractStyleIdentity(product: RawAnalyzedProduct): StyleIdentity
   if (source === "zara") {
     const code = extractStyleCodeFromUrl(product.productUrl);
     return { code, verified: Boolean(code) };
+  }
+
+  if (source === "ancient-greek-sandals" && sku) {
+    const greek = extractAncientGreekStyleCode(sku);
+    if (greek) return { code: greek, verified: true };
   }
 
   if (sku) {

@@ -5,6 +5,7 @@ import { featureKnown, featureUnknown } from "../../taxonomy/featureHelpers";
 import type { FootwearTaxonomyV1 } from "../../taxonomy/types";
 import {
   CONSUMER_FOOTWEAR_CATEGORIES,
+  SECONDARY_DISPLAY_CATEGORIES,
   getFilterFieldsForCategory,
 } from "../categoryFilterConfig";
 import { queryNewArrivals } from "../../newArrivals/query";
@@ -160,9 +161,10 @@ describe("category filtering", () => {
     expect(isStandardFilterValue("SLINGBACK")).toBe(true);
   });
 
-  it("UNCLASSIFIED does not appear in consumer category navigation", () => {
+  it("UNCLASSIFIED is omitted from filter navigation but shown as Diğer on the Categories index", () => {
     expect(CONSUMER_FOOTWEAR_CATEGORIES).not.toContain("UNCLASSIFIED");
     expect(CONSUMER_FOOTWEAR_CATEGORIES).toHaveLength(10);
+    expect(SECONDARY_DISPLAY_CATEGORIES).toContain("UNCLASSIFIED");
   });
 
   it("category New Arrivals reuses scoped queryNewArrivals", () => {

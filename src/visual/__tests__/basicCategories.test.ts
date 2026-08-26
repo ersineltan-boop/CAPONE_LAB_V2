@@ -91,6 +91,64 @@ describe("Visual basic categories", () => {
     ).toBe("bot-cizme");
   });
 
+  it("prefers confident primaryCategory over a conflicting source collection", () => {
+    expect(
+      resolveVisualBasicCategory(
+        family({
+          primaryCategory: "PUMP",
+          sourceCategoryRefs: [
+            {
+              sourceId: "schutz",
+              categoryId: "sandals",
+              categoryName: "Sandals",
+              categoryPath: "/collections/sandals",
+            },
+          ],
+        }),
+      ),
+    ).toBe("topuklu");
+    expect(
+      resolveVisualBasicCategory(
+        family({
+          primaryCategory: "BALLET_FLAT",
+          sourceCategoryRefs: [
+            {
+              sourceId: "schutz",
+              categoryId: "loafers",
+              categoryName: "Loafers",
+              categoryPath: "/collections/loafers",
+            },
+          ],
+        }),
+      ),
+    ).toBe("babet");
+  });
+
+  it("uses source collection only when primaryCategory is unclassified", () => {
+    expect(
+      resolveVisualBasicCategory(
+        family({
+          primaryCategory: "UNCLASSIFIED",
+          sourceCategoryRefs: [
+            {
+              sourceId: "ugg",
+              categoryId: "sandals",
+              categoryName: "Sandals",
+              categoryPath: "/collections/sandals",
+            },
+          ],
+        }),
+      ),
+    ).toBe("sandal");
+    expect(
+      mapSourceCategoryToVisual({
+        categoryId: "women-shoes",
+        categoryName: "Women Shoes",
+        categoryPath: "/collections/women-shoes",
+      }),
+    ).toBeNull();
+  });
+
   it("maps ambiguous source categories to DİĞER", () => {
     const mixed = family({
       sourceCategoryRefs: [

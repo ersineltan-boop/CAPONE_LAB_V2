@@ -774,6 +774,88 @@ describe("verified color recovery", () => {
     expect(families).toHaveLength(3);
   });
 
+  it("does not merge generic sandal titles by handle color suffix", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Sandal",
+        productUrl: "https://www.aeyde.com/products/sandal-black",
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Sandal",
+        productUrl: "https://www.aeyde.com/products/sandal-white",
+        color: "White",
+        cleaned: { color: "White", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("merges official Shopify color handles that share a distinctive model stem", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Dex Black Nappa",
+        productUrl: "https://www.aeyde.com/products/dex-black-nappa",
+        color: "Black",
+        cleaned: { color: "Black", heelHeight: null },
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Dex Moka Nappa",
+        productUrl: "https://www.aeyde.com/products/dex-moka-nappa",
+        color: "Moka",
+        cleaned: { color: "Moka", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingConfidence).toBe("HIGH");
+    expect(families[0]?.groupingReason).toContain("handleFamily:");
+  });
+
+  it("does not merge official and marketplace listings that share a style code", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "schutz",
+        brand: "SCHUTZ",
+        productName: "Julie Suede Pump",
+        productUrl: "https://schutz-shoes.com/products/julie-black",
+        variants: [{ sku: "S2217900140013", color: "Black" }],
+      }),
+      product({
+        source: "farfetch",
+        brand: "SCHUTZ",
+        productName: "Julie Suede Pump",
+        productUrl: "https://www.farfetch.com/shopping/women/schutz-julie-item-999.aspx",
+        variants: [{ sku: "S2217900140008", color: "Brown" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not merge the same distinctive name across brands", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Uma Mary-jane Flats",
+        productUrl: "https://www.aeyde.com/products/uma-black",
+      }),
+      product({
+        source: "schutz",
+        brand: "SCHUTZ",
+        productName: "Uma Mary-jane Flats",
+        productUrl: "https://schutz-shoes.com/products/uma-black",
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
   it("does not merge the same Larroude style code across sneaker and mule", () => {
     const { families } = buildModelFamilies([
       product({
@@ -816,7 +898,7 @@ describe("verified color recovery", () => {
     expect(families).toHaveLength(2);
   });
 
-  it("name-merges distinctive model colors when SKUs are not a verified style identity", () => {
+  it("handle-merges distinctive AEYDE colors when SKUs are not a verified style identity", () => {
     const { families } = buildModelFamilies([
       product({
         source: "aeyde",
@@ -837,6 +919,171 @@ describe("verified color recovery", () => {
     ]);
     expect(families).toHaveLength(1);
     expect(families[0]?.variantCount).toBe(2);
+    expect(families[0]?.groupingReason).toContain("handleFamily:");
+  });
+
+  it("does not merge Relan mesh flats with Relan leather flats", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "RELAN BALLET FLATS GOLD DISTRESSED LEATHER",
+        productUrl: "https://dolcevita.com/products/relan-ballet-flats-gold-distressed-leather",
+      }),
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "RELAN MESH BALLET FLATS CHILI MESH",
+        productUrl: "https://dolcevita.com/products/relan-mesh-ballet-flats-chili-mesh",
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not merge Dolly wood and Dolly clear despite a shared Larroude style prefix", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Dolly X Wood Sandal Caramel Leather",
+        productUrl: "https://larroude.com/products/dolly-wood",
+        category: "SANDAL",
+        variants: [{ sku: "L131-DOLL-5.0-CARA-1001", color: "Caramel" }],
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Dolly Clear Sandal Black Patent Leather",
+        productUrl: "https://larroude.com/products/dolly-clear",
+        category: "SANDAL",
+        variants: [{ sku: "L131-DOLL-5.0-BLCK-1002", color: "Black" }],
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BLACK",
+          materialFamily: "PATENT",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not merge Malone Maureen mesh with leather flats", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen Black Sequin Mesh Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-mesh",
+        variants: [{ sku: "MAUREEN FLAT 1", color: "Black" }],
+      }),
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen White Leather Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-leather",
+        variants: [{ sku: "MAUREEN FLAT 2", color: "White" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("keeps Malone Maureen leather colorways together", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen White Leather Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-white",
+        variants: [{ sku: "MAUREEN FLAT 2", color: "White" }],
+      }),
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen Taupe Leather Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-taupe",
+        color: "Taupe",
+        cleaned: { color: "Taupe", heelHeight: null },
+        variants: [{ sku: "MAUREEN FLAT 3", color: "Taupe" }],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+  });
+
+  it("does not merge Malone Maureen satin with leather flats", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen Burgundy Satin Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-satin",
+        variants: [{ sku: "MAUREEN FLAT 4", color: "Burgundy" }],
+      }),
+      product({
+        source: "malone-souliers",
+        brand: "MALONE SOULIERS",
+        productName: "Maureen White Leather Flat Mules",
+        productUrl: "https://malonesouliers.com/products/maureen-leather",
+        variants: [{ sku: "MAUREEN FLAT 2", color: "White" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not merge a mule and a sandal that share a style prefix", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Demo Mule Caramel Leather",
+        productUrl: "https://larroude.com/products/demo-mule",
+        category: "MULE",
+        variants: [{ sku: "L199-DEMO-5.0-CARA-1001", color: "Caramel" }],
+        normalized: {
+          category: "MULE",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "larroude",
+        brand: "LARROUDE",
+        productName: "Demo Sandal Black Leather",
+        productUrl: "https://larroude.com/products/demo-sandal",
+        category: "SANDAL",
+        variants: [{ sku: "L199-DEMO-5.0-BLCK-1002", color: "Black" }],
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
   });
 
   it("keeps Ancient Greek Aeropi colors that share style 12456", () => {
@@ -884,7 +1131,7 @@ describe("verified color recovery", () => {
     expect(families).toHaveLength(2);
   });
 
-  it("splits a name-only 10-color Carel Kina cluster without a shared style ID", () => {
+  it("recovers Carel Kina colorways via safe distinctive name evidence", () => {
     const kinas = Array.from({ length: 10 }, (_, index) =>
       product({
         source: "carel",
@@ -897,7 +1144,202 @@ describe("verified color recovery", () => {
       }),
     );
     const { families } = buildModelFamilies(kinas);
-    expect(families).toHaveLength(10);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toContain("safeNameColorway:");
+  });
+
+  it("recovers Carel Banana slingback colorways with matching construction", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "carel",
+        brand: "CAREL",
+        productName: "Banana - Babies slingback cuir verni bleu marine",
+        productUrl: "https://carel.fr/products/banana-1",
+        category: "SLINGBACK",
+        normalized: {
+          category: "SLINGBACK",
+          colorFamily: "BLUE",
+          materialFamily: "PATENT",
+          heelType: "BLOCK",
+          heelHeightGroup: "LOW",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+      product({
+        source: "carel",
+        brand: "CAREL",
+        productName: "Banana - Babies slingback cuir verni rouge",
+        productUrl: "https://carel.fr/products/banana-2",
+        category: "SLINGBACK",
+        color: "Rouge",
+        cleaned: { color: "Rouge", heelHeight: null },
+        normalized: {
+          category: "SLINGBACK",
+          colorFamily: "RED",
+          materialFamily: "PATENT",
+          heelType: "BLOCK",
+          heelHeightGroup: "LOW",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toContain("safeNameColorway:");
+  });
+
+  it("does not name-merge Kenley jelly with Kenley leather", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "KENLEY VINYL SANDALS CRYSTAL JELLY",
+        productUrl: "https://dolcevita.com/products/kenley-crystal",
+        category: "SANDAL",
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "CLEAR",
+          materialFamily: "SYNTHETIC",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "KENLEY SANDALS SADDLE LEATHER",
+        productUrl: "https://dolcevita.com/products/kenley-leather",
+        category: "SANDAL",
+        color: "Saddle",
+        cleaned: { color: "Saddle", heelHeight: null },
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "BLOCK",
+          heelHeightGroup: "MID",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("recovers Helia leather/suede colorways via safe name evidence", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Helia Low-Cut Pumps",
+        productUrl: "https://www.aeyde.com/products/helia-black",
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Helia Suede Low-Cut Pumps",
+        productUrl: "https://www.aeyde.com/products/helia-suede-cream",
+        color: "Cream",
+        cleaned: { color: "Cream", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toMatch(/safeNameColorway:|handleFamily:/);
+  });
+
+  it("does not name-merge generic sandal titles", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "Leather Sandal Black",
+        productUrl: "https://dolcevita.com/products/leather-sandal-black",
+        category: "SANDAL",
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "Leather Sandal Brown",
+        productUrl: "https://dolcevita.com/products/leather-sandal-brown",
+        category: "SANDAL",
+        color: "Brown",
+        cleaned: { color: "Brown", heelHeight: null },
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not name-merge Carel résille mesh with leather Kina", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "carel",
+        brand: "CAREL",
+        productName: "Kina - Escarpins babies résille et cuir noir",
+        productUrl: "https://www.carel.fr/products/kina-escarpins-babies-resille-et-cuir-noir",
+      }),
+      product({
+        source: "carel",
+        brand: "CAREL",
+        productName: "Kina - Escarpins babies cuir verni noir",
+        productUrl: "https://www.carel.fr/products/kina-escarpins-babies-cuir-verni-noir",
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("handle-merges AEYDE Ellie creamy/glass colorways with the core Ellie stem", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Ellie Almond-Toe Flats",
+        productUrl: "https://www.aeyde.com/products/ellie-black-nappa",
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Ellie Almond-Toe Flats",
+        productUrl: "https://www.aeyde.com/products/ellie-creamy-snake",
+        color: "Creamy",
+        cleaned: { color: "Creamy", heelHeight: null },
+      }),
+      product({
+        source: "aeyde",
+        brand: "AEYDE",
+        productName: "Ellie Almond-Toe Flats",
+        productUrl: "https://www.aeyde.com/products/ellie-glass-nappa",
+        color: "Glass",
+        cleaned: { color: "Glass", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
   });
 
   it("splits Alias Mae Lana products that only share the name", () => {

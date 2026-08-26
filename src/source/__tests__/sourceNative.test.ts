@@ -9,6 +9,7 @@ import {
   extractSourceCategories,
   filterFamiliesBySourceCategory,
   filterFamiliesForBrandOfficial,
+  filterFamiliesForMarketplaceSource,
   filterVerifiedNewForSource,
 } from "../sourceProductQuery";
 import { buildNewnessFromProductHints } from "../../newArrivals/detectNewness";
@@ -98,6 +99,25 @@ describe("source-native categories", () => {
   it("brand browse does not require global taxonomy", () => {
     const family = sampleFamily({ taxonomy: undefined });
     expect(filterFamiliesForBrandOfficial([family], "UGG")).toHaveLength(1);
+  });
+
+  it("official brand browse excludes marketplace-only listings of the same brand", () => {
+    const marketplaceOnly = sampleFamily({
+      brand: "JEFFREY CAMPBELL",
+      sourceSightings: [
+        {
+          sourceId: "free-people",
+          sourceLabel: "Free People",
+          sourceKind: "LUXURY_MARKETPLACE",
+          firstSeenAt: "2026-08-19T00:00:00.000Z",
+          lastSeenAt: "2026-08-19T00:00:00.000Z",
+        },
+      ],
+    });
+    expect(filterFamiliesForBrandOfficial([marketplaceOnly], "JEFFREY CAMPBELL")).toHaveLength(0);
+    expect(
+      filterFamiliesForMarketplaceSource([marketplaceOnly], "free-people"),
+    ).toHaveLength(1);
   });
 });
 

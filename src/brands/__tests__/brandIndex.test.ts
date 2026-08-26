@@ -60,6 +60,18 @@ describe("brand card collage", () => {
     };
   }
 
+  it("prefers packshot-like URLs over crop_new and Scene7 _b views", () => {
+    const images = selectBrandCardImages([
+      family("crop", [
+        "https://ancientgreeksandals.com/cdn/shop/files/crop_new_hero.jpg",
+      ]),
+      family("pack", [
+        "https://cdn.shopify.com/s/files/1/1/products/pump_e.jpg",
+      ]),
+    ]);
+    expect(images[0]).toContain("pump_e.jpg");
+  });
+
   it("keeps multiple brand images inside one card and dedupes URLs", () => {
     const images = selectBrandCardImages([
       family("a", [

@@ -9,7 +9,7 @@ import type {
 const CATEGORY_LABELS: Record<PrimaryFootwearCategory, string> = {
   BALLET_FLAT: "Babet",
   LOAFER: "Loafer",
-  PUMP: "Pump / Topuklu",
+  PUMP: "Topuklu",
   SANDAL: "Sandal",
   MULE: "Mule",
   BOOT: "Bot / Çizme",
@@ -17,7 +17,7 @@ const CATEGORY_LABELS: Record<PrimaryFootwearCategory, string> = {
   ESPADRILLE: "Espadril",
   OXFORD_DERBY: "Oxford / Derby",
   CLOG: "Clog",
-  UNCLASSIFIED: "Sınıflandırılmamış",
+  UNCLASSIFIED: "Diğer",
 };
 
 /** Taxonomy field keys → Turkish UI label. */

@@ -137,6 +137,31 @@ describe("catalog delivery", () => {
     expect(JSON.stringify(artifacts.summary)).not.toContain('"variants"');
   });
 
+  it("selects a higher-scoring cover instead of gallery image 0", () => {
+    const artifacts = buildCatalogDelivery({
+      families: [
+        family({
+          representativeImage:
+            "https://ancientgreeksandals.com/cdn/shop/files/crop_new_first.jpg",
+          representativeImages: [
+            "https://ancientgreeksandals.com/cdn/shop/files/crop_new_first.jpg",
+            "https://cdn.shopify.com/s/files/1/1/products/pump_e.jpg",
+          ],
+        }),
+      ],
+      brands: [
+        {
+          id: "jeffrey-campbell",
+          brand: "JEFFREY CAMPBELL",
+          country: "USA",
+          isActive: true,
+        },
+      ],
+      marketplaces: [],
+    });
+    expect(artifacts.brandShards[0]?.families[0]?.representativeImage).toContain("pump_e.jpg");
+  });
+
   it("keeps New Arrivals membership as verified-new after slimming", () => {
     const verified = family({
       sourceSightings: [

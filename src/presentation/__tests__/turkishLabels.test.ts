@@ -14,7 +14,7 @@ describe("turkishLabels", () => {
   it("maps primary categories to Turkish labels", () => {
     expect(getCategoryLabel("BALLET_FLAT")).toBe("Babet");
     expect(getCategoryLabel("BOOT")).toBe("Bot / Çizme");
-    expect(getCategoryLabel("UNCLASSIFIED")).toBe("Sınıflandırılmamış");
+    expect(getCategoryLabel("UNCLASSIFIED")).toBe("Diğer");
   });
 
   it("hides UNCLASSIFIED on product cards", () => {

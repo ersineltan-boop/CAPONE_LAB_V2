@@ -1,6 +1,10 @@
 import type { ModelFamily } from "../modelFamily/types";
 import { isKnown } from "../taxonomy/featureHelpers";
 import type { PrimaryFootwearCategory, TaxonomyFeature } from "../taxonomy/types";
+import {
+  familyBasicCategory,
+  mapPrimaryCategoryToVisual,
+} from "../visual/basicCategories";
 import type { TaxonomyFilterFieldId } from "./categoryFilterConfig";
 import { getFilterFieldsForCategory } from "./categoryFilterConfig";
 import { computeFieldCoverage } from "./taxonomyCoverage";
@@ -45,7 +49,8 @@ export function filterFamiliesByCategory(
   families: ModelFamily[],
   category: PrimaryFootwearCategory,
 ): ModelFamily[] {
-  return families.filter((family) => getFamilyPrimaryCategory(family) === category);
+  const visualId = mapPrimaryCategoryToVisual(category);
+  return families.filter((family) => familyBasicCategory(family) === visualId);
 }
 
 function normalizeFeatureValues(value: unknown): string[] {

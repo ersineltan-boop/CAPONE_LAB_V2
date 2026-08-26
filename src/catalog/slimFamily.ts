@@ -1,4 +1,5 @@
 import type { ModelFamily } from "../modelFamily/types";
+import { pickBestCoverImage, scoreCoverImageUrl } from "../images/coverImageScore";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
 import { resolveVisualBasicCategory } from "../visual/basicCategories";
 import { MAX_DELIVERY_IMAGES, MAX_VARIANT_IMAGES } from "./types";
@@ -7,7 +8,14 @@ export function slimFamilyForDelivery(family: ModelFamily): ModelFamily {
   const images = normalizeProductImageUrls([
     family.representativeImage,
     ...family.representativeImages,
-  ]).slice(0, MAX_DELIVERY_IMAGES);
+  ]);
+  const ranked = [...images].sort(
+    (a, b) => scoreCoverImageUrl(b) - scoreCoverImageUrl(a),
+  );
+  const cover = pickBestCoverImage(ranked) ?? ranked[0];
+  const ordered = cover
+    ? [cover, ...ranked.filter((url) => url !== cover)].slice(0, MAX_DELIVERY_IMAGES)
+    : ranked.slice(0, MAX_DELIVERY_IMAGES);
 
   return {
     modelFamilyId: family.modelFamilyId,
@@ -18,14 +26,14 @@ export function slimFamilyForDelivery(family: ModelFamily): ModelFamily {
     modelFamilyFirstSeenAt: family.modelFamilyFirstSeenAt,
     sourceSightings: family.sourceSightings,
     representativeProductId: family.representativeProductId,
-    representativeImage: images[0] ?? family.representativeImage,
-    representativeImages: images,
+    representativeImage: ordered[0] ?? family.representativeImage,
+    representativeImages: ordered,
     variantCount: family.variantCount,
     variants: family.variants.map((variant) => ({
       ...variant,
       images: normalizeProductImageUrls(variant.images ?? []).slice(0, MAX_VARIANT_IMAGES),
     })),
-    allImages: images,
+    allImages: ordered,
     sourceProductIds: family.sourceProductIds,
     sourceCategoryRefs: family.sourceCategoryRefs,
     basicCategory: resolveVisualBasicCategory(family),

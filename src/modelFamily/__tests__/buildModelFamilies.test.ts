@@ -168,7 +168,7 @@ describe("buildModelFamilies", () => {
     const { families } = buildModelFamilies([
       product({
         brand: "BRAND A",
-        productName: "Aria Pump",
+        productName: "Aria Slingback Pump",
         productUrl: "https://x/1",
         normalized: {
           category: "PUMP",
@@ -227,17 +227,35 @@ describe("buildModelFamilies", () => {
 
   it("keeps all variants accessible after grouping", () => {
     const products = [
-      product({ brand: "A", productName: "Model One", productUrl: "https://x/1" }),
-      product({ brand: "A", productName: "Model One", productUrl: "https://x/2", color: "Red", cleaned: { color: "Red", heelHeight: null } }),
+      product({
+        source: "aeyde",
+        brand: "A",
+        productName: "Model One",
+        productUrl: "https://www.aeyde.com/products/model-one-black",
+      }),
+      product({
+        source: "aeyde",
+        brand: "A",
+        productName: "Model One",
+        productUrl: "https://www.aeyde.com/products/model-one-red",
+        color: "Red",
+        cleaned: { color: "Red", heelHeight: null },
+      }),
     ];
 
     const { families } = buildModelFamilies(products);
     const family = families[0]!;
     expect(family.sourceProductIds).toEqual(
-      expect.arrayContaining(["https://x/1", "https://x/2"]),
+      expect.arrayContaining([
+        "https://www.aeyde.com/products/model-one-black",
+        "https://www.aeyde.com/products/model-one-red",
+      ]),
     );
-    expect(family.variants.map((variant) => variant.productId)).toEqual(
-      expect.arrayContaining(["https://x/1", "https://x/2"]),
+    expect(family.variants.map((variant) => variant.url)).toEqual(
+      expect.arrayContaining([
+        "https://www.aeyde.com/products/model-one-black",
+        "https://www.aeyde.com/products/model-one-red",
+      ]),
     );
   });
 

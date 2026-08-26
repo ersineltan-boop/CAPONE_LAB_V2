@@ -13,7 +13,12 @@ import {
   buildRepresentativeImages,
   resolveProductImageUrls,
 } from "./productImages";
-import { hasDistinctiveModelToken, isGenericModelTitle } from "./genericModelTitle";
+import { constructionsCompatible, productConstructionKey } from "./constructionSignature";
+import { handleFamiliesCompatible, shopifyHandleFamilyKey } from "./handleFamily";
+import {
+  isSafeDistinctiveModelName,
+  titlesDifferOnlyByColorwayDescriptors,
+} from "./safeNameColorway";
 import {
   listingIdentityKey,
   MARKETPLACE_SOURCE_IDS,
@@ -258,43 +263,124 @@ function buildGroupingMeta(product: RawAnalyzedProduct): ProductGroupingMeta {
   };
 }
 
+function handleConstructionCompatible(a: ProductGroupingMeta, b: ProductGroupingMeta): boolean {
+  if (!categoriesCompatible(a, b)) return false;
+  const leftHeel = a.product.normalized.heelType;
+  const rightHeel = b.product.normalized.heelType;
+  const leftHeight = a.product.normalized.heelHeightGroup;
+  const rightHeight = b.product.normalized.heelHeightGroup;
+  const raisedTypes = new Set(["STILETTO", "WEDGE", "BLOCK", "SCULPTURAL", "PLATFORM"]);
+  if (
+    leftHeel &&
+    rightHeel &&
+    leftHeel !== "UNKNOWN" &&
+    rightHeel !== "UNKNOWN" &&
+    leftHeel === "FLAT" &&
+    raisedTypes.has(rightHeel)
+  ) {
+    return false;
+  }
+  if (
+    leftHeel &&
+    rightHeel &&
+    leftHeel !== "UNKNOWN" &&
+    rightHeel !== "UNKNOWN" &&
+    rightHeel === "FLAT" &&
+    raisedTypes.has(leftHeel)
+  ) {
+    return false;
+  }
+  const flatHeights = new Set(["FLAT", "LOW"]);
+  const highHeights = new Set(["MID", "HIGH"]);
+  if (
+    leftHeight &&
+    rightHeight &&
+    leftHeight !== "UNKNOWN" &&
+    rightHeight !== "UNKNOWN" &&
+    flatHeights.has(leftHeight) &&
+    highHeights.has(rightHeight)
+  ) {
+    return false;
+  }
+  if (
+    leftHeight &&
+    rightHeight &&
+    leftHeight !== "UNKNOWN" &&
+    rightHeight !== "UNKNOWN" &&
+    highHeights.has(leftHeight) &&
+    flatHeights.has(rightHeight)
+  ) {
+    return false;
+  }
+  return true;
+}
+
+function sameSourceChannel(a: ProductGroupingMeta, b: ProductGroupingMeta): boolean {
+  return a.source === b.source && a.isMarketplace === b.isMarketplace;
+}
+
 function canMergeByStyleCode(
   a: ProductGroupingMeta,
   b: ProductGroupingMeta,
 ): boolean {
+  if (!sameSourceChannel(a, b)) return false;
   if (!a.verifiedStyle || !b.verifiedStyle) return false;
   if (!a.styleCode || !b.styleCode || a.styleCode !== b.styleCode) return false;
   if (a.source === "zara" || b.source === "zara" || a.styleCode.startsWith("ZARA-")) {
     return a.listingKey === b.listingKey;
   }
-  if (a.source === "free-people" || b.source === "free-people") {
-    return a.source === b.source && a.isMarketplace === b.isMarketplace && categoriesCompatible(a, b);
+  return categoriesCompatible(a, b) && constructionsCompatible(a.product, b.product);
+}
+
+function canMergeByHandle(
+  a: ProductGroupingMeta,
+  b: ProductGroupingMeta,
+): boolean {
+  if (!sameSourceChannel(a, b)) return false;
+  if (a.isMarketplace || b.isMarketplace) return false;
+  if (a.source === "zara" || b.source === "zara") return false;
+  if (!handleFamiliesCompatible(a.product.productUrl, b.product.productUrl)) return false;
+  if (a.verifiedStyle && b.verifiedStyle && a.styleCode !== b.styleCode) return false;
+  // Shared handle stems must not collapse different silhouettes (e.g. square-toe vs toe-post).
+  if (
+    a.normalizedName &&
+    b.normalizedName &&
+    a.normalizedName !== b.normalizedName &&
+    (isSafeDistinctiveModelName(a.normalizedName) || isSafeDistinctiveModelName(b.normalizedName))
+  ) {
+    return false;
   }
-  return categoriesCompatible(a, b);
+  return handleConstructionCompatible(a, b) && constructionsCompatible(a.product, b.product);
 }
 
 function canMergeByName(
   a: ProductGroupingMeta,
   b: ProductGroupingMeta,
 ): boolean {
-  if (a.source !== b.source) return false;
+  if (!sameSourceChannel(a, b)) return false;
   if (a.isMarketplace || b.isMarketplace) return false;
   if (a.source === "zara" || b.source === "zara") return false;
+  if (!categoriesCompatible(a, b)) return false;
+  if (!constructionsCompatible(a.product, b.product)) return false;
+  if (!handleConstructionCompatible(a, b)) return false;
+  // Name recovery must not bridge unverified listings onto a verified style identity.
   if (a.verifiedStyle || b.verifiedStyle) return false;
   if (!a.normalizedName || a.normalizedName !== b.normalizedName) return false;
-  if (isGenericModelTitle(a.normalizedName)) return false;
-  if (!hasDistinctiveModelToken(a.normalizedName)) return false;
-  return a.structuralSignature === b.structuralSignature;
+  if (!isSafeDistinctiveModelName(a.normalizedName)) return false;
+  if (!titlesDifferOnlyByColorwayDescriptors(a.product, b.product)) return false;
+  return true;
 }
 
-function uniqueExplodedColorCount(products: RawAnalyzedProduct[]): number {
-  const exploded = products.flatMap((product) => explodeProductColorVariants(product));
-  const colors = new Set(
-    exploded
-      .map((variant) => variant.color?.trim().toLowerCase())
-      .filter((color): color is string => Boolean(color)),
-  );
-  return Math.max(colors.size, exploded.length);
+function clusterByConstruction(metas: ProductGroupingMeta[]): ProductGroupingMeta[][] {
+  const clusters: ProductGroupingMeta[][] = [];
+  for (const meta of metas) {
+    const cluster = clusters.find((existing) =>
+      existing.every((member) => constructionsCompatible(member.product, meta.product)),
+    );
+    if (cluster) cluster.push(meta);
+    else clusters.push([meta]);
+  }
+  return clusters;
 }
 
 function singletonGroup(brand: string, product: RawAnalyzedProduct): PendingGroup {
@@ -308,13 +394,20 @@ function singletonGroup(brand: string, product: RawAnalyzedProduct): PendingGrou
 }
 
 function refineNameOnlyGroup(group: PendingGroup): PendingGroup[] {
-  if (!group.reason.startsWith("normalizedName:")) return [group];
+  if (
+    !group.reason.startsWith("normalizedName:") &&
+    !group.reason.startsWith("safeNameColorway:")
+  ) {
+    return [group];
+  }
 
   const keyed = group.products.map((product) => ({
     product,
     code: extractSourceProvenStyle(product),
   }));
   const codes = [...new Set(keyed.map((row) => row.code).filter((code): code is string => Boolean(code)))];
+
+  if (codes.length === 0) return [group];
 
   if (codes.length === 1 && keyed.every((row) => row.code === codes[0])) {
     return [
@@ -326,40 +419,36 @@ function refineNameOnlyGroup(group: PendingGroup): PendingGroup[] {
     ];
   }
 
-  if (codes.length >= 1) {
-    const buckets = new Map<string, RawAnalyzedProduct[]>();
-    for (const row of keyed) {
-      const bucketKey = row.code
-        ? `${group.groupKey}::style-${row.code}`
-        : `id-${listingIdentityKey(row.product)}`;
-      const bucket = buckets.get(bucketKey) ?? [];
-      bucket.push(row.product);
-      buckets.set(bucketKey, bucket);
-    }
-    return [...buckets.entries()].map(([groupKey, products]) => {
-      const code = extractSourceProvenStyle(products[0]!);
-      if (code && products.every((product) => extractSourceProvenStyle(product) === code)) {
-        return {
-          brand: group.brand,
-          confidence: "HIGH" as const,
-          reason: `styleCode:${code}`,
-          groupKey,
-          products,
-        };
-      }
-      if (products.length === 1) return singletonGroup(group.brand, products[0]!);
+  const buckets = new Map<string, RawAnalyzedProduct[]>();
+  for (const row of keyed) {
+    const bucketKey = row.code
+      ? `${group.groupKey}::style-${row.code}`
+      : `id-${listingIdentityKey(row.product)}`;
+    const bucket = buckets.get(bucketKey) ?? [];
+    bucket.push(row.product);
+    buckets.set(bucketKey, bucket);
+  }
+
+  return [...buckets.entries()].map(([groupKey, products]) => {
+    const code = extractSourceProvenStyle(products[0]!);
+    if (code && products.every((product) => extractSourceProvenStyle(product) === code)) {
       return {
         brand: group.brand,
-        confidence: "MEDIUM" as const,
-        reason: group.reason,
+        confidence: "HIGH" as const,
+        reason: `styleCode:${code}`,
         groupKey,
         products,
       };
-    });
-  }
-
-  if (uniqueExplodedColorCount(group.products) < 10) return [group];
-  return group.products.map((product) => singletonGroup(group.brand, product));
+    }
+    if (products.length === 1) return singletonGroup(group.brand, products[0]!);
+    return {
+      brand: group.brand,
+      confidence: "HIGH" as const,
+      reason: group.reason,
+      groupKey,
+      products,
+    };
+  });
 }
 
 function mergeGroups(groups: PendingGroup[]): PendingGroup {
@@ -393,17 +482,44 @@ function groupProductsWithinBrand(
         !assigned.has(candidate.product.productUrl) &&
         canMergeByStyleCode(seed, candidate),
     );
+    const seedStyleCluster = clusterByConstruction(styleMatches)
+      .filter((cluster) => cluster.length > 1)
+      .find((cluster) => cluster.some((member) => member.product.productUrl === seed.product.productUrl));
 
-    if (styleMatches.length > 1) {
-      for (const match of styleMatches) {
+    if (seedStyleCluster) {
+      for (const match of seedStyleCluster) {
         assigned.add(match.product.productUrl);
       }
       groups.push({
         brand,
         confidence: "HIGH",
         reason: `styleCode:${seed.styleCode}`,
-        groupKey: `style-${seed.styleCode}-${categoryMergeKey(seed.product)}`,
-        products: styleMatches.map((match) => match.product),
+        groupKey: `style-${seed.source}-${seed.styleCode}-${categoryMergeKey(seed.product)}-${productConstructionKey(seed.product)}`,
+        products: seedStyleCluster.map((match) => match.product),
+      });
+      continue;
+    }
+
+    const handleMatches = metas.filter(
+      (candidate) =>
+        !assigned.has(candidate.product.productUrl) &&
+        canMergeByHandle(seed, candidate),
+    );
+    const seedHandleCluster = clusterByConstruction(handleMatches)
+      .filter((cluster) => cluster.length > 1)
+      .find((cluster) => cluster.some((member) => member.product.productUrl === seed.product.productUrl));
+
+    if (seedHandleCluster) {
+      for (const match of seedHandleCluster) {
+        assigned.add(match.product.productUrl);
+      }
+      const handleKey = shopifyHandleFamilyKey(seed.product.productUrl) ?? seed.listingKey;
+      groups.push({
+        brand,
+        confidence: "HIGH",
+        reason: `handleFamily:${handleKey}`,
+        groupKey: `handle-${seed.source}-${handleKey}-${categoryMergeKey(seed.product)}-${productConstructionKey(seed.product)}-${seed.normalizedName}`,
+        products: seedHandleCluster.map((match) => match.product),
       });
       continue;
     }
@@ -413,17 +529,20 @@ function groupProductsWithinBrand(
         !assigned.has(candidate.product.productUrl) &&
         canMergeByName(seed, candidate),
     );
+    const seedNameCluster = clusterByConstruction(nameMatches)
+      .filter((cluster) => cluster.length > 1)
+      .find((cluster) => cluster.some((member) => member.product.productUrl === seed.product.productUrl));
 
-    if (nameMatches.length > 1) {
-      for (const match of nameMatches) {
+    if (seedNameCluster) {
+      for (const match of seedNameCluster) {
         assigned.add(match.product.productUrl);
       }
       groups.push({
         brand,
-        confidence: "MEDIUM",
-        reason: `normalizedName:${seed.normalizedName}`,
-        groupKey: `name-${seed.normalizedName}-${seed.structuralSignature}`,
-        products: nameMatches.map((match) => match.product),
+        confidence: "HIGH",
+        reason: `safeNameColorway:${seed.normalizedName}`,
+        groupKey: `name-${seed.source}-${seed.normalizedName}-${categoryMergeKey(seed.product)}-${productConstructionKey(seed.product)}`,
+        products: seedNameCluster.map((match) => match.product),
       });
       continue;
     }
@@ -451,7 +570,53 @@ function groupProductsWithinBrand(
     mergedByKey.set(mergeKey, mergeGroups([existing, group]));
   }
 
-  return [...mergedByKey.values()];
+  return reconcileCompatibleHighGroups([...mergedByKey.values()]);
+}
+
+function groupMetas(group: PendingGroup): ProductGroupingMeta[] {
+  return group.products.map(buildGroupingMeta);
+}
+
+function groupsSafeNameCompatible(a: PendingGroup, b: PendingGroup): boolean {
+  if (a.brand !== b.brand) return false;
+  if (a.confidence !== "HIGH" || b.confidence !== "HIGH") return false;
+  const left = groupMetas(a);
+  const right = groupMetas(b);
+  if (left.some((meta) => meta.verifiedStyle) || right.some((meta) => meta.verifiedStyle)) {
+    return false;
+  }
+  for (const leftMeta of left) {
+    for (const rightMeta of right) {
+      if (!canMergeByName(leftMeta, rightMeta)) return false;
+    }
+  }
+  return true;
+}
+
+/** Join handle/name colorway fragments that already passed high-confidence gates separately. */
+function reconcileCompatibleHighGroups(groups: PendingGroup[]): PendingGroup[] {
+  const result = [...groups];
+  let changed = true;
+  while (changed) {
+    changed = false;
+    outer: for (let i = 0; i < result.length; i += 1) {
+      for (let j = i + 1; j < result.length; j += 1) {
+        const left = result[i]!;
+        const right = result[j]!;
+        if (!groupsSafeNameCompatible(left, right)) continue;
+        const merged = mergeGroups([left, right]);
+        merged.confidence = "HIGH";
+        if (!merged.reason.includes("safeNameColorway:") && left.reason.startsWith("handleFamily:")) {
+          merged.reason = `${left.reason} + ${right.reason}`;
+        }
+        result.splice(j, 1);
+        result.splice(i, 1, merged);
+        changed = true;
+        break outer;
+      }
+    }
+  }
+  return result;
 }
 
 function buildRepresentativeImageStats(families: ModelFamily[]) {

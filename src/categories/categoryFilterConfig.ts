@@ -16,6 +16,7 @@ export const SECONDARY_DISPLAY_CATEGORIES = [
   "ESPADRILLE",
   "OXFORD_DERBY",
   "CLOG",
+  "UNCLASSIFIED",
 ] as const satisfies readonly PrimaryFootwearCategory[];
 
 /** Consumer-facing categories — excludes UNCLASSIFIED. */

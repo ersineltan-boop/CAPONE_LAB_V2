@@ -157,9 +157,12 @@ export function mapPrimaryCategoryToVisual(
 }
 
 export function resolveVisualBasicCategory(
-  family: Pick<ModelFamily, "sourceCategoryRefs" | "primaryCategory" | "taxonomy" | "basicCategory">,
+  family: Pick<
+    ModelFamily,
+    "sourceCategoryRefs" | "primaryCategory" | "taxonomy" | "canonicalName"
+  >,
 ): VisualMappedCategoryId {
-  if (family.basicCategory) return family.basicCategory;
+  const primary = mapPrimaryCategoryToVisual(getFamilyPrimaryCategory(family as ModelFamily));
 
   const structural = new Set<VisualMappedCategoryId>();
   const weakHits = new Set<VisualMappedCategoryId>();
@@ -174,25 +177,27 @@ export function resolveVisualBasicCategory(
     structural.add(mapped);
   }
 
-  if (structural.size === 1) return [...structural][0]!;
+  const sourceHint =
+    structural.size === 1
+      ? [...structural][0]!
+      : structural.size > 1
+        ? (() => {
+            const withoutHeels = [...structural].filter((id) => id !== "topuklu");
+            return withoutHeels.length === 1 ? withoutHeels[0]! : null;
+          })()
+        : weakHits.size === 1
+          ? [...weakHits][0]!
+          : weakHits.size > 1
+            ? pickPreferredMapping([...weakHits])
+            : null;
 
-  if (structural.size > 1) {
-    const withoutHeels = [...structural].filter((id) => id !== "topuklu");
-    if (withoutHeels.length === 1) return withoutHeels[0]!;
-    const primaryFallback = mapPrimaryCategoryToVisual(
-      getFamilyPrimaryCategory(family as ModelFamily),
-    );
-    if (primaryFallback !== "diger") return primaryFallback;
-    return "diger";
+  if (primary !== "diger") {
+    if (!sourceHint || sourceHint === primary) return primary;
+    return primary;
   }
 
-  if (weakHits.size === 1) return [...weakHits][0]!;
-  if (weakHits.size > 1) {
-    const preferred = pickPreferredMapping([...weakHits]);
-    if (preferred) return preferred;
-  }
-
-  return mapPrimaryCategoryToVisual(getFamilyPrimaryCategory(family as ModelFamily));
+  if (sourceHint) return sourceHint;
+  return "diger";
 }
 
 /** Alias used by Brand + Visual so there is one resolver. */
@@ -209,7 +214,7 @@ export interface BasicCategoryCount {
 }
 
 export function familyBasicCategory(family: ModelFamily): VisualMappedCategoryId {
-  return family.basicCategory ?? resolveVisualBasicCategory(family);
+  return resolveVisualBasicCategory(family);
 }
 
 export function countFamiliesByBasicCategory(families: ModelFamily[]): BasicCategoryCount[] {

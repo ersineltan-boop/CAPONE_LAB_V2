@@ -6,10 +6,13 @@ import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { getMarketplaceById } from "../../registry/data/marketplaces";
 import {
   extractMarketplaceBrands,
-  extractSourceCategories,
   filterFamiliesForMarketplaceSource,
   filterVerifiedNewForSource,
 } from "../../source/sourceProductQuery";
+import {
+  countFamiliesByBasicCategory,
+  filterFamiliesByBasicCategory,
+} from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
@@ -47,8 +50,8 @@ export default function MarketplaceDetail({
   );
 
   const categories = useMemo(
-    () => extractSourceCategories(shardFamilies, marketplaceId),
-    [shardFamilies, marketplaceId],
+    () => countFamiliesByBasicCategory(shardFamilies).filter((item) => item.id !== "tumu"),
+    [shardFamilies],
   );
 
   const brands = useMemo(
@@ -156,18 +159,51 @@ export default function MarketplaceDetail({
                   baseFamilies={marketplaceFamilies}
                   brandFilter={selectedBrand}
                   showCategorySidebar={false}
+                  hideSourceCategoryLabel
                 />
               </div>
             ) : (
-              <SourceProductBrowse
-                sourceId={marketplaceId}
-                sourceLabel={marketplace.name}
-                mode={mode === "categories" ? "categories" : mode}
-                baseFamilies={marketplaceFamilies}
-                selectedCategoryId={selectedCategoryId}
-                onSelectCategory={setSelectedCategoryId}
-                showCategorySidebar={mode === "categories"}
-              />
+              <div className="space-y-3">
+                {mode === "categories" ? (
+                  <div className="flex max-w-4xl flex-wrap gap-2">
+                    {countFamiliesByBasicCategory(marketplaceFamilies).map((category) => {
+                      const active =
+                        category.id === "tumu"
+                          ? !selectedCategoryId
+                          : selectedCategoryId === category.id;
+                      return (
+                        <button
+                          key={category.id}
+                          type="button"
+                          onClick={() =>
+                            setSelectedCategoryId(category.id === "tumu" ? null : category.id)
+                          }
+                          className={`border px-2 py-1 text-[10px] ${
+                            active
+                              ? "border-ink bg-ink text-cream"
+                              : "border-line text-ink-muted"
+                          }`}
+                        >
+                          {category.label} {category.count}
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : null}
+                <SourceProductBrowse
+                  sourceId={marketplaceId}
+                  sourceLabel={marketplace.name}
+                  mode={mode === "verified-new" ? "verified-new" : "all"}
+                  baseFamilies={
+                    mode === "categories"
+                      ? filterFamiliesByBasicCategory(marketplaceFamilies, selectedCategoryId)
+                      : marketplaceFamilies
+                  }
+                  selectedCategoryId={null}
+                  showCategorySidebar={false}
+                  hideSourceCategoryLabel
+                />
+              </div>
             )}
           </>
         ) : null}
