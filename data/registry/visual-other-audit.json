@@ -1,15 +1,53 @@
 {
-  "generatedAt": "2026-08-26T07:00:34.987Z",
-  "digerCount": 874,
-  "totalFamilies": 11649,
+  "generatedAt": "2026-08-27T17:29:13.696Z",
+  "digerCount": 760,
+  "totalFamilies": 11539,
   "reasonCounts": {
-    "MISSING_SOURCE_CATEGORY": 48,
-    "GENERIC_SOURCE_CATEGORY": 135,
-    "CONFLICTING_SOURCE_CATEGORIES": 44,
-    "UNMAPPED_SOURCE_CATEGORY": 647,
+    "MISSING_SOURCE_CATEGORY": 44,
+    "GENERIC_SOURCE_CATEGORY": 129,
+    "CONFLICTING_SOURCE_CATEGORIES": 46,
+    "UNMAPPED_SOURCE_CATEGORY": 541,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
+    {
+      "modelFamilyId": "a-emery--handle-a-emery-the-spencer-other-footwear-base-the-spencer-flat",
+      "brand": "A.EMERY",
+      "sourceCategories": [
+        "Flats",
+        "Flats Edit",
+        "Footwear",
+        "Leather Flats",
+        "New Arrivals",
+        "Winter Footwear"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "a-emery--id-shopify-a-emery-the-lima-flat-black",
+      "brand": "A.EMERY",
+      "sourceCategories": [
+        "Flats",
+        "Footwear",
+        "Leather Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "a-emery--id-shopify-a-emery-the-lima-flat-mulch-woven",
+      "brand": "A.EMERY",
+      "sourceCategories": [
+        "Flats",
+        "Flats Edit",
+        "Footwear",
+        "Leather Flats",
+        "Winter Footwear"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
     {
       "modelFamilyId": "a-emery--id-shopify-a-emery-the-park-flat-black",
       "brand": "A.EMERY",
@@ -33,6 +71,18 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "a-emery--id-shopify-a-emery-the-spencer-flat-greige",
+      "brand": "A.EMERY",
+      "sourceCategories": [
+        "Flats",
+        "Footwear",
+        "Leather Flats",
+        "New Arrivals"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "a-emery--id-shopify-a-emery-the-ward-flat-black-suede",
       "brand": "A.EMERY",
       "sourceCategories": [
@@ -44,7 +94,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "a-emery--name-the-jesse-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "a-emery--name-a-emery-the-jesse-flat-other-footwear-base",
       "brand": "A.EMERY",
       "sourceCategories": [
         "Flats",
@@ -56,42 +106,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "a-emery--name-the-lima-flat-other-footwear-flat-unknown-unknown",
-      "brand": "A.EMERY",
-      "sourceCategories": [
-        "Flats",
-        "Flats Edit",
-        "Footwear",
-        "Leather Flats",
-        "Winter Footwear"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "a-emery--name-the-spencer-flat-other-footwear-flat-unknown-unknown",
-      "brand": "A.EMERY",
-      "sourceCategories": [
-        "Flats",
-        "Flats Edit",
-        "Footwear",
-        "Leather Flats",
-        "New Arrivals",
-        "Winter Footwear"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "adidas--id-level-shoes-adidas-tokyo-mary-jane-shoes-white-fabric-women-low-tops-khkmk0-html",
-      "brand": "adidas",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "adidas--id-level-shoes-adidas-x-stella-mccartney-dropset-4-training-shoes-burgundy-fabric-women-training-3ews9f-html",
@@ -103,7 +117,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-blake-black-calf",
+      "modelFamilyId": "aeyde--handle-aeyde-blake-other-footwear-base-blake-square-toe-flat",
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
@@ -118,22 +132,7 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-blake-port-snake",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "Loafers",
-        "New In",
-        "Wide Square Chic Sandals"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-cassy-moss-mini-snake",
+      "modelFamilyId": "aeyde--handle-aeyde-dex-other-footwear-base-dex-flat",
       "brand": "AEYDE",
       "sourceCategories": [
         "All Footwear",
@@ -146,220 +145,56 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-cassy-tobacco-suede",
+      "modelFamilyId": "aeyde--handle-aeyde-ellie-other-footwear-base-ellie-almond-toe-flat",
+      "brand": "AEYDE",
+      "sourceCategories": [
+        "All Footwear",
+        "Filler Suggested Product Logic: Flats",
+        "Filler Suggested Product Logic: Shoes",
+        "Flats",
+        "New In"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "aeyde--handle-aeyde-floris-tassel-other-footwear-base-floris-tassel-flat",
+      "brand": "AEYDE",
+      "sourceCategories": [
+        "All Footwear",
+        "Filler Suggested Product Logic: Flats",
+        "Filler Suggested Product Logic: Shoes",
+        "Flats",
+        "New In"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "aeyde--handle-aeyde-nomi-glove-other-footwear-base-nomi-glove-fit-flat",
+      "brand": "AEYDE",
+      "sourceCategories": [
+        "All Footwear",
+        "Filler Suggested Product Logic: Flats",
+        "Filler Suggested Product Logic: Shoes",
+        "Flats",
+        "New In"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "aeyde--handle-aeyde-uma-other-footwear-base-uma-pony-flat",
       "brand": "AEYDE",
       "sourceCategories": [
         "Filler Suggested Product Logic: Flats",
         "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-dex-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-dex-cloud-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-dex-moka-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-cloud-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-creamy-snake",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-glass-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-moka-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-moss-mini-snake",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-sand-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-ellie-taupe-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-floris-tassel-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-floris-tassel-dusty-purple-nappa-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-floris-tassel-moka-nappa-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "aeyde--id-shopify-aeyde-franny-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-geraldine-cap-black-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-geraldine-cap-scarlet-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-geraldine-cap-tobacco-satin-suede",
       "brand": "AEYDE",
       "sourceCategories": [
         "Filler Suggested Product Logic: Flats",
@@ -379,299 +214,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-matti-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-matti-moka-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-matti-silver-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-black-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-glass-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-hazelnut-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-moka-snake",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-sand-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-moa-scarlet-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-nomi-glove-black-lambskin",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-nomi-glove-port-lambskin",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-nomi-glove-taupe-lambskin",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats",
-        "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-black-ponyhair",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-black-velvet",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-cap-black-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-cap-peach-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-cap-scarlet-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-cap-tobacco-satin-suede",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-charcoal-velvet",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-beige-black-ponyhair",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-black-ponyhair",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-dusty-pink-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-sand-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-eyelet-silver-crackle",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-hazelnut-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-hazelnut-snake",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-mini-studs-black-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "aeyde--id-shopify-aeyde-uma-mini-studs-creamy-nappa",
       "brand": "AEYDE",
       "sourceCategories": [
@@ -682,7 +224,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-moka-ponyhair",
+      "modelFamilyId": "aeyde--name-aeyde-geraldine-toe-cap-flat-other-footwear-satin",
       "brand": "AEYDE",
       "sourceCategories": [
         "Filler Suggested Product Logic: Flats",
@@ -692,227 +234,11 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-red-velvet",
+      "modelFamilyId": "aeyde--name-aeyde-vanna-flat-other-footwear-base",
       "brand": "AEYDE",
       "sourceCategories": [
         "Filler Suggested Product Logic: Flats",
         "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-uma-tobacco-nappa",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-vanna-black-velvet",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-vanna-charcoal-velvet",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--id-shopify-aeyde-vanna-red-velvet",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-criss-cross-ballerinas-black-calf-hair-women-ballerinas-cg27pa-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-beige-mesh-women-ballerinas-ukmlaz-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-black-calf-leather-women-ballerinas-qwfy5o-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-blue-crystal-mesh-women-ballerinas-kyxgiy-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-calf-leather-women-ballerinas-wfcar5-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-mesh-women-ballerinas-kvyby0-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-brown-mesh-women-ballerinas-xgjssy-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-burgundy-calf-leather-women-ballerinas-shn2xk-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-burgundy-mesh-women-ballerinas-64yxov-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-burgundy-mesh-women-ballerinas-fptvnx-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-gold-mesh-women-ballerinas-cwmda3-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-grey-mesh-women-ballerinas-hvnk2r-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-khaki-mesh-women-ballerinas-5txqj4-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-navy-denim-women-ballerinas-o0szac-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-pink-mesh-women-ballerinas-nsnfqe-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-purple-crystal-mesh-women-ballerinas-q4bc9o-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-fishnet-ballerinas-yellow-mesh-women-ballerinas-pegptb-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-leather-ballerinas-printed-lambskin-leather-women-ballerinas-emm8hq-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-merino-shearling-ballerinas-beige-suede-women-ballerinas-tejeqy-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -927,55 +253,10 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-satin-cord-ballerinas-burgundy-satin-women-ballerinas-mte69x-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-shearling-ballerinas-black-shearling-women-ballerinas-rbesjd-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-strass-fishnet-ballerinas-black-crystal-mesh-women-ballerinas-yhi2ox-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-straw-ballerinas-brown-straw-women-ballerinas-otbtpv-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-suede-vienne-ballerinas-brown-suede-women-ballerinas-kokmme-html",
       "brand": "Alaïa",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-vienne-ballerinas-brown-suede-women-ballerinas-iwl0h2-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1053,6 +334,55 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--handle-amina-muaddi-alexa-slipper-95-other-footwear-base-alexa-slipper-95",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--handle-amina-muaddi-anok-sling-55-other-footwear-slingback-anok-sling-55",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "FALL WINTER 25/26 - SHOES",
+        "Fw25 Shoes 1",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--handle-amina-muaddi-anok-sling-90-other-footwear-slingback-anok-sling-90",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--handle-amina-muaddi-holli-sling-70-other-footwear-slingback-holli-sling-70",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--handle-amina-muaddi-holli-sling-95-other-footwear-slingback-holli-sling-95",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-alexa-glass-slipper-105-transparent-pvc-cao",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -1065,6 +395,17 @@
     },
     {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-alexa-glass-slipper-95-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-alexa-lace-slipper-95-ivory-lace",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1099,7 +440,40 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-alexa-slipper-95-champagne-pearly-patent",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-andreea-glass-slipper-45-black-nappa-and-transparent-pvc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-andreea-slipper-45-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-andreea-slipper-45-natural-printed-snake",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1134,6 +508,37 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-anok-sling-105-latte-pearly-patent",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-anok-slipper-105-coral-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-anok-slipper-105-white-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-begum-glass-sling-70-transparent-pvc-c",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -1152,9 +557,67 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-begum-mesh-sling-70-black-mesh",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-begum-sling-70-white-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-begum-sling-95-almond-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "FALL WINTER 25/26 - SHOES",
+        "Fw25 Shoes 1",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-lace-sling-90-ivory-lace-and-ivory-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-105-black-suede",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-90-black-polka-dot-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-90-white-polka-dot-lace",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "FALL WINTER 25/26 - SHOES",
+        "Fw25 Shoes 1",
         "VIEW ALL SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1174,9 +637,57 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-dalida-plateau-slipper-black-satin-ccc",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Platform Shoes",
+        "PLATFORMS",
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-dalida-plateau-slipper-white-nappa-cao",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "Platform Shoes",
+        "PLATFORMS",
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-dolly-net-sling-95-latte-nappa-and-latte-net-and-white-crystals",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-eleonora-lace-slipper-95-ivory-lace-and-ivory-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-eleonora-slipper-95-latte-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
         "VIEW ALL SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1243,7 +754,45 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-holli-lace-sling-ivory",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-holli-mesh-sling-black-mesh",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-holli-sling-70-ivory-lace",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-janis-slipper-45-black-nappa-and-white-crystals",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-justine-slipper-105-silver-mirror-and-transparent-pvc",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1367,6 +916,50 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lupita-slipper-70-black-net-and-black-nappa",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lupita-slipper-70-black-suede-c",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lupita-slipper-70-mocha-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lupita-slipper-95-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lupita-slipper-95-red-white-vichy",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -1390,6 +983,30 @@
     },
     {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-mini-camelia-slipper-105-black-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "MINI CAMELIA SLIPPER",
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-mini-camelia-slipper-95-coral-satin",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "MINI CAMELIA SLIPPER",
+        "SLIPPERS",
+        "Slipper",
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-mini-camelia-slipper-95-white-nappa",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "MINI CAMELIA SLIPPER",
@@ -1470,7 +1087,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-alexa-slipper-95-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-alexa-slipper-95-other-footwear-satin",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1481,7 +1098,52 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-andreea-slipper-45-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-anok-sling-105-other-footwear-satin-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-begum-sling-70-other-footwear-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-begum-sling-95-other-footwear-mesh-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-begum-sling-95-other-footwear-satin-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-camelia-sling-60-other-footwear-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-eleonora-slipper-45-other-footwear-satin",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1492,122 +1154,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-anok-sling-105-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-anok-sling-55-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "FALL WINTER 25/26 - SHOES",
-        "Fw25 Shoes 1",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-anok-sling-90-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-anok-slipper-105-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-begum-sling-70-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-begum-sling-95-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "FALL WINTER 25/26 - SHOES",
-        "Fw25 Shoes 1",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-camelia-sling-60-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-camelia-sling-90-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "FALL WINTER 25/26 - SHOES",
-        "Fw25 Shoes 1",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-dalida-plateau-slipper-140-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "Platform Shoes",
-        "PLATFORMS",
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-eleonora-slipper-45-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-eleonora-slipper-95-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-elodie-slipper-105-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-elodie-slipper-105-other-footwear-base",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "FALL WINTER 25/26 - SHOES",
@@ -1620,7 +1167,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-gigi-slipper-95-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-gigi-slipper-95-other-footwear-base",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1631,7 +1178,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-holli-sling-70-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-holli-sling-95-other-footwear-satin-slingback",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "VIEW ALL SHOES"
@@ -1640,16 +1187,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-holli-sling-95-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-lupita-crystal-net-slipper-95-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-lupita-crystal-net-slipper-95-other-footwear-base",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1660,7 +1198,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-lupita-slipper-70-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-lupita-slipper-95-other-footwear-base",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1671,30 +1209,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--name-lupita-slipper-95-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-mini-camelia-slipper-95-other-footwear-unknown-unknown-unknown",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "MINI CAMELIA SLIPPER",
-        "SLIPPERS",
-        "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--name-salma-slipper-95-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-salma-slipper-95-other-footwear-satin",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
         "SLIPPERS",
@@ -1806,25 +1321,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-charlotte-ballerinas-black-calf-leather-women-ballerinas-dfixn4-html",
-      "brand": "Bottega Veneta",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-fantasmina-ballerinas-red-nappa-leather-women-ballerinas-wfq9ey-html",
-      "brand": "Bottega Veneta",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-palazzo-slippers-black-calf-leather-women-slippers-qxfkmq-html",
       "brand": "Bottega Veneta",
       "sourceCategories": [
@@ -1870,24 +1366,13 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-rosa-ballerinas-multicolored-lambskin-leather-women-ballerinas-ld0kem-html",
+      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-parco-flat-mules-beige-calf-leather-women-mules-vc3cra-html",
       "brand": "Bottega Veneta",
       "sourceCategories": [
-        "Flat Shoes",
         "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-rosa-ballerinas-pink-lambskin-leather-women-ballerinas-yjxl8c-html",
-      "brand": "Bottega Veneta",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "bronx--id-free-people-108267113",
@@ -1908,15 +1393,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "burberry--id-level-shoes-burberry-robin-ballerinas-black-lambskin-leather-women-ballerinas-iwxcbo-html",
-      "brand": "Burberry",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "by-far--id-shopify-by-far-carre-89-cyan-banner",
       "brand": "BY FAR",
       "sourceCategories": [
@@ -1927,7 +1403,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "by-far--name-yasha-peep-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "by-far--name-by-far-yasha-peep-flat-other-footwear-base",
       "brand": "BY FAR",
       "sourceCategories": [
         "All Shoes",
@@ -1941,6 +1417,33 @@
     },
     {
       "modelFamilyId": "carel--id-shopify-carel-gina-mocassins-cuir-marine-bleu-et-noir",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-beige",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-bi-bleu",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-bi-marron",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1976,7 +1479,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-2100-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-2100-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1985,7 +1488,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-2100-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-azur-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1994,7 +1497,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-azur-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-gioia-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -2003,7 +1506,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-gioia-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-lucca-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -2012,7 +1515,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-lucca-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-malaga-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -2021,16 +1524,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-malaga-other-footwear-unknown-unknown-unknown",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-vittoria-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "carel--name-carel-vittoria-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -2091,15 +1585,6 @@
       "brand": "Chloé",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "christen--id-level-shoes-christen-tabi-stretch-ballerinas-beige-leather-women-ballerinas-brnpue-html",
-      "brand": "CHRISTEN",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2243,16 +1728,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-sheer-illusion-thermal-tights-black",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "Shoes View All",
-        "VIEW ALL"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "dr-martens--id-free-people-98844277",
       "brand": "Dr. Martens",
       "sourceCategories": [
@@ -2296,6 +1771,33 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "emme-parsons--handle-emme-parsons-parker-moccasin-other-footwear-base-parker",
+      "brand": "EMME PARSONS",
+      "sourceCategories": [
+        "Danielle Loafer",
+        "Emme Parsons Danielle",
+        "Emme Parsons Ernest Sneaker",
+        "Emme Parsons Flat Mule",
+        "Emme Parsons Monceaux Mule",
+        "Emme Parsons Parker Moccasin",
+        "Emme Parsons Salome Mary Jane",
+        "Ernest Fisherman Sneaker | Emme Parsons",
+        "Flat Mule Slip On | Emme Parsons",
+        "Italian Made Woven Styles for Women - Flat Mule & High Throat Ballerina",
+        "Loafers & Boots",
+        "Monceaux Mule - Emme Parsons",
+        "Parker Moccasin | Emme Parsons",
+        "Raffia",
+        "Raffia Shoes | Made in Italy | Emme Parsons",
+        "Salomé Mary Jane | Emme Parsons",
+        "Suede",
+        "Suede Leather Loafers, Boots & More | Made in Italy | Emme Parsons",
+        "Woven Styles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-domani-bordeaux-kidskin",
@@ -2352,7 +1854,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-parker-moccasin-tan-suede",
+      "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-parker-moccasin-carmen-red-nappa",
       "brand": "EMME PARSONS",
       "sourceCategories": [
         "Danielle Loafer",
@@ -2371,15 +1873,13 @@
         "Raffia",
         "Raffia Shoes | Made in Italy | Emme Parsons",
         "Salomé Mary Jane | Emme Parsons",
-        "Suede",
-        "Suede Leather Loafers, Boots & More | Made in Italy | Emme Parsons",
         "Woven Styles"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "emme-parsons--style-00088-other-footwear",
+      "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-parker-moccasin-taupe-suede",
       "brand": "EMME PARSONS",
       "sourceCategories": [
         "Danielle Loafer",
@@ -2415,6 +1915,46 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ex--handle-exe-sapato-emery-215-other-footwear-base-sapatos-emery-215",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--handle-exe-sapatos-abf-97-dinora-300-other-footwear-base-sapatos-abf-97",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--handle-exe-sapatos-remini-611-other-footwear-base-sapatos-remini-611",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--handle-exe-sapatos-rimini-512-other-footwear-base-sapatos-rimini-512",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ex--id-shopify-exe-mocassins-abf-97",
       "brand": "EXÉ",
       "sourceCategories": [
@@ -2426,6 +1966,16 @@
     },
     {
       "modelFamilyId": "ex--id-shopify-exe-mocassins-abf-97-v1392-45-2-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--id-shopify-exe-ploy-353-verniz-black",
       "brand": "EXÉ",
       "sourceCategories": [
         "MOCASSINS, SAPATOS E STILETTOS",
@@ -2545,6 +2095,36 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ex--id-shopify-exe-sapatos-abf97-dinora-300-brown",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--id-shopify-exe-sapatos-abf97-dulce-710-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--id-shopify-exe-sapatos-abf97-dulce-720-black",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ex--id-shopify-exe-sapatos-befree-alin-592-celeste",
       "brand": "EXÉ",
       "sourceCategories": [
@@ -2645,7 +2225,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "ex--name-sapatos-abf-97-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "ex--name-exe-sapatos-abf-97-other-footwear-base",
       "brand": "EXÉ",
       "sourceCategories": [
         "MOCASSINS, SAPATOS E STILETTOS",
@@ -2655,37 +2235,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "ex--name-sapatos-emery-215-other-footwear-unknown-unknown-unknown",
-      "brand": "EXÉ",
-      "sourceCategories": [
-        "MOCASSINS, SAPATOS E STILETTOS",
-        "Sapatos"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ex--name-sapatos-ploy-353-other-footwear-unknown-unknown-unknown",
-      "brand": "EXÉ",
-      "sourceCategories": [
-        "MOCASSINS, SAPATOS E STILETTOS",
-        "Sapatos"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ex--name-sapatos-remini-611-other-footwear-unknown-unknown-unknown",
-      "brand": "EXÉ",
-      "sourceCategories": [
-        "MOCASSINS, SAPATOS E STILETTOS",
-        "Sapatos"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ex--name-sapatos-rimini-512-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "ex--name-exe-sapatos-ploy-353-other-footwear-base",
       "brand": "EXÉ",
       "sourceCategories": [
         "MOCASSINS, SAPATOS E STILETTOS",
@@ -2733,19 +2283,31 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "ferragamo--id-level-shoes-ferragamo-macrame-lace-ballerinas-cream-fabric-women-ballerinas-ff9xwj-html",
-      "brand": "Ferragamo",
+      "modelFamilyId": "flabelus--handle-flabelus-ame-other-footwear-base-ame",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Flat Shoes"
+        "Slipper Woman",
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "ferragamo--id-level-shoes-ferragamo-vara-jelly-ballerinas-blue-pvc-women-ballerinas-jazmut-html",
-      "brand": "Ferragamo",
+      "modelFamilyId": "flabelus--handle-flabelus-kyra-slipper-breeze-other-footwear-base-kyra-slipper-breeze",
+      "brand": "FLABELUS",
       "sourceCategories": [
-        "Flat Shoes"
+        "Slipper Woman",
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--handle-flabelus-smoking-daisy-other-footwear-base-smoking-daisy",
+      "brand": "FLABELUS",
+      "sourceCategories": [
+        "Slipper Woman",
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -2764,42 +2326,6 @@
       "brand": "Flabelus",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--id-level-shoes-flabelus-antonia-mary-janes-black-velvet-women-ballerinas-f7a042-html",
-      "brand": "Flabelus",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--id-level-shoes-flabelus-edmond-mary-jane-shoes-blue-cotton-women-ballerinas-xn0plp-html",
-      "brand": "Flabelus",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--id-level-shoes-flabelus-edmond-mary-jane-shoes-cream-cotton-women-ballerinas-6a2cxs-html",
-      "brand": "Flabelus",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--id-level-shoes-flabelus-sethe-ballerinas-black-velvet-women-ballerinas-itehor-html",
-      "brand": "Flabelus",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -4689,37 +4215,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "flabelus--name-ame-other-footwear-unknown-unknown-unknown",
-      "brand": "FLABELUS",
-      "sourceCategories": [
-        "Slipper Woman",
-        "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--name-dots-other-footwear-unknown-unknown-unknown",
-      "brand": "FLABELUS",
-      "sourceCategories": [
-        "Slipper Woman",
-        "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--name-kyra-slipper-breeze-other-footwear-other-unknown-unknown",
-      "brand": "FLABELUS",
-      "sourceCategories": [
-        "Slipper Woman",
-        "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flabelus--name-smoking-daisy-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "flabelus--name-flabelus-dots-other-footwear-base",
       "brand": "FLABELUS",
       "sourceCategories": [
         "Slipper Woman",
@@ -4874,6 +4370,24 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-granny-slipper-leopard",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-june-tiramisu-in-leather-copy",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-miguela-nappa-leather-in-black",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
@@ -4892,16 +4406,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "gia-borghini--style-grsl-lpon-other-footwear",
-      "brand": "GIA BORGHINI",
-      "sourceCategories": [
-        "FLAT SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "gia-borghini--style-rile-lnap-other-footwear",
+      "modelFamilyId": "gia-borghini--name-gia-borghini-riley-other-footwear-base",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
         "FLAT SHOES"
@@ -4917,24 +4422,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "givenchy--id-level-shoes-givenchy-crush-ballerinas-black-calf-leather-women-ballerinas-tbbllz-html",
-      "brand": "Givenchy",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "givenchy--id-level-shoes-givenchy-crush-ballerinas-cream-patent-leather-women-ballerinas-rabyvx-html",
-      "brand": "Givenchy",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "givenchy--id-level-shoes-givenchy-label-slippers-black-nappa-leather-women-slippers-pzr71y-html",
@@ -4991,19 +4478,12 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "gucci--id-level-shoes-gucci-w-loli-ballerina-leather-w-hb-beige-calf-leather-women-ballerinas-44lwiz-html",
-      "brand": "Gucci",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-crinkled-glossy-deconstructed-lace-up-shoe-black",
+      "modelFamilyId": "hereu--handle-hereu-esportiu-woven-lace-up-sporty-shoe-other-footwear-braided-laceup-esportiu",
       "brand": "HEREU",
       "sourceCategories": [
+        "Women Sport Shoes",
         "Women's Shoes",
+        "Women's Slim Sport Shoes",
         "Women's Soft Shoes",
         "Womens Shoes",
         "Womens Soft Shoes"
@@ -5012,7 +4492,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-shiny-deconstructed-lace-up-shoe-beige",
+      "modelFamilyId": "hereu--handle-hereu-plegada-shiny-deconstructed-lace-up-shoe-other-footwear-laceup-plegada-shiny",
       "brand": "HEREU",
       "sourceCategories": [
         "Women's New In Shoes",
@@ -5028,7 +4508,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-shiny-deconstructed-lace-up-shoe-black",
+      "modelFamilyId": "hereu--handle-hereu-tilla-suede-deconstructed-suede-babouche-other-footwear-base-tilla",
       "brand": "HEREU",
       "sourceCategories": [
         "Women's Shoes",
@@ -5040,7 +4520,19 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-shiny-deconstructed-lace-up-shoe-cream",
+      "modelFamilyId": "hereu--handle-hereu-tilla-supple-shiny-deconstructed-babouche-other-footwear-base-tilla-supple-shiny",
+      "brand": "HEREU",
+      "sourceCategories": [
+        "Women's Shoes",
+        "Women's Soft Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hereu--id-shopify-hereu-plegada-crinkled-glossy-deconstructed-lace-up-shoe-black",
       "brand": "HEREU",
       "sourceCategories": [
         "Women's Shoes",
@@ -5075,19 +4567,11 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--name-birla-chukka-for-all-other-footwear-unknown-unknown-unknown-braided",
+      "modelFamilyId": "hereu--name-hereu-birla-chukka-other-footwear-braided",
       "brand": "HEREU",
       "sourceCategories": [
         "Slim Sport Shoes",
-        "Sport Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-birla-chukka-other-footwear-unknown-unknown-unknown-braided",
-      "brand": "HEREU",
-      "sourceCategories": [
+        "Sport Shoes",
         "Women's New In Shoes",
         "Women's Pre-Fall 2026",
         "Women's Shoes",
@@ -5098,19 +4582,11 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--name-birla-for-all-other-footwear-unknown-unknown-unknown-braided",
+      "modelFamilyId": "hereu--name-hereu-birla-other-footwear-braided",
       "brand": "HEREU",
       "sourceCategories": [
         "Slim Sport Shoes",
-        "Sport Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-birla-other-footwear-unknown-unknown-unknown-braided",
-      "brand": "HEREU",
-      "sourceCategories": [
+        "Sport Shoes",
         "Women Sport Shoes",
         "Women's New In Shoes",
         "Women's Pre-Fall 2026",
@@ -5126,7 +4602,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--name-esportiu-for-all-lace-up-sporty-shoe-other-footwear-unknown-unknown-unknown-lace-up-woven",
+      "modelFamilyId": "hereu--name-hereu-esportiu-other-footwear-braided-laceup",
       "brand": "HEREU",
       "sourceCategories": [
         "New In Shoes For All",
@@ -5137,79 +4613,11 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "hereu--name-esportiu-lace-up-sporty-shoe-other-footwear-unknown-unknown-unknown-lace-up-woven",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women Sport Shoes",
-        "Women's Shoes",
-        "Women's Slim Sport Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-plegada-shiny-deconstructed-lace-up-shoe-other-footwear-unknown-unknown-unknown-lace-up-style-wfplsh",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-plegada-shiny-for-all-deconstructed-lace-up-shoe-other-footwear-unknown-unknown-unknown-lace-up-style-wfplsh",
+      "modelFamilyId": "hereu--name-hereu-plegada-shiny-other-footwear-laceup-style-wfplsh",
       "brand": "HEREU",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-tilla-other-footwear-unknown-unknown-unknown",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-tilla-supple-shiny-other-footwear-unknown-unknown-unknown",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "house-of-ballerinas--id-level-shoes-house-of-ballerinas-jeanne-ballerinas-black-tweed-women-ballerinas-cg0xnj-html",
-      "brand": "House Of Ballerinas",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "house-of-ballerinas--id-level-shoes-house-of-ballerinas-michelle-ballerinas-blue-suede-women-ballerinas-msta1i-html",
-      "brand": "House Of Ballerinas",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "hunter--id-free-people-112022090",
@@ -5374,20 +4782,12 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-love-ballerinas-cream-lace-women-ballerinas-ulksc2-html",
-      "brand": "Jimmy Choo",
+      "modelFamilyId": "jude--handle-jude-yaga-other-footwear-base-yaga-flat",
+      "brand": "JUDE",
       "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-scarlett-ballerinas-black-lace-women-ballerinas-qhsnjb-html",
-      "brand": "Jimmy Choo",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
+        "Flats",
+        "Flats For Women",
+        "YAGA FLATS"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5405,7 +4805,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "jude--name-dusty-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "jude--name-jude-dusty-flat-other-footwear-base",
       "brand": "JUDE",
       "sourceCategories": [
         "Dusty flat",
@@ -5416,7 +4816,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "jude--name-floor-slipper-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "jude--name-jude-floor-slipper-other-footwear-base",
       "brand": "JUDE",
       "sourceCategories": [
         "Flats",
@@ -5428,23 +4828,12 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "jude--name-path-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "jude--name-jude-path-flat-other-footwear-base",
       "brand": "JUDE",
       "sourceCategories": [
         "Flats",
         "Flats For Women",
         "PATH FLAT"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "jude--name-yaga-flat-other-footwear-flat-unknown-unknown",
-      "brand": "JUDE",
-      "sourceCategories": [
-        "Flats",
-        "Flats For Women",
-        "YAGA FLATS"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5468,15 +4857,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "keds--id-free-people-108578717",
-      "brand": "Keds",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "khaite--id-shopify-khaite-jane-flat-in-natural-python",
       "brand": "KHAITE",
       "sourceCategories": [
@@ -5484,6 +4864,17 @@
         "Jane Flat",
         "New Arrivals",
         "Private Client Preview",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "khaite--id-shopify-khaite-milly-flat-in-black-pebbled-leather",
+      "brand": "KHAITE",
+      "sourceCategories": [
+        "Flats",
+        "Milly Flat",
         "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -5503,7 +4894,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "khaite--name-milly-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "khaite--name-khaite-milly-flat-other-footwear-base",
       "brand": "KHAITE",
       "sourceCategories": [
         "Flats",
@@ -5559,16 +4950,85 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--id-level-shoes-le-monde-beryl-luna-slippers-beige-leather-women-ballerinas-jx2ckh-html",
-      "brand": "Le Monde Beryl",
+      "modelFamilyId": "le-monde-beryl--handle-le-monde-beryl-apres-ski-shearling-other-footwear-shearling-apres-ski-shearling",
+      "brand": "LE MONDE BERYL",
       "sourceCategories": [
-        "Flat Shoes"
+        "All Footwear",
+        "APRES SKI SHEARLING FLATS - Variants",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--id-level-shoes-le-monde-beryl-regency-knotted-ballerinas-black-leather-women-ballerinas-dsmgm9-html",
+      "modelFamilyId": "le-monde-beryl--handle-le-monde-beryl-luna-slipper-other-footwear-base-luna-slipper",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Aw26 New Season Collection",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "LUNA SLIPPER LEATHER - Variants",
+        "LUNA SLIPPER SUEDE - Variants",
+        "Luna Slippers",
+        "New Season Pf26"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--handle-le-monde-beryl-stella-slipper-other-footwear-base-stella-slipper",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "New Arrivals",
+        "New Season Pf26",
+        "New Season Pre Spring Spring 26 Test",
+        "Newarrivals",
+        "Pre Spring 26 TEST",
+        "STELLA SLIPPER - collection",
+        "STELLA SLIPPER Leather - Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--handle-le-monde-beryl-stella-slipper-other-footwear-base-stella-slipper-taupe",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "STELLA SLIPPER - collection",
+        "STELLA SLIPPER Leather - Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--handle-le-monde-beryl-woven-regency-slipper-other-footwear-braided-regency-slipper",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--id-level-shoes-le-monde-beryl-luna-slippers-beige-leather-women-ballerinas-jx2ckh-html",
       "brand": "Le Monde Beryl",
       "sourceCategories": [
         "Flat Shoes"
@@ -5666,23 +5126,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-ballet-claudia-slipper-anthracite-suede",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-ballet-claudia-slipper-siena-suede",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "New Season Pre Spring Spring 26 Test",
-        "Pre Spring 26 TEST"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-classic-claudia-fango-leather-snake-effect",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
@@ -5702,13 +5145,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-classic-claudia-leopard-calf-hair",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-classic-claudia-roccia-leather-snake-effect",
@@ -5741,25 +5177,6 @@
         "Footwear",
         "Footwear All",
         "Footwear All new"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-claudia-slipper-black-pony-hair",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "All Footwear",
-        "CLASSIC CLAUDIA - Variants",
-        "Claudia Slipper",
-        "Claudia Slippers - collection",
-        "Claudia Slippers Signatures",
-        "Flats",
-        "Flats 1",
-        "Footwear",
-        "Footwear All",
-        "Footwear All new",
-        "New Season Texture"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5910,11 +5327,60 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-black-mesh-crystals",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-burgundy-knotted-leather",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-fawn-leather",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "MICA FLAT - Variants",
+        "Mica Flat"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-tomato-satin",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "New Season Pre Spring Spring 26 Test",
+        "Pre Spring 26 TEST"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-new-venetian-slipper-black-mesh",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Flats 1",
+        "Footwear",
+        "Footwear All",
+        "Footwear All new",
+        "New Arrivals",
+        "VENETIAN SLIPPER - Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-new-venetian-slipper-grigio-mesh",
@@ -5985,6 +5451,13 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-regency-slipper-silver-woven-leather",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-stella-slipper-fawn-leather",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
@@ -5999,6 +5472,13 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-stella-slipper-ivory-satin",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-stella-slipper-leopard-print-bevilacqua-velvet",
@@ -6057,22 +5537,7 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-apres-ski-shearling-other-footwear-unknown-unknown-unknown",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
-        "Flats",
-        "Flats 1",
-        "Footwear",
-        "Footwear All",
-        "Footwear All new"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-classic-claudia-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-classic-claudia-other-footwear-base",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
@@ -6084,13 +5549,14 @@
         "Flats 1",
         "Footwear",
         "Footwear All",
-        "Footwear All new"
+        "Footwear All new",
+        "New Season Texture"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-kids-venetian-slipper-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-kids-venetian-slipper-other-footwear-base",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "Footwear All",
@@ -6101,35 +5567,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-luna-slipper-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-luna-slipper-other-footwear-mesh",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "Aw26 New Season Collection",
         "Flats",
         "Flats 1",
         "Footwear",
         "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER LEATHER - Variants",
         "LUNA SLIPPER MESH - Variants",
-        "LUNA SLIPPER SUEDE - Variants",
         "Luna Slippers",
-        "Luna Slippers Variants",
-        "New Season Pf26"
+        "Luna Slippers Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-mica-flat-other-footwear-flat-unknown-unknown-style-mef",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-mica-flat-other-footwear-flat-unknown-unknown-style-mfe",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-mica-flat-other-footwear-base-style-mfe",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
@@ -6141,15 +5596,13 @@
         "MICA FLAT - Variants",
         "Mica Flat",
         "New Season Pf26",
-        "New Season Pre Spring Spring 26 Test",
-        "Newarrivals",
-        "Pre Spring 26 TEST"
+        "Newarrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-olympia-slipper-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-olympia-slipper-other-footwear-satin",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
@@ -6167,67 +5620,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--name-regency-slipper-other-footwear-unknown-unknown-unknown-woven",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-stella-slipper-other-footwear-unknown-unknown-unknown",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "All Footwear",
-        "Flats",
-        "Flats 1",
-        "Footwear",
-        "Footwear All",
-        "Footwear All new",
-        "New Arrivals",
-        "New Season Pf26",
-        "New Season Pre Spring Spring 26 Test",
-        "Newarrivals",
-        "Pre Spring 26 TEST",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-stella-slipper-taupe-other-footwear-unknown-unknown-unknown",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "All Footwear",
-        "Flats",
-        "Flats 1",
-        "Footwear",
-        "Footwear All",
-        "Footwear All new",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-venetian-slipper-other-footwear-unknown-unknown-unknown-style-nvs",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "All Footwear",
-        "Flats",
-        "Flats 1",
-        "Footwear",
-        "Footwear All",
-        "Footwear All new",
-        "New Arrivals",
-        "VENETIAN SLIPPER - Variants"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--name-venetian-slipper-other-footwear-unknown-unknown-unknown-style-svs",
+      "modelFamilyId": "le-monde-beryl--name-le-monde-beryl-venetian-slipper-other-footwear-base",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
@@ -6296,7 +5689,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-outdoor-slippers-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-outdoor-slippers-other-footwear-base",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
@@ -6306,7 +5699,7 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-piped-crepe-slippers-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-piped-crepe-slippers-other-footwear-base",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
@@ -6316,7 +5709,7 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-runner-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-runner-other-footwear-base",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
@@ -6326,7 +5719,7 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-runners-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-runners-other-footwear-lite",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
@@ -6336,7 +5729,7 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-souris-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-souris-flat-other-footwear-base",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
@@ -6346,11 +5739,20 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "lemaire--name-vibram-glove-slip-on-other-footwear-other-unknown-unknown",
+      "modelFamilyId": "lemaire--name-lemaire-vibram-glove-slip-on-other-footwear-base",
       "brand": "LEMAIRE",
       "sourceCategories": [
         "Shoes",
         "Women Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--handle-luis-onofre-davos-other-footwear-base-davos",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
@@ -6476,7 +5878,7 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-baltasar-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-baltasar-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [
         "All Shoes"
@@ -6485,21 +5887,28 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-corretto-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-corretto-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-cozy-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-cozy-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-davos-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-lungo-other-footwear-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-lusco-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [
         "All Shoes"
@@ -6508,37 +5917,21 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-lungo-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-nitro-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-lusco-other-footwear-unknown-unknown-unknown",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-nitro-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-pocillo-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "luis-onofre--name-pocillo-other-footwear-unknown-unknown-unknown",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-toulon-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "luis-onofre--name-luis-onofre-toulon-other-footwear-base",
       "brand": "LUIS ONOFRE",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
@@ -6585,24 +5978,6 @@
       "brand": "Magnanni",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "maison-margiela--id-level-shoes-maison-margiela-tabi-ballerinas-brown-leather-women-ballerinas-i8st8f-html",
-      "brand": "Maison Margiela",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "maison-margiela--id-level-shoes-maison-margiela-tabi-new-ballerinas-black-leather-women-ballerinas-y6n0ae-html",
-      "brand": "Maison Margiela",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -6739,24 +6114,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "melissa--id-level-shoes-melissa-soft-ballerina-flats-black-rubber-women-ballerinas-weertf-html",
-      "brand": "Melissa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "melissa--id-level-shoes-melissa-sweet-love-chrome-ballerinas-white-rubber-women-ballerinas-k8k37u-html",
-      "brand": "Melissa",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "merrell--id-free-people-108010828",
       "brand": "Merrell",
       "sourceCategories": [
@@ -6793,15 +6150,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "miu-miu--id-level-shoes-miu-miu-embroidered-mesh-ballerinas-white-mesh-women-ballerinas-bpkz0m-html",
-      "brand": "Miu Miu",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "miu-miu--id-level-shoes-miu-miu-mesh-fabric-slippers-brown-mesh-women-slippers-usiapm-html",
       "brand": "Miu Miu",
       "sourceCategories": [
@@ -6811,28 +6159,14 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "miu-miu--id-level-shoes-miu-miu-satin-ballerinas-black-satin-women-ballerinas-9nb9sk-html",
-      "brand": "Miu Miu",
+      "modelFamilyId": "neous--handle-neous-beid-other-footwear-base-beid",
+      "brand": "NEOUS",
       "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "monfaradi-mare--id-level-shoes-monfaradi-mare-beach-ballerinas-neutral-rubber-women-ballerinas-lnlcce-html",
-      "brand": "MONFARADI MARE",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "monfaradi-mare--id-level-shoes-monfaradi-mare-beach-ballerinas-neutral-rubber-women-flats-mjiq7f-html",
-      "brand": "MONFARADI MARE",
-      "sourceCategories": [
-        "Flat Shoes"
+        "AUTUMN WINTER 26 SHOES",
+        "Flats",
+        "SHOES",
+        "Shoes New In",
+        "Shop New In"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -6847,19 +6181,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "neous--name-beid-other-footwear-unknown-unknown-unknown",
-      "brand": "NEOUS",
-      "sourceCategories": [
-        "AUTUMN WINTER 26 SHOES",
-        "Flats",
-        "SHOES",
-        "Shoes New In",
-        "Shop New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "nike--id-farfetch-37631509",
       "brand": "Nike",
       "sourceCategories": [
@@ -6867,6 +6188,116 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-anine-other-footwear-base-anine",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-brooke-other-footwear-base-brooke",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-eline-long-other-footwear-base-eline",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-elva-other-footwear-base-paelva",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-finka-long-other-footwear-base-pafinka",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-friia-other-footwear-base-friia",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-margot-other-footwear-base-pamargot",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-nikki-other-footwear-base-panikki",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-pamargot-buffalo-other-footwear-base-pamargot-buffalo",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-pawinnie-long-other-footwear-base-pawinnie",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Espadrilles",
+        "Long boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--handle-pavement-vibe-2-other-footwear-base-pavibe-2",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "pavement--id-shopify-pavement-almira-boots-brown-suede",
@@ -7049,6 +6480,16 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
+      "modelFamilyId": "pavement--id-shopify-pavement-vibe-2-boots-mushroom",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "pavement--id-shopify-pavement-wilma-boots-black",
       "brand": "PAVEMENT",
       "sourceCategories": [
@@ -7069,7 +6510,7 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--name-anine-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "pavement--name-pavement-anneli-other-footwear-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
         "Boots",
@@ -7079,17 +6520,7 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--name-anneli-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-annika-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "pavement--name-pavement-annika-other-footwear-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
         "Espadrilles",
@@ -7099,7 +6530,7 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--name-brooke-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "pavement--name-pavement-pajenny-other-footwear-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
         "Boots",
@@ -7109,7 +6540,17 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--name-eline-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "pavement--name-pavement-patanja-other-footwear-base",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-pavement-tamera-long-other-footwear-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
         "Espadrilles",
@@ -7119,107 +6560,7 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--name-friia-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-paelva-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-pafinka-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Espadrilles",
-        "Long boots"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-pajenny-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-pamargot-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-panikki-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-patanja-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-pavibe-2-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-pawinnie-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Espadrilles",
-        "Long boots"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-tamera-long-other-footwear-unknown-unknown-unknown",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Espadrilles",
-        "Long boots"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
-      "modelFamilyId": "pavement--name-zevil-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "pavement--name-pavement-zevil-other-footwear-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
         "Boots",
@@ -7269,69 +6610,6 @@
       "brand": "Prada",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-crochet-ballerinas-beige-raffia-women-flat-shoes-tuzxiv-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-crochet-ballerinas-black-fabric-women-ballerinas-vbivui-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-fabric-ballerinas-black-fabric-women-ballerinas-yonhdx-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-low-heel-mesh-fabric-ballerinas-beige-mesh-women-ballerinas-xjuxka-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-low-heel-mesh-fabric-ballerinas-black-mesh-women-ballerinas-w9u7nl-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-nappa-leather-ballerinas-black-nappa-leather-women-ballerinas-la0j4r-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "prada--id-level-shoes-prada-nappa-leather-ballerinas-burgundy-nappa-leather-women-ballerinas-g6lw6z-html",
-      "brand": "Prada",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -7400,16 +6678,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "prada--id-level-shoes-prada-suede-ballerinas-brown-suede-women-ballerinas-xbwn9p-html",
+      "modelFamilyId": "prada--id-level-shoes-prada-suede-mules-beige-suede-women-flats-yk55po-html",
       "brand": "Prada",
       "sourceCategories": [
-        "Flat Shoes"
+        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "prada--id-level-shoes-prada-suede-mules-beige-suede-women-flats-yk55po-html",
+      "modelFamilyId": "prada--id-level-shoes-prada-suede-mules-beige-suede-women-slippers-0i7znf-html",
       "brand": "Prada",
       "sourceCategories": [
         "Slippers"
@@ -7454,37 +6732,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "proenza-schouler--id-level-shoes-proenza-schouler-slant-crochet-ballerinas-brown-knit-women-ballerinas-1m1hq8-html",
-      "brand": "Proenza Schouler",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "proenza-schouler--id-level-shoes-proenza-schouler-slant-crochet-ballerinas-orange-knit-women-ballerinas-zvuaf7-html",
-      "brand": "Proenza Schouler",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "proenza-schouler--id-shopify-proenza-schouler-slant-crochet-flat-flame",
-      "brand": "PROENZA SCHOULER",
-      "sourceCategories": [
-        "Flats",
-        "Handbags and Shoes",
-        "Shoes",
-        "shoes_taxes-exclusion"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "proenza-schouler--id-shopify-proenza-schouler-slant-crochet-flat-mushroom",
+      "modelFamilyId": "proenza-schouler--name-proenza-schouler-slant-crochet-flat-other-footwear-base",
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
@@ -7503,25 +6751,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "roger-vivier--id-level-shoes-roger-vivier-belle-vivier-slingback-ballerinas-cream-calf-leather-women-ballerinas-wwqx81-html",
-      "brand": "Roger Vivier",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "roger-vivier--id-level-shoes-roger-vivier-rose-vivier-ballerinas-pink-satin-women-ballerinas-dr9ekv-html",
-      "brand": "Roger Vivier",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "saint-laurent--id-level-shoes-saint-laurent-alain-slippers-black-leather-women-slippers-rrp2pz-html",
@@ -7560,42 +6789,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-alie-ballerinas-cream-leather-women-ballerinas-i9eeel-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-allie-ballerinas-brown-leather-women-ballerinas-pveydt-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-allie-ballerinas-brown-suede-women-ballerinas-5ae2d8-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-allie-ballerinas-brown-suede-women-ballerinas-paefsr-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-astrid-slippers-beige-suede-women-slippers-ksxeme-html",
       "brand": "Sam Edelman",
       "sourceCategories": [
@@ -7609,62 +6802,6 @@
       "brand": "Sam Edelman",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-ballerinas-brown-knit-women-ballerinas-ljd9i8-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-jelly-mary-jane-shoes-black-rubber-women-ballerinas-jbyofy-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-mary-jane-flats-brown-leather-women-ballerinas-m6m4si-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-mary-jane-flats-navy-leather-women-ballerinas-uf0l62-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-michaela-mary-jane-shoes-brown-suede-women-ballerinas-vmlw8p-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sam-edelman--id-level-shoes-sam-edelman-ruthie-ballerinas-brown-leather-women-ballerinas-j8vcwu-html",
-      "brand": "Sam Edelman",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -7733,71 +6870,10 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "schutz--id-level-shoes-schutz-bow-ballerinas-burgundy-suede-women-ballerinas-e3jvqt-html",
-      "brand": "Schutz",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "schutz--id-level-shoes-schutz-bow-ballerinas-khaki-suede-women-ballerinas-dhxumh-html",
-      "brand": "Schutz",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "schutz--id-level-shoes-schutz-leather-ballerinas-cream-leather-women-ballerinas-kdmy9t-html",
-      "brand": "Schutz",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "schutz--id-level-shoes-schutz-split-toe-ballerinas-black-other-women-ballerinas-o8r5nc-html",
-      "brand": "Schutz",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "schutz--id-level-shoes-schutz-strappy-ballerinas-brown-leather-women-ballerinas-9amdoh-html",
-      "brand": "Schutz",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "schutz--id-level-shoes-schutz-suede-slippers-beige-suede-women-slippers-imfxhf-html",
       "brand": "Schutz",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "schutz--id-shopify-schutz-routeins",
-      "brand": "SCHUTZ",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "senso--id-level-shoes-senso-caela-iii-ballerinas-black-suede-women-ballerinas-byhyxh-html",
-      "brand": "Senso",
-      "sourceCategories": [
-        "Flat Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -7812,6 +6888,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "simone-rocha--handle-simone-rocha-lmk15m-0660-other-footwear-laceup-merino-lace-up-hem-jumper",
+      "brand": "SIMONE ROCHA",
+      "sourceCategories": [
+        "Flats"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-5498p73c-m-1364-black",
       "brand": "SIMONE ROCHA",
       "sourceCategories": [
@@ -7821,49 +6906,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1b-0755-black-black-pearl-clear",
-      "brand": "SIMONE ROCHA",
+      "modelFamilyId": "sophia-webster--handle-sophia-webster-grace-platform-other-footwear-platform-grace-platform",
+      "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
-        "Flats",
-        "Shoes",
-        "Women's Shoes"
+        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1tb-0755-ballet-nude-pearl-clear",
-      "brand": "SIMONE ROCHA",
-      "sourceCategories": [
-        "Flats",
-        "Shoes",
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "simone-rocha--id-shopify-simone-rocha-bbt1tb-0755-black-pearl-clear",
-      "brand": "SIMONE ROCHA",
-      "sourceCategories": [
-        "Flats",
-        "Shoes",
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "simone-rocha--name-merino-lace-up-hem-jumper-other-footwear-unknown-unknown-unknown-lace-up",
-      "brand": "SIMONE ROCHA",
-      "sourceCategories": [
-        "Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-blair-flat-rose-garden-blue",
+      "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-butterfly-flat-silver",
       "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
         "Flats",
@@ -7895,16 +6947,29 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "sophia-webster--name-chiara-flat-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "sophia-webster--name-sophia-webster-blair-flat-other-footwear-base",
       "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
+        "Flats",
+        "Sale Flats",
         "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "sophia-webster--name-grace-platform-other-footwear-platform-unknown-unknown",
+      "modelFamilyId": "sophia-webster--name-sophia-webster-blair-slipper-other-footwear-base",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Flats",
+        "Sale Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--name-sophia-webster-chiara-flat-other-footwear-base",
       "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
         "Shoes"
@@ -7994,15 +7059,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "st-agni--id-level-shoes-st-agni-woven-ballerinas-white-calf-leather-women-ballerinas-ad4it0-html",
-      "brand": "St Agni",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "st-agni--id-shopify-st-agni-classic-slip-on-flat-black",
       "brand": "ST. AGNI",
       "sourceCategories": [
@@ -8024,7 +7080,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "st-agni--name-90s-square-toe-flat-other-footwear-flat-flat-square",
+      "modelFamilyId": "st-agni--name-st-agni-90s-square-toe-flat-other-footwear-base",
       "brand": "ST. AGNI",
       "sourceCategories": [
         "Flats",
@@ -8035,7 +7091,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "st-agni--name-pli-flat-other-footwear-flat-flat-square-buckle",
+      "modelFamilyId": "st-agni--name-st-agni-pli-flat-other-footwear-base",
       "brand": "ST. AGNI",
       "sourceCategories": [
         "Flats",
@@ -8068,7 +7124,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--name-birkenstock-loma-other-footwear-other-unknown-unknown",
+      "modelFamilyId": "staud--name-staud-birkenstock-loma-other-footwear-base",
       "brand": "STAUD",
       "sourceCategories": [
         "Flats",
@@ -8079,17 +7135,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f25s7001-other-footwear",
-      "brand": "STAUD",
-      "sourceCategories": [
-        "SALE | SHOES",
-        "STAUD Sport Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "staud--style-f26f3013-other-footwear",
+      "modelFamilyId": "staud--style-staud-f26f3013-other-footwear-base",
       "brand": "STAUD",
       "sourceCategories": [
         "Flats",
@@ -8100,7 +7146,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f26f3042-other-footwear",
+      "modelFamilyId": "staud--style-staud-f26f3042-other-footwear-base",
       "brand": "STAUD",
       "sourceCategories": [
         "Flats",
@@ -8111,7 +7157,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f26p3036-other-footwear",
+      "modelFamilyId": "staud--style-staud-f26p3036-other-footwear-base",
       "brand": "STAUD",
       "sourceCategories": [
         "Flats",
@@ -8123,7 +7169,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f26r4029-other-footwear",
+      "modelFamilyId": "staud--style-staud-f26s3029-other-footwear-laceup",
       "brand": "STAUD",
       "sourceCategories": [
         "SALE | SHOES"
@@ -8132,7 +7178,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f26s3029-other-footwear",
+      "modelFamilyId": "staud--style-staud-f26s4032-other-footwear-base",
       "brand": "STAUD",
       "sourceCategories": [
         "SALE | SHOES"
@@ -8141,25 +7187,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-f26s4032-other-footwear",
-      "brand": "STAUD",
-      "sourceCategories": [
-        "SALE | SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "steve-madden--id-shopify-steve-madden-bp309369-chicory-coffee",
-      "brand": "STEVE MADDEN",
-      "sourceCategories": [
-        "Pumpkin Spice Latte Girl"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "steve-madden--name-madden-girl-egret-other-footwear-unknown-unknown-unknown",
+      "modelFamilyId": "steve-madden--handle-steve-madden-egret-other-footwear-base-madden-girl-egret",
       "brand": "STEVE MADDEN",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
@@ -8176,7 +7204,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-attico--name-mochi-and-flatform-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "the-attico--name-the-attico-mochi-and-flatform-other-footwear-base",
       "brand": "THE ATTICO",
       "sourceCategories": [
         "Flats",
@@ -8186,7 +7214,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-attico--name-salinas-flatform-other-footwear-flat-unknown-unknown",
+      "modelFamilyId": "the-attico--name-the-attico-salinas-flatform-other-footwear-base",
       "brand": "THE ATTICO",
       "sourceCategories": [
         "Flats",
@@ -8200,52 +7228,6 @@
       "brand": "The Lline",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-beige-leather-women-ballerinas-v5ndiq-html",
-      "brand": "The Lline",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-black-leather-women-ballerinas-bvhfny-html",
-      "brand": "The Lline",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-gold-metallic-leather-women-ballerinas-d7gj8g-html",
-      "brand": "The Lline",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-silver-metallic-leather-women-ballerinas-gpmd5u-html",
-      "brand": "The Lline",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-lline--id-level-shoes-the-lline-pernille-ballerinas-white-satin-women-ballerinas-zr04gz-html",
-      "brand": "The Lline",
-      "sourceCategories": [
-        "Flat Shoes",
-        "Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -8285,35 +7267,14 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-row--id-shopify-the-row-ponti-slipper-black",
+      "modelFamilyId": "the-row--name-the-row-hudson-two-slip-on-other-footwear-base",
       "brand": "THE ROW",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-row--id-shopify-the-row-ponti-slipper-midnight-1",
-      "brand": "THE ROW",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-row--id-shopify-the-row-ponti-slipper-moss-1",
-      "brand": "THE ROW",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-row--name-hudson-two-slip-on-other-footwear-unknown-unknown-unknown",
-      "brand": "THE ROW",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "the-row--name-slip-on-shoe-other-footwear-unknown-unknown-unknown-woven",
+      "modelFamilyId": "the-row--name-the-row-slip-on-shoe-other-footwear-braided",
       "brand": "THE ROW",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
@@ -8356,24 +7317,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tony-bianco--id-level-shoes-tony-bianco-caspian-ballerinas-black-leather-women-ballerinas-azptid-html",
-      "brand": "Tony Bianco",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "tony-bianco--id-level-shoes-tony-bianco-comma-ballerinas-black-leather-women-ballerinas-paa9ld-html",
-      "brand": "Tony Bianco",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "tony-bianco--id-level-shoes-tony-bianco-glacier-slippers-brown-suede-women-53s92y-html",
       "brand": "Tony Bianco",
       "sourceCategories": [
@@ -8397,15 +7340,6 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "tory-burch--id-level-shoes-tory-burch-cap-toe-ballerinas-black-raffia-women-ballerinas-nx3bwm-html",
-      "brand": "Tory Burch",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "tory-burch--id-level-shoes-tory-burch-leelee-slippers-black-leather-women-slippers-89xjsl-html",
       "brand": "Tory Burch",
       "sourceCategories": [
@@ -8424,10 +7358,13 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "tory-burch--id-level-shoes-tory-burch-reva-punk-travel-ballerinas-black-leather-women-ballerinas-sedlkr-html",
-      "brand": "Tory Burch",
+      "modelFamilyId": "toteme--handle-toteme-velvet-venetian-slippers-other-footwear-base-venetian-slippers",
+      "brand": "TOTEME",
       "sourceCategories": [
-        "Flat Shoes"
+        "Flats",
+        "Shoes",
+        "Shoes & Accessories",
+        "Shoes Flats"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -8458,18 +7395,6 @@
     },
     {
       "modelFamilyId": "toteme--id-shopify-toteme-wool-cashmere-lounge-slippers-black",
-      "brand": "TOTEME",
-      "sourceCategories": [
-        "Flats",
-        "Shoes",
-        "Shoes & Accessories",
-        "Shoes Flats"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "toteme--name-venetian-slippers-other-footwear-unknown-unknown-unknown",
       "brand": "TOTEME",
       "sourceCategories": [
         "Flats",
@@ -8542,15 +7467,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "valentino-garavani--id-level-shoes-valentino-garavani-valet-du-roi-ballerinas-cream-leather-women-ballerinas-konvaj-html",
-      "brand": "Valentino Garavani",
-      "sourceCategories": [
-        "Flat Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "vans--id-free-people-100763903",
@@ -8778,6 +7694,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--id-zara-13514810",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "zara--id-zara-13539810",
       "brand": "ZARA",
       "sourceCategories": [
@@ -8808,7 +7733,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 289,
+      "count": 290,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -8861,41 +7786,16 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flat Shoes",
-      "count": 88,
+      "sourceCategory": "VIEW ALL SHOES",
+      "count": 84,
       "brands": [
-        "Alaïa",
-        "Bottega Veneta",
-        "Burberry",
-        "CHRISTEN",
-        "Ferragamo",
-        "Flabelus",
-        "Givenchy",
-        "Gucci",
-        "House Of Ballerinas",
-        "Jennifer Chamandi",
-        "Jimmy Choo",
-        "Le Monde Beryl",
-        "MONFARADI MARE",
-        "Maison Margiela",
-        "Melissa",
-        "Miu Miu",
-        "Prada",
-        "Proenza Schouler",
-        "Roger Vivier",
-        "Sam Edelman",
-        "Schutz",
-        "Senso",
-        "The Lline",
-        "Tony Bianco",
-        "Tory Burch",
-        "Valentino Garavani"
+        "AMINA MUADDI"
       ],
       "proposedMapping": null
     },
     {
       "sourceCategory": "Flats",
-      "count": 87,
+      "count": 75,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -8915,32 +7815,8 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "VIEW ALL SHOES",
-      "count": 61,
-      "brands": [
-        "AMINA MUADDI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Filler Suggested Product Logic: Flats",
-      "count": 56,
-      "brands": [
-        "AEYDE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Filler Suggested Product Logic: Shoes",
-      "count": 56,
-      "brands": [
-        "AEYDE"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "SLIPPERS",
-      "count": 40,
+      "count": 52,
       "brands": [
         "AMINA MUADDI"
       ],
@@ -8948,31 +7824,15 @@
     },
     {
       "sourceCategory": "Slipper",
-      "count": 40,
+      "count": 52,
       "brands": [
         "AMINA MUADDI"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Footwear All",
-      "count": 29,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Footwear All new",
-      "count": 29,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "MOCASSINS, SAPATOS E STILETTOS",
-      "count": 28,
+      "count": 33,
       "brands": [
         "EXÉ"
       ],
@@ -8980,15 +7840,31 @@
     },
     {
       "sourceCategory": "Sapatos",
-      "count": 28,
+      "count": 33,
       "brands": [
         "EXÉ"
       ],
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Footwear All",
+      "count": 30,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Footwear All new",
+      "count": 30,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Flats 1",
-      "count": 28,
+      "count": 29,
       "brands": [
         "LE MONDE BERYL"
       ],
@@ -9012,7 +7888,7 @@
     },
     {
       "sourceCategory": "New Arrivals",
-      "count": 17,
+      "count": 18,
       "brands": [
         "A.EMERY",
         "KHAITE",
@@ -9022,10 +7898,10 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "New In",
+      "sourceCategory": "Toutes les Chaussures",
       "count": 13,
       "brands": [
-        "AEYDE"
+        "CAREL"
       ],
       "proposedMapping": null
     },
@@ -9038,22 +7914,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Toutes les Chaussures",
-      "count": 11,
-      "brands": [
-        "CAREL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women's Soft Shoes",
-      "count": 11,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Newarrivals",
       "count": 11,
       "brands": [
@@ -9062,26 +7922,34 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Womens Soft Shoes",
+      "sourceCategory": "Filler Suggested Product Logic: Flats",
       "count": 10,
       "brands": [
+        "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Filler Suggested Product Logic: Shoes",
+      "count": 10,
+      "brands": [
+        "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Leather Flats",
+      "count": 8,
+      "brands": [
+        "A.EMERY"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Women's Soft Shoes",
+      "count": 8,
+      "brands": [
         "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "New Season Pre Spring Spring 26 Test",
-      "count": 8,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Pre Spring 26 TEST",
-      "count": 8,
-      "brands": [
-        "LE MONDE BERYL"
       ],
       "proposedMapping": null
     },
@@ -9095,10 +7963,34 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Leather Flats",
-      "count": 6,
+      "sourceCategory": "Womens Soft Shoes",
+      "count": 7,
       "brands": [
-        "A.EMERY"
+        "HEREU"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Luna Slippers",
+      "count": 7,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "New Season Pre Spring Spring 26 Test",
+      "count": 7,
+      "brands": [
+        "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Pre Spring 26 TEST",
+      "count": 7,
+      "brands": [
+        "LE MONDE BERYL"
       ],
       "proposedMapping": null
     },
@@ -9127,10 +8019,10 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Luna Slippers",
-      "count": 6,
+      "sourceCategory": "FLAT SHOES",
+      "count": 5,
       "brands": [
-        "LE MONDE BERYL"
+        "GIA BORGHINI"
       ],
       "proposedMapping": null
     },
@@ -9159,18 +8051,26 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "SALE | SHOES",
-      "count": 5,
+      "sourceCategory": "New In",
+      "count": 4,
       "brands": [
-        "STAUD"
+        "AEYDE"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "FLAT SHOES",
+      "sourceCategory": "Platform Shoes",
       "count": 4,
       "brands": [
-        "GIA BORGHINI"
+        "AMINA MUADDI"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "PLATFORMS",
+      "count": 4,
+      "brands": [
+        "AMINA MUADDI"
       ],
       "proposedMapping": null
     },
@@ -9208,17 +8108,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11649,
-    "babet": 886,
-    "loafer": 594,
-    "topuklu": 1705,
-    "sandal": 3598,
-    "mule": 833,
-    "bot-cizme": 1881,
-    "sneaker": 1053,
-    "espadril": 121,
-    "oxford-derby": 27,
-    "clog": 77,
-    "diger": 874
+    "tumu": 11539,
+    "babet": 1017,
+    "loafer": 536,
+    "topuklu": 1893,
+    "sandal": 3306,
+    "mule": 870,
+    "bot-cizme": 1883,
+    "sneaker": 1071,
+    "espadril": 105,
+    "oxford-derby": 11,
+    "clog": 87,
+    "diger": 760
   }
 }

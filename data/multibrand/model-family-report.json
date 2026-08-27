@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 16839,
-  "modelFamilyCount": 11402,
-  "totalVariants": 16839,
-  "multiVariantFamilyCount": 4082,
-  "reductionPercent": 32.3,
-  "collapsedVariantProducts": 5437,
+  "rawProductCount": 17057,
+  "modelFamilyCount": 11539,
+  "totalVariants": 17057,
+  "multiVariantFamilyCount": 4135,
+  "reductionPercent": 32.4,
+  "collapsedVariantProducts": 5518,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11357,
+    "familiesWithMultipleRepresentativeImages": 11491,
     "averageRepresentativeImageCount": 6.3,
     "maxRepresentativeImageCount": 80
   },
@@ -15,7 +15,7 @@
       "modelFamilyId": "larroude--style-larroude-l422-vero-ballerina-base",
       "brand": "LARROUDE",
       "canonicalName": "Verona Ballet Flat",
-      "variantCount": 33
+      "variantCount": 34
     },
     {
       "modelFamilyId": "larroude--style-larroude-l415-stel-sneaker-base",
@@ -36,6 +36,12 @@
       "variantCount": 20
     },
     {
+      "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
+      "brand": "LARROUDE",
+      "canonicalName": "Cyprus Boat Shoe",
+      "variantCount": 18
+    },
+    {
       "modelFamilyId": "veja--id-free-people-57113664",
       "brand": "Veja",
       "canonicalName": "Veja Campo Sneaker",
@@ -51,12 +57,6 @@
       "modelFamilyId": "coolway--id-free-people-95601712",
       "brand": "Coolway",
       "canonicalName": "Coolway Goal Sneaker",
-      "variantCount": 17
-    },
-    {
-      "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
-      "brand": "LARROUDE",
-      "canonicalName": "Cyprus Boat Shoe",
       "variantCount": 17
     },
     {
@@ -4785,6 +4785,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "flattered--id-shopify-flattered-amelia-suede-black",
+      "brand": "FLATTERED",
+      "canonicalName": "Amelia",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-amenity",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Amenity",
@@ -5800,6 +5807,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15238810",
+      "brand": "ZARA",
+      "canonicalName": "Elastic Sporty Ballet Flat",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-261-011809-3103",
       "brand": "DRIES VAN NOTEN",
       "canonicalName": "Embroidered Ballerina",
@@ -6181,6 +6195,13 @@
       "modelFamilyId": "havaianas--id-free-people-103881868",
       "brand": "Havaianas",
       "canonicalName": "Havaianas Flash Fusion Sandal",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15853710",
+      "brand": "ZARA",
+      "canonicalName": "Havaianas X Zara Sandal",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -7585,6 +7606,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-13318810",
+      "brand": "ZARA",
+      "canonicalName": "Sandal",
+      "variantCount": 2,
+      "groupingReason": "singleton + singleton"
+    },
+    {
       "modelFamilyId": "fp-collection--id-free-people-102529427",
       "brand": "FP Collection",
       "canonicalName": "Santa FE Sandal",
@@ -8253,6 +8281,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-vision-os",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Vision-os",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-vivid-j",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Vivid-j",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
