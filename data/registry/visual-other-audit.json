@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-27T17:29:13.696Z",
-  "digerCount": 760,
-  "totalFamilies": 11539,
+  "generatedAt": "2026-08-28T18:22:20.936Z",
+  "digerCount": 756,
+  "totalFamilies": 11625,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 44,
-    "GENERIC_SOURCE_CATEGORY": 129,
+    "GENERIC_SOURCE_CATEGORY": 125,
     "CONFLICTING_SOURCE_CATEGORIES": 46,
     "UNMAPPED_SOURCE_CATEGORY": 541,
     "NO_SAFE_FALLBACK": 0
@@ -242,15 +242,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-merino-shearling-mules-beige-suede-women-mules-fbtgtv-html",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-suede-vienne-ballerinas-brown-suede-women-ballerinas-kokmme-html",
@@ -1366,15 +1357,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "bottega-veneta--id-level-shoes-bottega-veneta-parco-flat-mules-beige-calf-leather-women-mules-vc3cra-html",
-      "brand": "Bottega Veneta",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "bronx--id-free-people-108267113",
       "brand": "Bronx",
       "sourceCategories": [
@@ -1411,15 +1393,6 @@
         "Flats Shoes",
         "Shoes",
         "Shoes 1"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-gina-mocassins-cuir-marine-bleu-et-noir",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1489,6 +1462,15 @@
     },
     {
       "modelFamilyId": "carel--name-carel-azur-other-footwear-base",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--name-carel-gina-other-footwear-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1663,15 +1645,6 @@
     },
     {
       "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-dg-logo-flat-slides-beige-patent-leather-women-sandals-xuzrkm-html",
-      "brand": "Dolce&Gabbana",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-embroidered-brocade-mules-orange-jacquard-women-mules-bnbhjq-html",
       "brand": "Dolce&Gabbana",
       "sourceCategories": [
         "Shoes"
@@ -4230,6 +4203,8 @@
       "sourceCategories": [
         "All Shoes",
         "All Shoes For Tax",
+        "Full Priced Collection Copy",
+        "Full Priced Collection ex. Shoe Care, Socks",
         "tax:clothing"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -4735,15 +4710,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-dina-45-mules-burgundy-leather-women-mules-mveyb2-html",
-      "brand": "Jimmy Choo",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-eliot-slippers-animal-print-pony-hair-women-slippers-bww8ca-html",
@@ -6915,17 +6881,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-butterfly-flat-silver",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Flats",
-        "Sale Flats",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-my-book-oh-my-gosh-i-love-your-shoes",
       "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
@@ -6959,6 +6914,17 @@
     },
     {
       "modelFamilyId": "sophia-webster--name-sophia-webster-blair-slipper-other-footwear-base",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Flats",
+        "Sale Flats",
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sophia-webster--name-sophia-webster-butterfly-flat-other-footwear-base",
       "brand": "SOPHIA WEBSTER",
       "sourceCategories": [
         "Flats",
@@ -8108,17 +8074,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11539,
-    "babet": 1017,
-    "loafer": 536,
-    "topuklu": 1893,
-    "sandal": 3306,
-    "mule": 870,
-    "bot-cizme": 1883,
-    "sneaker": 1071,
+    "tumu": 11625,
+    "babet": 1024,
+    "loafer": 544,
+    "topuklu": 1909,
+    "sandal": 3326,
+    "mule": 888,
+    "bot-cizme": 1896,
+    "sneaker": 1079,
     "espadril": 105,
     "oxford-derby": 11,
     "clog": 87,
-    "diger": 760
+    "diger": 756
   }
 }

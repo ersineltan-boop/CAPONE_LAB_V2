@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 17057,
-  "modelFamilyCount": 11539,
-  "totalVariants": 17057,
-  "multiVariantFamilyCount": 4135,
-  "reductionPercent": 32.4,
-  "collapsedVariantProducts": 5518,
+  "rawProductCount": 17223,
+  "modelFamilyCount": 11625,
+  "totalVariants": 17223,
+  "multiVariantFamilyCount": 4170,
+  "reductionPercent": 32.5,
+  "collapsedVariantProducts": 5598,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11491,
-    "averageRepresentativeImageCount": 6.3,
+    "familiesWithMultipleRepresentativeImages": 11577,
+    "averageRepresentativeImageCount": 6.29,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -27,7 +27,7 @@
       "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-ce-soire-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Ce-soire",
-      "variantCount": 23
+      "variantCount": 24
     },
     {
       "modelFamilyId": "veja--id-free-people-88974951",
@@ -109,16 +109,16 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "converse--id-free-people-31771678",
-      "brand": "Converse",
-      "canonicalName": "Chuck Taylor All Star High-top Converse Sneaker",
-      "variantCount": 13,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Fathom",
+      "variantCount": 14,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "converse--id-free-people-31771678",
+      "brand": "Converse",
+      "canonicalName": "Chuck Taylor All Star High-top Converse Sneaker",
       "variantCount": 13,
       "groupingReason": "singleton"
     },
@@ -4113,6 +4113,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "schutz--id-shopify-schutz-product-it-test-pre-order-copy",
+      "brand": "SCHUTZ",
+      "canonicalName": "Product IT Test",
+      "variantCount": 3,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "puma--id-free-people-104801790",
       "brand": "Puma",
       "canonicalName": "Puma Mostro Flex Slip-on Sneaker",
@@ -7399,13 +7406,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-process",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Process",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "schutz--id-shopify-schutz-product-it-test-pre-order-copy",
-      "brand": "SCHUTZ",
-      "canonicalName": "Product IT Test",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
