@@ -72,6 +72,18 @@ describe("brand card collage", () => {
     expect(images[0]).toContain("pump_e.jpg");
   });
 
+  it("prefers a footwear packshot when a neutral low-score image competes", () => {
+    const images = selectBrandCardImages([
+      family("neutral", [
+        "https://static.zara.net/assets/public/aa/bb/hash/hash.jpg",
+      ]),
+      family("pack", [
+        "https://static.zara.net/assets/public/8845/b619/6442442eb52f/5741da5c60c1/11000810017-e1/11000810017-e1.jpg",
+      ]),
+    ]);
+    expect(images[0]).toContain("11000810017-e1");
+  });
+
   it("keeps multiple brand images inside one card and dedupes URLs", () => {
     const images = selectBrandCardImages([
       family("a", [

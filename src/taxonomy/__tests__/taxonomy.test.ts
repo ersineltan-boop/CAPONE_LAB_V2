@@ -123,6 +123,44 @@ describe("assignPrimaryCategory boundary cases", () => {
     ).toBe("PUMP");
   });
 
+  it("does not put an explicit sneaker title in ballet/babet", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Tricia Sneaker",
+        legacyCategory: "BALLERINA",
+      }).primaryCategory,
+    ).toBe("SNEAKER");
+  });
+
+  it("does not put an explicit pump title in sandal", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Slim 2 0 Fishbone Pump",
+        legacyCategory: "SANDAL",
+      }).primaryCategory,
+    ).toBe("PUMP");
+  });
+
+  it("prefers mule architecture over a marketing sandal title when the vamp is closed", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Aberdeen Mid Sandal",
+        legacyCategory: "MULE",
+        construction: ["BACKLESS", "CLOSED_TOE"],
+      }).primaryCategory,
+    ).toBe("MULE");
+  });
+
+  it("keeps open-strap sandals as sandals even if collector said mule", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Haze Thong Sandal",
+        legacyCategory: "MULE",
+        construction: ["BACKLESS", "OPEN_TOE"],
+      }).primaryCategory,
+    ).toBe("SANDAL");
+  });
+
   it("Insufficient evidence -> UNCLASSIFIED", () => {
     const result = assignPrimaryCategory({ productName: "Serena" });
     expect(result.primaryCategory).toBe("UNCLASSIFIED");

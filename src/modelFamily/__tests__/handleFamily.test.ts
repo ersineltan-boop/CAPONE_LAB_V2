@@ -73,6 +73,18 @@ describe("shopify handle family", () => {
     ).toBe(true);
   });
 
+  it("collapses eggshell color suffixes onto the same handle family", () => {
+    expect(
+      shopifyHandleFamilyKey("https://aemery.com/products/the-elmer-sandal"),
+    ).toBe(shopifyHandleFamilyKey("https://aemery.com/products/the-elmer-sandal-eggshell"));
+    expect(
+      handleFamiliesCompatible(
+        "https://aemery.com/products/the-elmer-sandal-black",
+        "https://aemery.com/products/the-elmer-sandal-eggshell",
+      ),
+    ).toBe(true);
+  });
+
   it("does not merge different silhouettes that only share a handle stem", () => {
     const { families } = buildModelFamilies([
       product({

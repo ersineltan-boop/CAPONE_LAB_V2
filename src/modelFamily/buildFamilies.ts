@@ -31,6 +31,7 @@ import type {
   RawAnalyzedProduct,
 } from "./types";
 import { enrichModelFamiliesWithTaxonomy } from "../taxonomy/enrichModelFamilies";
+import { assignPrimaryCategory } from "../taxonomy/assignCategory";
 
 interface ProductGroupingMeta {
   product: RawAnalyzedProduct;
@@ -236,15 +237,24 @@ function buildFamilyFromProducts(
 }
 
 function categoryMergeKey(product: RawAnalyzedProduct): string {
-  const category = product.normalized.category ?? product.category ?? "UNKNOWN";
-  if (category === "BOOT" || category === "ANKLE_BOOT") return "BOOT";
-  return category;
+  const primary = assignPrimaryCategory({
+    productName: product.productName,
+    legacyCategory: product.normalized.category ?? product.category,
+    construction: product.normalized.construction,
+    heelHeightGroup: product.normalized.heelHeightGroup,
+    cleanedHeelHeight: product.cleaned.heelHeight,
+    toeShape: product.normalized.toeShape,
+    details: product.normalized.details,
+    materialFamily: product.normalized.materialFamily,
+  }).primaryCategory;
+  if (primary === "BOOT") return "BOOT";
+  return primary;
 }
 
 function categoriesCompatible(a: ProductGroupingMeta, b: ProductGroupingMeta): boolean {
   const left = categoryMergeKey(a.product);
   const right = categoryMergeKey(b.product);
-  if (left === "UNKNOWN" || right === "UNKNOWN") return true;
+  if (left === "UNCLASSIFIED" || right === "UNCLASSIFIED") return left === right;
   return left === right;
 }
 
@@ -327,7 +337,12 @@ function canMergeByStyleCode(
   if (!a.verifiedStyle || !b.verifiedStyle) return false;
   if (!a.styleCode || !b.styleCode || a.styleCode !== b.styleCode) return false;
   if (a.source === "zara" || b.source === "zara" || a.styleCode.startsWith("ZARA-")) {
-    return a.listingKey === b.listingKey;
+    // Same Zara -p identity still must not collapse incompatible architectures.
+    return (
+      a.listingKey === b.listingKey &&
+      categoriesCompatible(a, b) &&
+      constructionsCompatible(a.product, b.product)
+    );
   }
   return categoriesCompatible(a, b) && constructionsCompatible(a.product, b.product);
 }
@@ -346,6 +361,7 @@ function canMergeByHandle(
     a.normalizedName &&
     b.normalizedName &&
     a.normalizedName !== b.normalizedName &&
+    !titlesDifferOnlyByColorwayDescriptors(a.product, b.product) &&
     (isSafeDistinctiveModelName(a.normalizedName) || isSafeDistinctiveModelName(b.normalizedName))
   ) {
     return false;
@@ -383,12 +399,18 @@ function clusterByConstruction(metas: ProductGroupingMeta[]): ProductGroupingMet
   return clusters;
 }
 
+function listingPartitionKey(product: RawAnalyzedProduct): string {
+  // Same listing/style identity may still contain incompatible architectures
+  // (e.g. Zara -p reuse across mule vs sandal). Partition before key-merge.
+  return `id-${listingIdentityKey(product)}-${categoryMergeKey(product)}-${productConstructionKey(product)}`;
+}
+
 function singletonGroup(brand: string, product: RawAnalyzedProduct): PendingGroup {
   return {
     brand,
     confidence: "MEDIUM",
     reason: "singleton",
-    groupKey: `id-${listingIdentityKey(product)}`,
+    groupKey: listingPartitionKey(product),
     products: [product],
   };
 }
@@ -423,7 +445,7 @@ function refineNameOnlyGroup(group: PendingGroup): PendingGroup[] {
   for (const row of keyed) {
     const bucketKey = row.code
       ? `${group.groupKey}::style-${row.code}`
-      : `id-${listingIdentityKey(row.product)}`;
+      : listingPartitionKey(row.product);
     const bucket = buckets.get(bucketKey) ?? [];
     bucket.push(row.product);
     buckets.set(bucketKey, bucket);
@@ -552,7 +574,7 @@ function groupProductsWithinBrand(
       brand,
       confidence: "MEDIUM",
       reason: "singleton",
-      groupKey: `id-${seed.listingKey}`,
+      groupKey: listingPartitionKey(seed.product),
       products: [seed.product],
     });
   }
@@ -577,23 +599,42 @@ function groupMetas(group: PendingGroup): ProductGroupingMeta[] {
   return group.products.map(buildGroupingMeta);
 }
 
-function groupsSafeNameCompatible(a: PendingGroup, b: PendingGroup): boolean {
+function verifiedStyleCodes(metas: ProductGroupingMeta[]): string[] {
+  return [
+    ...new Set(
+      metas
+        .filter((meta) => meta.verifiedStyle && meta.styleCode)
+        .map((meta) => meta.styleCode as string),
+    ),
+  ];
+}
+
+function groupsHighConfidenceCompatible(a: PendingGroup, b: PendingGroup): boolean {
   if (a.brand !== b.brand) return false;
-  if (a.confidence !== "HIGH" || b.confidence !== "HIGH") return false;
+  if (a.confidence !== "HIGH" && b.confidence !== "HIGH") return false;
   const left = groupMetas(a);
   const right = groupMetas(b);
-  if (left.some((meta) => meta.verifiedStyle) || right.some((meta) => meta.verifiedStyle)) {
-    return false;
+  if (left.length === 0 || right.length === 0) return false;
+
+  const leftStyles = verifiedStyleCodes(left);
+  const rightStyles = verifiedStyleCodes(right);
+  if (leftStyles.length > 0 && rightStyles.length > 0) {
+    if (!leftStyles.some((code) => rightStyles.includes(code))) return false;
   }
+
   for (const leftMeta of left) {
     for (const rightMeta of right) {
-      if (!canMergeByName(leftMeta, rightMeta)) return false;
+      const agreed =
+        canMergeByStyleCode(leftMeta, rightMeta) ||
+        canMergeByHandle(leftMeta, rightMeta) ||
+        canMergeByName(leftMeta, rightMeta);
+      if (!agreed) return false;
     }
   }
   return true;
 }
 
-/** Join handle/name colorway fragments that already passed high-confidence gates separately. */
+/** Join handle/name/style colorway fragments that already passed high-confidence gates separately. */
 function reconcileCompatibleHighGroups(groups: PendingGroup[]): PendingGroup[] {
   const result = [...groups];
   let changed = true;
@@ -603,7 +644,7 @@ function reconcileCompatibleHighGroups(groups: PendingGroup[]): PendingGroup[] {
       for (let j = i + 1; j < result.length; j += 1) {
         const left = result[i]!;
         const right = result[j]!;
-        if (!groupsSafeNameCompatible(left, right)) continue;
+        if (!groupsHighConfidenceCompatible(left, right)) continue;
         const merged = mergeGroups([left, right]);
         merged.confidence = "HIGH";
         if (!merged.reason.includes("safeNameColorway:") && left.reason.startsWith("handleFamily:")) {

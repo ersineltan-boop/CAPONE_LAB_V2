@@ -160,6 +160,48 @@ describe("false merge prevention", () => {
     expect(families[0]?.groupingReason).toContain("styleCode:ZARA-11208810");
   });
 
+  it("does not merge the same Zara listing ID across incompatible mule vs sandal architecture", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "PRINTED FUR EFFECT LEATHER MULES",
+        productUrl: "https://www.zara.com/us/en/printed-leather-fur-effect-sandals-p13318810.html",
+        category: "MULE",
+        normalized: {
+          category: "MULE",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["BACKLESS", "CLOSED_TOE"],
+        },
+      }),
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "PRINTED CALF HAIR LEATHER SANDALS",
+        productUrl: "https://www.zara.com/us/en/printed-calf-hair-leather-sandals-p13318810.html",
+        category: "SANDAL",
+        color: "Brown",
+        cleaned: { color: "Brown", heelHeight: null },
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
   it("does not merge Paris Texas Boots with separate product IDs", () => {
     const boot = {
       source: "paris-texas",
@@ -336,6 +378,135 @@ describe("false merge prevention", () => {
       }),
     ]);
     expect(families).toHaveLength(2);
+  });
+
+  it("does not merge marketplace listings by distinctive name alone", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "farfetch",
+        brand: "adidas",
+        productName: "Tokyo Sneaker",
+        productUrl: "https://www.farfetch.com/uk/shopping/women/adidas-tokyo-sneaker-item-111.aspx",
+        category: "SNEAKER",
+        normalized: {
+          category: "SNEAKER",
+          colorFamily: "WHITE",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+      product({
+        source: "farfetch",
+        brand: "adidas",
+        productName: "Tokyo Sneaker",
+        productUrl: "https://www.farfetch.com/uk/shopping/women/adidas-tokyo-sneaker-item-222.aspx",
+        category: "SNEAKER",
+        color: "Black",
+        cleaned: { color: "Black", heelHeight: null },
+        normalized: {
+          category: "SNEAKER",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("reconciles official Shopify colorways that share a handle family", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "a-emery",
+        brand: "A.EMERY",
+        productName: "The Elmer Sandal",
+        productUrl: "https://aemery.com/products/the-elmer-sandal-black",
+        category: "SANDAL",
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "a-emery",
+        brand: "A.EMERY",
+        productName: "The Elmer Sandal Eggshell",
+        productUrl: "https://aemery.com/products/the-elmer-sandal-eggshell",
+        category: "SANDAL",
+        color: "Eggshell",
+        cleaned: { color: "Eggshell", heelHeight: null },
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "WHITE",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toMatch(/handleFamily:|safeNameColorway:/);
+  });
+
+  it("reconciles official sneaker colorways split by collector ballet vs sneaker labels", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "TRICIA SNEAKERS DK GREEN SUEDE",
+        productUrl: "https://www.dolcevita.com/products/tricia-sneakers-dk-green-suede",
+        category: "BALLERINA",
+        color: "Dk Green",
+        cleaned: { color: "Dk Green", heelHeight: null },
+        normalized: {
+          category: "BALLERINA",
+          colorFamily: "GREEN",
+          materialFamily: "SUEDE",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+      product({
+        source: "dolce-vita",
+        brand: "DOLCE VITA",
+        productName: "TRICIA SNEAKERS DK BROWN SUEDE",
+        productUrl: "https://www.dolcevita.com/products/tricia-sneakers-dk-brown-suede",
+        category: "SNEAKER",
+        color: "Dk Brown",
+        cleaned: { color: "Dk Brown", heelHeight: null },
+        normalized: {
+          category: "SNEAKER",
+          colorFamily: "BROWN",
+          materialFamily: "SUEDE",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["CLOSED_TOE"],
+        },
+      }),
+    ]);
+    expect(families).toHaveLength(1);
   });
 
   it("does not merge Level Shoes products by generic title", () => {
@@ -1377,5 +1548,25 @@ describe("verified color recovery", () => {
       }),
     ]);
     expect(families).toHaveLength(3);
+  });
+
+  it("keeps construction-conflicting colorways as separate families", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-black-leather-ballet-flats",
+      }),
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Mesh Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-mesh-black-leather-ballet-flats",
+        color: "Mesh Black",
+        cleaned: { color: "Mesh Black", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
   });
 });

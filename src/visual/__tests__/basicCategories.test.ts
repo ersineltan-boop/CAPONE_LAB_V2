@@ -124,6 +124,46 @@ describe("Visual basic categories", () => {
     ).toBe("babet");
   });
 
+  it("does not land an explicit sneaker in Babet", () => {
+    expect(
+      resolveVisualBasicCategory(
+        family({
+          canonicalName: "Tricia Sneaker",
+          category: "BALLERINA",
+          primaryCategory: "SNEAKER",
+          sourceCategoryRefs: [
+            {
+              sourceId: "dolce-vita",
+              categoryId: "ballet-flats",
+              categoryName: "Ballet Flats",
+              categoryPath: "/collections/ballet-flats",
+            },
+          ],
+        }),
+      ),
+    ).toBe("sneaker");
+  });
+
+  it("does not land an explicit pump in Sandal", () => {
+    expect(
+      resolveVisualBasicCategory(
+        family({
+          canonicalName: "Slim 2 0 Fishbone Pump",
+          category: "SANDAL",
+          primaryCategory: "PUMP",
+          sourceCategoryRefs: [
+            {
+              sourceId: "farfetch",
+              categoryId: "sandals",
+              categoryName: "Sandals",
+              categoryPath: "/shopping/women/sandals",
+            },
+          ],
+        }),
+      ),
+    ).toBe("topuklu");
+  });
+
   it("uses source collection only when primaryCategory is unclassified", () => {
     expect(
       resolveVisualBasicCategory(

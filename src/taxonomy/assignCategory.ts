@@ -107,7 +107,54 @@ function hasConflictingSilhouette(text: string): boolean {
   ]);
 }
 
-function isSandalDominant(text: string, legacyCategory?: FootwearCategory | null): boolean {
+function isExplicitPumpSilhouette(text: string): boolean {
+  return /\bpumps?\b/.test(text);
+}
+
+function isOpenSandalEvidence(text: string, construction: string[]): boolean {
+  return (
+    textIncludesAny(text, [
+      "thong",
+      "flip flop",
+      "flip-flop",
+      "strappy",
+      "t-strap",
+      "ankle strap",
+      "toe ring",
+      "toe-post",
+      "toe post",
+      "slide sandal",
+      "gladiator",
+    ]) ||
+    construction.includes("OPEN_TOE") ||
+    construction.includes("TOE_POST") ||
+    construction.includes("THONG")
+  );
+}
+
+function shouldPreferMuleOverNamedSandal(
+  text: string,
+  construction: string[],
+  legacyCategory?: FootwearCategory | null,
+): boolean {
+  if (!hasBackless(text, construction)) return false;
+  if (isOpenSandalEvidence(text, construction)) return false;
+  if (construction.includes("CLOSED_TOE")) return true;
+  if (legacyCategory === "MULE") return true;
+  return textIncludesAny(text, [" mule", "mules"]);
+}
+
+function isSandalDominant(
+  text: string,
+  construction: string[],
+  legacyCategory?: FootwearCategory | null,
+): boolean {
+  if (isExplicitPumpSilhouette(text) && !textIncludesAny(text, [" sandal", "sandals"])) {
+    return false;
+  }
+  if (shouldPreferMuleOverNamedSandal(text, construction, legacyCategory)) {
+    return false;
+  }
   const namedSandal = textIncludesAny(text, [
     " sandal",
     "slide sandal",
@@ -236,7 +283,7 @@ export function assignPrimaryCategory(input: CategoryAssignmentInput): CategoryA
     };
   }
 
-  if (isSandalDominant(text, input.legacyCategory)) {
+  if (isSandalDominant(text, construction, input.legacyCategory)) {
     if (textIncludesAny(text, ["single band", "one band"]) && hasBackless(text, construction)) {
       // simple open backless band -> sandal not mule
     }

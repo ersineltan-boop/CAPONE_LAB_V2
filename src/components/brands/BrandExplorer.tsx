@@ -79,7 +79,7 @@ export default function BrandExplorer() {
                     <img
                       src={img.url}
                       alt={img.alt}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover object-center"
                     />
                   ) : (
                     <ImagePlaceholder alt={img.alt} className="h-full w-full" />

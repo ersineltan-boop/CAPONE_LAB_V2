@@ -57,7 +57,7 @@ export default function MarketplacesIndex({ onSelectMarketplace }: MarketplacesI
                         srcSet={hero.srcSet}
                         sizes={hero.sizes}
                         alt={entry.name}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover object-center"
                         loading="lazy"
                         decoding="async"
                       />
