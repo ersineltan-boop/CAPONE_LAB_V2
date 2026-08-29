@@ -43,7 +43,7 @@ export interface CatalogIdIndex {
 
 export const CATALOG_PUBLIC_BASE = "/data/catalog";
 export const VISUAL_PUBLIC_BASE = "/data/catalog/visual";
-export const MAX_BRAND_CARD_IMAGES = 3;
+export const MAX_BRAND_CARD_IMAGES = 1;
 export const MAX_DELIVERY_IMAGES = 24;
 export const MAX_VISUAL_CARD_IMAGES = 8;
 export const MAX_VARIANT_IMAGES = 8;

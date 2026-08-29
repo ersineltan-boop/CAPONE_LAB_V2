@@ -189,6 +189,7 @@ export async function runBrandOnboarding(
 
     queue = updateQueueEntry(queue, candidate.slug, { status: "VALIDATING" }, now);
     const quality = evaluateQualityGate(products);
+    console.log(`[onboarding] ${candidate.slug}: ${quality.decisionLog}`);
 
     if (!quality.ok || products.length === 0) {
       await cleanupStaging(root, candidate.slug);
@@ -215,7 +216,7 @@ export async function runBrandOnboarding(
         blocker: quality.reasons.join("; ") || probe.blocker,
         marketplaceCoverage: marketplace,
         activationDecision: "skip",
-        notes: probe.notes,
+        notes: `${probe.notes ?? ""}; ${quality.decisionLog}`.trim(),
       }));
       continue;
     }
@@ -229,6 +230,34 @@ export async function runBrandOnboarding(
       collectionPaths: probe.collectionPaths,
       footwearPaths: probe.footwearPaths,
     };
+
+    // PARTIAL brands stay staged for manual review — do not auto-merge into live catalog.
+    if (quality.completeness !== "FULL") {
+      queue = updateQueueEntry(queue, candidate.slug, {
+        status: "PARTIAL",
+        detectedPlatform: probe.platform,
+        collectorStrategy: probe.strategy,
+        blocker: null,
+        productsFound: products.length,
+        notes: quality.decisionLog,
+      }, now);
+      attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
+        status: "PARTIAL",
+        detectedPlatform: probe.platform,
+        sourceStrategy: probe.strategy,
+        productsFound: products.length,
+        families: quality.families,
+        realMultiColorFamilies: quality.multiColorFamilies,
+        verifiedNewArrivals: quality.verifiedNewArrivals,
+        galleryImageCoverage: quality.galleryCoverage,
+        categoriesFound: quality.categories,
+        blocker: null,
+        marketplaceCoverage: marketplace,
+        activationDecision: "partial",
+        notes: quality.decisionLog,
+      }));
+      continue;
+    }
 
     const slots = remainingActivationSlots(maxActivations, activatedCount);
     const canActivate = !dryRun && slots > 0;
@@ -257,24 +286,24 @@ export async function runBrandOnboarding(
         root,
         slug: candidate.slug,
         products,
-        status: quality.completeness === "FULL" ? "success" : "partial",
+        status: "success",
       });
       await activateUniverseBrand({ root, slug: candidate.slug, adapter, quality, now });
       await rebuildCatalogAfterActivation(root);
       activatedCount += 1;
       activated.push(candidate.slug);
       queue = updateQueueEntry(queue, candidate.slug, {
-        status: completenessStatus === "PARTIAL" ? "PARTIAL" : "ACTIVE",
+        status: "ACTIVE",
         detectedPlatform: probe.platform,
         collectorStrategy: probe.strategy,
         blocker: null,
         productsFound: products.length,
         activatedAt: now.toISOString(),
         nextRetryAt: null,
-        notes: `activated ${quality.completeness}`,
+        notes: quality.decisionLog,
       }, now);
       attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
-        status: completenessStatus === "PARTIAL" ? "PARTIAL" : "ACTIVE",
+        status: "ACTIVE",
         detectedPlatform: probe.platform,
         sourceStrategy: probe.strategy,
         productsFound: products.length,
@@ -285,8 +314,8 @@ export async function runBrandOnboarding(
         categoriesFound: quality.categories,
         blocker: null,
         marketplaceCoverage: marketplace,
-        activationDecision: quality.completeness === "FULL" ? "activate" : "partial",
-        notes: probe.notes,
+        activationDecision: "activate",
+        notes: quality.decisionLog,
       }));
     } else {
       queue = updateQueueEntry(queue, candidate.slug, {
@@ -295,7 +324,7 @@ export async function runBrandOnboarding(
         collectorStrategy: probe.strategy,
         blocker: null,
         productsFound: products.length,
-        notes: dryRun ? "dry-run; not activated" : "ready but activation quota reached",
+        notes: dryRun ? `dry-run; not activated; ${quality.decisionLog}` : `ready but activation quota reached; ${quality.decisionLog}`,
       }, now);
       attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
         status: completenessStatus,

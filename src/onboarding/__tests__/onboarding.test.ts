@@ -113,6 +113,22 @@ describe("onboarding safety gates", () => {
     ]);
     expect(gate.ok).toBe(false);
     expect(gate.completeness).toBe("FAILED");
+    expect(gate.decisionLog.startsWith("REJECTED:")).toBe(true);
+  });
+
+  it("marks thin catalogs as PARTIAL and logs manual-review decision", () => {
+    const gate = evaluateQualityGate([
+      shoe({ productUrl: "https://example.com/products/a" }),
+      shoe({
+        productName: "Lana Pump Nude",
+        productUrl: "https://example.com/products/b",
+        color: "Nude",
+        variants: [{ title: "Lana Pump Nude", color: "Nude", sku: "LANA-NUD" }],
+      }),
+    ]);
+    expect(gate.ok).toBe(true);
+    expect(gate.completeness).toBe("PARTIAL");
+    expect(gate.decisionLog).toContain("PARTIAL / MANUAL REVIEW");
   });
 
   it("model family gate keeps generic titles from collapsing into one color family", () => {

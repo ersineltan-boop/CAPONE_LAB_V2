@@ -277,6 +277,18 @@ export function buildTaxonomyFromProduct(product: RawAnalyzedProduct): FootwearT
     toeShape: product.normalized.toeShape,
     details: product.normalized.details,
     materialFamily: product.normalized.materialFamily,
+    sourceCategoryText: [
+      product.sourceCategoryName,
+      product.sourceCategoryPath,
+      product.collectionLabel,
+      product.collectionPath,
+      ...(product.sourceCategories ?? []).flatMap((category) => [
+        category.categoryName,
+        category.categoryPath,
+      ]),
+    ]
+      .filter(Boolean)
+      .join(" "),
   };
 
   const assignment = assignPrimaryCategory(assignmentInput);

@@ -402,3 +402,54 @@ describe("taxonomy data quality — no default fabrication", () => {
     expect(taxonomy.categoryProvenance).toBe("LEGACY_CATEGORY");
   });
 });
+
+describe("Portuguese sapatilha / ténis precedence", () => {
+  it("explicit ténis / sneaker in product title -> SNEAKER", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "TÉNIS EXE RUNNER WHITE",
+        legacyCategory: "BALLERINA",
+        sourceCategoryText: "SAPATILHAS E TÉNIS",
+      }).primaryCategory,
+    ).toBe("SNEAKER");
+  });
+
+  it("true ballet evidence stays BALLET_FLAT", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Leather ballerina",
+        legacyCategory: "BALLERINA",
+        sourceCategoryText: "SAPATILHAS E TÉNIS",
+      }).primaryCategory,
+    ).toBe("BALLET_FLAT");
+  });
+
+  it("hybrid ballerina sneaker -> SNEAKER", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "Leather ballerina sneakers",
+        legacyCategory: "BALLERINA",
+      }).primaryCategory,
+    ).toBe("SNEAKER");
+  });
+
+  it("ambiguous sapatilha in mixed tenis collection demotes unconditional BALLERINA", () => {
+    const result = assignPrimaryCategory({
+      productName: "SAPATILHA EXE 19V03-6 BEIGE",
+      legacyCategory: "BALLERINA",
+      sourceCategoryText: "SAPATILHAS E TÉNIS",
+    });
+    expect(result.primaryCategory).toBe("UNCLASSIFIED");
+    expect(result.reason).toContain("sapatilha-mixed-tenis-collection-conservative");
+  });
+
+  it("sapatilha alone without mixed tenis collection can remain ballet via legacy", () => {
+    expect(
+      assignPrimaryCategory({
+        productName: "SAPATILHA CLASSICA NUDE",
+        legacyCategory: "BALLERINA",
+        sourceCategoryText: "SAPATILHAS",
+      }).primaryCategory,
+    ).toBe("BALLET_FLAT");
+  });
+});

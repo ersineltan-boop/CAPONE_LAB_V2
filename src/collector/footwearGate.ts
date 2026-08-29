@@ -324,22 +324,62 @@ export function hasStrongFootwearSignal(input: FootwearGateInput): {
   return null;
 }
 
-export function inferFootwearCategoryFromSignals(input: FootwearGateInput): FootwearCategory | null {
-  const text = joinSignals([input.title, input.productType, ...(input.tags ?? [])]).toLowerCase();
+function categoryEvidenceText(input: FootwearGateInput): string {
+  return joinSignals([
+    input.title,
+    input.productType,
+    ...(input.tags ?? []),
+    input.collectionPath,
+  ]).toLowerCase();
+}
 
-  if (/\bthong\b|\bflip flop\b|\bchinelo\b/.test(text)) return "THONG";
-  if (/\bankle boot|\bankle-boot/.test(text)) return "ANKLE_BOOT";
-  if (/\bknee[- ]high boot|\bknee boot|\bboot\b|\bbota\b|\bbotas\b|\bbottine/.test(text)) return "BOOT";
-  if (/\bsling[- ]?back|\bslingback/.test(text)) return "SLINGBACK";
-  if (/\bballerin|\bballet flat|\bflat shoe|\bcasual flat|\bsapatilha|\bballerine/.test(text)) return "BALLERINA";
-  if (/\bmary jane/.test(text)) return "MARY_JANE";
-  if (/\bloafer|\bmocassim/.test(text)) return "LOAFER";
-  if (/\bmule/.test(text)) return "MULE";
-  if (/\bwedge/.test(text)) return "WEDGE";
-  if (/\bsneaker|\btrainer|\btenis\b|\bténis\b/.test(text)) return "SNEAKER";
-  if (/\bsandal|\bslide|\bsandalia|\bsandália|\brasteira/.test(text)) return "SANDAL";
-  if (/\bpump|\bheel|\bstiletto|\bkitten|\bsalto|\bescarpin/.test(text)) return "PUMP";
-  if (/\bclog|\bsoca\b|\bsocas\b|\bsabot/.test(text)) return "MULE";
+function productTitleEvidence(input: FootwearGateInput): string {
+  return joinSignals([input.title, input.productType, input.handle]).toLowerCase();
+}
+
+function hasExplicitSneakerEvidence(text: string): boolean {
+  return /\bsneaker|\btrainer|\btenis\b|\bt[eé]nis\b|\btennis shoe|\bcupsole|\brunning shoe|\bskate shoe\b/.test(
+    text,
+  );
+}
+
+function hasExplicitBalletEvidence(text: string): boolean {
+  return /\bballerin|\bballet flat|\bflat shoe|\bcasual flat|\bballerine|\bmary[- ]?jane\b/.test(text);
+}
+
+function hasMixedSapatilhaTenisCollection(text: string): boolean {
+  return /sapatilhas?\s*e\s*t[eé]nis|t[eé]nis\s*e\s*sapatilhas?/.test(text);
+}
+
+export function inferFootwearCategoryFromSignals(input: FootwearGateInput): FootwearCategory | null {
+  const collectionText = categoryEvidenceText(input);
+  const titleType = productTitleEvidence(input);
+
+  if (/\bthong\b|\bflip flop\b|\bchinelo\b/.test(collectionText)) return "THONG";
+  if (/\bankle boot|\bankle-boot/.test(collectionText)) return "ANKLE_BOOT";
+  if (/\bknee[- ]high boot|\bknee boot|\bboot\b|\bbota\b|\bbotas\b|\bbottine/.test(collectionText)) {
+    return "BOOT";
+  }
+  if (/\bsling[- ]?back|\bslingback/.test(titleType)) return "SLINGBACK";
+
+  // Product-title sneaker / Portuguese ténis evidence beats generic "sapatilha".
+  // Do not treat collection-only "SAPATILHAS E TÉNIS" as proof every item is a sneaker.
+  if (hasExplicitSneakerEvidence(titleType)) return "SNEAKER";
+
+  if (hasExplicitBalletEvidence(titleType)) return "BALLERINA";
+  if (/\bmary jane/.test(titleType)) return "MARY_JANE";
+
+  if (/\bsapatilha/.test(titleType)) {
+    if (hasMixedSapatilhaTenisCollection(collectionText)) return "OTHER_FOOTWEAR";
+    return "BALLERINA";
+  }
+
+  if (/\bloafer|\bmocassim/.test(collectionText)) return "LOAFER";
+  if (/\bmule/.test(collectionText)) return "MULE";
+  if (/\bwedge/.test(collectionText)) return "WEDGE";
+  if (/\bsandal|\bslide|\bsandalia|\bsandália|\brasteira/.test(collectionText)) return "SANDAL";
+  if (/\bpump|\bheel|\bstiletto|\bkitten|\bsalto|\bescarpin/.test(collectionText)) return "PUMP";
+  if (/\bclog|\bsoca\b|\bsocas\b|\bsabot/.test(collectionText)) return "MULE";
 
   const strong = hasStrongFootwearSignal(input);
   if (strong) return "OTHER_FOOTWEAR";

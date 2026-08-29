@@ -9,7 +9,6 @@ import {
 } from "../../catalog/brandIndexFromSummary";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { ALL_COUNTRIES_ID } from "../../brands/countryGrouping";
-import { brandCardLayout } from "../../brands/brandCardImages";
 import {
   BRAND_CARD_SIZES,
   resolveDisplayImage,
@@ -31,7 +30,6 @@ function BrandCardImages({
   brand: string;
   priority: boolean;
 }) {
-  const layout = brandCardLayout(images.length);
   const resolved = images
     .map((url) => resolveDisplayImage(url, BRAND_CARD_SIZES))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
@@ -40,73 +38,17 @@ function BrandCardImages({
     return <ImagePlaceholder alt={brand} label={UI_COPY.noImage} />;
   }
 
-  const loading = priority ? "eager" : "lazy";
-
-  if (layout === "one" || resolved.length === 1) {
-    const image = resolved[0]!;
-    return (
-      <img
-        src={image.src}
-        srcSet={image.srcSet}
-        sizes={image.sizes}
-        alt={brand}
-        className="h-full w-full object-cover object-center"
-        loading={loading}
-        decoding="async"
-      />
-    );
-  }
-
-  if (layout === "two" || resolved.length === 2) {
-    return (
-      <div className="grid h-full grid-cols-2 gap-px bg-line">
-        {resolved.slice(0, 2).map((image, index) => (
-          <img
-            key={image.originalSrc}
-            src={image.src}
-            srcSet={image.srcSet}
-            sizes={image.sizes}
-            alt=""
-            className="h-full w-full object-cover object-center"
-            loading={index === 0 ? loading : "lazy"}
-            decoding="async"
-          />
-        ))}
-      </div>
-    );
-  }
-
-  const [hero, second, third] = resolved;
+  const image = resolved[0]!;
   return (
-    <div className="grid h-full grid-cols-5 grid-rows-2 gap-px bg-line">
-      <img
-        src={hero!.src}
-        srcSet={hero!.srcSet}
-        sizes={hero!.sizes}
-        alt={brand}
-        className="col-span-3 row-span-2 h-full w-full object-cover object-center"
-        loading={loading}
-        decoding="async"
-      />
-      <img
-        src={second!.src}
-        srcSet={second!.srcSet}
-        sizes={second!.sizes}
-        alt=""
-        className="col-span-2 row-span-1 h-full w-full object-cover object-center"
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={third!.src}
-        srcSet={third!.srcSet}
-        sizes={third!.sizes}
-        alt=""
-        className="col-span-2 row-span-1 h-full w-full object-cover object-center"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
+    <img
+      src={image.src}
+      srcSet={image.srcSet}
+      sizes={image.sizes}
+      alt={brand}
+      className="h-full w-full object-contain object-center"
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+    />
   );
 }
 

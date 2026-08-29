@@ -1,7 +1,8 @@
-import { evaluateFootwearProduct, evaluateStoredPilotProduct } from "../collector/footwearGate";
+import { evaluateFootwearProduct, evaluateStoredPilotProduct, isVerifiedFootwearCollectionPath } from "../collector/footwearGate";
 import { analyzeProducts } from "../analysis/analyzeProduct";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
 import { isGenericModelTitle } from "../modelFamily/genericModelTitle";
+import { productConstructionKey } from "../modelFamily/constructionSignature";
 import type { PilotProduct } from "../collector/types";
 import type { RawAnalyzedProduct } from "../modelFamily/types";
 
@@ -15,6 +16,7 @@ export interface QualityGateResult {
   galleryCoverage: number;
   categories: string[];
   leakageCount: number;
+  decisionLog: string;
 }
 
 function colorCount(family: { variants: Array<{ color?: string | null }>; variantCount: number }): number {
@@ -37,7 +39,7 @@ export function auditFootwearLeakage(products: readonly PilotProduct[]): string[
       ),
       handle: product.productUrl,
       collectionPath: product.collectionPath ?? "",
-      fromVerifiedFootwearCollection: Boolean(product.collectionPath),
+      fromVerifiedFootwearCollection: isVerifiedFootwearCollectionPath(product.collectionPath ?? ""),
     });
     if (live.decision !== "ACCEPT_FOOTWEAR") {
       leaks.push(product.productUrl);
@@ -53,6 +55,19 @@ export function auditFootwearLeakage(products: readonly PilotProduct[]): string[
     }
   }
   return leaks;
+}
+
+function hasArchitectureConflict(keys: string[]): boolean {
+  const hasMule = keys.some((key) => key.split("+").includes("mule"));
+  const hasSandal = keys.some((key) => key.split("+").includes("sandal"));
+  if (hasMule && hasSandal) return true;
+  const hasMid = keys.some((key) => key.split("+").includes("mid"));
+  const hasHigh = keys.some((key) => key.split("+").includes("high"));
+  if (hasMid && hasHigh) return true;
+  const hasWood = keys.some((key) => key.split("+").includes("wood"));
+  const hasClear = keys.some((key) => key.split("+").includes("clear"));
+  if (hasWood && hasClear) return true;
+  return false;
 }
 
 export function auditModelFamilySafety(products: readonly PilotProduct[]): {
@@ -77,8 +92,18 @@ export function auditModelFamilySafety(products: readonly PilotProduct[]): {
     if (isGenericModelTitle(family.canonicalName) && colors >= 8) {
       reasons.push(`generic-title color blob: ${family.canonicalName} (${colors})`);
     }
+    if (family.groupingReason.includes("styleCode:") && family.variantCount > 1) {
+      const members = analyzed.filter((product) =>
+        family.sourceProductIds.includes(product.productUrl),
+      );
+      const keys = members.map((product) => productConstructionKey(product));
+      if (hasArchitectureConflict(keys)) {
+        reasons.push(`construction conflict in style family: ${family.canonicalName}`);
+      }
+    }
   }
-  return { ok: reasons.length === 0, families: families.length, multiColor, reasons };
+
+  return { ok: reasons.length === 0, families: families.length, multiColor, reasons: [...new Set(reasons)] };
 }
 
 export function evaluateQualityGate(products: readonly PilotProduct[]): QualityGateResult {
@@ -94,6 +119,7 @@ export function evaluateQualityGate(products: readonly PilotProduct[]): QualityG
       galleryCoverage: 0,
       categories: [],
       leakageCount: 0,
+      decisionLog: "REJECTED: zero products",
     };
   }
 
@@ -127,6 +153,15 @@ export function evaluateQualityGate(products: readonly PilotProduct[]): QualityG
   const completeness =
     ok && products.length >= 20 && galleryCoverage >= 0.4 ? "FULL" : ok ? "PARTIAL" : "FAILED";
 
+  let decisionLog: string;
+  if (!ok) {
+    decisionLog = `REJECTED: ${reasons.join("; ") || "quality gate failed"}`;
+  } else if (completeness === "FULL") {
+    decisionLog = `ACCEPTED FULL: ${familyAudit.families} families, ${products.length} products, gallery ${(galleryCoverage * 100).toFixed(0)}%`;
+  } else {
+    decisionLog = `PARTIAL / MANUAL REVIEW: ${products.length} products (need >=20), gallery ${(galleryCoverage * 100).toFixed(0)}% (need >=40%) — not auto-activated`;
+  }
+
   return {
     ok,
     completeness,
@@ -137,5 +172,6 @@ export function evaluateQualityGate(products: readonly PilotProduct[]): QualityG
     galleryCoverage,
     categories,
     leakageCount: leaks.length,
+    decisionLog,
   };
 }

@@ -11,6 +11,7 @@ import { collectMarketplaceListing } from "../collector/marketplaceHtml";
 import { DRIES_BRAND_NAME } from "../collector/driesVanNoten";
 import { globalDedupe } from "../collector/dedupe";
 import { mergeProductCatalog } from "../collector/mergeProducts";
+import { stripConfirmedNonFootwear } from "../collector/stripNonFootwearCatalog";
 import type { CollectionReport, PilotProduct, SourceCollectionReport } from "../collector/types";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
 import { loadModelFamilies, writeModelFamilies } from "../modelFamily/dataset";
@@ -132,6 +133,20 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
 
   if (products.length === 0) {
     throw new Error("Cloud refresh aborted: catalog is empty after collection.");
+  }
+
+  const stripped = stripConfirmedNonFootwear(products);
+  if (stripped.removed.length > 0) {
+    console.log(
+      `[cloud-refresh] footwear strip removed ${stripped.removed.length} confirmed non-footwear product(s)`,
+    );
+    products = stripped.kept;
+    await writeJson(PRODUCTS_PATH, products);
+    await writeJson(join(MULTIBRAND_DIR, "non-footwear-removed.json"), {
+      removedAt: new Date().toISOString(),
+      count: stripped.removed.length,
+      removed: stripped.removed,
+    });
   }
 
   await runMultibrandAnalysis();

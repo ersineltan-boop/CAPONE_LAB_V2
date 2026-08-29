@@ -1,13 +1,13 @@
 {
   "rawProductCount": 17223,
-  "modelFamilyCount": 11424,
+  "modelFamilyCount": 11200,
   "totalVariants": 17223,
-  "multiVariantFamilyCount": 4184,
-  "reductionPercent": 33.7,
-  "collapsedVariantProducts": 5799,
+  "multiVariantFamilyCount": 4237,
+  "reductionPercent": 35,
+  "collapsedVariantProducts": 6023,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11376,
-    "averageRepresentativeImageCount": 6.3,
+    "familiesWithMultipleRepresentativeImages": 11152,
+    "averageRepresentativeImageCount": 6.32,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -34,6 +34,12 @@
       "brand": "Veja",
       "canonicalName": "Veja Volley Sneaker",
       "variantCount": 20
+    },
+    {
+      "modelFamilyId": "le-monde-beryl--style-le-monde-beryl-bmj-ballet-flat-base",
+      "brand": "LE MONDE BERYL",
+      "canonicalName": "Ballet Mary Jane",
+      "variantCount": 19
     },
     {
       "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
@@ -63,12 +69,6 @@
       "modelFamilyId": "hoka--id-free-people-94105657-sneaker-base",
       "brand": "HOKA®",
       "canonicalName": "Hoka Bondi 9 Sneaker",
-      "variantCount": 16
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-spy-kid-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Spy-",
       "variantCount": 16
     }
   ],
@@ -4788,13 +4788,6 @@
       "modelFamilyId": "alohas--id-free-people-98393259-sneaker-base",
       "brand": "ALOHAS",
       "canonicalName": "Alohas TB 56 Sneaker",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "flattered--id-shopify-flattered-amelia-suede-black-unclassified-base",
-      "brand": "FLATTERED",
-      "canonicalName": "Amelia",
       "variantCount": 2,
       "groupingReason": "singleton"
     },

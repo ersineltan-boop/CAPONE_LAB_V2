@@ -84,7 +84,7 @@ describe("brand card collage", () => {
     expect(images[0]).toContain("11000810017-e1");
   });
 
-  it("keeps multiple brand images inside one card and dedupes URLs", () => {
+  it("uses a single strongest hero image for brand index cards", () => {
     const images = selectBrandCardImages([
       family("a", [
         "https://cdn.shopify.com/s/files/1/1/products/a_100x.jpg",
@@ -93,10 +93,8 @@ describe("brand card collage", () => {
       family("b", ["https://cdn.shopify.com/s/files/1/1/products/b.jpg"]),
       family("c", ["https://cdn.shopify.com/s/files/1/1/products/c.jpg"]),
     ]);
-    expect(images.length).toBeGreaterThan(1);
-    expect(images.length).toBeLessThanOrEqual(3);
-    expect(new Set(images).size).toBe(images.length);
-    expect(brandCardLayout(3)).toBe("three");
+    expect(images).toHaveLength(1);
+    expect(brandCardLayout(3)).toBe("one");
     expect(brandCardLayout(1)).toBe("one");
   });
 });

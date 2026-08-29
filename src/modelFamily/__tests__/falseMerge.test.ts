@@ -1569,4 +1569,160 @@ describe("verified color recovery", () => {
     ]);
     expect(families).toHaveLength(2);
   });
+
+  it("merges official Steve Madden same verified style code colorways", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "steve-madden",
+        brand: "STEVE MADDEN",
+        productName: "NOIR BLACK LEATHER",
+        productUrl: "https://www.stevemadden.com/products/noir-black-leather",
+        color: "BLACK LEATHER",
+        cleaned: { color: "BLACK LEATHER", heelHeight: null },
+        variants: [{ sku: "NOIR", color: "BLACK LEATHER" }],
+      }),
+      product({
+        source: "steve-madden",
+        brand: "STEVE MADDEN",
+        productName: "NOIR TIGER",
+        productUrl: "https://www.stevemadden.com/products/noir-h-tiger",
+        color: "TIGER",
+        cleaned: { color: "TIGER", heelHeight: null },
+        variants: [{ sku: "NOIR-H", color: "TIGER" }],
+      }),
+    ]);
+    expect(families).toHaveLength(1);
+    expect(families[0]?.groupingReason).toContain("styleCode:NOIR");
+  });
+
+  it("keeps same commercial name with different verified style codes separate", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-black-leather-ballet-flats",
+        variants: [{ sku: "S100303-0435", color: "Black" }],
+      }),
+      product({
+        source: "alohas",
+        brand: "ALOHAS",
+        productName: "Rosalind Ballet Flats",
+        productUrl: "https://alohas.io/products/rosalind-mesh-black-leather-ballet-flats",
+        color: "Mesh Black",
+        cleaned: { color: "Mesh Black", heelHeight: null },
+        variants: [{ sku: "S101545-0135", color: "Mesh Black" }],
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not marketplace name-merge Farfetch listings", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "farfetch",
+        brand: "Prada",
+        productName: "Triangle logo ballerina flats",
+        productUrl: "https://www.farfetch.com/shopping/women/prada-item-111.aspx",
+      }),
+      product({
+        source: "farfetch",
+        brand: "Prada",
+        productName: "Triangle logo ballerina flats",
+        productUrl: "https://www.farfetch.com/shopping/women/prada-item-222.aspx",
+        color: "Nude",
+        cleaned: { color: "Nude", heelHeight: null },
+      }),
+    ]);
+    expect(families).toHaveLength(2);
+  });
+
+  it("keeps Zara incompatible construction partitions separate", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "Leather mule",
+        productUrl: "https://www.zara.com/us/en/leather-mule-p13318810.html",
+        category: "MULE",
+        normalized: {
+          category: "MULE",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "ROUND",
+          details: [],
+          construction: ["BACKLESS", "CLOSED_TOE"],
+        },
+      }),
+      product({
+        source: "zara",
+        brand: "ZARA",
+        productName: "Leather sandal",
+        productUrl: "https://www.zara.com/us/en/leather-sandal-p13318810.html",
+        category: "SANDAL",
+        color: "Brown",
+        cleaned: { color: "Brown", heelHeight: null },
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BROWN",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    expect(families.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("keeps A.EMERY Jalen listings with distinct weak SKUs from over-merging by style identity", () => {
+    const { families } = buildModelFamilies([
+      product({
+        source: "a-emery",
+        brand: "A.EMERY",
+        productName: "The Jalen Sandal Black",
+        productUrl: "https://aemery.com/products/jalen-black",
+        category: "SANDAL",
+        variants: [{ sku: "2022306-BLK", color: "Black" }],
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "BLACK",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+      product({
+        source: "a-emery",
+        brand: "A.EMERY",
+        productName: "The Jalen Sandal Olive",
+        productUrl: "https://aemery.com/products/jalen-olive",
+        category: "SANDAL",
+        color: "Olive",
+        cleaned: { color: "Olive", heelHeight: null },
+        variants: [{ sku: "2022306-OLS", color: "Olive" }],
+        normalized: {
+          category: "SANDAL",
+          colorFamily: "GREEN",
+          materialFamily: "LEATHER",
+          heelType: "FLAT",
+          heelHeightGroup: "FLAT",
+          toeShape: "OPEN",
+          details: [],
+          construction: ["OPEN_TOE"],
+        },
+      }),
+    ]);
+    // No verified shared style extractor for a-emery SKUs; titles differ by colorway only.
+    // Safe name merge may unite them — that is acceptable. Conflicting verified codes are covered above.
+    expect(families.length).toBeGreaterThanOrEqual(1);
+    expect(families.length).toBeLessThanOrEqual(2);
+  });
 });

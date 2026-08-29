@@ -37,8 +37,17 @@ function titleFlagsFromText(text: string): Set<string> {
   if (/\bmules?\b/.test(lower)) flags.add("mule");
   // Prefer mule when title/url also mentions sandal (common handle noise on mule PDPs).
   if (/\bsandals?\b/.test(lower) && !flags.has("mule")) flags.add("sandal");
-  if (/\bmid\b/.test(lower)) flags.add("mid");
-  if (/\bhigh\b/.test(lower) && /\b(heel|pump|sandal|boot)\b/.test(lower)) flags.add("high");
+  // Prefer explicit PDP heel-height slug over marketing title mid/high wording.
+  // SCHUTZ model names often say "High Block" while the URL uses heel-height-mid.
+  const heelHeightSlug = lower.match(/heel[-_]?height[-_]?(low|mid|high)\b/);
+  if (heelHeightSlug) {
+    const bucket = heelHeightSlug[1];
+    if (bucket === "mid") flags.add("mid");
+    if (bucket === "high") flags.add("high");
+  } else {
+    if (/\bmid\b/.test(lower)) flags.add("mid");
+    if (/\bhigh\b/.test(lower) && /\b(heel|pump|sandal|boot)\b/.test(lower)) flags.add("high");
+  }
   return flags;
 }
 
@@ -68,6 +77,26 @@ function heelBucket(product: RawAnalyzedProduct): "flat" | "raised" | "unknown" 
 }
 
 export function constructionsCompatible(a: RawAnalyzedProduct, b: RawAnalyzedProduct): boolean {
+  return constructionsCompatibleWithOptions(a, b, { ignoreFlags: [] });
+}
+
+/**
+ * Verified same-style colorway merges may ignore vinyl-only material noise while
+ * still blocking architecture and other material-treatment conflicts (mesh/wood/clear).
+ */
+export function constructionsCompatibleForVerifiedStyle(
+  a: RawAnalyzedProduct,
+  b: RawAnalyzedProduct,
+): boolean {
+  return constructionsCompatibleWithOptions(a, b, { ignoreFlags: ["vinyl"] });
+}
+
+function constructionsCompatibleWithOptions(
+  a: RawAnalyzedProduct,
+  b: RawAnalyzedProduct,
+  options: { ignoreFlags: readonly string[] },
+): boolean {
+  const ignore = new Set(options.ignoreFlags);
   const flagsA = flagsFor(a);
   const flagsB = flagsFor(b);
   const exclusive = [
@@ -103,6 +132,7 @@ export function constructionsCompatible(a: RawAnalyzedProduct, b: RawAnalyzedPro
     "braided",
   ];
   for (const flag of structural) {
+    if (ignore.has(flag)) continue;
     if (flagsA.has(flag) !== flagsB.has(flag)) return false;
   }
 

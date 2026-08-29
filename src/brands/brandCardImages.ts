@@ -3,7 +3,8 @@ import { pickBestCoverImage, scoreCoverImageUrl } from "../images/coverImageScor
 import { imageDedupeKey, normalizeProductImageUrls } from "../images/resolveImageQuality";
 import { collectModelFamilyImages } from "../modelFamily/familyImages";
 
-const MAX_CARD_IMAGES = 3;
+/** Index cards use a single strongest footwear hero — avoid collage crop. */
+const MAX_CARD_IMAGES = 1;
 
 function familyCoverCandidate(family: ModelFamily): string | null {
   const images = normalizeProductImageUrls(collectModelFamilyImages(family));
@@ -38,24 +39,11 @@ export function selectBrandCardImages(
     if (selected.length >= maxImages) break;
   }
 
-  if (selected.length < maxImages) {
-    for (const item of ranked) {
-      for (const image of normalizeProductImageUrls(collectModelFamilyImages(item.family))) {
-        const key = imageDedupeKey(image);
-        if (seen.has(key)) continue;
-        seen.add(key);
-        selected.push(image);
-        if (selected.length >= maxImages) break;
-      }
-      if (selected.length >= maxImages) break;
-    }
-  }
-
   return selected;
 }
 
 export function brandCardLayout(imageCount: number): "one" | "two" | "three" {
-  if (imageCount >= 3) return "three";
-  if (imageCount === 2) return "two";
+  // Phase 1: index cards always render a single hero. Keep the helper for callers.
+  if (imageCount <= 0) return "one";
   return "one";
 }

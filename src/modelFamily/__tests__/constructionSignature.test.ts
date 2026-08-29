@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { constructionsCompatible } from "../constructionSignature";
+import { constructionsCompatible, productConstructionKey } from "../constructionSignature";
 import type { RawAnalyzedProduct } from "../types";
 
 function product(name: string, url = "https://example.com/p"): RawAnalyzedProduct {
@@ -126,5 +126,46 @@ describe("construction signature", () => {
     blockUnknown.normalized.heelType = "BLOCK";
     blockUnknown.normalized.heelHeightGroup = "UNKNOWN";
     expect(constructionsCompatible(flat, blockUnknown)).toBe(true);
+  });
+
+  it("keeps SCHUTZ Keefa High Block style colorways together despite title mid/high heel-height slug noise", () => {
+    const metallic = product(
+      "Keefa Raffia High Block Sandal",
+      "https://schutz-shoes.com/products/keefa-raffia-high-block-metallic-sandal-u26-heel-height-mid-s2118901050003",
+    );
+    metallic.normalized.heelHeightGroup = "HIGH";
+    metallic.normalized.heelType = "BLOCK";
+    const leather = product(
+      "Keefa Raffia High Block Sandal",
+      "https://schutz-shoes.com/products/keefa-raffia-high-block-leather-sandal-u26-heel-height-mid-s2118901050001",
+    );
+    leather.normalized.heelHeightGroup = "HIGH";
+    leather.normalized.heelType = "BLOCK";
+
+    expect(constructionsCompatible(metallic, leather)).toBe(true);
+    expect(productConstructionKey(metallic)).toBe(productConstructionKey(leather));
+    expect(productConstructionKey(metallic).split("+")).not.toContain("high");
+    expect(productConstructionKey(metallic).split("+")).toContain("mid");
+  });
+
+  it("still separates genuine mid vs high heel constructions when heel-height slugs disagree", () => {
+    const mid = product(
+      "Keefa Mid Block Sandal",
+      "https://schutz-shoes.com/products/keefa-mid-block-sandal-heel-height-mid-s2117701050001",
+    );
+    const high = product(
+      "Keefa High Block Sandal",
+      "https://schutz-shoes.com/products/keefa-high-block-sandal-heel-height-high-s2118901050001",
+    );
+    expect(constructionsCompatible(mid, high)).toBe(false);
+  });
+
+  it("still separates title-only mid vs high when no heel-height slug is present", () => {
+    expect(
+      constructionsCompatible(
+        product("Keefa Mid Block Sandal", "https://example.com/products/keefa-mid-block-sandal"),
+        product("Keefa High Block Sandal", "https://example.com/products/keefa-high-block-sandal"),
+      ),
+    ).toBe(false);
   });
 });

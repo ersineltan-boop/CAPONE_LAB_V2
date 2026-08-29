@@ -13,7 +13,7 @@ import {
   buildRepresentativeImages,
   resolveProductImageUrls,
 } from "./productImages";
-import { constructionsCompatible, productConstructionKey } from "./constructionSignature";
+import { constructionsCompatible, constructionsCompatibleForVerifiedStyle, productConstructionKey } from "./constructionSignature";
 import { handleFamiliesCompatible, shopifyHandleFamilyKey } from "./handleFamily";
 import {
   isSafeDistinctiveModelName,
@@ -341,10 +341,10 @@ function canMergeByStyleCode(
     return (
       a.listingKey === b.listingKey &&
       categoriesCompatible(a, b) &&
-      constructionsCompatible(a.product, b.product)
+      constructionsCompatibleForVerifiedStyle(a.product, b.product)
     );
   }
-  return categoriesCompatible(a, b) && constructionsCompatible(a.product, b.product);
+  return categoriesCompatible(a, b) && constructionsCompatibleForVerifiedStyle(a.product, b.product);
 }
 
 function canMergeByHandle(

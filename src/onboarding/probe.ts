@@ -1,4 +1,4 @@
-import { evaluateFootwearProduct } from "../collector/footwearGate";
+import { evaluateFootwearProduct, isVerifiedFootwearCollectionPath } from "../collector/footwearGate";
 import { extractJsonLdBlocks, mapSchemaProducts } from "../collector/schemaOrg";
 import { EXISTING_DEDICATED_ADAPTER_IDS } from "./policy";
 import { fingerprintStorefront, looksLikeBotChallenge } from "./platforms";
@@ -232,7 +232,7 @@ async function probeShopify(
         tags: asTags(product.tags),
         handle,
         collectionPath: payload.path,
-        fromVerifiedFootwearCollection: /shoe|footwear|sandal|boot/i.test(payload.path),
+        fromVerifiedFootwearCollection: isVerifiedFootwearCollectionPath(payload.path),
       });
       if (gate.decision !== "ACCEPT_FOOTWEAR") continue;
       const images = (product.images ?? []).map((image) => image.src).filter((src): src is string => Boolean(src));

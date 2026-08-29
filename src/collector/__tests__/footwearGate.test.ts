@@ -302,4 +302,64 @@ describe("localized footwear completeness", () => {
       }).decision,
     ).toBe("ACCEPT_FOOTWEAR");
   });
+
+  it("Portuguese sapatilha + explicit ténis in title classifies as sneaker", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "TÉNIS EXE RUNNER WHITE",
+        productType: "Shoes",
+        tags: ["SAPATILHAS E TÉNIS"],
+        handle: "tenis-exe-runner-white",
+        collectionPath: "/collections/sapatilhas-e-tenis",
+        fromVerifiedFootwearCollection: true,
+      }).category,
+    ).toBe("SNEAKER");
+  });
+
+  it("true ballet / ballerina evidence stays ballerina", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Classic Ballet Flat",
+        productType: "Flats",
+        tags: ["BALLET FLATS"],
+        handle: "classic-ballet-flat",
+      }).category,
+    ).toBe("BALLERINA");
+  });
+
+  it("hybrid ballerina sneaker stays sneaker", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Leather ballerina sneakers",
+        productType: "Sneakers",
+        handle: "leather-ballerina-sneakers",
+        fromVerifiedFootwearCollection: true,
+      }).category,
+    ).toBe("SNEAKER");
+  });
+
+  it("ambiguous sapatilha in mixed tenis collection stays conservative OTHER", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "SAPATILHA EXE 134-10 GREY/BLACK",
+        productType: "Shoes",
+        handle: "sapatilha-exe-134-10-grey-black",
+        collectionPath: "/collections/sapatilhas-e-tenis",
+        tags: ["SAPATILHAS E TÉNIS"],
+        fromVerifiedFootwearCollection: true,
+      }).category,
+    ).toBe("OTHER_FOOTWEAR");
+  });
+
+  it("sapatilha alone without mixed tenis collection stays ballerina", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "SAPATILHA CLASSICA NUDE",
+        productType: "Shoes",
+        handle: "sapatilha-classica-nude",
+        collectionPath: "/collections/sapatilhas",
+        fromVerifiedFootwearCollection: true,
+      }).category,
+    ).toBe("BALLERINA");
+  });
 });

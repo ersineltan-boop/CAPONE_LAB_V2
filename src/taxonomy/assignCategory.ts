@@ -15,6 +15,8 @@ export interface CategoryAssignmentInput {
   toeShape?: string;
   details?: string[];
   materialFamily?: string;
+  /** Optional source collection / category path text for evidence-aware precedence. */
+  sourceCategoryText?: string | null;
 }
 
 export interface CategoryAssignmentResult {
@@ -47,7 +49,17 @@ function isSneakerDominant(text: string): boolean {
     "court shoe",
     "skate shoe",
     "tennis shoe",
+    "tenis",
+    "ténis",
   ]);
+}
+
+function hasMixedSapatilhaTenisCollection(text: string): boolean {
+  return /sapatilhas?\s*e\s*t[eé]nis|t[eé]nis\s*e\s*sapatilhas?/i.test(text);
+}
+
+function hasSapatilhaOnlyTitle(text: string): boolean {
+  return /\bsapatilha/.test(text) && !isSneakerDominant(text);
 }
 
 function isEspadrilleDominant(text: string): boolean {
@@ -230,11 +242,13 @@ export function assignPrimaryCategory(input: CategoryAssignmentInput): CategoryA
     input.materialFamily,
     ...(input.details ?? []),
   ]);
+  const sourceText = normalizeProductText([input.sourceCategoryText]);
   const construction = input.construction ?? [];
   const hybrid: HybridInfluence[] = [];
 
+  // Product-title sneaker evidence only — collection "… e ténis" is not mass-sneaker proof.
   if (isSneakerDominant(text)) {
-    if (textIncludesAny(text, ["ballet sneaker", "ballerina sneaker"])) {
+    if (textIncludesAny(text, ["ballet sneaker", "ballerina sneaker", "mary jane sneaker"])) {
       hybrid.push("BALLET");
     }
     return {
@@ -396,6 +410,21 @@ export function assignPrimaryCategory(input: CategoryAssignmentInput): CategoryA
   // Legacy category fallback — deterministic, no fabrication
   const legacyMap = mapLegacyCategory(input.legacyCategory);
   if (legacyMap) {
+    // Stored BALLERINA from generic Portuguese "sapatilha" is not trusted when the
+    // source collection mixes sapatilhas + ténis and title lacks ballet evidence.
+    if (
+      (input.legacyCategory === "BALLERINA" || input.legacyCategory === "MARY_JANE") &&
+      hasSapatilhaOnlyTitle(text) &&
+      hasMixedSapatilhaTenisCollection(sourceText) &&
+      !isBalletFlatArchitecture(text, input.heelHeightGroup, input.cleanedHeelHeight)
+    ) {
+      return {
+        primaryCategory: "UNCLASSIFIED",
+        hybridInfluences: hybrid,
+        reason: "sapatilha-mixed-tenis-collection-conservative",
+        provenance: "INSUFFICIENT",
+      };
+    }
     return {
       primaryCategory: legacyMap.category,
       hybridInfluences: [...legacyMap.hybrid, ...hybrid],

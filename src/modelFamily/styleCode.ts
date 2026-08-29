@@ -189,9 +189,32 @@ export function extractMaloneStyleCode(sku: string): string | null {
   return match ? match[1]!.replace(/\s+/g, " ") : null;
 }
 
+export function extractDolceVitaStyleCode(sku: string): string | null {
+  const normalized = sku.trim().toUpperCase().replace(/\s+/g, " ");
+  // Model tokens like CLEO / RELAN / RELAN MESH / RELAN WIDE — keep multi-word variants distinct.
+  if (!/^[A-Z][A-Z0-9]+(?: [A-Z][A-Z0-9]+){0,3}$/.test(normalized)) return null;
+  if (normalized.length < 3 || normalized.length > 40) return null;
+  if (/^\d+$/.test(normalized)) return null;
+  return normalized;
+}
+
+export function extractFlatteredStyleCode(sku: string): string | null {
+  const match = sku.trim().toUpperCase().match(/^(\d{8,})(?:-\d{1,4}){1,3}$/);
+  return match ? match[1]! : null;
+}
+
 function extractVerifiedSkuStyle(sku: string, source: string): string | null {
   if (source === "paris-texas") return extractParisTexasStyleCode(sku);
   if (source === "staud") return extractStaudStyleCode(sku);
+  if (source === "steve-madden") return extractSteveMaddenStyleCode(sku);
+  if (source === "dolce-vita") return extractDolceVitaStyleCode(sku);
+  if (source === "flattered") return extractFlatteredStyleCode(sku);
+  if (source === "ancient-greek-sandals") return extractAncientGreekStyleCode(sku);
+  if (source === "alohas") return extractAlohasStyleCode(sku);
+  if (source === "hereu") return extractHereuStyleCode(sku);
+  if (source === "jude") return extractJudeStyleCode(sku);
+  if (source === "le-monde-beryl") return extractLeMondeBerylStyleCode(sku);
+  if (source === "tony-bianco") return extractTonyBiancoStyleCode(sku);
 
   const larroude = extractLarroudeStyleCode(sku);
   if (larroude) return larroude;
