@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 17223,
-  "modelFamilyCount": 11200,
-  "totalVariants": 17223,
-  "multiVariantFamilyCount": 4237,
-  "reductionPercent": 35,
-  "collapsedVariantProducts": 6023,
+  "rawProductCount": 17285,
+  "modelFamilyCount": 11263,
+  "totalVariants": 17285,
+  "multiVariantFamilyCount": 4231,
+  "reductionPercent": 34.8,
+  "collapsedVariantProducts": 6022,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11152,
+    "familiesWithMultipleRepresentativeImages": 11215,
     "averageRepresentativeImageCount": 6.32,
     "maxRepresentativeImageCount": 80
   },
@@ -15,19 +15,31 @@
       "modelFamilyId": "larroude--style-larroude-l422-vero-ballet-flat-base",
       "brand": "LARROUDE",
       "canonicalName": "Verona Ballet Flat",
-      "variantCount": 34
+      "variantCount": 37
     },
     {
       "modelFamilyId": "larroude--style-larroude-l415-stel-sneaker-base",
       "brand": "LARROUDE",
-      "canonicalName": "Stella Sneaker",
-      "variantCount": 26
+      "canonicalName": "Stella Mule",
+      "variantCount": 33
+    },
+    {
+      "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12302-sandal-sandal",
+      "brand": "ANCIENT GREEK SANDALS",
+      "canonicalName": "The Slipper",
+      "variantCount": 29
     },
     {
       "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-ce-soire-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Ce-soire",
       "variantCount": 24
+    },
+    {
+      "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12104-sandal-sandal",
+      "brand": "ANCIENT GREEK SANDALS",
+      "canonicalName": "Iro",
+      "variantCount": 20
     },
     {
       "modelFamilyId": "veja--id-free-people-88974951-sneaker-base",
@@ -58,18 +70,6 @@
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Agent",
       "variantCount": 17
-    },
-    {
-      "modelFamilyId": "coolway--id-free-people-95601712-sneaker-base",
-      "brand": "Coolway",
-      "canonicalName": "Coolway Goal Sneaker",
-      "variantCount": 17
-    },
-    {
-      "modelFamilyId": "hoka--id-free-people-94105657-sneaker-base",
-      "brand": "HOKA®",
-      "canonicalName": "Hoka Bondi 9 Sneaker",
-      "variantCount": 16
     }
   ],
   "mediumConfidenceGroups": [
@@ -109,7 +109,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Fathom",
       "variantCount": 14,
@@ -627,7 +627,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesque-2-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesque-2-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Arabesque",
       "variantCount": 6,
@@ -858,7 +858,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-perky-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-perky-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Perky",
       "variantCount": 6,
@@ -1838,7 +1838,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-dancerina-5-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-dancerina-5-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Dancerina",
       "variantCount": 4,
@@ -2034,7 +2034,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-hinted-1-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-hinted-1-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Hinted",
       "variantCount": 4,
@@ -2377,7 +2377,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-preakness-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-preakness-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Preakness",
       "variantCount": 4,
@@ -2461,14 +2461,14 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-remy-pump-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-remy-boot-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Remy",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-reverie-2-sandal-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-reverie-2-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Reverie-2",
       "variantCount": 4,
@@ -2503,7 +2503,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-saturna-sneaker-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-saturna-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Saturna",
       "variantCount": 4,
@@ -2524,7 +2524,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-served-sandal-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-served-sneaker-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Served",
       "variantCount": 4,
@@ -2650,14 +2650,14 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-the-truth-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-the-truth-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "The-truth",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-theorize-sandal-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-theorize-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Theorize",
       "variantCount": 4,
@@ -2727,7 +2727,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-vespa-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-vespa-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Vespa",
       "variantCount": 4,
@@ -2790,7 +2790,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-worthwhile-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-worthwhile-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Worthwhile",
       "variantCount": 4,
@@ -3133,7 +3133,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-caduceus-sneaker-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-caduceus-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Caduceus",
       "variantCount": 3,
@@ -3224,7 +3224,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-collene-cp-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-collene-cp-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Collene-cp",
       "variantCount": 3,
@@ -3560,7 +3560,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-grasp-f-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-grasp-f-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Grasp-f",
       "variantCount": 3,
@@ -3700,7 +3700,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-jinkies-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-jinkies-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Jinkies",
       "variantCount": 3,
@@ -3721,7 +3721,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-kalli-seq-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-kalli-seq-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Kalli-seq",
       "variantCount": 3,
@@ -4148,7 +4148,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-revenue-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-revenue-loafer-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Revenue",
       "variantCount": 3,
@@ -4344,7 +4344,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-spatial-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-spatial-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Spatial",
       "variantCount": 3,
@@ -4470,7 +4470,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-thalion-sneaker-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-thalion-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Thalion",
       "variantCount": 3,
@@ -4841,7 +4841,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesq-f-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-arabesq-f-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Arabesq-f",
       "variantCount": 2,
@@ -5527,6 +5527,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15021810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Contrasting Heel",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "converse--id-free-people-108359217-sneaker-base",
       "brand": "Converse",
       "canonicalName": "Converse Run Star Crush Sneaker",
@@ -5842,7 +5849,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-equina-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-equina-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Equina",
       "variantCount": 2,
@@ -6073,7 +6080,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-go-getter-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-go-getter-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Go-getter",
       "variantCount": 2,
@@ -6157,7 +6164,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gravitas-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gravitas-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Gravitas",
       "variantCount": 2,
@@ -7305,14 +7312,14 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pauleen-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pauleen-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Pauleen",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-paws-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-paws-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Paws",
       "variantCount": 2,
@@ -7326,7 +7333,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pettigrew-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pettigrew-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Pettigrew",
       "variantCount": 2,
@@ -7641,7 +7648,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-schedule-ballet-flat-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-schedule-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Schedule",
       "variantCount": 2,
@@ -7921,14 +7928,14 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-swingdance-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-swingdance-loafer-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Swingdance",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-tabitha-pump-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-tabitha-boot-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Tabitha",
       "variantCount": 2,
@@ -7949,14 +7956,14 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-telegram-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-telegram-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Telegram",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-tempers-pump-base",
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-tempers-ballet-flat-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Tempers",
       "variantCount": 2,
