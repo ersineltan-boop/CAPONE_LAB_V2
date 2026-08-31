@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-30T12:10:35.385Z",
-  "digerCount": 730,
-  "totalFamilies": 11263,
+  "generatedAt": "2026-08-31T12:52:24.496Z",
+  "digerCount": 732,
+  "totalFamilies": 11286,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 37,
     "GENERIC_SOURCE_CATEGORY": 126,
     "CONFLICTING_SOURCE_CATEGORIES": 40,
-    "UNMAPPED_SOURCE_CATEGORY": 527,
+    "UNMAPPED_SOURCE_CATEGORY": 529,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -1390,6 +1390,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--handle-carel-azur-derbies-cuir-et-unclassified-base-azur",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes Les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-beige-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
@@ -1445,15 +1454,6 @@
     },
     {
       "modelFamilyId": "carel--name-carel-2100-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-azur-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1625,6 +1625,40 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dear-frances--id-shopify-dear-frances-slipper-shoe-black-unclassified-base",
+      "brand": "DEAR FRANCES",
+      "sourceCategories": [
+        "Flat Shoes",
+        "Flats",
+        "Slipper Shoe"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dear-frances--id-shopify-dear-frances-slipper-shoe-shearling-unclassified-shearling",
+      "brand": "DEAR FRANCES",
+      "sourceCategories": [
+        "Flat Shoes",
+        "Flats",
+        "Slipper Shoe"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dear-frances--id-shopify-dear-frances-topo-flat-pony-black-unclassified-base",
+      "brand": "DEAR FRANCES",
+      "sourceCategories": [
+        "Flat Shoes",
+        "Flats",
+        "Topo",
+        "Topo flat"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "diba-true--id-free-people-97928642-unclassified-base",
@@ -5602,26 +5636,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "maray--id-shopify-maray-sunset-all-road-unclassified-base",
-      "brand": "MARAY",
-      "sourceCategories": [
-        "All Shoes",
-        "Flip Flops"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "maray--id-shopify-maray-sunset-blue-unclassified-base",
-      "brand": "MARAY",
-      "sourceCategories": [
-        "All Shoes",
-        "Flip Flops"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "melissa--id-free-people-109201699-unclassified-base",
       "brand": "Melissa",
       "sourceCategories": [
@@ -5844,16 +5858,6 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "pavement--id-shopify-pavement-almira-boots-brown-suede-unclassified-base",
-      "brand": "PAVEMENT",
-      "sourceCategories": [
-        "Boots",
-        "Espadrilles"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
-    },
-    {
       "modelFamilyId": "pavement--id-shopify-pavement-angelina-long-boots-black-crinkle-unclassified-base",
       "brand": "PAVEMENT",
       "sourceCategories": [
@@ -6059,6 +6063,16 @@
       "sourceCategories": [
         "Espadrilles",
         "Long boots"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pavement--name-pavement-paalmira-unclassified-base",
+      "brand": "PAVEMENT",
+      "sourceCategories": [
+        "Boots",
+        "Espadrilles"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
@@ -6607,7 +6621,8 @@
       "brand": "ST. AGNI",
       "sourceCategories": [
         "Flats",
-        "Footwear"
+        "Footwear",
+        "Sale Footwear"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -6797,6 +6812,15 @@
     {
       "modelFamilyId": "the-lline--id-level-shoes-the-lline-racille-slippers-navy-suede-women-slippers-mclyvj-html-unclassified-base",
       "brand": "The Lline",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-row--id-level-shoes-the-row-hudson-slides-black-suede-women-slippers-vc9l1w-html-unclassified-base",
+      "brand": "The Row",
       "sourceCategories": [
         "Slippers"
       ],
@@ -7298,7 +7322,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 290,
+      "count": 291,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7334,6 +7358,7 @@
         "Schutz",
         "St Agni",
         "The Lline",
+        "The Row",
         "Tod's",
         "Tony Bianco",
         "Tory Burch",
@@ -7361,11 +7386,12 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 66,
+      "count": 69,
       "brands": [
         "A.EMERY",
         "AEYDE",
         "BY FAR",
+        "DEAR FRANCES",
         "JUDE",
         "KHAITE",
         "LE MONDE BERYL",
@@ -7441,14 +7467,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Toutes les Chaussures",
-      "count": 13,
-      "brands": [
-        "CAREL"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Footwear All",
       "count": 13,
       "brands": [
@@ -7461,6 +7479,14 @@
       "count": 13,
       "brands": [
         "LE MONDE BERYL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Toutes les Chaussures",
+      "count": 12,
+      "brands": [
+        "CAREL"
       ],
       "proposedMapping": null
     },
@@ -7562,6 +7588,16 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Flat Shoes",
+      "count": 5,
+      "brands": [
+        "DEAR FRANCES",
+        "Jennifer Chamandi",
+        "Le Monde Beryl"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "FLAT SHOES",
       "count": 5,
       "brands": [
@@ -7634,6 +7670,14 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Sale Footwear",
+      "count": 4,
+      "brands": [
+        "ST. AGNI"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Shoes Flats",
       "count": 4,
       "brands": [
@@ -7656,36 +7700,20 @@
         "A.EMERY"
       ],
       "proposedMapping": null
-    },
-    {
-      "sourceCategory": "MINI CAMELIA SLIPPER",
-      "count": 3,
-      "brands": [
-        "AMINA MUADDI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "VITTORIA SLIPPER",
-      "count": 3,
-      "brands": [
-        "AMINA MUADDI"
-      ],
-      "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 11263,
-    "babet": 760,
+    "tumu": 11286,
+    "babet": 788,
     "loafer": 591,
-    "topuklu": 1771,
-    "sandal": 3150,
-    "mule": 1042,
-    "bot-cizme": 1851,
+    "topuklu": 1773,
+    "sandal": 3143,
+    "mule": 1029,
+    "bot-cizme": 1862,
     "sneaker": 1168,
     "espadril": 104,
     "oxford-derby": 10,
     "clog": 86,
-    "diger": 730
+    "diger": 732
   }
 }
