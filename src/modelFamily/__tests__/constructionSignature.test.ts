@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { constructionsCompatible, productConstructionKey } from "../constructionSignature";
+import {
+  constructionsCompatible,
+  constructionsCompatibleForVerifiedStyle,
+  isWoodColorwaySlugNoise,
+  productConstructionKey,
+} from "../constructionSignature";
 import type { RawAnalyzedProduct } from "../types";
 
 function product(name: string, url = "https://example.com/p"): RawAnalyzedProduct {
@@ -167,5 +172,49 @@ describe("construction signature", () => {
         product("Keefa High Block Sandal", "https://example.com/products/keefa-high-block-sandal"),
       ),
     ).toBe(false);
+  });
+
+  it("ignores trailing Wood colorway slug on verified-style merges only", () => {
+    const wood = product(
+      "Ariella Leather Sandal",
+      "https://schutz-shoes.com/products/ariella-o99-high-heel-sandal-leather-vinyl-wood",
+    );
+    wood.color = "Wood";
+    wood.cleaned = { color: "Wood", heelHeight: null };
+    wood.normalized.heelHeightGroup = "HIGH";
+    wood.normalized.heelType = "STILETTO";
+
+    const black = product(
+      "Ariella Sandal",
+      "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl",
+    );
+    black.normalized.heelHeightGroup = "HIGH";
+    black.normalized.heelType = "STILETTO";
+
+    expect(isWoodColorwaySlugNoise(wood)).toBe(true);
+    expect(isWoodColorwaySlugNoise(black)).toBe(false);
+    expect(constructionsCompatible(wood, black)).toBe(false);
+    expect(constructionsCompatibleForVerifiedStyle(wood, black)).toBe(true);
+  });
+
+  it("still blocks verified-style merge for structural x-wood construction", () => {
+    const xWood = product(
+      "Keefa X-Wood Platform Sandal",
+      "https://schutz-shoes.com/products/keefa-x-wood-platform-sandal-s26-heel-height-high-s2034600030368",
+    );
+    xWood.color = "Wood";
+    xWood.cleaned = { color: "Wood", heelHeight: null };
+    xWood.normalized.heelHeightGroup = "HIGH";
+    xWood.normalized.heelType = "PLATFORM";
+
+    const leather = product(
+      "Keefa Sandal",
+      "https://schutz-shoes.com/products/keefa-sandal-p26-heel-height-high-s2034600030378",
+    );
+    leather.normalized.heelHeightGroup = "HIGH";
+    leather.normalized.heelType = "STILETTO";
+
+    expect(isWoodColorwaySlugNoise(xWood)).toBe(false);
+    expect(constructionsCompatibleForVerifiedStyle(xWood, leather)).toBe(false);
   });
 });

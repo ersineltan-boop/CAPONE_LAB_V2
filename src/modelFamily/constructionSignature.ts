@@ -1,3 +1,4 @@
+import { extractShopifyHandle } from "./sourceIdentity";
 import type { RawAnalyzedProduct } from "./types";
 
 const FLAG_RULES: Array<{ id: string; pattern: RegExp }> = [
@@ -81,6 +82,29 @@ export function constructionsCompatible(a: RawAnalyzedProduct, b: RawAnalyzedPro
 }
 
 /**
+ * SCHUTZ (and similar) Wood colorways often use a trailing `-wood` Shopify handle
+ * segment for the finish name. On verified same-style merges only, treat that as
+ * slug noise — not structural x-wood / wood-platform construction.
+ */
+export function isWoodColorwaySlugNoise(product: RawAnalyzedProduct): boolean {
+  const color = (product.cleaned?.color ?? product.color ?? "").trim().toLowerCase();
+  if (color !== "wood") return false;
+
+  const handle = extractShopifyHandle(product.productUrl)?.toLowerCase();
+  if (!handle || !handle.endsWith("-wood")) return false;
+
+  const blob = constructionBlob(product).toLowerCase();
+  if (/\bx[- ]?wood\b/.test(blob)) return false;
+  if (/\bwood[- ]?platform\b|\bplatform[- ]?wood\b/.test(blob)) return false;
+  if (/\bwooden\b|\bwood heel\b|\bwood block\b|\bwood sole\b/.test(blob)) return false;
+
+  const title = stripDiacritics(product.productName).toLowerCase();
+  if (/\bwood\b/.test(title)) return false;
+
+  return true;
+}
+
+/**
  * Verified same-style colorway merges may ignore vinyl-only material noise while
  * still blocking architecture and other material-treatment conflicts (mesh/wood/clear).
  */
@@ -88,7 +112,11 @@ export function constructionsCompatibleForVerifiedStyle(
   a: RawAnalyzedProduct,
   b: RawAnalyzedProduct,
 ): boolean {
-  return constructionsCompatibleWithOptions(a, b, { ignoreFlags: ["vinyl"] });
+  const ignoreFlags = ["vinyl"];
+  if (isWoodColorwaySlugNoise(a) || isWoodColorwaySlugNoise(b)) {
+    ignoreFlags.push("wood");
+  }
+  return constructionsCompatibleWithOptions(a, b, { ignoreFlags });
 }
 
 function constructionsCompatibleWithOptions(

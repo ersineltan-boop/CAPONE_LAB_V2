@@ -663,6 +663,161 @@ describe("false merge prevention", () => {
   });
 });
 
+describe("SCHUTZ Ariella wood colorway recovery", () => {
+  const ariellaMule = {
+    source: "schutz" as const,
+    brand: "SCHUTZ",
+    category: "MULE" as const,
+    normalized: {
+      category: "MULE" as const,
+      colorFamily: "UNKNOWN" as const,
+      materialFamily: "UNKNOWN" as const,
+      heelType: "STILETTO" as const,
+      heelHeightGroup: "HIGH" as const,
+      toeShape: "ROUND" as const,
+      details: [],
+      construction: ["BACKLESS" as const],
+    },
+  };
+
+  it("groups all S020660158 Ariella Sandal colorways including Wood slug into one family", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...ariellaMule,
+        productName: "Ariella Leather Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-o99-high-heel-sandal-leather-vinyl-wood",
+        color: "Wood",
+        material: "Vinyl",
+        cleaned: { color: "Wood", heelHeight: null },
+        variants: [{ sku: "S0206601580020", color: "Wood" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-synthetic-sandal-s26-heel-height-high-s0206601580047",
+        color: "Lavander Sky",
+        material: "Synthetic Upper",
+        cleaned: { color: "Lavander Sky", heelHeight: null },
+        variants: [{ sku: "S0206601580047", color: "Lavander Sky" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Ariella Suede Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl-nude",
+        color: "Oyster",
+        material: "Vinyl",
+        cleaned: { color: "Oyster", heelHeight: null },
+        variants: [{ sku: "S0206601580001", color: "Oyster" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl",
+        color: "Black",
+        material: "Vinyl",
+        cleaned: { color: "Black", heelHeight: null },
+        variants: [{ sku: "S0206601580002", color: "Black" }],
+      }),
+    ]);
+
+    const ariellaFamilies = families.filter(
+      (family) => family.canonicalName === "Ariella Sandal" && !family.canonicalName.includes("Platform"),
+    );
+    expect(ariellaFamilies).toHaveLength(1);
+    expect(ariellaFamilies[0]?.variantCount).toBe(4);
+    expect(ariellaFamilies[0]?.groupingReason).toContain("styleCode:S020660158");
+  });
+
+  it("keeps Ariella Platform S221600010 separate from regular Ariella S020660158", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl",
+        variants: [{ sku: "S0206601580002", color: "Black" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Ariella Platform Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-platform-synthetic-sandal-s26-heel-height-high-s2216000100005",
+        color: "Sugar White",
+        cleaned: { color: "Sugar White", heelHeight: null },
+        variants: [{ sku: "S2216000100005", color: "Sugar White" }],
+      }),
+    ]);
+
+    expect(families).toHaveLength(2);
+    expect(families.some((family) => family.canonicalName === "Ariella Sandal")).toBe(true);
+    expect(families.some((family) => family.canonicalName === "Ariella Platform Sandal")).toBe(true);
+  });
+
+  it("keeps structural x-wood platform separate even with Wood color", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...ariellaMule,
+        productName: "Keefa X-Wood Platform Sandal",
+        productUrl: "https://schutz-shoes.com/products/keefa-x-wood-platform-sandal-s26-heel-height-high-s2034600030368",
+        color: "Wood",
+        cleaned: { color: "Wood", heelHeight: null },
+        normalized: {
+          ...ariellaMule.normalized,
+          heelType: "PLATFORM",
+        },
+        variants: [{ sku: "S2034600030368", color: "Wood" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Keefa Sandal",
+        productUrl: "https://schutz-shoes.com/products/keefa-sandal-p26-heel-height-high-s2034600030378",
+        variants: [{ sku: "S2034600030378", color: "Maplewood" }],
+      }),
+    ]);
+
+    expect(families).toHaveLength(2);
+  });
+
+  it("keeps same Ariella name with different verified style codes separate", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl",
+        variants: [{ sku: "S0206601580002", color: "Black" }],
+      }),
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-other-black",
+        variants: [{ sku: "S2208700750004", color: "Black" }],
+      }),
+    ]);
+
+    expect(families).toHaveLength(2);
+  });
+
+  it("does not merge marketplace Ariella name similarity with official Schutz", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...ariellaMule,
+        productName: "Ariella Sandal",
+        productUrl: "https://schutz-shoes.com/products/ariella-099-high-heel-sandal-vinyl",
+        variants: [{ sku: "S0206601580002", color: "Black" }],
+      }),
+      product({
+        source: "farfetch",
+        brand: "SCHUTZ",
+        productName: "Ariella Sandal",
+        productUrl: "https://www.farfetch.com/shopping/women/schutz-ariella-item-999.aspx",
+        category: "MULE",
+        variants: [{ sku: "S0206601580001", color: "Oyster" }],
+        normalized: ariellaMule.normalized,
+      }),
+    ]);
+
+    expect(families).toHaveLength(2);
+  });
+});
+
 describe("verified color recovery", () => {
   it("groups three Zara colors of the same -p style into one family", () => {
     const base = {
