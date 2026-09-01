@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-31T12:52:24.496Z",
-  "digerCount": 732,
-  "totalFamilies": 11286,
+  "generatedAt": "2026-09-01T11:41:40.610Z",
+  "digerCount": 737,
+  "totalFamilies": 11318,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 37,
-    "GENERIC_SOURCE_CATEGORY": 126,
+    "GENERIC_SOURCE_CATEGORY": 128,
     "CONFLICTING_SOURCE_CATEGORIES": 40,
-    "UNMAPPED_SOURCE_CATEGORY": 529,
+    "UNMAPPED_SOURCE_CATEGORY": 532,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -94,6 +94,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "adidas--id-level-shoes-adidas-taekwondo-mei-shoes-brown-leather-women-ballet-ewxf82-html-unclassified-base",
+      "brand": "adidas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "adidas--id-level-shoes-adidas-x-stella-mccartney-dropset-4-training-shoes-burgundy-fabric-women-training-3ews9f-html-unclassified-base",
@@ -1435,6 +1444,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "carel--id-shopify-carel-sonia-derbies-cuir-noir-unclassified-base",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "carel--id-shopify-carel-starter-bottes-cuir-velours-marron-avec-brides-vernies-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
@@ -2209,6 +2227,15 @@
     },
     {
       "modelFamilyId": "flabelus--id-level-shoes-flabelus-amy-slippers-navy-velvet-women-r873ol-html-unclassified-base",
+      "brand": "Flabelus",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flabelus--id-level-shoes-flabelus-bruna-mules-burgundy-velvet-women-mules-2jvn7a-html-unclassified-mule",
       "brand": "Flabelus",
       "sourceCategories": [
         "Slippers"
@@ -4942,6 +4969,18 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-olympia-slipper-black-velvet-unclassified-base",
+      "brand": "LE MONDE BERYL",
+      "sourceCategories": [
+        "All Footwear",
+        "Flats",
+        "Footwear All new",
+        "OLYMPIA SLIPPER - Variants"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-stella-slipper-ivory-satin-unclassified-satin",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [],
@@ -5732,6 +5771,15 @@
     {
       "modelFamilyId": "nike--id-farfetch-37631509-unclassified-base",
       "brand": "Nike",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "on--id-level-shoes-on-cloudmonster-3-mules-brown-knit-women-low-tops-8u2pzs-html-unclassified-mule",
+      "brand": "On",
       "sourceCategories": [
         "Shoes"
       ],
@@ -7322,7 +7370,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 291,
+      "count": 292,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7386,7 +7434,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 69,
+      "count": 70,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -7467,16 +7515,8 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Footwear All",
-      "count": 13,
-      "brands": [
-        "LE MONDE BERYL"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Footwear All new",
-      "count": 13,
+      "count": 14,
       "brands": [
         "LE MONDE BERYL"
       ],
@@ -7484,9 +7524,17 @@
     },
     {
       "sourceCategory": "Toutes les Chaussures",
-      "count": 12,
+      "count": 13,
       "brands": [
         "CAREL"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Footwear All",
+      "count": 13,
+      "brands": [
+        "LE MONDE BERYL"
       ],
       "proposedMapping": null
     },
@@ -7703,17 +7751,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11286,
-    "babet": 788,
+    "tumu": 11318,
+    "babet": 786,
     "loafer": 591,
-    "topuklu": 1773,
-    "sandal": 3143,
-    "mule": 1029,
-    "bot-cizme": 1862,
-    "sneaker": 1168,
-    "espadril": 104,
+    "topuklu": 1777,
+    "sandal": 3150,
+    "mule": 1033,
+    "bot-cizme": 1868,
+    "sneaker": 1177,
+    "espadril": 103,
     "oxford-derby": 10,
     "clog": 86,
-    "diger": 732
+    "diger": 737
   }
 }
