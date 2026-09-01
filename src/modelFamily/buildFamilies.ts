@@ -609,8 +609,36 @@ function verifiedStyleCodes(metas: ProductGroupingMeta[]): string[] {
   ];
 }
 
+/** Join fragments that share one verified style code but landed in style/handle/singleton paths. */
+function canMergeVerifiedStyleGroups(a: PendingGroup, b: PendingGroup): boolean {
+  if (a.brand !== b.brand) return false;
+  const left = groupMetas(a);
+  const right = groupMetas(b);
+  if (left.length === 0 || right.length === 0) return false;
+  if (!sameSourceChannel(left[0]!, right[0]!)) return false;
+
+  const leftCodes = verifiedStyleCodes(left);
+  const rightCodes = verifiedStyleCodes(right);
+  if (leftCodes.length !== 1 || rightCodes.length !== 1 || leftCodes[0] !== rightCodes[0]) {
+    return false;
+  }
+  if (!left.every((meta) => !meta.verifiedStyle || meta.styleCode === leftCodes[0])) return false;
+  if (!right.every((meta) => !meta.verifiedStyle || meta.styleCode === rightCodes[0])) return false;
+
+  for (const leftMeta of left) {
+    for (const rightMeta of right) {
+      if (!categoriesCompatible(leftMeta, rightMeta)) return false;
+      if (!constructionsCompatibleForVerifiedStyle(leftMeta.product, rightMeta.product)) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
 function groupsHighConfidenceCompatible(a: PendingGroup, b: PendingGroup): boolean {
   if (a.brand !== b.brand) return false;
+  if (canMergeVerifiedStyleGroups(a, b)) return true;
   if (a.confidence !== "HIGH" && b.confidence !== "HIGH") return false;
   const left = groupMetas(a);
   const right = groupMetas(b);

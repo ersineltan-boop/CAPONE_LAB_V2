@@ -362,4 +362,28 @@ describe("localized footwear completeness", () => {
       }).category,
     ).toBe("BALLERINA");
   });
+
+  it("excludes confirmed clothing such as jumpers and hoodies", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Merino Lace Up Hem Jumper",
+        handle: "lmk15m-0660-black-black",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+    expect(
+      evaluateFootwearProduct({
+        title: "Boxy Pony Kid Print Hoodie",
+        handle: "5498p73c-m-1364-black",
+      }).decision,
+    ).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
+  it("does not exclude merino footwear when title names a shoe silhouette", () => {
+    expect(
+      evaluateFootwearProduct({
+        title: "Merino shearling mules",
+        handle: "merino-shearling-mules",
+      }).decision,
+    ).not.toBe("EXCLUDE_NON_FOOTWEAR");
+  });
 });

@@ -15,11 +15,18 @@ export interface NonFootwearRemoval {
 export function isConfirmedNonFootwearProduct(product: {
   productName: string;
   productUrl: string;
+  productType?: string;
+  tags?: string[];
+  collectionPath?: string;
+  sourceCategoryPath?: string;
 }): { exclude: boolean; signal: string | null } {
   const result = evaluateFootwearProduct({
     title: product.productName,
     handle: extractHandleFromProductUrl(product.productUrl),
-    fromVerifiedFootwearCollection: true,
+    productType: product.productType,
+    tags: product.tags,
+    collectionPath: product.collectionPath ?? product.sourceCategoryPath,
+    fromVerifiedFootwearCollection: false,
   });
   if (result.decision !== "EXCLUDE_NON_FOOTWEAR") {
     return { exclude: false, signal: null };
@@ -27,7 +34,12 @@ export function isConfirmedNonFootwearProduct(product: {
   return { exclude: true, signal: result.matchedSignals[0] ?? "non-footwear" };
 }
 
-export function stripConfirmedNonFootwear<T extends Pick<PilotProduct, "brand" | "productName" | "productUrl" | "source">>(
+export function stripConfirmedNonFootwear<T extends Pick<PilotProduct, "brand" | "productName" | "productUrl" | "source"> & {
+  productType?: string;
+  tags?: string[];
+  collectionPath?: string;
+  sourceCategoryPath?: string;
+}>(
   products: T[],
 ): { kept: T[]; removed: NonFootwearRemoval[] } {
   const kept: T[] = [];

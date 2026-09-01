@@ -663,6 +663,55 @@ describe("false merge prevention", () => {
   });
 });
 
+describe("verified style group reconciliation", () => {
+  const hereuLoafer = {
+    source: "hereu" as const,
+    brand: "HEREU",
+    category: "LOAFER" as const,
+    normalized: {
+      category: "LOAFER" as const,
+      colorFamily: "UNKNOWN" as const,
+      materialFamily: "UNKNOWN" as const,
+      heelType: "FLAT" as const,
+      heelHeightGroup: "FLAT" as const,
+      toeShape: "ROUND" as const,
+      details: [],
+      construction: ["CLOSED_TOE" as const],
+    },
+  };
+
+  it("merges HEREU verified-style fragments split by FOR ALL handle noise", () => {
+    const { families } = buildModelFamilies([
+      product({
+        ...hereuLoafer,
+        productName: "PLEGADA SHINY - FOR ALL - Deconstructed Lace-up Shoe",
+        productUrl: "https://hereu.com/products/plegada-shiny-for-all-deconstructed-lace-up-shoe-chestnut-1",
+        variants: [{ sku: "WFPLSH", color: "Chestnut" }],
+      }),
+      product({
+        ...hereuLoafer,
+        productName: "PLEGADA SHINY - Deconstructed Lace-up Shoe",
+        productUrl: "https://hereu.com/products/plegada-shiny-deconstructed-lace-up-shoe-mahogany",
+        color: "Mahogany",
+        cleaned: { color: "Mahogany", heelHeight: null },
+        variants: [{ sku: "WFPLSH", color: "Mahogany" }],
+      }),
+      product({
+        ...hereuLoafer,
+        productName: "PLEGADA SHINY - Deconstructed Lace-up Shoe",
+        productUrl: "https://hereu.com/products/plegada-shiny-deconstructed-lace-up-shoe-chestnut",
+        color: "Chestnut",
+        cleaned: { color: "Chestnut", heelHeight: null },
+        variants: [{ sku: "WFPLSH", color: "Chestnut" }],
+      }),
+    ]);
+
+    expect(families).toHaveLength(1);
+    expect(families[0]?.variantCount).toBe(3);
+    expect(families[0]?.groupingReason).toContain("styleCode:WFPLSH");
+  });
+});
+
 describe("SCHUTZ Ariella wood colorway recovery", () => {
   const ariellaMule = {
     source: "schutz" as const,
