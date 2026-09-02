@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 17374,
-  "modelFamilyCount": 11311,
-  "totalVariants": 17374,
-  "multiVariantFamilyCount": 4242,
+  "rawProductCount": 17443,
+  "modelFamilyCount": 11352,
+  "totalVariants": 17443,
+  "multiVariantFamilyCount": 4256,
   "reductionPercent": 34.9,
-  "collapsedVariantProducts": 6063,
+  "collapsedVariantProducts": 6091,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11263,
+    "familiesWithMultipleRepresentativeImages": 11302,
     "averageRepresentativeImageCount": 6.32,
     "maxRepresentativeImageCount": 80
   },
@@ -27,7 +27,7 @@
       "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12302-sandal-sandal",
       "brand": "ANCIENT GREEK SANDALS",
       "canonicalName": "The Slipper",
-      "variantCount": 29
+      "variantCount": 30
     },
     {
       "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-ce-soire-sandal-base",
@@ -102,16 +102,16 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "fp-collection--id-free-people-55730378-boot-base",
-      "brand": "FP Collection",
-      "canonicalName": "Brayden Western Boot",
-      "variantCount": 14,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fathom-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Fathom",
+      "variantCount": 15,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "fp-collection--id-free-people-55730378-boot-base",
+      "brand": "FP Collection",
+      "canonicalName": "Brayden Western Boot",
       "variantCount": 14,
       "groupingReason": "singleton"
     },
@@ -1176,13 +1176,6 @@
       "modelFamilyId": "jeffrey-campbell--id-free-people-100677566-unclassified-base",
       "brand": "Jeffrey Campbell",
       "canonicalName": "Everyday Flat",
-      "variantCount": 5,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-flag-girl-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Flag-",
       "variantCount": 5,
       "groupingReason": "singleton"
     },
@@ -2510,7 +2503,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-serena-sandal-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-serena-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Serena",
       "variantCount": 4,
@@ -3275,7 +3268,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossed Flat",
+      "canonicalName": "Crossover Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -4746,13 +4739,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-agent-f-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Agent-f",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-agent-st-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Agent-st",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
