@@ -1,45 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T22:17:56.616Z",
+  "generatedAt": "2026-09-02T22:14:56.814Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
     "activeBrandsAfter": 50,
-    "attempted": 5,
+    "attempted": 1,
     "activated": 0,
     "partial": 0,
-    "blocked": 2,
-    "customAdapterRequired": 3,
+    "blocked": 0,
+    "customAdapterRequired": 1,
     "failed": 0,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "GANNI",
-      "slug": "ganni",
-      "attemptedAt": "2026-09-01T22:17:56.616Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
-      "marketplaceCoverage": {
-        "farfetch": 5,
-        "levelShoes": 1
-      },
-      "activationDecision": "blocked",
-      "notes": "salesforce, jsonld"
-    },
-    {
-      "brand": "AQUAZZURA",
-      "slug": "aquazzura",
-      "attemptedAt": "2026-09-01T22:17:56.616Z",
-      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "brand": "VAGABOND",
+      "slug": "vagabond-shoemakers",
+      "attemptedAt": "2026-09-02T22:14:56.814Z",
+      "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
@@ -50,74 +29,11 @@
       "categoriesFound": [],
       "blocker": "Shopify products.json did not yield women's footwear",
       "marketplaceCoverage": {
-        "farfetch": 15,
-        "levelShoes": 33
+        "farfetch": 10,
+        "levelShoes": 45
       },
       "activationDecision": "blocked",
       "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    },
-    {
-      "brand": "GIANVITO ROSSI",
-      "slug": "gianvito-rossi",
-      "attemptedAt": "2026-09-01T22:17:56.616Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
-      "marketplaceCoverage": {
-        "farfetch": 18,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "salesforce, jsonld"
-    },
-    {
-      "brand": "STUART WEITZMAN",
-      "slug": "stuart-weitzman",
-      "attemptedAt": "2026-09-01T22:17:56.616Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 15,
-        "levelShoes": 2
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "SAM EDELMAN",
-      "slug": "sam-edelman",
-      "attemptedAt": "2026-09-01T22:17:56.616Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 3,
-        "levelShoes": 32
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
     }
   ]
 }
