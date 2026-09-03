@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-02T10:52:45.275Z",
-  "digerCount": 745,
-  "totalFamilies": 11352,
+  "generatedAt": "2026-09-03T11:06:22.793Z",
+  "digerCount": 747,
+  "totalFamilies": 11453,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 128,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 534,
+    "UNMAPPED_SOURCE_CATEGORY": 536,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -202,6 +202,15 @@
       "brand": "AEYDE",
       "sourceCategories": [
         "Filler Suggested Product Logic: Flats",
+        "Filler Suggested Product Logic: Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "aeyde--id-shopify-aeyde-rikki-black-calf-unclassified-base",
+      "brand": "AEYDE",
+      "sourceCategories": [
         "Filler Suggested Product Logic: Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -6943,6 +6952,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "the-row--id-level-shoes-the-row-hudson-slides-brown-suede-women-slippers-jyvtoe-html-unclassified-base",
+      "brand": "The Row",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "the-row--id-level-shoes-the-row-stella-slippers-black-leather-women-slippers-xaz9ic-html-unclassified-base",
       "brand": "The Row",
       "sourceCategories": [
@@ -7455,7 +7473,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 295,
+      "count": 296,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7631,15 +7649,15 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Filler Suggested Product Logic: Flats",
-      "count": 11,
+      "sourceCategory": "Filler Suggested Product Logic: Shoes",
+      "count": 12,
       "brands": [
         "AEYDE"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Filler Suggested Product Logic: Shoes",
+      "sourceCategory": "Filler Suggested Product Logic: Flats",
       "count": 11,
       "brands": [
         "AEYDE"
@@ -7835,17 +7853,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11352,
-    "babet": 788,
-    "loafer": 590,
-    "topuklu": 1783,
-    "sandal": 3154,
-    "mule": 1038,
-    "bot-cizme": 1874,
-    "sneaker": 1179,
+    "tumu": 11453,
+    "babet": 793,
+    "loafer": 595,
+    "topuklu": 1805,
+    "sandal": 3157,
+    "mule": 1044,
+    "bot-cizme": 1923,
+    "sneaker": 1188,
     "espadril": 105,
     "oxford-derby": 10,
     "clog": 86,
-    "diger": 745
+    "diger": 747
   }
 }

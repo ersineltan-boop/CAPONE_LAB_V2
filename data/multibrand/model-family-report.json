@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 17443,
-  "modelFamilyCount": 11352,
-  "totalVariants": 17443,
-  "multiVariantFamilyCount": 4256,
-  "reductionPercent": 34.9,
-  "collapsedVariantProducts": 6091,
+  "rawProductCount": 17625,
+  "modelFamilyCount": 11453,
+  "totalVariants": 17625,
+  "multiVariantFamilyCount": 4294,
+  "reductionPercent": 35,
+  "collapsedVariantProducts": 6172,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11302,
-    "averageRepresentativeImageCount": 6.32,
+    "familiesWithMultipleRepresentativeImages": 11403,
+    "averageRepresentativeImageCount": 6.33,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -54,6 +54,12 @@
       "variantCount": 19
     },
     {
+      "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-spy-kid-sandal-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Spy-",
+      "variantCount": 19
+    },
+    {
       "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
       "brand": "LARROUDE",
       "canonicalName": "Cyprus Boat Shoe",
@@ -64,12 +70,6 @@
       "brand": "Veja",
       "canonicalName": "Veja Campo Sneaker",
       "variantCount": 18
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-agent-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Agent",
-      "variantCount": 17
     }
   ],
   "mediumConfidenceGroups": [
@@ -1271,7 +1271,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-jilly-sandal-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-jilly-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Jilly",
       "variantCount": 5,
@@ -1348,7 +1348,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-may-sandal-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-may-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "May",
       "variantCount": 5,
@@ -1873,6 +1873,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15238810-ballet-flat-base",
+      "brand": "ZARA",
+      "canonicalName": "Elastic Sport Ballet Flat",
+      "variantCount": 4,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-everynight-copy-boot-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Everynight",
@@ -2198,6 +2205,13 @@
       "modelFamilyId": "sam-edelman--id-free-people-97908230-ballet-flat-vinyl",
       "brand": "Sam Edelman",
       "canonicalName": "Michaela Jelly Mary Janes",
+      "variantCount": 4,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-milly-pump-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Milly",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
@@ -3268,7 +3282,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossover Flat",
+      "canonicalName": "Crossed Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -3847,7 +3861,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-mila-sandal-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-mila-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Mila",
       "variantCount": 3,
@@ -4449,7 +4463,7 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "alias-mae--id-shopify-alias-mae-teya-sandal-base",
+      "modelFamilyId": "alias-mae--id-shopify-alias-mae-teya-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Teya",
       "variantCount": 3,
@@ -5667,6 +5681,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-dawsen-heels-onyx-satin-pump-satin",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Dawsen Heel",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-delulu-f-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Delulu-f",
@@ -5789,13 +5810,6 @@
       "modelFamilyId": "zara--id-zara-12372510-sandal-sandal",
       "brand": "ZARA",
       "canonicalName": "Effect Sandal",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "zara--id-zara-15238810-ballet-flat-base",
-      "brand": "ZARA",
-      "canonicalName": "Elastic Sporty Ballet Flat",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -6993,6 +7007,13 @@
       "modelFamilyId": "sam-edelman--id-free-people-99590630-boot-base",
       "brand": "Sam Edelman",
       "canonicalName": "Milla Tall Boot",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-milly-f-pump-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Milly-f",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
