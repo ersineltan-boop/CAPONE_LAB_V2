@@ -1,39 +1,17 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-02T22:14:56.814Z",
+  "generatedAt": "2026-09-03T22:09:21.900Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
     "activeBrandsAfter": 50,
-    "attempted": 1,
+    "attempted": 0,
     "activated": 0,
     "partial": 0,
     "blocked": 0,
-    "customAdapterRequired": 1,
+    "customAdapterRequired": 0,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": [
-    {
-      "brand": "VAGABOND",
-      "slug": "vagabond-shoemakers",
-      "attemptedAt": "2026-09-02T22:14:56.814Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Shopify products.json did not yield women's footwear",
-      "marketplaceCoverage": {
-        "farfetch": 10,
-        "levelShoes": 45
-      },
-      "activationDecision": "blocked",
-      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    }
-  ]
+  "attempts": []
 }
