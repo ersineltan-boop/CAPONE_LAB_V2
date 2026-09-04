@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-03T11:06:22.793Z",
-  "digerCount": 747,
-  "totalFamilies": 11453,
+  "generatedAt": "2026-09-04T11:05:47.759Z",
+  "digerCount": 748,
+  "totalFamilies": 11520,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 128,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 536,
+    "UNMAPPED_SOURCE_CATEGORY": 537,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -1436,6 +1436,15 @@
     },
     {
       "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-bi-marron-unclassified-base",
+      "brand": "CAREL",
+      "sourceCategories": [
+        "Toutes les Chaussures"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "carel--id-shopify-carel-kaia-babies-compensees-cuir-verni-noir-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -7618,7 +7627,7 @@
     },
     {
       "sourceCategory": "Toutes les Chaussures",
-      "count": 14,
+      "count": 15,
       "brands": [
         "CAREL"
       ],
@@ -7853,17 +7862,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11453,
-    "babet": 793,
-    "loafer": 595,
-    "topuklu": 1805,
-    "sandal": 3157,
-    "mule": 1044,
-    "bot-cizme": 1923,
-    "sneaker": 1188,
+    "tumu": 11520,
+    "babet": 798,
+    "loafer": 596,
+    "topuklu": 1818,
+    "sandal": 3169,
+    "mule": 1045,
+    "bot-cizme": 1954,
+    "sneaker": 1191,
     "espadril": 105,
     "oxford-derby": 10,
     "clog": 86,
-    "diger": 747
+    "diger": 748
   }
 }
