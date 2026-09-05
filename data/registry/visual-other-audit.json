@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T11:05:47.759Z",
-  "digerCount": 748,
-  "totalFamilies": 11520,
+  "generatedAt": "2026-09-05T10:32:23.007Z",
+  "digerCount": 750,
+  "totalFamilies": 11563,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 128,
+    "GENERIC_SOURCE_CATEGORY": 130,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
     "UNMAPPED_SOURCE_CATEGORY": 537,
     "NO_SAFE_FALLBACK": 0
@@ -245,15 +245,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-invisible-mules-green-satin-women-mules-awxqsc-html-unclassified-mule-satin",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "ala-a--id-level-shoes-ala-a-suede-vienne-ballerinas-brown-suede-women-ballerinas-kokmme-html-unclassified-base",
@@ -1212,6 +1203,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "aquazzura--id-level-shoes-aquazzura-crystal-lover-75-mules-brown-mesh-women-mules-fyaeve-html-unclassified-mesh-mule",
+      "brand": "Aquazzura",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "aquazzura--id-level-shoes-aquazzura-rio-flirt-75-mules-beige-raffia-women-mules-u3iiip-html-unclassified-mule-raffia",
       "brand": "Aquazzura",
       "sourceCategories": [
@@ -1708,6 +1708,15 @@
     {
       "modelFamilyId": "diba-true--id-free-people-97928642-unclassified-base",
       "brand": "Diba True",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dolce-gabbana--id-level-shoes-dolce-gabbana-crystal-brocade-mules-cream-jacquard-women-mules-oug7yo-html-unclassified-mule",
+      "brand": "Dolce&Gabbana",
       "sourceCategories": [
         "Shoes"
       ],
@@ -7434,6 +7443,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--id-zara-12533810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "zara--id-zara-13504810-unclassified-laceup",
       "brand": "ZARA",
       "sourceCategories": [
@@ -7862,17 +7880,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11520,
-    "babet": 798,
-    "loafer": 596,
-    "topuklu": 1818,
-    "sandal": 3169,
-    "mule": 1045,
-    "bot-cizme": 1954,
-    "sneaker": 1191,
+    "tumu": 11563,
+    "babet": 799,
+    "loafer": 597,
+    "topuklu": 1826,
+    "sandal": 3176,
+    "mule": 1053,
+    "bot-cizme": 1959,
+    "sneaker": 1201,
     "espadril": 105,
     "oxford-derby": 10,
-    "clog": 86,
-    "diger": 748
+    "clog": 87,
+    "diger": 750
   }
 }

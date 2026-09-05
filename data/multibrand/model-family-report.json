@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 17709,
-  "modelFamilyCount": 11520,
-  "totalVariants": 17709,
-  "multiVariantFamilyCount": 4332,
+  "rawProductCount": 17757,
+  "modelFamilyCount": 11563,
+  "totalVariants": 17757,
+  "multiVariantFamilyCount": 4339,
   "reductionPercent": 34.9,
-  "collapsedVariantProducts": 6189,
+  "collapsedVariantProducts": 6194,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11471,
+    "familiesWithMultipleRepresentativeImages": 11514,
     "averageRepresentativeImageCount": 6.33,
     "maxRepresentativeImageCount": 80
   },
@@ -669,13 +669,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-ce-soire-3-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Ce-soire-2",
-      "variantCount": 6,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "fp-collection--id-free-people-90889817-clog-base",
       "brand": "FP Collection",
       "canonicalName": "Cedar Clogs",
@@ -889,6 +882,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-robyn-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Robyn",
+      "variantCount": 6,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-romee-f-sandal-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Romee-f",
       "variantCount": 6,
       "groupingReason": "singleton"
     },
@@ -1197,6 +1197,13 @@
       "modelFamilyId": "free-est--id-free-people-101165041-sandal-sandal",
       "brand": "free-est",
       "canonicalName": "Free-est Sunrise Slide",
+      "variantCount": 5,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gabbriette-sandal-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Gabbriette",
       "variantCount": 5,
       "groupingReason": "singleton"
     },
@@ -1974,13 +1981,6 @@
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-fyfe-ballet-flat-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Fyfe",
-      "variantCount": 4,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-gabbriette-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Gabbriette",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
@@ -3331,7 +3331,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossed Flat",
+      "canonicalName": "Crossover Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -4235,13 +4235,6 @@
       "modelFamilyId": "p448--id-free-people-105742431-sandal-sandal",
       "brand": "P448",
       "canonicalName": "Riviera Slide",
-      "variantCount": 3,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-romee-f-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Romee-f",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5605,6 +5598,13 @@
     },
     {
       "modelFamilyId": "zara--id-zara-15013810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Contrast Heel",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
       "brand": "ZARA",
       "canonicalName": "Contrast Heel",
       "variantCount": 2,
@@ -7487,6 +7487,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-patrizia-f-sandal-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Patrizia-f",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pauleen-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Pauleen",
@@ -7595,6 +7602,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-prowl-boot-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Prowl",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pucker-sb-pump-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Pucker-sb",
       "variantCount": 2,
       "groupingReason": "singleton"
     },

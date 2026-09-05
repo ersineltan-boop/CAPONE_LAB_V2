@@ -1,10 +1,10 @@
 {
-  "totalProducts": 17709,
+  "totalProducts": 17757,
   "totalBrands": 402,
   "categories": [
     {
       "tag": "SANDAL",
-      "productCount": 4036,
+      "productCount": 4033,
       "brandCount": 139,
       "brands": [
         "4CCCCEES",
@@ -150,8 +150,8 @@
     },
     {
       "tag": "OTHER_FOOTWEAR",
-      "productCount": 2800,
-      "brandCount": 246,
+      "productCount": 2834,
+      "brandCount": 247,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -363,6 +363,7 @@
         "St Agni",
         "Stella McCartney",
         "Stuart Weitzman",
+        "Studio Amelia",
         "THE ATTICO",
         "THE ROW",
         "TKEES",
@@ -403,7 +404,7 @@
     },
     {
       "tag": "PUMP",
-      "productCount": 2263,
+      "productCount": 2269,
       "brandCount": 124,
       "brands": [
         "A.EMERY",
@@ -534,7 +535,7 @@
     },
     {
       "tag": "MULE",
-      "productCount": 1571,
+      "productCount": 1572,
       "brandCount": 142,
       "brands": [
         "A.EMERY",
@@ -683,7 +684,7 @@
     },
     {
       "tag": "BOOT",
-      "productCount": 1213,
+      "productCount": 1215,
       "brandCount": 42,
       "brands": [
         "A.EMERY",
@@ -732,7 +733,7 @@
     },
     {
       "tag": "SNEAKER",
-      "productCount": 1187,
+      "productCount": 1189,
       "brandCount": 107,
       "brands": [
         "A BATHING APE®",
@@ -918,7 +919,7 @@
     },
     {
       "tag": "LOAFER",
-      "productCount": 1035,
+      "productCount": 1036,
       "brandCount": 50,
       "brands": [
         "A.EMERY",
@@ -975,7 +976,7 @@
     },
     {
       "tag": "ANKLE_BOOT",
-      "productCount": 793,
+      "productCount": 796,
       "brandCount": 37,
       "brands": [
         "AEYDE",
@@ -1152,7 +1153,7 @@
     },
     {
       "tag": "WEDGE",
-      "productCount": 408,
+      "productCount": 410,
       "brandCount": 30,
       "brands": [
         "AEYDE",
@@ -1221,8 +1222,8 @@
   "colors": [
     {
       "tag": "BLACK",
-      "productCount": 4123,
-      "brandCount": 182,
+      "productCount": 4139,
+      "brandCount": 183,
       "brands": [
         "A.EMERY",
         "A.S.98",
@@ -1391,6 +1392,7 @@
         "The Lline",
         "The Row",
         "Tod's",
+        "Tom Ford",
         "Tony Bianco",
         "Tory Burch",
         "UGG",
@@ -1410,7 +1412,7 @@
     },
     {
       "tag": "BROWN",
-      "productCount": 1784,
+      "productCount": 1789,
       "brandCount": 131,
       "brands": [
         "A.EMERY",
@@ -1548,8 +1550,8 @@
     },
     {
       "tag": "WHITE",
-      "productCount": 958,
-      "brandCount": 111,
+      "productCount": 962,
+      "brandCount": 112,
       "brands": [
         "ALOHAS",
         "AMINA MUADDI",
@@ -1646,6 +1648,7 @@
         "Schutz",
         "St Agni",
         "Stuart Weitzman",
+        "Studio Amelia",
         "THE ATTICO",
         "THE ROW",
         "TKEES",
@@ -1666,7 +1669,7 @@
     },
     {
       "tag": "BEIGE",
-      "productCount": 786,
+      "productCount": 789,
       "brandCount": 121,
       "brands": [
         "AEYDE",
@@ -1793,79 +1796,6 @@
       ]
     },
     {
-      "tag": "MULTICOLOR",
-      "productCount": 531,
-      "brandCount": 66,
-      "brands": [
-        "AEYDE",
-        "ALIAS MAE",
-        "ALOHAS",
-        "ANCIENT GREEK SANDALS",
-        "ASICS",
-        "Autry",
-        "Billini",
-        "Bronx",
-        "Brooks",
-        "CECILIE BAHNSEN",
-        "CULT GAIA",
-        "Camper",
-        "Charlotte Stone Shoes",
-        "Circus NY by Sam Edelman",
-        "Converse",
-        "DOLCE VITA",
-        "Danner",
-        "EXÉ",
-        "FP Collection",
-        "FP Vegan Collection",
-        "Flower Mountain",
-        "GIA BORGHINI",
-        "Gola",
-        "HEREU",
-        "HOKA®",
-        "JEFFREY CAMPBELL",
-        "KEEN",
-        "KHAITE",
-        "KUNSTEN",
-        "L.L.Bean",
-        "LARROUDE",
-        "Lacoste",
-        "MARAY",
-        "Matisse",
-        "Melissa",
-        "Minnetonka",
-        "Mutma",
-        "NAGUISA",
-        "NEOUS",
-        "New Balance",
-        "On",
-        "Oncept",
-        "PAVEMENT",
-        "PROENZA SCHOULER",
-        "Puma",
-        "ROAM",
-        "Reebok",
-        "SCHUTZ",
-        "SERGIO MORETTI FIRENZE",
-        "SIMONE ROCHA",
-        "SOREL",
-        "ST. AGNI",
-        "STEVE MADDEN",
-        "Salomon",
-        "Sam Edelman",
-        "Saucony",
-        "THE ROW",
-        "TONY BIANCO",
-        "TOTEME",
-        "Teva",
-        "Vans",
-        "Veja",
-        "Vibram",
-        "Vicenza",
-        "We The Free",
-        "ZARA"
-      ]
-    },
-    {
       "tag": "TAN",
       "productCount": 531,
       "brandCount": 66,
@@ -1939,6 +1869,79 @@
       ]
     },
     {
+      "tag": "MULTICOLOR",
+      "productCount": 530,
+      "brandCount": 66,
+      "brands": [
+        "AEYDE",
+        "ALIAS MAE",
+        "ALOHAS",
+        "ANCIENT GREEK SANDALS",
+        "ASICS",
+        "Autry",
+        "Billini",
+        "Bronx",
+        "Brooks",
+        "CECILIE BAHNSEN",
+        "CULT GAIA",
+        "Camper",
+        "Charlotte Stone Shoes",
+        "Circus NY by Sam Edelman",
+        "Converse",
+        "DOLCE VITA",
+        "Danner",
+        "EXÉ",
+        "FP Collection",
+        "FP Vegan Collection",
+        "Flower Mountain",
+        "GIA BORGHINI",
+        "Gola",
+        "HEREU",
+        "HOKA®",
+        "JEFFREY CAMPBELL",
+        "KEEN",
+        "KHAITE",
+        "KUNSTEN",
+        "L.L.Bean",
+        "LARROUDE",
+        "Lacoste",
+        "MARAY",
+        "Matisse",
+        "Melissa",
+        "Minnetonka",
+        "Mutma",
+        "NAGUISA",
+        "NEOUS",
+        "New Balance",
+        "On",
+        "Oncept",
+        "PAVEMENT",
+        "PROENZA SCHOULER",
+        "Puma",
+        "ROAM",
+        "Reebok",
+        "SCHUTZ",
+        "SERGIO MORETTI FIRENZE",
+        "SIMONE ROCHA",
+        "SOREL",
+        "ST. AGNI",
+        "STEVE MADDEN",
+        "Salomon",
+        "Sam Edelman",
+        "Saucony",
+        "THE ROW",
+        "TONY BIANCO",
+        "TOTEME",
+        "Teva",
+        "Vans",
+        "Veja",
+        "Vibram",
+        "Vicenza",
+        "We The Free",
+        "ZARA"
+      ]
+    },
+    {
       "tag": "SILVER",
       "productCount": 500,
       "brandCount": 53,
@@ -2000,7 +2003,7 @@
     },
     {
       "tag": "BLUE",
-      "productCount": 380,
+      "productCount": 384,
       "brandCount": 83,
       "brands": [
         "ALIAS MAE",
@@ -2090,8 +2093,8 @@
     },
     {
       "tag": "CREAM",
-      "productCount": 378,
-      "brandCount": 69,
+      "productCount": 381,
+      "brandCount": 71,
       "brands": [
         "ALIAS MAE",
         "ALOHAS",
@@ -2110,6 +2113,7 @@
         "Converse",
         "Cult Gaia",
         "DOLCE VITA",
+        "Dolce&Gabbana",
         "EMME PARSONS",
         "FENDI",
         "FLATTERED",
@@ -2139,6 +2143,7 @@
         "On",
         "PROENZA SCHOULER",
         "Puma",
+        "ROTATE",
         "Roger Vivier",
         "SCHUTZ",
         "SOPHIA WEBSTER",
@@ -2166,8 +2171,8 @@
     },
     {
       "tag": "GOLD",
-      "productCount": 350,
-      "brandCount": 57,
+      "productCount": 355,
+      "brandCount": 59,
       "brands": [
         "ALMA RAE",
         "AMINA MUADDI",
@@ -2197,6 +2202,7 @@
         "LARROUDE",
         "LE MONDE BERYL",
         "LUIS ONOFRE",
+        "Le Silla",
         "Luna",
         "MALONE SOULIERS",
         "Malone Souliers",
@@ -2215,6 +2221,7 @@
         "STUDIO AMELIA",
         "Sam Edelman",
         "Schutz",
+        "Stuart Weitzman",
         "THE ROW",
         "TONY BIANCO",
         "The Lline",
@@ -2229,83 +2236,8 @@
       ]
     },
     {
-      "tag": "RED",
-      "productCount": 306,
-      "brandCount": 68,
-      "brands": [
-        "ALIAS MAE",
-        "ALOHAS",
-        "AMINA MUADDI",
-        "ANCIENT GREEK SANDALS",
-        "ASICS",
-        "Alaïa",
-        "Alevì Milano",
-        "Aquazzura",
-        "Ariat",
-        "Bottega Veneta",
-        "CHRISTEN",
-        "CULT GAIA",
-        "Camper",
-        "Castañer",
-        "Christian Louboutin",
-        "Cult Gaia",
-        "DEAR FRANCES",
-        "DOLCE VITA",
-        "Dolce&Gabbana",
-        "Dr. Martens",
-        "EMME PARSONS",
-        "EXÉ",
-        "FENDI",
-        "FLABELUS",
-        "FLATTERED",
-        "GIA BORGHINI",
-        "GOOD NEWS",
-        "HEREU",
-        "Inuikii",
-        "JEFFREY CAMPBELL",
-        "JUDE",
-        "Jacquemus",
-        "KHAITE",
-        "Keds",
-        "LARROUDE",
-        "LE MONDE BERYL",
-        "LUIS ONOFRE",
-        "Luna",
-        "MALONE SOULIERS",
-        "MANU ATELIER",
-        "MARAY",
-        "MUTMA",
-        "Manolo Blahnik",
-        "Matisse",
-        "Melissa",
-        "Naguisa",
-        "Nomadic State Of Mind",
-        "PARIS TEXAS",
-        "PAVEMENT",
-        "PROENZA SCHOULER",
-        "Puma",
-        "Red Wing",
-        "SCHUTZ",
-        "SIMONE ROCHA",
-        "STAUD",
-        "STEVE MADDEN",
-        "STUDIO AMELIA",
-        "Sam Edelman",
-        "THE ATTICO",
-        "THE ROW",
-        "TONY BIANCO",
-        "TOTEME",
-        "TUAS",
-        "Tony Bianco",
-        "Tory Burch",
-        "Vagabond Shoemakers",
-        "Xero Shoes",
-        "ZARA"
-      ]
-    },
-    {
       "tag": "PINK",
-      "productCount": 305,
+      "productCount": 308,
       "brandCount": 84,
       "brands": [
         "ALIAS MAE",
@@ -2395,8 +2327,83 @@
       ]
     },
     {
+      "tag": "RED",
+      "productCount": 308,
+      "brandCount": 68,
+      "brands": [
+        "ALIAS MAE",
+        "ALOHAS",
+        "AMINA MUADDI",
+        "ANCIENT GREEK SANDALS",
+        "ASICS",
+        "Alaïa",
+        "Alevì Milano",
+        "Aquazzura",
+        "Ariat",
+        "Bottega Veneta",
+        "CHRISTEN",
+        "CULT GAIA",
+        "Camper",
+        "Castañer",
+        "Christian Louboutin",
+        "Cult Gaia",
+        "DEAR FRANCES",
+        "DOLCE VITA",
+        "Dolce&Gabbana",
+        "Dr. Martens",
+        "EMME PARSONS",
+        "EXÉ",
+        "FENDI",
+        "FLABELUS",
+        "FLATTERED",
+        "GIA BORGHINI",
+        "GOOD NEWS",
+        "HEREU",
+        "Inuikii",
+        "JEFFREY CAMPBELL",
+        "JUDE",
+        "Jacquemus",
+        "KHAITE",
+        "Keds",
+        "LARROUDE",
+        "LE MONDE BERYL",
+        "LUIS ONOFRE",
+        "Luna",
+        "MALONE SOULIERS",
+        "MANU ATELIER",
+        "MARAY",
+        "MUTMA",
+        "Manolo Blahnik",
+        "Matisse",
+        "Melissa",
+        "Naguisa",
+        "Nomadic State Of Mind",
+        "PARIS TEXAS",
+        "PAVEMENT",
+        "PROENZA SCHOULER",
+        "Puma",
+        "Red Wing",
+        "SCHUTZ",
+        "SIMONE ROCHA",
+        "STAUD",
+        "STEVE MADDEN",
+        "STUDIO AMELIA",
+        "Sam Edelman",
+        "THE ATTICO",
+        "THE ROW",
+        "TONY BIANCO",
+        "TOTEME",
+        "TUAS",
+        "Tony Bianco",
+        "Tory Burch",
+        "Vagabond Shoemakers",
+        "Xero Shoes",
+        "ZARA"
+      ]
+    },
+    {
       "tag": "BURGUNDY",
-      "productCount": 282,
+      "productCount": 285,
       "brandCount": 55,
       "brands": [
         "ALIAS MAE",
@@ -2692,7 +2699,7 @@
   "materials": [
     {
       "tag": "LEATHER",
-      "productCount": 3342,
+      "productCount": 3347,
       "brandCount": 124,
       "brands": [
         "A.EMERY",
@@ -2823,7 +2830,7 @@
     },
     {
       "tag": "SUEDE",
-      "productCount": 1922,
+      "productCount": 1926,
       "brandCount": 79,
       "brands": [
         "AEYDE",
@@ -2909,7 +2916,7 @@
     },
     {
       "tag": "SYNTHETIC",
-      "productCount": 1667,
+      "productCount": 1668,
       "brandCount": 16,
       "brands": [
         "ALOHAS",
@@ -2932,7 +2939,7 @@
     },
     {
       "tag": "TEXTILE",
-      "productCount": 921,
+      "productCount": 925,
       "brandCount": 27,
       "brands": [
         "ALIAS MAE",
@@ -2966,7 +2973,7 @@
     },
     {
       "tag": "PATENT",
-      "productCount": 682,
+      "productCount": 683,
       "brandCount": 48,
       "brands": [
         "AEYDE",
@@ -3091,7 +3098,7 @@
     },
     {
       "tag": "SATIN",
-      "productCount": 338,
+      "productCount": 339,
       "brandCount": 34,
       "brands": [
         "AEYDE",
@@ -3178,7 +3185,7 @@
     },
     {
       "tag": "MESH",
-      "productCount": 206,
+      "productCount": 207,
       "brandCount": 40,
       "brands": [
         "AEYDE",
@@ -3309,7 +3316,7 @@
   "heelTypes": [
     {
       "tag": "FLAT",
-      "productCount": 1659,
+      "productCount": 1660,
       "brandCount": 100,
       "brands": [
         "A.EMERY",
@@ -3416,7 +3423,7 @@
     },
     {
       "tag": "OTHER",
-      "productCount": 1178,
+      "productCount": 1179,
       "brandCount": 33,
       "brands": [
         "A.EMERY",
@@ -3456,7 +3463,7 @@
     },
     {
       "tag": "WEDGE",
-      "productCount": 619,
+      "productCount": 622,
       "brandCount": 51,
       "brands": [
         "AEYDE",
@@ -3568,7 +3575,7 @@
     },
     {
       "tag": "PLATFORM",
-      "productCount": 246,
+      "productCount": 247,
       "brandCount": 52,
       "brands": [
         "4CCCCEES",
@@ -3679,7 +3686,7 @@
   "heelHeightGroups": [
     {
       "tag": "HIGH",
-      "productCount": 1319,
+      "productCount": 1320,
       "brandCount": 32,
       "brands": [
         "Alaïa",
@@ -3748,7 +3755,7 @@
     },
     {
       "tag": "MID",
-      "productCount": 722,
+      "productCount": 725,
       "brandCount": 26,
       "brands": [
         "ALOHAS",
@@ -3801,7 +3808,7 @@
   "details": [
     {
       "tag": "BUCKLE",
-      "productCount": 1025,
+      "productCount": 1026,
       "brandCount": 65,
       "brands": [
         "4CCCCEES",
@@ -4018,6 +4025,104 @@
       ]
     },
     {
+      "tag": "STONE",
+      "productCount": 276,
+      "brandCount": 52,
+      "brands": [
+        "AEYDE",
+        "ALIAS MAE",
+        "ALOHAS",
+        "AMINA MUADDI",
+        "ANCIENT GREEK SANDALS",
+        "Aquazzura",
+        "Badgley Mischka",
+        "Blundstone",
+        "CULT GAIA",
+        "Circus NY by Sam Edelman",
+        "Coach",
+        "DEAR FRANCES",
+        "DOLCE VITA",
+        "Dolce&Gabbana",
+        "Dr. Martens",
+        "FLATTERED",
+        "FP Collection",
+        "Giuseppe Zanotti",
+        "Golden Goose",
+        "JEFFREY CAMPBELL",
+        "JUDE",
+        "Jeffrey Campbell",
+        "Jimmy Choo",
+        "KHAITE",
+        "LARROUDE",
+        "LE MONDE BERYL",
+        "LIU JO",
+        "LUIS ONOFRE",
+        "MALONE SOULIERS",
+        "MARAY",
+        "Manolo Blahnik",
+        "NEOUS",
+        "NICOLI",
+        "Neous",
+        "PARIS TEXAS",
+        "Philipp Plein",
+        "ROTATE",
+        "René Caovilla",
+        "Roger Vivier",
+        "SCHUTZ",
+        "SOPHIA WEBSTER",
+        "STEVE MADDEN",
+        "STUDIO AMELIA",
+        "THE ATTICO",
+        "TONY BIANCO",
+        "TOTEME",
+        "TWENTY FOURHAITCH",
+        "Timberland",
+        "Vans",
+        "ZARA",
+        "adidas Yeezy",
+        "exè"
+      ]
+    },
+    {
+      "tag": "STUD",
+      "productCount": 275,
+      "brandCount": 32,
+      "brands": [
+        "AEYDE",
+        "ALOHAS",
+        "ANCIENT GREEK SANDALS",
+        "ATP ATELIER",
+        "Ash",
+        "CECILIE BAHNSEN",
+        "CULT GAIA",
+        "Chloé",
+        "DOLCE VITA",
+        "FP Collection",
+        "FP Vegan Collection",
+        "JEFFREY CAMPBELL",
+        "Jeffrey Campbell",
+        "KHAITE",
+        "LARROUDE",
+        "LIU JO",
+        "Marc Ellis",
+        "Marc Jacobs",
+        "Michael Michael Kors",
+        "PARIS TEXAS",
+        "PAVEMENT",
+        "Philipp Plein",
+        "SCHUTZ",
+        "SOPHIA WEBSTER",
+        "SOULIERS MARTINEZ",
+        "STAUD",
+        "STEVE MADDEN",
+        "STUDIO AMELIA",
+        "Schutz",
+        "TOTEME",
+        "Valentino Garavani",
+        "ZARA"
+      ]
+    },
+    {
       "tag": "WOVEN",
       "productCount": 274,
       "brandCount": 42,
@@ -4067,105 +4172,8 @@
       ]
     },
     {
-      "tag": "STONE",
-      "productCount": 273,
-      "brandCount": 51,
-      "brands": [
-        "AEYDE",
-        "ALIAS MAE",
-        "ALOHAS",
-        "AMINA MUADDI",
-        "ANCIENT GREEK SANDALS",
-        "Aquazzura",
-        "Badgley Mischka",
-        "Blundstone",
-        "CULT GAIA",
-        "Circus NY by Sam Edelman",
-        "Coach",
-        "DEAR FRANCES",
-        "DOLCE VITA",
-        "Dolce&Gabbana",
-        "Dr. Martens",
-        "FLATTERED",
-        "FP Collection",
-        "Giuseppe Zanotti",
-        "Golden Goose",
-        "JEFFREY CAMPBELL",
-        "JUDE",
-        "Jeffrey Campbell",
-        "Jimmy Choo",
-        "KHAITE",
-        "LARROUDE",
-        "LE MONDE BERYL",
-        "LIU JO",
-        "LUIS ONOFRE",
-        "MALONE SOULIERS",
-        "MARAY",
-        "Manolo Blahnik",
-        "NEOUS",
-        "NICOLI",
-        "Neous",
-        "PARIS TEXAS",
-        "Philipp Plein",
-        "René Caovilla",
-        "Roger Vivier",
-        "SCHUTZ",
-        "SOPHIA WEBSTER",
-        "STEVE MADDEN",
-        "STUDIO AMELIA",
-        "THE ATTICO",
-        "TONY BIANCO",
-        "TOTEME",
-        "TWENTY FOURHAITCH",
-        "Timberland",
-        "Vans",
-        "ZARA",
-        "adidas Yeezy",
-        "exè"
-      ]
-    },
-    {
-      "tag": "STUD",
-      "productCount": 273,
-      "brandCount": 32,
-      "brands": [
-        "AEYDE",
-        "ALOHAS",
-        "ANCIENT GREEK SANDALS",
-        "ATP ATELIER",
-        "Ash",
-        "CECILIE BAHNSEN",
-        "CULT GAIA",
-        "Chloé",
-        "DOLCE VITA",
-        "FP Collection",
-        "FP Vegan Collection",
-        "JEFFREY CAMPBELL",
-        "Jeffrey Campbell",
-        "KHAITE",
-        "LARROUDE",
-        "LIU JO",
-        "Marc Ellis",
-        "Marc Jacobs",
-        "Michael Michael Kors",
-        "PARIS TEXAS",
-        "PAVEMENT",
-        "Philipp Plein",
-        "SCHUTZ",
-        "SOPHIA WEBSTER",
-        "SOULIERS MARTINEZ",
-        "STAUD",
-        "STEVE MADDEN",
-        "STUDIO AMELIA",
-        "Schutz",
-        "TOTEME",
-        "Valentino Garavani",
-        "ZARA"
-      ]
-    },
-    {
       "tag": "BOW",
-      "productCount": 206,
+      "productCount": 207,
       "brandCount": 34,
       "brands": [
         "AEYDE",
@@ -4413,7 +4421,7 @@
   "constructions": [
     {
       "tag": "BACKLESS",
-      "productCount": 1834,
+      "productCount": 1843,
       "brandCount": 173,
       "brands": [
         "A.EMERY",
@@ -4651,7 +4659,7 @@
     },
     {
       "tag": "SLINGBACK",
-      "productCount": 711,
+      "productCount": 715,
       "brandCount": 98,
       "brands": [
         "AEYDE",
@@ -5721,7 +5729,7 @@
     },
     {
       "brand": "ASICS",
-      "productCount": 56,
+      "productCount": 57,
       "topCategories": [
         {
           "tag": "SNEAKER",
@@ -5733,7 +5741,7 @@
         },
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 10,
+          "productCount": 11,
           "brandCount": 1,
           "brands": [
             "ASICS"
@@ -5889,11 +5897,11 @@
     },
     {
       "brand": "Alaïa",
-      "productCount": 54,
+      "productCount": 57,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 48,
+          "productCount": 51,
           "brandCount": 1,
           "brands": [
             "Alaïa"
@@ -5927,15 +5935,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 16,
-          "brandCount": 1,
-          "brands": [
-            "Alaïa"
-          ]
-        },
-        {
-          "tag": "BROWN",
-          "productCount": 6,
+          "productCount": 18,
           "brandCount": 1,
           "brands": [
             "Alaïa"
@@ -5943,6 +5943,14 @@
         },
         {
           "tag": "BURGUNDY",
+          "productCount": 7,
+          "brandCount": 1,
+          "brands": [
+            "Alaïa"
+          ]
+        },
+        {
+          "tag": "BROWN",
           "productCount": 6,
           "brandCount": 1,
           "brands": [
@@ -5969,11 +5977,11 @@
     },
     {
       "brand": "Alevì Milano",
-      "productCount": 6,
+      "productCount": 7,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 6,
+          "productCount": 7,
           "brandCount": 1,
           "brands": [
             "Alevì Milano"
@@ -5981,6 +5989,14 @@
         }
       ],
       "topColors": [
+        {
+          "tag": "WHITE",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "Alevì Milano"
+          ]
+        },
         {
           "tag": "BEIGE",
           "productCount": 1,
@@ -6007,14 +6023,6 @@
         },
         {
           "tag": "RED",
-          "productCount": 1,
-          "brandCount": 1,
-          "brands": [
-            "Alevì Milano"
-          ]
-        },
-        {
-          "tag": "SILVER",
           "productCount": 1,
           "brandCount": 1,
           "brands": [
@@ -6088,10 +6096,10 @@
     },
     {
       "brand": "Amina Muaddi",
-      "productCount": 35,
+      "productCount": 36,
       "topCategories": [
         {
-          "tag": "SLINGBACK",
+          "tag": "OTHER_FOOTWEAR",
           "productCount": 10,
           "brandCount": 1,
           "brands": [
@@ -6099,8 +6107,8 @@
           ]
         },
         {
-          "tag": "OTHER_FOOTWEAR",
-          "productCount": 9,
+          "tag": "SLINGBACK",
+          "productCount": 10,
           "brandCount": 1,
           "brands": [
             "Amina Muaddi"
@@ -6149,6 +6157,14 @@
           ]
         },
         {
+          "tag": "GOLD",
+          "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "Amina Muaddi"
+          ]
+        },
+        {
           "tag": "BROWN",
           "productCount": 1,
           "brandCount": 1,
@@ -6158,14 +6174,6 @@
         },
         {
           "tag": "CREAM",
-          "productCount": 1,
-          "brandCount": 1,
-          "brands": [
-            "Amina Muaddi"
-          ]
-        },
-        {
-          "tag": "GOLD",
           "productCount": 1,
           "brandCount": 1,
           "brands": [
@@ -6263,11 +6271,11 @@
     },
     {
       "brand": "Aquazzura",
-      "productCount": 50,
+      "productCount": 51,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 35,
+          "productCount": 36,
           "brandCount": 1,
           "brands": [
             "Aquazzura"
@@ -6324,6 +6332,14 @@
           ]
         },
         {
+          "tag": "BROWN",
+          "productCount": 4,
+          "brandCount": 1,
+          "brands": [
+            "Aquazzura"
+          ]
+        },
+        {
           "tag": "BLACK",
           "productCount": 3,
           "brandCount": 1,
@@ -6333,14 +6349,6 @@
         },
         {
           "tag": "BLUE",
-          "productCount": 3,
-          "brandCount": 1,
-          "brands": [
-            "Aquazzura"
-          ]
-        },
-        {
-          "tag": "BROWN",
           "productCount": 3,
           "brandCount": 1,
           "brands": [
@@ -7155,11 +7163,11 @@
     },
     {
       "brand": "Bottega Veneta",
-      "productCount": 19,
+      "productCount": 20,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 19,
+          "productCount": 20,
           "brandCount": 1,
           "brands": [
             "Bottega Veneta"
@@ -7177,7 +7185,7 @@
         },
         {
           "tag": "BURGUNDY",
-          "productCount": 3,
+          "productCount": 4,
           "brandCount": 1,
           "brands": [
             "Bottega Veneta"
@@ -7677,7 +7685,7 @@
       "topCategories": [
         {
           "tag": "SANDAL",
-          "productCount": 26,
+          "productCount": 20,
           "brandCount": 1,
           "brands": [
             "CHRISTEN"
@@ -7700,16 +7708,16 @@
           ]
         },
         {
-          "tag": "SLINGBACK",
-          "productCount": 4,
+          "tag": "PUMP",
+          "productCount": 7,
           "brandCount": 1,
           "brands": [
             "CHRISTEN"
           ]
         },
         {
-          "tag": "OTHER_FOOTWEAR",
-          "productCount": 3,
+          "tag": "SLINGBACK",
+          "productCount": 4,
           "brandCount": 1,
           "brands": [
             "CHRISTEN"
@@ -9036,7 +9044,7 @@
     },
     {
       "brand": "DOLCE VITA",
-      "productCount": 1197,
+      "productCount": 1201,
       "topCategories": [
         {
           "tag": "PUMP",
@@ -9064,7 +9072,7 @@
         },
         {
           "tag": "SNEAKER",
-          "productCount": 106,
+          "productCount": 107,
           "brandCount": 1,
           "brands": [
             "DOLCE VITA"
@@ -9082,7 +9090,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 235,
+          "productCount": 237,
           "brandCount": 1,
           "brands": [
             "DOLCE VITA"
@@ -9090,7 +9098,7 @@
         },
         {
           "tag": "BROWN",
-          "productCount": 204,
+          "productCount": 205,
           "brandCount": 1,
           "brands": [
             "DOLCE VITA"
@@ -9114,7 +9122,7 @@
         },
         {
           "tag": "BEIGE",
-          "productCount": 43,
+          "productCount": 44,
           "brandCount": 1,
           "brands": [
             "DOLCE VITA"
@@ -9450,11 +9458,11 @@
     },
     {
       "brand": "Dolce&Gabbana",
-      "productCount": 46,
+      "productCount": 47,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 46,
+          "productCount": 47,
           "brandCount": 1,
           "brands": [
             "Dolce&Gabbana"
@@ -9840,11 +9848,11 @@
     },
     {
       "brand": "EXÉ",
-      "productCount": 400,
+      "productCount": 402,
       "topCategories": [
         {
           "tag": "SNEAKER",
-          "productCount": 184,
+          "productCount": 185,
           "brandCount": 1,
           "brands": [
             "EXÉ"
@@ -9852,7 +9860,7 @@
         },
         {
           "tag": "SANDAL",
-          "productCount": 170,
+          "productCount": 171,
           "brandCount": 1,
           "brands": [
             "EXÉ"
@@ -9894,7 +9902,7 @@
         },
         {
           "tag": "BLACK",
-          "productCount": 101,
+          "productCount": 102,
           "brandCount": 1,
           "brands": [
             "EXÉ"
@@ -10014,11 +10022,11 @@
     },
     {
       "brand": "FENDI",
-      "productCount": 53,
+      "productCount": 54,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 48,
+          "productCount": 49,
           "brandCount": 1,
           "brands": [
             "FENDI"
@@ -10060,7 +10068,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 22,
+          "productCount": 23,
           "brandCount": 1,
           "brands": [
             "FENDI"
@@ -12305,11 +12313,11 @@
     },
     {
       "brand": "JEFFREY CAMPBELL",
-      "productCount": 727,
+      "productCount": 728,
       "topCategories": [
         {
           "tag": "SANDAL",
-          "productCount": 198,
+          "productCount": 199,
           "brandCount": 1,
           "brands": [
             "JEFFREY CAMPBELL"
@@ -12776,11 +12784,11 @@
     },
     {
       "brand": "Jimmy Choo",
-      "productCount": 59,
+      "productCount": 60,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 31,
+          "productCount": 32,
           "brandCount": 1,
           "brands": [
             "Jimmy Choo"
@@ -12822,7 +12830,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 11,
+          "productCount": 12,
           "brandCount": 1,
           "brands": [
             "Jimmy Choo"
@@ -14086,8 +14094,16 @@
     },
     {
       "brand": "Le Silla",
-      "productCount": 10,
+      "productCount": 11,
       "topCategories": [
+        {
+          "tag": "OTHER_FOOTWEAR",
+          "productCount": 3,
+          "brandCount": 1,
+          "brands": [
+            "Le Silla"
+          ]
+        },
         {
           "tag": "PUMP",
           "productCount": 3,
@@ -14099,14 +14115,6 @@
         {
           "tag": "SLINGBACK",
           "productCount": 3,
-          "brandCount": 1,
-          "brands": [
-            "Le Silla"
-          ]
-        },
-        {
-          "tag": "OTHER_FOOTWEAR",
-          "productCount": 2,
           "brandCount": 1,
           "brands": [
             "Le Silla"
@@ -14140,6 +14148,14 @@
         },
         {
           "tag": "BLACK",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "Le Silla"
+          ]
+        },
+        {
+          "tag": "GOLD",
           "productCount": 1,
           "brandCount": 1,
           "brands": [
@@ -14935,11 +14951,11 @@
     },
     {
       "brand": "Manolo Blahnik",
-      "productCount": 62,
+      "productCount": 64,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 33,
+          "productCount": 35,
           "brandCount": 1,
           "brands": [
             "Manolo Blahnik"
@@ -14981,7 +14997,7 @@
         },
         {
           "tag": "WHITE",
-          "productCount": 7,
+          "productCount": 8,
           "brandCount": 1,
           "brands": [
             "Manolo Blahnik"
@@ -14996,15 +15012,15 @@
           ]
         },
         {
-          "tag": "BLUE",
-          "productCount": 3,
+          "tag": "PINK",
+          "productCount": 4,
           "brandCount": 1,
           "brands": [
             "Manolo Blahnik"
           ]
         },
         {
-          "tag": "PINK",
+          "tag": "BLUE",
           "productCount": 3,
           "brandCount": 1,
           "brands": [
@@ -15530,11 +15546,11 @@
     },
     {
       "brand": "Miu Miu",
-      "productCount": 20,
+      "productCount": 21,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 12,
+          "productCount": 13,
           "brandCount": 1,
           "brands": [
             "Miu Miu"
@@ -15592,7 +15608,7 @@
         },
         {
           "tag": "BLACK",
-          "productCount": 1,
+          "productCount": 2,
           "brandCount": 1,
           "brands": [
             "Miu Miu"
@@ -16333,7 +16349,7 @@
     },
     {
       "brand": "Nike",
-      "productCount": 57,
+      "productCount": 58,
       "topCategories": [
         {
           "tag": "SNEAKER",
@@ -16345,7 +16361,7 @@
         },
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 22,
+          "productCount": 23,
           "brandCount": 1,
           "brands": [
             "Nike"
@@ -16371,7 +16387,7 @@
       "topColors": [
         {
           "tag": "WHITE",
-          "productCount": 8,
+          "productCount": 9,
           "brandCount": 1,
           "brands": [
             "Nike"
@@ -17494,7 +17510,7 @@
     },
     {
       "brand": "Puma",
-      "productCount": 36,
+      "productCount": 37,
       "topCategories": [
         {
           "tag": "SNEAKER",
@@ -17506,7 +17522,7 @@
         },
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 8,
+          "productCount": 9,
           "brandCount": 1,
           "brands": [
             "Puma"
@@ -17590,11 +17606,11 @@
     },
     {
       "brand": "ROTATE",
-      "productCount": 2,
+      "productCount": 3,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 2,
+          "productCount": 3,
           "brandCount": 1,
           "brands": [
             "ROTATE"
@@ -17604,6 +17620,14 @@
       "topColors": [
         {
           "tag": "BURGUNDY",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "ROTATE"
+          ]
+        },
+        {
+          "tag": "CREAM",
           "productCount": 1,
           "brandCount": 1,
           "brands": [
@@ -18736,7 +18760,7 @@
     },
     {
       "brand": "STEVE MADDEN",
-      "productCount": 1524,
+      "productCount": 1525,
       "topCategories": [
         {
           "tag": "PUMP",
@@ -18756,7 +18780,7 @@
         },
         {
           "tag": "BOOT",
-          "productCount": 205,
+          "productCount": 206,
           "brandCount": 1,
           "brands": [
             "STEVE MADDEN"
@@ -18782,7 +18806,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 430,
+          "productCount": 431,
           "brandCount": 1,
           "brands": [
             "STEVE MADDEN"
@@ -18912,11 +18936,11 @@
     },
     {
       "brand": "Saint Laurent",
-      "productCount": 30,
+      "productCount": 32,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 23,
+          "productCount": 25,
           "brandCount": 1,
           "brands": [
             "Saint Laurent"
@@ -18958,7 +18982,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 8,
+          "productCount": 10,
           "brandCount": 1,
           "brands": [
             "Saint Laurent"
@@ -19064,11 +19088,11 @@
     },
     {
       "brand": "Sam Edelman",
-      "productCount": 49,
+      "productCount": 50,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 38,
+          "productCount": 39,
           "brandCount": 1,
           "brands": [
             "Sam Edelman"
@@ -19118,7 +19142,7 @@
         },
         {
           "tag": "BLACK",
-          "productCount": 10,
+          "productCount": 11,
           "brandCount": 1,
           "brands": [
             "Sam Edelman"
@@ -19367,11 +19391,11 @@
     },
     {
       "brand": "Schutz",
-      "productCount": 21,
+      "productCount": 22,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 20,
+          "productCount": 21,
           "brandCount": 1,
           "brands": [
             "Schutz"
@@ -19389,7 +19413,7 @@
       "topColors": [
         {
           "tag": "BLACK",
-          "productCount": 5,
+          "productCount": 6,
           "brandCount": 1,
           "brands": [
             "Schutz"
@@ -19923,7 +19947,7 @@
     },
     {
       "brand": "Stuart Weitzman",
-      "productCount": 17,
+      "productCount": 18,
       "topCategories": [
         {
           "tag": "PUMP",
@@ -19935,7 +19959,7 @@
         },
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 2,
+          "productCount": 3,
           "brandCount": 1,
           "brands": [
             "Stuart Weitzman"
@@ -19968,6 +19992,14 @@
           ]
         },
         {
+          "tag": "GOLD",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "Stuart Weitzman"
+          ]
+        },
+        {
           "tag": "WHITE",
           "productCount": 1,
           "brandCount": 1,
@@ -19979,7 +20011,7 @@
     },
     {
       "brand": "Studio Amelia",
-      "productCount": 1,
+      "productCount": 2,
       "topCategories": [
         {
           "tag": "MULE",
@@ -19988,9 +20020,26 @@
           "brands": [
             "Studio Amelia"
           ]
+        },
+        {
+          "tag": "OTHER_FOOTWEAR",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "Studio Amelia"
+          ]
         }
       ],
-      "topColors": []
+      "topColors": [
+        {
+          "tag": "WHITE",
+          "productCount": 1,
+          "brandCount": 1,
+          "brands": [
+            "Studio Amelia"
+          ]
+        }
+      ]
     },
     {
       "brand": "Suicoke",
@@ -20876,11 +20925,11 @@
     },
     {
       "brand": "Tom Ford",
-      "productCount": 2,
+      "productCount": 3,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 2,
+          "productCount": 3,
           "brandCount": 1,
           "brands": [
             "Tom Ford"
@@ -20891,6 +20940,14 @@
         {
           "tag": "PURPLE",
           "productCount": 2,
+          "brandCount": 1,
+          "brands": [
+            "Tom Ford"
+          ]
+        },
+        {
+          "tag": "BLACK",
+          "productCount": 1,
           "brandCount": 1,
           "brands": [
             "Tom Ford"
@@ -21273,11 +21330,11 @@
     },
     {
       "brand": "Valentino Garavani",
-      "productCount": 41,
+      "productCount": 43,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 17,
+          "productCount": 19,
           "brandCount": 1,
           "brands": [
             "Valentino Garavani"
@@ -21318,16 +21375,16 @@
       ],
       "topColors": [
         {
-          "tag": "BEIGE",
-          "productCount": 5,
+          "tag": "BLACK",
+          "productCount": 6,
           "brandCount": 1,
           "brands": [
             "Valentino Garavani"
           ]
         },
         {
-          "tag": "BLACK",
-          "productCount": 4,
+          "tag": "BEIGE",
+          "productCount": 5,
           "brandCount": 1,
           "brands": [
             "Valentino Garavani"
@@ -22094,11 +22151,11 @@
     },
     {
       "brand": "ZARA",
-      "productCount": 402,
+      "productCount": 409,
       "topCategories": [
         {
           "tag": "SANDAL",
-          "productCount": 153,
+          "productCount": 154,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22114,7 +22171,7 @@
         },
         {
           "tag": "SLINGBACK",
-          "productCount": 42,
+          "productCount": 43,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22148,7 +22205,7 @@
         },
         {
           "tag": "WHITE",
-          "productCount": 75,
+          "productCount": 74,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22156,7 +22213,7 @@
         },
         {
           "tag": "BROWN",
-          "productCount": 64,
+          "productCount": 65,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22164,7 +22221,7 @@
         },
         {
           "tag": "MULTICOLOR",
-          "productCount": 32,
+          "productCount": 31,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22172,7 +22229,7 @@
         },
         {
           "tag": "BEIGE",
-          "productCount": 26,
+          "productCount": 28,
           "brandCount": 1,
           "brands": [
             "ZARA"
@@ -22197,11 +22254,11 @@
     },
     {
       "brand": "adidas",
-      "productCount": 62,
+      "productCount": 68,
       "topCategories": [
         {
           "tag": "OTHER_FOOTWEAR",
-          "productCount": 46,
+          "productCount": 52,
           "brandCount": 1,
           "brands": [
             "adidas"
@@ -22235,7 +22292,7 @@
       "topColors": [
         {
           "tag": "WHITE",
-          "productCount": 11,
+          "productCount": 12,
           "brandCount": 1,
           "brands": [
             "adidas"
@@ -22251,6 +22308,14 @@
         },
         {
           "tag": "BROWN",
+          "productCount": 6,
+          "brandCount": 1,
+          "brands": [
+            "adidas"
+          ]
+        },
+        {
+          "tag": "BLUE",
           "productCount": 5,
           "brandCount": 1,
           "brands": [
@@ -22260,14 +22325,6 @@
         {
           "tag": "SILVER",
           "productCount": 4,
-          "brandCount": 1,
-          "brands": [
-            "adidas"
-          ]
-        },
-        {
-          "tag": "BEIGE",
-          "productCount": 3,
           "brandCount": 1,
           "brands": [
             "adidas"
@@ -22465,8 +22522,8 @@
   "topSignals": [
     {
       "tag": "BLACK",
-      "productCount": 4123,
-      "brandCount": 182,
+      "productCount": 4139,
+      "brandCount": 183,
       "brands": [
         "A.EMERY",
         "A.S.98",
@@ -22635,6 +22692,7 @@
         "The Lline",
         "The Row",
         "Tod's",
+        "Tom Ford",
         "Tony Bianco",
         "Tory Burch",
         "UGG",
@@ -22656,7 +22714,7 @@
     },
     {
       "tag": "SANDAL",
-      "productCount": 4036,
+      "productCount": 4033,
       "brandCount": 139,
       "brands": [
         "4CCCCEES",
@@ -22804,7 +22862,7 @@
     },
     {
       "tag": "LEATHER",
-      "productCount": 3342,
+      "productCount": 3347,
       "brandCount": 124,
       "brands": [
         "A.EMERY",
@@ -22937,8 +22995,8 @@
     },
     {
       "tag": "OTHER_FOOTWEAR",
-      "productCount": 2800,
-      "brandCount": 246,
+      "productCount": 2834,
+      "brandCount": 247,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -23150,6 +23208,7 @@
         "St Agni",
         "Stella McCartney",
         "Stuart Weitzman",
+        "Studio Amelia",
         "THE ATTICO",
         "THE ROW",
         "TKEES",
@@ -23192,7 +23251,7 @@
     },
     {
       "tag": "PUMP",
-      "productCount": 2263,
+      "productCount": 2269,
       "brandCount": 124,
       "brands": [
         "A.EMERY",
@@ -23325,7 +23384,7 @@
     },
     {
       "tag": "SUEDE",
-      "productCount": 1922,
+      "productCount": 1926,
       "brandCount": 79,
       "brands": [
         "AEYDE",
@@ -23413,7 +23472,7 @@
     },
     {
       "tag": "BACKLESS",
-      "productCount": 1834,
+      "productCount": 1843,
       "brandCount": 173,
       "brands": [
         "A.EMERY",
@@ -23595,7 +23654,7 @@
     },
     {
       "tag": "BROWN",
-      "productCount": 1784,
+      "productCount": 1789,
       "brandCount": 131,
       "brands": [
         "A.EMERY",
@@ -23735,7 +23794,7 @@
     },
     {
       "tag": "SYNTHETIC",
-      "productCount": 1667,
+      "productCount": 1668,
       "brandCount": 16,
       "brands": [
         "ALOHAS",
@@ -23760,7 +23819,7 @@
     },
     {
       "tag": "FLAT",
-      "productCount": 1659,
+      "productCount": 1660,
       "brandCount": 100,
       "brands": [
         "A.EMERY",
@@ -23869,7 +23928,7 @@
     },
     {
       "tag": "MULE",
-      "productCount": 1571,
+      "productCount": 1572,
       "brandCount": 142,
       "brands": [
         "A.EMERY",
@@ -24020,7 +24079,7 @@
     },
     {
       "tag": "HIGH",
-      "productCount": 1319,
+      "productCount": 1320,
       "brandCount": 32,
       "brands": [
         "Alaïa",
@@ -24061,10 +24120,10 @@
     }
   ],
   "unknownCounts": {
-    "colorFamily": 5839,
-    "materialFamily": 7082,
-    "heelType": 12532,
-    "heelHeightGroup": 14182,
-    "toeShape": 15808
+    "colorFamily": 5840,
+    "materialFamily": 7113,
+    "heelType": 12574,
+    "heelHeightGroup": 14226,
+    "toeShape": 15856
   }
 }
