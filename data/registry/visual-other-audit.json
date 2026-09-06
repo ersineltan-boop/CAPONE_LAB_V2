@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-05T10:32:23.007Z",
-  "digerCount": 750,
-  "totalFamilies": 11563,
+  "generatedAt": "2026-09-06T10:49:32.576Z",
+  "digerCount": 751,
+  "totalFamilies": 11574,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 130,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 537,
+    "UNMAPPED_SOURCE_CATEGORY": 538,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -6952,6 +6952,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "the-lline--id-level-shoes-the-lline-racille-slippers-cream-suede-women-slippers-h8325t-html-unclassified-base",
+      "brand": "The Lline",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "the-lline--id-level-shoes-the-lline-racille-slippers-navy-suede-women-slippers-mclyvj-html-unclassified-base",
       "brand": "The Lline",
       "sourceCategories": [
@@ -7500,7 +7509,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 296,
+      "count": 297,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7880,17 +7889,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11563,
-    "babet": 799,
+    "tumu": 11574,
+    "babet": 800,
     "loafer": 597,
-    "topuklu": 1826,
-    "sandal": 3176,
-    "mule": 1053,
+    "topuklu": 1828,
+    "sandal": 3177,
+    "mule": 1055,
     "bot-cizme": 1959,
-    "sneaker": 1201,
+    "sneaker": 1204,
     "espadril": 105,
     "oxford-derby": 10,
-    "clog": 87,
-    "diger": 750
+    "clog": 88,
+    "diger": 751
   }
 }
