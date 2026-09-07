@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-06T10:49:32.576Z",
-  "digerCount": 751,
-  "totalFamilies": 11574,
+  "generatedAt": "2026-09-07T11:17:58.761Z",
+  "digerCount": 753,
+  "totalFamilies": 11596,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 130,
+    "GENERIC_SOURCE_CATEGORY": 131,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 538,
+    "UNMAPPED_SOURCE_CATEGORY": 539,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -5009,7 +5009,7 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
         "Flats 1",
         "Footwear",
@@ -5029,7 +5029,7 @@
       "brand": "LE MONDE BERYL",
       "sourceCategories": [
         "All Footwear",
-        "APRES SKI SHEARLING FLATS - Variants",
+        "Apres Ski Shearling Flats Variants",
         "Flats",
         "Flats 1",
         "Footwear",
@@ -5077,7 +5077,7 @@
       "sourceCategories": [
         "Footwear All",
         "Footwear All new",
-        "KIDS SOFT VENETIAN SLIPPERS - Variants"
+        "Kids Soft Venetian Slippers Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5093,8 +5093,8 @@
         "Footwear",
         "Footwear All",
         "Footwear All new",
-        "LUNA SLIPPER LEATHER - Variants",
-        "LUNA SLIPPER SUEDE - Variants",
+        "Luna Slipper Leather Variants",
+        "Luna Slipper Suede Variants",
         "Luna Slippers",
         "New Arrivals",
         "New Season Pf26",
@@ -5158,7 +5158,7 @@
         "Footwear All",
         "Footwear All new",
         "New Arrivals",
-        "VENETIAN SLIPPER - Variants"
+        "Venetian Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5192,7 +5192,7 @@
         "New Arrivals",
         "New Season Pf26",
         "Newarrivals",
-        "OLYMPIA SLIPPER - Variants"
+        "Olympia Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5233,8 +5233,8 @@
         "New Arrivals",
         "New Season Pf26",
         "Newarrivals",
-        "REGENCY SLIPPER - Variants",
         "Regency Slipers Collection",
+        "Regency Slipper Variants",
         "Regency Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -5255,8 +5255,8 @@
         "New Season Pre Spring Spring 26 Test",
         "Newarrivals",
         "Pre Spring 26 TEST",
-        "STELLA SLIPPER - collection",
-        "STELLA SLIPPER Leather - Variants"
+        "Stella Slipper Collection",
+        "Stella Slipper Leather Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -5271,7 +5271,7 @@
         "Footwear",
         "Footwear All",
         "Footwear All new",
-        "SOFT VENETIAN SLIPPER - Variants"
+        "Soft Venetian Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -7173,6 +7173,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ugg--id-level-shoes-ugg-elea-slippers-beige-suede-women-slippers-nbt3u3-html-unclassified-base",
+      "brand": "UGG",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ugg--id-level-shoes-ugg-tasman-ii-slippers-black-suede-women-slippers-rodpmu-html-unclassified-base",
       "brand": "UGG",
       "sourceCategories": [
@@ -7504,12 +7513,21 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-14507710-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     }
   ],
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 297,
+      "count": 298,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7889,17 +7907,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11574,
-    "babet": 800,
-    "loafer": 597,
+    "tumu": 11596,
+    "babet": 803,
+    "loafer": 598,
     "topuklu": 1828,
-    "sandal": 3177,
-    "mule": 1055,
-    "bot-cizme": 1959,
-    "sneaker": 1204,
-    "espadril": 105,
+    "sandal": 3179,
+    "mule": 1056,
+    "bot-cizme": 1968,
+    "sneaker": 1207,
+    "espadril": 106,
     "oxford-derby": 10,
     "clog": 88,
-    "diger": 751
+    "diger": 753
   }
 }
