@@ -1,17 +1,123 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T22:26:40.144Z",
+  "generatedAt": "2026-09-08T22:16:40.039Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
     "activeBrandsAfter": 50,
-    "attempted": 0,
+    "attempted": 5,
     "activated": 0,
     "partial": 0,
-    "blocked": 0,
-    "customAdapterRequired": 0,
+    "blocked": 1,
+    "customAdapterRequired": 4,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": []
+  "attempts": [
+    {
+      "brand": "MAISON MARGIELA",
+      "slug": "maison-margiela",
+      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 19,
+        "levelShoes": 52
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "ISABEL MARANT",
+      "slug": "isabel-marant",
+      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 5,
+        "levelShoes": 4
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    },
+    {
+      "brand": "MANGO",
+      "slug": "mango",
+      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "detectedPlatform": "NEXT.JS PUBLIC DATA",
+      "sourceStrategy": "nextjs-public-data",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "nextjs"
+    },
+    {
+      "brand": "MASSIMO DUTTI",
+      "slug": "massimo-dutti",
+      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    },
+    {
+      "brand": "COS",
+      "slug": "cos",
+      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    }
+  ]
 }
