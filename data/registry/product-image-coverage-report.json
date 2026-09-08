@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T11:17:58.766Z",
+  "generatedAt": "2026-09-08T11:03:08.369Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -75,13 +75,13 @@
     {
       "brandId": "alias-mae",
       "brandName": "ALIAS MAE",
-      "products": 121,
+      "products": 124,
       "productsWith1Image": 0,
-      "productsWith2PlusImages": 121,
-      "productsWith3PlusImages": 121,
-      "averageUniqueImages": 20.2,
-      "collectorAverage": 20.2,
-      "familyAverage": 20.2,
+      "productsWith2PlusImages": 124,
+      "productsWith3PlusImages": 124,
+      "averageUniqueImages": 20.3,
+      "collectorAverage": 20.3,
+      "familyAverage": 20.3,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -228,9 +228,9 @@
       "productsWith1Image": 0,
       "productsWith2PlusImages": 78,
       "productsWith3PlusImages": 78,
-      "averageUniqueImages": 18.8,
-      "collectorAverage": 18.8,
-      "familyAverage": 18.8,
+      "averageUniqueImages": 18.9,
+      "collectorAverage": 18.9,
+      "familyAverage": 18.9,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -373,13 +373,13 @@
     {
       "brandId": "exe",
       "brandName": "EXÉ",
-      "products": 274,
+      "products": 275,
       "productsWith1Image": 6,
-      "productsWith2PlusImages": 268,
-      "productsWith3PlusImages": 160,
-      "averageUniqueImages": 4.6,
-      "collectorAverage": 4.6,
-      "familyAverage": 4.6,
+      "productsWith2PlusImages": 269,
+      "productsWith3PlusImages": 163,
+      "averageUniqueImages": 4.7,
+      "collectorAverage": 4.7,
+      "familyAverage": 4.7,
       "shardAverage": null,
       "knownFailures": [
         {
@@ -572,13 +572,13 @@
     {
       "brandId": "paris-texas",
       "brandName": "PARIS TEXAS",
-      "products": 371,
+      "products": 425,
       "productsWith1Image": 0,
-      "productsWith2PlusImages": 371,
-      "productsWith3PlusImages": 371,
-      "averageUniqueImages": 7.3,
-      "collectorAverage": 7.3,
-      "familyAverage": 7.3,
+      "productsWith2PlusImages": 425,
+      "productsWith3PlusImages": 425,
+      "averageUniqueImages": 7.2,
+      "collectorAverage": 7.2,
+      "familyAverage": 7.2,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -586,13 +586,13 @@
     {
       "brandId": "gia-borghini",
       "brandName": "GIA BORGHINI",
-      "products": 88,
-      "productsWith1Image": 11,
-      "productsWith2PlusImages": 77,
-      "productsWith3PlusImages": 77,
-      "averageUniqueImages": 4.5,
-      "collectorAverage": 4.5,
-      "familyAverage": 4.5,
+      "products": 91,
+      "productsWith1Image": 9,
+      "productsWith2PlusImages": 82,
+      "productsWith3PlusImages": 82,
+      "averageUniqueImages": 4.7,
+      "collectorAverage": 4.7,
+      "familyAverage": 4.7,
       "shardAverage": null,
       "knownFailures": [
         {
@@ -639,20 +639,6 @@
         },
         {
           "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-lolita-synthetic-leather-in-black-pump-base",
-          "origin": "COLLECTOR",
-          "collectorCount": 1,
-          "familyCount": 1,
-          "shardCount": null
-        },
-        {
-          "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-loulou-synthetic-leather-in-taupe-pump-base",
-          "origin": "COLLECTOR",
-          "collectorCount": 1,
-          "familyCount": 1,
-          "shardCount": null
-        },
-        {
-          "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-oli-calf-leather-in-cherry-pump-base",
           "origin": "COLLECTOR",
           "collectorCount": 1,
           "familyCount": 1,
@@ -1002,9 +988,9 @@
       "productsWith1Image": 0,
       "productsWith2PlusImages": 408,
       "productsWith3PlusImages": 408,
-      "averageUniqueImages": 4.7,
-      "collectorAverage": 4.7,
-      "familyAverage": 4.7,
+      "averageUniqueImages": 4.8,
+      "collectorAverage": 4.8,
+      "familyAverage": 4.8,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
