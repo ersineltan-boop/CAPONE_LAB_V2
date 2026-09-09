@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-08T11:03:08.364Z",
-  "digerCount": 754,
-  "totalFamilies": 11668,
+  "generatedAt": "2026-09-09T11:16:23.193Z",
+  "digerCount": 759,
+  "totalFamilies": 11700,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 131,
+    "GENERIC_SOURCE_CATEGORY": 135,
     "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 540,
+    "UNMAPPED_SOURCE_CATEGORY": 541,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -96,6 +96,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "adidas--id-level-shoes-adidas-samba-jane-shoes-pink-suede-women-ballet-5nh3ry-html-unclassified-base",
+      "brand": "adidas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "adidas--id-level-shoes-adidas-taekwondo-mei-shoes-brown-leather-women-ballet-ewxf82-html-unclassified-base",
       "brand": "adidas",
       "sourceCategories": [
@@ -106,6 +115,15 @@
     },
     {
       "modelFamilyId": "adidas--id-level-shoes-adidas-x-care-bears-adilette-slides-blue-fabric-women-sandals-vmry4b-html-unclassified-sandal",
+      "brand": "adidas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "adidas--id-level-shoes-adidas-x-care-bears-samba-jane-shoes-yellow-leather-women-ballet-anpe0z-html-unclassified-base",
       "brand": "adidas",
       "sourceCategories": [
         "Shoes"
@@ -5653,6 +5671,25 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "malone-souliers--id-level-shoes-malone-souliers-norah-45-mules-green-leather-women-mules-1lvfk7-html-unclassified-mule",
+      "brand": "Malone Souliers",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "malone-souliers--id-shopify-malone-souliers-maureen-flat-unclassified-base",
+      "brand": "MALONE SOULIERS",
+      "sourceCategories": [
+        "All",
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "malone-souliers--id-shopify-malone-souliers-noah-90-unclassified-base",
       "brand": "MALONE SOULIERS",
       "sourceCategories": [
@@ -7193,6 +7230,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ugg--id-level-shoes-ugg-scuffette-ii-slippers-brown-suede-women-slippers-g56iwx-html-unclassified-base",
+      "brand": "UGG",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ugg--id-level-shoes-ugg-tasman-ii-slippers-black-suede-women-slippers-rodpmu-html-unclassified-base",
       "brand": "UGG",
       "sourceCategories": [
@@ -7538,7 +7584,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 298,
+      "count": 299,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -7918,17 +7964,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11668,
+    "tumu": 11700,
     "babet": 807,
-    "loafer": 598,
-    "topuklu": 1840,
-    "sandal": 3180,
-    "mule": 1064,
-    "bot-cizme": 2007,
-    "sneaker": 1212,
+    "loafer": 600,
+    "topuklu": 1850,
+    "sandal": 3183,
+    "mule": 1065,
+    "bot-cizme": 2013,
+    "sneaker": 1217,
     "espadril": 108,
     "oxford-derby": 10,
     "clog": 88,
-    "diger": 754
+    "diger": 759
   }
 }

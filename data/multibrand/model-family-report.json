@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 17872,
-  "modelFamilyCount": 11668,
-  "totalVariants": 17872,
-  "multiVariantFamilyCount": 4350,
+  "rawProductCount": 17923,
+  "modelFamilyCount": 11700,
+  "totalVariants": 17923,
+  "multiVariantFamilyCount": 4362,
   "reductionPercent": 34.7,
-  "collapsedVariantProducts": 6204,
+  "collapsedVariantProducts": 6223,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11621,
+    "familiesWithMultipleRepresentativeImages": 11660,
     "averageRepresentativeImageCount": 6.33,
     "maxRepresentativeImageCount": 80
   },
@@ -27,7 +27,7 @@
       "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12302-sandal-sandal",
       "brand": "ANCIENT GREEK SANDALS",
       "canonicalName": "The Slipper",
-      "variantCount": 30
+      "variantCount": 31
     },
     {
       "modelFamilyId": "jeffrey-campbell--style-jeffrey-campbell-ce-soire-sandal-base",
@@ -2104,6 +2104,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-ida-mae-pump-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Ida-mae",
+      "variantCount": 4,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-investor-mule-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Investor",
@@ -2391,13 +2398,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-phases-sandal-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Phases",
-      "variantCount": 4,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pipper-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Pipper",
@@ -2527,13 +2527,6 @@
       "modelFamilyId": "alias-mae--id-shopify-alias-mae-rhyan-pump-base",
       "brand": "ALIAS MAE",
       "canonicalName": "Rhyan",
-      "variantCount": 4,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-risktaker3-pump-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Risktaker3",
       "variantCount": 4,
       "groupingReason": "singleton"
     },
@@ -3752,13 +3745,6 @@
       "modelFamilyId": "fp-collection--id-free-people-82972118-boot-base",
       "brand": "FP Collection",
       "canonicalName": "Hybrid Harness Boot",
-      "variantCount": 3,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-ida-mae-pump-base",
-      "brand": "JEFFREY CAMPBELL",
-      "canonicalName": "Ida-mae",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5828,6 +5814,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-dauntless-boot-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Dauntless",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-dawsen-heels-onyx-satin-pump-satin",
       "brand": "DOLCE VITA",
       "canonicalName": "Dawsen Heel",
@@ -6899,6 +6892,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-liar-pump-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Liar",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "fp-collection--id-free-people-84769934-unclassified-base",
       "brand": "FP Collection",
       "canonicalName": "Libby Fisher Flat",
@@ -7581,6 +7581,13 @@
       "modelFamilyId": "ameico--id-free-people-110839941-boot-base",
       "brand": "AMEICO",
       "canonicalName": "Pokeboo Packable Rain Boot",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-pollitt-boot-base",
+      "brand": "JEFFREY CAMPBELL",
+      "canonicalName": "Pollitt",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
