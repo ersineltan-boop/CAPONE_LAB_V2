@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-08T22:16:40.039Z",
+  "generatedAt": "2026-09-09T22:09:33.147Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 50,
@@ -8,16 +8,16 @@
     "attempted": 5,
     "activated": 0,
     "partial": 0,
-    "blocked": 1,
-    "customAdapterRequired": 4,
+    "blocked": 2,
+    "customAdapterRequired": 3,
     "failed": 0,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "MAISON MARGIELA",
-      "slug": "maison-margiela",
-      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "brand": "GANNI",
+      "slug": "ganni",
+      "attemptedAt": "2026-09-09T22:09:33.147Z",
       "detectedPlatform": "SALESFORCE COMMERCE",
       "sourceStrategy": "salesforce-public",
       "status": "CUSTOM_ADAPTER_REQUIRED",
@@ -29,17 +29,17 @@
       "categoriesFound": [],
       "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
       "marketplaceCoverage": {
-        "farfetch": 19,
-        "levelShoes": 52
+        "farfetch": 5,
+        "levelShoes": 1
       },
       "activationDecision": "blocked",
       "notes": "salesforce, jsonld"
     },
     {
-      "brand": "ISABEL MARANT",
-      "slug": "isabel-marant",
-      "attemptedAt": "2026-09-08T22:16:40.039Z",
-      "detectedPlatform": "SHOPIFY",
+      "brand": "AQUAZZURA",
+      "slug": "aquazzura",
+      "attemptedAt": "2026-09-09T22:09:33.147Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
       "sourceStrategy": "none",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
@@ -50,18 +50,18 @@
       "categoriesFound": [],
       "blocker": "Shopify products.json did not yield women's footwear",
       "marketplaceCoverage": {
-        "farfetch": 5,
-        "levelShoes": 4
+        "farfetch": 15,
+        "levelShoes": 37
       },
       "activationDecision": "blocked",
       "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
     },
     {
-      "brand": "MANGO",
-      "slug": "mango",
-      "attemptedAt": "2026-09-08T22:16:40.039Z",
-      "detectedPlatform": "NEXT.JS PUBLIC DATA",
-      "sourceStrategy": "nextjs-public-data",
+      "brand": "GIANVITO ROSSI",
+      "slug": "gianvito-rossi",
+      "attemptedAt": "2026-09-09T22:09:33.147Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
       "families": null,
@@ -71,37 +71,16 @@
       "categoriesFound": [],
       "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
       "marketplaceCoverage": {
-        "farfetch": 0,
+        "farfetch": 18,
         "levelShoes": 0
       },
       "activationDecision": "blocked",
-      "notes": "nextjs"
+      "notes": "salesforce, jsonld"
     },
     {
-      "brand": "MASSIMO DUTTI",
-      "slug": "massimo-dutti",
-      "attemptedAt": "2026-09-08T22:16:40.039Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "CUSTOM_ADAPTER_REQUIRED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "Shopify products.json did not yield women's footwear",
-      "marketplaceCoverage": {
-        "farfetch": 0,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    },
-    {
-      "brand": "COS",
-      "slug": "cos",
-      "attemptedAt": "2026-09-08T22:16:40.039Z",
+      "brand": "STUART WEITZMAN",
+      "slug": "stuart-weitzman",
+      "attemptedAt": "2026-09-09T22:09:33.147Z",
       "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "PRIORITY_BLOCKED",
@@ -113,8 +92,29 @@
       "categoriesFound": [],
       "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
       "marketplaceCoverage": {
-        "farfetch": 1,
-        "levelShoes": 0
+        "farfetch": 15,
+        "levelShoes": 3
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "SAM EDELMAN",
+      "slug": "sam-edelman",
+      "attemptedAt": "2026-09-09T22:09:33.147Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
+      "marketplaceCoverage": {
+        "farfetch": 3,
+        "levelShoes": 37
       },
       "activationDecision": "blocked",
       "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
