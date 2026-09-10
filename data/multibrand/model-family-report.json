@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 17923,
-  "modelFamilyCount": 11700,
-  "totalVariants": 17923,
-  "multiVariantFamilyCount": 4362,
-  "reductionPercent": 34.7,
-  "collapsedVariantProducts": 6223,
+  "rawProductCount": 18134,
+  "modelFamilyCount": 11804,
+  "totalVariants": 18134,
+  "multiVariantFamilyCount": 4414,
+  "reductionPercent": 34.9,
+  "collapsedVariantProducts": 6330,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11660,
-    "averageRepresentativeImageCount": 6.33,
+    "familiesWithMultipleRepresentativeImages": 11764,
+    "averageRepresentativeImageCount": 6.34,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -21,7 +21,7 @@
       "modelFamilyId": "larroude--style-larroude-l415-stel-sneaker-base",
       "brand": "LARROUDE",
       "canonicalName": "Stella Mule",
-      "variantCount": 33
+      "variantCount": 34
     },
     {
       "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12302-sandal-sandal",
@@ -6125,6 +6125,13 @@
       "modelFamilyId": "bronx--id-free-people-104323530-boot-base",
       "brand": "Bronx",
       "canonicalName": "Freefall Fringe Equestrian Boot",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15870810-unclassified-base",
+      "brand": "ZARA",
+      "canonicalName": "Fruit OF The Loom Blucher Shoes",
       "variantCount": 2,
       "groupingReason": "singleton"
     },

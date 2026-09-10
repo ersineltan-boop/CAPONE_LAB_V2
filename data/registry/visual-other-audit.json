@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-09T11:16:23.193Z",
+  "generatedAt": "2026-09-10T11:13:15.702Z",
   "digerCount": 759,
-  "totalFamilies": 11700,
+  "totalFamilies": 11804,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 135,
-    "CONFLICTING_SOURCE_CATEGORIES": 47,
-    "UNMAPPED_SOURCE_CATEGORY": 541,
+    "GENERIC_SOURCE_CATEGORY": 136,
+    "CONFLICTING_SOURCE_CATEGORIES": 48,
+    "UNMAPPED_SOURCE_CATEGORY": 539,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -141,6 +141,21 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "aeyde--handle-aeyde-blake-unclassified-base-blake-square-toe-flat",
+      "brand": "AEYDE",
+      "sourceCategories": [
+        "All Footwear",
+        "Filler Suggested Product Logic: Flats",
+        "Filler Suggested Product Logic: Shoes",
+        "Flats",
+        "Loafers",
+        "New In",
+        "Wide Square Chic Sandals"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
       "modelFamilyId": "aeyde--handle-aeyde-dex-unclassified-base-dex-flat",
       "brand": "AEYDE",
       "sourceCategories": [
@@ -175,18 +190,6 @@
         "Filler Suggested Product Logic: Shoes",
         "Flats",
         "New In"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "aeyde--handle-aeyde-matti-unclassified-base-matti-square-toe-flat",
-      "brand": "AEYDE",
-      "sourceCategories": [
-        "All Footwear",
-        "Filler Suggested Product Logic: Flats",
-        "Filler Suggested Product Logic: Shoes",
-        "Flats"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -596,15 +599,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-lace-sling-90-ivory-lace-and-ivory-nappa-unclassified-slingback",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-105-black-suede-unclassified-slingback",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -617,17 +611,6 @@
       "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-90-black-polka-dot-satin-unclassified-satin-slingback",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-camelia-sling-90-white-polka-dot-lace-unclassified-slingback",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
-        "FALL WINTER 25/26 - SHOES",
-        "Fw25 Shoes 1",
         "VIEW ALL SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -856,15 +839,6 @@
       "sourceCategories": [
         "SLIPPERS",
         "Slipper",
-        "VIEW ALL SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "amina-muaddi--id-shopify-amina-muaddi-lori-crystal-lace-up-95-latte-suede-and-white-crystals-unclassified-laceup",
-      "brand": "AMINA MUADDI",
-      "sourceCategories": [
         "VIEW ALL SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1147,6 +1121,17 @@
       "modelFamilyId": "amina-muaddi--name-amina-muaddi-camelia-sling-60-unclassified-slingback",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
+        "VIEW ALL SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "amina-muaddi--name-amina-muaddi-camelia-sling-90-unclassified-slingback",
+      "brand": "AMINA MUADDI",
+      "sourceCategories": [
+        "FALL WINTER 25/26 - SHOES",
+        "Fw25 Shoes 1",
         "VIEW ALL SHOES"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -4591,6 +4576,21 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "hereu--name-hereu-juliol-lace-up-unclassified-laceup",
+      "brand": "HEREU",
+      "sourceCategories": [
+        "SHOES SELECTION - POPUP",
+        "Women's New In Shoes",
+        "Women's Shoes",
+        "Women's Soft Shoes",
+        "Womens New In Shoes",
+        "Womens Shoes",
+        "Womens Soft Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "hunter--id-free-people-112022090-unclassified-base",
       "brand": "Hunter",
       "sourceCategories": [
@@ -5669,15 +5669,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "malone-souliers--id-level-shoes-malone-souliers-norah-45-mules-green-leather-women-mules-1lvfk7-html-unclassified-mule",
-      "brand": "Malone Souliers",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "malone-souliers--id-shopify-malone-souliers-maureen-flat-unclassified-base",
@@ -7500,6 +7491,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--id-zara-11527810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "zara--id-zara-11560810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
@@ -7579,6 +7579,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15870810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     }
   ],
   "topUnmappedSourceCategories": [
@@ -7640,7 +7649,7 @@
     },
     {
       "sourceCategory": "VIEW ALL SHOES",
-      "count": 83,
+      "count": 81,
       "brands": [
         "AMINA MUADDI"
       ],
@@ -7648,7 +7657,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 68,
+      "count": 67,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -7761,14 +7770,6 @@
     },
     {
       "sourceCategory": "Filler Suggested Product Logic: Shoes",
-      "count": 12,
-      "brands": [
-        "AEYDE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Filler Suggested Product Logic: Flats",
       "count": 11,
       "brands": [
         "AEYDE"
@@ -7776,7 +7777,23 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Filler Suggested Product Logic: Flats",
+      "count": 10,
+      "brands": [
+        "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Women's Soft Shoes",
+      "count": 9,
+      "brands": [
+        "HEREU"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Womens Soft Shoes",
       "count": 8,
       "brands": [
         "HEREU"
@@ -7825,14 +7842,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Womens Soft Shoes",
-      "count": 7,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "FALL WINTER 25/26 - SHOES",
       "count": 6,
       "brands": [
@@ -7863,6 +7872,14 @@
         "DEAR FRANCES",
         "Jennifer Chamandi",
         "Le Monde Beryl"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Women's New In Shoes",
+      "count": 5,
+      "brands": [
+        "HEREU"
       ],
       "proposedMapping": null
     },
@@ -7907,7 +7924,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Women's New In Shoes",
+      "sourceCategory": "Women's Pre-Fall 2026",
       "count": 4,
       "brands": [
         "HEREU"
@@ -7915,7 +7932,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Women's Pre-Fall 2026",
+      "sourceCategory": "Womens New In Shoes",
       "count": 4,
       "brands": [
         "HEREU"
@@ -7953,27 +7970,19 @@
         "A.EMERY"
       ],
       "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Winter Footwear",
-      "count": 3,
-      "brands": [
-        "A.EMERY"
-      ],
-      "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 11700,
-    "babet": 807,
-    "loafer": 600,
-    "topuklu": 1850,
-    "sandal": 3183,
-    "mule": 1065,
-    "bot-cizme": 2013,
-    "sneaker": 1217,
+    "tumu": 11804,
+    "babet": 814,
+    "loafer": 612,
+    "topuklu": 1872,
+    "sandal": 3188,
+    "mule": 1076,
+    "bot-cizme": 2051,
+    "sneaker": 1224,
     "espadril": 108,
-    "oxford-derby": 10,
+    "oxford-derby": 12,
     "clog": 88,
     "diger": 759
   }
