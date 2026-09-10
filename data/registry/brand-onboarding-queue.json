@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T22:09:33.147Z",
+  "updatedAt": "2026-09-10T22:11:04.729Z",
   "policy": {
     "maxAttemptsPerRun": 5,
     "maxActivationsPerRun": 3,
@@ -172,16 +172,16 @@
       "slug": "vagabond-shoemakers",
       "priority": 11,
       "status": "CUSTOM_ADAPTER_REQUIRED",
-      "attempts": 2,
-      "lastAttemptAt": "2026-09-02T22:14:56.814Z",
-      "nextRetryAt": "2026-09-09T22:14:56.814Z",
+      "attempts": 3,
+      "lastAttemptAt": "2026-09-10T22:11:04.729Z",
+      "nextRetryAt": "2026-09-17T22:11:04.729Z",
       "sourceUrl": "https://www.vagabond.com",
       "detectedPlatform": "UNKNOWN",
       "collectorStrategy": "none",
       "blocker": "Shopify products.json did not yield women's footwear",
       "productsFound": 0,
       "activatedAt": null,
-      "notes": "Shopify products.json did not yield women's footwear; marketplace coverage exists (Farfetch 10, Level Shoes 45) but is not an official brand source"
+      "notes": "Shopify products.json did not yield women's footwear; marketplace coverage exists (Farfetch 10, Level Shoes 49) but is not an official brand source"
     }
   ]
 }
