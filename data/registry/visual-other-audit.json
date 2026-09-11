@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-10T11:13:15.702Z",
-  "digerCount": 759,
-  "totalFamilies": 11804,
+  "generatedAt": "2026-09-11T11:04:31.228Z",
+  "digerCount": 764,
+  "totalFamilies": 11843,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 136,
     "CONFLICTING_SOURCE_CATEGORIES": 48,
-    "UNMAPPED_SOURCE_CATEGORY": 539,
+    "UNMAPPED_SOURCE_CATEGORY": 544,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -1593,6 +1593,42 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-2-26rtw15001-cbcaspen-vest-soft-fleece-black-unclassified-base",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes & Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-3-26kni53004-cbfleetwood-vest-winter-lambswool-winter-yellow-unclassified-base",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes & Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-a-magazine-curated-by-cecilie-bahnsen-unclassified-base",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes & Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-gift-wrapping-unclassified-base",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
+        "Shoes & Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-nf0a8g4znud-tnf-x-cb-bekah-shandal-rubber-white-green-unclassified-base",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
@@ -1607,6 +1643,15 @@
       "sourceCategories": [
         "Shoe edit",
         "Shoes",
+        "Shoes & Accessories"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "cecilie-bahnsen--name-cecilie-bahnsen-cbfleetwood-vest-winter-lambswool-unclassified-base",
+      "brand": "CECILIE BAHNSEN",
+      "sourceCategories": [
         "Shoes & Accessories"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -7769,6 +7814,15 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Shoes & Accessories",
+      "count": 12,
+      "brands": [
+        "CECILIE BAHNSEN",
+        "TOTEME"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Filler Suggested Product Logic: Shoes",
       "count": 11,
       "brands": [
@@ -7829,15 +7883,6 @@
       "count": 7,
       "brands": [
         "A.EMERY"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Shoes & Accessories",
-      "count": 7,
-      "brands": [
-        "CECILIE BAHNSEN",
-        "TOTEME"
       ],
       "proposedMapping": null
     },
@@ -7973,17 +8018,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11804,
-    "babet": 814,
-    "loafer": 612,
-    "topuklu": 1872,
-    "sandal": 3188,
-    "mule": 1076,
-    "bot-cizme": 2051,
-    "sneaker": 1224,
+    "tumu": 11843,
+    "babet": 820,
+    "loafer": 613,
+    "topuklu": 1884,
+    "sandal": 3192,
+    "mule": 1080,
+    "bot-cizme": 2057,
+    "sneaker": 1225,
     "espadril": 108,
     "oxford-derby": 12,
     "clog": 88,
-    "diger": 759
+    "diger": 764
   }
 }

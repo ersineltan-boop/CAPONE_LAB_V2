@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 18134,
-  "modelFamilyCount": 11804,
-  "totalVariants": 18134,
-  "multiVariantFamilyCount": 4414,
+  "rawProductCount": 18203,
+  "modelFamilyCount": 11843,
+  "totalVariants": 18203,
+  "multiVariantFamilyCount": 4430,
   "reductionPercent": 34.9,
-  "collapsedVariantProducts": 6330,
+  "collapsedVariantProducts": 6360,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11764,
-    "averageRepresentativeImageCount": 6.34,
+    "familiesWithMultipleRepresentativeImages": 11802,
+    "averageRepresentativeImageCount": 6.33,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -36,6 +36,12 @@
       "variantCount": 24
     },
     {
+      "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
+      "brand": "LARROUDE",
+      "canonicalName": "Cyprus Boat Shoe",
+      "variantCount": 21
+    },
+    {
       "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12104-sandal-sandal",
       "brand": "ANCIENT GREEK SANDALS",
       "canonicalName": "Iro",
@@ -58,12 +64,6 @@
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Spy-",
       "variantCount": 19
-    },
-    {
-      "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
-      "brand": "LARROUDE",
-      "canonicalName": "Cyprus Boat Shoe",
-      "variantCount": 18
     },
     {
       "modelFamilyId": "veja--id-free-people-57113664-sneaker-base",
@@ -3345,7 +3345,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossover Flat",
+      "canonicalName": "Crossed Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
