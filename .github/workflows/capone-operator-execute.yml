@@ -89,6 +89,12 @@ jobs:
               JSON.stringify(payload, null, 2),
             );
 
+      - name: Start virtual display
+        if: steps.gate.outputs.eligible == 'true'
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 >/tmp/xvfb.log 2>&1 &
+          echo "DISPLAY=:99" >> "$GITHUB_ENV"
+
       - name: Operator GitHub Issue execute
         id: execute
         if: steps.gate.outputs.eligible == 'true'
