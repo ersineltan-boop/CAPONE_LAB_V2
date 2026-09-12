@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T09:15:30.427Z",
+  "updatedAt": "2026-09-12T09:05:48.700Z",
   "brands": {
     "A.EMERY": {
       "brand": "A.EMERY",
-      "lastCollectAt": "2026-09-11T08:37:09.673Z",
+      "lastCollectAt": "2026-09-12T08:25:41.457Z",
       "footwearCollectionPath": "https://aemery.com/collections/footwear",
       "footwearCollectionUrl": "https://aemery.com/collections/footwear",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -135,7 +135,7 @@
     },
     "ALIAS MAE": {
       "brand": "ALIAS MAE",
-      "lastCollectAt": "2026-09-11T08:37:43.264Z",
+      "lastCollectAt": "2026-09-12T08:26:14.273Z",
       "footwearCollectionPath": "https://aliasmae.com.au/collections/heels",
       "footwearCollectionUrl": "https://aliasmae.com.au/collections/heels",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -271,7 +271,7 @@
     },
     "ALOHAS": {
       "brand": "ALOHAS",
-      "lastCollectAt": "2026-09-11T08:39:31.840Z",
+      "lastCollectAt": "2026-09-12T08:28:05.981Z",
       "footwearCollectionPath": "https://alohas.com/collections/shoes",
       "footwearCollectionUrl": "https://alohas.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -512,7 +512,7 @@
     },
     "DEAR FRANCES": {
       "brand": "DEAR FRANCES",
-      "lastCollectAt": "2026-09-11T08:40:31.273Z",
+      "lastCollectAt": "2026-09-12T08:29:06.648Z",
       "footwearCollectionPath": "https://dearfrances.com/collections/flats",
       "footwearCollectionUrl": "https://dearfrances.com/collections/flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -607,14 +607,16 @@
         "https://dearfrances.com/products/joss-bootie-charcoal-suede",
         "https://dearfrances.com/products/dante-knee-boot-espresso-suede",
         "https://dearfrances.com/products/topo-bootie-black-patent",
-        "https://dearfrances.com/products/alma-knee-boot-black-suede"
+        "https://dearfrances.com/products/alma-knee-boot-black-suede",
+        "https://dearfrances.com/products/balla-sock-flat-espresso",
+        "https://dearfrances.com/products/topo-bootie-olive"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "LE MONDE BERYL": {
       "brand": "LE MONDE BERYL",
-      "lastCollectAt": "2026-09-11T08:42:04.423Z",
+      "lastCollectAt": "2026-09-12T08:30:38.535Z",
       "footwearCollectionPath": "https://lemondeberyl.com/collections/footwear",
       "footwearCollectionUrl": "https://lemondeberyl.com/collections/footwear",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -914,7 +916,7 @@
     },
     "LARROUDE": {
       "brand": "LARROUDE",
-      "lastCollectAt": "2026-09-11T08:46:09.440Z",
+      "lastCollectAt": "2026-09-12T08:34:51.023Z",
       "footwearCollectionPath": "https://larroude.com/collections/fall-shoes",
       "footwearCollectionUrl": "https://larroude.com/collections/fall-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -1567,14 +1569,54 @@
         "https://larroude.com/products/champagne-ari-platform-pump-leather",
         "https://larroude.com/products/caramel-ari-platform-pump-leather",
         "https://larroude.com/products/ivory-georgina-ballet-flat-leather",
-        "https://larroude.com/products/burgundy-ari-platform-pump-leather"
+        "https://larroude.com/products/burgundy-ari-platform-pump-leather",
+        "https://larroude.com/products/leather-freya-sandal-gold",
+        "https://larroude.com/products/tortoise-biarritz-flat-sandal-leather",
+        "https://larroude.com/products/caramel-georgia-boot-suede",
+        "https://larroude.com/products/beige-madison-block-sandal-raffia",
+        "https://larroude.com/products/evergreen-roxy-thong-sandal",
+        "https://larroude.com/products/sand-bianca-low-sandal-patent-leather",
+        "https://larroude.com/products/iris-pavlova-ballet-flat-raffia",
+        "https://larroude.com/products/burnt-talitha-block-sandal-umber-suede",
+        "https://larroude.com/products/natural-cyprus-crochet-boat-shoe-crochet-and-russet-leather",
+        "https://larroude.com/products/navy-devon-ballet-flat-suede-black-mesh-and-silver-metallic-leather",
+        "https://larroude.com/products/strawberry-verona-mesh-ballet-flat-cream-mesh-and-leather",
+        "https://larroude.com/products/mushroom-stella-sneaker-brown-suede-and-brown-shearling",
+        "https://larroude.com/products/ivory-margherita-thong-sandal-leather",
+        "https://larroude.com/products/burnt-milan-gioiello-block-sandal-umber-leather",
+        "https://larroude.com/products/caramel-verona-crochet-and-ivory-crochet",
+        "https://larroude.com/products/tan-bianca-low-sandal-patent-leather",
+        "https://larroude.com/products/cherry-larroude-x-parke-mule-satin",
+        "https://larroude.com/products/black-larroude-cppxo-pump-denim",
+        "https://larroude.com/products/brown-suki-flat-loafer-suede",
+        "https://larroude.com/products/ivory-kate-mid-boot-leather",
+        "https://larroude.com/products/wine-charli-flatform-sandal-velvet",
+        "https://larroude.com/products/black-eleonor-bootie-velvet",
+        "https://larroude.com/products/brown-james-bootie-leather",
+        "https://larroude.com/products/peanut-james-bootie-suede",
+        "https://larroude.com/products/beige-milanina-block-sandal-raffia",
+        "https://larroude.com/products/burnt-umber-jasmine-hi-mule-suede",
+        "https://larroude.com/products/deepsea-miso-clog-velvet",
+        "https://larroude.com/products/multicolor-sophia-crystal-mule-satin",
+        "https://larroude.com/products/cyprus-flatform-black",
+        "https://larroude.com/products/verona-ballet-flat-black-3152",
+        "https://larroude.com/products/verona-macrame-raffia-flatform-expr",
+        "https://larroude.com/products/ines-pump-black-3147",
+        "https://larroude.com/products/verona-macrame-raffia-flatform-deep",
+        "https://larroude.com/products/cyprus-flatform-indi",
+        "https://larroude.com/products/cyprus-flatform-pean",
+        "https://larroude.com/products/verona-macrame-raffia-flatform-black",
+        "https://larroude.com/products/cyprus-boat-shoe-beige",
+        "https://larroude.com/products/verona-ballet-flat-brig",
+        "https://larroude.com/products/verona-ballet-flat-natural-3151",
+        "https://larroude.com/products/ari-pump-black"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "DOLCE VITA": {
       "brand": "DOLCE VITA",
-      "lastCollectAt": "2026-09-11T08:48:02.506Z",
+      "lastCollectAt": "2026-09-12T08:36:46.063Z",
       "footwearCollectionPath": "https://www.dolcevita.com/collections/shoes-view-all",
       "footwearCollectionUrl": "https://www.dolcevita.com/collections/shoes-view-all",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -2796,14 +2838,18 @@
         "https://www.dolcevita.com/products/heyes-boots-snake-tan-embossed-leather",
         "https://www.dolcevita.com/products/garlyn-heels-cocoa-suede",
         "https://www.dolcevita.com/products/saylee-heels-walnut-crinkle-patent",
-        "https://www.dolcevita.com/products/saylee-heels-midnight-crinkle-patent"
+        "https://www.dolcevita.com/products/saylee-heels-midnight-crinkle-patent",
+        "https://www.dolcevita.com/products/bayra-wide-booties-black-leather",
+        "https://www.dolcevita.com/products/kentin-heels-cranberry-leather",
+        "https://www.dolcevita.com/products/kentin-heels-noir-embossed-leather",
+        "https://www.dolcevita.com/products/kentin-heels-tan-leather"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "JEFFREY CAMPBELL": {
       "brand": "JEFFREY CAMPBELL",
-      "lastCollectAt": "2026-09-11T08:49:37.898Z",
+      "lastCollectAt": "2026-09-12T08:38:26.392Z",
       "footwearCollectionPath": "https://jeffreycampbellshoes.com/collections/menu-boots",
       "footwearCollectionUrl": "https://jeffreycampbellshoes.com/collections/menu-boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -3544,7 +3590,7 @@
     },
     "STEVE MADDEN": {
       "brand": "STEVE MADDEN",
-      "lastCollectAt": "2026-09-11T08:54:30.592Z",
+      "lastCollectAt": "2026-09-12T08:43:20.514Z",
       "footwearCollectionPath": "https://www.stevemadden.com/collections/womens-new-arrivals",
       "footwearCollectionUrl": "https://www.stevemadden.com/collections/womens-new-arrivals",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -5092,14 +5138,19 @@
         "https://www.stevemadden.com/products/alani-black",
         "https://www.stevemadden.com/products/davina-light-blue",
         "https://www.stevemadden.com/products/pulse-black-white",
-        "https://www.stevemadden.com/products/pulse-white-red"
+        "https://www.stevemadden.com/products/pulse-white-red",
+        "https://www.stevemadden.com/products/bouquet-white-leather",
+        "https://www.stevemadden.com/products/haelyn-black",
+        "https://www.stevemadden.com/products/misty-light-pink",
+        "https://www.stevemadden.com/products/misty-brown-multi",
+        "https://www.stevemadden.com/products/tfleur-silver"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "CHRISTEN": {
       "brand": "CHRISTEN",
-      "lastCollectAt": "2026-09-11T08:54:38.764Z",
+      "lastCollectAt": "2026-09-12T08:43:28.664Z",
       "footwearCollectionPath": "https://christen.com/collections/shoes",
       "footwearCollectionUrl": "https://christen.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -5166,7 +5217,7 @@
     },
     "NEOUS": {
       "brand": "NEOUS",
-      "lastCollectAt": "2026-09-11T08:56:06.319Z",
+      "lastCollectAt": "2026-09-12T08:44:58.650Z",
       "footwearCollectionPath": "https://www.neous.co.uk/collections/shoes-new-in",
       "footwearCollectionUrl": "https://www.neous.co.uk/collections/shoes-new-in",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -5242,7 +5293,7 @@
     },
     "STUDIO AMELIA": {
       "brand": "STUDIO AMELIA",
-      "lastCollectAt": "2026-09-11T08:56:50.541Z",
+      "lastCollectAt": "2026-09-12T08:45:44.446Z",
       "footwearCollectionPath": "https://studioamelia.co/collections/flats",
       "footwearCollectionUrl": "https://studioamelia.co/collections/flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -5502,7 +5553,7 @@
     },
     "AEYDE": {
       "brand": "AEYDE",
-      "lastCollectAt": "2026-09-11T08:57:38.520Z",
+      "lastCollectAt": "2026-09-12T08:46:33.880Z",
       "footwearCollectionPath": "https://www.aeyde.com/collections/flats",
       "footwearCollectionUrl": "https://www.aeyde.com/collections/flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -6134,7 +6185,7 @@
     },
     "HEREU": {
       "brand": "HEREU",
-      "lastCollectAt": "2026-09-11T08:58:07.585Z",
+      "lastCollectAt": "2026-09-12T08:47:02.000Z",
       "footwearCollectionPath": "https://hereustudio.com/collections/womens-new-in-shoes",
       "footwearCollectionUrl": "https://hereustudio.com/collections/womens-new-in-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -6358,7 +6409,7 @@
     },
     "SOULIERS MARTINEZ": {
       "brand": "SOULIERS MARTINEZ",
-      "lastCollectAt": "2026-09-11T08:58:14.712Z",
+      "lastCollectAt": "2026-09-12T08:47:09.432Z",
       "footwearCollectionPath": "https://souliers-martinez.com/collections/designer-flat-shoes",
       "footwearCollectionUrl": "https://souliers-martinez.com/collections/designer-flat-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -6456,7 +6507,7 @@
     },
     "LUIS ONOFRE": {
       "brand": "LUIS ONOFRE",
-      "lastCollectAt": "2026-09-11T08:58:47.455Z",
+      "lastCollectAt": "2026-09-12T08:47:42.532Z",
       "footwearCollectionPath": "https://luisonofre.com/collections/loafers",
       "footwearCollectionUrl": "https://luisonofre.com/collections/loafers",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -6781,7 +6832,7 @@
     },
     "FLATTERED": {
       "brand": "FLATTERED",
-      "lastCollectAt": "2026-09-11T08:59:17.871Z",
+      "lastCollectAt": "2026-09-12T08:48:12.789Z",
       "footwearCollectionPath": "https://flattered.com/collections/ballet-flats",
       "footwearCollectionUrl": "https://flattered.com/collections/ballet-flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -6983,7 +7034,7 @@
     },
     "MARAY": {
       "brand": "MARAY",
-      "lastCollectAt": "2026-09-11T08:59:33.200Z",
+      "lastCollectAt": "2026-09-12T08:48:27.341Z",
       "footwearCollectionPath": "https://maray.pt/collections/sandals",
       "footwearCollectionUrl": "https://maray.pt/collections/sandals",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -7187,7 +7238,7 @@
     },
     "EXÉ": {
       "brand": "EXÉ",
-      "lastCollectAt": "2026-09-11T08:59:42.647Z",
+      "lastCollectAt": "2026-09-12T08:48:36.090Z",
       "footwearCollectionPath": "https://exe.pt/collections/socas-e-mules",
       "footwearCollectionUrl": "https://exe.pt/collections/socas-e-mules",
       "collectionDiscoveryStatus": "AUTO_DISCOVERED",
@@ -7595,14 +7646,17 @@
         "https://exe.pt/products/sandalias-exe-anny-428-gold",
         "https://exe.pt/products/sapatilhas-exe-928-20-black",
         "https://exe.pt/products/sandalia-naomi-937-green-fuxia",
-        "https://exe.pt/products/sapatilhas-exe-d190608-24-black-red"
+        "https://exe.pt/products/sapatilhas-exe-d190608-24-black-red",
+        "https://exe.pt/products/sapato-exe-garda-946-champagne",
+        "https://exe.pt/products/sandalias-abf-97-v1387-86-3-black-gold",
+        "https://exe.pt/products/sandalias-exe-p3374-700-silver"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "THE ROW": {
       "brand": "THE ROW",
-      "lastCollectAt": "2026-09-11T08:59:53.205Z",
+      "lastCollectAt": "2026-09-12T08:48:46.826Z",
       "footwearCollectionPath": "https://www.therow.com/collections/women-shoes",
       "footwearCollectionUrl": "https://www.therow.com/collections/women-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -7847,7 +7901,7 @@
     },
     "KHAITE": {
       "brand": "KHAITE",
-      "lastCollectAt": "2026-09-11T09:02:42.425Z",
+      "lastCollectAt": "2026-09-12T08:51:35.841Z",
       "footwearCollectionPath": "https://khaite.com/collections/shoes",
       "footwearCollectionUrl": "https://khaite.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -8025,7 +8079,7 @@
     },
     "LEMAIRE": {
       "brand": "LEMAIRE",
-      "lastCollectAt": "2026-09-11T09:03:38.738Z",
+      "lastCollectAt": "2026-09-12T08:52:37.275Z",
       "footwearCollectionPath": "https://www.lemaire.fr/collections/women-shoes",
       "footwearCollectionUrl": "https://www.lemaire.fr/collections/women-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -8129,7 +8183,7 @@
     },
     "PROENZA SCHOULER": {
       "brand": "PROENZA SCHOULER",
-      "lastCollectAt": "2026-09-11T09:04:26.389Z",
+      "lastCollectAt": "2026-09-12T08:53:17.450Z",
       "footwearCollectionPath": "https://www.proenzaschouler.com/collections/boots",
       "footwearCollectionUrl": "https://www.proenzaschouler.com/collections/boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -8285,7 +8339,7 @@
     },
     "SCHUTZ": {
       "brand": "SCHUTZ",
-      "lastCollectAt": "2026-09-11T08:34:00.059Z",
+      "lastCollectAt": "2026-09-12T08:22:20.477Z",
       "footwearCollectionPath": "https://schutz-shoes.com/collections/womens-shoes",
       "footwearCollectionUrl": "https://schutz-shoes.com/collections/womens-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -9807,7 +9861,7 @@
     },
     "TONY BIANCO": {
       "brand": "TONY BIANCO",
-      "lastCollectAt": "2026-09-11T08:35:34.012Z",
+      "lastCollectAt": "2026-09-12T08:24:00.902Z",
       "footwearCollectionPath": "https://tonybianco.com.au/collections/womens-loafers",
       "footwearCollectionUrl": "https://tonybianco.com.au/collections/womens-loafers",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -10158,7 +10212,7 @@
     },
     "ST. AGNI": {
       "brand": "ST. AGNI",
-      "lastCollectAt": "2026-09-11T08:35:53.798Z",
+      "lastCollectAt": "2026-09-12T08:24:21.227Z",
       "footwearCollectionPath": "https://www.st-agni.com/collections/footwear",
       "footwearCollectionUrl": "https://www.st-agni.com/collections/footwear",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -10302,7 +10356,7 @@
     },
     "TOTEME": {
       "brand": "TOTEME",
-      "lastCollectAt": "2026-09-11T09:03:32.556Z",
+      "lastCollectAt": "2026-09-12T08:52:30.661Z",
       "footwearCollectionPath": null,
       "footwearCollectionUrl": null,
       "collectionDiscoveryStatus": "NEEDS_MANUAL_CONFIG",
@@ -10429,7 +10483,7 @@
     },
     "DRIES VAN NOTEN": {
       "brand": "DRIES VAN NOTEN",
-      "lastCollectAt": "2026-09-11T09:03:41.956Z",
+      "lastCollectAt": "2026-09-12T08:52:41.382Z",
       "footwearCollectionPath": "https://www.driesvannoten.com/collections/women-shoes",
       "footwearCollectionUrl": "https://www.driesvannoten.com/collections/women-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -10473,7 +10527,7 @@
     },
     "ZARA": {
       "brand": "ZARA",
-      "lastCollectAt": "2026-09-11T09:15:15.361Z",
+      "lastCollectAt": "2026-09-12T09:05:24.309Z",
       "footwearCollectionPath": null,
       "footwearCollectionUrl": null,
       "collectionDiscoveryStatus": null,
@@ -10905,14 +10959,31 @@
         "https://www.zara.com/us/en/suede-heeled-boots-p12000810.html",
         "https://www.zara.com/us/en/suede-buckle-ankle-boots-p12152810.html",
         "https://www.zara.com/us/en/fruit-of-the-loom--leather-heel-mules-p13239810.html",
-        "https://www.zara.com/us/en/fruit-of-the-loom--leather-bluchers-p15870810.html"
+        "https://www.zara.com/us/en/fruit-of-the-loom--leather-bluchers-p15870810.html",
+        "https://www.zara.com/us/en/leather-wedge-boots-p11013810.html",
+        "https://www.zara.com/us/en/leather-buckle-ballet-flats-p11529810.html",
+        "https://www.zara.com/us/en/contrasting-leather-ballet-flats-p11530810.html",
+        "https://www.zara.com/us/en/metallic-detail-heeled-boots-p12007810.html",
+        "https://www.zara.com/us/en/leather-loafers-with-metal-embellishment-p12555810.html",
+        "https://www.zara.com/us/en/flat-suede-loafers-p12560810.html",
+        "https://www.zara.com/us/en/suede-heeled-ballet-flats-p12250810.html",
+        "https://www.zara.com/us/en/leather-cowboy-heeled-ankle-boots-p13126810.html",
+        "https://www.zara.com/us/en/buckled-kitten-heel-tall-boots-p13015810.html",
+        "https://www.zara.com/us/en/leather-kitten-ankle-boots-p13141810.html",
+        "https://www.zara.com/us/en/effect-loafers-p13530810.html",
+        "https://www.zara.com/us/en/barefoot-running-sneakers-p15035810.html",
+        "https://www.zara.com/us/en/barefoot-mixed-material-sneakers-p15038810.html",
+        "https://www.zara.com/us/en/suede-barefoot-sneakers-p15425810.html",
+        "https://www.zara.com/us/en/leather-barefoot-sneakers-p15451810.html",
+        "https://www.zara.com/us/en/cross-strap-ballet-flats-p15275810.html",
+        "https://www.zara.com/us/en/barefoot-mixed-material-sneakers-p15025810.html"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "JUDE": {
       "brand": "JUDE",
-      "lastCollectAt": "2026-09-11T08:55:31.430Z",
+      "lastCollectAt": "2026-09-12T08:44:22.702Z",
       "footwearCollectionPath": "https://thejude.com/collections/boots",
       "footwearCollectionUrl": "https://thejude.com/collections/boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -11159,7 +11230,7 @@
     },
     "CECILIE BAHNSEN": {
       "brand": "CECILIE BAHNSEN",
-      "lastCollectAt": "2026-09-11T09:04:34.066Z",
+      "lastCollectAt": "2026-09-12T08:53:25.655Z",
       "footwearCollectionPath": "https://ceciliebahnsen.com/collections/shoes",
       "footwearCollectionUrl": "https://ceciliebahnsen.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -11206,7 +11277,7 @@
     },
     "SIMONE ROCHA": {
       "brand": "SIMONE ROCHA",
-      "lastCollectAt": "2026-09-11T09:04:39.011Z",
+      "lastCollectAt": "2026-09-12T08:53:30.781Z",
       "footwearCollectionPath": "https://simonerocha.com/collections/shoes",
       "footwearCollectionUrl": "https://simonerocha.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -11237,7 +11308,7 @@
     },
     "AMINA MUADDI": {
       "brand": "AMINA MUADDI",
-      "lastCollectAt": "2026-09-11T09:04:56.452Z",
+      "lastCollectAt": "2026-09-12T08:53:50.571Z",
       "footwearCollectionPath": "https://aminamuaddi.com/collections/view-all-shoes",
       "footwearCollectionUrl": "https://aminamuaddi.com/collections/view-all-shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -11413,7 +11484,7 @@
     },
     "PARIS TEXAS": {
       "brand": "PARIS TEXAS",
-      "lastCollectAt": "2026-09-11T09:08:08.904Z",
+      "lastCollectAt": "2026-09-12T08:57:12.180Z",
       "footwearCollectionPath": "https://paristexasbrand.com/collections/boots",
       "footwearCollectionUrl": "https://paristexasbrand.com/collections/boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -11927,7 +11998,7 @@
     },
     "GIA BORGHINI": {
       "brand": "GIA BORGHINI",
-      "lastCollectAt": "2026-09-11T09:08:15.398Z",
+      "lastCollectAt": "2026-09-12T08:57:18.651Z",
       "footwearCollectionPath": "https://www.giaborghini.it/collections/boots",
       "footwearCollectionUrl": "https://www.giaborghini.it/collections/boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -12057,14 +12128,15 @@
         "https://www.giaborghini.it/products/clementa-suede-leather-in-chocolate",
         "https://www.giaborghini.it/products/clementa-calf-leather-in-black",
         "https://www.giaborghini.it/products/lea-synthetic-leather-in-black",
-        "https://www.giaborghini.it/products/monserrat-elaphe-leather-in-black"
+        "https://www.giaborghini.it/products/monserrat-elaphe-leather-in-black",
+        "https://www.giaborghini.it/products/barbara-synthetic-leather-in-black"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "MALONE SOULIERS": {
       "brand": "MALONE SOULIERS",
-      "lastCollectAt": "2026-09-11T09:08:43.986Z",
+      "lastCollectAt": "2026-09-12T08:57:50.578Z",
       "footwearCollectionPath": "https://www.malonesouliers.com/collections/all",
       "footwearCollectionUrl": "https://www.malonesouliers.com/collections/all",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -12333,7 +12405,7 @@
     },
     "SOPHIA WEBSTER": {
       "brand": "SOPHIA WEBSTER",
-      "lastCollectAt": "2026-09-11T09:09:00.415Z",
+      "lastCollectAt": "2026-09-12T08:58:06.781Z",
       "footwearCollectionPath": "https://www.sophiawebster.com/collections/shoes",
       "footwearCollectionUrl": "https://www.sophiawebster.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -12531,7 +12603,7 @@
     },
     "EMME PARSONS": {
       "brand": "EMME PARSONS",
-      "lastCollectAt": "2026-09-11T09:09:14.383Z",
+      "lastCollectAt": "2026-09-12T08:59:30.802Z",
       "footwearCollectionPath": "https://emmeparsons.com/collections/sneakers",
       "footwearCollectionUrl": "https://emmeparsons.com/collections/sneakers",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -12622,14 +12694,16 @@
         "https://emmeparsons.com/products/meta-in-ivory-nappa",
         "https://emmeparsons.com/products/western-stretch-boot-black-grosgrain",
         "https://emmeparsons.com/products/western-stretch-boot-tan-grosgrain",
-        "https://emmeparsons.com/products/leandra-in-black-patent"
+        "https://emmeparsons.com/products/leandra-in-black-patent",
+        "https://emmeparsons.com/products/girona-penny-loafer-camel-suede",
+        "https://emmeparsons.com/products/girona-penny-loafer-black-kidskin"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "CULT GAIA": {
       "brand": "CULT GAIA",
-      "lastCollectAt": "2026-09-11T09:10:16.421Z",
+      "lastCollectAt": "2026-09-12T08:59:47.144Z",
       "footwearCollectionPath": "https://cultgaia.com/collections/shoes",
       "footwearCollectionUrl": "https://cultgaia.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -12777,14 +12851,21 @@
         "https://cultgaia.com/products/devora-sandal-black",
         "https://cultgaia.com/products/lydia-sandal-gold",
         "https://cultgaia.com/products/rene-heel-natural",
-        "https://cultgaia.com/products/olin-platform-luwak"
+        "https://cultgaia.com/products/olin-platform-luwak",
+        "https://cultgaia.com/products/robyn-sandal-antique-white",
+        "https://cultgaia.com/products/joslyn-boot-java",
+        "https://cultgaia.com/products/dante-boot-espresso",
+        "https://cultgaia.com/products/joslyn-boot-black",
+        "https://cultgaia.com/products/vail-boot-saddle",
+        "https://cultgaia.com/products/declan-boot-black",
+        "https://cultgaia.com/products/catriona-boot-black"
       ],
       "backfillLimit": 100,
       "hitBackfillLimit": false
     },
     "STAUD": {
       "brand": "STAUD",
-      "lastCollectAt": "2026-09-11T09:10:51.104Z",
+      "lastCollectAt": "2026-09-12T09:00:23.269Z",
       "footwearCollectionPath": "https://staud.clothing/collections/shoes",
       "footwearCollectionUrl": "https://staud.clothing/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -13104,7 +13185,7 @@
     },
     "BY FAR": {
       "brand": "BY FAR",
-      "lastCollectAt": "2026-09-11T09:11:26.606Z",
+      "lastCollectAt": "2026-09-12T09:01:01.426Z",
       "footwearCollectionPath": "https://byfar.com/collections/flats",
       "footwearCollectionUrl": "https://byfar.com/collections/flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -13270,7 +13351,7 @@
     },
     "MANU ATELIER": {
       "brand": "MANU ATELIER",
-      "lastCollectAt": "2026-09-11T09:11:45.730Z",
+      "lastCollectAt": "2026-09-12T09:01:22.969Z",
       "footwearCollectionPath": "https://manuatelier.com/collections/shoes",
       "footwearCollectionUrl": "https://manuatelier.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -13357,7 +13438,7 @@
     },
     "CAREL": {
       "brand": "CAREL",
-      "lastCollectAt": "2026-09-11T09:12:00.133Z",
+      "lastCollectAt": "2026-09-12T09:01:38.503Z",
       "footwearCollectionPath": "https://www.carel.fr/collections/mules",
       "footwearCollectionUrl": "https://www.carel.fr/collections/mules",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -13567,7 +13648,7 @@
     },
     "NAGUISA": {
       "brand": "NAGUISA",
-      "lastCollectAt": "2026-09-11T09:12:09.474Z",
+      "lastCollectAt": "2026-09-12T09:01:48.223Z",
       "footwearCollectionPath": "https://naguisa.com/collections/chunky-boots",
       "footwearCollectionUrl": "https://naguisa.com/collections/chunky-boots",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -13691,7 +13772,7 @@
     },
     "FLABELUS": {
       "brand": "FLABELUS",
-      "lastCollectAt": "2026-09-11T09:12:20.472Z",
+      "lastCollectAt": "2026-09-12T09:01:59.565Z",
       "footwearCollectionPath": "https://flabelus.com/collections/mary-jane",
       "footwearCollectionUrl": "https://flabelus.com/collections/mary-jane",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -14038,7 +14119,7 @@
     },
     "ATP ATELIER": {
       "brand": "ATP ATELIER",
-      "lastCollectAt": "2026-09-11T09:13:32.419Z",
+      "lastCollectAt": "2026-09-12T09:03:14.263Z",
       "footwearCollectionPath": "https://atpatelier.com/collections/sandals",
       "footwearCollectionUrl": "https://atpatelier.com/collections/sandals",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -14161,7 +14242,7 @@
     },
     "PAVEMENT": {
       "brand": "PAVEMENT",
-      "lastCollectAt": "2026-09-11T09:13:42.806Z",
+      "lastCollectAt": "2026-09-12T09:03:25.163Z",
       "footwearCollectionPath": "https://pavement-official.com/collections/espadrilles",
       "footwearCollectionUrl": "https://pavement-official.com/collections/espadrilles",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -14373,7 +14454,7 @@
     },
     "ANCIENT GREEK SANDALS": {
       "brand": "ANCIENT GREEK SANDALS",
-      "lastCollectAt": "2026-09-11T09:14:39.587Z",
+      "lastCollectAt": "2026-09-12T09:04:35.562Z",
       "footwearCollectionPath": "https://www.ancient-greek-sandals.com/collections/womens-sandals-jellies",
       "footwearCollectionUrl": "https://www.ancient-greek-sandals.com/collections/womens-sandals-jellies",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -15243,7 +15324,7 @@
     },
     "TUAS": {
       "brand": "TUAS",
-      "lastCollectAt": "2026-09-11T09:14:41.785Z",
+      "lastCollectAt": "2026-09-12T09:04:39.627Z",
       "footwearCollectionPath": "https://www.tuas-studio.com/collections/ballet-flats",
       "footwearCollectionUrl": "https://www.tuas-studio.com/collections/ballet-flats",
       "collectionDiscoveryStatus": "VERIFIED",
@@ -15262,7 +15343,7 @@
     },
     "THE ATTICO": {
       "brand": "THE ATTICO",
-      "lastCollectAt": "2026-09-11T09:15:25.654Z",
+      "lastCollectAt": "2026-09-12T09:05:43.972Z",
       "footwearCollectionPath": "https://www.theattico.com/collections/shoes",
       "footwearCollectionUrl": "https://www.theattico.com/collections/shoes",
       "collectionDiscoveryStatus": "VERIFIED",

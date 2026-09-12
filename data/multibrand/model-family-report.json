@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 18203,
-  "modelFamilyCount": 11843,
-  "totalVariants": 18203,
-  "multiVariantFamilyCount": 4430,
-  "reductionPercent": 34.9,
-  "collapsedVariantProducts": 6360,
+  "rawProductCount": 18295,
+  "modelFamilyCount": 11898,
+  "totalVariants": 18295,
+  "multiVariantFamilyCount": 4441,
+  "reductionPercent": 35,
+  "collapsedVariantProducts": 6397,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 11802,
-    "averageRepresentativeImageCount": 6.33,
+    "familiesWithMultipleRepresentativeImages": 11856,
+    "averageRepresentativeImageCount": 6.34,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -15,7 +15,7 @@
       "modelFamilyId": "larroude--style-larroude-l422-vero-ballet-flat-base",
       "brand": "LARROUDE",
       "canonicalName": "Verona Ballet Flat",
-      "variantCount": 37
+      "variantCount": 40
     },
     {
       "modelFamilyId": "larroude--style-larroude-l415-stel-sneaker-base",
@@ -39,7 +39,7 @@
       "modelFamilyId": "larroude--style-larroude-l545-cypr-loafer-base",
       "brand": "LARROUDE",
       "canonicalName": "Cyprus Boat Shoe",
-      "variantCount": 21
+      "variantCount": 22
     },
     {
       "modelFamilyId": "ancient-greek-sandals--style-ancient-greek-sandals-12104-sandal-sandal",
@@ -3066,6 +3066,13 @@
       "modelFamilyId": "barbour--id-free-people-90266537-unclassified-base",
       "brand": "Barbour",
       "canonicalName": "Barbour Nimbus Chelsea Wellies",
+      "variantCount": 3,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15035810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Barefoot Running Sneaker",
       "variantCount": 3,
       "groupingReason": "singleton"
     },

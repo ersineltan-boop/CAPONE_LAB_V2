@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-11T11:04:31.228Z",
-  "digerCount": 764,
-  "totalFamilies": 11843,
+  "generatedAt": "2026-09-12T10:56:57.602Z",
+  "digerCount": 766,
+  "totalFamilies": 11898,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 136,
+    "GENERIC_SOURCE_CATEGORY": 137,
     "CONFLICTING_SOURCE_CATEGORIES": 48,
-    "UNMAPPED_SOURCE_CATEGORY": 544,
+    "UNMAPPED_SOURCE_CATEGORY": 545,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -124,6 +124,15 @@
     },
     {
       "modelFamilyId": "adidas--id-level-shoes-adidas-x-care-bears-samba-jane-shoes-yellow-leather-women-ballet-anpe0z-html-unclassified-base",
+      "brand": "adidas",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "adidas--id-level-shoes-adidas-x-simone-rocha-japan-mules-black-fabric-women-low-tops-21qkp7-html-unclassified-mule",
       "brand": "adidas",
       "sourceCategories": [
         "Shoes"
@@ -1884,20 +1893,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "emme-parsons--handle-emme-parsons-monroe-unclassified-base-monroe-taupe",
-      "brand": "EMME PARSONS",
-      "sourceCategories": [
-        "Emme Parsons Parker Moccasin",
-        "Parker Moccasin | Emme Parsons",
-        "Raffia",
-        "Raffia Shoes | Made in Italy | Emme Parsons",
-        "Suede",
-        "Suede Leather Loafers, Boots & More | Made in Italy | Emme Parsons"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "emme-parsons--id-shopify-emme-parsons-domani-bordeaux-kidskin-unclassified-base",
       "brand": "EMME PARSONS",
       "sourceCategories": [
@@ -2044,6 +2039,16 @@
     },
     {
       "modelFamilyId": "ex--id-shopify-exe-sapato-exe-garda-928-black-unclassified-base",
+      "brand": "EXÉ",
+      "sourceCategories": [
+        "MOCASSINS, SAPATOS E STILETTOS",
+        "Sapatos"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "ex--id-shopify-exe-sapato-exe-garda-946-champagne-unclassified-base",
       "brand": "EXÉ",
       "sourceCategories": [
         "MOCASSINS, SAPATOS E STILETTOS",
@@ -5026,6 +5031,16 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "larroude--id-shopify-larroude-cyprus-boat-shoe-cand-unclassified-base",
+      "brand": "LARROUDE",
+      "sourceCategories": [
+        "All Shoes",
+        "New Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "le-monde-beryl--id-level-shoes-le-monde-beryl-luna-slippers-beige-leather-women-ballerinas-jx2ckh-html-unclassified-base",
       "brand": "Le Monde Beryl",
       "sourceCategories": [
@@ -5255,6 +5270,7 @@
         "Footwear",
         "Footwear All",
         "Footwear All new",
+        "OLYMPIA SLIPPER VELVET - Variants",
         "Olympia Slipper",
         "Olympia Slipper - variants"
       ],
@@ -5274,7 +5290,8 @@
         "New Arrivals",
         "New Season Pf26",
         "Newarrivals",
-        "OLYMPIA SLIPPER - Variants"
+        "OLYMPIA SLIPPER SATIN - Variants",
+        "Olympia Slipper Variants"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -6518,7 +6535,7 @@
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
-        "Handbags and Shoes",
+        "Handbags And Shoes",
         "Shoes",
         "shoes_taxes-exclusion"
       ],
@@ -6530,7 +6547,7 @@
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
-        "Handbags and Shoes",
+        "Handbags And Shoes",
         "Shoes",
         "shoes_taxes-exclusion"
       ],
@@ -7740,7 +7757,7 @@
     },
     {
       "sourceCategory": "MOCASSINS, SAPATOS E STILETTOS",
-      "count": 31,
+      "count": 32,
       "brands": [
         "EXÉ"
       ],
@@ -7748,7 +7765,7 @@
     },
     {
       "sourceCategory": "Sapatos",
-      "count": 31,
+      "count": 32,
       "brands": [
         "EXÉ"
       ],
@@ -8018,17 +8035,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11843,
-    "babet": 820,
-    "loafer": 613,
-    "topuklu": 1884,
-    "sandal": 3192,
-    "mule": 1080,
-    "bot-cizme": 2057,
-    "sneaker": 1225,
+    "tumu": 11898,
+    "babet": 828,
+    "loafer": 615,
+    "topuklu": 1892,
+    "sandal": 3198,
+    "mule": 1085,
+    "bot-cizme": 2074,
+    "sneaker": 1232,
     "espadril": 108,
     "oxford-derby": 12,
     "clog": 88,
-    "diger": 764
+    "diger": 766
   }
 }

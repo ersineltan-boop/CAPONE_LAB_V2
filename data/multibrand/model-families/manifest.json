@@ -1,39 +1,39 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-11T11:04:18.084Z",
-  "totalFamilies": 11843,
+  "generatedAt": "2026-09-12T10:56:45.325Z",
+  "totalFamilies": 11898,
   "shardCount": 6,
   "shards": [
     {
       "file": "part-000.json",
       "familyCount": 2055,
-      "bytes": 16773950
+      "bytes": 16773618
     },
     {
       "file": "part-001.json",
-      "familyCount": 2214,
-      "bytes": 16743401
+      "familyCount": 2205,
+      "bytes": 16775231
     },
     {
       "file": "part-002.json",
-      "familyCount": 1734,
-      "bytes": 16777888
+      "familyCount": 1742,
+      "bytes": 16772991
     },
     {
       "file": "part-003.json",
-      "familyCount": 2600,
-      "bytes": 16774030
+      "familyCount": 2594,
+      "bytes": 16766685
     },
     {
       "file": "part-004.json",
-      "familyCount": 1676,
-      "bytes": 16775643
+      "familyCount": 1684,
+      "bytes": 16773761
     },
     {
       "file": "part-005.json",
-      "familyCount": 1564,
-      "bytes": 12387470
+      "familyCount": 1618,
+      "bytes": 12962159
     }
   ]
 }
