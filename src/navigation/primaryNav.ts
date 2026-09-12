@@ -3,7 +3,8 @@ export type AppView =
   | "visual-wall"
   | "brands"
   | "saved"
-  | "marketplaces";
+  | "marketplaces"
+  | "market-research";
 
 export interface PrimaryNavItem {
   id: AppView;
@@ -14,6 +15,7 @@ export const PRIMARY_NAV_ITEMS: readonly PrimaryNavItem[] = [
   { id: "brands", label: "MARKALAR" },
   { id: "marketplaces", label: "PAZARYERLERİ" },
   { id: "visual-wall", label: "VISUAL" },
+  { id: "market-research", label: "PAZAR ARAŞTIRMASI" },
   { id: "saved", label: "KAYDETTİKLERİM" },
 ];
 

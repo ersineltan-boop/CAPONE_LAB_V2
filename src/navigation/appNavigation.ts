@@ -6,9 +6,30 @@ export interface AppNavigationState {
   brandName: string | null;
   marketplaceId: string | null;
   sourceCategoryId: string | null;
+  marketCountryId: string | null;
+  marketBrandId: string | null;
 }
 
-const VALID_VIEWS: AppView[] = ["brands", "marketplaces", "saved", "visual-wall", "radar"];
+const VALID_VIEWS: AppView[] = [
+  "brands",
+  "marketplaces",
+  "saved",
+  "visual-wall",
+  "radar",
+  "market-research",
+];
+
+export function emptyNavigation(view: AppView = "brands"): AppNavigationState {
+  return {
+    view,
+    brandId: null,
+    brandName: null,
+    marketplaceId: null,
+    sourceCategoryId: null,
+    marketCountryId: view === "market-research" ? "romania" : null,
+    marketBrandId: null,
+  };
+}
 
 export function parseNavigationFromSearch(search: string): AppNavigationState {
   const params = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
@@ -23,7 +44,9 @@ export function parseNavigationFromSearch(search: string): AppNavigationState {
     brandName: view === "brands" && params.get("brandName") ? params.get("brandName") : null,
     marketplaceId:
       view === "marketplaces" && params.get("marketplace") ? params.get("marketplace") : null,
-    sourceCategoryId: params.get("sourceCategory"),
+    sourceCategoryId: view === "market-research" ? null : params.get("sourceCategory"),
+    marketCountryId: view === "market-research" ? (params.get("market") ?? "romania") : null,
+    marketBrandId: view === "market-research" && params.get("mrBrand") ? params.get("mrBrand") : null,
   };
 }
 
@@ -39,7 +62,13 @@ export function buildNavigationSearch(state: AppNavigationState): string {
   if (state.view === "marketplaces" && state.marketplaceId) {
     params.set("marketplace", state.marketplaceId);
   }
-  if (state.sourceCategoryId) {
+  if (state.view === "market-research") {
+    if (state.marketCountryId && state.marketCountryId !== "romania") {
+      params.set("market", state.marketCountryId);
+    }
+    if (state.marketBrandId) params.set("mrBrand", state.marketBrandId);
+  }
+  if (state.sourceCategoryId && state.view !== "market-research") {
     params.set("sourceCategory", state.sourceCategoryId);
   }
   const query = params.toString();
@@ -48,13 +77,7 @@ export function buildNavigationSearch(state: AppNavigationState): string {
 
 export function readNavigationFromLocation(): AppNavigationState {
   if (typeof window === "undefined") {
-    return {
-      view: "brands",
-      brandId: null,
-      brandName: null,
-      marketplaceId: null,
-      sourceCategoryId: null,
-    };
+    return emptyNavigation();
   }
   return parseNavigationFromSearch(window.location.search);
 }

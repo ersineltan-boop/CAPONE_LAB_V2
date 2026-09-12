@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { PRIMARY_NAV_ITEMS } from "../../navigation/primaryNav";
+import { productResearchPrimaryNavIds } from "../constants";
 import { loadBrandRegistry } from "../../registry/data";
 import { browsableMarketplaces } from "../../registry/data/marketplaces";
 import { appendAuditEvent, createAuditEvent, loadAuditLog } from "../audit/log";
@@ -69,7 +70,9 @@ describe("Operator domain isolation", () => {
     ).toThrow(DomainIsolationError);
 
     expect(PRIMARY_NAV_ITEMS.some((item) => item.label === "MARKALAR")).toBe(true);
-    expect(PRIMARY_NAV_ITEMS.some((item) => /pazar araştırm/i.test(item.label))).toBe(false);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(true);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.label === "PAZAR ARAŞTIRMASI")).toBe(true);
+    expect(productResearchPrimaryNavIds()).not.toContain("market-research");
   });
 
   it("allows the same brand name in both domains as separate records", () => {

@@ -25,17 +25,43 @@ describe("appNavigation", () => {
         brandName: null,
         marketplaceId: "mytheresa",
         sourceCategoryId: null,
+        marketCountryId: null,
+        marketBrandId: null,
       }),
     ).toBe("?view=marketplaces&marketplace=mytheresa");
+  });
+
+  it("parses market research brand navigation without using Product Research params", () => {
+    const state = parseNavigationFromSearch("?view=market-research&mrBrand=mr-ro-botta");
+    expect(state.view).toBe("market-research");
+    expect(state.marketCountryId).toBe("romania");
+    expect(state.marketBrandId).toBe("mr-ro-botta");
+    expect(state.brandId).toBeNull();
+    expect(state.marketplaceId).toBeNull();
+  });
+
+  it("builds market research search with isolated mrBrand param", () => {
+    expect(
+      buildNavigationSearch({
+        view: "market-research",
+        brandId: null,
+        brandName: null,
+        marketplaceId: null,
+        sourceCategoryId: null,
+        marketCountryId: "romania",
+        marketBrandId: "mr-ro-il-passo",
+      }),
+    ).toBe("?view=market-research&mrBrand=mr-ro-il-passo");
   });
 });
 
 describe("primary navigation", () => {
-  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / KAYDETTİKLERİM", () => {
+  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / PAZAR ARAŞTIRMASI / KAYDETTİKLERİM", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
       "VISUAL",
+      "PAZAR ARAŞTIRMASI",
       "KAYDETTİKLERİM",
     ]);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "visual-wall")).toBe(true);
