@@ -2,6 +2,7 @@ import { UI_COPY } from "../../presentation/turkishLabels";
 import { formatMarketResearchObservedAt } from "../format";
 import { romaniaBrandCards, romaniaCountrySummary } from "../romania/catalog";
 import ImagePlaceholder from "../../components/radar/ImagePlaceholder";
+import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
 
 interface MarketResearchPageProps {
   onSelectBrand: (brandId: string) => void;
@@ -40,7 +41,11 @@ export default function MarketResearchPage({ onSelectBrand }: MarketResearchPage
           {cards.map((card, index) => (
             <article
               key={card.id}
-              className="group overflow-hidden border border-line bg-white/40 text-left transition-colors hover:border-ink"
+              className={`group overflow-hidden border text-left transition-colors hover:border-ink ${
+                isIncompleteMarketResearchVisual(card.visualStatus)
+                  ? "border-dashed border-line bg-cream/30"
+                  : "border-line bg-white/40"
+              }`}
             >
               <button
                 type="button"
@@ -57,7 +62,15 @@ export default function MarketResearchPage({ onSelectBrand }: MarketResearchPage
                       decoding="async"
                     />
                   ) : (
-                    <ImagePlaceholder alt={card.name} label={UI_COPY.noImage} className="h-full w-full" />
+                    <ImagePlaceholder
+                      alt={card.name}
+                      label={
+                        isIncompleteMarketResearchVisual(card.visualStatus)
+                          ? UI_COPY.marketResearchSourceUnavailable
+                          : UI_COPY.noImage
+                      }
+                      className="h-full w-full"
+                    />
                   )}
                 </div>
                 <div className="space-y-1 px-4 py-4">
@@ -74,6 +87,11 @@ export default function MarketResearchPage({ onSelectBrand }: MarketResearchPage
                       : UI_COPY.marketResearchNotSoldInMarket}
                     {card.modelCount > 0 ? ` · ${UI_COPY.modelsCount(card.modelCount)}` : ""}
                   </p>
+                  {isIncompleteMarketResearchVisual(card.visualStatus) ? (
+                    <p className="text-[10px] leading-relaxed text-ink-faint">
+                      {marketResearchVisualLabel(card.visualStatus, card.visualNote)}
+                    </p>
+                  ) : null}
                 </div>
               </button>
               <div className="flex flex-wrap gap-2 px-4 pb-4">

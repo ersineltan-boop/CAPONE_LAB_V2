@@ -5,6 +5,7 @@ import ImagePlaceholder from "../../components/radar/ImagePlaceholder";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { formatMarketResearchPrice } from "../format";
 import type { MarketResearchModel, MarketResearchVariant } from "../types";
+import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
 
 interface MarketResearchProductGridProps {
   models: MarketResearchModel[];
@@ -72,7 +73,15 @@ function ProductCard({ model, index }: { model: MarketResearchModel; index: numb
             priority={index < 4}
           />
         ) : (
-          <ImagePlaceholder alt={model.name} label={UI_COPY.noImage} className="h-full w-full" />
+          <ImagePlaceholder
+            alt={model.name}
+            label={
+              isIncompleteMarketResearchVisual(selected?.visualStatus)
+                ? UI_COPY.marketResearchVisualIncomplete
+                : UI_COPY.noImage
+            }
+            className="h-full w-full"
+          />
         )}
         {selected?.productUrl ? (
           <a
@@ -92,6 +101,11 @@ function ProductCard({ model, index }: { model: MarketResearchModel; index: numb
         <p className="text-[9px] tracking-wide text-ink-faint">{model.categoryLabel}</p>
         {selected?.color ? (
           <p className="text-[9px] tracking-wide text-ink-muted">{selected.color}</p>
+        ) : null}
+        {images.length === 0 && selected?.visualNote ? (
+          <p className="text-[9px] leading-relaxed text-ink-faint">
+            {marketResearchVisualLabel(selected.visualStatus, selected.visualNote)}
+          </p>
         ) : null}
         <VariantStrip variants={model.variants} selectedId={selectedId} onSelect={setSelectedId} />
         {price ? (

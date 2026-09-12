@@ -726,20 +726,35 @@ const BADURA = brand({
   markets: ["RO"],
   soldInSalesMarket: true,
   availability: "visible",
-  sourceLinks: [{ label: "CCC România", url: "https://ccc.eu/ro/ro/c/incaltaminte-dama", kind: "marketplace" }],
+  sourceLinks: [{ label: "CCC România", url: "https://ccc.eu/ro/ro/c/femei/pantofi/marci/badura", kind: "marketplace" }],
   models: [
     {
-      id: "badura-giselle",
-      name: "Giselle",
-      categoryId: "topuklu",
-      categoryLabel: "Topuklu",
+      id: "badura-c-lan",
+      name: "C-LAN TS6333-02",
+      categoryId: "loafer",
+      categoryLabel: "Loafer",
       variants: [
         {
-          id: "badura-giselle-default",
-          color: null,
-          productUrl: "https://ccc.eu/ro/ro/c/incaltaminte-dama",
+          id: "badura-c-lan-black",
+          color: "Negru",
+          productUrl: "https://ccc.eu/ro/ro/p/pantofi-casual-badura-c-lan-ts6333-02-negru-5907964524175",
           images: [],
-          ...snapshotPrice(343.99, 343.99, "RON"),
+          ...snapshotPrice(null, null, "RON"),
+        },
+      ],
+    },
+    {
+      id: "badura-costar1",
+      name: "C-COSTAR1",
+      categoryId: "sneaker",
+      categoryLabel: "Sneaker",
+      variants: [
+        {
+          id: "badura-costar1-offwhite",
+          color: "Alburiu",
+          productUrl: "https://ccc.eu/ro/ro/p/sneakersi-badura-c-costar1-alburiu-5907964535966",
+          images: [],
+          ...snapshotPrice(null, null, "RON"),
         },
       ],
     },
@@ -823,8 +838,39 @@ const LASOCKI = brand({
   markets: ["RO"],
   soldInSalesMarket: true,
   availability: "visible",
-  sourceLinks: [{ label: "CCC România", url: "https://ccc.eu/ro/ro/c/incaltaminte-dama", kind: "marketplace" }],
-  models: [],
+  sourceLinks: [{ label: "CCC România", url: "https://ccc.eu/ro/ro/c/femei/pantofi/marci/lasocki", kind: "marketplace" }],
+  models: [
+    {
+      id: "lasocki-ceo-hy2076",
+      name: "CEO HY2076-1",
+      categoryId: "sneaker",
+      categoryLabel: "Sneaker",
+      variants: [
+        {
+          id: "lasocki-ceo-hy2076-black",
+          color: "Negru",
+          productUrl: "https://ccc.eu/ro/ro/p/sneakersi-lasocki-ceo-hy2076-1-negru-5907964465317",
+          images: [],
+          ...snapshotPrice(null, null, "RON"),
+        },
+      ],
+    },
+    {
+      id: "lasocki-verisia",
+      name: "CEO WI16 VERISIA-02",
+      categoryId: "sneaker",
+      categoryLabel: "Sneaker",
+      variants: [
+        {
+          id: "lasocki-verisia-cream",
+          color: "Crem",
+          productUrl: "https://ccc.eu/ro/ro/p/sneakersi-lasocki-ceo-wi16-verisia-02-crem-5907964454618",
+          images: [],
+          ...snapshotPrice(null, null, "RON"),
+        },
+      ],
+    },
+  ],
 });
 
 const ALDO = brand({

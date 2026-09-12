@@ -32,6 +32,15 @@ export interface MarketResearchCategoryOption {
 
 export type MarketResearchSourceKind = "brand" | "retailer" | "marketplace";
 
+export const MARKET_RESEARCH_VISUAL_STATUSES = [
+  "has_images",
+  "source_unavailable",
+  "model_unavailable",
+  "no_models",
+] as const;
+
+export type MarketResearchVisualStatus = (typeof MARKET_RESEARCH_VISUAL_STATUSES)[number];
+
 export interface MarketResearchSourceLink {
   label: string;
   url: string;
@@ -51,6 +60,8 @@ export interface MarketResearchVariant extends MarketResearchPriceObservation {
   color: string | null;
   productUrl: string;
   images: string[];
+  visualStatus?: MarketResearchVisualStatus;
+  visualNote?: string;
 }
 
 export interface MarketResearchModel {
@@ -73,6 +84,8 @@ export interface MarketResearchBrand {
   availability: "visible";
   sourceLinks: MarketResearchSourceLink[];
   models: MarketResearchModel[];
+  visualStatus?: MarketResearchVisualStatus;
+  visualNote?: string;
 }
 
 export interface MarketResearchRetailer {
@@ -113,6 +126,8 @@ export interface MarketResearchBrandCard {
   sourceLinks: MarketResearchSourceLink[];
   modelCount: number;
   images: string[];
+  visualStatus: MarketResearchVisualStatus;
+  visualNote?: string;
 }
 
 export interface MarketResearchCountrySummary {
