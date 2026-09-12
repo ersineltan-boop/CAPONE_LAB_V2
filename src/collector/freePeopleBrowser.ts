@@ -3,6 +3,7 @@ import {
   FREE_PEOPLE_SHOES_URL,
   isFreePeopleAntiBot,
   parseFreePeoplePage,
+  extractFreePeopleStyleNumber,
   type FreePeopleCategoryState,
   type FreePeopleParseStats,
 } from "./freePeople";
@@ -21,6 +22,23 @@ export interface FreePeopleBrowserResult {
 }
 
 const DEFAULT_MAX_PAGES = 40;
+
+export function freePeopleBrowserProductKey(product: PilotProduct): string {
+  const styleNumber = extractFreePeopleStyleNumber({
+    sku: product.variants?.[0]?.sku ?? null,
+    productUrl: product.productUrl,
+    imageUrl: product.imageUrl,
+  });
+  if (styleNumber) return `style:${styleNumber}`;
+
+  try {
+    const url = new URL(product.productUrl);
+    const pathname = url.pathname.replace(/\/+$/, "").toLowerCase();
+    return `url:${url.origin.toLowerCase()}${pathname}`;
+  } catch {
+    return `name:${product.brand.trim().toLowerCase()}:${product.productName.trim().toLowerCase()}`;
+  }
+}
 
 function shoesPageUrl(page: number): string {
   return page <= 1 ? FREE_PEOPLE_SHOES_URL : `${FREE_PEOPLE_SHOES_URL}?page=${page}`;
@@ -149,7 +167,7 @@ export async function collectFreePeopleWithBrowser(options?: {
         {
           discoveredAt,
           collectionUrl: FREE_PEOPLE_SHOES_URL,
-          onlyPage: piniaCategory?.currentPage ?? pageNum,
+          onlyPage: "all",
         },
       );
       pagesVisited += 1;
@@ -180,18 +198,18 @@ export async function collectFreePeopleWithBrowser(options?: {
 
       let added = 0;
       for (const product of parsed.products) {
-        const key = (product.variants[0]?.sku ?? product.productUrl).replace(/\/$/, "").toLowerCase();
-        const styleKey = key.replace(/_\d{2,3}$/, "");
-        if (seen.has(styleKey) || seen.has(product.productUrl)) {
+        const key = freePeopleBrowserProductKey(product);
+        if (seen.has(key)) {
           stats.duplicateCount += 1;
           continue;
         }
-        seen.add(styleKey);
-        seen.add(product.productUrl.replace(/\/$/, "").toLowerCase());
+        seen.add(key);
         products.push(product);
         added += 1;
       }
-      if (added === 0) break;
+      if (added === 0) {
+        errors.push(`No new footwear products added at ${url}; continuing pagination`);
+      }
     }
   } catch (error) {
     errors.push(error instanceof Error ? error.message : String(error));
@@ -211,8 +229,18 @@ export async function collectFreePeopleWithBrowser(options?: {
     });
   }
 
+  const incomplete =
+    sourceReported != null &&
+    sourceReported > 0 &&
+    products.length < Math.floor(sourceReported * 0.5);
+  if (incomplete) {
+    errors.push(
+      `Incomplete Free People collect: parsed ${products.length} of source-reported ${sourceReported} products`,
+    );
+  }
+
   return {
-    status: blocked ? "BLOCKED" : products.length > 0 ? "COLLECTED" : "BLOCKED",
+    status: blocked || incomplete ? "BLOCKED" : products.length > 0 ? "COLLECTED" : "BLOCKED",
     products,
     errors,
     pagesVisited,
