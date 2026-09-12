@@ -37,5 +37,16 @@ export {
   processGitHubIssuePayloadText,
   stableGitHubJobId,
 } from "./github/process";
-export { OPERATOR_ISSUE_LABEL, OPERATOR_REPORT_MARKER } from "./github/constants";
+export { OPERATOR_ISSUE_LABEL, OPERATOR_EXECUTE_LABEL, OPERATOR_REPORT_MARKER, OPERATOR_PR_MARKER } from "./github/constants";
 export { formatGitHubIssueComment, findExistingOperatorComment } from "./github/comment";
+export { formatExecutionIssueComment } from "./github/executionComment";
+export { isEligibleForExecution } from "./github/eligibility";
+export {
+  authorizeAndExecuteGitHubIssue,
+  authorizeAndExecuteGitHubIssueText,
+  authorizeGitHubIssueExecution,
+} from "./executor/execute";
+export { canAuthorizePhase2BExecution } from "./executor/authorization";
+export { resolveExecutorHandler, isRegisteredHandlerCommand } from "./executor/registry";
+export { safePushArgv, taskBranchName, isForbiddenBranch } from "./executor/guards";
+export { toExecutionArtifact } from "./executor/result";

@@ -201,3 +201,15 @@ npm.cmd run operator:github-issue -- ./operator-issue-payload.json
 ```
 
 Sonuç Issue yorumuna yazılır / aynı `<!-- CAPONE_OPERATOR_REPORT -->` yorumu güncellenir. Canlı collect, commit, push, deploy yoktur.
+
+## Operator V2 Phase 2B — güvenli arka plan çalıştırma
+
+`capone-operator` yalnızca planlar. Gerçek çalışma için ikinci etiket gerekir: `capone-execute`. İkisi birlikte yoksa executor çalışmaz.
+
+Issue title/body untrusted kalır; kabuk komutu olmaz. Komutlar yalnızca sabit handler kaydından seçilir. İlk gerçek handler: Free People / Pazaryerleri yenileme (`collect` → collect-safety → `merge` → `analyze:multibrand` → `build:model-families` → `taxonomy:qa`). Diğer şablonlar `UNSUPPORTED_HANDLER` / REVIEW döner ve depoyu değiştirmez. Phase 2A `REVIEW` yalnızca net, handler’a birebir oturan ve `capone-execute` onaylı görevlerde çalışır.
+
+```text
+npm.cmd run operator:execute-github-issue -- ./operator-issue-payload.json
+```
+
+Bu CLI yalnızca GitHub Actions içinde çalışır. Task branch `operator/issue-<n>` üzerine yazar; `main`e push veya merge yoktur. Operator production deploy yapmaz. Mevcut Git/Vercel entegrasyonu, push edilen task branch veya Pull Request için otomatik preview oluşturabilir. Başarılı kapılardan sonra READY-FOR-REVIEW PR açılır veya güncellenir.
