@@ -3,6 +3,7 @@ import {
   FREE_PEOPLE_SHOES_URL,
   isFreePeopleAntiBot,
   parseFreePeoplePage,
+  parseFreePeopleJsonLd,
   extractFreePeopleStyleNumber,
   type FreePeopleCategoryState,
   type FreePeopleParseStats,
@@ -162,7 +163,7 @@ export async function collectFreePeopleWithBrowser(options?: {
         return (urbn?.initialPiniaState?.category ?? null) as FreePeopleCategoryState | null;
       });
 
-      const parsed = parseFreePeoplePage(
+      const piniaParsed = parseFreePeoplePage(
         { piniaCategory, html },
         {
           discoveredAt,
@@ -170,6 +171,25 @@ export async function collectFreePeopleWithBrowser(options?: {
           onlyPage: "all",
         },
       );
+
+      let parsed = piniaParsed;
+      const reportedCurrentPage = piniaCategory?.currentPage ?? null;
+      if (pageNum > 1 && reportedCurrentPage !== pageNum) {
+        const htmlParsed = parseFreePeopleJsonLd(html, {
+          discoveredAt,
+          collectionUrl: FREE_PEOPLE_SHOES_URL,
+        });
+        if (htmlParsed.products.length > 0) {
+          htmlParsed.stats.currentPage = pageNum;
+          htmlParsed.stats.totalPages = piniaCategory?.totalPages ?? stats.totalPages;
+          htmlParsed.stats.sourceReportedProductCount =
+            piniaCategory?.totalRecordCount ?? stats.sourceReportedProductCount;
+          parsed = htmlParsed;
+          errors.push(
+            `Pinia pagination mismatch at page ${pageNum} (reported ${reportedCurrentPage ?? "unknown"}); used page HTML fallback`,
+          );
+        }
+      }
       pagesVisited += 1;
       stats.tilesSeen += parsed.stats.tilesSeen;
       stats.editorialSkipped += parsed.stats.editorialSkipped;
