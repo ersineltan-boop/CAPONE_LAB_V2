@@ -177,3 +177,17 @@ npm.cmd run operator:test
 ```
 
 `--example` yalnızca rapor formatını gösterir; collect çalıştırmaz.
+
+## Operator V2 — sahibinden görev alma
+
+Kısa talimat yapılandırılmış işe çevrilir. Domain karışmaz. Canlı collect / production yazımı Phase 1’de yoktur.
+
+```text
+npm.cmd run operator:intake -- "Massimo Dutti'yi Markalar'a ekle"
+npm.cmd run operator:plan -- <task-id>
+npm.cmd run operator:run -- <task-id>
+npm.cmd run operator:status -- <task-id>
+npm.cmd run operator:list
+```
+
+Çalışma dosyaları `.operator/` altındadır ve git’e girmez. Task metni asla kabuk komutu olmaz.
