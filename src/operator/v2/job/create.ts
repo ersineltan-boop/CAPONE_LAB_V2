@@ -1,7 +1,7 @@
 import { buildExecutionPlan } from "../plan/builder";
 import { parseOperatorIntake } from "../intake/parse";
 import { APPROVAL_GATES } from "../../types";
-import type { ExecutionMode, JobManifest, TaskSource } from "../types";
+import type { ExecutionMode, GitHubIssueRef, JobManifest, TaskSource } from "../types";
 import { collectedAtDoesNotImplyNewArrival } from "../../policies/onboardingQuality";
 import { visualMayDeduplicateAcrossSources } from "../../policies/domains";
 import { canReplaceExistingDataset } from "../../policies/collectSafety";
@@ -27,6 +27,7 @@ export function createJobManifest(input: {
   executionMode?: ExecutionMode;
   now?: Date;
   id?: string;
+  githubIssue?: GitHubIssueRef | null;
 }): JobManifest {
   const now = input.now ?? new Date();
   const iso = now.toISOString();
@@ -99,5 +100,6 @@ export function createJobManifest(input: {
     },
     why: parsed.reason,
     productionDataModified: false,
+    githubIssue: input.githubIssue ?? null,
   };
 }

@@ -1,0 +1,147 @@
+# CAPONE Operator Phase 2A — GitHub Issue intake / plan only.
+# Issue title and body are never interpolated into shell commands.
+# They are written to a JSON file via github-script, then read by Operator.
+
+name: CAPONE Operator issue intake
+
+on:
+  issues:
+    types: [opened, labeled, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: capone-operator-issue-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  intake:
+    name: Plan Operator task from Issue
+    if: ${{ github.event.issue && !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check capone-operator label
+        id: gate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            if (!issue || issue.pull_request) {
+              core.setOutput('eligible', 'false');
+              return;
+            }
+            const labels = (issue.labels || []).map((item) =>
+              typeof item === 'string' ? item : item.name,
+            );
+            core.setOutput(
+              'eligible',
+              labels.includes('capone-operator') ? 'true' : 'false',
+            );
+
+      - name: Checkout
+        if: steps.gate.outputs.eligible == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Setup Node.js 20
+        if: steps.gate.outputs.eligible == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.gate.outputs.eligible == 'true'
+        run: npm ci
+
+      - name: Write safe issue payload
+        if: steps.gate.outputs.eligible == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue = context.payload.issue;
+            const labels = (issue.labels || []).map((item) =>
+              typeof item === 'string' ? item : item.name,
+            );
+            const payload = {
+              eventName: context.eventName,
+              action: context.payload.action,
+              repository: `${context.repo.owner}/${context.repo.repo}`,
+              issue: {
+                number: issue.number,
+                title: issue.title || '',
+                body: issue.body || '',
+                user: issue.user && issue.user.login ? issue.user.login : 'unknown',
+                htmlUrl: issue.html_url,
+                createdAt: issue.created_at,
+                labels,
+                pullRequest: Boolean(issue.pull_request),
+              },
+            };
+            fs.writeFileSync(
+              'operator-issue-payload.json',
+              JSON.stringify(payload, null, 2),
+            );
+
+      - name: Operator GitHub Issue intake
+        if: steps.gate.outputs.eligible == 'true'
+        run: npm run operator:github-issue -- ./operator-issue-payload.json --output ./operator-github-result.json
+
+      - name: Operator tests
+        if: steps.gate.outputs.eligible == 'true'
+        run: npm run operator:test
+
+      - name: Upsert Operator report comment
+        if: steps.gate.outputs.eligible == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- CAPONE_OPERATOR_REPORT -->';
+            const result = JSON.parse(
+              fs.readFileSync('operator-github-result.json', 'utf8'),
+            );
+            if (result.ignored || !result.comment) {
+              return;
+            }
+            const body = result.comment;
+            const comments = await github.paginate(
+              github.rest.issues.listComments,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+              },
+            );
+            const existing = comments.find((item) =>
+              (item.body || '').includes(marker),
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+              return;
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body,
+            });
+
+      - name: Upload Operator report
+        if: steps.gate.outputs.eligible == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: capone-operator-issue-${{ github.event.issue.number }}
+          path: operator-github-result.json
+          if-no-files-found: ignore

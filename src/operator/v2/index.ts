@@ -32,3 +32,10 @@ export {
 export { createGitSnapshot, detectMutations, pathIsProductionData } from "./guard/mutation";
 export { OPERATOR_RUNTIME_DIRS, JOB_MANIFEST_SAMPLE } from "./storage/paths";
 export { loadJob, saveJob, listJobs } from "./storage/jobStore";
+export {
+  processGitHubIssuePayload,
+  processGitHubIssuePayloadText,
+  stableGitHubJobId,
+} from "./github/process";
+export { OPERATOR_ISSUE_LABEL, OPERATOR_REPORT_MARKER } from "./github/constants";
+export { formatGitHubIssueComment, findExistingOperatorComment } from "./github/comment";
