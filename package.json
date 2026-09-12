@@ -61,7 +61,8 @@
     "operator:run": "tsx scripts/operator-run.ts",
     "operator:status": "tsx scripts/operator-status.ts",
     "operator:list": "tsx scripts/operator-list.ts",
-    "operator:github-issue": "tsx scripts/operator-github-issue.ts"
+    "operator:github-issue": "tsx scripts/operator-github-issue.ts",
+    "operator:execute-github-issue": "tsx scripts/operator-execute-github-issue.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

@@ -8,6 +8,7 @@ import {
   freePeopleCatalogIdentity,
   mergeFreePeopleStagingIntoCatalog,
 } from "../src/collector/mergeFreePeopleStaging";
+import { validateFreePeopleStaging } from "../src/collector/validateFreePeopleStaging";
 import type { PilotProduct } from "../src/collector/types";
 import { listingIdentityKey, MARKETPLACE_SOURCE_IDS } from "../src/modelFamily/sourceIdentity";
 import type { RawAnalyzedProduct } from "../src/modelFamily/types";
@@ -37,31 +38,6 @@ function sourceCounts(products: PilotProduct[]): Record<string, number> {
   return counts;
 }
 
-function validateStaging(products: PilotProduct[]): string[] {
-  const errors: string[] = [];
-  if (products.length !== 1075) errors.push(`expected 1075 staging products, got ${products.length}`);
-  const brands = new Set(products.map((product) => product.brand.trim()).filter(Boolean));
-  if (brands.size !== 134) errors.push(`expected 134 unique brands, got ${brands.size}`);
-  const emptyBrand = products.filter((product) => !product.brand.trim()).length;
-  const emptyColor = products.filter((product) => !String(product.color ?? "").trim()).length;
-  if (emptyBrand) errors.push(`empty brands: ${emptyBrand}`);
-  if (emptyColor) errors.push(`empty colors: ${emptyColor}`);
-  const wrongSource = products.filter((product) => product.source !== FREE_PEOPLE_ID);
-  if (wrongSource.length) errors.push(`non free-people source rows: ${wrongSource.length}`);
-  const mappedHouse = products.filter((product) => product.brand.trim().toUpperCase() === "FREE PEOPLE");
-  if (mappedHouse.length) errors.push(`products mapped to FREE PEOPLE brand: ${mappedHouse.length}`);
-  const identities = products.map((product) => freePeopleCatalogIdentity(product));
-  if (identities.some((identity) => !identity)) errors.push("staging products missing styleNumber identity");
-  const counts = new Map<string, number>();
-  for (const identity of identities) {
-    if (!identity) continue;
-    counts.set(identity, (counts.get(identity) ?? 0) + 1);
-  }
-  const dups = [...counts.entries()].filter(([, count]) => count > 1);
-  if (dups.length) errors.push(`duplicate identities: ${dups.length}`);
-  return errors;
-}
-
 function brandCounts(products: PilotProduct[]): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const product of products) {
@@ -85,7 +61,7 @@ async function main() {
   await copyFile(PRODUCTS, BACKUP);
 
   const staging = JSON.parse(await readFile(STAGING_PRODUCTS, "utf-8")) as PilotProduct[];
-  const stagingErrors = validateStaging(staging);
+  const stagingErrors = validateFreePeopleStaging(staging);
   if (stagingErrors.length) {
     throw new Error(`Staging dataset failed validation:\n${stagingErrors.join("\n")}`);
   }
