@@ -254,8 +254,13 @@ export async function collectFreePeopleWithBrowser(options?: {
     await browser.close();
   }
 
+  const incomplete =
+    sourceReported != null &&
+    sourceReported > 0 &&
+    products.length < Math.floor(sourceReported * 0.5);
+
   if (
-    products.length === 0 &&
+    (products.length === 0 || incomplete) &&
     options?.headless !== false &&
     options?.allowHeadedRetry !== false
   ) {
@@ -265,11 +270,6 @@ export async function collectFreePeopleWithBrowser(options?: {
       allowHeadedRetry: false,
     });
   }
-
-  const incomplete =
-    sourceReported != null &&
-    sourceReported > 0 &&
-    products.length < Math.floor(sourceReported * 0.5);
   if (incomplete) {
     errors.push(
       `Incomplete Free People collect: parsed ${products.length} of source-reported ${sourceReported} products`,
