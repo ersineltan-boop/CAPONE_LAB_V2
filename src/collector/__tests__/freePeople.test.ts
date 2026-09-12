@@ -19,6 +19,7 @@ import {
 } from "../../modelFamily/sourceIdentity";
 import { buildModelFamilies } from "../../modelFamily/buildFamilies";
 import type { RawAnalyzedProduct } from "../../modelFamily/types";
+import { freePeopleBrowserProductKey } from "../freePeopleBrowser";
 
 const FIXTURE = JSON.parse(
   readFileSync(join(dirname(fileURLToPath(import.meta.url)), "fixtures/free-people-pinia-category.json"), "utf-8"),
@@ -162,5 +163,30 @@ describe("Free People marketplace identity", () => {
     const { families } = buildModelFamilies([official, retailer]);
     expect(families).toHaveLength(2);
     expect(families.some((family) => family.sourceProductIds.length === 2)).toBe(false);
+  });
+});
+
+
+describe("Free People browser identity", () => {
+  it("dedupes by style number without confusing brand counts for product counts", () => {
+    const product = {
+      source: "free-people",
+      brand: "UGG",
+      productName: "Classic Ultra Mini",
+      productUrl: "https://www.freepeople.com/shop/ugg-classic-ultra-mini/?color=001",
+      imageUrl: "https://images.urbndata.com/is/image/FreePeople/111000111_001_a",
+      images: [],
+      category: "BOOT",
+      color: "Chestnut",
+      material: null,
+      toeShape: null,
+      heelType: null,
+      heelHeight: null,
+      details: null,
+      discoveredAt: "2026-09-12T00:00:00.000Z",
+      variants: [{ title: "Classic Ultra Mini — Chestnut", color: "Chestnut", sku: "111000111_001" }],
+    } as const;
+
+    expect(freePeopleBrowserProductKey(product)).toBe("style:111000111");
   });
 });
