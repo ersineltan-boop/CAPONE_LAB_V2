@@ -191,3 +191,13 @@ npm.cmd run operator:list
 ```
 
 Çalışma dosyaları `.operator/` altındadır ve git’e girmez. Task metni asla kabuk komutu olmaz.
+
+## Operator V2 Phase 2A — GitHub Issue
+
+Yalnızca `capone-operator` etiketli Issue işlenir. Title/body untrusted metindir; kabuğa gitmez. Workflow JSON dosyasına yazar, CLI yalnızca dosya yolu alır.
+
+```text
+npm.cmd run operator:github-issue -- ./operator-issue-payload.json
+```
+
+Sonuç Issue yorumuna yazılır / aynı `<!-- CAPONE_OPERATOR_REPORT -->` yorumu güncellenir. Canlı collect, commit, push, deploy yoktur.

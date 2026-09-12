@@ -130,6 +130,18 @@ export interface JobManifest {
   };
   why: string;
   productionDataModified: boolean;
+  githubIssue?: GitHubIssueRef | null;
+}
+
+export interface GitHubIssueRef {
+  repository: string;
+  issueNumber: number;
+  issueTitle: string;
+  issueBody: string;
+  issueAuthor: string;
+  issueUrl: string;
+  createdAt: string;
+  labels: string[];
 }
 
 export interface CommandEvaluation {
