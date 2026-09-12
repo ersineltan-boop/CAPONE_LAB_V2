@@ -50,6 +50,7 @@ export default defineConfig({
       "src/refresh/**/*.test.ts",
       "src/onboarding/**/*.test.ts",
       "src/operator/**/*.test.ts",
+      "src/marketResearch/**/*.test.ts",
     ],
   },
 });

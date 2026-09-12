@@ -27,7 +27,7 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
             </p>
           </button>
 
-          <nav className="hidden items-center gap-1 sm:flex">
+          <nav className="hidden items-center gap-1 sm:flex sm:flex-wrap">
             {PRIMARY_NAV_ITEMS.map((item) => (
               <button
                 key={item.id}

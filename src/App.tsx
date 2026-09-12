@@ -5,6 +5,7 @@ import BrandsIndex from "./components/brands/BrandsIndex";
 import { CatalogLoadingState } from "./catalog/CatalogStatus";
 import { loadBrandRegistry } from "./registry/data/index";
 import {
+  emptyNavigation,
   readNavigationFromLocation,
   writeNavigationToHistory,
   type AppNavigationState,
@@ -17,6 +18,8 @@ const SavedProducts = lazy(() => import("./components/saved/SavedProducts"));
 const MarketplacesIndex = lazy(() => import("./components/marketplaces/MarketplacesIndex"));
 const MarketplaceDetail = lazy(() => import("./components/marketplaces/MarketplaceDetail"));
 const VisualWall = lazy(() => import("./components/visualWall/VisualWall"));
+const MarketResearchPage = lazy(() => import("./marketResearch/ui/MarketResearchPage"));
+const RomaniaBrandDetail = lazy(() => import("./marketResearch/ui/RomaniaBrandDetail"));
 
 function App() {
   const initialNav = readNavigationFromLocation();
@@ -29,19 +32,27 @@ function App() {
   const [selectedSourceCategoryId, setSelectedSourceCategoryId] = useState<string | null>(
     initialNav.sourceCategoryId,
   );
+  const [selectedMarketBrandId, setSelectedMarketBrandId] = useState<string | null>(
+    initialNav.marketBrandId,
+  );
 
   const brandRegistry = useMemo(() => loadBrandRegistry(), []);
 
+  const applyNavigation = useCallback((state: AppNavigationState) => {
+    setView(state.view);
+    setSelectedBrandId(state.brandId);
+    setSelectedBrandName(state.brandName);
+    setSelectedMarketplaceId(state.marketplaceId);
+    setSelectedSourceCategoryId(state.sourceCategoryId);
+    setSelectedMarketBrandId(state.marketBrandId);
+  }, []);
+
   const syncNavigation = useCallback(
     (state: AppNavigationState, options?: { replace?: boolean }) => {
-      setView(state.view);
-      setSelectedBrandId(state.brandId);
-      setSelectedBrandName(state.brandName);
-      setSelectedMarketplaceId(state.marketplaceId);
-      setSelectedSourceCategoryId(state.sourceCategoryId);
+      applyNavigation(state);
       writeNavigationToHistory(state, options);
     },
-    [],
+    [applyNavigation],
   );
 
   useEffect(() => {
@@ -50,26 +61,15 @@ function App() {
 
   useEffect(() => {
     const onPopState = () => {
-      const next = readNavigationFromLocation();
-      setView(next.view);
-      setSelectedBrandId(next.brandId);
-      setSelectedBrandName(next.brandName);
-      setSelectedMarketplaceId(next.marketplaceId);
-      setSelectedSourceCategoryId(next.sourceCategoryId);
+      applyNavigation(readNavigationFromLocation());
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
-  }, []);
+  }, [applyNavigation]);
 
   const navigateToView = useCallback(
     (nextView: AppView) => {
-      syncNavigation({
-        view: nextView,
-        brandId: null,
-        brandName: null,
-        marketplaceId: null,
-        sourceCategoryId: null,
-      });
+      syncNavigation(emptyNavigation(nextView));
     },
     [syncNavigation],
   );
@@ -77,47 +77,44 @@ function App() {
   const openBrand = useCallback(
     (brandId: string, brandName: string) => {
       syncNavigation({
-        view: "brands",
+        ...emptyNavigation("brands"),
         brandId,
         brandName,
-        marketplaceId: null,
-        sourceCategoryId: null,
       });
     },
     [syncNavigation],
   );
 
   const backToBrandsIndex = useCallback(() => {
-    syncNavigation({
-      view: "brands",
-      brandId: null,
-      brandName: null,
-      marketplaceId: null,
-      sourceCategoryId: null,
-    });
+    syncNavigation(emptyNavigation("brands"));
   }, [syncNavigation]);
 
   const openMarketplace = useCallback(
     (marketplaceId: string) => {
       syncNavigation({
-        view: "marketplaces",
-        brandId: null,
-        brandName: null,
+        ...emptyNavigation("marketplaces"),
         marketplaceId,
-        sourceCategoryId: null,
       });
     },
     [syncNavigation],
   );
 
   const backToMarketplacesIndex = useCallback(() => {
-    syncNavigation({
-      view: "marketplaces",
-      brandId: null,
-      brandName: null,
-      marketplaceId: null,
-      sourceCategoryId: null,
-    });
+    syncNavigation(emptyNavigation("marketplaces"));
+  }, [syncNavigation]);
+
+  const openMarketResearchBrand = useCallback(
+    (brandId: string) => {
+      syncNavigation({
+        ...emptyNavigation("market-research"),
+        marketBrandId: brandId,
+      });
+    },
+    [syncNavigation],
+  );
+
+  const backToMarketResearch = useCallback(() => {
+    syncNavigation(emptyNavigation("market-research"));
   }, [syncNavigation]);
 
   const resolvedBrandName =
@@ -134,6 +131,12 @@ function App() {
             <VisualWall />
           ) : view === "saved" ? (
             <SavedProducts onSelectBrand={openBrand} />
+          ) : view === "market-research" ? (
+            selectedMarketBrandId ? (
+              <RomaniaBrandDetail brandId={selectedMarketBrandId} onBack={backToMarketResearch} />
+            ) : (
+              <MarketResearchPage onSelectBrand={openMarketResearchBrand} />
+            )
           ) : view === "marketplaces" ? (
             selectedMarketplaceId ? (
               <MarketplaceDetail
@@ -142,9 +145,7 @@ function App() {
                 selectedCategoryId={selectedSourceCategoryId}
                 onSelectCategory={(categoryId) =>
                   syncNavigation({
-                    view: "marketplaces",
-                    brandId: null,
-                    brandName: null,
+                    ...emptyNavigation("marketplaces"),
                     marketplaceId: selectedMarketplaceId,
                     sourceCategoryId: categoryId,
                   })
@@ -161,10 +162,9 @@ function App() {
               selectedCategoryId={selectedSourceCategoryId}
               onSelectCategory={(categoryId) =>
                 syncNavigation({
-                  view: "brands",
+                  ...emptyNavigation("brands"),
                   brandId: selectedBrandId,
                   brandName: resolvedBrandName,
-                  marketplaceId: null,
                   sourceCategoryId: categoryId,
                 })
               }
