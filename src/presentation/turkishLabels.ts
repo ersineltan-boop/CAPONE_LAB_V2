@@ -476,4 +476,7 @@ export const UI_COPY = {
   marketResearchSnapshotNote: "Güvenli snapshot — canlı collect bu görünümü ezmez",
   backToMarketResearch: "Pazar Araştırmasına Dön",
   marketResearchEmptyBrand: "Bu marka için henüz ürün snapshot'ı yok.",
+  marketResearchSourceUnavailable: "Kaynak görseli alınamadı",
+  marketResearchModelUnavailable: "Bu model için kaynak görseli yok",
+  marketResearchVisualIncomplete: "Görsel tamamlanmadı",
 } as const;

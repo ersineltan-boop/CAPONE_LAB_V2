@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { countModelsByCategory, filterModelsByCategory } from "../categories";
 import { findRomaniaBrand, getRomaniaCatalog } from "../romania/catalog";
+import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
 import MarketResearchProductGrid from "./MarketResearchProductGrid";
 
 interface RomaniaBrandDetailProps {
@@ -66,6 +67,11 @@ export default function RomaniaBrandDetail({ brandId, onBack }: RomaniaBrandDeta
               : UI_COPY.marketResearchNotSoldInMarket}
             {brand.models.length > 0 ? ` · ${UI_COPY.modelsCount(brand.models.length)}` : ""}
           </p>
+          {isIncompleteMarketResearchVisual(brand.visualStatus) ? (
+            <p className="border border-dashed border-line bg-cream/40 px-3 py-2 text-[10px] leading-relaxed text-ink-muted">
+              {marketResearchVisualLabel(brand.visualStatus, brand.visualNote)}
+            </p>
+          ) : null}
           <div className="flex flex-wrap gap-2 pt-1">
             <span className="text-[9px] tracking-[0.16em] text-ink-faint">{UI_COPY.marketResearchSources}</span>
             {brand.sourceLinks.map((link) => (

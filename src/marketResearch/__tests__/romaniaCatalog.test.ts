@@ -12,6 +12,7 @@ import {
   getRomaniaCatalog,
   romaniaBrandCards,
   romaniaExcludedNames,
+  romaniaImageCoverage,
   romaniaRetailerIds,
   visibleRomaniaBrands,
 } from "../romania/catalog";
@@ -138,10 +139,57 @@ describe("Romania market research catalog", () => {
     expect(isUsableMarketResearchImage("https://cdn.otter.ro/media/logo/stores/3/gryxx_logo.png")).toBe(
       false,
     );
+    expect(isUsableMarketResearchImage("https://cdn.otter.ro/media/brands/Epica.png")).toBe(false);
     expect(
       isUsableMarketResearchImage(
         "https://cdn.otter.ro/media/catalog/product/cache/7eb369f27775f2db92648609527c34e5/6/d/6dde0b2f.jpg",
       ),
     ).toBe(true);
+  });
+
+  it("attaches real product galleries and documents source failures", () => {
+    const coverage = romaniaImageCoverage();
+    const withImages = coverage.filter((row) => row.visualStatus === "has_images");
+    const blocked = coverage.filter((row) => row.visualStatus === "source_unavailable");
+
+    expect(withImages.map((row) => row.brandName)).toEqual(
+      expect.arrayContaining([
+        "IL PASSO",
+        "EPICA",
+        "Marelbo",
+        "Papucei",
+        "Mihaela Glavan",
+        "GRYXX",
+        "Badura",
+        "Gino Rossi",
+        "Lasocki",
+        "ALDO",
+        "Flavia Passini",
+      ]),
+    );
+    expect(blocked.map((row) => row.brandName).sort()).toEqual(["Botta", "Musette", "Wojas"]);
+    expect(blocked.every((row) => row.note && row.modelsWithImages === 0)).toBe(true);
+
+    const gryxx = findRomaniaBrand("mr-ro-gryxx")!;
+    const white = gryxx.models.find((model) => model.name === "5G873")?.variants.find((variant) => variant.color === "Alb");
+    const blackSneaker = gryxx.models.find((model) => model.name === "251YZ73")?.variants[0];
+    expect(white?.images.length).toBeGreaterThanOrEqual(4);
+    expect(blackSneaker?.images.length).toBeGreaterThanOrEqual(4);
+    expect(white?.images.every((url) => /cdn\.otter\.ro\/media\/catalog\/product\//.test(url))).toBe(true);
+
+    const ilPasso = findRomaniaBrand("mr-ro-il-passo")!;
+    const tess = ilPasso.models.find((model) => model.name === "TESS")?.variants[0];
+    const tessI = ilPasso.models.find((model) => model.name === "TESS I")?.variants[0];
+    expect(tess?.images[0]).toMatch(/tess-crem/i);
+    expect(tessI?.images[0]).toMatch(/tess-i-cognac/i);
+    expect(tess?.images[0]).not.toBe(tessI?.images[0]);
+
+    const lasocki = findRomaniaBrand("mr-ro-lasocki")!;
+    expect(lasocki.models.map((model) => model.name)).toEqual(["CEO HY2076-1", "CEO WI16 VERISIA-02"]);
+    expect(lasocki.models.every((model) => model.variants[0]?.images.length)).toBe(true);
+
+    const badura = findRomaniaBrand("mr-ro-badura")!;
+    expect(badura.models.map((model) => model.name)).not.toContain("Giselle");
+    expect(cards.find((card) => card.id === "mr-ro-musette")?.visualStatus).toBe("source_unavailable");
   });
 });

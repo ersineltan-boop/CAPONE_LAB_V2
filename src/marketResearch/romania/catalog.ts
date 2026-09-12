@@ -6,20 +6,51 @@ import type {
   MarketResearchCountryCatalog,
   MarketResearchCountrySummary,
   MarketResearchModel,
+  MarketResearchVariant,
+  MarketResearchVisualStatus,
 } from "../types";
+import {
+  ROMANIA_BRAND_VISUAL_FAILURES,
+  ROMANIA_OBSERVED_VARIANT_IMAGES,
+  ROMANIA_VARIANT_VISUAL_FAILURES,
+} from "./observedImages";
 import { ROMANIA_MARKET_ID, ROMANIA_MARKET_LABEL, isRomaniaVisibleBrandId } from "./scope";
 import { ROMANIA_MARKET_RESEARCH_CATALOG } from "./snapshot";
 
+function resolveVariantVisual(variant: MarketResearchVariant): MarketResearchVariant {
+  const observed = ROMANIA_OBSERVED_VARIANT_IMAGES[variant.id];
+  const failure = ROMANIA_VARIANT_VISUAL_FAILURES[variant.id];
+  const images = usableMarketResearchImages(observed?.images ?? variant.images);
+  const visualStatus: MarketResearchVisualStatus = images.length
+    ? "has_images"
+    : (failure?.status ?? "model_unavailable");
+  return {
+    ...variant,
+    productUrl: observed?.productUrl ?? variant.productUrl,
+    color: observed?.color ?? variant.color,
+    images,
+    visualStatus,
+    visualNote: images.length ? undefined : failure?.reason,
+  };
+}
+
 export function sanitizeBrand(brand: MarketResearchBrand): MarketResearchBrand {
+  const models = brand.models.map((model) => ({
+    ...model,
+    variants: model.variants.map(resolveVariantVisual),
+  }));
+  const images = usableMarketResearchImages(
+    models.flatMap((model) => model.variants.flatMap((variant) => variant.images)),
+  );
+  const brandFailure = ROMANIA_BRAND_VISUAL_FAILURES[brand.id];
+  const visualStatus: MarketResearchVisualStatus = images.length
+    ? "has_images"
+    : brandFailure?.status ?? (models.length === 0 ? "no_models" : "model_unavailable");
   return {
     ...brand,
-    models: brand.models.map((model) => ({
-      ...model,
-      variants: model.variants.map((variant) => ({
-        ...variant,
-        images: usableMarketResearchImages(variant.images),
-      })),
-    })),
+    models,
+    visualStatus,
+    visualNote: images.length ? undefined : brandFailure?.reason,
   };
 }
 
@@ -66,6 +97,8 @@ export function brandCardFromBrand(
     sourceLinks: brand.sourceLinks,
     modelCount: brand.models.length,
     images: usableMarketResearchImages(brand.models.flatMap(modelImages)),
+    visualStatus: brand.visualStatus ?? (brand.models.length === 0 ? "no_models" : "model_unavailable"),
+    visualNote: brand.visualNote,
   };
 }
 
@@ -107,6 +140,41 @@ export function assertNoProductResearchLeak(
   }
 }
 
+export function romaniaImageCoverage(
+  catalog: MarketResearchCountryCatalog = ROMANIA_MARKET_RESEARCH_CATALOG,
+): Array<{
+  brandId: string;
+  brandName: string;
+  visualStatus: MarketResearchVisualStatus;
+  modelsWithImages: number;
+  modelsMissingImages: number;
+  variantsWithGallery: number;
+  note?: string;
+}> {
+  return visibleRomaniaBrands(catalog).map((brand) => {
+    const modelsWithImages = brand.models.filter((model) =>
+      model.variants.some((variant) => variant.images.length > 0),
+    ).length;
+    const variantsWithGallery = brand.models.flatMap((model) => model.variants).filter(
+      (variant) => variant.images.length > 1,
+    ).length;
+    return {
+      brandId: brand.id,
+      brandName: brand.name,
+      visualStatus: brand.visualStatus ?? "model_unavailable",
+      modelsWithImages,
+      modelsMissingImages: brand.models.length - modelsWithImages,
+      variantsWithGallery,
+      note: brand.visualNote,
+    };
+  });
+}
+
 export function getRomaniaCatalog(): MarketResearchCountryCatalog {
-  return ROMANIA_MARKET_RESEARCH_CATALOG;
+  return {
+    ...ROMANIA_MARKET_RESEARCH_CATALOG,
+    brands: ROMANIA_MARKET_RESEARCH_CATALOG.brands.map((brand) =>
+      isRomaniaVisibleBrandId(brand.id) ? sanitizeBrand(brand) : brand,
+    ),
+  };
 }

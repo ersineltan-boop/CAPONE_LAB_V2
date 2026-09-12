@@ -1,5 +1,5 @@
 const REJECTED_IMAGE_HINTS =
-  /\b(logo|badge|favicon|icon|sprite|banner|promo|campaign|hamburger|sticky|label_|wysiwyg|placeholder)\b/i;
+  /\b(logo|badge|favicon|icon|sprite|banner|promo|campaign|hamburger|sticky|label_|wysiwyg|placeholder|\/media\/brands\/)\b/i;
 
 export function isUsableMarketResearchImage(url: string): boolean {
   const trimmed = url.trim();
