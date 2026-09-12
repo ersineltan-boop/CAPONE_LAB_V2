@@ -117,12 +117,14 @@ export async function collectFreePeopleWithBrowser(options?: {
   } catch {
     browser = await playwright.chromium.launch(launchOptions);
   }
-  const page = await browser.newPage({
+  const context = await browser.newContext({
     userAgent:
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     viewport: { width: 1440, height: 900 },
     locale: "en-US",
+    serviceWorkers: "block",
   });
+  const page = await context.newPage();
   await page.addInitScript(() => {
     Object.defineProperty(navigator, "webdriver", { get: () => undefined });
   });
@@ -248,6 +250,7 @@ export async function collectFreePeopleWithBrowser(options?: {
   } catch (error) {
     errors.push(error instanceof Error ? error.message : String(error));
   } finally {
+    await context.close();
     await browser.close();
   }
 
