@@ -188,6 +188,7 @@ npm.cmd run operator:plan -- <task-id>
 npm.cmd run operator:run -- <task-id>
 npm.cmd run operator:status -- <task-id>
 npm.cmd run operator:list
+npm.cmd run operator:dispatch -- --list
 ```
 
 Çalışma dosyaları `.operator/` altındadır ve git’e girmez. Task metni asla kabuk komutu olmaz.
@@ -213,3 +214,31 @@ npm.cmd run operator:execute-github-issue -- ./operator-issue-payload.json
 ```
 
 Bu CLI yalnızca GitHub Actions içinde çalışır. Task branch `operator/issue-<n>` üzerine yazar; `main`e push veya merge yoktur. Operator production deploy yapmaz. Mevcut Git/Vercel entegrasyonu, push edilen task branch veya Pull Request için otomatik preview oluşturabilir. Başarılı kapılardan sonra READY-FOR-REVIEW PR açılır veya güncellenir.
+
+## Operator V2 Phase 3A — genel kuyruk ve dispatcher
+
+Phase 3A, mevcut Operator V2 / Phase 2A / Phase 2B güvenliğinin üstüne genel bir görev kuyruğu ve dispatcher ekler. Mobile UI, yeni canlı collector, production yazımı ve otomatik merge/deploy yoktur.
+
+Desteklenen dispatcher domain/template’leri:
+
+- `PRODUCT_RESEARCH`
+- `MARKETPLACE_REFRESH`
+- `MARKET_RESEARCH`
+- `CATALOG_QA`
+- `UI_APP`
+- `BUGFIX`
+
+Dispatcher durumları: `READY` → `RUNNING` → `REVIEW` / `BLOCKED` / `FAILED` / `DONE`.
+
+Kurallar:
+
+- Bir `BLOCKED` görev, ilişkisiz `READY` görevleri durdurmaz
+- Öncelik (`P0`–`P3`) ve risk (`LOW`–`CRITICAL`) metadata’sı routing’i belirler
+- Aynı domain hedefi veya aynı dosya kilidine sahip görevler aynı anda `RUNNING` olamaz
+- Phase 2A/2B kapıları aynı kalır: Free People refresh yalnızca mevcut Phase 2B handler’ına yönlenir, Phase 3A collect çalıştırmaz
+
+```text
+npm.cmd run operator:dispatch -- --enqueue "Kategori ve görselleri QA et"
+npm.cmd run operator:dispatch -- --tick
+npm.cmd run operator:dispatch -- --list
+```
