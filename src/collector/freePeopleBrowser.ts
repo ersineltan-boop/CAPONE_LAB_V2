@@ -134,13 +134,27 @@ export async function collectFreePeopleWithBrowser(options?: {
       await page.waitForTimeout(3500);
       try {
         await page.waitForFunction(
-          () => {
-            const urbn = (window as unknown as { urbn?: { initialPiniaState?: { category?: { pages?: unknown } } } })
-              .urbn;
+          (expectedPage) => {
+            const urbn = (window as unknown as {
+              urbn?: {
+                initialPiniaState?: {
+                  category?: {
+                    pages?: Record<string, unknown>;
+                    currentPage?: number;
+                  };
+                };
+              };
+            }).urbn;
             const category = urbn?.initialPiniaState?.category;
-            return Boolean(category && category.pages);
+            if (!category?.pages) return false;
+            if (expectedPage <= 1) return true;
+            return (
+              category.currentPage === expectedPage ||
+              Boolean(category.pages[String(expectedPage)])
+            );
           },
-          { timeout: 45000 },
+          pageNum,
+          { timeout: 20000 },
         );
       } catch {
         const html = await page.content();
