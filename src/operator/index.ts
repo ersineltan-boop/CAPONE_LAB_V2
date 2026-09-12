@@ -50,4 +50,6 @@ export {
   executeJob,
   evaluateAllowlistedCommand,
   formatOwnerSummary,
+  dispatchTick,
+  createDispatcherTask,
 } from "./v2";

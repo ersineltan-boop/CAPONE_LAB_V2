@@ -5,6 +5,7 @@ import {
   productionActionsDeniedByDefault,
 } from "./policies";
 import { MARKET_RESEARCH_REGISTRIES, PRODUCT_RESEARCH_REGISTRIES, TASK_TEMPLATE_IDS } from "./types";
+import { DISPATCHER_DOMAINS, validateDispatcherCatalog } from "./v2/dispatcher";
 
 export interface OperatorCheckResult {
   ok: boolean;
@@ -12,6 +13,7 @@ export interface OperatorCheckResult {
   templateCount: number;
   approvalDefaultsDeny: boolean;
   registriesIsolated: boolean;
+  phase3aDomains: number;
 }
 
 export function runOperatorCheck(): OperatorCheckResult {
@@ -70,11 +72,14 @@ export function runOperatorCheck(): OperatorCheckResult {
     // expected isolation failure
   }
 
+  errors.push(...validateDispatcherCatalog());
+
   return {
     ok: errors.length === 0,
     errors,
     templateCount: TASK_TEMPLATES.length,
     approvalDefaultsDeny: productionActionsDeniedByDefault(),
     registriesIsolated: true,
+    phase3aDomains: DISPATCHER_DOMAINS.length,
   };
 }

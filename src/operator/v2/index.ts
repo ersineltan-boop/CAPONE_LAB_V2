@@ -50,3 +50,11 @@ export { canAuthorizePhase2BExecution } from "./executor/authorization";
 export { resolveExecutorHandler, isRegisteredHandlerCommand } from "./executor/registry";
 export { safePushArgv, taskBranchName, isForbiddenBranch } from "./executor/guards";
 export { toExecutionArtifact } from "./executor/result";
+export {
+  DISPATCHER_DOMAINS,
+  DISPATCHER_STATES,
+  createDispatcherTask,
+  dispatchTick,
+  enqueueDispatcherInstruction,
+  enqueueDispatcherJob,
+} from "./dispatcher";

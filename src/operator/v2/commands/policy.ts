@@ -13,6 +13,7 @@ const ALLOWED_NPM_SCRIPTS = new Set([
   "operator:list",
   "operator:github-issue",
   "operator:execute-github-issue",
+  "operator:dispatch",
   "build",
 ]);
 

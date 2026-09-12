@@ -6,6 +6,7 @@ console.log("CAPONE OPERATOR CHECK");
 console.log(`templates: ${result.templateCount}`);
 console.log(`approval defaults DENY: ${result.approvalDefaultsDeny ? "yes" : "no"}`);
 console.log(`registries isolated: ${result.registriesIsolated ? "yes" : "no"}`);
+console.log(`phase 3A domains: ${result.phase3aDomains}`);
 
 if (!result.ok) {
   console.error("errors:");
