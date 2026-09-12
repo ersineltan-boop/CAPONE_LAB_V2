@@ -25,3 +25,8 @@ data/multibrand/model-families.json
 data/onboarding/staging/
 
 data/registry/model-family-before-snapshot.json
+
+.operator/queue/
+.operator/runs/
+.operator/reports/
+.operator/artifacts/

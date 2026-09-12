@@ -55,7 +55,12 @@
     "merge:free-people-staging": "tsx scripts/merge-free-people-staging.ts",
     "operator:check": "tsx scripts/operator-check.ts",
     "operator:dry-run": "tsx scripts/operator-dry-run.ts",
-    "operator:test": "vitest run src/operator"
+    "operator:test": "vitest run src/operator",
+    "operator:intake": "tsx scripts/operator-intake.ts",
+    "operator:plan": "tsx scripts/operator-plan.ts",
+    "operator:run": "tsx scripts/operator-run.ts",
+    "operator:status": "tsx scripts/operator-status.ts",
+    "operator:list": "tsx scripts/operator-list.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
