@@ -25,7 +25,14 @@ export const INITIAL_ONBOARDING_BRANDS: readonly {
   brand: string;
   slug: string;
   priority: number;
+  sourceUrl?: string;
 }[] = [
+  {
+    brand: "NAKED WOLFE",
+    slug: "naked-wolfe",
+    priority: 0,
+    sourceUrl: "https://nakedwolfe.com/collections/view-all-womens",
+  },
   { brand: "MAISON MARGIELA", slug: "maison-margiela", priority: 1 },
   { brand: "ISABEL MARANT", slug: "isabel-marant", priority: 2 },
   { brand: "MANGO", slug: "mango", priority: 3 },
