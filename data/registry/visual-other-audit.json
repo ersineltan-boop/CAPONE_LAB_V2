@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-12T10:56:57.602Z",
-  "digerCount": 766,
-  "totalFamilies": 11898,
+  "generatedAt": "2026-09-13T11:18:06.345Z",
+  "digerCount": 767,
+  "totalFamilies": 11903,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 137,
     "CONFLICTING_SOURCE_CATEGORIES": 48,
-    "UNMAPPED_SOURCE_CATEGORY": 545,
+    "UNMAPPED_SOURCE_CATEGORY": 546,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -6535,7 +6535,7 @@
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
-        "Handbags And Shoes",
+        "Handbags and Shoes",
         "Shoes",
         "shoes_taxes-exclusion"
       ],
@@ -6547,7 +6547,7 @@
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
-        "Handbags And Shoes",
+        "Handbags and Shoes",
         "Shoes",
         "shoes_taxes-exclusion"
       ],
@@ -7274,6 +7274,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "ugg--id-level-shoes-ugg-disquette-slippers-brown-suede-women-slippers-qz2ldy-html-unclassified-base",
+      "brand": "UGG",
+      "sourceCategories": [
+        "Slippers"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ugg--id-level-shoes-ugg-elea-slippers-beige-suede-women-slippers-nbt3u3-html-unclassified-base",
       "brand": "UGG",
       "sourceCategories": [
@@ -7655,7 +7664,7 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 299,
+      "count": 300,
       "brands": [
         "ALMA RAE",
         "Alaïa",
@@ -8035,17 +8044,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11898,
-    "babet": 828,
-    "loafer": 615,
+    "tumu": 11903,
+    "babet": 829,
+    "loafer": 614,
     "topuklu": 1892,
     "sandal": 3198,
-    "mule": 1085,
-    "bot-cizme": 2074,
+    "mule": 1087,
+    "bot-cizme": 2076,
     "sneaker": 1232,
     "espadril": 108,
     "oxford-derby": 12,
     "clog": 88,
-    "diger": 766
+    "diger": 767
   }
 }

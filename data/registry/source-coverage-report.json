@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T10:56:47.381Z",
+  "generatedAt": "2026-09-13T11:17:55.755Z",
   "entries": [
     {
       "sourceId": "schutz",
@@ -425,14 +425,14 @@
       "productsWithCategoryMembership": 1534,
       "galleryCoverage": 99.7,
       "pagesTraversed": 188,
-      "paginationStatus": "partial",
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 204,
       "verifiedNewCount": 1425,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "200 footwear collection path(s) crawled",
         "1534 / 1537 products have source category membership"
       ],
@@ -442,11 +442,7 @@
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://schutz-shoes.com/collections/high-heel-styles/products.json?limit=250&page=1",
-        "HTTP 503 for https://schutz-shoes.com/collections/block-heel/products.json?limit=250&page=1",
-        "HTTP 503 for https://schutz-shoes.com/collections/platform-sandals-and-pumps/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
         "Kaynak 9190 ürün bildiriyor, collector 1537 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
@@ -574,37 +570,35 @@
       ],
       "sourceReportedProductCount": 1598,
       "observedExpectedProductCount": 1598,
-      "collectedProductCount": 403,
-      "rawProductUrlsDiscovered": 1272,
-      "productsDiscovered": 403,
-      "uniqueProductsAfterDedupe": 403,
+      "collectedProductCount": 404,
+      "rawProductUrlsDiscovered": 1273,
+      "productsDiscovered": 404,
+      "uniqueProductsAfterDedupe": 404,
       "modelFamilyCount": 123,
-      "duplicateCount": 932,
-      "estimatedCoveragePercent": 25.2,
+      "duplicateCount": 933,
+      "estimatedCoveragePercent": 25.3,
       "sourceCategoryCount": 46,
-      "productsWithCategoryMembership": 403,
+      "productsWithCategoryMembership": 404,
       "galleryCoverage": 100,
       "pagesTraversed": 65,
-      "paginationStatus": "partial",
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 46,
-      "verifiedNewCount": 307,
+      "verifiedNewCount": 308,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "59 footwear collection path(s) crawled",
-        "403 / 403 products have source category membership"
+        "404 / 404 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 1598 ürün bildiriyor, collector 403 benzersiz ürün aldı",
+        "Kaynak 1598 ürün bildiriyor, collector 404 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://tonybianco.com.au/collections/wedges/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
-        "Kaynak 1598 ürün bildiriyor, collector 403 benzersiz ürün aldı"
+        "Kaynak 1598 ürün bildiriyor, collector 404 benzersiz ürün aldı"
       ]
     },
     {
@@ -800,15 +794,15 @@
       "sourceCategoryCount": 24,
       "productsWithCategoryMembership": 127,
       "galleryCoverage": 100,
-      "pagesTraversed": 20,
-      "paginationStatus": "partial",
+      "pagesTraversed": 19,
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 16,
       "verifiedNewCount": 67,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "67 footwear collection path(s) crawled",
         "127 / 127 products have source category membership"
       ],
@@ -816,9 +810,7 @@
         "Kaynak 149 ürün bildiriyor, collector 127 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://aemery.com/collections/fallon-sandal/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
         "Kaynak 149 ürün bildiriyor, collector 127 benzersiz ürün aldı"
       ]
@@ -1545,8 +1537,8 @@
         "/collections/ivy-flat",
         "/collections/wooden-heels",
         "/collections/mary-janes-best-sellers",
-        "/collections/boots-30",
         "/collections/kitten-heels-1",
+        "/collections/boots-30",
         "/collections/swatch-family-verona-ballet-flat",
         "/collections/cool-girl-boots",
         "/collections/new-boots",
@@ -1852,15 +1844,15 @@
       "sourceCategoryCount": 148,
       "productsWithCategoryMembership": 674,
       "galleryCoverage": 99.9,
-      "pagesTraversed": 139,
-      "paginationStatus": "partial",
+      "pagesTraversed": 138,
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 145,
       "verifiedNewCount": 661,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "200 footwear collection path(s) crawled",
         "674 / 692 products have source category membership"
       ],
@@ -1870,9 +1862,7 @@
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://larroude.com/collections/patricia-loafer/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
         "Kaynak 1010 ürün bildiriyor, collector 692 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
@@ -2059,7 +2049,7 @@
       "sourceReportedProductCount": 1212,
       "observedExpectedProductCount": 1212,
       "collectedProductCount": 1221,
-      "rawProductUrlsDiscovered": 653,
+      "rawProductUrlsDiscovered": 652,
       "productsDiscovered": 1221,
       "uniqueProductsAfterDedupe": 1221,
       "modelFamilyCount": 620,
@@ -2200,7 +2190,7 @@
       "sourceReportedProductCount": 1782,
       "observedExpectedProductCount": 1782,
       "collectedProductCount": 786,
-      "rawProductUrlsDiscovered": 713,
+      "rawProductUrlsDiscovered": 710,
       "productsDiscovered": 786,
       "uniqueProductsAfterDedupe": 786,
       "modelFamilyCount": 672,
@@ -2210,14 +2200,14 @@
       "productsWithCategoryMembership": 771,
       "galleryCoverage": 100,
       "pagesTraversed": 49,
-      "paginationStatus": "success",
+      "paginationStatus": "partial",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 69,
       "verifiedNewCount": 92,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination exhausted",
+        "Pagination not proven exhausted",
         "50 footwear collection path(s) crawled",
         "771 / 786 products have source category membership"
       ],
@@ -2225,7 +2215,11 @@
         "Kaynak 1782 ürün bildiriyor, collector 786 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [],
+      "errors": [
+        "HTTP 503 for https://jeffreycampbellshoes.com/collections/flat-loafer-oxford/products.json?limit=250&page=1",
+        "HTTP 503 for https://jeffreycampbellshoes.com/collections/mary-janes-1/products.json?limit=250&page=1",
+        "HTTP 503 for https://jeffreycampbellshoes.com/collections/sneakers-1/products.json?limit=250&page=1"
+      ],
       "warnings": [
         "Kaynak 1782 ürün bildiriyor, collector 786 benzersiz ürün aldı"
       ]
@@ -2627,15 +2621,15 @@
       ],
       "sourceReportedProductCount": 4495,
       "observedExpectedProductCount": 4495,
-      "collectedProductCount": 1554,
-      "rawProductUrlsDiscovered": 1915,
-      "productsDiscovered": 1554,
-      "uniqueProductsAfterDedupe": 1554,
+      "collectedProductCount": 1555,
+      "rawProductUrlsDiscovered": 1902,
+      "productsDiscovered": 1555,
+      "uniqueProductsAfterDedupe": 1555,
       "modelFamilyCount": 765,
-      "duplicateCount": 698,
+      "duplicateCount": 697,
       "estimatedCoveragePercent": 34.6,
       "sourceCategoryCount": 181,
-      "productsWithCategoryMembership": 1548,
+      "productsWithCategoryMembership": 1549,
       "galleryCoverage": 100,
       "pagesTraversed": 199,
       "paginationStatus": "success",
@@ -2647,17 +2641,17 @@
       "evidence": [
         "Pagination exhausted",
         "200 footwear collection path(s) crawled",
-        "1548 / 1554 products have source category membership"
+        "1549 / 1555 products have source category membership"
       ],
       "limitations": [
-        "Kaynak 4495 ürün bildiriyor, collector 1554 benzersiz ürün aldı",
+        "Kaynak 4495 ürün bildiriyor, collector 1555 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
       "errors": [],
       "warnings": [
-        "Kaynak 4495 ürün bildiriyor, collector 1554 benzersiz ürün aldı",
+        "Kaynak 4495 ürün bildiriyor, collector 1555 benzersiz ürün aldı",
         "Eski collector üst sınırı hâlâ etkili",
         "Collection crawl safety ceiling reached — remaining footwear collections were not visited"
       ]
@@ -3274,7 +3268,7 @@
       "sourceReportedProductCount": 33,
       "observedExpectedProductCount": 33,
       "collectedProductCount": 87,
-      "rawProductUrlsDiscovered": 75,
+      "rawProductUrlsDiscovered": 74,
       "productsDiscovered": 87,
       "uniqueProductsAfterDedupe": 87,
       "modelFamilyCount": 56,
@@ -3582,7 +3576,7 @@
       "sourceReportedProductCount": 325,
       "observedExpectedProductCount": 325,
       "collectedProductCount": 407,
-      "rawProductUrlsDiscovered": 366,
+      "rawProductUrlsDiscovered": 365,
       "productsDiscovered": 407,
       "uniqueProductsAfterDedupe": 407,
       "modelFamilyCount": 278,
@@ -3912,14 +3906,14 @@
       "productsWithCategoryMembership": 172,
       "galleryCoverage": 100,
       "pagesTraversed": 63,
-      "paginationStatus": "success",
+      "paginationStatus": "partial",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 20,
       "verifiedNewCount": 54,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination exhausted",
+        "Pagination not proven exhausted",
         "146 footwear collection path(s) crawled",
         "172 / 172 products have source category membership"
       ],
@@ -3927,7 +3921,10 @@
         "Kaynak 198 ürün bildiriyor, collector 172 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [],
+      "errors": [
+        "HTTP 502 for https://khaite.com/collections/pumps/products.json?limit=250&page=1",
+        "HTTP 502 for https://khaite.com/collections/colt-slip-on-loafer/products.json?limit=250&page=1"
+      ],
       "warnings": [
         "Kaynak 198 ürün bildiriyor, collector 172 benzersiz ürün aldı"
       ]
@@ -4123,6 +4120,7 @@
         "/collections/slide-bags",
         "/collections/python-mule-ad",
         "/collections/lug-sole-shoes",
+        "/collections/tee-sandal-edit",
         "/collections/sorel-mules",
         "/collections/all-sale-excluding-shoes-eligible-for-greene-f-f-extra-28-off",
         "/collections/sale-shoes"
@@ -4133,7 +4131,7 @@
         "Ballet Flats and Pumps",
         "Boots",
         "Flats",
-        "Handbags And Shoes",
+        "Handbags and Shoes",
         "Mules",
         "New Arrivals",
         "New Arrivals Ad Ss26",
@@ -4167,7 +4165,7 @@
       "sourceCategoryCount": 24,
       "productsWithCategoryMembership": 150,
       "galleryCoverage": 98,
-      "pagesTraversed": 15,
+      "pagesTraversed": 16,
       "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
       "verifiedNewProductCount": 26,
@@ -4176,7 +4174,7 @@
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
-        "18 footwear collection path(s) crawled",
+        "19 footwear collection path(s) crawled",
         "150 / 150 products have source category membership"
       ],
       "limitations": [
@@ -5055,14 +5053,14 @@
       "productsWithCategoryMembership": 89,
       "galleryCoverage": 100,
       "pagesTraversed": 65,
-      "paginationStatus": "partial",
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 0,
       "verifiedNewCount": 9,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "69 footwear collection path(s) crawled",
         "89 / 89 products have source category membership"
       ],
@@ -5070,10 +5068,7 @@
         "Kaynak 106 ürün bildiriyor, collector 89 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://emmeparsons.com/collections/emme-parsons-folded-slide/products.json?limit=250&page=1",
-        "HTTP 503 for https://emmeparsons.com/collections/spring-flats/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
         "Kaynak 106 ürün bildiriyor, collector 89 benzersiz ürün aldı"
       ]
@@ -5098,7 +5093,45 @@
         "/collections/bags-shoes",
         "/collections/footwear-gifts",
         "/collections/jila-sandal",
-        "/collections/clear-vinyl-shoes"
+        "/collections/clear-vinyl-shoes",
+        "/collections/high-boots",
+        "/collections/woven-heels",
+        "/collections/meta-heel",
+        "/collections/spring-22-shoes",
+        "/collections/resort-22-shoes",
+        "/collections/summer-shoes",
+        "/collections/summer-espadrilles",
+        "/collections/fall-21-shoes",
+        "/collections/kids-shoes",
+        "/collections/lydia-sandal",
+        "/collections/uma-heel",
+        "/collections/ziggy-platform",
+        "/collections/alba-platform",
+        "/collections/freya-sandal",
+        "/collections/gabi-sandal",
+        "/collections/hana-boot",
+        "/collections/jasie-sandal",
+        "/collections/leah-clog",
+        "/collections/letta-heel",
+        "/collections/letta-heel-1",
+        "/collections/manu-flat",
+        "/collections/shoes-we-love",
+        "/collections/su-sandal",
+        "/collections/valeska-boot",
+        "/collections/vivianne-sandal",
+        "/collections/heels-1",
+        "/collections/anna-platform",
+        "/collections/astrea-sandal",
+        "/collections/bianca-boot",
+        "/collections/bratz-boot",
+        "/collections/dionne-pump",
+        "/collections/giana-sandal",
+        "/collections/harlow-mule",
+        "/collections/rene-heel",
+        "/collections/yasmina-boot",
+        "/collections/zama-boot",
+        "/collections/sale-shoes-1",
+        "/collections/sale-shoes"
       ],
       "footwearRootDiscovered": true,
       "footwearCategoryCount": 16,
@@ -5120,20 +5153,20 @@
         "Shoes",
         "SPRING '22 SHOES"
       ],
-      "sourceReportedProductCount": null,
-      "observedExpectedProductCount": null,
+      "sourceReportedProductCount": 543,
+      "observedExpectedProductCount": 543,
       "collectedProductCount": 157,
-      "rawProductUrlsDiscovered": 148,
+      "rawProductUrlsDiscovered": 152,
       "productsDiscovered": 157,
       "uniqueProductsAfterDedupe": 157,
       "modelFamilyCount": 91,
       "duplicateCount": 3,
-      "estimatedCoveragePercent": null,
+      "estimatedCoveragePercent": 28.9,
       "sourceCategoryCount": 16,
       "productsWithCategoryMembership": 157,
       "galleryCoverage": 100,
-      "pagesTraversed": 9,
-      "paginationStatus": "partial",
+      "pagesTraversed": 17,
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 16,
       "verifiedNewCount": 66,
@@ -5141,16 +5174,17 @@
       "coverageStatus": "PARTIAL",
       "evidence": [
         "Pagination exhausted",
-        "12 footwear collection path(s) crawled",
+        "50 footwear collection path(s) crawled",
         "157 / 157 products have source category membership"
       ],
       "limitations": [
+        "Kaynak 543 ürün bildiriyor, collector 157 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://cultgaia.com/collections.json?limit=250&page=1"
-      ],
-      "warnings": []
+      "errors": [],
+      "warnings": [
+        "Kaynak 543 ürün bildiriyor, collector 157 benzersiz ürün aldı"
+      ]
     },
     {
       "sourceId": "staud",
@@ -5523,7 +5557,7 @@
       "footwearRootDiscovered": true,
       "footwearCategoryCount": 7,
       "categoryNames": [
-        "CHUNKY BOOTS",
+        "Chunky Boots",
         "COLECCION SANDALIAS",
         "SANDALIAS BIO SS26",
         "SANDALIAS DE TACON",
@@ -5728,14 +5762,14 @@
         "Sandals",
         "Shoes",
         "Shoes -",
-        "Signature sandals",
-        "Sleek boots",
-        "Slip-in Loafers",
+        "Signature Sandals",
+        "Sleek Boots",
+        "Slip In Loafers",
         "Spring 2026 Sandals",
         "Spring 2026 Shoes",
         "Strappy sandals",
-        "Suede shoes",
-        "Transitional shoes",
+        "Suede Shoes",
+        "Transitional Shoes",
         "Winter 2025 Shoes"
       ],
       "sourceReportedProductCount": 337,
@@ -5913,7 +5947,7 @@
       "sourceReportedProductCount": 1596,
       "observedExpectedProductCount": 1596,
       "collectedProductCount": 966,
-      "rawProductUrlsDiscovered": 661,
+      "rawProductUrlsDiscovered": 926,
       "productsDiscovered": 966,
       "uniqueProductsAfterDedupe": 966,
       "modelFamilyCount": 358,
@@ -5923,14 +5957,14 @@
       "productsWithCategoryMembership": 966,
       "galleryCoverage": 100,
       "pagesTraversed": 34,
-      "paginationStatus": "partial",
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": true,
-      "verifiedNewProductCount": 15,
+      "verifiedNewProductCount": 14,
       "verifiedNewCount": 83,
       "collectionStatus": "READY_AUTOMATIC",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "Pagination not proven exhausted",
+        "Pagination exhausted",
         "35 footwear collection path(s) crawled",
         "966 / 966 products have source category membership"
       ],
@@ -5938,16 +5972,7 @@
         "Kaynak 1596 ürün bildiriyor, collector 966 benzersiz ürün aldı",
         "FULL requires exhausted pagination and agreement with the source women's footwear total"
       ],
-      "errors": [
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/tan-sandals/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/womens-sandals-resort-collection/products.json?limit=250&page=1",
-        "HTTP 502 for https://www.ancient-greek-sandals.com/collections/flip-flops/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/kids-sandals-best-sellers/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/slippers/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/boat-shoes/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/womens-sandals-collaborations/products.json?limit=250&page=1",
-        "HTTP 503 for https://www.ancient-greek-sandals.com/collections/womens-sandals-sale/products.json?limit=250&page=1"
-      ],
+      "errors": [],
       "warnings": [
         "Kaynak 1596 ürün bildiriyor, collector 966 benzersiz ürün aldı"
       ]
@@ -5968,36 +5993,32 @@
       "categoryNames": [
         "Ballet Flats"
       ],
-      "sourceReportedProductCount": null,
-      "observedExpectedProductCount": null,
+      "sourceReportedProductCount": 8,
+      "observedExpectedProductCount": 8,
       "collectedProductCount": 8,
       "rawProductUrlsDiscovered": 8,
       "productsDiscovered": 8,
       "uniqueProductsAfterDedupe": 8,
       "modelFamilyCount": 5,
       "duplicateCount": 0,
-      "estimatedCoveragePercent": null,
+      "estimatedCoveragePercent": 100,
       "sourceCategoryCount": 1,
       "productsWithCategoryMembership": 8,
       "galleryCoverage": 100,
       "pagesTraversed": 1,
-      "paginationStatus": "partial",
+      "paginationStatus": "success",
       "newArrivalsSourceDiscovered": false,
       "verifiedNewProductCount": 0,
       "verifiedNewCount": 0,
       "collectionStatus": "READY_AUTOMATIC",
-      "coverageStatus": "PARTIAL",
+      "coverageStatus": "FULL",
       "evidence": [
         "Pagination exhausted",
         "1 footwear collection path(s) crawled",
         "8 / 8 products have source category membership"
       ],
-      "limitations": [
-        "FULL requires exhausted pagination and agreement with the source women's footwear total"
-      ],
-      "errors": [
-        "HTTP 503 for https://www.tuas-studio.com/collections.json?limit=250&page=1"
-      ],
+      "limitations": [],
+      "errors": [],
       "warnings": []
     },
     {
@@ -6031,7 +6052,7 @@
       "sourceReportedProductCount": null,
       "observedExpectedProductCount": null,
       "collectedProductCount": 445,
-      "rawProductUrlsDiscovered": 428,
+      "rawProductUrlsDiscovered": 425,
       "productsDiscovered": 445,
       "uniqueProductsAfterDedupe": 445,
       "modelFamilyCount": 443,
@@ -6187,26 +6208,26 @@
       ],
       "sourceReportedProductCount": null,
       "observedExpectedProductCount": null,
-      "collectedProductCount": 1270,
-      "rawProductUrlsDiscovered": 1270,
-      "productsDiscovered": 1270,
-      "uniqueProductsAfterDedupe": 1270,
-      "modelFamilyCount": 1270,
+      "collectedProductCount": 1275,
+      "rawProductUrlsDiscovered": 1275,
+      "productsDiscovered": 1275,
+      "uniqueProductsAfterDedupe": 1275,
+      "modelFamilyCount": 1275,
       "duplicateCount": 0,
       "estimatedCoveragePercent": null,
       "sourceCategoryCount": 10,
-      "productsWithCategoryMembership": 1270,
+      "productsWithCategoryMembership": 1275,
       "galleryCoverage": 100,
       "pagesTraversed": null,
       "paginationStatus": "ACTIVE",
       "newArrivalsSourceDiscovered": true,
-      "verifiedNewProductCount": 1204,
-      "verifiedNewCount": 1204,
+      "verifiedNewProductCount": 1209,
+      "verifiedNewCount": 1209,
       "collectionStatus": "ACTIVE",
       "coverageStatus": "PARTIAL",
       "evidence": [
-        "1270 source products",
-        "1270 model families",
+        "1275 source products",
+        "1275 model families",
         "New In membership verified"
       ],
       "limitations": [
