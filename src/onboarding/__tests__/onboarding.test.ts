@@ -48,7 +48,7 @@ function shoe(overrides: Partial<PilotProduct> = {}): PilotProduct {
 }
 
 describe("onboarding queue policy", () => {
-  it("orders the 11 priority brands and does not drop current collectable brands", () => {
+  it("orders the priority brands and does not drop current collectable brands", () => {
     const queue = createInitialQueue();
     expect(queue.entries.map((entry) => entry.slug)).toEqual(
       INITIAL_ONBOARDING_BRANDS.map((item) => item.slug),
@@ -59,11 +59,15 @@ describe("onboarding queue policy", () => {
   it("skips future retry dates and continues after a blocked candidate", () => {
     const now = new Date("2026-08-22T20:00:00.000Z");
     const queue = createInitialQueue();
-    queue.entries[0]!.status = "PRIORITY_BLOCKED";
-    queue.entries[0]!.nextRetryAt = retryAt(now, 7);
-    queue.entries[1]!.status = "PENDING";
+    const maison = queue.entries.find((entry) => entry.slug === "maison-margiela");
+    const isabel = queue.entries.find((entry) => entry.slug === "isabel-marant");
+    expect(maison).toBeDefined();
+    expect(isabel).toBeDefined();
+    maison!.status = "PRIORITY_BLOCKED";
+    maison!.nextRetryAt = retryAt(now, 7);
+    isabel!.status = "PENDING";
     const selected = selectQueueCandidates(queue, { now, limit: 5 });
-    expect(selected[0]?.slug).toBe("isabel-marant");
+    expect(selected.some((entry) => entry.slug === "isabel-marant")).toBe(true);
     expect(selected.some((entry) => entry.slug === "maison-margiela")).toBe(false);
   });
 
@@ -85,7 +89,7 @@ describe("onboarding queue policy", () => {
     expect(merged.entries.find((entry) => entry.slug === "maison-margiela")?.status).toBe(
       "PRIORITY_BLOCKED",
     );
-    expect(merged.entries).toHaveLength(11);
+    expect(merged.entries).toHaveLength(INITIAL_ONBOARDING_BRANDS.length);
   });
 });
 
