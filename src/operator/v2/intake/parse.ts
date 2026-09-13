@@ -1,7 +1,14 @@
 import type { ParsedIntent, V2TemplateId } from "../types";
 
-const SHELL_INJECTION =
-  /(?:[;&|`]|\$\(|&&|\|\||>>?|git\s+push|git\s+reset|rm\s+-rf|curl\s+|wget\s+|Invoke-Expression)/i;
+// Treat task text as untrusted data, but only mark it as a shell-injection attempt
+// when it contains shell execution structure. Natural-language punctuation such as
+// semicolons, ampersands and pipes can legitimately appear in issue prose.
+const SHELL_STRUCTURE = /(?:`|\$\(|&&|\|\|)/;
+const SHELL_REDIRECTION = /(?:^|\s)(?:>>?|<<?)\s*\S+/;
+const DANGEROUS_COMMAND =
+  /\b(?:git\s+(?:push|reset)|rm\s+-rf|curl\s+|wget\s+|Invoke-Expression\b)/i;
+const CHAINED_COMMAND =
+  /[;&|]\s*(?:git|rm|curl|wget|powershell|pwsh|cmd|bash|sh|npm|npx|node|python(?:3)?|vercel)\b/i;
 
 function normalize(text: string): string {
   return text
@@ -71,7 +78,12 @@ function salesMarketFromText(text: string): string | null {
 }
 
 export function containsShellInjection(text: string): boolean {
-  return SHELL_INJECTION.test(text);
+  return (
+    SHELL_STRUCTURE.test(text) ||
+    SHELL_REDIRECTION.test(text) ||
+    DANGEROUS_COMMAND.test(text) ||
+    CHAINED_COMMAND.test(text)
+  );
 }
 
 export function parseOperatorIntake(rawInstruction: string): ParsedIntent {
