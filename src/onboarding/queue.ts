@@ -54,7 +54,12 @@ export function createInitialQueue(
       retryDays: ONBOARDING_RETRY_DAYS,
     },
     entries: INITIAL_ONBOARDING_BRANDS.map((item) =>
-      emptyQueueEntry(item.brand, item.slug, item.priority, sourceUrls[item.slug] ?? null),
+      emptyQueueEntry(
+        item.brand,
+        item.slug,
+        item.priority,
+        item.sourceUrl ?? sourceUrls[item.slug] ?? null,
+      ),
     ),
   };
 }
@@ -67,16 +72,17 @@ export function mergeQueueWithDefaults(
   const base = current ?? createInitialQueue(sourceUrls, now);
   const bySlug = new Map(base.entries.map((entry) => [entry.slug, entry]));
   for (const item of INITIAL_ONBOARDING_BRANDS) {
+    const preferredSourceUrl = item.sourceUrl ?? sourceUrls[item.slug] ?? null;
     const existing = bySlug.get(item.slug);
     if (existing) {
-      if (!existing.sourceUrl && sourceUrls[item.slug]) {
-        existing.sourceUrl = sourceUrls[item.slug] ?? null;
+      if (!existing.sourceUrl && preferredSourceUrl) {
+        existing.sourceUrl = preferredSourceUrl;
       }
       continue;
     }
     bySlug.set(
       item.slug,
-      emptyQueueEntry(item.brand, item.slug, item.priority, sourceUrls[item.slug] ?? null),
+      emptyQueueEntry(item.brand, item.slug, item.priority, preferredSourceUrl),
     );
   }
   return {
