@@ -14,6 +14,7 @@ export const ONBOARDING_STORAGE_LIMIT_BYTES = 90 * 1024 * 1024;
 export const ONBOARDING_GITHUB_FILE_HARD_LIMIT_BYTES = 100 * 1024 * 1024;
 
 export const QUEUE_PATH = "data/registry/brand-onboarding-queue.json";
+export const ADAPTER_WORK_QUEUE_PATH = "data/registry/brand-adapter-work-queue.json";
 export const REPORT_PATH = "data/registry/brand-onboarding-report.json";
 export const ADAPTERS_PATH = "data/onboarding/brand-adapters.json";
 export const STAGING_DIR = "data/onboarding/staging";
@@ -56,15 +57,19 @@ export const RETRYABLE_STATUSES = new Set<OnboardingStatus>([
   "PENDING",
   "BLOCKED",
   "PRIORITY_BLOCKED",
-  "CUSTOM_ADAPTER_REQUIRED",
   "FAILED",
   "PARTIAL",
 ]);
 
-export const TERMINAL_SKIP_STATUSES = new Set<OnboardingStatus>(["ACTIVE", "STORAGE_LIMIT"]);
+export const TERMINAL_SKIP_STATUSES = new Set<OnboardingStatus>([
+  "ACTIVE",
+  "STORAGE_LIMIT",
+  "CUSTOM_ADAPTER_REQUIRED",
+]);
 
 export const ONBOARDING_EXTRA_STAGE_PATHS = [
   QUEUE_PATH,
+  ADAPTER_WORK_QUEUE_PATH,
   REPORT_PATH,
   ADAPTERS_PATH,
   UNIVERSE_PATH,
