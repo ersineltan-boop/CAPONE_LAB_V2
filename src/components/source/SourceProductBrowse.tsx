@@ -13,14 +13,8 @@ import { modelFamiliesToGridItems } from "../../categories/modelFamilyGrid";
 import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import { UI_COPY } from "../../presentation/turkishLabels";
-import {
-  deriveProductSeason,
-  filterFamiliesBySeason,
-  type ProductSeason,
-} from "../../season/productSeason";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
 import ModelFamilyProductGrid from "../modelFamily/ModelFamilyProductGrid";
-import SeasonFilter from "../season/SeasonFilter";
 
 export type SourceBrowseMode = "all" | "verified-new" | "categories" | "brands";
 
@@ -63,7 +57,6 @@ export default function SourceProductBrowse({
   hideSourceCategoryLabel = false,
 }: SourceProductBrowseProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [season, setSeason] = useState<ProductSeason | "ALL">("ALL");
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
   const researchStates = useResearchStateMap();
   const researchRepo = useResearchStateRepository();
@@ -73,15 +66,6 @@ export default function SourceProductBrowse({
     [baseFamilies, sourceId],
   );
 
-  const seasonCounts = useMemo(() => {
-    const counts: Partial<Record<ProductSeason, number>> = {};
-    for (const family of baseFamilies) {
-      const familySeason = deriveProductSeason(family).season;
-      counts[familySeason] = (counts[familySeason] ?? 0) + 1;
-    }
-    return counts;
-  }, [baseFamilies]);
-
   const displayFamilies = useMemo(() => {
     let families = [...baseFamilies];
     if (mode === "verified-new") {
@@ -90,10 +74,9 @@ export default function SourceProductBrowse({
     if (selectedCategoryId) {
       families = filterFamiliesBySourceCategory(families, sourceId, selectedCategoryId);
     }
-    families = filterFamiliesBySeason(families, season);
     families = filterFamiliesBySearch(families, searchQuery);
     return families;
-  }, [baseFamilies, mode, sourceId, brandFilter, selectedCategoryId, season, searchQuery]);
+  }, [baseFamilies, mode, sourceId, brandFilter, selectedCategoryId, searchQuery]);
 
   const gridItems = useMemo(
     () =>
@@ -106,7 +89,7 @@ export default function SourceProductBrowse({
   const { visibleItems, hasMore, loadMore } = useProgressiveBatch(
     gridItems,
     undefined,
-    `${mode}|${selectedCategoryId ?? ""}|${season}|${searchQuery}|${sourceId}|${displayFamilies.length}`,
+    `${mode}|${selectedCategoryId ?? ""}|${searchQuery}|${sourceId}|${displayFamilies.length}`,
   );
 
   const familyById = useMemo(
@@ -129,11 +112,6 @@ export default function SourceProductBrowse({
             placeholder={UI_COPY.searchPlaceholder}
             className="min-w-[180px] flex-1 border border-line bg-cream px-2.5 py-1.5 text-[10px] text-ink"
           />
-        </div>
-
-        <div className="space-y-1.5">
-          <p className="text-[9px] tracking-[0.16em] text-ink-muted">SEZON</p>
-          <SeasonFilter value={season} onChange={setSeason} counts={seasonCounts} />
         </div>
 
         {mode === "categories" && showCategorySidebar && categories.length > 0 && (
