@@ -6,15 +6,9 @@ import { queryDiscoveredNewArrivals } from "../../newArrivals/discoveredQuery";
 import { queryVerifiedNewArrivals } from "../../newArrivals/verifiedQuery";
 import type { NewArrivalsPeriod } from "../../newArrivals/query";
 import { getPeriodLabel, UI_COPY } from "../../presentation/turkishLabels";
-import {
-  deriveProductSeason,
-  filterFamiliesBySeason,
-  type ProductSeason,
-} from "../../season/productSeason";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
 import ModelFamilyProductGrid from "../modelFamily/ModelFamilyProductGrid";
-import SeasonFilter from "../season/SeasonFilter";
 
 const PERIODS: NewArrivalsPeriod[] = ["24H", "7D", "30D", "90D"];
 
@@ -23,7 +17,6 @@ type NewArrivalsTab = "verified" | "discovered";
 export default function NewArrivals() {
   const [period, setPeriod] = useState<NewArrivalsPeriod>("30D");
   const [tab, setTab] = useState<NewArrivalsTab>("verified");
-  const [season, setSeason] = useState<ProductSeason | "ALL">("ALL");
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
 
   const familyById = useMemo(
@@ -42,7 +35,7 @@ export default function NewArrivals() {
     [period],
   );
 
-  const unfilteredItems = useMemo(() => {
+  const items = useMemo(() => {
     if (tab === "verified") {
       const arrivals = queryVerifiedNewArrivals(modelFamilies, {
         scope: { type: "ALL" },
@@ -61,26 +54,8 @@ export default function NewArrivals() {
       .filter((family): family is NonNullable<typeof family> => Boolean(family));
   }, [tab, period, familyById]);
 
-  const seasonCounts = useMemo(() => {
-    const counts: Partial<Record<ProductSeason, number>> = {};
-    for (const family of unfilteredItems) {
-      const familySeason = deriveProductSeason(family).season;
-      counts[familySeason] = (counts[familySeason] ?? 0) + 1;
-    }
-    return counts;
-  }, [unfilteredItems]);
-
-  const items = useMemo(
-    () => filterFamiliesBySeason(unfilteredItems, season),
-    [unfilteredItems, season],
-  );
-
   const gridItems = useMemo(() => modelFamiliesToGridItems(items), [items]);
-  const { visibleItems, hasMore, loadMore } = useProgressiveBatch(
-    gridItems,
-    undefined,
-    `${tab}|${period}|${season}|${gridItems.length}`,
-  );
+  const { visibleItems, hasMore, loadMore } = useProgressiveBatch(gridItems);
 
   const selectedFamily = selectedFamilyId
     ? familyById.get(selectedFamilyId) ?? null
@@ -142,11 +117,6 @@ export default function NewArrivals() {
                 <span className="sm:hidden">{getPeriodLabel(entry, { compact: true })}</span>
               </button>
             ))}
-          </div>
-
-          <div className="space-y-1.5">
-            <p className="text-[9px] tracking-[0.16em] text-ink-muted">SEZON</p>
-            <SeasonFilter value={season} onChange={setSeason} counts={seasonCounts} />
           </div>
 
           <p className="text-[10px] text-ink-muted">
