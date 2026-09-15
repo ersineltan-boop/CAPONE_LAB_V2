@@ -1,30 +1,29 @@
 import type { ModelFamily } from "../modelFamily/types";
 import { isVerifiedNew } from "../newArrivals/newness";
 
-export type ProductSeason = "SS27" | "AW26_27" | "CARRY_OVER" | "UNKNOWN";
+export type ProductSeason = "SS27" | "AW26_27" | "CARRY_OVER";
 export type SeasonConfidence = "CONFIRMED" | "INFERRED";
 export type ProductLifecycle = "NEW_ARRIVAL" | "CURRENT" | "SALE" | "ARCHIVE";
 
 export interface ProductSeasonMeta {
   season: ProductSeason;
   confidence: SeasonConfidence;
+  confidenceScore: number;
   lifecycle: ProductLifecycle;
   evidence: string;
 }
 
 export const SEASON_OPTIONS: Array<{ value: ProductSeason | "ALL"; label: string }> = [
   { value: "ALL", label: "Tüm sezonlar" },
-  { value: "SS27", label: "SS27 · Yaz 2027" },
-  { value: "AW26_27", label: "AW26-27" },
-  { value: "CARRY_OVER", label: "Carry Over" },
-  { value: "UNKNOWN", label: "Belirsiz" },
+  { value: "SS27", label: "SS" },
+  { value: "AW26_27", label: "FW" },
+  { value: "CARRY_OVER", label: "COT" },
 ];
 
 export const SEASON_LABELS: Record<ProductSeason, string> = {
-  SS27: "SS27 · Yaz 2027",
-  AW26_27: "AW26-27",
-  CARRY_OVER: "Carry Over",
-  UNKNOWN: "Belirsiz",
+  SS27: "SS",
+  AW26_27: "FW",
+  CARRY_OVER: "COT",
 };
 
 export const CONFIDENCE_LABELS: Record<SeasonConfidence, string> = {
@@ -39,24 +38,25 @@ export const LIFECYCLE_LABELS: Record<ProductLifecycle, string> = {
   ARCHIVE: "Arşiv",
 };
 
-const EXPLICIT_SS27 = [
-  /\bss\s*[-/]?\s*27\b/i,
-  /\bspring\s*[/&-]?\s*summer\s*2027\b/i,
-  /\bspring\s*2027\b/i,
-  /\bsummer\s*2027\b/i,
-  /\byaz\s*2027\b/i,
-  /\bilkbahar\s*[/&-]?\s*yaz\s*2027\b/i,
+const EXPLICIT_SS = [
+  /\bss\s*[-/]?\s*\d{2}\b/i,
+  /\bspring\s*[/&-]?\s*summer(?:\s*20\d{2})?\b/i,
+  /\bspring(?:\s*20\d{2})?\b/i,
+  /\bsummer(?:\s*20\d{2})?\b/i,
+  /\byaz(?:\s*20\d{2})?\b/i,
+  /\bilkbahar\s*[/&-]?\s*yaz(?:\s*20\d{2})?\b/i,
 ];
 
-const EXPLICIT_AW26 = [
-  /\baw\s*[-/]?\s*26(?:\s*[-/]\s*27)?\b/i,
-  /\bfw\s*[-/]?\s*26(?:\s*[-/]\s*27)?\b/i,
-  /\bautumn\s*[/&-]?\s*winter\s*2026(?:\s*[-/]\s*27)?\b/i,
-  /\bfall\s*[/&-]?\s*winter\s*2026(?:\s*[-/]\s*27)?\b/i,
-  /\bsonbahar\s*[/&-]?\s*kış\s*2026(?:\s*[-/]\s*27)?\b/i,
+const EXPLICIT_FW = [
+  /\b(?:aw|fw)\s*[-/]?\s*\d{2}(?:\s*[-/]\s*\d{2})?\b/i,
+  /\bautumn\s*[/&-]?\s*winter(?:\s*20\d{2}(?:\s*[-/]\s*\d{2})?)?\b/i,
+  /\bfall\s*[/&-]?\s*winter(?:\s*20\d{2}(?:\s*[-/]\s*\d{2})?)?\b/i,
+  /\bsonbahar\s*[/&-]?\s*kış(?:\s*20\d{2}(?:\s*[-/]\s*\d{2})?)?\b/i,
 ];
 
 const SALE_SIGNAL = /\b(sale|outlet|indirim|reduced|last chance)\b/i;
+const SUMMER_TEXT_SIGNAL = /\b(sandal|sandals|slide|slides|espadrille|espadrilles|raffia|rafia|straw|jute|beach|summer|yaz)\b/i;
+const WINTER_TEXT_SIGNAL = /\b(boot|boots|bootie|booties|ankle boot|knee boot|snow|shearling|winter|kış|çizme|bot)\b/i;
 const SUMMER_CATEGORIES = new Set(["SANDAL", "MULE", "ESPADRILLE"]);
 const WINTER_CATEGORIES = new Set(["BOOT"]);
 
@@ -108,36 +108,65 @@ function lifecycleForFamily(family: ModelFamily, text: string): ProductLifecycle
   return "CURRENT";
 }
 
+function inferred(
+  season: ProductSeason,
+  lifecycle: ProductLifecycle,
+  confidenceScore: number,
+  evidence: string,
+): ProductSeasonMeta {
+  return { season, confidence: "INFERRED", confidenceScore, lifecycle, evidence };
+}
+
 export function deriveProductSeason(family: ModelFamily): ProductSeasonMeta {
   const text = evidenceText(family);
   const lifecycle = lifecycleForFamily(family, text);
 
-  if (EXPLICIT_SS27.some((pattern) => pattern.test(text))) {
-    return { season: "SS27", confidence: "CONFIRMED", lifecycle, evidence: "Kaynak sezon etiketi" };
+  if (EXPLICIT_SS.some((pattern) => pattern.test(text))) {
+    return { season: "SS27", confidence: "CONFIRMED", confidenceScore: 100, lifecycle, evidence: "Kaynak SS sezon etiketi" };
   }
-  if (EXPLICIT_AW26.some((pattern) => pattern.test(text))) {
-    return { season: "AW26_27", confidence: "CONFIRMED", lifecycle, evidence: "Kaynak sezon etiketi" };
+  if (EXPLICIT_FW.some((pattern) => pattern.test(text))) {
+    return { season: "AW26_27", confidence: "CONFIRMED", confidenceScore: 100, lifecycle, evidence: "Kaynak FW sezon etiketi" };
   }
 
   const category = family.primaryCategory ?? family.taxonomy?.primaryCategory ?? "UNCLASSIFIED";
   const seenAt = latestDate(family);
   const seen = seenAt ? Date.parse(seenAt) : Number.NaN;
-  const launchWindowStart = Date.parse("2026-09-01T00:00:00.000Z");
+  const ageDays = Number.isNaN(seen) ? null : (Date.now() - seen) / (24 * 60 * 60 * 1000);
 
-  if (!Number.isNaN(seen) && seen >= launchWindowStart && lifecycle === "NEW_ARRIVAL") {
-    if (SUMMER_CATEGORIES.has(category)) {
-      return { season: "SS27", confidence: "INFERRED", lifecycle, evidence: "Yeni geliş tarihi + yaz kategorisi" };
-    }
-    if (WINTER_CATEGORIES.has(category)) {
-      return { season: "AW26_27", confidence: "INFERRED", lifecycle, evidence: "Yeni geliş tarihi + kış kategorisi" };
-    }
+  // A product that has remained in the live catalogue for a long time is a
+  // stronger carry-over signal than its silhouette alone.
+  if (lifecycle !== "NEW_ARRIVAL" && ageDays !== null && ageDays > 180) {
+    return inferred("CARRY_OVER", lifecycle, 88, "180+ gündür katalogda · COT");
   }
 
-  if (lifecycle === "CURRENT" && seenAt && Date.now() - seen > 180 * 24 * 60 * 60 * 1000) {
-    return { season: "CARRY_OVER", confidence: "INFERRED", lifecycle, evidence: "Uzun süre güncel katalogda" };
+  const summerCategory = SUMMER_CATEGORIES.has(category);
+  const winterCategory = WINTER_CATEGORIES.has(category);
+  const summerText = SUMMER_TEXT_SIGNAL.test(text);
+  const winterText = WINTER_TEXT_SIGNAL.test(text);
+
+  if ((summerCategory || summerText) && !(winterCategory || winterText)) {
+    return inferred("SS27", lifecycle, summerCategory && summerText ? 92 : 84, "Ürün tipi/kategori · SS sinyali");
+  }
+  if ((winterCategory || winterText) && !(summerCategory || summerText)) {
+    return inferred("AW26_27", lifecycle, winterCategory && winterText ? 92 : 84, "Ürün tipi/kategori · FW sinyali");
   }
 
-  return { season: "UNKNOWN", confidence: "INFERRED", lifecycle, evidence: "Yeterli sezon sinyali yok" };
+  // For genuinely new trans-seasonal models (sneakers, loafers, ballet flats,
+  // heels), first-seen month is useful supporting evidence. It is deliberately
+  // lower confidence than a source season label or a seasonal silhouette.
+  if (lifecycle === "NEW_ARRIVAL" && seenAt) {
+    const month = new Date(seenAt).getUTCMonth() + 1;
+    if (month >= 3 && month <= 8) {
+      return inferred("SS27", lifecycle, 68, "Yeni geliş dönemi · SS");
+    }
+    return inferred("AW26_27", lifecycle, 68, "Yeni geliş dönemi · FW");
+  }
+
+  // Evergreen/trans-seasonal products without a strong SS/FW signal are COT.
+  // This keeps the user-facing taxonomy exhaustive (SS/FW/COT) while the score
+  // makes low-confidence decisions auditable in QA instead of exposing a large
+  // 'Belirsiz' bucket.
+  return inferred("CARRY_OVER", lifecycle, 55, "Sezonlar arası/evergreen ürün · düşük güvenli COT");
 }
 
 export function filterFamiliesBySeason(
@@ -147,4 +176,3 @@ export function filterFamiliesBySeason(
   if (season === "ALL") return families;
   return families.filter((family) => deriveProductSeason(family).season === season);
 }
-
