@@ -10,6 +10,12 @@ import {
 import { resolveModelFamilyProductUrl } from "../../modelFamily/resolveProductUrl";
 import { isVerifiedNew } from "../../newArrivals/newness";
 import { UI_COPY } from "../../presentation/turkishLabels";
+import {
+  CONFIDENCE_LABELS,
+  deriveProductSeason,
+  LIFECYCLE_LABELS,
+  SEASON_LABELS,
+} from "../../season/productSeason";
 import { formatDateTurkishShort } from "../../presentation/turkishDates";
 import { useResearchState } from "../../research/useResearchState";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
@@ -58,6 +64,7 @@ export default function ModelFamilyDetailDrawer({
   const verifiedSightings = (family.sourceSightings ?? []).filter((s) =>
     isVerifiedNew(s.newness),
   );
+  const seasonMeta = deriveProductSeason(family);
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-ink/30" role="presentation">
@@ -97,6 +104,18 @@ export default function ModelFamilyDetailDrawer({
             {selectedColor && (
               <p className="text-[10px] text-ink-muted">{selectedColor}</p>
             )}
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              <span className="border border-ink px-2 py-1 text-[9px] tracking-wide">
+                {SEASON_LABELS[seasonMeta.season]}
+              </span>
+              <span className="border border-line px-2 py-1 text-[9px] text-ink-muted">
+                {CONFIDENCE_LABELS[seasonMeta.confidence]}
+              </span>
+              <span className="border border-line px-2 py-1 text-[9px] text-ink-muted">
+                {LIFECYCLE_LABELS[seasonMeta.lifecycle]}
+              </span>
+            </div>
+            <p className="text-[9px] text-ink-faint">{seasonMeta.evidence}</p>
           </div>
 
           {variants.length > 1 && (
@@ -250,3 +269,4 @@ export default function ModelFamilyDetailDrawer({
     </div>
   );
 }
+
