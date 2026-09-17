@@ -140,10 +140,14 @@ export function filterVerifiedNewForSource(
   period: NewArrivalsPeriod = "90D",
   brandFilter?: string | null,
 ): ModelFamily[] {
-  const brandFamily = families.find((family) => slugifyBrandId(family.brand) === sourceId);
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
+  const brandFamily = families.find(
+    (family) =>
+      normalizeMarketplaceSourceId(slugifyBrandId(family.brand)) === canonicalSourceId,
+  );
   const scope = brandFamily
     ? ({ type: "BRAND" as const, brand: brandFamily.brand })
-    : ({ type: "SOURCE" as const, sourceId });
+    : ({ type: "SOURCE" as const, sourceId: canonicalSourceId });
 
   const verifiedIds = new Set(
     queryVerifiedNewArrivals(families, { scope, period }).map((item) => item.modelFamilyId),
@@ -157,7 +161,9 @@ export function filterVerifiedNewForSource(
     if (brandFamily) {
       return normalizeBrand(family.brand) === normalizeBrand(brandFamily.brand);
     }
-    return family.sourceSightings?.some((s) => s.sourceId === sourceId) ?? false;
+    return family.sourceSightings?.some(
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+    ) ?? false;
   });
 }
 
@@ -196,9 +202,12 @@ export function anyVerifiedNewOnSource(
   families: ModelFamily[],
   sourceId: string,
 ): boolean {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   return families.some((family) =>
     family.sourceSightings?.some(
-      (s) => s.sourceId === sourceId && isVerifiedNew(s.newness),
+      (s) =>
+        normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId &&
+        isVerifiedNew(s.newness),
     ),
   );
 }

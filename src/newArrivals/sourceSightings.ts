@@ -3,6 +3,7 @@ import type { RawAnalyzedProduct } from "../modelFamily/types";
 import type { SourceSighting } from "../taxonomy/types";
 import {
   MARKETPLACE_SOURCE_IDS,
+  isExcludedMarketplaceSource,
   normalizeMarketplaceSourceId,
 } from "../marketplaces/marketplacePolicy";
 import { createNotVerifiedNewness } from "./newness";
@@ -204,7 +205,10 @@ export function mergeSourceSightings(
 }
 
 function isMarketplaceSource(sourceId: string): boolean {
-  return MARKETPLACE_SOURCE_IDS.has(normalizeMarketplaceSourceId(sourceId));
+  return (
+    MARKETPLACE_SOURCE_IDS.has(sourceId) ||
+    isExcludedMarketplaceSource(sourceId)
+  );
 }
 
 export function enrichFamilyWithSightings(
