@@ -53,6 +53,7 @@
     "brands:expand": "tsx scripts/probe-activate-expansion.ts",
     "collect:today-marketplaces": "tsx scripts/collect-today-marketplaces.ts",
     "collect:free-people-staging": "tsx scripts/collect-free-people-staging.ts",
+    "collect:romania:papucei-staging": "tsx scripts/collect-romania-papucei-staging.ts",
     "merge:free-people-staging": "tsx scripts/merge-free-people-staging.ts",
     "operator:check": "tsx scripts/operator-check.ts",
     "operator:dry-run": "tsx scripts/operator-dry-run.ts",
