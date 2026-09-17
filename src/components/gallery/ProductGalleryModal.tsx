@@ -66,6 +66,8 @@ export default function ProductGalleryModal({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [failedKeys, setFailedKeys] = useState<Set<string>>(() => new Set());
   const touchStartXRef = useRef<number | null>(null);
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const zoom = useGalleryZoom(`${selectedVariantId ?? ""}|${galleryImages[currentIndex] ?? ""}`);
 
   const visibleImages = useMemo(() => {
@@ -90,9 +92,55 @@ export default function ProductGalleryModal({
 
   useEffect(() => {
     if (!open) return;
+    const previouslyFocused =
+      document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const focusFrame = window.requestAnimationFrame(() => {
+      closeButtonRef.current?.focus();
+    });
+    return () => {
+      window.cancelAnimationFrame(focusFrame);
+      document.body.style.overflow = previousBodyOverflow;
+      previouslyFocused?.focus();
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
     const handleKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
+        event.preventDefault();
         onClose();
+        return;
+      }
+      if (event.key === "Tab") {
+        const dialog = dialogRef.current;
+        if (!dialog) return;
+        const focusable = Array.from(
+          dialog.querySelectorAll<HTMLElement>(
+            'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          ),
+        ).filter(
+          (element) =>
+            element.tabIndex >= 0 && !element.closest('[aria-hidden="true"]'),
+        );
+        if (focusable.length === 0) {
+          event.preventDefault();
+          dialog.focus();
+          return;
+        }
+        const activeIndex = focusable.indexOf(document.activeElement as HTMLElement);
+        if (event.shiftKey && activeIndex <= 0) {
+          event.preventDefault();
+          focusable[focusable.length - 1]?.focus();
+        } else if (
+          !event.shiftKey &&
+          (activeIndex === -1 || activeIndex === focusable.length - 1)
+        ) {
+          event.preventDefault();
+          focusable[0]?.focus();
+        }
         return;
       }
       if (event.key === "ArrowRight") {
@@ -102,10 +150,8 @@ export default function ProductGalleryModal({
         setCurrentIndex((index) => prevCarouselIndex(index, visibleImages.length));
       }
     };
-    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", handleKey);
     return () => {
-      document.body.style.overflow = "";
       window.removeEventListener("keydown", handleKey);
     };
   }, [onClose, open, visibleImages.length]);
@@ -187,6 +233,8 @@ export default function ProductGalleryModal({
 
   return (
     <div
+      ref={dialogRef}
+      tabIndex={-1}
       className="fixed inset-0 z-[70] flex items-center justify-center bg-ink/70 p-0 sm:p-6"
       role="dialog"
       aria-modal="true"
@@ -195,8 +243,9 @@ export default function ProductGalleryModal({
     >
       <button
         type="button"
+        tabIndex={-1}
+        aria-hidden="true"
         className="absolute inset-0 cursor-default"
-        aria-label={UI_COPY.closeGallery}
         onClick={onClose}
       />
 
@@ -211,6 +260,7 @@ export default function ProductGalleryModal({
             ) : null}
           </div>
           <button
+            ref={closeButtonRef}
             type="button"
             onClick={onClose}
             className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
