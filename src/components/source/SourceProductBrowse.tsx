@@ -30,6 +30,7 @@ interface SourceProductBrowseProps {
   emptyNewArrivalsMessage?: string;
   hideBrandName?: boolean;
   hideSourceCategoryLabel?: boolean;
+  showPrice?: boolean;
 }
 
 export function modelFamilyToSimpleGridItem(family: ModelFamily, sourceId: string) {
@@ -55,6 +56,7 @@ export default function SourceProductBrowse({
   emptyNewArrivalsMessage = UI_COPY.noVerifiedNewAtSource,
   hideBrandName = false,
   hideSourceCategoryLabel = false,
+  showPrice = true,
 }: SourceProductBrowseProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
@@ -155,6 +157,7 @@ export default function SourceProductBrowse({
           onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
           hideBrand={hideBrandName}
           hideTaxonomy
+          showPrice={showPrice}
           loadMoreSlot={
             hasMore ? (
               <div className="flex justify-center pt-2">

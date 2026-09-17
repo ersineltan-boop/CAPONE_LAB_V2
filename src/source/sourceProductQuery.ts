@@ -7,8 +7,10 @@ import type { SourceNativeCategory } from "./types";
 import { slugifyCategoryId } from "./sourceCategories";
 import { dedupeDisplayCategories } from "./dedupeDisplayCategories";
 import {
+  MARKETPLACE_PRESENTATION_POLICY,
   isExcludedMarketplaceSource,
   isFashionMarketplaceFamily,
+  normalizeMarketplaceSourceId,
 } from "../marketplaces/marketplacePolicy";
 
 function normalizeBrand(value: string): string {
@@ -23,10 +25,13 @@ function isOfficialChannelSighting(
   family: ModelFamily,
   sighting: NonNullable<ModelFamily["sourceSightings"]>[number],
 ): boolean {
-  if (sighting.sourceKind === "BRAND_OFFICIAL") return true;
+  const sourceId = normalizeMarketplaceSourceId(sighting.sourceId);
+  if (isExcludedMarketplaceSource(sourceId) || MARKETPLACE_SOURCE_IDS.has(sourceId)) {
+    return false;
+  }
   if (sighting.sourceKind === "LUXURY_MARKETPLACE") return false;
-  if (MARKETPLACE_SOURCE_IDS.has(sighting.sourceId)) return false;
-  return sighting.sourceId === slugifyBrandId(family.brand);
+  if (sighting.sourceKind === "BRAND_OFFICIAL") return true;
+  return sourceId === normalizeMarketplaceSourceId(slugifyBrandId(family.brand));
 }
 
 export function familyHasOfficialChannel(family: ModelFamily): boolean {
@@ -50,10 +55,11 @@ export function filterFamiliesForMarketplaceSource(
   marketplaceId: string,
   brandFilter?: string | null,
 ): ModelFamily[] {
-  if (isExcludedMarketplaceSource(marketplaceId)) return [];
+  const sourceId = normalizeMarketplaceSourceId(marketplaceId);
+  if (isExcludedMarketplaceSource(sourceId)) return [];
   return families.filter((family) => {
     const hasMarketplaceSighting = family.sourceSightings?.some(
-      (s) => s.sourceId === marketplaceId,
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === sourceId,
     );
     if (!hasMarketplaceSighting) return false;
     if (!isFashionMarketplaceFamily(family)) return false;
@@ -69,9 +75,12 @@ export function filterFamiliesBySourceCategory(
   sourceId: string,
   categoryId: string,
 ): ModelFamily[] {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   return families.filter((family) =>
     family.sourceCategoryRefs?.some(
-      (ref) => ref.sourceId === sourceId && ref.categoryId === categoryId,
+      (ref) =>
+        normalizeMarketplaceSourceId(ref.sourceId) === canonicalSourceId &&
+        ref.categoryId === categoryId,
     ),
   );
 }
@@ -80,10 +89,11 @@ export function extractSourceCategories(
   families: ModelFamily[],
   sourceId: string,
 ): SourceNativeCategory[] {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   const map = new Map<string, SourceNativeCategory>();
   for (const family of families) {
     for (const ref of family.sourceCategoryRefs ?? []) {
-      if (ref.sourceId !== sourceId) continue;
+      if (normalizeMarketplaceSourceId(ref.sourceId) !== canonicalSourceId) continue;
       map.set(ref.categoryId, {
         categoryId: ref.categoryId,
         categoryName: ref.categoryName,
@@ -91,7 +101,9 @@ export function extractSourceCategories(
         categoryUrl: ref.categoryUrl,
       });
     }
-    const sighting = family.sourceSightings?.find((s) => s.sourceId === sourceId);
+    const sighting = family.sourceSightings?.find(
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+    );
     for (const category of sighting?.sourceCategories ?? []) {
       map.set(category.categoryId, category);
     }
@@ -169,9 +181,14 @@ export function getSourceCategoryLabelForFamily(
   family: ModelFamily,
   sourceId: string,
 ): string | null {
-  const ref = family.sourceCategoryRefs?.find((item) => item.sourceId === sourceId);
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
+  const ref = family.sourceCategoryRefs?.find(
+    (item) => normalizeMarketplaceSourceId(item.sourceId) === canonicalSourceId,
+  );
   if (ref) return ref.categoryName;
-  const sighting = family.sourceSightings?.find((s) => s.sourceId === sourceId);
+  const sighting = family.sourceSightings?.find(
+    (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+  );
   return sighting?.sourceCategories?.[0]?.categoryName ?? null;
 }
 
@@ -184,4 +201,15 @@ export function anyVerifiedNewOnSource(
       (s) => s.sourceId === sourceId && isVerifiedNew(s.newness),
     ),
   );
+}
+
+export function marketplaceBrowsePresentation(
+  families: ModelFamily[],
+  marketplaceId: string,
+  brandFilter?: string | null,
+) {
+  return {
+    families: filterFamiliesForMarketplaceSource(families, marketplaceId, brandFilter),
+    showPrice: MARKETPLACE_PRESENTATION_POLICY.showPrice,
+  };
 }

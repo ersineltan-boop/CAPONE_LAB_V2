@@ -1,5 +1,9 @@
 import type { RawAnalyzedProduct } from "./types";
-import { MARKETPLACE_SOURCE_IDS } from "../marketplaces/marketplacePolicy";
+import {
+  MARKETPLACE_SOURCE_IDS,
+  isMarketplaceSource,
+  normalizeMarketplaceSourceId,
+} from "../marketplaces/marketplacePolicy";
 
 export { MARKETPLACE_SOURCE_IDS };
 
@@ -22,9 +26,7 @@ export interface SourceModelIdentity {
 }
 
 export function sourceChannelOf(source: string): SourceChannel {
-  return MARKETPLACE_SOURCE_IDS.has(source.trim().toLowerCase())
-    ? "MARKETPLACE"
-    : "OFFICIAL";
+  return isMarketplaceSource(source) ? "MARKETPLACE" : "OFFICIAL";
 }
 
 export function extractZaraProductId(productUrl: string): string | null {
@@ -73,7 +75,7 @@ export function extractLevelShoesSlug(productUrl: string): string | null {
 }
 
 export function listingIdentityKey(product: RawAnalyzedProduct): string {
-  const source = product.source.trim().toLowerCase();
+  const source = normalizeMarketplaceSourceId(product.source);
   if (source === "zara") {
     const zaraId = extractZaraProductId(product.productUrl);
     if (zaraId) return `zara:${zaraId}`;
@@ -98,7 +100,7 @@ export function listingIdentityKey(product: RawAnalyzedProduct): string {
 export function extractSourceIdentity(
   product: RawAnalyzedProduct,
 ): SourceModelIdentity {
-  const source = product.source.trim().toLowerCase();
+  const source = normalizeMarketplaceSourceId(product.source);
   const channel = sourceChannelOf(source);
   const key = listingIdentityKey(product);
   const kind: SourceIdentityKind = key.startsWith("zara:")

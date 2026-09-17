@@ -18,6 +18,7 @@ export interface ModelFamilyGridItem {
   sourceLabel: string;
   taxonomyChips: string[];
   sourceCategoryLabel?: string | null;
+  priceLabel?: string | null;
   variants?: ColorVariantView[];
 }
 
@@ -25,6 +26,8 @@ export function modelFamilyToGridItem(family: ModelFamily): ModelFamilyGridItem 
   const primaryCategory = getFamilyPrimaryCategory(family);
   const source = family.sourceSightings?.[0];
   const images = collectModelFamilyImages(family);
+  const priceLabel =
+    (family as ModelFamily & { priceLabel?: string | null }).priceLabel ?? null;
 
   return {
     modelFamilyId: family.modelFamilyId,
@@ -37,6 +40,7 @@ export function modelFamilyToGridItem(family: ModelFamily): ModelFamilyGridItem 
     firstSeenAt: family.modelFamilyFirstSeenAt ?? source?.firstSeenAt ?? null,
     sourceLabel: source?.sourceLabel ?? family.brand,
     taxonomyChips: buildTaxonomyChips(family),
+    priceLabel,
     variants: colorVariantsForFamily(family),
   };
 }
