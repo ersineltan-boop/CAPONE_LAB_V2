@@ -45,3 +45,14 @@ export function resolveViewForRole(view: AppView, role: UserRole): AppView {
 export function marketResearchListForRole<T>(role: UserRole, items: readonly T[]): T[] {
   return canSeeMarketResearch(role) ? [...items] : [];
 }
+
+/**
+ * Enforces the market-research permission before the data reader runs.
+ * Keeping the reader lazy prevents denied roles from materializing Romania data.
+ */
+export function readMarketResearchDataForRole<T>(
+  role: UserRole,
+  reader: () => T,
+): T | null {
+  return canSeeMarketResearch(role) ? reader() : null;
+}

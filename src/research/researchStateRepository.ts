@@ -37,9 +37,25 @@ function migrateStore(raw: unknown): ResearchStateStore {
   if (!raw || typeof raw !== "object") return emptyStore();
   const data = raw as Partial<ResearchStateStore> & Partial<ResearchStateStoreV1>;
   if (data.version === 2 && data.records) {
+    const records: Record<string, ModelFamilyResearchState> = {};
+    for (const [key, state] of Object.entries(data.records)) {
+      const ownerUserId = state.ownerUserId ?? state.userId ?? OWNER_USER.id;
+      const createdAt =
+        state.createdAt ??
+        state.reviewedAt ??
+        state.savedAt ??
+        data.updatedAt ??
+        new Date().toISOString();
+      records[key] = {
+        ...state,
+        userId: ownerUserId,
+        ownerUserId,
+        createdAt,
+      };
+    }
     return {
       version: 2,
-      records: data.records,
+      records,
       updatedAt: data.updatedAt ?? new Date().toISOString(),
     };
   }
@@ -48,7 +64,13 @@ function migrateStore(raw: unknown): ResearchStateStore {
     for (const [modelFamilyId, state] of Object.entries(data.states)) {
       const next: ModelFamilyResearchState = {
         ...state,
+        userId: OWNER_USER.id,
         ownerUserId: OWNER_USER.id,
+        createdAt:
+          state.reviewedAt ??
+          state.savedAt ??
+          data.updatedAt ??
+          new Date().toISOString(),
       };
       records[recordKey(OWNER_USER.id, modelFamilyId)] = next;
     }
@@ -143,7 +165,9 @@ export class LocalResearchStateRepository implements ResearchStateRepository {
       ...current,
       ...patch,
       modelFamilyId,
+      userId: ownerUserId,
       ownerUserId,
+      createdAt: current.createdAt,
     };
     this.store.records[recordKey(ownerUserId, modelFamilyId)] = next;
     this.persist();

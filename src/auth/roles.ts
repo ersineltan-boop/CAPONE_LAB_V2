@@ -13,7 +13,12 @@ export interface AppSession {
 }
 
 export interface OwnedRecord {
+  /** Canonical actor id required by persisted client records. */
+  userId: string;
+  /** Backwards-compatible ownership field used by existing filters. */
   ownerUserId: string;
+  /** Immutable record creation timestamp. */
+  createdAt: string;
 }
 
 /** Local demo users only — no passwords or credentials. */

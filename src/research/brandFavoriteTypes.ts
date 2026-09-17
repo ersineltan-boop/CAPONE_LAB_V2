@@ -1,12 +1,14 @@
 export interface BrandFavorite {
   brandId: string;
+  userId: string;
   ownerUserId: string;
+  createdAt: string;
   savedAt: string;
 }
 
 export interface BrandFavoriteStoreV1 {
   version: 1;
-  brands: Record<string, Omit<BrandFavorite, "ownerUserId">>;
+  brands: Record<string, Omit<BrandFavorite, "userId" | "ownerUserId" | "createdAt">>;
   updatedAt: string;
 }
 

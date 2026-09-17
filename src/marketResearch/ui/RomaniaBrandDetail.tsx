@@ -5,7 +5,10 @@ import { countModelsByCategory, filterModelsByCategory } from "../categories";
 import { findRomaniaBrand, getRomaniaCatalog } from "../romania/catalog";
 import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
 import MarketResearchProductGrid from "./MarketResearchProductGrid";
-import { canSeeMarketResearch } from "../../auth/permissions";
+import {
+  canSeeMarketResearch,
+  readMarketResearchDataForRole,
+} from "../../auth/permissions";
 import { useSession } from "../../auth/useSession";
 
 interface RomaniaBrandDetailProps {
@@ -17,7 +20,10 @@ export default function RomaniaBrandDetail({ brandId, onBack }: RomaniaBrandDeta
   const session = useSession();
   const allowed = canSeeMarketResearch(session.user.role);
   const [categoryId, setCategoryId] = useState<string | null>(null);
-  const catalog = allowed ? getRomaniaCatalog() : null;
+  const catalog = readMarketResearchDataForRole(
+    session.user.role,
+    getRomaniaCatalog,
+  );
   const brand = catalog ? findRomaniaBrand(brandId, catalog) : null;
 
   const categories = useMemo(

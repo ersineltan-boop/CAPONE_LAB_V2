@@ -3,7 +3,7 @@ import { formatMarketResearchObservedAt } from "../format";
 import { romaniaBrandCards, romaniaCountrySummary } from "../romania/catalog";
 import ImagePlaceholder from "../../components/radar/ImagePlaceholder";
 import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
-import { canSeeMarketResearch, marketResearchListForRole } from "../../auth/permissions";
+import { canSeeMarketResearch, readMarketResearchDataForRole } from "../../auth/permissions";
 import { useSession } from "../../auth/useSession";
 
 interface MarketResearchPageProps {
@@ -22,8 +22,14 @@ export default function MarketResearchPage({ onSelectBrand }: MarketResearchPage
     );
   }
 
-  const summary = romaniaCountrySummary();
-  const cards = marketResearchListForRole(session.user.role, romaniaBrandCards());
+  const summary = readMarketResearchDataForRole(
+    session.user.role,
+    romaniaCountrySummary,
+  );
+  const cards =
+    readMarketResearchDataForRole(session.user.role, romaniaBrandCards) ?? [];
+
+  if (!summary) return null;
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">

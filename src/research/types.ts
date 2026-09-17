@@ -1,6 +1,8 @@
 export interface ModelFamilyResearchState {
   modelFamilyId: string;
+  userId: string;
   ownerUserId: string;
+  createdAt: string;
   reviewedAt: string | null;
   savedAt: string | null;
   note: string | null;
@@ -8,7 +10,10 @@ export interface ModelFamilyResearchState {
 
 export interface ResearchStateStoreV1 {
   version: 1;
-  states: Record<string, Omit<ModelFamilyResearchState, "ownerUserId">>;
+  states: Record<
+    string,
+    Omit<ModelFamilyResearchState, "userId" | "ownerUserId" | "createdAt">
+  >;
   updatedAt: string;
 }
 
@@ -24,7 +29,9 @@ export function emptyResearchState(
 ): ModelFamilyResearchState {
   return {
     modelFamilyId,
+    userId: ownerUserId,
     ownerUserId,
+    createdAt: new Date().toISOString(),
     reviewedAt: null,
     savedAt: null,
     note: null,

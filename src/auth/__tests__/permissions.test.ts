@@ -1,4 +1,4 @@
-import { describe, expect, it, beforeEach } from "vitest";
+import { describe, expect, it, beforeEach, vi } from "vitest";
 
 import { LOCAL_CLIENT_RECORDS } from "../ownedRecords";
 import {
@@ -9,10 +9,12 @@ import {
   isOwner,
   marketResearchListForRole,
   primaryNavItemsForRole,
+  readMarketResearchDataForRole,
   resolveViewForRole,
 } from "../permissions";
 import { LOCAL_USERS, type AppUser, type UserRole } from "../roles";
 import { resetSessionForTests } from "../session";
+import { getRomaniaCatalog } from "../../marketResearch/romania/catalog";
 
 const userByRole = (role: UserRole): AppUser => {
   const user = LOCAL_USERS.find((entry) => entry.role === role);
@@ -50,6 +52,10 @@ describe("role permission matrix", () => {
     expect(resolveViewForRole("market-research", "Producer")).toBe("brands");
     expect(resolveViewForRole("saved", "Producer")).toBe("saved");
     expect(marketResearchListForRole("Producer", [{ id: "romania" }])).toEqual([]);
+
+    const reader = vi.fn(getRomaniaCatalog);
+    expect(readMarketResearchDataForRole("Producer", reader)).toBeNull();
+    expect(reader).not.toHaveBeenCalled();
   });
 
   it("Owner sees every user's records", () => {
@@ -60,6 +66,8 @@ describe("role permission matrix", () => {
     expect(visible.map((record) => record.id)).toEqual(LOCAL_CLIENT_RECORDS.map((record) => record.id));
     expect(visible.some((record) => record.ownerUserId === "user-partner")).toBe(true);
     expect(visible.some((record) => record.ownerUserId === "user-employee")).toBe(true);
+    expect(visible.every((record) => record.userId === record.ownerUserId)).toBe(true);
+    expect(visible.every((record) => Boolean(Date.parse(record.createdAt)))).toBe(true);
   });
 
   it("Partner sees only their own records", () => {

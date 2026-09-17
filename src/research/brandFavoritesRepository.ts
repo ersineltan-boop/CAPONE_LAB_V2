@@ -30,9 +30,20 @@ function migrateStore(raw: unknown): BrandFavoriteStore {
   if (!raw || typeof raw !== "object") return emptyStore();
   const data = raw as Partial<BrandFavoriteStore> & Partial<BrandFavoriteStoreV1>;
   if (data.version === 2 && data.records) {
+    const records: Record<string, BrandFavorite> = {};
+    for (const [key, favorite] of Object.entries(data.records)) {
+      const ownerUserId = favorite.ownerUserId ?? favorite.userId ?? OWNER_USER.id;
+      const createdAt = favorite.createdAt ?? favorite.savedAt ?? data.updatedAt ?? new Date().toISOString();
+      records[key] = {
+        ...favorite,
+        userId: ownerUserId,
+        ownerUserId,
+        createdAt,
+      };
+    }
     return {
       version: 2,
-      records: data.records,
+      records,
       updatedAt: data.updatedAt ?? new Date().toISOString(),
     };
   }
@@ -41,7 +52,9 @@ function migrateStore(raw: unknown): BrandFavoriteStore {
     for (const [brandId, favorite] of Object.entries(data.brands)) {
       records[recordKey(OWNER_USER.id, brandId)] = {
         ...favorite,
+        userId: OWNER_USER.id,
         ownerUserId: OWNER_USER.id,
+        createdAt: favorite.savedAt,
       };
     }
     return { version: 2, records, updatedAt: data.updatedAt ?? new Date().toISOString() };
@@ -112,7 +125,14 @@ export class LocalBrandFavoriteRepository implements BrandFavoriteRepository {
     const ownerUserId = currentUserId();
     const key = recordKey(ownerUserId, brandId);
     if (saved) {
-      this.store.records[key] = { brandId, ownerUserId, savedAt: new Date().toISOString() };
+      const createdAt = new Date().toISOString();
+      this.store.records[key] = {
+        brandId,
+        userId: ownerUserId,
+        ownerUserId,
+        createdAt,
+        savedAt: createdAt,
+      };
     } else {
       delete this.store.records[key];
     }

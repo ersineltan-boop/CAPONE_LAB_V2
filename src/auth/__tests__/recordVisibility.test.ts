@@ -26,8 +26,18 @@ describe("client record lists honor role visibility", () => {
     getResearchStateRepository().setSaved("family-employee", true);
 
     setSessionUserId("user-owner");
-    const visible = getResearchStateRepository().listVisible();
+    const repo = getResearchStateRepository();
+    const visible = repo.listVisible();
     expect([...visible.keys()].sort()).toEqual(["family-employee", "family-partner"]);
+    expect(
+      repo
+        .listAllRecords()
+        .every(
+          (record) =>
+            record.userId === record.ownerUserId &&
+            Boolean(Date.parse(record.createdAt)),
+        ),
+    ).toBe(true);
 
     setSessionUserId("user-partner");
     expect([...getResearchStateRepository().listVisible().keys()]).toEqual(["family-partner"]);
@@ -43,12 +53,18 @@ describe("client record lists honor role visibility", () => {
     getBrandFavoriteRepository().setSaved("the-row", true);
 
     setSessionUserId("user-owner");
+    const ownerVisible = getBrandFavoriteRepository().listVisible();
+    expect(ownerVisible.map((item) => item.brandId).sort()).toEqual([
+      "jeffrey-campbell",
+      "the-row",
+    ]);
     expect(
-      getBrandFavoriteRepository()
-        .listVisible()
-        .map((item) => item.brandId)
-        .sort(),
-    ).toEqual(["jeffrey-campbell", "the-row"]);
+      ownerVisible.every(
+        (record) =>
+          record.userId === record.ownerUserId &&
+          Boolean(Date.parse(record.createdAt)),
+      ),
+    ).toBe(true);
 
     setSessionUserId("user-partner");
     expect(getBrandFavoriteRepository().listVisible().map((item) => item.brandId)).toEqual([
