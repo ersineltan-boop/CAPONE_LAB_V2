@@ -1,16 +1,52 @@
-import type { BrandFavorite, BrandFavoriteStore } from "./brandFavoriteTypes";
+import { filterVisibleRecords } from "../auth/permissions";
+import { OWNER_USER } from "../auth/roles";
+import { getSession } from "../auth/session";
+import type { BrandFavorite, BrandFavoriteStore, BrandFavoriteStoreV1 } from "./brandFavoriteTypes";
 
 export interface BrandFavoriteRepository {
   isSaved(brandId: string): boolean;
   getAll(): BrandFavorite[];
+  listVisible(): BrandFavorite[];
+  listAllRecords(): BrandFavorite[];
   setSaved(brandId: string, saved: boolean): void;
   subscribe(listener: () => void): () => void;
 }
 
 export const BRAND_FAVORITE_STORAGE_KEY = "capone-lab-v2-brand-favorites-v1";
 
+function recordKey(ownerUserId: string, brandId: string): string {
+  return `${ownerUserId}::${brandId}`;
+}
+
+function currentUserId(): string {
+  return getSession().user.id;
+}
+
 function emptyStore(): BrandFavoriteStore {
-  return { version: 1, brands: {}, updatedAt: new Date().toISOString() };
+  return { version: 2, records: {}, updatedAt: new Date().toISOString() };
+}
+
+function migrateStore(raw: unknown): BrandFavoriteStore {
+  if (!raw || typeof raw !== "object") return emptyStore();
+  const data = raw as Partial<BrandFavoriteStore> & Partial<BrandFavoriteStoreV1>;
+  if (data.version === 2 && data.records) {
+    return {
+      version: 2,
+      records: data.records,
+      updatedAt: data.updatedAt ?? new Date().toISOString(),
+    };
+  }
+  if (data.version === 1 && data.brands) {
+    const records: Record<string, BrandFavorite> = {};
+    for (const [brandId, favorite] of Object.entries(data.brands)) {
+      records[recordKey(OWNER_USER.id, brandId)] = {
+        ...favorite,
+        ownerUserId: OWNER_USER.id,
+      };
+    }
+    return { version: 2, records, updatedAt: data.updatedAt ?? new Date().toISOString() };
+  }
+  return emptyStore();
 }
 
 function loadStore(): BrandFavoriteStore {
@@ -18,7 +54,7 @@ function loadStore(): BrandFavoriteStore {
   try {
     const raw = window.localStorage.getItem(BRAND_FAVORITE_STORAGE_KEY);
     if (!raw) return emptyStore();
-    return JSON.parse(raw) as BrandFavoriteStore;
+    return migrateStore(JSON.parse(raw));
   } catch {
     return emptyStore();
   }
@@ -53,18 +89,32 @@ export class LocalBrandFavoriteRepository implements BrandFavoriteRepository {
   }
 
   isSaved(brandId: string): boolean {
-    return Boolean(this.store.brands[brandId]);
+    return Boolean(this.store.records[recordKey(currentUserId(), brandId)]);
   }
 
   getAll(): BrandFavorite[] {
-    return Object.values(this.store.brands).sort((a, b) => b.savedAt.localeCompare(a.savedAt));
+    return Object.values(this.store.records)
+      .filter((item) => item.ownerUserId === currentUserId())
+      .sort((a, b) => b.savedAt.localeCompare(a.savedAt));
+  }
+
+  listAllRecords(): BrandFavorite[] {
+    return Object.values(this.store.records);
+  }
+
+  listVisible(): BrandFavorite[] {
+    return filterVisibleRecords(this.listAllRecords(), getSession().user).sort((a, b) =>
+      b.savedAt.localeCompare(a.savedAt),
+    );
   }
 
   setSaved(brandId: string, saved: boolean): void {
+    const ownerUserId = currentUserId();
+    const key = recordKey(ownerUserId, brandId);
     if (saved) {
-      this.store.brands[brandId] = { brandId, savedAt: new Date().toISOString() };
+      this.store.records[key] = { brandId, ownerUserId, savedAt: new Date().toISOString() };
     } else {
-      delete this.store.brands[brandId];
+      delete this.store.records[key];
     }
     this.persist();
   }

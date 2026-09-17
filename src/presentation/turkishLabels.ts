@@ -479,4 +479,10 @@ export const UI_COPY = {
   marketResearchSourceUnavailable: "Kaynak görseli alınamadı",
   marketResearchModelUnavailable: "Bu model için kaynak görseli yok",
   marketResearchVisualIncomplete: "Görsel tamamlanmadı",
+  roleLabel: "Rol",
+  allUserRecords: "Tüm kullanıcı kayıtları",
+  ownRecordsOnly: "Yalnızca kendi kayıtlarınız",
+  visibleRecordsTitle: "Görünen kayıtlar",
+  recordOwner: (name: string) => `Sahip: ${name}`,
+  marketResearchDenied: "Pazar Araştırması bu rol için gizli.",
 } as const;

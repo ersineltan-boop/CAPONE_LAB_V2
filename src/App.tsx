@@ -6,12 +6,16 @@ import { CatalogLoadingState } from "./catalog/CatalogStatus";
 import { loadBrandRegistry } from "./registry/data/index";
 import {
   emptyNavigation,
+  guardNavigationForRole,
   readNavigationFromLocation,
   writeNavigationToHistory,
   type AppNavigationState,
 } from "./navigation/appNavigation";
 import type { AppView } from "./components/Header";
 import { UI_COPY } from "./presentation/turkishLabels";
+import { canSeeMarketResearch } from "./auth/permissions";
+import { getSession } from "./auth/session";
+import { useSession } from "./auth/useSession";
 
 const BrandDetail = lazy(() => import("./components/brands/BrandDetail"));
 const SavedProducts = lazy(() => import("./components/saved/SavedProducts"));
@@ -22,7 +26,11 @@ const MarketResearchPage = lazy(() => import("./marketResearch/ui/MarketResearch
 const RomaniaBrandDetail = lazy(() => import("./marketResearch/ui/RomaniaBrandDetail"));
 
 function App() {
-  const initialNav = readNavigationFromLocation();
+  const session = useSession();
+  const initialNav = guardNavigationForRole(
+    readNavigationFromLocation(),
+    getSession().user.role,
+  );
   const [view, setView] = useState<AppView>(initialNav.view);
   const [selectedBrandId, setSelectedBrandId] = useState<string | null>(initialNav.brandId);
   const [selectedBrandName, setSelectedBrandName] = useState<string | null>(initialNav.brandName);
@@ -61,15 +69,25 @@ function App() {
 
   useEffect(() => {
     const onPopState = () => {
-      applyNavigation(readNavigationFromLocation());
+      applyNavigation(
+        guardNavigationForRole(readNavigationFromLocation(), getSession().user.role),
+      );
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, [applyNavigation]);
 
+  useEffect(() => {
+    if (view === "market-research" && !canSeeMarketResearch(session.user.role)) {
+      syncNavigation(emptyNavigation("brands"), { replace: true });
+    }
+  }, [session.user.role, view, syncNavigation]);
+
   const navigateToView = useCallback(
     (nextView: AppView) => {
-      syncNavigation(emptyNavigation(nextView));
+      syncNavigation(
+        guardNavigationForRole(emptyNavigation(nextView), getSession().user.role),
+      );
     },
     [syncNavigation],
   );
@@ -131,7 +149,7 @@ function App() {
             <VisualWall />
           ) : view === "saved" ? (
             <SavedProducts onSelectBrand={openBrand} />
-          ) : view === "market-research" ? (
+          ) : view === "market-research" && canSeeMarketResearch(session.user.role) ? (
             selectedMarketBrandId ? (
               <RomaniaBrandDetail brandId={selectedMarketBrandId} onBack={backToMarketResearch} />
             ) : (

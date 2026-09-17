@@ -5,6 +5,8 @@ import { countModelsByCategory, filterModelsByCategory } from "../categories";
 import { findRomaniaBrand, getRomaniaCatalog } from "../romania/catalog";
 import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
 import MarketResearchProductGrid from "./MarketResearchProductGrid";
+import { canSeeMarketResearch } from "../../auth/permissions";
+import { useSession } from "../../auth/useSession";
 
 interface RomaniaBrandDetailProps {
   brandId: string;
@@ -12,9 +14,11 @@ interface RomaniaBrandDetailProps {
 }
 
 export default function RomaniaBrandDetail({ brandId, onBack }: RomaniaBrandDetailProps) {
-  const catalog = getRomaniaCatalog();
-  const brand = findRomaniaBrand(brandId, catalog);
+  const session = useSession();
+  const allowed = canSeeMarketResearch(session.user.role);
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const catalog = allowed ? getRomaniaCatalog() : null;
+  const brand = catalog ? findRomaniaBrand(brandId, catalog) : null;
 
   const categories = useMemo(
     () => (brand ? countModelsByCategory(brand.models) : []),
@@ -25,7 +29,17 @@ export default function RomaniaBrandDetail({ brandId, onBack }: RomaniaBrandDeta
     [brand, categoryId],
   );
 
-  if (!brand) {
+  if (!allowed) {
+    return (
+      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
+        <p data-testid="market-research-denied" className="text-sm text-ink-muted">
+          {UI_COPY.marketResearchDenied}
+        </p>
+      </section>
+    );
+  }
+
+  if (!brand || !catalog) {
     return (
       <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
         <button

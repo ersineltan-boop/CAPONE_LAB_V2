@@ -13,11 +13,15 @@ import {
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { ALL_COUNTRIES_ID } from "../../brands/countryGrouping";
 import { filterSavedFamilies, filterFamiliesBySearch } from "../../categories/categoryResearch";
-import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
-import { useBrandFavorites } from "../../research/useBrandFavorites";
+import { useResearchStateRepository, useVisibleResearchStateMap } from "../../research/useResearchState";
+import { useVisibleBrandFavorites } from "../../research/useBrandFavorites";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { slugifyBrandId } from "../../source/sourceProductQuery";
+import { canSeeAllUserRecords, filterVisibleRecords } from "../../auth/permissions";
+import { LOCAL_CLIENT_RECORDS } from "../../auth/ownedRecords";
+import { displayNameForUserId } from "../../auth/roles";
+import { useSession } from "../../auth/useSession";
 import type { CatalogSummary } from "../../catalog/types";
 import type { ModelFamily } from "../../modelFamily/types";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
@@ -36,9 +40,9 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
   const [countryId, setCountryId] = useState(ALL_COUNTRIES_ID);
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
 
-  const researchStates = useResearchStateMap();
+  const researchStates = useVisibleResearchStateMap();
   const researchRepo = useResearchStateRepository();
-  const { isSaved, setSaved } = useBrandFavorites();
+  const { isSaved, setSaved } = useVisibleBrandFavorites();
   const savedIds = useMemo(
     () =>
       [...researchStates.values()]
@@ -140,6 +144,8 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
               {UI_COPY.savedProductsSubtitle}
             </p>
           </div>
+
+          <VisibleOwnedRecordsPanel />
 
           <div className="flex flex-wrap gap-2">
             <button
@@ -336,6 +342,33 @@ function SavedBrandsPanel({
           ))}
         </div>
       )}
+    </div>
+  );
+}
+
+function VisibleOwnedRecordsPanel() {
+  const session = useSession();
+  const records = filterVisibleRecords(LOCAL_CLIENT_RECORDS, session.user);
+  const showOwners = canSeeAllUserRecords(session.user.role);
+
+  return (
+    <div data-testid="visible-records" className="border border-line bg-cream/40 p-3">
+      <p className="text-[10px] tracking-widest text-ink-muted">
+        {UI_COPY.visibleRecordsTitle} ·{" "}
+        {showOwners ? UI_COPY.allUserRecords : UI_COPY.ownRecordsOnly}
+      </p>
+      <ul className="mt-2 space-y-1">
+        {records.map((record) => (
+          <li
+            key={record.id}
+            data-testid={`owned-record-${record.id}`}
+            className="text-[11px] text-ink"
+          >
+            {record.label}
+            {showOwners ? ` · ${UI_COPY.recordOwner(displayNameForUserId(record.ownerUserId))}` : ""}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { describe, expect, it, beforeEach } from "vitest";
 
+import { resetSessionForTests } from "../../auth/session";
 import {
   getResearchStateRepository,
   isReviewed,
@@ -9,6 +10,7 @@ import {
 
 describe("research state repository", () => {
   beforeEach(() => {
+    resetSessionForTests();
     resetResearchStateRepositoryForTests();
   });
 

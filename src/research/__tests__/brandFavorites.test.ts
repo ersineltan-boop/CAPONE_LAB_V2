@@ -1,5 +1,6 @@
 import { describe, expect, it, beforeEach } from "vitest";
 
+import { resetSessionForTests } from "../../auth/session";
 import {
   BRAND_FAVORITE_STORAGE_KEY,
   getBrandFavoriteRepository,
@@ -34,6 +35,7 @@ const summary: CatalogSummary = {
 
 describe("brand favorites", () => {
   beforeEach(() => {
+    resetSessionForTests();
     resetBrandFavoriteRepositoryForTests();
   });
 
