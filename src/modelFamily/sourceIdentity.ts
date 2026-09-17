@@ -1,11 +1,7 @@
 import type { RawAnalyzedProduct } from "./types";
+import { MARKETPLACE_SOURCE_IDS } from "../marketplaces/marketplacePolicy";
 
-export const MARKETPLACE_SOURCE_IDS = new Set([
-  "farfetch",
-  "level-shoes",
-  "free-people",
-  "mytheresa",
-]);
+export { MARKETPLACE_SOURCE_IDS };
 
 export type SourceChannel = "OFFICIAL" | "MARKETPLACE";
 

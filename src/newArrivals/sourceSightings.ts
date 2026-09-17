@@ -1,6 +1,7 @@
 import type { ModelFamily } from "../modelFamily/types";
 import type { RawAnalyzedProduct } from "../modelFamily/types";
 import type { SourceSighting } from "../taxonomy/types";
+import { MARKETPLACE_SOURCE_IDS } from "../marketplaces/marketplacePolicy";
 import { createNotVerifiedNewness } from "./newness";
 import {
   buildNewnessFromProductHints,
@@ -193,19 +194,6 @@ export function mergeSourceSightings(
   };
   return list;
 }
-
-const MARKETPLACE_SOURCE_IDS = new Set([
-  "mytheresa",
-  "ssense",
-  "24s",
-  "luisaviaroma",
-  "farfetch",
-  "net-a-porter",
-  "moda-operandi",
-  "browns",
-  "level-shoes",
-  "free-people",
-]);
 
 function isMarketplaceSource(sourceId: string): boolean {
   return MARKETPLACE_SOURCE_IDS.has(sourceId);

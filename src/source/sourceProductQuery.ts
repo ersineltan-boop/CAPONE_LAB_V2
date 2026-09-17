@@ -6,6 +6,10 @@ import { isVerifiedNew } from "../newArrivals/newness";
 import type { SourceNativeCategory } from "./types";
 import { slugifyCategoryId } from "./sourceCategories";
 import { dedupeDisplayCategories } from "./dedupeDisplayCategories";
+import {
+  isExcludedMarketplaceSource,
+  isFashionMarketplaceFamily,
+} from "../marketplaces/marketplacePolicy";
 
 function normalizeBrand(value: string): string {
   return value.trim().toUpperCase();
@@ -46,11 +50,13 @@ export function filterFamiliesForMarketplaceSource(
   marketplaceId: string,
   brandFilter?: string | null,
 ): ModelFamily[] {
+  if (isExcludedMarketplaceSource(marketplaceId)) return [];
   return families.filter((family) => {
     const hasMarketplaceSighting = family.sourceSightings?.some(
       (s) => s.sourceId === marketplaceId,
     );
     if (!hasMarketplaceSighting) return false;
+    if (!isFashionMarketplaceFamily(family)) return false;
     if (brandFilter && normalizeBrand(family.brand) !== normalizeBrand(brandFilter)) {
       return false;
     }

@@ -51,6 +51,7 @@ export default defineConfig({
       "src/onboarding/**/*.test.ts",
       "src/operator/**/*.test.ts",
       "src/marketResearch/**/*.test.ts",
+      "src/marketplaces/**/*.test.ts",
     ],
   },
 });
