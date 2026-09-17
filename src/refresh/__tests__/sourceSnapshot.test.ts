@@ -1,4 +1,4 @@
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, readdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
@@ -9,6 +9,8 @@ import {
   type SourceLastGoodState,
 } from "../sourceSnapshot";
 import { publishLastGoodAtomic } from "../sourceSnapshotStore";
+
+const targetFor = (targetPath: string, sourceId = "free-people") => ({ targetPath, sourceId });
 
 const at = "2026-09-17T08:00:00.000Z";
 
@@ -103,6 +105,22 @@ describe("source snapshot diff", () => {
     );
     expect(returned.events.find((event) => event.identity === "returning")?.type).toBe("RESTOCK");
   });
+
+  it("rejects a previous snapshot from another source before diffing", () => {
+    const previous = publishedState([item("old", "old", "black")]);
+    const foreignPrevious: SourceLastGoodState = {
+      ...previous,
+      snapshot: { ...previous.snapshot, sourceId: "level-shoes" },
+    };
+    const result = plan([item("new", "new", "red")], foreignPrevious);
+    expect(result.status).toBe("VALIDATION_FAILED");
+    expect(result.publishAllowed).toBe(false);
+    expect(result.validationErrors).toEqual([
+      "previous snapshot source level-shoes does not match input source free-people",
+    ]);
+    expect(result.health.previous_collected).toBe(0);
+    expect(result.health.last_good_snapshot_id).toBeNull();
+  });
 });
 
 describe("last-good safety", () => {
@@ -137,15 +155,89 @@ describe("last-good safety", () => {
     const target = join(directory, "last-good.json");
     try {
       const valid = plan([item("sku-a", "style-a", "black")]);
-      const published = await publishLastGoodAtomic(target, valid);
+      const published = await publishLastGoodAtomic(targetFor(target), valid);
       expect(published.status).toBe("SUCCESS");
       expect(published.health.last_good_snapshot_id).toBe(valid.proposedLastGood?.snapshot.snapshotId);
       const before = await readFile(target, "utf-8");
 
       const invalid = plan([], valid.proposedLastGood, { sourceTotal: 1 });
-      const rejected = await publishLastGoodAtomic(target, invalid);
+      const rejected = await publishLastGoodAtomic(targetFor(target), invalid);
       expect(rejected.status).toBe("PUBLISH_FAILED");
       expect(await readFile(target, "utf-8")).toBe(before);
+    } finally {
+      await rm(directory, { recursive: true, force: true });
+    }
+  });
+
+  it("binds a target to the plan source and leaves no artifacts on rejection", async () => {
+    const directory = await mkdtemp(join(tmpdir(), "capone-source-binding-"));
+    const target = join(directory, "last-good.json");
+    try {
+      const valid = plan([item("sku-a", "style-a", "black")]);
+      const rejected = await publishLastGoodAtomic(targetFor(target, "level-shoes"), valid);
+      expect(rejected.status).toBe("PUBLISH_FAILED");
+      expect(rejected.health.failure_reason).toContain(
+        "target source level-shoes does not match plan source free-people",
+      );
+      expect(await readdir(directory)).toEqual([]);
+    } finally {
+      await rm(directory, { recursive: true, force: true });
+    }
+  });
+
+  it("uses optimistic version checks to reject a stale writer", async () => {
+    const directory = await mkdtemp(join(tmpdir(), "capone-version-"));
+    const target = join(directory, "last-good.json");
+    try {
+      const baseline = plan([item("sku-a", "style-a", "black")]);
+      expect((await publishLastGoodAtomic(targetFor(target), baseline)).status).toBe("SUCCESS");
+
+      const first = plan(
+        [item("sku-a", "style-a", "black"), item("sku-b", "style-b", "tan")],
+        baseline.proposedLastGood,
+        { attemptedAt: "2026-09-17T09:00:00.000Z" },
+      );
+      const stale = plan(
+        [item("sku-a", "style-a", "black"), item("sku-c", "style-c", "red")],
+        baseline.proposedLastGood,
+        { attemptedAt: "2026-09-17T10:00:00.000Z" },
+      );
+      expect((await publishLastGoodAtomic(targetFor(target), first)).status).toBe("SUCCESS");
+
+      const rejected = await publishLastGoodAtomic(targetFor(target), stale);
+      expect(rejected.status).toBe("PUBLISH_FAILED");
+      expect(rejected.health.failure_reason).toContain("version conflict");
+      const stored = JSON.parse(await readFile(target, "utf-8")) as SourceLastGoodState;
+      expect(stored.snapshot.snapshotId).toBe(first.proposedLastGood?.snapshot.snapshotId);
+    } finally {
+      await rm(directory, { recursive: true, force: true });
+    }
+  });
+
+  it("serializes concurrent writers and removes unique temp and lock files", async () => {
+    const directory = await mkdtemp(join(tmpdir(), "capone-concurrent-"));
+    const target = join(directory, "last-good.json");
+    try {
+      const first = plan([item("sku-a", "style-a", "black")], null, {
+        attemptedAt: "2026-09-17T11:00:00.000Z",
+      });
+      const second = plan([item("sku-b", "style-b", "tan")], null, {
+        attemptedAt: "2026-09-17T12:00:00.000Z",
+      });
+      const results = await Promise.all([
+        publishLastGoodAtomic(targetFor(target), first),
+        publishLastGoodAtomic(targetFor(target), second),
+      ]);
+      expect(results.map((result) => result.status).sort()).toEqual([
+        "PUBLISH_FAILED",
+        "SUCCESS",
+      ]);
+      const stored = JSON.parse(await readFile(target, "utf-8")) as SourceLastGoodState;
+      expect([
+        first.proposedLastGood?.snapshot.snapshotId,
+        second.proposedLastGood?.snapshot.snapshotId,
+      ]).toContain(stored.snapshot.snapshotId);
+      expect(await readdir(directory)).toEqual(["last-good.json"]);
     } finally {
       await rm(directory, { recursive: true, force: true });
     }
