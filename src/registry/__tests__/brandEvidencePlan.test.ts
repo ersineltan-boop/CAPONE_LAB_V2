@@ -92,7 +92,9 @@ describe("brand universe evidence queue", () => {
 
   it("canonicalizes brand and source slugs before deduplication and last-good lookup", () => {
     const plan = planBrandUniverseQueue({
-      previousLastGood: { "NAKED WÖLFE": lastGood({ slug: "NAKED WÖLFE" }) },
+      previousLastGood: {
+        "NAKED WÖLFE": lastGood({ slug: "NAKED WÖLFE", sourceTotal: 24, collected: 24 }),
+      },
       evidence: [
         completeEvidence({ slug: " Naked Wölfe ", sourceSlug: " NAKED_WÖLFE ", priority: 2 }),
         completeEvidence({
