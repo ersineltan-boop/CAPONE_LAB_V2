@@ -34,6 +34,18 @@ export function useGalleryZoom(resetKey: string) {
     panStartRef.current = null;
   }, [resetKey]);
 
+  const zoomIn = useCallback(() => {
+    setTransform((current) => applyWheelZoom(current, -1));
+  }, []);
+
+  const zoomOut = useCallback(() => {
+    setTransform((current) => applyWheelZoom(current, 1));
+  }, []);
+
+  const reset = useCallback(() => {
+    setTransform(resetTransform());
+  }, []);
+
   const onWheel = useCallback((event: React.WheelEvent) => {
     event.preventDefault();
     setTransform((current) => applyWheelZoom(current, event.deltaY));
@@ -133,7 +145,9 @@ export function useGalleryZoom(resetKey: string) {
       touchAction: "none",
     } as const,
     surfaceRef,
-    reset: () => setTransform(resetTransform()),
+    zoomIn,
+    zoomOut,
+    reset,
     handlers: {
       onWheel,
       onPointerDown,

@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 import ImagePlaceholder from "../radar/ImagePlaceholder";
 import {
@@ -68,6 +69,7 @@ export default function ProductGalleryModal({
   const touchStartXRef = useRef<number | null>(null);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+  const titleId = useId();
   const zoom = useGalleryZoom(`${selectedVariantId ?? ""}|${galleryImages[currentIndex] ?? ""}`);
 
   const visibleImages = useMemo(() => {
@@ -95,13 +97,31 @@ export default function ProductGalleryModal({
     const previouslyFocused =
       document.activeElement instanceof HTMLElement ? document.activeElement : null;
     const previousBodyOverflow = document.body.style.overflow;
+    const dialog = dialogRef.current;
+    const backgroundElements = Array.from(document.body.children)
+      .filter((element): element is HTMLElement => element instanceof HTMLElement)
+      .filter((element) => element !== dialog)
+      .map((element) => ({
+        element,
+        inert: element.inert,
+        ariaHidden: element.getAttribute("aria-hidden"),
+      }));
     document.body.style.overflow = "hidden";
+    for (const { element } of backgroundElements) {
+      element.inert = true;
+      element.setAttribute("aria-hidden", "true");
+    }
     const focusFrame = window.requestAnimationFrame(() => {
       closeButtonRef.current?.focus();
     });
     return () => {
       window.cancelAnimationFrame(focusFrame);
       document.body.style.overflow = previousBodyOverflow;
+      for (const { element, inert, ariaHidden } of backgroundElements) {
+        element.inert = inert;
+        if (ariaHidden == null) element.removeAttribute("aria-hidden");
+        else element.setAttribute("aria-hidden", ariaHidden);
+      }
       previouslyFocused?.focus();
     };
   }, [open]);
@@ -145,16 +165,32 @@ export default function ProductGalleryModal({
       }
       if (event.key === "ArrowRight") {
         setCurrentIndex((index) => nextCarouselIndex(index, visibleImages.length));
+        return;
       }
       if (event.key === "ArrowLeft") {
         setCurrentIndex((index) => prevCarouselIndex(index, visibleImages.length));
+        return;
+      }
+      if (event.key === "+" || event.key === "=") {
+        event.preventDefault();
+        zoom.zoomIn();
+        return;
+      }
+      if (event.key === "-" || event.key === "_") {
+        event.preventDefault();
+        zoom.zoomOut();
+        return;
+      }
+      if (event.key === "0") {
+        event.preventDefault();
+        zoom.reset();
       }
     };
     window.addEventListener("keydown", handleKey);
     return () => {
       window.removeEventListener("keydown", handleKey);
     };
-  }, [onClose, open, visibleImages.length]);
+  }, [onClose, open, visibleImages.length, zoom.reset, zoom.zoomIn, zoom.zoomOut]);
 
   const activeImage = visibleImages[currentIndex] ?? null;
   const displayImage = resolveDisplayImage(activeImage, GALLERY_MODAL_SIZES, visibleImages);
@@ -231,14 +267,17 @@ export default function ProductGalleryModal({
 
   if (!open) return null;
 
-  return (
+  const currentPhoto = visibleImages.length === 0 ? 0 : currentIndex + 1;
+  const zoomPercent = Math.round(zoom.transform.scale * 100);
+
+  return createPortal(
     <div
       ref={dialogRef}
       tabIndex={-1}
       className="fixed inset-0 z-[70] flex items-center justify-center bg-ink/70 p-0 sm:p-6"
       role="dialog"
       aria-modal="true"
-      aria-label={UI_COPY.productGallery}
+      aria-labelledby={titleId}
       data-product-gallery-modal
     >
       <button
@@ -248,25 +287,70 @@ export default function ProductGalleryModal({
         className="absolute inset-0 cursor-default"
         onClick={onClose}
       />
+      <p
+        className="sr-only"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        data-gallery-live-status
+      >
+        {UI_COPY.galleryStatus(currentPhoto, visibleImages.length, selectedColor, zoomPercent)}
+      </p>
 
       <div className="relative flex h-full w-full max-w-6xl flex-col border-0 border-line bg-cream shadow-2xl sm:h-[92vh] sm:border">
         <div className="flex items-center justify-between border-b border-line px-4 py-3">
           <div>
-            <h2 className="font-serif text-sm tracking-wide sm:text-lg">
+            <h2 id={titleId} className="font-serif text-sm tracking-wide sm:text-lg">
               {UI_COPY.productGallery}
             </h2>
             {selectedColor ? (
               <p className="text-[10px] text-ink-muted">{selectedColor}</p>
             ) : null}
           </div>
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={onClose}
-            className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
-          >
-            {UI_COPY.closeGallery}
-          </button>
+          <div className="flex items-center gap-1.5">
+            <div
+              className="flex items-center gap-1"
+              role="group"
+              aria-label={UI_COPY.galleryZoomControls}
+              data-gallery-zoom-controls
+            >
+              <button
+                type="button"
+                onClick={zoom.zoomOut}
+                disabled={!zoom.isZoomed}
+                aria-label={UI_COPY.zoomOut}
+                className="border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                −
+              </button>
+              <button
+                type="button"
+                onClick={zoom.reset}
+                disabled={!zoom.isZoomed}
+                aria-label={UI_COPY.resetZoom}
+                className="min-w-12 border border-line px-2 py-1 text-[9px] tabular-nums text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {zoomPercent}%
+              </button>
+              <button
+                type="button"
+                onClick={zoom.zoomIn}
+                disabled={zoom.transform.scale >= 4}
+                aria-label={UI_COPY.zoomIn}
+                className="border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                +
+              </button>
+            </div>
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={onClose}
+              className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
+            >
+              {UI_COPY.closeGallery}
+            </button>
+          </div>
         </div>
 
         <div className="relative min-h-0 flex-1 bg-cream">
@@ -332,10 +416,7 @@ export default function ProductGalleryModal({
               ) : null}
 
               <span className="absolute bottom-2 right-2 z-10 border border-line bg-white/90 px-2 py-0.5 text-[10px] tabular-nums text-ink-muted">
-                {UI_COPY.galleryPhotoCount(
-                  visibleImages.length === 0 ? 0 : currentIndex + 1,
-                  visibleImages.length,
-                )}
+                {UI_COPY.galleryPhotoCount(currentPhoto, visibleImages.length)}
               </span>
             </div>
           )}
@@ -418,6 +499,7 @@ export default function ProductGalleryModal({
           ) : null}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

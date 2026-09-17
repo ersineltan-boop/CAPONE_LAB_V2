@@ -419,6 +419,17 @@ export const UI_COPY = {
   galleryPhotoCount: (current: number, total: number) => `${current} / ${total}`,
   galleryZoomHint: "Kaydırarak yakınlaştır · sürükleyerek gez",
   galleryPinchHint: "İki parmakla yakınlaştır",
+  galleryZoomControls: "Yakınlaştırma kontrolleri",
+  zoomIn: "Yakınlaştır",
+  zoomOut: "Uzaklaştır",
+  resetZoom: "Yakınlaştırmayı sıfırla",
+  galleryStatus: (
+    current: number,
+    total: number,
+    color: string | null,
+    zoomPercent: number,
+  ) =>
+    `${color ? `Renk: ${color}. ` : ""}Fotoğraf ${current} / ${total}. Yakınlaştırma yüzde ${zoomPercent}.`,
   openAtSource: "Ürünü Kaynağında Aç",
   dataSource: "Veri Kaynağı",
   confidence: "Güven",

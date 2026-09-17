@@ -14,11 +14,16 @@ import {
 } from "../galleryZoom";
 
 describe("gallery zoom and pan", () => {
-  it("zooms in and out with wheel deltas on desktop", () => {
-    const zoomed = applyWheelZoom(IDENTITY_TRANSFORM, -120);
-    expect(zoomed.scale).toBeGreaterThan(1);
-    const out = applyWheelZoom(zoomed, 400);
-    expect(out.scale).toBeLessThan(zoomed.scale);
+  it("zooms in and out with wheel or keyboard-control deltas", () => {
+    const wheelZoomed = applyWheelZoom(IDENTITY_TRANSFORM, -120);
+    expect(wheelZoomed.scale).toBeGreaterThan(1);
+    const wheelOut = applyWheelZoom(wheelZoomed, 400);
+    expect(wheelOut.scale).toBeLessThan(wheelZoomed.scale);
+
+    const keyboardZoomed = applyWheelZoom(IDENTITY_TRANSFORM, -1);
+    expect(keyboardZoomed.scale).toBeGreaterThan(1);
+    const keyboardOut = applyWheelZoom(keyboardZoomed, 1);
+    expect(keyboardOut.scale).toBeLessThan(keyboardZoomed.scale);
   });
 
   it("pans only after zoom and clamps travel", () => {
