@@ -71,6 +71,9 @@ function ProductCard({ model, index }: { model: MarketResearchModel; index: numb
             alt={model.name}
             hideControlsUntilHover
             priority={index < 4}
+            colorVariants={model.variants}
+            selectedVariantId={selectedId}
+            onSelectVariant={setSelectedId}
           />
         ) : (
           <ImagePlaceholder

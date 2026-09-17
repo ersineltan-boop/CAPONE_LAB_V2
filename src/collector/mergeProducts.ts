@@ -1,5 +1,5 @@
 import type { PilotProduct, PilotProductVariant } from "./types";
-import { normalizeProductImageUrls } from "../images/resolveImageQuality";
+import { preserveLastGoodGallery } from "../images/galleryImages";
 import { categoryFromProductFields, mergeSourceCategories } from "../source/sourceCategories";
 import type { SourceNativeCategory } from "../source/types";
 
@@ -26,12 +26,10 @@ function mergeVariantImages(
   existing: PilotProductVariant,
   incoming: PilotProductVariant,
 ): string[] {
-  return normalizeProductImageUrls([
-    ...(incoming.images ?? []),
-    ...(existing.images ?? []),
-    incoming.imageUrl,
-    existing.imageUrl,
-  ]);
+  return preserveLastGoodGallery(
+    [...(existing.images ?? []), existing.imageUrl],
+    [...(incoming.images ?? []), incoming.imageUrl],
+  );
 }
 
 export function mergeProductVariants(
@@ -74,12 +72,10 @@ export function mergeProductRecords(
     (list, category) => mergeSourceCategories(list, category),
     categoriesFromProduct(existing),
   );
-  const images = normalizeProductImageUrls([
-    ...(incoming.images ?? []),
-    ...(existing.images ?? []),
-    incoming.imageUrl,
-    existing.imageUrl,
-  ]);
+  const images = preserveLastGoodGallery(
+    [...(existing.images ?? []), existing.imageUrl],
+    [...(incoming.images ?? []), incoming.imageUrl],
+  );
   const variants = mergeProductVariants(existing.variants ?? [], incoming.variants ?? []);
   const color =
     incoming.color ??

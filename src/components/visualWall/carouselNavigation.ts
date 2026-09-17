@@ -1,3 +1,5 @@
+export const PRODUCT_PHOTO_FIT_CLASS = "h-full w-full object-contain object-center";
+
 export function nextCarouselIndex(current: number, length: number): number {
   if (length <= 0) return 0;
   return (current + 1) % length;

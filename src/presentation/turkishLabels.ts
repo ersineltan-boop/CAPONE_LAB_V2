@@ -412,6 +412,13 @@ export const UI_COPY = {
   coverageLabel: (known: number, applicable: number, percent: number) =>
     `Bilgi kapsamı: ${known} / ${applicable} (%${percent.toLocaleString("tr-TR")})`,
   productDetail: "Ürün Detayı",
+  productGallery: "Ürün Galerisi",
+  closeGallery: "Galeriyi kapat",
+  nextPhoto: "Sonraki fotoğraf",
+  prevPhoto: "Önceki fotoğraf",
+  galleryPhotoCount: (current: number, total: number) => `${current} / ${total}`,
+  galleryZoomHint: "Kaydırarak yakınlaştır · sürükleyerek gez",
+  galleryPinchHint: "İki parmakla yakınlaştır",
   openAtSource: "Ürünü Kaynağında Aç",
   dataSource: "Veri Kaynağı",
   confidence: "Güven",
