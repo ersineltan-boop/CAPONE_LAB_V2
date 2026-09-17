@@ -304,7 +304,13 @@ export function createSourceRefreshPlan<T>(
   input: SourceRefreshInput<T>,
   previous: SourceLastGoodState<T> | null = null,
 ): SourceRefreshPlan<T> {
-  const health = healthFor(input, previous);
+  const previousMatchesSource = !previous || previous.snapshot.sourceId === input.sourceId;
+  const health = healthFor(input, previousMatchesSource ? previous : null);
+  if (!previousMatchesSource) {
+    const reason =
+      `previous snapshot source ${previous?.snapshot.sourceId ?? "unknown"} does not match input source ${input.sourceId}`;
+    return failedPlan("VALIDATION_FAILED", "VALIDATION", reason, health, [reason]);
+  }
   if (!input.runnerStarted) {
     return failedPlan("RUNNER_NOT_STARTED", "RUNNER", "runner did not start", health);
   }
