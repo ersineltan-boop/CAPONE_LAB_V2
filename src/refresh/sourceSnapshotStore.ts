@@ -123,7 +123,7 @@ export async function publishLastGoodAtomic<T>(
     const reason = error instanceof Error ? error.message : String(error);
     return markPublishFailed(plan, reason);
   } finally {
-    await lockHandle?.close().catch(() => undefined);
+    if (lockHandle) await lockHandle.close().catch(() => undefined);
     if (tempPath) await rm(tempPath, { force: true }).catch(() => undefined);
     if (lockOwned) await rm(lockPath, { force: true }).catch(() => undefined);
   }
