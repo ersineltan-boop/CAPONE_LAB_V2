@@ -150,6 +150,17 @@ const FALLBACK_PILOTS: Record<string, MarketplaceRegistryEntry> = {
     notes:
       "Multi-brand retailer marketplace (not a Brand Registry source). Listed product brands are preserved; source remains free-people.",
   },
+  "the-webster": {
+    id: "the-webster",
+    name: "The Webster",
+    country: "US",
+    kind: "LUXURY_MARKETPLACE",
+    officialUrl: "https://thewebster.com",
+    isActive: true,
+    discoveryStatus: "ACTIVE",
+    newArrivalDiscoveryStatus: "NOT_SUPPORTED",
+    notes: "Verified full women's footwear catalog; fast and technical sneaker brands excluded.",
+  },
 };
 
 export const DEFAULT_MARKETPLACE_PILOT_STATE: MarketplacePilotState = {
