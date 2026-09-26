@@ -59,7 +59,7 @@ describe("Visual basic categories", () => {
         family({ modelFamilyId: "nike-cortez", brand: "Nike", canonicalName: "Cortez" }),
         family({
           modelFamilyId: "salomon-xt6",
-          brand: "Salomon Sportstyle",
+          brand: "MM6 Maison Margiela X Salomon",
           canonicalName: "XT-6",
           category: "SNEAKER",
           primaryCategory: "SNEAKER",
