@@ -11,6 +11,7 @@ import {
 } from "./basicCategories";
 import type { VisualCard, VisualShard, VisualSummary } from "./types";
 import { MAX_VISUAL_CARD_IMAGES } from "../catalog/types";
+import { isFashionMarketplaceFamily } from "../marketplaces/marketplacePolicy";
 
 export interface VisualDeliveryInput {
   families: ModelFamily[];
@@ -60,6 +61,7 @@ export function buildVisualDelivery(input: VisualDeliveryInput): VisualDeliveryA
   const seen = new Set<string>();
 
   for (const family of input.families) {
+    if (!isFashionMarketplaceFamily(family)) continue;
     if (seen.has(family.modelFamilyId)) continue;
     seen.add(family.modelFamilyId);
     const basicCategory = resolveVisualBasicCategory(family);
