@@ -6,6 +6,12 @@ import { isVerifiedNew } from "../newArrivals/newness";
 import type { SourceNativeCategory } from "./types";
 import { slugifyCategoryId } from "./sourceCategories";
 import { dedupeDisplayCategories } from "./dedupeDisplayCategories";
+import {
+  MARKETPLACE_PRESENTATION_POLICY,
+  isExcludedMarketplaceSource,
+  isFashionMarketplaceFamily,
+  normalizeMarketplaceSourceId,
+} from "../marketplaces/marketplacePolicy";
 
 function normalizeBrand(value: string): string {
   return value.trim().toUpperCase();
@@ -19,10 +25,13 @@ function isOfficialChannelSighting(
   family: ModelFamily,
   sighting: NonNullable<ModelFamily["sourceSightings"]>[number],
 ): boolean {
-  if (sighting.sourceKind === "BRAND_OFFICIAL") return true;
+  const sourceId = normalizeMarketplaceSourceId(sighting.sourceId);
+  if (isExcludedMarketplaceSource(sourceId) || MARKETPLACE_SOURCE_IDS.has(sourceId)) {
+    return false;
+  }
   if (sighting.sourceKind === "LUXURY_MARKETPLACE") return false;
-  if (MARKETPLACE_SOURCE_IDS.has(sighting.sourceId)) return false;
-  return sighting.sourceId === slugifyBrandId(family.brand);
+  if (sighting.sourceKind === "BRAND_OFFICIAL") return true;
+  return sourceId === normalizeMarketplaceSourceId(slugifyBrandId(family.brand));
 }
 
 export function familyHasOfficialChannel(family: ModelFamily): boolean {
@@ -46,11 +55,14 @@ export function filterFamiliesForMarketplaceSource(
   marketplaceId: string,
   brandFilter?: string | null,
 ): ModelFamily[] {
+  const sourceId = normalizeMarketplaceSourceId(marketplaceId);
+  if (isExcludedMarketplaceSource(sourceId)) return [];
   return families.filter((family) => {
     const hasMarketplaceSighting = family.sourceSightings?.some(
-      (s) => s.sourceId === marketplaceId,
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === sourceId,
     );
     if (!hasMarketplaceSighting) return false;
+    if (!isFashionMarketplaceFamily(family)) return false;
     if (brandFilter && normalizeBrand(family.brand) !== normalizeBrand(brandFilter)) {
       return false;
     }
@@ -63,9 +75,12 @@ export function filterFamiliesBySourceCategory(
   sourceId: string,
   categoryId: string,
 ): ModelFamily[] {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   return families.filter((family) =>
     family.sourceCategoryRefs?.some(
-      (ref) => ref.sourceId === sourceId && ref.categoryId === categoryId,
+      (ref) =>
+        normalizeMarketplaceSourceId(ref.sourceId) === canonicalSourceId &&
+        ref.categoryId === categoryId,
     ),
   );
 }
@@ -74,10 +89,11 @@ export function extractSourceCategories(
   families: ModelFamily[],
   sourceId: string,
 ): SourceNativeCategory[] {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   const map = new Map<string, SourceNativeCategory>();
   for (const family of families) {
     for (const ref of family.sourceCategoryRefs ?? []) {
-      if (ref.sourceId !== sourceId) continue;
+      if (normalizeMarketplaceSourceId(ref.sourceId) !== canonicalSourceId) continue;
       map.set(ref.categoryId, {
         categoryId: ref.categoryId,
         categoryName: ref.categoryName,
@@ -85,7 +101,9 @@ export function extractSourceCategories(
         categoryUrl: ref.categoryUrl,
       });
     }
-    const sighting = family.sourceSightings?.find((s) => s.sourceId === sourceId);
+    const sighting = family.sourceSightings?.find(
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+    );
     for (const category of sighting?.sourceCategories ?? []) {
       map.set(category.categoryId, category);
     }
@@ -122,10 +140,14 @@ export function filterVerifiedNewForSource(
   period: NewArrivalsPeriod = "90D",
   brandFilter?: string | null,
 ): ModelFamily[] {
-  const brandFamily = families.find((family) => slugifyBrandId(family.brand) === sourceId);
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
+  const brandFamily = families.find(
+    (family) =>
+      normalizeMarketplaceSourceId(slugifyBrandId(family.brand)) === canonicalSourceId,
+  );
   const scope = brandFamily
     ? ({ type: "BRAND" as const, brand: brandFamily.brand })
-    : ({ type: "SOURCE" as const, sourceId });
+    : ({ type: "SOURCE" as const, sourceId: canonicalSourceId });
 
   const verifiedIds = new Set(
     queryVerifiedNewArrivals(families, { scope, period }).map((item) => item.modelFamilyId),
@@ -139,7 +161,9 @@ export function filterVerifiedNewForSource(
     if (brandFamily) {
       return normalizeBrand(family.brand) === normalizeBrand(brandFamily.brand);
     }
-    return family.sourceSightings?.some((s) => s.sourceId === sourceId) ?? false;
+    return family.sourceSightings?.some(
+      (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+    ) ?? false;
   });
 }
 
@@ -163,9 +187,14 @@ export function getSourceCategoryLabelForFamily(
   family: ModelFamily,
   sourceId: string,
 ): string | null {
-  const ref = family.sourceCategoryRefs?.find((item) => item.sourceId === sourceId);
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
+  const ref = family.sourceCategoryRefs?.find(
+    (item) => normalizeMarketplaceSourceId(item.sourceId) === canonicalSourceId,
+  );
   if (ref) return ref.categoryName;
-  const sighting = family.sourceSightings?.find((s) => s.sourceId === sourceId);
+  const sighting = family.sourceSightings?.find(
+    (s) => normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId,
+  );
   return sighting?.sourceCategories?.[0]?.categoryName ?? null;
 }
 
@@ -173,9 +202,23 @@ export function anyVerifiedNewOnSource(
   families: ModelFamily[],
   sourceId: string,
 ): boolean {
+  const canonicalSourceId = normalizeMarketplaceSourceId(sourceId);
   return families.some((family) =>
     family.sourceSightings?.some(
-      (s) => s.sourceId === sourceId && isVerifiedNew(s.newness),
+      (s) =>
+        normalizeMarketplaceSourceId(s.sourceId) === canonicalSourceId &&
+        isVerifiedNew(s.newness),
     ),
   );
+}
+
+export function marketplaceBrowsePresentation(
+  families: ModelFamily[],
+  marketplaceId: string,
+  brandFilter?: string | null,
+) {
+  return {
+    families: filterFamiliesForMarketplaceSource(families, marketplaceId, brandFilter),
+    showPrice: MARKETPLACE_PRESENTATION_POLICY.showPrice,
+  };
 }

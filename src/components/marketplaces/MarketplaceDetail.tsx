@@ -6,7 +6,7 @@ import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { getMarketplaceById } from "../../registry/data/marketplaces";
 import {
   extractMarketplaceBrands,
-  filterFamiliesForMarketplaceSource,
+  marketplaceBrowsePresentation,
   filterVerifiedNewForSource,
 } from "../../source/sourceProductQuery";
 import {
@@ -44,10 +44,11 @@ export default function MarketplaceDetail({
 
   const shardFamilies = state.status === "ready" ? state.data.families : [];
 
-  const marketplaceFamilies = useMemo(
-    () => filterFamiliesForMarketplaceSource(shardFamilies, marketplaceId, selectedBrand),
+  const marketplacePresentation = useMemo(
+    () => marketplaceBrowsePresentation(shardFamilies, marketplaceId, selectedBrand),
     [shardFamilies, marketplaceId, selectedBrand],
   );
+  const marketplaceFamilies = marketplacePresentation.families;
 
   const categories = useMemo(
     () => countFamiliesByBasicCategory(shardFamilies).filter((item) => item.id !== "tumu"),
@@ -160,6 +161,7 @@ export default function MarketplaceDetail({
                   brandFilter={selectedBrand}
                   showCategorySidebar={false}
                   hideSourceCategoryLabel
+                  showPrice={marketplacePresentation.showPrice}
                 />
               </div>
             ) : (
@@ -202,6 +204,7 @@ export default function MarketplaceDetail({
                   selectedCategoryId={null}
                   showCategorySidebar={false}
                   hideSourceCategoryLabel
+                  showPrice={marketplacePresentation.showPrice}
                 />
               </div>
             )}
