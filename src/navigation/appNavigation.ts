@@ -16,7 +16,7 @@ const VALID_VIEWS: AppView[] = [
   "saved",
   "visual-wall",
   "radar",
-  // Pazar Araştırması kodu ve verisi korunur; kullanıcı rotası şimdilik kapalıdır.
+  "market-research",
 ];
 
 export function emptyNavigation(view: AppView = "brands"): AppNavigationState {
