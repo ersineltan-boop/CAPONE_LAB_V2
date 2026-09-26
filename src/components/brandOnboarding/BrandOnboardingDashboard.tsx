@@ -166,7 +166,9 @@ export default function BrandOnboardingDashboard() {
               {(entry.blocker || entry.status === "CUSTOM_ADAPTER_REQUIRED") ? (
                 <p className="mt-3 border-t border-line-light pt-3 text-xs leading-5 text-ink-muted">
                   {entry.status === "CUSTOM_ADAPTER_REQUIRED"
-                    ? "Resmî ayakkabı kataloğunu doğrulamak için özel kaynak adaptörü gerekiyor."
+                    ? entry.id === "massimo-dutti" && entry.blocker?.startsWith("Resmî kaynak")
+                      ? entry.blocker
+                      : "Resmî ayakkabı kataloğunu doğrulamak için özel kaynak adaptörü gerekiyor."
                     : entry.blocker}
                 </p>
               ) : null}
