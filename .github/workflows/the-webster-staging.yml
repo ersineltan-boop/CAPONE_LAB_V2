@@ -1,0 +1,69 @@
+name: The Webster staging coverage
+
+on:
+  push:
+    branches:
+      - "marketplaces/the-webster-full-catalog"
+    paths:
+      - "src/collector/theWebster.ts"
+      - "src/collector/__tests__/theWebster.test.ts"
+      - "scripts/collect-the-webster-staging.ts"
+      - "package.json"
+      - ".github/workflows/the-webster-staging.yml"
+  pull_request:
+    paths:
+      - "src/collector/theWebster.ts"
+      - "src/collector/__tests__/theWebster.test.ts"
+      - "scripts/collect-the-webster-staging.ts"
+      - "package.json"
+      - ".github/workflows/the-webster-staging.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  collect-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test -- src/collector/__tests__/theWebster.test.ts
+      - run: npm run collect:the-webster-staging
+      - name: Require FULL staging coverage
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from "node:fs/promises";
+          const path = "data/onboarding/staging/marketplaces/the-webster/latest-run-report.json";
+          const report = JSON.parse(await readFile(path, "utf8"));
+          const failures = [];
+          if (report.status !== "FULL") failures.push(`status=${report.status}`);
+          if (report.coverage !== 1) failures.push(`coverage=${report.coverage}`);
+          if (report.missing !== 0) failures.push(`missing=${report.missing}`);
+          if (report.sourceTotal !== report.rawCollected) {
+            failures.push(`sourceTotal=${report.sourceTotal}, rawCollected=${report.rawCollected}`);
+          }
+          if (report.productsWithImages !== report.collected) {
+            failures.push(`images=${report.productsWithImages}/${report.collected}`);
+          }
+          if (report.verifiedNewProducts !== 0) {
+            failures.push(`baseline verifiedNewProducts=${report.verifiedNewProducts}`);
+          }
+          if (failures.length) {
+            console.error("The Webster staging gate failed:", failures.join("; "));
+            process.exit(1);
+          }
+          console.log(JSON.stringify(report, null, 2));
+          NODE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: the-webster-staging
+          path: data/onboarding/staging/marketplaces/the-webster/
+          if-no-files-found: error
+          retention-days: 7
