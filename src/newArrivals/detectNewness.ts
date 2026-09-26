@@ -117,8 +117,9 @@ export function getStrongestEvidenceType(
   b: NewnessEvidenceType | null,
 ): NewnessEvidenceType | null {
   const rank: Record<NewnessEvidenceType, number> = {
-    EXPLICIT_DATE: 3,
-    NEW_ARRIVALS_COLLECTION: 2,
+    EXPLICIT_DATE: 4,
+    NEW_ARRIVALS_COLLECTION: 3,
+    CATALOG_DIFF: 2,
     NEW_BADGE: 1,
   };
   if (!a) return b;

@@ -29,7 +29,16 @@ const UNIVERSE_FILE = join(ROOT, "data", "registry", "brand-universe.json");
 const CACHE_FILE = join(ROOT, "data", "registry", "brand-probe-cache.json");
 const PRODUCTS = join(ROOT, "data", "multibrand", "products.json");
 const REPORT = join(ROOT, "data", "registry", "expansion-activation-report.json");
-const TARGET_COLLECTABLE = 50;
+function argValue(flag: string): string | undefined {
+  const index = process.argv.indexOf(flag);
+  return index === -1 ? undefined : process.argv[index + 1];
+}
+
+const batchLimitRaw = argValue("--limit") ?? process.env.CAPONE_BRAND_BATCH_LIMIT ?? "25";
+const batchLimit = Number(batchLimitRaw);
+if (!Number.isInteger(batchLimit) || batchLimit <= 0) {
+  throw new Error(`Brand expansion --limit must be a positive integer, received: ${batchLimitRaw}`);
+}
 
 async function loadJson<T>(path: string, fallback: T): Promise<T> {
   try {
@@ -98,8 +107,11 @@ let products = await loadJson<PilotProduct[]>(PRODUCTS, []);
 const byId = new Map(universe.brands.map((entry) => [entry.id, entry]));
 const outcomes: Array<Record<string, unknown>> = [];
 const beforeCount = collectableCount(universe);
+let attemptedThisRun = 0;
 
-console.log(`Expansion start. Collectable brands: ${beforeCount}. Added ${imported.added.length} registry candidates.`);
+console.log(
+  `Expansion start. Collectable brands: ${beforeCount}. Added ${imported.added.length} registry candidates. Batch limit: ${batchLimit}.`,
+);
 
 const orderedIds = [
   ...EXPANSION_PROBE_BRAND_IDS,
@@ -124,16 +136,6 @@ for (const id of orderedIds) {
     continue;
   }
 
-  if (collectableCount(universe) >= TARGET_COLLECTABLE && id !== ZARA_BRAND_ID) {
-    outcomes.push({
-      brand: entry.brand,
-      id,
-      status: "SKIPPED_TARGET_REACHED",
-      reason: `Already at ${collectableCount(universe)} collectable brands`,
-    });
-    continue;
-  }
-
   const stale = skipStaleCustomAdapter(entry);
   if (stale && id !== ZARA_BRAND_ID) {
     outcomes.push({
@@ -146,6 +148,17 @@ for (const id of orderedIds) {
     });
     continue;
   }
+
+  if (attemptedThisRun >= batchLimit) {
+    outcomes.push({
+      brand: entry.brand,
+      id,
+      status: "SKIPPED_BATCH_LIMIT",
+      reason: `Per-run safety limit reached (${batchLimit}); candidate stays queued for the next run`,
+    });
+    continue;
+  }
+  attemptedThisRun += 1;
 
   console.log(`\n=== Expansion probe: ${entry.brand} ===`);
   const registryEntry = universeEntryToRegistryEntry(entry);
@@ -317,6 +330,9 @@ await writeJson(REPORT, {
   generatedAt: new Date().toISOString(),
   collectableBefore: beforeCount,
   collectableAfter: collectableCount(universe),
+  batchLimit,
+  attemptedThisRun,
+  remainingQueued: outcomes.filter((outcome) => outcome.status === "SKIPPED_BATCH_LIMIT").length,
   imported: imported.added.map((entry) => entry.id),
   alreadyPresent: imported.alreadyPresent,
   outcomes,
@@ -328,6 +344,7 @@ for (const outcome of outcomes) {
     `- ${outcome.brand ?? outcome.id}: ${outcome.status} · collected ${outcome.collectedCount ?? "-"} · activated ${outcome.activated ?? false}`,
   );
 }
+console.log(`Attempted this run: ${attemptedThisRun}/${batchLimit}`);
 console.log(`Collectable: ${beforeCount} -> ${collectableCount(universe)}`);
 console.log(`Products: ${products.length}`);
 console.log(`Report: ${REPORT}`);
