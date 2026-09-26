@@ -31,37 +31,23 @@ describe("appNavigation", () => {
     ).toBe("?view=marketplaces&marketplace=mytheresa");
   });
 
-  it("parses market research brand navigation without using Product Research params", () => {
+  it("redirects paused market research links to brands", () => {
     const state = parseNavigationFromSearch("?view=market-research&mrBrand=mr-ro-botta");
-    expect(state.view).toBe("market-research");
-    expect(state.marketCountryId).toBe("romania");
-    expect(state.marketBrandId).toBe("mr-ro-botta");
+    expect(state.view).toBe("brands");
+    expect(state.marketCountryId).toBeNull();
+    expect(state.marketBrandId).toBeNull();
     expect(state.brandId).toBeNull();
     expect(state.marketplaceId).toBeNull();
   });
 
-  it("builds market research search with isolated mrBrand param", () => {
-    expect(
-      buildNavigationSearch({
-        view: "market-research",
-        brandId: null,
-        brandName: null,
-        marketplaceId: null,
-        sourceCategoryId: null,
-        marketCountryId: "romania",
-        marketBrandId: "mr-ro-il-passo",
-      }),
-    ).toBe("?view=market-research&mrBrand=mr-ro-il-passo");
-  });
 });
 
 describe("primary navigation", () => {
-  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / PAZAR ARAŞTIRMASI / KAYDETTİKLERİM", () => {
+  it("exposes the focused V1 navigation", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
       "VISUAL",
-      "PAZAR ARAŞTIRMASI",
       "KAYDETTİKLERİM",
     ]);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "visual-wall")).toBe(true);
