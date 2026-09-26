@@ -1,5 +1,7 @@
 name: The Webster catalog delivery
 
+# A single guarded run publishes only the verified FULL-coverage seed.
+
 on:
   push:
     branches:
