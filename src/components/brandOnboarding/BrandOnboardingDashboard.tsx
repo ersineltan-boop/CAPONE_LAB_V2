@@ -17,6 +17,7 @@ const FILTERS: Array<{ id: DashboardFilter; label: string }> = [
   { id: "ALL", label: "Tüm adaylar" },
   { id: "TONIGHT", label: "Bu gece" },
   { id: "READY", label: "Hazır / eklendi" },
+  { id: "PARTIAL", label: "Eksik kapsam" },
   { id: "CUSTOM_ADAPTER_REQUIRED", label: "Özel adaptör" },
   { id: "BLOCKED", label: "Engelli" },
   { id: "DISCOVERED", label: "Yeni keşfedilen" },
@@ -53,6 +54,7 @@ export default function BrandOnboardingDashboard() {
     if (filter === "ALL") return !entry.isActive;
     if (filter === "TONIGHT") return entry.isTonight;
     if (filter === "READY") return entry.status === "READY" || entry.status === "ACTIVE";
+    if (filter === "PARTIAL") return entry.status === "PARTIAL";
     if (filter === "CUSTOM_ADAPTER_REQUIRED") return entry.status === "CUSTOM_ADAPTER_REQUIRED";
     if (filter === "BLOCKED") {
       return ["BLOCKED", "PRIORITY_BLOCKED", "FAILED", "STORAGE_LIMIT"].includes(entry.status);
