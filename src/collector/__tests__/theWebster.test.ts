@@ -10,6 +10,11 @@ describe("The Webster marketplace collector", () => {
   it("reads the official source total", () => {
     expect(parseTheWebsterSourceTotal("<div>Filter & Sort - 246 Products</div>")).toBe(246);
     expect(parseTheWebsterSourceTotal("<span>2,781 Results</span>")).toBe(2781);
+    expect(
+      parseTheWebsterSourceTotal(
+        "<div>Filter & Sort - 25,000 Products</div><span>246 Results</span>",
+      ),
+    ).toBe(246);
   });
 
   it("excludes fast and technical sneaker brands", () => {
