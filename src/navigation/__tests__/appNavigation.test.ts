@@ -31,11 +31,11 @@ describe("appNavigation", () => {
     ).toBe("?view=marketplaces&marketplace=mytheresa");
   });
 
-  it("parses market research brand navigation without using Product Research params", () => {
+  it("keeps hidden market research URLs out of the user-facing application", () => {
     const state = parseNavigationFromSearch("?view=market-research&mrBrand=mr-ro-botta");
-    expect(state.view).toBe("market-research");
-    expect(state.marketCountryId).toBe("romania");
-    expect(state.marketBrandId).toBe("mr-ro-botta");
+    expect(state.view).toBe("brands");
+    expect(state.marketCountryId).toBeNull();
+    expect(state.marketBrandId).toBeNull();
     expect(state.brandId).toBeNull();
     expect(state.marketplaceId).toBeNull();
   });
@@ -56,14 +56,14 @@ describe("appNavigation", () => {
 });
 
 describe("primary navigation", () => {
-  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / PAZAR ARAŞTIRMASI / KAYDETTİKLERİM", () => {
+  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / KAYDETTİKLERİM", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
       "VISUAL",
-      "PAZAR ARAŞTIRMASI",
       "KAYDETTİKLERİM",
     ]);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(false);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "visual-wall")).toBe(true);
     expect(isPrimaryNavView("visual-wall")).toBe(true);
   });
