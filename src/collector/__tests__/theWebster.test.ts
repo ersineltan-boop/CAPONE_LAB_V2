@@ -38,6 +38,7 @@ describe("The Webster marketplace collector", () => {
         vendor: "Alaia",
         product_type: "Shoes",
         tags: ["women", "pumps"],
+        body_html: "<p>Cow Leather</p><p>Vendor Color Code: Black Brand Style: ALAIA-1</p>",
         images: [
           { src: "https://cdn.shopify.com/s/files/1/0000/products/pump_01.jpg?v=1" },
           { src: "https://cdn.shopify.com/s/files/1/0000/products/pump_02.jpg?v=1" },
@@ -50,6 +51,7 @@ describe("The Webster marketplace collector", () => {
     expect(product).not.toBeNull();
     expect(product?.source).toBe("the-webster");
     expect(product?.brand).toBe("Alaia");
+    expect(product?.color).toBe("Black");
     expect(product?.images).toHaveLength(2);
     expect(product?.isNewArrivalsCollection).toBe(false);
     expect(product?.hasNewBadge).toBe(false);

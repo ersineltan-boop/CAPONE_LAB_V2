@@ -82,6 +82,20 @@ function normalizeBrand(value: string | undefined): string {
   return (value ?? "").trim().replace(/\s+/g, " ");
 }
 
+export function extractTheWebsterVendorColor(value: string | undefined): string | null {
+  if (!value) return null;
+  const text = value.replace(/<[^>]+>/g, " ").replace(/&nbsp;/gi, " ");
+  const match = text.match(/Vendor\s+Color\s+Code\s*:\s*([^\n]+?)(?=\s+(?:Brand\s+Style|Designer\/Brand)\s*:|$)/i);
+  return match?.[1]?.trim().replace(/\s+/g, " ") || null;
+}
+
+function isTheWebsterSizeValue(value: string | null | undefined): boolean {
+  if (!value) return false;
+  return /^(?:(?:UK|US|EU|IT|FR)\s*)?\d{1,2}(?:[.,]\d)?(?:\s*\/\s*(?:UK|US|EU|IT|FR)?\s*\d{1,2}(?:[.,]\d)?)?$/i.test(
+    value.trim(),
+  );
+}
+
 export function isTheWebsterExcludedBrand(brand: string | undefined): boolean {
   return EXCLUDED_BRANDS.has(normalizeBrand(brand).toLowerCase());
 }
@@ -129,10 +143,13 @@ export function theWebsterRawProductToPilot(
   );
   if (!product) return null;
 
+  const vendorColor = extractTheWebsterVendorColor(raw.body_html ?? product.material ?? undefined);
+
   return {
     ...product,
     source: THE_WEBSTER_ID,
     brand: vendor,
+    color: vendorColor ?? (isTheWebsterSizeValue(product.color) ? null : product.color),
     isNewArrivalsCollection: false,
     hasNewBadge: false,
   };

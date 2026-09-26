@@ -8,6 +8,7 @@ import { collectShopifyCollectionMembership } from "../collector/shopifyCollecti
 import { FULL_COLLECTION_CRAWL_CAP } from "../collector/fullCoveragePaths";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../collector/levelShoes";
 import { collectMarketplaceListing } from "../collector/marketplaceHtml";
+import { collectTheWebster, THE_WEBSTER_ID } from "../collector/theWebster";
 import { DRIES_BRAND_NAME } from "../collector/driesVanNoten";
 import { globalDedupe } from "../collector/dedupe";
 import { mergeProductCatalog } from "../collector/mergeProducts";
@@ -204,6 +205,25 @@ async function collectOneMarketplace(
         errors: collected.errors,
         incoming: collected.products,
         coverage: collected,
+      };
+    }
+
+    if (id === THE_WEBSTER_ID) {
+      const collected = await collectTheWebster();
+      const status = coverageToSourceStatus(
+        collected.coverage.status,
+        collected.products.length,
+      );
+      return {
+        id,
+        name,
+        kind: "marketplace",
+        status,
+        coverageStatus: collected.coverage.status,
+        parsedProducts: collected.products.length,
+        errors: collected.coverage.errors,
+        incoming: collected.products,
+        coverage: collected.coverage,
       };
     }
 

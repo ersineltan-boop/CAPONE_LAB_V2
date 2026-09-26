@@ -53,6 +53,7 @@ export const CLOUD_REFRESH_TRACKED_DATA_PATHS = [
   "data/multibrand/model-family-report.json",
   "data/multibrand/dries-coverage.json",
   "data/multibrand/level-shoes-coverage.json",
+  "data/multibrand/the-webster-coverage.json",
   "data/multibrand/product-image-galleries.json",
   "data/registry/source-coverage-report.json",
   "data/registry/source-category-coverage-report.json",
