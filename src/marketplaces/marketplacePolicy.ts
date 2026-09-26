@@ -40,7 +40,7 @@ export const EXCLUDED_MARKETPLACE_SOURCE_IDS = new CanonicalSourceIdSet([
 ]);
 
 export const EXCLUDED_MARKETPLACE_BRANDS = new Set([
-  "ADIDAS", "NIKE", "CONVERSE", "HOKA", "HOKA ONE ONE", "ON", "ON RUNNING",
+  "ADIDAS", "NIKE", "CONVERSE", "HOKA", "HOKA ONE ONE", "ON", "ON RUNNING", "SALOMON",
 ]);
 
 const TECHNICAL_SNEAKER_TERMS = [
@@ -75,7 +75,7 @@ export function isExcludedMarketplaceSource(sourceId: string): boolean {
 export function isExcludedMarketplaceBrand(brand: string): boolean {
   const normalized = normalizeToken(brand);
   if (EXCLUDED_MARKETPLACE_BRANDS.has(normalized)) return true;
-  return ["ADIDAS ", "NIKE ", "CONVERSE ", "HOKA ", "ON RUNNING "].some(
+  return ["ADIDAS ", "NIKE ", "CONVERSE ", "HOKA ", "ON RUNNING ", "SALOMON "].some(
     (prefix) => normalized.startsWith(prefix),
   );
 }
