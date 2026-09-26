@@ -87,14 +87,20 @@ export function isTheWebsterExcludedBrand(brand: string | undefined): boolean {
 }
 
 export function parseTheWebsterSourceTotal(html: string): number | null {
-  // The rendered "Results" counter is authoritative. The raw HTML can also
-  // contain unrelated/stale "Filter & Sort" counters (observed as 25,000).
-  const match =
-    /([\d,]+)\s+Results/i.exec(html) ??
-    /Filter\s*&\s*Sort\s*-\s*([\d,]+)\s+Products/i.exec(html);
-  if (!match?.[1]) return null;
-  const parsed = Number(match[1].replace(/,/g, ""));
-  return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+  // The raw page contains stale/hidden counters (observed as 25,000) before
+  // the rendered 246-product catalog count. Consider every explicit counter
+  // and choose the smallest positive value; keep zero only when it is the
+  // sole value.
+  const matches = [
+    ...html.matchAll(/([\d,]+)\s+Results/gi),
+    ...html.matchAll(/Filter\s*&\s*Sort\s*-\s*([\d,]+)\s+Products/gi),
+  ];
+  const totals = matches
+    .map((match) => Number(match[1]?.replace(/,/g, "")))
+    .filter((value) => Number.isFinite(value) && value >= 0);
+  const positive = totals.filter((value) => value > 0);
+  if (positive.length > 0) return Math.min(...positive);
+  return totals.includes(0) ? 0 : null;
 }
 
 export function theWebsterRawProductToPilot(
