@@ -1,6 +1,11 @@
 import type { ModelFamily } from "../modelFamily/types";
 import type { RawAnalyzedProduct } from "../modelFamily/types";
 import type { SourceSighting } from "../taxonomy/types";
+import {
+  MARKETPLACE_SOURCE_IDS,
+  isExcludedMarketplaceSource,
+  normalizeMarketplaceSourceId,
+} from "../marketplaces/marketplacePolicy";
 import { createNotVerifiedNewness } from "./newness";
 import {
   buildNewnessFromProductHints,
@@ -15,7 +20,7 @@ import {
 } from "../source/sourceCategories";
 
 function slugifySourceId(value: string): string {
-  return value.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return normalizeMarketplaceSourceId(value);
 }
 
 function earliestDate(dates: string[]): string {
@@ -131,6 +136,7 @@ export function buildMarketplaceSourceSighting(
   products: RawAnalyzedProduct[],
   existing?: SourceSighting | null,
 ): SourceSighting {
+  sourceId = normalizeMarketplaceSourceId(sourceId);
   const discoveredDates = products.map((product) => product.discoveredAt).filter(Boolean);
   const crawlFirst = discoveredDates.length > 0 ? earliestDate(discoveredDates) : new Date().toISOString();
   const crawlLast = discoveredDates.length > 0 ? latestDate(discoveredDates) : crawlFirst;
@@ -169,7 +175,11 @@ export function mergeSourceSightings(
   incoming: SourceSighting,
 ): SourceSighting[] {
   const list = existing ? [...existing] : [];
-  const index = list.findIndex((item) => item.sourceId === incoming.sourceId);
+  const incomingSourceId = normalizeMarketplaceSourceId(incoming.sourceId);
+  const index = list.findIndex(
+    (item) => normalizeMarketplaceSourceId(item.sourceId) === incomingSourceId,
+  );
+  incoming = { ...incoming, sourceId: incomingSourceId };
   if (index === -1) {
     list.push(incoming);
     return list;
@@ -194,21 +204,11 @@ export function mergeSourceSightings(
   return list;
 }
 
-const MARKETPLACE_SOURCE_IDS = new Set([
-  "mytheresa",
-  "ssense",
-  "24s",
-  "luisaviaroma",
-  "farfetch",
-  "net-a-porter",
-  "moda-operandi",
-  "browns",
-  "level-shoes",
-  "free-people",
-]);
-
 function isMarketplaceSource(sourceId: string): boolean {
-  return MARKETPLACE_SOURCE_IDS.has(sourceId);
+  return (
+    MARKETPLACE_SOURCE_IDS.has(sourceId) ||
+    isExcludedMarketplaceSource(sourceId)
+  );
 }
 
 export function enrichFamilyWithSightings(
@@ -227,9 +227,10 @@ export function enrichFamilyWithSightings(
   const marketplaceGroups = new Map<string, RawAnalyzedProduct[]>();
   for (const product of products) {
     if (!isMarketplaceSource(product.source)) continue;
-    const list = marketplaceGroups.get(product.source) ?? [];
+    const sourceId = normalizeMarketplaceSourceId(product.source);
+    const list = marketplaceGroups.get(sourceId) ?? [];
     list.push(product);
-    marketplaceGroups.set(product.source, list);
+    marketplaceGroups.set(sourceId, list);
   }
 
   let sourceSightings: SourceSighting[] = [];
@@ -256,7 +257,9 @@ export function enrichFamilyWithSightings(
       marketplaceId,
       label,
       marketplaceProducts,
-      priorFamily?.sourceSightings?.find((s) => s.sourceId === marketplaceId),
+      priorFamily?.sourceSightings?.find(
+        (s) => normalizeMarketplaceSourceId(s.sourceId) === marketplaceId,
+      ),
     );
     sourceSightings = mergeSourceSightings(sourceSightings, marketplaceSighting);
   }

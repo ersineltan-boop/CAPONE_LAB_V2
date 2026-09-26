@@ -23,6 +23,7 @@ import {
   listingIdentityKey,
   MARKETPLACE_SOURCE_IDS,
 } from "./sourceIdentity";
+import { normalizeMarketplaceSourceId } from "../marketplaces/marketplacePolicy";
 import type {
   GroupingConfidence,
   ModelFamily,
@@ -259,7 +260,7 @@ function categoriesCompatible(a: ProductGroupingMeta, b: ProductGroupingMeta): b
 }
 
 function buildGroupingMeta(product: RawAnalyzedProduct): ProductGroupingMeta {
-  const source = product.source.trim().toLowerCase();
+  const source = normalizeMarketplaceSourceId(product.source);
   const identity = extractStyleIdentity(product);
   return {
     product,

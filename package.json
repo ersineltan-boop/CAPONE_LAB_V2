@@ -53,6 +53,7 @@
     "brands:expand": "tsx scripts/probe-activate-expansion.ts",
     "brands:wave50": "tsx scripts/run-brands-wave-50.ts",
     "collect:today-marketplaces": "tsx scripts/collect-today-marketplaces.ts",
+    "collect:the-webster-staging": "tsx scripts/collect-the-webster-staging.ts",
     "collect:free-people-staging": "tsx scripts/collect-free-people-staging.ts",
     "merge:free-people-staging": "tsx scripts/merge-free-people-staging.ts",
     "operator:check": "tsx scripts/operator-check.ts",

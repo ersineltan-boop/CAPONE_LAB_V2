@@ -21,6 +21,7 @@ interface ModelFamilyProductGridProps {
   loadMoreSlot?: React.ReactNode;
   hideBrand?: boolean;
   hideTaxonomy?: boolean;
+  showPrice?: boolean;
 }
 
 const GRID_CLASS: Record<GridDensity, string> = {
@@ -86,6 +87,7 @@ function ProductCard({
   isVerifiedNew,
   hideBrand,
   hideTaxonomy,
+  showPrice,
 }: {
   item: ModelFamilyGridItem;
   index: number;
@@ -96,6 +98,7 @@ function ProductCard({
   isVerifiedNew: boolean;
   hideBrand: boolean;
   hideTaxonomy: boolean;
+  showPrice: boolean;
 }) {
   const variants = item.variants ?? [];
   const [selectedVariantId, setSelectedVariantId] = useState<string | null>(
@@ -113,6 +116,7 @@ function ProductCard({
   const productUrl = selected?.url ?? item.productUrl;
   const reviewed = researchState ? isReviewed(researchState) : false;
   const saved = researchState ? isSaved(researchState) : false;
+  const priceLabel = resolveVisiblePriceLabel(item, showPrice);
 
   const chipLabels = hideTaxonomy
     ? []
@@ -162,6 +166,9 @@ function ProductCard({
             <p className="text-[9px] uppercase tracking-[0.18em] text-ink-muted">{item.brand}</p>
           )}
           <h3 className="line-clamp-2 font-serif text-xs leading-snug">{item.canonicalName}</h3>
+          {priceLabel ? (
+            <p className="text-[9px] tracking-wide text-ink-muted">{priceLabel}</p>
+          ) : null}
           {item.sourceCategoryLabel && (
             <p className="text-[9px] tracking-wide text-ink-faint">{item.sourceCategoryLabel}</p>
           )}
@@ -230,6 +237,7 @@ export default function ModelFamilyProductGrid({
   loadMoreSlot,
   hideBrand = false,
   hideTaxonomy = false,
+  showPrice = true,
 }: ModelFamilyProductGridProps) {
   const keyedItems = useMemo(() => items, [items]);
 
@@ -252,6 +260,7 @@ export default function ModelFamilyProductGrid({
             isVerifiedNew={verifiedNewIds?.has(item.modelFamilyId) ?? false}
             hideBrand={hideBrand}
             hideTaxonomy={hideTaxonomy}
+            showPrice={showPrice}
           />
         ))}
       </div>
@@ -275,4 +284,11 @@ export function selectVariantUrl(
   variantId: string | null,
 ): string | null {
   return item.variants?.find((variant) => variant.id === variantId)?.url ?? item.productUrl;
+}
+
+export function resolveVisiblePriceLabel(
+  item: Pick<ModelFamilyGridItem, "priceLabel">,
+  showPrice: boolean,
+): string | null {
+  return showPrice ? item.priceLabel ?? null : null;
 }
