@@ -3,13 +3,6 @@ import { fileURLToPath } from "node:url";
 
 import { runBrandOnboarding } from "../src/onboarding/runOnboarding";
 
-process.on("uncaughtException", (error) => {
-  console.error("onboarding uncaughtException (continuing):", error instanceof Error ? error.message : error);
-});
-process.on("unhandledRejection", (error) => {
-  console.error("onboarding unhandledRejection (continuing):", error instanceof Error ? error.message : error);
-});
-
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 function argValue(flag: string): string | undefined {

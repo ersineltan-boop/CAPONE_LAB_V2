@@ -25,7 +25,7 @@ import { collectCandidateToStaging } from "./collect";
 import { evaluateOfficialSourceCoverage, evaluateQualityGate } from "./validate";
 import { cleanupStaging, probeSamplesToPilotProducts, writeStaging } from "./staging";
 import { marketplaceCoverageForBrand } from "./marketplaceCoverage";
-import { activateUniverseBrand, mergeValidatedBrandIntoCatalog, rebuildCatalogAfterActivation } from "./activate";
+import { activateUniverseBrand, mergeValidatedBrandIntoCatalog, prepareFirstBrandBaseline, rebuildCatalogAfterActivation } from "./activate";
 import { inspectTrackedFileSizes } from "./publish";
 import { defaultOnboardingHttp, type OnboardingHttp } from "./http";
 import type {
@@ -195,7 +195,10 @@ export async function runBrandOnboarding(
 
     queue = updateQueueEntry(queue, candidate.slug, { status: "VALIDATING" }, now);
     const quality = evaluateQualityGate(products);
-    const coverage = evaluateOfficialSourceCoverage(coverageEvidence);
+    const coverage = evaluateOfficialSourceCoverage({
+      ...coverageEvidence,
+      acceptedProductCount: new Set(products.map((product) => product.productUrl)).size,
+    });
     console.log(`[onboarding] ${candidate.slug}: ${quality.decisionLog}`);
 
     if (!quality.ok || products.length === 0) {
@@ -241,6 +244,9 @@ export async function runBrandOnboarding(
 
     // PARTIAL brands stay staged for manual review — do not auto-merge into live catalog.
     if (quality.completeness !== "FULL" || !coverage.full) {
+      const blocker = coverage.full
+        ? `Katalog eksik: ${products.length} ürün (en az 20), çoklu görsel kapsamı %${Math.round(quality.galleryCoverage * 100)} (en az %40)`
+        : coverage.reasons.join("; ");
       const coverageNote = coverage.full
         ? quality.decisionLog
         : `${quality.decisionLog}; coverage not FULL: ${coverage.reasons.join("; ")}`;
@@ -248,8 +254,9 @@ export async function runBrandOnboarding(
         status: "PARTIAL",
         detectedPlatform: probe.platform,
         collectorStrategy: probe.strategy,
-        blocker: null,
+        blocker,
         productsFound: products.length,
+        nextRetryAt: retryAt(now),
         notes: coverageNote,
       }, now);
       attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
@@ -262,7 +269,7 @@ export async function runBrandOnboarding(
         verifiedNewArrivals: quality.verifiedNewArrivals,
         galleryImageCoverage: quality.galleryCoverage,
         categoriesFound: quality.categories,
-        blocker: null,
+        blocker,
         marketplaceCoverage: marketplace,
         activationDecision: "partial",
         notes: coverageNote,
@@ -296,7 +303,7 @@ export async function runBrandOnboarding(
       await mergeValidatedBrandIntoCatalog({
         root,
         slug: candidate.slug,
-        products,
+        products: prepareFirstBrandBaseline(products),
         status: "success",
       });
       await activateUniverseBrand({ root, slug: candidate.slug, adapter, quality, now });

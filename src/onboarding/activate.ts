@@ -46,6 +46,15 @@ export async function mergeValidatedBrandIntoCatalog(input: {
   return merged.length;
 }
 
+/** A brand with no prior official catalog starts as a baseline, not as today's new arrivals. */
+export function prepareFirstBrandBaseline(products: readonly PilotProduct[]): PilotProduct[] {
+  return products.map((product) => ({
+    ...product,
+    isNewArrivalsCollection: false,
+    hasNewBadge: false,
+  }));
+}
+
 export async function activateUniverseBrand(input: {
   root: string;
   slug: string;

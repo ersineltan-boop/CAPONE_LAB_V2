@@ -16,6 +16,14 @@ export const EXCLUDED_DISCOVERY_BRAND_IDS = new Set([
   "hoka-one-one",
   "on",
   "on-running",
+  "asics",
+  "puma",
+  "new-balance",
+  "salomon",
+  "saucony",
+  "brooks",
+  "reebok",
+  "under-armour",
 ]);
 
 const EXCLUDED_DISCOVERY_BRAND_PREFIXES = [
@@ -24,6 +32,14 @@ const EXCLUDED_DISCOVERY_BRAND_PREFIXES = [
   "converse-",
   "hoka-",
   "on-running-",
+  "asics-",
+  "puma-",
+  "new-balance-",
+  "salomon-",
+  "saucony-",
+  "brooks-",
+  "reebok-",
+  "under-armour-",
 ];
 
 function isExcludedDiscoveryBrand(id: string): boolean {

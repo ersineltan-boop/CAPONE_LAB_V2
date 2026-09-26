@@ -11,6 +11,7 @@ export type DashboardFilter =
   | "ALL"
   | "TONIGHT"
   | "READY"
+  | "PARTIAL"
   | "CUSTOM_ADAPTER_REQUIRED"
   | "BLOCKED"
   | "DISCOVERED";
@@ -69,6 +70,7 @@ function fallbackStatus(entry: BrandUniverseEntry): OnboardingStatus {
 function due(entry: DashboardBrand, now: Date): boolean {
   if (!RETRYABLE.has(entry.status)) return false;
   if (!entry.officialUrl) return false;
+  if (entry.status === "BLOCKED" && !/^https?:\/\//i.test(entry.officialUrl)) return false;
   if (!entry.nextRetryAt) return true;
   return Date.parse(entry.nextRetryAt) <= now.getTime();
 }

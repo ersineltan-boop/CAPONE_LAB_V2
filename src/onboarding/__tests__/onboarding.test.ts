@@ -26,7 +26,7 @@ import {
 import { marketplaceCoverageForBrand } from "../marketplaceCoverage";
 import { canPublishOnboardingCommit, decidePublish, shouldStageOnboardingPath } from "../publish";
 import { cleanupStaging, writeStaging } from "../staging";
-import { mergeValidatedBrandIntoCatalog } from "../activate";
+import { mergeValidatedBrandIntoCatalog, prepareFirstBrandBaseline } from "../activate";
 import { runBrandOnboarding } from "../runOnboarding";
 import type { OnboardingHttp } from "../http";
 import type { BrandOnboardingQueueFile } from "../types";
@@ -74,6 +74,24 @@ describe("onboarding queue policy", () => {
     const selected = selectQueueCandidates(queue, { now, limit: 5 });
     expect(selected.some((entry) => entry.slug === "isabel-marant")).toBe(true);
     expect(selected.some((entry) => entry.slug === "maison-margiela")).toBe(false);
+  });
+
+  it("does not let a PARTIAL candidate occupy the same slot every night", () => {
+    const now = new Date("2026-09-26T21:30:00.000Z");
+    const queue = createInitialQueue();
+    const partial = queue.entries.find((entry) => entry.slug === "maison-margiela")!;
+    partial.status = "PARTIAL";
+    partial.nextRetryAt = retryAt(now);
+    const selected = selectQueueCandidates(queue, { now: new Date("2026-09-27T21:30:00.000Z"), limit: 1 });
+    expect(selected[0]?.slug).not.toBe("maison-margiela");
+  });
+
+  it("does not spend a nightly slot on a known invalid official URL", () => {
+    const queue = createInitialQueue();
+    const invalid = queue.entries.find((entry) => entry.slug === "maison-margiela")!;
+    invalid.status = "BLOCKED";
+    invalid.sourceUrl = "invalid";
+    expect(selectQueueCandidates(queue, { limit: 2 }).map((entry) => entry.slug)).not.toContain("maison-margiela");
   });
 
   it("caps successful activations independently of blocked attempts", () => {
@@ -195,6 +213,7 @@ describe("onboarding safety gates", () => {
         paginationExhausted: true,
         rawProductUrlsDiscovered: 80,
         sourceReportedProductCount: 80,
+        acceptedProductCount: 80,
         hitCollectionCrawlCap: false,
       }).full,
     ).toBe(true);
@@ -204,17 +223,43 @@ describe("onboarding safety gates", () => {
         paginationExhausted: true,
         rawProductUrlsDiscovered: 79,
         sourceReportedProductCount: 80,
+        acceptedProductCount: 79,
         hitCollectionCrawlCap: false,
       }),
-    ).toMatchObject({ full: false, reasons: ["source total incomplete: 79/80"] });
+    ).toMatchObject({ full: false, reasons: ["Kaynak URL kapsamı eksik: 79/80", "Kabul edilen ayakkabı kapsamı eksik: 79/80"] });
     expect(
       evaluateOfficialSourceCoverage({
         errors: [],
         paginationExhausted: false,
         rawProductUrlsDiscovered: 80,
         sourceReportedProductCount: 80,
+        acceptedProductCount: 80,
+        hitCollectionCrawlCap: false,
       }).full,
     ).toBe(false);
+  });
+
+  it("fails closed when the official footwear total, accepted count, or crawl-cap evidence is missing", () => {
+    const complete = {
+      errors: [],
+      paginationExhausted: true,
+      rawProductUrlsDiscovered: 80,
+      sourceReportedProductCount: 80,
+      acceptedProductCount: 80,
+      hitCollectionCrawlCap: false,
+    };
+    expect(evaluateOfficialSourceCoverage({ ...complete, sourceReportedProductCount: null }).full).toBe(false);
+    expect(evaluateOfficialSourceCoverage({ ...complete, acceptedProductCount: 20 }).full).toBe(false);
+    expect(evaluateOfficialSourceCoverage({ ...complete, hitCollectionCrawlCap: undefined }).full).toBe(false);
+  });
+
+  it("starts the first official brand catalog without false NEW badges", () => {
+    const incoming = shoe({ isNewArrivalsCollection: true, hasNewBadge: true });
+    expect(prepareFirstBrandBaseline([incoming])[0]).toMatchObject({
+      isNewArrivalsCollection: false,
+      hasNewBadge: false,
+    });
+    expect(incoming.isNewArrivalsCollection).toBe(true);
   });
 
   it("rejects apparel/bag leakage", () => {

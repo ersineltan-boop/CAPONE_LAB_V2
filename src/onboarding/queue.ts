@@ -204,6 +204,7 @@ export function selectQueueCandidates(
         return false;
       }
       if (TERMINAL_SKIP_STATUSES.has(entry.status)) return false;
+      if (entry.status === "BLOCKED" && (!entry.sourceUrl || !isValidHttpUrl(entry.sourceUrl))) return false;
       if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY") return false;
       if (!isRetryDue(entry.nextRetryAt, now)) return false;
       return true;

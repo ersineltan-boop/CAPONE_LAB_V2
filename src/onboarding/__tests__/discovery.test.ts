@@ -39,6 +39,8 @@ describe("marketplace brand discovery", () => {
         { source: "level-shoes", brand: "Nike", productUrl: "https://level.test/nike-2" },
         { source: "farfetch", brand: "Adidas by Stella McCartney", productUrl: "https://farfetch.test/adidas-1" },
         { source: "level-shoes", brand: "Adidas by Stella McCartney", productUrl: "https://level.test/adidas-2" },
+        { source: "farfetch", brand: "New Balance", productUrl: "https://farfetch.test/nb-1" },
+        { source: "level-shoes", brand: "New Balance", productUrl: "https://level.test/nb-2" },
         { source: "farfetch", brand: "Known Label", productUrl: "https://farfetch.test/known-1" },
         { source: "level-shoes", brand: "Known Label", productUrl: "https://level.test/known-2" },
       ],

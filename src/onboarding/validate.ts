@@ -24,6 +24,7 @@ export interface OfficialSourceCoverageInput {
   paginationExhausted?: boolean;
   rawProductUrlsDiscovered?: number;
   sourceReportedProductCount?: number | null;
+  acceptedProductCount?: number;
   hitCollectionCrawlCap?: boolean;
 }
 
@@ -32,20 +33,22 @@ export function evaluateOfficialSourceCoverage(input: OfficialSourceCoverageInpu
   reasons: string[];
 } {
   const reasons: string[] = [];
-  if (input.errors.length > 0) reasons.push("collector errors present");
-  if (input.paginationExhausted !== true) reasons.push("pagination not proven exhausted");
-  if (input.hitCollectionCrawlCap === true) reasons.push("collection crawl cap reached");
+  if (input.errors.length > 0) reasons.push("Toplayıcı hataları var");
+  if (input.paginationExhausted !== true) reasons.push("Sayfalamanın tamamlandığı doğrulanamadı");
+  if (input.hitCollectionCrawlCap !== false) reasons.push("Tarama sınırına ulaşılmadığı doğrulanamadı");
   if (!input.rawProductUrlsDiscovered || input.rawProductUrlsDiscovered <= 0) {
-    reasons.push("source URL total missing");
+    reasons.push("Kaynak ürün URL sayısı eksik");
   }
-  if (
-    typeof input.sourceReportedProductCount === "number" &&
-    input.sourceReportedProductCount > 0 &&
-    (input.rawProductUrlsDiscovered ?? 0) < input.sourceReportedProductCount
-  ) {
-    reasons.push(
-      `source total incomplete: ${input.rawProductUrlsDiscovered ?? 0}/${input.sourceReportedProductCount}`,
-    );
+  const reported = input.sourceReportedProductCount;
+  if (typeof reported !== "number" || !Number.isFinite(reported) || reported <= 0) {
+    reasons.push("Resmî kadın ayakkabısı kaynak toplamı eksik");
+  } else {
+    if ((input.rawProductUrlsDiscovered ?? 0) < reported) {
+      reasons.push(`Kaynak URL kapsamı eksik: ${input.rawProductUrlsDiscovered ?? 0}/${reported}`);
+    }
+    if ((input.acceptedProductCount ?? 0) < reported) {
+      reasons.push(`Kabul edilen ayakkabı kapsamı eksik: ${input.acceptedProductCount ?? 0}/${reported}`);
+    }
   }
   return { full: reasons.length === 0, reasons };
 }
