@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-08-21T07:33:17.376Z",
-  "totalFamilies": 1188,
+  "generatedAt": "2026-09-26T12:18:17.980Z",
+  "totalFamilies": 12189,
   "completeness": {
-    "totalFamilies": 1188,
-    "categoryKnownCount": 1106,
-    "categoryKnownPercent": 93.1,
-    "unclassifiedCount": 82,
-    "toeShapeKnown": 76,
-    "toeShapeUnknown": 1112,
-    "backConstructionKnown": 192,
-    "backConstructionUnknown": 996,
-    "heelTypeKnown": 264,
-    "heelTypeUnknown": 924,
-    "criticalCompletenessPercent": 34.5,
-    "averageFeatureCompletenessPercent": 11.7
+    "totalFamilies": 12189,
+    "categoryKnownCount": 11049,
+    "categoryKnownPercent": 90.6,
+    "unclassifiedCount": 1140,
+    "toeShapeKnown": 971,
+    "toeShapeUnknown": 10932,
+    "backConstructionKnown": 1773,
+    "backConstructionUnknown": 10130,
+    "heelTypeKnown": 2978,
+    "heelTypeUnknown": 8925,
+    "criticalCompletenessPercent": 34.4,
+    "averageFeatureCompletenessPercent": 10.3
   },
   "categoryProvenance": {
-    "PRODUCT_EVIDENCE": 895,
-    "LEGACY_CATEGORY": 211,
-    "INSUFFICIENT": 82
+    "PRODUCT_EVIDENCE": 9230,
+    "LEGACY_CATEGORY": 1626,
+    "INSUFFICIENT": 1047
   },
-  "unclassifiedCount": 82,
+  "unclassifiedCount": 1140,
   "fields": [
     {
       "field": "global.backConstruction",
       "status": {
-        "KNOWN": 192,
-        "UNKNOWN": 996,
+        "KNOWN": 1773,
+        "UNKNOWN": 10130,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
         "PRODUCT_PAGE": 0,
         "STRUCTURED_DATA": 0,
-        "PRODUCT_TEXT": 192,
+        "PRODUCT_TEXT": 1773,
         "COLLECTION_TAG": 0,
         "DERIVED": 0,
         "IMAGE": 0,
@@ -44,7 +44,7 @@
       "field": "global.closureFeatures",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -61,8 +61,8 @@
     {
       "field": "global.colorFamily",
       "status": {
-        "KNOWN": 886,
-        "UNKNOWN": 302,
+        "KNOWN": 7932,
+        "UNKNOWN": 3971,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -70,7 +70,7 @@
         "STRUCTURED_DATA": 0,
         "PRODUCT_TEXT": 0,
         "COLLECTION_TAG": 0,
-        "DERIVED": 886,
+        "DERIVED": 7932,
         "IMAGE": 0,
         "UNKNOWN": 0
       },
@@ -80,7 +80,7 @@
       "field": "global.embellishmentFeatures",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -98,7 +98,7 @@
       "field": "global.hardwareIntensity",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -116,7 +116,7 @@
       "field": "global.hardwareType",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -133,8 +133,8 @@
     {
       "field": "global.heelHeightClass",
       "status": {
-        "KNOWN": 186,
-        "UNKNOWN": 1002,
+        "KNOWN": 1983,
+        "UNKNOWN": 9920,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -142,7 +142,7 @@
         "STRUCTURED_DATA": 0,
         "PRODUCT_TEXT": 0,
         "COLLECTION_TAG": 0,
-        "DERIVED": 186,
+        "DERIVED": 1983,
         "IMAGE": 0,
         "UNKNOWN": 0
       },
@@ -151,14 +151,14 @@
     {
       "field": "global.heelHeightMm",
       "status": {
-        "KNOWN": 37,
-        "UNKNOWN": 1151,
+        "KNOWN": 451,
+        "UNKNOWN": 11452,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
         "PRODUCT_PAGE": 0,
         "STRUCTURED_DATA": 0,
-        "PRODUCT_TEXT": 37,
+        "PRODUCT_TEXT": 451,
         "COLLECTION_TAG": 0,
         "DERIVED": 0,
         "IMAGE": 0,
@@ -169,8 +169,8 @@
     {
       "field": "global.heelType",
       "status": {
-        "KNOWN": 264,
-        "UNKNOWN": 924,
+        "KNOWN": 2978,
+        "UNKNOWN": 8925,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -178,7 +178,7 @@
         "STRUCTURED_DATA": 0,
         "PRODUCT_TEXT": 0,
         "COLLECTION_TAG": 0,
-        "DERIVED": 264,
+        "DERIVED": 2978,
         "IMAGE": 0,
         "UNKNOWN": 0
       },
@@ -187,8 +187,8 @@
     {
       "field": "global.materialFamily",
       "status": {
-        "KNOWN": 863,
-        "UNKNOWN": 325,
+        "KNOWN": 6560,
+        "UNKNOWN": 5343,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -196,7 +196,7 @@
         "STRUCTURED_DATA": 0,
         "PRODUCT_TEXT": 0,
         "COLLECTION_TAG": 0,
-        "DERIVED": 863,
+        "DERIVED": 6560,
         "IMAGE": 0,
         "UNKNOWN": 0
       },
@@ -206,7 +206,7 @@
       "field": "global.platformConstruction",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -224,7 +224,7 @@
       "field": "global.sideConstruction",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -242,7 +242,7 @@
       "field": "global.soleProfile",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -259,14 +259,14 @@
     {
       "field": "global.strapFeatures",
       "status": {
-        "KNOWN": 88,
-        "UNKNOWN": 1100,
+        "KNOWN": 710,
+        "UNKNOWN": 11193,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
         "PRODUCT_PAGE": 0,
         "STRUCTURED_DATA": 0,
-        "PRODUCT_TEXT": 88,
+        "PRODUCT_TEXT": 710,
         "COLLECTION_TAG": 0,
         "DERIVED": 0,
         "IMAGE": 0,
@@ -278,7 +278,7 @@
       "field": "global.surfacePattern",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -296,7 +296,7 @@
       "field": "global.toeLength",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -313,14 +313,14 @@
     {
       "field": "global.toeOpening",
       "status": {
-        "KNOWN": 53,
-        "UNKNOWN": 1135,
+        "KNOWN": 384,
+        "UNKNOWN": 11519,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
         "PRODUCT_PAGE": 0,
         "STRUCTURED_DATA": 0,
-        "PRODUCT_TEXT": 53,
+        "PRODUCT_TEXT": 384,
         "COLLECTION_TAG": 0,
         "DERIVED": 0,
         "IMAGE": 0,
@@ -331,8 +331,8 @@
     {
       "field": "global.toeShape",
       "status": {
-        "KNOWN": 76,
-        "UNKNOWN": 1112,
+        "KNOWN": 971,
+        "UNKNOWN": 10932,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -340,7 +340,7 @@
         "STRUCTURED_DATA": 0,
         "PRODUCT_TEXT": 0,
         "COLLECTION_TAG": 0,
-        "DERIVED": 76,
+        "DERIVED": 971,
         "IMAGE": 0,
         "UNKNOWN": 0
       },
@@ -350,7 +350,7 @@
       "field": "global.vampHeight",
       "status": {
         "KNOWN": 0,
-        "UNKNOWN": 1188,
+        "UNKNOWN": 11903,
         "NOT_APPLICABLE": 0
       },
       "knownSourceBreakdown": {
@@ -367,86 +367,150 @@
   ],
   "valueDistributions": {
     "primaryCategory": {
-      "SANDAL": 275,
-      "BALLET_FLAT": 90,
-      "PUMP": 229,
-      "BOOT": 282,
-      "UNCLASSIFIED": 82,
-      "SNEAKER": 36,
-      "MULE": 101,
-      "LOAFER": 88,
-      "CLOG": 3,
-      "ESPADRILLE": 1,
-      "OXFORD_DERBY": 1
+      "BOOT": 1992,
+      "SANDAL": 3203,
+      "SNEAKER": 1357,
+      "LOAFER": 616,
+      "UNCLASSIFIED": 1140,
+      "PUMP": 1895,
+      "CLOG": 88,
+      "BALLET_FLAT": 817,
+      "MULE": 968,
+      "ESPADRILLE": 101,
+      "OXFORD_DERBY": 12
     },
     "backConstruction": {
-      "UNKNOWN": 996,
-      "BACKLESS": 127,
-      "SLINGBACK": 65
+      "UNKNOWN": 10130,
+      "BACKLESS": 1235,
+      "SLINGBACK": 538
     },
     "toeShape": {
-      "UNKNOWN": 1112,
-      "ROUND": 29,
-      "SQUARE": 10,
-      "POINTED": 37
+      "UNKNOWN": 10932,
+      "POINTED": 282,
+      "SQUARE": 183,
+      "ROUND": 506
     },
     "toeLength": {
-      "UNKNOWN": 1188
+      "UNKNOWN": 11903
     },
     "heelHeightClass": {
-      "UNKNOWN": 1002,
-      "FLAT": 37,
-      "HIGH": 50,
-      "MID": 44,
-      "LOW": 55
+      "UNKNOWN": 9920,
+      "LOW": 453,
+      "HIGH": 777,
+      "MID": 425,
+      "FLAT": 328
     },
     "heelType": {
-      "UNKNOWN": 924,
-      "NONE": 105,
-      "OTHER": 72,
-      "WEDGE": 26,
-      "STILETTO": 21,
-      "KITTEN": 23,
-      "SCULPTURAL": 6,
-      "BLOCK": 11
+      "OTHER": 732,
+      "UNKNOWN": 8925,
+      "KITTEN": 129,
+      "NONE": 986,
+      "BLOCK": 358,
+      "WEDGE": 416,
+      "STILETTO": 291,
+      "SCULPTURAL": 66
     },
     "soleProfile": {
-      "UNKNOWN": 1188
+      "UNKNOWN": 11903
     },
     "platformConstruction": {
-      "UNKNOWN": 1188
+      "UNKNOWN": 11903
     },
     "shaftHeight": {
-      "ANKLE": 52,
-      "UNKNOWN": 215,
-      "KNEE_HIGH": 10,
-      "OVER_THE_KNEE": 4,
-      "MID_CALF": 1
+      "UNKNOWN": 1418,
+      "KNEE_HIGH": 89,
+      "ANKLE": 472,
+      "MID_CALF": 4,
+      "OVER_THE_KNEE": 9
     }
   },
   "suspiciousPatterns": [],
   "invalidKnownFeatures": 0,
   "newArrivalsDates": {
     "earliestModelFamilyFirstSeenAt": "2026-08-18T10:03:26.763Z",
-    "latestModelFamilyFirstSeenAt": "2026-08-19T16:07:55.196Z",
+    "latestModelFamilyFirstSeenAt": "2026-09-26T11:56:35.990Z",
     "countByDate": {
-      "2026-08-19": 1144,
-      "2026-08-18": 44
+      "2026-08-24": 1138,
+      "2026-08-22": 4947,
+      "2026-08-19": 1174,
+      "2026-08-21": 3517,
+      "2026-08-27": 135,
+      "2026-09-04": 67,
+      "2026-09-03": 102,
+      "2026-09-06": 11,
+      "2026-09-05": 43,
+      "2026-09-01": 35,
+      "2026-08-30": 49,
+      "2026-09-07": 22,
+      "2026-09-09": 32,
+      "2026-09-08": 72,
+      "2026-09-12": 56,
+      "2026-08-26": 50,
+      "2026-09-13": 5,
+      "2026-08-28": 72,
+      "2026-08-23": 64,
+      "2026-09-10": 108,
+      "2026-09-02": 40,
+      "2026-09-11": 38,
+      "2026-08-31": 20,
+      "2026-08-25": 50,
+      "2026-08-18": 56,
+      "2026-09-26": 286
     },
-    "countLast24H": 0,
-    "countLast7D": 1188,
-    "countLast30D": 1188,
-    "countLast90D": 1188,
+    "countLast24H": 286,
+    "countLast7D": 286,
+    "countLast30D": 1193,
+    "countLast90D": 12189,
     "bulkBackfillDates": [
       {
-        "date": "2026-08-19",
-        "count": 1144,
-        "sharePercent": 96.3
+        "date": "2026-08-22",
+        "count": 4947,
+        "sharePercent": 40.6
       },
       {
-        "date": "2026-08-18",
-        "count": 44,
-        "sharePercent": 3.7
+        "date": "2026-08-21",
+        "count": 3517,
+        "sharePercent": 28.9
+      },
+      {
+        "date": "2026-08-19",
+        "count": 1174,
+        "sharePercent": 9.6
+      },
+      {
+        "date": "2026-08-24",
+        "count": 1138,
+        "sharePercent": 9.3
+      },
+      {
+        "date": "2026-09-26",
+        "count": 286,
+        "sharePercent": 2.3
+      },
+      {
+        "date": "2026-08-27",
+        "count": 135,
+        "sharePercent": 1.1
+      },
+      {
+        "date": "2026-09-10",
+        "count": 108,
+        "sharePercent": 0.9
+      },
+      {
+        "date": "2026-09-03",
+        "count": 102,
+        "sharePercent": 0.8
+      },
+      {
+        "date": "2026-09-08",
+        "count": 72,
+        "sharePercent": 0.6
+      },
+      {
+        "date": "2026-08-28",
+        "count": 72,
+        "sharePercent": 0.6
       }
     ],
     "familiesWithoutFirstSeen": 0

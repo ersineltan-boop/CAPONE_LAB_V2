@@ -53,7 +53,7 @@ describe("onboarding queue policy", () => {
     expect(queue.entries.map((entry) => entry.slug)).toEqual(
       INITIAL_ONBOARDING_BRANDS.map((item) => item.slug),
     );
-    expect(getCollectableBrands(loadBrandRegistry().all())).toHaveLength(50);
+    expect(getCollectableBrands(loadBrandRegistry().all())).toHaveLength(52);
   });
 
   it("skips future retry dates and continues after a blocked candidate", () => {
@@ -375,8 +375,8 @@ describe("onboarding run", () => {
     const after = await readFile(join(root, "data/multibrand/products.json"), "utf-8");
     expect(after).toBe(before);
     expect(result.activated).toEqual([]);
-    expect(result.report.summary.activeBrandsBefore).toBe(50);
-    expect(result.report.summary.activeBrandsAfter).toBe(50);
+    expect(result.report.summary.activeBrandsBefore).toBe(52);
+    expect(result.report.summary.activeBrandsAfter).toBe(52);
     expect(result.attempted).toContain("maison-margiela");
     expect(result.attempted).toContain("isabel-marant");
     const queue = JSON.parse(
