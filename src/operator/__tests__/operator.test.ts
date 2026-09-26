@@ -70,8 +70,8 @@ describe("Operator domain isolation", () => {
     ).toThrow(DomainIsolationError);
 
     expect(PRIMARY_NAV_ITEMS.some((item) => item.label === "MARKALAR")).toBe(true);
-    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(true);
-    expect(PRIMARY_NAV_ITEMS.some((item) => item.label === "PAZAR ARAŞTIRMASI")).toBe(true);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(false);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.label === "PAZAR ARAŞTIRMASI")).toBe(false);
     expect(productResearchPrimaryNavIds()).not.toContain("market-research");
   });
 

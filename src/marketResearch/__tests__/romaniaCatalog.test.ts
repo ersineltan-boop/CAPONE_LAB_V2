@@ -85,7 +85,7 @@ describe("Romania market research catalog", () => {
       expect(productIds).not.toContain(brand.id);
     }
     expect(productResearchPrimaryNavIds()).toEqual(["brands", "marketplaces", "visual-wall"]);
-    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(true);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(false);
     expect(parseNavigationFromSearch("?view=market-research").brandId).toBeNull();
   });
 

@@ -56,14 +56,14 @@ describe("appNavigation", () => {
 });
 
 describe("primary navigation", () => {
-  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / PAZAR ARAŞTIRMASI / KAYDETTİKLERİM", () => {
+  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / KAYDETTİKLERİM", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
       "VISUAL",
-      "PAZAR ARAŞTIRMASI",
       "KAYDETTİKLERİM",
     ]);
+    expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(false);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "visual-wall")).toBe(true);
     expect(isPrimaryNavView("visual-wall")).toBe(true);
   });
