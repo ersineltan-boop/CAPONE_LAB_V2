@@ -60,6 +60,12 @@ export const MARKETPLACE_PROBE_CANDIDATES: MarketplaceProbeCandidate[] = [
     productHrefPattern: /href="([^"]*\/shopping\/[^"]+)"/i,
   },
   {
+    id: "the-webster",
+    name: "The Webster",
+    footwearUrl: "https://thewebster.com/collections/women-shoes",
+    productHrefPattern: /href="([^"]*\/products\/[^"]+)"/i,
+  },
+  {
     id: "level-shoes",
     name: "Level Shoes",
     footwearUrl: "https://www.levelshoes.com/women/shoes.html",
