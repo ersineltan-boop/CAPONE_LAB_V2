@@ -305,7 +305,6 @@ describe("startup architecture", () => {
       "MARKALAR",
       "PAZARYERLERİ",
       "VISUAL",
-      "PAZAR ARAŞTIRMASI",
       "KAYDETTİKLERİM",
     ]);
     expect(UI_COPY.appLoading).toBe("CAPONE yükleniyor…");

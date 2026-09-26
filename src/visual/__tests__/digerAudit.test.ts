@@ -152,7 +152,6 @@ describe("Visual DİĞER diagnostics", () => {
       "brands",
       "marketplaces",
       "visual-wall",
-      "market-research",
       "saved",
     ]);
   });
