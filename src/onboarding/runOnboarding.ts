@@ -14,7 +14,7 @@ import {
 import {
   blockedDoesNotConsumeActivationQuota,
   loadQueueFile,
-  mergeQueueWithDefaults,
+  mergeQueueWithUniverseCandidates,
   remainingActivationSlots,
   saveQueueFile,
   selectQueueCandidates,
@@ -22,7 +22,7 @@ import {
 } from "./queue";
 import { probeBrandSource } from "./probe";
 import { collectCandidateToStaging } from "./collect";
-import { evaluateQualityGate } from "./validate";
+import { evaluateOfficialSourceCoverage, evaluateQualityGate } from "./validate";
 import { cleanupStaging, probeSamplesToPilotProducts, writeStaging } from "./staging";
 import { marketplaceCoverageForBrand } from "./marketplaceCoverage";
 import { activateUniverseBrand, mergeValidatedBrandIntoCatalog, rebuildCatalogAfterActivation } from "./activate";
@@ -40,14 +40,6 @@ export interface OnboardingRunResult {
   report: BrandOnboardingReportFile;
   activated: string[];
   attempted: string[];
-}
-
-function universeSourceUrls(universe: BrandUniverseFile): Record<string, string | null> {
-  const urls: Record<string, string | null> = {};
-  for (const entry of universe.brands) {
-    urls[entry.id] = entry.officialUrl || null;
-  }
-  return urls;
 }
 
 async function loadJson<T>(path: string, fallback: T): Promise<T> {
@@ -70,7 +62,7 @@ export async function runBrandOnboarding(
     version: 1,
     brands: [],
   });
-  let queue = mergeQueueWithDefaults(await loadQueueFile(root), universeSourceUrls(universe), now);
+  let queue = mergeQueueWithUniverseCandidates(await loadQueueFile(root), universe.brands, now);
   const activeBefore = getCollectableBrands(loadBrandRegistry().all()).length;
   const catalogProducts = dryRun
     ? await loadJson<PilotProduct[]>(join(root, "data/multibrand/products.json"), [])
@@ -168,6 +160,13 @@ export async function runBrandOnboarding(
       brand: candidate.brand,
       probe,
     });
+    let coverageEvidence = {
+      errors: ["full collection was not executed"],
+      paginationExhausted: false,
+      rawProductUrlsDiscovered: 0,
+      sourceReportedProductCount: null as number | null,
+      hitCollectionCrawlCap: false,
+    };
     if (!dryRun && probe.strategy !== "none") {
       const collected = await collectCandidateToStaging({
         slug: candidate.slug,
@@ -177,6 +176,13 @@ export async function runBrandOnboarding(
         http,
       });
       if (collected.products.length > 0) products = collected.products;
+      coverageEvidence = {
+        errors: collected.errors,
+        paginationExhausted: collected.paginationExhausted,
+        rawProductUrlsDiscovered: collected.rawProductUrlsDiscovered,
+        sourceReportedProductCount: collected.sourceReportedProductCount,
+        hitCollectionCrawlCap: collected.hitCollectionCrawlCap,
+      };
     }
 
     await writeStaging(root, {
@@ -189,6 +195,7 @@ export async function runBrandOnboarding(
 
     queue = updateQueueEntry(queue, candidate.slug, { status: "VALIDATING" }, now);
     const quality = evaluateQualityGate(products);
+    const coverage = evaluateOfficialSourceCoverage(coverageEvidence);
     console.log(`[onboarding] ${candidate.slug}: ${quality.decisionLog}`);
 
     if (!quality.ok || products.length === 0) {
@@ -221,7 +228,8 @@ export async function runBrandOnboarding(
       continue;
     }
 
-    const completenessStatus: OnboardingStatus = quality.completeness === "FULL" ? "READY" : "PARTIAL";
+    const completenessStatus: OnboardingStatus =
+      quality.completeness === "FULL" && coverage.full ? "READY" : "PARTIAL";
     const adapter: OnboardingAdapterConfig = {
       platform: probe.platform,
       strategy: probe.strategy === "none" ? "structured-data" : probe.strategy,
@@ -232,14 +240,17 @@ export async function runBrandOnboarding(
     };
 
     // PARTIAL brands stay staged for manual review — do not auto-merge into live catalog.
-    if (quality.completeness !== "FULL") {
+    if (quality.completeness !== "FULL" || !coverage.full) {
+      const coverageNote = coverage.full
+        ? quality.decisionLog
+        : `${quality.decisionLog}; coverage not FULL: ${coverage.reasons.join("; ")}`;
       queue = updateQueueEntry(queue, candidate.slug, {
         status: "PARTIAL",
         detectedPlatform: probe.platform,
         collectorStrategy: probe.strategy,
         blocker: null,
         productsFound: products.length,
-        notes: quality.decisionLog,
+        notes: coverageNote,
       }, now);
       attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
         status: "PARTIAL",
@@ -254,7 +265,7 @@ export async function runBrandOnboarding(
         blocker: null,
         marketplaceCoverage: marketplace,
         activationDecision: "partial",
-        notes: quality.decisionLog,
+        notes: coverageNote,
       }));
       continue;
     }
@@ -352,7 +363,7 @@ export async function runBrandOnboarding(
   await cleanupStaging(root);
   await saveQueueFile(root, queue);
 
-  const activeAfter = dryRun ? activeBefore : getCollectableBrands(loadBrandRegistry().all()).length;
+  const activeAfter = dryRun ? activeBefore : activeBefore + activated.length;
   const report: BrandOnboardingReportFile = {
     version: 1,
     generatedAt: now.toISOString(),

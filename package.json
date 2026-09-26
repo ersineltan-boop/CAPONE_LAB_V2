@@ -47,6 +47,7 @@
     "audit:model-family-medium": "tsx scripts/audit-model-family-medium.ts",
     "refresh:cloud": "tsx scripts/refresh-cloud.ts",
     "onboard:brands": "tsx scripts/onboard-brands.ts",
+    "discover:brands": "tsx scripts/build-brand-discovery-report.ts",
     "collect:selected": "tsx scripts/collect-selected-brands.ts",
     "brands:wave1": "tsx scripts/probe-activate-wave1.ts",
     "brands:import-candidates": "tsx scripts/import-brand-candidates.ts",

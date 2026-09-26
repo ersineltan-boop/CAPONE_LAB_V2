@@ -19,6 +19,37 @@ export interface QualityGateResult {
   decisionLog: string;
 }
 
+export interface OfficialSourceCoverageInput {
+  errors: readonly string[];
+  paginationExhausted?: boolean;
+  rawProductUrlsDiscovered?: number;
+  sourceReportedProductCount?: number | null;
+  hitCollectionCrawlCap?: boolean;
+}
+
+export function evaluateOfficialSourceCoverage(input: OfficialSourceCoverageInput): {
+  full: boolean;
+  reasons: string[];
+} {
+  const reasons: string[] = [];
+  if (input.errors.length > 0) reasons.push("collector errors present");
+  if (input.paginationExhausted !== true) reasons.push("pagination not proven exhausted");
+  if (input.hitCollectionCrawlCap === true) reasons.push("collection crawl cap reached");
+  if (!input.rawProductUrlsDiscovered || input.rawProductUrlsDiscovered <= 0) {
+    reasons.push("source URL total missing");
+  }
+  if (
+    typeof input.sourceReportedProductCount === "number" &&
+    input.sourceReportedProductCount > 0 &&
+    (input.rawProductUrlsDiscovered ?? 0) < input.sourceReportedProductCount
+  ) {
+    reasons.push(
+      `source total incomplete: ${input.rawProductUrlsDiscovered ?? 0}/${input.sourceReportedProductCount}`,
+    );
+  }
+  return { full: reasons.length === 0, reasons };
+}
+
 function colorCount(family: { variants: Array<{ color?: string | null }>; variantCount: number }): number {
   const colors = new Set(
     family.variants

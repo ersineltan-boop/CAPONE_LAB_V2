@@ -14,6 +14,8 @@ export interface CollectionAttemptResult {
   duplicateCount?: number;
   paginationExhausted?: boolean;
   sourceReportedProductCount?: number | null;
+  hitCollectionCrawlCap?: boolean;
+  collectionsCrawled?: string[];
 }
 
 function mergeAttempt(

@@ -56,10 +56,11 @@ describe("appNavigation", () => {
 });
 
 describe("primary navigation", () => {
-  it("exposes MARKALAR / PAZARYERLERİ / VISUAL / KAYDETTİKLERİM", () => {
+  it("exposes catalog, automation, visual and saved navigation", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
+      "OTOMATİK YÜKLEME",
       "VISUAL",
       "KAYDETTİKLERİM",
     ]);
@@ -70,6 +71,10 @@ describe("primary navigation", () => {
 
   it("keeps the visual-wall route parseable", () => {
     expect(parseNavigationFromSearch("?view=visual-wall").view).toBe("visual-wall");
+  });
+
+  it("keeps the automatic brand loading route parseable", () => {
+    expect(parseNavigationFromSearch("?view=brand-automation").view).toBe("brand-automation");
   });
 
   it("does not expose Pazar Özeti on Visual", () => {

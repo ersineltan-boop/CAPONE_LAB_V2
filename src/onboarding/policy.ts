@@ -21,6 +21,7 @@ export const STAGING_DIR = "data/onboarding/staging";
 export const UNIVERSE_PATH = "data/registry/brand-universe.json";
 export const BRANDS_TS_PATH = "src/registry/data/brands.ts";
 export const UNIVERSE_REPORT_PATH = "data/registry/brand-universe-report.json";
+export const DISCOVERY_REPORT_PATH = "data/registry/brand-discovery-report.json";
 
 export const INITIAL_ONBOARDING_BRANDS: readonly {
   brand: string;
@@ -75,6 +76,7 @@ export const ONBOARDING_EXTRA_STAGE_PATHS = [
   UNIVERSE_PATH,
   BRANDS_TS_PATH,
   UNIVERSE_REPORT_PATH,
+  DISCOVERY_REPORT_PATH,
 ] as const;
 
 const BLOCKED_ONBOARDING_PREFIXES = [

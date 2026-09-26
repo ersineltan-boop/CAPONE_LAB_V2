@@ -16,6 +16,9 @@ import { UI_COPY } from "./presentation/turkishLabels";
 const BrandDetail = lazy(() => import("./components/brands/BrandDetail"));
 const SavedProducts = lazy(() => import("./components/saved/SavedProducts"));
 const MarketplacesIndex = lazy(() => import("./components/marketplaces/MarketplacesIndex"));
+const BrandOnboardingDashboard = lazy(
+  () => import("./components/brandOnboarding/BrandOnboardingDashboard"),
+);
 const MarketplaceDetail = lazy(() => import("./components/marketplaces/MarketplaceDetail"));
 const VisualWall = lazy(() => import("./components/visualWall/VisualWall"));
 const MarketResearchPage = lazy(() => import("./marketResearch/ui/MarketResearchPage"));
@@ -129,6 +132,8 @@ function App() {
         <Suspense fallback={<CatalogLoadingState message={UI_COPY.appLoading} />}>
           {view === "visual-wall" ? (
             <VisualWall />
+          ) : view === "brand-automation" ? (
+            <BrandOnboardingDashboard />
           ) : view === "saved" ? (
             <SavedProducts onSelectBrand={openBrand} />
           ) : view === "market-research" ? (

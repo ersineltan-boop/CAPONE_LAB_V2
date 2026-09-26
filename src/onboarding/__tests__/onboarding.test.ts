@@ -10,6 +10,7 @@ import { isGenericModelTitle } from "../../modelFamily/genericModelTitle";
 import {
   createInitialQueue,
   mergeQueueWithDefaults,
+  mergeQueueWithUniverseCandidates,
   remainingActivationSlots,
   selectQueueCandidates,
   blockedDoesNotConsumeActivationQuota,
@@ -17,7 +18,11 @@ import {
 } from "../queue";
 import { retryAt, INITIAL_ONBOARDING_BRANDS } from "../policy";
 import { fingerprintStorefront } from "../platforms";
-import { evaluateQualityGate, auditFootwearLeakage } from "../validate";
+import {
+  auditFootwearLeakage,
+  evaluateOfficialSourceCoverage,
+  evaluateQualityGate,
+} from "../validate";
 import { marketplaceCoverageForBrand } from "../marketplaceCoverage";
 import { canPublishOnboardingCommit, decidePublish, shouldStageOnboardingPath } from "../publish";
 import { cleanupStaging, writeStaging } from "../staging";
@@ -91,9 +96,127 @@ describe("onboarding queue policy", () => {
     );
     expect(merged.entries).toHaveLength(INITIAL_ONBOARDING_BRANDS.length);
   });
+
+  it("adds every eligible inactive universe brand while preserving history", () => {
+    const current = updateQueueEntry(createInitialQueue(), "maison-margiela", {
+      status: "PRIORITY_BLOCKED",
+      attempts: 2,
+      blocker: "HTTP 403",
+    });
+    const merged = mergeQueueWithUniverseCandidates(current, [
+      {
+        id: "active-brand",
+        brand: "ACTIVE BRAND",
+        officialUrl: "https://active.example",
+        country: "Italy",
+        segment: "PREMIUM",
+        influenceRole: "MARKET",
+        trackingPriority: "P1",
+        isActive: true,
+        collectorType: "SHOPIFY_PUBLIC",
+        collectionStatus: "READY_AUTOMATIC",
+        womenFootwearRelevant: true,
+        sourceType: "BRAND",
+        notes: "",
+        footwearInfluence: 0,
+        directionalInfluence: 0,
+        commercialInfluence: 0,
+        collectionPaths: [],
+        productLimit: 20,
+        supportsMultipleImages: true,
+        discoverySources: [],
+        classificationStatus: "REVIEWED",
+        radarEligible: false,
+      },
+      {
+        id: "fresh-brand",
+        brand: "FRESH BRAND",
+        officialUrl: "https://fresh.example",
+        country: "Spain",
+        segment: "CONTEMPORARY",
+        influenceRole: "EARLY_ADOPTER",
+        trackingPriority: "P1",
+        isActive: false,
+        collectorType: "UNKNOWN",
+        collectionStatus: "NEEDS_PROBE",
+        womenFootwearRelevant: true,
+        sourceType: "BRAND",
+        notes: "",
+        footwearInfluence: 0,
+        directionalInfluence: 0,
+        commercialInfluence: 0,
+        collectionPaths: [],
+        productLimit: 20,
+        supportsMultipleImages: false,
+        discoverySources: [],
+        classificationStatus: "UNREVIEWED",
+        radarEligible: false,
+      },
+      {
+        id: "adapter-brand",
+        brand: "ADAPTER BRAND",
+        officialUrl: "https://adapter.example",
+        country: "France",
+        segment: "LUXURY",
+        influenceRole: "LEADER",
+        trackingPriority: "P2",
+        isActive: false,
+        collectorType: "CUSTOM_ADAPTER",
+        collectionStatus: "NEEDS_CUSTOM_ADAPTER",
+        womenFootwearRelevant: true,
+        sourceType: "BRAND",
+        notes: "",
+        footwearInfluence: 0,
+        directionalInfluence: 0,
+        commercialInfluence: 0,
+        collectionPaths: [],
+        productLimit: 20,
+        supportsMultipleImages: false,
+        discoverySources: [],
+        classificationStatus: "UNREVIEWED",
+        radarEligible: false,
+      },
+    ]);
+
+    expect(merged.entries.find((entry) => entry.slug === "active-brand")).toBeUndefined();
+    expect(merged.entries.find((entry) => entry.slug === "fresh-brand")?.status).toBe("PENDING");
+    expect(merged.entries.find((entry) => entry.slug === "adapter-brand")?.status).toBe(
+      "CUSTOM_ADAPTER_REQUIRED",
+    );
+    expect(merged.entries.find((entry) => entry.slug === "maison-margiela")?.attempts).toBe(2);
+  });
 });
 
 describe("onboarding safety gates", () => {
+  it("requires exhausted pagination and source-total coverage before auto activation", () => {
+    expect(
+      evaluateOfficialSourceCoverage({
+        errors: [],
+        paginationExhausted: true,
+        rawProductUrlsDiscovered: 80,
+        sourceReportedProductCount: 80,
+        hitCollectionCrawlCap: false,
+      }).full,
+    ).toBe(true);
+    expect(
+      evaluateOfficialSourceCoverage({
+        errors: [],
+        paginationExhausted: true,
+        rawProductUrlsDiscovered: 79,
+        sourceReportedProductCount: 80,
+        hitCollectionCrawlCap: false,
+      }),
+    ).toMatchObject({ full: false, reasons: ["source total incomplete: 79/80"] });
+    expect(
+      evaluateOfficialSourceCoverage({
+        errors: [],
+        paginationExhausted: false,
+        rawProductUrlsDiscovered: 80,
+        sourceReportedProductCount: 80,
+      }).full,
+    ).toBe(false);
+  });
+
   it("rejects apparel/bag leakage", () => {
     const leaks = auditFootwearLeakage([
       shoe({

@@ -1,6 +1,8 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
+import { isValidHttpUrl, normalizeBrandName, normalizeOfficialUrl } from "../registry/build/normalize";
+import type { BrandUniverseEntry } from "../registry/build/types";
 import {
   INITIAL_ONBOARDING_BRANDS,
   ONBOARDING_MAX_ACTIVATIONS_PER_RUN,
@@ -16,6 +18,12 @@ import type {
   BrandOnboardingQueueFile,
   OnboardingStatus,
 } from "./types";
+
+const TRACKING_PRIORITY_ORDER: Record<BrandUniverseEntry["trackingPriority"], number> = {
+  P1: 1,
+  P2: 2,
+  P3: 3,
+};
 
 export function emptyQueueEntry(
   brand: string,
@@ -93,6 +101,84 @@ export function mergeQueueWithDefaults(
       maxActivationsPerRun: ONBOARDING_MAX_ACTIVATIONS_PER_RUN,
       retryDays: ONBOARDING_RETRY_DAYS,
     },
+    entries: [...bySlug.values()].sort((a, b) => a.priority - b.priority),
+  };
+}
+
+/**
+ * Keeps historical queue state, then appends every eligible inactive universe
+ * brand. Universe order is not trusted: new priorities are deterministic.
+ */
+export function mergeQueueWithUniverseCandidates(
+  current: BrandOnboardingQueueFile | null,
+  universeBrands: readonly BrandUniverseEntry[],
+  now = new Date(),
+): BrandOnboardingQueueFile {
+  const sourceUrls = Object.fromEntries(
+    universeBrands.map((entry) => [entry.id, entry.officialUrl || null]),
+  );
+  const base = mergeQueueWithDefaults(current, sourceUrls, now);
+  const bySlug = new Map(base.entries.map((entry) => [entry.slug, { ...entry }]));
+  const seenNames = new Map(
+    base.entries.map((entry) => [normalizeBrandName(entry.brand), entry.slug]),
+  );
+  const seenUrls = new Map(
+    base.entries
+      .filter((entry) => entry.sourceUrl)
+      .map((entry) => [normalizeOfficialUrl(entry.sourceUrl!), entry.slug]),
+  );
+  let nextPriority = Math.max(0, ...base.entries.map((entry) => entry.priority)) + 1;
+
+  const candidates = universeBrands
+    .filter((entry) => !entry.isActive && entry.womenFootwearRelevant)
+    .sort((a, b) => {
+      const priority =
+        TRACKING_PRIORITY_ORDER[a.trackingPriority] - TRACKING_PRIORITY_ORDER[b.trackingPriority];
+      return priority || a.brand.localeCompare(b.brand, "tr");
+    });
+
+  for (const candidate of candidates) {
+    const sourceUrl = candidate.officialUrl?.trim() || null;
+    const existing = bySlug.get(candidate.id);
+    if (existing) {
+      if (!existing.sourceUrl && sourceUrl && isValidHttpUrl(sourceUrl)) {
+        existing.sourceUrl = sourceUrl;
+      }
+      continue;
+    }
+
+    const normalizedName = normalizeBrandName(candidate.brand);
+    const normalizedUrl = sourceUrl ? normalizeOfficialUrl(sourceUrl) : null;
+    if (seenNames.has(normalizedName)) continue;
+    if (normalizedUrl && seenUrls.has(normalizedUrl)) continue;
+
+    const entry = emptyQueueEntry(candidate.brand, candidate.id, nextPriority, sourceUrl);
+    nextPriority += 1;
+    if (!sourceUrl || !isValidHttpUrl(sourceUrl)) {
+      entry.status = "BLOCKED";
+      entry.blocker = "valid officialUrl required";
+    } else if (
+      candidate.collectionStatus === "NEEDS_CUSTOM_ADAPTER" ||
+      candidate.collectorType === "CUSTOM_ADAPTER"
+    ) {
+      entry.status = "CUSTOM_ADAPTER_REQUIRED";
+      entry.blocker = "official source requires a dedicated collector";
+    } else if (candidate.collectionStatus === "DISABLED") {
+      entry.status = "BLOCKED";
+      entry.blocker = "brand is disabled in the universe registry";
+    } else if (candidate.collectionStatus === "FAILED") {
+      entry.status = "FAILED";
+      entry.blocker = "previous universe probe failed";
+    }
+
+    bySlug.set(candidate.id, entry);
+    seenNames.set(normalizedName, candidate.id);
+    if (normalizedUrl) seenUrls.set(normalizedUrl, candidate.id);
+  }
+
+  return {
+    ...base,
+    updatedAt: now.toISOString(),
     entries: [...bySlug.values()].sort((a, b) => a.priority - b.priority),
   };
 }
