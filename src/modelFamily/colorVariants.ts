@@ -1,6 +1,6 @@
 import type { ModelFamily, ModelFamilyVariant } from "./types";
 import { collectModelFamilyImages } from "./familyImages";
-import { normalizeProductImageUrls } from "../images/resolveImageQuality";
+import { filterGenuineGalleryImages } from "../images/galleryImages";
 
 export interface ColorVariantView {
   id: string;
@@ -24,7 +24,7 @@ export function colorVariantsForFamily(family: ModelFamily): ColorVariantView[] 
   const views: ColorVariantView[] = [];
 
   for (const variant of members) {
-    const images = normalizeProductImageUrls(variant.images ?? []);
+    const images = filterGenuineGalleryImages(variant.images ?? []);
     const color = variant.color?.trim() ? variant.color.trim() : null;
     const fingerprint = `${color ?? ""}|${images[0] ?? ""}|${variant.url}`;
     if (seen.has(fingerprint)) continue;

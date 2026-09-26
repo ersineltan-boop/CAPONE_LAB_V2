@@ -93,7 +93,13 @@ export default function ModelFamilyDetailDrawer({
 
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
           <div className="relative aspect-[3/4] overflow-hidden border border-line bg-cream">
-            <VisualWallImageCarousel images={images} alt={family.canonicalName} />
+            <VisualWallImageCarousel
+              images={images}
+              alt={family.canonicalName}
+              colorVariants={variants}
+              selectedVariantId={selectedVariantId}
+              onSelectVariant={setSelectedVariantId}
+            />
           </div>
 
           <div className="space-y-1">

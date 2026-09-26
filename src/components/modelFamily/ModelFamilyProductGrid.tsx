@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import type { ModelFamilyGridItem } from "../../categories/modelFamilyGrid";
+import { galleryForSelectedColor } from "../../images/galleryImages";
 import { getTaxonomyChipLabel, UI_COPY } from "../../presentation/turkishLabels";
 import type { ModelFamilyResearchState } from "../../research/types";
 import { isReviewed, isSaved } from "../../research/researchStateRepository";
@@ -134,7 +135,9 @@ function ProductCard({
           alt={item.canonicalName}
           hideControlsUntilHover
           priority={index < 4}
-          onImageClick={() => onSelectItem?.(item.modelFamilyId)}
+          colorVariants={variants}
+          selectedVariantId={selected?.id ?? null}
+          onSelectVariant={setSelectedVariantId}
         />
         {isVerifiedNew && (
           <span className="absolute left-1 top-1 z-20 border border-ink bg-ink px-1.5 py-0.5 text-[8px] tracking-widest text-cream">
@@ -273,10 +276,14 @@ export function selectVariantImages(
   item: Pick<ModelFamilyGridItem, "images" | "representativeImage" | "variants">,
   variantId: string | null,
 ): string[] {
-  const selected = item.variants?.find((variant) => variant.id === variantId);
-  if (selected && selected.images.length > 0) return selected.images;
-  if (item.images.length > 0) return item.images;
-  return item.representativeImage ? [item.representativeImage] : [];
+  return galleryForSelectedColor(
+    {
+      hero: item.representativeImage,
+      images: item.images,
+      variants: item.variants,
+    },
+    variantId,
+  );
 }
 
 export function selectVariantUrl(
