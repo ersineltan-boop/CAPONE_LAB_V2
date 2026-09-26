@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-26T12:18:17.980Z",
-  "totalFamilies": 12189,
+  "generatedAt": "2026-09-26T12:47:37.270Z",
+  "totalFamilies": 12686,
   "completeness": {
-    "totalFamilies": 12189,
-    "categoryKnownCount": 11049,
-    "categoryKnownPercent": 90.6,
-    "unclassifiedCount": 1140,
+    "totalFamilies": 12686,
+    "categoryKnownCount": 11933,
+    "categoryKnownPercent": 94.1,
+    "unclassifiedCount": 753,
     "toeShapeKnown": 971,
     "toeShapeUnknown": 10932,
     "backConstructionKnown": 1773,
     "backConstructionUnknown": 10130,
     "heelTypeKnown": 2978,
     "heelTypeUnknown": 8925,
-    "criticalCompletenessPercent": 34.4,
-    "averageFeatureCompletenessPercent": 10.3
+    "criticalCompletenessPercent": 34.8,
+    "averageFeatureCompletenessPercent": 9.9
   },
   "categoryProvenance": {
     "PRODUCT_EVIDENCE": 9230,
     "LEGACY_CATEGORY": 1626,
     "INSUFFICIENT": 1047
   },
-  "unclassifiedCount": 1140,
+  "unclassifiedCount": 753,
   "fields": [
     {
       "field": "global.backConstruction",
@@ -367,16 +367,16 @@
   ],
   "valueDistributions": {
     "primaryCategory": {
-      "BOOT": 1992,
-      "SANDAL": 3203,
-      "SNEAKER": 1357,
-      "LOAFER": 616,
-      "UNCLASSIFIED": 1140,
-      "PUMP": 1895,
+      "BOOT": 2165,
+      "SANDAL": 3311,
+      "SNEAKER": 1284,
+      "LOAFER": 876,
+      "UNCLASSIFIED": 753,
+      "PUMP": 2025,
       "CLOG": 88,
-      "BALLET_FLAT": 817,
-      "MULE": 968,
-      "ESPADRILLE": 101,
+      "BALLET_FLAT": 1042,
+      "MULE": 1026,
+      "ESPADRILLE": 104,
       "OXFORD_DERBY": 12
     },
     "backConstruction": {
@@ -428,7 +428,7 @@
   "invalidKnownFeatures": 0,
   "newArrivalsDates": {
     "earliestModelFamilyFirstSeenAt": "2026-08-18T10:03:26.763Z",
-    "latestModelFamilyFirstSeenAt": "2026-09-26T11:56:35.990Z",
+    "latestModelFamilyFirstSeenAt": "2026-09-26T12:16:59.865Z",
     "countByDate": {
       "2026-08-24": 1138,
       "2026-08-22": 4947,
@@ -455,37 +455,37 @@
       "2026-08-31": 20,
       "2026-08-25": 50,
       "2026-08-18": 56,
-      "2026-09-26": 286
+      "2026-09-26": 783
     },
-    "countLast24H": 286,
-    "countLast7D": 286,
-    "countLast30D": 1193,
-    "countLast90D": 12189,
+    "countLast24H": 783,
+    "countLast7D": 783,
+    "countLast30D": 1690,
+    "countLast90D": 12686,
     "bulkBackfillDates": [
       {
         "date": "2026-08-22",
         "count": 4947,
-        "sharePercent": 40.6
+        "sharePercent": 39
       },
       {
         "date": "2026-08-21",
         "count": 3517,
-        "sharePercent": 28.9
+        "sharePercent": 27.7
       },
       {
         "date": "2026-08-19",
         "count": 1174,
-        "sharePercent": 9.6
+        "sharePercent": 9.3
       },
       {
         "date": "2026-08-24",
         "count": 1138,
-        "sharePercent": 9.3
+        "sharePercent": 9
       },
       {
         "date": "2026-09-26",
-        "count": 286,
-        "sharePercent": 2.3
+        "count": 783,
+        "sharePercent": 6.2
       },
       {
         "date": "2026-08-27",

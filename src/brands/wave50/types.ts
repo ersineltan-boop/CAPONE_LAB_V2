@@ -114,10 +114,21 @@ export interface WaveRunReport {
   attempted: number;
   accessible: number;
   fullCatalogPassed: number;
+  publishedCatalogs: number;
   customAdapter: number;
   sourceUnavailable: number;
-  addedBrands: number;
-  addedProducts: number;
+  stagingProducts: number;
+  universeBrandsBefore: number;
+  universeBrandsAfter: number;
+  activeBrandsBefore: number;
+  activeBrandsAfter: number;
+  netNewUniverseBrands: number;
+  netNewActiveBrands: number;
+  newActivations: Array<{ slug: string; brand: string }>;
+  /** Model families already on brand pages before the full-catalog shard link. */
+  initialSiteDeliveryFamilies: number;
+  siteDeliveryFamilies: number;
+  siteDeliveryProducts: number;
   collectTargets: number;
   outcomes: WaveBrandOutcome[];
 }

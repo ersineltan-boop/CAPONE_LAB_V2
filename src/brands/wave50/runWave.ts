@@ -51,6 +51,16 @@ export async function runBrandsWave(input: {
   concurrency?: number;
   accessibleLimit?: number;
   previousUrlsBySlug?: ReadonlyMap<string, ReadonlySet<string>>;
+  universeBrandsBefore?: number;
+  universeBrandsAfter?: number;
+  activeBrandsBefore?: number;
+  activeBrandsAfter?: number;
+  netNewUniverseBrands?: number;
+  netNewActiveBrands?: number;
+  newActivations?: Array<{ slug: string; brand: string }>;
+  initialSiteDeliveryFamilies?: number;
+  siteDeliveryFamilies?: number;
+  siteDeliveryProducts?: number;
 }): Promise<WaveRunReport> {
   const now = input.now ?? new Date().toISOString();
   const concurrency = input.concurrency ?? WAVE_COLLECTOR_CONCURRENCY;
@@ -129,10 +139,20 @@ export async function runBrandsWave(input: {
     attempted: ordered.length,
     accessible: ordered.filter((outcome) => outcome.disposition === "ACCESSIBLE").length,
     fullCatalogPassed: passed.length,
+    publishedCatalogs: passed.length,
     customAdapter: ordered.filter((outcome) => outcome.disposition === "CUSTOM_ADAPTER_REQUIRED").length,
     sourceUnavailable: ordered.filter((outcome) => outcome.disposition === "SOURCE_UNAVAILABLE").length,
-    addedBrands: passed.length,
-    addedProducts: passed.reduce((sum, outcome) => sum + (outcome.coverage?.collected ?? 0), 0),
+    stagingProducts: passed.reduce((sum, outcome) => sum + (outcome.coverage?.collected ?? 0), 0),
+    universeBrandsBefore: input.universeBrandsBefore ?? 0,
+    universeBrandsAfter: input.universeBrandsAfter ?? 0,
+    activeBrandsBefore: input.activeBrandsBefore ?? 0,
+    activeBrandsAfter: input.activeBrandsAfter ?? 0,
+    netNewUniverseBrands: input.netNewUniverseBrands ?? 0,
+    netNewActiveBrands: input.netNewActiveBrands ?? 0,
+    newActivations: input.newActivations ?? [],
+    initialSiteDeliveryFamilies: input.initialSiteDeliveryFamilies ?? 0,
+    siteDeliveryFamilies: input.siteDeliveryFamilies ?? 0,
+    siteDeliveryProducts: input.siteDeliveryProducts ?? 0,
     collectTargets: collectTargets.length,
     outcomes: ordered,
   };

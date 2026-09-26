@@ -15,7 +15,9 @@ import { buildBrandRegistryFromUniverseData } from "../../registry/build/buildBr
 import type { BrandProbeCacheFile } from "../../registry/build/types";
 import type { BrandUniverseEntry, BrandUniverseFile } from "../../registry/build/types";
 import { validateBrandUniverseEntries } from "../../registry/build/validateBrandUniverse";
+import { familiesMissingFromDelivery } from "./deliveryLink";
 import { decideLastGoodPublish } from "./lastGood";
+import { classifyOfficialFootwear, isNonFootwearCatalogItem, legacyCategoryForPrimary } from "./primaryCategory";
 import type { WaveCatalog, WaveModelFamily, WaveRunReport } from "./types";
 
 export const WAVE_REPORT_PATH = "data/registry/brand-wave-50-report.json";
@@ -32,7 +34,7 @@ export async function readJsonFile<T>(path: string, fallback: T): Promise<T> {
   }
 }
 
-async function atomicWriteText(path: string, body: string): Promise<void> {
+export async function atomicWriteText(path: string, body: string): Promise<void> {
   await mkdir(dirname(path), { recursive: true });
   const tmp = `${path}.${process.pid}.tmp`;
   await writeFile(tmp, body, "utf-8");
@@ -108,8 +110,10 @@ function legacyToPrimary(category: WaveModelFamily["category"]): ReturnType<type
 }
 
 export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[] {
-  return catalog.families.map((family) => {
-    const evidenceText = family.variants.find((variant) => variant.isNew)?.newnessEvidence ?? null;
+  return catalog.families.flatMap((family) => {
+    const colorways = family.variants.filter((variant) => !isNonFootwearCatalogItem({ title: variant.title }));
+    if (colorways.length === 0) return [];
+    const evidenceText = colorways.find((variant) => variant.isNew)?.newnessEvidence ?? null;
     const newness = family.isNew && evidenceText
       ? {
           status: "VERIFIED_NEW" as const,
@@ -117,7 +121,7 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
           firstVerifiedAt: catalog.collectedAt,
           lastVerifiedAt: catalog.collectedAt,
           effectiveNewAt: catalog.collectedAt,
-          evidenceUrl: family.variants.find((variant) => variant.isNew)?.productUrl ?? null,
+          evidenceUrl: colorways.find((variant) => variant.isNew)?.productUrl ?? null,
           evidenceText:
             evidenceText === "NEW_ARRIVALS_COLLECTION"
               ? "Resmi New Arrivals koleksiyonu"
@@ -125,14 +129,22 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
           confidence: evidenceText === "NEW_ARRIVALS_COLLECTION" ? 0.9 : 0.8,
         }
       : createNotVerifiedNewness();
+    const productType = colorways[0]?.productType ?? "";
     const primary = assignPrimaryCategory({
       productName: family.canonicalName,
       legacyCategory: family.category,
-      sourceCategoryText: family.variants[0]?.productType ?? family.category,
+      sourceCategoryText: productType || family.category,
     });
-    const primaryCategory = primary.primaryCategory === "UNCLASSIFIED"
-      ? legacyToPrimary(family.category)
-      : primary.primaryCategory;
+    const official = classifyOfficialFootwear({
+      title: family.canonicalName,
+      productType,
+    });
+    const primaryCategory = primary.primaryCategory !== "UNCLASSIFIED"
+      ? primary.primaryCategory
+      : official ?? legacyToPrimary(family.category);
+    const legacyCategory = family.category === "OTHER_FOOTWEAR" && primaryCategory !== "UNCLASSIFIED"
+      ? legacyCategoryForPrimary(primaryCategory)
+      : family.category;
     const sighting: SourceSighting = {
       sourceId: catalog.slug,
       sourceLabel: catalog.brand,
@@ -140,14 +152,14 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
       firstSeenAt: catalog.collectedAt,
       lastSeenAt: catalog.collectedAt,
       newness,
-      sourceCategories: family.variants[0]
+      sourceCategories: colorways[0]
         ? [{
-            categoryId: family.variants[0].productType.toLowerCase().replace(/[^a-z0-9]+/g, "-") || "footwear",
-            categoryName: family.variants[0].productType || family.category,
+            categoryId: colorways[0].productType.toLowerCase().replace(/[^a-z0-9]+/g, "-") || "footwear",
+            categoryName: colorways[0].productType || family.category,
           }]
         : [],
     };
-    const variants: ModelFamilyVariant[] = family.variants.map((variant) => ({
+    const variants: ModelFamilyVariant[] = colorways.map((variant) => ({
       productId: variant.productUrl,
       title: variant.title,
       url: variant.productUrl,
@@ -156,11 +168,11 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
       images: variant.images,
       sku: variant.sku ?? undefined,
     }));
-    return {
+    return [{
       modelFamilyId: family.modelFamilyId,
       brand: catalog.brand,
       canonicalName: family.canonicalName,
-      category: family.category,
+      category: legacyCategory,
       primaryCategory,
       hybridInfluences: primary.hybridInfluences,
       representativeProductId: variants[0]?.productId ?? family.modelFamilyId,
@@ -174,7 +186,7 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
       groupingReason: family.groupingReason,
       modelFamilyFirstSeenAt: catalog.collectedAt,
       sourceSightings: [sighting],
-    };
+    }];
   });
 }
 
@@ -182,16 +194,10 @@ export async function appendPassedFamilies(root: string, catalogs: readonly Wave
   if (catalogs.length === 0) return 0;
   const rootDir = join(root, "data/multibrand");
   const existing = await loadModelFamilies({ rootDir });
-  const officialSlugs = new Set(
-    existing.flatMap((family) =>
-      (family.sourceSightings ?? [])
-        .filter((sighting) => sighting.sourceKind === "BRAND_OFFICIAL")
-        .map((sighting) => sighting.sourceId),
-    ),
+  const additions = familiesMissingFromDelivery(
+    existing,
+    catalogs.flatMap((catalog) => waveFamiliesToModelFamilies(catalog)),
   );
-  const additions = catalogs
-    .filter((catalog) => !officialSlugs.has(catalog.slug))
-    .flatMap((catalog) => waveFamiliesToModelFamilies(catalog));
   if (additions.length === 0) return 0;
 
   const dir = join(rootDir, "model-families");

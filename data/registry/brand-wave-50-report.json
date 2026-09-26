@@ -7,8 +7,6 @@
   "fullCatalogPassed": 44,
   "customAdapter": 20,
   "sourceUnavailable": 19,
-  "addedBrands": 44,
-  "addedProducts": 11556,
   "collectTargets": 50,
   "outcomes": [
     {
@@ -2261,5 +2259,26 @@
       "referenceFootwearMatch": null,
       "referenceNewArrivalsMatch": null
     }
-  ]
+  ],
+  "publishedCatalogs": 44,
+  "stagingProducts": 11556,
+  "universeBrandsBefore": 159,
+  "universeBrandsAfter": 160,
+  "activeBrandsBefore": 50,
+  "activeBrandsAfter": 52,
+  "netNewUniverseBrands": 1,
+  "netNewActiveBrands": 2,
+  "newActivations": [
+    {
+      "slug": "naked-wolfe",
+      "brand": "NAKED WOLFE"
+    },
+    {
+      "slug": "maria-carlota",
+      "brand": "MARIA CARLOTA"
+    }
+  ],
+  "siteDeliveryFamilies": 783,
+  "siteDeliveryProducts": 1078,
+  "initialSiteDeliveryFamilies": 286
 }

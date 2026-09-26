@@ -1,7 +1,14 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
+import {
+  familiesMissingFromDelivery,
+  omitNonFootwearFamilies,
+  reclassifyWaveFamily,
+  removeDuplicateVariants,
+} from "../deliveryLink";
 import { planWomensCollections } from "../collections";
+import { classifyOfficialFootwear, isNonFootwearCatalogItem } from "../primaryCategory";
 import { buildWaveCoverage, fullCatalogPassBlocker } from "../coverage";
 import { groupColorwaysIntoFamilies } from "../families";
 import { classifyWomensFootwear } from "../footwearScope";
@@ -10,6 +17,7 @@ import { assignProductNewness } from "../newness";
 import { buildDeterministicWaveBrands } from "../officialBrands";
 import { mapPool } from "../pool";
 import { classifyStorefrontResponse, collectShopifyWomensCatalog } from "../shopifyAdapter";
+import type { ModelFamily } from "../../../modelFamily/types";
 import type { WaveHttp } from "../types";
 import { WAVE_COLLECTOR_CONCURRENCY } from "../types";
 
@@ -389,5 +397,263 @@ describe("brands wave 50", () => {
         collections: null,
       }),
     ).toBe("ACCESSIBLE");
+  });
+
+  it("maps official product types onto short footwear categories", () => {
+    expect(classifyOfficialFootwear({ title: "Bedford Black", productType: "Flats" })).toBe("BALLET_FLAT");
+    expect(classifyOfficialFootwear({ title: "Haute Black Suede", productType: "Boots" })).toBe("BOOT");
+    expect(classifyOfficialFootwear({ title: "Blizzard Black", productType: "Loafers" })).toBe("LOAFER");
+    expect(classifyOfficialFootwear({ title: "Court", productType: "Heels" })).toBe("PUMP");
+    expect(classifyOfficialFootwear({ title: "Runner", productType: "Sneaker" })).toBe("SNEAKER");
+    expect(classifyOfficialFootwear({ title: "Harlow Black Suede", productType: "Slippers" })).toBe("LOAFER");
+    expect(
+      classifyOfficialFootwear({
+        title: "SAPATOS ABF-97 ESTELA SUEDE CAMEL",
+        productType: "Sapato",
+        description: "estes mocassins ABF-97 distinguem-se pela silhueta intemporal",
+      }),
+    ).toBe("LOAFER");
+    expect(
+      classifyOfficialFootwear({
+        title: "SAPATOS EXE VIENA 500 BLACK",
+        productType: "Sapato",
+        description: "Salto com altura de 9 cm.",
+      }),
+    ).toBe("PUMP");
+    expect(
+      classifyOfficialFootwear({
+        title: "SAPATOS ABF-97 DILMA 400 GREEN",
+        productType: "Sapato",
+        description: "a sola baixa e flexível garante leveza",
+      }),
+    ).toBe("BALLET_FLAT");
+    expect(
+      classifyOfficialFootwear({
+        title: "MOCASSINS ABF-97 ALEXA",
+        productType: "Mocassins",
+      }),
+    ).toBe("LOAFER");
+    expect(classifyOfficialFootwear({ title: "Ellie Suede Almond-Toe Flats", productType: "Shoes" })).toBe(
+      "BALLET_FLAT",
+    );
+    expect(classifyOfficialFootwear({ title: "Anok Sling 105 Leopard", productType: "SHOES" })).toBe("PUMP");
+    expect(classifyOfficialFootwear({ title: "Lupita Slipper 95 Leopard", productType: "SHOES" })).toBe("MULE");
+    expect(
+      classifyOfficialFootwear({
+        title: "Ribbon Linen Grey",
+        productType: "Ribbon",
+        description: "Linen slipper in light brown with light grey piping and light grey laces.",
+      }),
+    ).toBe("LOAFER");
+    expect(
+      classifyOfficialFootwear({
+        title: "Amaranta Kids",
+        productType: "Kids",
+        description: "Velvet mary jane in mustard with mustard piping and buckle closure.",
+      }),
+    ).toBe("BALLET_FLAT");
+    expect(
+      classifyOfficialFootwear({
+        title: "Finch",
+        productType: "Belgian",
+        description: "Velvet belgian in light brown with light brown instep.",
+      }),
+    ).toBe("LOAFER");
+    expect(
+      classifyOfficialFootwear({
+        title: "Mermaid Coffee",
+        productType: "Mermaid",
+        description: "V-hollow ballerina in dark beige linen.",
+      }),
+    ).toBe("BALLET_FLAT");
+    expect(
+      classifyOfficialFootwear({
+        title: "The Old Sport Beige",
+        productType: "Old Sport",
+        description: "Beige aged linen lace-up flatform ankle boot with burgundy leather toe cap.",
+      }),
+    ).toBe("BOOT");
+    expect(classifyOfficialFootwear({ title: "Costa - Tennis à bride en toile", productType: "Chaussures" })).toBe(
+      "SNEAKER",
+    );
+    expect(classifyOfficialFootwear({ title: "Petite Kina - Babies cuir bleu marine", productType: "Chaussures" })).toBe(
+      "BALLET_FLAT",
+    );
+    expect(classifyOfficialFootwear({ title: "Malaga - Bottes cuir verni leopard", productType: "Chaussures" })).toBe(
+      "BOOT",
+    );
+    expect(classifyOfficialFootwear({ title: "Cyprus Boat Shoe Platina Leather", productType: "Boat Shoe" })).toBe(
+      "LOAFER",
+    );
+    expect(
+      classifyOfficialFootwear({
+        title: "FORMAL SLIP ON",
+        productType: "Shoes",
+        description: "This pair of loafers revisits an emblematic style.",
+      }),
+    ).toBe("LOAFER");
+    expect(classifyOfficialFootwear({ title: "Boss Lady Welly Mini", productType: "Footwear" })).toBe("BOOT");
+    expect(
+      classifyOfficialFootwear({
+        title: "ZABELLE FLAT - LUWAK",
+        productType: "SHOES",
+        description: "A flat padded shearling sandal with crossover straps.",
+      }),
+    ).toBe("SANDAL");
+    expect(classifyOfficialFootwear({ title: "Butterfly Flat", productType: "Footwear" })).toBe("BALLET_FLAT");
+    expect(
+      classifyOfficialFootwear({
+        title: "Butterfly Slipper",
+        productType: "Footwear",
+        description: "This slipper features a tonal butterfly wing at toe and a chrome block heel.",
+      }),
+    ).toBe("MULE");
+    expect(
+      classifyOfficialFootwear({
+        title: "Mafalda Navy",
+        productType: "Mafalda",
+        description: "Velvet mafalda in dark blue with dark blue piping and dark blue velvet lace.",
+      }),
+    ).toBe("BALLET_FLAT");
+    expect(classifyOfficialFootwear({ title: "TOP-DOWN", productType: "Pump" })).toBe("PUMP");
+    expect(
+      classifyOfficialFootwear({
+        title: "Wendy Kids",
+        productType: "Kids",
+        tags: "Archive Sale, Slipper",
+      }),
+    ).toBe("LOAFER");
+    expect(isNonFootwearCatalogItem({ title: "Cathy - Chaussettes damier courtes noir" })).toBe(true);
+    expect(isNonFootwearCatalogItem({ title: "Madeleine - Sac épaule cuir verni rouge" })).toBe(true);
+    expect(isNonFootwearCatalogItem({ title: "Malaga - Bottes cuir verni leopard" })).toBe(false);
+  });
+
+  it("links only catalog urls that are missing from brand pages", () => {
+    const existing = {
+      modelFamilyId: "existing",
+      brand: "TOTEME",
+      canonicalName: "Existing",
+      category: "BOOT",
+      primaryCategory: "BOOT",
+      representativeProductId: "https://toteme.com/products/old",
+      representativeImage: null,
+      representativeImages: [],
+      variantCount: 1,
+      variants: [
+        {
+          productId: "https://toteme.com/products/old",
+          title: "Old",
+          url: "https://toteme.com/products/old",
+          color: null,
+          material: null,
+          images: [],
+        },
+      ],
+      allImages: [],
+      sourceProductIds: ["https://toteme.com/products/old"],
+      groupingConfidence: "HIGH",
+      groupingReason: "single-product",
+    } satisfies ModelFamily;
+    const incoming: ModelFamily = {
+      ...existing,
+      modelFamilyId: "toteme--new",
+      variants: [
+        existing.variants[0]!,
+        {
+          productId: "https://toteme.com/products/new",
+          title: "New",
+          url: "https://toteme.com/products/new",
+          color: "Black",
+          material: null,
+          images: ["https://cdn.test/new.jpg"],
+        },
+      ],
+      variantCount: 2,
+    };
+    const linked = familiesMissingFromDelivery([existing], [incoming]);
+    expect(linked).toHaveLength(1);
+    expect(linked[0]?.variants.map((variant) => variant.url)).toEqual(["https://toteme.com/products/new"]);
+    expect(familiesMissingFromDelivery([existing, linked[0]!], [incoming])).toEqual([]);
+    const stored = reclassifyWaveFamily({
+      ...existing,
+      brand: "NAKED WOLFE",
+      category: "OTHER_FOOTWEAR",
+      primaryCategory: "UNCLASSIFIED",
+      sourceSightings: [
+        {
+          sourceId: "naked-wolfe",
+          sourceLabel: "NAKED WOLFE",
+          sourceKind: "BRAND_OFFICIAL",
+          firstSeenAt: "2026-09-26T00:00:00.000Z",
+          lastSeenAt: "2026-09-26T00:00:00.000Z",
+          newness: {
+            status: "NOT_VERIFIED",
+            evidenceType: null,
+            firstVerifiedAt: null,
+            lastVerifiedAt: null,
+            effectiveNewAt: null,
+            evidenceUrl: null,
+            evidenceText: null,
+            confidence: 0,
+          },
+          sourceCategories: [{ categoryId: "boots", categoryName: "Boots" }],
+        },
+      ],
+    });
+    expect(stored.primaryCategory).toBe("BOOT");
+    expect(stored.category).toBe("BOOT");
+    const duplicated: ModelFamily = {
+      ...incoming,
+      modelFamilyId: "exe--dup",
+      variants: [
+        {
+          productId: "https://exe.test/products/old",
+          title: "Old color",
+          url: "https://exe.test/products/old",
+          color: "Black",
+          material: null,
+          images: [],
+        },
+        {
+          productId: "https://exe.test/products/new-color",
+          title: "New color",
+          url: "https://exe.test/products/new-color",
+          color: "Camel",
+          material: null,
+          images: ["https://cdn.test/camel.jpg"],
+        },
+      ],
+    };
+    const deduped = removeDuplicateVariants(
+      [
+        {
+          ...existing,
+          variants: [
+            {
+              ...existing.variants[0]!,
+              url: "https://exe.test/products/old",
+              productId: "https://exe.test/products/old",
+            },
+          ],
+          sourceProductIds: ["https://exe.test/products/old"],
+        },
+      ],
+      [duplicated],
+    );
+    expect(deduped).toHaveLength(1);
+    expect(deduped[0]?.variants.map((variant) => variant.url)).toEqual(["https://exe.test/products/new-color"]);
+    const sock: ModelFamily = {
+      ...existing,
+      modelFamilyId: "carel--sock",
+      canonicalName: "Cathy - Chaussettes damier",
+      variants: [
+        {
+          ...existing.variants[0]!,
+          title: "Cathy - Chaussettes damier courtes noir",
+          url: "https://carel.fr/products/cathy",
+        },
+      ],
+    };
+    expect(omitNonFootwearFamilies([sock, existing])).toEqual([existing]);
   });
 });
