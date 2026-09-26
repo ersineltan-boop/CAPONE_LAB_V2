@@ -1,6 +1,6 @@
 name: The Webster catalog delivery
 
-# A single guarded run publishes only the verified FULL-coverage seed.
+# A single guarded activation run publishes only the verified FULL-coverage seed.
 
 on:
   push:
@@ -10,6 +10,7 @@ on:
       - "data/registry/the-webster-staging-seed.zip"
       - "data/registry/marketplace-pilot.json"
       - "scripts/publish-the-webster-staging.ts"
+      - "scripts/link-wave50-delivery.ts"
       - ".github/workflows/the-webster-delivery.yml"
 
 permissions:
@@ -38,8 +39,13 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
+          cp data/multibrand/model-families/part-006.json /tmp/wave50-part-006.json
+          cp data/multibrand/model-families/part-007.json /tmp/wave50-part-007.json
           npm run analyze:multibrand
           npm run build:model-families
+          cp /tmp/wave50-part-006.json data/multibrand/model-families/part-006.json
+          cp /tmp/wave50-part-007.json data/multibrand/model-families/part-007.json
+          npx tsx scripts/link-wave50-delivery.ts
       - name: Verify tests and production build
         env:
           NODE_OPTIONS: --max-old-space-size=4096

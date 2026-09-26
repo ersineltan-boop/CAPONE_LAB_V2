@@ -142,12 +142,16 @@ const manifest = await readJsonFile<ModelFamilyDatasetManifest>(join(FAMILIES, "
   shardCount: 0,
   shards: [],
 });
-for (const shard of manifest.shards) {
-  const rewritten = rewrittenBytes.get(shard.file);
-  if (!rewritten) continue;
-  shard.familyCount = rewritten.familyCount;
-  shard.bytes = rewritten.bytes;
+for (const [file, rewritten] of rewrittenBytes) {
+  const shard = manifest.shards.find((entry) => entry.file === file);
+  if (shard) {
+    shard.familyCount = rewritten.familyCount;
+    shard.bytes = rewritten.bytes;
+    continue;
+  }
+  manifest.shards.push({ file, familyCount: rewritten.familyCount, bytes: rewritten.bytes });
 }
+manifest.shards.sort((a, b) => a.file.localeCompare(b.file, "en"));
 manifest.totalFamilies = manifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0);
 manifest.shardCount = manifest.shards.length;
 manifest.generatedAt = new Date().toISOString();
