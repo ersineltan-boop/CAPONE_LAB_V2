@@ -2,6 +2,7 @@ export type NewnessStatus = "VERIFIED_NEW" | "FORMERLY_NEW" | "NOT_VERIFIED";
 
 export type NewnessEvidenceType =
   | "NEW_ARRIVALS_COLLECTION"
+  | "CATALOG_DIFF"
   | "NEW_BADGE"
   | "EXPLICIT_DATE";
 

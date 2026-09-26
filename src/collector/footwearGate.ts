@@ -267,7 +267,7 @@ export function extractHandleFromProductUrl(productUrl: string): string {
 }
 
 export function isMerchandisingTag(tag: string): boolean {
-  return /^(collection|badge|color|colour|size)\s*:/i.test(tag.trim());
+  return /^(collection|badge|color|colour|size|recommended-product|complementary-product)\s*:/i.test(tag.trim());
 }
 
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
