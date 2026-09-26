@@ -26,4 +26,14 @@ describe("adapter work queue policy", () => {
       }),
     ]);
   });
+
+  it("keeps Massimo Dutti and luxury adapter work at the front", () => {
+    const queue = createInitialQueue();
+    for (const slug of ["massimo-dutti", "mango", "aquazzura", "gianvito-rossi"]) {
+      queue.entries.find((entry) => entry.slug === slug)!.status = "CUSTOM_ADAPTER_REQUIRED";
+    }
+    expect(buildAdapterWorkQueue(queue).map((entry) => entry.slug)).toEqual([
+      "massimo-dutti", "mango", "aquazzura", "gianvito-rossi",
+    ]);
+  });
 });

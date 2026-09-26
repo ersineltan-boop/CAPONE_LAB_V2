@@ -6,9 +6,11 @@ import type {
   OnboardingStatus,
 } from "../onboarding/types";
 import type { BrandDiscoveryReport, DiscoveredBrandCandidate } from "../onboarding/discovery";
+import { PRIORITY_BRAND_IDS, priorityBrandRank } from "../onboarding/adapterWorkQueue";
 
 export type DashboardFilter =
   | "ALL"
+  | "PRIORITY"
   | "TONIGHT"
   | "READY"
   | "PARTIAL"
@@ -31,6 +33,7 @@ export interface DashboardBrand {
   platform: string | null;
   priority: number;
   isTonight: boolean;
+  isPriority: boolean;
 }
 
 export interface BrandOnboardingDashboard {
@@ -106,13 +109,14 @@ export function buildBrandOnboardingDashboard(
       platform: queued?.detectedPlatform ?? null,
       priority: queued?.priority ?? fallbackPriority.get(entry.id) ?? 99_999,
       isTonight: false,
+      isPriority: PRIORITY_BRAND_IDS.includes(entry.id),
     };
   });
 
   const tonightIds = new Set(
     brands
       .filter((entry) => !entry.isActive && due(entry, now))
-      .sort((a, b) => a.priority - b.priority || a.brand.localeCompare(b.brand, "tr"))
+      .sort((a, b) => priorityBrandRank(a.id) - priorityBrandRank(b.id) || a.priority - b.priority || a.brand.localeCompare(b.brand, "tr"))
       .slice(0, Math.max(0, queue.policy.maxAttemptsPerRun))
       .map((entry) => entry.id),
   );
@@ -136,6 +140,10 @@ export function buildBrandOnboardingDashboard(
       discovered: discovery.candidates.length,
     },
     brands: brands.sort((a, b) => {
+      if (a.isPriority !== b.isPriority) return a.isPriority ? -1 : 1;
+      if (a.isPriority && b.isPriority) {
+        return priorityBrandRank(a.id) - priorityBrandRank(b.id);
+      }
       if (a.isTonight !== b.isTonight) return a.isTonight ? -1 : 1;
       if (a.isActive !== b.isActive) return a.isActive ? 1 : -1;
       return a.priority - b.priority || a.brand.localeCompare(b.brand, "tr");
