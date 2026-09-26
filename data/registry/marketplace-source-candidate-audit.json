@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-09-19T00:00:00.000Z",
+  "issue": 27,
+  "branch": "lane/27-pazaryerleri",
+  "scope": "MARKETPLACES_ONLY",
+  "policy": {
+    "excludedSources": [
+      "amazon",
+      "emag",
+      "trendyol",
+      "otto"
+    ],
+    "excludedBrands": [
+      "adidas",
+      "nike",
+      "converse",
+      "hoka",
+      "on"
+    ],
+    "hidePrice": true,
+    "requireFullCatalog": true,
+    "preserveLastGood": true,
+    "requireGalleryQa": true
+  },
+  "summary": {
+    "candidatesAudited": 5,
+    "readyForActivation": 0,
+    "sourceUnavailable": 4,
+    "customAdapterRequired": 1
+  },
+  "candidates": [
+    {
+      "sourceId": "ssense",
+      "name": "SSENSE",
+      "classification": "MULTI_BRAND_RETAILER",
+      "officialCatalogUrl": "https://www.ssense.com/en-us/women/shoes",
+      "evidence": {
+        "observedAt": "2026-09-19",
+        "publicOfficialCatalogConfirmed": true,
+        "publicPaginationConfirmed": true,
+        "notes": "Official women's shoes pages are publicly indexed with product listings and paginated pages, but the repository's direct probe returned HTTP 403. Search visibility is not accepted as collector access."
+      },
+      "collector": {
+        "status": "SOURCE_UNAVAILABLE",
+        "sourceTotal": null,
+        "collected": 0,
+        "missing": null,
+        "coveragePercent": null,
+        "sourceUnavailable": true,
+        "reason": "Direct collector access is not verified; last repository probe returned HTTP 403."
+      },
+      "lastGood": {
+        "exists": false,
+        "protected": true
+      },
+      "galleryQa": {
+        "status": "NOT_RUN",
+        "productsChecked": 0,
+        "productsWithGallery": 0
+      },
+      "activation": "BLOCKED"
+    },
+    {
+      "sourceId": "mytheresa",
+      "name": "Mytheresa",
+      "classification": "MULTI_BRAND_RETAILER",
+      "officialCatalogUrl": "https://www.mytheresa.com/us/en/women/shoes",
+      "evidence": {
+        "observedAt": "2026-09-19",
+        "publicOfficialCatalogConfirmed": true,
+        "publicPaginationConfirmed": false,
+        "notes": "Existing HTTP and browser collectors produced zero products."
+      },
+      "collector": {
+        "status": "SOURCE_UNAVAILABLE",
+        "sourceTotal": null,
+        "collected": 0,
+        "missing": null,
+        "coveragePercent": null,
+        "sourceUnavailable": true,
+        "reason": "Challenge/anti-bot response; existing reports contain 0 products."
+      },
+      "lastGood": {
+        "exists": false,
+        "protected": true
+      },
+      "galleryQa": {
+        "status": "NOT_RUN",
+        "productsChecked": 0,
+        "productsWithGallery": 0
+      },
+      "activation": "BLOCKED"
+    },
+    {
+      "sourceId": "net-a-porter",
+      "name": "Net-a-Porter",
+      "classification": "MULTI_BRAND_RETAILER",
+      "officialCatalogUrl": "https://www.net-a-porter.com/en-us/shop/shoes",
+      "evidence": {
+        "observedAt": "2026-09-19",
+        "publicOfficialCatalogConfirmed": true,
+        "publicPaginationConfirmed": false,
+        "notes": "Repository probe did not establish direct catalog access."
+      },
+      "collector": {
+        "status": "SOURCE_UNAVAILABLE",
+        "sourceTotal": null,
+        "collected": 0,
+        "missing": null,
+        "coveragePercent": null,
+        "sourceUnavailable": true,
+        "reason": "Last repository probe returned HTTP 403."
+      },
+      "lastGood": {
+        "exists": false,
+        "protected": true
+      },
+      "galleryQa": {
+        "status": "NOT_RUN",
+        "productsChecked": 0,
+        "productsWithGallery": 0
+      },
+      "activation": "BLOCKED"
+    },
+    {
+      "sourceId": "24s",
+      "name": "24S",
+      "classification": "MULTI_BRAND_RETAILER",
+      "officialCatalogUrl": "https://www.24s.com/en-us/women/shoes",
+      "evidence": {
+        "observedAt": "2026-09-19",
+        "publicOfficialCatalogConfirmed": true,
+        "publicPaginationConfirmed": false,
+        "notes": "HTTP 200 alone is insufficient: the repository probe found zero product links."
+      },
+      "collector": {
+        "status": "CUSTOM_ADAPTER_REQUIRED",
+        "sourceTotal": null,
+        "collected": 0,
+        "missing": null,
+        "coveragePercent": null,
+        "sourceUnavailable": false,
+        "reason": "Rendered/API catalog adapter is required before coverage can be measured."
+      },
+      "lastGood": {
+        "exists": false,
+        "protected": true
+      },
+      "galleryQa": {
+        "status": "NOT_RUN",
+        "productsChecked": 0,
+        "productsWithGallery": 0
+      },
+      "activation": "BLOCKED"
+    },
+    {
+      "sourceId": "moda-operandi",
+      "name": "Moda Operandi",
+      "classification": "MULTI_BRAND_RETAILER",
+      "officialCatalogUrl": "https://www.modaoperandi.com/women/shoes",
+      "evidence": {
+        "observedAt": "2026-09-19",
+        "publicOfficialCatalogConfirmed": true,
+        "publicPaginationConfirmed": false,
+        "notes": "Earlier probe found only 10 product links; that is a sample, not full-catalog evidence."
+      },
+      "collector": {
+        "status": "SOURCE_UNAVAILABLE",
+        "sourceTotal": null,
+        "collected": 0,
+        "missing": null,
+        "coveragePercent": null,
+        "sourceUnavailable": true,
+        "reason": "Full-catalog and gallery access could not be verified in the current environment."
+      },
+      "lastGood": {
+        "exists": false,
+        "protected": true
+      },
+      "galleryQa": {
+        "status": "NOT_RUN",
+        "productsChecked": 0,
+        "productsWithGallery": 0
+      },
+      "activation": "BLOCKED"
+    }
+  ],
+  "decision": "No candidate is activated. No sample products are written to the catalog. Existing marketplace data remains unchanged."
+}
