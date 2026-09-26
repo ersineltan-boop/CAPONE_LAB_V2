@@ -87,9 +87,11 @@ export function isTheWebsterExcludedBrand(brand: string | undefined): boolean {
 }
 
 export function parseTheWebsterSourceTotal(html: string): number | null {
+  // The rendered "Results" counter is authoritative. The raw HTML can also
+  // contain unrelated/stale "Filter & Sort" counters (observed as 25,000).
   const match =
-    /Filter\s*&\s*Sort\s*-\s*([\d,]+)\s+Products/i.exec(html) ??
-    /([\d,]+)\s+Results/i.exec(html);
+    /([\d,]+)\s+Results/i.exec(html) ??
+    /Filter\s*&\s*Sort\s*-\s*([\d,]+)\s+Products/i.exec(html);
   if (!match?.[1]) return null;
   const parsed = Number(match[1].replace(/,/g, ""));
   return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
