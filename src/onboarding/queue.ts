@@ -3,7 +3,9 @@ import { dirname, join } from "node:path";
 
 import { isValidHttpUrl, normalizeBrandName, normalizeOfficialUrl } from "../registry/build/normalize";
 import type { BrandUniverseEntry } from "../registry/build/types";
+import { buildAdapterWorkQueue, priorityBrandRank } from "./adapterWorkQueue";
 import {
+  ADAPTER_WORK_QUEUE_PATH,
   INITIAL_ONBOARDING_BRANDS,
   ONBOARDING_MAX_ACTIVATIONS_PER_RUN,
   ONBOARDING_MAX_ATTEMPTS_PER_RUN,
@@ -209,7 +211,7 @@ export function selectQueueCandidates(
       if (!isRetryDue(entry.nextRetryAt, now)) return false;
       return true;
     })
-    .sort((a, b) => a.priority - b.priority)
+    .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority)
     .slice(0, Math.max(0, limit));
 }
 
@@ -249,6 +251,9 @@ export async function saveQueueFile(
   const path = join(root, QUEUE_PATH);
   await mkdir(dirname(path), { recursive: true });
   await writeFile(path, JSON.stringify(queue, null, 2), "utf-8");
+  const adapterPath = join(root, ADAPTER_WORK_QUEUE_PATH);
+  await mkdir(dirname(adapterPath), { recursive: true });
+  await writeFile(adapterPath, JSON.stringify(buildAdapterWorkQueue(queue), null, 2), "utf-8");
 }
 
 export function updateQueueEntry(

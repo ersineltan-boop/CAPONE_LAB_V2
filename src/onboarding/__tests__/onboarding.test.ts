@@ -551,6 +551,10 @@ describe("onboarding run", () => {
       await readFile(join(root, "data/registry/brand-onboarding-queue.json"), "utf-8"),
     ) as BrandOnboardingQueueFile;
     expect(queue.entries.find((entry) => entry.slug === "maison-margiela")?.status).not.toBe("ACTIVE");
+    const adapterWork = JSON.parse(
+      await readFile(join(root, "data/registry/brand-adapter-work-queue.json"), "utf-8"),
+    ) as Array<{ slug: string }>;
+    expect(adapterWork.every((entry) => queue.entries.find((candidate) => candidate.slug === entry.slug)?.status === "CUSTOM_ADAPTER_REQUIRED")).toBe(true);
     await rm(root, { recursive: true, force: true });
   });
 

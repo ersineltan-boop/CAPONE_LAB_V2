@@ -15,6 +15,7 @@ import type { BrandUniverseFile } from "../../registry/build/types";
 
 const FILTERS: Array<{ id: DashboardFilter; label: string }> = [
   { id: "ALL", label: "Tüm adaylar" },
+  { id: "PRIORITY", label: "Öncelikli markalar" },
   { id: "TONIGHT", label: "Bu gece" },
   { id: "READY", label: "Hazır / eklendi" },
   { id: "PARTIAL", label: "Eksik kapsam" },
@@ -52,6 +53,7 @@ export default function BrandOnboardingDashboard() {
       return false;
     }
     if (filter === "ALL") return !entry.isActive;
+    if (filter === "PRIORITY") return entry.isPriority && !entry.isActive;
     if (filter === "TONIGHT") return entry.isTonight;
     if (filter === "READY") return entry.status === "READY" || entry.status === "ACTIVE";
     if (filter === "PARTIAL") return entry.status === "PARTIAL";
@@ -86,6 +88,10 @@ export default function BrandOnboardingDashboard() {
           Sistem her gece resmi kaynaklı adayları sırayla dener. Yalnız tam kadın ayakkabısı
           kataloğu, görsel ve kategori kontrollerinin tamamını geçen markalar otomatik eklenir.
           Eksik veya engelli kaynaklar mevcut sağlam veriyi değiştiremez.
+        </p>
+        <p className="mt-2 max-w-3xl text-xs leading-5 text-ink-muted">
+          Massimo Dutti ve seçili lüks markalar öncelikli takipte. Özel adaptör gerekenler bu listede
+          görünür; doğrulanmış resmî katalog sağlandığında yükleme kapısına geçer.
         </p>
       </div>
 
@@ -142,7 +148,7 @@ export default function BrandOnboardingDashboard() {
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-[9px] uppercase tracking-[0.15em] text-ink-muted">
-                    {entry.isTonight ? "Bu gece denenecek" : statusLabel(entry.status)}
+                    {entry.isPriority ? "Öncelikli takip" : entry.isTonight ? "Bu gece denenecek" : statusLabel(entry.status)}
                   </p>
                   <h3 className="mt-1 font-serif text-xl">{entry.brand}</h3>
                   <p className="text-xs text-ink-muted">{entry.country || "Ülke belirtilmemiş"}</p>
@@ -157,7 +163,13 @@ export default function BrandOnboardingDashboard() {
                 <div className="col-span-2"><dt className="text-ink-faint">Son deneme</dt><dd>{formatDate(entry.lastAttemptAt)}</dd></div>
                 {entry.platform ? <div className="col-span-2"><dt className="text-ink-faint">Kaynak</dt><dd>{entry.platform}</dd></div> : null}
               </dl>
-              {entry.blocker ? <p className="mt-3 border-t border-line-light pt-3 text-xs leading-5 text-ink-muted">{entry.blocker}</p> : null}
+              {(entry.blocker || entry.status === "CUSTOM_ADAPTER_REQUIRED") ? (
+                <p className="mt-3 border-t border-line-light pt-3 text-xs leading-5 text-ink-muted">
+                  {entry.status === "CUSTOM_ADAPTER_REQUIRED"
+                    ? "Resmî ayakkabı kataloğunu doğrulamak için özel kaynak adaptörü gerekiyor."
+                    : entry.blocker}
+                </p>
+              ) : null}
               {entry.officialUrl ? (
                 <a href={entry.officialUrl} target="_blank" rel="noreferrer" className="mt-4 inline-block text-[10px] uppercase tracking-[0.15em] underline underline-offset-4">
                   Resmî siteyi aç
