@@ -13,6 +13,7 @@ export interface AppNavigationState {
 const VALID_VIEWS: AppView[] = [
   "brands",
   "marketplaces",
+  "brand-automation",
   "saved",
   "visual-wall",
   "radar",

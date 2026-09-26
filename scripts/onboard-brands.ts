@@ -21,10 +21,12 @@ function argValue(flag: string): string | undefined {
 const dryRun = process.argv.includes("--dry-run");
 const limitRaw = argValue("--limit");
 const onlyRaw = argValue("--only");
+const maxActivationsRaw = argValue("--max-activations");
 
 const result = await runBrandOnboarding(ROOT, {
   dryRun,
   limit: limitRaw ? Number(limitRaw) : undefined,
+  maxActivations: maxActivationsRaw ? Number(maxActivationsRaw) : undefined,
   only: onlyRaw ? onlyRaw.split(",").map((item) => item.trim()).filter(Boolean) : undefined,
 });
 
