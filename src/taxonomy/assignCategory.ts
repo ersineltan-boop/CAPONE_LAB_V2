@@ -189,6 +189,8 @@ function isLoaferArchitecture(text: string): boolean {
     "tassel loafer",
     "moc toe",
     "moccasin",
+    "mocassim",
+    "mocassins",
     "apron toe loafer",
   ]);
 }

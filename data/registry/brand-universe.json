@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T11:38:59.680Z",
+  "generatedAt": "2026-09-26T12:17:03.475Z",
   "brands": [
     {
       "id": "schutz",
@@ -16,30 +16,30 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Pilot multibrand markası",
+      "notes": "Wave 50 full official women's footwear. source_total=1047 coverage=100",
       "footwearInfluence": 68,
       "directionalInfluence": 55,
       "commercialInfluence": 72,
-      "collectionUrl": null,
+      "collectionUrl": "https://schutz-shoes.com/collections/womens-shoes",
       "collectionPaths": [
         "/collections/womens-shoes"
       ],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "preferPilotCache": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
-        "https://schutz-shoes.com/collections/womens-shoes",
-        "https://schutz-shoes.com/collections/clear-vinyl-shoes"
+        "https://schutz-shoes.com/collections/womens-shoes"
       ],
       "footwearCollectionHandles": [
-        "womens-shoes",
-        "clear-vinyl-shoes"
+        "womens-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 1047,
+      "backfillLimit": 1047,
+      "supportsMultipleImages": true,
+      "preferPilotCache": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "tony-bianco",
@@ -55,11 +55,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Pilot multibrand markası",
+      "notes": "Wave 50 full official women's footwear. source_total=340 coverage=100",
       "footwearInfluence": 62,
       "directionalInfluence": 50,
       "commercialInfluence": 70,
-      "collectionUrl": null,
+      "collectionUrl": "https://tonybianco.com.au/collections/all",
       "collectionPaths": [
         "/collections/heels",
         "/collections/womens-boots",
@@ -69,13 +69,6 @@
         "/collections/wedges",
         "/collections/mules"
       ],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "preferPilotCache": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://tonybianco.com.au/collections/womens-loafers",
         "https://tonybianco.com.au/collections/casual-sandals"
@@ -84,7 +77,16 @@
         "womens-loafers",
         "casual-sandals"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 340,
+      "backfillLimit": 340,
+      "supportsMultipleImages": true,
+      "preferPilotCache": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "st-agni",
@@ -100,21 +102,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Pilot multibrand markası",
+      "notes": "Wave 50 full official women's footwear. source_total=96 coverage=100",
       "footwearInfluence": 58,
       "directionalInfluence": 65,
       "commercialInfluence": 52,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.st-agni.com/collections/footwear",
       "collectionPaths": [
         "/collections/footwear"
       ],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "preferPilotCache": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://www.st-agni.com/collections/footwear",
         "https://www.st-agni.com/collections/heels"
@@ -123,7 +118,16 @@
         "footwear",
         "heels"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 96,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "preferPilotCache": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "a-emery",
@@ -139,29 +143,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=118 coverage=100",
       "footwearInfluence": 55,
       "directionalInfluence": 60,
       "commercialInfluence": 48,
-      "collectionUrl": null,
+      "collectionUrl": "https://aemery.com/collections/footwear",
       "collectionPaths": [
         "/collections/footwear"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
-        "https://aemery.com/collections/footwear",
-        "https://aemery.com/collections/sandals"
+        "https://aemery.com/collections/footwear"
       ],
       "footwearCollectionHandles": [
-        "footwear",
-        "sandals"
+        "footwear"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 118,
+      "backfillLimit": 118,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "alias-mae",
@@ -177,20 +181,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=98 coverage=100",
       "footwearInfluence": 50,
       "directionalInfluence": 45,
       "commercialInfluence": 58,
-      "collectionUrl": null,
+      "collectionUrl": "https://aliasmae.com.au/collections/all",
       "collectionPaths": [
         "/collections/shop-all"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://aliasmae.com.au/collections/heels",
         "https://aliasmae.com.au/collections/boots"
@@ -199,7 +197,15 @@
         "heels",
         "boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 98,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "alohas",
@@ -215,29 +221,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=256 coverage=100",
       "footwearInfluence": 52,
       "directionalInfluence": 48,
       "commercialInfluence": 60,
-      "collectionUrl": null,
+      "collectionUrl": "https://alohas.com/collections/all",
       "collectionPaths": [
-        "/collections/shoes"
+        "/collections/all"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
-        "https://alohas.com/collections/shoes",
-        "https://alohas.com/collections/ballet-flats"
+        "https://alohas.com/collections/all"
       ],
       "footwearCollectionHandles": [
-        "shoes",
-        "ballet-flats"
+        "all"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 256,
+      "backfillLimit": 256,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "dear-frances",
@@ -253,20 +259,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=95 coverage=100",
       "footwearInfluence": 56,
       "directionalInfluence": 62,
       "commercialInfluence": 50,
-      "collectionUrl": null,
+      "collectionUrl": "https://dearfrances.com/collections/alma-ankle",
       "collectionPaths": [
         "/collections/all-styles"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://dearfrances.com/collections/flats",
         "https://dearfrances.com/collections/boots"
@@ -275,7 +275,15 @@
         "flats",
         "boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 95,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "le-monde-beryl",
@@ -291,18 +299,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Collection path auto-discovery",
+      "notes": "Wave 50 full official women's footwear. source_total=156 coverage=100",
       "footwearInfluence": 54,
       "directionalInfluence": 58,
       "commercialInfluence": 46,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://lemondeberyl.com/collections/footwear",
+      "collectionPaths": [
+        "/collections/footwear"
+      ],
       "footwearCollectionUrls": [
         "https://lemondeberyl.com/collections/footwear",
         "https://lemondeberyl.com/collections/boots"
@@ -311,7 +315,15 @@
         "footwear",
         "boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 156,
+      "backfillLimit": 156,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "larroude",
@@ -327,27 +339,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Collection path auto-discovery",
+      "notes": "Wave 50 full official women's footwear. source_total=498 coverage=100",
       "footwearInfluence": 53,
       "directionalInfluence": 47,
       "commercialInfluence": 62,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://larroude.com/collections/all-shoes",
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
       "footwearCollectionUrls": [
-        "https://larroude.com/collections/fall-shoes",
         "https://larroude.com/collections/all-shoes"
       ],
       "footwearCollectionHandles": [
-        "fall-shoes",
         "all-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 498,
+      "backfillLimit": 498,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "dolce-vita",
@@ -363,20 +377,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=666 coverage=100",
       "footwearInfluence": 60,
       "directionalInfluence": 42,
       "commercialInfluence": 75,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.dolcevita.com/collections/ankle-boots",
       "collectionPaths": [
         "/collections/new-arrivals"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://www.dolcevita.com/collections/shoes-view-all",
         "https://www.dolcevita.com/collections/shoes-boots-booties"
@@ -385,7 +393,15 @@
         "shoes-view-all",
         "shoes-boots-booties"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 666,
+      "backfillLimit": 666,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "jeffrey-campbell",
@@ -401,20 +417,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "",
+      "notes": "Wave 50 full official women's footwear. source_total=675 coverage=100",
       "footwearInfluence": 57,
       "directionalInfluence": 50,
       "commercialInfluence": 68,
-      "collectionUrl": null,
+      "collectionUrl": "https://jeffreycampbellshoes.com/collections/all",
       "collectionPaths": [
         "/collections/shop-all"
       ],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
       "footwearCollectionUrls": [
         "https://jeffreycampbellshoes.com/collections/menu-boots",
         "https://jeffreycampbellshoes.com/collections/knee-high-boots"
@@ -423,7 +433,15 @@
         "menu-boots",
         "knee-high-boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 675,
+      "backfillLimit": 675,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "steve-madden",
@@ -439,18 +457,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Collection path auto-discovery",
+      "notes": "Wave 50 full official women's footwear. source_total=1237 coverage=100",
       "footwearInfluence": 65,
       "directionalInfluence": 35,
       "commercialInfluence": 82,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://www.stevemadden.com/collections/all",
+      "collectionPaths": [
+        "/collections/all"
+      ],
       "footwearCollectionUrls": [
         "https://www.stevemadden.com/collections/womens-new-arrivals",
         "https://www.stevemadden.com/collections/womens-best-sellers-2"
@@ -459,7 +473,15 @@
         "womens-new-arrivals",
         "womens-best-sellers-2"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 1237,
+      "backfillLimit": 1237,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "christen",
@@ -509,59 +531,155 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (214 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=237 coverage=100",
       "footwearInfluence": 56,
       "directionalInfluence": 68,
       "commercialInfluence": 42,
-      "collectionUrl": null,
+      "collectionUrl": "https://thejude.com/collections/atlas-flat",
       "collectionPaths": [
+        "/collections/atlas-flat",
+        "/collections/bloom-sandal",
+        "/collections/bonnie-pump",
         "/collections/boots",
-        "/collections/heels-for-women",
-        "/collections/footwear-for-women",
-        "/collections/pumps-for-women",
-        "/collections/mules-for-women",
-        "/collections/sandals-for-women",
-        "/collections/flats-for-women",
-        "/collections/date-mule-all",
+        "/collections/cas-ankle-boot",
         "/collections/cave-ankle-and-mid-calf-boots",
-        "/collections/haze-pump",
+        "/collections/cave-knee-boots",
         "/collections/cave-mule",
-        "/collections/date-mules"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "footwearCollectionHandles": [
-        "boots",
-        "heels-for-women",
-        "footwear-for-women",
-        "pumps-for-women",
-        "mules-for-women",
-        "sandals-for-women",
-        "flats-for-women",
-        "date-mule-all",
-        "cave-ankle-and-mid-calf-boots",
-        "haze-pump",
-        "cave-mule",
-        "date-mules"
+        "/collections/court-pump",
+        "/collections/credo-ankle-boot",
+        "/collections/date-mule",
+        "/collections/date-mule-all",
+        "/collections/date-mules",
+        "/collections/date-pumps",
+        "/collections/dusty-flat",
+        "/collections/faith-pump",
+        "/collections/fame-pump",
+        "/collections/fete-pump",
+        "/collections/flats",
+        "/collections/floor-ankle-boots",
+        "/collections/haze-pump",
+        "/collections/haze-sandals",
+        "/collections/heels",
+        "/collections/snug-sandal-copy",
+        "/collections/icon-pump",
+        "/collections/jerry-pump",
+        "/collections/kiss-pumps",
+        "/collections/leif-boot",
+        "/collections/lucille-wedge",
+        "/collections/mixer-sandal",
+        "/collections/mode-ballerina",
+        "/collections/mules",
+        "/collections/path-flat",
+        "/collections/pirrie-pump",
+        "/collections/pumps",
+        "/collections/sandals",
+        "/collections/scoop-pumps",
+        "/collections/lucille-wedge-copy",
+        "/collections/footwear-for-women",
+        "/collections/theresa-boot",
+        "/collections/yaga-flats",
+        "/collections/yaga-wedge",
+        "/collections/yaga-wedge-sandal-restock"
       ],
       "footwearCollectionUrls": [
+        "https://thejude.com/collections/atlas-flat",
+        "https://thejude.com/collections/bloom-sandal",
+        "https://thejude.com/collections/bonnie-pump",
         "https://thejude.com/collections/boots",
-        "https://thejude.com/collections/heels-for-women",
-        "https://thejude.com/collections/footwear-for-women",
-        "https://thejude.com/collections/pumps-for-women",
-        "https://thejude.com/collections/mules-for-women",
-        "https://thejude.com/collections/sandals-for-women",
-        "https://thejude.com/collections/flats-for-women",
-        "https://thejude.com/collections/date-mule-all",
+        "https://thejude.com/collections/cas-ankle-boot",
         "https://thejude.com/collections/cave-ankle-and-mid-calf-boots",
-        "https://thejude.com/collections/haze-pump",
+        "https://thejude.com/collections/cave-knee-boots",
         "https://thejude.com/collections/cave-mule",
-        "https://thejude.com/collections/date-mules"
+        "https://thejude.com/collections/court-pump",
+        "https://thejude.com/collections/credo-ankle-boot",
+        "https://thejude.com/collections/date-mule",
+        "https://thejude.com/collections/date-mule-all",
+        "https://thejude.com/collections/date-mules",
+        "https://thejude.com/collections/date-pumps",
+        "https://thejude.com/collections/dusty-flat",
+        "https://thejude.com/collections/faith-pump",
+        "https://thejude.com/collections/fame-pump",
+        "https://thejude.com/collections/fete-pump",
+        "https://thejude.com/collections/flats",
+        "https://thejude.com/collections/floor-ankle-boots",
+        "https://thejude.com/collections/haze-pump",
+        "https://thejude.com/collections/haze-sandals",
+        "https://thejude.com/collections/heels",
+        "https://thejude.com/collections/snug-sandal-copy",
+        "https://thejude.com/collections/icon-pump",
+        "https://thejude.com/collections/jerry-pump",
+        "https://thejude.com/collections/kiss-pumps",
+        "https://thejude.com/collections/leif-boot",
+        "https://thejude.com/collections/lucille-wedge",
+        "https://thejude.com/collections/mixer-sandal",
+        "https://thejude.com/collections/mode-ballerina",
+        "https://thejude.com/collections/mules",
+        "https://thejude.com/collections/path-flat",
+        "https://thejude.com/collections/pirrie-pump",
+        "https://thejude.com/collections/pumps",
+        "https://thejude.com/collections/sandals",
+        "https://thejude.com/collections/scoop-pumps",
+        "https://thejude.com/collections/lucille-wedge-copy",
+        "https://thejude.com/collections/footwear-for-women",
+        "https://thejude.com/collections/theresa-boot",
+        "https://thejude.com/collections/yaga-flats",
+        "https://thejude.com/collections/yaga-wedge",
+        "https://thejude.com/collections/yaga-wedge-sandal-restock"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "atlas-flat",
+        "bloom-sandal",
+        "bonnie-pump",
+        "boots",
+        "cas-ankle-boot",
+        "cave-ankle-and-mid-calf-boots",
+        "cave-knee-boots",
+        "cave-mule",
+        "court-pump",
+        "credo-ankle-boot",
+        "date-mule",
+        "date-mule-all",
+        "date-mules",
+        "date-pumps",
+        "dusty-flat",
+        "faith-pump",
+        "fame-pump",
+        "fete-pump",
+        "flats",
+        "floor-ankle-boots",
+        "haze-pump",
+        "haze-sandals",
+        "heels",
+        "snug-sandal-copy",
+        "icon-pump",
+        "jerry-pump",
+        "kiss-pumps",
+        "leif-boot",
+        "lucille-wedge",
+        "mixer-sandal",
+        "mode-ballerina",
+        "mules",
+        "path-flat",
+        "pirrie-pump",
+        "pumps",
+        "sandals",
+        "scoop-pumps",
+        "lucille-wedge-copy",
+        "footwear-for-women",
+        "theresa-boot",
+        "yaga-flats",
+        "yaga-wedge",
+        "yaga-wedge-sandal-restock"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 237,
+      "backfillLimit": 237,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "nodaleto",
@@ -603,18 +721,30 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — DIRECTIONAL (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=65 coverage=100",
       "footwearInfluence": 56,
       "directionalInfluence": 68,
       "commercialInfluence": 42,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://www.neous.co.uk/collections/pre-order-aw24-shoes",
+      "collectionPaths": [
+        "/collections/pre-order-aw24-shoes",
+        "/collections/autumn-winter-26-shoes",
+        "/collections/boot-renewal",
+        "/collections/boots",
+        "/collections/delphinus-scarves-flats",
+        "/collections/flats",
+        "/collections/heeled-boots",
+        "/collections/heels-1",
+        "/collections/heels-test",
+        "/collections/loafers",
+        "/collections/mules",
+        "/collections/pumps",
+        "/collections/sandals",
+        "/collections/ss25",
+        "/collections/spring-summer-26-shoes",
+        "/collections/summer-flats",
+        "/collections/summer-nights-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://www.neous.co.uk/collections/shoes-new-in",
         "https://www.neous.co.uk/collections/shoes"
@@ -623,7 +753,15 @@
         "shoes-new-in",
         "shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 65,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "reike-nen",
@@ -691,18 +829,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — PREMIUM (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=249 coverage=100",
       "footwearInfluence": 54,
       "directionalInfluence": 62,
       "commercialInfluence": 48,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://studioamelia.co/collections/all",
+      "collectionPaths": [
+        "/collections/all"
+      ],
       "footwearCollectionUrls": [
         "https://studioamelia.co/collections/flats",
         "https://studioamelia.co/collections/shoes"
@@ -711,7 +845,15 @@
         "flats",
         "shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 249,
+      "backfillLimit": 249,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "aeyde",
@@ -727,18 +869,46 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — PREMIUM (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=388 coverage=100",
       "footwearInfluence": 54,
       "directionalInfluence": 62,
       "commercialInfluence": 48,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://www.aeyde.com/collections/all-footwear",
+      "collectionPaths": [
+        "/collections/all-footwear",
+        "/collections/ankle-boots",
+        "/collections/ballerinas",
+        "/collections/ballet-flats",
+        "/collections/city-boots",
+        "/collections/filler-suggested-product-logic-ankle-boots",
+        "/collections/filler-suggested-product-logic-anklets",
+        "/collections/filler-suggested-product-logic-clogs",
+        "/collections/filler-suggested-product-logic-flat-sandals",
+        "/collections/filler-suggested-product-logic-flats",
+        "/collections/filler-suggested-product-logic-heeled-sandals",
+        "/collections/filler-suggested-product-logic-knee-high-boots",
+        "/collections/filler-suggested-product-logic-loafers",
+        "/collections/filler-suggested-product-logic-pumps",
+        "/collections/filler-suggested-product-logic-shoes",
+        "/collections/flat-sandals",
+        "/collections/flats",
+        "/collections/heeled-sandals",
+        "/collections/house-slippers",
+        "/collections/knee-boots",
+        "/collections/knee-high-boots",
+        "/collections/loafer-capsule",
+        "/collections/loafers",
+        "/collections/loafers-1",
+        "/collections/mary-janes",
+        "/collections/mules",
+        "/collections/pumps",
+        "/collections/slide-capsule",
+        "/collections/sneakers",
+        "/collections/square-chic-sandals",
+        "/collections/uma-slim-sneaker",
+        "/collections/uma-sneaker",
+        "/collections/wedges"
+      ],
       "footwearCollectionUrls": [
         "https://www.aeyde.com/collections/flats",
         "https://www.aeyde.com/collections/pumps"
@@ -747,7 +917,15 @@
         "flats",
         "pumps"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 388,
+      "backfillLimit": 388,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "hereu",
@@ -763,18 +941,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — PREMIUM (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=169 coverage=100",
       "footwearInfluence": 54,
       "directionalInfluence": 62,
       "commercialInfluence": 48,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://hereustudio.com/collections/womens-shoes",
+      "collectionPaths": [
+        "/collections/womens-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://hereustudio.com/collections/womens-new-in-shoes",
         "https://hereustudio.com/collections/womens-loafers"
@@ -783,7 +957,15 @@
         "womens-new-in-shoes",
         "womens-loafers"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 169,
+      "backfillLimit": 169,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "souliers-martinez",
@@ -799,18 +981,18 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — PREMIUM (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=57 coverage=100",
       "footwearInfluence": 54,
       "directionalInfluence": 62,
       "commercialInfluence": 48,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://souliers-martinez.com/collections/designer-boots",
+      "collectionPaths": [
+        "/collections/designer-boots",
+        "/collections/designer-flat-shoes",
+        "/collections/designer-platforms",
+        "/collections/designer-pumps",
+        "/collections/designer-sandals"
+      ],
       "footwearCollectionUrls": [
         "https://souliers-martinez.com/collections/designer-flat-shoes",
         "https://souliers-martinez.com/collections/designer-boots"
@@ -819,7 +1001,15 @@
         "designer-flat-shoes",
         "designer-boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 57,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "luis-onofre",
@@ -835,18 +1025,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — PREMIUM (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=178 coverage=100",
       "footwearInfluence": 50,
       "directionalInfluence": 55,
       "commercialInfluence": 45,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://luisonofre.com/collections/all-shoes",
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://luisonofre.com/collections/loafers",
         "https://luisonofre.com/collections/pumps"
@@ -855,7 +1041,15 @@
         "loafers",
         "pumps"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 178,
+      "backfillLimit": 178,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "flattered",
@@ -871,27 +1065,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — COMMERCIAL (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=93 coverage=100",
       "footwearInfluence": 58,
       "directionalInfluence": 45,
       "commercialInfluence": 72,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://flattered.com/collections/all-shoes",
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
       "footwearCollectionUrls": [
-        "https://flattered.com/collections/ballet-flats",
-        "https://flattered.com/collections/boots"
+        "https://flattered.com/collections/all-shoes"
       ],
       "footwearCollectionHandles": [
-        "ballet-flats",
-        "boots"
+        "all-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 93,
+      "backfillLimit": 93,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "jonak",
@@ -985,18 +1181,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — COMMERCIAL (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=158 coverage=100",
       "footwearInfluence": 55,
       "directionalInfluence": 40,
       "commercialInfluence": 65,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://maray.pt/collections/all-shoes",
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://maray.pt/collections/sandals",
         "https://maray.pt/collections/mules"
@@ -1005,7 +1197,15 @@
         "sandals",
         "mules"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 158,
+      "backfillLimit": 158,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "exe",
@@ -1021,25 +1221,41 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — COMMERCIAL (probe READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=228 coverage=100",
       "footwearInfluence": 55,
       "directionalInfluence": 40,
       "commercialInfluence": 65,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "REVIEWED",
-      "radarEligible": true,
-      "backfillLimit": 100,
+      "collectionUrl": "https://exe.pt/collections/fw26-sapatilhas-e-tenis",
+      "collectionPaths": [
+        "/collections/fw26-sapatilhas-e-tenis",
+        "/collections/sapatos",
+        "/collections/sandalias",
+        "/collections/sapatilhas-e-tenis",
+        "/collections/socas-e-mules"
+      ],
       "footwearCollectionUrls": [
+        "https://exe.pt/collections/fw26-sapatilhas-e-tenis",
+        "https://exe.pt/collections/sapatos",
+        "https://exe.pt/collections/sandalias",
+        "https://exe.pt/collections/sapatilhas-e-tenis",
         "https://exe.pt/collections/socas-e-mules"
       ],
       "footwearCollectionHandles": [
+        "fw26-sapatilhas-e-tenis",
+        "sapatos",
+        "sandalias",
+        "sapatilhas-e-tenis",
         "socas-e-mules"
       ],
-      "collectionDiscoveryStatus": "AUTO_DISCOVERED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 228,
+      "backfillLimit": 228,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "REVIEWED",
+      "radarEligible": true
     },
     {
       "id": "luiza-barcelos",
@@ -1211,18 +1427,14 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — activated after READY_AUTOMATIC probe (classification pending)",
+      "notes": "Wave 50 full official women's footwear. source_total=174 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "backfillLimit": 100,
+      "collectionUrl": "https://www.therow.com/collections/women-shoes",
+      "collectionPaths": [
+        "/collections/women-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://www.therow.com/collections/women-shoes",
         "https://www.therow.com/collections/women-boots"
@@ -1231,7 +1443,15 @@
         "women-shoes",
         "women-boots"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 174,
+      "backfillLimit": 174,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "bottega-veneta",
@@ -1533,27 +1753,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — activated after READY_AUTOMATIC probe (classification pending)",
+      "notes": "Wave 50 full official women's footwear. source_total=153 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "backfillLimit": 100,
+      "collectionUrl": "https://khaite.com/collections/shoes",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
       "footwearCollectionUrls": [
-        "https://khaite.com/collections/shoes",
-        "https://khaite.com/collections/boots"
+        "https://khaite.com/collections/shoes"
       ],
       "footwearCollectionHandles": [
-        "shoes",
-        "boots"
+        "shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 153,
+      "backfillLimit": 153,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "toteme",
@@ -1565,25 +1787,48 @@
       "trackingPriority": "P2",
       "isActive": true,
       "collectorType": "SHOPIFY_PUBLIC",
-      "collectionStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — activated after READY_AUTOMATIC probe (classification pending)",
+      "notes": "Wave 50 full official women's footwear. source_total=113 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
+      "collectionUrl": "https://toteme.com/collections/shoes-boots",
+      "collectionPaths": [
+        "/collections/shoes-boots",
+        "/collections/shoes-flats",
+        "/collections/shoes-pumps-mules",
+        "/collections/shoes-sandals",
+        "/collections/shoes-5",
+        "/collections/shoes-sneakers"
+      ],
+      "footwearCollectionUrls": [
+        "https://toteme.com/collections/shoes-boots",
+        "https://toteme.com/collections/shoes-flats",
+        "https://toteme.com/collections/shoes-pumps-mules",
+        "https://toteme.com/collections/shoes-sandals",
+        "https://toteme.com/collections/shoes-5",
+        "https://toteme.com/collections/shoes-sneakers"
+      ],
+      "footwearCollectionHandles": [
+        "shoes-boots",
+        "shoes-flats",
+        "shoes-pumps-mules",
+        "shoes-sandals",
+        "shoes-5",
+        "shoes-sneakers"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 113,
+      "backfillLimit": 113,
       "supportsMultipleImages": true,
-      "discoverySources": [],
+      "discoverySources": [
+        "wave50"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "backfillLimit": 100,
-      "collectionDiscoveryStatus": "NEEDS_MANUAL_CONFIG",
-      "footwearCollectionUrls": [],
-      "footwearCollectionHandles": []
+      "radarEligible": false
     },
     {
       "id": "jil-sander",
@@ -1651,25 +1896,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — activated after READY_AUTOMATIC probe (classification pending)",
+      "notes": "Wave 50 full official women's footwear. source_total=67 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 30,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "backfillLimit": 100,
+      "collectionUrl": "https://www.lemaire.fr/collections/women-shoes",
+      "collectionPaths": [
+        "/collections/women-shoes"
+      ],
       "footwearCollectionUrls": [
         "https://www.lemaire.fr/collections/women-shoes"
       ],
       "footwearCollectionHandles": [
         "women-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 67,
+      "backfillLimit": 100,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "courr-ges",
@@ -2074,59 +2323,68 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (163 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=145 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://aminamuaddi.com/collections/anklet",
       "collectionPaths": [
-        "/collections/view-all-shoes",
+        "/collections/anklet",
+        "/collections/bootie",
+        "/collections/boot",
+        "/collections/fw25-shoes-1",
+        "/collections/flats",
+        "/collections/flat-shoes",
+        "/collections/mini-camelia-slipper",
+        "/collections/mules",
+        "/collections/platform-shoes",
         "/collections/pump",
         "/collections/sandal",
-        "/collections/boot",
-        "/collections/mules",
-        "/collections/flats",
-        "/collections/bootie",
         "/collections/slipper",
-        "/collections/fw25-shoes-1",
-        "/collections/platform-shoes",
-        "/collections/flat-shoes",
-        "/collections/anklet"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "view-all-shoes",
-        "pump",
-        "sandal",
-        "boot",
-        "mules",
-        "flats",
-        "bootie",
-        "slipper",
-        "fw25-shoes-1",
-        "platform-shoes",
-        "flat-shoes",
-        "anklet"
+        "/collections/view-all-shoes",
+        "/collections/vittoria-slipper"
       ],
       "footwearCollectionUrls": [
-        "https://aminamuaddi.com/collections/view-all-shoes",
+        "https://aminamuaddi.com/collections/anklet",
+        "https://aminamuaddi.com/collections/bootie",
+        "https://aminamuaddi.com/collections/boot",
+        "https://aminamuaddi.com/collections/fw25-shoes-1",
+        "https://aminamuaddi.com/collections/flats",
+        "https://aminamuaddi.com/collections/flat-shoes",
+        "https://aminamuaddi.com/collections/mini-camelia-slipper",
+        "https://aminamuaddi.com/collections/mules",
+        "https://aminamuaddi.com/collections/platform-shoes",
         "https://aminamuaddi.com/collections/pump",
         "https://aminamuaddi.com/collections/sandal",
-        "https://aminamuaddi.com/collections/boot",
-        "https://aminamuaddi.com/collections/mules",
-        "https://aminamuaddi.com/collections/flats",
-        "https://aminamuaddi.com/collections/bootie",
         "https://aminamuaddi.com/collections/slipper",
-        "https://aminamuaddi.com/collections/fw25-shoes-1",
-        "https://aminamuaddi.com/collections/platform-shoes",
-        "https://aminamuaddi.com/collections/flat-shoes",
-        "https://aminamuaddi.com/collections/anklet"
+        "https://aminamuaddi.com/collections/view-all-shoes",
+        "https://aminamuaddi.com/collections/vittoria-slipper"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "anklet",
+        "bootie",
+        "boot",
+        "fw25-shoes-1",
+        "flats",
+        "flat-shoes",
+        "mini-camelia-slipper",
+        "mules",
+        "platform-shoes",
+        "pump",
+        "sandal",
+        "slipper",
+        "view-all-shoes",
+        "vittoria-slipper"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 145,
+      "backfillLimit": 145,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "aquazzura",
@@ -2402,11 +2660,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 1 — activated after SHOPIFY_PUBLIC probe and test collection (439 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=349 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://paristexasbrand.com/collections/all",
       "collectionPaths": [
         "/collections/boots",
         "/collections/slingback-pumps",
@@ -2420,25 +2678,6 @@
         "/collections/lidia-mule-105",
         "/collections/stiletto",
         "/collections/lidia-mule-70"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "boots",
-        "slingback-pumps",
-        "texan-boots",
-        "ankle-boots",
-        "mules-sandals",
-        "new-arrivals",
-        "flats",
-        "boots-copy",
-        "stiletto-boot",
-        "lidia-mule-105",
-        "stiletto",
-        "lidia-mule-70"
       ],
       "footwearCollectionUrls": [
         "https://paristexasbrand.com/collections/boots",
@@ -2454,7 +2693,29 @@
         "https://paristexasbrand.com/collections/stiletto",
         "https://paristexasbrand.com/collections/lidia-mule-70"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "boots",
+        "slingback-pumps",
+        "texan-boots",
+        "ankle-boots",
+        "mules-sandals",
+        "new-arrivals",
+        "flats",
+        "boots-copy",
+        "stiletto-boot",
+        "lidia-mule-105",
+        "stiletto",
+        "lidia-mule-70"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 349,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "gia-borghini",
@@ -2514,59 +2775,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (256 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=256 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.malonesouliers.com/collections/all",
       "collectionPaths": [
-        "/collections/all",
-        "/collections/mules",
-        "/collections/sandals",
-        "/collections/flats",
-        "/collections/pumps",
-        "/collections/boots",
-        "/collections/womens-mid-heels",
-        "/collections/womens-designer-work-shoes",
-        "/collections/womens-evening-shoe-edit",
-        "/collections/wedding-guest-shoes",
-        "/collections/womens-high-heels",
-        "/collections/bridesmaid-shoes"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "all",
-        "mules",
-        "sandals",
-        "flats",
-        "pumps",
-        "boots",
-        "womens-mid-heels",
-        "womens-designer-work-shoes",
-        "womens-evening-shoe-edit",
-        "wedding-guest-shoes",
-        "womens-high-heels",
-        "bridesmaid-shoes"
+        "/collections/all"
       ],
       "footwearCollectionUrls": [
-        "https://www.malonesouliers.com/collections/all",
-        "https://www.malonesouliers.com/collections/mules",
-        "https://www.malonesouliers.com/collections/sandals",
-        "https://www.malonesouliers.com/collections/flats",
-        "https://www.malonesouliers.com/collections/pumps",
-        "https://www.malonesouliers.com/collections/boots",
-        "https://www.malonesouliers.com/collections/womens-mid-heels",
-        "https://www.malonesouliers.com/collections/womens-designer-work-shoes",
-        "https://www.malonesouliers.com/collections/womens-evening-shoe-edit",
-        "https://www.malonesouliers.com/collections/wedding-guest-shoes",
-        "https://www.malonesouliers.com/collections/womens-high-heels",
-        "https://www.malonesouliers.com/collections/bridesmaid-shoes"
+        "https://www.malonesouliers.com/collections/all"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "all"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 256,
+      "backfillLimit": 256,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "sophia-webster",
@@ -2582,59 +2813,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (141 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=269 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.sophiawebster.com/collections/all",
       "collectionPaths": [
-        "/collections/shoes",
-        "/collections/sandals",
-        "/collections/pumps",
-        "/collections/mules",
-        "/collections/flats",
-        "/collections/boots",
-        "/collections/espadrilles",
-        "/collections/platforms",
-        "/collections/sneakers",
-        "/collections/sale-mid-heels",
-        "/collections/sale-flats",
-        "/collections/sale-boots"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "shoes",
-        "sandals",
-        "pumps",
-        "mules",
-        "flats",
-        "boots",
-        "espadrilles",
-        "platforms",
-        "sneakers",
-        "sale-mid-heels",
-        "sale-flats",
-        "sale-boots"
+        "/collections/all"
       ],
       "footwearCollectionUrls": [
-        "https://www.sophiawebster.com/collections/shoes",
-        "https://www.sophiawebster.com/collections/sandals",
-        "https://www.sophiawebster.com/collections/pumps",
-        "https://www.sophiawebster.com/collections/mules",
-        "https://www.sophiawebster.com/collections/flats",
-        "https://www.sophiawebster.com/collections/boots",
-        "https://www.sophiawebster.com/collections/espadrilles",
-        "https://www.sophiawebster.com/collections/platforms",
-        "https://www.sophiawebster.com/collections/sneakers",
-        "https://www.sophiawebster.com/collections/sale-mid-heels",
-        "https://www.sophiawebster.com/collections/sale-flats",
-        "https://www.sophiawebster.com/collections/sale-boots"
+        "https://www.sophiawebster.com/collections/all"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "all"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 269,
+      "backfillLimit": 269,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "emme-parsons",
@@ -2650,11 +2851,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (83 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=90 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://emmeparsons.com/collections/all",
       "collectionPaths": [
         "/collections/sneakers",
         "/collections/vacation-shoe-edit",
@@ -2668,25 +2869,6 @@
         "/collections/emme-parsons-shearling-shoes",
         "/collections/toe-ring-sandals",
         "/collections/emme-parsons-simple-block-heel"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "sneakers",
-        "vacation-shoe-edit",
-        "emme-parsons-simple-wedge",
-        "emme-parsons-parker-moccasin",
-        "raffia",
-        "minimal-sandals-heels",
-        "shop-sandals-email-6-29",
-        "emme-parsons-susan",
-        "emme-parsons-pointy-flat",
-        "emme-parsons-shearling-shoes",
-        "toe-ring-sandals",
-        "emme-parsons-simple-block-heel"
       ],
       "footwearCollectionUrls": [
         "https://emmeparsons.com/collections/sneakers",
@@ -2702,7 +2884,29 @@
         "https://emmeparsons.com/collections/toe-ring-sandals",
         "https://emmeparsons.com/collections/emme-parsons-simple-block-heel"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "sneakers",
+        "vacation-shoe-edit",
+        "emme-parsons-simple-wedge",
+        "emme-parsons-parker-moccasin",
+        "raffia",
+        "minimal-sandals-heels",
+        "shop-sandals-email-6-29",
+        "emme-parsons-susan",
+        "emme-parsons-pointy-flat",
+        "emme-parsons-shearling-shoes",
+        "toe-ring-sandals",
+        "emme-parsons-simple-block-heel"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 90,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "cult-gaia",
@@ -2718,59 +2922,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (143 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=153 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://cultgaia.com/collections/shoes",
       "collectionPaths": [
-        "/collections/shoes",
-        "/collections/sandals",
-        "/collections/heels",
-        "/collections/platforms",
-        "/collections/boots",
-        "/collections/flats",
-        "/collections/mules",
-        "/collections/evening-shoes",
-        "/collections/bags-shoes",
-        "/collections/footwear-gifts",
-        "/collections/jila-sandal",
-        "/collections/clear-vinyl-shoes"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "shoes",
-        "sandals",
-        "heels",
-        "platforms",
-        "boots",
-        "flats",
-        "mules",
-        "evening-shoes",
-        "bags-shoes",
-        "footwear-gifts",
-        "jila-sandal",
-        "clear-vinyl-shoes"
+        "/collections/shoes"
       ],
       "footwearCollectionUrls": [
-        "https://cultgaia.com/collections/shoes",
-        "https://cultgaia.com/collections/sandals",
-        "https://cultgaia.com/collections/heels",
-        "https://cultgaia.com/collections/platforms",
-        "https://cultgaia.com/collections/boots",
-        "https://cultgaia.com/collections/flats",
-        "https://cultgaia.com/collections/mules",
-        "https://cultgaia.com/collections/evening-shoes",
-        "https://cultgaia.com/collections/bags-shoes",
-        "https://cultgaia.com/collections/footwear-gifts",
-        "https://cultgaia.com/collections/jila-sandal",
-        "https://cultgaia.com/collections/clear-vinyl-shoes"
+        "https://cultgaia.com/collections/shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 153,
+      "backfillLimit": 153,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "staud",
@@ -2786,59 +2960,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (293 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=187 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://staud.clothing/collections/shoes",
       "collectionPaths": [
-        "/collections/shoes",
-        "/collections/boots",
-        "/collections/sandals",
-        "/collections/flats",
-        "/collections/sneakers",
-        "/collections/the-boot-shop",
-        "/collections/heels-and-wedges",
-        "/collections/fabric-raffia",
-        "/collections/wally-boot",
-        "/collections/world-of-wally",
-        "/collections/staud-boot-shop",
-        "/collections/the-brigitte-mule"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "shoes",
-        "boots",
-        "sandals",
-        "flats",
-        "sneakers",
-        "the-boot-shop",
-        "heels-and-wedges",
-        "fabric-raffia",
-        "wally-boot",
-        "world-of-wally",
-        "staud-boot-shop",
-        "the-brigitte-mule"
+        "/collections/shoes"
       ],
       "footwearCollectionUrls": [
-        "https://staud.clothing/collections/shoes",
-        "https://staud.clothing/collections/boots",
-        "https://staud.clothing/collections/sandals",
-        "https://staud.clothing/collections/flats",
-        "https://staud.clothing/collections/sneakers",
-        "https://staud.clothing/collections/the-boot-shop",
-        "https://staud.clothing/collections/heels-and-wedges",
-        "https://staud.clothing/collections/fabric-raffia",
-        "https://staud.clothing/collections/wally-boot",
-        "https://staud.clothing/collections/world-of-wally",
-        "https://staud.clothing/collections/staud-boot-shop",
-        "https://staud.clothing/collections/the-brigitte-mule"
+        "https://staud.clothing/collections/shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 187,
+      "backfillLimit": 187,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "tory-burch",
@@ -3088,59 +3232,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (148 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=126 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://byfar.com/collections/all-shoes",
       "collectionPaths": [
-        "/collections/flats",
-        "/collections/loafers",
-        "/collections/sneakers",
-        "/collections/shoes-1",
-        "/collections/aw26-shoes",
-        "/collections/aw26-our-favorite-shoes",
-        "/collections/mid-heels-1",
-        "/collections/aw26-all-boots",
-        "/collections/aw26-mid-heels",
-        "/collections/boots-1",
-        "/collections/ankle-boots-1",
-        "/collections/flip-flops-and-mules"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "flats",
-        "loafers",
-        "sneakers",
-        "shoes-1",
-        "aw26-shoes",
-        "aw26-our-favorite-shoes",
-        "mid-heels-1",
-        "aw26-all-boots",
-        "aw26-mid-heels",
-        "boots-1",
-        "ankle-boots-1",
-        "flip-flops-and-mules"
+        "/collections/all-shoes"
       ],
       "footwearCollectionUrls": [
-        "https://byfar.com/collections/flats",
-        "https://byfar.com/collections/loafers",
-        "https://byfar.com/collections/sneakers",
-        "https://byfar.com/collections/shoes-1",
-        "https://byfar.com/collections/aw26-shoes",
-        "https://byfar.com/collections/aw26-our-favorite-shoes",
-        "https://byfar.com/collections/mid-heels-1",
-        "https://byfar.com/collections/aw26-all-boots",
-        "https://byfar.com/collections/aw26-mid-heels",
-        "https://byfar.com/collections/boots-1",
-        "https://byfar.com/collections/ankle-boots-1",
-        "https://byfar.com/collections/flip-flops-and-mules"
+        "https://byfar.com/collections/all-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "all-shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 126,
+      "backfillLimit": 126,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "wandler",
@@ -3182,11 +3296,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (75 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=38 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://manuatelier.com/collections/shoes",
       "collectionPaths": [
         "/collections/shoes",
         "/collections/boots",
@@ -3200,25 +3314,6 @@
         "/collections/beste-slippers",
         "/collections/knee-high-pointy-toe-boots",
         "/collections/merve-loafers"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "shoes",
-        "boots",
-        "sandals",
-        "loafers",
-        "mules",
-        "manu-ballet-flats",
-        "duck-boots",
-        "point-toe-boots",
-        "almond-toe-sandals-shoes",
-        "beste-slippers",
-        "knee-high-pointy-toe-boots",
-        "merve-loafers"
       ],
       "footwearCollectionUrls": [
         "https://manuatelier.com/collections/shoes",
@@ -3234,7 +3329,29 @@
         "https://manuatelier.com/collections/knee-high-pointy-toe-boots",
         "https://manuatelier.com/collections/merve-loafers"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "shoes",
+        "boots",
+        "sandals",
+        "loafers",
+        "mules",
+        "manu-ballet-flats",
+        "duck-boots",
+        "point-toe-boots",
+        "almond-toe-sandals-shoes",
+        "beste-slippers",
+        "knee-high-pointy-toe-boots",
+        "merve-loafers"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 38,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "carel",
@@ -3250,11 +3367,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (181 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=192 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.carel.fr/collections/all",
       "collectionPaths": [
         "/collections/mules",
         "/collections/espadrilles",
@@ -3266,23 +3383,6 @@
         "/collections/sandales",
         "/collections/matieres-alternatives-chaussures-eco-responsables",
         "/collections/selection-sandales-ceremonie"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "mules",
-        "espadrilles",
-        "toutes-les-chaussures",
-        "chaussures-et-sacs-upcycles",
-        "bottines",
-        "escarpins",
-        "ballerines",
-        "sandales",
-        "matieres-alternatives-chaussures-eco-responsables",
-        "selection-sandales-ceremonie"
       ],
       "footwearCollectionUrls": [
         "https://www.carel.fr/collections/mules",
@@ -3296,7 +3396,27 @@
         "https://www.carel.fr/collections/matieres-alternatives-chaussures-eco-responsables",
         "https://www.carel.fr/collections/selection-sandales-ceremonie"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "mules",
+        "espadrilles",
+        "toutes-les-chaussures",
+        "chaussures-et-sacs-upcycles",
+        "bottines",
+        "escarpins",
+        "ballerines",
+        "sandales",
+        "matieres-alternatives-chaussures-eco-responsables",
+        "selection-sandales-ceremonie"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 192,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "repetto",
@@ -3598,11 +3718,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (108 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=65 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://naguisa.com/collections/chunky-boots",
       "collectionPaths": [
         "/collections/chunky-boots",
         "/collections/sandalias-planas",
@@ -3611,20 +3731,6 @@
         "/collections/sandalias-plexi-ss26",
         "/collections/coleccion-sandalias",
         "/collections/sandalias-bio"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "chunky-boots",
-        "sandalias-planas",
-        "sandalias-de-tacon",
-        "sandalias-trenzadas",
-        "sandalias-plexi-ss26",
-        "coleccion-sandalias",
-        "sandalias-bio"
       ],
       "footwearCollectionUrls": [
         "https://naguisa.com/collections/chunky-boots",
@@ -3635,7 +3741,24 @@
         "https://naguisa.com/collections/coleccion-sandalias",
         "https://naguisa.com/collections/sandalias-bio"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "chunky-boots",
+        "sandalias-planas",
+        "sandalias-de-tacon",
+        "sandalias-trenzadas",
+        "sandalias-plexi-ss26",
+        "coleccion-sandalias",
+        "sandalias-bio"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 65,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "flabelus",
@@ -3651,11 +3774,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (330 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=511 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://flabelus.com/collections/all",
       "collectionPaths": [
         "/collections/mary-jane",
         "/collections/heel",
@@ -3665,21 +3788,6 @@
         "/collections/lewis-oxford",
         "/collections/seasonal-treats",
         "/collections/mary-jane-sales"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "mary-jane",
-        "heel",
-        "sandals",
-        "slipper-woman",
-        "double-mary-jane",
-        "lewis-oxford",
-        "seasonal-treats",
-        "mary-jane-sales"
       ],
       "footwearCollectionUrls": [
         "https://flabelus.com/collections/mary-jane",
@@ -3691,7 +3799,25 @@
         "https://flabelus.com/collections/seasonal-treats",
         "https://flabelus.com/collections/mary-jane-sales"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "mary-jane",
+        "heel",
+        "sandals",
+        "slipper-woman",
+        "double-mary-jane",
+        "lewis-oxford",
+        "seasonal-treats",
+        "mary-jane-sales"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 511,
+      "backfillLimit": 511,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "vagabond-shoemakers",
@@ -3733,59 +3859,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (108 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=88 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://atpatelier.com/collections/us-shoes",
       "collectionPaths": [
-        "/collections/sandals",
-        "/collections/shoes",
-        "/collections/flats",
-        "/collections/boots",
-        "/collections/loafers",
-        "/collections/ballet-flats",
-        "/collections/ballerinas",
-        "/collections/platforms",
-        "/collections/us-shoes",
-        "/collections/pumps-heels",
-        "/collections/bestsellers-shoes",
-        "/collections/fall-2025-shoes"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "sandals",
-        "shoes",
-        "flats",
-        "boots",
-        "loafers",
-        "ballet-flats",
-        "ballerinas",
-        "platforms",
-        "us-shoes",
-        "pumps-heels",
-        "bestsellers-shoes",
-        "fall-2025-shoes"
+        "/collections/us-shoes"
       ],
       "footwearCollectionUrls": [
-        "https://atpatelier.com/collections/sandals",
-        "https://atpatelier.com/collections/shoes",
-        "https://atpatelier.com/collections/flats",
-        "https://atpatelier.com/collections/boots",
-        "https://atpatelier.com/collections/loafers",
-        "https://atpatelier.com/collections/ballet-flats",
-        "https://atpatelier.com/collections/ballerinas",
-        "https://atpatelier.com/collections/platforms",
-        "https://atpatelier.com/collections/us-shoes",
-        "https://atpatelier.com/collections/pumps-heels",
-        "https://atpatelier.com/collections/bestsellers-shoes",
-        "https://atpatelier.com/collections/fall-2025-shoes"
+        "https://atpatelier.com/collections/us-shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "us-shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 88,
+      "backfillLimit": 88,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "axel-arigato",
@@ -3853,11 +3949,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — activated after SHOPIFY_PUBLIC probe and test collection (165 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=201 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://pavement-official.com/collections/boots",
       "collectionPaths": [
         "/collections/espadrilles",
         "/collections/loafers",
@@ -3866,20 +3962,6 @@
         "/collections/sneakers",
         "/collections/long-boots",
         "/collections/high-heels"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "espadrilles",
-        "loafers",
-        "boots",
-        "sandals",
-        "sneakers",
-        "long-boots",
-        "high-heels"
       ],
       "footwearCollectionUrls": [
         "https://pavement-official.com/collections/espadrilles",
@@ -3890,7 +3972,24 @@
         "https://pavement-official.com/collections/long-boots",
         "https://pavement-official.com/collections/high-heels"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "espadrilles",
+        "loafers",
+        "boots",
+        "sandals",
+        "sneakers",
+        "long-boots",
+        "high-heels"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 500,
+      "backfillLimit": 201,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "ancient-greek-sandals",
@@ -3906,11 +4005,11 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 1 — activated after SHOPIFY_PUBLIC probe and test collection (942 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=871 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.ancient-greek-sandals.com/collections/all",
       "collectionPaths": [
         "/collections/womens-sandals-jellies",
         "/collections/womens-sandals-slippers-shearlings",
@@ -3924,25 +4023,6 @@
         "/collections/wedges",
         "/collections/women-sandals-full-price",
         "/collections/womens-sandals"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "womens-sandals-jellies",
-        "womens-sandals-slippers-shearlings",
-        "womens-sandals-new-in",
-        "caramel-sandals",
-        "suede-sandals",
-        "slides",
-        "heels",
-        "mary-jane",
-        "ballet-flats",
-        "wedges",
-        "women-sandals-full-price",
-        "womens-sandals"
       ],
       "footwearCollectionUrls": [
         "https://www.ancient-greek-sandals.com/collections/womens-sandals-jellies",
@@ -3958,7 +4038,29 @@
         "https://www.ancient-greek-sandals.com/collections/women-sandals-full-price",
         "https://www.ancient-greek-sandals.com/collections/womens-sandals"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "womens-sandals-jellies",
+        "womens-sandals-slippers-shearlings",
+        "womens-sandals-new-in",
+        "caramel-sandals",
+        "suede-sandals",
+        "slides",
+        "heels",
+        "mary-jane",
+        "ballet-flats",
+        "wedges",
+        "women-sandals-full-price",
+        "womens-sandals"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 871,
+      "backfillLimit": 871,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "birkenstock",
@@ -4393,21 +4495,33 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
+      "isActive": true,
       "collectorType": "SHOPIFY_PUBLIC",
-      "collectionStatus": "NEEDS_FOOTWEAR_CONFIG",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — test collection returned 0 products (READY_AUTOMATIC)",
+      "notes": "Wave 50 full official women's footwear. source_total=7 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
+      "collectionUrl": "https://amariacarlota.com/collections/shop-all",
+      "collectionPaths": [
+        "/collections/shop-all"
+      ],
+      "footwearCollectionUrls": [
+        "https://amariacarlota.com/collections/shop-all"
+      ],
+      "footwearCollectionHandles": [
+        "shop-all"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
       "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "backfillLimit": 7,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
       "classificationStatus": "UNREVIEWED",
       "radarEligible": false
     },
@@ -4659,47 +4773,29 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 1 — activated after SHOPIFY_PUBLIC probe and test collection (79 women's footwear products)",
+      "notes": "Wave 50 full official women's footwear. source_total=69 coverage=100",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
+      "collectionUrl": "https://www.theattico.com/collections/shoes",
       "collectionPaths": [
-        "/collections/shoes",
-        "/collections/boots",
-        "/collections/sandals",
-        "/collections/flats",
-        "/collections/pumps",
-        "/collections/mules",
-        "/collections/new-in",
-        "/collections/new-in-2406zsx"
-      ],
-      "productLimit": 500,
-      "supportsMultipleImages": true,
-      "discoverySources": [],
-      "classificationStatus": "UNREVIEWED",
-      "radarEligible": false,
-      "footwearCollectionHandles": [
-        "shoes",
-        "boots",
-        "sandals",
-        "flats",
-        "pumps",
-        "mules",
-        "new-in",
-        "new-in-2406zsx"
+        "/collections/shoes"
       ],
       "footwearCollectionUrls": [
-        "https://www.theattico.com/collections/shoes",
-        "https://www.theattico.com/collections/boots",
-        "https://www.theattico.com/collections/sandals",
-        "https://www.theattico.com/collections/flats",
-        "https://www.theattico.com/collections/pumps",
-        "https://www.theattico.com/collections/mules",
-        "https://www.theattico.com/collections/new-in",
-        "https://www.theattico.com/collections/new-in-2406zsx"
+        "https://www.theattico.com/collections/shoes"
       ],
-      "collectionDiscoveryStatus": "VERIFIED"
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 69,
+      "backfillLimit": 69,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
     },
     {
       "id": "veja",
@@ -5140,6 +5236,44 @@
       "productLimit": 20,
       "supportsMultipleImages": false,
       "discoverySources": [],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
+    },
+    {
+      "id": "naked-wolfe",
+      "brand": "NAKED WOLFE",
+      "officialUrl": "https://nakedwolfe.com",
+      "country": "Avustralya",
+      "segment": "UNCLASSIFIED",
+      "influenceRole": "UNCLASSIFIED",
+      "trackingPriority": "P2",
+      "isActive": true,
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
+      "footwearFocus": "WOMENS_FOOTWEAR",
+      "womenFootwearRelevant": true,
+      "sourceType": "BRAND",
+      "notes": "Wave 50 full official women's footwear. source_total=328 coverage=100",
+      "footwearInfluence": 0,
+      "directionalInfluence": 0,
+      "commercialInfluence": 0,
+      "collectionUrl": "https://nakedwolfe.com/collections/view-all-womens",
+      "collectionPaths": [
+        "/collections/view-all-womens"
+      ],
+      "footwearCollectionUrls": [
+        "https://nakedwolfe.com/collections/view-all-womens"
+      ],
+      "footwearCollectionHandles": [
+        "view-all-womens"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 328,
+      "backfillLimit": 328,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "wave50"
+      ],
       "classificationStatus": "UNREVIEWED",
       "radarEligible": false
     }
