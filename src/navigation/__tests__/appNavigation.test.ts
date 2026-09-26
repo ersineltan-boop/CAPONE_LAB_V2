@@ -4,6 +4,7 @@ import { PRIMARY_NAV_ITEMS, isPrimaryNavView } from "../primaryNav";
 import { buildNavigationSearch, parseNavigationFromSearch } from "../appNavigation";
 import { PAZAR_OZETI_ENABLED } from "../../components/visualWall/visualWallSections";
 
+// Pazar Araştırması uygulaması korunur; yalnız kullanıcı navigasyonu geçici olarak kapalıdır.
 describe("appNavigation", () => {
   it("defaults to brands view", () => {
     const state = parseNavigationFromSearch("");
