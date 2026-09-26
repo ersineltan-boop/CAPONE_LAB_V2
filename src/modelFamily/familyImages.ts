@@ -1,9 +1,9 @@
 import type { ModelFamily } from "./types";
-import { normalizeProductImageUrls } from "./productImages";
+import { filterGenuineGalleryImages } from "../images/galleryImages";
 
 /** All unique product images for a Model Family — primary first. */
 export function collectModelFamilyImages(family: ModelFamily): string[] {
-  return normalizeProductImageUrls([
+  return filterGenuineGalleryImages([
     family.representativeImage,
     ...family.representativeImages,
     ...family.allImages,

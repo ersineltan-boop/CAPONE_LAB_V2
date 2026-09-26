@@ -9,12 +9,10 @@ import type {
   NewArrivalEvidence,
 } from "../types";
 import { CAPONE_FOOTWEAR_CATEGORIES, CATEGORY_EVIDENCE_CHAIN } from "../types";
+import { isJunkGalleryImage } from "../../images/galleryImages";
 
 const VERSION_SUFFIX =
   /^(.*?)(?:\s+)(?:([0-9]+)|([ivxlcdm]+)|v(?:ersion)?\s*([0-9]+))$/i;
-
-const REJECTED_IMAGE_HINTS =
-  /\b(logo|badge|new[-_ ]?in|new[-_ ]?arrival|nav(?:igation)?|recommend(?:ed|ation)?|placeholder|icon|sprite|banner-promo)\b/i;
 
 const NON_FOOTWEAR =
   /\b(bag|tote|handbag|clutch|belt|sock|tights?|jewelry|jewellery|necklace|earring|shipping|dust bag|care kit|cleaner|polish|insole|wallet|scarf)\b/i;
@@ -273,7 +271,7 @@ export function canGroupAsColorVariants(
 }
 
 export function isRejectedGalleryImage(url: string, label?: string | null): boolean {
-  return REJECTED_IMAGE_HINTS.test(url) || REJECTED_IMAGE_HINTS.test(label ?? "");
+  return isJunkGalleryImage(url, label);
 }
 
 export function isSourceNewArrival(evidence: NewArrivalEvidence): boolean {

@@ -1,20 +1,26 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
+import ProductGalleryModal from "../gallery/ProductGalleryModal";
 import ImagePlaceholder from "../radar/ImagePlaceholder";
+import {
+  filterGenuineGalleryImages,
+  type ProductGalleryColorVariant,
+} from "../../images/galleryImages";
 import {
   imageDedupeKey,
   isValidImageUrl,
-  normalizeProductImageUrls,
   resolveDisplayImage,
   PRODUCT_GRID_SIZES,
 } from "../../images/resolveImageQuality";
-
-export const PRODUCT_PHOTO_FIT_CLASS = "h-full w-full object-contain object-center";
+import { UI_COPY } from "../../presentation/turkishLabels";
 import {
+  PRODUCT_PHOTO_FIT_CLASS,
   nextCarouselIndex,
   prevCarouselIndex,
   resolveSwipeDirection,
 } from "./carouselNavigation";
+
+export { PRODUCT_PHOTO_FIT_CLASS };
 
 interface VisualWallImageCarouselProps {
   images: string[];
@@ -22,6 +28,10 @@ interface VisualWallImageCarouselProps {
   onImageClick?: () => void;
   hideControlsUntilHover?: boolean;
   priority?: boolean;
+  galleryEnabled?: boolean;
+  colorVariants?: ProductGalleryColorVariant[];
+  selectedVariantId?: string | null;
+  onSelectVariant?: (id: string) => void;
 }
 
 export default function VisualWallImageCarousel({
@@ -30,13 +40,18 @@ export default function VisualWallImageCarousel({
   onImageClick,
   hideControlsUntilHover = false,
   priority = false,
+  galleryEnabled = true,
+  colorVariants,
+  selectedVariantId = null,
+  onSelectVariant,
 }: VisualWallImageCarouselProps) {
   const initialImages = useMemo(
-    () => normalizeProductImageUrls(images),
+    () => filterGenuineGalleryImages(images),
     [images],
   );
   const [failedKeys, setFailedKeys] = useState<Set<string>>(() => new Set());
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [galleryOpen, setGalleryOpen] = useState(false);
   const touchStartXRef = useRef<number | null>(null);
 
   const visibleImages = useMemo(() => {
@@ -111,6 +126,14 @@ export default function VisualWallImageCarousel({
     [goNext, goPrev, hasMultipleImages],
   );
 
+  const handleImageClick = useCallback(() => {
+    if (galleryEnabled && visibleImages.length > 0) {
+      setGalleryOpen(true);
+      return;
+    }
+    onImageClick?.();
+  }, [galleryEnabled, onImageClick, visibleImages.length]);
+
   if (visibleImages.length === 0 || !isValidImageUrl(activeImage) || !displayImage) {
     return (
       <ImagePlaceholder alt={alt} className="h-full w-full" label="Görsel yok" />
@@ -125,9 +148,11 @@ export default function VisualWallImageCarousel({
     >
       <button
         type="button"
-        onClick={onImageClick}
+        onClick={handleImageClick}
         className="block h-full w-full text-left"
-        aria-label={`${alt} — ürüne git`}
+        aria-label={
+          galleryEnabled ? `${alt} — ${UI_COPY.productGallery}` : `${alt} — ürüne git`
+        }
       >
         <img
           key={activeImage}
@@ -181,6 +206,19 @@ export default function VisualWallImageCarousel({
           </span>
         </>
       )}
+
+      {galleryEnabled ? (
+        <ProductGalleryModal
+          open={galleryOpen}
+          onClose={() => setGalleryOpen(false)}
+          alt={alt}
+          images={visibleImages}
+          colorVariants={colorVariants}
+          selectedVariantId={selectedVariantId}
+          onSelectVariant={onSelectVariant}
+          initialIndex={currentIndex}
+        />
+      ) : null}
     </div>
   );
 }

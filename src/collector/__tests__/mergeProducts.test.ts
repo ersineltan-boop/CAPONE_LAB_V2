@@ -113,6 +113,36 @@ describe("mergeProducts", () => {
     );
   });
 
+  it("keeps last-good gallery when a refresh is empty or placeholder-only", () => {
+    const existing = product({
+      productUrl: "https://example.com/products/a",
+      imageUrl: "https://cdn.example.com/products/hero.jpg",
+      images: [
+        "https://cdn.example.com/products/hero.jpg",
+        "https://cdn.example.com/products/side.jpg",
+      ],
+    });
+    const emptyRefresh = product({
+      productUrl: "https://example.com/products/a",
+      imageUrl: null,
+      images: [],
+    });
+    const placeholderRefresh = product({
+      productUrl: "https://example.com/products/a",
+      imageUrl: "https://cdn.example.com/placeholder.png",
+      images: [
+        "https://cdn.example.com/logo/brand.png",
+        "https://cdn.example.com/new-badge.jpg",
+      ],
+    });
+    expect(mergeProductCatalog([existing], [emptyRefresh])[0]?.images).toEqual(
+      existing.images,
+    );
+    expect(mergeProductCatalog([existing], [placeholderRefresh])[0]?.images).toEqual(
+      existing.images,
+    );
+  });
+
   it("preserves prior products when a source temporarily fails", () => {
     const existing = [
       product({ productUrl: "https://brand-a.com/products/kept", brand: "BRAND A" }),
