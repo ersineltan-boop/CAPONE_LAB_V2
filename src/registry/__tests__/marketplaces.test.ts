@@ -62,4 +62,17 @@ describe("marketplace registry pilot", () => {
     ]);
     expect(entries.find((entry) => entry.id === "free-people")?.kind).toBe("LUXURY_MARKETPLACE");
   });
+
+  it("exposes The Webster only after its full-catalog gate is activated", () => {
+    const entries = selectActiveMarketplaceEntries({
+      activePilotId: "level-shoes",
+      activeMarketplaceIds: ["level-shoes", "the-webster"],
+      mytheresaStatus: "NEEDS_BROWSER_OR_ADAPTER",
+    });
+    expect(browsableMarketplaces(entries).map((entry) => entry.id)).toEqual([
+      "level-shoes",
+      "the-webster",
+    ]);
+    expect(entries.find((entry) => entry.id === "the-webster")?.discoveryStatus).toBe("ACTIVE");
+  });
 });

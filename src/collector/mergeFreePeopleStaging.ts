@@ -4,7 +4,12 @@ import { mergeProductRecords, normalizeProductUrl } from "./mergeProducts";
 import type { PilotProduct } from "./types";
 import { FREE_PEOPLE_ID } from "./freePeople";
 
-const PROTECTED_MARKETPLACE_SOURCES = new Set(["farfetch", "level-shoes", "mytheresa"]);
+const PROTECTED_MARKETPLACE_SOURCES = new Set([
+  "farfetch",
+  "level-shoes",
+  "mytheresa",
+  "the-webster",
+]);
 
 export interface FreePeopleMergeSkip {
   identity: string;

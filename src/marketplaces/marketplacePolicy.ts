@@ -4,6 +4,7 @@ import type { SourceSighting } from "../taxonomy/types";
 const CANONICAL_SOURCE_IDS = [
   "mytheresa", "ssense", "24s", "luisaviaroma", "farfetch",
   "net-a-porter", "moda-operandi", "browns", "level-shoes", "free-people",
+  "the-webster",
   "amazon", "emag", "trendyol", "otto",
 ] as const;
 
@@ -31,6 +32,7 @@ class CanonicalSourceIdSet extends Set<string> {
 export const MARKETPLACE_SOURCE_IDS = new CanonicalSourceIdSet([
   "mytheresa", "ssense", "24s", "luisaviaroma", "farfetch",
   "net-a-porter", "moda-operandi", "browns", "level-shoes", "free-people",
+  "the-webster",
 ]);
 
 export const EXCLUDED_MARKETPLACE_SOURCE_IDS = new CanonicalSourceIdSet([
