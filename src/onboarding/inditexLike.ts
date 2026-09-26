@@ -2,7 +2,6 @@ import {
   collectZaraImageUrls,
   extractZaraCommercialComponents,
   parseZaraCategoryTree,
-  parseZaraPagination,
   zaraColorNames,
   type ZaraCategoryNode,
 } from "../collector/zara";
@@ -282,8 +281,8 @@ export async function collectInditexLikeCatalog(
         const extra = extractZaraCommercialComponents(ajax.json)
           .map((component) => inditexComponentToProduct(component, category, config, discoveredAt))
           .filter((item): item is PilotProduct => Boolean(item));
+        for (const product of extra) discoveredLinks.add(product.productUrl);
         collected.push(...extra);
-        parseZaraPagination(ajax.json);
       }
     }
   }
@@ -294,7 +293,11 @@ export async function collectInditexLikeCatalog(
     discoveredLinks,
     errors,
     method: "custom-adapter",
-    paginationExhausted: true,
+    // This adapter probes a bounded subset and has no authoritative footwear total.
+    // It must remain PARTIAL until a complete source-specific adapter proves coverage.
+    paginationExhausted: false,
+    sourceReportedProductCount: null,
+    hitCollectionCrawlCap: categories.length > 12,
     rawProductUrlsDiscovered: discoveredLinks.size,
   };
 }
