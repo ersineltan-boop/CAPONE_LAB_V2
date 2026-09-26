@@ -1,13 +1,15 @@
-# Daily CAPONE data refresh for Vercel production.
+# Daily CAPONE data refresh.
 # Schedule: 07:00 Türkiye time = 04:00 UTC (UTC+3, no DST).
 #
-# This job collects registry-driven brand + marketplace data, rebuilds Model
-# Families, then tests + production-builds. It commits/pushes only when those
-# gates pass. Vercel deploys from GitHub main, so a successful push is the
-# production update. No OPENAI_API_KEY is used.
+# Safety contract:
+# - collect into staging
+# - run full tests and production build
+# - stage only allow-listed refresh data
+# - open a unique draft PR when data changed
+# - never push directly to main or trigger a production deployment
+# - never overwrite last-good after a failed/partial collect
 #
-# Model Families persist as data/multibrand/model-families/ shards.
-# Do not commit data/multibrand/model-families.json. Do not add Git LFS.
+# No OPENAI_API_KEY is used.
 
 name: CAPONE daily refresh
 
@@ -22,16 +24,19 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   refresh:
-    name: Collect, verify, and publish
+    name: Collect, verify, and propose
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
-      - name: Checkout
+      - name: Checkout last-good main
         uses: actions/checkout@v4
         with:
+          ref: main
+          fetch-depth: 0
           persist-credentials: true
 
       - name: Setup Node.js 20
@@ -56,9 +61,21 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
 
-      - name: Commit and push refreshed data
-        if: success() && github.ref == 'refs/heads/main'
-        id: publish
+      - name: Stage allow-listed refresh data
+        id: stage
+        run: |
+          set -euo pipefail
+          npx tsx scripts/stage-cloud-refresh-data.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+            echo "No validated CAPONE data changes."
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create isolated refresh branch and commit
+        if: success() && steps.stage.outputs.data_changed == 'true'
+        id: commit
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
           GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
@@ -66,38 +83,44 @@ jobs:
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config http.postBuffer 524288000
-          npx tsx scripts/stage-cloud-refresh-data.ts
-          if git diff --cached --quiet; then
-            echo "data_changed=false" >> "$GITHUB_OUTPUT"
-            echo "commit_created=false" >> "$GITHUB_OUTPUT"
-            echo "No tracked CAPONE data changes to publish."
-            exit 0
-          fi
-          git commit -m "chore(data): automatic CAPONE daily refresh"
-          git push origin HEAD
-          echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          branch="automation/daily-refresh-$GITHUB_RUN_ID"
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+          git switch -c "$branch"
+          git commit -m "chore(data): propose validated CAPONE daily refresh"
+          git push --set-upstream origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
           echo "commit_created=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open draft refresh PR
+        if: success() && steps.commit.outputs.commit_created == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REFRESH_BRANCH: ${{ steps.commit.outputs.branch }}
+        run: |
+          set -euo pipefail
+          pr_url="$(gh pr create             --draft             --base main             --head "$REFRESH_BRANCH"             --title "chore(data): validated CAPONE daily refresh"             --body "Automated staging-first refresh. Full tests and production build passed before this proposal was created. Review source coverage, last-good preservation and the Vercel Preview before merge. No automatic merge or production deploy.")"
+          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
 
       - name: Finalize job summary
         if: always()
         env:
           TESTS_OUTCOME: ${{ steps.tests.outcome }}
           BUILD_OUTCOME: ${{ steps.build.outcome }}
-          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
-          DATA_CHANGED: ${{ steps.publish.outputs.data_changed }}
-          COMMIT_CREATED: ${{ steps.publish.outputs.commit_created }}
+          DATA_CHANGED: ${{ steps.stage.outputs.data_changed }}
+          COMMIT_CREATED: ${{ steps.commit.outputs.commit_created }}
+          REFRESH_BRANCH: ${{ steps.commit.outputs.branch }}
+          PR_URL: ${{ steps.pr.outputs.url }}
         run: |
           {
+            echo "## CAPONE refresh gates"
+            echo "- Tests: $TESTS_OUTCOME"
+            echo "- Production build: $BUILD_OUTCOME"
+            echo "- Validated data changed: $DATA_CHANGED"
+            echo "- Isolated commit created: $COMMIT_CREATED"
+            echo "- Branch: $REFRESH_BRANCH"
+            echo "- Draft PR: $PR_URL"
             echo ""
-            echo "## Gates"
-            echo "- Tests: ${TESTS_OUTCOME:-skipped}"
-            echo "- Production build: ${BUILD_OUTCOME:-skipped}"
-            echo "- Data changed: ${DATA_CHANGED:-unknown}"
-            echo "- Commit/push created: ${COMMIT_CREATED:-no}"
-            echo "- Publish step: ${PUBLISH_OUTCOME:-skipped}"
-            echo ""
-            echo "If tests or production build fail, data is not committed and Vercel production stays on the last good main commit."
+            echo "Main and production were not modified. Failed, empty, partial, or rejected collections preserve last-good."
           } >> "$GITHUB_STEP_SUMMARY"
