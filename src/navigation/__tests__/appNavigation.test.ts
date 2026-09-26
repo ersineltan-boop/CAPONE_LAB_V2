@@ -4,7 +4,6 @@ import { PRIMARY_NAV_ITEMS, isPrimaryNavView } from "../primaryNav";
 import { buildNavigationSearch, parseNavigationFromSearch } from "../appNavigation";
 import { PAZAR_OZETI_ENABLED } from "../../components/visualWall/visualWallSections";
 
-// Pazar Araştırması uygulaması korunur; yalnız kullanıcı navigasyonu geçici olarak kapalıdır.
 describe("appNavigation", () => {
   it("defaults to brands view", () => {
     const state = parseNavigationFromSearch("");
@@ -32,11 +31,11 @@ describe("appNavigation", () => {
     ).toBe("?view=marketplaces&marketplace=mytheresa");
   });
 
-  it("keeps hidden market research URLs out of the user-facing application", () => {
+  it("retains the paused market research route without exposing it in navigation", () => {
     const state = parseNavigationFromSearch("?view=market-research&mrBrand=mr-ro-botta");
-    expect(state.view).toBe("brands");
-    expect(state.marketCountryId).toBeNull();
-    expect(state.marketBrandId).toBeNull();
+    expect(state.view).toBe("market-research");
+    expect(state.marketCountryId).toBe("romania");
+    expect(state.marketBrandId).toBe("mr-ro-botta");
     expect(state.brandId).toBeNull();
     expect(state.marketplaceId).toBeNull();
   });
