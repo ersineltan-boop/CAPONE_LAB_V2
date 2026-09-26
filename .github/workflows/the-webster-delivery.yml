@@ -38,8 +38,13 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
+          cp data/multibrand/model-families/part-006.json /tmp/wave50-part-006.json
+          cp data/multibrand/model-families/part-007.json /tmp/wave50-part-007.json
           npm run analyze:multibrand
           npm run build:model-families
+          cp /tmp/wave50-part-006.json data/multibrand/model-families/part-006.json
+          cp /tmp/wave50-part-007.json data/multibrand/model-families/part-007.json
+          npx tsx scripts/link-wave50-delivery.ts
       - name: Verify tests and production build
         env:
           NODE_OPTIONS: --max-old-space-size=4096
@@ -61,4 +66,3 @@ jobs:
             git commit -m "chore(data): publish verified The Webster catalog"
             git push origin HEAD
           fi
-
