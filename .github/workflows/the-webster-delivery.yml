@@ -1,6 +1,6 @@
 name: The Webster catalog delivery
 
-# A single guarded run publishes only the verified FULL-coverage seed.
+# A single guarded activation run publishes only the verified FULL-coverage seed.
 
 on:
   push:
@@ -61,3 +61,4 @@ jobs:
             git commit -m "chore(data): publish verified The Webster catalog"
             git push origin HEAD
           fi
+
