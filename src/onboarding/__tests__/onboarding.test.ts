@@ -447,5 +447,6 @@ describe("workflow contract", () => {
     expect(workflow).not.toMatch(/secrets\.OPENAI/);
     const daily = await readFile(join(process.cwd(), ".github/workflows/capone-daily-refresh.yml"), "utf-8");
     expect(daily).toContain("cron: \"0 4 * * *\"");
+    expect(daily).toContain('CAPONE_REFRESH_MARKETPLACES: "false"');
   });
 });

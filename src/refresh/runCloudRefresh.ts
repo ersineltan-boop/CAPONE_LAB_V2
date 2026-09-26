@@ -40,6 +40,7 @@ import type { TaxonomyVisionCacheFile } from "../taxonomy/vision/types";
 import {
   buildCloudRefreshPlan,
   coverageToSourceStatus,
+  marketplacePublishStatus,
   mergeIncomingSourceIntoCatalog,
   renderCloudRefreshMarkdown,
   summarizeSourceOutcomes,
@@ -70,7 +71,10 @@ async function writeJson(path: string, value: unknown): Promise<void> {
 export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
   const startedAt = new Date().toISOString();
   const registry = loadBrandRegistry();
-  const plan = buildCloudRefreshPlan({ brands: registry.all() });
+  const plan = buildCloudRefreshPlan({
+    brands: registry.all(),
+    includeMarketplaces: process.env.CAPONE_REFRESH_MARKETPLACES !== "false",
+  });
   const outcomes: CloudSourceOutcome[] = [];
 
   console.log("=== CAPONE cloud refresh ===");
@@ -78,7 +82,10 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
   console.log(`Active marketplaces: ${plan.marketplaces.map((item) => item.name).join(", ") || "(none)"}`);
   console.log("Excluded: OpenAI, Vision, taxonomy-vision, Radar");
 
-  const brandReport = await runMultibrandCollection({ mode: "full" });
+  const brandReport = await runMultibrandCollection({
+    mode: "full",
+    brandIds: plan.brands.map((brand) => brand.id),
+  });
   for (const source of brandReport.sources) {
     outcomes.push({
       id: source.source,
@@ -99,7 +106,7 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
     products = mergeIncomingSourceIntoCatalog({
       existing: products,
       incoming: outcome.incoming,
-      status: outcome.status,
+      status: marketplacePublishStatus(outcome.status),
     });
     marketplaceReports.push({
       source: marketplace.name,

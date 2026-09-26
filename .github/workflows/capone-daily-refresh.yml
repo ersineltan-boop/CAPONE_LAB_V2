@@ -5,8 +5,7 @@
 # - collect into staging
 # - run full tests and production build
 # - stage only allow-listed refresh data
-# - open a unique draft PR when data changed
-# - never push directly to main or trigger a production deployment
+# - require a Vercel Preview before automatically merging validated data
 # - never overwrite last-good after a failed/partial collect
 #
 # No OPENAI_API_KEY is used.
@@ -19,12 +18,13 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: capone-daily-refresh
+  group: capone-catalog-automation
   cancel-in-progress: false
 
 permissions:
   contents: write
   pull-requests: write
+  statuses: read
 
 jobs:
   refresh:
@@ -49,6 +49,8 @@ jobs:
         run: npm ci
 
       - name: Cloud data refresh
+        env:
+          CAPONE_REFRESH_MARKETPLACES: "false"
         run: npm run refresh:cloud
 
       - name: Tests
@@ -73,35 +75,24 @@ jobs:
             echo "data_changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Create isolated refresh branch and commit
+      - name: Publish validated daily delivery
         if: success() && steps.stage.outputs.data_changed == 'true'
-        id: commit
+        id: publish
         env:
+          GH_TOKEN: ${{ github.token }}
           GIT_AUTHOR_NAME: github-actions[bot]
           GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          AUTOMATION_BRANCH: automation/daily-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): publish validated CAPONE daily refresh"
+          AUTOMATION_PR_TITLE: "chore(data): validated automatic CAPONE daily refresh"
+          AUTOMATION_PR_BODY: "Staging-first daily refresh. Last-good isolation, full tests, production build and Vercel Preview passed. This guarded PR is merged automatically; any failed gate preserves the previous delivery."
         run: |
           set -euo pipefail
-          branch="automation/daily-refresh-$GITHUB_RUN_ID"
           git config user.name "$GIT_AUTHOR_NAME"
           git config user.email "$GIT_AUTHOR_EMAIL"
-          git switch -c "$branch"
-          git commit -m "chore(data): propose validated CAPONE daily refresh"
-          git push --set-upstream origin "$branch"
-          echo "branch=$branch" >> "$GITHUB_OUTPUT"
-          echo "commit_created=true" >> "$GITHUB_OUTPUT"
-
-      - name: Open draft refresh PR
-        if: success() && steps.commit.outputs.commit_created == 'true'
-        id: pr
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REFRESH_BRANCH: ${{ steps.commit.outputs.branch }}
-        run: |
-          set -euo pipefail
-          pr_url="$(gh pr create             --draft             --base main             --head "$REFRESH_BRANCH"             --title "chore(data): validated CAPONE daily refresh"             --body "Automated staging-first refresh. Full tests and production build passed before this proposal was created. Review source coverage, last-good preservation and the Vercel Preview before merge. No automatic merge or production deploy.")"
-          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
+          bash scripts/publish-validated-automation-pr.sh
 
       - name: Finalize job summary
         if: always()
@@ -109,18 +100,20 @@ jobs:
           TESTS_OUTCOME: ${{ steps.tests.outcome }}
           BUILD_OUTCOME: ${{ steps.build.outcome }}
           DATA_CHANGED: ${{ steps.stage.outputs.data_changed }}
-          COMMIT_CREATED: ${{ steps.commit.outputs.commit_created }}
-          REFRESH_BRANCH: ${{ steps.commit.outputs.branch }}
-          PR_URL: ${{ steps.pr.outputs.url }}
+          REFRESH_BRANCH: ${{ steps.publish.outputs.branch }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+          MERGED: ${{ steps.publish.outputs.merged }}
+          PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
         run: |
           {
             echo "## CAPONE refresh gates"
             echo "- Tests: $TESTS_OUTCOME"
             echo "- Production build: $BUILD_OUTCOME"
             echo "- Validated data changed: $DATA_CHANGED"
-            echo "- Isolated commit created: $COMMIT_CREATED"
             echo "- Branch: $REFRESH_BRANCH"
-            echo "- Draft PR: $PR_URL"
+            echo "- Guarded PR: $PR_URL"
+            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
             echo ""
-            echo "Main and production were not modified. Failed, empty, partial, or rejected collections preserve last-good."
+            echo "Failed, empty, partial, or rejected collections preserve last-good."
           } >> "$GITHUB_STEP_SUMMARY"

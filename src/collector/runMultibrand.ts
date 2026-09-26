@@ -14,6 +14,7 @@ import {
   brandToPilotSourceConfig,
   getCollectableBrands,
 } from "../registry/collection/brandToCollector";
+import type { BrandRegistryEntry } from "../registry/types/brand";
 import { collectBrandByCollectorType } from "../registry/collection/collectByType";
 import type { CollectionReport, PilotProduct, SourceCollectionReport } from "./types";
 
@@ -47,6 +48,19 @@ function pilotProductsForBrand(
   return products.filter((product) => product.brand === brand);
 }
 
+/** Undefined means the full registry set; an explicit empty list means none. */
+export function selectRequestedCollectableBrands(
+  entries: readonly BrandRegistryEntry[],
+  brandIds?: readonly string[],
+): BrandRegistryEntry[] {
+  const collectable = getCollectableBrands(entries);
+  if (brandIds === undefined) return collectable;
+  const wanted = new Set(brandIds.map((id) => id.trim().toLowerCase()).filter(Boolean));
+  return collectable.filter(
+    (entry) => wanted.has(entry.id.toLowerCase()) || wanted.has(entry.brand.trim().toLowerCase()),
+  );
+}
+
 export async function runMultibrandCollection(
   options: {
     mode?: "legacy" | "backfill" | "incremental" | "full";
@@ -59,17 +73,7 @@ export async function runMultibrandCollection(
   const pilotProducts = await loadPilotProducts();
   const existingProducts = await loadExistingMultibrandProducts();
   const registry = loadBrandRegistry();
-  let collectableBrands = getCollectableBrands(registry.all());
-  if (options.brandIds && options.brandIds.length > 0) {
-    const wanted = new Set(
-      options.brandIds.map((id) => id.trim().toLowerCase()).filter(Boolean),
-    );
-    collectableBrands = collectableBrands.filter(
-      (entry) =>
-        wanted.has(entry.id.toLowerCase()) ||
-        wanted.has(entry.brand.trim().toLowerCase()),
-    );
-  }
+  const collectableBrands = selectRequestedCollectableBrands(registry.all(), options.brandIds);
   const seenBrands = new Set<string>();
   const mode = options.mode ?? "full";
   let collectState = await loadCollectState(COLLECT_STATE_FILE);

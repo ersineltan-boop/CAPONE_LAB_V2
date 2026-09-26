@@ -1,0 +1,130 @@
+# 08:30 Türkiye = 05:30 UTC. Approved adapters only; no discovery.
+name: CAPONE marketplace refresh
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: capone-catalog-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - name: Checkout last-good main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify marketplace policy
+        run: npm test -- src/marketplaces/__tests__/marketplaceAutomation.test.ts src/marketplaces/__tests__/marketplacePolicy.test.ts
+      - name: Install Free People browser runtime
+        run: npx playwright install --with-deps chromium
+      - name: Collect and gate approved adapters
+        id: collect
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run refresh:marketplaces
+      - name: Upload auditable staging bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marketplace-refresh-${{ github.run_id }}
+          path: data/onboarding/staging/marketplace-refresh/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Rebuild analysis and QA
+        if: steps.collect.outputs.data_changed == 'true'
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+          CAPONE_AUTHORITATIVE_MARKETPLACE_SOURCES: ${{ steps.collect.outputs.accepted_sources }}
+        run: |
+          set -euo pipefail
+          cp data/multibrand/model-families/part-006.json /tmp/marketplace-part-006.json
+          cp data/multibrand/model-families/part-007.json /tmp/marketplace-part-007.json
+          npm run analyze:multibrand
+          npm run build:model-families
+          cp /tmp/marketplace-part-006.json data/multibrand/model-families/part-006.json
+          cp /tmp/marketplace-part-007.json data/multibrand/model-families/part-007.json
+          npx tsx scripts/link-wave50-delivery.ts
+          npm run source:coverage
+          npm run taxonomy:qa
+      - name: Full tests
+        id: tests
+        run: npm test
+      - name: Production build
+        id: build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+      - name: Stage validated delivery files
+        if: steps.collect.outputs.data_changed == 'true'
+        id: stage
+        run: |
+          set -euo pipefail
+          git add -- \
+            data/multibrand/products.json \
+            data/multibrand/analyzed-products.json \
+            data/multibrand/market-analysis.json \
+            data/multibrand/model-family-report.json \
+            data/multibrand/model-families \
+            data/multibrand/product-image-galleries.json \
+            data/multibrand/taxonomy-qa-report.json \
+            data/registry/source-coverage-report.json \
+            data/registry/source-category-coverage-report.json \
+            data/registry/product-image-coverage-report.json
+          if git diff --cached --quiet; then
+            echo "delivery_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "delivery_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publish validated marketplace delivery
+        if: steps.stage.outputs.delivery_changed == 'true'
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/marketplace-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): publish verified marketplace refresh"
+          AUTOMATION_PR_TITLE: "chore(data): verified automatic marketplace refresh"
+          AUTOMATION_PR_BODY: "Approved-adapter marketplace automation. FULL coverage, source totals, pagination, images, taxonomy, collision checks, full tests, production build and Vercel Preview passed. This guarded PR is merged automatically; any failed gate preserves last-good."
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/publish-validated-automation-pr.sh
+      - name: Summary
+        if: always()
+        env:
+          ACCEPTED: ${{ steps.collect.outputs.accepted_sources }}
+          PRESERVED: ${{ steps.collect.outputs.preserved_sources }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+          MERGED: ${{ steps.publish.outputs.merged }}
+          PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
+        run: |
+          {
+            echo "## CAPONE marketplace automation"
+            echo "- Approved: Level Shoes, Farfetch, Free People, The Webster"
+            echo "- Discovery: disabled"
+            echo "- FULL proposal: ${ACCEPTED:-none}"
+            echo "- Last-good preserved: ${PRESERVED:-none}"
+            echo "- Guarded PR: ${PR_URL:-none}"
+            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
+            echo "- Amazon, eMAG, Trendyol and OTTO excluded"
+          } >> "$GITHUB_STEP_SUMMARY"

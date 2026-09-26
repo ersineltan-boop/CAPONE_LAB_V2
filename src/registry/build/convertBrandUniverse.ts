@@ -159,7 +159,7 @@ ${optionalLines.join("\n")}${optionalLines.length ? "\n" : ""}    segment: "${en
     collectionStatus: "${entry.collectionStatus}",
     productLimit: ${entry.productLimit},
     supportsMultipleImages: ${entry.supportsMultipleImages},
-    discoverySources: [],
+    discoverySources: ${formatStringArray(entry.discoverySources)},
     isActive: ${entry.isActive},
     notes: "${escapeString(entry.notes)}",
     classificationStatus: "${entry.classificationStatus}",
