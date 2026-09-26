@@ -74,9 +74,9 @@ export function isExcludedMarketplaceSource(sourceId: string): boolean {
 
 export function isExcludedMarketplaceBrand(brand: string): boolean {
   const normalized = normalizeToken(brand);
-  if (EXCLUDED_MARKETPLACE_BRANDS.has(normalized)) return true;
-  return ["ADIDAS ", "NIKE ", "CONVERSE ", "HOKA ", "ON RUNNING ", "SALOMON "].some(
-    (prefix) => normalized.startsWith(prefix),
+  const padded = ` ${normalized} `;
+  return [...EXCLUDED_MARKETPLACE_BRANDS].some(
+    (excluded) => padded.includes(` ${excluded} `),
   );
 }
 
