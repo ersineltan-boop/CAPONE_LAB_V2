@@ -15,6 +15,11 @@ describe("The Webster marketplace collector", () => {
         "<div>Filter & Sort - 25,000 Products</div><span>246 Results</span>",
       ),
     ).toBe(246);
+    expect(
+      parseTheWebsterSourceTotal(
+        "<span>25,000 Results</span><span>246 Results</span>",
+      ),
+    ).toBe(246);
   });
 
   it("excludes fast and technical sneaker brands", () => {
