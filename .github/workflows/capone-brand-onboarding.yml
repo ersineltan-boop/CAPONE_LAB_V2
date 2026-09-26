@@ -1,36 +1,47 @@
-# Nightly CAPONE brand onboarding for Vercel production.
-# Schedule: 23:00 Türkiye time = 20:00 UTC (UTC+3, no DST).
-#
-# Separate from CAPONE daily refresh (04:00 UTC / 07:00 Türkiye).
-# Cloud only. No OPENAI_API_KEY. No user PC dependency.
-#
-# Model Families persist as data/multibrand/model-families/ shards.
-# Do not commit data/multibrand/model-families.json. Do not add Git LFS.
+# Nightly CAPONE official-brand automation.
+# 23:00 Türkiye = 20:00 UTC. The 07:00 general refresh excludes these sources.
 
-name: CAPONE brand onboarding
+name: CAPONE brand automation
 
 on:
   schedule:
     - cron: "0 20 * * *"
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Optional maximum approved brands (blank means all)"
+        required: false
+        default: ""
+      only:
+        description: "Optional comma-separated approved slugs"
+        required: false
+        default: ""
+      dry_run:
+        description: "Collect and gate without publishing data"
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
-  group: capone-brand-onboarding
+  group: capone-catalog-automation
   cancel-in-progress: false
 
 permissions:
   contents: write
+  pull-requests: write
+  statuses: read
 
 jobs:
-  onboard:
-    name: Probe, validate, and publish
+  automate:
+    name: Collect, gate, and publish when green
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          ref: main
+          fetch-depth: 0
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
@@ -41,62 +52,76 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Brand onboarding
-        run: npm run onboard:brands
+      - name: Run approved brand automation
+        env:
+          REQUESTED_LIMIT: ${{ inputs.limit || '' }}
+          REQUESTED_ONLY: ${{ inputs.only || '' }}
+          REQUESTED_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [[ -n "$REQUESTED_LIMIT" ]]; then args+=(--limit "$REQUESTED_LIMIT"); fi
+          if [[ -n "$REQUESTED_ONLY" ]]; then args+=(--only "$REQUESTED_ONLY"); fi
+          if [[ "$REQUESTED_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          npm run automate:brands -- "${args[@]}"
 
       - name: Tests
-        id: tests
         run: npm test
 
       - name: Production build
-        id: build
         env:
           NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
 
-      - name: Commit and push onboarded data
-        if: success() && github.ref == 'refs/heads/main'
+      - name: Stage deterministic data allowlist
+        id: stage
+        run: |
+          set -euo pipefail
+          npx tsx scripts/stage-brand-automation-data.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish validated brand delivery
+        if: steps.stage.outputs.data_changed == 'true' && inputs.dry_run != true
         id: publish
         env:
-          GIT_AUTHOR_NAME: github-actions[bot]
-          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          GIT_COMMITTER_NAME: github-actions[bot]
-          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/brand-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): publish validated official-brand refresh"
+          AUTOMATION_PR_TITLE: "chore(data): validated automatic official-brand refresh"
+          AUTOMATION_PR_BODY: "Approved-source official-brand automation. FULL coverage, taxonomy, baseline NEW, last-good, full tests, production build and Vercel Preview passed. This guarded PR is merged automatically; any failed gate preserves the previous delivery."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config http.postBuffer 524288000
-          npx tsx scripts/stage-brand-onboarding-data.ts
-          if git diff --cached --quiet; then
-            echo "data_changed=false" >> "$GITHUB_OUTPUT"
-            echo "commit_created=false" >> "$GITHUB_OUTPUT"
-            echo "No tracked CAPONE onboarding changes to publish."
-            exit 0
-          fi
-          git commit -m "chore(data): automatic CAPONE brand onboarding"
-          git push origin HEAD
-          echo "data_changed=true" >> "$GITHUB_OUTPUT"
-          echo "commit_created=true" >> "$GITHUB_OUTPUT"
+          bash scripts/publish-validated-automation-pr.sh
 
-      - name: Finalize job summary
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brand-automation-${{ github.run_id }}
+          if-no-files-found: warn
+          path: |
+            data/registry/brand-automation-report.json
+            data/onboarding/staging/*/catalog.json
+
+      - name: Summary
         if: always()
         env:
-          TESTS_OUTCOME: ${{ steps.tests.outcome }}
-          BUILD_OUTCOME: ${{ steps.build.outcome }}
-          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
-          DATA_CHANGED: ${{ steps.publish.outputs.data_changed }}
-          COMMIT_CREATED: ${{ steps.publish.outputs.commit_created }}
+          DATA_CHANGED: ${{ steps.stage.outputs.data_changed }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+          MERGED: ${{ steps.publish.outputs.merged }}
+          PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
         run: |
           {
-            echo ""
-            echo "## Gates"
-            echo "- Tests: ${TESTS_OUTCOME:-skipped}"
-            echo "- Production build: ${BUILD_OUTCOME:-skipped}"
-            echo "- Data changed: ${DATA_CHANGED:-unknown}"
-            echo "- Commit/push created: ${COMMIT_CREATED:-no}"
-            echo "- Publish step: ${PUBLISH_OUTCOME:-skipped}"
-            echo ""
-            echo "If tests or production build fail, data is not committed and Vercel production stays on the last good main commit."
-            echo "No OpenAI secrets are used."
+            echo "## CAPONE official-brand automation"
+            echo "- Validated data changed: ${DATA_CHANGED:-false}"
+            echo "- Guarded PR: ${PR_URL:-none}"
+            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
+            echo "- Failed gates preserve last-good"
           } >> "$GITHUB_STEP_SUMMARY"

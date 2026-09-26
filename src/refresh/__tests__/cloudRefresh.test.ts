@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+
 import { describe, expect, it } from "vitest";
 
 import { mergeProductCatalog } from "../../collector/mergeProducts";
@@ -14,6 +16,7 @@ import {
   CLOUD_REFRESH_STEPS,
   CLOUD_REFRESH_TRACKED_DATA_PATHS,
   coverageToSourceStatus,
+  marketplacePublishStatus,
   getCloudRefreshBrands,
   getCloudRefreshMarketplaces,
   getMembershipRefreshBrands,
@@ -130,6 +133,24 @@ describe("cloud refresh sequence", () => {
     expect(plan.marketplaces.map((entry) => entry.id)).toEqual(["level-shoes"]);
   });
 
+  it("excludes automation-owned brands while retaining legacy brands", () => {
+    const brands = [
+      brand({ id: "legacy", brand: "LEGACY" }),
+      brand({ id: "wave", brand: "WAVE", discoverySources: ["wave50"] }),
+      brand({ id: "automation", brand: "AUTOMATION", discoverySources: ["brand-automation"] }),
+    ];
+    expect(getCloudRefreshBrands(brands).map((entry) => entry.id)).toEqual(["legacy"]);
+    expect(getMembershipRefreshBrands(brands).map((entry) => entry.id)).toEqual(["legacy"]);
+    expect(buildCloudRefreshPlan({ brands, marketplaces: [] }).brands.map((entry) => entry.id)).toEqual([
+      "legacy",
+    ]);
+  });
+
+  it("passes only the planned legacy brand IDs into collection", () => {
+    const source = readFileSync("src/refresh/runCloudRefresh.ts", "utf-8");
+    expect(source).toMatch(/runMultibrandCollection\(\{[\s\S]*?brandIds:\s*plan\.brands\.map\(\(brand\) => brand\.id\)/);
+  });
+
   it("includes ACTIVE/PARTIAL marketplaces from the marketplace registry", () => {
     const entries = selectActiveMarketplaceEntries({
       activePilotId: "level-shoes",
@@ -140,6 +161,19 @@ describe("cloud refresh sequence", () => {
         .filter((entry) => entry.discoveryStatus === "ACTIVE" || entry.discoveryStatus === "PARTIAL")
         .map((entry) => entry.id),
     );
+  });
+
+  it("supports a brand-only daily plan so marketplace collectors run once", () => {
+    const entries = selectActiveMarketplaceEntries({
+      activePilotId: "level-shoes",
+      activeMarketplaceIds: ["level-shoes", "farfetch", "free-people", "the-webster"],
+      mytheresaStatus: "NEEDS_BROWSER_OR_ADAPTER",
+    });
+    expect(buildCloudRefreshPlan({
+      brands: [brand()],
+      marketplaces: entries,
+      includeMarketplaces: false,
+    }).marketplaces).toEqual([]);
   });
 
   it("does not schedule membership refresh for non-Shopify collectable brands", () => {
@@ -259,6 +293,11 @@ describe("cloud refresh source failure isolation", () => {
     expect(coverageToSourceStatus("PARTIAL", 10)).toBe("partial");
     expect(coverageToSourceStatus("FAILED", 0)).toBe("failed");
     expect(coverageToSourceStatus("NEEDS_PROBE", 0)).toBe("skipped");
+  });
+
+  it("maps PARTIAL marketplace delivery to last-good preservation", () => {
+    expect(marketplacePublishStatus("success")).toBe("success");
+    expect(marketplacePublishStatus("partial")).toBe("failed");
   });
 });
 

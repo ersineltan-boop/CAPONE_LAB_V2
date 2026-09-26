@@ -52,9 +52,15 @@ export async function stageCatalog(root: string, catalog: WaveCatalog): Promise<
 export async function publishLastGoodCatalog(
   root: string,
   catalog: WaveCatalog | null,
-): Promise<{ published: boolean; retained: boolean; blocker: string | null; addedProducts: number }> {
+): Promise<{
+  published: boolean;
+  retained: boolean;
+  changed: boolean;
+  blocker: string | null;
+  addedProducts: number;
+}> {
   if (!catalog) {
-    return { published: false, retained: false, blocker: "EMPTY_OR_FAILED_COLLECT", addedProducts: 0 };
+    return { published: false, retained: false, changed: false, blocker: "EMPTY_OR_FAILED_COLLECT", addedProducts: 0 };
   }
   const target = join(root, WAVE_LAST_GOOD_DIR, `${catalog.slug}.json`);
   const previous = await readJsonFile<WaveCatalog | null>(target, null);
@@ -70,17 +76,31 @@ export async function publishLastGoodCatalog(
     return {
       published: false,
       retained: decision.retainPrevious,
+      changed: false,
       blocker: decision.blocker,
       addedProducts: 0,
     };
+  }
+  if (previous && sameCatalogPayload(previous, catalog)) {
+    return { published: true, retained: true, changed: false, blocker: null, addedProducts: 0 };
   }
   await atomicWriteJson(target, catalog);
   return {
     published: true,
     retained: false,
+    changed: true,
     blocker: null,
     addedProducts: catalog.productUrls.length,
   };
+}
+
+function catalogPayload(catalog: WaveCatalog): string {
+  const { snapshotId: _snapshotId, collectedAt: _collectedAt, ...stable } = catalog;
+  return JSON.stringify(stable);
+}
+
+export function sameCatalogPayload(left: WaveCatalog, right: WaveCatalog): boolean {
+  return catalogPayload(left) === catalogPayload(right);
 }
 
 function legacyToPrimary(category: WaveModelFamily["category"]): ReturnType<typeof assignPrimaryCategory>["primaryCategory"] {

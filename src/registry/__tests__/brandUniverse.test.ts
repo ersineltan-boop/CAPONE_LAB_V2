@@ -247,6 +247,17 @@ describe("brands:build integration", () => {
     expect(result.brandsTsContent).toContain("otomatik üretilir");
   });
 
+  it("persists automation ownership in generated registry source", () => {
+    const result = buildBrandRegistryFromUniverseData({
+      universeFile: {
+        version: 1,
+        brands: [sampleUniverseEntry({ discoverySources: ["wave50"] })],
+      },
+    });
+    expect(result.ok).toBe(true);
+    expect(result.brandsTsContent).toContain('discoverySources: [\n      "wave50",\n    ]');
+  });
+
   it("inactive NEEDS_PROBE brand is not collectable", () => {
     const inactive = sampleUniverseEntry({
       id: "inactive-probe",

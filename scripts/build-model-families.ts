@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { buildModelFamilies } from "../src/modelFamily/buildFamilies";
 import { loadModelFamilies, writeModelFamilies } from "../src/modelFamily/dataset";
 import type { RawAnalyzedProduct } from "../src/modelFamily/types";
+import { getMarketplaceById } from "../src/registry/data/marketplaces";
 import {
   getVisionEnrichmentMap,
 } from "../src/taxonomy/vision/cache";
@@ -70,7 +71,20 @@ async function writeWithRetry(path: string, body: string): Promise<void> {
   await writeFile(path, body, "utf-8");
 }
 
-const manifest = await writeModelFamilies(families);
+const authoritativeMarketplaceSources = (
+  process.env.CAPONE_AUTHORITATIVE_MARKETPLACE_SOURCES ?? ""
+)
+  .split(",")
+  .map((sourceId) => sourceId.trim())
+  .filter(Boolean)
+  .map((sourceId) => {
+    const entry = getMarketplaceById(sourceId);
+    if (!entry?.officialUrl) {
+      throw new Error(`Unknown authoritative marketplace source: ${sourceId}`);
+    }
+    return { sourceId, origin: new URL(entry.officialUrl).origin };
+  });
+const manifest = await writeModelFamilies(families, { authoritativeMarketplaceSources });
 await writeWithRetry(reportPath, JSON.stringify(report, null, 2));
 
 console.log("\n=== CAPONE LAB Model Family Deduplication ===");

@@ -107,10 +107,18 @@ export interface CloudRefreshPlan {
   membershipBrands: BrandRegistryEntry[];
 }
 
+const BRAND_AUTOMATION_DISCOVERY_SOURCES = new Set(["wave50", "brand-automation"]);
+
+export function isBrandAutomationOwned(entry: BrandRegistryEntry): boolean {
+  return entry.discoverySources.some((source) =>
+    BRAND_AUTOMATION_DISCOVERY_SOURCES.has(source.trim().toLowerCase()),
+  );
+}
+
 export function getCloudRefreshBrands(
   entries: readonly BrandRegistryEntry[],
 ): BrandRegistryEntry[] {
-  return getCollectableBrands(entries);
+  return getCollectableBrands(entries).filter((entry) => !isBrandAutomationOwned(entry));
 }
 
 export function getCloudRefreshMarketplaces(
@@ -126,7 +134,7 @@ export function getCloudRefreshMarketplaces(
 export function getMembershipRefreshBrands(
   entries: readonly BrandRegistryEntry[],
 ): BrandRegistryEntry[] {
-  return getCollectableBrands(entries).filter((entry) => {
+  return getCloudRefreshBrands(entries).filter((entry) => {
     if (entry.collectorType !== "SHOPIFY_PUBLIC" && entry.collectorType !== "SHOPIFY_JSON") {
       return false;
     }
@@ -137,11 +145,12 @@ export function getMembershipRefreshBrands(
 export function buildCloudRefreshPlan(input: {
   brands: readonly BrandRegistryEntry[];
   marketplaces?: readonly MarketplaceRegistryEntry[];
+  includeMarketplaces?: boolean;
 }): CloudRefreshPlan {
   const brands = getCloudRefreshBrands(input.brands);
-  const marketplaces = getCloudRefreshMarketplaces(
-    input.marketplaces ?? browsableMarketplaces(),
-  );
+  const marketplaces = input.includeMarketplaces === false
+    ? []
+    : getCloudRefreshMarketplaces(input.marketplaces ?? browsableMarketplaces());
   return {
     steps: CLOUD_REFRESH_STEPS,
     excludedWorkflows: CLOUD_REFRESH_EXCLUDED_WORKFLOWS,
@@ -193,6 +202,10 @@ export function coverageToSourceStatus(
   if (coverage === "FULL") return "success";
   if (parsedProducts > 0) return "partial";
   return "failed";
+}
+
+export function marketplacePublishStatus(status: CloudSourceStatus): CloudSourceStatus {
+  return status === "partial" ? "failed" : status;
 }
 
 export function mergeIncomingSourceIntoCatalog(input: {
