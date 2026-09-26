@@ -16,7 +16,6 @@ const VALID_VIEWS: AppView[] = [
   "saved",
   "visual-wall",
   "radar",
-  "market-research",
 ];
 
 export function emptyNavigation(view: AppView = "brands"): AppNavigationState {
