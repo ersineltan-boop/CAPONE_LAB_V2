@@ -115,7 +115,8 @@ describe("marketplace runtime policy", () => {
   it("excludes the agreed mass and technical sneaker brands", () => {
     for (const brand of [
       "Adidas", "adidas Originals", "NIKE", "Converse", "Hoka One One", "On", "On Running",
-      "Salomon", "Salomon Sportstyle",
+      "Salomon", "Salomon Sportstyle", "MM6 Maison Margiela x Salomon",
+      "Jacquemus x Nike", "Comme des Garcons x Converse",
     ]) {
       expect(isExcludedMarketplaceBrand(brand)).toBe(true);
     }
