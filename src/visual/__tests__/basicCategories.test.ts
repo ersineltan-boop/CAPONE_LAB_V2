@@ -52,6 +52,35 @@ function family(overrides: Partial<ModelFamily> = {}): ModelFamily {
 }
 
 describe("Visual basic categories", () => {
+  it("hides mass and technical sneaker families from every Visual shard", () => {
+    const delivery = buildVisualDelivery({
+      generatedAt: "2026-09-26T00:00:00.000Z",
+      families: [
+        family({ modelFamilyId: "nike-cortez", brand: "Nike", canonicalName: "Cortez" }),
+        family({
+          modelFamilyId: "salomon-xt6",
+          brand: "Salomon Sportstyle",
+          canonicalName: "XT-6",
+          category: "SNEAKER",
+          primaryCategory: "SNEAKER",
+        }),
+        family({
+          modelFamilyId: "aeyde-trail",
+          brand: "Aeyde",
+          canonicalName: "Performance trail running sneaker",
+          category: "SNEAKER",
+          primaryCategory: "SNEAKER",
+        }),
+        family({ modelFamilyId: "aeyde-moa", brand: "Aeyde", canonicalName: "Moa Pump" }),
+      ],
+    });
+
+    expect(delivery.summary.totalCount).toBe(1);
+    expect(delivery.shards.flatMap((shard) => shard.cards).map((card) => card.modelFamilyId))
+      .not.toContain("nike-cortez");
+    expect(delivery.shards[0]?.cards.map((card) => card.modelFamilyId)).toEqual(["aeyde-moa"]);
+  });
+
   it("exposes only the basic footwear level and no Pazar Özeti", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toContain("VISUAL");
     expect(PAZAR_OZETI_ENABLED).toBe(false);
