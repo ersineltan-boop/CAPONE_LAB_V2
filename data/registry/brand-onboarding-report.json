@@ -1,17 +1,123 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-12T21:52:57.746Z",
+  "generatedAt": "2026-09-27T17:17:27.329Z",
   "dryRun": false,
   "summary": {
-    "activeBrandsBefore": 50,
-    "activeBrandsAfter": 50,
-    "attempted": 0,
+    "activeBrandsBefore": 52,
+    "activeBrandsAfter": 52,
+    "attempted": 5,
     "activated": 0,
     "partial": 0,
-    "blocked": 0,
-    "customAdapterRequired": 0,
+    "blocked": 3,
+    "customAdapterRequired": 2,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": []
+  "attempts": [
+    {
+      "brand": "JIMMY CHOO",
+      "slug": "jimmy-choo",
+      "attemptedAt": "2026-09-27T17:17:27.329Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
+      "marketplaceCoverage": {
+        "farfetch": 28,
+        "levelShoes": 35
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "MANOLO BLAHNIK",
+      "slug": "manolo-blahnik",
+      "attemptedAt": "2026-09-27T17:17:27.329Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 29,
+        "levelShoes": 37
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    },
+    {
+      "brand": "CHRISTIAN LOUBOUTIN",
+      "slug": "christian-louboutin",
+      "attemptedAt": "2026-09-27T17:17:27.329Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
+      "marketplaceCoverage": {
+        "farfetch": 12,
+        "levelShoes": 34
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "BOTTEGA VENETA",
+      "slug": "bottega-veneta",
+      "attemptedAt": "2026-09-27T17:17:27.329Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 20
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "PRADA",
+      "slug": "prada",
+      "attemptedAt": "2026-09-27T17:17:27.329Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 14,
+        "levelShoes": 53
+      },
+      "activationDecision": "blocked",
+      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
+    }
+  ]
 }
