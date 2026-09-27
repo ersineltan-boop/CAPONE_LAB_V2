@@ -12,31 +12,28 @@ import type { BrandOnboardingQueueFile, BrandOnboardingReportFile } from "../typ
 
 describe("brand onboarding dashboard", () => {
   it("uses repository data and caps the nightly queue", () => {
-    const now = new Date("2026-09-26T21:30:00.000Z");
     const dashboard = buildBrandOnboardingDashboard(
       universe as BrandUniverseFile,
       queue as BrandOnboardingQueueFile,
       report as BrandOnboardingReportFile,
       discovery as BrandDiscoveryReport,
-      now,
+      new Date("2026-09-26T18:00:00.000Z"),
     );
-    expect(dashboard.summary.active).toBe(universe.brands.filter((entry) => entry.isActive).length);
-    expect(dashboard.summary.candidatePool).toBe(
-      universe.brands.filter((entry) => !entry.isActive).length,
-    );
+    expect(dashboard.summary.active).toBe(52);
+    expect(dashboard.summary.candidatePool).toBe(108);
     expect(dashboard.summary.tonight).toBeLessThanOrEqual(5);
     expect(dashboard.summary.discovered).toBe(discovery.candidates.length);
-    expect(dashboard.brands).toHaveLength(universe.brands.length);
+    expect(dashboard.brands).toHaveLength(160);
     expect(dashboard.brands[0]?.id).toBe("massimo-dutti");
     expect(dashboard.brands.find((entry) => entry.id === "massimo-dutti")).toMatchObject({
       isPriority: true,
+      status: "CUSTOM_ADAPTER_REQUIRED",
     });
     const selected = selectQueueCandidates(queue as BrandOnboardingQueueFile, {
-      now,
-      limit: queue.policy.maxAttemptsPerRun,
+      now: new Date("2026-09-26T18:00:00.000Z"),
+      limit: 5,
+      skipSlugs: new Set((universe as BrandUniverseFile).brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
     }).map((entry) => entry.slug);
-    expect(dashboard.brands.filter((entry) => entry.isTonight).map((entry) => entry.id)).toEqual(
-      selected,
-    );
+    expect(dashboard.brands.filter((entry) => entry.isTonight).map((entry) => entry.id)).toEqual(selected);
   });
 });

@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 
 import { isValidHttpUrl, normalizeBrandName, normalizeOfficialUrl } from "../registry/build/normalize";
 import type { BrandUniverseEntry } from "../registry/build/types";
-import { buildAdapterWorkQueue, priorityBrandRank } from "./adapterWorkQueue";
+import { buildAdapterWorkQueue } from "./adapterWorkQueue";
 import {
   ADAPTER_WORK_QUEUE_PATH,
   INITIAL_ONBOARDING_BRANDS,
@@ -11,10 +11,8 @@ import {
   ONBOARDING_MAX_ATTEMPTS_PER_RUN,
   ONBOARDING_RETRY_DAYS,
   QUEUE_PATH,
-  RETRYABLE_STATUSES,
-  TERMINAL_SKIP_STATUSES,
-  isRetryDue,
 } from "./policy";
+export { selectQueueCandidates } from "./selection";
 import type {
   BrandOnboardingQueueEntry,
   BrandOnboardingQueueFile,
@@ -183,36 +181,6 @@ export function mergeQueueWithUniverseCandidates(
     updatedAt: now.toISOString(),
     entries: [...bySlug.values()].sort((a, b) => a.priority - b.priority),
   };
-}
-
-export function selectQueueCandidates(
-  queue: BrandOnboardingQueueFile,
-  options: {
-    now?: Date;
-    limit?: number;
-    only?: string[];
-    skipSlugs?: Set<string>;
-  } = {},
-): BrandOnboardingQueueEntry[] {
-  const now = options.now ?? new Date();
-  const limit = options.limit ?? queue.policy.maxAttemptsPerRun;
-  const only = options.only?.map((value) => value.trim().toLowerCase()) ?? null;
-  const skip = options.skipSlugs ?? new Set<string>();
-
-  return queue.entries
-    .filter((entry) => {
-      if (skip.has(entry.slug)) return false;
-      if (only && !only.includes(entry.slug) && !only.includes(entry.brand.toLowerCase())) {
-        return false;
-      }
-      if (TERMINAL_SKIP_STATUSES.has(entry.status)) return false;
-      if (entry.status === "BLOCKED" && (!entry.sourceUrl || !isValidHttpUrl(entry.sourceUrl))) return false;
-      if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY") return false;
-      if (!isRetryDue(entry.nextRetryAt, now)) return false;
-      return true;
-    })
-    .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority)
-    .slice(0, Math.max(0, limit));
 }
 
 export function remainingActivationSlots(
