@@ -172,6 +172,16 @@ describe("footwear gate", () => {
 });
 
 describe("shopifyProductToPilot strict gate", () => {
+  it("excludes opaque products even when the Shopify collection is shoes", () => {
+    expect(shopifyProductToPilot({
+      id: 42,
+      title: "Soie Malaquais",
+      handle: "001-099009",
+      product_type: "Shoes",
+      tags: ["Shoes"],
+    }, config, "2026-09-27T00:00:00.000Z", "/collections/womens-shoes")).toBeNull();
+  });
+
   it("maps verified footwear shopify product", () => {
     const product = shopifyProductToPilot(
       {

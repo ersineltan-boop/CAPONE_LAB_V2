@@ -1,5 +1,5 @@
 import { parseProductFieldsFromHtml, extractPrimaryColor } from "./parseHtmlFields";
-import { evaluateFootwearProduct, isVerifiedFootwearCollectionPath } from "./footwearGate";
+import { evaluateFootwearProduct, evaluateStoredPilotProduct, isVerifiedFootwearCollectionPath } from "./footwearGate";
 import {
   emptyTotemeCollectStats,
   evaluateTotemeFootwearProduct,
@@ -156,6 +156,14 @@ export function shopifyProductToPilot(
     : evaluateFootwearProduct(gateInput);
 
   if (gate.decision !== "ACCEPT_FOOTWEAR" || !gate.category) return null;
+  // A collection can contain products with opaque names or mixed merchandise.
+  // Apply the same independent review that onboarding uses before counting the
+  // product as accepted, so one uncertain item cannot poison the whole batch.
+  if (evaluateStoredPilotProduct({
+    productName: product.title,
+    productUrl: canonicalProductUrl(config.baseUrl, product.handle),
+    category: gate.category,
+  }).decision !== "ACCEPT_FOOTWEAR") return null;
   const parsed = parseProductFieldsFromHtml(product.body_html ?? "");
   const color =
     extractPrimaryColor(product.options ?? [], product.variants ?? []) ??
