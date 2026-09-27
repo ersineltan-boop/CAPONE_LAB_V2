@@ -18,6 +18,7 @@ import {
 } from "../queue";
 import { retryAt, INITIAL_ONBOARDING_BRANDS } from "../policy";
 import { fingerprintStorefront } from "../platforms";
+import { probeBrandSource } from "../probe";
 import {
   auditFootwearLeakage,
   evaluateOfficialSourceCoverage,
@@ -414,6 +415,21 @@ describe("onboarding fingerprints", () => {
     expect(fingerprintStorefront({ html: "__NEXT_DATA__ /_next/static" }).platform).toBe(
       "NEXT.JS PUBLIC DATA",
     );
+  });
+
+  it("avoids irrelevant Inditex endpoints for luxury brands but retains known Inditex probes", async () => {
+    const requested: string[] = [];
+    const http: OnboardingHttp = {
+      async fetchText(url) {
+        requested.push(url);
+        return { ok: false, status: 404, text: "", url };
+      },
+    };
+    await probeBrandSource({ slug: "gucci", brand: "GUCCI", sourceUrl: "https://www.gucci.com", http });
+    expect(requested.some((url) => url.includes("categories?ajax=true"))).toBe(false);
+    requested.length = 0;
+    await probeBrandSource({ slug: "massimo-dutti", brand: "MASSIMO DUTTI", sourceUrl: "https://www.massimodutti.com", http });
+    expect(requested.some((url) => url.includes("categories?ajax=true"))).toBe(true);
   });
 });
 
