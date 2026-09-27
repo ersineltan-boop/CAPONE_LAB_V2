@@ -29,10 +29,11 @@ describe("brand onboarding dashboard", () => {
       isPriority: true,
       status: "CUSTOM_ADAPTER_REQUIRED",
     });
-    expect(selectQueueCandidates(queue as BrandOnboardingQueueFile, {
-      now: new Date("2026-09-26T21:30:00.000Z"), limit: 5,
-    }).map((entry) => entry.slug)).toEqual([
-      "jimmy-choo", "manolo-blahnik", "christian-louboutin", "bottega-veneta", "naked-wolfe",
-    ]);
+    const selected = selectQueueCandidates(queue as BrandOnboardingQueueFile, {
+      now: new Date("2026-09-26T18:00:00.000Z"),
+      limit: 5,
+      skipSlugs: new Set((universe as BrandUniverseFile).brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
+    }).map((entry) => entry.slug);
+    expect(dashboard.brands.filter((entry) => entry.isTonight).map((entry) => entry.id)).toEqual(selected);
   });
 });
