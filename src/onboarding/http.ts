@@ -11,7 +11,7 @@ export interface OnboardingHttpResult {
 export interface OnboardingHttp {
   fetchText(
     url: string,
-    options?: { delayMs?: number; headers?: Record<string, string> },
+    options?: { delayMs?: number; headers?: Record<string, string>; timeoutMs?: number },
   ): Promise<OnboardingHttpResult>;
 }
 
@@ -30,7 +30,7 @@ export const defaultOnboardingHttp: OnboardingHttp = {
         },
         redirect: "follow",
         keepalive: false,
-        signal: AbortSignal.timeout(20000),
+        signal: AbortSignal.timeout(options?.timeoutMs ?? 20000),
       });
       const text = await response.text();
       return {
@@ -51,6 +51,27 @@ export const defaultOnboardingHttp: OnboardingHttp = {
     }
   },
 };
+
+/** Bounds discovery only; full official-catalog collection keeps its own limits. */
+export function createBudgetedProbeHttp(
+  http: OnboardingHttp,
+  options: { budgetMs?: number; requestTimeoutMs?: number; now?: () => number } = {},
+): OnboardingHttp {
+  const now = options.now ?? Date.now;
+  const deadline = now() + (options.budgetMs ?? 60_000);
+  const requestTimeoutMs = options.requestTimeoutMs ?? 6_000;
+  return {
+    async fetchText(url, requestOptions) {
+      const delayMs = requestOptions?.delayMs ?? 0;
+      const remaining = deadline - now() - delayMs;
+      if (remaining <= 0) throw new Error("Official-source probe exceeded its time budget; retry later");
+      return http.fetchText(url, {
+        ...requestOptions,
+        timeoutMs: Math.max(1, Math.min(requestOptions?.timeoutMs ?? requestTimeoutMs, remaining)),
+      });
+    },
+  };
+}
 
 export { fetchText };
 
