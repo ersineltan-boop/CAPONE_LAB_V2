@@ -199,7 +199,7 @@ export function selectQueueCandidates(
   const only = options.only?.map((value) => value.trim().toLowerCase()) ?? null;
   const skip = options.skipSlugs ?? new Set<string>();
 
-  return queue.entries
+  const eligible = queue.entries
     .filter((entry) => {
       if (skip.has(entry.slug)) return false;
       if (only && !only.includes(entry.slug) && !only.includes(entry.brand.toLowerCase())) {
@@ -211,8 +211,21 @@ export function selectQueueCandidates(
       if (!isRetryDue(entry.nextRetryAt, now)) return false;
       return true;
     })
-    .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority)
-    .slice(0, Math.max(0, limit));
+    .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority);
+  const selected = eligible.slice(0, Math.max(0, limit));
+
+  // Keep luxury brands first, but reserve one discovery attempt when all nightly
+  // slots would otherwise be spent on the fixed priority list. Explicit --only
+  // requests and smaller diagnostic runs retain their exact selection order.
+  if (!only && limit >= 5 && selected.length === limit &&
+      selected.every((entry) => priorityBrandRank(entry.slug) !== Number.MAX_SAFE_INTEGER)) {
+    const unprobed = eligible.find((entry) =>
+      priorityBrandRank(entry.slug) === Number.MAX_SAFE_INTEGER &&
+      entry.status === "PENDING" && Boolean(entry.sourceUrl && isValidHttpUrl(entry.sourceUrl)),
+    );
+    if (unprobed) selected[selected.length - 1] = unprobed;
+  }
+  return selected;
 }
 
 export function remainingActivationSlots(

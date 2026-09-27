@@ -94,6 +94,33 @@ describe("onboarding queue policy", () => {
     expect(selectQueueCandidates(queue, { limit: 2 }).map((entry) => entry.slug)).not.toContain("maison-margiela");
   });
 
+  it("reserves one nightly discovery slot when luxury priority would fill all attempts", () => {
+    const queue = createInitialQueue();
+    const now = new Date("2026-09-27T18:00:00.000Z");
+    for (const entry of queue.entries) {
+      if (["naked-wolfe", "cos", "stuart-weitzman", "sam-edelman", "vagabond-shoemakers"].includes(entry.slug)) {
+        entry.status = "PRIORITY_BLOCKED";
+        entry.nextRetryAt = retryAt(now);
+      }
+    }
+    queue.entries.push({
+      ...queue.entries[0],
+      brand: "BOBBIES",
+      slug: "bobbies",
+      priority: 100,
+      sourceUrl: "https://www.bobbies.com",
+      status: "PENDING",
+      nextRetryAt: null,
+    });
+    const selected = selectQueueCandidates(queue, { now, limit: 5 });
+    expect(selected).toHaveLength(5);
+    expect(selected.slice(0, 4).map((entry) => entry.slug)).toEqual([
+      "massimo-dutti", "mango", "maison-margiela", "isabel-marant",
+    ]);
+    expect(selected[4].slug).toBe("bobbies");
+    expect(selectQueueCandidates(queue, { now, limit: 5, only: ["ganni"] }).map((entry) => entry.slug)).toEqual(["ganni"]);
+  });
+
   it("caps successful activations independently of blocked attempts", () => {
     expect(remainingActivationSlots(3, 0)).toBe(3);
     expect(remainingActivationSlots(3, 3)).toBe(0);
