@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T11:18:06.356Z",
-  "brandCount": 159,
-  "marketplaceCount": 4,
-  "verifiedBrandSources": 8,
+  "generatedAt": "2026-09-27T17:33:12.383Z",
+  "brandCount": 160,
+  "marketplaceCount": 5,
+  "verifiedBrandSources": 7,
   "verifiedMarketplaceSources": 1,
   "brands": [
     {
@@ -331,7 +331,7 @@
       "sourceId": "exe",
       "sourceLabel": "EXÉ",
       "sourceType": "BRAND",
-      "discoveryStatus": "AUTO_DISCOVERED",
+      "discoveryStatus": "VERIFIED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -551,7 +551,7 @@
       "sourceId": "toteme",
       "sourceLabel": "TOTEME",
       "sourceType": "BRAND",
-      "discoveryStatus": "NEEDS_MANUAL_CONFIG",
+      "discoveryStatus": "VERIFIED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -1476,7 +1476,7 @@
       "sourceId": "maria-carlota",
       "sourceLabel": "MARIA CARLOTA",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "VERIFIED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -1588,18 +1588,10 @@
       "sourceType": "BRAND",
       "discoveryStatus": "VERIFIED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
-      "candidateUrls": [
-        "https://www.theattico.com/collections/new-in",
-        "https://www.theattico.com/collections/new-in-2406zsx"
-      ],
-      "candidateHandles": [
-        "new-in",
-        "new-in-2406zsx",
-        "/collections/new-in",
-        "/collections/new-in-2406zsx"
-      ],
-      "verified": true,
-      "evidenceStrategy": "NEW_ARRIVALS_COLLECTION"
+      "candidateUrls": [],
+      "candidateHandles": [],
+      "verified": false,
+      "evidenceStrategy": null
     },
     {
       "sourceId": "veja",
@@ -1787,6 +1779,17 @@
       "candidateHandles": [],
       "verified": false,
       "evidenceStrategy": null
+    },
+    {
+      "sourceId": "naked-wolfe",
+      "sourceLabel": "NAKED WOLFE",
+      "sourceType": "BRAND",
+      "discoveryStatus": "VERIFIED",
+      "newArrivalDiscoveryStatus": "NEEDS_PROBE",
+      "candidateUrls": [],
+      "candidateHandles": [],
+      "verified": false,
+      "evidenceStrategy": null
     }
   ],
   "marketplaces": [
@@ -1830,6 +1833,17 @@
     {
       "sourceId": "free-people",
       "sourceLabel": "Free People",
+      "sourceType": "MARKETPLACE",
+      "discoveryStatus": "ACTIVE",
+      "newArrivalDiscoveryStatus": "NOT_SUPPORTED",
+      "candidateUrls": [],
+      "candidateHandles": [],
+      "verified": false,
+      "evidenceStrategy": null
+    },
+    {
+      "sourceId": "the-webster",
+      "sourceLabel": "The Webster",
       "sourceType": "MARKETPLACE",
       "discoveryStatus": "ACTIVE",
       "newArrivalDiscoveryStatus": "NOT_SUPPORTED",

@@ -58,9 +58,7 @@ jobs:
 
       - name: Tests
         id: tests
-        # Wave 50 QA asserts historical shard numbers and must run against its
-        # delivery snapshot; a live refresh may legitimately reshard the data.
-        run: npm test -- --exclude src/brands/wave50/__tests__/wave50.delivery.qa.test.ts
+        run: npm test
 
       - name: Production build
         id: build

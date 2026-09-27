@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-13T11:18:06.345Z",
-  "digerCount": 767,
-  "totalFamilies": 11903,
+  "generatedAt": "2026-09-27T17:33:12.373Z",
+  "digerCount": 785,
+  "totalFamilies": 13015,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 137,
+    "GENERIC_SOURCE_CATEGORY": 160,
     "CONFLICTING_SOURCE_CATEGORIES": 48,
-    "UNMAPPED_SOURCE_CATEGORY": 546,
+    "UNMAPPED_SOURCE_CATEGORY": 541,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -1080,6 +1080,15 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "amina-muaddi--id-shopify-the-webster-1583186-sb004095t001wh001-begum-mesh-sling-95-white-unclassified-mesh-slingback",
+      "brand": "Amina Muaddi",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "amina-muaddi--name-amina-muaddi-alexa-slipper-95-unclassified-satin",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -1222,6 +1231,24 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "andrea-wazen--id-shopify-the-webster-1565338-katsl105elgol-katy-sling-105-elaphe-gold-unclassified-slingback",
+      "brand": "Andrea Wazen",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "andrea-wazen--id-shopify-the-webster-1565350-katsl105ellav-katy-sling-105-elaphe-purple-unclassified-slingback",
+      "brand": "Andrea Wazen",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "aquazzura--id-level-shoes-aquazzura-crystal-lover-75-mules-brown-mesh-women-mules-fyaeve-html-unclassified-mesh-mule",
@@ -1475,15 +1502,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--id-shopify-carel-regina-mocassins-cuir-marine-bleu-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "carel--id-shopify-carel-sonia-derbies-cuir-noir-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
@@ -1511,34 +1529,7 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--name-carel-2100-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-gina-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "carel--name-carel-gioia-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-giovanna-unclassified-base",
       "brand": "CAREL",
       "sourceCategories": [
         "Toutes les Chaussures"
@@ -1969,26 +1960,6 @@
     },
     {
       "modelFamilyId": "ex--handle-exe-sapatos-rimini-512-unclassified-base-sapatos-rimini-512",
-      "brand": "EXÉ",
-      "sourceCategories": [
-        "MOCASSINS, SAPATOS E STILETTOS",
-        "Sapatos"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ex--id-shopify-exe-mocassins-abf-97-unclassified-base",
-      "brand": "EXÉ",
-      "sourceCategories": [
-        "MOCASSINS, SAPATOS E STILETTOS",
-        "Sapatos"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ex--id-shopify-exe-mocassins-abf-97-v1392-45-2-black-unclassified-base",
       "brand": "EXÉ",
       "sourceCategories": [
         "MOCASSINS, SAPATOS E STILETTOS",
@@ -5889,6 +5860,24 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "miu-miu--id-shopify-the-webster-1594939-5d585e-f-005-3ku1-net-and-suede-boat-shoes-brown-unclassified-base",
+      "brand": "Miu Miu",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "miu-miu--id-shopify-the-webster-1616403-5d123e-f-005-3f33-bleached-leather-deck-shoes-brown-unclassified-base",
+      "brand": "Miu Miu",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "neous--handle-neous-beid-unclassified-base-beid",
       "brand": "NEOUS",
       "sourceCategories": [
@@ -6543,6 +6532,16 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "proenza-schouler--id-shopify-proenza-schouler-ruched-tee-slippers-in-shearling-chocolate-unclassified-shearling",
+      "brand": "PROENZA SCHOULER",
+      "sourceCategories": [
+        "Shoes",
+        "shoes_taxes-exclusion"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "proenza-schouler--name-proenza-schouler-slant-crochet-flat-unclassified-base",
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
@@ -7128,6 +7127,24 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "the-row--id-shopify-the-webster-1482142-f1338-l305-tyler-lace-up-yellow-unclassified-laceup",
+      "brand": "The Row",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "the-row--id-shopify-the-webster-1482212-f1626-l305-soft-mocassin-black-unclassified-base",
+      "brand": "The Row",
+      "sourceCategories": [
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "the-row--name-the-row-hudson-two-slip-on-unclassified-base",
       "brand": "THE ROW",
       "sourceCategories": [],
@@ -7659,6 +7676,150 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40226762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40229762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40235782-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40237762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40238762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40239762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40243762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40244762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40248762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40249762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40253762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40256762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40263762-unclassified-wood",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40264762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40265762-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-40268043-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     }
   ],
   "topUnmappedSourceCategories": [
@@ -7766,7 +7927,7 @@
     },
     {
       "sourceCategory": "MOCASSINS, SAPATOS E STILETTOS",
-      "count": 32,
+      "count": 30,
       "brands": [
         "EXÉ"
       ],
@@ -7774,7 +7935,7 @@
     },
     {
       "sourceCategory": "Sapatos",
-      "count": 32,
+      "count": 30,
       "brands": [
         "EXÉ"
       ],
@@ -7804,14 +7965,6 @@
         "KHAITE",
         "LE MONDE BERYL",
         "LUIS ONOFRE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Toutes les Chaussures",
-      "count": 15,
-      "brands": [
-        "CAREL"
       ],
       "proposedMapping": null
     },
@@ -7853,6 +8006,14 @@
       "count": 11,
       "brands": [
         "AEYDE"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Toutes les Chaussures",
+      "count": 11,
+      "brands": [
+        "CAREL"
       ],
       "proposedMapping": null
     },
@@ -8044,17 +8205,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 11903,
-    "babet": 829,
-    "loafer": 614,
-    "topuklu": 1892,
-    "sandal": 3198,
-    "mule": 1087,
-    "bot-cizme": 2076,
-    "sneaker": 1232,
-    "espadril": 108,
+    "tumu": 13015,
+    "babet": 1044,
+    "loafer": 697,
+    "topuklu": 2044,
+    "sandal": 3405,
+    "mule": 1169,
+    "bot-cizme": 2321,
+    "sneaker": 1338,
+    "espadril": 111,
     "oxford-derby": 12,
-    "clog": 88,
-    "diger": 767
+    "clog": 89,
+    "diger": 785
   }
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T11:18:06.345Z",
+  "generatedAt": "2026-09-27T17:33:12.373Z",
   "brands": [
     {
       "brandId": "schutz",
       "brandName": "SCHUTZ",
-      "modelFamilyCount": 754,
+      "modelFamilyCount": 763,
       "sourceProductCount": 1537,
       "sourceFootwearCategoryCount": 278,
       "categories": [
@@ -1960,8 +1960,7 @@
       "categoryCoveragePercent": 99.4,
       "productsOnlyGenericCategory": 6,
       "collectionUrlsCrawled": [
-        "https://schutz-shoes.com/collections/womens-shoes",
-        "https://schutz-shoes.com/collections/clear-vinyl-shoes"
+        "https://schutz-shoes.com/collections/womens-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -2765,8 +2764,7 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://aemery.com/collections/footwear",
-        "https://aemery.com/collections/sandals"
+        "https://aemery.com/collections/footwear"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -2774,7 +2772,7 @@
     {
       "brandId": "alias-mae",
       "brandName": "ALIAS MAE",
-      "modelFamilyCount": 124,
+      "modelFamilyCount": 129,
       "sourceProductCount": 125,
       "sourceFootwearCategoryCount": 25,
       "categories": [
@@ -2969,7 +2967,7 @@
     {
       "brandId": "alohas",
       "brandName": "ALOHAS",
-      "modelFamilyCount": 145,
+      "modelFamilyCount": 209,
       "sourceProductCount": 245,
       "sourceFootwearCategoryCount": 78,
       "categories": [
@@ -3525,8 +3523,7 @@
       "categoryCoveragePercent": 95.1,
       "productsOnlyGenericCategory": 12,
       "collectionUrlsCrawled": [
-        "https://alohas.com/collections/shoes",
-        "https://alohas.com/collections/ballet-flats"
+        "https://alohas.com/collections/all"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -3534,7 +3531,7 @@
     {
       "brandId": "dear-frances",
       "brandName": "DEAR FRANCES",
-      "modelFamilyCount": 52,
+      "modelFamilyCount": 59,
       "sourceProductCount": 96,
       "sourceFootwearCategoryCount": 46,
       "categories": [
@@ -3876,7 +3873,7 @@
     {
       "brandId": "le-monde-beryl",
       "brandName": "LE MONDE BERYL",
-      "modelFamilyCount": 102,
+      "modelFamilyCount": 114,
       "sourceProductCount": 298,
       "sourceFootwearCategoryCount": 114,
       "categories": [
@@ -4693,7 +4690,7 @@
     {
       "brandId": "larroude",
       "brandName": "LARROUDE",
-      "modelFamilyCount": 281,
+      "modelFamilyCount": 332,
       "sourceProductCount": 692,
       "sourceFootwearCategoryCount": 194,
       "categories": [
@@ -6061,7 +6058,6 @@
       "categoryCoveragePercent": 97.4,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://larroude.com/collections/fall-shoes",
         "https://larroude.com/collections/all-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
@@ -6070,7 +6066,7 @@
     {
       "brandId": "dolce-vita",
       "brandName": "DOLCE VITA",
-      "modelFamilyCount": 620,
+      "modelFamilyCount": 637,
       "sourceProductCount": 1221,
       "sourceFootwearCategoryCount": 93,
       "categories": [
@@ -6741,7 +6737,7 @@
     {
       "brandId": "jeffrey-campbell",
       "brandName": "JEFFREY CAMPBELL",
-      "modelFamilyCount": 672,
+      "modelFamilyCount": 766,
       "sourceProductCount": 786,
       "sourceFootwearCategoryCount": 69,
       "categories": [
@@ -7244,7 +7240,7 @@
     {
       "brandId": "steve-madden",
       "brandName": "STEVE MADDEN",
-      "modelFamilyCount": 765,
+      "modelFamilyCount": 803,
       "sourceProductCount": 1555,
       "sourceFootwearCategoryCount": 229,
       "categories": [
@@ -8858,7 +8854,8 @@
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://www.stevemadden.com/collections/womens-new-arrivals",
-        "https://www.stevemadden.com/collections/womens-best-sellers-2"
+        "https://www.stevemadden.com/collections/womens-best-sellers-2",
+        "https://www.stevemadden.com/collections/all"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -8866,29 +8863,29 @@
     {
       "brandId": "christen",
       "brandName": "CHRISTEN",
-      "modelFamilyCount": 21,
-      "sourceProductCount": 59,
+      "modelFamilyCount": 27,
+      "sourceProductCount": 94,
       "sourceFootwearCategoryCount": 9,
       "categories": [
         {
           "categoryId": "shoes",
           "categoryName": "Shoes",
           "categoryPath": "/collections/shoes",
-          "productCount": 56,
+          "productCount": 91,
           "generic": true
-        },
-        {
-          "categoryId": "helix-pump",
-          "categoryName": "Helix Pump",
-          "categoryPath": "/collections/helix-pump",
-          "productCount": 25,
-          "generic": false
         },
         {
           "categoryId": "helix-sandal",
           "categoryName": "Helix Sandal",
           "categoryPath": "/collections/helix-sandal",
-          "productCount": 25,
+          "productCount": 41,
+          "generic": false
+        },
+        {
+          "categoryId": "helix-pump",
+          "categoryName": "Helix Pump",
+          "categoryPath": "/collections/helix-pump",
+          "productCount": 34,
           "generic": false
         },
         {
@@ -8934,10 +8931,10 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 40,
-      "productsWithNoMeaningfulCategory": 19,
-      "categoryCoveragePercent": 67.8,
-      "productsOnlyGenericCategory": 19,
+      "productsWithMeaningfulCategory": 65,
+      "productsWithNoMeaningfulCategory": 29,
+      "categoryCoveragePercent": 69.1,
+      "productsOnlyGenericCategory": 29,
       "collectionUrlsCrawled": [
         "https://christen.com/collections/shoes"
       ],
@@ -8947,9 +8944,9 @@
     {
       "brandId": "jude",
       "brandName": "JUDE",
-      "modelFamilyCount": 77,
-      "sourceProductCount": 241,
-      "sourceFootwearCategoryCount": 52,
+      "modelFamilyCount": 86,
+      "sourceProductCount": 243,
+      "sourceFootwearCategoryCount": 53,
       "categories": [
         {
           "categoryId": "heels",
@@ -9302,6 +9299,13 @@
           "generic": false
         },
         {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/women-shoes",
+          "productCount": 2,
+          "generic": true
+        },
+        {
           "categoryId": "yaga-wedge-sandal-restock",
           "categoryName": "Yaga Wedge Sandal Restock",
           "categoryPath": "/collections/yaga-wedge-sandal-restock",
@@ -9317,22 +9321,53 @@
         }
       ],
       "productsWithMeaningfulCategory": 241,
-      "productsWithNoMeaningfulCategory": 0,
-      "categoryCoveragePercent": 100,
-      "productsOnlyGenericCategory": 0,
+      "productsWithNoMeaningfulCategory": 2,
+      "categoryCoveragePercent": 99.2,
+      "productsOnlyGenericCategory": 2,
       "collectionUrlsCrawled": [
+        "https://thejude.com/collections/atlas-flat",
+        "https://thejude.com/collections/bloom-sandal",
+        "https://thejude.com/collections/bonnie-pump",
         "https://thejude.com/collections/boots",
-        "https://thejude.com/collections/heels-for-women",
-        "https://thejude.com/collections/footwear-for-women",
-        "https://thejude.com/collections/pumps-for-women",
-        "https://thejude.com/collections/mules-for-women",
-        "https://thejude.com/collections/sandals-for-women",
-        "https://thejude.com/collections/flats-for-women",
-        "https://thejude.com/collections/date-mule-all",
+        "https://thejude.com/collections/cas-ankle-boot",
         "https://thejude.com/collections/cave-ankle-and-mid-calf-boots",
-        "https://thejude.com/collections/haze-pump",
+        "https://thejude.com/collections/cave-knee-boots",
         "https://thejude.com/collections/cave-mule",
-        "https://thejude.com/collections/date-mules"
+        "https://thejude.com/collections/court-pump",
+        "https://thejude.com/collections/credo-ankle-boot",
+        "https://thejude.com/collections/date-mule",
+        "https://thejude.com/collections/date-mule-all",
+        "https://thejude.com/collections/date-mules",
+        "https://thejude.com/collections/date-pumps",
+        "https://thejude.com/collections/dusty-flat",
+        "https://thejude.com/collections/faith-pump",
+        "https://thejude.com/collections/fame-pump",
+        "https://thejude.com/collections/fete-pump",
+        "https://thejude.com/collections/flats",
+        "https://thejude.com/collections/floor-ankle-boots",
+        "https://thejude.com/collections/haze-pump",
+        "https://thejude.com/collections/haze-sandals",
+        "https://thejude.com/collections/heels",
+        "https://thejude.com/collections/snug-sandal-copy",
+        "https://thejude.com/collections/icon-pump",
+        "https://thejude.com/collections/jerry-pump",
+        "https://thejude.com/collections/kiss-pumps",
+        "https://thejude.com/collections/leif-boot",
+        "https://thejude.com/collections/lucille-wedge",
+        "https://thejude.com/collections/mixer-sandal",
+        "https://thejude.com/collections/mode-ballerina",
+        "https://thejude.com/collections/mules",
+        "https://thejude.com/collections/path-flat",
+        "https://thejude.com/collections/pirrie-pump",
+        "https://thejude.com/collections/pumps",
+        "https://thejude.com/collections/sandals",
+        "https://thejude.com/collections/scoop-pumps",
+        "https://thejude.com/collections/lucille-wedge-copy",
+        "https://thejude.com/collections/footwear-for-women",
+        "https://thejude.com/collections/theresa-boot",
+        "https://thejude.com/collections/yaga-flats",
+        "https://thejude.com/collections/yaga-wedge",
+        "https://thejude.com/collections/yaga-wedge-sandal-restock"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -9340,7 +9375,7 @@
     {
       "brandId": "neous",
       "brandName": "NEOUS",
-      "modelFamilyCount": 31,
+      "modelFamilyCount": 32,
       "sourceProductCount": 70,
       "sourceFootwearCategoryCount": 27,
       "categories": [
@@ -9540,7 +9575,24 @@
       "productsOnlyGenericCategory": 1,
       "collectionUrlsCrawled": [
         "https://www.neous.co.uk/collections/shoes-new-in",
-        "https://www.neous.co.uk/collections/shoes"
+        "https://www.neous.co.uk/collections/shoes",
+        "https://www.neous.co.uk/collections/pre-order-aw24-shoes",
+        "https://www.neous.co.uk/collections/autumn-winter-26-shoes",
+        "https://www.neous.co.uk/collections/boot-renewal",
+        "https://www.neous.co.uk/collections/boots",
+        "https://www.neous.co.uk/collections/delphinus-scarves-flats",
+        "https://www.neous.co.uk/collections/flats",
+        "https://www.neous.co.uk/collections/heeled-boots",
+        "https://www.neous.co.uk/collections/heels-1",
+        "https://www.neous.co.uk/collections/heels-test",
+        "https://www.neous.co.uk/collections/loafers",
+        "https://www.neous.co.uk/collections/mules",
+        "https://www.neous.co.uk/collections/pumps",
+        "https://www.neous.co.uk/collections/sandals",
+        "https://www.neous.co.uk/collections/ss25",
+        "https://www.neous.co.uk/collections/spring-summer-26-shoes",
+        "https://www.neous.co.uk/collections/summer-flats",
+        "https://www.neous.co.uk/collections/summer-nights-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -9797,7 +9849,8 @@
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://studioamelia.co/collections/flats",
-        "https://studioamelia.co/collections/shoes"
+        "https://studioamelia.co/collections/shoes",
+        "https://studioamelia.co/collections/all"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -9805,7 +9858,7 @@
     {
       "brandId": "aeyde",
       "brandName": "AEYDE",
-      "modelFamilyCount": 199,
+      "modelFamilyCount": 200,
       "sourceProductCount": 631,
       "sourceFootwearCategoryCount": 36,
       "categories": [
@@ -10068,7 +10121,38 @@
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://www.aeyde.com/collections/flats",
-        "https://www.aeyde.com/collections/pumps"
+        "https://www.aeyde.com/collections/pumps",
+        "https://www.aeyde.com/collections/all-footwear",
+        "https://www.aeyde.com/collections/ankle-boots",
+        "https://www.aeyde.com/collections/ballerinas",
+        "https://www.aeyde.com/collections/ballet-flats",
+        "https://www.aeyde.com/collections/city-boots",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-ankle-boots",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-anklets",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-clogs",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-flat-sandals",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-flats",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-heeled-sandals",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-knee-high-boots",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-loafers",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-pumps",
+        "https://www.aeyde.com/collections/filler-suggested-product-logic-shoes",
+        "https://www.aeyde.com/collections/flat-sandals",
+        "https://www.aeyde.com/collections/heeled-sandals",
+        "https://www.aeyde.com/collections/house-slippers",
+        "https://www.aeyde.com/collections/knee-boots",
+        "https://www.aeyde.com/collections/knee-high-boots",
+        "https://www.aeyde.com/collections/loafer-capsule",
+        "https://www.aeyde.com/collections/loafers",
+        "https://www.aeyde.com/collections/loafers-1",
+        "https://www.aeyde.com/collections/mary-janes",
+        "https://www.aeyde.com/collections/mules",
+        "https://www.aeyde.com/collections/slide-capsule",
+        "https://www.aeyde.com/collections/sneakers",
+        "https://www.aeyde.com/collections/square-chic-sandals",
+        "https://www.aeyde.com/collections/uma-slim-sneaker",
+        "https://www.aeyde.com/collections/uma-sneaker",
+        "https://www.aeyde.com/collections/wedges"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -10076,7 +10160,7 @@
     {
       "brandId": "hereu",
       "brandName": "HEREU",
-      "modelFamilyCount": 87,
+      "modelFamilyCount": 93,
       "sourceProductCount": 215,
       "sourceFootwearCategoryCount": 37,
       "categories": [
@@ -10346,7 +10430,8 @@
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://hereustudio.com/collections/womens-new-in-shoes",
-        "https://hereustudio.com/collections/womens-loafers"
+        "https://hereustudio.com/collections/womens-loafers",
+        "https://hereustudio.com/collections/womens-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -10354,7 +10439,7 @@
     {
       "brandId": "souliers-martinez",
       "brandName": "SOULIERS MARTINEZ",
-      "modelFamilyCount": 56,
+      "modelFamilyCount": 62,
       "sourceProductCount": 87,
       "sourceFootwearCategoryCount": 11,
       "categories": [
@@ -10442,7 +10527,10 @@
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
         "https://souliers-martinez.com/collections/designer-flat-shoes",
-        "https://souliers-martinez.com/collections/designer-boots"
+        "https://souliers-martinez.com/collections/designer-boots",
+        "https://souliers-martinez.com/collections/designer-platforms",
+        "https://souliers-martinez.com/collections/designer-pumps",
+        "https://souliers-martinez.com/collections/designer-sandals"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -10748,7 +10836,8 @@
       "productsOnlyGenericCategory": 25,
       "collectionUrlsCrawled": [
         "https://luisonofre.com/collections/loafers",
-        "https://luisonofre.com/collections/pumps"
+        "https://luisonofre.com/collections/pumps",
+        "https://luisonofre.com/collections/all-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -10976,8 +11065,7 @@
       "categoryCoveragePercent": 91.1,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://flattered.com/collections/ballet-flats",
-        "https://flattered.com/collections/boots"
+        "https://flattered.com/collections/all-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -10985,7 +11073,7 @@
     {
       "brandId": "maray",
       "brandName": "MARAY",
-      "modelFamilyCount": 117,
+      "modelFamilyCount": 118,
       "sourceProductCount": 193,
       "sourceFootwearCategoryCount": 8,
       "categories": [
@@ -11052,7 +11140,8 @@
       "productsOnlyGenericCategory": 1,
       "collectionUrlsCrawled": [
         "https://maray.pt/collections/sandals",
-        "https://maray.pt/collections/mules"
+        "https://maray.pt/collections/mules",
+        "https://maray.pt/collections/all-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -11060,7 +11149,7 @@
     {
       "brandId": "exe",
       "brandName": "EXÉ",
-      "modelFamilyCount": 278,
+      "modelFamilyCount": 283,
       "sourceProductCount": 407,
       "sourceFootwearCategoryCount": 7,
       "categories": [
@@ -11119,6 +11208,10 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
+        "https://exe.pt/collections/fw26-sapatilhas-e-tenis",
+        "https://exe.pt/collections/sapatos",
+        "https://exe.pt/collections/sandalias",
+        "https://exe.pt/collections/sapatilhas-e-tenis",
         "https://exe.pt/collections/socas-e-mules"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
@@ -11128,8 +11221,8 @@
       "brandId": "the-row",
       "brandName": "THE ROW",
       "modelFamilyCount": 121,
-      "sourceProductCount": 243,
-      "sourceFootwearCategoryCount": 19,
+      "sourceProductCount": 273,
+      "sourceFootwearCategoryCount": 20,
       "categories": [
         {
           "categoryId": "w-shoes-view-all",
@@ -11172,6 +11265,13 @@
           "categoryPath": "/collections/women-sandals",
           "productCount": 39,
           "generic": false
+        },
+        {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/women-shoes",
+          "productCount": 30,
+          "generic": true
         },
         {
           "categoryId": "w-shoes-heels",
@@ -11266,9 +11366,9 @@
         }
       ],
       "productsWithMeaningfulCategory": 187,
-      "productsWithNoMeaningfulCategory": 56,
-      "categoryCoveragePercent": 77,
-      "productsOnlyGenericCategory": 1,
+      "productsWithNoMeaningfulCategory": 86,
+      "categoryCoveragePercent": 68.5,
+      "productsOnlyGenericCategory": 31,
       "collectionUrlsCrawled": [
         "https://www.therow.com/collections/women-shoes",
         "https://www.therow.com/collections/women-boots"
@@ -11280,8 +11380,8 @@
       "brandId": "khaite",
       "brandName": "KHAITE",
       "modelFamilyCount": 101,
-      "sourceProductCount": 172,
-      "sourceFootwearCategoryCount": 71,
+      "sourceProductCount": 180,
+      "sourceFootwearCategoryCount": 72,
       "categories": [
         {
           "categoryId": "shoes",
@@ -11352,6 +11452,13 @@
           "categoryPath": "/collections/mules",
           "productCount": 8,
           "generic": false
+        },
+        {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/women-shoes",
+          "productCount": 8,
+          "generic": true
         },
         {
           "categoryId": "miles-loafer",
@@ -11782,12 +11889,11 @@
         }
       ],
       "productsWithMeaningfulCategory": 172,
-      "productsWithNoMeaningfulCategory": 0,
-      "categoryCoveragePercent": 100,
-      "productsOnlyGenericCategory": 0,
+      "productsWithNoMeaningfulCategory": 8,
+      "categoryCoveragePercent": 95.6,
+      "productsOnlyGenericCategory": 8,
       "collectionUrlsCrawled": [
-        "https://khaite.com/collections/shoes",
-        "https://khaite.com/collections/boots"
+        "https://khaite.com/collections/shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -11795,7 +11901,7 @@
     {
       "brandId": "toteme",
       "brandName": "TOTEME",
-      "modelFamilyCount": 92,
+      "modelFamilyCount": 94,
       "sourceProductCount": 129,
       "sourceFootwearCategoryCount": 15,
       "categories": [
@@ -11909,14 +12015,21 @@
       "productsWithNoMeaningfulCategory": 5,
       "categoryCoveragePercent": 96.1,
       "productsOnlyGenericCategory": 5,
-      "collectionUrlsCrawled": [],
+      "collectionUrlsCrawled": [
+        "https://toteme.com/collections/shoes-boots",
+        "https://toteme.com/collections/shoes-flats",
+        "https://toteme.com/collections/shoes-pumps-mules",
+        "https://toteme.com/collections/shoes-sandals",
+        "https://toteme.com/collections/shoes-5",
+        "https://toteme.com/collections/shoes-sneakers"
+      ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
     },
     {
       "brandId": "lemaire",
       "brandName": "LEMAIRE",
-      "modelFamilyCount": 55,
+      "modelFamilyCount": 70,
       "sourceProductCount": 93,
       "sourceFootwearCategoryCount": 5,
       "categories": [
@@ -12017,29 +12130,29 @@
     {
       "brandId": "proenza-schouler",
       "brandName": "PROENZA SCHOULER",
-      "modelFamilyCount": 87,
-      "sourceProductCount": 150,
+      "modelFamilyCount": 94,
+      "sourceProductCount": 163,
       "sourceFootwearCategoryCount": 27,
       "categories": [
         {
           "categoryId": "shoes-taxes-exclusion",
           "categoryName": "shoes_taxes-exclusion",
           "categoryPath": "/collections/shoes_taxes-exclusion",
-          "productCount": 145,
+          "productCount": 158,
           "generic": false
         },
         {
           "categoryId": "shoes",
           "categoryName": "Shoes",
           "categoryPath": "/collections/shoes",
-          "productCount": 136,
+          "productCount": 149,
           "generic": true
         },
         {
           "categoryId": "handbags-and-shoes",
           "categoryName": "Handbags and Shoes",
           "categoryPath": "/collections/handbags-and-shoes",
-          "productCount": 91,
+          "productCount": 99,
           "generic": false
         },
         {
@@ -12057,17 +12170,17 @@
           "generic": false
         },
         {
-          "categoryId": "sandals",
-          "categoryName": "Sandals",
-          "categoryPath": "/collections/sandals",
-          "productCount": 41,
-          "generic": false
-        },
-        {
           "categoryId": "boots",
           "categoryName": "Boots",
           "categoryPath": "/collections/boots",
-          "productCount": 35,
+          "productCount": 43,
+          "generic": false
+        },
+        {
+          "categoryId": "sandals",
+          "categoryName": "Sandals",
+          "categoryPath": "/collections/sandals",
+          "productCount": 43,
           "generic": false
         },
         {
@@ -12116,7 +12229,7 @@
           "categoryId": "flats",
           "categoryName": "Flats",
           "categoryPath": "/collections/flats",
-          "productCount": 20,
+          "productCount": 22,
           "generic": false
         },
         {
@@ -12137,14 +12250,14 @@
           "categoryId": "ballet-flats-and-pumps",
           "categoryName": "Ballet Flats and Pumps",
           "categoryPath": "/collections/ballet-flats-and-pumps",
-          "productCount": 7,
+          "productCount": 8,
           "generic": false
         },
         {
           "categoryId": "python-mule-ad",
           "categoryName": "Python Mule Ad",
           "categoryPath": "/collections/python-mule-ad",
-          "productCount": 7,
+          "productCount": 8,
           "generic": false
         },
         {
@@ -12211,9 +12324,9 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 149,
+      "productsWithMeaningfulCategory": 162,
       "productsWithNoMeaningfulCategory": 1,
-      "categoryCoveragePercent": 99.3,
+      "categoryCoveragePercent": 99.4,
       "productsOnlyGenericCategory": 1,
       "collectionUrlsCrawled": [
         "https://www.proenzaschouler.com/collections/boots",
@@ -12266,22 +12379,22 @@
     {
       "brandId": "simone-rocha",
       "brandName": "SIMONE ROCHA",
-      "modelFamilyCount": 15,
-      "sourceProductCount": 18,
+      "modelFamilyCount": 16,
+      "sourceProductCount": 19,
       "sourceFootwearCategoryCount": 6,
       "categories": [
         {
           "categoryId": "shoes",
           "categoryName": "Shoes",
           "categoryPath": "/collections/shoes",
-          "productCount": 17,
+          "productCount": 18,
           "generic": true
         },
         {
           "categoryId": "women-s-shoes",
           "categoryName": "Women's Shoes",
           "categoryPath": "/collections/shoes",
-          "productCount": 17,
+          "productCount": 18,
           "generic": true
         },
         {
@@ -12314,9 +12427,9 @@
         }
       ],
       "productsWithMeaningfulCategory": 17,
-      "productsWithNoMeaningfulCategory": 1,
-      "categoryCoveragePercent": 94.4,
-      "productsOnlyGenericCategory": 1,
+      "productsWithNoMeaningfulCategory": 2,
+      "categoryCoveragePercent": 89.5,
+      "productsOnlyGenericCategory": 2,
       "collectionUrlsCrawled": [
         "https://simonerocha.com/collections/shoes",
         "https://simonerocha.com/collections/brogues"
@@ -12327,9 +12440,9 @@
     {
       "brandId": "amina-muaddi",
       "brandName": "AMINA MUADDI",
-      "modelFamilyCount": 130,
-      "sourceProductCount": 201,
-      "sourceFootwearCategoryCount": 21,
+      "modelFamilyCount": 153,
+      "sourceProductCount": 223,
+      "sourceFootwearCategoryCount": 22,
       "categories": [
         {
           "categoryId": "view-all-shoes",
@@ -12365,6 +12478,13 @@
           "categoryPath": "/women/shoes/sandals",
           "productCount": 25,
           "generic": false
+        },
+        {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/women-shoes",
+          "productCount": 22,
+          "generic": true
         },
         {
           "categoryId": "sandal",
@@ -12480,22 +12600,24 @@
         }
       ],
       "productsWithMeaningfulCategory": 199,
-      "productsWithNoMeaningfulCategory": 2,
-      "categoryCoveragePercent": 99,
-      "productsOnlyGenericCategory": 2,
+      "productsWithNoMeaningfulCategory": 24,
+      "categoryCoveragePercent": 89.2,
+      "productsOnlyGenericCategory": 24,
       "collectionUrlsCrawled": [
-        "https://aminamuaddi.com/collections/view-all-shoes",
+        "https://aminamuaddi.com/collections/anklet",
+        "https://aminamuaddi.com/collections/bootie",
+        "https://aminamuaddi.com/collections/boot",
+        "https://aminamuaddi.com/collections/fw25-shoes-1",
+        "https://aminamuaddi.com/collections/flats",
+        "https://aminamuaddi.com/collections/flat-shoes",
+        "https://aminamuaddi.com/collections/mini-camelia-slipper",
+        "https://aminamuaddi.com/collections/mules",
+        "https://aminamuaddi.com/collections/platform-shoes",
         "https://aminamuaddi.com/collections/pump",
         "https://aminamuaddi.com/collections/sandal",
-        "https://aminamuaddi.com/collections/boot",
-        "https://aminamuaddi.com/collections/mules",
-        "https://aminamuaddi.com/collections/flats",
-        "https://aminamuaddi.com/collections/bootie",
         "https://aminamuaddi.com/collections/slipper",
-        "https://aminamuaddi.com/collections/fw25-shoes-1",
-        "https://aminamuaddi.com/collections/platform-shoes",
-        "https://aminamuaddi.com/collections/flat-shoes",
-        "https://aminamuaddi.com/collections/anklet"
+        "https://aminamuaddi.com/collections/view-all-shoes",
+        "https://aminamuaddi.com/collections/vittoria-slipper"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -12503,9 +12625,9 @@
     {
       "brandId": "paris-texas",
       "brandName": "PARIS TEXAS",
-      "modelFamilyCount": 426,
-      "sourceProductCount": 515,
-      "sourceFootwearCategoryCount": 116,
+      "modelFamilyCount": 429,
+      "sourceProductCount": 522,
+      "sourceFootwearCategoryCount": 117,
       "categories": [
         {
           "categoryId": "boots",
@@ -12646,6 +12768,13 @@
           "categoryPath": "/collections/vera-ankle-boot-85",
           "productCount": 7,
           "generic": false
+        },
+        {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/women-shoes",
+          "productCount": 7,
+          "generic": true
         },
         {
           "categoryId": "anja-ankle-boot-85",
@@ -13321,9 +13450,9 @@
         }
       ],
       "productsWithMeaningfulCategory": 513,
-      "productsWithNoMeaningfulCategory": 2,
-      "categoryCoveragePercent": 99.6,
-      "productsOnlyGenericCategory": 2,
+      "productsWithNoMeaningfulCategory": 9,
+      "categoryCoveragePercent": 98.3,
+      "productsOnlyGenericCategory": 9,
       "collectionUrlsCrawled": [
         "https://paristexasbrand.com/collections/boots",
         "https://paristexasbrand.com/collections/slingback-pumps",
@@ -13393,7 +13522,7 @@
     {
       "brandId": "malone-souliers",
       "brandName": "MALONE SOULIERS",
-      "modelFamilyCount": 170,
+      "modelFamilyCount": 175,
       "sourceProductCount": 282,
       "sourceFootwearCategoryCount": 33,
       "categories": [
@@ -13634,18 +13763,7 @@
       "categoryCoveragePercent": 79.4,
       "productsOnlyGenericCategory": 58,
       "collectionUrlsCrawled": [
-        "https://www.malonesouliers.com/collections/all",
-        "https://www.malonesouliers.com/collections/mules",
-        "https://www.malonesouliers.com/collections/sandals",
-        "https://www.malonesouliers.com/collections/flats",
-        "https://www.malonesouliers.com/collections/pumps",
-        "https://www.malonesouliers.com/collections/boots",
-        "https://www.malonesouliers.com/collections/womens-mid-heels",
-        "https://www.malonesouliers.com/collections/womens-designer-work-shoes",
-        "https://www.malonesouliers.com/collections/womens-evening-shoe-edit",
-        "https://www.malonesouliers.com/collections/wedding-guest-shoes",
-        "https://www.malonesouliers.com/collections/womens-high-heels",
-        "https://www.malonesouliers.com/collections/bridesmaid-shoes"
+        "https://www.malonesouliers.com/collections/all"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -13653,7 +13771,7 @@
     {
       "brandId": "sophia-webster",
       "brandName": "SOPHIA WEBSTER",
-      "modelFamilyCount": 100,
+      "modelFamilyCount": 172,
       "sourceProductCount": 187,
       "sourceFootwearCategoryCount": 12,
       "categories": [
@@ -13747,18 +13865,7 @@
       "categoryCoveragePercent": 78.1,
       "productsOnlyGenericCategory": 41,
       "collectionUrlsCrawled": [
-        "https://www.sophiawebster.com/collections/shoes",
-        "https://www.sophiawebster.com/collections/sandals",
-        "https://www.sophiawebster.com/collections/pumps",
-        "https://www.sophiawebster.com/collections/mules",
-        "https://www.sophiawebster.com/collections/flats",
-        "https://www.sophiawebster.com/collections/boots",
-        "https://www.sophiawebster.com/collections/espadrilles",
-        "https://www.sophiawebster.com/collections/platforms",
-        "https://www.sophiawebster.com/collections/sneakers",
-        "https://www.sophiawebster.com/collections/sale-mid-heels",
-        "https://www.sophiawebster.com/collections/sale-flats",
-        "https://www.sophiawebster.com/collections/sale-boots"
+        "https://www.sophiawebster.com/collections/all"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -13766,7 +13873,7 @@
     {
       "brandId": "emme-parsons",
       "brandName": "EMME PARSONS",
-      "modelFamilyCount": 67,
+      "modelFamilyCount": 71,
       "sourceProductCount": 89,
       "sourceFootwearCategoryCount": 121,
       "categories": [
@@ -14642,7 +14749,7 @@
     {
       "brandId": "cult-gaia",
       "brandName": "CULT GAIA",
-      "modelFamilyCount": 91,
+      "modelFamilyCount": 104,
       "sourceProductCount": 157,
       "sourceFootwearCategoryCount": 21,
       "categories": [
@@ -14799,18 +14906,7 @@
       "categoryCoveragePercent": 97.5,
       "productsOnlyGenericCategory": 4,
       "collectionUrlsCrawled": [
-        "https://cultgaia.com/collections/shoes",
-        "https://cultgaia.com/collections/sandals",
-        "https://cultgaia.com/collections/heels",
-        "https://cultgaia.com/collections/platforms",
-        "https://cultgaia.com/collections/boots",
-        "https://cultgaia.com/collections/flats",
-        "https://cultgaia.com/collections/mules",
-        "https://cultgaia.com/collections/evening-shoes",
-        "https://cultgaia.com/collections/bags-shoes",
-        "https://cultgaia.com/collections/footwear-gifts",
-        "https://cultgaia.com/collections/jila-sandal",
-        "https://cultgaia.com/collections/clear-vinyl-shoes"
+        "https://cultgaia.com/collections/shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -14818,7 +14914,7 @@
     {
       "brandId": "staud",
       "brandName": "STAUD",
-      "modelFamilyCount": 174,
+      "modelFamilyCount": 178,
       "sourceProductCount": 310,
       "sourceFootwearCategoryCount": 36,
       "categories": [
@@ -15080,18 +15176,7 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://staud.clothing/collections/shoes",
-        "https://staud.clothing/collections/boots",
-        "https://staud.clothing/collections/sandals",
-        "https://staud.clothing/collections/flats",
-        "https://staud.clothing/collections/sneakers",
-        "https://staud.clothing/collections/the-boot-shop",
-        "https://staud.clothing/collections/heels-and-wedges",
-        "https://staud.clothing/collections/fabric-raffia",
-        "https://staud.clothing/collections/wally-boot",
-        "https://staud.clothing/collections/world-of-wally",
-        "https://staud.clothing/collections/staud-boot-shop",
-        "https://staud.clothing/collections/the-brigitte-mule"
+        "https://staud.clothing/collections/shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -15445,18 +15530,7 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://byfar.com/collections/flats",
-        "https://byfar.com/collections/loafers",
-        "https://byfar.com/collections/sneakers",
-        "https://byfar.com/collections/shoes-1",
-        "https://byfar.com/collections/aw26-shoes",
-        "https://byfar.com/collections/aw26-our-favorite-shoes",
-        "https://byfar.com/collections/mid-heels-1",
-        "https://byfar.com/collections/aw26-all-boots",
-        "https://byfar.com/collections/aw26-mid-heels",
-        "https://byfar.com/collections/boots-1",
-        "https://byfar.com/collections/ankle-boots-1",
-        "https://byfar.com/collections/flip-flops-and-mules"
+        "https://byfar.com/collections/all-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -15626,7 +15700,7 @@
     {
       "brandId": "carel",
       "brandName": "CAREL",
-      "modelFamilyCount": 79,
+      "modelFamilyCount": 95,
       "sourceProductCount": 199,
       "sourceFootwearCategoryCount": 7,
       "categories": [
@@ -15789,7 +15863,7 @@
     {
       "brandId": "flabelus",
       "brandName": "FLABELUS",
-      "modelFamilyCount": 300,
+      "modelFamilyCount": 458,
       "sourceProductCount": 351,
       "sourceFootwearCategoryCount": 13,
       "categories": [
@@ -16237,18 +16311,7 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://atpatelier.com/collections/sandals",
-        "https://atpatelier.com/collections/shoes",
-        "https://atpatelier.com/collections/flats",
-        "https://atpatelier.com/collections/boots",
-        "https://atpatelier.com/collections/loafers",
-        "https://atpatelier.com/collections/ballet-flats",
-        "https://atpatelier.com/collections/ballerinas",
-        "https://atpatelier.com/collections/platforms",
-        "https://atpatelier.com/collections/us-shoes",
-        "https://atpatelier.com/collections/pumps-heels",
-        "https://atpatelier.com/collections/bestsellers-shoes",
-        "https://atpatelier.com/collections/fall-2025-shoes"
+        "https://atpatelier.com/collections/us-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -16256,7 +16319,7 @@
     {
       "brandId": "pavement",
       "brandName": "PAVEMENT",
-      "modelFamilyCount": 113,
+      "modelFamilyCount": 125,
       "sourceProductCount": 201,
       "sourceFootwearCategoryCount": 7,
       "categories": [
@@ -16329,7 +16392,7 @@
     {
       "brandId": "ancient-greek-sandals",
       "brandName": "ANCIENT GREEK SANDALS",
-      "modelFamilyCount": 358,
+      "modelFamilyCount": 370,
       "sourceProductCount": 966,
       "sourceFootwearCategoryCount": 53,
       "categories": [
@@ -16752,24 +16815,41 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "maria-carlota",
+      "brandName": "MARIA CARLOTA",
+      "modelFamilyCount": 4,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://amariacarlota.com/collections/shop-all"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "zara",
       "brandName": "ZARA",
-      "modelFamilyCount": 443,
-      "sourceProductCount": 445,
+      "modelFamilyCount": 535,
+      "sourceProductCount": 549,
       "sourceFootwearCategoryCount": 1,
       "categories": [
         {
           "categoryId": "view-all",
           "categoryName": "VIEW ALL",
           "categoryPath": "/us/en/woman-shoes-l1251.html",
-          "productCount": 445,
+          "productCount": 549,
           "generic": true
         }
       ],
       "productsWithMeaningfulCategory": 0,
-      "productsWithNoMeaningfulCategory": 445,
+      "productsWithNoMeaningfulCategory": 549,
       "categoryCoveragePercent": 0,
-      "productsOnlyGenericCategory": 445,
+      "productsOnlyGenericCategory": 549,
       "collectionUrlsCrawled": [],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": true
@@ -16850,14 +16930,46 @@
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [
-        "https://www.theattico.com/collections/shoes",
-        "https://www.theattico.com/collections/boots",
-        "https://www.theattico.com/collections/sandals",
-        "https://www.theattico.com/collections/flats",
-        "https://www.theattico.com/collections/pumps",
-        "https://www.theattico.com/collections/mules",
-        "https://www.theattico.com/collections/new-in",
-        "https://www.theattico.com/collections/new-in-2406zsx"
+        "https://www.theattico.com/collections/shoes"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "naked-wolfe",
+      "brandName": "NAKED WOLFE",
+      "modelFamilyCount": 114,
+      "sourceProductCount": 3,
+      "sourceFootwearCategoryCount": 3,
+      "categories": [
+        {
+          "categoryId": "mules",
+          "categoryName": "Mules",
+          "categoryPath": "/uk/shopping/women/mules-1/items.aspx",
+          "productCount": 1,
+          "generic": false
+        },
+        {
+          "categoryId": "sneakers",
+          "categoryName": "Sneakers",
+          "categoryPath": "/women/shoes/sneakers",
+          "productCount": 1,
+          "generic": false
+        },
+        {
+          "categoryId": "trainers",
+          "categoryName": "Trainers",
+          "categoryPath": "/uk/shopping/women/trainers-1/items.aspx",
+          "productCount": 1,
+          "generic": false
+        }
+      ],
+      "productsWithMeaningfulCategory": 3,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 100,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://nakedwolfe.com/collections/view-all-womens"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
