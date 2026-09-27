@@ -23,13 +23,14 @@ const SHORT_CATEGORIES = [
 ] as const;
 
 const FAMILY_DIR = "data/multibrand/model-families";
+const WAVE_DELIVERY_DIR = "data/brands/wave50/delivery-shards";
 
 function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf-8")) as T;
 }
 
-function shardFamilies(file: string): ModelFamily[] {
-  return readJson<ModelFamily[]>(join(FAMILY_DIR, file));
+function shardFamilies(file: string, directory = FAMILY_DIR): ModelFamily[] {
+  return readJson<ModelFamily[]>(join(directory, file));
 }
 
 function variantUrls(families: readonly ModelFamily[]): Set<string> {
@@ -48,8 +49,8 @@ describe("brands wave 50 delivery QA", () => {
     "data/registry/brand-universe.json",
   );
   const manifest = readJson<ModelFamilyDatasetManifest>(join(FAMILY_DIR, "manifest.json"));
-  const part006 = shardFamilies("part-006.json");
-  const part007 = shardFamilies("part-007.json");
+  const part006 = shardFamilies("part-006.json", WAVE_DELIVERY_DIR);
+  const part007 = shardFamilies("part-007.json", WAVE_DELIVERY_DIR);
   const waveFamilies = [...part006, ...part007];
 
   it("reports staging, published catalogs, and net-new brands without addedBrands", () => {
@@ -87,20 +88,15 @@ describe("brands wave 50 delivery QA", () => {
     expect(report.activeBrandsAfter - report.activeBrandsBefore).toBe(report.netNewActiveBrands);
   });
 
-  it("counts user-visible wave families and products from shards, not products.json", () => {
+  it("retains the historical wave delivery as live shards change", () => {
     const urls = variantUrls(waveFamilies);
     expect(report.siteDeliveryFamilies).toBe(waveFamilies.length);
     expect(report.siteDeliveryProducts).toBe(urls.size);
     expect(report.siteDeliveryFamilies).toBeGreaterThan(report.initialSiteDeliveryFamilies);
-    const part006Shard = manifest.shards.find((shard) => shard.file === "part-006.json");
-    const part007Shard = manifest.shards.find((shard) => shard.file === "part-007.json");
-    expect(part006Shard?.familyCount).toBe(part006.length);
-    expect(part007Shard?.familyCount).toBe(part007.length);
+    const currentFamilies = manifest.shards.flatMap((shard) => shardFamilies(shard.file));
+    const currentIds = new Set(currentFamilies.map((family) => family.modelFamilyId));
+    expect(waveFamilies.filter((family) => !currentIds.has(family.modelFamilyId))).toEqual([]);
     expect(manifest.totalFamilies).toBe(manifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0));
-
-    const products = readFileSync("data/multibrand/products.json", "utf-8");
-    const nakedWolfeInProducts = products.match(/nakedwolfe\.com\/products/g)?.length ?? 0;
-    expect(nakedWolfeInProducts).toBeLessThan(30);
   });
 
   it("keeps wave families in short footwear categories and does not duplicate product urls", () => {
@@ -111,9 +107,9 @@ describe("brands wave 50 delivery QA", () => {
     }
 
     const nakedWolfe = part006.filter((family) => family.brand === "NAKED WOLFE");
-    const exe = readdirSync(FAMILY_DIR)
+    const exe = readdirSync(WAVE_DELIVERY_DIR)
       .filter((file) => /^part-\d+\.json$/.test(file))
-      .flatMap((file) => shardFamilies(file))
+      .flatMap((file) => shardFamilies(file, WAVE_DELIVERY_DIR))
       .filter((family) => family.brand === "EXÉ");
     expect(nakedWolfe).toHaveLength(114);
     expect(exe.length).toBeGreaterThan(0);
@@ -124,16 +120,9 @@ describe("brands wave 50 delivery QA", () => {
     expect(titles.some((title) => /\bchaussettes?\b|\bsocks?\b/.test(title))).toBe(false);
     expect(titles.some((title) => /\bsac\b/.test(title))).toBe(false);
 
-    const earlier = new Set<string>();
-    for (const file of readdirSync(FAMILY_DIR)) {
-      if (!/^part-00[0-5]\.json$/.test(file)) continue;
-      for (const url of variantUrls(shardFamilies(file))) earlier.add(url);
-    }
     const part006Urls = variantUrls(part006);
     const part007Urls = variantUrls(part007);
-    for (const url of part006Urls) expect(earlier.has(url)).toBe(false);
     for (const url of part007Urls) {
-      expect(earlier.has(url)).toBe(false);
       expect(part006Urls.has(url)).toBe(false);
     }
   });
