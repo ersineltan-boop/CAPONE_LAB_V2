@@ -1,66 +1,127 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T18:32:23.861Z",
+  "generatedAt": "2026-09-27T18:48:55.460Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 52,
     "activeBrandsAfter": 52,
     "attempted": 5,
     "activated": 0,
-    "partial": 0,
-    "blocked": 4,
+    "partial": 1,
+    "blocked": 3,
     "customAdapterRequired": 1,
     "failed": 0,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "SAINT LAURENT",
-      "slug": "saint-laurent",
-      "attemptedAt": "2026-09-27T18:32:23.861Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 7,
-        "levelShoes": 27
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "GUCCI",
-      "slug": "gucci",
-      "attemptedAt": "2026-09-27T18:32:23.861Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "No Inditex-like public categories?ajax=true catalog was accessible",
+      "brand": "SERGIO ROSSI",
+      "slug": "sergio-rossi",
+      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 98,
+      "families": 41,
+      "realMultiColorFamilies": 29,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Womens Loafers And Slippers",
+        "Womens Flat Shoes",
+        "Womens Sandals",
+        "Womens Elegant Sneakers",
+        "Womens Shoes",
+        "Womens Black Loafers",
+        "High Heel Pumps",
+        "Womens Ankle Boots And Booties",
+        "Black Ballet Flats",
+        "Womens Boots",
+        "Womens High Heel Ankle Boots",
+        "Medium Heel Pumps",
+        "Low Heel Pumps",
+        "Black Pumps",
+        "White Pumps",
+        "Ballet Flats",
+        "Bridal And Ceremony Shoes",
+        "Bridal Pumps"
+      ],
+      "blocker": "Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178",
       "marketplaceCoverage": {
         "farfetch": 2,
-        "levelShoes": 29
+        "levelShoes": 0
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178"
+    },
+    {
+      "brand": "COS",
+      "slug": "cos",
+      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 0
       },
       "activationDecision": "blocked",
       "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
     },
     {
-      "brand": "VALENTINO GARAVANI",
-      "slug": "valentino-garavani",
-      "attemptedAt": "2026-09-27T18:32:23.861Z",
-      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "brand": "STUART WEITZMAN",
+      "slug": "stuart-weitzman",
+      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 15,
+        "levelShoes": 3
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "SAM EDELMAN",
+      "slug": "sam-edelman",
+      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 3,
+        "levelShoes": 39
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "JONAK",
+      "slug": "jonak",
+      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
@@ -71,53 +132,11 @@
       "categoriesFound": [],
       "blocker": "Shopify products.json did not yield women's footwear",
       "marketplaceCoverage": {
-        "farfetch": 26,
-        "levelShoes": 19
+        "farfetch": 8,
+        "levelShoes": 49
       },
       "activationDecision": "blocked",
-      "notes": "No Inditex-like public categories?ajax=true catalog was accessible"
-    },
-    {
-      "brand": "ROGER VIVIER",
-      "slug": "roger-vivier",
-      "attemptedAt": "2026-09-27T18:32:23.861Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 5,
-        "levelShoes": 21
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "BOBBIES",
-      "slug": "bobbies",
-      "attemptedAt": "2026-09-27T18:32:23.861Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403; No Inditex-like public categories?ajax=true catalog was accessible",
-      "marketplaceCoverage": {
-        "farfetch": 0,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+      "notes": null
     }
   ]
 }
