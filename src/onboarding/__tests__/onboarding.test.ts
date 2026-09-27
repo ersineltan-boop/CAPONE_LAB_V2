@@ -19,6 +19,7 @@ import {
 import { retryAt, INITIAL_ONBOARDING_BRANDS } from "../policy";
 import { fingerprintStorefront } from "../platforms";
 import { probeBrandSource } from "../probe";
+import { createBudgetedProbeHttp } from "../http";
 import {
   auditFootwearLeakage,
   evaluateOfficialSourceCoverage,
@@ -404,6 +405,31 @@ describe("onboarding safety gates", () => {
 });
 
 describe("onboarding fingerprints", () => {
+  it("bounds slow probes without affecting the full collector", async () => {
+    let clock = 0;
+    const seenTimeouts: number[] = [];
+    const underlying: OnboardingHttp = {
+      async fetchText(url, options) {
+        seenTimeouts.push(options?.timeoutMs ?? 0);
+        clock += 4_000;
+        return { ok: false, status: 403, text: "", url };
+      },
+    };
+    const probeHttp = createBudgetedProbeHttp(underlying, {
+      now: () => clock,
+      budgetMs: 10_000,
+      requestTimeoutMs: 5_000,
+    });
+    await probeHttp.fetchText("https://example.com/one");
+    await probeHttp.fetchText("https://example.com/two");
+    expect(seenTimeouts).toEqual([5_000, 5_000]);
+    await probeHttp.fetchText("https://example.com/three");
+    expect(seenTimeouts[2]).toBe(2_000);
+    await expect(probeHttp.fetchText("https://example.com/four")).rejects.toThrow("time budget");
+    await underlying.fetchText("https://example.com/full");
+    expect(seenTimeouts[3]).toBe(0);
+  });
+
   it("recognizes Shopify, Inditex-like, Salesforce and Next.js public markers", () => {
     expect(fingerprintStorefront({ html: "cdn.shopify.com Shopify.theme" }).platform).toBe("SHOPIFY");
     expect(fingerprintStorefront({ html: "itxrest categories?ajax=true" }).platform).toBe(

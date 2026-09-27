@@ -27,7 +27,7 @@ import { cleanupStaging, probeSamplesToPilotProducts, writeStaging } from "./sta
 import { marketplaceCoverageForBrand } from "./marketplaceCoverage";
 import { activateUniverseBrand, mergeValidatedBrandIntoCatalog, prepareFirstBrandBaseline, rebuildCatalogAfterActivation } from "./activate";
 import { inspectTrackedFileSizes } from "./publish";
-import { defaultOnboardingHttp, type OnboardingHttp } from "./http";
+import { createBudgetedProbeHttp, defaultOnboardingHttp, type OnboardingHttp } from "./http";
 import type {
   BrandOnboardingAttemptReport,
   BrandOnboardingReportFile,
@@ -111,7 +111,7 @@ export async function runBrandOnboarding(
         slug: candidate.slug,
         brand: candidate.brand,
         sourceUrl,
-        http,
+        http: createBudgetedProbeHttp(http),
       });
     } catch (error) {
       probe = {
