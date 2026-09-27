@@ -1,4 +1,5 @@
 import { isTrackedModelFamilyDatasetPath } from "../modelFamily/dataset";
+import type { ModelFamily } from "../modelFamily/types";
 import type { BrandRegistryEntry } from "../registry/types/brand";
 import {
   brandToPilotSourceConfig,
@@ -43,6 +44,22 @@ export const CLOUD_REFRESH_CORE_DATA_PATHS = [
 ] as const;
 
 export const CLOUD_REFRESH_MODEL_FAMILY_DIR = "data/multibrand/model-families";
+
+export function preserveUnrefreshedModelFamilies(
+  rebuilt: readonly ModelFamily[],
+  prior: readonly ModelFamily[],
+  refreshedBrands: ReadonlySet<string>,
+): ModelFamily[] {
+  const currentIds = new Set(rebuilt.map((family) => family.modelFamilyId));
+  return [
+    ...rebuilt,
+    ...prior.filter(
+      (family) =>
+        !refreshedBrands.has(family.brand.trim().toUpperCase()) &&
+        !currentIds.has(family.modelFamilyId),
+    ),
+  ];
+}
 
 export const CLOUD_REFRESH_TRACKED_DATA_PATHS = [
   "data/multibrand/products.json",

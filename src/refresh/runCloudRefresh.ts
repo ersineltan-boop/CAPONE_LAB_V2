@@ -42,6 +42,7 @@ import {
   coverageToSourceStatus,
   marketplacePublishStatus,
   mergeIncomingSourceIntoCatalog,
+  preserveUnrefreshedModelFamilies,
   renderCloudRefreshMarkdown,
   summarizeSourceOutcomes,
   type CloudRefreshSummary,
@@ -158,7 +159,12 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
   }
 
   await runMultibrandAnalysis();
-  const modelFamilyCount = await rebuildModelFamilies();
+  const refreshedBrands = new Set(
+    brandReport.sources
+      .filter((source) => source.status === "success")
+      .map((source) => source.source.trim().toUpperCase()),
+  );
+  const modelFamilyCount = await rebuildModelFamilies(refreshedBrands);
   await writeCoverageReports();
   await writeNewArrivalsProbeReport();
 
@@ -431,7 +437,7 @@ async function appendMarketplaceReports(
   await writeJson(COLLECTION_REPORT_PATH, merged);
 }
 
-async function rebuildModelFamilies(): Promise<number> {
+async function rebuildModelFamilies(refreshedBrands: ReadonlySet<string>): Promise<number> {
   const products = await readJson<RawAnalyzedProduct[]>(
     join(MULTIBRAND_DIR, "analyzed-products.json"),
     [],
@@ -459,9 +465,20 @@ async function rebuildModelFamilies(): Promise<number> {
     throw new Error("Cloud refresh aborted: Model Family rebuild produced zero families.");
   }
 
-  await writeModelFamilies(families);
+  // A daily crawl only refreshes a subset of the registry. Preserve last-good
+  // families for brands that were not successfully collected this time.
+  const deliveryFamilies = preserveUnrefreshedModelFamilies(families, priorFamilies, refreshedBrands);
+  const preservedCount = deliveryFamilies.length - families.length;
+  report.modelFamilyCount = deliveryFamilies.length;
+  report.totalVariants = deliveryFamilies.reduce((sum, family) => sum + family.variantCount, 0);
+  report.multiVariantFamilyCount = deliveryFamilies.filter((family) => family.variantCount > 1).length;
+  report.collapsedVariantProducts = report.totalVariants - deliveryFamilies.length;
+  report.reductionPercent = report.totalVariants === 0
+    ? 0
+    : Math.round((report.collapsedVariantProducts / report.totalVariants) * 1000) / 10;
+  await writeModelFamilies(deliveryFamilies);
   await writeJson(join(MULTIBRAND_DIR, "model-family-report.json"), report);
-  console.log(`Model families rebuilt: ${report.modelFamilyCount}`);
+  console.log(`Model families rebuilt: ${families.length}; last-good preserved: ${preservedCount}`);
   return report.modelFamilyCount;
 }
 

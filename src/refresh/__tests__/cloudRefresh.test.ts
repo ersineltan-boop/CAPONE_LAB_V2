@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import { mergeProductCatalog } from "../../collector/mergeProducts";
 import type { PilotProduct } from "../../collector/types";
+import type { ModelFamily } from "../../modelFamily/types";
 import type { BrandRegistryEntry } from "../../registry/types/brand";
 import {
   browsableMarketplaces,
@@ -22,6 +23,7 @@ import {
   getMembershipRefreshBrands,
   isCloudRefreshCoreDataPath,
   mergeIncomingSourceIntoCatalog,
+  preserveUnrefreshedModelFamilies,
   renderCloudRefreshMarkdown,
   shouldStageCloudRefreshPath,
   summarizeSourceOutcomes,
@@ -78,6 +80,15 @@ function product(
 }
 
 describe("cloud refresh sequence", () => {
+  it("keeps last-good families for unrefreshed and failed brands without duplicating rebuilt families", () => {
+    const family = (id: string, brandName: string) =>
+      ({ modelFamilyId: id, brand: brandName }) as ModelFamily;
+    const rebuilt = [family("a-new", "BRAND A"), family("b-one", "BRAND B")];
+    const prior = [family("a-old", "BRAND A"), family("b-one", "BRAND B"), family("c-one", "BRAND C")];
+    expect(preserveUnrefreshedModelFamilies(rebuilt, prior, new Set(["BRAND A"])).map(
+      (entry) => entry.modelFamilyId,
+    )).toEqual(["a-new", "b-one", "c-one"]);
+  });
   it("uses the production data steps and excludes OpenAI, Vision and Radar", () => {
     expect([...CLOUD_REFRESH_STEPS]).toEqual([
       "collect-active-brands",
