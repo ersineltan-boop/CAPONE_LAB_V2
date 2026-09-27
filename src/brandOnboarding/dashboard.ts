@@ -7,6 +7,7 @@ import type {
 } from "../onboarding/types";
 import type { BrandDiscoveryReport, DiscoveredBrandCandidate } from "../onboarding/discovery";
 import { PRIORITY_BRAND_IDS, priorityBrandRank } from "../onboarding/adapterWorkQueue";
+import { selectQueueCandidates } from "../onboarding/queue";
 
 export type DashboardFilter =
   | "ALL"
@@ -53,29 +54,12 @@ export interface BrandOnboardingDashboard {
   discoveries: DiscoveredBrandCandidate[];
 }
 
-const RETRYABLE = new Set<OnboardingStatus>([
-  "PENDING",
-  "BLOCKED",
-  "PRIORITY_BLOCKED",
-  "FAILED",
-  "PARTIAL",
-  "READY",
-]);
-
 function fallbackStatus(entry: BrandUniverseEntry): OnboardingStatus {
   if (entry.isActive) return "ACTIVE";
   if (entry.collectionStatus === "NEEDS_CUSTOM_ADAPTER") return "CUSTOM_ADAPTER_REQUIRED";
   if (entry.collectionStatus === "FAILED") return "FAILED";
   if (entry.collectionStatus === "DISABLED") return "BLOCKED";
   return "PENDING";
-}
-
-function due(entry: DashboardBrand, now: Date): boolean {
-  if (!RETRYABLE.has(entry.status)) return false;
-  if (!entry.officialUrl) return false;
-  if (entry.status === "BLOCKED" && !/^https?:\/\//i.test(entry.officialUrl)) return false;
-  if (!entry.nextRetryAt) return true;
-  return Date.parse(entry.nextRetryAt) <= now.getTime();
 }
 
 export function buildBrandOnboardingDashboard(
@@ -114,11 +98,11 @@ export function buildBrandOnboardingDashboard(
   });
 
   const tonightIds = new Set(
-    brands
-      .filter((entry) => !entry.isActive && due(entry, now))
-      .sort((a, b) => priorityBrandRank(a.id) - priorityBrandRank(b.id) || a.priority - b.priority || a.brand.localeCompare(b.brand, "tr"))
-      .slice(0, Math.max(0, queue.policy.maxAttemptsPerRun))
-      .map((entry) => entry.id),
+    selectQueueCandidates(queue, {
+      now,
+      limit: queue.policy.maxAttemptsPerRun,
+      skipSlugs: new Set(brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
+    }).map((entry) => entry.slug),
   );
   for (const brand of brands) brand.isTonight = tonightIds.has(brand.id);
 
