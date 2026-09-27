@@ -362,18 +362,18 @@
     {
       "brand": "4CCCCEES",
       "slug": "4ccccees",
-      "priority": 22,
+      "priority": 0,
       "status": "FAILED",
       "attempts": 1,
       "lastAttemptAt": "2026-09-27T19:20:44.007Z",
-      "nextRetryAt": "2026-10-04T19:20:44.007Z",
+      "nextRetryAt": null,
       "sourceUrl": "https://www.4ccccees.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
       "blocker": "footwear leakage: 24",
       "productsFound": 204,
       "activatedAt": null,
-      "notes": "footwear leakage: 24"
+      "notes": "Collector now excludes unverified Shopify products before quality validation; immediate retry queued"
     },
     {
       "brand": "ACNE STUDIOS",
