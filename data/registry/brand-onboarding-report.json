@@ -1,63 +1,23 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T18:48:55.460Z",
+  "generatedAt": "2026-09-27T19:20:44.007Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 52,
     "activeBrandsAfter": 52,
     "attempted": 5,
     "activated": 0,
-    "partial": 1,
+    "partial": 0,
     "blocked": 3,
     "customAdapterRequired": 1,
-    "failed": 0,
+    "failed": 1,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "SERGIO ROSSI",
-      "slug": "sergio-rossi",
-      "attemptedAt": "2026-09-27T18:48:55.460Z",
-      "detectedPlatform": "SHOPIFY",
-      "sourceStrategy": "shopify-public",
-      "status": "PARTIAL",
-      "productsFound": 98,
-      "families": 41,
-      "realMultiColorFamilies": 29,
-      "verifiedNewArrivals": 0,
-      "galleryImageCoverage": 1,
-      "categoriesFound": [
-        "Womens Loafers And Slippers",
-        "Womens Flat Shoes",
-        "Womens Sandals",
-        "Womens Elegant Sneakers",
-        "Womens Shoes",
-        "Womens Black Loafers",
-        "High Heel Pumps",
-        "Womens Ankle Boots And Booties",
-        "Black Ballet Flats",
-        "Womens Boots",
-        "Womens High Heel Ankle Boots",
-        "Medium Heel Pumps",
-        "Low Heel Pumps",
-        "Black Pumps",
-        "White Pumps",
-        "Ballet Flats",
-        "Bridal And Ceremony Shoes",
-        "Bridal Pumps"
-      ],
-      "blocker": "Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178",
-      "marketplaceCoverage": {
-        "farfetch": 2,
-        "levelShoes": 0
-      },
-      "activationDecision": "partial",
-      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178"
-    },
-    {
-      "brand": "COS",
-      "slug": "cos",
-      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "brand": "LUIZA BARCELOS",
+      "slug": "luiza-barcelos",
+      "attemptedAt": "2026-09-27T19:20:44.007Z",
       "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "PRIORITY_BLOCKED",
@@ -67,18 +27,18 @@
       "verifiedNewArrivals": null,
       "galleryImageCoverage": null,
       "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "blocker": "Official-source probe exceeded its time budget; retry later",
       "marketplaceCoverage": {
-        "farfetch": 1,
+        "farfetch": 0,
         "levelShoes": 0
       },
       "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+      "notes": "Probe threw; recorded as blocked and continuing"
     },
     {
-      "brand": "STUART WEITZMAN",
-      "slug": "stuart-weitzman",
-      "attemptedAt": "2026-09-27T18:48:55.460Z",
+      "brand": "SANTA LOLLA",
+      "slug": "santa-lolla",
+      "attemptedAt": "2026-09-27T19:20:44.007Z",
       "detectedPlatform": "UNKNOWN",
       "sourceStrategy": "none",
       "status": "PRIORITY_BLOCKED",
@@ -88,41 +48,20 @@
       "verifiedNewArrivals": null,
       "galleryImageCoverage": null,
       "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "blocker": "Official-source probe exceeded its time budget; retry later",
       "marketplaceCoverage": {
-        "farfetch": 15,
-        "levelShoes": 3
+        "farfetch": 0,
+        "levelShoes": 0
       },
       "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+      "notes": "Probe threw; recorded as blocked and continuing"
     },
     {
-      "brand": "SAM EDELMAN",
-      "slug": "sam-edelman",
-      "attemptedAt": "2026-09-27T18:48:55.460Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
-      "marketplaceCoverage": {
-        "farfetch": 3,
-        "levelShoes": 39
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "JONAK",
-      "slug": "jonak",
-      "attemptedAt": "2026-09-27T18:48:55.460Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
+      "brand": "VICENZA",
+      "slug": "vicenza",
+      "attemptedAt": "2026-09-27T19:20:44.007Z",
+      "detectedPlatform": "NEXT.JS PUBLIC DATA",
+      "sourceStrategy": "nextjs-public-data",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
       "families": null,
@@ -130,13 +69,63 @@
       "verifiedNewArrivals": null,
       "galleryImageCoverage": null,
       "categoriesFound": [],
-      "blocker": "Shopify products.json did not yield women's footwear",
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
       "marketplaceCoverage": {
-        "farfetch": 8,
-        "levelShoes": 49
+        "farfetch": 0,
+        "levelShoes": 0
       },
       "activationDecision": "blocked",
-      "notes": null
+      "notes": "nextjs, jsonld"
+    },
+    {
+      "brand": "& OTHER STORIES",
+      "slug": "other-stories",
+      "attemptedAt": "2026-09-27T19:20:44.007Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "4CCCCEES",
+      "slug": "4ccccees",
+      "attemptedAt": "2026-09-27T19:20:44.007Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "FAILED",
+      "productsFound": 204,
+      "families": 159,
+      "realMultiColorFamilies": 39,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Shoes",
+        "Boots 1",
+        "Heels",
+        "Sneakers 1",
+        "Ballerinas",
+        "Wedges",
+        "Sandals 1"
+      ],
+      "blocker": "footwear leakage: 24",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "skip",
+      "notes": "4CCCCEES: Shopify public products.json; REJECTED: footwear leakage: 24"
     }
   ]
 }
