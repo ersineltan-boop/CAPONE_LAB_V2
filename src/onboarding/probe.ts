@@ -26,6 +26,10 @@ const HTML_FOOTWEAR_PATHS = [
   "/footwear",
 ];
 
+const INDITEX_LIKE_BRANDS = new Set([
+  "massimo-dutti", "mango", "bershka", "pull-and-bear", "stradivarius", "oysho",
+]);
+
 interface ShopifyProductsResponse {
   products?: Array<{
     handle?: string;
@@ -90,26 +94,28 @@ export async function probeBrandSource(input: {
   }
   if (shopify.blocked) blockedSignals.push(shopify.blocked);
 
-  const inditex = await probeInditexLikeCatalog(input.http, {
-    baseUrl,
-    brandId: input.slug,
-    brandName: input.brand,
-  });
-  if (inditex.ok && inditex.samples.length > 0) {
-    return {
-      platform: "INDITEX-LIKE PUBLIC CATALOG",
-      strategy: "inditex-like-catalog",
-      status: "VALIDATING",
-      sourceUrl: baseUrl,
-      locale: inditex.locale ?? undefined,
-      collectionPaths: [],
-      footwearPaths: [],
-      products: inditex.samples,
-      blocker: null,
-      notes: `Inditex-like public catalog verified at locale ${inditex.locale}`,
-    };
+  if (INDITEX_LIKE_BRANDS.has(input.slug) || homepageFingerprint.signals.includes("inditex")) {
+    const inditex = await probeInditexLikeCatalog(input.http, {
+      baseUrl,
+      brandId: input.slug,
+      brandName: input.brand,
+    });
+    if (inditex.ok && inditex.samples.length > 0) {
+      return {
+        platform: "INDITEX-LIKE PUBLIC CATALOG",
+        strategy: "inditex-like-catalog",
+        status: "VALIDATING",
+        sourceUrl: baseUrl,
+        locale: inditex.locale ?? undefined,
+        collectionPaths: [],
+        footwearPaths: [],
+        products: inditex.samples,
+        blocker: null,
+        notes: `Inditex-like public catalog verified at locale ${inditex.locale}`,
+      };
+    }
+    if (inditex.blocker) blockedSignals.push(inditex.blocker);
   }
-  if (inditex.blocker) blockedSignals.push(inditex.blocker);
 
   const sitemapUrls = await discoverSitemapProductUrls(input.http, baseUrl);
   if (sitemapUrls.length > 0) {
