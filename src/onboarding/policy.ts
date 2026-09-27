@@ -5,7 +5,7 @@ import {
   normalizeRepoPath,
   shouldStageCloudRefreshPath,
 } from "../refresh/refreshPolicy";
-import type { OnboardingStatus } from "./types";
+export { RETRYABLE_STATUSES, TERMINAL_SKIP_STATUSES, isRetryDue } from "./selection";
 
 export const ONBOARDING_RETRY_DAYS = 7;
 export const ONBOARDING_MAX_ATTEMPTS_PER_RUN = 5;
@@ -54,20 +54,6 @@ export const PRIORITY_BRAND_SLUGS = new Set(
   INITIAL_ONBOARDING_BRANDS.filter((item) => item.priority <= 2).map((item) => item.slug),
 );
 
-export const RETRYABLE_STATUSES = new Set<OnboardingStatus>([
-  "PENDING",
-  "BLOCKED",
-  "PRIORITY_BLOCKED",
-  "FAILED",
-  "PARTIAL",
-]);
-
-export const TERMINAL_SKIP_STATUSES = new Set<OnboardingStatus>([
-  "ACTIVE",
-  "STORAGE_LIMIT",
-  "CUSTOM_ADAPTER_REQUIRED",
-]);
-
 export const ONBOARDING_EXTRA_STAGE_PATHS = [
   QUEUE_PATH,
   ADAPTER_WORK_QUEUE_PATH,
@@ -93,11 +79,6 @@ export function stagingDirForBrand(slug: string): string {
 
 export function retryAt(from: Date, days = ONBOARDING_RETRY_DAYS): string {
   return new Date(from.getTime() + days * 24 * 60 * 60 * 1000).toISOString();
-}
-
-export function isRetryDue(nextRetryAt: string | null, now: Date): boolean {
-  if (!nextRetryAt) return true;
-  return Date.parse(nextRetryAt) <= now.getTime();
 }
 
 export function storageLimitStatus(bytes: number): "ok" | "STORAGE_LIMIT" {

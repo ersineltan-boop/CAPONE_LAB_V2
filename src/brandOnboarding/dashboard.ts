@@ -7,7 +7,7 @@ import type {
 } from "../onboarding/types";
 import type { BrandDiscoveryReport, DiscoveredBrandCandidate } from "../onboarding/discovery";
 import { PRIORITY_BRAND_IDS, priorityBrandRank } from "../onboarding/adapterWorkQueue";
-import { selectQueueCandidates } from "../onboarding/queue";
+import { selectQueueCandidates } from "../onboarding/selection";
 
 export type DashboardFilter =
   | "ALL"
