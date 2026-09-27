@@ -48,6 +48,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate last-good wave 50 delivery
+        run: npm test -- src/brands/wave50/__tests__/wave50.delivery.qa.test.ts
+
       - name: Cloud data refresh
         env:
           CAPONE_REFRESH_MARKETPLACES: "false"
