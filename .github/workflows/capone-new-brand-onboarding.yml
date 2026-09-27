@@ -2,6 +2,8 @@
 name: CAPONE automatic new-brand onboarding
 
 on:
+  push:
+    branches: ["run/brand-onboarding-20260927"]
   schedule:
     - cron: "30 21 * * *"
   workflow_dispatch:
