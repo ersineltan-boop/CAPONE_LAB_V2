@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 18525,
-  "modelFamilyCount": 12126,
-  "totalVariants": 18525,
-  "multiVariantFamilyCount": 4442,
-  "reductionPercent": 34.5,
-  "collapsedVariantProducts": 6399,
+  "rawProductCount": 18678,
+  "modelFamilyCount": 13015,
+  "totalVariants": 22837,
+  "multiVariantFamilyCount": 4594,
+  "reductionPercent": 43,
+  "collapsedVariantProducts": 9822,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 12071,
-    "averageRepresentativeImageCount": 6.28,
+    "familiesWithMultipleRepresentativeImages": 12178,
+    "averageRepresentativeImageCount": 6.26,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -3352,7 +3352,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossover Flat",
+      "canonicalName": "Crossed Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5618,13 +5618,6 @@
       "groupingReason": "singleton"
     },
     {
-      "modelFamilyId": "zara--id-zara-15013810-sneaker-base",
-      "brand": "ZARA",
-      "canonicalName": "Contrast Heel",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
       "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
       "brand": "ZARA",
       "canonicalName": "Contrast Heel",
@@ -6384,6 +6377,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-hedgerow-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Hedgerow",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15491810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Heel",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
