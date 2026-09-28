@@ -1,11 +1,11 @@
-# Nightly CAPONE official-brand automation.
+# Sunday/Wednesday CAPONE official-brand automation.
 # 23:00 Türkiye = 20:00 UTC. The 07:00 general refresh excludes these sources.
 
 name: CAPONE brand automation
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "0 20 * * 0,3"
   workflow_dispatch:
     inputs:
       limit:

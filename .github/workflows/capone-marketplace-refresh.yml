@@ -9,7 +9,7 @@ on:
       - "src/collector/freePeople*.ts"
       - "scripts/refresh-marketplaces-automated.ts"
   schedule:
-    - cron: "30 5 * * *"
+    - cron: "30 5 * * 0,3"
   workflow_dispatch:
 
 concurrency:
