@@ -23,7 +23,17 @@ await Promise.all(Array.from({length:3},async()=>{while(cursor<ids.length){
  const rejected=new Set(auditFootwearLeakage(mapped as any));
  let products=mapped.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl).map((p:any)=>({...p,isNewArrivalsCollection:false,hasNewBadge:false}));
  let prior=[];try{prior=JSON.parse(await readFile(`data/onboarding/validated/expansion-${id}.json`,'utf8')).products??[];}catch(error:any){if(error.code!=='ENOENT')throw error;}
- products=mergeProductCatalog(prior,products);
+ const incoming=products;
+ products=mergeProductCatalog(prior,incoming);
+ // Keep size/SKU rows: the general catalog merge groups variants by color.
+ const variantRows=new Map<string,Map<string,any>>();
+ for(const p of [...prior,...incoming] as any[]){
+  const key=p.productUrl.replace(/\/$/,'').toLowerCase();
+  const variants=variantRows.get(key)??new Map<string,any>();
+  for(const v of p.variants??[]){const k=JSON.stringify([v.sku??'',v.title??'',v.color??'']);variants.set(k,{...variants.get(k),...v});}
+  variantRows.set(key,variants);
+ }
+ products=products.map((p:any)=>({...p,variants:[...(variantRows.get(p.productUrl.replace(/\/$/,'').toLowerCase())?.values()??[])]}));
  const quality=evaluateQualityGate(products as any);
  if(!quality.ok)throw Error(quality.reasons.join(';'));
  const snapshot={source:id,generatedAt:new Date().toISOString(),status:'PARTIAL',products,coverage:{rawRecords:rows.size,paginationExhausted:exhausted,errors,excluded:rows.size-products.length,note:'All-source feed filtered to footwear. Official women footwear total not independently confirmed.'}};
