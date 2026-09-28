@@ -17,7 +17,7 @@ export function parseMassimoTransferState(html: string): Row | null {
 export function isMassimoProductImage(url: string): boolean {
   try {
     const parsed = new URL(url);
-    return parsed.hostname === "static.massimodutti.net" && !/-c\.(?:png|jpe?g|webp)$/i.test(parsed.pathname);
+    return parsed.hostname === "static.massimodutti.net" && !/-(?:c|r)\.(?:png|jpe?g|webp)$/i.test(parsed.pathname);
   } catch { return false; }
 }
 

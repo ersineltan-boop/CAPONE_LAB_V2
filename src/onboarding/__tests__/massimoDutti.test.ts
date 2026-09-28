@@ -10,7 +10,7 @@ describe("Massimo official SSR adapter", () => {
   });
   it("excludes color swatches from covers and all variant galleries", () => {
     const swatch = {...media, path: "https://static.massimodutti.net/assets/11005850800-c.png?ts=1"};
-    const product = mapMassimoProduct({...row, colors: [{name: "BLACK", medias: [swatch, media]}]}, MASSIMO_SHOES_URL, "2026-09-28");
+    const product = mapMassimoProduct({...row, colors: [{name: "BLACK", medias: [swatch, {...swatch, path: "https://static.massimodutti.net/assets/11005850800-r.jpg"}, media]}]}, MASSIMO_SHOES_URL, "2026-09-28");
     expect(product?.imageUrl).toBe(media.path);
     expect(product?.images).toEqual([media.path]);
     expect(product?.variants?.[0].images).toEqual([media.path]);
