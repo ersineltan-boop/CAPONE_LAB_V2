@@ -4179,7 +4179,7 @@ export const brandEntries: BrandRegistryEntry[] = [
     supportsMultipleImages: false,
     discoverySources: [],
     isActive: true,
-    notes: "Verified PARTIAL official catalog: 20 products. Dedicated priority-source collector; full coverage not confirmed.",
+    notes: "Verified PARTIAL official catalog: 114 products. Dedicated priority-source collector; full coverage not confirmed.",
     classificationStatus: "UNREVIEWED",
     radarEligible: false,
   }),

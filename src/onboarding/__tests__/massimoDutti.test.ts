@@ -23,6 +23,22 @@ describe("Massimo official SSR adapter", () => {
     expect(result.sourceReportedProductCount).toBe(2);
     expect(result.paginationExhausted).toBe(false);
   });
+  it("expands all grid IDs and only claims complete transport when all records arrive", async () => {
+    const apiRow = {id: 123, productUrl: "leather-riding-boot-l11005850", productUrlParam: 123,
+      name: row.name, sectionNameEN: "WOMEN", productType: "Footwear", familyNameEN: "BOOT", mainColorid: "800",
+      detail: {colors: [{id: "800", name: "BLACK"}], xmedia: [{path: "/800", xmediaItems: [{medias: [{format: 1, url: media.path}]}]}]}};
+    const state = {TRANSFER_CATEGORY_PRODUCTS: {categoryGrid: {gridElements: [{ccIds: [123]}]}}};
+    const http = {fetchText: async (url: string) => ({ok: true, status: 200, url,
+      text: url.includes("productsArray") ? JSON.stringify({products: [apiRow]}) : `<script id="mdfrontw-state">${JSON.stringify(state)}</script>`})};
+    const result = await collectMassimoDuttiCatalog(http);
+    expect(result.products).toHaveLength(1);
+    expect(result.paginationExhausted).toBe(true);
+    expect(result.hitCollectionCrawlCap).toBe(false);
+    expect(result.products[0].imageUrl).toBe(media.path);
+    const missing = await collectMassimoDuttiCatalog({fetchText: async (url) => url.includes("productsArray")
+      ? {ok:true,status:200,url,text:'{"products":[]}'} : http.fetchText(url)});
+    expect(missing.paginationExhausted).toBe(false);
+  });
   it("returns no products on blocked response even when its body contains product-like state", async () => {
     const result = await collectMassimoDuttiCatalog({ fetchText: async () => ({ ok: false, status: 403, url: MASSIMO_SHOES_URL, text: "Access Denied" }) });
     expect(result.products).toEqual([]);

@@ -1,8 +1,8 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T08:00:49.050Z",
-  "totalFamilies": 13855,
+  "generatedAt": "2026-09-28T08:39:33.850Z",
+  "totalFamilies": 13943,
   "shardCount": 12,
   "shards": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "file": "brands/massimo-dutti.json",
-      "familyCount": 19,
-      "bytes": 133402
+      "familyCount": 107,
+      "bytes": 930478
     },
     {
       "file": "brands/ala-a.json",

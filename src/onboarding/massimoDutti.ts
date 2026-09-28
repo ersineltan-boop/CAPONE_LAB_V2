@@ -48,20 +48,52 @@ export function mapMassimoProduct(row: Row, collectionUrl: string, discoveredAt:
   };
 }
 
-/** SSR is a bounded sample (20 products while the current grid lists 115).
- * Never claim completeness or remove last-good products on this basis. */
+/** Map the same public productsArray records used by the source storefront. */
+export function mapMassimoApiProduct(row: Row, discoveredAt: string): PilotProduct | null {
+  const detailRow = row.bundleProductSummaries?.[0] ?? row;
+  const colors = (detailRow.detail?.colors ?? []).map((color: Row) => {
+    const groups = (detailRow.detail?.xmedia ?? []).filter((group: Row) => group.path === `/${color.id}`);
+    const medias = groups.flatMap((group: Row) => (group.xmediaItems ?? []).flatMap((item: Row) => item.medias ?? []))
+      .filter((media: Row) => media.format === 1 && typeof media.url === "string")
+      .map((media: Row) => ({path: media.url, contentType: {type: "image"}}));
+    return {...color, medias};
+  });
+  const selected = colors.find((color: Row) => String(color.id) === String(row.mainColorid)) ?? colors[0];
+  if (!row.productUrl || !selected) return null;
+  return mapMassimoProduct({...row, detail: {...detailRow.detail, description: detailRow.detail?.longDescription},
+    locationPath: `/us/${row.productUrl}?pelement=${row.productUrlParam ?? row.id}`,
+    colors, status: {selectedColor: selected}}, MASSIMO_SHOES_URL, discoveredAt);
+}
+
 export async function collectMassimoDuttiCatalog(http: OnboardingHttp): Promise<CollectionAttemptResult> {
   const response = await http.fetchText(MASSIMO_SHOES_URL);
   const state = response.ok ? parseMassimoTransferState(response.text) : null;
   const rows = state?.TRANSFER_PRODUCTS_WITH_IDS?.products;
-  const products = mergeProductCatalog([], (Array.isArray(rows) ? rows : []).map((row: Row) => mapMassimoProduct(row, MASSIMO_SHOES_URL, new Date().toISOString())).filter((row): row is PilotProduct => Boolean(row)));
+  const now = new Date().toISOString();
+  const baseline = (Array.isArray(rows) ? rows : []).map((row: Row) => mapMassimoProduct(row, MASSIMO_SHOES_URL, now)).filter((row): row is PilotProduct => Boolean(row));
   const elements = state?.TRANSFER_CATEGORY_PRODUCTS?.categoryGrid?.gridElements;
-  const gridIds = new Set((Array.isArray(elements) ? elements : []).flatMap((element: Row) => Array.isArray(element.ccIds) ? element.ccIds.map(String) : []));
-  return {
-    products, discoveredLinks: new Set(products.map((product) => product.productUrl)),
-    errors: !response.ok ? [`Massimo official footwear page HTTP ${response.status}`] : !state ? ["Massimo transfer-state schema missing"] : [],
-    method: "custom-adapter", paginationExhausted: false,
-    sourceReportedProductCount: gridIds.size || null, hitCollectionCrawlCap: true,
-    rawProductUrlsDiscovered: products.length,
-  };
+  const ids = [...new Set<string>((Array.isArray(elements) ? elements : []).flatMap((element: Row) => Array.isArray(element.ccIds) ? element.ccIds.map(String) : []))].filter(id => /^\d+$/.test(id));
+  const errors = !response.ok ? [`Massimo official footwear page HTTP ${response.status}`] : !state ? ["Massimo transfer-state schema missing"] : [];
+  const expanded: PilotProduct[] = [];
+  const received = new Set<string>();
+  for(let offset=0;offset<ids.length;offset+=20){
+    const batch=ids.slice(offset,offset+20);
+    const url=`https://www.massimodutti.com/itxrest/3/catalog/store/34009527/30359506/productsArray?productIds=${batch.join(",")}&languageId=-1`;
+    const page=await http.fetchText(url);
+    if(!page.ok){errors.push(`Massimo productsArray HTTP ${page.status}`);break;}
+    let records: Row[];
+    try { records=JSON.parse(page.text).products;if(!Array.isArray(records))throw new Error("products missing"); }
+    catch {errors.push("Massimo productsArray schema missing");break;}
+    for(const row of records){
+      if(!batch.includes(String(row.id)))continue;
+      received.add(String(row.id));
+      const product=mapMassimoApiProduct(row,now);
+      if(product)expanded.push(product);else errors.push(`Unmapped grid product ${row.id}`);
+    }
+  }
+  const products=mergeProductCatalog(baseline,expanded);
+  const exhausted=ids.length>0 && received.size===ids.length && errors.length===0;
+  return {products, discoveredLinks:new Set(products.map(p=>p.productUrl)), errors,
+    method:"custom-adapter",paginationExhausted:exhausted,sourceReportedProductCount:ids.length||null,
+    hitCollectionCrawlCap:!exhausted,rawProductUrlsDiscovered:received.size || baseline.length};
 }
