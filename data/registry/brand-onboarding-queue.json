@@ -2,7 +2,7 @@
   "version": 1,
   "updatedAt": "2026-09-27T19:20:44.007Z",
   "policy": {
-    "maxAttemptsPerRun": 5,
+    "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
     "retryDays": 7
   },
