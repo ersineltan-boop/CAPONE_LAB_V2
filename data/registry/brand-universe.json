@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T12:17:03.475Z",
+  "generatedAt": "2026-09-28T12:19:16.905Z",
   "brands": [
     {
       "id": "schutz",
@@ -797,23 +797,35 @@
       "segment": "DIRECTIONAL",
       "influenceRole": "EARLY_ADOPTER",
       "trackingPriority": "P1",
-      "isActive": false,
-      "collectorType": "UNSUPPORTED",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
       "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — NEEDS_CUSTOM_ADAPTER: Shopify products JSON erişilemedi",
+      "notes": "Issue 91 official storefront women's footwear. source_total=88. Refresh: npm run collect:official-shopify. Not on the periodic brand line.",
       "footwearInfluence": 56,
       "directionalInfluence": 68,
       "commercialInfluence": 42,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://yuulyie.com/collections/shoes",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "productLimit": 88,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "REVIEWED",
-      "radarEligible": true
+      "radarEligible": true,
+      "footwearCollectionUrls": [
+        "https://yuulyie.com/collections/shoes"
+      ],
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 88
     },
     {
       "id": "studio-amelia",
@@ -2160,23 +2172,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=130. Refresh: npm run collect:official-shopify. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://isabelmarant.com/en/collections/shoes-all",
+      "collectionPaths": [
+        "/en/collections/shoes-all"
+      ],
+      "productLimit": 130,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://isabelmarant.com/en/collections/shoes-all"
+      ],
+      "footwearCollectionHandles": [
+        "shoes-all"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 130
     },
     {
       "id": "ganni",
@@ -2628,23 +2652,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=553. Refresh: npm run collect:official-shopify. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.lesilla.com/collections/shoes",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "productLimit": 553,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.lesilla.com/collections/shoes"
+      ],
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 553
     },
     {
       "id": "paris-texas",
@@ -3478,23 +3514,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=128. Refresh: npm run collect:official-shopify. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.kjacques.fr/collections/sandale-tropezienne-femme",
+      "collectionPaths": [
+        "/collections/sandale-tropezienne-femme"
+      ],
+      "productLimit": 128,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.kjacques.fr/collections/sandale-tropezienne-femme"
+      ],
+      "footwearCollectionHandles": [
+        "sandale-tropezienne-femme"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 128
     },
     {
       "id": "s-zane",
@@ -4408,23 +4456,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1276. Refresh: npm run collect:official-shopify. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://shop-eu.flylondon.com/collections/women-all-footwear",
+      "collectionPaths": [
+        "/collections/women-all-footwear"
+      ],
+      "productLimit": 1276,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://shop-eu.flylondon.com/collections/women-all-footwear"
+      ],
+      "footwearCollectionHandles": [
+        "women-all-footwear"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 1276
     },
     {
       "id": "softwaves",

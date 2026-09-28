@@ -92,7 +92,20 @@ describe("brands wave 50 delivery QA", () => {
       expect(brand?.collectionStatus).toBe("NEEDS_PROBE");
       expect(collectable.some((entry) => entry.id === id)).toBe(false);
     }
-    expect(collectable.length).toBe(universe.brands.filter((brand) => brand.isActive && !stagedPriority.has(brand.id)).length);
+    // Official catalogs use a dedicated command and stay off the generic collector.
+    const dedicatedAdapter = new Set(
+      universe.brands
+        .filter((brand) => brand.isActive && brand.collectionStatus === "NEEDS_CUSTOM_ADAPTER")
+        .map((brand) => brand.id),
+    );
+    for (const id of dedicatedAdapter) {
+      expect(collectable.some((entry) => entry.id === id)).toBe(false);
+    }
+    expect(collectable.length).toBe(
+      universe.brands.filter((brand) =>
+        brand.isActive && !stagedPriority.has(brand.id) && !dedicatedAdapter.has(brand.id),
+      ).length,
+    );
     expect(report.universeBrandsAfter - report.universeBrandsBefore).toBe(report.netNewUniverseBrands);
     expect(report.activeBrandsAfter - report.activeBrandsBefore).toBe(report.netNewActiveBrands);
   });
