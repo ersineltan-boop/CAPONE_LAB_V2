@@ -23,6 +23,11 @@ export function isFreePeopleAntiBot(status: number, body: string): boolean {
   return /Pardon Our Interruption|Access Denied|cdn-cgi\/challenge|dd\.freepeople\.com\/captcha/i.test(body);
 }
 
+/** Stop only for a real block status or a challenge body. A Pinia wait timeout is not an HTTP 403. */
+export function freePeopleNavigationBlocked(status: number, html: string): boolean {
+  return isFreePeopleAntiBot(status, html) || (html.length < 4000 && isFreePeopleAntiBot(0, html));
+}
+
 export function freePeopleImageUrl(styleNumber: string, colorCode: string, view: string): string {
   const style = styleNumber.trim();
   const color = colorCode.trim();

@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 import {
   collectFreePeople,
   extractFreePeopleStyleNumber,
+  freePeopleNavigationBlocked,
   isFreePeopleAntiBot,
   isFreePeopleNonFootwear,
   parseFreePeopleJsonLd,
@@ -54,6 +55,21 @@ describe("Free People anti-bot probe", () => {
   it("treats Akamai 403 interstitials as anti-bot", () => {
     expect(isFreePeopleAntiBot(403, '<html><div id="cmsg"></div></html>')).toBe(true);
     expect(isFreePeopleAntiBot(200, "<html>" + "product".repeat(400) + "</html>")).toBe(false);
+  });
+
+  it("does not treat a product page as blocked when the navigation status is 200", () => {
+    const productPage = `<html><body>${"shoe ".repeat(800)}</body></html>`;
+    expect(productPage.length).toBeGreaterThan(4000);
+    expect(isFreePeopleAntiBot(403, productPage)).toBe(true);
+    expect(freePeopleNavigationBlocked(200, productPage)).toBe(false);
+  });
+
+  it("still stops a DataDome challenge and a real 403", () => {
+    const challenge = '<html lang="en"><head><title>freepeople.com</title></head><body><p id="cmsg">Please enable JS and disable any ad blocker</p><script src="https://ct.captcha-delivery.com/c.js"></script></body></html>';
+    expect(freePeopleNavigationBlocked(200, challenge)).toBe(true);
+    expect(freePeopleNavigationBlocked(403, challenge)).toBe(true);
+    expect(freePeopleNavigationBlocked(429, "<html>ok</html>")).toBe(true);
+    expect(freePeopleNavigationBlocked(503, "<html>ok</html>")).toBe(true);
   });
 
   it("does not collect into production from the default collectFreePeople entry", async () => {

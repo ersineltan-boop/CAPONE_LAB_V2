@@ -1,7 +1,7 @@
 import {
   FREE_PEOPLE_ID,
   FREE_PEOPLE_SHOES_URL,
-  isFreePeopleAntiBot,
+  freePeopleNavigationBlocked,
   parseFreePeoplePage,
   parseFreePeopleJsonLd,
   extractFreePeopleStyleNumber,
@@ -128,7 +128,13 @@ export async function collectFreePeopleWithBrowser(options?: {
   try {
     for (let pageNum = startPage; pageNum <= Math.min(maxPages, totalPages); pageNum += 1) {
       const url = shoesPageUrl(pageNum);
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+      const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+      const navigationStatus = response?.status() ?? 0;
+      if (navigationStatus === 403 || navigationStatus === 429 || navigationStatus === 503) {
+        blocked = true;
+        errors.push(`Free People anti-bot/challenge page at ${url} (HTTP ${navigationStatus})`);
+        break;
+      }
       await page.waitForTimeout(3500);
       try {
         await page.waitForFunction(
@@ -156,17 +162,17 @@ export async function collectFreePeopleWithBrowser(options?: {
         );
       } catch {
         const html = await page.content();
-        if (isFreePeopleAntiBot(403, html) || (html.length < 4000 && isFreePeopleAntiBot(0, html))) {
+        if (freePeopleNavigationBlocked(navigationStatus, html)) {
           blocked = true;
-          errors.push(`Free People anti-bot/challenge page at ${url}`);
+          errors.push(`Free People anti-bot/challenge page at ${url} (HTTP ${navigationStatus})`);
           break;
         }
       }
 
       const html = await page.content();
-      if (html.length < 4000 && isFreePeopleAntiBot(0, html)) {
+      if (freePeopleNavigationBlocked(navigationStatus, html)) {
         blocked = true;
-        errors.push(`Free People anti-bot/challenge page at ${url}`);
+        errors.push(`Free People anti-bot/challenge page at ${url} (HTTP ${navigationStatus})`);
         break;
       }
 
