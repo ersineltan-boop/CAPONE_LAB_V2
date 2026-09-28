@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T07:16:25.184Z",
-  "totalFamilies": 13572,
-  "shardCount": 9,
+  "generatedAt": "2026-09-28T08:00:49.050Z",
+  "totalFamilies": 13855,
+  "shardCount": 12,
   "shards": [
     {
       "file": "part-000.json",
@@ -49,6 +49,21 @@
       "file": "brands/4ccccees.json",
       "familyCount": 151,
       "bytes": 865899
+    },
+    {
+      "file": "brands/massimo-dutti.json",
+      "familyCount": 19,
+      "bytes": 143865
+    },
+    {
+      "file": "brands/ala-a.json",
+      "familyCount": 157,
+      "bytes": 1038893
+    },
+    {
+      "file": "brands/maison-margiela.json",
+      "familyCount": 107,
+      "bytes": 999772
     }
   ]
 }

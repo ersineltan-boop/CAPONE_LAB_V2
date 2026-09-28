@@ -1,4 +1,4 @@
-import { mkdir, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -52,7 +52,9 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
   await writeFile(join(OUT_DIR, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
   await writeFile(join(OUT_DIR, "id-index.json"), JSON.stringify(artifacts.idIndex), "utf-8");
 
+  const brandCoverage = JSON.parse(await readFile(join(ROOT, "data/registry/priority-brand-coverage.json"), "utf8").catch((error) => { if (error.code === "ENOENT") return "{}"; throw error; }));
   for (const shard of artifacts.brandShards) {
+    if (brandCoverage[shard.id]) shard.coverage = brandCoverage[shard.id];
     await writeFile(join(OUT_DIR, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
   for (const shard of artifacts.marketplaceShards) {
