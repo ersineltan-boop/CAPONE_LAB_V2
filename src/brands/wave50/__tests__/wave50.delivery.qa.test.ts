@@ -83,7 +83,7 @@ describe("brands wave 50 delivery QA", () => {
     expect(universe.brands.filter((brand) => brand.isActive).length).toBeGreaterThanOrEqual(report.activeBrandsAfter);
     expect(universe.brands.find((brand) => brand.id === "naked-wolfe")?.isActive).toBe(true);
     expect(universe.brands.find((brand) => brand.id === "maria-carlota")?.isActive).toBe(true);
-    const stagedPriority = new Set(["massimo-dutti", "ala-a", "maison-margiela"]);
+    const stagedPriority = new Set(Object.keys(readJson<Record<string, unknown>>("data/registry/priority-brand-coverage.json")));
     const collectable = getCollectableBrands(loadBrandRegistry().all());
     // Published partial snapshots do not imply generic refresh support.
     for (const id of stagedPriority) {

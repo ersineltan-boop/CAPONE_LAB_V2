@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T08:39:33.850Z",
-  "totalFamilies": 13943,
-  "shardCount": 12,
+  "generatedAt": "2026-09-28T08:46:59.414Z",
+  "totalFamilies": 14608,
+  "shardCount": 18,
   "shards": [
     {
       "file": "part-000.json",
@@ -64,6 +64,36 @@
       "file": "brands/maison-margiela.json",
       "familyCount": 107,
       "bytes": 999772
+    },
+    {
+      "file": "brands/nine-west.json",
+      "familyCount": 175,
+      "bytes": 1151021
+    },
+    {
+      "file": "brands/loeffler-randall.json",
+      "familyCount": 185,
+      "bytes": 995958
+    },
+    {
+      "file": "brands/freda-salvador.json",
+      "familyCount": 113,
+      "bytes": 691824
+    },
+    {
+      "file": "brands/sarah-flint.json",
+      "familyCount": 92,
+      "bytes": 586221
+    },
+    {
+      "file": "brands/tkees.json",
+      "familyCount": 74,
+      "bytes": 451984
+    },
+    {
+      "file": "brands/brother-vellies.json",
+      "familyCount": 26,
+      "bytes": 125384
     }
   ]
 }

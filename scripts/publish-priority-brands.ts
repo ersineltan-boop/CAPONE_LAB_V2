@@ -11,8 +11,11 @@ const write = async(p:string,x:unknown)=>writeFile(p,JSON.stringify(x,null,2)+'\
 const universe=await read(UNIVERSE_PATH);
 const manifestPath='data/multibrand/model-families/manifest.json';
 const manifest=await read(manifestPath);
-const coverage:Record<string,unknown>={};
-for(const [id,file] of [['massimo-dutti','massimo-dutti'],['ala-a','luxury-ala-a'],['maison-margiela','luxury-maison-margiela']]){
+const coverage:Record<string,unknown>=await read('data/registry/priority-brand-coverage.json').catch((error)=>{if(error.code==='ENOENT')return {};throw error;});
+const requested=process.argv.slice(2);
+if(requested.some(id=>!universe.brands.some((b:any)=>b.id===id)))throw new Error('Unknown brand');
+const targets=requested.length?requested.map(id=>[id,`expansion-${id}`]):[['massimo-dutti','massimo-dutti'],['ala-a','luxury-ala-a'],['maison-margiela','luxury-maison-margiela']];
+for(const [id,file] of targets){
  const snapshot=await read(`data/onboarding/validated/${file}.json`);
  const rejected=new Set(auditFootwearLeakage(snapshot.products));
  const products=snapshot.products.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl).map((p:any)=>({...p,isNewArrivalsCollection:false,hasNewBadge:false}));
