@@ -99,6 +99,17 @@ describe("brands wave 50 delivery QA", () => {
     expect(manifest.totalFamilies).toBe(manifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0));
   });
 
+  it("retains wave product URLs when onboarding rebuilds core families", async () => {
+    const { retainHistoricalWaveDelivery } = await import("../../../onboarding/activate");
+    const rebuiltCore = manifest.shards
+      .filter((shard) => /^part-00[0-5]\.json$/.test(shard.file))
+      .flatMap((shard) => shardFamilies(shard.file));
+    const rebuilt = await retainHistoricalWaveDelivery(process.cwd(), rebuiltCore);
+    const urls = variantUrls(rebuilt);
+    for (const url of variantUrls(waveFamilies)) expect(urls.has(url)).toBe(true);
+    expect(new Set(rebuilt.map((family) => family.modelFamilyId)).size).toBe(rebuilt.length);
+  });
+
   it("keeps wave families in short footwear categories and does not duplicate product urls", () => {
     const unclassified = waveFamilies.filter((family) => (family.primaryCategory ?? "UNCLASSIFIED") === "UNCLASSIFIED");
     expect(unclassified).toEqual([]);

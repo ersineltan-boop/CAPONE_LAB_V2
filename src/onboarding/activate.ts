@@ -5,7 +5,8 @@ import { analyzeProducts } from "../analysis/analyzeProduct";
 import { buildMarketAnalysis } from "../analysis/buildMarketAnalysis";
 import { mergeIncomingSourceIntoCatalog } from "../refresh/refreshPolicy";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
-import { loadModelFamilies, writeModelFamilies } from "../modelFamily/dataset";
+import { loadModelFamilies, mergeCoreFamilyIntoBrandShard, writeModelFamilies } from "../modelFamily/dataset";
+import type { ModelFamily } from "../modelFamily/types";
 import type { RawAnalyzedProduct } from "../modelFamily/types";
 import type { PilotProduct } from "../collector/types";
 import { buildBrandRegistryFromUniverseData } from "../registry/build/buildBrandRegistry";
@@ -53,6 +54,34 @@ export function prepareFirstBrandBaseline(products: readonly PilotProduct[]): Pi
     isNewArrivalsCollection: false,
     hasNewBadge: false,
   }));
+}
+
+/** Wave 50 was delivered as official brand families outside products.json. */
+export async function retainHistoricalWaveDelivery(
+  root: string,
+  rebuilt: readonly ModelFamily[],
+): Promise<ModelFamily[]> {
+  const directory = join(root, "data/brands/wave50/delivery-shards");
+  const historical = (
+    await Promise.all(["part-006.json", "part-007.json"].map(async (file) =>
+      JSON.parse(await readFile(join(directory, file), "utf-8")) as ModelFamily[],
+    ))
+  ).flat();
+  const byId = new Map(rebuilt.map((family) => [family.modelFamilyId, family]));
+  for (const family of historical) {
+    const incoming = byId.get(family.modelFamilyId);
+    byId.set(
+      family.modelFamilyId,
+      incoming ? mergeCoreFamilyIntoBrandShard(family, incoming) : family,
+    );
+  }
+  const deliveredUrls = new Set(
+    [...byId.values()].flatMap((family) => family.variants.map((variant) => variant.url)),
+  );
+  if (historical.some((family) => family.variants.some((variant) => !deliveredUrls.has(variant.url)))) {
+    throw new Error("Activation aborted: historical wave delivery would lose product URLs.");
+  }
+  return [...byId.values()];
 }
 
 export async function activateUniverseBrand(input: {
@@ -128,7 +157,7 @@ export async function rebuildCatalogAfterActivation(root: string): Promise<numbe
   if (families.length === 0) {
     throw new Error("Activation aborted: Model Family rebuild produced zero families.");
   }
-  await writeModelFamilies(families);
+  await writeModelFamilies(await retainHistoricalWaveDelivery(root, families));
   await writeFile(join(root, "data/multibrand/model-family-report.json"), JSON.stringify(report, null, 2), "utf-8");
   return report.modelFamilyCount;
 }
