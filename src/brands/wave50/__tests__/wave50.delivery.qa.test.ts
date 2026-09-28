@@ -83,7 +83,16 @@ describe("brands wave 50 delivery QA", () => {
     expect(universe.brands.filter((brand) => brand.isActive).length).toBeGreaterThanOrEqual(report.activeBrandsAfter);
     expect(universe.brands.find((brand) => brand.id === "naked-wolfe")?.isActive).toBe(true);
     expect(universe.brands.find((brand) => brand.id === "maria-carlota")?.isActive).toBe(true);
-    expect(getCollectableBrands(loadBrandRegistry().all()).length).toBe(universe.brands.filter((brand) => brand.isActive).length);
+    const stagedPriority = new Set(["massimo-dutti", "ala-a", "maison-margiela"]);
+    const collectable = getCollectableBrands(loadBrandRegistry().all());
+    // Published partial snapshots do not imply generic refresh support.
+    for (const id of stagedPriority) {
+      const brand = universe.brands.find((entry) => entry.id === id);
+      expect(brand?.isActive).toBe(true);
+      expect(brand?.collectionStatus).toBe("NEEDS_PROBE");
+      expect(collectable.some((entry) => entry.id === id)).toBe(false);
+    }
+    expect(collectable.length).toBe(universe.brands.filter((brand) => brand.isActive && !stagedPriority.has(brand.id)).length);
     expect(report.universeBrandsAfter - report.universeBrandsBefore).toBe(report.netNewUniverseBrands);
     expect(report.activeBrandsAfter - report.activeBrandsBefore).toBe(report.netNewActiveBrands);
   });
