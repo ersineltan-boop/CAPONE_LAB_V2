@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T12:52:13.010Z",
+  "generatedAt": "2026-09-28T19:27:54.179Z",
   "brands": [
     {
       "id": "schutz",
@@ -3468,7 +3468,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=243. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=244. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3476,7 +3476,7 @@
       "collectionPaths": [
         "/collections/catalogue-femme-chaussures"
       ],
-      "productLimit": 243,
+      "productLimit": 244,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3490,7 +3490,7 @@
         "catalogue-femme-chaussures"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 243
+      "backfillLimit": 244
     },
     {
       "id": "nomasei",
@@ -4510,7 +4510,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=1276. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1271. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
