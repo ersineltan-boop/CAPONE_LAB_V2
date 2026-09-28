@@ -74,6 +74,9 @@ export default function BrandDetail({
           >
             ← {UI_COPY.backToBrands}
           </button>
+          {state.status === "ready" && state.data.coverage?.status === "PARTIAL" ? (
+            <p className="text-xs text-ink-muted">Katalog kısmi · Doğrulanmış ürünler gösteriliyor; koleksiyonun tamamı henüz doğrulanmadı.</p>
+          ) : null}
           <h2 className="font-serif text-3xl font-medium tracking-wide sm:text-4xl">
             {brandName}
           </h2>
