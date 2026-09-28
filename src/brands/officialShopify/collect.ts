@@ -122,15 +122,16 @@ function bump(reasons: Record<string, number>, reason: string): void {
 
 function categoryFromLabel(value: string): FootwearCategory | null {
   const text = value.toLowerCase();
-  if (/sandale|sandal|tong|tropez/.test(text)) return "SANDAL";
+  if (/sandale|sandalia|sandal|tong|tropez|alpargata/.test(text)) return "SANDAL";
+  if (/bot[ií]n/.test(text)) return "ANKLE_BOOT";
   if (/bottine|ankle boot|boot/.test(text)) return /ankle/.test(text) ? "ANKLE_BOOT" : "BOOT";
-  if (/sneaker|basket|trainer|velcro/.test(text)) return "SNEAKER";
+  if (/sneaker|basket|trainer|velcro|deportivo/.test(text)) return "SNEAKER";
   if (/sling/.test(text)) return "SLINGBACK";
-  if (/pump|escarpin|talon|\bheels?\b/.test(text)) return "PUMP";
-  if (/ballerin|ballet|\bflats?\b/.test(text)) return "BALLERINA";
-  if (/loafer|mocassin|slip-?on|lace-?up|buckle|closed shoes?|elasticated/.test(text)) return "LOAFER";
-  if (/ankle strap/.test(text)) return "MARY_JANE";
-  if (/mule/.test(text)) return "MULE";
+  if (/pump|escarpin|sal[oó]n|talon|\bheels?\b|tac[oó]n/.test(text)) return "PUMP";
+  if (/ballerin|bailarina|ballet|\bflats?\b/.test(text)) return "BALLERINA";
+  if (/loafer|mocassin|mocas[ií]n|slip-?on|lace-?up|buckle|closed shoes?|elasticated|acordonad|derbi/.test(text)) return "LOAFER";
+  if (/ankle strap|merceditas|salom[eé]/.test(text)) return "MARY_JANE";
+  if (/mule|destalon/.test(text)) return "MULE";
   if (/wedge|compens/.test(text)) return "WEDGE";
   return null;
 }
@@ -158,7 +159,7 @@ function footwearCategory(input: {
   });
   if (scope.decision === "footwear" && scope.category !== "OTHER_FOOTWEAR") return { category: scope.category };
   const labeled = categoryFromLabel(`${input.title} ${input.productType} ${input.tags.join(" ")}`);
-  const inShoeCollection = /shoe|footwear|chaussure|calzado|zapato/.test(input.collectionHandle);
+  const inShoeCollection = /shoe|footwear|chaussure|calzado|zapato|bailarina|botin|salon/.test(input.collectionHandle);
   if (official && (scope.decision === "footwear" || shoeTagged || labeled || inShoeCollection)) {
     return { category: legacyCategoryForPrimary(official) };
   }
@@ -403,7 +404,7 @@ export async function collectOfficialShopifyBrand(
       paginationExhausted,
       baselineNewArrivals: 0,
       blocker: errors.length && !full ? `${blocker}: ${errors.join("; ")}` : blocker,
-      refreshCommand: OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+      refreshCommand: target.refreshCommand ?? OFFICIAL_SHOPIFY_REFRESH_COMMAND,
       periodicRefresh: false,
       note: "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
     },

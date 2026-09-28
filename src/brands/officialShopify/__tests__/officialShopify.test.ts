@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { OFFICIAL_SHOPIFY_BRAND_TARGETS } from "../candidates";
+import { NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS, OFFICIAL_SHOPIFY_BRAND_TARGETS } from "../candidates";
 import { collectOfficialShopifyBrand, type OfficialHttp } from "../collect";
 import { officialCatalogPublishBlocker } from "../publish";
 import { isColorSwatchImage, parseStorefrontProductCount } from "../storefrontCount";
@@ -111,12 +111,19 @@ describe("official Shopify storefront collector", () => {
     expect(OFFICIAL_SHOPIFY_BRAND_TARGETS.map((target) => target.slug)).toEqual([
       "isabel-marant",
       "yuul-yie",
-      "nodaleto",
       "le-silla",
       "k-jacques",
       "sergio-rossi",
       "fly-london",
     ]);
-    expect(OFFICIAL_SHOPIFY_BRAND_TARGETS.some((target) => /adidas|nike|converse|hoka/i.test(target.slug))).toBe(false);
+    expect(NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS.map((target) => target.slug)).toEqual([
+      "pretty-ballerinas",
+      "margaux",
+      "mascar",
+      "rouje",
+      "repetto",
+    ]);
+    expect(OFFICIAL_SHOPIFY_BRAND_TARGETS.some((target) => /adidas|nike|converse|hoka|nodaleto/i.test(target.slug))).toBe(false);
+    expect(parseStorefrontProductCount('<span id="FacetFiltersFormMobile-productcount">(243)</span>')).toBe(243);
   });
 });

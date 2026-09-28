@@ -10,6 +10,7 @@ export interface OfficialBrandTarget {
   /** Path prefix such as "/en" when the official hreflang catalog is localized. */
   localePath: string;
   collections: OfficialCollectionTarget[];
+  refreshCommand?: string;
 }
 
 /**
@@ -31,20 +32,6 @@ export const OFFICIAL_SHOPIFY_BRAND_TARGETS: readonly OfficialBrandTarget[] = [
     origin: "https://yuulyie.com",
     localePath: "",
     collections: [{ handle: "shoes" }],
-  },
-  {
-    slug: "nodaleto",
-    brand: "NODALETO",
-    origin: "https://nodaleto.com",
-    localePath: "",
-    collections: [
-      { handle: "pumps" },
-      { handle: "flats" },
-      { handle: "mules-collection-shoes" },
-      { handle: "sandals" },
-      { handle: "boots" },
-      { handle: "loafer-collection-shoes" },
-    ],
   },
   {
     slug: "le-silla",
@@ -77,3 +64,52 @@ export const OFFICIAL_SHOPIFY_BRAND_TARGETS: readonly OfficialBrandTarget[] = [
 ];
 
 export const OFFICIAL_SHOPIFY_REFRESH_COMMAND = "npm run collect:official-shopify";
+
+/**
+ * Next verified public-Shopify women's footwear brands after the first group.
+ * Nodaleto stays with the Codex catalog and is not collected here.
+ */
+export const NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND = "npm run collect:official-shopify-next";
+
+export const NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS: readonly OfficialBrandTarget[] = [
+  {
+    slug: "pretty-ballerinas",
+    brand: "PRETTY BALLERINAS",
+    origin: "https://www.prettyballerinas.com",
+    localePath: "",
+    collections: [{ handle: "collection" }],
+    refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+  },
+  {
+    slug: "margaux",
+    brand: "MARGAUX",
+    origin: "https://www.margauxny.com",
+    localePath: "",
+    collections: [{ handle: "shop" }],
+    refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+  },
+  {
+    slug: "mascar",
+    brand: "MASCARÓ",
+    origin: "https://www.mascaro.com",
+    localePath: "",
+    collections: [{ handle: "collection" }],
+    refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+  },
+  {
+    slug: "rouje",
+    brand: "ROUJE",
+    origin: "https://www.rouje.com",
+    localePath: "",
+    collections: [{ handle: "shoes" }],
+    refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+  },
+  {
+    slug: "repetto",
+    brand: "REPETTO",
+    origin: "https://www.repetto.com",
+    localePath: "",
+    collections: [{ handle: "catalogue-femme-chaussures" }],
+    refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
+  },
+];

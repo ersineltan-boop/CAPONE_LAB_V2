@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T13:28:42.826Z",
-  "totalFamilies": 15945,
-  "shardCount": 24,
+  "generatedAt": "2026-09-28T13:30:20.022Z",
+  "totalFamilies": 16362,
+  "shardCount": 28,
   "shards": [
     {
       "file": "brands/4ccccees.json",
@@ -61,6 +61,11 @@
       "bytes": 1278429
     },
     {
+      "file": "brands/mascar.json",
+      "familyCount": 145,
+      "bytes": 413154
+    },
+    {
       "file": "brands/massimo-dutti.json",
       "familyCount": 107,
       "bytes": 1138565
@@ -74,6 +79,21 @@
       "file": "brands/nodaleto.json",
       "familyCount": 9,
       "bytes": 53056
+    },
+    {
+      "file": "brands/pretty-ballerinas.json",
+      "familyCount": 183,
+      "bytes": 563648
+    },
+    {
+      "file": "brands/repetto.json",
+      "familyCount": 58,
+      "bytes": 488970
+    },
+    {
+      "file": "brands/rouje.json",
+      "familyCount": 31,
+      "bytes": 131307
     },
     {
       "file": "brands/sarah-flint.json",

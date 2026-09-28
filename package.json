@@ -76,7 +76,8 @@
     "collect:priority-sources": "tsx scripts/collect-priority-sources.ts",
     "collect:massimo-staging": "tsx scripts/collect-massimo-staging.ts",
     "collect:luxury-staging": "tsx scripts/collect-luxury-staging.ts",
-    "collect:official-shopify": "tsx scripts/collect-official-shopify.ts"
+    "collect:official-shopify": "tsx scripts/collect-official-shopify.ts",
+    "collect:official-shopify-next": "tsx scripts/collect-official-shopify-next.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

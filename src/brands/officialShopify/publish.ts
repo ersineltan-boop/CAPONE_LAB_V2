@@ -21,8 +21,6 @@ import {
 } from "../wave50/publish";
 import type { WaveCatalog, WaveHttp } from "../wave50/types";
 import type { OfficialBrandEvidence, OfficialHttp } from "./collect";
-import { OFFICIAL_SHOPIFY_REFRESH_COMMAND } from "./candidates";
-
 export function officialCatalogPublishBlocker(
   catalog: WaveCatalog | null,
   evidence: OfficialBrandEvidence,
@@ -120,7 +118,7 @@ export async function publishOfficialBrandCatalog(input: {
   const nextUniverse: BrandUniverseFile = {
     ...universe,
     generatedAt: catalog.collectedAt,
-    brands: universe.brands.map((entry) => entry.id === current.id ? universeEntry(current, catalog!) : entry),
+    brands: universe.brands.map((entry) => entry.id === current.id ? universeEntry(current, catalog!, input.evidence.refreshCommand) : entry),
   };
   const probeCache = await readJsonFile<BrandProbeCacheFile>(
     join(input.root, "data/registry/brand-probe-cache.json"),
@@ -150,7 +148,7 @@ export async function publishOfficialBrandCatalog(input: {
   return { published: true, blocker: null, families: families.length };
 }
 
-function universeEntry(previous: BrandUniverseEntry, catalog: WaveCatalog): BrandUniverseEntry {
+function universeEntry(previous: BrandUniverseEntry, catalog: WaveCatalog, refreshCommand: string): BrandUniverseEntry {
   const handles = catalog.catalogPaths.map((path) => path.split("/collections/")[1] ?? "").filter(Boolean);
   const base = catalog.officialUrl.replace(/\/$/, "");
   return {
@@ -160,7 +158,7 @@ function universeEntry(previous: BrandUniverseEntry, catalog: WaveCatalog): Bran
     collectionStatus: "NEEDS_CUSTOM_ADAPTER",
     footwearFocus: previous.footwearFocus ?? "WOMENS_FOOTWEAR",
     womenFootwearRelevant: true,
-    notes: `Issue 91 official storefront women's footwear. source_total=${catalog.coverage.sourceTotal}. Refresh: ${OFFICIAL_SHOPIFY_REFRESH_COMMAND}. Not on the periodic brand line.`,
+    notes: `Issue 91 official storefront women's footwear. source_total=${catalog.coverage.sourceTotal}. Refresh: ${refreshCommand}. Not on the periodic brand line.`,
     collectionUrl: `${base}${catalog.catalogPaths[0] ?? ""}`,
     collectionPaths: catalog.catalogPaths,
     footwearCollectionUrls: catalog.catalogPaths.map((path) => `${base}${path}`),
