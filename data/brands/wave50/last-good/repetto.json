@@ -2,26 +2,26 @@
   "slug": "repetto",
   "brand": "REPETTO",
   "officialUrl": "https://www.repetto.com",
-  "snapshotId": "repetto:2026-09-28T12:52:13.010Z",
-  "collectedAt": "2026-09-28T12:52:13.010Z",
+  "snapshotId": "repetto:2026-09-28T19:27:54.179Z",
+  "collectedAt": "2026-09-28T19:27:54.179Z",
   "catalogPaths": [
     "/collections/catalogue-femme-chaussures"
   ],
   "newArrivalsPaths": [],
   "coverage": {
-    "sourceTotal": 243,
-    "collected": 243,
+    "sourceTotal": 244,
+    "collected": 244,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 243,
+    "galleryComplete": 244,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
   "newArrivalsFootwear": 0,
-  "referenceFootwearTotal": 243,
+  "referenceFootwearTotal": 244,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": true,
   "referenceNewArrivalsMatch": null,
@@ -6409,6 +6409,44 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "repetto--sneaker-guetres",
+      "brand": "REPETTO",
+      "canonicalName": "Sneaker Guetres",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p1_1_1.jpg?v=1703252689",
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-v2-basket-montante-noir_1.jpg?v=1703252689",
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p2_1.jpg?v=1703252689",
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p3_1.jpg?v=1703252689",
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-v1-basket-montante-noir_1.jpg?v=1703252689",
+        "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p4_1.jpg?v=1703252689"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.repetto.com/products/sneakers-montantes-3d-d-echauffement-noir-v078-410",
+          "handle": "sneakers-montantes-3d-d-echauffement-noir-v078-410",
+          "title": "Sneakers guêtres",
+          "color": "Sneakers guêtres",
+          "sku": "V078-410-36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p1_1_1.jpg?v=1703252689",
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-v2-basket-montante-noir_1.jpg?v=1703252689",
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p2_1.jpg?v=1703252689",
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p3_1.jpg?v=1703252689",
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-v1-basket-montante-noir_1.jpg?v=1703252689",
+            "https://cdn.shopify.com/s/files/1/0761/6564/4616/products/v078-410-p4_1.jpg?v=1703252689"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     }
   ],
   "productUrls": [
@@ -6654,6 +6692,7 @@
     "https://www.repetto.com/products/repetto-x-yohji-yamamoto-mocassin-ballet-rouge-flamme-v4291vecvd-550",
     "https://www.repetto.com/products/sandales-jordana-60-noir-v4173ved-410",
     "https://www.repetto.com/products/repetto-x-yohji-yamamoto-mocassin-ballet-argent-v4291vemd-020",
-    "https://www.repetto.com/products/ballerines-cendrillon-fleurs-blanc-v374hrb-050"
+    "https://www.repetto.com/products/ballerines-cendrillon-fleurs-blanc-v374hrb-050",
+    "https://www.repetto.com/products/sneakers-montantes-3d-d-echauffement-noir-v078-410"
   ]
 }
