@@ -1,0 +1,99 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.maison-alaia.com/en-us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SHOES",
+            "item": "https://www.maison-alaia.com/en-us/cat/shoes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Flat Shoes",
+            "item": "https://www.maison-alaia.com/en-us/cat/shoes/flat-shoes/"
+          }
+        ]
+      },
+      {
+        "@type": "ProductGroup",
+        "@id": "https://www.maison-alaia.com/en-us/product/flat-shoes/ballet-flats-in-strass-fishnet-AA3A029A023210.html#AA3A029A023210",
+        "productGroupID": "AA3A029A023210",
+        "name": "BALLET FLATS IN STRASS FISHNET",
+        "description": "Signature Ala\u00efa ballet flats inspired by classical Japanese shoes. Buckle strap on top. Rubber sole. Fishnet textile with strass and suede goatskin. Made in Italy. . We recommend taking half size down",
+        "sku": "AA3A029A023210",
+        "brand": {
+          "@type": "Brand",
+          "name": "ALA\u00cfA"
+        },
+        "color": "WHITE SILVER",
+        "material": "MAIN MATERIAL: 97% POLYESTER, 3% ELASTANE. SECONDARY MATERIAL: 100% GOATSKIN LEATHER. MAIN LINING: 95% LAMBSKIN, 5% GOATSKIN LEATHER. MAIN APPLICATION: 100% ACRYLIC . SOLE: 100% RUBBER . BUCKLE: 100% ZAMAK . PRODUCT REFERENCE: AA3A029A023-210",
+        "image": [
+          "https://www.maison-alaia.com/dw/image/v2/BKHJ_PRD/on/demandware.static/-/Sites-alaia-master/default/dwf87b39e7/images/all-images/AA3A029A023210/A0eG5-oES_WFm7gxp9Ng9Q_cacf9856.jpeg?sw=1250&sfrm=png&q=90",
+          "https://www.maison-alaia.com/dw/image/v2/BKHJ_PRD/on/demandware.static/-/Sites-alaia-master/default/dw557a8fa9/images/all-images/AA3A029A023210/8RNdqtisTee76Uo7CK8c5Q_b11dd270.jpeg?sw=1250&sfrm=png&q=90",
+          "https://www.maison-alaia.com/dw/image/v2/BKHJ_PRD/on/demandware.static/-/Sites-alaia-master/default/dw079ca95c/images/all-images/AA3A029A023210/PbZcJwHgQ02rQwPcg9vjDg_ace4693c.jpeg?sw=1250&sfrm=png&q=90",
+          "https://www.maison-alaia.com/dw/image/v2/BKHJ_PRD/on/demandware.static/-/Sites-alaia-master/default/dw30c2e142/images/all-images/AA3A029A023210/JVn9RD2tRpWNqF9K2Rv1sA_af6626ba.jpeg?sw=1250&sfrm=png&q=90"
+        ],
+        "url": "https://www.maison-alaia.com/en-us/product/flat-shoes/ballet-flats-in-strass-fishnet-AA3A029A023210.html",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "female"
+        },
+        "variesBy": [
+          [
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ]
+        ]
+      },
+      {
+        "@type": "OfferShippingDetails",
+        "@id": "https://www.maison-alaia.com/en-us/product/flat-shoes/ballet-flats-in-strass-fishnet-AA3A029A023210.html#shipping_policy",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      {
+        "@type": "MerchantReturnPolicy",
+        "@id": "https://www.maison-alaia.com/en-us/product/flat-shoes/ballet-flats-in-strass-fishnet-AA3A029A023210.html#return_policy",
+        "applicableCountry": "US",
+        "returnPolicyCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      }
+    ]
+  }
+]

@@ -11,3 +11,10 @@ The catalog was rebuilt from stored products while preserving historical wave de
 Massimo Dutti remains in the adapter queue; its existing official-source 403/Akamai blocker is unchanged. Luxury brands are retained in both the onboarding queue and 24S collection.
 
 Publication uses the existing `model-families/brands/` shard format. The seven original core shards and shared raw/analysis files remain byte-for-byte unchanged from main. The two new official-brand shards are appended to the manifest; the validated 4CCCCEES source snapshot is retained in `data/onboarding/validated/4ccccees.json`. Dataset rebuilds already preserve dedicated brand shards. This avoids retransmitting the 77–84 MB shared JSON files through the connector.
+
+
+## Follow-up — verified partial publication
+
+Marketplace quality failures now quarantine individual records. Transport/source coverage failures still preserve last-good. Partial publication retains previous verified products instead of deleting missing or quarantined URLs. 24S has 712 verified products in a supplemental delivery; 127 records remain in review and the UI explicitly labels the catalog partial. The supplemental snapshot is refreshed independently and the shared core catalog stays unchanged.
+
+Massimo Dutti SSR adapter collected 20/115 advertised grid records, bounded PARTIAL. The previous blanket access-block diagnosis was incorrect: the correct official SSR page works. Luxury JSON-LD/ProductGroup collectors staged 40 Alaïa and 25 Maison Margiela female footwear records, bounded PARTIAL. These three official catalogs remain unactivated pending broader coverage. `npm run collect:priority-sources` runs all three collection jobs independently. Webster collector now recovers eight opaque-title products from genuine retailer type/body evidence; live coverage 235/235 eligible. No CI check was disabled.

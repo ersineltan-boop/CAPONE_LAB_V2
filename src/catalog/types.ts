@@ -26,6 +26,7 @@ export interface CatalogSummary {
 }
 
 export interface CatalogShard {
+  coverage?: {status: "FULL" | "PARTIAL"; ready: number; pending: number};
   id: string;
   kind: "brand" | "marketplace";
   families: ModelFamily[];

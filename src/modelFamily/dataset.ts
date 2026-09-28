@@ -61,6 +61,7 @@ export function isTrackedModelFamilyDatasetPath(path: string): boolean {
   const normalized = path.replaceAll("\\", "/").replace(/^\.\//, "");
   if (normalized === MODEL_FAMILY_MONOLITH_REPO) return false;
   if (normalized === `${MODEL_FAMILY_DATASET_DIR_REPO}/manifest.json`) return true;
+  if (/^data\/multibrand\/model-families\/marketplaces\/[a-z0-9-]+\.json$/.test(normalized)) return true;
   if (/^data\/multibrand\/model-families\/brands\/[a-z0-9-]+\.json$/.test(normalized)) return true;
   return /^data\/multibrand\/model-families\/part-\d{3}\.json$/.test(normalized);
 }

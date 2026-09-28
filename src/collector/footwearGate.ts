@@ -504,6 +504,7 @@ export function evaluateFootwearProduct(input: FootwearGateInput): FootwearGateR
 }
 
 export function evaluateStoredPilotProduct(input: {
+  sourceDescription?: string;
   productName: string;
   productUrl: string;
   category: FootwearCategory | null;
@@ -544,6 +545,21 @@ export function evaluateStoredPilotProduct(input: {
       category: input.category,
       validationMethod: "STORED_PRODUCT_REVIEW",
       matchedSignals: [`stored-category-with-title:${titleSupport}`],
+    };
+  }
+
+  // Opaque names require independent physical construction evidence, not a
+  // generic "Shoes" type/tag that can be copied from collection membership.
+  const description = (input.sourceDescription ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  if (input.category === "OTHER_FOOTWEAR" &&
+      /\btoe\b/i.test(description) &&
+      /\b(?:rubber|leather) (?:out)?sole\b/i.test(description) &&
+      /\blace[- ]up\b/i.test(description)) {
+    return {
+      decision: "ACCEPT_FOOTWEAR",
+      category: "OTHER_FOOTWEAR",
+      validationMethod: "STORED_PRODUCT_REVIEW",
+      matchedSignals: ["description:toe+sole+lace-up"],
     };
   }
 

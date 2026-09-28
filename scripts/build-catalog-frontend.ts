@@ -2,6 +2,7 @@ import { mkdir, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { applyMarketplaceDeliveries, loadMarketplaceDeliveries } from "../src/collector/marketplaceDelivery";
 import { buildCatalogDelivery } from "../src/catalog/buildCatalogDelivery";
 import { buildVisualDelivery } from "../src/visual/buildVisualDelivery";
 import { loadModelFamilies, modelFamilyDatasetMtimeMs } from "../src/modelFamily/dataset";
@@ -13,6 +14,7 @@ const OUT_DIR = join(ROOT, "public", "data", "catalog");
 
 async function isFresh(): Promise<boolean> {
   try {
+    if ((await loadMarketplaceDeliveries(ROOT)).length > 0) return false;
     const familiesMtime = await modelFamilyDatasetMtimeMs();
     if (familiesMtime == null) return false;
     const [summaryStat, visualStat] = await Promise.all([
@@ -31,7 +33,8 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     return;
   }
 
-  const families = await loadModelFamilies();
+  const deliveries = await loadMarketplaceDeliveries(ROOT);
+  const families = applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
   const artifacts = buildCatalogDelivery({
     families,
     brands: loadBrandRegistry().all(),
@@ -53,6 +56,8 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     await writeFile(join(OUT_DIR, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
   for (const shard of artifacts.marketplaceShards) {
+    const delivery = deliveries.find(item => item.sourceId === shard.id);
+    if (delivery) shard.coverage = {status: delivery.report.publicationCoverage, ready: delivery.products.length, pending: delivery.quarantined.length};
     await writeFile(
       join(OUT_DIR, "marketplaces", `${shard.id}.json`),
       JSON.stringify(shard),

@@ -163,6 +163,7 @@ export function shopifyProductToPilot(
     productName: product.title,
     productUrl: canonicalProductUrl(config.baseUrl, product.handle),
     category: gate.category,
+    sourceDescription: product.body_html,
   }).decision !== "ACCEPT_FOOTWEAR") return null;
   const parsed = parseProductFieldsFromHtml(product.body_html ?? "");
   const color =

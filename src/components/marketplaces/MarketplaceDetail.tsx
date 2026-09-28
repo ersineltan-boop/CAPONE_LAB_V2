@@ -89,6 +89,9 @@ export default function MarketplaceDetail({
           ) : null}
         </div>
 
+        {state.status === "ready" && state.data.coverage?.status === "PARTIAL" ? (
+          <p className="text-xs text-ink-muted">Katalog kısmi: {state.data.coverage.ready} ürün hazır, {state.data.coverage.pending} ürün incelemede.</p>
+        ) : null}
         {state.status === "loading" ? <CatalogLoadingState /> : null}
         {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}
 

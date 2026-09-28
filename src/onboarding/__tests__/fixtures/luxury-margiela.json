@@ -1,0 +1,95 @@
+[
+  {
+    "@context": "http://schema.org/",
+    "@type": [
+      "Product",
+      "BreadcrumbList"
+    ],
+    "name": "Paint Replica sneakers",
+    "description": "The Replica sneakers in nubuck leather and velour featuring a paint splatter design. The Maison's iconic Replica sneakers are inspired by Austrian sports shoes from the seventies. Details on the Replica pairs are continually reworked in line with the season's inspirations.",
+    "mpn": "8051979988808",
+    "sku": "8051979988808",
+    "brand": {
+      "@type": "Thing",
+      "name": "MM"
+    },
+    "image": [
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dw96c51ef5/images/large/S58WS0101_P1892_961_F.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwb06e0c2f/images/large/S58WS0101_P1892_961_L.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwb23825d7/images/large/S58WS0101_P1892_961_D.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwf1dc41b2/images/large/S58WS0101_P1892_961_A.jpg"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "980.00",
+      "priceValidUntil": "eventual-expiration-date",
+      "availability": "http://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "Maison Margiela"
+    },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "/en-us/maison-margiela/women/",
+          "name": "Women"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "/en-us/maison-margiela/women/shoes/",
+          "name": "Shoes"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "/en-us/maison-margiela/women/shoes/sneakers/",
+          "name": "Sneakers"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "/en-us/maison-margiela/women/shoes/sneakers/sneakers/",
+          "name": "Sneakers"
+        }
+      }
+    ],
+    "color": "White"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "ProductGroup",
+    "name": "Paint Replica sneakers",
+    "description": "The Replica sneakers in nubuck leather and velour featuring a paint splatter design. The Maison's iconic Replica sneakers are inspired by Austrian sports shoes from the seventies. Details on the Replica pairs are continually reworked in line with the season's inspirations.",
+    "url": "https://www.maisonmargiela.com/en-us/paint-replica-sneakers-S58WS0101P1892961.html",
+    "color": "",
+    "brand": {
+      "@type": "Thing",
+      "name": "MM"
+    },
+    "image": [
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dw96c51ef5/images/large/S58WS0101_P1892_961_F.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwb06e0c2f/images/large/S58WS0101_P1892_961_L.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwb23825d7/images/large/S58WS0101_P1892_961_D.jpg",
+      "/on/demandware.static/-/Sites-margiela-master-catalog/default/dwf1dc41b2/images/large/S58WS0101_P1892_961_A.jpg"
+    ],
+    "productGroupID": "S58WS0101P1892961",
+    "pattern": "",
+    "material": "Upper: 100% Calf Leather - Lining: 100% Cotton - Contrast: 100% Calf Leather - Inside: 100% Calf Leather - Sole: 100% Rubber",
+    "variesBy": [
+      "https://schema.org/size",
+      "https://schema.org/color"
+    ]
+  }
+]
