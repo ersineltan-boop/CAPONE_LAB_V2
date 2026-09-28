@@ -1,7 +1,7 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T19:27:54.179Z",
+  "generatedAt": "2026-09-28T19:34:52.574Z",
   "totalFamilies": 16360,
   "shardCount": 28,
   "shards": [
@@ -9,11 +9,6 @@
       "file": "brands/4ccccees.json",
       "familyCount": 151,
       "bytes": 963331
-    },
-    {
-      "file": "brands/ala-a.json",
-      "familyCount": 157,
-      "bytes": 1169010
     },
     {
       "file": "brands/alexandre-birman.json",
@@ -54,11 +49,6 @@
       "file": "brands/loeffler-randall.json",
       "familyCount": 185,
       "bytes": 1123424
-    },
-    {
-      "file": "brands/maison-margiela.json",
-      "familyCount": 107,
-      "bytes": 1278429
     },
     {
       "file": "brands/mascar.json",
@@ -144,6 +134,16 @@
       "file": "part-006.json",
       "familyCount": 198,
       "bytes": 1070981
+    },
+    {
+      "file": "brands/ala-a.json",
+      "familyCount": 157,
+      "bytes": 1169010
+    },
+    {
+      "file": "brands/maison-margiela.json",
+      "familyCount": 107,
+      "bytes": 1278429
     }
   ]
 }
