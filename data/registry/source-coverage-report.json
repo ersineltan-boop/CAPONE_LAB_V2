@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:16:29.784Z",
+  "generatedAt": "2026-09-28T12:20:06.621Z",
   "entries": [
     {
       "sourceId": "schutz",
@@ -1786,6 +1786,53 @@
       ],
       "errors": [],
       "warnings": []
+    },
+    {
+      "sourceId": "nodaleto",
+      "sourceName": "NODALETO",
+      "sourceType": "BRAND_OFFICIAL",
+      "country": "Fransa",
+      "officialUrl": "https://nodaleto.com",
+      "collectorType": "CUSTOM_ADAPTER",
+      "platform": "CUSTOM_ADAPTER",
+      "footwearRoots": [],
+      "footwearRootDiscovered": false,
+      "footwearCategoryCount": 0,
+      "categoryNames": [],
+      "sourceReportedProductCount": null,
+      "observedExpectedProductCount": null,
+      "collectedProductCount": 9,
+      "rawProductUrlsDiscovered": 9,
+      "productsDiscovered": 9,
+      "uniqueProductsAfterDedupe": 9,
+      "modelFamilyCount": 9,
+      "duplicateCount": 0,
+      "estimatedCoveragePercent": null,
+      "sourceCategoryCount": 0,
+      "productsWithCategoryMembership": 0,
+      "galleryCoverage": null,
+      "pagesTraversed": null,
+      "paginationStatus": "NEEDS_PROBE",
+      "newArrivalsSourceDiscovered": false,
+      "verifiedNewProductCount": 0,
+      "verifiedNewCount": 0,
+      "collectionStatus": "NEEDS_PROBE",
+      "coverageStatus": "NEEDS_PROBE",
+      "evidence": [
+        "Pagination not proven exhausted",
+        "0 footwear collection path(s) crawled",
+        "0 / 0 products have source category membership"
+      ],
+      "limitations": [
+        "Registry status: NEEDS_PROBE",
+        "Kaynak ayakkabı kategorisi keşfedilemedi",
+        "FULL requires exhausted pagination and agreement with the source women's footwear total"
+      ],
+      "errors": [],
+      "warnings": [
+        "Registry status: NEEDS_PROBE",
+        "Kaynak ayakkabı kategorisi keşfedilemedi"
+      ]
     },
     {
       "sourceId": "neous",
