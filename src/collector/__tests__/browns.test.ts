@@ -120,7 +120,7 @@ describe("Browns marketplace collector", () => {
       expect(result.coverage.scopeExcluded).toBe(2);
       expect(result.products).toHaveLength(1);
       expect(result.coverage.baselineNewArrivals).toBe(0);
-      expect(result.coverage.periodicRefresh).toBe(false);
+      expect(result.coverage.periodicRefresh).toBe(true);
       expect(brownsPublicationBlocker(result)).toBeNull();
     });
   });
