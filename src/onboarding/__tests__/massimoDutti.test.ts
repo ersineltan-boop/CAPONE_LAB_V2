@@ -8,6 +8,14 @@ describe("Massimo official SSR adapter", () => {
     expect(mapMassimoProduct({ ...row, sectionNameEN: "MEN" }, MASSIMO_SHOES_URL, "2026-09-28")).toBeNull();
     expect(mapMassimoProduct({ ...row, locationPath: "https://example.com/boot-l123" }, MASSIMO_SHOES_URL, "2026-09-28")).toBeNull();
   });
+  it("excludes color swatches from covers and all variant galleries", () => {
+    const swatch = {...media, path: "https://static.massimodutti.net/assets/11005850800-c.png?ts=1"};
+    const product = mapMassimoProduct({...row, colors: [{name: "BLACK", medias: [swatch, {...swatch, path: "https://static.massimodutti.net/assets/11005850800-r.jpg"}, media]}]}, MASSIMO_SHOES_URL, "2026-09-28");
+    expect(product?.imageUrl).toBe(media.path);
+    expect(product?.images).toEqual([media.path]);
+    expect(product?.variants?.[0].images).toEqual([media.path]);
+    expect(mapMassimoProduct({...row, colors: [{medias: [swatch]}]}, MASSIMO_SHOES_URL, "2026-09-28")).toBeNull();
+  });
   it("keeps partial SSR coverage distinct from the full grid and never claims exhausted pagination", async () => {
     const state = { TRANSFER_PRODUCTS_WITH_IDS: { products: [row] }, TRANSFER_CATEGORY_PRODUCTS: { categoryGrid: { gridElements: [{ ccIds: [123, 456] }] } } };
     const result = await collectMassimoDuttiCatalog({ fetchText: async () => ({ ok: true, status: 200, url: MASSIMO_SHOES_URL, text: `<script id="mdfrontw-state" type="application/json">${JSON.stringify(state)}</script>` }) });
