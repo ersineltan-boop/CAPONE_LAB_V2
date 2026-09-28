@@ -73,7 +73,7 @@ describe("official Shopify storefront collector", () => {
     expect(result.evidence.acceptedFootwear).toBe(2);
     expect(result.evidence.quarantined).toBe(0);
     expect(result.evidence.baselineNewArrivals).toBe(0);
-    expect(result.evidence.periodicRefresh).toBe(false);
+    expect(result.evidence.periodicRefresh).toBe(true);
     expect(result.catalog?.families.every((family) => !family.isNew)).toBe(true);
     expect(result.catalog?.families.flatMap((family) => family.variants).every((variant) => !variant.isNew)).toBe(true);
     const images = result.catalog?.families.flatMap((family) => family.images) ?? [];

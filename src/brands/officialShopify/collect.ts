@@ -74,7 +74,7 @@ export interface OfficialBrandEvidence {
   baselineNewArrivals: 0;
   blocker: string | null;
   refreshCommand: string;
-  periodicRefresh: false;
+  periodicRefresh: true;
   lastGoodRetained?: boolean;
   note: string;
 }
@@ -405,8 +405,8 @@ export async function collectOfficialShopifyBrand(
       baselineNewArrivals: 0,
       blocker: errors.length && !full ? `${blocker}: ${errors.join("; ")}` : blocker,
       refreshCommand: target.refreshCommand ?? OFFICIAL_SHOPIFY_REFRESH_COMMAND,
-      periodicRefresh: false,
-      note: "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      periodicRefresh: true,
+      note: "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
     },
   };
 }

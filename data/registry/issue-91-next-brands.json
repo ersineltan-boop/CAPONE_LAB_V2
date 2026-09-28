@@ -1,7 +1,7 @@
 {
   "issue": 91,
   "generatedAt": "2026-09-28T12:52:13.010Z",
-  "periodicRefresh": false,
+  "periodicRefresh": true,
   "refreshCommand": "npm run collect:official-shopify-next",
   "dependsOn": "cursor/issue-91-official-brands-0302",
   "notCollected": [
@@ -35,8 +35,8 @@
       "baselineNewArrivals": 0,
       "blocker": null,
       "refreshCommand": "npm run collect:official-shopify-next",
-      "periodicRefresh": false,
-      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "periodicRefresh": true,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
       "lastGoodRetained": false
     },
     {
@@ -64,8 +64,8 @@
       "baselineNewArrivals": 0,
       "blocker": "STOREFRONT_TOTAL_UNKNOWN: shop: storefront total unavailable (404)",
       "refreshCommand": "npm run collect:official-shopify-next",
-      "periodicRefresh": false,
-      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "periodicRefresh": true,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
       "lastGoodRetained": false
     },
     {
@@ -88,8 +88,8 @@
       "baselineNewArrivals": 0,
       "blocker": null,
       "refreshCommand": "npm run collect:official-shopify-next",
-      "periodicRefresh": false,
-      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "periodicRefresh": true,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
       "lastGoodRetained": false
     },
     {
@@ -112,8 +112,8 @@
       "baselineNewArrivals": 0,
       "blocker": null,
       "refreshCommand": "npm run collect:official-shopify-next",
-      "periodicRefresh": false,
-      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "periodicRefresh": true,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
       "lastGoodRetained": false
     },
     {
@@ -136,8 +136,8 @@
       "baselineNewArrivals": 0,
       "blocker": null,
       "refreshCommand": "npm run collect:official-shopify-next",
-      "periodicRefresh": false,
-      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "periodicRefresh": true,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
       "lastGoodRetained": false
     }
   ]

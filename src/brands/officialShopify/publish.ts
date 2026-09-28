@@ -158,7 +158,7 @@ function universeEntry(previous: BrandUniverseEntry, catalog: WaveCatalog, refre
     collectionStatus: "NEEDS_CUSTOM_ADAPTER",
     footwearFocus: previous.footwearFocus ?? "WOMENS_FOOTWEAR",
     womenFootwearRelevant: true,
-    notes: `Issue 91 official storefront women's footwear. source_total=${catalog.coverage.sourceTotal}. Refresh: ${refreshCommand}. Not on the periodic brand line.`,
+    notes: `Issue 91 official storefront women's footwear. source_total=${catalog.coverage.sourceTotal}. Refresh: ${refreshCommand}. Sunday/Wednesday guarded automatic refresh.`,
     collectionUrl: `${base}${catalog.catalogPaths[0] ?? ""}`,
     collectionPaths: catalog.catalogPaths,
     footwearCollectionUrls: catalog.catalogPaths.map((path) => `${base}${path}`),

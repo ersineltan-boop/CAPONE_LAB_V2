@@ -63,7 +63,7 @@ for (const target of OFFICIAL_SHOPIFY_BRAND_TARGETS) {
       baselineNewArrivals: 0,
       blocker: message,
       refreshCommand: "npm run collect:official-shopify",
-      periodicRefresh: false,
+      periodicRefresh: true,
       note: "Collector failed before a catalog was written. Existing catalog data was not replaced.",
     });
     process.stdout.write(`${target.slug} FAILED ${message}\n`);
@@ -73,7 +73,7 @@ for (const target of OFFICIAL_SHOPIFY_BRAND_TARGETS) {
 const report = {
   issue: 91,
   generatedAt: now,
-  periodicRefresh: false,
+  periodicRefresh: true,
   refreshCommand: "npm run collect:official-shopify",
   published,
   brands: evidence,
