@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T10:39:39.773Z",
+  "generatedAt": "2026-09-28T18:25:27.723Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -9373,6 +9373,21 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "nodaleto",
+      "brandName": "NODALETO",
+      "modelFamilyCount": 9,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "neous",
       "brandName": "NEOUS",
       "modelFamilyCount": 32,
@@ -9593,6 +9608,23 @@
         "https://www.neous.co.uk/collections/spring-summer-26-shoes",
         "https://www.neous.co.uk/collections/summer-flats",
         "https://www.neous.co.uk/collections/summer-nights-shoes"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "yuul-yie",
+      "brandName": "YUUL YIE",
+      "modelFamilyCount": 43,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://yuulyie.com/collections/shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -12473,6 +12505,60 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "isabel-marant",
+      "brandName": "ISABEL MARANT",
+      "modelFamilyCount": 53,
+      "sourceProductCount": 8,
+      "sourceFootwearCategoryCount": 5,
+      "categories": [
+        {
+          "categoryId": "shoes",
+          "categoryName": "Shoes",
+          "categoryPath": "/uk/shopping/women/shoes-1/items.aspx",
+          "productCount": 3,
+          "generic": true
+        },
+        {
+          "categoryId": "trainers",
+          "categoryName": "Trainers",
+          "categoryPath": "/uk/shopping/women/trainers-1/items.aspx",
+          "productCount": 3,
+          "generic": false
+        },
+        {
+          "categoryId": "boots",
+          "categoryName": "Boots",
+          "categoryPath": "/women/shoes/boots",
+          "productCount": 2,
+          "generic": false
+        },
+        {
+          "categoryId": "slippers",
+          "categoryName": "Slippers",
+          "categoryPath": "/women/shoes/slippers",
+          "productCount": 1,
+          "generic": false
+        },
+        {
+          "categoryId": "sneakers",
+          "categoryName": "Sneakers",
+          "categoryPath": "/women/shoes/sneakers",
+          "productCount": 1,
+          "generic": false
+        }
+      ],
+      "productsWithMeaningfulCategory": 7,
+      "productsWithNoMeaningfulCategory": 1,
+      "categoryCoveragePercent": 87.5,
+      "productsOnlyGenericCategory": 1,
+      "collectionUrlsCrawled": [
+        "https://isabelmarant.com/en/collections/shoes-all",
+        "https://www.isabelmarant.com/en/collections/shoes-all"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "cecilie-bahnsen",
       "brandName": "CECILIE BAHNSEN",
       "modelFamilyCount": 28,
@@ -12755,6 +12841,59 @@
         "https://aminamuaddi.com/collections/slipper",
         "https://aminamuaddi.com/collections/view-all-shoes",
         "https://aminamuaddi.com/collections/vittoria-slipper"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "le-silla",
+      "brandName": "LE SILLA",
+      "modelFamilyCount": 121,
+      "sourceProductCount": 11,
+      "sourceFootwearCategoryCount": 5,
+      "categories": [
+        {
+          "categoryId": "pumps",
+          "categoryName": "Pumps",
+          "categoryPath": "/uk/shopping/women/pumps-1/items.aspx",
+          "productCount": 6,
+          "generic": false
+        },
+        {
+          "categoryId": "boots",
+          "categoryName": "Boots",
+          "categoryPath": "/women/shoes/boots",
+          "productCount": 2,
+          "generic": false
+        },
+        {
+          "categoryId": "mules",
+          "categoryName": "Mules",
+          "categoryPath": "/uk/shopping/women/mules-1/items.aspx",
+          "productCount": 1,
+          "generic": false
+        },
+        {
+          "categoryId": "sandals",
+          "categoryName": "Sandals",
+          "categoryPath": "/uk/shopping/women/sandals-1/items.aspx",
+          "productCount": 1,
+          "generic": false
+        },
+        {
+          "categoryId": "shoes",
+          "categoryName": "Shoes",
+          "categoryPath": "/women/shoes.html",
+          "productCount": 1,
+          "generic": true
+        }
+      ],
+      "productsWithMeaningfulCategory": 10,
+      "productsWithNoMeaningfulCategory": 1,
+      "categoryCoveragePercent": 90.9,
+      "productsOnlyGenericCategory": 1,
+      "collectionUrlsCrawled": [
+        "https://www.lesilla.com/collections/shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
@@ -15926,6 +16065,99 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "repetto",
+      "brandName": "REPETTO",
+      "modelFamilyCount": 58,
+      "sourceProductCount": 1,
+      "sourceFootwearCategoryCount": 1,
+      "categories": [
+        {
+          "categoryId": "mules",
+          "categoryName": "Mules",
+          "categoryPath": "/uk/shopping/women/mules-1/items.aspx",
+          "productCount": 1,
+          "generic": false
+        }
+      ],
+      "productsWithMeaningfulCategory": 1,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 100,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.repetto.com/collections/catalogue-femme-chaussures"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "k-jacques",
+      "brandName": "K.JACQUES",
+      "modelFamilyCount": 115,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.kjacques.fr/collections/sandale-tropezienne-femme"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "rouje",
+      "brandName": "ROUJE",
+      "modelFamilyCount": 31,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.rouje.com/collections/shoes"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "pretty-ballerinas",
+      "brandName": "PRETTY BALLERINAS",
+      "modelFamilyCount": 183,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.prettyballerinas.com/collections/collection"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "mascar",
+      "brandName": "MASCARÓ",
+      "modelFamilyCount": 145,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.mascaro.com/collections/collection"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "naguisa",
       "brandName": "NAGUISA",
       "modelFamilyCount": 108,
@@ -16937,6 +17169,24 @@
         "https://www.ancient-greek-sandals.com/collections/wedges",
         "https://www.ancient-greek-sandals.com/collections/women-sandals-full-price",
         "https://www.ancient-greek-sandals.com/collections/womens-sandals"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "fly-london",
+      "brandName": "FLY LONDON",
+      "modelFamilyCount": 975,
+      "sourceProductCount": 0,
+      "sourceFootwearCategoryCount": 0,
+      "categories": [],
+      "productsWithMeaningfulCategory": 0,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 0,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://shop-eu.flylondon.com/collections/women-all-footwear",
+        "https://www.flylondon.com/collections/women-all-footwear"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
