@@ -1,0 +1,112 @@
+# Sunday/Wednesday 12:00 Türkiye time (09:00 UTC).
+name: CAPONE Massimo and luxury refresh
+
+on:
+  schedule:
+    - cron: "0 9 * * 0,3"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: capone-catalog-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Collect three partial priority brands and retain blocked sources
+        id: collect
+        run: npx tsx scripts/refresh-priority-sources.ts
+      - name: Full tests
+        run: npm test
+      - name: Production build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+
+      - name: Stage accepted sources only
+        id: stage
+        env:
+          ACCEPTED: ${{ steps.collect.outputs.accepted_sources }}
+        run: |
+          set -euo pipefail
+          if [[ -n "$ACCEPTED" ]]; then
+            IFS=',' read -ra ids <<< "$ACCEPTED"
+            for id in "${ids[@]}"; do
+              case "$id" in
+                massimo-dutti) snapshot="massimo-dutti" ;;
+                ala-a|maison-margiela) snapshot="luxury-${id}" ;;
+                *) echo "Unknown accepted source: $id" >&2; exit 1 ;;
+              esac
+              git add -- "data/onboarding/validated/${snapshot}.json" "data/multibrand/model-families/brands/${id}.json"
+            done
+            git add -- \
+              data/multibrand/model-families/manifest.json \
+              data/registry/priority-brand-coverage.json \
+              data/registry/brand-universe.json \
+              data/registry/brand-universe-report.json \
+              src/registry/data/brands.ts
+          fi
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish guarded priority refresh
+        if: steps.stage.outputs.data_changed == 'true' && inputs.dry_run != true
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/priority-sources-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh verified Massimo and luxury sources"
+          AUTOMATION_PR_TITLE: "chore(data): guarded priority brands refresh"
+          AUTOMATION_PR_BODY: "Massimo Dutti, Alaïa and Maison Margiela partial catalogs; fresh count, errors, last-good, tests, build and exact-head Vercel Preview guarded. Blocked sources keep last-good. No FULL claim."
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/publish-validated-automation-pr.sh
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: priority-refresh-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: data/onboarding/staging/priority-refresh/report.json
+      - name: Summary
+        if: always()
+        env:
+          ACCEPTED: ${{ steps.collect.outputs.accepted_sources }}
+          PRESERVED: ${{ steps.collect.outputs.preserved_sources }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+        run: |
+          {
+            echo "## Partial priority catalogs"
+            echo "- Accepted: ${ACCEPTED:-none}"
+            echo "- Last-good preserved: ${PRESERVED:-none}"
+            echo "- Guarded PR: ${PR_URL:-none}"
+            echo "- FULL claims: none"
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -14,7 +14,8 @@ const manifest=await read(manifestPath);
 const coverage:Record<string,unknown>=await read('data/registry/priority-brand-coverage.json').catch((error)=>{if(error.code==='ENOENT')return {};throw error;});
 const requested=process.argv.slice(2);
 if(requested.some(id=>!universe.brands.some((b:any)=>b.id===id)))throw new Error('Unknown brand');
-const targets=requested.length?requested.map(id=>[id,`expansion-${id}`]):[['massimo-dutti','massimo-dutti'],['ala-a','luxury-ala-a'],['maison-margiela','luxury-maison-margiela']];
+const priorityFiles:Record<string,string>={'massimo-dutti':'massimo-dutti','ala-a':'luxury-ala-a','maison-margiela':'luxury-maison-margiela'};
+const targets=requested.length?requested.map(id=>[id,priorityFiles[id]??`expansion-${id}`]):Object.entries(priorityFiles);
 for(const [id,file] of targets){
  const snapshot=await read(`data/onboarding/validated/${file}.json`);
  const rejected=new Set(auditFootwearLeakage(snapshot.products));
