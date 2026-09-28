@@ -503,7 +503,7 @@ export function parseFreePeoplePiniaCategory(
     }
   } else {
     const key = String(onlyPage);
-    tiles.push(...tilesFromPage(pages[key] ?? pages[String(category?.currentPage ?? onlyPage)]));
+    tiles.push(...tilesFromPage(pages[key]));
   }
   const collectionPath = category?.slug ? `/${category.slug}/` : "/shoes/";
   return parseFreePeopleTiles(tiles, {

@@ -99,6 +99,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
 
   if (sourceId === FREE_PEOPLE_ID) {
     const result = await collectFreePeopleWithBrowser({ headless: true, allowHeadedRetry: false });
+    await writeJson(join(ARTIFACT_DIR, "free-people-collection-diagnostics.json"), {...result, products: undefined});
     const excluded = excludedCount(result.products);
     const full =
       result.status === "COLLECTED" &&
@@ -221,6 +222,7 @@ async function main(): Promise<void> {
     await appendFile(process.env.GITHUB_OUTPUT, `preserved_sources=${report.preservedSources.join(",")}\n`, "utf8");
   }
   console.log(JSON.stringify(report, null, 2));
+  if (!report.acceptedSources.length) throw new Error("NO_UPDATE: every source preserved last-good; no marketplace refresh was accepted.");
 }
 
 main().catch((error) => {

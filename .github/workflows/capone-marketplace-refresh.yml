@@ -2,6 +2,12 @@
 name: CAPONE marketplace refresh
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/capone-marketplace-refresh.yml"
+      - "src/collector/freePeople*.ts"
+      - "scripts/refresh-marketplaces-automated.ts"
   schedule:
     - cron: "30 5 * * *"
   workflow_dispatch:
@@ -56,13 +62,8 @@ jobs:
           CAPONE_AUTHORITATIVE_MARKETPLACE_SOURCES: ${{ steps.collect.outputs.accepted_sources }}
         run: |
           set -euo pipefail
-          cp data/multibrand/model-families/part-006.json /tmp/marketplace-part-006.json
-          cp data/multibrand/model-families/part-007.json /tmp/marketplace-part-007.json
           npm run analyze:multibrand
           npm run build:model-families
-          cp /tmp/marketplace-part-006.json data/multibrand/model-families/part-006.json
-          cp /tmp/marketplace-part-007.json data/multibrand/model-families/part-007.json
-          npx tsx scripts/link-wave50-delivery.ts
           npm run source:coverage
           npm run taxonomy:qa
       - name: Full tests
@@ -119,9 +120,9 @@ jobs:
         run: |
           {
             echo "## CAPONE marketplace automation"
-            echo "- Approved: Level Shoes, Farfetch, Free People, The Webster"
+            echo "- Approved: Level Shoes, Farfetch, Free People, The Webster, 24S"
             echo "- Discovery: disabled"
-            echo "- FULL proposal: ${ACCEPTED:-none}"
+            echo "- Validated proposal: ${ACCEPTED:-none}"
             echo "- Last-good preserved: ${PRESERVED:-none}"
             echo "- Guarded PR: ${PR_URL:-none}"
             echo "- Automatically merged: ${MERGED:-false}"

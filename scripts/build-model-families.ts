@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, unlink, rename } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { retainHistoricalWaveDelivery } from "../src/onboarding/activate";
 import { buildModelFamilies } from "../src/modelFamily/buildFamilies";
 import { loadModelFamilies, writeModelFamilies } from "../src/modelFamily/dataset";
 import type { RawAnalyzedProduct } from "../src/modelFamily/types";
@@ -84,7 +85,7 @@ const authoritativeMarketplaceSources = (
     }
     return { sourceId, origin: new URL(entry.officialUrl).origin };
   });
-const manifest = await writeModelFamilies(families, { authoritativeMarketplaceSources });
+const manifest = await writeModelFamilies(await retainHistoricalWaveDelivery(ROOT, families), { authoritativeMarketplaceSources });
 await writeWithRetry(reportPath, JSON.stringify(report, null, 2));
 
 console.log("\n=== CAPONE LAB Model Family Deduplication ===");

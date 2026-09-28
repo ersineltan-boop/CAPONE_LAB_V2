@@ -108,8 +108,7 @@ export async function collectFreePeopleWithBrowser(options?: {
 
   const launchOptions = {
     headless: options?.headless !== false,
-    ignoreDefaultArgs: ["--enable-automation"],
-    args: ["--disable-blink-features=AutomationControlled", "--disable-dev-shm-usage"],
+    args: ["--disable-dev-shm-usage"],
   };
   let browser;
   try {
@@ -125,9 +124,6 @@ export async function collectFreePeopleWithBrowser(options?: {
     serviceWorkers: "block",
   });
   const page = await context.newPage();
-  await page.addInitScript(() => {
-    Object.defineProperty(navigator, "webdriver", { get: () => undefined });
-  });
 
   try {
     for (let pageNum = startPage; pageNum <= Math.min(maxPages, totalPages); pageNum += 1) {
@@ -184,13 +180,13 @@ export async function collectFreePeopleWithBrowser(options?: {
         {
           discoveredAt,
           collectionUrl: FREE_PEOPLE_SHOES_URL,
-          onlyPage: "all",
+          onlyPage: pageNum,
         },
       );
 
       let parsed = piniaParsed;
       const reportedCurrentPage = piniaCategory?.currentPage ?? null;
-      if (pageNum > 1 && reportedCurrentPage !== pageNum) {
+      if (pageNum > 1 && !piniaCategory?.pages?.[String(pageNum)] && reportedCurrentPage !== pageNum) {
         const htmlParsed = parseFreePeopleJsonLd(html, {
           discoveredAt,
           collectionUrl: FREE_PEOPLE_SHOES_URL,
@@ -260,7 +256,7 @@ export async function collectFreePeopleWithBrowser(options?: {
     products.length < Math.floor(sourceReported * 0.5);
 
   if (
-    (products.length === 0 || incomplete) &&
+    !blocked && (products.length === 0 || incomplete) &&
     options?.headless !== false &&
     options?.allowHeadedRetry !== false
   ) {
@@ -282,7 +278,7 @@ export async function collectFreePeopleWithBrowser(options?: {
     errors,
     pagesVisited,
     stats,
-    paginationExhausted: !blocked && stats.totalPages != null && pagesVisited >= stats.totalPages,
+    paginationExhausted: !blocked && errors.length === 0 && stats.totalPages != null && pagesVisited >= stats.totalPages,
     sourceReportedProductCount: sourceReported,
   };
 }
