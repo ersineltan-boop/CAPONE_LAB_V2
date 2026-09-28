@@ -1,5 +1,6 @@
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+const SOURCE_REQUEST_TIMEOUT_MS = 15_000;
 
 export async function sleep(ms: number): Promise<void> {
   await new Promise((resolve) => setTimeout(resolve, ms));
@@ -19,6 +20,7 @@ export async function fetchText(
         ...options?.headers,
       },
       redirect: "follow",
+      signal: AbortSignal.timeout(SOURCE_REQUEST_TIMEOUT_MS),
     });
 
     const text = await response.text();
@@ -56,6 +58,7 @@ export async function fetchJsonPost<T>(
       },
       body: JSON.stringify(body),
       redirect: "follow",
+      signal: AbortSignal.timeout(SOURCE_REQUEST_TIMEOUT_MS),
     });
     const text = await response.text();
     if (!response.ok) {
