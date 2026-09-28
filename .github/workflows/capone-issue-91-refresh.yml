@@ -1,0 +1,123 @@
+# Sunday/Wednesday 11:00 Türkiye time (08:00 UTC).
+# The shared catalog queue serializes this with the existing refresh jobs.
+name: CAPONE new sources refresh
+
+on:
+  schedule:
+    - cron: "0 8 * * 0,3"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Collect and validate without publishing"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: capone-catalog-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout last-good main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Refresh five official brand catalogs
+        run: npm run collect:official-shopify
+      - name: Refresh four more official brand catalogs
+        run: npm run collect:official-shopify-next
+      - name: Refresh Browns women’s catalog
+        id: browns
+        continue-on-error: true
+        run: npm run collect:browns
+
+      - name: Verify last-good retention for all ten sources
+        run: npx tsx scripts/verify-issue-91-refresh.ts
+      - name: Full tests
+        run: npm test
+      - name: Production build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+
+      - name: Stage only validated source data
+        id: stage
+        run: |
+          set -euo pipefail
+          for id in isabel-marant yuul-yie le-silla k-jacques fly-london pretty-ballerinas mascar rouje repetto; do
+            git add -- "data/brands/wave50/last-good/${id}.json" "data/multibrand/model-families/brands/${id}.json"
+          done
+          git add -- \
+            data/multibrand/model-families/marketplaces/browns.json \
+            data/multibrand/model-families/manifest.json \
+            data/registry/marketplace-pilot.json \
+            data/registry/brand-universe.json \
+            data/registry/brand-universe-report.json \
+            src/registry/data/brands.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish validated refresh through PR and Vercel preview
+        if: steps.stage.outputs.data_changed == 'true' && inputs.dry_run != true
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/issue-91-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh nine official brands and Browns"
+          AUTOMATION_PR_TITLE: "chore(data): guarded new-source refresh"
+          AUTOMATION_PR_BODY: "Nine official brand collections and Browns; storefront totals, pagination, taxonomy, last-good model retention, full tests, production build and Vercel preview are checked before merge. Partial/blocked sources keep last-good."
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/publish-validated-automation-pr.sh
+
+      - name: Audit and summary
+        if: always()
+        env:
+          BROWNS_OUTCOME: ${{ steps.browns.outcome }}
+          DATA_CHANGED: ${{ steps.stage.outputs.data_changed }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+          MERGED: ${{ steps.publish.outputs.merged }}
+        run: |
+          {
+            echo "## New-source refresh"
+            echo "- Schedule: Sunday and Wednesday 11:00 Türkiye time"
+            echo "- Browns collection: ${BROWNS_OUTCOME:-not run}"
+            echo "- Validated data changed: ${DATA_CHANGED:-false}"
+            echo "- Guarded PR: ${PR_URL:-none}"
+            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Failed sources retain published last-good"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload source coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-source-refresh-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            data/registry/issue-91-brand-connections.json
+            data/registry/issue-91-next-brands.json
+            data/registry/issue-91-browns-marketplace.json
