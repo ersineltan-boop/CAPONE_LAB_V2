@@ -63,7 +63,7 @@ for (const target of NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS) {
       baselineNewArrivals: 0,
       blocker: message,
       refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
-      periodicRefresh: false,
+      periodicRefresh: true,
       note: "Collector failed before a catalog was written. Existing catalog data was not replaced.",
     });
     process.stdout.write(`${target.slug} FAILED ${error instanceof Error ? error.stack ?? message : message}\n`);
@@ -73,7 +73,7 @@ for (const target of NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS) {
 const report = {
   issue: 91,
   generatedAt: now,
-  periodicRefresh: false,
+  periodicRefresh: true,
   refreshCommand: NEXT_OFFICIAL_SHOPIFY_REFRESH_COMMAND,
   dependsOn: "cursor/issue-91-official-brands-0302",
   notCollected: [

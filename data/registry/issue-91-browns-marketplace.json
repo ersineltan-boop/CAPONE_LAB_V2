@@ -21,9 +21,9 @@
   "paginationExhausted": true,
   "baselineNewArrivals": 0,
   "refreshCommand": "npm run collect:browns",
-  "periodicRefresh": false,
+  "periodicRefresh": true,
   "blocker": "Browns collection reconciled at 2649, with 2 product(s) held out of the catalog",
-  "note": "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is not on the periodic marketplace refresh line.",
+  "note": "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is on the guarded Sunday/Wednesday new-source refresh.",
   "published": true,
   "publishReason": null,
   "quarantinedSample": [

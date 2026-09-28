@@ -90,7 +90,7 @@ export interface BrownsCoverage {
   paginationExhausted: boolean;
   baselineNewArrivals: number;
   refreshCommand: typeof BROWNS_REFRESH_COMMAND;
-  periodicRefresh: false;
+  periodicRefresh: true;
   blocker: string | null;
   note: string;
 }
@@ -391,9 +391,9 @@ export async function collectBrowns(options?: {
       paginationExhausted,
       baselineNewArrivals,
       refreshCommand: BROWNS_REFRESH_COMMAND,
-      periodicRefresh: false,
+      periodicRefresh: true,
       blocker,
-      note: "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is not on the periodic marketplace refresh line.",
+      note: "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is on the guarded Sunday/Wednesday new-source refresh.",
     },
   };
 }
@@ -514,7 +514,7 @@ export async function publishBrownsCatalog(
   const ids = new Set(pilot.activeMarketplaceIds ?? []);
   ids.add(BROWNS_ID);
   pilot.activeMarketplaceIds = [...ids];
-  const note = "Browns women's designer shoes are collected from the public Shopify catalog and are not on the periodic marketplace refresh line.";
+  const note = "Browns women's designer shoes are collected from the public Shopify catalog and are on the guarded Sunday/Wednesday new-source refresh.";
   if (!pilot.notes?.includes("Browns women's designer shoes")) {
     pilot.notes = pilot.notes ? `${pilot.notes} ${note}` : note;
   }
