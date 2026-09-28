@@ -25,6 +25,7 @@ on:
 
 concurrency:
   group: capone-catalog-automation
+  queue: max
   cancel-in-progress: false
 
 permissions:
