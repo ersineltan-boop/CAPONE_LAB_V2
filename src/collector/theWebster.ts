@@ -117,6 +117,23 @@ export function parseTheWebsterSourceTotal(html: string): number | null {
   return totals.includes(0) ? 0 : null;
 }
 
+// Shopify migration records frequently replace the real type with Migration_Size.
+// Recover only explicit retailer category tags or description statements; never
+// infer a footwear type from collection membership alone.
+export function extractTheWebsterFootwearType(raw: TheWebsterRawProduct): string | null {
+  const tags = Array.isArray(raw.tags) ? raw.tags : (raw.tags ?? "").split(",");
+  const types = tags.map((tag) => tag.replace(/^product_type_merchandise:/i, "").trim());
+  for (const type of types) {
+    if (/^slingbacks?$/i.test(type)) return "Slingback";
+    if (/^ballet flats?$/i.test(type)) return "Ballet Flats";
+    if (/^moccasins?$/i.test(type)) return "Loafers";
+  }
+  const description = (raw.body_html ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  if (/\bsneakers?\b/i.test(description)) return "Sneaker";
+  if (/\btoe\b/i.test(description) && /\b(?:rubber|leather) (?:out)?sole\b/i.test(description) && /\blace[- ]up\b/i.test(description)) return "Footwear";
+  return null;
+}
+
 export function theWebsterRawProductToPilot(
   raw: TheWebsterRawProduct,
   discoveredAt: string,
@@ -135,7 +152,7 @@ export function theWebsterRawProductToPilot(
   };
 
   const product = shopifyProductToPilot(
-    raw,
+    { ...raw, product_type: extractTheWebsterFootwearType(raw) ?? raw.product_type },
     config,
     discoveredAt,
     THE_WEBSTER_WOMEN_SHOES_PATH,
@@ -148,6 +165,7 @@ export function theWebsterRawProductToPilot(
   return {
     ...product,
     source: THE_WEBSTER_ID,
+    sourceProductType: raw.product_type ?? "",
     brand: vendor,
     color: vendorColor ?? (isTheWebsterSizeValue(product.color) ? null : product.color),
     isNewArrivalsCollection: false,

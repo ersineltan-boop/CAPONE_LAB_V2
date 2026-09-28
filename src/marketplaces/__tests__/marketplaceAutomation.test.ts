@@ -53,6 +53,24 @@ function candidate(overrides: Partial<MarketplaceRefreshCandidate> = {}): Market
 }
 
 describe("marketplace automation gate", () => {
+  it("publishes verified rows and quarantines unclassified rows without dropping last-good", () => {
+    const good = product({productUrl: "https://example.com/good"});
+    const pending = product({productUrl: "https://example.com/pending", category: "OTHER_FOOTWEAR"});
+    const previous = product({productUrl: pending.productUrl});
+    const decision = evaluateMarketplaceCandidate({candidate: candidate({products:[good,pending]}), previousLastGood:[previous]});
+    expect(decision.report.accepted).toBe(true);
+    expect(decision.report.publicationCoverage).toBe("PARTIAL");
+    expect(decision.quarantined).toHaveLength(1);
+    expect(decision.eligibleProducts).toEqual([good]);
+    const merged = replaceVerifiedMarketplaceCatalog({existing:[previous], sourceId:"the-webster", verified:decision.eligibleProducts, preserveMissing:true});
+    expect(merged).toContainEqual(previous);
+    expect(merged).toContainEqual(good);
+  });
+  it("still rejects interrupted collection even with some valid products", () => {
+    const decision = evaluateMarketplaceCandidate({candidate:candidate({products:[product(),product({productUrl:"https://example.com/pending",category:null})], errors:["timeout"],paginationExhausted:false}),previousLastGood:[]});
+    expect(decision.report.accepted).toBe(false);
+  });
+
   it("accepts exact FULL coverage with images, taxonomy and hidden prices", () => {
     const decision = evaluateMarketplaceCandidate({
       candidate: candidate(),

@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-27T17:32:56.998Z",
-  "totalFamilies": 13015,
-  "shardCount": 7,
+  "generatedAt": "2026-09-28T07:16:25.184Z",
+  "totalFamilies": 13572,
+  "shardCount": 9,
   "shards": [
     {
       "file": "part-000.json",
@@ -39,6 +39,16 @@
       "file": "part-006.json",
       "familyCount": 187,
       "bytes": 1009533
+    },
+    {
+      "file": "brands/alexandre-birman.json",
+      "familyCount": 406,
+      "bytes": 2776530
+    },
+    {
+      "file": "brands/4ccccees.json",
+      "familyCount": 151,
+      "bytes": 865899
     }
   ]
 }

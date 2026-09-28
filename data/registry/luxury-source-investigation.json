@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-09-28T07:34:12.979877+00:00",
+  "method": "Public robots.txt, advertised sitemap and public product-page GET; no private APIs or access-control bypass",
+  "activationStatus": "NOT_ACTIVATED",
+  "implementation": "src/onboarding/luxuryStructured.ts",
+  "tests": "5 fixture-based parser/collector tests passed",
+  "sources": [
+    {
+      "slug": "maison-margiela",
+      "robotsUrl": "https://www.maisonmargiela.com/robots.txt",
+      "robotsStatus": 200,
+      "sitemapIndexUrl": "https://www.maisonmargiela.com/en-us/sitemap_index.xml",
+      "sitemapStatus": 200,
+      "verifiedProductSitemapUrl": "https://www.maisonmargiela.com/en-us/sitemap_0-product.xml",
+      "sitemapUrlCount": 1543,
+      "englishUsFootwearCandidateUrls": 234,
+      "candidateCountsAreNotVerifiedWomensProducts": true,
+      "sampleProductUrl": "https://www.maisonmargiela.com/en-us/paint-replica-sneakers-S58WS0101P1892961.html",
+      "sampleProductStatus": 200,
+      "verifiedSchema": "ProductGroup plus breadcrumb/audience evidence",
+      "status": "PARTIAL_STAGING_COLLECTED",
+      "nextStep": "Review staged female footwear, integrate onboarding validation/activation; optionally run --full for discovered candidates. No live activation performed.",
+      "stagingFile": "data/onboarding/validated/luxury-maison-margiela.json",
+      "coverage": {
+        "status": "PARTIAL",
+        "activated": false,
+        "sourceReportedWomensFootwearTotal": null,
+        "discoveredCandidateUrls": 303,
+        "attemptedPages": 40,
+        "successfulPages": 40,
+        "excludedOrUnparsedPages": 15,
+        "acceptedFemaleFootwearProducts": 25,
+        "bounded": true,
+        "sitemapTraversalExhausted": true,
+        "sitemapsVisited": [
+          "https://www.maisonmargiela.com/en-us/sitemap_index.xml",
+          "https://www.maisonmargiela.com/en-us/sitemap_0-product.xml",
+          "https://www.maisonmargiela.com/en-us/sitemap_1-category.xml",
+          "https://www.maisonmargiela.com/en-us/sitemap_2.xml",
+          "https://www.maisonmargiela.com/en-us/sitemap-en-us.xml"
+        ],
+        "note": "Staging only. Candidate URL discovery is heuristic; source womens footwear total is unknown. Exclusions include male/unknown audience and unparsed schema. Full mode exhausts discovered candidates, not a completeness guarantee.",
+        "errors": []
+      }
+    },
+    {
+      "slug": "ala-a",
+      "robotsUrl": "https://www.maison-alaia.com/robots.txt",
+      "robotsStatus": 200,
+      "sitemapIndexUrl": "https://www.maison-alaia.com/en-us/sitemap_index.xml",
+      "sitemapStatus": 200,
+      "verifiedProductSitemapUrl": "https://www.maison-alaia.com/en-us/sitemap_0.xml",
+      "sitemapUrlCount": 3726,
+      "englishUsFootwearCandidateUrls": 215,
+      "candidateCountsAreNotVerifiedWomensProducts": true,
+      "sampleProductUrl": "https://www.maison-alaia.com/en-us/product/flat-shoes/ballet-flats-in-strass-fishnet-AA3A029A023210.html",
+      "sampleProductStatus": 200,
+      "verifiedSchema": "ProductGroup plus breadcrumb/audience evidence",
+      "status": "PARTIAL_STAGING_COLLECTED",
+      "nextStep": "Review staged female footwear, integrate onboarding validation/activation; optionally run --full for discovered candidates. No live activation performed.",
+      "stagingFile": "data/onboarding/validated/luxury-ala-a.json",
+      "coverage": {
+        "status": "PARTIAL",
+        "activated": false,
+        "sourceReportedWomensFootwearTotal": null,
+        "discoveredCandidateUrls": 216,
+        "attemptedPages": 40,
+        "successfulPages": 40,
+        "excludedOrUnparsedPages": 0,
+        "acceptedFemaleFootwearProducts": 40,
+        "bounded": true,
+        "sitemapTraversalExhausted": true,
+        "sitemapsVisited": [
+          "https://www.maison-alaia.com/en-us/sitemap_index.xml",
+          "https://www.maison-alaia.com/en-us/sitemap_0.xml",
+          "https://www.maison-alaia.com/en-us/sitemap_1.xml"
+        ],
+        "note": "Staging only. Candidate URL discovery is heuristic; source womens footwear total is unknown. Exclusions include male/unknown audience and unparsed schema. Full mode exhausts discovered candidates, not a completeness guarantee.",
+        "errors": []
+      }
+    },
+    {
+      "slug": "acne-studios",
+      "robotsUrl": "https://www.acnestudios.com/robots.txt",
+      "robotsStatus": 200,
+      "sitemapIndexUrl": "https://www.acnestudios.com/sitemap_index.xml",
+      "sitemapStatus": 200,
+      "sampleSitemapUrl": "https://www.acnestudios.com/sitemap_1.xml",
+      "sampleSitemapStatus": 200,
+      "sampleSitemapBytes": 6517332,
+      "status": "PUBLIC_SITEMAP_ACCESSIBLE_PRODUCT_SCHEMA_NOT_VERIFIED",
+      "nextStep": "Select a single locale and locate product-bearing sitemap partition. First sampled sitemap contained category URLs and large alternate-language sets, so do not crawl every locale or activate yet."
+    }
+  ],
+  "collector": "src/onboarding/luxuryCollector.ts",
+  "command": "NODE_USE_ENV_PROXY=1 node --import tsx scripts/collect-luxury-staging.ts --limit=40",
+  "fullCommand": "NODE_USE_ENV_PROXY=1 node --import tsx scripts/collect-luxury-staging.ts --full",
+  "fullModeCaveat": "Exhausts discovered URL candidates, not a full-catalog completeness claim."
+}

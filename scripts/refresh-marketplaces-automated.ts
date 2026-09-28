@@ -3,6 +3,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { collectFarfetch, FARFETCH_ID } from "../src/collector/farfetch";
+import { publishMarketplaceDelivery } from "../src/collector/marketplaceDelivery";
+import { collect24S } from "../src/collector/twentyFourS";
 import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
 import { collectFreePeopleWithBrowser } from "../src/collector/freePeopleBrowser";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../src/collector/levelShoes";
@@ -52,6 +54,18 @@ function excludedCount(products: readonly PilotProduct[]): number {
 }
 
 async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<MarketplaceRefreshCandidate> {
+  if (sourceId === '24s') {
+    const result = await collect24S();
+    return {
+      sourceId, products: result.products,
+      coverageStatus: result.coverage.status as MarketplaceRefreshCandidate['coverageStatus'],
+      sourceTotal: result.coverage.sourceReportedProductCount,
+      rawCollected: result.coverage.rawProductCount,
+      eligibleTotal: result.coverage.acceptedProductCount - excludedCount(result.products),
+      paginationExhausted: result.coverage.pagesTraversed === result.coverage.expectedPages,
+      errors: result.coverage.errors,
+    };
+  }
   if (sourceId === LEVEL_SHOES_ID) {
     const result = await collectLevelShoes({ maxPagesPerListing: 80, enrichDetails: false });
     const excluded = excludedCount(result.products);
@@ -138,6 +152,7 @@ async function main(): Promise<void> {
   const originalBody = await readFile(PRODUCTS_PATH, "utf8");
   let catalog = JSON.parse(originalBody) as PilotProduct[];
   const gates: MarketplaceGateReport[] = [];
+  let supplementalChanged = false;
 
   await mkdir(ARTIFACT_DIR, { recursive: true });
   console.log("=== CAPONE approved marketplace refresh ===");
@@ -152,28 +167,39 @@ async function main(): Promise<void> {
     } catch (error) {
       candidate = failedCandidate(sourceId, error);
     }
+    if (sourceId === "24s") {
+      const decision = await publishMarketplaceDelivery(ROOT, candidate, "https://www.24s.com");
+      gates.push(decision.report);
+      await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
+      await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
+      supplementalChanged ||= decision.report.accepted;
+      continue;
+    }
     // Intentionally use the current in-run catalog. A source accepted earlier
     // in this loop owns its URLs before the next source reaches the gate.
     const decision = evaluateMarketplaceCandidate({ candidate, previousLastGood: catalog });
     gates.push(decision.report);
     await writeJson(join(ARTIFACT_DIR, `${sourceId}-candidate.json`), candidate.products);
     await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
+    await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
 
     if (decision.report.accepted) {
       catalog = replaceVerifiedMarketplaceCatalog({
         existing: catalog,
         sourceId,
         verified: decision.eligibleProducts,
+        preserveMissing: decision.report.publicationCoverage === "PARTIAL",
       });
-      console.log(`${sourceId}: FULL gates passed; added to isolated delivery proposal.`);
+      console.log(`${sourceId}: ${decision.report.publicationCoverage} delivery accepted; ${decision.quarantined.length} products quarantined.`);
     } else {
       console.log(`${sourceId}: last-good preserved (${decision.report.reasons.join("; ")}).`);
     }
   }
 
   const nextBody = JSON.stringify(catalog, null, 2);
-  const dataChanged = nextBody !== originalBody.trimEnd();
-  if (dataChanged) await atomicWrite(PRODUCTS_PATH, nextBody);
+  const coreChanged = nextBody !== originalBody.trimEnd();
+  const dataChanged = coreChanged || supplementalChanged;
+  if (coreChanged) await atomicWrite(PRODUCTS_PATH, nextBody);
 
   const report: MarketplaceAutomationReport = {
     schemaVersion: 1,

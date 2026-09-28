@@ -55,6 +55,16 @@ function shoe(overrides: Partial<PilotProduct> = {}): PilotProduct {
 }
 
 describe("onboarding queue policy", () => {
+  it("retains official product evidence for opaque model names without accepting bags", () => {
+    expect(auditFootwearLeakage([shoe({productName: "TURA OYA BLACK", productUrl: "https://example.com/products/tura-oya-black", category: "BALLERINA", sourceProductType: "Mary-Jane", sourceProductTags: ["ballerina shoes"]})])).toEqual([]);
+    expect(auditFootwearLeakage([shoe({productName: "Leather handbag", sourceProductType: "Bags", sourceProductTags: ["shoes"]})])).toHaveLength(1);
+  });
+  it("includes the catalog shard directory in the publication allowlist", () => {
+    expect(shouldStageOnboardingPath("data/multibrand/model-families")).toBe(true);
+    expect(shouldStageOnboardingPath("data/multibrand/model-families/manifest.json")).toBe(true);
+    expect(shouldStageOnboardingPath("data/multibrand/model-families/part-000.json")).toBe(true);
+    expect(shouldStageOnboardingPath("public/data/catalog/")).toBe(false);
+  });
   it("orders the priority brands and does not drop current collectable brands", () => {
     const queue = createInitialQueue();
     expect(queue.entries.map((entry) => entry.slug)).toEqual(

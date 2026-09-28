@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T06:11:46.016Z",
+  "updatedAt": "2026-09-28T07:10:44.745Z",
   "policy": {
     "maxAttemptsPerRun": 5,
     "maxActivationsPerRun": 3,
@@ -27,17 +27,17 @@
       "brand": "4CCCCEES",
       "slug": "4ccccees",
       "priority": 0,
-      "status": "FAILED",
-      "attempts": 2,
-      "lastAttemptAt": "2026-09-28T06:11:46.016Z",
-      "nextRetryAt": "2026-10-05T06:11:46.016Z",
+      "status": "ACTIVE",
+      "attempts": 3,
+      "lastAttemptAt": "2026-09-28T07:10:44.745Z",
+      "nextRetryAt": null,
       "sourceUrl": "https://www.4ccccees.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
-      "blocker": "footwear leakage: 13",
+      "blocker": null,
       "productsFound": 193,
-      "activatedAt": null,
-      "notes": "footwear leakage: 13"
+      "activatedAt": "2026-09-28T07:10:44.745Z",
+      "notes": "ACCEPTED FULL: 151 families, 193 products, gallery 100%"
     },
     {
       "brand": "MAISON MARGIELA",

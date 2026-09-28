@@ -1,0 +1,43 @@
+{
+  "coverage": {
+    "source": "24s",
+    "status": "FULL",
+    "sourceReportedProductCount": 840,
+    "pagesTraversed": 12,
+    "expectedPages": 12,
+    "rawProductCount": 840,
+    "acceptedProductCount": 839,
+    "excluded": [
+      "ROW7CAR6BCK"
+    ],
+    "rejected": [],
+    "errors": []
+  },
+  "gate": {
+    "publicationCoverage": "PARTIAL",
+    "quarantinedProducts": 127,
+    "sourceId": "24s",
+    "accepted": true,
+    "decision": "PUBLISH_TO_PROPOSAL",
+    "reasons": [],
+    "coverageStatus": "FULL",
+    "sourceTotal": 840,
+    "rawCollected": 840,
+    "eligibleTotal": 839,
+    "candidateProducts": 839,
+    "eligibleProducts": 712,
+    "excludedByPolicy": 0,
+    "productsWithImages": 712,
+    "productsWithTaxonomy": 712,
+    "duplicateUrls": 0,
+    "crossSourceUrlCollisions": 0,
+    "baseline": true,
+    "baselineVerifiedNewProducts": 0,
+    "priceHidden": true,
+    "previousLastGoodProducts": 0,
+    "previousPolicyEligibleProducts": 0,
+    "lastGoodRetentionRatio": null,
+    "minimumLastGoodRetentionRatio": 0.6,
+    "lastGoodPreserved": false
+  }
+}

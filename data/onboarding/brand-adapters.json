@@ -1,11 +1,34 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T06:11:46.016Z",
+  "updatedAt": "2026-09-28T07:10:44.745Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
       "strategy": "shopify-public",
       "sourceUrl": "https://www.alexandrebirman.com",
+      "collectionPaths": [
+        "/collections/shoes",
+        "/collections/womens-shoes",
+        "/collections/women-shoes",
+        "/collections/footwear",
+        "/collections/all-shoes",
+        "/collections/sandals",
+        "/collections/boots"
+      ],
+      "footwearPaths": [
+        "/collections/shoes",
+        "/collections/womens-shoes",
+        "/collections/women-shoes",
+        "/collections/footwear",
+        "/collections/all-shoes",
+        "/collections/sandals",
+        "/collections/boots"
+      ]
+    },
+    "4ccccees": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.4ccccees.com",
       "collectionPaths": [
         "/collections/shoes",
         "/collections/womens-shoes",

@@ -67,8 +67,8 @@ export function auditFootwearLeakage(products: readonly PilotProduct[]): string[
   for (const product of products) {
     const live = evaluateFootwearProduct({
       title: product.productName,
-      productType: product.category ?? product.sourceCategoryName ?? "",
-      tags: [product.sourceCategoryName, product.collectionLabel].filter(
+      productType: product.sourceProductType ?? product.category?.replaceAll("_", " ") ?? product.sourceCategoryName ?? "",
+      tags: [...(product.sourceProductTags ?? []), product.sourceCategoryName, product.collectionLabel].filter(
         (value): value is string => Boolean(value),
       ),
       handle: product.productUrl,

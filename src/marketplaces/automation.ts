@@ -11,6 +11,7 @@ export const AUTOMATED_MARKETPLACE_IDS = [
   "farfetch",
   "free-people",
   "the-webster",
+  "24s",
 ] as const;
 
 export const MIN_LAST_GOOD_RETENTION_RATIO = 0.6;
@@ -31,6 +32,8 @@ export interface MarketplaceRefreshCandidate {
 }
 
 export interface MarketplaceGateReport {
+  publicationCoverage: "FULL" | "PARTIAL";
+  quarantinedProducts: number;
   sourceId: string;
   accepted: boolean;
   decision: "PUBLISH_TO_PROPOSAL" | "PRESERVE_LAST_GOOD";
@@ -57,6 +60,7 @@ export interface MarketplaceGateReport {
 }
 
 export interface MarketplaceGateDecision {
+  quarantined: Array<{ product: PilotProduct; reasons: string[] }>;
   report: MarketplaceGateReport;
   eligibleProducts: PilotProduct[];
 }
@@ -121,15 +125,22 @@ export function evaluateMarketplaceCandidate(input: {
   const filtered = policyEligible(sourceProducts);
   const excludedByPolicy =
     (input.candidate.preExcludedByPolicy ?? 0) + sourceProducts.length - filtered.length;
-  const eligibleProducts = (baseline
+  const sourceEligibleProducts = (baseline
     ? filtered.map(normalizeBaselineProduct)
     : filtered
   ).sort((left, right) =>
     normalizeProductUrl(left.productUrl).localeCompare(normalizeProductUrl(right.productUrl)),
   );
+  const quarantined = sourceEligibleProducts.flatMap((product) => {
+    const reasons = [];
+    if (!hasImage(product)) reasons.push("missing image");
+    if (!hasTaxonomy(product)) reasons.push("unresolved category");
+    return reasons.length ? [{ product, reasons }] : [];
+  });
+  const eligibleProducts = sourceEligibleProducts.filter((product) => hasImage(product) && hasTaxonomy(product));
   const productsWithImages = eligibleProducts.filter(hasImage).length;
   const productsWithTaxonomy = eligibleProducts.filter(hasTaxonomy).length;
-  const duplicates = duplicateUrlCount(eligibleProducts);
+  const duplicates = duplicateUrlCount(sourceEligibleProducts);
   const otherSourceUrls = new Set(
     input.previousLastGood
       .filter((product) => normalizeMarketplaceSourceId(product.source) !== sourceId)
@@ -140,7 +151,7 @@ export function evaluateMarketplaceCandidate(input: {
   ).length;
   const lastGoodRetentionRatio = baseline
     ? null
-    : eligibleProducts.length / previousEligible.length;
+    : sourceEligibleProducts.length / previousEligible.length;
   const reasons: string[] = [];
 
   if (!ALLOWED_IDS.has(sourceId)) reasons.push("source is not on the approved adapter allow-list");
@@ -159,9 +170,9 @@ export function evaluateMarketplaceCandidate(input: {
   }
   if (
     input.candidate.eligibleTotal !== null &&
-    eligibleProducts.length !== input.candidate.eligibleTotal
+    sourceEligibleProducts.length !== input.candidate.eligibleTotal
   ) {
-    reasons.push(`eligible coverage is ${eligibleProducts.length}/${input.candidate.eligibleTotal}`);
+    reasons.push(`eligible coverage is ${sourceEligibleProducts.length}/${input.candidate.eligibleTotal}`);
   }
   if (eligibleProducts.length === 0) reasons.push("eligible catalog is empty");
   if (productsWithImages !== eligibleProducts.length) {
@@ -200,8 +211,11 @@ export function evaluateMarketplaceCandidate(input: {
 
   const accepted = reasons.length === 0;
   return {
+    quarantined,
     eligibleProducts,
     report: {
+      publicationCoverage: quarantined.length > 0 ? "PARTIAL" : "FULL",
+      quarantinedProducts: quarantined.length,
       sourceId,
       accepted,
       decision: accepted ? "PUBLISH_TO_PROPOSAL" : "PRESERVE_LAST_GOOD",
@@ -230,6 +244,7 @@ export function evaluateMarketplaceCandidate(input: {
 }
 
 export function replaceVerifiedMarketplaceCatalog(input: {
+  preserveMissing?: boolean;
   existing: readonly PilotProduct[];
   sourceId: string;
   verified: readonly PilotProduct[];
@@ -246,7 +261,10 @@ export function replaceVerifiedMarketplaceCatalog(input: {
   for (const previous of existingSource) {
     const key = normalizeProductUrl(previous.productUrl);
     const incoming = verifiedByUrl.get(key);
-    if (!incoming) continue;
+    if (!incoming) {
+      if (input.preserveMissing) refreshed.push(previous);
+      continue;
+    }
     refreshed.push(mergeProductRecords(previous, incoming));
     verifiedByUrl.delete(key);
   }

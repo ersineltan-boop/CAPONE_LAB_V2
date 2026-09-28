@@ -1,0 +1,109 @@
+{
+  "sourceId": "massimo-dutti",
+  "investigatedAt": "2026-09-28T07:36:09.287Z",
+  "status": "OFFICIAL_SSR_ACCESSIBLE_PARTIAL_ADAPTER",
+  "attempts": [
+    {
+      "url": "https://www.massimodutti.com/",
+      "startedAt": "2026-09-28T07:35:44.484Z",
+      "status": 200,
+      "finalUrl": "https://www.massimodutti.com/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 200307,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": "Massimo Dutti | Select Your Market and Language",
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/robots.txt",
+      "startedAt": "2026-09-28T07:35:52.668Z",
+      "status": 200,
+      "finalUrl": "https://www.massimodutti.com/robots.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 1333,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": null,
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/sitemap.xml",
+      "startedAt": "2026-09-28T07:35:52.771Z",
+      "status": 404,
+      "finalUrl": "https://www.massimodutti.com/sitemap.xml",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 10421,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": "Massimo Dutti",
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/us/en/categories?ajax=true",
+      "startedAt": "2026-09-28T07:35:53.107Z",
+      "status": 404,
+      "finalUrl": "https://www.massimodutti.com/us/categories?ajax=true",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 360036,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": "Massimo Dutti",
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/3/info/sitemaps/sitemap-index-home-categories-md.xml",
+      "startedAt": "2026-09-28T07:36:01.203Z",
+      "status": 200,
+      "finalUrl": "https://www.massimodutti.com/3/info/sitemaps/sitemap-index-home-categories-md.xml",
+      "contentType": "text/xml",
+      "bytes": 11078,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": null,
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/3/info/sitemaps/sitemap-index-products-md.xml",
+      "startedAt": "2026-09-28T07:36:08.646Z",
+      "status": 200,
+      "finalUrl": "https://www.massimodutti.com/3/info/sitemaps/sitemap-index-products-md.xml",
+      "contentType": "text/xml",
+      "bytes": 3122,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": null,
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/us/women/shoes-n1499",
+      "startedAt": "2026-09-28T07:36:08.779Z",
+      "status": 200,
+      "finalUrl": "https://www.massimodutti.com/us/women/shoes-n1499",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 2678363,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": "Women's Shoes &amp; Boots - Massimo Dutti - US",
+      "jsonResponse": false
+    },
+    {
+      "url": "https://www.massimodutti.com/itxrest/2/catalog/store/34009527/30359506/category/1887045/product",
+      "startedAt": "2026-09-28T07:36:09.031Z",
+      "status": 410,
+      "finalUrl": "https://www.massimodutti.com/itxrest/2/catalog/store/34009527/30359506/category/1887045/product",
+      "contentType": "application/json",
+      "bytes": 235,
+      "accessDenied": false,
+      "edgeDenialEvidence": false,
+      "title": null,
+      "jsonResponse": false
+    }
+  ],
+  "collectedProductCount": null,
+  "stagingArtifact": "data/onboarding/validated/massimo-dutti.json",
+  "adapterFinding": "Zara-compatible categories?ajax=true returns 404. Massimo uses its own Angular mdfrontw-state SSR transfer data. Source-specific adapter src/onboarding/massimoDutti.ts maps official women footwear records; SSR provides only a bounded initial subset.",
+  "action": "Stage validated official SSR products as PARTIAL; do not replace last-good data or claim complete coverage.",
+  "nextDependency": "Discover and validate the current public pagination mechanism or expand verified footwear subcategories. The old itxrest/2 catalog route exposed in page configuration returns 410 OBSOLETE_FEATURE; do not wire it as a working collector.",
+  "scope": "Bounded diagnostics of public official URLs, without attempting to bypass access controls. Access denial is specific to this execution environment; it does not prove the website is unavailable to shoppers."
+}
