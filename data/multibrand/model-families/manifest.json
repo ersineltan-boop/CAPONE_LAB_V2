@@ -1,49 +1,49 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T08:46:59.414Z",
-  "totalFamilies": 14608,
+  "generatedAt": "2026-09-28T09:13:25.691Z",
+  "totalFamilies": 14627,
   "shardCount": 18,
   "shards": [
     {
       "file": "part-000.json",
-      "familyCount": 2089,
-      "bytes": 16772003
+      "familyCount": 2096,
+      "bytes": 16776432
     },
     {
       "file": "part-001.json",
-      "familyCount": 2354,
-      "bytes": 16741179
+      "familyCount": 2358,
+      "bytes": 16768481
     },
     {
       "file": "part-002.json",
-      "familyCount": 1976,
-      "bytes": 16758753
+      "familyCount": 1979,
+      "bytes": 16775443
     },
     {
       "file": "part-003.json",
-      "familyCount": 2491,
-      "bytes": 16775367
+      "familyCount": 2488,
+      "bytes": 16777280
     },
     {
       "file": "part-004.json",
-      "familyCount": 1957,
-      "bytes": 16769186
+      "familyCount": 1961,
+      "bytes": 16774413
     },
     {
       "file": "part-005.json",
-      "familyCount": 1961,
-      "bytes": 16776012
+      "familyCount": 1958,
+      "bytes": 16774635
     },
     {
       "file": "part-006.json",
-      "familyCount": 187,
-      "bytes": 1009533
+      "familyCount": 194,
+      "bytes": 1044724
     },
     {
       "file": "brands/alexandre-birman.json",
       "familyCount": 406,
-      "bytes": 2776530
+      "bytes": 3043733
     },
     {
       "file": "brands/4ccccees.json",
