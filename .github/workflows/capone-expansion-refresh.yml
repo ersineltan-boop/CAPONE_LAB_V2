@@ -1,0 +1,90 @@
+# Sunday/Wednesday 06:15 Türkiye (03:15 UTC). Approved partial catalogs only.
+name: CAPONE expansion brand refresh
+on:
+  schedule:
+    - cron: "15 3 * * 0,3"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/capone-expansion-refresh.yml
+      - scripts/refresh-expansion-brands.ts
+      - src/onboarding/expansionRefresh.ts
+concurrency:
+  group: capone-catalog-automation
+  cancel-in-progress: false
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Collect approved expansion brands and preserve failed sources
+        id: collect
+        run: node --import tsx scripts/refresh-expansion-brands.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: expansion-refresh-${{ github.run_id }}
+          path: data/onboarding/staging/expansion-refresh/
+          if-no-files-found: error
+          retention-days: 14
+      - run: npm test
+      - run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+      - name: Stage approved delivery only
+        id: stage
+        if: steps.collect.outputs.data_changed == 'true'
+        env:
+          ACCEPTED: ${{ steps.collect.outputs.accepted_sources }}
+        run: |
+          set -euo pipefail
+          IFS=',' read -ra ids <<< "$ACCEPTED"
+          for id in "${ids[@]}"; do
+            git add -- "data/onboarding/validated/expansion-${id}.json" "data/multibrand/model-families/brands/${id}.json"
+          done
+          git add -- data/multibrand/model-families/manifest.json data/registry/priority-brand-coverage.json data/registry/brand-universe.json data/registry/brand-universe-report.json src/registry/data/brands.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publish through tested PR and Vercel preview
+        if: steps.stage.outputs.data_changed == 'true'
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/expansion-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh approved partial brand catalogs"
+          AUTOMATION_PR_TITLE: "chore(data): verified expansion brand refresh"
+          AUTOMATION_PR_BODY: "Approved partial catalogs refreshed with fresh-count, pagination, error and last-good gates. Failed sources preserved. No FULL coverage claim. Full tests, production build and exact-commit Vercel preview required."
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/publish-validated-automation-pr.sh
+      - name: Summary
+        if: always()
+        env:
+          ACCEPTED: ${{ steps.collect.outputs.accepted_sources }}
+          PRESERVED: ${{ steps.collect.outputs.preserved_sources }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+        run: |
+          {
+            echo "## Expansion refresh (PARTIAL catalogs)"
+            echo "Accepted: ${ACCEPTED:-none}"
+            echo "Last-good preserved: ${PRESERVED:-none}"
+            echo "Delivery PR: ${PR_URL:-none}"
+          } >> "$GITHUB_STEP_SUMMARY"

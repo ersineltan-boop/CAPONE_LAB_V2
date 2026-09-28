@@ -36,7 +36,7 @@ await Promise.all(Array.from({length:3},async()=>{while(cursor<ids.length){
  products=products.map((p:any)=>({...p,variants:[...(variantRows.get(p.productUrl.replace(/\/$/,'').toLowerCase())?.values()??[])]}));
  const quality=evaluateQualityGate(products as any);
  if(!quality.ok)throw Error(quality.reasons.join(';'));
- const snapshot={source:id,generatedAt:new Date().toISOString(),status:'PARTIAL',products,coverage:{rawRecords:rows.size,paginationExhausted:exhausted,errors,excluded:rows.size-products.length,note:'All-source feed filtered to footwear. Official women footwear total not independently confirmed.'}};
+ const snapshot={source:id,generatedAt:new Date().toISOString(),status:'PARTIAL',products,coverage:{rawRecords:rows.size,freshProducts:incoming.length,paginationExhausted:exhausted,errors,excluded:rows.size-incoming.length,note:'All-source feed filtered to footwear. Official women footwear total not independently confirmed.'}};
  await writeFile(`data/onboarding/validated/expansion-${id}.json`,JSON.stringify(snapshot,null,2)+'\n');
  console.log(JSON.stringify({id,products:products.length,models:quality.families,raw:rows.size,exhausted,errors}));
  }catch(error){console.log(JSON.stringify({id,error:String(error)}));}
