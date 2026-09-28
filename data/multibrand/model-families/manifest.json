@@ -1,7 +1,7 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T12:19:51.778Z",
+  "generatedAt": "2026-09-28T12:25:29.054Z",
   "totalFamilies": 14638,
   "shardCount": 19,
   "shards": [
@@ -66,9 +66,9 @@
       "bytes": 1278429
     },
     {
-      "file": "brands/nodaleto.json",
-      "familyCount": 9,
-      "bytes": 47360
+      "file": "brands/tkees.json",
+      "familyCount": 74,
+      "bytes": 539460
     },
     {
       "file": "brands/nine-west.json",
@@ -91,14 +91,14 @@
       "bytes": 686593
     },
     {
-      "file": "brands/tkees.json",
-      "familyCount": 74,
-      "bytes": 539460
-    },
-    {
       "file": "brands/brother-vellies.json",
       "familyCount": 26,
       "bytes": 139092
+    },
+    {
+      "file": "brands/nodaleto.json",
+      "familyCount": 9,
+      "bytes": 53056
     }
   ]
 }
