@@ -2,6 +2,11 @@ name: CAPONE CI
 
 on:
   pull_request:
+  # GitHub skips pull_request workflows while this PR conflicts with main.
+  # Push still runs the same job on the branch head, with no catalog rewrite.
+  push:
+    branches:
+      - cursor/issue-91-official-brands-0302
   workflow_dispatch:
 
 permissions:
