@@ -11,6 +11,7 @@ export const AUTOMATED_MARKETPLACE_IDS = [
   "farfetch",
   "free-people",
   "the-webster",
+  "24s",
 ] as const;
 
 export const MIN_LAST_GOOD_RETENTION_RATIO = 0.6;

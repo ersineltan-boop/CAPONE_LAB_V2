@@ -70,7 +70,8 @@
     "operator:list": "tsx scripts/operator-list.ts",
     "operator:github-issue": "tsx scripts/operator-github-issue.ts",
     "operator:execute-github-issue": "tsx scripts/operator-execute-github-issue.ts",
-    "operator:dispatch": "tsx scripts/operator-dispatch.ts"
+    "operator:dispatch": "tsx scripts/operator-dispatch.ts",
+    "collect:24s-staging": "tsx scripts/collect-24s-staging.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

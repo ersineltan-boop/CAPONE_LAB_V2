@@ -22,6 +22,8 @@ export interface PilotProductVariant {
 }
 
 export interface PilotProduct {
+  sourceProductType?: string;
+  sourceProductTags?: string[];
   source: string;
   brand: string;
   productName: string;

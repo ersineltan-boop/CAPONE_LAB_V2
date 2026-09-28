@@ -185,6 +185,8 @@ export function shopifyProductToPilot(
 
   return {
     source: config.id,
+    sourceProductType: productType,
+    sourceProductTags: tags,
     brand: config.brand,
     productName: product.title,
     productUrl: canonicalProductUrl(config.baseUrl, product.handle),

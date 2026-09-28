@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { collectFarfetch, FARFETCH_ID } from "../src/collector/farfetch";
+import { collect24S } from "../src/collector/twentyFourS";
 import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
 import { collectFreePeopleWithBrowser } from "../src/collector/freePeopleBrowser";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../src/collector/levelShoes";
@@ -52,6 +53,18 @@ function excludedCount(products: readonly PilotProduct[]): number {
 }
 
 async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<MarketplaceRefreshCandidate> {
+  if (sourceId === '24s') {
+    const result = await collect24S();
+    return {
+      sourceId, products: result.products,
+      coverageStatus: result.coverage.status as MarketplaceRefreshCandidate['coverageStatus'],
+      sourceTotal: result.coverage.sourceReportedProductCount,
+      rawCollected: result.coverage.rawProductCount,
+      eligibleTotal: result.coverage.acceptedProductCount - excludedCount(result.products),
+      paginationExhausted: result.coverage.pagesTraversed === result.coverage.expectedPages,
+      errors: result.coverage.errors,
+    };
+  }
   if (sourceId === LEVEL_SHOES_ID) {
     const result = await collectLevelShoes({ maxPagesPerListing: 80, enrichDetails: false });
     const excluded = excludedCount(result.products);

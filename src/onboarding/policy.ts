@@ -95,6 +95,7 @@ export function shouldStageOnboardingPath(path: string): boolean {
   if (BLOCKED_ONBOARDING_PREFIXES.some((prefix) => normalized.startsWith(prefix))) return false;
   if (normalized.startsWith(".env")) return false;
   if (normalized.endsWith(".log")) return false;
+  if (normalized === CLOUD_REFRESH_MODEL_FAMILY_DIR) return true;
   if ((ONBOARDING_EXTRA_STAGE_PATHS as readonly string[]).includes(normalized)) return true;
   return shouldStageCloudRefreshPath(normalized);
 }

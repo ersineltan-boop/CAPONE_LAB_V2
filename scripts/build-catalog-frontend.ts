@@ -37,6 +37,10 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     brands: loadBrandRegistry().all(),
     marketplaces: browsableMarketplaces(),
   });
+  const emptyBrands = artifacts.brandShards.filter((shard) => shard.families.length === 0);
+  if (emptyBrands.length > 0) {
+    throw new Error(`Active brands have no delivered products: ${emptyBrands.map((shard) => shard.id).join(", ")}`);
+  }
 
   await mkdir(join(OUT_DIR, "brands"), { recursive: true });
   await mkdir(join(OUT_DIR, "marketplaces"), { recursive: true });
