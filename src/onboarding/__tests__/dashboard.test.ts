@@ -19,8 +19,9 @@ describe("brand onboarding dashboard", () => {
       discovery as BrandDiscoveryReport,
       new Date("2026-09-26T18:00:00.000Z"),
     );
-    expect(dashboard.summary.active).toBe(52);
-    expect(dashboard.summary.candidatePool).toBe(108);
+    const activeCount = (universe as BrandUniverseFile).brands.filter((brand) => brand.isActive).length;
+    expect(dashboard.summary.active).toBe(activeCount);
+    expect(dashboard.summary.candidatePool).toBe((universe as BrandUniverseFile).brands.length - activeCount);
     expect(dashboard.summary.tonight).toBeLessThanOrEqual(5);
     expect(dashboard.summary.discovered).toBe(discovery.candidates.length);
     expect(dashboard.brands).toHaveLength(160);
