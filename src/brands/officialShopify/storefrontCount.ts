@@ -27,7 +27,14 @@ export function parseStorefrontProductCount(html: string): number | null {
     Number.parseInt((match[1] ?? "").replace(/[^\d]/g, ""), 10),
   ).filter((count) => count > 0);
   const uniqueLabeled = [...new Set(labeled)];
-  return uniqueLabeled.length === 1 ? uniqueLabeled[0] ?? null : null;
+  if (uniqueLabeled.length === 1) return uniqueLabeled[0] ?? null;
+  if (uniqueLabeled.length > 1) return null;
+
+  const facet = [...html.matchAll(/productcount[^>]*>\s*\(\s*(\d[\d\s.]*)\s*\)/gi)].map((match) =>
+    Number.parseInt((match[1] ?? "").replace(/[^\d]/g, ""), 10),
+  ).filter((count) => count > 0);
+  const uniqueFacet = [...new Set(facet)];
+  return uniqueFacet.length === 1 ? uniqueFacet[0] ?? null : null;
 }
 
 const SWATCH_IMAGE = /swatch|color[-_]?chip|colour[-_]?chip|color[-_]?swatch/i;

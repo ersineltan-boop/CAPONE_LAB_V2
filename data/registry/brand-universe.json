@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T12:19:16.905Z",
+  "generatedAt": "2026-09-28T12:52:13.010Z",
   "brands": [
     {
       "id": "schutz",
@@ -3462,23 +3462,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=243. Refresh: npm run collect:official-shopify-next. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.repetto.com/collections/catalogue-femme-chaussures",
+      "collectionPaths": [
+        "/collections/catalogue-femme-chaussures"
+      ],
+      "productLimit": 243,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.repetto.com/collections/catalogue-femme-chaussures"
+      ],
+      "footwearCollectionHandles": [
+        "catalogue-femme-chaussures"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 243
     },
     {
       "id": "nomasei",
@@ -3578,23 +3590,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=52. Refresh: npm run collect:official-shopify-next. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.rouje.com/collections/shoes",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "productLimit": 52,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.rouje.com/collections/shoes"
+      ],
+      "footwearCollectionHandles": [
+        "shoes"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 52
     },
     {
       "id": "camper",
@@ -3630,23 +3654,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=215. Refresh: npm run collect:official-shopify-next. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.prettyballerinas.com/collections/collection",
+      "collectionPaths": [
+        "/collections/collection"
+      ],
+      "productLimit": 215,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.prettyballerinas.com/collections/collection"
+      ],
+      "footwearCollectionHandles": [
+        "collection"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 215
     },
     {
       "id": "hispanitas",
@@ -3734,23 +3770,35 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Issue 91 official storefront women's footwear. source_total=163. Refresh: npm run collect:official-shopify-next. Not on the periodic brand line.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
-      "discoverySources": [],
+      "collectionUrl": "https://www.mascaro.com/collections/collection",
+      "collectionPaths": [
+        "/collections/collection"
+      ],
+      "productLimit": 163,
+      "supportsMultipleImages": true,
+      "discoverySources": [
+        "issue-91"
+      ],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "footwearCollectionUrls": [
+        "https://www.mascaro.com/collections/collection"
+      ],
+      "footwearCollectionHandles": [
+        "collection"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 163
     },
     {
       "id": "naguisa",

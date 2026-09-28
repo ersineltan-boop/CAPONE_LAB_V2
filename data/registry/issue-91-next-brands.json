@@ -1,0 +1,144 @@
+{
+  "issue": 91,
+  "generatedAt": "2026-09-28T12:52:13.010Z",
+  "periodicRefresh": false,
+  "refreshCommand": "npm run collect:official-shopify-next",
+  "dependsOn": "cursor/issue-91-official-brands-0302",
+  "notCollected": [
+    "Nodaleto is owned by the Codex catalog and is not collected again.",
+    "Pedro Miralles products.json is public, but the calzado page has no single storefront total, so it was not activated."
+  ],
+  "published": [
+    "pretty-ballerinas:183",
+    "mascar:145",
+    "rouje:31",
+    "repetto:58"
+  ],
+  "brands": [
+    {
+      "slug": "pretty-ballerinas",
+      "brand": "PRETTY BALLERINAS",
+      "sourceUrls": [
+        "https://www.prettyballerinas.com/collections/collection"
+      ],
+      "collectedAt": "2026-09-28T12:52:13.010Z",
+      "pagesVisited": 7,
+      "storefrontProductCount": 215,
+      "collectionResourceCount": 244,
+      "fetchedProducts": 215,
+      "acceptedFootwear": 215,
+      "quarantined": 0,
+      "quarantineReasons": {},
+      "modelFamilies": 183,
+      "status": "FULL",
+      "paginationExhausted": true,
+      "baselineNewArrivals": 0,
+      "blocker": null,
+      "refreshCommand": "npm run collect:official-shopify-next",
+      "periodicRefresh": false,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "lastGoodRetained": false
+    },
+    {
+      "slug": "margaux",
+      "brand": "MARGAUX",
+      "sourceUrls": [
+        "https://www.margauxny.com/collections/shop"
+      ],
+      "collectedAt": "2026-09-28T12:52:13.010Z",
+      "pagesVisited": 8,
+      "storefrontProductCount": null,
+      "collectionResourceCount": 251,
+      "fetchedProducts": 251,
+      "acceptedFootwear": 246,
+      "quarantined": 5,
+      "quarantineReasons": {
+        "tag:CAP": 1,
+        "non-footwear-title": 2,
+        "\\bsock": 1,
+        "\\btote\\b": 1
+      },
+      "modelFamilies": 153,
+      "status": "PARTIAL",
+      "paginationExhausted": true,
+      "baselineNewArrivals": 0,
+      "blocker": "STOREFRONT_TOTAL_UNKNOWN: shop: storefront total unavailable (404)",
+      "refreshCommand": "npm run collect:official-shopify-next",
+      "periodicRefresh": false,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "lastGoodRetained": false
+    },
+    {
+      "slug": "mascar",
+      "brand": "MASCARÓ",
+      "sourceUrls": [
+        "https://www.mascaro.com/collections/collection"
+      ],
+      "collectedAt": "2026-09-28T12:52:13.010Z",
+      "pagesVisited": 6,
+      "storefrontProductCount": 163,
+      "collectionResourceCount": 207,
+      "fetchedProducts": 163,
+      "acceptedFootwear": 163,
+      "quarantined": 0,
+      "quarantineReasons": {},
+      "modelFamilies": 145,
+      "status": "FULL",
+      "paginationExhausted": true,
+      "baselineNewArrivals": 0,
+      "blocker": null,
+      "refreshCommand": "npm run collect:official-shopify-next",
+      "periodicRefresh": false,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "lastGoodRetained": false
+    },
+    {
+      "slug": "rouje",
+      "brand": "ROUJE",
+      "sourceUrls": [
+        "https://www.rouje.com/collections/shoes"
+      ],
+      "collectedAt": "2026-09-28T12:52:13.010Z",
+      "pagesVisited": 4,
+      "storefrontProductCount": 52,
+      "collectionResourceCount": 85,
+      "fetchedProducts": 52,
+      "acceptedFootwear": 52,
+      "quarantined": 0,
+      "quarantineReasons": {},
+      "modelFamilies": 31,
+      "status": "FULL",
+      "paginationExhausted": true,
+      "baselineNewArrivals": 0,
+      "blocker": null,
+      "refreshCommand": "npm run collect:official-shopify-next",
+      "periodicRefresh": false,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "lastGoodRetained": false
+    },
+    {
+      "slug": "repetto",
+      "brand": "REPETTO",
+      "sourceUrls": [
+        "https://www.repetto.com/collections/catalogue-femme-chaussures"
+      ],
+      "collectedAt": "2026-09-28T12:52:13.010Z",
+      "pagesVisited": 7,
+      "storefrontProductCount": 243,
+      "collectionResourceCount": 315,
+      "fetchedProducts": 243,
+      "acceptedFootwear": 243,
+      "quarantined": 0,
+      "quarantineReasons": {},
+      "modelFamilies": 58,
+      "status": "FULL",
+      "paginationExhausted": true,
+      "baselineNewArrivals": 0,
+      "blocker": null,
+      "refreshCommand": "npm run collect:official-shopify-next",
+      "periodicRefresh": false,
+      "note": "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh is the dedicated command, not the periodic brand line.",
+      "lastGoodRetained": false
+    }
+  ]
+}
