@@ -14,6 +14,13 @@ export function parseMassimoTransferState(html: string): Row | null {
   try { return JSON.parse(value); } catch { return null; }
 }
 
+export function isMassimoProductImage(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.hostname === "static.massimodutti.net" && !/-c\.(?:png|jpe?g|webp)$/i.test(parsed.pathname);
+  } catch { return false; }
+}
+
 export function mapMassimoProduct(row: Row, collectionUrl: string, discoveredAt: string): PilotProduct | null {
   if (row.sectionNameEN !== "WOMEN" || row.productType !== "Footwear" || typeof row.name !== "string" || typeof row.locationPath !== "string") return null;
   let url: URL;
@@ -22,7 +29,7 @@ export function mapMassimoProduct(row: Row, collectionUrl: string, discoveredAt:
   const gate = evaluateFootwearProduct({ title: row.name, productType: [row.familyNameEN, row.subFamilyNameEN].filter(Boolean).join(" "), tags: ["WOMEN", "Footwear"], collectionPath: new URL(collectionUrl).pathname, fromVerifiedFootwearCollection: true });
   if (gate.decision !== "ACCEPT_FOOTWEAR" || !gate.category) return null;
   const colors = Array.isArray(row.colors) ? row.colors : [];
-  const imageList = (color: Row): string[] => [...new Set<string>((Array.isArray(color.medias) ? color.medias : []).filter((media: Row) => media.contentType?.type === "image" && !media.isFallback && typeof media.path === "string" && media.path.startsWith("https://static.massimodutti.net/")).map((media: Row) => media.path))];
+  const imageList = (color: Row): string[] => [...new Set<string>((Array.isArray(color.medias) ? color.medias : []).filter((media: Row) => media.contentType?.type === "image" && !media.isFallback && typeof media.path === "string" && media.path.startsWith("https://static.massimodutti.net/") && isMassimoProductImage(media.path)).map((media: Row) => media.path))];
   const selected = row.status?.selectedColor ?? colors[0] ?? {};
   const images = imageList(selected);
   if (!images.length) return null;
