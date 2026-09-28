@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T12:20:07.765Z",
-  "totalFamilies": 14638,
+  "generatedAt": "2026-09-28T18:02:34.116Z",
+  "totalFamilies": 16362,
   "completeness": {
-    "totalFamilies": 14638,
-    "categoryKnownCount": 13541,
-    "categoryKnownPercent": 92.5,
+    "totalFamilies": 16362,
+    "categoryKnownCount": 15265,
+    "categoryKnownPercent": 93.3,
     "unclassifiedCount": 1097,
     "toeShapeKnown": 1144,
     "toeShapeUnknown": 12711,
@@ -12,8 +12,8 @@
     "backConstructionUnknown": 11736,
     "heelTypeKnown": 3923,
     "heelTypeUnknown": 9932,
-    "criticalCompletenessPercent": 35.4,
-    "averageFeatureCompletenessPercent": 10.5
+    "criticalCompletenessPercent": 34.3,
+    "averageFeatureCompletenessPercent": 9.4
   },
   "categoryProvenance": {
     "PRODUCT_EVIDENCE": 10938,
@@ -367,16 +367,16 @@
   ],
   "valueDistributions": {
     "primaryCategory": {
-      "BOOT": 2483,
-      "SANDAL": 4015,
-      "SNEAKER": 1376,
-      "LOAFER": 773,
+      "BOOT": 3099,
+      "SANDAL": 4453,
+      "SNEAKER": 1440,
+      "LOAFER": 906,
       "UNCLASSIFIED": 1097,
-      "PUMP": 2257,
-      "CLOG": 96,
-      "BALLET_FLAT": 1210,
-      "MULE": 1202,
-      "ESPADRILLE": 109,
+      "PUMP": 2427,
+      "CLOG": 102,
+      "BALLET_FLAT": 1423,
+      "MULE": 1269,
+      "ESPADRILLE": 126,
       "OXFORD_DERBY": 20
     },
     "backConstruction": {
@@ -428,7 +428,7 @@
   "invalidKnownFeatures": 0,
   "newArrivalsDates": {
     "earliestModelFamilyFirstSeenAt": "2026-08-18T10:03:26.763Z",
-    "latestModelFamilyFirstSeenAt": "2026-09-28T11:53:21.845Z",
+    "latestModelFamilyFirstSeenAt": "2026-09-28T12:52:13.010Z",
     "countByDate": {
       "2026-08-24": 1138,
       "2026-08-22": 4947,
@@ -449,7 +449,7 @@
       "2026-08-26": 50,
       "2026-09-13": 5,
       "2026-08-28": 72,
-      "2026-09-28": 1623,
+      "2026-09-28": 3347,
       "2026-08-23": 64,
       "2026-09-10": 108,
       "2026-09-02": 40,
@@ -459,45 +459,45 @@
       "2026-09-27": 106,
       "2026-08-18": 56
     },
-    "countLast24H": 1729,
-    "countLast7D": 2735,
-    "countLast30D": 3435,
-    "countLast90D": 14638,
+    "countLast24H": 3347,
+    "countLast7D": 4459,
+    "countLast30D": 5159,
+    "countLast90D": 16362,
     "bulkBackfillDates": [
       {
         "date": "2026-08-22",
         "count": 4947,
-        "sharePercent": 33.8
+        "sharePercent": 30.2
       },
       {
         "date": "2026-08-21",
         "count": 3517,
-        "sharePercent": 24
+        "sharePercent": 21.5
       },
       {
         "date": "2026-09-28",
-        "count": 1623,
-        "sharePercent": 11.1
+        "count": 3347,
+        "sharePercent": 20.5
       },
       {
         "date": "2026-08-19",
         "count": 1174,
-        "sharePercent": 8
+        "sharePercent": 7.2
       },
       {
         "date": "2026-08-24",
         "count": 1138,
-        "sharePercent": 7.8
+        "sharePercent": 7
       },
       {
         "date": "2026-09-26",
         "count": 1006,
-        "sharePercent": 6.9
+        "sharePercent": 6.1
       },
       {
         "date": "2026-08-27",
         "count": 135,
-        "sharePercent": 0.9
+        "sharePercent": 0.8
       },
       {
         "date": "2026-09-10",
@@ -507,12 +507,12 @@
       {
         "date": "2026-09-27",
         "count": 106,
-        "sharePercent": 0.7
+        "sharePercent": 0.6
       },
       {
         "date": "2026-09-03",
         "count": 102,
-        "sharePercent": 0.7
+        "sharePercent": 0.6
       }
     ],
     "familiesWithoutFirstSeen": 0
