@@ -122,9 +122,9 @@ const FALLBACK_PILOTS: Record<string, MarketplaceRegistryEntry> = {
     kind: "LUXURY_MARKETPLACE",
     officialUrl: "https://www.brownsfashion.com",
     isActive: true,
-    discoveryStatus: "ACTIVE",
-    newArrivalDiscoveryStatus: "NEEDS_PROBE",
-    notes: "Fallback luxury marketplace pilot",
+    discoveryStatus: "PARTIAL",
+    newArrivalDiscoveryStatus: "NOT_SUPPORTED",
+    notes: "Public Shopify women's designer shoes. Storefront count reconciled; products without a public image stay out. Not on the periodic marketplace refresh line (npm run collect:browns).",
   },
   "level-shoes": {
     id: "level-shoes",

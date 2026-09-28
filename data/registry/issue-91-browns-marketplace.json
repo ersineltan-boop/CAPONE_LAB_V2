@@ -1,0 +1,45 @@
+{
+  "source": "browns",
+  "sourceUrl": "https://www.brownsfashion.com/collections/woman-shoes",
+  "collectedAt": "2026-09-28T12:40:49.494Z",
+  "pagesVisited": 53,
+  "storefrontProductCount": 2649,
+  "collectionResourceCount": 2652,
+  "fetchedProducts": 2649,
+  "scopeExcluded": 69,
+  "scopeExclusionReasons": {
+    "sports-brand": 67,
+    "non-womens": 2
+  },
+  "acceptedFootwear": 2578,
+  "quarantined": 2,
+  "quarantineReasons": {
+    "missing-image": 2
+  },
+  "modelFamilies": 2578,
+  "status": "PARTIAL",
+  "paginationExhausted": true,
+  "baselineNewArrivals": 0,
+  "refreshCommand": "npm run collect:browns",
+  "periodicRefresh": false,
+  "blocker": "Browns collection reconciled at 2649, with 2 product(s) held out of the catalog",
+  "note": "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is not on the periodic marketplace refresh line.",
+  "published": true,
+  "publishReason": null,
+  "quarantinedSample": [
+    {
+      "productUrl": "https://www.brownsfashion.com/products/veja-panenka-suede-taupe-pierre-bark-sneakers-olsaw2500146908",
+      "title": "Panenka suede taupe pierre bark sneakers",
+      "reasons": [
+        "missing-image"
+      ]
+    },
+    {
+      "productUrl": "https://www.brownsfashion.com/products/autry-medalist-low-sneakers-in-leather-olsaw2600174895",
+      "title": "Medalist low sneakers in leather",
+      "reasons": [
+        "missing-image"
+      ]
+    }
+  ]
+}

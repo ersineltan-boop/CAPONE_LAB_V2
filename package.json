@@ -57,6 +57,7 @@
     "collect:today-marketplaces": "tsx scripts/collect-today-marketplaces.ts",
     "refresh:marketplaces": "tsx scripts/refresh-marketplaces-automated.ts",
     "collect:the-webster-staging": "tsx scripts/collect-the-webster-staging.ts",
+    "collect:browns": "tsx scripts/collect-browns.ts",
     "publish:the-webster-staging": "tsx scripts/publish-the-webster-staging.ts",
     "collect:free-people-staging": "tsx scripts/collect-free-people-staging.ts",
     "merge:free-people-staging": "tsx scripts/merge-free-people-staging.ts",
