@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T11:16:03.709Z",
-  "totalFamilies": 14629,
-  "shardCount": 18,
+  "generatedAt": "2026-09-28T11:55:28.591Z",
+  "totalFamilies": 14638,
+  "shardCount": 19,
   "shards": [
     {
       "file": "part-000.json",
@@ -64,6 +64,11 @@
       "file": "brands/maison-margiela.json",
       "familyCount": 107,
       "bytes": 1278429
+    },
+    {
+      "file": "brands/nodaleto.json",
+      "familyCount": 9,
+      "bytes": 47360
     },
     {
       "file": "brands/nine-west.json",
