@@ -22,7 +22,7 @@ describe("brand onboarding dashboard", () => {
     const activeCount = (universe as BrandUniverseFile).brands.filter((brand) => brand.isActive).length;
     expect(dashboard.summary.active).toBe(activeCount);
     expect(dashboard.summary.candidatePool).toBe((universe as BrandUniverseFile).brands.length - activeCount);
-    expect(dashboard.summary.tonight).toBeLessThanOrEqual(5);
+    expect(dashboard.summary.tonight).toBeLessThanOrEqual(queue.policy.maxAttemptsPerRun);
     expect(dashboard.summary.discovered).toBe(discovery.candidates.length);
     expect(dashboard.brands).toHaveLength(160);
     expect(dashboard.brands[0]?.id).toBe("massimo-dutti");
@@ -32,7 +32,7 @@ describe("brand onboarding dashboard", () => {
     });
     const selected = selectQueueCandidates(queue as BrandOnboardingQueueFile, {
       now: new Date("2026-09-26T18:00:00.000Z"),
-      limit: 5,
+      limit: queue.policy.maxAttemptsPerRun,
       skipSlugs: new Set((universe as BrandUniverseFile).brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
     }).map((entry) => entry.slug);
     expect(dashboard.brands.filter((entry) => entry.isTonight).map((entry) => entry.id)).toEqual(selected);
