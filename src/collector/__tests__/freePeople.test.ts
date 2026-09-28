@@ -190,3 +190,13 @@ describe("Free People browser identity", () => {
     expect(freePeopleBrowserProductKey(product)).toBe("style:111000111");
   });
 });
+
+
+describe("Free People requested-page isolation", () => {
+  it("does not reuse a stale page when the requested page is absent", () => {
+    const stale = {...FIXTURE, currentPage: 1};
+    const parsed = parseFreePeoplePiniaCategory(stale, {onlyPage: 999});
+    expect(parsed.products).toEqual([]);
+    expect(parsed.stats.tilesSeen).toBe(0);
+  });
+});
