@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:33:12.378Z",
+  "generatedAt": "2026-09-28T09:34:30.090Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -464,6 +464,35 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "ala-a",
+      "brandName": "ALAÏA",
+      "products": 157,
+      "productsWith1Image": 2,
+      "productsWith2PlusImages": 155,
+      "productsWith3PlusImages": 155,
+      "averageUniqueImages": 5.4,
+      "collectorAverage": 0,
+      "familyAverage": 5.4,
+      "shardAverage": null,
+      "knownFailures": [
+        {
+          "modelFamilyId": "ala-a--id-url-https-www-maison-alaia-com-en-us-product-flat-shoes-criss-cross-ballet-flats-in-crocodile-embossed-calfskin-aa3a046i268999-html-ballet-flat-base",
+          "origin": "COLLECTOR",
+          "collectorCount": 0,
+          "familyCount": 1,
+          "shardCount": null
+        },
+        {
+          "modelFamilyId": "ala-a--id-url-https-www-maison-alaia-com-en-us-product-flat-shoes-mules-in-merino-shearling-aa3m1005i048143-html-ballet-flat-mule-shearling",
+          "origin": "COLLECTOR",
+          "collectorCount": 0,
+          "familyCount": 1,
+          "shardCount": null
+        }
+      ],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "khaite",
       "brandName": "KHAITE",
       "products": 101,
@@ -487,6 +516,20 @@
       "averageUniqueImages": 10.4,
       "collectorAverage": 10.3,
       "familyAverage": 10.4,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "maison-margiela",
+      "brandName": "MAISON MARGIELA",
+      "products": 107,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 107,
+      "productsWith3PlusImages": 107,
+      "averageUniqueImages": 19.6,
+      "collectorAverage": 0,
+      "familyAverage": 19.6,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -640,7 +683,7 @@
           "shardCount": null
         },
         {
-          "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-gisele-synthetic-leather-in-python-pump-base",
+          "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-gisele-synthetic-leather-in-python-unclassified-base",
           "origin": "COLLECTOR",
           "collectorCount": 1,
           "familyCount": 1,
@@ -730,6 +773,20 @@
       "averageUniqueImages": 13.4,
       "collectorAverage": 13.2,
       "familyAverage": 13.4,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "nine-west",
+      "brandName": "NINE WEST",
+      "products": 175,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 175,
+      "productsWith3PlusImages": 175,
+      "averageUniqueImages": 12.9,
+      "collectorAverage": 0,
+      "familyAverage": 12.9,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -1012,6 +1069,20 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "massimo-dutti",
+      "brandName": "MASSIMO DUTTI",
+      "products": 107,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 107,
+      "productsWith3PlusImages": 107,
+      "averageUniqueImages": 16.8,
+      "collectorAverage": 0,
+      "familyAverage": 16.8,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "the-attico",
       "brandName": "THE ATTICO",
       "products": 46,
@@ -1023,6 +1094,127 @@
       "familyAverage": 7.5,
       "shardAverage": null,
       "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "tkees",
+      "brandName": "TKEES",
+      "products": 74,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 74,
+      "productsWith3PlusImages": 74,
+      "averageUniqueImages": 14.8,
+      "collectorAverage": 0,
+      "familyAverage": 14.8,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "loeffler-randall",
+      "brandName": "LOEFFLER RANDALL",
+      "products": 185,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 185,
+      "productsWith3PlusImages": 185,
+      "averageUniqueImages": 8.9,
+      "collectorAverage": 0,
+      "familyAverage": 8.9,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "freda-salvador",
+      "brandName": "FREDA SALVADOR",
+      "products": 113,
+      "productsWith1Image": 2,
+      "productsWith2PlusImages": 111,
+      "productsWith3PlusImages": 110,
+      "averageUniqueImages": 14,
+      "collectorAverage": 0,
+      "familyAverage": 14,
+      "shardAverage": null,
+      "knownFailures": [
+        {
+          "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-lennox-wood-embossed-croc-boot-wood",
+          "origin": "COLLECTOR",
+          "collectorCount": 0,
+          "familyCount": 1,
+          "shardCount": null
+        },
+        {
+          "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-phoenix-black-embossed-croc-boot-base",
+          "origin": "COLLECTOR",
+          "collectorCount": 0,
+          "familyCount": 1,
+          "shardCount": null
+        }
+      ],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "sarah-flint",
+      "brandName": "SARAH FLINT",
+      "products": 92,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 92,
+      "productsWith3PlusImages": 92,
+      "averageUniqueImages": 12.9,
+      "collectorAverage": 0,
+      "familyAverage": 12.9,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "brother-vellies",
+      "brandName": "BROTHER VELLIES",
+      "products": 26,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 26,
+      "productsWith3PlusImages": 25,
+      "averageUniqueImages": 6.9,
+      "collectorAverage": 0,
+      "familyAverage": 6.9,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "4ccccees",
+      "brandName": "4CCCCEES",
+      "products": 151,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 151,
+      "productsWith3PlusImages": 151,
+      "averageUniqueImages": 8,
+      "collectorAverage": 8,
+      "familyAverage": 8,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "alexandre-birman",
+      "brandName": "ALEXANDRE BIRMAN",
+      "products": 408,
+      "productsWith1Image": 1,
+      "productsWith2PlusImages": 407,
+      "productsWith3PlusImages": 406,
+      "averageUniqueImages": 8.5,
+      "collectorAverage": 8.5,
+      "familyAverage": 8.5,
+      "shardAverage": null,
+      "knownFailures": [
+        {
+          "modelFamilyId": "alexandre-birman--id-shopify-alexandre-birman-clarita-jungle-sneaker-leather-python-white-natural-b3522600020001-sneaker-base",
+          "origin": "COLLECTOR",
+          "collectorCount": 1,
+          "familyCount": 1,
+          "shardCount": null
+        }
+      ],
       "needsRecrawl": false
     },
     {
