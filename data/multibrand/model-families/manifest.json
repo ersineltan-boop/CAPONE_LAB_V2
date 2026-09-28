@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T12:19:16.905Z",
-  "totalFamilies": 15936,
-  "shardCount": 23,
+  "generatedAt": "2026-09-28T13:28:42.826Z",
+  "totalFamilies": 15945,
+  "shardCount": 24,
   "shards": [
     {
       "file": "brands/4ccccees.json",
@@ -69,6 +69,11 @@
       "file": "brands/nine-west.json",
       "familyCount": 175,
       "bytes": 1355105
+    },
+    {
+      "file": "brands/nodaleto.json",
+      "familyCount": 9,
+      "bytes": 53056
     },
     {
       "file": "brands/sarah-flint.json",

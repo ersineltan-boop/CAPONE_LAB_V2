@@ -689,7 +689,7 @@ describe("workflow contract", () => {
       join(process.cwd(), ".github/workflows/capone-brand-onboarding.yml"),
       "utf-8",
     );
-    expect(workflow).toContain("cron: \"0 20 * * *\"");
+    expect(workflow).toContain("cron: \"0 20 * * 0,3\"");
     expect(workflow).toContain("timeout-minutes: 300");
     expect(workflow).toContain("node-version: 20");
     expect(workflow).toContain("npm ci");
@@ -697,7 +697,7 @@ describe("workflow contract", () => {
     expect(workflow).not.toMatch(/OPENAI_API_KEY\s*:/);
     expect(workflow).not.toMatch(/secrets\.OPENAI/);
     const daily = await readFile(join(process.cwd(), ".github/workflows/capone-daily-refresh.yml"), "utf-8");
-    expect(daily).toContain("cron: \"0 4 * * *\"");
+    expect(daily).toContain("cron: \"0 4 * * 0,3\"");
     expect(daily).toContain('CAPONE_REFRESH_MARKETPLACES: "false"');
   });
 });

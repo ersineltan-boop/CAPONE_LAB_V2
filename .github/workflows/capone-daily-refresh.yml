@@ -1,4 +1,4 @@
-# Daily CAPONE data refresh.
+# Sunday/Wednesday CAPONE data refresh.
 # Schedule: 07:00 Türkiye time = 04:00 UTC (UTC+3, no DST).
 #
 # Safety contract:
@@ -10,7 +10,7 @@
 #
 # No OPENAI_API_KEY is used.
 
-name: CAPONE daily refresh
+name: CAPONE scheduled refresh
 
 on:
   push:
@@ -20,7 +20,7 @@ on:
       - "scripts/stage-cloud-refresh-data.ts"
       - "src/refresh/runCloudRefresh.ts"
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 4 * * 0,3"
   workflow_dispatch:
 
 concurrency:
