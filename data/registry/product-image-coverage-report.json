@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T10:39:39.778Z",
+  "generatedAt": "2026-09-28T18:25:27.728Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -258,6 +258,20 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "nodaleto",
+      "brandName": "NODALETO",
+      "products": 9,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 9,
+      "productsWith3PlusImages": 9,
+      "averageUniqueImages": 7.6,
+      "collectorAverage": 0,
+      "familyAverage": 7.6,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "neous",
       "brandName": "NEOUS",
       "products": 32,
@@ -267,6 +281,20 @@
       "averageUniqueImages": 7,
       "collectorAverage": 6.9,
       "familyAverage": 7,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "yuul-yie",
+      "brandName": "YUUL YIE",
+      "products": 43,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 43,
+      "productsWith3PlusImages": 43,
+      "averageUniqueImages": 10.5,
+      "collectorAverage": 0,
+      "familyAverage": 10.5,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false
@@ -585,6 +613,20 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "isabel-marant",
+      "brandName": "ISABEL MARANT",
+      "products": 53,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 53,
+      "productsWith3PlusImages": 53,
+      "averageUniqueImages": 22.5,
+      "collectorAverage": 0,
+      "familyAverage": 22.5,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "cecilie-bahnsen",
       "brandName": "CECILIE BAHNSEN",
       "products": 28,
@@ -647,6 +689,20 @@
           "shardCount": null
         }
       ],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "le-silla",
+      "brandName": "LE SILLA",
+      "products": 121,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 121,
+      "productsWith3PlusImages": 121,
+      "averageUniqueImages": 21.4,
+      "collectorAverage": 0,
+      "familyAverage": 21.4,
+      "shardAverage": null,
+      "knownFailures": [],
       "needsRecrawl": false
     },
     {
@@ -863,6 +919,76 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "repetto",
+      "brandName": "REPETTO",
+      "products": 58,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 58,
+      "productsWith3PlusImages": 57,
+      "averageUniqueImages": 19.6,
+      "collectorAverage": 0,
+      "familyAverage": 19.6,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "k-jacques",
+      "brandName": "K.JACQUES",
+      "products": 115,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 115,
+      "productsWith3PlusImages": 76,
+      "averageUniqueImages": 3.6,
+      "collectorAverage": 0,
+      "familyAverage": 3.6,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "rouje",
+      "brandName": "ROUJE",
+      "products": 31,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 31,
+      "productsWith3PlusImages": 31,
+      "averageUniqueImages": 9,
+      "collectorAverage": 0,
+      "familyAverage": 9,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "pretty-ballerinas",
+      "brandName": "PRETTY BALLERINAS",
+      "products": 183,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 183,
+      "productsWith3PlusImages": 183,
+      "averageUniqueImages": 5.7,
+      "collectorAverage": 0,
+      "familyAverage": 5.7,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "mascar",
+      "brandName": "MASCARÓ",
+      "products": 145,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 145,
+      "productsWith3PlusImages": 145,
+      "averageUniqueImages": 5.4,
+      "collectorAverage": 0,
+      "familyAverage": 5.4,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "naguisa",
       "brandName": "NAGUISA",
       "products": 108,
@@ -1027,6 +1153,20 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "fly-london",
+      "brandName": "FLY LONDON",
+      "products": 975,
+      "productsWith1Image": 0,
+      "productsWith2PlusImages": 975,
+      "productsWith3PlusImages": 974,
+      "averageUniqueImages": 5.3,
+      "collectorAverage": 0,
+      "familyAverage": 5.3,
+      "shardAverage": null,
+      "knownFailures": [],
+      "needsRecrawl": false
+    },
+    {
       "brandId": "tuas",
       "brandName": "TUAS",
       "products": 5,
@@ -1061,9 +1201,9 @@
       "productsWith1Image": 0,
       "productsWith2PlusImages": 535,
       "productsWith3PlusImages": 519,
-      "averageUniqueImages": 4.7,
-      "collectorAverage": 4.7,
-      "familyAverage": 4.7,
+      "averageUniqueImages": 4.8,
+      "collectorAverage": 4.8,
+      "familyAverage": 4.8,
       "shardAverage": null,
       "knownFailures": [],
       "needsRecrawl": false

@@ -1,7 +1,7 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T18:02:06.641Z",
+  "generatedAt": "2026-09-28T18:25:07.417Z",
   "totalFamilies": 16362,
   "shardCount": 28,
   "shards": [
@@ -33,12 +33,12 @@
     {
       "file": "part-005.json",
       "familyCount": 1956,
-      "bytes": 16774748
+      "bytes": 16775047
     },
     {
       "file": "part-006.json",
       "familyCount": 198,
-      "bytes": 1065682
+      "bytes": 1070981
     },
     {
       "file": "brands/4ccccees.json",
