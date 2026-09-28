@@ -3,6 +3,14 @@
 name: CAPONE new sources refresh
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/capone-issue-91-refresh.yml"
+      - "scripts/collect-official-shopify*.ts"
+      - "scripts/collect-browns.ts"
+      - "src/brands/officialShopify/**"
+      - "src/collector/browns.ts"
   schedule:
     - cron: "0 8 * * 0,3"
   workflow_dispatch:
