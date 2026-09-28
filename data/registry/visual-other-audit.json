@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-27T17:33:12.373Z",
-  "digerCount": 785,
-  "totalFamilies": 13015,
+  "generatedAt": "2026-09-28T09:34:30.084Z",
+  "digerCount": 801,
+  "totalFamilies": 14629,
   "reasonCounts": {
-    "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 160,
-    "CONFLICTING_SOURCE_CATEGORIES": 48,
-    "UNMAPPED_SOURCE_CATEGORY": 541,
+    "MISSING_SOURCE_CATEGORY": 49,
+    "GENERIC_SOURCE_CATEGORY": 155,
+    "CONFLICTING_SOURCE_CATEGORIES": 49,
+    "UNMAPPED_SOURCE_CATEGORY": 548,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -302,6 +302,21 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "alexandre-birman--id-shopify-alexandre-birman-thay-slouch-ttk-90-brown-unclassified-base",
+      "brand": "ALEXANDRE BIRMAN",
+      "sourceCategories": [
+        "All Shoes",
+        "Boots",
+        "Brogue",
+        "HIGH HEELS",
+        "High Heels 1",
+        "Texture Boots",
+        "Women Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "alma-rae--id-level-shoes-alma-rae-kali-slippers-beige-leather-women-slippers-hsjbpe-html-unclassified-base",
@@ -1080,15 +1095,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "amina-muaddi--id-shopify-the-webster-1583186-sb004095t001wh001-begum-mesh-sling-95-white-unclassified-mesh-slingback",
-      "brand": "Amina Muaddi",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "amina-muaddi--name-amina-muaddi-alexa-slipper-95-unclassified-satin",
       "brand": "AMINA MUADDI",
       "sourceCategories": [
@@ -1231,24 +1237,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "andrea-wazen--id-shopify-the-webster-1565338-katsl105elgol-katy-sling-105-elaphe-gold-unclassified-slingback",
-      "brand": "Andrea Wazen",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "andrea-wazen--id-shopify-the-webster-1565350-katsl105ellav-katy-sling-105-elaphe-purple-unclassified-slingback",
-      "brand": "Andrea Wazen",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "aquazzura--id-level-shoes-aquazzura-crystal-lover-75-mules-brown-mesh-women-mules-fyaeve-html-unclassified-mesh-mule",
@@ -4345,7 +4333,61 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "gia-borghini--handle-gia-borghini-audrey-satin-in-unclassified-satin-audrey",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-carla-nappa-leather-in-tiramisu-unclassified-base",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-emanuelle-suede-leather-in-fudge-unclassified-base",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-granny-slipper-leopard-unclassified-base",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-hina-calf-leather-in-tiramisu-unclassified-base",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-julienne-calf-leather-in-tiramisu-unclassified-base",
+      "brand": "GIA BORGHINI",
+      "sourceCategories": [
+        "FLAT SHOES"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "gia-borghini--id-shopify-gia-borghini-julienne-suede-leather-in-oregano-unclassified-base",
       "brand": "GIA BORGHINI",
       "sourceCategories": [
         "FLAT SHOES"
@@ -5860,24 +5902,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "miu-miu--id-shopify-the-webster-1594939-5d585e-f-005-3ku1-net-and-suede-boat-shoes-brown-unclassified-base",
-      "brand": "Miu Miu",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "miu-miu--id-shopify-the-webster-1616403-5d123e-f-005-3f33-bleached-leather-deck-shoes-brown-unclassified-base",
-      "brand": "Miu Miu",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "neous--handle-neous-beid-unclassified-base-beid",
       "brand": "NEOUS",
       "sourceCategories": [
@@ -7136,15 +7160,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "the-row--id-shopify-the-webster-1482212-f1626-l305-soft-mocassin-black-unclassified-base",
-      "brand": "The Row",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "the-row--name-the-row-hudson-two-slip-on-unclassified-base",
       "brand": "THE ROW",
       "sourceCategories": [],
@@ -7820,6 +7835,115 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "4ccccees--id-shopify-4ccccees-jabara-comet-white-leather-shoe-unclassified-base",
+      "brand": "4CCCCEES",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "maison-margiela--id-url-https-www-maisonmargiela-com-en-us-tabi-jazz-slipper-s58wr0126pr869t8013-html-unclassified-base",
+      "brand": "MAISON MARGIELA",
+      "sourceCategories": [
+        "Moccasins"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-black-leather-boat-shoe-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-cacao-green-boat-shoe-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-espresso-butter-boat-shoe-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-marky-brown-white-gingham-slipper-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-noa-brown-cream-linen-bow-flat-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-noa-leopard-velvet-bow-flat-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-raina-caramel-black-mesh-flat-unclassified-mesh",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-raina-zebra-mesh-flat-unclassified-mesh",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--name-loeffler-randall-noa-moir-bow-flat-unclassified-base",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "loeffler-randall--name-loeffler-randall-raina-flat-unclassified-mesh",
+      "brand": "LOEFFLER RANDALL",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-paisley-amber-velvet-unclassified-base",
+      "brand": "FREDA SALVADOR",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sarah-flint--handle-sarah-flint-sarah-flint-x-mary-orton-cap-toe-unclassified-base-sarah-flint-x-mary-orton-perfect-cap-toe-flat",
+      "brand": "SARAH FLINT",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "sarah-flint--name-sarah-flint-fireside-house-shoe-unclassified-base",
+      "brand": "SARAH FLINT",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
     }
   ],
   "topUnmappedSourceCategories": [
@@ -8002,6 +8126,14 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "FLAT SHOES",
+      "count": 12,
+      "brands": [
+        "GIA BORGHINI"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Filler Suggested Product Logic: Shoes",
       "count": 11,
       "brands": [
@@ -8086,14 +8218,6 @@
       "count": 6,
       "brands": [
         "AMINA MUADDI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "FLAT SHOES",
-      "count": 6,
-      "brands": [
-        "GIA BORGHINI"
       ],
       "proposedMapping": null
     },
@@ -8205,17 +8329,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 13015,
-    "babet": 1044,
-    "loafer": 697,
-    "topuklu": 2044,
-    "sandal": 3405,
-    "mule": 1169,
-    "bot-cizme": 2321,
-    "sneaker": 1338,
-    "espadril": 111,
-    "oxford-derby": 12,
-    "clog": 89,
-    "diger": 785
+    "tumu": 14629,
+    "babet": 1222,
+    "loafer": 776,
+    "topuklu": 2265,
+    "sandal": 4033,
+    "mule": 1332,
+    "bot-cizme": 2580,
+    "sneaker": 1392,
+    "espadril": 116,
+    "oxford-derby": 20,
+    "clog": 92,
+    "diger": 801
   }
 }
