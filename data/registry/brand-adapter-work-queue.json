@@ -153,6 +153,15 @@
     "lastAttemptAt": "2026-09-28T06:11:46.016Z"
   },
   {
+    "brand": "BIBI LOU",
+    "slug": "bibi-lou",
+    "priority": 30,
+    "sourceUrl": "https://www.bibilou.com",
+    "blocker": "Shopify products.json did not yield women's footwear",
+    "attempts": 1,
+    "lastAttemptAt": "2026-09-29T01:05:49.421Z"
+  },
+  {
     "brand": "BILLI BI",
     "slug": "billi-bi",
     "priority": 31,
@@ -160,6 +169,15 @@
     "blocker": "official source requires a dedicated collector",
     "attempts": 0,
     "lastAttemptAt": null
+  },
+  {
+    "brand": "BIRKENSTOCK",
+    "slug": "birkenstock",
+    "priority": 32,
+    "sourceUrl": "https://www.birkenstock.com",
+    "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+    "attempts": 1,
+    "lastAttemptAt": "2026-09-29T01:05:49.421Z"
   },
   {
     "brand": "COPERNI",
