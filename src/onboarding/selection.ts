@@ -36,7 +36,7 @@ export function selectQueueCandidates(
     .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority);
   const selected = eligible.slice(0, Math.max(0, limit));
 
-  // Retain four luxury attempts while reserving one nightly slot for discovery.
+  // Retain priority attempts while reserving one slot for a new official-source probe.
   if (!only && limit >= 5 && selected.length === limit &&
       selected.every((entry) => priorityBrandRank(entry.slug) !== Number.MAX_SAFE_INTEGER)) {
     const unprobed = eligible.find((entry) =>

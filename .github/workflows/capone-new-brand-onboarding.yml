@@ -51,7 +51,7 @@ jobs:
           REQUESTED_DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
           set -euo pipefail
-          args=(--limit 5 --max-activations 3)
+          args=(--limit 25 --max-activations 3)
           if [[ "$REQUESTED_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run onboard:brands -- "${args[@]}"
 
@@ -82,7 +82,7 @@ jobs:
           AUTOMATION_BRANCH: automation/new-brand-onboarding
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish validated new-brand onboarding"
           AUTOMATION_PR_TITLE: "chore(data): validated automatic new-brand onboarding"
-          AUTOMATION_PR_BODY: "Official-source new-brand onboarding. Maximum 5 attempts and 3 activations. Only FULL quality-gate deliveries proceed through tests, production build, Vercel Preview, exact-head merge and Production verification. Failed or partial candidates preserve last-good."
+          AUTOMATION_PR_BODY: "Official-source new-brand onboarding. Maximum 25 attempts and 3 activations. Only FULL quality-gate deliveries proceed through tests, production build, Vercel Preview, exact-head merge and Production verification. Failed or partial candidates preserve last-good."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -112,7 +112,7 @@ jobs:
         run: |
           {
             echo "## CAPONE automatic new-brand onboarding"
-            echo "- Attempt limit: 5"
+            echo "- Attempt limit: 25"
             echo "- Activation limit: 3"
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"
