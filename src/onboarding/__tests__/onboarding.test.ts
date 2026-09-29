@@ -67,6 +67,8 @@ describe("onboarding queue policy", () => {
   });
   it("orders the priority brands and does not drop current collectable brands", () => {
     const queue = createInitialQueue();
+    expect(queue.policy.maxAttemptsPerRun).toBe(25);
+    expect(queue.policy.maxActivationsPerRun).toBe(3);
     expect(queue.entries.map((entry) => entry.slug)).toEqual(
       INITIAL_ONBOARDING_BRANDS.map((item) => item.slug),
     );
