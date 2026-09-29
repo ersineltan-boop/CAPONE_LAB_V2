@@ -1,47 +1,123 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T07:10:44.745Z",
+  "generatedAt": "2026-09-29T01:05:49.421Z",
   "dryRun": false,
   "summary": {
-    "activeBrandsBefore": 53,
+    "activeBrandsBefore": 54,
     "activeBrandsAfter": 54,
-    "attempted": 1,
-    "activated": 1,
+    "attempted": 5,
+    "activated": 0,
     "partial": 0,
-    "blocked": 0,
-    "customAdapterRequired": 0,
-    "failed": 0,
+    "blocked": 2,
+    "customAdapterRequired": 2,
+    "failed": 1,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "4CCCCEES",
-      "slug": "4ccccees",
-      "attemptedAt": "2026-09-28T07:10:44.745Z",
-      "detectedPlatform": "SHOPIFY",
-      "sourceStrategy": "shopify-public",
-      "status": "ACTIVE",
-      "productsFound": 193,
-      "families": 151,
-      "realMultiColorFamilies": 36,
-      "verifiedNewArrivals": 0,
-      "galleryImageCoverage": 1,
-      "categoriesFound": [
-        "Shoes",
-        "Boots 1",
-        "Heels",
-        "Sneakers 1",
-        "Ballerinas",
-        "Wedges",
-        "Sandals 1"
-      ],
-      "blocker": null,
+      "brand": "AUTRY",
+      "slug": "autry",
+      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
       "marketplaceCoverage": {
-        "farfetch": 0,
+        "farfetch": 9,
         "levelShoes": 0
       },
-      "activationDecision": "activate",
-      "notes": "ACCEPTED FULL: 151 families, 193 products, gallery 100%"
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "AXEL ARIGATO",
+      "slug": "axel-arigato",
+      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "detectedPlatform": "SITEMAP PRODUCT CRAWL",
+      "sourceStrategy": "sitemap-product-crawl",
+      "status": "FAILED",
+      "productsFound": 8,
+      "families": 2,
+      "realMultiColorFamilies": 1,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 0,
+      "categoriesFound": [],
+      "blocker": "footwear leakage: 8",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 3
+      },
+      "activationDecision": "skip",
+      "notes": "Sitemap exposed 40 product URLs; REJECTED: footwear leakage: 8"
+    },
+    {
+      "brand": "BALENCIAGA",
+      "slug": "balenciaga",
+      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 2,
+        "levelShoes": 3
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "BIBI LOU",
+      "slug": "bibi-lou",
+      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 5,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": null
+    },
+    {
+      "brand": "BIRKENSTOCK",
+      "slug": "birkenstock",
+      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 14,
+        "levelShoes": 4
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
     }
   ]
 }

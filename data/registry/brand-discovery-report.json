@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T06:11:45.207Z",
+  "generatedAt": "2026-09-29T01:05:48.764Z",
   "sourcePolicy": "APPROVED_MARKETPLACES_ONLY",
   "candidates": [
     {
@@ -71,6 +71,17 @@
       "sampleProductUrl": "https://www.farfetch.com/uk/shopping/women/vans-x-metagirl-premium-old-skool-36-buckle-sneakers-item-36738029.aspx"
     },
     {
+      "id": "rick-owens",
+      "brand": "RICK OWENS",
+      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
+      "marketplaceSources": [
+        "farfetch",
+        "the-webster"
+      ],
+      "productCount": 23,
+      "sampleProductUrl": "https://www.farfetch.com/uk/shopping/women/rick-owens-lace-up-leather-sneakers-item-34319703.aspx"
+    },
+    {
       "id": "giuseppe-zanotti",
       "brand": "GIUSEPPE ZANOTTI",
       "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
@@ -80,17 +91,6 @@
       ],
       "productCount": 22,
       "sampleProductUrl": "https://www.levelshoes.com/giuseppe-zanotti-mariposa-105-mules-brown-leather-women-mules-lzenuy.html"
-    },
-    {
-      "id": "rick-owens",
-      "brand": "RICK OWENS",
-      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
-      "marketplaceSources": [
-        "farfetch",
-        "the-webster"
-      ],
-      "productCount": 21,
-      "sampleProductUrl": "https://www.farfetch.com/uk/shopping/women/rick-owens-lace-up-leather-sneakers-item-34319703.aspx"
     },
     {
       "id": "ugg",
@@ -616,6 +616,16 @@
       "sampleProductUrl": "https://www.levelshoes.com/alev-milano-blake-75-sandals-red-suede-women-sandals-ssasvz.html"
     },
     {
+      "id": "alexanderwang",
+      "brand": "ALEXANDERWANG",
+      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
+      "marketplaceSources": [
+        "the-webster"
+      ],
+      "productCount": 7,
+      "sampleProductUrl": "https://thewebster.com/products/1663679-30426s005-courtney-65mm-thong-logo-sandal-brown"
+    },
+    {
       "id": "barbour",
       "brand": "BARBOUR",
       "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
@@ -704,16 +714,6 @@
       ],
       "productCount": 7,
       "sampleProductUrl": "https://www.freepeople.com/shop/main-stage-gladiator-sandals/?color=001"
-    },
-    {
-      "id": "alexanderwang",
-      "brand": "ALEXANDERWANG",
-      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
-      "marketplaceSources": [
-        "the-webster"
-      ],
-      "productCount": 6,
-      "sampleProductUrl": "https://thewebster.com/products/1663679-30426s005-courtney-65mm-thong-logo-sandal-brown"
     },
     {
       "id": "badgley-mischka",
@@ -936,6 +936,16 @@
       "sampleProductUrl": "https://www.freepeople.com/shop/jasper-studded-loafers/?color=001"
     },
     {
+      "id": "balenciaga-america",
+      "brand": "BALENCIAGA AMERICA",
+      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
+      "marketplaceSources": [
+        "the-webster"
+      ],
+      "productCount": 4,
+      "sampleProductUrl": "https://thewebster.com/products/1593384-855350-wbdo0-fringe-bootie-black"
+    },
+    {
       "id": "candie-s",
       "brand": "CANDIE'S",
       "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
@@ -1064,16 +1074,6 @@
       ],
       "productCount": 4,
       "sampleProductUrl": "https://www.levelshoes.com/pedro-garc-a-braidy-slippers-brown-suede-women-slippers-cm1fqk.html"
-    },
-    {
-      "id": "balenciaga-america",
-      "brand": "BALENCIAGA AMERICA",
-      "status": "DISCOVERED_NEEDS_OFFICIAL_SOURCE",
-      "marketplaceSources": [
-        "the-webster"
-      ],
-      "productCount": 3,
-      "sampleProductUrl": "https://thewebster.com/products/1593384-855350-wbdo0-fringe-bootie-black"
     },
     {
       "id": "bc-footwear-by-seychelles",
