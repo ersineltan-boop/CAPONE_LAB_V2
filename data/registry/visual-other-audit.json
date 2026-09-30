@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T18:25:27.723Z",
-  "digerCount": 801,
-  "totalFamilies": 16362,
+  "generatedAt": "2026-09-30T10:41:42.884Z",
+  "digerCount": 802,
+  "totalFamilies": 16479,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 49,
     "GENERIC_SOURCE_CATEGORY": 155,
     "CONFLICTING_SOURCE_CATEGORIES": 49,
-    "UNMAPPED_SOURCE_CATEGORY": 548,
+    "UNMAPPED_SOURCE_CATEGORY": 549,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -5830,6 +5830,17 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "margaux--name-margaux-the-paz-unclassified-braided",
+      "brand": "MARGAUX",
+      "sourceCategories": [
+        "Flats",
+        "The Vacation Edit",
+        "The Work Edit"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "melissa--id-free-people-109201699-unclassified-base",
       "brand": "Melissa",
       "sourceCategories": [
@@ -8013,7 +8024,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 67,
+      "count": 68,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -8022,6 +8033,7 @@
         "JUDE",
         "KHAITE",
         "LE MONDE BERYL",
+        "MARGAUX",
         "NEOUS",
         "PROENZA SCHOULER",
         "SOPHIA WEBSTER",
@@ -8329,17 +8341,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 16362,
-    "babet": 1435,
-    "loafer": 909,
-    "topuklu": 2439,
-    "sandal": 4471,
-    "mule": 1399,
-    "bot-cizme": 3197,
-    "sneaker": 1456,
+    "tumu": 16479,
+    "babet": 1454,
+    "loafer": 920,
+    "topuklu": 2449,
+    "sandal": 4496,
+    "mule": 1425,
+    "bot-cizme": 3218,
+    "sneaker": 1459,
     "espadril": 133,
-    "oxford-derby": 20,
+    "oxford-derby": 21,
     "clog": 102,
-    "diger": 801
+    "diger": 802
   }
 }

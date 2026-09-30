@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-09-28T18:07:34.438Z",
-  "runFinishedAt": "2026-09-28T18:12:51.128Z",
-  "totalProducts": 19558,
+  "runStartedAt": "2026-09-30T10:22:15.528Z",
+  "runFinishedAt": "2026-09-30T10:27:19.127Z",
+  "totalProducts": 19870,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -154,13 +154,33 @@
       "sourceReportedProductCount": 21
     },
     {
+      "source": "JW ANDERSON",
+      "status": "success",
+      "method": "shopify",
+      "discoveredProductLinks": 67,
+      "parsedProducts": 67,
+      "productsWithImages": 67,
+      "productsWithMaterial": 32,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/womens-shoes"
+      ],
+      "pagesTraversed": 2,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/womens-shoes"
+      ],
+      "sourceReportedProductCount": 67
+    },
+    {
       "source": "GIA BORGHINI",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 116,
-      "parsedProducts": 91,
-      "productsWithImages": 91,
-      "productsWithMaterial": 91,
+      "discoveredProductLinks": 89,
+      "parsedProducts": 69,
+      "productsWithImages": 69,
+      "productsWithMaterial": 69,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -169,8 +189,8 @@
         "/collections/heeled-shoes",
         "/collections/flat-shoes"
       ],
-      "rawProductUrlsDiscovered": 116,
-      "duplicateCount": 25,
+      "rawProductUrlsDiscovered": 89,
+      "duplicateCount": 20,
       "pagesTraversed": 4,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -207,9 +227,9 @@
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 511,
-      "parsedProducts": 511,
-      "productsWithImages": 511,
+      "discoveredProductLinks": 514,
+      "parsedProducts": 514,
+      "productsWithImages": 514,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -228,7 +248,7 @@
         "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 511,
+      "rawProductUrlsDiscovered": 514,
       "duplicateCount": 0,
       "pagesTraversed": 25,
       "paginationExhausted": true,
@@ -250,13 +270,43 @@
       "sourceReportedProductCount": null
     },
     {
+      "source": "MARGAUX",
+      "status": "success",
+      "method": "shopify",
+      "discoveredProductLinks": 244,
+      "parsedProducts": 244,
+      "productsWithImages": 244,
+      "productsWithMaterial": 5,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/shop",
+        "/collections/boots",
+        "/collections/loafers",
+        "/collections/sandals",
+        "/collections/heels",
+        "/collections/flats"
+      ],
+      "pagesTraversed": 13,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/shop",
+        "/collections/boots",
+        "/collections/loafers",
+        "/collections/sandals",
+        "/collections/heels",
+        "/collections/flats"
+      ],
+      "sourceReportedProductCount": 244
+    },
+    {
       "source": "4CCCCEES",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 204,
-      "parsedProducts": 193,
-      "productsWithImages": 193,
-      "productsWithMaterial": 193,
+      "discoveredProductLinks": 202,
+      "parsedProducts": 191,
+      "productsWithImages": 191,
+      "productsWithMaterial": 191,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -275,7 +325,7 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "rawProductUrlsDiscovered": 204,
+      "rawProductUrlsDiscovered": 202,
       "duplicateCount": 11,
       "pagesTraversed": 8,
       "paginationExhausted": true,
@@ -301,10 +351,10 @@
       "source": "ALEXANDRE BIRMAN",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 669,
-      "parsedProducts": 668,
-      "productsWithImages": 668,
-      "productsWithMaterial": 666,
+      "discoveredProductLinks": 668,
+      "parsedProducts": 667,
+      "productsWithImages": 667,
+      "productsWithMaterial": 665,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -359,14 +409,13 @@
         "/collections/sandals-sale",
         "/collections/sandals-on-sale",
         "/collections/flats-on-sale",
-        "/collections/pumps-sale",
         "/collections/boots-on-sale",
         "/collections/pumps-on-sale",
         "/collections/platforms-on-sale"
       ],
-      "rawProductUrlsDiscovered": 669,
+      "rawProductUrlsDiscovered": 668,
       "duplicateCount": 1,
-      "pagesTraversed": 50,
+      "pagesTraversed": 49,
       "paginationExhausted": true,
       "collectionsCrawled": [
         "/collections/shoes",
@@ -420,12 +469,11 @@
         "/collections/sandals-sale",
         "/collections/sandals-on-sale",
         "/collections/flats-on-sale",
-        "/collections/pumps-sale",
         "/collections/boots-on-sale",
         "/collections/pumps-on-sale",
         "/collections/platforms-on-sale"
       ],
-      "sourceReportedProductCount": 399
+      "sourceReportedProductCount": 398
     }
   ],
   "failedBrands": [
@@ -436,9 +484,11 @@
     "DRIES VAN NOTEN",
     "PROENZA SCHOULER",
     "SIMONE ROCHA",
+    "JW ANDERSON",
     "GIA BORGHINI",
     "TUAS",
     "ZARA",
+    "MARGAUX",
     "4CCCCEES",
     "ALEXANDRE BIRMAN"
   ]
