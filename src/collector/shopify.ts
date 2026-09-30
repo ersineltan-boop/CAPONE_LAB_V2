@@ -11,7 +11,7 @@ import {
   type TotemeCollectStats,
 } from "./totemeFootwear";
 import { mergeProductCatalog, sortProductsNewestFirst } from "./mergeProducts";
-import type { PilotProduct, PilotProductVariant, PilotSourceConfig } from "./types";
+import type { FootwearCategory, PilotProduct, PilotProductVariant, PilotSourceConfig } from "./types";
 import { fetchJson, sleep } from "./http";
 import { extractShopifyProductDates } from "../productDates/shopifyDates";
 import {
@@ -135,6 +135,7 @@ export function shopifyProductToPilot(
   discoveredAt: string,
   collectionPath?: string,
   collectionTitle?: string,
+  verifiedCollectionCategory?: FootwearCategory,
 ): PilotProduct | null {
   const tags = normalizeTags(product.tags);
   const productType = product.product_type ?? "";
@@ -156,13 +157,17 @@ export function shopifyProductToPilot(
     : evaluateFootwearProduct(gateInput);
 
   if (gate.decision !== "ACCEPT_FOOTWEAR" || !gate.category) return null;
+  // Dedicated collectors may prove opaque model categories through actual
+  // membership in a pinned official footwear collection. Preserve raw fields.
+  const footwearCategory = gate.category === "OTHER_FOOTWEAR" && fromVerifiedFootwearCollection
+    ? verifiedCollectionCategory ?? gate.category : gate.category;
   // A collection can contain products with opaque names or mixed merchandise.
   // Apply the same independent review that onboarding uses before counting the
   // product as accepted, so one uncertain item cannot poison the whole batch.
   if (evaluateStoredPilotProduct({
     productName: product.title,
     productUrl: canonicalProductUrl(config.baseUrl, product.handle),
-    category: gate.category,
+    category: footwearCategory,
     sourceDescription: product.body_html,
   }).decision !== "ACCEPT_FOOTWEAR") return null;
   const parsed = parseProductFieldsFromHtml(product.body_html ?? "");
@@ -193,7 +198,7 @@ export function shopifyProductToPilot(
     productUrl: canonicalProductUrl(config.baseUrl, product.handle),
     imageUrl: images[0] ?? pickImage(product),
     images,
-    category: gate.category,
+    category: footwearCategory,
     color,
     material: parsed.material,
     toeShape: parsed.toeShape,

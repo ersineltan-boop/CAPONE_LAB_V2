@@ -80,7 +80,8 @@ export async function probeBrandSource(input: {
   }
 
   const shopify = await probeShopify(input.http, baseUrl, input.brand,
-    input.slug === "jw-anderson" ? [JW_WOMENS_SHOES_PATH] : undefined);
+    input.slug === "jw-anderson" ? [JW_WOMENS_SHOES_PATH] :
+      input.slug === "margaux" ? ["/collections/flats", "/collections/sandals", "/collections/heels", "/collections/boots", "/collections/loafers"] : undefined);
   if (shopify.products.length > 0) {
     return {
       platform: "SHOPIFY",

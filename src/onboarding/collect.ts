@@ -12,6 +12,7 @@ import { defaultOnboardingHttp, type OnboardingHttp } from "./http";
 import type { ProbeResult } from "./types";
 import type { PilotProduct } from "../collector/types";
 import { collectJwAnderson } from "../collector/jwAnderson";
+import { collectMargaux } from "../collector/margaux";
 
 function syntheticEntry(
   slug: string,
@@ -60,6 +61,11 @@ export async function collectCandidateToStaging(input: {
 }): Promise<CollectionAttemptResult> {
   const http = input.http ?? defaultOnboardingHttp;
   const entry = syntheticEntry(input.slug, input.brand, input.sourceUrl, input.probe);
+
+  if (input.slug === "margaux" && input.probe.strategy === "shopify-public") {
+    return collectMargaux({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
+      collectionPaths: input.probe.footwearPaths, maxProducts: 200, collectMode: "full" }, http);
+  }
 
   if (input.slug === "jw-anderson" && input.probe.strategy === "shopify-public") {
     return collectJwAnderson({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
