@@ -2315,23 +2315,29 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Onboarding FULL: shopify-public",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
       "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
+      "collectionPaths": [
+        "/collections/womens-shoes"
+      ],
+      "productLimit": 80,
+      "supportsMultipleImages": true,
       "discoverySources": [],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "collectionDiscoveryStatus": "AUTO_DISCOVERED",
+      "footwearCollectionHandles": [
+        "womens-shoes"
+      ]
     },
     {
       "id": "amina-muaddi",

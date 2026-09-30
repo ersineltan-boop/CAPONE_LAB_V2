@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T06:15:21.779Z",
+  "generatedAt": "2026-09-30T06:27:14.797Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 73,
-    "activeBrandsAfter": 73,
+    "activeBrandsAfter": 74,
     "attempted": 1,
-    "activated": 0,
-    "partial": 1,
+    "activated": 1,
+    "partial": 0,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
@@ -17,10 +17,10 @@
     {
       "brand": "JW ANDERSON",
       "slug": "jw-anderson",
-      "attemptedAt": "2026-09-30T06:15:21.779Z",
+      "attemptedAt": "2026-09-30T06:27:14.797Z",
       "detectedPlatform": "SHOPIFY",
       "sourceStrategy": "shopify-public",
-      "status": "PARTIAL",
+      "status": "ACTIVE",
       "productsFound": 67,
       "families": 57,
       "realMultiColorFamilies": 1,
@@ -29,13 +29,13 @@
       "categoriesFound": [
         "Women's Shoes"
       ],
-      "blocker": "Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "blocker": null,
       "marketplaceCoverage": {
         "farfetch": 8,
         "levelShoes": 50
       },
-      "activationDecision": "partial",
-      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik"
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%"
     }
   ]
 }

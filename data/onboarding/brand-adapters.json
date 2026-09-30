@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T07:10:44.745Z",
+  "updatedAt": "2026-09-30T06:27:14.797Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
@@ -46,6 +46,17 @@
         "/collections/all-shoes",
         "/collections/sandals",
         "/collections/boots"
+      ]
+    },
+    "jw-anderson": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.jwanderson.com",
+      "collectionPaths": [
+        "/collections/womens-shoes"
+      ],
+      "footwearPaths": [
+        "/collections/womens-shoes"
       ]
     }
   }
