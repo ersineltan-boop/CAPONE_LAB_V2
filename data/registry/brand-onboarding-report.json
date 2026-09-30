@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T06:27:14.797Z",
+  "generatedAt": "2026-09-30T07:11:31.204Z",
   "dryRun": false,
   "summary": {
-    "activeBrandsBefore": 73,
+    "activeBrandsBefore": 74,
     "activeBrandsAfter": 74,
     "attempted": 1,
-    "activated": 1,
-    "partial": 0,
+    "activated": 0,
+    "partial": 1,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
@@ -15,27 +15,31 @@
   },
   "attempts": [
     {
-      "brand": "JW ANDERSON",
-      "slug": "jw-anderson",
-      "attemptedAt": "2026-09-30T06:27:14.797Z",
+      "brand": "MARGAUX",
+      "slug": "margaux",
+      "attemptedAt": "2026-09-30T07:11:31.204Z",
       "detectedPlatform": "SHOPIFY",
       "sourceStrategy": "shopify-public",
-      "status": "ACTIVE",
-      "productsFound": 67,
-      "families": 57,
-      "realMultiColorFamilies": 1,
-      "verifiedNewArrivals": 7,
+      "status": "PARTIAL",
+      "productsFound": 244,
+      "families": 73,
+      "realMultiColorFamilies": 60,
+      "verifiedNewArrivals": 0,
       "galleryImageCoverage": 1,
       "categoriesFound": [
-        "Women's Shoes"
+        "Flats",
+        "Boots",
+        "Heels",
+        "Loafers",
+        "Sandals"
       ],
-      "blocker": null,
+      "blocker": "Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik",
       "marketplaceCoverage": {
-        "farfetch": 8,
-        "levelShoes": 50
+        "farfetch": 0,
+        "levelShoes": 0
       },
-      "activationDecision": "activate",
-      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%"
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 73 families, 244 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik"
     }
   ]
 }
