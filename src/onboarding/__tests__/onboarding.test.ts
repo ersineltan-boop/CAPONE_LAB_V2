@@ -624,7 +624,9 @@ describe("onboarding run", () => {
     const after = await readFile(join(root, "data/multibrand/products.json"), "utf-8");
     expect(after).toBe(before);
     expect(result.activated).toEqual([]);
-    expect(result.report.summary.activeBrandsBefore).toBe(getCollectableBrands(loadBrandRegistry().all()).length);
+    // The temporary universe contains no active brands. The production registry
+    // must not leak into the run summary because the universe owns activation.
+    expect(result.report.summary.activeBrandsBefore).toBe(0);
     expect(result.report.summary.activeBrandsAfter).toBe(result.report.summary.activeBrandsBefore);
     expect(result.attempted).toContain("maison-margiela");
     expect(result.attempted).toContain("isabel-marant");

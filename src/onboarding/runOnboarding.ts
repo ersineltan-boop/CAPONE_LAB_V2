@@ -1,8 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
-import { getCollectableBrands } from "../registry/collection/brandToCollector";
-import { loadBrandRegistry } from "../registry/data";
 import type { PilotProduct } from "../collector/types";
 import type { BrandUniverseFile } from "../registry/build/types";
 import {
@@ -63,7 +61,10 @@ export async function runBrandOnboarding(
     brands: [],
   });
   let queue = mergeQueueWithUniverseCandidates(await loadQueueFile(root), universe.brands, now);
-  const activeBefore = getCollectableBrands(loadBrandRegistry().all()).length;
+  // The universe is the source of truth for activation. The registry only contains
+  // collectors that are already wired into the legacy catalog, so using it here
+  // under-reports active brands after successful onboarding waves.
+  const activeBefore = universe.brands.filter((entry) => entry.isActive).length;
   const catalogProducts = dryRun
     ? await loadJson<PilotProduct[]>(join(root, "data/multibrand/products.json"), [])
     : [];
