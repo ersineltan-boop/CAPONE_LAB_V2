@@ -1,8 +1,8 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-30T07:26:36.073Z",
-  "totalFamilies": 16473,
+  "generatedAt": "2026-09-30T09:38:53.554Z",
+  "totalFamilies": 16475,
   "shardCount": 28,
   "shards": [
     {
@@ -56,19 +56,9 @@
       "bytes": 3043733
     },
     {
-      "file": "brands/brother-vellies.json",
-      "familyCount": 26,
-      "bytes": 139092
-    },
-    {
       "file": "brands/fly-london.json",
       "familyCount": 962,
       "bytes": 3200918
-    },
-    {
-      "file": "brands/freda-salvador.json",
-      "familyCount": 113,
-      "bytes": 819947
     },
     {
       "file": "brands/isabel-marant.json",
@@ -86,11 +76,6 @@
       "bytes": 1295871
     },
     {
-      "file": "brands/loeffler-randall.json",
-      "familyCount": 185,
-      "bytes": 1123424
-    },
-    {
       "file": "brands/maison-margiela.json",
       "familyCount": 107,
       "bytes": 1278429
@@ -104,16 +89,6 @@
       "file": "brands/massimo-dutti.json",
       "familyCount": 107,
       "bytes": 1138565
-    },
-    {
-      "file": "brands/nine-west.json",
-      "familyCount": 175,
-      "bytes": 1355105
-    },
-    {
-      "file": "brands/nodaleto.json",
-      "familyCount": 9,
-      "bytes": 53056
     },
     {
       "file": "brands/pretty-ballerinas.json",
@@ -131,6 +106,26 @@
       "bytes": 131433
     },
     {
+      "file": "brands/yuul-yie.json",
+      "familyCount": 38,
+      "bytes": 191391
+    },
+    {
+      "file": "brands/nine-west.json",
+      "familyCount": 176,
+      "bytes": 1360805
+    },
+    {
+      "file": "brands/loeffler-randall.json",
+      "familyCount": 185,
+      "bytes": 1123424
+    },
+    {
+      "file": "brands/freda-salvador.json",
+      "familyCount": 114,
+      "bytes": 825459
+    },
+    {
       "file": "brands/sarah-flint.json",
       "familyCount": 92,
       "bytes": 686593
@@ -141,9 +136,14 @@
       "bytes": 539460
     },
     {
-      "file": "brands/yuul-yie.json",
-      "familyCount": 38,
-      "bytes": 191391
+      "file": "brands/brother-vellies.json",
+      "familyCount": 26,
+      "bytes": 139092
+    },
+    {
+      "file": "brands/nodaleto.json",
+      "familyCount": 9,
+      "bytes": 53056
     }
   ]
 }
