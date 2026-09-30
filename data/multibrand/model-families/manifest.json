@@ -1,14 +1,19 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-28T19:34:52.574Z",
-  "totalFamilies": 16360,
+  "generatedAt": "2026-09-30T06:20:16.725Z",
+  "totalFamilies": 16343,
   "shardCount": 28,
   "shards": [
     {
       "file": "brands/4ccccees.json",
       "familyCount": 151,
       "bytes": 963331
+    },
+    {
+      "file": "brands/ala-a.json",
+      "familyCount": 157,
+      "bytes": 1169010
     },
     {
       "file": "brands/alexandre-birman.json",
@@ -22,8 +27,8 @@
     },
     {
       "file": "brands/fly-london.json",
-      "familyCount": 972,
-      "bytes": 3239839
+      "familyCount": 962,
+      "bytes": 3200918
     },
     {
       "file": "brands/freda-salvador.json",
@@ -33,7 +38,7 @@
     {
       "file": "brands/isabel-marant.json",
       "familyCount": 53,
-      "bytes": 514839
+      "bytes": 518127
     },
     {
       "file": "brands/k-jacques.json",
@@ -43,7 +48,7 @@
     {
       "file": "brands/le-silla.json",
       "familyCount": 121,
-      "bytes": 1295835
+      "bytes": 1295871
     },
     {
       "file": "brands/loeffler-randall.json",
@@ -51,9 +56,14 @@
       "bytes": 1123424
     },
     {
+      "file": "brands/maison-margiela.json",
+      "familyCount": 107,
+      "bytes": 1278429
+    },
+    {
       "file": "brands/mascar.json",
-      "familyCount": 145,
-      "bytes": 413154
+      "familyCount": 144,
+      "bytes": 410058
     },
     {
       "file": "brands/massimo-dutti.json",
@@ -73,12 +83,12 @@
     {
       "file": "brands/pretty-ballerinas.json",
       "familyCount": 183,
-      "bytes": 563648
+      "bytes": 563637
     },
     {
       "file": "brands/repetto.json",
-      "familyCount": 59,
-      "bytes": 492094
+      "familyCount": 58,
+      "bytes": 482811
     },
     {
       "file": "brands/rouje.json",
@@ -97,8 +107,8 @@
     },
     {
       "file": "brands/yuul-yie.json",
-      "familyCount": 43,
-      "bytes": 213310
+      "familyCount": 38,
+      "bytes": 191391
     },
     {
       "file": "part-000.json",
@@ -134,16 +144,6 @@
       "file": "part-006.json",
       "familyCount": 198,
       "bytes": 1070981
-    },
-    {
-      "file": "brands/ala-a.json",
-      "familyCount": 157,
-      "bytes": 1169010
-    },
-    {
-      "file": "brands/maison-margiela.json",
-      "familyCount": 107,
-      "bytes": 1278429
     }
   ]
 }
