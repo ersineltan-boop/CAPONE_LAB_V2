@@ -2,26 +2,26 @@
   "slug": "mascar",
   "brand": "MASCARÓ",
   "officialUrl": "https://www.mascaro.com",
-  "snapshotId": "mascar:2026-09-30T06:20:16.725Z",
-  "collectedAt": "2026-09-30T06:20:16.725Z",
+  "snapshotId": "mascar:2026-09-30T14:31:02.654Z",
+  "collectedAt": "2026-09-30T14:31:02.654Z",
   "catalogPaths": [
     "/collections/collection"
   ],
   "newArrivalsPaths": [],
   "coverage": {
-    "sourceTotal": 162,
-    "collected": 162,
+    "sourceTotal": 165,
+    "collected": 165,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 162,
+    "galleryComplete": 165,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
   "newArrivalsFootwear": 0,
-  "referenceFootwearTotal": 162,
+  "referenceFootwearTotal": 165,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": true,
   "referenceNewArrivalsMatch": null,
@@ -350,6 +350,42 @@
           ],
           "category": "PUMP",
           "productType": "53923_001",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "mascar--botines-palermo-marrones-ante",
+      "brand": "MASCARÓ",
+      "canonicalName": "Botines Palermo Marrones Ante",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_pers.jpg?v=1779436568",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_top.jpg?v=1779436568",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_side.jpg?v=1779436568",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_pers2.jpg?v=1779436568",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_det.jpg?v=1779436570"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.mascaro.com/products/botines-palermo-marrones-ante",
+          "handle": "botines-palermo-marrones-ante",
+          "title": "Botines Palermo Marrones Ante",
+          "color": null,
+          "sku": "53892_002_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_pers.jpg?v=1779436568",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_top.jpg?v=1779436568",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_side.jpg?v=1779436568",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_pers2.jpg?v=1779436568",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53892_002_det.jpg?v=1779436570"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "53892_002",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3329,6 +3365,42 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "mascar--botas-jolie-marrones-tejidos",
+      "brand": "MASCARÓ",
+      "canonicalName": "Botas Jolie Marrones Tejidos",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_pers.jpg?v=1784546974",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_top.jpg?v=1784546972",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_side.jpg?v=1784546972",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_pers2.jpg?v=1784546972",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_det.jpg?v=1784546972"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.mascaro.com/products/botas-jolie-marrones-tejidos",
+          "handle": "botas-jolie-marrones-tejidos",
+          "title": "Botas Jolie Marrones Tejidos",
+          "color": null,
+          "sku": "53629_003_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_pers.jpg?v=1784546974",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_top.jpg?v=1784546972",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_side.jpg?v=1784546972",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_pers2.jpg?v=1784546972",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53629_003_det.jpg?v=1784546972"
+          ],
+          "category": "BOOT",
+          "productType": "53629_003",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "mascar--botines-jolie-marrones-tejidos",
       "brand": "MASCARÓ",
       "canonicalName": "Botines Jolie Marrones Tejidos",
@@ -4633,6 +4705,42 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "mascar--bailarinas-fede-negros-piel",
+      "brand": "MASCARÓ",
+      "canonicalName": "Bailarinas Fede Negros Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_pers_eff0cbf5-0d5d-407e-98dc-5a9e04b17db8.jpg?v=1779437219",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_top_ff3cc160-37aa-43dc-997b-5ce3c78c34d2.jpg?v=1779437219",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_side_300f381f-c714-4ed1-9b40-459198cac508.jpg?v=1779437219",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_pers2_f77b835e-fd87-40af-8eec-e14b91520837.jpg?v=1779437218",
+        "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_det_dc627613-b963-4e37-ab8a-cf60953088cf.jpg?v=1779437219"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.mascaro.com/products/bailarinas-fede-negros-piel-2",
+          "handle": "bailarinas-fede-negros-piel-2",
+          "title": "Bailarinas Fede Negros Piel",
+          "color": null,
+          "sku": "53556_001_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_pers_eff0cbf5-0d5d-407e-98dc-5a9e04b17db8.jpg?v=1779437219",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_top_ff3cc160-37aa-43dc-997b-5ce3c78c34d2.jpg?v=1779437219",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_side_300f381f-c714-4ed1-9b40-459198cac508.jpg?v=1779437219",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_pers2_f77b835e-fd87-40af-8eec-e14b91520837.jpg?v=1779437218",
+            "https://cdn.shopify.com/s/files/1/0887/3374/5496/files/53556_001_det_dc627613-b963-4e37-ab8a-cf60953088cf.jpg?v=1779437219"
+          ],
+          "category": "BALLERINA",
+          "productType": "53556_001",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "mascar--bailarinas-fede-rojos-piel",
       "brand": "MASCARÓ",
       "canonicalName": "Bailarinas Fede Rojos Piel",
@@ -5585,6 +5693,7 @@
     "https://www.mascaro.com/products/sandalias-maris-marrones-tejidos",
     "https://www.mascaro.com/products/salon-alya-marrones-tejidos",
     "https://www.mascaro.com/products/salon-heidi-negros-red",
+    "https://www.mascaro.com/products/botines-palermo-marrones-ante",
     "https://www.mascaro.com/products/botines-anna-marrones-ante",
     "https://www.mascaro.com/products/loafers-anna-marrones-ante",
     "https://www.mascaro.com/products/mules-camille-marrones-ante",
@@ -5665,6 +5774,7 @@
     "https://www.mascaro.com/products/botines-cindy-negros-tejidos-2",
     "https://www.mascaro.com/products/botines-cindy-rojos-tejidos",
     "https://www.mascaro.com/products/botas-milan-marrones-tejidos-1",
+    "https://www.mascaro.com/products/botas-jolie-marrones-tejidos",
     "https://www.mascaro.com/products/botines-jolie-marrones-tejidos",
     "https://www.mascaro.com/products/botas-bologna-negros-tejidos-2",
     "https://www.mascaro.com/products/botines-bologna-negros-tejidos-4",
@@ -5705,6 +5815,7 @@
     "https://www.mascaro.com/products/bailarinas-audrey-marrones-ante",
     "https://www.mascaro.com/products/bailarinas-audrey-dorados-pieles-metalizadas",
     "https://www.mascaro.com/products/bailarinas-audrey-animal-print-poni-1",
+    "https://www.mascaro.com/products/bailarinas-fede-negros-piel-2",
     "https://www.mascaro.com/products/bailarinas-fede-rojos-piel-1",
     "https://www.mascaro.com/products/bailarinas-mayra-blancos-charol",
     "https://www.mascaro.com/products/bailarinas-mayra-azules-charol",
