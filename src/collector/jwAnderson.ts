@@ -19,7 +19,7 @@ export async function collectJwAnderson(
   if (!/^(www\.)?jwanderson\.com$/i.test(origin.hostname) || origin.protocol !== "https:") {
     throw new Error("JW Anderson collector requires the official HTTPS storefront");
   }
-  const collectionUrl = `${base}${JW_WOMENS_SHOES_PATH}`;
+  let collectionUrl = `${base}${JW_WOMENS_SHOES_PATH}`;
   const errors: string[] = [];
   const links = new Set<string>();
   const products: CollectionAttemptResult["products"] = [];
@@ -27,11 +27,19 @@ export async function collectJwAnderson(
   const collection = await http.fetchText(collectionUrl);
   const sameCollection = (url: string) => {
     const resolved = new URL(url);
-    return resolved.hostname.replace(/^www\./, "") === "jwanderson.com" &&
-      resolved.pathname.replace(/\/$/, "") === JW_WOMENS_SHOES_PATH && !resolved.search;
+    return resolved.protocol === "https:" && resolved.hostname.replace(/^www\./, "") === "jwanderson.com" &&
+      /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?collections\/womens-shoes\/?$/i.test(resolved.pathname) &&
+      [...resolved.searchParams.keys()].every(key => key === "shpxid");
   };
-  const storefrontCount = collection.ok && sameCollection(collection.url)
-    ? parseStorefrontProductCount(collection.text) : null;
+  const parsedCount = parseStorefrontProductCount(collection.text);
+  const storefrontCount = collection.ok && sameCollection(collection.url) ? parsedCount : null;
+  console.log(`[jw-anderson] storefront ${JSON.stringify({ status: collection.status, url: collection.url,
+    parsedCount, scopeAccepted: sameCollection(collection.url), title: collection.text.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() ?? null })}`);
+  if (collection.ok && sameCollection(collection.url)) {
+    const resolved = new URL(collection.url);
+    resolved.search = "";
+    collectionUrl = resolved.toString().replace(/\/$/, "");
+  }
   if (storefrontCount == null) errors.push("JW_ANDERSON_STOREFRONT_COUNT_UNKNOWN");
 
   const resource = await fetchMaybeJson(http, `${collectionUrl}.json`);
@@ -82,6 +90,8 @@ export async function collectJwAnderson(
   const finalCollection = await http.fetchText(collectionUrl);
   const finalCount = finalCollection.ok && sameCollection(finalCollection.url)
     ? parseStorefrontProductCount(finalCollection.text) : null;
+  if (finalCount == null) console.log(`[jw-anderson] final storefront ${JSON.stringify({ status: finalCollection.status,
+    url: finalCollection.url, parsedCount: parseStorefrontProductCount(finalCollection.text) })}`);
   if (finalCount !== storefrontCount || finalCount == null) errors.push("JW_ANDERSON_STOREFRONT_CHANGED_OR_UNAVAILABLE");
   return {
     products, discoveredLinks: links, errors, method: "shopify", pagesTraversed,

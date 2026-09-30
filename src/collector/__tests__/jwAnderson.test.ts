@@ -76,4 +76,25 @@ describe("JW Anderson customer-visible women's catalog", () => {
       expect(evaluateOfficialSourceCoverage({ ...result, acceptedProductCount: result.products.length }).full).toBe(false);
     }
   });
+  it("keeps Shopify market and tracking redirects in the same women's collection scope", async () => {
+    const requests: string[] = [];
+    const transport = http();
+    const result = await collectJwAnderson(config, { async fetchText(url) {
+      requests.push(url);
+      const response = await transport.fetchText(url);
+      return url.includes(".json") ? response : { ...response, url: `${origin}/en-us/collections/womens-shoes?shpxid=tracking` };
+    } });
+    expect(result.errors).toEqual([]);
+    expect(result.sourceReportedProductCount).toBe(2);
+    expect(requests.some(url => url.includes("/en-us/collections/womens-shoes/products.json"))).toBe(true);
+  });
+  it("does not accept a filtered subset as the full storefront", async () => {
+    const transport = http();
+    const result = await collectJwAnderson(config, { async fetchText(url) {
+      const response = await transport.fetchText(url);
+      return url.includes(".json") ? response : { ...response, url: `${origin}/collections/womens-shoes?filter.v.availability=1` };
+    } });
+    expect(result.sourceReportedProductCount).toBeNull();
+    expect(result.errors).toContain("JW_ANDERSON_STOREFRONT_COUNT_UNKNOWN");
+  });
 });
