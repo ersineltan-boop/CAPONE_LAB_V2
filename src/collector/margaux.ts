@@ -15,6 +15,11 @@ export const MARGAUX_COLLECTIONS: ReadonlyArray<{ path: string; label: string; c
 ];
 const SHOP_PATH = "/collections/shop";
 const ACCESSORY_TYPE = /^(?:socks?|tights|tote)$/i;
+// This official storefront returns a 404 for the shared old browser UA,
+// but serves the public listing to an openly identified catalog client.
+const STOREFRONT_OPTIONS = { headers: {
+  "User-Agent": "CAPONE-LAB/1.0 (public catalog verification)", Accept: "text/html",
+} };
 
 /** Reconcile the mixed official Shop total, then prove every shoe's category membership. */
 export async function collectMargaux(config: PilotSourceConfig, http: OnboardingHttp = defaultOnboardingHttp):
@@ -32,7 +37,7 @@ Promise<CollectionAttemptResult & { storefrontCount: number | null; excludedAcce
     return u.protocol === "https:" && /^(?:www\.)?margauxny\.com$/i.test(u.hostname) &&
       u.pathname.replace(/\/$/, "") === path && [...u.searchParams.keys()].every(key => key === "shpxid");
   };
-  const listing = await http.fetchText(`${base}${SHOP_PATH}`);
+  const listing = await http.fetchText(`${base}${SHOP_PATH}`, STOREFRONT_OPTIONS);
   const storefrontCount = listing.ok && sameScope(listing.url, SHOP_PATH) ? parseStorefrontProductCount(listing.text) : null;
   console.log(`[margaux] storefront ${JSON.stringify({ status: listing.status, url: listing.url, storefrontCount })}`);
   if (storefrontCount == null) errors.push("MARGAUX_STOREFRONT_COUNT_UNKNOWN");
@@ -98,7 +103,7 @@ Promise<CollectionAttemptResult & { storefrontCount: number | null; excludedAcce
   }
   const expectedShoes = storefrontCount == null ? null : storefrontCount - excludedAccessories.length;
   if (expectedShoes != null && products.length !== expectedShoes) errors.push(`MARGAUX_SHOE_MISMATCH:${products.length}/${expectedShoes}`);
-  const final = await http.fetchText(`${base}${SHOP_PATH}`);
+  const final = await http.fetchText(`${base}${SHOP_PATH}`, STOREFRONT_OPTIONS);
   if (!final.ok || !sameScope(final.url, SHOP_PATH) || parseStorefrontProductCount(final.text) !== storefrontCount || storefrontCount == null) {
     errors.push("MARGAUX_STOREFRONT_CHANGED_OR_UNAVAILABLE");
   }

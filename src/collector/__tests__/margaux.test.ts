@@ -28,6 +28,22 @@ function transport(options: { count?: number; missingCategory?: boolean; failPag
   } };
 }
 describe("Margaux official mixed storefront reconciliation", () => {
+  it("identifies both storefront requests openly instead of using the shared obsolete browser UA", async () => {
+    const delegate = transport();
+    const headers: Array<Record<string, string> | undefined> = [];
+    const result = await collectMargaux(config, { async fetchText(url, options) {
+      if (!new URL(url).pathname.endsWith("products.json")) {
+        headers.push(options?.headers);
+        if (options?.headers?.["User-Agent"] !== "CAPONE-LAB/1.0 (public catalog verification)") {
+          return { ok: false, status: 404, url, text: "404 Not Found" };
+        }
+      }
+      return delegate.fetchText(url, options);
+    } });
+    expect(result.errors).toEqual([]);
+    expect(headers).toHaveLength(2);
+    expect(headers.every(x => x?.Accept === "text/html")).toBe(true);
+  });
   it("proves opaque models by category membership and excludes accessories with misleading shoe tags", async () => {
     const result = await collectMargaux(config, transport());
     expect(result.errors).toEqual([]);
