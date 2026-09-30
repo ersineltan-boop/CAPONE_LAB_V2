@@ -268,7 +268,8 @@ export function extractHandleFromProductUrl(productUrl: string): string {
 }
 
 export function isMerchandisingTag(tag: string): boolean {
-  return /^(collection|badge|color|colour|size|recommended-product|complementary-product)\s*:/i.test(tag.trim());
+  return /^top sku$/i.test(tag.trim()) ||
+    /^(collection|badge|color|colour|size|recommended-product|complementary-product)\s*:/i.test(tag.trim());
 }
 
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
@@ -317,6 +318,8 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
 
   for (const tag of evidenceTags) {
     const tagHit = containsTerm(tag, STRONG_NON_FOOTWEAR_TERMS);
+    // "cap toe" describes shoe construction; an actual "cap" tag still excludes.
+    if (tagHit === "CAP" && /^cap[- ]toe$/i.test(tag.trim())) continue;
     if (tagHit) return `tag:${tagHit}`;
   }
 
