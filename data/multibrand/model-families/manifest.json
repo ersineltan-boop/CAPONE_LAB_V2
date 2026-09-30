@@ -1,10 +1,45 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-30T06:20:16.725Z",
-  "totalFamilies": 16343,
+  "generatedAt": "2026-09-30T06:31:25.413Z",
+  "totalFamilies": 16400,
   "shardCount": 28,
   "shards": [
+    {
+      "file": "part-000.json",
+      "familyCount": 2096,
+      "bytes": 16777320
+    },
+    {
+      "file": "part-001.json",
+      "familyCount": 2359,
+      "bytes": 16777972
+    },
+    {
+      "file": "part-002.json",
+      "familyCount": 1994,
+      "bytes": 16773135
+    },
+    {
+      "file": "part-003.json",
+      "familyCount": 2462,
+      "bytes": 16773762
+    },
+    {
+      "file": "part-004.json",
+      "familyCount": 1996,
+      "bytes": 16766146
+    },
+    {
+      "file": "part-005.json",
+      "familyCount": 1927,
+      "bytes": 16777010
+    },
+    {
+      "file": "part-006.json",
+      "familyCount": 259,
+      "bytes": 1389902
+    },
     {
       "file": "brands/4ccccees.json",
       "familyCount": 151,
@@ -109,41 +144,6 @@
       "file": "brands/yuul-yie.json",
       "familyCount": 38,
       "bytes": 191391
-    },
-    {
-      "file": "part-000.json",
-      "familyCount": 2096,
-      "bytes": 16777320
-    },
-    {
-      "file": "part-001.json",
-      "familyCount": 2359,
-      "bytes": 16777972
-    },
-    {
-      "file": "part-002.json",
-      "familyCount": 1979,
-      "bytes": 16767329
-    },
-    {
-      "file": "part-003.json",
-      "familyCount": 2486,
-      "bytes": 16775866
-    },
-    {
-      "file": "part-004.json",
-      "familyCount": 1962,
-      "bytes": 16771187
-    },
-    {
-      "file": "part-005.json",
-      "familyCount": 1956,
-      "bytes": 16775047
-    },
-    {
-      "file": "part-006.json",
-      "familyCount": 198,
-      "bytes": 1070981
     }
   ]
 }

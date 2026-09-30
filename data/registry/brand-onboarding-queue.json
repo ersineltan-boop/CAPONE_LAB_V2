@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T06:15:21.779Z",
+  "updatedAt": "2026-09-30T06:27:14.797Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -939,17 +939,17 @@
       "brand": "JW ANDERSON",
       "slug": "jw-anderson",
       "priority": 58,
-      "status": "PARTIAL",
-      "attempts": 2,
-      "lastAttemptAt": "2026-09-30T06:15:21.779Z",
+      "status": "ACTIVE",
+      "attempts": 3,
+      "lastAttemptAt": "2026-09-30T06:27:14.797Z",
       "nextRetryAt": null,
       "sourceUrl": "https://www.jwanderson.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
-      "blocker": "Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "blocker": null,
       "productsFound": 67,
-      "activatedAt": null,
-      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik"
+      "activatedAt": "2026-09-30T06:27:14.797Z",
+      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%"
     },
     {
       "brand": "K.JACQUES",
