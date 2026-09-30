@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T07:11:31.204Z",
+  "generatedAt": "2026-09-30T07:20:27.602Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 74,
-    "activeBrandsAfter": 74,
+    "activeBrandsAfter": 75,
     "attempted": 1,
-    "activated": 0,
-    "partial": 1,
+    "activated": 1,
+    "partial": 0,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
@@ -17,10 +17,10 @@
     {
       "brand": "MARGAUX",
       "slug": "margaux",
-      "attemptedAt": "2026-09-30T07:11:31.204Z",
+      "attemptedAt": "2026-09-30T07:20:27.602Z",
       "detectedPlatform": "SHOPIFY",
       "sourceStrategy": "shopify-public",
-      "status": "PARTIAL",
+      "status": "ACTIVE",
       "productsFound": 244,
       "families": 73,
       "realMultiColorFamilies": 60,
@@ -33,13 +33,13 @@
         "Loafers",
         "Sandals"
       ],
-      "blocker": "Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "blocker": null,
       "marketplaceCoverage": {
         "farfetch": 0,
         "levelShoes": 0
       },
-      "activationDecision": "partial",
-      "notes": "ACCEPTED FULL: 73 families, 244 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik"
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 73 families, 244 products, gallery 100%"
     }
   ]
 }

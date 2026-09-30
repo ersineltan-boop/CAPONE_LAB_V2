@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T06:27:14.797Z",
+  "updatedAt": "2026-09-30T07:20:27.602Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
@@ -57,6 +57,25 @@
       ],
       "footwearPaths": [
         "/collections/womens-shoes"
+      ]
+    },
+    "margaux": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.margauxny.com",
+      "collectionPaths": [
+        "/collections/flats",
+        "/collections/sandals",
+        "/collections/heels",
+        "/collections/boots",
+        "/collections/loafers"
+      ],
+      "footwearPaths": [
+        "/collections/flats",
+        "/collections/sandals",
+        "/collections/heels",
+        "/collections/boots",
+        "/collections/loafers"
       ]
     }
   }

@@ -1,11 +1,11 @@
 {
-  "totalProducts": 19625,
-  "totalBrands": 412,
+  "totalProducts": 19869,
+  "totalBrands": 413,
   "categories": [
     {
       "tag": "SANDAL",
-      "productCount": 4525,
-      "brandCount": 149,
+      "productCount": 4603,
+      "brandCount": 150,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -94,6 +94,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Maison Margiela",
         "Malibu Sandals",
         "Marc Ellis",
@@ -416,8 +417,8 @@
     },
     {
       "tag": "PUMP",
-      "productCount": 2548,
-      "brandCount": 129,
+      "productCount": 2571,
+      "brandCount": 130,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -493,6 +494,7 @@
         "Love Moschino",
         "MALONE SOULIERS",
         "MANU ATELIER",
+        "MARGAUX",
         "MM6 Maison Margiela",
         "Maison Margiela",
         "Maje",
@@ -552,8 +554,8 @@
     },
     {
       "tag": "MULE",
-      "productCount": 1744,
-      "brandCount": 151,
+      "productCount": 1749,
+      "brandCount": 152,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -641,6 +643,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Malone Souliers",
         "Manolo Blahnik",
@@ -710,8 +713,8 @@
     },
     {
       "tag": "BOOT",
-      "productCount": 1396,
-      "brandCount": 54,
+      "productCount": 1430,
+      "brandCount": 55,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -745,6 +748,7 @@
         "LARROUDE",
         "LE MONDE BERYL",
         "LUIS ONOFRE",
+        "MARGAUX",
         "Moon Boot",
         "PARIS TEXAS",
         "PROENZA SCHOULER",
@@ -767,6 +771,86 @@
         "The Row",
         "We The Free",
         "ZARA"
+      ]
+    },
+    {
+      "tag": "BALLERINA",
+      "productCount": 1351,
+      "brandCount": 73,
+      "brands": [
+        "4CCCCEES",
+        "AEYDE",
+        "ALEXANDRE BIRMAN",
+        "ALIAS MAE",
+        "ALOHAS",
+        "ANCIENT GREEK SANDALS",
+        "ATP ATELIER",
+        "Alaia",
+        "Alohas",
+        "Ancient Greek Sandals",
+        "BY FAR",
+        "Bottega Veneta",
+        "CAREL",
+        "CECILIE BAHNSEN",
+        "CHRISTEN",
+        "CULT GAIA",
+        "Circus NY by Sam Edelman",
+        "Crocs",
+        "DEAR FRANCES",
+        "DOLCE VITA",
+        "EMME PARSONS",
+        "FLABELUS",
+        "FLATTERED",
+        "FP Collection",
+        "Ferragamo",
+        "GANNI",
+        "GIA BORGHINI",
+        "Givenchy",
+        "HEREU",
+        "HOUSE OF BALLERINAS",
+        "JEFFREY CAMPBELL",
+        "JUDE",
+        "JW ANDERSON",
+        "JW Pei",
+        "Jeffrey Campbell",
+        "KHAITE",
+        "LARROUDE",
+        "LE MONDE BERYL",
+        "LEMAIRE",
+        "LUIS ONOFRE",
+        "Le Monde Beryl",
+        "MANU ATELIER",
+        "MARAY",
+        "MARGAUX",
+        "Maison Margiela",
+        "Marc Jacobs",
+        "Marni",
+        "Miista",
+        "Miu Miu",
+        "PAVEMENT",
+        "PROENZA SCHOULER",
+        "PUMA",
+        "Philipp Plein",
+        "SCHUTZ",
+        "SIMONE ROCHA",
+        "SOPHIA WEBSTER",
+        "SOULIERS MARTINEZ",
+        "ST. AGNI",
+        "STAUD",
+        "STEVE MADDEN",
+        "STUDIO AMELIA",
+        "Sam Edelman",
+        "Senso",
+        "THE ATTICO",
+        "THE ROW",
+        "TONY BIANCO",
+        "TOTEME",
+        "TUAS",
+        "The Row",
+        "Vagabond Shoemakers",
+        "Versace",
+        "ZARA",
+        "adidas"
       ]
     },
     {
@@ -891,88 +975,9 @@
       ]
     },
     {
-      "tag": "BALLERINA",
-      "productCount": 1265,
-      "brandCount": 72,
-      "brands": [
-        "4CCCCEES",
-        "AEYDE",
-        "ALEXANDRE BIRMAN",
-        "ALIAS MAE",
-        "ALOHAS",
-        "ANCIENT GREEK SANDALS",
-        "ATP ATELIER",
-        "Alaia",
-        "Alohas",
-        "Ancient Greek Sandals",
-        "BY FAR",
-        "Bottega Veneta",
-        "CAREL",
-        "CECILIE BAHNSEN",
-        "CHRISTEN",
-        "CULT GAIA",
-        "Circus NY by Sam Edelman",
-        "Crocs",
-        "DEAR FRANCES",
-        "DOLCE VITA",
-        "EMME PARSONS",
-        "FLABELUS",
-        "FLATTERED",
-        "FP Collection",
-        "Ferragamo",
-        "GANNI",
-        "GIA BORGHINI",
-        "Givenchy",
-        "HEREU",
-        "HOUSE OF BALLERINAS",
-        "JEFFREY CAMPBELL",
-        "JUDE",
-        "JW ANDERSON",
-        "JW Pei",
-        "Jeffrey Campbell",
-        "KHAITE",
-        "LARROUDE",
-        "LE MONDE BERYL",
-        "LEMAIRE",
-        "LUIS ONOFRE",
-        "Le Monde Beryl",
-        "MANU ATELIER",
-        "MARAY",
-        "Maison Margiela",
-        "Marc Jacobs",
-        "Marni",
-        "Miista",
-        "Miu Miu",
-        "PAVEMENT",
-        "PROENZA SCHOULER",
-        "PUMA",
-        "Philipp Plein",
-        "SCHUTZ",
-        "SIMONE ROCHA",
-        "SOPHIA WEBSTER",
-        "SOULIERS MARTINEZ",
-        "ST. AGNI",
-        "STAUD",
-        "STEVE MADDEN",
-        "STUDIO AMELIA",
-        "Sam Edelman",
-        "Senso",
-        "THE ATTICO",
-        "THE ROW",
-        "TONY BIANCO",
-        "TOTEME",
-        "TUAS",
-        "The Row",
-        "Vagabond Shoemakers",
-        "Versace",
-        "ZARA",
-        "adidas"
-      ]
-    },
-    {
       "tag": "LOAFER",
-      "productCount": 1153,
-      "brandCount": 58,
+      "productCount": 1171,
+      "brandCount": 59,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -1010,6 +1015,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Marc Jacobs",
         "Miu Miu",
         "New Balance",
@@ -1304,8 +1310,8 @@
   "colors": [
     {
       "tag": "BLACK",
-      "productCount": 4653,
-      "brandCount": 195,
+      "productCount": 4718,
+      "brandCount": 196,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -1416,6 +1422,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -1506,8 +1513,8 @@
     },
     {
       "tag": "BROWN",
-      "productCount": 2012,
-      "brandCount": 144,
+      "productCount": 2033,
+      "brandCount": 145,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -1588,6 +1595,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -1786,8 +1794,8 @@
     },
     {
       "tag": "BEIGE",
-      "productCount": 849,
-      "brandCount": 128,
+      "productCount": 851,
+      "brandCount": 129,
       "brands": [
         "4CCCCEES",
         "AEYDE",
@@ -1860,6 +1868,7 @@
         "Luna",
         "MALONE SOULIERS",
         "MARAY",
+        "MARGAUX",
         "Maison Margiela",
         "Malone Souliers",
         "Manolo Blahnik",
@@ -1921,8 +1930,8 @@
     },
     {
       "tag": "TAN",
-      "productCount": 561,
-      "brandCount": 72,
+      "productCount": 573,
+      "brandCount": 73,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -1965,6 +1974,7 @@
         "Loewe",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Malibu Sandals",
         "Matisse",
         "Miista",
@@ -2143,8 +2153,8 @@
     },
     {
       "tag": "BLUE",
-      "productCount": 442,
-      "brandCount": 91,
+      "productCount": 453,
+      "brandCount": 92,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -2204,6 +2214,7 @@
         "Luna",
         "MALONE SOULIERS",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Manolo Blahnik",
         "Merrell",
@@ -2241,8 +2252,8 @@
     },
     {
       "tag": "GOLD",
-      "productCount": 435,
-      "brandCount": 66,
+      "productCount": 439,
+      "brandCount": 67,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -2282,6 +2293,7 @@
         "Loeffler Randall",
         "Luna",
         "MALONE SOULIERS",
+        "MARGAUX",
         "Malone Souliers",
         "Nicoli",
         "PARIS TEXAS",
@@ -2314,8 +2326,8 @@
     },
     {
       "tag": "CREAM",
-      "productCount": 425,
-      "brandCount": 75,
+      "productCount": 434,
+      "brandCount": 76,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -2358,6 +2370,7 @@
         "LE MONDE BERYL",
         "Luna",
         "MANU ATELIER",
+        "MARGAUX",
         "Manolo Blahnik",
         "Miu Miu",
         "NEOUS",
@@ -2396,8 +2409,8 @@
     },
     {
       "tag": "PINK",
-      "productCount": 351,
-      "brandCount": 95,
+      "productCount": 354,
+      "brandCount": 96,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -2462,6 +2475,7 @@
         "Luna",
         "MALONE SOULIERS",
         "MANU ATELIER",
+        "MARGAUX",
         "Manolo Blahnik",
         "Melissa",
         "Merry People",
@@ -2579,8 +2593,8 @@
     },
     {
       "tag": "BURGUNDY",
-      "productCount": 314,
-      "brandCount": 57,
+      "productCount": 320,
+      "brandCount": 58,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -2612,6 +2626,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Melissa",
         "Miu Miu",
@@ -2721,8 +2736,8 @@
     },
     {
       "tag": "ESPRESSO",
-      "productCount": 214,
-      "brandCount": 18,
+      "productCount": 238,
+      "brandCount": 19,
       "brands": [
         "ALEXANDRE BIRMAN",
         "Balenciaga America",
@@ -2737,6 +2752,7 @@
         "JUDE",
         "Jeffrey Campbell",
         "LARROUDE",
+        "MARGAUX",
         "STAUD",
         "STEVE MADDEN",
         "Sam Edelman",
@@ -2904,8 +2920,8 @@
   "materials": [
     {
       "tag": "LEATHER",
-      "productCount": 4303,
-      "brandCount": 136,
+      "productCount": 4341,
+      "brandCount": 137,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -2990,6 +3006,7 @@
         "Loewe",
         "MALONE SOULIERS",
         "MARAY",
+        "MARGAUX",
         "Maison Margiela",
         "Marc Ellis",
         "Marc Jacobs",
@@ -3047,8 +3064,8 @@
     },
     {
       "tag": "SUEDE",
-      "productCount": 2086,
-      "brandCount": 89,
+      "productCount": 2162,
+      "brandCount": 90,
       "brands": [
         "4CCCCEES",
         "AEYDE",
@@ -3100,6 +3117,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maje",
         "Manolo Blahnik",
@@ -3211,8 +3229,8 @@
     },
     {
       "tag": "PATENT",
-      "productCount": 741,
-      "brandCount": 52,
+      "productCount": 747,
+      "brandCount": 53,
       "brands": [
         "4CCCCEES",
         "AEYDE",
@@ -3245,6 +3263,7 @@
         "Le Silla",
         "MALONE SOULIERS",
         "MANU ATELIER",
+        "MARGAUX",
         "Miu Miu",
         "NEOUS",
         "Nike",
@@ -3270,8 +3289,8 @@
     },
     {
       "tag": "NAPPA",
-      "productCount": 638,
-      "brandCount": 32,
+      "productCount": 725,
+      "brandCount": 33,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -3294,6 +3313,7 @@
         "LEMAIRE",
         "Loewe",
         "MALONE SOULIERS",
+        "MARGAUX",
         "Moschino",
         "PARIS TEXAS",
         "PAVEMENT",
@@ -3360,8 +3380,8 @@
     },
     {
       "tag": "SATIN",
-      "productCount": 385,
-      "brandCount": 38,
+      "productCount": 388,
+      "brandCount": 39,
       "brands": [
         "AEYDE",
         "ALEXANDRE BIRMAN",
@@ -3383,6 +3403,7 @@
         "LE MONDE BERYL",
         "Le Silla",
         "MALONE SOULIERS",
+        "MARGAUX",
         "Manolo Blahnik",
         "Miu Miu",
         "Moon Boot",
@@ -3405,8 +3426,8 @@
     },
     {
       "tag": "WOVEN_LEATHER",
-      "productCount": 271,
-      "brandCount": 43,
+      "productCount": 292,
+      "brandCount": 44,
       "brands": [
         "ALEXANDRE BIRMAN",
         "ALIAS MAE",
@@ -3430,6 +3451,7 @@
         "LE MONDE BERYL",
         "LUIS ONOFRE",
         "MANU ATELIER",
+        "MARGAUX",
         "Miu Miu",
         "Neous",
         "PARIS TEXAS",
@@ -3601,8 +3623,8 @@
   "heelTypes": [
     {
       "tag": "FLAT",
-      "productCount": 1866,
-      "brandCount": 104,
+      "productCount": 1878,
+      "brandCount": 105,
       "brands": [
         "A.EMERY",
         "A.S.98",
@@ -3662,6 +3684,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -3755,8 +3778,8 @@
     },
     {
       "tag": "BLOCK",
-      "productCount": 791,
-      "brandCount": 27,
+      "productCount": 794,
+      "brandCount": 28,
       "brands": [
         "AEYDE",
         "ALEXANDRE BIRMAN",
@@ -3774,6 +3797,7 @@
         "LARROUDE",
         "LINDA BAUMANN",
         "MALONE SOULIERS",
+        "MARGAUX",
         "Melissa",
         "Poche Paris",
         "SCHUTZ",
@@ -3873,8 +3897,8 @@
     },
     {
       "tag": "PLATFORM",
-      "productCount": 295,
-      "brandCount": 57,
+      "productCount": 301,
+      "brandCount": 58,
       "brands": [
         "4CCCCEES",
         "ALEXANDRE BIRMAN",
@@ -3909,6 +3933,7 @@
         "Laidback London",
         "Loeffler Randall",
         "MALONE SOULIERS",
+        "MARGAUX",
         "Melissa",
         "Miu Miu",
         "NAKED WOLFE",
@@ -4380,9 +4405,62 @@
       ]
     },
     {
+      "tag": "WOVEN",
+      "productCount": 325,
+      "brandCount": 46,
+      "brands": [
+        "ALEXANDRE BIRMAN",
+        "ALIAS MAE",
+        "AMINA MUADDI",
+        "ANCIENT GREEK SANDALS",
+        "Bed Stu",
+        "Bottega Veneta",
+        "CECILIE BAHNSEN",
+        "CULT GAIA",
+        "Circus NY by Sam Edelman",
+        "Coach",
+        "Converse",
+        "DOLCE VITA",
+        "Dragon Diffusion",
+        "EMME PARSONS",
+        "FP Collection",
+        "HEREU",
+        "JUDE",
+        "JW ANDERSON",
+        "KEEN",
+        "LE MONDE BERYL",
+        "LUIS ONOFRE",
+        "MANU ATELIER",
+        "MARGAUX",
+        "Miu Miu",
+        "Neous",
+        "PARIS TEXAS",
+        "PROENZA SCHOULER",
+        "Paloma Barceló",
+        "SCHUTZ",
+        "SOPHIA WEBSTER",
+        "SOULIERS MARTINEZ",
+        "ST. AGNI",
+        "STAUD",
+        "STEVE MADDEN",
+        "STUDIO AMELIA",
+        "Sam Edelman",
+        "Santoni",
+        "Sergio Rossi",
+        "Seychelles",
+        "St Agni",
+        "THE ROW",
+        "TONY BIANCO",
+        "TOTEME",
+        "TWINSET",
+        "Vagabond Shoemakers",
+        "Vicenza"
+      ]
+    },
+    {
       "tag": "STONE",
-      "productCount": 314,
-      "brandCount": 58,
+      "productCount": 315,
+      "brandCount": 59,
       "brands": [
         "AEYDE",
         "ALEXANDRE BIRMAN",
@@ -4418,6 +4496,7 @@
         "LUIS ONOFRE",
         "MALONE SOULIERS",
         "MARAY",
+        "MARGAUX",
         "Manolo Blahnik",
         "NEOUS",
         "NICOLI",
@@ -4445,61 +4524,9 @@
       ]
     },
     {
-      "tag": "WOVEN",
-      "productCount": 304,
-      "brandCount": 45,
-      "brands": [
-        "ALEXANDRE BIRMAN",
-        "ALIAS MAE",
-        "AMINA MUADDI",
-        "ANCIENT GREEK SANDALS",
-        "Bed Stu",
-        "Bottega Veneta",
-        "CECILIE BAHNSEN",
-        "CULT GAIA",
-        "Circus NY by Sam Edelman",
-        "Coach",
-        "Converse",
-        "DOLCE VITA",
-        "Dragon Diffusion",
-        "EMME PARSONS",
-        "FP Collection",
-        "HEREU",
-        "JUDE",
-        "JW ANDERSON",
-        "KEEN",
-        "LE MONDE BERYL",
-        "LUIS ONOFRE",
-        "MANU ATELIER",
-        "Miu Miu",
-        "Neous",
-        "PARIS TEXAS",
-        "PROENZA SCHOULER",
-        "Paloma Barceló",
-        "SCHUTZ",
-        "SOPHIA WEBSTER",
-        "SOULIERS MARTINEZ",
-        "ST. AGNI",
-        "STAUD",
-        "STEVE MADDEN",
-        "STUDIO AMELIA",
-        "Sam Edelman",
-        "Santoni",
-        "Sergio Rossi",
-        "Seychelles",
-        "St Agni",
-        "THE ROW",
-        "TONY BIANCO",
-        "TOTEME",
-        "TWINSET",
-        "Vagabond Shoemakers",
-        "Vicenza"
-      ]
-    },
-    {
       "tag": "STUD",
-      "productCount": 280,
-      "brandCount": 33,
+      "productCount": 283,
+      "brandCount": 34,
       "brands": [
         "AEYDE",
         "ALOHAS",
@@ -4518,6 +4545,7 @@
         "LARROUDE",
         "LIU JO",
         "Loewe",
+        "MARGAUX",
         "Marc Ellis",
         "Marc Jacobs",
         "Michael Michael Kors",
@@ -4801,8 +4829,8 @@
   "constructions": [
     {
       "tag": "BACKLESS",
-      "productCount": 2042,
-      "brandCount": 182,
+      "productCount": 2049,
+      "brandCount": 183,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -4904,6 +4932,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Malone Souliers",
         "Manolo Blahnik",
@@ -15775,6 +15804,94 @@
       ]
     },
     {
+      "brand": "MARGAUX",
+      "productCount": 244,
+      "topCategories": [
+        {
+          "tag": "BALLERINA",
+          "productCount": 86,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "SANDAL",
+          "productCount": 78,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "BOOT",
+          "productCount": 34,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "PUMP",
+          "productCount": 23,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "LOAFER",
+          "productCount": 18,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        }
+      ],
+      "topColors": [
+        {
+          "tag": "BLACK",
+          "productCount": 65,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "ESPRESSO",
+          "productCount": 24,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "BROWN",
+          "productCount": 21,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "TAN",
+          "productCount": 12,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        },
+        {
+          "tag": "BLUE",
+          "productCount": 11,
+          "brandCount": 1,
+          "brands": [
+            "MARGAUX"
+          ]
+        }
+      ]
+    },
+    {
       "brand": "MM6 Maison Margiela",
       "productCount": 1,
       "topCategories": [
@@ -23944,8 +24061,8 @@
   "topSignals": [
     {
       "tag": "BLACK",
-      "productCount": 4653,
-      "brandCount": 195,
+      "productCount": 4718,
+      "brandCount": 196,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -24056,6 +24173,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -24148,8 +24266,8 @@
     },
     {
       "tag": "SANDAL",
-      "productCount": 4525,
-      "brandCount": 149,
+      "productCount": 4603,
+      "brandCount": 150,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -24238,6 +24356,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Maison Margiela",
         "Malibu Sandals",
         "Marc Ellis",
@@ -24306,8 +24425,8 @@
     },
     {
       "tag": "LEATHER",
-      "productCount": 4303,
-      "brandCount": 136,
+      "productCount": 4341,
+      "brandCount": 137,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -24392,6 +24511,7 @@
         "Loewe",
         "MALONE SOULIERS",
         "MARAY",
+        "MARGAUX",
         "Maison Margiela",
         "Marc Ellis",
         "Marc Jacobs",
@@ -24709,8 +24829,8 @@
     },
     {
       "tag": "PUMP",
-      "productCount": 2548,
-      "brandCount": 129,
+      "productCount": 2571,
+      "brandCount": 130,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -24786,6 +24906,7 @@
         "Love Moschino",
         "MALONE SOULIERS",
         "MANU ATELIER",
+        "MARGAUX",
         "MM6 Maison Margiela",
         "Maison Margiela",
         "Maje",
@@ -24847,8 +24968,8 @@
     },
     {
       "tag": "SUEDE",
-      "productCount": 2086,
-      "brandCount": 89,
+      "productCount": 2162,
+      "brandCount": 90,
       "brands": [
         "4CCCCEES",
         "AEYDE",
@@ -24900,6 +25021,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maje",
         "Manolo Blahnik",
@@ -24945,8 +25067,8 @@
     },
     {
       "tag": "BACKLESS",
-      "productCount": 2042,
-      "brandCount": 182,
+      "productCount": 2049,
+      "brandCount": 183,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -25048,6 +25170,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Malone Souliers",
         "Manolo Blahnik",
@@ -25136,8 +25259,8 @@
     },
     {
       "tag": "BROWN",
-      "productCount": 2012,
-      "brandCount": 144,
+      "productCount": 2033,
+      "brandCount": 145,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -25218,6 +25341,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -25289,8 +25413,8 @@
     },
     {
       "tag": "FLAT",
-      "productCount": 1866,
-      "brandCount": 104,
+      "productCount": 1878,
+      "brandCount": 105,
       "brands": [
         "A.EMERY",
         "A.S.98",
@@ -25350,6 +25474,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Maison Margiela",
         "Malone Souliers",
@@ -25402,8 +25527,8 @@
     },
     {
       "tag": "MULE",
-      "productCount": 1744,
-      "brandCount": 151,
+      "productCount": 1749,
+      "brandCount": 152,
       "brands": [
         "4CCCCEES",
         "A.EMERY",
@@ -25491,6 +25616,7 @@
         "MALONE SOULIERS",
         "MANU ATELIER",
         "MARAY",
+        "MARGAUX",
         "Magnanni",
         "Malone Souliers",
         "Manolo Blahnik",
@@ -25643,10 +25769,10 @@
     }
   ],
   "unknownCounts": {
-    "colorFamily": 6319,
-    "materialFamily": 7360,
-    "heelType": 13404,
-    "heelHeightGroup": 15192,
-    "toeShape": 17226
+    "colorFamily": 6406,
+    "materialFamily": 7373,
+    "heelType": 13627,
+    "heelHeightGroup": 15436,
+    "toeShape": 17470
   }
 }

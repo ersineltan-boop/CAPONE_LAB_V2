@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T07:11:31.204Z",
+  "updatedAt": "2026-09-30T07:20:27.602Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -1099,17 +1099,17 @@
       "brand": "MARGAUX",
       "slug": "margaux",
       "priority": 68,
-      "status": "PARTIAL",
-      "attempts": 2,
-      "lastAttemptAt": "2026-09-30T07:11:31.204Z",
+      "status": "ACTIVE",
+      "attempts": 3,
+      "lastAttemptAt": "2026-09-30T07:20:27.602Z",
       "nextRetryAt": null,
       "sourceUrl": "https://www.margauxny.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
-      "blocker": "Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "blocker": null,
       "productsFound": 244,
-      "activatedAt": null,
-      "notes": "ACCEPTED FULL: 73 families, 244 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Resmî kadın ayakkabısı kaynak toplamı eksik"
+      "activatedAt": "2026-09-30T07:20:27.602Z",
+      "notes": "ACCEPTED FULL: 73 families, 244 products, gallery 100%"
     },
     {
       "brand": "MARNI",
