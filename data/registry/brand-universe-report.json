@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-30T09:38:53.558Z",
+  "generatedAt": "2026-09-30T14:31:27.841Z",
   "totalBrands": 160,
   "activeBrands": 75,
   "inactiveBrands": 85,
   "readyAutomatic": 56,
-  "needsProbe": 75,
-  "needsCustomAdapter": 23,
+  "needsProbe": 49,
+  "needsCustomAdapter": 49,
   "failed": 6,
   "countryCounts": {
     "Brezilya": 6,
@@ -53,13 +53,13 @@
   },
   "collectorTypeCounts": {
     "SHOPIFY_PUBLIC": 55,
-    "CUSTOM_ADAPTER": 20,
-    "UNSUPPORTED": 19,
-    "UNKNOWN": 66
+    "UNSUPPORTED": 46,
+    "UNKNOWN": 44,
+    "CUSTOM_ADAPTER": 15
   },
   "duplicateWarnings": [],
   "validationErrors": [],
-  "probeCacheApplied": 0,
+  "probeCacheApplied": 46,
   "unreviewedBrands": 125,
   "radarIneligibleBrands": 125
 }

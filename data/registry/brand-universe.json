@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T06:20:16.725Z",
+  "generatedAt": "2026-09-30T14:31:02.654Z",
   "brands": [
     {
       "id": "schutz",
@@ -3666,7 +3666,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=215. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=218. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3674,7 +3674,7 @@
       "collectionPaths": [
         "/collections/collection"
       ],
-      "productLimit": 215,
+      "productLimit": 218,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3688,7 +3688,7 @@
         "collection"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 215
+      "backfillLimit": 218
     },
     {
       "id": "hispanitas",
@@ -3782,7 +3782,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=162. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=165. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3790,7 +3790,7 @@
       "collectionPaths": [
         "/collections/collection"
       ],
-      "productLimit": 163,
+      "productLimit": 165,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3804,7 +3804,7 @@
         "collection"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 163
+      "backfillLimit": 165
     },
     {
       "id": "naguisa",
@@ -4516,7 +4516,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=1253. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1250. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
