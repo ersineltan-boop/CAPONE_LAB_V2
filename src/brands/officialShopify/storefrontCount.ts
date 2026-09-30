@@ -30,6 +30,13 @@ export function parseStorefrontProductCount(html: string): number | null {
   if (uniqueLabeled.length === 1) return uniqueLabeled[0] ?? null;
   if (uniqueLabeled.length > 1) return null;
 
+  const results = [...html.matchAll(/>\s*Show\s+(\d[\d\s,]*)\s+results\s*</gi)]
+    .map((match) => Number((match[1] ?? "").replace(/[^\d]/g, "")))
+    .filter((count) => count > 0);
+  const uniqueResults = [...new Set(results)];
+  if (uniqueResults.length === 1) return uniqueResults[0] ?? null;
+  if (uniqueResults.length > 1) return null;
+
   const facet = [...html.matchAll(/productcount[^>]*>\s*\(\s*(\d[\d\s.]*)\s*\)/gi)].map((match) =>
     Number.parseInt((match[1] ?? "").replace(/[^\d]/g, ""), 10),
   ).filter((count) => count > 0);

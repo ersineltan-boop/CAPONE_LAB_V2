@@ -202,6 +202,11 @@ export async function collectBrandByCollectorType(
 
   const mode = options.mode ?? config.collectMode ?? "legacy";
 
+  if (entry.id === "jw-anderson") {
+    const { collectJwAnderson } = await import("../../collector/jwAnderson");
+    return collectJwAnderson(config);
+  }
+
   if (entry.id === DRIES_BRAND_ID) {
     const collected = await collectDriesVanNoten(entry);
     return {

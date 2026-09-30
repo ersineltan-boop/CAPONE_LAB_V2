@@ -6,6 +6,7 @@ import { fetchMaybeJson, type OnboardingHttp } from "./http";
 import { collectFromProductUrls, discoverSitemapProductUrls } from "./sitemap";
 import { probeInditexLikeCatalog } from "./inditexLike";
 import type { ProbeResult, ProbeSampleProduct } from "./types";
+import { JW_WOMENS_SHOES_PATH } from "../collector/jwAnderson";
 
 const SHOPIFY_FOOTWEAR_PATHS = [
   "/collections/shoes",
@@ -78,7 +79,8 @@ export async function probeBrandSource(input: {
     blockedSignals.push(`homepage HTTP ${homepage.status}`);
   }
 
-  const shopify = await probeShopify(input.http, baseUrl, input.brand);
+  const shopify = await probeShopify(input.http, baseUrl, input.brand,
+    input.slug === "jw-anderson" ? [JW_WOMENS_SHOES_PATH] : undefined);
   if (shopify.products.length > 0) {
     return {
       platform: "SHOPIFY",
@@ -209,12 +211,13 @@ async function probeShopify(
   http: OnboardingHttp,
   baseUrl: string,
   brand: string,
+  verifiedPaths?: readonly string[],
 ): Promise<{ products: ProbeSampleProduct[]; paths: string[]; notes: string | null; blocked: string | null }> {
-  const paths = [...SHOPIFY_FOOTWEAR_PATHS];
+  const paths = [...(verifiedPaths ?? SHOPIFY_FOOTWEAR_PATHS)];
   const samples: ProbeSampleProduct[] = [];
   let blocked: string | null = null;
 
-  const allJson = await fetchMaybeJson(http, `${baseUrl}/products.json?limit=8`, 300);
+  const allJson = verifiedPaths ? { status: 0, json: null } : await fetchMaybeJson(http, `${baseUrl}/products.json?limit=8`, 300);
   if (allJson.status === 403 || allJson.status === 401) {
     blocked = `Shopify products.json HTTP ${allJson.status}`;
   }

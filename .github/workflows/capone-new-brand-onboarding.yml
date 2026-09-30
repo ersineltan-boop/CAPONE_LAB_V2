@@ -2,6 +2,10 @@
 name: CAPONE automatic new-brand onboarding
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - src/collector/jwAnderson.ts
   schedule:
     - cron: "30 21 * * *"
   workflow_dispatch:
@@ -49,9 +53,12 @@ jobs:
       - name: Process safe official-source candidate queue
         env:
           REQUESTED_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          TRIGGER_EVENT: ${{ github.event_name }}
         run: |
           set -euo pipefail
           args=(--limit 25 --max-activations 3)
+          # A collector delivery immediately verifies only its own candidate.
+          if [[ "$TRIGGER_EVENT" == "push" ]]; then args=(--only jw-anderson --limit 1 --max-activations 1); fi
           if [[ "$REQUESTED_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run onboard:brands -- "${args[@]}"
 
@@ -109,11 +116,16 @@ jobs:
           PR_URL: ${{ steps.publish.outputs.pr_url }}
           MERGED: ${{ steps.publish.outputs.merged }}
           PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
+          TRIGGER_EVENT: ${{ github.event_name }}
         run: |
           {
             echo "## CAPONE automatic new-brand onboarding"
-            echo "- Attempt limit: 25"
-            echo "- Activation limit: 3"
+            if [[ "$TRIGGER_EVENT" == "push" ]]; then
+              echo "- Targeted JW Anderson delivery: 1 attempt / 1 activation"
+            else
+              echo "- Attempt limit: 25"
+              echo "- Activation limit: 3"
+            fi
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"
             echo "- Automatically merged: ${MERGED:-false}"
