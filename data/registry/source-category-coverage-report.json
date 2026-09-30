@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:25:27.723Z",
+  "generatedAt": "2026-09-30T10:41:42.884Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -9615,7 +9615,7 @@
     {
       "brandId": "yuul-yie",
       "brandName": "YUUL YIE",
-      "modelFamilyCount": 43,
+      "modelFamilyCount": 38,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -12661,6 +12661,38 @@
       "needsRecrawl": false
     },
     {
+      "brandId": "jw-anderson",
+      "brandName": "JW ANDERSON",
+      "modelFamilyCount": 57,
+      "sourceProductCount": 68,
+      "sourceFootwearCategoryCount": 2,
+      "categories": [
+        {
+          "categoryId": "women-s-shoes",
+          "categoryName": "Women's Shoes",
+          "categoryPath": "/collections/womens-shoes",
+          "productCount": 67,
+          "generic": true
+        },
+        {
+          "categoryId": "mules",
+          "categoryName": "Mules",
+          "categoryPath": "/women/shoes/mules",
+          "productCount": 1,
+          "generic": false
+        }
+      ],
+      "productsWithMeaningfulCategory": 1,
+      "productsWithNoMeaningfulCategory": 67,
+      "categoryCoveragePercent": 1.5,
+      "productsOnlyGenericCategory": 67,
+      "collectionUrlsCrawled": [
+        "https://www.jwanderson.com/collections/womens-shoes"
+      ],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": true
+    },
+    {
       "brandId": "amina-muaddi",
       "brandName": "AMINA MUADDI",
       "modelFamilyCount": 153,
@@ -15460,7 +15492,7 @@
     {
       "brandId": "nine-west",
       "brandName": "NINE WEST",
-      "modelFamilyCount": 175,
+      "modelFamilyCount": 176,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -16143,7 +16175,7 @@
     {
       "brandId": "mascar",
       "brandName": "MASCARÓ",
-      "modelFamilyCount": 145,
+      "modelFamilyCount": 144,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -17176,7 +17208,7 @@
     {
       "brandId": "fly-london",
       "brandName": "FLY LONDON",
-      "modelFamilyCount": 975,
+      "modelFamilyCount": 962,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -17237,21 +17269,21 @@
       "brandId": "zara",
       "brandName": "ZARA",
       "modelFamilyCount": 535,
-      "sourceProductCount": 549,
+      "sourceProductCount": 550,
       "sourceFootwearCategoryCount": 1,
       "categories": [
         {
           "categoryId": "view-all",
           "categoryName": "VIEW ALL",
           "categoryPath": "/us/en/woman-shoes-l1251.html",
-          "productCount": 549,
+          "productCount": 550,
           "generic": true
         }
       ],
       "productsWithMeaningfulCategory": 0,
-      "productsWithNoMeaningfulCategory": 549,
+      "productsWithNoMeaningfulCategory": 550,
       "categoryCoveragePercent": 0,
-      "productsOnlyGenericCategory": 549,
+      "productsOnlyGenericCategory": 550,
       "collectionUrlsCrawled": [],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": true
@@ -17415,7 +17447,7 @@
     {
       "brandId": "freda-salvador",
       "brandName": "FREDA SALVADOR",
-      "modelFamilyCount": 113,
+      "modelFamilyCount": 114,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -17454,6 +17486,238 @@
       "categoryCoveragePercent": 0,
       "productsOnlyGenericCategory": 0,
       "collectionUrlsCrawled": [],
+      "collectionUrlsDiscoveredNotCrawled": [],
+      "needsRecrawl": false
+    },
+    {
+      "brandId": "margaux",
+      "brandName": "MARGAUX",
+      "modelFamilyCount": 77,
+      "sourceProductCount": 407,
+      "sourceFootwearCategoryCount": 30,
+      "categories": [
+        {
+          "categoryId": "sandals",
+          "categoryName": "Sandals",
+          "categoryPath": "/collections/sandals",
+          "productCount": 156,
+          "generic": false
+        },
+        {
+          "categoryId": "flats",
+          "categoryName": "Flats",
+          "categoryPath": "/collections/flats",
+          "productCount": 110,
+          "generic": false
+        },
+        {
+          "categoryId": "heels",
+          "categoryName": "Heels",
+          "categoryPath": "/collections/heels",
+          "productCount": 95,
+          "generic": false
+        },
+        {
+          "categoryId": "boots",
+          "categoryName": "Boots",
+          "categoryPath": "/collections/boots",
+          "productCount": 68,
+          "generic": false
+        },
+        {
+          "categoryId": "low-heels",
+          "categoryName": "Low Heels",
+          "categoryPath": "/collections/low-heels",
+          "productCount": 47,
+          "generic": false
+        },
+        {
+          "categoryId": "flat-sandals",
+          "categoryName": "Flat Sandals",
+          "categoryPath": "/collections/flat-sandals",
+          "productCount": 39,
+          "generic": false
+        },
+        {
+          "categoryId": "heeled-sandals",
+          "categoryName": "Heeled Sandals",
+          "categoryPath": "/collections/heeled-sandals",
+          "productCount": 39,
+          "generic": false
+        },
+        {
+          "categoryId": "the-vacation-edit",
+          "categoryName": "The Vacation Edit",
+          "categoryPath": "/collections/best-comfortable-shoes-vacation",
+          "productCount": 37,
+          "generic": false
+        },
+        {
+          "categoryId": "loafers",
+          "categoryName": "Loafers",
+          "categoryPath": "/collections/loafers",
+          "productCount": 36,
+          "generic": false
+        },
+        {
+          "categoryId": "sleek-sandals",
+          "categoryName": "Sleek Sandals",
+          "categoryPath": "/collections/sleek-sandals",
+          "productCount": 36,
+          "generic": false
+        },
+        {
+          "categoryId": "the-work-edit",
+          "categoryName": "The Work Edit",
+          "categoryPath": "/collections/comfortable-shoes-work",
+          "productCount": 30,
+          "generic": false
+        },
+        {
+          "categoryId": "ankle-boots",
+          "categoryName": "Ankle Boots",
+          "categoryPath": "/collections/ankle-boots",
+          "productCount": 23,
+          "generic": false
+        },
+        {
+          "categoryId": "slides",
+          "categoryName": "Slides",
+          "categoryPath": "/collections/slides",
+          "productCount": 22,
+          "generic": false
+        },
+        {
+          "categoryId": "the-flat-and-wrap-sandal",
+          "categoryName": "The Flat and Wrap Sandal",
+          "categoryPath": "/collections/the-flat-and-wrap-sandal",
+          "productCount": 22,
+          "generic": false
+        },
+        {
+          "categoryId": "the-le-bon-march-edit",
+          "categoryName": "The Le Bon Marché Edit",
+          "categoryPath": "/collections/margaux-shoes-at-le-bon-marche",
+          "productCount": 22,
+          "generic": false
+        },
+        {
+          "categoryId": "the-event-edit",
+          "categoryName": "The Event Edit",
+          "categoryPath": "/collections/comfortable-shoes-events",
+          "productCount": 19,
+          "generic": false
+        },
+        {
+          "categoryId": "bestselling-boots",
+          "categoryName": "Bestselling Boots",
+          "categoryPath": "/collections/bestselling-boots",
+          "productCount": 12,
+          "generic": false
+        },
+        {
+          "categoryId": "bestselling-flats",
+          "categoryName": "Bestselling Flats",
+          "categoryPath": "/collections/bestselling-flats",
+          "productCount": 12,
+          "generic": false
+        },
+        {
+          "categoryId": "knee-high-boots",
+          "categoryName": "Knee-High Boots",
+          "categoryPath": "/collections/knee-high-boots",
+          "productCount": 11,
+          "generic": false
+        },
+        {
+          "categoryId": "low-heeled-sandals",
+          "categoryName": "Low-Heeled Sandals",
+          "categoryPath": "/collections/low-heeled-sandals",
+          "productCount": 11,
+          "generic": false
+        },
+        {
+          "categoryId": "black-sandals",
+          "categoryName": "Black Sandals",
+          "categoryPath": "/collections/black-sandals",
+          "productCount": 9,
+          "generic": false
+        },
+        {
+          "categoryId": "suede-flats",
+          "categoryName": "Suede Flats",
+          "categoryPath": "/collections/suede-flats",
+          "productCount": 9,
+          "generic": false
+        },
+        {
+          "categoryId": "chelsea-boots",
+          "categoryName": "Chelsea Boots",
+          "categoryPath": "/collections/chelsea-boots",
+          "productCount": 8,
+          "generic": false
+        },
+        {
+          "categoryId": "laura-reilly-s-spring-favorites",
+          "categoryName": "Laura Reilly's Spring Favorites",
+          "categoryPath": "/collections/laura-reilly-margaux-shoes",
+          "productCount": 6,
+          "generic": false
+        },
+        {
+          "categoryId": "all-weather-boots",
+          "categoryName": "All-Weather Boots",
+          "categoryPath": "/collections/water-resistant-suede-boots",
+          "productCount": 5,
+          "generic": false
+        },
+        {
+          "categoryId": "the-travel-edit",
+          "categoryName": "The Travel Edit",
+          "categoryPath": "/collections/comfortable-shoes-travel",
+          "productCount": 4,
+          "generic": false
+        },
+        {
+          "categoryId": "ballet-flats",
+          "categoryName": "Ballet Flats",
+          "categoryPath": "/collections/ballet-flats",
+          "productCount": 3,
+          "generic": false
+        },
+        {
+          "categoryId": "cap-toe-heels-and-flats",
+          "categoryName": "Cap-Toe Heels and Flats",
+          "categoryPath": "/collections/cap-toe-heels-and-flats",
+          "productCount": 2,
+          "generic": false
+        },
+        {
+          "categoryId": "the-burgundy-edit",
+          "categoryName": "The Burgundy Edit",
+          "categoryPath": "/collections/comfortable-burgundy-shoes",
+          "productCount": 2,
+          "generic": false
+        },
+        {
+          "categoryId": "tan-zebra-edit",
+          "categoryName": "Tan Zebra Edit",
+          "categoryPath": "/collections/zebra-shoe-trend",
+          "productCount": 1,
+          "generic": false
+        }
+      ],
+      "productsWithMeaningfulCategory": 407,
+      "productsWithNoMeaningfulCategory": 0,
+      "categoryCoveragePercent": 100,
+      "productsOnlyGenericCategory": 0,
+      "collectionUrlsCrawled": [
+        "https://www.margauxny.com/collections/flats",
+        "https://www.margauxny.com/collections/sandals",
+        "https://www.margauxny.com/collections/heels",
+        "https://www.margauxny.com/collections/boots",
+        "https://www.margauxny.com/collections/loafers"
+      ],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": false
     },

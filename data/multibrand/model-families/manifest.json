@@ -1,8 +1,8 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-09-30T09:38:53.554Z",
-  "totalFamilies": 16475,
+  "generatedAt": "2026-09-30T10:41:22.530Z",
+  "totalFamilies": 16479,
   "shardCount": 28,
   "shards": [
     {
@@ -18,27 +18,27 @@
     {
       "file": "part-002.json",
       "familyCount": 1994,
-      "bytes": 16773135
+      "bytes": 16775276
     },
     {
       "file": "part-003.json",
-      "familyCount": 2422,
-      "bytes": 16774116
+      "familyCount": 2386,
+      "bytes": 16776332
     },
     {
       "file": "part-004.json",
-      "familyCount": 2054,
-      "bytes": 16771767
+      "familyCount": 2055,
+      "bytes": 16773559
     },
     {
       "file": "part-005.json",
-      "familyCount": 1879,
-      "bytes": 16777437
+      "familyCount": 1869,
+      "bytes": 16773464
     },
     {
       "file": "part-006.json",
-      "familyCount": 362,
-      "bytes": 1939671
+      "familyCount": 411,
+      "bytes": 2200585
     },
     {
       "file": "brands/4ccccees.json",
@@ -113,7 +113,7 @@
     {
       "file": "brands/nine-west.json",
       "familyCount": 176,
-      "bytes": 1360805
+      "bytes": 1361701
     },
     {
       "file": "brands/loeffler-randall.json",
@@ -123,7 +123,7 @@
     {
       "file": "brands/freda-salvador.json",
       "familyCount": 114,
-      "bytes": 825459
+      "bytes": 825919
     },
     {
       "file": "brands/sarah-flint.json",
