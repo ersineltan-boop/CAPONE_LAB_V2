@@ -1,87 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T01:05:49.421Z",
+  "generatedAt": "2026-09-30T00:36:36.366Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 54,
     "activeBrandsAfter": 54,
-    "attempted": 5,
+    "attempted": 25,
     "activated": 0,
-    "partial": 0,
-    "blocked": 2,
-    "customAdapterRequired": 2,
+    "partial": 2,
+    "blocked": 9,
+    "customAdapterRequired": 13,
     "failed": 1,
     "storageStatus": "ok"
   },
   "attempts": [
     {
-      "brand": "AUTRY",
-      "slug": "autry",
-      "attemptedAt": "2026-09-29T01:05:49.421Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
-      "marketplaceCoverage": {
-        "farfetch": 9,
-        "levelShoes": 0
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "AXEL ARIGATO",
-      "slug": "axel-arigato",
-      "attemptedAt": "2026-09-29T01:05:49.421Z",
-      "detectedPlatform": "SITEMAP PRODUCT CRAWL",
-      "sourceStrategy": "sitemap-product-crawl",
-      "status": "FAILED",
-      "productsFound": 8,
-      "families": 2,
-      "realMultiColorFamilies": 1,
-      "verifiedNewArrivals": 0,
-      "galleryImageCoverage": 0,
-      "categoriesFound": [],
-      "blocker": "footwear leakage: 8",
-      "marketplaceCoverage": {
-        "farfetch": 1,
-        "levelShoes": 3
-      },
-      "activationDecision": "skip",
-      "notes": "Sitemap exposed 40 product URLs; REJECTED: footwear leakage: 8"
-    },
-    {
-      "brand": "BALENCIAGA",
-      "slug": "balenciaga",
-      "attemptedAt": "2026-09-29T01:05:49.421Z",
-      "detectedPlatform": "UNKNOWN",
-      "sourceStrategy": "none",
-      "status": "PRIORITY_BLOCKED",
-      "productsFound": 0,
-      "families": null,
-      "realMultiColorFamilies": null,
-      "verifiedNewArrivals": null,
-      "galleryImageCoverage": null,
-      "categoriesFound": [],
-      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
-      "marketplaceCoverage": {
-        "farfetch": 2,
-        "levelShoes": 3
-      },
-      "activationDecision": "blocked",
-      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
-    },
-    {
-      "brand": "BIBI LOU",
-      "slug": "bibi-lou",
-      "attemptedAt": "2026-09-29T01:05:49.421Z",
-      "detectedPlatform": "UNKNOWN",
+      "brand": "BOTTERO",
+      "slug": "bottero",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
       "sourceStrategy": "none",
       "status": "CUSTOM_ADAPTER_REQUIRED",
       "productsFound": 0,
@@ -92,16 +29,58 @@
       "categoriesFound": [],
       "blocker": "Shopify products.json did not yield women's footwear",
       "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "jsonld"
+    },
+    {
+      "brand": "CAMPER",
+      "slug": "camper",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "NEXT.JS PUBLIC DATA",
+      "sourceStrategy": "nextjs-public-data",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
         "farfetch": 5,
         "levelShoes": 0
       },
       "activationDecision": "blocked",
-      "notes": null
+      "notes": "nextjs, jsonld"
     },
     {
-      "brand": "BIRKENSTOCK",
-      "slug": "birkenstock",
-      "attemptedAt": "2026-09-29T01:05:49.421Z",
+      "brand": "CARRANO",
+      "slug": "carrano",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "jsonld"
+    },
+    {
+      "brand": "CASADEI",
+      "slug": "casadei",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
       "detectedPlatform": "SALESFORCE COMMERCE",
       "sourceStrategy": "salesforce-public",
       "status": "CUSTOM_ADAPTER_REQUIRED",
@@ -113,11 +92,478 @@
       "categoriesFound": [],
       "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
       "marketplaceCoverage": {
-        "farfetch": 14,
-        "levelShoes": 4
+        "farfetch": 1,
+        "levelShoes": 0
       },
       "activationDecision": "blocked",
       "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "CELINE",
+      "slug": "celine",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "CHARLES & KEITH",
+      "slug": "charles-keith",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Official-source probe exceeded its time budget; retry later",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Probe threw; recorded as blocked and continuing"
+    },
+    {
+      "brand": "CHLOÉ",
+      "slug": "chlo",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 7
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "COACH",
+      "slug": "coach",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 5,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "COURRÈGES",
+      "slug": "courr-ges",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SITEMAP PRODUCT CRAWL",
+      "sourceStrategy": "sitemap-product-crawl",
+      "status": "FAILED",
+      "productsFound": 9,
+      "families": 6,
+      "realMultiColorFamilies": 1,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 0,
+      "categoriesFound": [],
+      "blocker": "footwear leakage: 9",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 0
+      },
+      "activationDecision": "skip",
+      "notes": "Sitemap exposed 40 product URLs; REJECTED: footwear leakage: 9"
+    },
+    {
+      "brand": "DUMOND",
+      "slug": "dumond",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 49
+      },
+      "activationDecision": "blocked",
+      "notes": "jsonld"
+    },
+    {
+      "brand": "FERRAGAMO",
+      "slug": "ferragamo",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 15,
+        "levelShoes": 6
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "GOLDEN GOOSE",
+      "slug": "golden-goose",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 23,
+        "levelShoes": 10
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "HISPANITAS",
+      "slug": "hispanitas",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "STRUCTURED-DATA CATALOG",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "jsonld"
+    },
+    {
+      "brand": "INTENTIONALLY BLANK",
+      "slug": "intentionally-blank",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Official-source probe exceeded its time budget; retry later",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 49
+      },
+      "activationDecision": "blocked",
+      "notes": "Probe threw; recorded as blocked and continuing"
+    },
+    {
+      "brand": "JACQUEMUS",
+      "slug": "jacquemus",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 3
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce"
+    },
+    {
+      "brand": "JIL SANDER",
+      "slug": "jil-sander",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce, jsonld"
+    },
+    {
+      "brand": "JORGE BISCHOFF",
+      "slug": "jorge-bischoff",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Official-source probe exceeded its time budget; retry later",
+      "marketplaceCoverage": {
+        "farfetch": 14,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Probe threw; recorded as blocked and continuing"
+    },
+    {
+      "brand": "JW ANDERSON",
+      "slug": "jw-anderson",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 67,
+      "families": 57,
+      "realMultiColorFamilies": 1,
+      "verifiedNewArrivals": 7,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Womens Shoes"
+      ],
+      "blocker": "Kabul edilen ayakkabı kapsamı eksik: 67/86",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 50
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 57 families, 67 products, gallery 100%; coverage not FULL: Kabul edilen ayakkabı kapsamı eksik: 67/86"
+    },
+    {
+      "brand": "KATE SPADE",
+      "slug": "kate-spade",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "homepage HTTP 403; Shopify /collections/footwear HTTP 403",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Homepage/catalog routes were blocked. Sitemap and public JSON were tried first."
+    },
+    {
+      "brand": "LOEWE",
+      "slug": "loewe",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 1,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce"
+    },
+    {
+      "brand": "MAGUIRE",
+      "slug": "maguire",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Official-source probe exceeded its time budget; retry later",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "Probe threw; recorded as blocked and continuing"
+    },
+    {
+      "brand": "MARC FISHER",
+      "slug": "marc-fisher",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Shopify products.json did not yield women's footwear",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": null
+    },
+    {
+      "brand": "MARGAUX",
+      "slug": "margaux",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 161,
+      "families": 54,
+      "realMultiColorFamilies": 46,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Knee High Boots",
+        "Heels",
+        "Comfortable Burgundy Shoes",
+        "Comfortable Shoes Events",
+        "Margaux Shoes At Le Bon Marche",
+        "Zebra Shoe Trend",
+        "Loafers",
+        "Suede Flats",
+        "Ankle Boots",
+        "Chelsea Boots",
+        "Water Resistant Suede Boots",
+        "Comfortable Shoes Work",
+        "Bestselling Boots",
+        "Low Heels",
+        "Heeled Sandals",
+        "Flat Sandals",
+        "Low Heeled Sandals",
+        "Sleek Sandals",
+        "Black Sandals",
+        "Laura Reilly Margaux Shoes",
+        "Comfortable Shoes Travel",
+        "Best Comfortable Shoes Vacation",
+        "Bestselling Flats"
+      ],
+      "blocker": "Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 54 families, 161 products, gallery 100%; coverage not FULL: Resmî kadın ayakkabısı kaynak toplamı eksik"
+    },
+    {
+      "brand": "MARNI",
+      "slug": "marni",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "SALESFORCE COMMERCE",
+      "sourceStrategy": "salesforce-public",
+      "status": "CUSTOM_ADAPTER_REQUIRED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Public storefront fingerprint found, but generic CAPONE collectors cannot safely model this catalog yet",
+      "marketplaceCoverage": {
+        "farfetch": 2,
+        "levelShoes": 0
+      },
+      "activationDecision": "blocked",
+      "notes": "salesforce"
+    },
+    {
+      "brand": "MELISSA",
+      "slug": "melissa",
+      "attemptedAt": "2026-09-30T00:36:36.366Z",
+      "detectedPlatform": "UNKNOWN",
+      "sourceStrategy": "none",
+      "status": "PRIORITY_BLOCKED",
+      "productsFound": 0,
+      "families": null,
+      "realMultiColorFamilies": null,
+      "verifiedNewArrivals": null,
+      "galleryImageCoverage": null,
+      "categoriesFound": [],
+      "blocker": "Official-source probe exceeded its time budget; retry later",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 11
+      },
+      "activationDecision": "blocked",
+      "notes": "Probe threw; recorded as blocked and continuing"
     }
   ]
 }
