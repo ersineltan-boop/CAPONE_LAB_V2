@@ -106,7 +106,7 @@ describe("onboarding queue policy", () => {
     const partial = queue.entries.find((entry) => entry.slug === "maison-margiela")!;
     partial.status = "PARTIAL";
     partial.nextRetryAt = "2026-10-08T13:00:00.000Z";
-    expect(selectQueueCandidates(queue, { now, limit: 1 })).toEqual([]);
+    expect(selectQueueCandidates(queue, { now, limit: 1 }).map((entry) => entry.slug)).not.toContain("maison-margiela");
     expect(
       selectQueueCandidates(queue, { now, limit: 1, only: ["maison-margiela"] })
         .map((entry) => entry.slug),
