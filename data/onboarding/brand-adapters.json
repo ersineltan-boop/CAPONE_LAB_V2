@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T07:20:27.602Z",
+  "updatedAt": "2026-10-01T11:13:30.716Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
@@ -76,6 +76,17 @@
         "/collections/heels",
         "/collections/boots",
         "/collections/loafers"
+      ]
+    },
+    "casadei": {
+      "platform": "SALESFORCE COMMERCE",
+      "strategy": "salesforce-public",
+      "sourceUrl": "https://www.casadei.com",
+      "collectionPaths": [
+        "/en-us/shoes/"
+      ],
+      "footwearPaths": [
+        "/en-us/shoes/"
       ]
     }
   }
