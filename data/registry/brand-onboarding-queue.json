@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T13:25:34.154Z",
+  "updatedAt": "2026-10-01T13:43:04.487Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -1532,16 +1532,16 @@
       "slug": "sergio-rossi",
       "priority": 95,
       "status": "PARTIAL",
-      "attempts": 1,
-      "lastAttemptAt": "2026-09-27T18:48:55.460Z",
-      "nextRetryAt": "2026-10-04T18:48:55.460Z",
+      "attempts": 2,
+      "lastAttemptAt": "2026-10-01T13:43:04.487Z",
+      "nextRetryAt": "2026-10-08T13:43:04.487Z",
       "sourceUrl": "https://www.sergiorossi.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
-      "blocker": "Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178",
+      "blocker": "Toplayıcı hataları var",
       "productsFound": 98,
       "activatedAt": null,
-      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Kaynak URL kapsamı eksik: 98/178; Kabul edilen ayakkabı kapsamı eksik: 98/178"
+      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Toplayıcı hataları var"
     },
     {
       "brand": "SÉZANE",
