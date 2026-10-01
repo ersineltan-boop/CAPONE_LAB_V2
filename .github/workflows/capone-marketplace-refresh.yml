@@ -104,7 +104,7 @@ jobs:
           AUTOMATION_BRANCH: automation/marketplace-refresh
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish verified marketplace refresh"
           AUTOMATION_PR_TITLE: "chore(data): verified automatic marketplace refresh"
-          AUTOMATION_PR_BODY: "Approved-adapter marketplace automation. FULL coverage, source totals, pagination, images, taxonomy, collision checks, full tests, production build and Vercel Preview passed. This guarded PR is merged automatically; any failed gate preserves last-good."
+          AUTOMATION_PR_BODY: "Approved-adapter marketplace automation. FULL coverage, source totals, pagination, images, taxonomy, collision checks, full tests, production build and Vercel Preview passed. Draft PR only; merge and production deployment are not automatic."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -126,7 +126,7 @@ jobs:
             echo "- Validated proposal: ${ACCEPTED:-none}"
             echo "- Last-good preserved: ${PRESERVED:-none}"
             echo "- Guarded PR: ${PR_URL:-none}"
-            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Merged by automation (must stay false): ${MERGED:-false}"
             echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
             echo "- Amazon, eMAG, Trendyol and OTTO excluded"
           } >> "$GITHUB_STEP_SUMMARY"
