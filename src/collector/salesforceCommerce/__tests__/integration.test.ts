@@ -47,6 +47,12 @@ describe('Salesforce production integration',()=>{
     expect(sameSalesforceRequestScope(u,u)).toBe(true);
     for(const wrong of [u.replace('en-us','en-gb'),u.replace('www.casadei.com','other.example'),u.replace('page=2','page=1'),u.replace('shoes','bags')]) expect(sameSalesforceRequestScope(u,wrong)).toBe(false);
   });
+  it('accepts only the observed official US variation alias with unchanged product and size parameters',()=>{
+    const requested='https://www.jilsander.com/on/demandware.store/Sites-JilSanderUS-Site/en_US/Product-Variation?pid=J16WS0042P3742001&quantity=1&dwvar_J16WS0042P3742001_size=35';
+    const alias='https://www.jilsander.com/en-us/product-variation?pid=J16WS0042P3742001&quantity=1&dwvar_J16WS0042P3742001_size=35';
+    expect(sameSalesforceRequestScope(requested,alias)).toBe(true);
+    for(const wrong of [alias.replace('en-us','en-gb'),alias.replace('www.jilsander.com','other.example'),alias.replace('size=35','size=36'),alias.replace('pid=J16WS0042P3742001','pid=other'),alias+'&cgid=other',alias.replace('product-variation','search-show-ajax')]) expect(sameSalesforceRequestScope(requested,wrong)).toBe(false);
+  });
   it('rejects a source total that changes during collection',async()=>{
     let calls=0;
     const attempt=await collectOfficialSalesforce({id:'casadei',brand:'CASADEI',baseUrl:CASADEI_SCOPE.officialUrl,collectionPaths:[],maxProducts:200},{fetchText:async url=>({ok:true,status:200,url,text:listing(++calls===1?1:2)})});
