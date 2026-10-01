@@ -93,7 +93,7 @@ jobs:
           AUTOMATION_BRANCH: automation/brand-refresh
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish validated official-brand refresh"
           AUTOMATION_PR_TITLE: "chore(data): validated automatic official-brand refresh"
-          AUTOMATION_PR_BODY: "Approved-source official-brand automation. FULL coverage, taxonomy, baseline NEW, last-good, full tests, production build and Vercel Preview passed. This guarded PR is merged automatically; any failed gate preserves the previous delivery."
+          AUTOMATION_PR_BODY: "Approved-source official-brand automation. FULL coverage, taxonomy, baseline NEW, last-good, full tests, production build and Vercel Preview passed. Draft PR only; merge and production deployment are not automatic."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -122,7 +122,7 @@ jobs:
             echo "## CAPONE official-brand automation"
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"
-            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Merged by automation (must stay false): ${MERGED:-false}"
             echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
             echo "- Failed gates preserve last-good"
           } >> "$GITHUB_STEP_SUMMARY"
