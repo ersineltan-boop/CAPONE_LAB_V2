@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T13:53:24.280Z",
+  "generatedAt": "2026-10-01T15:32:17.551Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 77,
-    "activeBrandsAfter": 77,
-    "attempted": 1,
-    "activated": 0,
-    "partial": 1,
+    "activeBrandsAfter": 79,
+    "attempted": 6,
+    "activated": 2,
+    "partial": 4,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
@@ -17,10 +17,10 @@
     {
       "brand": "SERGIO ROSSI",
       "slug": "sergio-rossi",
-      "attemptedAt": "2026-10-01T13:53:24.280Z",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
       "detectedPlatform": "SHOPIFY",
       "sourceStrategy": "shopify-public",
-      "status": "PARTIAL",
+      "status": "ACTIVE",
       "productsFound": 98,
       "families": 41,
       "realMultiColorFamilies": 29,
@@ -36,13 +36,128 @@
         "Ankle Boots & Booties",
         "Boots"
       ],
-      "blocker": "Toplayıcı hataları var",
+      "blocker": null,
       "marketplaceCoverage": {
         "farfetch": 2,
         "levelShoes": 0
       },
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%"
+    },
+    {
+      "brand": "COPERNI",
+      "slug": "coperni",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 28,
+      "families": 19,
+      "realMultiColorFamilies": 6,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": "Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
       "activationDecision": "partial",
-      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Toplayıcı hataları var"
+      "notes": "ACCEPTED FULL: 19 families, 28 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik"
+    },
+    {
+      "brand": "MOON BOOT",
+      "slug": "moon-boot",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 142,
+      "families": 67,
+      "realMultiColorFamilies": 37,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": "Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "marketplaceCoverage": {
+        "farfetch": 11,
+        "levelShoes": 50
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 67 families, 142 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik"
+    },
+    {
+      "brand": "PALOMA WOOL",
+      "slug": "paloma-wool",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "ACTIVE",
+      "productsFound": 63,
+      "families": 34,
+      "realMultiColorFamilies": 13,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": null,
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 34 families, 63 products, gallery 100%"
+    },
+    {
+      "brand": "PAZZION",
+      "slug": "pazzion",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 574,
+      "families": 285,
+      "realMultiColorFamilies": 257,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": "Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik",
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 49
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 285 families, 574 products, gallery 100%; coverage not FULL: Toplayıcı hataları var; Sayfalamanın tamamlandığı doğrulanamadı; Tarama sınırına ulaşılmadığı doğrulanamadı; Resmî kadın ayakkabısı kaynak toplamı eksik"
+    },
+    {
+      "brand": "PEDRO MIRALLES",
+      "slug": "pedro-miralles",
+      "attemptedAt": "2026-10-01T15:32:17.551Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 628,
+      "families": 248,
+      "realMultiColorFamilies": 148,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 0.8136942675159236,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": "Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 628/688",
+      "marketplaceCoverage": {
+        "farfetch": 3,
+        "levelShoes": 0
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 248 families, 628 products, gallery 81%; coverage not FULL: Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 628/688"
     }
   ]
 }
