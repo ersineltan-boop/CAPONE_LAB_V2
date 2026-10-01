@@ -52,6 +52,11 @@ function collectionRequestPath(resolvedUrl: string, fallbackPath: string): strin
 }
 
 export function parseSergioRossiStorefrontCount(html: string): number | null {
+  // The official collection toolbar nests its number inside a span.
+  const counters = [...html.matchAll(/<span\b[^>]*\bdata-items-counter(?=[\s=>])[^>]*>\s*(\d+)\s*<\/span>/gi)]
+    .map((match) => Number(match[1]));
+  const uniqueCounters = [...new Set(counters)];
+  if (uniqueCounters.length > 0) return uniqueCounters.length === 1 ? uniqueCounters[0]! : null;
   const shared = parseStorefrontProductCount(html);
   if (shared != null) return shared;
   const labeled = [...html.matchAll(/>\s*(\d[\d\s.,]*)\s*(?:items?)\s*</gi)]
@@ -72,6 +77,12 @@ export async function collectSergioRossi(
 ): Promise<CollectionAttemptResult & {
   categoryStorefrontCounts: Record<string, number | null>;
 }> {
+  const sourceHttp = http;
+  http = { async fetchText(url, options) {
+    const first = await sourceHttp.fetchText(url, options);
+    return first.status === 0 || [502, 503, 504].includes(first.status)
+      ? sourceHttp.fetchText(url, { ...options, delayMs: 1000 }) : first;
+  } };
   const origin = new URL(config.baseUrl);
   if (origin.protocol !== "https:" || origin.hostname.replace(/^www\./i, "") !== "sergiorossi.com") {
     throw new Error("Sergio Rossi collector requires the official HTTPS storefront");

@@ -18,6 +18,7 @@ export interface FootwearGateInput {
   productType?: string;
   tags?: string[];
   handle?: string;
+  officialProductUrl?: string;
   collectionPath?: string;
   fromVerifiedFootwearCollection?: boolean;
 }
@@ -277,6 +278,14 @@ function isOfficialJilSanderRingBallerina(title: string, url: string): boolean {
     /^https:\/\/www\.jilsander\.com\/en-us\/ring-ballerina\/J15WZ\d{4}[A-Za-z0-9]+\.html$/i.test(url);
 }
 
+function officialCoperniBeltCategory(title: string, url: string): FootwearCategory | null {
+  if (!/^https:\/\/(?:www\.)?coperni\.com\/products\/copsh\d+[a-z0-9-]+$/i.test(url)) return null;
+  if (/^belt ballerinas$/i.test(title.trim())) return "BALLERINA";
+  if (/^belt flip flops$/i.test(title.trim())) return "SANDAL";
+  if (/^belt cavalier$/i.test(title.trim())) return "BOOT";
+  return null;
+}
+
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
   const evidenceTags = (input.tags ?? []).filter((tag) => !isMerchandisingTag(tag));
   const haystack = joinSignals([
@@ -369,7 +378,7 @@ function hasExplicitSneakerEvidence(text: string): boolean {
 }
 
 function hasExplicitBalletEvidence(text: string): boolean {
-  return /\bballerin|\bballet flat|\bflat shoe|\bcasual flat|\bballerine|\bmary[- ]?jane\b/.test(text);
+  return /\bballerin|\bballet flat|\bflat shoe|\bcasual flat|\bballerine|\bmary[- ]?janes?\b/.test(text);
 }
 
 function hasMixedSapatilhaTenisCollection(text: string): boolean {
@@ -399,7 +408,7 @@ export function inferFootwearCategoryFromSignals(input: FootwearGateInput): Foot
     return "BALLERINA";
   }
 
-  if (/\bloafer|\bmocassim/.test(collectionText)) return "LOAFER";
+  if (/\bloafer|\bmocassim|\bmoccasin|\bmocassin/.test(collectionText)) return "LOAFER";
   if (/\bmule/.test(collectionText)) return "MULE";
   if (/\bwedge/.test(collectionText)) return "WEDGE";
   if (/\bsandal|\bslide|\bsandalia|\bsandália|\brasteira/.test(collectionText)) return "SANDAL";
@@ -429,6 +438,10 @@ function hasTitleHandleFootwearSupport(input: FootwearGateInput): string | null 
     /\bslipper/i,
     /\bwedge/i,
     /\bespar/i,
+    /\bespadrille/i,
+    /\bmoccasin/i,
+    /\bmocassin/i,
+    /\bmary[- ]?janes?\b/i,
     /\bslingback/i,
     /\bclog/i,
   ];
@@ -446,6 +459,13 @@ export function isMensOnlyProduct(input: FootwearGateInput): boolean {
 
 export function evaluateFootwearProduct(input: FootwearGateInput): FootwearGateResult {
   const matchedSignals: string[] = [];
+
+  const coperniCategory = officialCoperniBeltCategory(input.title, input.officialProductUrl ?? input.handle ?? "");
+  const expectedCoperniType = coperniCategory === "BALLERINA" ? /^ballerinas?$/i : coperniCategory === "SANDAL" ? /^sandals?$/i : /^boots?$/i;
+  const coperniType = input.productType?.match(/^(?:AW\d+|PF\d+|SS\d+|CARRYOVER) \(([^)]+)\)$/i)?.[1] ?? input.productType ?? "";
+  if (coperniCategory && expectedCoperniType.test(coperniType)) {
+    return { decision: "ACCEPT_FOOTWEAR", category: coperniCategory, validationMethod: "PRODUCT_TYPE", matchedSignals: ["official-coperni-belt-footwear"] };
+  }
 
   const nonFootwear = hasStrongNonFootwearSignal(input);
   if (nonFootwear) {
@@ -519,6 +539,10 @@ export function evaluateStoredPilotProduct(input: {
   productUrl: string;
   category: FootwearCategory | null;
 }): FootwearGateResult {
+  const coperniCategory = officialCoperniBeltCategory(input.productName, input.productUrl);
+  if (coperniCategory && input.category === coperniCategory) {
+    return { decision: "ACCEPT_FOOTWEAR", category: coperniCategory, validationMethod: "STORED_PRODUCT_REVIEW", matchedSignals: ["official-coperni-belt-footwear"] };
+  }
   const officialRingBallerina = input.category === "BALLERINA" && isOfficialJilSanderRingBallerina(input.productName, input.productUrl);
   const handle = officialRingBallerina ? input.productUrl : extractHandleFromProductUrl(input.productUrl);
 

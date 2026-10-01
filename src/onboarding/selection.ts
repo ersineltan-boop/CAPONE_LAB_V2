@@ -1,4 +1,5 @@
 import { salesforceScope } from "../collector/salesforceCommerce/integration";
+import { officialWaveScope, sameOfficialWaveScope } from "../collector/officialBrandWave";
 import { isValidHttpUrl } from "../registry/build/normalize";
 import { priorityBrandRank } from "./adapterWorkQueue";
 import type { BrandOnboardingQueueEntry, BrandOnboardingQueueFile, OnboardingStatus } from "./types";
@@ -31,8 +32,11 @@ export function selectQueueCandidates(
         (only.includes(entry.slug) || only.includes(entry.brand.toLowerCase()));
       if (only && !explicitlyTargeted) return false;
       const scope = salesforceScope(entry.slug);
-      const deliveredCustomAdapter = entry.status === "CUSTOM_ADAPTER_REQUIRED" && scope !== null &&
-        Boolean(entry.sourceUrl && isValidHttpUrl(entry.sourceUrl) && new URL(entry.sourceUrl).origin === scope.officialUrl);
+      const wave = officialWaveScope(entry.slug);
+      const deliveredCustomAdapter = entry.status === "CUSTOM_ADAPTER_REQUIRED" &&
+        Boolean(entry.sourceUrl && isValidHttpUrl(entry.sourceUrl) &&
+          ((scope !== null && new URL(entry.sourceUrl).origin === scope.officialUrl) ||
+            (wave !== null && sameOfficialWaveScope(wave.origin, new URL(entry.sourceUrl).origin))));
       if (TERMINAL_SKIP_STATUSES.has(entry.status) && !deliveredCustomAdapter) return false;
       if (entry.status === "BLOCKED" && (!entry.sourceUrl || !isValidHttpUrl(entry.sourceUrl))) return false;
       if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY" && !deliveredCustomAdapter) return false;

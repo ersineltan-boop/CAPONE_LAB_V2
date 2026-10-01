@@ -83,6 +83,11 @@ export async function collectCandidateToStaging(input: {
       collectionPaths: input.probe.footwearPaths, maxProducts: 250, collectMode: "full" }, http);
   }
 
+  const { officialWaveScope, collectOfficialBrandWave } = await import("../collector/officialBrandWave");
+  if (officialWaveScope(input.slug) && input.probe.strategy === "shopify-public") {
+    return collectOfficialBrandWave({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
+      collectionPaths: input.probe.footwearPaths, maxProducts: 250, collectMode: "full" }, http);
+  }
   if (input.probe.strategy === "inditex-like-catalog") {
     return collectInditexLikeBrand(entry, http, input.probe.locale ?? "us/en");
   }

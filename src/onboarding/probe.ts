@@ -9,6 +9,7 @@ import type { ProbeResult, ProbeSampleProduct } from "./types";
 import { JW_WOMENS_SHOES_PATH } from "../collector/jwAnderson";
 import { TKEES_FOOTWEAR_PATHS } from "../collector/tkees";
 import { SERGIO_ROSSI_WOMENS_SHOES_PATH } from "../collector/sergioRossi";
+import { officialWaveScope, probeOfficialBrandWave, sameOfficialWaveScope } from "../collector/officialBrandWave";
 
 const SHOPIFY_FOOTWEAR_PATHS = [
   "/collections/shoes",
@@ -78,6 +79,11 @@ export async function probeBrandSource(input: {
     return (await probeOfficialSalesforce(input.slug, input.http))!;
   }
 
+  const wave = officialWaveScope(input.slug);
+  if (wave) {
+    if (!sameOfficialWaveScope(wave.origin, new URL(baseUrl).origin)) throw new Error("Unregistered official wave source");
+    return probeOfficialBrandWave(input.slug, input.brand, input.http);
+  }
   const homepage = await input.http.fetchText(baseUrl, { delayMs: 300 });
   const homepageFingerprint = fingerprintStorefront({
     html: homepage.text,

@@ -11,6 +11,7 @@ on:
       - src/collector/salesforceCommerce/jilSander.ts
       - src/collector/tkees.ts
       - src/collector/sergioRossi.ts
+      - src/collector/officialBrandWave.ts
       - src/collector/salesforceCommerce/integration.ts
       - src/collector/salesforceCommerce/coverage.ts
       - src/collector/salesforceCommerce/families.ts
@@ -73,7 +74,7 @@ jobs:
           # A collector delivery immediately verifies only its own candidate.
           if [[ "$TRIGGER_EVENT" == "push" ]]; then
             targets=()
-            for slug in jw-anderson margaux casadei jil-sander tkees sergio-rossi; do
+            for slug in jw-anderson margaux casadei jil-sander tkees sergio-rossi coperni paloma-wool pazzion moon-boot pedro-miralles; do
               collector="$slug"
               if [[ "$slug" == "jw-anderson" ]]; then collector=jwAnderson; fi
               path="src/collector/${collector}.ts"
@@ -82,6 +83,9 @@ jobs:
               if [[ "$slug" == "tkees" ]]; then path=src/collector/tkees.ts; fi
               if [[ "$slug" == "sergio-rossi" ]]; then path=src/collector/sergioRossi.ts; fi
               paths=("$path")
+              if [[ "$slug" == "coperni" || "$slug" == "paloma-wool" || "$slug" == "pazzion" || "$slug" == "moon-boot" || "$slug" == "pedro-miralles" ]]; then
+                paths=(src/collector/officialBrandWave.ts)
+              fi
               if [[ "$slug" == "casadei" || "$slug" == "jil-sander" ]]; then
                 paths+=(src/collector/salesforceCommerce/integration.ts src/collector/salesforceCommerce/coverage.ts
                   src/collector/salesforceCommerce/families.ts src/collector/salesforceCommerce/gallery.ts

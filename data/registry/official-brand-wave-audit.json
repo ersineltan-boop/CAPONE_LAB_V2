@@ -1,0 +1,202 @@
+{
+  "auditDate": "2026-10-01",
+  "baseCommit": "e6557604940f83ab46b0efca591200ca42d58ef2",
+  "checkedCandidates": 16,
+  "deliveredCatalogAdapters": 6,
+  "notes": [
+    "Active brands are excluded from this wave. TKEES, Casadei and Jil Sander are not new activations.",
+    "Collection metadata counts are exploratory only; FULL requires independent customer-visible counts or exact paginated storefront identities.",
+    "Local HTTP 0/5xx failures are unresolved access results, not proof that the official website has no catalog.",
+    "Cloud onboarding performs fresh validation before any activation; this audit does not activate candidates."
+  ],
+  "candidates": [
+    {
+      "slug": "sergio-rossi",
+      "officialSource": "https://www.sergiorossi.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://www.sergiorossi.com",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true
+    },
+    {
+      "slug": "senso",
+      "officialSource": "https://senso.com.au",
+      "activeAtStart": false,
+      "homeStatus": 403,
+      "resolvedHome": "https://senso.com.au",
+      "homeError": null,
+      "publicCollectionsStatus": 403,
+      "catalogAdapterDelivered": false,
+      "blocker": "Official source challenge; no bypass attempted."
+    },
+    {
+      "slug": "wandler",
+      "officialSource": "https://wandler.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://wandler.com/en-nl",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": false,
+      "collectionScope": "https://wandler.com/en-nl/collections/shoes",
+      "listingStatus": 200,
+      "firstJsonPageCount": 0,
+      "blocker": "Official NL shoes collection currently shows 0 products; empty collection will not be activated."
+    },
+    {
+      "slug": "coperni",
+      "officialSource": "https://coperni.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://coperni.com",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true,
+      "collectionScope": "https://coperni.com/collections/all-shoes",
+      "listingStatus": 200,
+      "firstJsonPageCount": 29
+    },
+    {
+      "slug": "softwaves",
+      "officialSource": "https://www.softwavesshop.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://www.softwavesshop.com",
+      "homeError": null,
+      "publicCollectionsStatus": 404,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "billi-bi",
+      "officialSource": "https://billibi.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://billibi.com/dk/da/",
+      "homeError": null,
+      "publicCollectionsStatus": 404,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "moon-boot",
+      "officialSource": "https://www.moonboot.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://www.moonboot.com/en-eu",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true,
+      "collectionScope": "https://www.moonboot.com/en-eu/collections/woman-fall-winter-2026",
+      "listingStatus": 200,
+      "firstJsonPageCount": 142
+    },
+    {
+      "slug": "pedro-miralles",
+      "officialSource": "https://www.pedromiralles.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://pedromiralles.com/",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true,
+      "collectionScope": "https://pedromiralles.com/collections/ver-todo-calzado",
+      "listingStatus": 200,
+      "firstJsonPageCount": 250
+    },
+    {
+      "slug": "paloma-wool",
+      "officialSource": "https://www.palomawool.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://palomawool.com/",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true,
+      "collectionScope": "https://palomawool.com/collections/shoes",
+      "listingStatus": 200,
+      "firstJsonPageCount": 63
+    },
+    {
+      "slug": "pazzion",
+      "officialSource": "https://www.pazzion.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://www.pazzion.com",
+      "homeError": null,
+      "publicCollectionsStatus": 200,
+      "catalogAdapterDelivered": true,
+      "collectionScope": "https://www.pazzion.com/collections/shoes",
+      "listingStatus": 200,
+      "firstJsonPageCount": 250
+    },
+    {
+      "slug": "marc-fisher",
+      "officialSource": "https://www.marcfisherfootwear.com",
+      "activeAtStart": false,
+      "homeStatus": 502,
+      "resolvedHome": "https://www.marcfisherfootwear.com",
+      "homeError": null,
+      "publicCollectionsStatus": 502,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "maguire",
+      "officialSource": "https://maguireshop.com",
+      "activeAtStart": false,
+      "homeStatus": 500,
+      "resolvedHome": "https://maguireshop.com",
+      "homeError": null,
+      "publicCollectionsStatus": null,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "aera",
+      "officialSource": "https://www.aeralondon.com",
+      "activeAtStart": false,
+      "homeStatus": 502,
+      "resolvedHome": "https://www.aeralondon.com",
+      "homeError": null,
+      "publicCollectionsStatus": 502,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "reike-nen",
+      "officialSource": "https://en.reikenen.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://en.reikenen.com",
+      "homeError": null,
+      "publicCollectionsStatus": 404,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "intentionally-blank",
+      "officialSource": "https://www.intentionally-blank.com",
+      "activeAtStart": false,
+      "homeStatus": 502,
+      "resolvedHome": "https://www.intentionally-blank.com",
+      "homeError": null,
+      "publicCollectionsStatus": 502,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    },
+    {
+      "slug": "lemon-jelly",
+      "officialSource": "https://www.lemonjelly.com",
+      "activeAtStart": false,
+      "homeStatus": 200,
+      "resolvedHome": "https://www.lemonjelly.com/en/",
+      "homeError": null,
+      "publicCollectionsStatus": 404,
+      "catalogAdapterDelivered": false,
+      "blocker": "Requires further source-specific work; homepage reachability is not catalog completeness."
+    }
+  ]
+}
