@@ -62,7 +62,7 @@ function transport(options: {
       if (!category) return { ok: false, status: 404, url, text: "" };
 
       if (normalizedPath === category.path) {
-        const count = options.mismatchPath === category.path ? 2 : 1;
+        const count = options.repeatedPath === category.path ? 250 : options.mismatchPath === category.path ? 2 : 1;
         return {
           ok: true,
           status: 200,
@@ -73,8 +73,14 @@ function transport(options: {
 
       const page = Number(parsed.searchParams.get("page")) || 1;
       const product = productByPath.get(category.path)!;
+      const repeatedBatch = Array.from({ length: 250 }, (_, offset) => ({
+        ...product,
+        id: 10_000 + offset,
+        handle: `${product.handle}-${offset}`,
+        title: `${product.title} ${offset}`,
+      }));
       const products = options.repeatedPath === category.path
-        ? [product]
+        ? repeatedBatch
         : page === 1
           ? [product]
           : [];
