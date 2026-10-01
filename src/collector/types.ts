@@ -22,6 +22,9 @@ export interface PilotProductVariant {
 }
 
 export interface PilotProduct {
+  sourceModelCode?: string;
+  sourceHsCode?: string;
+  sourceSizes?: Array<{ size: string; displaySize: string | null; sku: string | null; selectable: boolean | null }>;
   sourceProductType?: string;
   sourceProductTags?: string[];
   source: string;

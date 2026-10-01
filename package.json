@@ -77,7 +77,8 @@
     "collect:massimo-staging": "tsx scripts/collect-massimo-staging.ts",
     "collect:luxury-staging": "tsx scripts/collect-luxury-staging.ts",
     "collect:official-shopify": "tsx scripts/collect-official-shopify.ts",
-    "collect:official-shopify-next": "tsx scripts/collect-official-shopify-next.ts"
+    "collect:official-shopify-next": "tsx scripts/collect-official-shopify-next.ts",
+    "collect:salesforce-womens-footwear": "tsx scripts/collect-salesforce-womens-footwear.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

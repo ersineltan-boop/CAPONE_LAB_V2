@@ -84,6 +84,7 @@ export interface RawAnalyzedProductVariant {
 }
 
 export interface RawAnalyzedProduct {
+  sourceModelCode?: string;
   source: string;
   brand: string;
   productName: string;

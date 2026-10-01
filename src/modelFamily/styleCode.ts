@@ -291,6 +291,10 @@ export function extractStyleIdentity(product: RawAnalyzedProduct): StyleIdentity
   const source = product.source.trim().toLowerCase();
   const sku = firstVariantSku(product);
 
+  if ((source === "casadei" || source === "jil-sander") && product.sourceModelCode?.trim()) {
+    return { code: product.sourceModelCode.trim(), verified: true };
+  }
+
   if (source === "zara") {
     const code = extractStyleCodeFromUrl(product.productUrl);
     return { code, verified: Boolean(code) };

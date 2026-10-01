@@ -70,6 +70,12 @@ export async function probeBrandSource(input: {
     };
   }
 
+  if (input.slug === "casadei" || input.slug === "jil-sander") {
+    const { probeOfficialSalesforce, salesforceScope } = await import("../collector/salesforceCommerce/integration");
+    if (new URL(baseUrl).origin !== salesforceScope(input.slug)?.officialUrl) throw new Error("Unregistered Salesforce source");
+    return (await probeOfficialSalesforce(input.slug, input.http))!;
+  }
+
   const homepage = await input.http.fetchText(baseUrl, { delayMs: 300 });
   const homepageFingerprint = fingerprintStorefront({
     html: homepage.text,
