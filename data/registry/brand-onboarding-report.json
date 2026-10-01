@@ -1,41 +1,17 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T11:27:04.656Z",
+  "generatedAt": "2026-10-01T13:25:34.154Z",
   "dryRun": false,
   "summary": {
-    "activeBrandsBefore": 76,
+    "activeBrandsBefore": 77,
     "activeBrandsAfter": 77,
-    "attempted": 1,
-    "activated": 1,
+    "attempted": 0,
+    "activated": 0,
     "partial": 0,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": [
-    {
-      "brand": "JIL SANDER",
-      "slug": "jil-sander",
-      "attemptedAt": "2026-10-01T11:27:04.656Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "ACTIVE",
-      "productsFound": 78,
-      "families": 39,
-      "realMultiColorFamilies": 23,
-      "verifiedNewArrivals": 0,
-      "galleryImageCoverage": 1,
-      "categoriesFound": [
-        "Shoes"
-      ],
-      "blocker": null,
-      "marketplaceCoverage": {
-        "farfetch": 0,
-        "levelShoes": 0
-      },
-      "activationDecision": "activate",
-      "notes": "ACCEPTED FULL: 39 families, 78 products, gallery 100%"
-    }
-  ]
+  "attempts": []
 }
