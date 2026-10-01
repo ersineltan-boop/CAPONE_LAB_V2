@@ -1,17 +1,48 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T13:25:34.154Z",
+  "generatedAt": "2026-10-01T13:43:04.487Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 77,
     "activeBrandsAfter": 77,
-    "attempted": 0,
+    "attempted": 1,
     "activated": 0,
-    "partial": 0,
+    "partial": 1,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": []
+  "attempts": [
+    {
+      "brand": "SERGIO ROSSI",
+      "slug": "sergio-rossi",
+      "attemptedAt": "2026-10-01T13:43:04.487Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 98,
+      "families": 41,
+      "realMultiColorFamilies": 29,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Pumps",
+        "Slingbacks",
+        "Sandals",
+        "Ballet Flats",
+        "Loafers & Slippers",
+        "Sneakers",
+        "Ankle Boots & Booties",
+        "Boots"
+      ],
+      "blocker": "Toplayıcı hataları var",
+      "marketplaceCoverage": {
+        "farfetch": 2,
+        "levelShoes": 0
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 41 families, 98 products, gallery 100%; coverage not FULL: Toplayıcı hataları var"
+    }
+  ]
 }
