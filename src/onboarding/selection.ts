@@ -27,14 +27,16 @@ export function selectQueueCandidates(
   const eligible = queue.entries
     .filter((entry) => {
       if (skip.has(entry.slug)) return false;
-      if (only && !only.includes(entry.slug) && !only.includes(entry.brand.toLowerCase())) return false;
+      const explicitlyTargeted = only !== null &&
+        (only.includes(entry.slug) || only.includes(entry.brand.toLowerCase()));
+      if (only && !explicitlyTargeted) return false;
       const scope = salesforceScope(entry.slug);
       const deliveredCustomAdapter = entry.status === "CUSTOM_ADAPTER_REQUIRED" && scope !== null &&
         Boolean(entry.sourceUrl && isValidHttpUrl(entry.sourceUrl) && new URL(entry.sourceUrl).origin === scope.officialUrl);
       if (TERMINAL_SKIP_STATUSES.has(entry.status) && !deliveredCustomAdapter) return false;
       if (entry.status === "BLOCKED" && (!entry.sourceUrl || !isValidHttpUrl(entry.sourceUrl))) return false;
       if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY" && !deliveredCustomAdapter) return false;
-      if (!isRetryDue(entry.nextRetryAt, now)) return false;
+      if (!explicitlyTargeted && !isRetryDue(entry.nextRetryAt, now)) return false;
       return true;
     })
     .sort((a, b) => priorityBrandRank(a.slug) - priorityBrandRank(b.slug) || a.priority - b.priority);
