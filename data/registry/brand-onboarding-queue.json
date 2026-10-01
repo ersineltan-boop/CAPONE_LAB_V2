@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T13:43:04.487Z",
+  "updatedAt": "2026-10-01T13:53:24.280Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -1532,9 +1532,9 @@
       "slug": "sergio-rossi",
       "priority": 95,
       "status": "PARTIAL",
-      "attempts": 2,
-      "lastAttemptAt": "2026-10-01T13:43:04.487Z",
-      "nextRetryAt": "2026-10-08T13:43:04.487Z",
+      "attempts": 3,
+      "lastAttemptAt": "2026-10-01T13:53:24.280Z",
+      "nextRetryAt": "2026-10-08T13:53:24.280Z",
       "sourceUrl": "https://www.sergiorossi.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
