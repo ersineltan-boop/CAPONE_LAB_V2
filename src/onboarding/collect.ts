@@ -62,6 +62,11 @@ export async function collectCandidateToStaging(input: {
   const http = input.http ?? defaultOnboardingHttp;
   const entry = syntheticEntry(input.slug, input.brand, input.sourceUrl, input.probe);
 
+  if ((input.slug === "casadei" || input.slug === "jil-sander") && input.probe.strategy === "salesforce-public") {
+    const { collectOfficialSalesforce } = await import("../collector/salesforceCommerce/integration");
+    return collectOfficialSalesforce({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl, collectionPaths: input.probe.footwearPaths, maxProducts: 200, collectMode: "full" }, http);
+  }
+
   if (input.slug === "margaux" && input.probe.strategy === "shopify-public") {
     return collectMargaux({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
       collectionPaths: input.probe.footwearPaths, maxProducts: 200, collectMode: "full" }, http);

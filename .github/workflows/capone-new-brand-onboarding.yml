@@ -7,6 +7,7 @@ on:
     paths:
       - src/collector/jwAnderson.ts
       - src/collector/margaux.ts
+      - src/collector/salesforceCommerce/**
   schedule:
     - cron: "30 21 * * *"
   workflow_dispatch:
@@ -63,10 +64,15 @@ jobs:
           # A collector delivery immediately verifies only its own candidate.
           if [[ "$TRIGGER_EVENT" == "push" ]]; then
             targets=()
-            for slug in jw-anderson margaux; do
+            for slug in jw-anderson margaux casadei jil-sander; do
               collector="$slug"
               if [[ "$slug" == "jw-anderson" ]]; then collector=jwAnderson; fi
-              if ! git diff --quiet "$PUSH_BEFORE" "$PUSH_AFTER" -- "src/collector/${collector}.ts"; then
+              path="src/collector/${collector}.ts"
+              if [[ "$slug" == "casadei" ]]; then path=src/collector/salesforceCommerce/casadei.ts; fi
+              if [[ "$slug" == "jil-sander" ]]; then path=src/collector/salesforceCommerce/jilSander.ts; fi
+              paths=("$path")
+              if [[ "$slug" == "casadei" || "$slug" == "jil-sander" ]]; then paths+=(src/collector/salesforceCommerce/integration.ts); fi
+              if ! git diff --quiet "$PUSH_BEFORE" "$PUSH_AFTER" -- "${paths[@]}"; then
                 targets+=("$slug")
               fi
             done
