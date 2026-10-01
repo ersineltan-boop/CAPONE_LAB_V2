@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T11:13:30.716Z",
+  "generatedAt": "2026-10-01T11:27:04.656Z",
   "dryRun": false,
   "summary": {
-    "activeBrandsBefore": 75,
-    "activeBrandsAfter": 76,
-    "attempted": 2,
+    "activeBrandsBefore": 76,
+    "activeBrandsAfter": 77,
+    "attempted": 1,
     "activated": 1,
-    "partial": 1,
+    "partial": 0,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
@@ -15,66 +15,27 @@
   },
   "attempts": [
     {
-      "brand": "CASADEI",
-      "slug": "casadei",
-      "attemptedAt": "2026-10-01T11:13:30.716Z",
+      "brand": "JIL SANDER",
+      "slug": "jil-sander",
+      "attemptedAt": "2026-10-01T11:27:04.656Z",
       "detectedPlatform": "SALESFORCE COMMERCE",
       "sourceStrategy": "salesforce-public",
       "status": "ACTIVE",
-      "productsFound": 325,
-      "families": 172,
-      "realMultiColorFamilies": 83,
+      "productsFound": 78,
+      "families": 39,
+      "realMultiColorFamilies": 23,
       "verifiedNewArrivals": 0,
       "galleryImageCoverage": 1,
       "categoriesFound": [
-        "Sneakers",
-        "Ankle Boots",
-        "Flat",
-        "Flats",
-        "Loafers",
-        "To The Knee",
-        "High Boots",
-        "Boots",
-        "Pumps",
-        "Sandals",
-        "Mule",
-        "Mules",
-        "Over the knee",
-        "Over The Knee",
-        "Over the Knee Boots",
-        "Platforms",
-        "Platform"
-      ],
-      "blocker": null,
-      "marketplaceCoverage": {
-        "farfetch": 1,
-        "levelShoes": 0
-      },
-      "activationDecision": "activate",
-      "notes": "ACCEPTED FULL: 172 families, 325 products, gallery 100%"
-    },
-    {
-      "brand": "JIL SANDER",
-      "slug": "jil-sander",
-      "attemptedAt": "2026-10-01T11:13:30.716Z",
-      "detectedPlatform": "SALESFORCE COMMERCE",
-      "sourceStrategy": "salesforce-public",
-      "status": "PARTIAL",
-      "productsFound": 5,
-      "families": 2,
-      "realMultiColorFamilies": 2,
-      "verifiedNewArrivals": 0,
-      "galleryImageCoverage": 0,
-      "categoriesFound": [
         "Shoes"
       ],
-      "blocker": "Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 5/81",
+      "blocker": null,
       "marketplaceCoverage": {
         "farfetch": 0,
         "levelShoes": 0
       },
-      "activationDecision": "partial",
-      "notes": "PARTIAL / MANUAL REVIEW: 5 products (need >=20), gallery 0% (need >=40%) — not auto-activated; coverage not FULL: Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 5/81"
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 39 families, 78 products, gallery 100%"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T11:13:30.716Z",
+  "updatedAt": "2026-10-01T11:27:04.656Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
@@ -87,6 +87,17 @@
       ],
       "footwearPaths": [
         "/en-us/shoes/"
+      ]
+    },
+    "jil-sander": {
+      "platform": "SALESFORCE COMMERCE",
+      "strategy": "salesforce-public",
+      "sourceUrl": "https://www.jilsander.com",
+      "collectionPaths": [
+        "/en-us/women/accessories/shoes"
+      ],
+      "footwearPaths": [
+        "/en-us/women/accessories/shoes"
       ]
     }
   }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T11:13:30.716Z",
+  "updatedAt": "2026-10-01T11:27:04.656Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -891,17 +891,17 @@
       "brand": "JIL SANDER",
       "slug": "jil-sander",
       "priority": 55,
-      "status": "PARTIAL",
-      "attempts": 2,
-      "lastAttemptAt": "2026-10-01T11:13:30.716Z",
+      "status": "ACTIVE",
+      "attempts": 3,
+      "lastAttemptAt": "2026-10-01T11:27:04.656Z",
       "nextRetryAt": null,
       "sourceUrl": "https://www.jilsander.com",
       "detectedPlatform": "SALESFORCE COMMERCE",
       "collectorStrategy": "salesforce-public",
-      "blocker": "Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 5/81",
-      "productsFound": 5,
-      "activatedAt": null,
-      "notes": "PARTIAL / MANUAL REVIEW: 5 products (need >=20), gallery 0% (need >=40%) — not auto-activated; coverage not FULL: Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 5/81"
+      "blocker": null,
+      "productsFound": 78,
+      "activatedAt": "2026-10-01T11:27:04.656Z",
+      "notes": "ACCEPTED FULL: 39 families, 78 products, gallery 100%"
     },
     {
       "brand": "JIMMY CHOO",
