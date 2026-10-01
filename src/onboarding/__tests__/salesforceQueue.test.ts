@@ -15,4 +15,8 @@ describe('delivered Salesforce adapter queue selection',()=>{
   it('does not authorize a substituted source for a known brand slug',()=>{
     expect(selectQueueCandidates(queue([entry('casadei','https://other.example')]))).toEqual([]);
   });
+  it('selects delivered wave adapters, excludes active brands and leaves unsupported adapters terminal',()=>{
+    const q=queue([entry('coperni','https://coperni.com'),entry('moon-boot','https://www.moonboot.com'),entry('wandler','https://wandler.com'),entry('coperni','https://other.example')]);
+    expect(selectQueueCandidates(q,{skipSlugs:new Set(['moon-boot'])}).map(e=>e.slug)).toEqual(['coperni']);
+  });
 });

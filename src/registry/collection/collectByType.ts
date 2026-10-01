@@ -222,6 +222,8 @@ export async function collectBrandByCollectorType(
     return collectSergioRossi(config);
   }
 
+  const { officialWaveScope, collectOfficialBrandWave } = await import("../../collector/officialBrandWave");
+  if (officialWaveScope(entry.id)) return collectOfficialBrandWave(config);
   if (entry.id === DRIES_BRAND_ID) {
     const collected = await collectDriesVanNoten(entry);
     return {

@@ -98,6 +98,8 @@ describe("Sergio Rossi customer-visible women's category reconciliation", () => 
   it("parses the customer-visible item count", () => {
     expect(parseSergioRossiStorefrontCount("<div>27 items</div>")).toBe(27);
     expect(parseSergioRossiStorefrontCount("<div>27 items</div><div>12 items</div>")).toBeNull();
+    expect(parseSergioRossiStorefrontCount("<span data-items-counter>27</span> items")).toBe(27);
+    expect(parseSergioRossiStorefrontCount("<span data-items-counter>27</span><span data-items-counter>12</span>")).toBeNull();
   });
 
   it("proves opaque models through exact official footwear category membership", async () => {

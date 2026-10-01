@@ -47,6 +47,7 @@ interface ShopifyVariant {
   option2?: string | null;
   option3?: string | null;
   sku?: string | null;
+  available?: boolean;
   featured_image?: { src?: string } | null;
 }
 
@@ -146,6 +147,7 @@ export function shopifyProductToPilot(
     : false;
   const gateInput = {
     title: product.title,
+    officialProductUrl: canonicalProductUrl(config.baseUrl, product.handle),
     productType,
     tags,
     handle: product.handle,
