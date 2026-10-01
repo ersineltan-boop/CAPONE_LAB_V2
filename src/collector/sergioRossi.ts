@@ -146,6 +146,10 @@ export async function collectSergioRossi(
         errors.push(`SERGIO_ROSSI_REPEATED_PAGE:${category.path}:${pageNumber}`);
         break;
       }
+      if (batch.length < PAGE_SIZE) {
+        exhausted = true;
+        break;
+      }
     }
 
     if (!exhausted) {
@@ -206,6 +210,15 @@ export async function collectSergioRossi(
       errors.push(`SERGIO_ROSSI_STOREFRONT_CHANGED_OR_UNAVAILABLE:${category.path}`);
     }
   }
+
+  console.log("[sergio-rossi]", JSON.stringify({
+    sourceTotal: rawById.size,
+    accepted: products.length,
+    categoryStorefrontCounts,
+    pagesTraversed,
+    paginationExhausted,
+    errors,
+  }));
 
   return {
     products,
