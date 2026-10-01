@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T11:27:04.656Z",
+  "updatedAt": "2026-10-01T15:32:17.551Z",
   "adapters": {
     "alexandre-birman": {
       "platform": "SHOPIFY",
@@ -98,6 +98,28 @@
       ],
       "footwearPaths": [
         "/en-us/women/accessories/shoes"
+      ]
+    },
+    "sergio-rossi": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.sergiorossi.com",
+      "collectionPaths": [
+        "/collections/womens-shoes"
+      ],
+      "footwearPaths": [
+        "/collections/womens-shoes"
+      ]
+    },
+    "paloma-wool": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.palomawool.com",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "footwearPaths": [
+        "/collections/shoes"
       ]
     }
   }
