@@ -1,3 +1,4 @@
+import { salesforceScope } from "../collector/salesforceCommerce/integration";
 import { isValidHttpUrl } from "../registry/build/normalize";
 import { priorityBrandRank } from "./adapterWorkQueue";
 import type { BrandOnboardingQueueEntry, BrandOnboardingQueueFile, OnboardingStatus } from "./types";
@@ -27,9 +28,12 @@ export function selectQueueCandidates(
     .filter((entry) => {
       if (skip.has(entry.slug)) return false;
       if (only && !only.includes(entry.slug) && !only.includes(entry.brand.toLowerCase())) return false;
-      if (TERMINAL_SKIP_STATUSES.has(entry.status)) return false;
+      const scope = salesforceScope(entry.slug);
+      const deliveredCustomAdapter = entry.status === "CUSTOM_ADAPTER_REQUIRED" && scope !== null &&
+        Boolean(entry.sourceUrl && isValidHttpUrl(entry.sourceUrl) && new URL(entry.sourceUrl).origin === scope.officialUrl);
+      if (TERMINAL_SKIP_STATUSES.has(entry.status) && !deliveredCustomAdapter) return false;
       if (entry.status === "BLOCKED" && (!entry.sourceUrl || !isValidHttpUrl(entry.sourceUrl))) return false;
-      if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY") return false;
+      if (!RETRYABLE_STATUSES.has(entry.status) && entry.status !== "READY" && !deliveredCustomAdapter) return false;
       if (!isRetryDue(entry.nextRetryAt, now)) return false;
       return true;
     })

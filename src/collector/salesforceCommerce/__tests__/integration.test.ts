@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { collectOfficialSalesforce, sameSalesforceRequestScope, salesforceCatalogToAttempt } from '../integration';
 import { CASADEI_SCOPE } from '../casadei';
 import type { SalesforceCatalog } from '../types';
+import { evaluateFootwearProduct, evaluateStoredPilotProduct } from '../../footwearGate';
 import { extractStyleIdentity } from '../../../modelFamily/styleCode';
 
 const catalog = (): SalesforceCatalog => ({scope: {...CASADEI_SCOPE, storefrontCurrency:'USD'}, collectedAt:'2026-10-01T00:00:00Z', status:'FULL',blocker:null,sourceReportedTotal:2,
@@ -25,6 +26,13 @@ describe('Salesforce production integration',()=>{
     expect(result.products[0]?.hasNewBadge).toBe(false);
     expect(result.errors).toEqual([]);
     expect(extractStyleIdentity(result.products[0] as never)).toEqual({code:'MODEL',verified:true});
+  });
+  it('keeps the official Ring Ballerina through live and stored gates without admitting similarly named jewelry',()=>{
+    const productUrl='https://www.jilsander.com/en-us/ring-ballerina/J15WZ0039P7588688.html';
+    expect(evaluateFootwearProduct({title:'Ring Ballerina',productType:'BALLERINA',handle:productUrl}).decision).toBe('ACCEPT_FOOTWEAR');
+    expect(evaluateStoredPilotProduct({productName:'Ring Ballerina',productUrl,category:'BALLERINA'}).decision).toBe('ACCEPT_FOOTWEAR');
+    expect(evaluateStoredPilotProduct({productName:'Ring Ballerina',productUrl:'https://other.example/ring',category:'BALLERINA'}).decision).toBe('EXCLUDE_NON_FOOTWEAR');
+    expect(evaluateFootwearProduct({title:'Ring Ballerina',productType:'Jewelry',handle:productUrl}).decision).toBe('EXCLUDE_NON_FOOTWEAR');
   });
   it('rejects URL substitution even when all counts still match',()=>{
     const c=catalog();c.accepted[0]!.productUrl='https://www.casadei.com/en/shoes/unrelated.html';
