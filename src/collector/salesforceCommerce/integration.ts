@@ -13,7 +13,13 @@ export function salesforceScope(slug: string): SalesforceScope | null {
 export function sameSalesforceRequestScope(requested: string, resolved: string): boolean {
   try {
     const a = new URL(requested), b = new URL(resolved);
-    if (a.protocol !== 'https:' || b.origin !== a.origin || b.pathname.replace(/\/$/, '') !== a.pathname.replace(/\/$/, '')) return false;
+    if (a.protocol !== 'https:' || b.origin !== a.origin) return false;
+    const requestedPath = a.pathname.replace(/\/$/, ''), resolvedPath = b.pathname.replace(/\/$/, '');
+    // The official US variation route redirects to its public en-us alias.
+    const officialUsVariationAlias = a.origin === 'https://www.jilsander.com' &&
+      requestedPath === '/on/demandware.store/Sites-JilSanderUS-Site/en_US/Product-Variation' &&
+      resolvedPath === '/en-us/product-variation';
+    if (requestedPath !== resolvedPath && !officialUsVariationAlias) return false;
     for (const [key, value] of a.searchParams) if (b.searchParams.get(key) !== value) return false;
     return [...b.searchParams.keys()].every(key => a.searchParams.has(key));
   } catch { return false; }

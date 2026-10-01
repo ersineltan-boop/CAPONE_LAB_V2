@@ -894,7 +894,7 @@
       "status": "PARTIAL",
       "attempts": 2,
       "lastAttemptAt": "2026-10-01T11:13:30.716Z",
-      "nextRetryAt": "2026-10-08T11:13:30.716Z",
+      "nextRetryAt": null,
       "sourceUrl": "https://www.jilsander.com",
       "detectedPlatform": "SALESFORCE COMMERCE",
       "collectorStrategy": "salesforce-public",
