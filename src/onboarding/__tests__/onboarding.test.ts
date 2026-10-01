@@ -100,6 +100,19 @@ describe("onboarding queue policy", () => {
     expect(selected[0]?.slug).not.toBe("maison-margiela");
   });
 
+  it("lets an explicit delivered collector verification bypass a future retry date", () => {
+    const now = new Date("2026-10-01T13:00:00.000Z");
+    const queue = createInitialQueue();
+    const partial = queue.entries.find((entry) => entry.slug === "maison-margiela")!;
+    partial.status = "PARTIAL";
+    partial.nextRetryAt = "2026-10-08T13:00:00.000Z";
+    expect(selectQueueCandidates(queue, { now, limit: 1 })).toEqual([]);
+    expect(
+      selectQueueCandidates(queue, { now, limit: 1, only: ["maison-margiela"] })
+        .map((entry) => entry.slug),
+    ).toEqual(["maison-margiela"]);
+  });
+
   it("does not spend a nightly slot on a known invalid official URL", () => {
     const queue = createInitialQueue();
     const invalid = queue.entries.find((entry) => entry.slug === "maison-margiela")!;
