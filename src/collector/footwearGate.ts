@@ -272,6 +272,11 @@ export function isMerchandisingTag(tag: string): boolean {
     /^(collection|badge|color|colour|size|recommended-product|complementary-product)\s*:/i.test(tag.trim());
 }
 
+function isOfficialJilSanderRingBallerina(title: string, url: string): boolean {
+  return /^ring ballerina$/i.test(title.trim()) &&
+    /^https:\/\/www\.jilsander\.com\/en-us\/ring-ballerina\/J15WZ\d{4}[A-Za-z0-9]+\.html$/i.test(url);
+}
+
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
   const evidenceTags = (input.tags ?? []).filter((tag) => !isMerchandisingTag(tag));
   const haystack = joinSignals([
@@ -281,7 +286,9 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
     input.handle,
   ]);
 
-  const footwearOverride = hasTitleHandleFootwearSupport(input);
+  const footwearOverride = hasTitleHandleFootwearSupport(input) ??
+    (/^ballerina$/i.test(input.productType ?? "") && isOfficialJilSanderRingBallerina(input.title, input.handle ?? "")
+      ? "official-jil-sander-ring-ballerina" : null);
 
   if (input.handle && /^bag/i.test(input.handle)) return "handle:bag";
   if (input.handle && /^b-/i.test(input.handle) && /\bbag\b/i.test(haystack)) {
@@ -512,11 +519,12 @@ export function evaluateStoredPilotProduct(input: {
   productUrl: string;
   category: FootwearCategory | null;
 }): FootwearGateResult {
-  const handle = extractHandleFromProductUrl(input.productUrl);
+  const officialRingBallerina = input.category === "BALLERINA" && isOfficialJilSanderRingBallerina(input.productName, input.productUrl);
+  const handle = officialRingBallerina ? input.productUrl : extractHandleFromProductUrl(input.productUrl);
 
   const nonFootwearGate = evaluateFootwearProduct({
     title: input.productName,
-    productType: "",
+    productType: officialRingBallerina ? "Ballerina" : "",
     tags: [],
     handle,
   });

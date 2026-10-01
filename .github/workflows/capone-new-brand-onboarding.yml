@@ -14,6 +14,7 @@ on:
       - src/collector/salesforceCommerce/families.ts
       - src/collector/salesforceCommerce/gallery.ts
       - src/collector/salesforceCommerce/types.ts
+      - src/onboarding/selection.ts
   schedule:
     - cron: "30 21 * * *"
   workflow_dispatch:
@@ -80,7 +81,7 @@ jobs:
               if [[ "$slug" == "casadei" || "$slug" == "jil-sander" ]]; then
                 paths+=(src/collector/salesforceCommerce/integration.ts src/collector/salesforceCommerce/coverage.ts
                   src/collector/salesforceCommerce/families.ts src/collector/salesforceCommerce/gallery.ts
-                  src/collector/salesforceCommerce/types.ts)
+                  src/collector/salesforceCommerce/types.ts src/onboarding/selection.ts)
               fi
               if ! git diff --quiet "$PUSH_BEFORE" "$PUSH_AFTER" -- "${paths[@]}"; then
                 targets+=("$slug")
