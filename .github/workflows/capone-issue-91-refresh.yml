@@ -94,7 +94,7 @@ jobs:
           AUTOMATION_BRANCH: automation/issue-91-refresh
           AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh nine official brands and Browns"
           AUTOMATION_PR_TITLE: "chore(data): guarded new-source refresh"
-          AUTOMATION_PR_BODY: "Nine official brand collections and Browns; storefront totals, pagination, taxonomy, last-good model retention, full tests, production build and Vercel preview are checked before merge. Partial/blocked sources keep last-good."
+          AUTOMATION_PR_BODY: "Nine official brand collections and Browns; storefront totals, pagination, taxonomy, last-good model retention, full tests, production build and Vercel Preview are checked before a draft PR is opened. Partial/blocked sources keep last-good; merge and production deployment are not automatic."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -115,7 +115,7 @@ jobs:
             echo "- Browns collection: ${BROWNS_OUTCOME:-not run}"
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"
-            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Merged by automation (must stay false): ${MERGED:-false}"
             echo "- Failed sources retain published last-good"
           } >> "$GITHUB_STEP_SUMMARY"
 
