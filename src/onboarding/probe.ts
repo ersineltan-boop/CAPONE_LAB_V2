@@ -8,6 +8,7 @@ import { probeInditexLikeCatalog } from "./inditexLike";
 import type { ProbeResult, ProbeSampleProduct } from "./types";
 import { JW_WOMENS_SHOES_PATH } from "../collector/jwAnderson";
 import { TKEES_FOOTWEAR_PATHS } from "../collector/tkees";
+import { SERGIO_ROSSI_WOMENS_SHOES_PATH } from "../collector/sergioRossi";
 
 const SHOPIFY_FOOTWEAR_PATHS = [
   "/collections/shoes",
@@ -89,7 +90,8 @@ export async function probeBrandSource(input: {
   const shopify = await probeShopify(input.http, baseUrl, input.brand,
     input.slug === "jw-anderson" ? [JW_WOMENS_SHOES_PATH] :
       input.slug === "margaux" ? ["/collections/flats", "/collections/sandals", "/collections/heels", "/collections/boots", "/collections/loafers"] :
-      input.slug === "tkees" ? TKEES_FOOTWEAR_PATHS : undefined);
+      input.slug === "tkees" ? TKEES_FOOTWEAR_PATHS :
+        input.slug === "sergio-rossi" ? [SERGIO_ROSSI_WOMENS_SHOES_PATH] : undefined);
   if (shopify.products.length > 0) {
     return {
       platform: "SHOPIFY",

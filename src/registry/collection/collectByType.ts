@@ -20,6 +20,7 @@ import { collectZara, ZARA_BRAND_ID } from "../../collector/zara";
 import { parseInditexLocale } from "../../onboarding/adapters";
 import { collectInditexLikeBrand } from "../../onboarding/inditexLike";
 import { defaultOnboardingHttp } from "../../onboarding/http";
+import { collectSergioRossi } from "../../collector/sergioRossi";
 
 export interface FootwearCollectionConfigResult {
   config: PilotSourceConfig | null;
@@ -215,6 +216,10 @@ export async function collectBrandByCollectorType(
   if (entry.id === "jw-anderson") {
     const { collectJwAnderson } = await import("../../collector/jwAnderson");
     return collectJwAnderson(config);
+  }
+
+  if (entry.id === "sergio-rossi") {
+    return collectSergioRossi(config);
   }
 
   if (entry.id === DRIES_BRAND_ID) {

@@ -13,6 +13,7 @@ import type { ProbeResult } from "./types";
 import type { PilotProduct } from "../collector/types";
 import { collectJwAnderson } from "../collector/jwAnderson";
 import { collectMargaux } from "../collector/margaux";
+import { collectSergioRossi } from "../collector/sergioRossi";
 
 function syntheticEntry(
   slug: string,
@@ -75,6 +76,11 @@ export async function collectCandidateToStaging(input: {
   if (input.slug === "jw-anderson" && input.probe.strategy === "shopify-public") {
     return collectJwAnderson({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
       collectionPaths: input.probe.footwearPaths, maxProducts: 200, collectMode: "full" }, http);
+  }
+
+  if (input.slug === "sergio-rossi" && input.probe.strategy === "shopify-public") {
+    return collectSergioRossi({ id: input.slug, brand: input.brand, baseUrl: input.sourceUrl,
+      collectionPaths: input.probe.footwearPaths, maxProducts: 250, collectMode: "full" }, http);
   }
 
   if (input.probe.strategy === "inditex-like-catalog") {
