@@ -219,7 +219,7 @@ describe("source-aware official delivery replacement", () => {
 });
 
 describe("twice-weekly workflow contract", () => {
-  it("processes all approved brands and publishes only through the guarded Vercel gate", () => {
+  it("processes all approved brands and leaves a guarded draft PR for review", () => {
     const workflow = readFileSync(".github/workflows/capone-brand-onboarding.yml", "utf-8");
     const publisher = readFileSync("scripts/publish-validated-automation-pr.sh", "utf-8");
     expect(workflow).toContain('cron: "0 20 * * 0,3"');
@@ -230,11 +230,15 @@ describe("twice-weekly workflow contract", () => {
     expect(workflow).toContain("REQUESTED_LIMIT: ${{ inputs.limit || '' }}");
     expect(workflow).not.toContain("inputs.limit || '50'");
     expect(workflow).not.toContain("git push origin HEAD");
-    expect(workflow).not.toContain("--draft");
     expect(publisher).toContain('wait_for_vercel "$head_sha" "preview"');
     expect(publisher).toContain("require_unchanged_main");
     expect(publisher).toContain('current_main" != "$base_sha');
-    expect(publisher).toContain("gh pr merge");
-    expect(publisher).toContain('wait_for_vercel "$merge_sha" "production"');
+    expect(publisher).toContain('publish_branch="${AUTOMATION_BRANCH}-${run_id}-${run_attempt}"');
+    expect(publisher).toContain("gh pr create");
+    expect(publisher).toContain("--draft");
+    expect(publisher).not.toContain("gh pr merge");
+    expect(publisher).not.toContain("--force-with-lease");
+    expect(publisher).not.toContain('wait_for_vercel "$merge_sha" "production"');
+    expect(publisher).toContain('echo "merged=false"');
   });
 });
