@@ -36,6 +36,9 @@ function toCard(
     ...family.allImages,
   ]).slice(0, MAX_VISUAL_CARD_IMAGES);
   const sighting = family.sourceSightings?.[0];
+  const newDates = (family.sourceSightings ?? [])
+    .filter((item) => isVerifiedNew(item.newness))
+    .map((item) => item.newness!.effectiveNewAt!);
   return {
     modelFamilyId: family.modelFamilyId,
     brand: family.brand,
@@ -45,9 +48,10 @@ function toCard(
     sourceId: sighting?.sourceId ?? slugifyBrandId(family.brand),
     sourceUrl: resolveModelFamilyProductUrl(family),
     basicCategory,
-    verifiedNew: Boolean(
-      family.sourceSightings?.some((item) => isVerifiedNew(item.newness)),
-    ),
+    verifiedNew: newDates.length > 0,
+    verifiedNewAt: newDates.length > 0
+      ? newDates.reduce((latest, date) => Date.parse(date) > Date.parse(latest) ? date : latest)
+      : null,
     brandId: locators?.brandId,
     marketplaceId: locators?.marketplaceId,
     variants: colorVariantsForFamily(family),
@@ -94,6 +98,8 @@ export function buildVisualDelivery(input: VisualDeliveryInput): VisualDeliveryA
         item.id === "tumu"
           ? all.length
           : (byCategory.get(item.id as VisualMappedCategoryId) ?? []).length,
+      verifiedNewCount: (item.id === "tumu" ? all : byCategory.get(item.id as VisualMappedCategoryId) ?? [])
+        .filter((card) => card.verifiedNew).length,
     })),
   };
 
@@ -103,12 +109,19 @@ export function buildVisualDelivery(input: VisualDeliveryInput): VisualDeliveryA
 export function filterVisualCards(
   cards: VisualCard[],
   query: string,
+  options: { onlyNew?: boolean } = {},
 ): VisualCard[] {
   const trimmed = query.trim().toLowerCase();
-  if (!trimmed) return cards;
-  return cards.filter(
+  const matching = cards.filter(
     (card) =>
-      card.brand.toLowerCase().includes(trimmed) ||
-      card.productName.toLowerCase().includes(trimmed),
+      (!options.onlyNew || card.verifiedNew) &&
+      (!trimmed || card.brand.toLowerCase().includes(trimmed) ||
+      card.productName.toLowerCase().includes(trimmed)),
   );
+  const timestamp = (card: VisualCard) => {
+    const date = Date.parse(card.verifiedNewAt ?? "");
+    return Number.isNaN(date) ? 0 : date;
+  };
+  return matching.sort((a, b) => Number(b.verifiedNew) - Number(a.verifiedNew) ||
+    (a.verifiedNew && b.verifiedNew ? timestamp(b) - timestamp(a) : 0));
 }

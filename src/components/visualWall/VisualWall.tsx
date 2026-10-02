@@ -37,6 +37,7 @@ function cardToGridItem(card: VisualCard): ModelFamilyGridItem {
 export default function VisualWall() {
   const [categoryId, setCategoryId] = useState<VisualBasicCategoryId>("tumu");
   const [searchQuery, setSearchQuery] = useState("");
+  const [onlyNew, setOnlyNew] = useState(false);
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
   const [selectedFamily, setSelectedFamily] = useState<ModelFamily | null>(null);
   const researchStates = useResearchStateMap();
@@ -47,14 +48,14 @@ export default function VisualWall() {
 
   const filteredCards = useMemo(() => {
     if (shard.state.status !== "ready") return [];
-    return filterVisualCards(shard.state.data.cards, searchQuery);
-  }, [shard.state, searchQuery]);
+    return filterVisualCards(shard.state.data.cards, searchQuery, { onlyNew });
+  }, [shard.state, searchQuery, onlyNew]);
 
   const gridItems = useMemo(() => filteredCards.map(cardToGridItem), [filteredCards]);
   const { visibleItems, hasMore, loadMore } = useProgressiveBatch(
     gridItems,
     48,
-    `${categoryId}|${searchQuery}|${filteredCards.length}`,
+    `${categoryId}|${searchQuery}|${onlyNew}|${filteredCards.length}`,
   );
 
   const verifiedNewIds = useMemo(
@@ -82,10 +83,10 @@ export default function VisualWall() {
 
         <div className="flex flex-wrap gap-2">
           {VISUAL_BASIC_CATEGORIES.map((category) => {
-            const count =
-              summary.state.status === "ready"
-                ? summary.state.data.categories.find((item) => item.id === category.id)?.count ?? 0
-                : null;
+            const entry = summary.state.status === "ready"
+              ? summary.state.data.categories.find((item) => item.id === category.id)
+              : null;
+            const count = onlyNew ? entry?.verifiedNewCount : entry?.count;
             const active = categoryId === category.id;
             return (
               <button
@@ -113,6 +114,16 @@ export default function VisualWall() {
           className="w-full border border-line bg-cream px-3 py-2 text-[11px] text-ink sm:max-w-md"
         />
 
+        <label className="flex w-fit cursor-pointer items-center gap-2 text-xs text-ink">
+          <input
+            type="checkbox"
+            checked={onlyNew}
+            onChange={(event) => setOnlyNew(event.target.checked)}
+            className="h-4 w-4 accent-ink"
+          />
+          {UI_COPY.visualOnlyNew}
+        </label>
+
         {summary.state.status === "loading" || shard.state.status === "loading" ? (
           <CatalogLoadingState />
         ) : null}
@@ -121,7 +132,9 @@ export default function VisualWall() {
 
         {shard.state.status === "ready" ? (
           <>
-            <p className="text-[10px] text-ink-muted">{UI_COPY.modelsCount(filteredCards.length)}</p>
+            <p className="text-[10px] text-ink-muted">
+              {UI_COPY.modelsCount(filteredCards.length)} · {UI_COPY.visualNewFirst}
+            </p>
             <ModelFamilyProductGrid
               items={visibleItems}
               emptyMessage={UI_COPY.emptyFilters}
