@@ -12,18 +12,15 @@ export interface AssignedNewness {
 
 /**
  * Baseline catalogs are not bulk-marked NEW.
- * NEW requires official New Arrivals membership, or a product URL that
- * appears only after a previous last-good catalog exists.
+ * NEW requires official New Arrivals membership. A newly discovered URL
+ * is catalog discovery, not evidence of a new release.
  */
 export function assignProductNewness(
   product: NewnessInput,
-  previousUrls: ReadonlySet<string> | null,
+  _previousUrls: ReadonlySet<string> | null,
 ): AssignedNewness {
   if (product.inNewArrivals) {
     return { isNew: true, newnessEvidence: "NEW_ARRIVALS_COLLECTION" };
-  }
-  if (previousUrls && !previousUrls.has(product.productUrl)) {
-    return { isNew: true, newnessEvidence: "CATALOG_DIFF" };
   }
   return { isNew: false, newnessEvidence: null };
 }

@@ -40,7 +40,9 @@ export function createNotVerifiedNewness(): SourceNewness {
 }
 
 export function isVerifiedNew(newness: SourceNewness | undefined | null): boolean {
-  return newness?.status === "VERIFIED_NEW" && Boolean(newness.effectiveNewAt);
+  return newness?.status === "VERIFIED_NEW" &&
+    (newness.evidenceType === "NEW_ARRIVALS_COLLECTION" || newness.evidenceType === "NEW_BADGE") &&
+    Boolean(newness.effectiveNewAt) && !Number.isNaN(Date.parse(newness.effectiveNewAt!));
 }
 
 export function resolveEffectiveNewAt(newness: SourceNewness): string | null {

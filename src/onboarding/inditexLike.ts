@@ -113,13 +113,13 @@ export function inditexComponentToProduct(
   const styleSku =
     (displayReference ? `${config.brandId.toUpperCase()}-REF-${displayReference}` : String(component.reference ?? "").trim()) ||
     null;
-  const tags = (component.productTag ?? []).map((tag) =>
-    typeof tag === "string" ? tag : [tag.type, tag.name].filter(Boolean).join(" "),
+  const tags = (component.productTag ?? []).flatMap((tag) =>
+    typeof tag === "string" ? [tag] : [tag.type, tag.name].filter(Boolean),
   );
   const collectionPath = new URL(buildInditexCategoryUrl(config, category)).pathname;
   const isNewCollection =
     isNewArrivalsCollectionPath(collectionPath) || isNewArrivalsCollectionPath(category.path.join("/"));
-  const hasNewBadge = detectNewBadgeInText(name, ...tags);
+  const hasNewBadge = detectNewBadgeInText(...tags);
 
   return {
     source: config.brandId,

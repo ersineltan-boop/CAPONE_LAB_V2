@@ -7,9 +7,9 @@ import {
   normalizeMarketplaceSourceId,
 } from "../marketplaces/marketplacePolicy";
 import { createNotVerifiedNewness } from "./newness";
+import { hasSourceBadgeEvidence } from "./sourceEvidenceCorrections";
 import {
   buildNewnessFromProductHints,
-  detectNewBadgeInText,
   isNewArrivalsCollectionPath,
   mergeSourceNewness,
 } from "./detectNewness";
@@ -47,9 +47,8 @@ function buildNewnessFromProduct(
       isNewArrivalsCollection:
         product.isNewArrivalsCollection ??
         isNewArrivalsCollectionPath(collectionPath),
-      hasNewBadge:
-        product.hasNewBadge ??
-        detectNewBadgeInText(product.productName),
+      // Model names (e.g. "New Balance") are not source badge evidence.
+      hasNewBadge: hasSourceBadgeEvidence(product),
       publishedAt: product.publishedAt ?? null,
       createdAt: product.createdAt ?? null,
       productUrl: product.productUrl,

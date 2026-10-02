@@ -1,9 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { buildNewnessFromProductHints } from "../detectNewness";
+import { buildNewnessFromProductHints, detectNewBadgeInText } from "../detectNewness";
 import { isVerifiedNew } from "../newness";
 
 describe("buildNewnessFromProductHints", () => {
+  it("accepts standalone source labels and rejects names or marketing prose", () => {
+    for (const label of ["NEW", "New In", "new-arrivals", "just_in"]) expect(detectNewBadgeInText(label)).toBe(true);
+    for (const text of ["NEW YORK Mule", "New Balance Sneaker", "New Chocolate Slide", "brand new sole", "renewed"]) expect(detectNewBadgeInText(text)).toBe(false);
+  });
   it("does not mark backfill publishedAt alone as VERIFIED_NEW", () => {
     const newness = buildNewnessFromProductHints(
       {

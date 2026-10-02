@@ -178,7 +178,7 @@ export function shopifyProductToPilot(
     parsed.color;
   const shopifyDates = extractShopifyProductDates(product);
   const isNewCollection = isNewArrivalsCollectionPath(collectionPath);
-  const hasNewBadge = detectNewBadgeInText(product.title, ...tags);
+  const hasNewBadge = detectNewBadgeInText(...tags);
   const category = collectionPath
     ? collectionTitle
       ? {
