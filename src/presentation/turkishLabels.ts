@@ -470,6 +470,8 @@ export const UI_COPY = {
   categoryAllChip: "TÜMÜ",
   categoriesHeading: "KATEGORİLER",
   visualTitle: "VISUAL",
+  visualOnlyNew: "Sadece yeni gelenler",
+  visualNewFirst: "Kaynakta yeni olanlar önce",
   visualSubtitle: "Toplanan kadın ayakkabıları — temel kategori duvarı",
   allBrands: "TÜM MARKALAR",
   savedBrandsFilter: "KAYDETTİĞİM MARKALAR",

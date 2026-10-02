@@ -11,6 +11,7 @@ export interface VisualCard {
   sourceUrl: string | null;
   basicCategory: VisualMappedCategoryId;
   verifiedNew: boolean;
+  verifiedNewAt?: string | null;
   brandId?: string;
   marketplaceId?: string;
   variants?: ColorVariantView[];
@@ -20,6 +21,7 @@ export interface VisualCategoryCount {
   id: VisualBasicCategoryId;
   label: string;
   count: number;
+  verifiedNewCount?: number;
 }
 
 export interface VisualSummary {

@@ -12,6 +12,7 @@ import { buildVisualDelivery, filterVisualCards } from "../buildVisualDelivery";
 import { nextVisibleCount } from "../../ui/progressiveBatch";
 import { PAZAR_OZETI_ENABLED } from "../../components/visualWall/visualWallSections";
 import { PRIMARY_NAV_ITEMS } from "../../navigation/primaryNav";
+import type { VisualCard } from "../types";
 
 function family(overrides: Partial<ModelFamily> = {}): ModelFamily {
   return {
@@ -396,5 +397,43 @@ describe("Visual basic categories", () => {
 
   it("grows Visual progressive batches 48 → 96", () => {
     expect(nextVisibleCount(48, 48, 200)).toBe(96);
+  });
+
+  it("puts verified new models first by date and retains the existing order of other cards", () => {
+    const card = (id: string, verifiedNew: boolean, verifiedNewAt?: string): VisualCard => ({
+      modelFamilyId: id, brand: "TEST", productName: id, mainImage: null, images: [],
+      sourceId: "test", sourceUrl: null, basicCategory: "bot-cizme", verifiedNew, verifiedNewAt,
+    });
+    const cards = [card("old-a", false), card("new-earlier", true, "2026-09-01"),
+      card("old-b", false, "2027-01-01"), card("new-later", true, "2026-10-01"), card("cached-new", true)];
+    expect(filterVisualCards(cards, "").map((item) => item.modelFamilyId)).toEqual([
+      "new-later", "new-earlier", "cached-new", "old-a", "old-b",
+    ]);
+    expect(cards[0]?.modelFamilyId).toBe("old-a");
+  });
+
+  it("combines new-only filtering with search and leaves galleries attached to each model", () => {
+    const newFamily = family({ modelFamilyId: "ugg--new", canonicalName: "New Boot" });
+    newFamily.sourceSightings![0]!.newness = {
+      ...createNotVerifiedNewness(), status: "VERIFIED_NEW", evidenceType: "NEW_ARRIVALS_COLLECTION",
+      effectiveNewAt: "2026-10-01T00:00:00.000Z",
+    };
+    const delivery = buildVisualDelivery({ families: [family(), newFamily] });
+    const boots = delivery.shards.find((shard) => shard.id === "bot-cizme")!.cards;
+    const matching = filterVisualCards(boots, "ugg", { onlyNew: true });
+    expect(matching.map((card) => card.modelFamilyId)).toEqual(["ugg--new"]);
+    expect(matching[0]?.images).toEqual(["https://ugg.com/a.jpg"]);
+    expect(filterVisualCards(boots, "classic", { onlyNew: true })).toHaveLength(0);
+    expect(delivery.summary.categories.find((category) => category.id === "bot-cizme")?.verifiedNewCount).toBe(1);
+  });
+
+  it("uses the newest supported source date while rejecting catalog-diff dates", () => {
+    const model = family();
+    const source = model.sourceSightings![0]!;
+    source.newness = { ...createNotVerifiedNewness(), status: "VERIFIED_NEW", evidenceType: "NEW_BADGE", effectiveNewAt: "2026-09-01" };
+    model.sourceSightings!.push({ ...source, sourceId: "level-shoes", newness: { ...source.newness, effectiveNewAt: "2026-10-01" } });
+    model.sourceSightings!.push({ ...source, sourceId: "other", newness: { ...source.newness, evidenceType: "CATALOG_DIFF", effectiveNewAt: "2027-01-01" } });
+    const card = buildVisualDelivery({ families: [model] }).shards[0]!.cards[0]!;
+    expect(card.verifiedNewAt).toBe("2026-10-01");
   });
 });
