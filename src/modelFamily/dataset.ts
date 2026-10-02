@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { ModelFamily } from "./types";
+import { applySourceEvidenceCorrections } from "../newArrivals/sourceEvidenceCorrections";
 
 export const MODEL_FAMILY_SHARD_SCHEMA = "capone.model-families.shards.v1";
 export const MODEL_FAMILY_SHARD_VERSION = 1;
@@ -294,13 +295,13 @@ export async function loadModelFamilies(
       const part = await readJsonFile<ModelFamily[]>(join(dir, shard.file));
       families.push(...part);
     }
-    return families;
+    return families.map(applySourceEvidenceCorrections);
   } catch {
     if (!allowMonolithFallback) return [];
   }
 
   try {
-    return await readJsonFile<ModelFamily[]>(resolveModelFamilyMonolithPath(rootDir));
+    return (await readJsonFile<ModelFamily[]>(resolveModelFamilyMonolithPath(rootDir))).map(applySourceEvidenceCorrections);
   } catch {
     return [];
   }

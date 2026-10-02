@@ -29,6 +29,12 @@ function product(overrides: Partial<PilotProduct> & Pick<PilotProduct, "productU
 }
 
 describe("mergeProducts", () => {
+  it("clears a historical NEW badge when the source explicitly reports no badge", () => {
+    const existing = product({ productUrl: "https://example.com/products/a", hasNewBadge: true });
+    const incoming = product({ productUrl: existing.productUrl, hasNewBadge: false });
+    expect(mergeProductCatalog([existing], [incoming])[0]?.hasNewBadge).toBe(false);
+    expect(mergeProductCatalog([existing], [product({ productUrl: existing.productUrl })])[0]?.hasNewBadge).toBe(true);
+  });
   it("preserves earliest discoveredAt on merge", () => {
     const existing = product({
       productUrl: "https://example.com/products/a",

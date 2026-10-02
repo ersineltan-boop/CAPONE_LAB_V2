@@ -82,7 +82,7 @@ describe("brands wave 50", () => {
     ).toBe("footwear");
   });
 
-  it("does not mark a baseline catalog new without New Arrivals or a later diff", () => {
+  it("requires official New Arrivals even for a URL added after baseline", () => {
     expect(assignProductNewness({ productUrl: "https://brand.test/products/a", inNewArrivals: false }, null)).toEqual({
       isNew: false,
       newnessEvidence: null,
@@ -94,7 +94,7 @@ describe("brands wave 50", () => {
     const previous = new Set(["https://brand.test/products/a"]);
     expect(
       assignProductNewness({ productUrl: "https://brand.test/products/c", inNewArrivals: false }, previous),
-    ).toEqual({ isNew: true, newnessEvidence: "CATALOG_DIFF" });
+    ).toEqual({ isNew: false, newnessEvidence: null });
     expect(
       assignProductNewness({ productUrl: "https://brand.test/products/a", inNewArrivals: false }, previous),
     ).toEqual({ isNew: false, newnessEvidence: null });

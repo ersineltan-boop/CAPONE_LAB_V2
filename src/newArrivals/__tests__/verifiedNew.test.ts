@@ -9,6 +9,8 @@ import { createNotVerifiedNewness, isVerifiedNew } from "../newness";
 import { queryDiscoveredNewArrivals } from "../discoveredQuery";
 import { queryVerifiedNewArrivals } from "../verifiedQuery";
 import type { ModelFamily } from "../../modelFamily/types";
+import audit from "../../../data/registry/source-newness-correction-audit.json";
+import { applySourceEvidenceCorrections, hasSourceBadgeEvidence } from "../sourceEvidenceCorrections";
 
 function baseFamily(overrides: Partial<ModelFamily> = {}): ModelFamily {
   return {
@@ -41,6 +43,36 @@ function baseFamily(overrides: Partial<ModelFamily> = {}): ModelFamily {
 }
 
 describe("true new arrivals", () => {
+  it("corrects audited historical badges without changing model data or suppressing fresh source evidence", () => {
+    const correction = audit.changedFamilies[0]!;
+    const family = baseFamily({ modelFamilyId: correction.modelFamilyId });
+    const sighting = family.sourceSightings![0]!;
+    sighting.sourceId = correction.sourceId;
+    sighting.newness = { ...createNotVerifiedNewness(), status: "VERIFIED_NEW", evidenceType: "NEW_BADGE", effectiveNewAt: "2026-09-01T00:00:00.000Z", lastVerifiedAt: "2026-09-01T00:00:00.000Z" };
+    const corrected = applySourceEvidenceCorrections(family);
+    expect(isVerifiedNew(corrected.sourceSightings![0]!.newness)).toBe(false);
+    expect(corrected.variants).toBe(family.variants);
+    expect(corrected.allImages).toBe(family.allImages);
+    expect(isVerifiedNew(sighting.newness)).toBe(true);
+    sighting.newness.lastVerifiedAt = new Date(Date.parse(audit.verifiedAt) + 86400000).toISOString();
+    expect(applySourceEvidenceCorrections(family)).toBe(family);
+    const revoked = audit.sourceChecks.find((check) => !check.confirmedTag)!;
+    expect(hasSourceBadgeEvidence({ productUrl: revoked.url, hasNewBadge: true })).toBe(false);
+    expect(hasSourceBadgeEvidence({ productUrl: revoked.url, hasNewBadge: true, sourceProductTags: ["NEW IN"] })).toBe(true);
+  });
+  it("rejects historical catalog-diff and date-only NEW for every source scope", () => {
+    for (const evidenceType of ["CATALOG_DIFF", "EXPLICIT_DATE"] as const) {
+      const newness = { ...createNotVerifiedNewness(), status: "VERIFIED_NEW" as const, evidenceType, effectiveNewAt: "2026-08-19T00:00:00.000Z" };
+      expect(isVerifiedNew(newness)).toBe(false);
+      const family = baseFamily();
+      family.sourceSightings![0]!.newness = newness;
+      for (const scope of [{ type: "ALL" }, { type: "BRAND", brand: "TEST" }, { type: "SOURCE", sourceId: "test" }] as const) {
+        expect(queryVerifiedNewArrivals([family], { scope, period: "90D", referenceDate: "2026-08-20T00:00:00.000Z" })).toHaveLength(0);
+      }
+      expect(isVerifiedNew(mergeSourceNewness(newness, createNotVerifiedNewness(), "2026-08-20T00:00:00.000Z"))).toBe(false);
+      expect(isVerifiedNew(mergeSourceNewness(undefined, newness, "2026-08-20T00:00:00.000Z"))).toBe(false);
+    }
+  });
   it("CAPONE firstSeen alone does not create VERIFIED_NEW", () => {
     const family = baseFamily();
     expect(queryVerifiedNewArrivals([family], { scope: { type: "ALL" }, period: "90D" })).toHaveLength(0);

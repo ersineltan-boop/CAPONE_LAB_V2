@@ -290,13 +290,13 @@ export function zaraComponentToProduct(
   const styleSku =
     (displayReference ? `ZARA-REF-${displayReference}` : String(component.reference ?? "").trim()) ||
     null;
-  const tags = (component.productTag ?? []).map((tag) =>
-    typeof tag === "string" ? tag : [tag.type, tag.name].filter(Boolean).join(" "),
+  const tags = (component.productTag ?? []).flatMap((tag) =>
+    typeof tag === "string" ? [tag] : [tag.type, tag.name].filter(Boolean),
   );
   const collectionPath = new URL(categoryUrl(category)).pathname;
   const isNewCollection =
     isNewArrivalsCollectionPath(collectionPath) || isNewArrivalsCollectionPath(category.path.join("/"));
-  const hasNewBadge = detectNewBadgeInText(name, ...tags);
+  const hasNewBadge = detectNewBadgeInText(...tags);
 
   return {
     source: ZARA_BRAND_ID,

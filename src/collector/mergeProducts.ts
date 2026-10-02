@@ -95,7 +95,9 @@ export function mergeProductRecords(
     variants,
     isNewArrivalsCollection:
       Boolean(existing.isNewArrivalsCollection) || Boolean(incoming.isNewArrivalsCollection),
-    hasNewBadge: Boolean(existing.hasNewBadge) || Boolean(incoming.hasNewBadge),
+    // A current explicit badge result replaces a historical badge, including false.
+    // Omitted evidence preserves the previous result until a source is checked.
+    hasNewBadge: incoming.hasNewBadge ?? existing.hasNewBadge ?? false,
     sourceCategories,
     collectionPath: incoming.collectionPath ?? existing.collectionPath,
     collectionLabel: incoming.collectionLabel ?? existing.collectionLabel,

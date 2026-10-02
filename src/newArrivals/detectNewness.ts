@@ -1,5 +1,5 @@
 import type { NewnessEvidenceType, NewnessProductHints, SourceNewness } from "./newness";
-import { createNotVerifiedNewness, resolveEffectiveNewAt } from "./newness";
+import { createNotVerifiedNewness, isVerifiedNew, resolveEffectiveNewAt } from "./newness";
 
 const NEW_ARRIVALS_PATH_PATTERNS = [
   /new[-_]?arrivals?/i,
@@ -13,22 +13,17 @@ const NEW_ARRIVALS_PATH_PATTERNS = [
   /\/new(?:\.html)?(?:\/|$)/i,
 ];
 
-const NEW_BADGE_PATTERNS = [
-  /\bnew\b/i,
-  /\bnew in\b/i,
-  /\bjust in\b/i,
-  /\bnew arrival\b/i,
-];
-
 export function isNewArrivalsCollectionPath(path: string | null | undefined): boolean {
   if (!path) return false;
   return NEW_ARRIVALS_PATH_PATTERNS.some((pattern) => pattern.test(path));
 }
 
 export function detectNewBadgeInText(...parts: Array<string | null | undefined>): boolean {
-  const combined = parts.filter(Boolean).join(" ");
-  if (!combined.trim()) return false;
-  return NEW_BADGE_PATTERNS.some((pattern) => pattern.test(combined));
+  // Only standalone source labels/tags; descriptive text is not a NEW badge.
+  return parts.some((part) => {
+    const label = part?.trim().toLowerCase().replace(/[-_]+/g, " ").replace(/\s+/g, " ");
+    return Boolean(label && /^(?:new|new in|just in|new arrivals?)$/.test(label));
+  });
 }
 
 export function buildNewnessFromProductHints(
@@ -81,6 +76,9 @@ export function mergeSourceNewness(
   incoming: SourceNewness,
   now: string,
 ): SourceNewness {
+  // Historical catalog-diff/date-only records must not regain a NEW badge.
+  if (existing?.status === "VERIFIED_NEW" && !isVerifiedNew(existing)) existing = createNotVerifiedNewness();
+  if (incoming.status === "VERIFIED_NEW" && !isVerifiedNew(incoming)) incoming = createNotVerifiedNewness();
   if (incoming.status === "VERIFIED_NEW") {
     const firstVerifiedAt =
       existing?.firstVerifiedAt && existing.status !== "NOT_VERIFIED"
