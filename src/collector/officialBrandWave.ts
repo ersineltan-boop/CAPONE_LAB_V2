@@ -268,8 +268,9 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
         return size ? [{ size, displaySize: size, sku: variant.sku ?? null, selectable: variant.available ?? null }] : [];
       });
     }
-    // Initial delivery is a baseline, even if source tags say NEWIN.
-    product.hasNewBadge = false; product.isNewArrivalsCollection = false;
+    // Source tags can supply explicit NEW evidence; catalog discovery cannot.
+    // Collection NEW is refreshed separately against the official New Arrivals listing.
+    product.isNewArrivalsCollection = false;
     products.push(product);
   }
   const paginationExhausted = jsonExhausted && storefrontExhausted;

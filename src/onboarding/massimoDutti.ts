@@ -5,6 +5,7 @@ import type { PilotProduct } from "../collector/types";
 import type { OnboardingHttp } from "./http";
 
 export const MASSIMO_SHOES_URL = "https://www.massimodutti.com/us/women/shoes-n1499";
+export const MASSIMO_NEW_IN_URL = "https://www.massimodutti.com/us/women/new-in-mx-n3992";
 type Row = Record<string, any>;
 
 /** Source-specific Angular transfer state; this is not Zara's categories?ajax API. */
@@ -52,7 +53,11 @@ export function mapMassimoProduct(row: Row, collectionUrl: string, discoveredAt:
 export function mapMassimoApiProduct(row: Row, discoveredAt: string): PilotProduct | null {
   const detailRow = row.bundleProductSummaries?.[0] ?? row;
   const colors = (detailRow.detail?.colors ?? []).map((color: Row) => {
-    const groups = (detailRow.detail?.xmedia ?? []).filter((group: Row) => group.path === `/${color.id}`);
+    // The current storefront also keys a color gallery by its supplied image
+    // path, e.g. /2026/I/1/1/p/1568/850/800, rather than only /800.
+    const groups = (detailRow.detail?.xmedia ?? []).filter((group: Row) =>
+      group.path === `/${color.id}` || (typeof color.image?.url === "string" &&
+        (group.path === color.image.url || color.image.url.startsWith(`${group.path}/`))));
     const medias = groups.flatMap((group: Row) => (group.xmediaItems ?? []).flatMap((item: Row) => item.medias ?? []))
       .filter((media: Row) => media.format === 1 && typeof media.url === "string")
       .map((media: Row) => ({path: media.url, contentType: {type: "image"}}));
@@ -74,10 +79,12 @@ export async function collectMassimoDuttiCatalog(http: OnboardingHttp): Promise<
   const elements = state?.TRANSFER_CATEGORY_PRODUCTS?.categoryGrid?.gridElements;
   const ids = [...new Set<string>((Array.isArray(elements) ? elements : []).flatMap((element: Row) => Array.isArray(element.ccIds) ? element.ccIds.map(String) : []))].filter(id => /^\d+$/.test(id));
   const errors = !response.ok ? [`Massimo official footwear page HTTP ${response.status}`] : !state ? ["Massimo transfer-state schema missing"] : [];
+  const boundedIds = ids.slice(0, 500);
+  if (boundedIds.length !== ids.length) errors.push("Massimo grid exceeds 500-product collection safety cap");
   const expanded: PilotProduct[] = [];
   const received = new Set<string>();
-  for(let offset=0;offset<ids.length;offset+=20){
-    const batch=ids.slice(offset,offset+20);
+  for(let offset=0;offset<boundedIds.length;offset+=20){
+    const batch=boundedIds.slice(offset,offset+20);
     const url=`https://www.massimodutti.com/itxrest/3/catalog/store/34009527/30359506/productsArray?productIds=${batch.join(",")}&languageId=-1`;
     const page=await http.fetchText(url);
     if(!page.ok){errors.push(`Massimo productsArray HTTP ${page.status}`);break;}
@@ -92,6 +99,27 @@ export async function collectMassimoDuttiCatalog(http: OnboardingHttp): Promise<
     }
   }
   const products=mergeProductCatalog(baseline,expanded);
+  // The official women's menu identifies this collection as NEW IN WOMAN.
+  // Its full grid is membership evidence even when only initial rows are SSR.
+  // A failed New In read must prevent publication of cleared NEW flags.
+  if (state && errors.length === 0 && ids.length > 0) {
+    const newPage = await http.fetchText(MASSIMO_NEW_IN_URL, { timeoutMs: 20_000 });
+    const newState = newPage.ok ? parseMassimoTransferState(newPage.text) : null;
+    const newElements = newState?.TRANSFER_CATEGORY_PRODUCTS?.categoryGrid?.gridElements;
+    if (!newPage.ok || !Array.isArray(newElements)) {
+      errors.push(!newPage.ok ? `Massimo New In HTTP ${newPage.status}` : "Massimo New In transfer-state grid missing");
+    } else {
+      const newIds = new Set<string>(newElements.flatMap((element: Row) =>
+        Array.isArray(element.ccIds) ? element.ccIds.map(String) : []));
+      for (const product of products) {
+        const id = new URL(product.productUrl).searchParams.get("pelement");
+        if (!id || !newIds.has(id)) continue;
+        product.isNewArrivalsCollection = true;
+        product.sourceCategories?.push({ categoryId: "women-new-in", categoryName: "New In",
+          categoryPath: new URL(MASSIMO_NEW_IN_URL).pathname, categoryUrl: MASSIMO_NEW_IN_URL });
+      }
+    }
+  }
   const exhausted=ids.length>0 && received.size===ids.length && errors.length===0;
   return {products, discoveredLinks:new Set(products.map(p=>p.productUrl)), errors,
     method:"custom-adapter",paginationExhausted:exhausted,sourceReportedProductCount:ids.length||null,

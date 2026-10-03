@@ -1,25 +1,8 @@
-# 00:30 Türkiye = 21:30 UTC. Safe official-source onboarding for inactive brands.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 name: CAPONE automatic new-brand onboarding
 
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  push:
-    branches: [main]
-    paths:
-      - src/collector/jwAnderson.ts
-      - src/collector/margaux.ts
-      - src/collector/salesforceCommerce/casadei.ts
-      - src/collector/salesforceCommerce/jilSander.ts
-      - src/collector/tkees.ts
-      - src/collector/sergioRossi.ts
-      - src/collector/officialBrandWave.ts
-      - src/collector/salesforceCommerce/integration.ts
-      - src/collector/salesforceCommerce/coverage.ts
-      - src/collector/salesforceCommerce/families.ts
-      - src/collector/salesforceCommerce/gallery.ts
-      - src/collector/salesforceCommerce/types.ts
-      - src/onboarding/selection.ts
-  schedule:
-    - cron: "30 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

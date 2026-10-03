@@ -1,5 +1,5 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
-import {mergeProductCatalog} from '../src/collector/mergeProducts';
+import {collectExpansionNewMembership,mergeExpansionRefreshProducts} from '../src/onboarding/expansionNewness';
 import {shopifyProductToPilot} from '../src/collector/shopify';
 import {auditFootwearLeakage,evaluateQualityGate} from '../src/onboarding/validate';
 const universe=JSON.parse(await readFile('data/registry/brand-universe.json','utf8'));
@@ -21,10 +21,16 @@ await Promise.all(Array.from({length:3},async()=>{while(cursor<ids.length){
  const config={id,brand:brand.brand,baseUrl:brand.officialUrl} as any;
  const mapped=[...rows.values()].filter(row=>!/(?:\bkids?\b|\bchildren\b|\btoddlers?\b|\bbaby\b|\bgirls?\b|\bboys?\b)/i.test([row.title,row.product_type,...(Array.isArray(row.tags)?row.tags:[row.tags??''])].join(' '))).map(row=>shopifyProductToPilot(row,config,new Date().toISOString())).filter(Boolean);
  const rejected=new Set(auditFootwearLeakage(mapped as any));
- let products=mapped.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl).map((p:any)=>({...p,isNewArrivalsCollection:false,hasNewBadge:false}));
+ let products=mapped.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl);
  let prior=[];try{prior=JSON.parse(await readFile(`data/onboarding/validated/expansion-${id}.json`,'utf8')).products??[];}catch(error:any){if(error.code!=='ENOENT')throw error;}
  const incoming=products;
- products=mergeProductCatalog(prior,incoming);
+ const newness=await collectExpansionNewMembership(brand.officialUrl,async url=>{
+  const response=await fetch(url,{signal:AbortSignal.timeout(30000)});
+  let data=null;try{data=await response.json();}catch{}
+  return {ok:response.ok,status:response.status,data};
+ });
+ errors.push(...newness.errors);
+ products=mergeExpansionRefreshProducts(prior,incoming as any,newness.memberships);
  // Keep size/SKU rows: the general catalog merge groups variants by color.
  const variantRows=new Map<string,Map<string,any>>();
  for(const p of [...prior,...incoming] as any[]){

@@ -5,6 +5,7 @@ import {
   shopifyProductToPilot,
 } from "./shopify";
 import type { PilotProduct, PilotSourceConfig } from "./types";
+import { isWomensNewArrivalsCollection, planWomensCollections } from "../brands/wave50/collections";
 import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { slugifyCategoryId } from "../source/sourceCategories";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
@@ -122,7 +123,11 @@ export async function paginateShopifyCollectionProducts(
       errors.push(result.error ?? `Failed ${url}`);
       break;
     }
-    const batch = result.data.products ?? [];
+    if (!Array.isArray(result.data.products)) {
+      errors.push(`Invalid Shopify membership products payload: ${url}`);
+      break;
+    }
+    const batch = result.data.products;
     if (batch.length === 0) break;
     let newHandles = 0;
     for (const raw of batch) {
@@ -139,6 +144,8 @@ export async function paginateShopifyCollectionProducts(
         collection.title,
       );
       if (mapped) {
+        mapped.isNewArrivalsCollection = Boolean(mapped.isNewArrivalsCollection) ||
+          isWomensNewArrivalsCollection(collection.handle, collection.title);
         products.push(mapped);
         continue;
       }
@@ -161,11 +168,12 @@ export interface ShopifyMembershipResult {
   skippedCollections: ShopifyCollectionMeta[];
   pagesTraversed: number;
   errors: string[];
+  verifiedNewArrivalPaths?: string[];
 }
 
 export async function collectShopifyCollectionMembership(
   config: PilotSourceConfig,
-  options?: { knownProductUrls?: Iterable<string>; maxCollections?: number },
+  options?: { knownProductUrls?: Iterable<string>; maxCollections?: number; onlyNewCollections?: boolean },
 ): Promise<ShopifyMembershipResult> {
   const discoveredAt = new Date().toISOString();
   const listed = await listShopifyCollections(config.baseUrl);
@@ -176,9 +184,14 @@ export async function collectShopifyCollectionMembership(
     path: `/collections/${collection.handle}`,
     url: `${config.baseUrl.replace(/\/$/, "")}/collections/${collection.handle}`,
   }));
-  const verifiedNewPaths = new Set(config.verifiedNewArrivalPaths ?? []);
+  // Official collection names establish membership evidence; products still pass
+  // the footwear gate (or match a previously known footwear URL).
+  const verifiedNewPaths = new Set([
+    ...(config.verifiedNewArrivalPaths ?? []),
+    ...planWomensCollections(discovered).newArrivalsPaths,
+  ]);
   const footwear = discovered
-    .filter((collection) => collection.productsCount > 0)
+    .filter((collection) => collection.productsCount > 0 || verifiedNewPaths.has(collection.path))
     .filter(
       (collection) =>
         !isLikelyProductNamedCollection(
@@ -189,8 +202,9 @@ export async function collectShopifyCollectionMembership(
     )
     .filter((collection) =>
       isWomensFootwearCollection(collection.handle, collection.title) ||
-      (verifiedNewPaths.has(collection.path) && isNewArrivalsCollectionPath(collection.path)),
+      verifiedNewPaths.has(collection.path),
     )
+    .filter((collection) => !options?.onlyNewCollections || verifiedNewPaths.has(collection.path))
     .sort(
       (a, b) =>
         collectionCrawlRank(a) - collectionCrawlRank(b) || b.productsCount - a.productsCount,
@@ -205,6 +219,11 @@ export async function collectShopifyCollectionMembership(
   let products: PilotProduct[] = [];
   let pagesTraversed = 0;
   const errors = [...listed.errors];
+  for (const path of config.verifiedNewArrivalPaths ?? []) {
+    if (!discovered.some((collection) => collection.path === path)) {
+      errors.push(`Verified New Arrivals collection missing: ${path}`);
+    }
+  }
 
   for (const collection of crawled) {
     const page = await paginateShopifyCollectionProducts(config, collection, {
@@ -224,6 +243,7 @@ export async function collectShopifyCollectionMembership(
     skippedCollections: skipped,
     pagesTraversed,
     errors,
+    verifiedNewArrivalPaths: [...verifiedNewPaths],
   };
 }
 
@@ -233,7 +253,10 @@ export function mergeVerifiedShopifyMembership(
   catalog: readonly PilotProduct[],
   collected: ShopifyMembershipResult,
 ): PilotProduct[] {
-  const pinned = config.verifiedNewArrivalPaths ?? [];
+  const pinned = [...new Set([
+    ...(config.verifiedNewArrivalPaths ?? []),
+    ...(collected.verifiedNewArrivalPaths ?? []),
+  ])];
   if (pinned.length === 0) return mergeProductCatalog(catalog, collected.products);
   if (collected.errors.length > 0 || !pinned.every((path) =>
     collected.crawledCollections.some((collection) => collection.path === path),

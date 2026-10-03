@@ -1,7 +1,5 @@
 import {readFile,writeFile} from 'node:fs/promises';
-import {analyzeProducts} from '../src/analysis/analyzeProduct';
-import {buildModelFamilies} from '../src/modelFamily/buildFamilies';
-import {mergeCoreFamilyIntoBrandShard} from '../src/modelFamily/dataset';
+import {mergePriorityBrandDelivery} from '../src/refresh/priorityDelivery';
 import {auditFootwearLeakage,evaluateQualityGate} from '../src/onboarding/validate';
 import {buildBrandRegistryFromUniverseData} from '../src/registry/build/buildBrandRegistry';
 import {emptyProbeCache} from '../src/registry/build/probeCache';
@@ -19,20 +17,17 @@ const targets=requested.length?requested.map(id=>[id,priorityFiles[id]??`expansi
 for(const [id,file] of targets){
  const snapshot=await read(`data/onboarding/validated/${file}.json`);
  const rejected=new Set(auditFootwearLeakage(snapshot.products));
- const products=snapshot.products.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl).map((p:any)=>({...p,isNewArrivalsCollection:false,hasNewBadge:false}));
+ const products=snapshot.products.filter((p:any)=>!rejected.has(p.productUrl)&&p.imageUrl);
  const quality=evaluateQualityGate(products);
  if(!quality.ok)throw new Error(`${id}: ${quality.reasons.join('; ')}`);
  const relative=`brands/${id}.json`, path=`data/multibrand/model-families/${relative}`;
  let prior=[];try{prior=await read(path);}catch(e:any){if(e.code!=='ENOENT')throw e;}
- const {families}=buildModelFamilies(analyzeProducts(products as never) as never,{priorFamilies:prior});
- const byId=new Map(prior.map((f:any)=>[f.modelFamilyId,f]));
- for(const family of families){const old=byId.get(family.modelFamilyId);byId.set(family.modelFamilyId,old?mergeCoreFamilyIntoBrandShard(old as never,family):family);}
- const delivered=[...byId.values()];
+ const entry=universe.brands.find((b:any)=>b.id===id);if(!entry)throw new Error(`Missing brand ${id}`);
+ const delivered=mergePriorityBrandDelivery(prior,products,{id,brand:entry.brand,officialUrl:entry.officialUrl??'',collectedAt:snapshot.generatedAt??snapshot.collectedAt??new Date().toISOString()});
  if(!delivered.length)throw new Error(`${id}: empty delivery`);
  const body=JSON.stringify(delivered);await writeFile(path,body);
  manifest.shards=manifest.shards.filter((s:any)=>s.file!==relative);
  manifest.shards.push({file:relative,familyCount:delivered.length,bytes:Buffer.byteLength(body)});
- const entry=universe.brands.find((b:any)=>b.id===id);if(!entry)throw new Error(`Missing brand ${id}`);
  entry.isActive=true;entry.collectorType='CUSTOM_ADAPTER';entry.collectionStatus='NEEDS_PROBE';
  entry.notes=`Verified PARTIAL official catalog: ${products.length} products. Dedicated priority-source collector; full coverage not confirmed.`;
  coverage[id]={status:'PARTIAL',ready:products.length,pending:Math.max(0,(snapshot.sourceReportedProductCount??products.length)-products.length),totalKnown:typeof snapshot.sourceReportedProductCount==='number',quarantined:rejected.size,updatedAt:new Date().toISOString()};

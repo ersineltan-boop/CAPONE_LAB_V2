@@ -1,18 +1,8 @@
-# Sunday/Wednesday 11:00 Türkiye time (08:00 UTC).
-# The shared catalog queue serializes this with the existing refresh jobs.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 name: CAPONE new sources refresh
 
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/capone-issue-91-refresh.yml"
-      - "scripts/collect-official-shopify*.ts"
-      - "scripts/collect-browns.ts"
-      - "src/brands/officialShopify/**"
-      - "src/collector/browns.ts"
-  schedule:
-    - cron: "0 8 * * 0,3"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -111,7 +101,7 @@ jobs:
         run: |
           {
             echo "## New-source refresh"
-            echo "- Schedule: Sunday and Wednesday 11:00 Türkiye time"
+            echo "- Automatic schedule: consolidated refresh cycle"
             echo "- Browns collection: ${BROWNS_OUTCOME:-not run}"
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"

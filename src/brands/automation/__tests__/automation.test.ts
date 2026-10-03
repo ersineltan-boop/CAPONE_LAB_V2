@@ -151,6 +151,15 @@ describe("approved brand automation plan", () => {
     expect(plan.candidates.some((item) => item.slug === "arbitrary")).toBe(false);
   });
 
+  it("refresh-only excludes inactive approved onboarding candidates", () => {
+    const plan = buildBrandAutomationPlan({
+      universe: { version: 1, brands: [universeBrand(), universeBrand({ id: "queued", brand: "QUEUED", officialUrl: "https://queued.test", isActive: false })] },
+      queue: queue(), adapters: adapters(), lastGoodSlugs: new Set(["approved"]), refreshOnly: true,
+    });
+    expect(plan.candidates.map((item) => item.slug)).toEqual(["approved"]);
+    expect(plan.skipped).toContainEqual({ slug: "queued", reason: "REFRESH_ONLY_SOURCE_NOT_ACTIVE" });
+  });
+
   it("is deterministic and treats an explicit zero limit as zero candidates", () => {
     const input = {
       universe: { version: 1 as const, brands: [universeBrand()] },
@@ -268,7 +277,8 @@ describe("twice-weekly workflow contract", () => {
   it("processes all approved brands and publishes only through the guarded Vercel gate", () => {
     const workflow = readFileSync(".github/workflows/capone-brand-onboarding.yml", "utf-8");
     const publisher = readFileSync("scripts/publish-validated-automation-pr.sh", "utf-8");
-    expect(workflow).toContain('cron: "0 20 * * 0,3"');
+    expect(workflow).not.toContain("  schedule:");
+    expect(readFileSync(".github/workflows/capone-refresh-cycle.yml", "utf-8")).toContain('cron: "0 3 * * 0,3"');
     expect(workflow).toContain("npm run automate:brands");
     expect(workflow).toContain("group: capone-catalog-automation");
     expect(workflow).toContain("bash scripts/publish-validated-automation-pr.sh");

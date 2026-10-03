@@ -16,7 +16,7 @@ import { decideLastGoodPublish } from "../lastGood";
 import { assignProductNewness } from "../newness";
 import { buildDeterministicWaveBrands } from "../officialBrands";
 import { mapPool } from "../pool";
-import { classifyStorefrontResponse, collectShopifyWomensCatalog } from "../shopifyAdapter";
+import { classifyStorefrontResponse, collectShopifyWomensCatalog, listAllShopifyCollections, paginateCollectionProducts } from "../shopifyAdapter";
 import type { ModelFamily } from "../../../modelFamily/types";
 import type { WaveHttp } from "../types";
 import { WAVE_COLLECTOR_CONCURRENCY } from "../types";
@@ -82,7 +82,7 @@ describe("brands wave 50", () => {
     ).toBe("footwear");
   });
 
-  it("requires official New Arrivals even for a URL added after baseline", () => {
+  it("requires source NEW evidence even for a URL added after baseline", () => {
     expect(assignProductNewness({ productUrl: "https://brand.test/products/a", inNewArrivals: false }, null)).toEqual({
       isNew: false,
       newnessEvidence: null,
@@ -90,6 +90,9 @@ describe("brands wave 50", () => {
     expect(assignProductNewness({ productUrl: "https://brand.test/products/b", inNewArrivals: true }, null)).toEqual({
       isNew: true,
       newnessEvidence: "NEW_ARRIVALS_COLLECTION",
+    });
+    expect(assignProductNewness({ productUrl: "https://brand.test/products/a", inNewArrivals: false, hasNewBadge: true }, null)).toEqual({
+      isNew: true, newnessEvidence: "SOURCE_BADGE",
     });
     const previous = new Set(["https://brand.test/products/a"]);
     expect(
@@ -156,6 +159,14 @@ describe("brands wave 50", () => {
     expect(families.some((family) => family.variants.length === 1 && family.canonicalName.includes("Sporty"))).toBe(
       true,
     );
+  });
+
+  it("recrawls an empty official NEW collection so historical badges can retire", () => {
+    const plan = planWomensCollections([
+      { handle: "shoes", title: "Shoes", productsCount: 20 },
+      { handle: "new-in", title: "New In", productsCount: 0 },
+    ]);
+    expect(plan.newArrivalsPaths).toEqual(["/collections/new-in"]);
   });
 
   it("selects the official women's catalog and ignores men's and bag collections", () => {
@@ -316,6 +327,18 @@ describe("brands wave 50", () => {
     });
     expect(maxActive).toBeLessThanOrEqual(10);
     expect(maxActive).toBeGreaterThan(1);
+  });
+
+  it("blocks incomplete collection discovery and invalid NEW payloads instead of clearing evidence", async () => {
+    const http: WaveHttp = { async fetch(url) {
+      const data = url.includes("collections.json")
+        ? { collections: Array.from({ length: 250 }, (_, i) => ({ handle: `shoes-${i}`, title: "Shoes", products_count: 1 })) }
+        : {};
+      const ok = !url.includes("page=2");
+      return { ok, status: ok ? 200 : 503, url, data: ok ? data : null, text: "" };
+    } };
+    expect((await listAllShopifyCollections(http, "https://brand.test")).error).toContain("page 2");
+    expect((await paginateCollectionProducts(http, "https://brand.test", "/collections/new-in")).error).toBe("INVALID_PRODUCTS_PAYLOAD");
   });
 
   it("collects a fixture catalog without treating non-footwear as source total", async () => {

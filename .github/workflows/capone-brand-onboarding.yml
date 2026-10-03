@@ -1,11 +1,9 @@
-# Sunday/Wednesday CAPONE official-brand automation.
-# 23:00 Türkiye = 20:00 UTC. The 07:00 general refresh excludes these sources.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 
 name: CAPONE brand automation
 
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  schedule:
-    - cron: "0 20 * * 0,3"
   workflow_dispatch:
     inputs:
       limit:
@@ -60,7 +58,7 @@ jobs:
           REQUESTED_DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
           set -euo pipefail
-          args=()
+          args=(--refresh-only)
           if [[ -n "$REQUESTED_LIMIT" ]]; then args+=(--limit "$REQUESTED_LIMIT"); fi
           if [[ -n "$REQUESTED_ONLY" ]]; then args+=(--only "$REQUESTED_ONLY"); fi
           if [[ "$REQUESTED_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi

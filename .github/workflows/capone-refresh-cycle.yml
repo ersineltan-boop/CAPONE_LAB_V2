@@ -1,0 +1,104 @@
+# Sunday and Wednesday 06:00 Türkiye. One complete cycle; one guarded publication.
+name: CAPONE twice-weekly complete refresh
+
+on:
+  schedule:
+    - cron: "0 3 * * 0,3"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Collect and validate without publishing"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/capone-refresh-cycle.yml"
+      - "scripts/run-refresh-cycle.ts"
+      - "src/refresh/refreshCycle.ts"
+
+concurrency:
+  group: capone-catalog-automation
+  queue: max
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify every active source is covered
+        run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+      - name: Install approved marketplace browser runtime
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+      - name: Refresh all active sources with lane rollback
+        id: collect
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: node --import tsx scripts/run-refresh-cycle.ts
+      - name: Full tests once for the complete delivery
+        id: tests
+        run: npm test
+      - name: Production build once for the complete delivery
+        id: build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+      - name: Stage validated delivery allowlist
+        id: stage
+        run: |
+          set -euo pipefail
+          node --import tsx scripts/stage-refresh-cycle.ts
+          if git diff --cached --quiet; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publish through tested PR, exact preview and production verification
+        if: success() && steps.stage.outputs.data_changed == 'true' && inputs.dry_run != true
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTOMATION_BRANCH: automation/complete-refresh
+          AUTOMATION_COMMIT_MESSAGE: "chore(data): publish complete twice-weekly refresh"
+          AUTOMATION_PR_TITLE: "chore(data): complete automatic CAPONE refresh"
+          AUTOMATION_PR_BODY: "All active brands and marketplaces covered in one cycle. Failed lanes roll back, failed sources preserve last-good. One full test/build gate, exact-head Vercel Preview, guarded merge and Production verification. NEW is based on explicit official-source evidence."
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/publish-validated-automation-pr.sh
+      - name: Record final publication state and source evidence
+        if: always()
+        env:
+          COLLECT_OUTCOME: ${{ steps.collect.outcome }}
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          DATA_CHANGED: ${{ steps.stage.outputs.data_changed }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+          DRY_RUN: ${{ inputs.dry_run || false }}
+          MERGED: ${{ steps.publish.outputs.merged }}
+          PR_URL: ${{ steps.publish.outputs.pr_url }}
+          PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
+        run: node --import tsx scripts/finalize-refresh-cycle.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: complete-refresh-${{ github.run_id }}
+          path: logs/refresh-cycle/
+          retention-days: 30
+          if-no-files-found: warn

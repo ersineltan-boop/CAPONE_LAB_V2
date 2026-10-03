@@ -30,11 +30,11 @@ describe('Pinned official-source brand wave', () => {
     for(const [url,type] of [[productUrl,'Jewelry'],['https://example.com/products/copsh74f6016-leather-black','Ballerinas']]) expect(evaluateFootwearProduct({ title:'Belt Ballerinas',productType:type,officialProductUrl:url }).decision).toBe('EXCLUDE_NON_FOOTWEAR');
     expect(evaluateFootwearProduct({title:'Barreletics x Coperni Grip Sock',productType:'SS26'}).decision).toBe('EXCLUDE_NON_FOOTWEAR');
   });
-  it('uses storefront counts instead of stale collection metadata and keeps first delivery as baseline', async () => {
+  it('uses storefront counts instead of stale collection metadata and accepts only explicit source NEW badges', async () => {
     const result = await collectOfficialBrandWave(config, transport());
     expect(result.errors).toEqual([]);
     expect(result.products).toHaveLength(21);
-    expect(result.products.every(p => !p.hasNewBadge && !p.isNewArrivalsCollection && p.variants?.[0]?.sku)).toBe(true);
+    expect(result.products.every(p => p.hasNewBadge && !p.isNewArrivalsCollection && p.variants?.[0]?.sku)).toBe(true);
     expect(evaluateOfficialSourceCoverage({ ...result, acceptedProductCount: result.products.length }).full).toBe(true);
   });
   it('refuses mismatched totals, repeated pages, market redirects, missing galleries and uncertain merchandise', async () => {

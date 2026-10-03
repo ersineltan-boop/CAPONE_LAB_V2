@@ -1,15 +1,8 @@
-# 08:30 Türkiye = 05:30 UTC. Approved adapters only; no discovery.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 name: CAPONE marketplace refresh
 
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/capone-marketplace-refresh.yml"
-      - "src/collector/freePeople*.ts"
-      - "scripts/refresh-marketplaces-automated.ts"
-  schedule:
-    - cron: "30 5 * * 0,3"
   workflow_dispatch:
 
 concurrency:

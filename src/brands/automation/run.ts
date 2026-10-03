@@ -75,6 +75,7 @@ export interface BrandAutomationOptions {
   http: WaveHttp;
   now?: string;
   dryRun?: boolean;
+  refreshOnly?: boolean;
   only?: readonly string[];
   limit?: number;
   concurrency?: number;
@@ -156,6 +157,7 @@ export async function runBrandAutomation(
     adapters: await loadAdapterFile(options.root),
     lastGoodSlugs: await lastGoodSlugs(options.root),
     only: options.only,
+    refreshOnly: options.refreshOnly,
     limit: options.limit,
   });
   const delivered = await deliveredBrandSlugs(options.root);
