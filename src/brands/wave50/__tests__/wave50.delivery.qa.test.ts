@@ -73,11 +73,15 @@ describe("brands wave 50 delivery QA", () => {
 
     const published = report.outcomes.filter((outcome) => outcome.published);
     expect(published).toHaveLength(44);
-    const stagingProducts = published.reduce((sum, outcome) => {
-      const catalog = readJson<WaveCatalog>(`data/brands/wave50/last-good/${outcome.slug}.json`);
-      return sum + catalog.productUrls.length;
-    }, 0);
+    // The wave report is immutable; last-good catalogs advance after every refresh.
+    const stagingProducts = published.reduce((sum, outcome) => sum + outcome.coverage!.collected, 0);
     expect(stagingProducts).toBe(report.stagingProducts);
+    for (const outcome of published) {
+      const catalog = readJson<WaveCatalog>(`data/brands/wave50/last-good/${outcome.slug}.json`);
+      expect(catalog.coverage.coverage).toBe(100);
+      expect(catalog.productUrls).toHaveLength(catalog.coverage.collected);
+      expect(catalog.coverage.paginationExhausted).toBe(true);
+    }
 
     expect(universe.brands).toHaveLength(160);
     expect(universe.brands.filter((brand) => brand.isActive).length).toBeGreaterThanOrEqual(report.activeBrandsAfter);
@@ -163,9 +167,9 @@ describe("brands wave 50 delivery QA", () => {
   it("does not mark the Naked Wolfe baseline catalog new", () => {
     const catalog = readJson<WaveCatalog>("data/brands/wave50/last-good/naked-wolfe.json");
     const newVariants = catalog.families.flatMap((family) => family.variants).filter((variant) => variant.isNew);
-    expect(catalog.productUrls).toHaveLength(328);
-    expect(catalog.newArrivalsFootwear).toBe(126);
-    expect(newVariants).toHaveLength(126);
+    expect(catalog.productUrls).toHaveLength(catalog.coverage.collected);
+    expect(newVariants).toHaveLength(catalog.newArrivalsFootwear);
+    expect(newVariants.every((variant) => variant.inNewArrivals && variant.newnessEvidence === "NEW_ARRIVALS_COLLECTION")).toBe(true);
     expect(newVariants.length).toBeLessThan(catalog.productUrls.length);
 
     const nakedWolfe = part006.filter((family) => family.brand === "NAKED WOLFE");
