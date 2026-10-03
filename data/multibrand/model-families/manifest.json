@@ -2,8 +2,8 @@
   "schema": "capone.model-families.shards.v1",
   "version": 1,
   "generatedAt": "2026-10-01T15:45:43.321Z",
-  "totalFamilies": 16773,
-  "shardCount": 28,
+  "totalFamilies": 17144,
+  "shardCount": 29,
   "shards": [
     {
       "file": "part-000.json",
@@ -23,7 +23,7 @@
     {
       "file": "part-003.json",
       "familyCount": 2333,
-      "bytes": 16777528
+      "bytes": 16779050
     },
     {
       "file": "part-004.json",
@@ -144,6 +144,11 @@
       "file": "brands/maison-margiela.json",
       "familyCount": 107,
       "bytes": 1278429
+    },
+    {
+      "file": "part-007.json",
+      "familyCount": 371,
+      "bytes": 3531960
     }
   ]
 }

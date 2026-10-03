@@ -1,17 +1,110 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T00:34:48.997Z",
+  "generatedAt": "2026-10-02T06:41:44.498Z",
   "dryRun": false,
   "summary": {
     "activeBrandsBefore": 79,
-    "activeBrandsAfter": 79,
-    "attempted": 0,
-    "activated": 0,
-    "partial": 0,
+    "activeBrandsAfter": 82,
+    "attempted": 4,
+    "activated": 3,
+    "partial": 1,
     "blocked": 0,
     "customAdapterRequired": 0,
     "failed": 0,
     "storageStatus": "ok"
   },
-  "attempts": []
+  "attempts": [
+    {
+      "brand": "COPERNI",
+      "slug": "coperni",
+      "attemptedAt": "2026-10-02T06:41:44.498Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "ACTIVE",
+      "productsFound": 28,
+      "families": 19,
+      "realMultiColorFamilies": 6,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": null,
+      "marketplaceCoverage": {
+        "farfetch": 0,
+        "levelShoes": 0
+      },
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 19 families, 28 products, gallery 100%"
+    },
+    {
+      "brand": "MOON BOOT",
+      "slug": "moon-boot",
+      "attemptedAt": "2026-10-02T06:41:44.498Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "ACTIVE",
+      "productsFound": 142,
+      "families": 67,
+      "realMultiColorFamilies": 37,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": null,
+      "marketplaceCoverage": {
+        "farfetch": 11,
+        "levelShoes": 50
+      },
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 67 families, 142 products, gallery 100%"
+    },
+    {
+      "brand": "PAZZION",
+      "slug": "pazzion",
+      "attemptedAt": "2026-10-02T06:41:44.498Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "ACTIVE",
+      "productsFound": 574,
+      "families": 285,
+      "realMultiColorFamilies": 257,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 1,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": null,
+      "marketplaceCoverage": {
+        "farfetch": 8,
+        "levelShoes": 49
+      },
+      "activationDecision": "activate",
+      "notes": "ACCEPTED FULL: 285 families, 574 products, gallery 100%"
+    },
+    {
+      "brand": "PEDRO MIRALLES",
+      "slug": "pedro-miralles",
+      "attemptedAt": "2026-10-02T06:41:44.498Z",
+      "detectedPlatform": "SHOPIFY",
+      "sourceStrategy": "shopify-public",
+      "status": "PARTIAL",
+      "productsFound": 688,
+      "families": 256,
+      "realMultiColorFamilies": 157,
+      "verifiedNewArrivals": 0,
+      "galleryImageCoverage": 0.8226744186046512,
+      "categoriesFound": [
+        "Women's Shoes"
+      ],
+      "blocker": "Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 688/689",
+      "marketplaceCoverage": {
+        "farfetch": 3,
+        "levelShoes": 0
+      },
+      "activationDecision": "partial",
+      "notes": "ACCEPTED FULL: 256 families, 688 products, gallery 82%; coverage not FULL: Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 688/689"
+    }
+  ]
 }

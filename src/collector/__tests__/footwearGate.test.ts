@@ -17,6 +17,11 @@ const config: PilotSourceConfig = {
 };
 
 describe("footwear gate", () => {
+  it('treats TOP VENTAS as a sales badge while still rejecting clothing tops', () => {
+    expect(evaluateFootwearProduct({ title: 'INGELS', productType: 'Boot', tags: ['TOP VENTAS'] }).decision).toBe('ACCEPT_FOOTWEAR');
+    expect(evaluateFootwearProduct({ title: 'Silk Top', productType: 'Top', tags: ['TOP VENTAS'] }).decision).toBe('EXCLUDE_NON_FOOTWEAR');
+    expect(evaluateFootwearProduct({ title: 'Mystery', tags: ['TOP VENTAS'] }).decision).toBe('EXCLUDE_UNCERTAIN_PRODUCT_TYPE');
+  });
   it("handbag excluded", () => {
     expect(
       evaluateFootwearProduct({

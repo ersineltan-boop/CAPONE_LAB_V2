@@ -1,0 +1,102 @@
+{
+  "baseCommit": "6409e5b04f4abb235c466333490cd2a4a3d3f278",
+  "verificationEnvironment": "local; production remains unchanged until separately approved publication",
+  "verifiedAt": "2026-10-02T06:41:44.498Z",
+  "summary": {
+    "activeBrandsBefore": 79,
+    "activeBrandsAfter": 82,
+    "attempted": 4,
+    "activated": 3,
+    "partial": 1,
+    "blocked": 0,
+    "customAdapterRequired": 0,
+    "failed": 0,
+    "storageStatus": "ok"
+  },
+  "preservation": {
+    "beforeProducts": 20602,
+    "afterProducts": 21346,
+    "unchanged": 20583,
+    "categoryOnlyPaloma": 19,
+    "missing": 0,
+    "newProducts": 744
+  },
+  "storage": {
+    "productsBytes": 70953070,
+    "analyzedBytes": 76053639,
+    "storageStatus": "ok",
+    "trackedFileTooLarge": false,
+    "oversized": []
+  },
+  "sources": [
+    {
+      "slug": "coperni",
+      "scope": "https://coperni.com/collections/all-shoes?country=FR",
+      "status": "ACTIVE",
+      "products": 28,
+      "families": 19,
+      "blocker": null
+    },
+    {
+      "slug": "moon-boot",
+      "scope": "https://www.moonboot.com/en-eu/collections/woman-fall-winter-2026?country=DE",
+      "status": "ACTIVE",
+      "products": 142,
+      "families": 67,
+      "blocker": null
+    },
+    {
+      "slug": "pazzion",
+      "scope": "https://www.pazzion.com/collections/shoes?country=SG",
+      "status": "ACTIVE",
+      "products": 574,
+      "families": 285,
+      "blocker": null
+    },
+    {
+      "slug": "pedro-miralles",
+      "scope": "https://pedromiralles.com/collections/ver-todo-calzado",
+      "status": "PARTIAL",
+      "products": 688,
+      "families": 256,
+      "blocker": "Toplayıcı hataları var; Kabul edilen ayakkabı kapsamı eksik: 688/689"
+    }
+  ],
+  "paloma": {
+    "families": 34,
+    "unclassifiedFamilies": 0,
+    "existingFamilyIdsPreserved": true
+  },
+  "pedro": {
+    "sourceLinks": 809,
+    "accepted": 688,
+    "expectedFootwear": 689,
+    "unresolved": [
+      "14106-03-audes"
+    ],
+    "activationAllowed": false
+  },
+  "familyPreservation": {
+    "unchangedPreviousFamilies": 16739,
+    "palomaFamilyIdsPreserved": 34,
+    "afterTotalFamilies": 17144
+  },
+  "categoryDetail": {
+    "moonBootOtherFootwearFamilies": 43,
+    "pazzionOtherFootwearFamilies": 36,
+    "note": "FULL verifies source coverage; these models retain a broad footwear category."
+  },
+  "publicationStatus": "Owner approved; rebased on PR #149; CI and production pending",
+  "brandPriceSegments": {
+    "coperni": "LUXURY",
+    "moon-boot": "PREMIUM",
+    "pazzion": "MID_RANGE"
+  },
+  "deliveryStorage": {
+    "mode": "approved additive source patch hydrated during npm install",
+    "sourceProductsBeforeHydration": 20602,
+    "productsAfterHydration": 21346,
+    "exactCatalogReplayVerified": true,
+    "laterSourceRefreshesPreserved": true
+  }
+}

@@ -9,6 +9,7 @@ import { loadModelFamilies, mergeCoreFamilyIntoBrandShard, writeModelFamilies } 
 import type { ModelFamily } from "../modelFamily/types";
 import type { RawAnalyzedProduct } from "../modelFamily/types";
 import type { PilotProduct } from "../collector/types";
+import { serializeProductCatalog } from "../collector/catalogJson";
 import { buildBrandRegistryFromUniverseData } from "../registry/build/buildBrandRegistry";
 import { emptyProbeCache } from "../registry/build/probeCache";
 import type { BrandUniverseFile } from "../registry/build/types";
@@ -43,7 +44,7 @@ export async function mergeValidatedBrandIntoCatalog(input: {
   if (beforeOther.join("\n") !== afterOther.join("\n")) {
     throw new Error("Activation aborted: merge would change another source's catalog.");
   }
-  await writeFile(productsPath, JSON.stringify(merged, null, 2), "utf-8");
+  await writeFile(productsPath, serializeProductCatalog(merged), "utf-8");
   return merged.length;
 }
 
@@ -143,7 +144,7 @@ export async function rebuildCatalogAfterActivation(root: string): Promise<numbe
   const products = JSON.parse(await readFile(productsPath, "utf-8")) as PilotProduct[];
   const analyzed = analyzeProducts(products as never);
   const market = buildMarketAnalysis(analyzed);
-  await writeFile(analyzedPath, JSON.stringify(analyzed, null, 2), "utf-8");
+  await writeFile(analyzedPath, serializeProductCatalog(analyzed), "utf-8");
   await writeFile(join(root, "data/multibrand/market-analysis.json"), JSON.stringify(market, null, 2), "utf-8");
 
   const galleries = JSON.parse(

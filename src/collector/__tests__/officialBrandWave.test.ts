@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { OnboardingHttp } from '../../onboarding/http';
 import { evaluateOfficialSourceCoverage } from '../../onboarding/validate';
-import { collectOfficialBrandWave, parseWaveCount, parseWaveStorefrontCards, sameOfficialWaveScope } from '../officialBrandWave';
+import { collectOfficialBrandWave, officialWaveUrl, parseOfficialProductGallery, parseWaveCount, parseWaveStorefrontCards, sameOfficialWaveScope } from '../officialBrandWave';
 import { evaluateFootwearProduct, evaluateStoredPilotProduct } from '../footwearGate';
 
 const root = 'https://coperni.com/collections/all-shoes';
@@ -48,9 +48,63 @@ describe('Pinned official-source brand wave', () => {
     expect(sameOfficialWaveScope(url, url)).toBe(true);
     for (const changed of [url.replace('/en-eu/', '/en-us/'), url.replace('page=2', 'page=1'), url + '&filter.v.availability=1', url.replace('moonboot.com', 'example.com')]) expect(sameOfficialWaveScope(url, changed)).toBe(false);
   });
+  it('selects one country on both the storefront and every JSON page without accepting market changes', async () => {
+    const requested: string[] = [];
+    const mock = transport();
+    const result = await collectOfficialBrandWave(config, { async fetchText(url, options) {
+      requested.push(url);
+      return mock.fetchText(url, options);
+    } });
+    expect(result.errors).toEqual([]);
+    expect(requested.length).toBeGreaterThan(3);
+    expect(requested.every(url => new URL(url).searchParams.get('country') === 'FR')).toBe(true);
+    const url = officialWaveUrl('moon-boot', '/en-eu/collections/woman-fall-winter-2026', { page: '2' });
+    expect(sameOfficialWaveScope(url, url.replace('country=DE', 'country=GB'))).toBe(false);
+    expect(sameOfficialWaveScope(url, url.replace('/en-eu/', '/en-gb/'))).toBe(false);
+  });
+  it('uses official descriptions to classify opaque Paloma titles and retains original product types', async () => {
+    const products = [
+      { id: 1, handle: '007km', title: 'no 2654 / 007KM', product_type: 'Shoes', body_html: '<p>Leather ankle boots with inner side zipper.</p>' },
+      { id: 2, handle: 'judo', title: 'no 1365 / Judo', product_type: 'Leather boots', body_html: '<p>Tall leather boot with a cone heel.</p>' },
+      { id: 3, handle: 'micaela', title: 'no 2579 / Micaela', product_type: 'Shoes', body_html: '<p>Lined leather loafer with a pocket detail.</p>' },
+      { id: 4, handle: 'anastasia', title: 'no 3068 / Anastasia', product_type: 'Shoes', body_html: '<p>Slide sandal with a fur footbed.</p>' },
+      { id: 5, handle: 'wallet', title: 'Wallet', product_type: 'Wallet', body_html: '<p>Wallet inspired by leather boots.</p>' },
+    ].map(product => ({ ...product, images: [{ src: 'https://palomawool.com/photo.jpg' }], variants: [{ title: '38', sku: `REAL-${product.id}` }] }));
+    const http: OnboardingHttp = { async fetchText(url) {
+      return { ok: true, status: 200, url, text: url.includes('products.json') ? JSON.stringify({ products: url.includes('page=1') ? products : [] }) : '<span id="ProductCount">5 products</span>' };
+    } };
+    const result = await collectOfficialBrandWave({ ...config, id: 'paloma-wool', brand: 'PALOMA WOOL', baseUrl: 'https://palomawool.com' }, http);
+    expect(result.errors).toEqual([]);
+    expect(result.products.map(product => product.category)).toEqual(['ANKLE_BOOT', 'BOOT', 'LOAFER', 'SANDAL']);
+    expect(result.products[0]?.sourceProductType).toBe('Shoes');
+    expect(result.products[0]?.productName).toBe('no 2654 / 007KM');
+    expect(result.products[0]?.variants[0]?.sku).toBe('REAL-1');
+  });
   it('reads dedicated totals despite unrelated variant filter counters, and rejects contradictory totals', () => {
     expect(parseWaveCount('<span>black (14 products)</span><span id="ProductCount">63 products </span>')).toBe(63);
     expect(parseWaveCount('<p id="ProductCountMobile">29 products</p><p id="ProductCount">30 products</p>')).toBeNull();
+  });
+  it('recovers video preview galleries only from the exact product schema, ignoring recommendation images', () => {
+    const url = 'https://pedromiralles.com/products/29710-03-almada';
+    const script = (id: string, image: string) => `<script type="application/ld+json">${JSON.stringify({ '@type': 'ProductGroup', '@id': id, hasVariant: [{ image }] })}</script>`;
+    const html = script('/products/other#product', 'https://pedromiralles.com/other.jpg') + script('/products/29710-03-almada#product', 'https://pedromiralles.com/real-preview.jpg');
+    expect(parseOfficialProductGallery(html, url)).toEqual(['https://pedromiralles.com/real-preview.jpg']);
+    expect(parseOfficialProductGallery('<img src="https://pedromiralles.com/recommendation.jpg">', url)).toEqual([]);
+  });
+  it('keeps Pedro partial when an official product has no proven gallery', async () => {
+    const products = [
+      { id: 1, handle: 'ingels', title: 'INGELS', product_type: 'BOTAS', tags: ['TOP VENTAS'], images: [{ src: 'https://pedromiralles.com/ingels.jpg' }] },
+      { id: 2, handle: 'audes', title: 'AUDES', product_type: 'SANDALIAS DE TACÓN', tags: [], images: [] },
+    ];
+    const http: OnboardingHttp = { async fetchText(url) {
+      const text = url.includes('products.json') ? JSON.stringify({ products: url.includes('page=1') ? products : [] }) : url.includes('/collections/') ? '<div class="collection-listing"><product-block><a href="/products/ingels"></a></product-block><product-block><a href="/products/audes"></a></product-block></div>' : '<img src="https://pedromiralles.com/unrelated.jpg">';
+      return { ok: true, status: 200, url, text };
+    } };
+    const result = await collectOfficialBrandWave({ ...config, id: 'pedro-miralles', brand: 'PEDRO MIRALLES', baseUrl: 'https://pedromiralles.com' }, http);
+    expect(result.products).toHaveLength(1);
+    expect(result.products[0]?.sourceProductTags).toContain('TOP VENTAS');
+    expect(result.errors).toContain('WAVE_INCOMPLETE_FOOTWEAR:audes');
+    expect(evaluateOfficialSourceCoverage({ ...result, acceptedProductCount: result.products.length }).full).toBe(false);
   });
   it('restricts customer-visible identities to actual collection cards', () => {
     const url = 'https://www.moonboot.com/en-eu/collections/woman-fall-winter-2026';

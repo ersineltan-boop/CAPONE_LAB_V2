@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildSourceReport, globalDedupe } from "./dedupe";
+import { serializeProductCatalog } from "./catalogJson";
 import { mergeCatalogPreservingFailedSources } from "./mergeProducts";
 import {
   loadCollectState,
@@ -243,7 +244,7 @@ export async function runMultibrandCollection(
   await mkdir(OUTPUT_DIR, { recursive: true });
   await writeFile(
     join(OUTPUT_DIR, "products.json"),
-    JSON.stringify(deduped, null, 2),
+    serializeProductCatalog(deduped),
     "utf-8",
   );
   await writeFile(
