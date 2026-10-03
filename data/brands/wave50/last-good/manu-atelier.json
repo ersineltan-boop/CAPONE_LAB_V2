@@ -2,8 +2,8 @@
   "slug": "manu-atelier",
   "brand": "MANU ATELIER",
   "officialUrl": "https://manuatelier.com",
-  "snapshotId": "manu-atelier:2026-09-26T11:56:35.990Z",
-  "collectedAt": "2026-09-26T11:56:35.990Z",
+  "snapshotId": "manu-atelier:2026-10-03T17:26:06.922Z",
+  "collectedAt": "2026-10-03T17:26:06.922Z",
   "catalogPaths": [
     "/collections/shoes"
   ],
@@ -11,13 +11,13 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 38,
-    "collected": 38,
+    "sourceTotal": 71,
+    "collected": 71,
     "missing": 0,
     "coverage": 100,
-    "excluded": 33,
+    "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 38,
+    "galleryComplete": 71,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -28,6 +28,66 @@
   "referenceFootwearMatch": null,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "manu-atelier--mule-white",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Mule White",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_13.jpg?v=1774435442"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/mule-white",
+          "handle": "mule-white",
+          "title": "Mule White",
+          "color": null,
+          "sku": "2140000049116",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_13.jpg?v=1774435442"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--chelsea-boots-mocha-soft",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Chelsea Boots Mocha Soft",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/inYwnH0c.jpg?v=1752661894",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/QDPJlrZz.jpg?v=1752661894",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/ugl5c1wy.jpg?v=1752661894"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/chelsea-boots-mocha",
+          "handle": "chelsea-boots-mocha",
+          "title": "Chelsea Boots Mocha Soft",
+          "color": "Mocha",
+          "sku": "2140000031661",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/inYwnH0c.jpg?v=1752661894",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/QDPJlrZz.jpg?v=1752661894",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/ugl5c1wy.jpg?v=1752661894"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
     {
       "modelFamilyId": "manu-atelier--almond-toe-sandals-black-suede",
       "brand": "MANU ATELIER",
@@ -231,6 +291,36 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "manu-atelier--city-mule-vanilla",
+      "brand": "MANU ATELIER",
+      "canonicalName": "City Mule Vanilla",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019027CITYMULESVANILLANAPPALEATHER_1.jpg?v=1785768831",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019027CITYMULESVANILLANAPPALEATHER_2.jpg?v=1785768831"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/city-mules-vanilla",
+          "handle": "city-mules-vanilla",
+          "title": "City Mules Vanilla",
+          "color": "City Mules Vanilla",
+          "sku": "2140000012189",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019027CITYMULESVANILLANAPPALEATHER_1.jpg?v=1785768831",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019027CITYMULESVANILLANAPPALEATHER_2.jpg?v=1785768831"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "manu-atelier--pointy-toe-ankle-boot-high-gloss",
       "brand": "MANU ATELIER",
       "canonicalName": "Pointy Toe Ankle Boot High Gloss",
@@ -263,6 +353,54 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "manu-atelier--xx-mules-vanilla-black",
+      "brand": "MANU ATELIER",
+      "canonicalName": "XX Mules Vanilla & Black",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019114XXMULESNAPPALEATHERVANILLA_BLACK.jpg?v=1774435530",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019114XXMULESNAPPALEATHERVANILLA_BLACKSIDE_1.jpg?v=1774435529",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019036_XXMULES_NAPPALEATHER_VANILLA_DUSTYGREEN_BLACK.jpg?v=1774435257",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019036_XXMULES_NAPPALEATHER_VANILLA_DUSTYGREEN_BLACKSIDE_a9d19da2-7d2c-436a-99e2-80bb78840da4.jpg?v=1774435257"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/xx-mules-vanilla-black",
+          "handle": "xx-mules-vanilla-black",
+          "title": "XX Mules Vanilla & Black",
+          "color": null,
+          "sku": "2140000017306",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019114XXMULESNAPPALEATHERVANILLA_BLACK.jpg?v=1774435530",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019114XXMULESNAPPALEATHERVANILLA_BLACKSIDE_1.jpg?v=1774435529"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/xx-mules-vanilla-dusty-green-black",
+          "handle": "xx-mules-vanilla-dusty-green-black",
+          "title": "XX Mules Vanilla & Dusty Green & Black",
+          "color": "XX Mules Vanilla & Dusty Green & Black",
+          "sku": "2140000012615",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019036_XXMULES_NAPPALEATHER_VANILLA_DUSTYGREEN_BLACK.jpg?v=1774435257",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019036_XXMULES_NAPPALEATHER_VANILLA_DUSTYGREEN_BLACKSIDE_a9d19da2-7d2c-436a-99e2-80bb78840da4.jpg?v=1774435257"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "manu-atelier--pointy-toe-ankle-boot-vanilla",
       "brand": "MANU ATELIER",
       "canonicalName": "Pointy Toe Ankle Boot Vanilla",
@@ -283,6 +421,38 @@
             "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023722_Pointy-Toe-Ankle-Boots_Vanilla-Soft-Calf.jpg?v=1762242806"
           ],
           "category": "ANKLE_BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--duck-vanilla",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Duck Vanilla",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_VanillaBlack_Side_20b3cecd-313b-4850-bd4d-5a14c4031ec5.jpg?v=1774435224",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_VanillaBlack_Side_1_54064a60-bafc-43bb-9e92-874e49c914c9.jpg?v=1774435224",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/51_1_d8df38bf-b8d0-4ad0-ab31-bc0065f96eac.jpg?v=1774435225"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/duck-pumps-vanilla-black",
+          "handle": "duck-pumps-vanilla-black",
+          "title": "Duck Pumps Vanilla & Black",
+          "color": "Duck Pumps Vanilla & Black",
+          "sku": "2140000012288",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_VanillaBlack_Side_20b3cecd-313b-4850-bd4d-5a14c4031ec5.jpg?v=1774435224",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_VanillaBlack_Side_1_54064a60-bafc-43bb-9e92-874e49c914c9.jpg?v=1774435224",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/51_1_d8df38bf-b8d0-4ad0-ab31-bc0065f96eac.jpg?v=1774435225"
+          ],
+          "category": "PUMP",
           "productType": "",
           "inNewArrivals": false,
           "isNew": false,
@@ -325,6 +495,132 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "manu-atelier--city-mule",
+      "brand": "MANU ATELIER",
+      "canonicalName": "City Mule",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019026_CITYMULESNAPPALEATHERORANGECAMELBLACKSIDE.jpg?v=1774435374",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019026_CITYMULESNAPPALEATHERORANGECAMELBLACKFRONT__1.jpg?v=1774435374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/city-mules-orange-camel-black",
+          "handle": "city-mules-orange-camel-black",
+          "title": "City Mules Orange Camel & Black",
+          "color": "s Orange Camel & Black",
+          "sku": "2140000012103",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019026_CITYMULESNAPPALEATHERORANGECAMELBLACKSIDE.jpg?v=1774435374",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019026_CITYMULESNAPPALEATHERORANGECAMELBLACKFRONT__1.jpg?v=1774435374"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--duck-marsala",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Duck Marsala",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Side_c7889e47-9933-47bb-8c82-4afecedfba8c.jpg?v=1779709722",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Front_da748c2a-f725-44e0-8821-972312fffe71.jpg?v=1779709722",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Back_b07d2612-e7b8-4421-b15a-0878a566c701.jpg?v=1779709723"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/duck-pumps-orange-camel-marsala",
+          "handle": "duck-pumps-orange-camel-marsala",
+          "title": "Duck Pumps Orange Camel & Marsala",
+          "color": "Duck Pumps Orange Camel & Marsala",
+          "sku": "2140000018457",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Side_c7889e47-9933-47bb-8c82-4afecedfba8c.jpg?v=1779709722",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Front_da748c2a-f725-44e0-8821-972312fffe71.jpg?v=1779709722",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DuckPumps_OrangeCamel_Marsala_Back_b07d2612-e7b8-4421-b15a-0878a566c701.jpg?v=1779709723"
+          ],
+          "category": "PUMP",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--duck-cabarnet",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Duck Cabarnet",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/53.jpg?v=1774435475",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/55.jpg?v=1774435475",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/54.jpg?v=1774435475"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/duck-pumps-orange-camel-cabarnet",
+          "handle": "duck-pumps-orange-camel-cabarnet",
+          "title": "Duck Pumps Orange Camel & Cabarnet",
+          "color": "Duck Pumps Orange Camel & Cabarnet",
+          "sku": "2140000012356",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/53.jpg?v=1774435475",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/55.jpg?v=1774435475",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/54.jpg?v=1774435475"
+          ],
+          "category": "PUMP",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--xx-mule-marsala-cabarnet",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Xx Mule Marsala Cabarnet",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_9.jpg?v=1774435413",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_10.jpg?v=1774435413",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_11.jpg?v=1774435413"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/xx-mules-marsala-cabarnet",
+          "handle": "xx-mules-marsala-cabarnet",
+          "title": "XX Mules Marsala & Cabarnet",
+          "color": "XX Mules Marsala & Cabarnet",
+          "sku": "2140000012530",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_9.jpg?v=1774435413",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_10.jpg?v=1774435413",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_11.jpg?v=1774435413"
+          ],
+          "category": "MULE",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "manu-atelier--pointy-toe-ankle-boot-rusty-high-gloss",
       "brand": "MANU ATELIER",
       "canonicalName": "Pointy Toe Ankle Boot Rusty High Gloss",
@@ -345,6 +641,34 @@
             "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023115_PointyToeBoots_RustyRedHighGlossCalfLeather.jpg?v=1764316690"
           ],
           "category": "ANKLE_BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--mule-burgundy-yellow",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Mule Burgundy & Yellow",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_12.jpg?v=1774434806"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/mule-burgundy-vanilla",
+          "handle": "mule-burgundy-vanilla",
+          "title": "Mule Burgundy & Yellow",
+          "color": null,
+          "sku": "2140000048973",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Untitled_2000x2680px_720x1280px_2000x2680px_12.jpg?v=1774434806"
+          ],
+          "category": "MULE",
           "productType": "",
           "inNewArrivals": false,
           "isNew": false,
@@ -383,6 +707,86 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--duck-boots-stretch-vegan-patent-bone",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Duck Boots Stretch Vegan Patent Bone",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023434_Stretch-Duck-Boots_Bone-Vegan-Patent_Side-1.jpg?v=1752660553",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023434_Stretch-Duck-Boots_Bone-Vegan-Patent_Angle-1.jpg?v=1752660553",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021326_Stretch-Duck-Boots_Black-Vegan-Leather_Side.jpg?v=1756465015",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021326_Stretch-Duck-Boots_-Black-Vegan-Leather_Angle_2_copy.jpg?v=1756465015",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021325_Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Side.jpg?v=1760692979",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Faux-Leather-Duck-Boots_Walnut_Side.jpg?v=1752740499"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/duck-boots-stretch-vegan-patent-bone",
+          "handle": "duck-boots-stretch-vegan-patent-bone",
+          "title": "Duck Boots Stretch Vegan Patent Bone",
+          "color": "Bone",
+          "sku": "2140000035881",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023434_Stretch-Duck-Boots_Bone-Vegan-Patent_Side-1.jpg?v=1752660553",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023434_Stretch-Duck-Boots_Bone-Vegan-Patent_Angle-1.jpg?v=1752660553"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-black",
+          "handle": "duck-boots-stretch-vegan-leather-black",
+          "title": "Duck Boots Stretch Vegan Leather Black",
+          "color": "Black",
+          "sku": "2140000025233",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021326_Stretch-Duck-Boots_Black-Vegan-Leather_Side.jpg?v=1756465015",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021326_Stretch-Duck-Boots_-Black-Vegan-Leather_Angle_2_copy.jpg?v=1756465015"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-light-grey",
+          "handle": "duck-boots-stretch-vegan-leather-light-grey",
+          "title": "Duck Boots Stretch Vegan Leather Light Grey",
+          "color": "Light Grey",
+          "sku": "2140000025165",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021325_Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Side.jpg?v=1760692979"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-walnut",
+          "handle": "duck-boots-stretch-vegan-leather-walnut",
+          "title": "Duck Boots Stretch Vegan Leather Walnut",
+          "color": "Walnut",
+          "sku": "2140000025097",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Faux-Leather-Duck-Boots_Walnut_Side.jpg?v=1752740499"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "manu-atelier--tap-loafer-high-gloss",
@@ -555,6 +959,78 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "manu-atelier--over-knee-high-duck-boots-black-soft",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Over Knee High Duck Boots Black Soft",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021333_Over-Knee-High-Stretch-Duck-Boots_Black-Vegan-Leather_Side.jpg?v=1762242728",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/3-1_b4d787f4-23b1-4d3d-97cf-75eb1a903f0c.jpg?v=1762242728",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Over-Knee-High-Faux-Leather-Duck-Boots_Black_Side-1-e1708671678151.jpg?v=1762242728",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Side.jpg?v=1762242740",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Front.jpg?v=1762242741",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Back.jpg?v=1762242741",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Angle-1.jpg?v=1752662423",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Side-1.jpg?v=1752662424",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Back-1.jpg?v=1752662423"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/over-knee-high-duck-boots-black",
+          "handle": "over-knee-high-duck-boots-black",
+          "title": "Over Knee High Duck Boots Black Soft",
+          "color": "Black",
+          "sku": "2140000025431",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021333_Over-Knee-High-Stretch-Duck-Boots_Black-Vegan-Leather_Side.jpg?v=1762242728",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/3-1_b4d787f4-23b1-4d3d-97cf-75eb1a903f0c.jpg?v=1762242728",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Over-Knee-High-Faux-Leather-Duck-Boots_Black_Side-1-e1708671678151.jpg?v=1762242728"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/over-knee-high-duck-boots-light-grey",
+          "handle": "over-knee-high-duck-boots-light-grey",
+          "title": "Over Knee High Duck Boots Light Grey",
+          "color": "Light Grey",
+          "sku": "2140000025363",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Side.jpg?v=1762242740",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Front.jpg?v=1762242741",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021332_Over-Knee-High-Stretch-Duck-Boots_Light-Grey-Vegan-Leather_Back.jpg?v=1762242741"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://manuatelier.com/products/over-knee-high-duck-boots-walnut",
+          "handle": "over-knee-high-duck-boots-walnut",
+          "title": "Over Knee High Duck Boots Walnut",
+          "color": "Walnut",
+          "sku": "2140000025301",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Angle-1.jpg?v=1752662423",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Side-1.jpg?v=1752662424",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2021330_Over-Knee-High-Duck-Boots_Walnut_Back-1.jpg?v=1752662423"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "manu-atelier--tap-loafer-high-gloss--the-tap-loafers-mocha-high-gloss",
       "brand": "MANU ATELIER",
       "canonicalName": "Tap Loafer High Gloss",
@@ -587,6 +1063,76 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "manu-atelier--knee-high-pointy-toe-boot-high-gloss",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Knee High Pointy Toe Boot High Gloss",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Side.jpg?v=1762242843",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Manu_Atelier_Pointy_Toe_Boots_Homepage.001_033cd84c-cb2d-42ed-a67b-ca85032d9416.jpg?v=1762242842",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Angle.jpg?v=1762242843",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Back.jpg?v=1762242842",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Side-1072x1600.jpg?v=1762242842"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/knee-high-pointy-toe-boots-black-high-gloss",
+          "handle": "knee-high-pointy-toe-boots-black-high-gloss",
+          "title": "Knee High Pointy Toe Boots Black High Gloss",
+          "color": "Black",
+          "sku": "2140000032392",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Side.jpg?v=1762242843",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Manu_Atelier_Pointy_Toe_Boots_Homepage.001_033cd84c-cb2d-42ed-a67b-ca85032d9416.jpg?v=1762242842",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Angle.jpg?v=1762242843",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Back.jpg?v=1762242842",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023111_Knee-High-Pointy-Toe-Boots_Black-High-Gloss-Nappa-Leather_Side-1072x1600.jpg?v=1762242842"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--knee-high-pointy-toe-boot-vanilla",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Knee High Pointy Toe Boot Vanilla",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Side_7c4ab3e9-0b30-4a05-b9ec-ea90d7e19dbd.jpg?v=1762242595",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Angle.jpg?v=1762242595",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Side.jpg?v=1762242595",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Back_1.jpg?v=1762242595"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/knee-high-pointy-toe-boots-vanilla",
+          "handle": "knee-high-pointy-toe-boots-vanilla",
+          "title": "Knee High Pointy Toe Boots Vanilla",
+          "color": "Vanilla",
+          "sku": "2140000035393",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Side_7c4ab3e9-0b30-4a05-b9ec-ea90d7e19dbd.jpg?v=1762242595",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Angle.jpg?v=1762242595",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Side.jpg?v=1762242595",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023425_Knee-High-Pointy-Toe-Boots_Vanilla-Nappa-Leather_Back_1.jpg?v=1762242595"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "manu-atelier--chae-ankle-boot-vanilla",
       "brand": "MANU ATELIER",
       "canonicalName": "Chae Ankle Boot Vanilla",
@@ -605,6 +1151,124 @@
             "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019043_ChaeBootsVanillaSide_aa77e331-b271-44dd-bb65-f84bf0a2a39c.jpg?v=1752661633"
           ],
           "category": "ANKLE_BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--knee-high-riding-boot",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Knee High Riding Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024766_Knee_High_Riding_Boots_Black_Calf_Skin_Leather.jpg?v=1752665486"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/knee-high-riding-boots-black",
+          "handle": "knee-high-riding-boots-black",
+          "title": "Knee High Riding Boots Black",
+          "color": "Black",
+          "sku": "2140000045620",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024766_Knee_High_Riding_Boots_Black_Calf_Skin_Leather.jpg?v=1752665486"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--deniz-boot-safari",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Deniz Boot Safari",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2_5_1.jpg?v=1752661854",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/1_6_1.jpg?v=1752661855"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/deniz-boots-black-safari-suede",
+          "handle": "deniz-boots-black-safari-suede",
+          "title": "Deniz Boots Black Soft & Safari Suede",
+          "color": "Deniz Boots Black Soft & Safari Suede",
+          "sku": "2140000011878",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2_5_1.jpg?v=1752661854",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/1_6_1.jpg?v=1752661855"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--deniz-boot-reddish",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Deniz Boot Reddish",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DENIZ-BOOTS-REDDISH-BROWN_CHESTNUT-SUEDE_VEGTAN._2_jpg_4.jpg?v=1752661776",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DENIZ-BOOTS-REDDISH-BROWN_CHESTNUT-SUEDE_VEGTAN_5.jpg?v=1752661776"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/deniz-boots-reddish-brown-chestnut",
+          "handle": "deniz-boots-reddish-brown-chestnut",
+          "title": "Deniz Boots Reddish Brown Soft & Chestnut Suede",
+          "color": "Deniz Boots Reddish Brown Soft & Chestnut Suede",
+          "sku": "2140000011946",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DENIZ-BOOTS-REDDISH-BROWN_CHESTNUT-SUEDE_VEGTAN._2_jpg_4.jpg?v=1752661776",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/DENIZ-BOOTS-REDDISH-BROWN_CHESTNUT-SUEDE_VEGTAN_5.jpg?v=1752661776"
+          ],
+          "category": "BOOT",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--knee-high-pointy-toe-boot-rusty-high-gloss",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Knee High Pointy Toe Boot Rusty High Gloss",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023112_Knee_High_Pointy_Toe_Boots__Rusty_Red_High_Gloss_Calf_Leather_Side.jpg?v=1762242658",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023112_KneeHighPointyToeBoots_RustyRedHighGlossCalfLeather_0796fb15-6551-40b2-9829-3cbd3f7f30eb.jpg?v=1762242658"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/knee-high-pointy-toe-boots-rusty-red-high-gloss",
+          "handle": "knee-high-pointy-toe-boots-rusty-red-high-gloss",
+          "title": "Knee High Pointy Toe Boots Rusty Red High Gloss",
+          "color": "Rusty Red",
+          "sku": "2140000032460",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023112_Knee_High_Pointy_Toe_Boots__Rusty_Red_High_Gloss_Calf_Leather_Side.jpg?v=1762242658",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2023112_KneeHighPointyToeBoots_RustyRedHighGlossCalfLeather_0796fb15-6551-40b2-9829-3cbd3f7f30eb.jpg?v=1762242658"
+          ],
+          "category": "BOOT",
           "productType": "",
           "inNewArrivals": false,
           "isNew": false,
@@ -737,6 +1401,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "manu-atelier--beste-slippers",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Beste Slippers",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Side-1.jpg?v=1752663515",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Front-1.jpg?v=1752663514",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Back.jpg?v=1752663514"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/beste-slippers-mocha-suede",
+          "handle": "beste-slippers-mocha-suede",
+          "title": "Beste Slippers Mocha Suede",
+          "color": "Mocha",
+          "sku": "2140000031524",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Side-1.jpg?v=1752663515",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Front-1.jpg?v=1752663514",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/Beste-Slippers_Mocha_Suede_Back.jpg?v=1752663514"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "manu-atelier--manu-flat-magic",
       "brand": "MANU ATELIER",
       "canonicalName": "Manu Flat Magic",
@@ -787,6 +1483,66 @@
             "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024715_MANUBALLETFLATSWITHDOUBLEBELT_SOFTCALFLEATHER_MAGIC_1.jpg?v=1751961408"
           ],
           "category": "BALLERINA",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--pina",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Pina",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019088_PINA_NAPPALEATHER_WHITE_1.jpg?v=1751961878",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019088_PINA_NAPPALEATHER_WHITE.jpg?v=1751961878"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/pina-white",
+          "handle": "pina-white",
+          "title": "Pina White Soft",
+          "color": "White",
+          "sku": "2140000015265",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019088_PINA_NAPPALEATHER_WHITE_1.jpg?v=1751961878",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019088_PINA_NAPPALEATHER_WHITE.jpg?v=1751961878"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--pina-high-gloss",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Pina High Gloss",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019085_PINA_HIGHGLOSSNAPPALEATHER_BLACK_1.jpg?v=1751961898",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019085_PINA_HIGHGLOSSNAPPALEATHER_BLACK.jpg?v=1751961898"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/pina-black-high-gloss",
+          "handle": "pina-black-high-gloss",
+          "title": "Pina Black High Gloss",
+          "color": "Pina Black High Gloss",
+          "sku": "2140000015043",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019085_PINA_HIGHGLOSSNAPPALEATHER_BLACK_1.jpg?v=1751961898",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019085_PINA_HIGHGLOSSNAPPALEATHER_BLACK.jpg?v=1751961898"
+          ],
+          "category": "OTHER_FOOTWEAR",
           "productType": "",
           "inNewArrivals": false,
           "isNew": false,
@@ -877,6 +1633,130 @@
             "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024731_CAGE_CHUNKY_SLIDES_SOFT_CALF_LEATHER_VANILLA.jpg?v=1751964041"
           ],
           "category": "SANDAL",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--rey-xx",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Rey Xx",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019067_Rey_Black_Side.jpg?v=1752740014",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/FREYAXX.jpg?v=1752740013"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/rey-xx-black",
+          "handle": "rey-xx-black",
+          "title": "Rey XX Black",
+          "color": "Black",
+          "sku": "2140000013742",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019067_Rey_Black_Side.jpg?v=1752740014",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/FREYAXX.jpg?v=1752740013"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--freya-xx",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Freya Xx",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019076_Freya_White_Front.jpg?v=1752740011",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019076_Freya_White_Side.jpg?v=1752740011"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/freya-xx-white",
+          "handle": "freya-xx-white",
+          "title": "Freya XX White Soft",
+          "color": "White",
+          "sku": "2140000014404",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019076_Freya_White_Front.jpg?v=1752740011",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2019076_Freya_White_Side.jpg?v=1752740011"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--15-woven-slippers-water",
+      "brand": "MANU ATELIER",
+      "canonicalName": "15 Woven Slippers Water",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0005_2021120_15wovenleatherslipperswatergreen.jpg?v=1752741287",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0004_2021120_15wovenleatherslipperswatergreen2.jpg?v=1752741287",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/22.jpg?v=1752741287"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/15-woven-leather-slippers-water-green",
+          "handle": "15-woven-leather-slippers-water-green",
+          "title": "15 Woven Leather Slippers Water Green Soft",
+          "color": "Water Green",
+          "sku": "2140000022850",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0005_2021120_15wovenleatherslipperswatergreen.jpg?v=1752741287",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0004_2021120_15wovenleatherslipperswatergreen2.jpg?v=1752741287",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/22.jpg?v=1752741287"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--15-woven-slippers",
+      "brand": "MANU ATELIER",
+      "canonicalName": "15 Woven Slippers",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0000_2021123_15wovenleatherslippersblack_white.jpg?v=1752741374",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0001_2021123_15wovenleatherslippersblack_white2.jpg?v=1752741374",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/21.jpg?v=1752741373"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/15-woven-leather-slippers-white-black",
+          "handle": "15-woven-leather-slippers-white-black",
+          "title": "15 Woven Leather Slippers White & Black Soft",
+          "color": "Black",
+          "sku": "2140000023086",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0000_2021123_15wovenleatherslippersblack_white.jpg?v=1752741374",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/0001_2021123_15wovenleatherslippersblack_white2.jpg?v=1752741374",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/21.jpg?v=1752741373"
+          ],
+          "category": "OTHER_FOOTWEAR",
           "productType": "",
           "inNewArrivals": false,
           "isNew": false,
@@ -1093,39 +1973,130 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--manu-flip-flops-reddish",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Manu Flip Flops Reddish",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024723_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_REDDISH_BROWN_1.jpg?v=1751961952",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024723_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_REDDISH_BROWN.jpg?v=1751961952"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/manu-flip-flops-white-39134",
+          "handle": "manu-flip-flops-white-39134",
+          "title": "Manu Flip-Flops Reddish Brown Soft",
+          "color": "Reddish Brown",
+          "sku": "2140000042698",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024723_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_REDDISH_BROWN_1.jpg?v=1751961952",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024723_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_REDDISH_BROWN.jpg?v=1751961952"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "manu-atelier--manu-flip-flops",
+      "brand": "MANU ATELIER",
+      "canonicalName": "Manu Flip Flops",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024721_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_BLACK.jpg?v=1751961974",
+        "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024721_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_BLACK_1.jpg?v=1751961973"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://manuatelier.com/products/manu-flip-flops-black-39133",
+          "handle": "manu-flip-flops-black-39133",
+          "title": "Manu Flip-Flops Black Soft",
+          "color": "Black",
+          "sku": "2140000042551",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024721_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_BLACK.jpg?v=1751961974",
+            "https://cdn.shopify.com/s/files/1/0861/2288/9534/files/2024721_MANU_FLIP_FLOPS_SOFT_CALF_LEATHER_BLACK_1.jpg?v=1751961973"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     }
   ],
   "productUrls": [
     "https://manuatelier.com/products/manu-ballet-flats-with-double-belt-black-suede",
     "https://manuatelier.com/products/manu-ballet-flats-with-cross-over-ankle-strap-white",
     "https://manuatelier.com/products/manu-ballet-flats-with-cross-over-ankle-strap-merlot-suede",
+    "https://manuatelier.com/products/city-mules-vanilla",
     "https://manuatelier.com/products/pointy-toe-ankle-boots-black-high-gloss",
+    "https://manuatelier.com/products/xx-mules-vanilla-black",
     "https://manuatelier.com/products/pointy-toe-ankle-boots-vanilla-39336",
+    "https://manuatelier.com/products/duck-pumps-vanilla-black",
     "https://manuatelier.com/products/manu-ballet-flats-with-cross-over-ankle-strap-vanilla",
+    "https://manuatelier.com/products/xx-mules-vanilla-dusty-green-black",
     "https://manuatelier.com/products/manu-ballet-flats-with-cross-over-ankle-strap-black-suede",
+    "https://manuatelier.com/products/city-mules-orange-camel-black",
+    "https://manuatelier.com/products/duck-pumps-orange-camel-marsala",
+    "https://manuatelier.com/products/duck-pumps-orange-camel-cabarnet",
+    "https://manuatelier.com/products/xx-mules-marsala-cabarnet",
     "https://manuatelier.com/products/pointy-toe-ankle-boots-rusty-red-high-gloss",
+    "https://manuatelier.com/products/mule-burgundy-vanilla",
+    "https://manuatelier.com/products/mule-white",
     "https://manuatelier.com/products/merve-loafers-black",
+    "https://manuatelier.com/products/duck-boots-stretch-vegan-patent-bone",
     "https://manuatelier.com/products/the-tap-loafers-black-high-gloss",
     "https://manuatelier.com/products/manu-ballet-flats-vanilla",
     "https://manuatelier.com/products/manu-ballet-flats-deep-brown-suede",
     "https://manuatelier.com/products/merve-loafers-chocolate-suede-39138",
     "https://manuatelier.com/products/manu-ballet-flats-black",
     "https://manuatelier.com/products/manu-ballet-flats-black-shearling",
+    "https://manuatelier.com/products/over-knee-high-duck-boots-black",
     "https://manuatelier.com/products/the-tap-loafers-mocha-high-gloss",
+    "https://manuatelier.com/products/chelsea-boots-mocha",
+    "https://manuatelier.com/products/knee-high-pointy-toe-boots-black-high-gloss",
+    "https://manuatelier.com/products/knee-high-pointy-toe-boots-vanilla",
     "https://manuatelier.com/products/chae-ankle-boots-vanilla",
+    "https://manuatelier.com/products/knee-high-riding-boots-black",
+    "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-black",
+    "https://manuatelier.com/products/deniz-boots-black-safari-suede",
+    "https://manuatelier.com/products/over-knee-high-duck-boots-light-grey",
+    "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-light-grey",
     "https://manuatelier.com/products/manu-ballet-flats-with-cross-over-ankle-strap-chocolate-suede",
+    "https://manuatelier.com/products/over-knee-high-duck-boots-walnut",
+    "https://manuatelier.com/products/deniz-boots-reddish-brown-chestnut",
+    "https://manuatelier.com/products/knee-high-pointy-toe-boots-rusty-red-high-gloss",
     "https://manuatelier.com/products/manu-ballet-flats-red-shearling",
     "https://manuatelier.com/products/merve-loafers-sigaro-suede-39137",
     "https://manuatelier.com/products/the-tap-loafers-ruby-brown-suede",
     "https://manuatelier.com/products/merve-loafers-vanilla",
+    "https://manuatelier.com/products/beste-slippers-mocha-suede",
+    "https://manuatelier.com/products/duck-boots-stretch-vegan-leather-walnut",
     "https://manuatelier.com/products/manu-ballet-flats-magic",
     "https://manuatelier.com/products/manu-ballet-flats-with-double-belt-magic",
+    "https://manuatelier.com/products/pina-white",
+    "https://manuatelier.com/products/pina-black-high-gloss",
     "https://manuatelier.com/products/manu-ballet-flats-with-double-belt-white",
     "https://manuatelier.com/products/manu-ballet-flats-with-double-belt-black",
     "https://manuatelier.com/products/cage-chunky-slides-sigaro-suede",
     "https://manuatelier.com/products/manu-ballet-flats-with-double-belt-chocolate-suede",
     "https://manuatelier.com/products/cage-chunky-slides-black",
     "https://manuatelier.com/products/cage-chunky-slides-vanilla",
+    "https://manuatelier.com/products/rey-xx-black",
+    "https://manuatelier.com/products/freya-xx-white",
+    "https://manuatelier.com/products/15-woven-leather-slippers-water-green",
+    "https://manuatelier.com/products/15-woven-leather-slippers-white-black",
     "https://manuatelier.com/products/almond-toe-sandals-vanilla",
     "https://manuatelier.com/products/almond-toe-sandals-black-high-gloss",
     "https://manuatelier.com/products/almond-toe-sandals-black-suede",
@@ -1133,6 +2104,8 @@
     "https://manuatelier.com/products/sandals-du-jour-reddish-brown-39132",
     "https://manuatelier.com/products/sandals-du-jour-vanilla-39131",
     "https://manuatelier.com/products/lace-sandal-rothko-pink",
-    "https://manuatelier.com/products/sandals-du-jour-black-39130"
+    "https://manuatelier.com/products/sandals-du-jour-black-39130",
+    "https://manuatelier.com/products/manu-flip-flops-white-39134",
+    "https://manuatelier.com/products/manu-flip-flops-black-39133"
   ]
 }

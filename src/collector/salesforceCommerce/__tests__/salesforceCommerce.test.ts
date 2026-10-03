@@ -370,3 +370,15 @@ describe("Salesforce Commerce women's footwear adapters", () => {
     expect(SALESFORCE_INTEGRATION_PATCH).toContain("baseline");
   });
 });
+
+it('reports a terminal-page count mismatch instead of a pagination cap, and retains last-good',async()=>{
+ const http:SalesforceHttp={async fetchText(url){return {ok:true,status:200,url,text:casadeiHtml({offset:0,total:3,hits:[
+  casadeiHit({id:'A',name:'Leather Sandal',model:'A',categoryId:'shoes-sandals',categoryName:'Sandals'}),
+  casadeiHit({id:'A',name:'Leather Sandal',model:'A',categoryId:'shoes-sandals',categoryName:'Sandals'}),
+  casadeiHit({id:'B',name:'Leather Sandal',model:'B',categoryId:'shoes-sandals',categoryName:'Sandals'}),
+ ]})}}};
+ const result=await collectCasadeiWomensShoes(http);
+ expect(result.paginationExhausted).toBe(true);
+ expect(result.blocker).toBe('SOURCE_TOTAL_NOT_RECONCILED');
+ expect(decideSalesforcePublish({previousAccepted:5,status:result.status,acceptedFootwear:result.accepted.length})).toMatchObject({publish:false,retainPrevious:true});
+});

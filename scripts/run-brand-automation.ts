@@ -35,7 +35,7 @@ function liveHttp(): WaveHttp {
             data = null;
           }
         }
-        return { ok: response.ok, status: response.status, url: response.url, data, text: text.slice(0, 4_000) };
+        return { ok: response.ok, status: response.status, url: response.url, data, text };
       } catch (error) {
         return {
           ok: false,

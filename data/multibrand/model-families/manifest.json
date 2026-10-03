@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-03T16:07:16.920Z",
-  "totalFamilies": 17421,
-  "shardCount": 58,
+  "generatedAt": "2026-10-03T17:35:49.461Z",
+  "totalFamilies": 17522,
+  "shardCount": 69,
   "shards": [
     {
       "file": "brands/4ccccees.json",
@@ -22,8 +22,8 @@
     },
     {
       "file": "brands/ala-a.json",
-      "familyCount": 157,
-      "bytes": 1169010
+      "familyCount": 216,
+      "bytes": 1526757
     },
     {
       "file": "brands/alexandre-birman.json",
@@ -66,6 +66,11 @@
       "bytes": 674415
     },
     {
+      "file": "brands/carel.json",
+      "familyCount": 95,
+      "bytes": 768662
+    },
+    {
       "file": "brands/cult-gaia.json",
       "familyCount": 105,
       "bytes": 677841
@@ -74,6 +79,11 @@
       "file": "brands/dear-frances.json",
       "familyCount": 59,
       "bytes": 373970
+    },
+    {
+      "file": "brands/dolce-vita.json",
+      "familyCount": 647,
+      "bytes": 7718779
     },
     {
       "file": "brands/emme-parsons.json",
@@ -91,14 +101,24 @@
       "bytes": 1391282
     },
     {
+      "file": "brands/flattered.json",
+      "familyCount": 117,
+      "bytes": 1205821
+    },
+    {
       "file": "brands/fly-london.json",
       "familyCount": 965,
       "bytes": 3326039
     },
     {
       "file": "brands/freda-salvador.json",
-      "familyCount": 114,
-      "bytes": 825919
+      "familyCount": 119,
+      "bytes": 981676
+    },
+    {
+      "file": "brands/hereu.json",
+      "familyCount": 100,
+      "bytes": 751775
     },
     {
       "file": "brands/isabel-marant.json",
@@ -126,6 +146,11 @@
       "bytes": 689598
     },
     {
+      "file": "brands/larroude.json",
+      "familyCount": 346,
+      "bytes": 3302104
+    },
+    {
       "file": "brands/le-monde-beryl.json",
       "familyCount": 114,
       "bytes": 830096
@@ -136,9 +161,19 @@
       "bytes": 1323189
     },
     {
+      "file": "brands/lemaire.json",
+      "familyCount": 74,
+      "bytes": 453845
+    },
+    {
       "file": "brands/loeffler-randall.json",
-      "familyCount": 185,
-      "bytes": 1123424
+      "familyCount": 193,
+      "bytes": 1286836
+    },
+    {
+      "file": "brands/luis-onofre.json",
+      "familyCount": 267,
+      "bytes": 1881868
     },
     {
       "file": "brands/maison-margiela.json",
@@ -149,6 +184,11 @@
       "file": "brands/malone-souliers.json",
       "familyCount": 175,
       "bytes": 1046115
+    },
+    {
+      "file": "brands/manu-atelier.json",
+      "familyCount": 46,
+      "bytes": 221692
     },
     {
       "file": "brands/maray.json",
@@ -167,8 +207,13 @@
     },
     {
       "file": "brands/massimo-dutti.json",
-      "familyCount": 107,
-      "bytes": 1138565
+      "familyCount": 112,
+      "bytes": 1264378
+    },
+    {
+      "file": "brands/naguisa.json",
+      "familyCount": 151,
+      "bytes": 667802
     },
     {
       "file": "brands/naked-wolfe.json",
@@ -217,8 +262,8 @@
     },
     {
       "file": "brands/sarah-flint.json",
-      "familyCount": 92,
-      "bytes": 686593
+      "familyCount": 94,
+      "bytes": 821893
     },
     {
       "file": "brands/schutz.json",
@@ -226,9 +271,19 @@
       "bytes": 7146142
     },
     {
+      "file": "brands/sophia-webster.json",
+      "familyCount": 178,
+      "bytes": 781553
+    },
+    {
       "file": "brands/souliers-martinez.json",
       "familyCount": 64,
       "bytes": 682538
+    },
+    {
+      "file": "brands/st-agni.json",
+      "familyCount": 108,
+      "bytes": 786313
     },
     {
       "file": "brands/staud.json",
@@ -277,23 +332,23 @@
     },
     {
       "file": "part-000.json",
-      "familyCount": 1982,
-      "bytes": 16766130
+      "familyCount": 1414,
+      "bytes": 8214724
     },
     {
       "file": "part-001.json",
-      "familyCount": 2140,
-      "bytes": 16773515
+      "familyCount": 1181,
+      "bytes": 9330821
     },
     {
       "file": "part-002.json",
-      "familyCount": 2337,
-      "bytes": 16775067
+      "familyCount": 1413,
+      "bytes": 8560035
     },
     {
       "file": "part-003.json",
-      "familyCount": 837,
-      "bytes": 4769390
+      "familyCount": 1181,
+      "bytes": 6771124
     }
   ]
 }

@@ -51,6 +51,7 @@ const DENIED_PRODUCT_TYPES = new Set([
   "shoe accessories",
   "shoe accessory",
   "shoe care",
+  "foot care",
   "sunglasses",
   "underwear",
   "socks",
@@ -100,6 +101,9 @@ export function classifyWomensFootwear(input: ScopedProductInput): FootwearScope
 
   if (isDeniedProductType(productType)) {
     return { decision: "excluded", reason: `product_type:${normalizeProductType(productType)}` };
+  }
+  if (/\b(?:infant|toddler|kids?|children|junior)\b/i.test(`${input.title} ${input.handle ?? ""} ${(input.tags ?? []).join(" ")}`)) {
+    return { decision: "excluded", reason: "childrens-only" };
   }
   if (isMensOnlyProduct(gateInput)) {
     return { decision: "excluded", reason: "mens-only" };

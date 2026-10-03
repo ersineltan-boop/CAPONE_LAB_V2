@@ -103,7 +103,7 @@ export function familiesMissingFromDelivery(
 
 export function reclassifyWaveFamily(
   family: ModelFamily,
-  descriptionOrOptions?: string | null | { description?: string | null; tags?: string | null },
+  descriptionOrOptions?: string | null | { description?: string | null; tags?: string | null; title?: string; productType?: string },
 ): ModelFamily {
   if ((family.primaryCategory ?? "UNCLASSIFIED") !== "UNCLASSIFIED") return family;
   const options =
@@ -113,8 +113,8 @@ export function reclassifyWaveFamily(
   const sourceName = family.sourceSightings?.[0]?.sourceCategories?.[0]?.categoryName ?? null;
   const title = family.variants[0]?.title ?? family.canonicalName;
   const primary = classifyOfficialFootwear({
-    title,
-    productType: sourceName,
+    title: options.title ?? title,
+    productType: options.productType ?? sourceName,
     description: options.description,
     tags: options.tags,
   });

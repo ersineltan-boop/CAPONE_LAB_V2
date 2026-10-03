@@ -2,7 +2,7 @@ import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { isFullCatalogRootPath, normalizeCollectionPath } from "./fullCoveragePaths";
 
 const FOOTWEAR =
-  /shoe|footwear|boot|sandal|pump|loafer|sneaker|heel|flat|mule|clog|espadr|oxford|derby|ballerin|slipper|slide|wedge|trainer|mary.?jane|platform|stiletto|moccasin|brogue|court|thong|flip.?flop|wellington|rain.?boot|ankle|knee.?high|over.?the.?knee|ballet|clog|sapato|sapatilha|soca|salto|rasteira|chinelo|mocassim|escarpin|chaussure|bottine|ballerine|sabot/i;
+  /shoe|footwear|boot|sandal|pump|loafer|sneaker|heel|flat|mule|clog|espadr|oxford|derby|ballerin|slipper|slide|wedge|trainer|mary.?jane|platform|stiletto|moccasin|brogue|court|thong|flip.?flop|wellington|rain.?boot|ankle|knee.?high|over.?the.?knee|ballet|clog|zapato|alpargata|sapato|sapatilha|soca|salto|rasteira|chinelo|mocassim|escarpin|chaussure|bottine|ballerine|sabot/i;
 
 const NOT_FOOTWEAR =
   /\b(bag|handbag|dress|skirt|pant|trouser|jean|shirt|jacket|coat|fragrance|beauty|jewelry|jewellery|candle|gift.?card|ready.?to.?wear|apparel|clothing|lingerie|swim)\b/i;

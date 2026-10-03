@@ -2,8 +2,8 @@
   "slug": "luis-onofre",
   "brand": "LUIS ONOFRE",
   "officialUrl": "https://luisonofre.com",
-  "snapshotId": "luis-onofre:2026-09-26T11:56:35.990Z",
-  "collectedAt": "2026-09-26T11:56:35.990Z",
+  "snapshotId": "luis-onofre:2026-10-03T17:24:18.580Z",
+  "collectedAt": "2026-10-03T17:24:18.580Z",
   "catalogPaths": [
     "/collections/all-shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 178,
-    "collected": 178,
+    "sourceTotal": 153,
+    "collected": 153,
     "missing": 0,
     "coverage": 100,
-    "excluded": 0,
+    "excluded": 26,
     "paginationExhausted": true,
-    "galleryComplete": 178,
+    "galleryComplete": 153,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 64,
+  "newArrivalsFootwear": 34,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -261,6 +261,44 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "luis-onofre--locket-strappy-sandal",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Locket Strappy Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-2.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-3.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-4.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-5.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-6.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6147-01mflocket-black-strappy-sandals",
+          "handle": "6147-01mflocket-black-strappy-sandals",
+          "title": "Locket Black Strappy Sandals",
+          "color": "Locket Black Strappy Sandals",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-2.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-3.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-4.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-5.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-6.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013"
+          ],
+          "category": "SANDAL",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "luis-onofre--rubra-wedge",
       "brand": "LUIS ONOFRE",
       "canonicalName": "Rubra Wedge",
@@ -292,12 +330,12 @@
           ],
           "category": "WEDGE",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -332,12 +370,12 @@
           ],
           "category": "WEDGE",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -370,12 +408,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -410,12 +448,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -448,12 +486,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -486,12 +524,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -528,12 +566,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -574,12 +612,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -614,12 +652,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -656,12 +694,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -698,12 +736,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -736,12 +774,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -776,12 +814,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -814,12 +852,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -852,12 +890,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -890,12 +928,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -930,12 +968,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -970,12 +1008,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1008,12 +1046,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1048,12 +1086,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1088,12 +1126,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1126,12 +1164,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1164,12 +1202,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1202,12 +1240,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1242,12 +1280,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1282,12 +1320,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1322,12 +1360,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1358,12 +1396,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1398,12 +1436,12 @@
           ],
           "category": "SLINGBACK",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1436,12 +1474,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1474,12 +1512,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2232,7 +2270,7 @@
       "modelFamilyId": "luis-onofre--vintage-brown-mules",
       "brand": "LUIS ONOFRE",
       "canonicalName": "Vintage Brown Mules",
-      "category": "MULE",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-5866-VintageBrownMules.jpg?v=1751555301",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-5866-VintageBrownMules-6.jpg?v=1751555301",
@@ -2256,7 +2294,7 @@
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-5866-VintageBrownMules-5.jpg?v=1751555301",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-5866-VintageBrownMules-4.jpg?v=1751555301"
           ],
-          "category": "MULE",
+          "category": "BOOT",
           "productType": "Sandals",
           "inNewArrivals": true,
           "isNew": true,
@@ -2764,306 +2802,6 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--lusco",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Lusco",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown.jpg?v=1752233907",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-6.jpg?v=1752233907",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-2.jpg?v=1752233907",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-3.jpg?v=1752233907",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-4.jpg?v=1752233907",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-5.jpg?v=1752233906"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs0972-05",
-          "handle": "hs0972-05",
-          "title": "Lusco Brown",
-          "color": "Brown",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown.jpg?v=1752233907",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-6.jpg?v=1752233907",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-2.jpg?v=1752233907",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-3.jpg?v=1752233907",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-4.jpg?v=1752233907",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_03-LuscoBrown-5.jpg?v=1752233906"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--lonrenzo",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Lonrenzo",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack.jpg?v=1752234451",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-6.jpg?v=1752234451",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-2.jpg?v=1752234451",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-3.jpg?v=1752234451",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-4.jpg?v=1752234451",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-5.jpg?v=1752234451"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs1059",
-          "handle": "hs1059",
-          "title": "Lonrenzo Black",
-          "color": "Black",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack.jpg?v=1752234451",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-6.jpg?v=1752234451",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-2.jpg?v=1752234451",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-3.jpg?v=1752234451",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-4.jpg?v=1752234451",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059-LonrenzoBlack-5.jpg?v=1752234451"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--lusco--hs0972-04",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Lusco",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown.jpg?v=1752233742",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-6.jpg?v=1752233742",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-2.jpg?v=1752233742",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-3.jpg?v=1752233742",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-5.jpg?v=1752233742",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-4.jpg?v=1752233730"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs0972-04",
-          "handle": "hs0972-04",
-          "title": "Lusco Dark Brown",
-          "color": "Dark Brown",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown.jpg?v=1752233742",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-6.jpg?v=1752233742",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-2.jpg?v=1752233742",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-3.jpg?v=1752233742",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-5.jpg?v=1752233742",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_04-LuscoDarkBrown-4.jpg?v=1752233730"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--lusco--hs0972-03",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Lusco",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack.jpg?v=1752233519",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-3.jpg?v=1752233519",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-2.jpg?v=1752233519",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-4.jpg?v=1752233519",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-5.jpg?v=1752233519"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs0972-03",
-          "handle": "hs0972-03",
-          "title": "Lusco Black",
-          "color": "Black",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack.jpg?v=1752233519",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-3.jpg?v=1752233519",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-2.jpg?v=1752233519",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-4.jpg?v=1752233519",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS0972_05-LuscoBlack-5.jpg?v=1752233519"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--lorenzo-ligth",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Lorenzo Ligth",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown.jpg?v=1752235039",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-6.jpg?v=1752235039",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-2.jpg?v=1752235039",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-3.jpg?v=1752235039",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-4.jpg?v=1752235039",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-5.jpg?v=1752235039"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs1059-02",
-          "handle": "hs1059-02",
-          "title": "Lorenzo Ligth Brown",
-          "color": "Brown",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown.jpg?v=1752235039",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-6.jpg?v=1752235039",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-2.jpg?v=1752235039",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-3.jpg?v=1752235039",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-4.jpg?v=1752235039",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1059_02-LorenzoLigthBrown-5.jpg?v=1752235039"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--urban",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Urban",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban.jpg?v=1752234221",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-6.jpg?v=1752234221",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-2.jpg?v=1752234221",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-3.jpg?v=1752234221",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-4.jpg?v=1752234221",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-5.jpg?v=1752234221"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs1058-01",
-          "handle": "hs1058-01",
-          "title": "Urban",
-          "color": null,
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban.jpg?v=1752234221",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-6.jpg?v=1752234221",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-2.jpg?v=1752234221",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-3.jpg?v=1752234221",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-4.jpg?v=1752234221",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1058_01-Urban-5.jpg?v=1752234221"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--baltasar",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Baltasar",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown.jpg?v=1752234149",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-5.jpg?v=1752234149",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-2.jpg?v=1752234094",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-3.jpg?v=1752234093",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-4.jpg?v=1752234093"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs1057-01",
-          "handle": "hs1057-01",
-          "title": "Baltasar Light Brown",
-          "color": "Light Brown",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown.jpg?v=1752234149",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-5.jpg?v=1752234149",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-2.jpg?v=1752234094",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-3.jpg?v=1752234093",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057_01-BaltasarLigthBrown-4.jpg?v=1752234093"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--baltasar--hs1057",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Baltasar",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar.jpg?v=1752233985",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-6.jpg?v=1752233985",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-2.jpg?v=1752233985",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-3.jpg?v=1752233985",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-5.jpg?v=1752233985",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-4.jpg?v=1752233976"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs1057",
-          "handle": "hs1057",
-          "title": "Baltasar",
-          "color": null,
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar.jpg?v=1752233985",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-6.jpg?v=1752233985",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-2.jpg?v=1752233985",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-3.jpg?v=1752233985",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-5.jpg?v=1752233985",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesSS25-DESIRE-menshoes-HS1057-Baltasar-4.jpg?v=1752233976"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -5797,688 +5535,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "luis-onofre--aero",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Aero",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-2-scaled.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-3-scaled.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-4-scaled.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-5-scaled.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-6-scaled.jpg?v=1719565794",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-7-scaled.jpg?v=1719565794"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs0707-03",
-          "handle": "hs0707-03",
-          "title": "AERO Khaki",
-          "color": "Khaki",
-          "sku": "0000000039864",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-2-scaled.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-3-scaled.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-4-scaled.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-5-scaled.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-6-scaled.jpg?v=1719565794",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_03-AERO-Khaki-7-scaled.jpg?v=1719565794"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--aero--hs0707-02",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Aero",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-2-scaled.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-3-scaled.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-4-scaled.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-5-scaled.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-6-scaled.jpg?v=1719566068",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-7-scaled.jpg?v=1719566068"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/hs0707-02",
-          "handle": "hs0707-02",
-          "title": "AERO",
-          "color": null,
-          "sku": "0000000039857",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-2-scaled.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-3-scaled.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-4-scaled.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-5-scaled.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-6-scaled.jpg?v=1719566068",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-HS0707_02-AERO-7-scaled.jpg?v=1719566068"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--davos",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Davos",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/SESSAO_2400715H7104_03_davos_BLue.jpg?v=1719571091",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/SESSAO_2400716H7104_03.jpg?v=1719571115"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/davos-blue",
-          "handle": "davos-blue",
-          "title": "DAVOS Blue",
-          "color": "Blue",
-          "sku": "0000000015400",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/SESSAO_2400715H7104_03_davos_BLue.jpg?v=1719571091",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/SESSAO_2400716H7104_03.jpg?v=1719571115"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--americano",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Americano",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano.jpg?v=1729168816",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-2.jpg?v=1729168816",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-3.jpg?v=1729168816",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-4.jpg?v=1729168816",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-5.jpg?v=1729168816",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-6.jpg?v=1729168816"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5201",
-          "handle": "h5201",
-          "title": "Americano",
-          "color": null,
-          "sku": "0000000039680",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano.jpg?v=1729168816",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-2.jpg?v=1729168816",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-3.jpg?v=1729168816",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-4.jpg?v=1729168816",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-5.jpg?v=1729168816",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5201-Americano-6.jpg?v=1729168816"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--barista",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Barista",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-white.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-2-scaled.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-3-scaled.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-4-scaled.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-5-scaled.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-6-scaled.jpg?v=1719573866",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-7-scaled.jpg?v=1719573866"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5194-05",
-          "handle": "h5194-05",
-          "title": "Barista Navy white",
-          "color": "Navy white",
-          "sku": "0000000039833",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-white.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-2-scaled.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-3-scaled.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-4-scaled.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-5-scaled.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-6-scaled.jpg?v=1719573866",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_05-Barista-Navy-7-scaled.jpg?v=1719573866"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--barista--h5194-04",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Barista",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-scaled.jpg?v=1719573768",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-2-scaled.jpg?v=1719573768",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-3-scaled.jpg?v=1719573768",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-4-scaled.jpg?v=1719573768",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-5-scaled.jpg?v=1719573768"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5194-04",
-          "handle": "h5194-04",
-          "title": "Barista beige",
-          "color": "beige",
-          "sku": "0000000039819",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-scaled.jpg?v=1719573768",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-2-scaled.jpg?v=1719573768",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-3-scaled.jpg?v=1719573768",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-4-scaled.jpg?v=1719573768",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H5194_04-Barista-beige-5-scaled.jpg?v=1719573768"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--barista--h5194-02map",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Barista",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-Whit.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-2-scaled.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-3-scaled.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-4-scaled.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-5-scaled.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-6-scaled.jpg?v=1719573823",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-7-scaled.jpg?v=1719573823"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5194-02map",
-          "handle": "h5194-02map",
-          "title": "Barista Black White",
-          "color": "Black White",
-          "sku": "0000000039673",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-Whit.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-2-scaled.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-3-scaled.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-4-scaled.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-5-scaled.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-6-scaled.jpg?v=1719573823",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194_02MAP-Barista-Black-7-scaled.jpg?v=1719573823"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--barista--h5194",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Barista",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-white.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-2-scaled.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-3-scaled.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-4-scaled.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-5-scaled.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-6-scaled.jpg?v=1719573876",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-7-scaled.jpg?v=1719573876"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5194",
-          "handle": "h5194",
-          "title": "Barista white",
-          "color": "white",
-          "sku": "0000000039666",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-white.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-2-scaled.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-3-scaled.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-4-scaled.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-5-scaled.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-6-scaled.jpg?v=1719573876",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5194-Barista-7-scaled.jpg?v=1719573876"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--cuppa",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Cuppa",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-white.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-2-scaled.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-3-scaled.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-4-scaled.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-5-scaled.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-6-scaled.jpg?v=1719573883",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-7-scaled.jpg?v=1719573883"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5193mf",
-          "handle": "h5193mf",
-          "title": "Cuppa white",
-          "color": "white",
-          "sku": "0000000039871",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-white.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-2-scaled.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-3-scaled.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-4-scaled.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-5-scaled.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-6-scaled.jpg?v=1719573883",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H5193MF-Cuppa-7-scaled.jpg?v=1719573883"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--scoop",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Scoop",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop.jpg?v=1729169028",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-2.jpg?v=1729169028",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-3.jpg?v=1729169028",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-4.jpg?v=1729169027",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-5.jpg?v=1729169027",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-6.jpg?v=1729169027",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-7.jpg?v=1729169027"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h5193-02map-mf",
-          "handle": "h5193-02map-mf",
-          "title": "Scoop",
-          "color": null,
-          "sku": "0000000039888",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop.jpg?v=1729169028",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-2.jpg?v=1729169028",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-3.jpg?v=1729169028",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-4.jpg?v=1729169027",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-5.jpg?v=1729169027",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-6.jpg?v=1729169027",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H5193_02MAP-Scoop-7.jpg?v=1729169027"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--hector",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Hector",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel.jpg?v=1719574182",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-2-scaled.jpg?v=1719574182",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-3-scaled.jpg?v=1719574181",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-4-scaled.jpg?v=1719574182",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-5-scaled.jpg?v=1719574181",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-6-scaled.jpg?v=1719574182",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-7-scaled.jpg?v=1719574181"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h4953-08",
-          "handle": "h4953-08",
-          "title": "Hector Camel",
-          "color": "Camel",
-          "sku": "0000000041782",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel.jpg?v=1719574182",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-2-scaled.jpg?v=1719574182",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-3-scaled.jpg?v=1719574181",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-4-scaled.jpg?v=1719574182",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-5-scaled.jpg?v=1719574181",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-6-scaled.jpg?v=1719574182",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW22-H4953_08-Hector-Camel-7-scaled.jpg?v=1719574181"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--hector--h4953-07",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Hector",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-side.jpg?v=1729173952",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-front.jpg?v=1729173952",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-back.jpg?v=1729173953",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-7.jpg?v=1729173958",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-4.jpg?v=1729173958",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-5.jpg?v=1729173958",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-6.jpg?v=1729173958"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h4953-07",
-          "handle": "h4953-07",
-          "title": "Hector",
-          "color": null,
-          "sku": "0000000041775",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-side.jpg?v=1729173952",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-front.jpg?v=1729173952",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-back.jpg?v=1729173953",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-7.jpg?v=1729173958",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-4.jpg?v=1729173958",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-5.jpg?v=1729173958",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW22-H4953-Hector-6.jpg?v=1729173958"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--mallard",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Mallard",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black.jpg?v=1719576090",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black-2-scaled.jpg?v=1719576090",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black-3-scaled.jpg?v=1719576090"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h4953-05",
-          "handle": "h4953-05",
-          "title": "Mallard Black",
-          "color": "Black",
-          "sku": "0000000036528",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black.jpg?v=1719576090",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black-2-scaled.jpg?v=1719576090",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-H4953_05-Mallard-Black-3-scaled.jpg?v=1719576090"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--mallard--h4953-04",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Mallard",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-scaled.jpg?v=1719576053",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-2-scaled.jpg?v=1719576053",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-3-scaled.jpg?v=1719576053",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-4-scaled.jpg?v=1719576053",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-5-scaled.jpg?v=1719576053"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h4953-04",
-          "handle": "h4953-04",
-          "title": "Mallard Blue",
-          "color": "Blue",
-          "sku": "0000000036535",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-scaled.jpg?v=1719576053",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-2-scaled.jpg?v=1719576053",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-3-scaled.jpg?v=1719576053",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-4-scaled.jpg?v=1719576053",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-H4953_04-Mallard-Blur-5-scaled.jpg?v=1719576053"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--mallard--mallard-white",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Mallard",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-2-scaled.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-3-scaled.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-4-scaled.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-5-scaled.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-6-scaled.jpg?v=1719576115",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-7-scaled.jpg?v=1719576115"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/mallard-white",
-          "handle": "mallard-white",
-          "title": "MALLARD WHITE",
-          "color": "WHITE",
-          "sku": "0000000033428",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-2-scaled.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-3-scaled.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-4-scaled.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-5-scaled.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-6-scaled.jpg?v=1719576115",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-H4953.01-MALLARD-White-7-scaled.jpg?v=1719576115"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--oakleaf",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Oakleaf",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF.jpg?v=1719576151",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-2-scaled.jpg?v=1719576151",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-3-scaled.jpg?v=1719576151",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-4-scaled.jpg?v=1719576151",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-5-scaled.jpg?v=1719576151",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-6-scaled.jpg?v=1719576151"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/oakleaf",
-          "handle": "oakleaf",
-          "title": "OAKLEAF",
-          "color": null,
-          "sku": "0000000032643",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF.jpg?v=1719576151",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-2-scaled.jpg?v=1719576151",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-3-scaled.jpg?v=1719576151",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-4-scaled.jpg?v=1719576151",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-5-scaled.jpg?v=1719576151",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-SS21-Freedom-h4802_02-OAKLEAF-6-scaled.jpg?v=1719576151"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--driver",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Driver",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-scaled.jpg?v=1719576325",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-2-scaled.jpg?v=1719576325",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-3-scaled.jpg?v=1719576325",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-4-scaled.jpg?v=1719576325",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-5-scaled.jpg?v=1719576325"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/h4768",
-          "handle": "h4768",
-          "title": "DRIVER",
-          "color": null,
-          "sku": "0000000032698",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-scaled.jpg?v=1719576325",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-2-scaled.jpg?v=1719576325",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-3-scaled.jpg?v=1719576325",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-4-scaled.jpg?v=1719576325",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/Luis-Onofre-Portuguese-Shoes-FW23-Enigma-Collection-h4768-DRIVER-5-scaled.jpg?v=1719576325"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "luis-onofre--dinamo",
-      "brand": "LUIS ONOFRE",
-      "canonicalName": "Dinamo",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite.jpg?v=1729288542",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-2.jpg?v=1729288542",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-3.jpg?v=1729288542",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-4.jpg?v=1729288542",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-5.jpg?v=1729288542"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://luisonofre.com/products/suyuntu-blue",
-          "handle": "suyuntu-blue",
-          "title": "Dinamo White",
-          "color": "White",
-          "sku": "0000000022507",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite.jpg?v=1729288542",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-2.jpg?v=1729288542",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-3.jpg?v=1729288542",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-4.jpg?v=1729288542",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoesFW23-EnigmaCollection-H3975_14-DinamoWhite-5.jpg?v=1729288542"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "luis-onofre--chimera",
       "brand": "LUIS ONOFRE",
       "canonicalName": "Chimera",
@@ -6894,6 +5950,7 @@
     }
   ],
   "productUrls": [
+    "https://luisonofre.com/products/6147-01mflocket-black-strappy-sandals",
     "https://luisonofre.com/products/6044",
     "https://luisonofre.com/products/6026-02mst",
     "https://luisonofre.com/products/5996-02mf",
@@ -6960,14 +6017,6 @@
     "https://luisonofre.com/products/vint-32",
     "https://luisonofre.com/products/vint-18-01mf",
     "https://luisonofre.com/products/5685-02mf",
-    "https://luisonofre.com/products/hs0972-05",
-    "https://luisonofre.com/products/hs1059",
-    "https://luisonofre.com/products/hs0972-04",
-    "https://luisonofre.com/products/hs0972-03",
-    "https://luisonofre.com/products/hs1059-02",
-    "https://luisonofre.com/products/hs1058-01",
-    "https://luisonofre.com/products/hs1057-01",
-    "https://luisonofre.com/products/hs1057",
     "https://luisonofre.com/products/5711",
     "https://luisonofre.com/products/5670",
     "https://luisonofre.com/products/5704-01",
@@ -7043,24 +6092,6 @@
     "https://luisonofre.com/products/5331",
     "https://luisonofre.com/products/5237-01mf",
     "https://luisonofre.com/products/peace",
-    "https://luisonofre.com/products/hs0707-03",
-    "https://luisonofre.com/products/hs0707-02",
-    "https://luisonofre.com/products/davos-blue",
-    "https://luisonofre.com/products/h5201",
-    "https://luisonofre.com/products/h5194-05",
-    "https://luisonofre.com/products/h5194-04",
-    "https://luisonofre.com/products/h5194-02map",
-    "https://luisonofre.com/products/h5194",
-    "https://luisonofre.com/products/h5193mf",
-    "https://luisonofre.com/products/h5193-02map-mf",
-    "https://luisonofre.com/products/h4953-08",
-    "https://luisonofre.com/products/h4953-07",
-    "https://luisonofre.com/products/h4953-05",
-    "https://luisonofre.com/products/h4953-04",
-    "https://luisonofre.com/products/mallard-white",
-    "https://luisonofre.com/products/oakleaf",
-    "https://luisonofre.com/products/h4768",
-    "https://luisonofre.com/products/suyuntu-blue",
     "https://luisonofre.com/products/5326-04mf",
     "https://luisonofre.com/products/5180-04mf",
     "https://luisonofre.com/products/5127-02",
