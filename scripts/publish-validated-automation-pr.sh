@@ -9,13 +9,16 @@ set -euo pipefail
 : "${AUTOMATION_PR_BODY:?AUTOMATION_PR_BODY is required}"
 
 base_sha="$(git rev-parse HEAD)"
+run_id="${GITHUB_RUN_ID:-manual}"
+run_attempt="${GITHUB_RUN_ATTEMPT:-1}"
+publish_branch="${AUTOMATION_BRANCH}-${run_id}-${run_attempt}"
 
 require_unchanged_main() {
   git fetch origin main:refs/remotes/origin/main
   local current_main
   current_main="$(git rev-parse refs/remotes/origin/main)"
   if [[ "$current_main" != "$base_sha" ]]; then
-    echo "Main moved during this automation run (${base_sha} -> ${current_main}); refusing stale merge." >&2
+    echo "Main moved during this automation run (${base_sha} -> ${current_main}); refusing stale proposal." >&2
     return 1
   fi
 }
@@ -47,13 +50,14 @@ wait_for_vercel() {
   return 1
 }
 
-if git ls-remote --exit-code --heads origin "refs/heads/${AUTOMATION_BRANCH}" >/dev/null 2>&1; then
-  git fetch origin "refs/heads/${AUTOMATION_BRANCH}:refs/remotes/origin/${AUTOMATION_BRANCH}"
+if git ls-remote --exit-code --heads origin "refs/heads/${publish_branch}" >/dev/null 2>&1; then
+  echo "Automation branch already exists; refusing to overwrite it: ${publish_branch}" >&2
+  exit 1
 fi
 
-git switch -C "$AUTOMATION_BRANCH"
+git switch -c "$publish_branch"
 git commit -m "$AUTOMATION_COMMIT_MESSAGE"
-git push --force-with-lease --set-upstream origin "$AUTOMATION_BRANCH"
+git push --set-upstream origin "$publish_branch"
 head_sha="$(git rev-parse HEAD)"
 
 # The Vercel Git integration attaches this status to a branch preview. A
@@ -67,63 +71,21 @@ preview_status_url="$VERCEL_URL"
 # gates against the new base.
 require_unchanged_main
 
-pr_url="$(gh pr list \
-  --head "$AUTOMATION_BRANCH" \
+pr_url="$(gh pr create \
+  --draft \
   --base main \
-  --state open \
-  --json url \
-  --jq '.[0].url // ""')"
-if [[ -z "$pr_url" ]]; then
-  pr_url="$(gh pr create \
-    --base main \
-    --head "$AUTOMATION_BRANCH" \
-    --title "$AUTOMATION_PR_TITLE" \
-    --body "$AUTOMATION_PR_BODY")"
-else
-  pr_number="${pr_url##*/}"
-  gh api "repos/${GITHUB_REPOSITORY}/pulls/${pr_number}" \
-    --method PATCH \
-    -f title="$AUTOMATION_PR_TITLE" \
-    -f body="$AUTOMATION_PR_BODY" >/dev/null
-fi
-
-pr_number="${pr_url##*/}"
-require_unchanged_main
-merged="false"
-for _attempt in $(seq 1 12); do
-  if gh pr merge "$pr_url" \
-    --squash \
-    --delete-branch \
-    --match-head-commit "$head_sha"; then
-    merged="true"
-    break
-  fi
-  sleep 10
-done
-if [[ "$merged" != "true" ]]; then
-  echo "Validated PR could not be merged automatically: $pr_url" >&2
-  exit 1
-fi
-
-merge_sha="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${pr_number}" --jq '.merge_commit_sha // ""')"
-if [[ -z "$merge_sha" ]]; then
-  echo "Merged PR has no merge commit SHA: $pr_url" >&2
-  exit 1
-fi
-
-# Failed Vercel production builds do not replace its last-good deployment.
-VERCEL_URL=""
-wait_for_vercel "$merge_sha" "production"
-production_status_url="$VERCEL_URL"
+  --head "$publish_branch" \
+  --title "$AUTOMATION_PR_TITLE" \
+  --body "$AUTOMATION_PR_BODY")"
 
 if [[ -n "${GITHUB_OUTPUT:-}" ]]; then
   {
-    echo "branch=$AUTOMATION_BRANCH"
+    echo "branch=$publish_branch"
     echo "head_sha=$head_sha"
-    echo "merge_sha=$merge_sha"
+    echo "merge_sha="
     echo "pr_url=$pr_url"
     echo "preview_status_url=$preview_status_url"
-    echo "production_status_url=$production_status_url"
-    echo "merged=true"
+    echo "production_status_url="
+    echo "merged=false"
   } >> "$GITHUB_OUTPUT"
 fi
