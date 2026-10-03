@@ -1,4 +1,4 @@
-import { mkdtemp, mkdir, readFile, writeFile, rm } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, writeFile, rm, rename } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
@@ -170,6 +170,10 @@ describe("official Shopify storefront collector", () => {
       currentManifest.shards[0].familyCount += 1;
       currentManifest.totalFamilies += 1;
       await writeFile(join(dir, "manifest.json"), JSON.stringify(currentManifest));
+      // Legacy catalogs store the same official IDs in shared core shards.
+      await rename(shardFile, join(dir, "part-000.json"));
+      currentManifest.shards[0].file = "part-000.json";
+      await writeFile(join(dir, "manifest.json"), JSON.stringify(currentManifest));
       const http: OfficialHttp = { async fetchText(url) {
         if (url.includes("collections.json")) return jsonResponse({ collections: [{ handle: "new-in", title: "New In", products_count: 0 }] }, url);
         if (url.includes("/collections/new-in/products.json")) return jsonResponse({ products: [] }, url);
@@ -182,6 +186,9 @@ describe("official Shopify storefront collector", () => {
       const retained = delivered.find((family: { modelFamilyId: string }) => family.modelFamilyId === archived.modelFamilyId);
       expect(retained.variants[0].images).toEqual(["https://cdn.test/archive.jpg"]);
       expect(retained.sourceSightings[0].newness.status).not.toBe("VERIFIED_NEW");
+      const afterManifest = JSON.parse(await readFile(join(dir, "manifest.json"), "utf8"));
+      const all = (await Promise.all(afterManifest.shards.map(async (shard: { file: string }) => JSON.parse(await readFile(join(dir, shard.file), "utf8"))))).flat();
+      expect(all.map((family: { modelFamilyId: string }) => family.modelFamilyId).sort()).toEqual(delivered.map((family: { modelFamilyId: string }) => family.modelFamilyId).sort());
       const beforeFailed = await readFile(shardFile, "utf8");
       expect((await publishOfficialBrandCatalog({ root, catalog: null, evidence: { ...refreshed.evidence, status: "PARTIAL", blocker: "NEW unavailable" }, http })).published).toBe(false);
       expect(await readFile(shardFile, "utf8")).toBe(beforeFailed);

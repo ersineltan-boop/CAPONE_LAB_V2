@@ -21,6 +21,7 @@ import type { WaveCatalog, WaveHttp } from "../wave50/types";
 import {
   applySourceAwareBrandReplacement,
   prepareBrandDelivery,
+  waveProductNewness,
   replaceAutomationBrandDeliveries,
   type BrandDeliveryReplacement,
 } from "./delivery";
@@ -218,7 +219,7 @@ export async function runBrandAutomation(
         // Reconfirm source evidence even when products and galleries did not change.
         const needsDelivery = changed || !delivered.has(candidate.slug) || previous?.collectedAt !== now;
         const prepared = needsDelivery
-          ? await prepareBrandDelivery({ catalog, http: options.http })
+          ? await prepareBrandDelivery({ catalog, http: options.http, previousFamilies: existingFamilies })
           : { families: [], unresolved: [] };
         if (prepared.unresolved.length > 0) {
           return {
@@ -240,6 +241,7 @@ export async function runBrandAutomation(
           officialUrl: catalog.officialUrl,
           collectedAt: now,
           families: prepared.families,
+          productNewness: waveProductNewness(catalog),
         });
 
         if (dryRun) {
@@ -306,6 +308,7 @@ export async function runBrandAutomation(
                 officialUrl: catalog.officialUrl,
                 collectedAt: now,
                 families: prepared.families,
+                productNewness: waveProductNewness(catalog),
               }
             : null,
           activation:

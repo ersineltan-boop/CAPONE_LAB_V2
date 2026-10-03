@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { analyzeProducts } from "../analysis/analyzeProduct";
 import { buildMarketAnalysis } from "../analysis/buildMarketAnalysis";
 import { mergeIncomingSourceIntoCatalog } from "../refresh/refreshPolicy";
+import { retainModelFamilyArchive } from "../modelFamily/refreshIdentity";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
 import { loadModelFamilies, mergeCoreFamilyIntoBrandShard, writeModelFamilies } from "../modelFamily/dataset";
 import type { ModelFamily } from "../modelFamily/types";
@@ -150,7 +151,7 @@ export async function rebuildCatalogAfterActivation(root: string): Promise<numbe
   const galleries = JSON.parse(
     await readFile(join(root, "data/multibrand/product-image-galleries.json"), "utf-8").catch(() => "{}"),
   ) as Record<string, string[]>;
-  const prior = await loadModelFamilies();
+  const prior = await loadModelFamilies({ rootDir: join(root, "data/multibrand") });
   const { families, report } = buildModelFamilies(analyzed as unknown as RawAnalyzedProduct[], {
     productImageGalleries: galleries,
     priorFamilies: prior,
@@ -158,7 +159,7 @@ export async function rebuildCatalogAfterActivation(root: string): Promise<numbe
   if (families.length === 0) {
     throw new Error("Activation aborted: Model Family rebuild produced zero families.");
   }
-  await writeModelFamilies(await retainHistoricalWaveDelivery(root, families));
+  await writeModelFamilies(retainModelFamilyArchive(await retainHistoricalWaveDelivery(root, families), prior, analyzed as unknown as RawAnalyzedProduct[]), { rootDir: join(root, "data/multibrand") });
   await writeFile(join(root, "data/multibrand/model-family-report.json"), JSON.stringify(report, null, 2), "utf-8");
   return report.modelFamilyCount;
 }

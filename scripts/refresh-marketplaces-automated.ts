@@ -169,7 +169,11 @@ async function main(): Promise<void> {
       candidate = failedCandidate(sourceId, error);
     }
     if (sourceId === "24s") {
-      const decision = await publishMarketplaceDelivery(ROOT, candidate, "https://www.24s.com");
+      let decision;
+      try { decision = await publishMarketplaceDelivery(ROOT, candidate, "https://www.24s.com"); }
+      catch (error) {
+        decision = evaluateMarketplaceCandidate({ candidate: failedCandidate(sourceId, error), previousLastGood: [] });
+      }
       gates.push(decision.report);
       await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
       await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
