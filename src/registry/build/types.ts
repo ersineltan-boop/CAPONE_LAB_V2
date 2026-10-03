@@ -38,6 +38,10 @@ export interface BrandUniverseEntry {
   collectionDiscoveryStatus?: import("../types/brand").CollectionDiscoveryStatus;
   productLimit: number;
   backfillLimit?: number;
+  newArrivalUrls?: string[];
+  newArrivalCollectionHandles?: string[];
+  newArrivalDiscoveryStatus?: import("../types/brand").BrandRegistryEntry["newArrivalDiscoveryStatus"];
+  newArrivalEvidenceStrategy?: string;
   supportsMultipleImages: boolean;
   preferPilotCache?: boolean;
   discoverySources: string[];

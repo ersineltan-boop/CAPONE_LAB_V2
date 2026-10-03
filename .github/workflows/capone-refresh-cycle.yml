@@ -16,6 +16,7 @@ on:
       - ".github/workflows/capone-refresh-cycle.yml"
       - "scripts/run-refresh-cycle.ts"
       - "src/refresh/refreshCycle.ts"
+      - "src/registry/build/convertBrandUniverse.ts"
 
 concurrency:
   group: capone-catalog-automation

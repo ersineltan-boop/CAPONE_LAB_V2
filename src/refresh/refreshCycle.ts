@@ -1,6 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { brandEntries } from "../registry/data/brands";
+import { convertUniverseToRegistryEntries } from "../registry/build/convertBrandUniverse";
 import { buildCloudRefreshPlan, CLOUD_REFRESH_TRACKED_DATA_PATHS } from "./refreshPolicy";
 import { buildBrandAutomationPlan } from "../brands/automation/plan";
 import { loadAdapterFile } from "../onboarding/adapterStore";
@@ -44,6 +44,8 @@ export function assertRefreshCoverage(brands: string[], marketplaces: string[], 
 
 export async function buildRefreshCyclePlan(root: string) {
   const universe = JSON.parse(await readFile(join(root, "data/registry/brand-universe.json"), "utf8")) as BrandUniverseFile;
+  // Read the current activation state, including newly onboarded sources.
+  const { entries: brandEntries } = convertUniverseToRegistryEntries({ universe: universe.brands });
   const activeBrands = universe.brands.filter((brand) => brand.isActive).map((brand) => brand.id);
   const pilot = JSON.parse(await readFile(join(root, "data/registry/marketplace-pilot.json"), "utf8")) as { activeMarketplaceIds: string[] };
   const activeMarketplaces = pilot.activeMarketplaceIds;

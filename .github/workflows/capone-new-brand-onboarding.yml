@@ -85,6 +85,9 @@ jobs:
           if [[ "$REQUESTED_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run onboard:brands -- "${args[@]}"
 
+      - name: Verify activated brands are included in the automatic refresh cycle
+        run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+
       - name: Full tests
         run: npm test
 

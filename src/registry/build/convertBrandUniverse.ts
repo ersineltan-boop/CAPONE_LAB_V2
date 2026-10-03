@@ -31,6 +31,10 @@ export function universeEntryToRegistryEntry(
     collectionStatus: entry.collectionStatus,
     productLimit: entry.productLimit,
     backfillLimit: entry.backfillLimit,
+    newArrivalUrls: entry.newArrivalUrls ? [...entry.newArrivalUrls] : undefined,
+    newArrivalCollectionHandles: entry.newArrivalCollectionHandles ? [...entry.newArrivalCollectionHandles] : undefined,
+    newArrivalDiscoveryStatus: entry.newArrivalDiscoveryStatus,
+    newArrivalEvidenceStrategy: entry.newArrivalEvidenceStrategy,
     supportsMultipleImages: entry.supportsMultipleImages,
     preferPilotCache: entry.preferPilotCache,
     discoverySources: [...entry.discoverySources],
@@ -74,6 +78,10 @@ export function registryEntryToUniverseEntry(
     collectionDiscoveryStatus: entry.collectionDiscoveryStatus,
     productLimit: entry.productLimit,
     backfillLimit: entry.backfillLimit,
+    newArrivalUrls: entry.newArrivalUrls ? [...entry.newArrivalUrls] : undefined,
+    newArrivalCollectionHandles: entry.newArrivalCollectionHandles ? [...entry.newArrivalCollectionHandles] : undefined,
+    newArrivalDiscoveryStatus: entry.newArrivalDiscoveryStatus,
+    newArrivalEvidenceStrategy: entry.newArrivalEvidenceStrategy,
     supportsMultipleImages: entry.supportsMultipleImages,
     preferPilotCache: entry.preferPilotCache,
     discoverySources: [...entry.discoverySources],
@@ -141,6 +149,20 @@ export function generateBrandsTsFile(entries: BrandRegistryEntry[]): string {
     }
     if (entry.backfillLimit !== undefined) {
       optionalLines.push(`    backfillLimit: ${entry.backfillLimit},`);
+    }
+    // Source evidence must survive every registry rebuild, including deliveries
+    // for unrelated brands. Missing evidence stays missing; it is never inferred.
+    if (entry.newArrivalUrls !== undefined) {
+      optionalLines.push(`    newArrivalUrls: ${formatStringArray(entry.newArrivalUrls)},`);
+    }
+    if (entry.newArrivalCollectionHandles !== undefined) {
+      optionalLines.push(`    newArrivalCollectionHandles: ${formatStringArray(entry.newArrivalCollectionHandles)},`);
+    }
+    if (entry.newArrivalDiscoveryStatus !== undefined) {
+      optionalLines.push(`    newArrivalDiscoveryStatus: "${entry.newArrivalDiscoveryStatus}",`);
+    }
+    if (entry.newArrivalEvidenceStrategy !== undefined) {
+      optionalLines.push(`    newArrivalEvidenceStrategy: "${escapeString(entry.newArrivalEvidenceStrategy)}",`);
     }
 
     return `  brand({
