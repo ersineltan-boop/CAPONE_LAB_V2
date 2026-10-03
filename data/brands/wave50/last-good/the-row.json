@@ -2,8 +2,8 @@
   "slug": "the-row",
   "brand": "THE ROW",
   "officialUrl": "https://www.therow.com",
-  "snapshotId": "the-row:2026-09-26T11:56:35.990Z",
-  "collectedAt": "2026-09-26T11:56:35.990Z",
+  "snapshotId": "the-row:2026-10-03T15:36:00.924Z",
+  "collectedAt": "2026-10-03T15:36:00.924Z",
   "catalogPaths": [
     "/collections/women-shoes"
   ],
@@ -22,7 +22,7 @@
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 16,
+  "newArrivalsFootwear": 15,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -1926,12 +1926,12 @@
           ],
           "category": "SANDAL",
           "productType": "SANDALS",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -4180,7 +4180,7 @@
       "modelFamilyId": "the-row--leo-slipper",
       "brand": "THE ROW",
       "canonicalName": "Leo Slipper",
-      "category": "OTHER_FOOTWEAR",
+      "category": "LOAFER",
       "images": [
         "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1687L303LQBF_a06f304a-efee-4250-af24-677ae7f5b8b1.jpg?v=1752715442",
         "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1687L303LQBR_2f6f380f-a94e-4a4e-a963-a7042cf808c4.jpg?v=1752715442",
@@ -4200,7 +4200,7 @@
             "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1687L303LQBD_b1d2d469-c738-424f-b99c-d404146b44bb.jpg?v=1752715442",
             "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1687L303LQBZ_6aa7541d-8ad3-4d38-a4ce-e81b59916546.jpg?v=1752715442"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "LOAFER",
           "productType": "FLATS",
           "inNewArrivals": false,
           "isNew": false,
@@ -5416,7 +5416,7 @@
       "modelFamilyId": "the-row--tyler-lace-up-shoe",
       "brand": "THE ROW",
       "canonicalName": "Tyler Lace Up Shoe",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1338L305YLLF.jpg?v=1746070943",
         "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1338L305YLLR.jpg?v=1746070943",
@@ -5436,7 +5436,7 @@
             "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1338L305YLLD.jpg?v=1746070943",
             "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1338L305YLLZ.jpg?v=1746070943"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "FLATS",
           "inNewArrivals": false,
           "isNew": false,

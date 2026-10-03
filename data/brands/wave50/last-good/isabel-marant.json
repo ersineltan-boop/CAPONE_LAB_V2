@@ -2,12 +2,18 @@
   "slug": "isabel-marant",
   "brand": "ISABEL MARANT",
   "officialUrl": "https://isabelmarant.com",
-  "snapshotId": "isabel-marant:2026-09-30T06:19:45.227Z",
-  "collectedAt": "2026-09-30T06:19:45.227Z",
+  "snapshotId": "isabel-marant:2026-10-03T15:59:18.269Z",
+  "collectedAt": "2026-10-03T15:59:18.269Z",
   "catalogPaths": [
     "/en/collections/shoes-all"
   ],
-  "newArrivalsPaths": [],
+  "newArrivalsPaths": [
+    "/en/collections/isabel-marant-new-in",
+    "/en/collections/marant-etoile-new-in",
+    "/en/collections/marant-man-new-in",
+    "/en/collections/new-in-shoes",
+    "/en/collections/new-in-woman"
+  ],
   "coverage": {
     "sourceTotal": 130,
     "collected": 130,
@@ -20,7 +26,7 @@
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 0,
+  "newArrivalsFootwear": 19,
   "referenceFootwearTotal": 130,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": true,
@@ -54,12 +60,12 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -95,9 +101,9 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bo0278fad3a01s50co-lyone-ankle-boots-cognac",
@@ -119,7 +125,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -155,9 +161,9 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bo0298fad4a08s01bk-janela-ankle-boots-black",
@@ -174,12 +180,12 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -308,9 +314,9 @@
           ],
           "category": "BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bt0054fad3a01s50co-lezra-boots-cognac",
@@ -331,7 +337,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -386,12 +392,12 @@
           ],
           "category": "BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -712,7 +718,7 @@
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0014faa1e21s01bk-bryce-sneakers-black",
           "handle": "bk0014faa1e21s01bk-bryce-sneakers-black",
-          "title": "Bryce sneakers",
+          "title": "Bryce Sneakers",
           "color": "black",
           "sku": "3613615144884",
           "images": [
@@ -767,9 +773,9 @@
           ],
           "category": "SNEAKER",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0014fac1e09sclmw-bryce-sneakers-chocolate-milky-white",
@@ -809,7 +815,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -1217,9 +1223,9 @@
           ],
           "category": "SNEAKER",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0104fad4e01sbono-bekett-ring-sneakers-burgundy-black",
@@ -1255,9 +1261,9 @@
           ],
           "category": "SNEAKER",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0104fad4e01smaec-bekett-ring-sneakers-navy-ecru",
@@ -1317,7 +1323,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -1348,12 +1354,12 @@
           ],
           "category": "PUMP",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1394,9 +1400,9 @@
           ],
           "category": "PUMP",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/es0090fad4a04ssama-luza-pumps-sahara-mocha",
@@ -1432,12 +1438,12 @@
           ],
           "category": "PUMP",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -1451,11 +1457,7 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23ABO0002FA-A3A03S-01BK-F.jpg?v=1740647363",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23ABO0002FA-A3A03S-01BK-A.jpg?v=1740647363",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23ABO0002FA-A3A03S-01BK-T.jpg?v=1740628830",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23ABO0002FA-A3A03S-01BK-E.jpg?v=1785898820",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-R.jpg?v=1777345230",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-D.jpg?v=1777345229",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-E.jpg?v=1777345229",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-F.jpg?v=1777345229"
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23ABO0002FA-A3A03S-01BK-E.jpg?v=1785898820"
       ],
       "variants": [
         {
@@ -1477,28 +1479,10 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://isabelmarant.com/en/products/bo0002faa1a03s50ta-dewina-boots-taupe",
-          "handle": "bo0002faa1a03s50ta-dewina-boots-taupe",
-          "title": "DEWINA BOOTS",
-          "color": "taupe",
-          "sku": "3613615126408",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-R.jpg?v=1777345230",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-D.jpg?v=1777345229",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-E.jpg?v=1777345229",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-F.jpg?v=1777345229"
-          ],
-          "category": "BOOT",
-          "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "isabel-marant--dewina-ankle-boot",
@@ -1511,7 +1495,11 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-02FK-A.jpg?v=1777518033",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-02FK-D.jpg?v=1777604432",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-02FK-T.jpg?v=1739459051",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-02FK-E.jpg?v=1785898843"
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-02FK-E.jpg?v=1785898843",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-R.jpg?v=1777345230",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-D.jpg?v=1777345229",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-E.jpg?v=1777345229",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-F.jpg?v=1777345229"
       ],
       "variants": [
         {
@@ -1533,10 +1521,28 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://isabelmarant.com/en/products/bo0002faa1a03s50ta-dewina-ankle-boots-taupe",
+          "handle": "bo0002faa1a03s50ta-dewina-ankle-boots-taupe",
+          "title": "Dewina Ankle Boots",
+          "color": "taupe",
+          "sku": "3613615126408",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-R.jpg?v=1777345230",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-D.jpg?v=1777345229",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-E.jpg?v=1777345229",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0002FA-A1A03S-50TA-F.jpg?v=1777345229"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Women",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
       "isNew": false,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "isabel-marant--dalby-ankle-boot",
@@ -1833,9 +1839,9 @@
           ],
           "category": "LOAFER",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/mc0019fbd4a22s50fa-fitza-loafers-fauve",
@@ -1852,9 +1858,9 @@
           ],
           "category": "LOAFER",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/mc0019fab3a25s50co-fitza-loafers-cognac",
@@ -1875,7 +1881,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -1993,9 +1999,9 @@
           ],
           "category": "BALLERINA",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bn0037fad3a39s50co-ylza-ballet-flats-cognac",
@@ -2012,12 +2018,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -2408,12 +2414,12 @@
           ],
           "category": "PUMP",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2629,9 +2635,9 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://isabelmarant.com/en/products/bo0297fad4a14s50db-cylia-ankle-boots-dark-brown",
@@ -2671,7 +2677,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -2795,7 +2801,7 @@
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0011faa1e20s50ta-bobby-sneakers-taupe",
           "handle": "bk0011faa1e20s50ta-bobby-sneakers-taupe",
-          "title": "BOBBY SNEAKERS",
+          "title": "Bobby Sneakers",
           "color": "taupe",
           "sku": "3613615140480",
           "images": [
@@ -2928,7 +2934,7 @@
         {
           "productUrl": "https://isabelmarant.com/en/products/bk0091fad1e01s50co-senny-low-sneakers-cognac",
           "handle": "bk0091fad1e01s50co-senny-low-sneakers-cognac",
-          "title": "SENNY LOW SNEAKERS",
+          "title": "Senny Low Sneakers",
           "color": "cognac",
           "sku": "3613617567421",
           "images": [
@@ -3232,6 +3238,9 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_a0316c69-15af-46c3-bc0b-6b3729b8a0d1.jpg?v=1790564463",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_9f98805a-1de6-4191-9ac3-f23233ceac94.jpg?v=1790650866",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_feea799c-524a-4141-bff1-9e97a7bcb2bf.jpg?v=1790737269",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_004ff71e-9fa3-4044-a20e-98892ba59a21.jpg?v=1790823665",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_d7b02596-a72a-4021-8d1a-9fa2ac5e1205.jpg?v=1790910072",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_c1172d0d-a111-431b-87e3-abd554fdcf9a.jpg?v=1790996471",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-R.jpg?v=1742205769",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-D.jpg?v=1742205769",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-F.jpg?v=1742205769",
@@ -3293,7 +3302,10 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_a8c113f3-6acf-4756-b7dd-976800b076bd.jpg?v=1790478073",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_ac6c0caf-cf8b-4176-99e7-a22125461cd7.jpg?v=1790564463",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_97ac382c-f8f4-4ed3-8513-7d0916476831.jpg?v=1790650867",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_4f2d6d6d-8a45-4acf-95fd-66bb43478fbb.jpg?v=1790737269"
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_4f2d6d6d-8a45-4acf-95fd-66bb43478fbb.jpg?v=1790737269",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_00dc82ec-c845-4a1c-9c33-007b8aa7551e.jpg?v=1790823666",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_005d146f-df59-4a1f-bcc9-eee32d9eda88.jpg?v=1790910072",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_72e75f18-a2fe-4128-8a2e-1000c4e77383.jpg?v=1790996472"
       ],
       "variants": [
         {
@@ -3402,7 +3414,10 @@
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_1d8a51cc-6293-47f9-a0e1-0847edc3c716.jpg?v=1790478073",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_a0316c69-15af-46c3-bc0b-6b3729b8a0d1.jpg?v=1790564463",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_9f98805a-1de6-4191-9ac3-f23233ceac94.jpg?v=1790650866",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_feea799c-524a-4141-bff1-9e97a7bcb2bf.jpg?v=1790737269"
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_feea799c-524a-4141-bff1-9e97a7bcb2bf.jpg?v=1790737269",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_004ff71e-9fa3-4044-a20e-98892ba59a21.jpg?v=1790823665",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_d7b02596-a72a-4021-8d1a-9fa2ac5e1205.jpg?v=1790910072",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-02FK-E_c1172d0d-a111-431b-87e3-abd554fdcf9a.jpg?v=1790996471"
           ],
           "category": "BOOT",
           "productType": "Women",
@@ -3478,7 +3493,10 @@
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_a8c113f3-6acf-4756-b7dd-976800b076bd.jpg?v=1790478073",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_ac6c0caf-cf8b-4176-99e7-a22125461cd7.jpg?v=1790564463",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_97ac382c-f8f4-4ed3-8513-7d0916476831.jpg?v=1790650867",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_4f2d6d6d-8a45-4acf-95fd-66bb43478fbb.jpg?v=1790737269"
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_4f2d6d6d-8a45-4acf-95fd-66bb43478fbb.jpg?v=1790737269",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_00dc82ec-c845-4a1c-9c33-007b8aa7551e.jpg?v=1790823666",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_005d146f-df59-4a1f-bcc9-eee32d9eda88.jpg?v=1790910072",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBT0001FA-A1A03S-50TA-E_72e75f18-a2fe-4128-8a2e-1000c4e77383.jpg?v=1790996472"
           ],
           "category": "BOOT",
           "productType": "Women",
@@ -3993,7 +4011,10 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_f543a98a-d2de-4229-bba7-586677156208.jpg?v=1790478071",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_946c74a0-b759-4f78-a0db-d78814211edd.jpg?v=1790564460",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_090a78ae-af82-4a81-8561-ecbc309e31b2.jpg?v=1790650865",
-        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_dc0e82c0-fffd-4b8d-85fc-1232c2cbcaa1.jpg?v=1790737267"
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_dc0e82c0-fffd-4b8d-85fc-1232c2cbcaa1.jpg?v=1790737267",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_cde31dc2-2fb0-4933-845d-277c5ca94d8c.jpg?v=1790823663",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_26f81ec2-6062-42ea-9173-9e842c84a4c0.jpg?v=1790910070",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_43b12e49-b39a-49c7-b72f-f34c2c704ff0.jpg?v=1790996469"
       ],
       "variants": [
         {
@@ -4120,7 +4141,10 @@
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_f543a98a-d2de-4229-bba7-586677156208.jpg?v=1790478071",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_946c74a0-b759-4f78-a0db-d78814211edd.jpg?v=1790564460",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_090a78ae-af82-4a81-8561-ecbc309e31b2.jpg?v=1790650865",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_dc0e82c0-fffd-4b8d-85fc-1232c2cbcaa1.jpg?v=1790737267"
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_dc0e82c0-fffd-4b8d-85fc-1232c2cbcaa1.jpg?v=1790737267",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_cde31dc2-2fb0-4933-845d-277c5ca94d8c.jpg?v=1790823663",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_26f81ec2-6062-42ea-9173-9e842c84a4c0.jpg?v=1790910070",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A04S-01BK-E_43b12e49-b39a-49c7-b72f-f34c2c704ff0.jpg?v=1790996469"
           ],
           "category": "BOOT",
           "productType": "Women",
@@ -4288,6 +4312,9 @@
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_dfb7573c-675a-450b-b9e3-753ec9dcb65b.jpg?v=1790564461",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8fe19f42-a833-4ce6-b01e-43d519f3f651.jpg?v=1790650865",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8561b6a1-da52-4fd0-9fef-28c98556422e.jpg?v=1790737267",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8fb5188a-2623-4f73-aa97-6da5f197acde.jpg?v=1790823664",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_cc53370d-0f09-4825-880d-9d564c6828eb.jpg?v=1790910070",
+        "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8b4790f3-f870-4107-87b7-88dc144eec9b.jpg?v=1790996469",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-50TA-R.jpg?v=1723188809",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-50TA-D.jpg?v=1743751171",
         "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-50TA-F.jpg?v=1743751171",
@@ -4419,7 +4446,10 @@
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_d0a46cd5-ac9a-4574-85d0-08f796f38f5b.jpg?v=1790478071",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_dfb7573c-675a-450b-b9e3-753ec9dcb65b.jpg?v=1790564461",
             "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8fe19f42-a833-4ce6-b01e-43d519f3f651.jpg?v=1790650865",
-            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8561b6a1-da52-4fd0-9fef-28c98556422e.jpg?v=1790737267"
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8561b6a1-da52-4fd0-9fef-28c98556422e.jpg?v=1790737267",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8fb5188a-2623-4f73-aa97-6da5f197acde.jpg?v=1790823664",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_cc53370d-0f09-4825-880d-9d564c6828eb.jpg?v=1790910070",
+            "https://cdn.shopify.com/s/files/1/0866/0677/4584/files/23PBO0004FA-A1A07S-02FK-Y_8b4790f3-f870-4107-87b7-88dc144eec9b.jpg?v=1790996469"
           ],
           "category": "BOOT",
           "productType": "Women",
@@ -4876,12 +4906,12 @@
           ],
           "category": "BOOT",
           "productType": "Women",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     }
   ],
@@ -4919,7 +4949,7 @@
     "https://isabelmarant.com/en/products/es0090fad4a04ssama-luza-pumps-sahara-mocha",
     "https://isabelmarant.com/en/products/bo0002faa3a03s01bk-dewina-boots-black",
     "https://isabelmarant.com/en/products/bo0002faa1a03s02fk-dewina-ankle-boots-black",
-    "https://isabelmarant.com/en/products/bo0002faa1a03s50ta-dewina-boots-taupe",
+    "https://isabelmarant.com/en/products/bo0002faa1a03s50ta-dewina-ankle-boots-taupe",
     "https://isabelmarant.com/en/products/bo0188fac1a19s01bk-dalby-ankle-boots-black",
     "https://isabelmarant.com/en/products/bo0188fbc1a20s50cl-dalby-ankle-boots-chocolate",
     "https://isabelmarant.com/en/products/bo0188fbc1a20s02fk-dalby-boots-black",

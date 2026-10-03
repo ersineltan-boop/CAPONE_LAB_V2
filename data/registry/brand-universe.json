@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T14:31:02.654Z",
+  "generatedAt": "2026-10-03T16:00:14.823Z",
   "brands": [
     {
       "id": "schutz",
@@ -1888,7 +1888,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 204 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 206 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2280,8 +2280,12 @@
         "https://ceciliebahnsen.com/collections/shoe-edit"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "newArrivalCollectionHandles": ["new-in"],
-      "newArrivalUrls": ["https://ceciliebahnsen.com/collections/new-in"],
+      "newArrivalCollectionHandles": [
+        "new-in"
+      ],
+      "newArrivalUrls": [
+        "https://ceciliebahnsen.com/collections/new-in"
+      ],
       "newArrivalDiscoveryStatus": "VERIFIED"
     },
     {
@@ -2691,7 +2695,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=553. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=557. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2699,7 +2703,7 @@
       "collectionPaths": [
         "/collections/shoes"
       ],
-      "productLimit": 553,
+      "productLimit": 557,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -2713,7 +2717,7 @@
         "shoes"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 553
+      "backfillLimit": 557
     },
     {
       "id": "paris-texas",
@@ -3249,7 +3253,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 452 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 461 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3501,7 +3505,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=241. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=238. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3629,7 +3633,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=52. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=53. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3637,7 +3641,7 @@
       "collectionPaths": [
         "/collections/shoes"
       ],
-      "productLimit": 52,
+      "productLimit": 53,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3651,7 +3655,7 @@
         "shoes"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 52
+      "backfillLimit": 53
     },
     {
       "id": "camper",
@@ -3693,7 +3697,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=218. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=217. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -4543,7 +4547,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=1250. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1246. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
