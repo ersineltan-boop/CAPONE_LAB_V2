@@ -22,6 +22,29 @@ describe("footwear gate", () => {
     expect(evaluateFootwearProduct({ title: 'Silk Top', productType: 'Top', tags: ['TOP VENTAS'] }).decision).toBe('EXCLUDE_NON_FOOTWEAR');
     expect(evaluateFootwearProduct({ title: 'Mystery', tags: ['TOP VENTAS'] }).decision).toBe('EXCLUDE_UNCERTAIN_PRODUCT_TYPE');
   });
+  it("accepts Cecilie shoe types under a broad ACCESSORIES tag while retaining raw source tags", () => {
+    const raw = {
+      id: 1, title: "CBBLAISE | SOFT SNEAKERS SUEDE / NYLON NAVY",
+      handle: "3-26ftw30004-cbblaise-soft-sneakers-suede-nylon-navy",
+      product_type: "SHOES", tags: ["ACCESSORIES", "FW26", "label:New"],
+      body_html: "<p>Suede sneakers</p>", images: [{ src: "https://example.com/shoe.jpg" }],
+    };
+    const shoe = shopifyProductToPilot(raw, { ...config, brand: "CECILIE BAHNSEN" }, "2026-10-03T11:00:00Z", "/collections/shoes-accessories");
+    expect(shoe?.category).toBe("SNEAKER");
+    expect(shoe?.sourceProductTags).toEqual(raw.tags);
+    expect(evaluateFootwearProduct({ title: "CBBLANCA | FLORA BOOTS SUEDE NAVY", productType: "SHOES", tags: ["ACCESSORIES"] }).category).toBe("BOOT");
+  });
+
+  it.each([
+    { title: "AUDREY BASE CAMP DUFFEL BAG", productType: "BAG", tags: ["ACCESSORIES"] },
+    { title: "SUN | VEIL ORGANZA WHITE", productType: "VEIL", tags: ["ACCESSORIES"] },
+    { title: "Shoe Care Kit", productType: "SHOES", tags: ["ACCESSORIES"] },
+    { title: "Leather Sneakers", productType: "SHOES", tags: ["ACCESSORIES", "HANDBAG"] },
+    { title: "Leather Sneakers", tags: ["ACCESSORIES"] },
+  ])("keeps conflicting or unproven accessories excluded: $title", (input) => {
+    expect(evaluateFootwearProduct({ ...input, fromVerifiedFootwearCollection: true }).decision).toBe("EXCLUDE_NON_FOOTWEAR");
+  });
+
   it("handbag excluded", () => {
     expect(
       evaluateFootwearProduct({

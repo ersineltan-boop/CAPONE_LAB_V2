@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { runMultibrandAnalysis } from "../analysis/runMultibrandAnalysis";
 import { runMultibrandCollection } from "../collector/runMultibrand";
-import { collectShopifyCollectionMembership } from "../collector/shopifyCollectionMembership";
+import { collectShopifyCollectionMembership, mergeVerifiedShopifyMembership } from "../collector/shopifyCollectionMembership";
 import { FULL_COLLECTION_CRAWL_CAP } from "../collector/fullCoveragePaths";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../collector/levelShoes";
 import { collectMarketplaceListing } from "../collector/marketplaceHtml";
@@ -329,7 +329,7 @@ async function refreshBrandMembership(
     const products =
       status === "failed"
         ? catalog
-        : globalDedupe(mergeProductCatalog(catalog, collected.products));
+        : globalDedupe(mergeVerifiedShopifyMembership(config, catalog, collected));
     return {
       products,
       outcome: {

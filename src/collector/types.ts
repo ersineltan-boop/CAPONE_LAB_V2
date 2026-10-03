@@ -106,6 +106,7 @@ export interface PilotSourceConfig {
   baseUrl: string;
   collectionPaths: string[];
   verifiedFootwearPaths?: string[];
+  verifiedNewArrivalPaths?: string[];
   maxProducts: number;
   backfillLimit?: number;
   collectMode?: "legacy" | "backfill" | "incremental" | "full";

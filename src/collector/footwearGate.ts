@@ -287,7 +287,13 @@ function officialCoperniBeltCategory(title: string, url: string): FootwearCatego
 }
 
 export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | null {
-  const evidenceTags = (input.tags ?? []).filter((tag) => !isMerchandisingTag(tag));
+  // Some official stores place actual SHOES under the ACCESSORIES department.
+  // Ignore only that exact broad tag when the product type independently proves
+  // footwear. Specific bag/clothing/care evidence still takes precedence.
+  const explicitShoeType = /^shoes$/i.test(input.productType?.trim() ?? "");
+  const evidenceTags = (input.tags ?? []).filter((tag) =>
+    !isMerchandisingTag(tag) && !(explicitShoeType && /^accessories$/i.test(tag.trim())),
+  );
   const haystack = joinSignals([
     input.title,
     input.productType,
@@ -391,7 +397,7 @@ export function inferFootwearCategoryFromSignals(input: FootwearGateInput): Foot
 
   if (/\bthong\b|\bflip flop\b|\bchinelo\b/.test(collectionText)) return "THONG";
   if (/\bankle boot|\bankle-boot/.test(collectionText)) return "ANKLE_BOOT";
-  if (/\bknee[- ]high boot|\bknee boot|\bboot\b|\bbota\b|\bbotas\b|\bbottine/.test(collectionText)) {
+  if (/\bknee[- ]high boot|\bknee boot|\bboots?\b|\bbota\b|\bbotas\b|\bbottine/.test(collectionText)) {
     return "BOOT";
   }
   if (/\bsling[- ]?back|\bslingback/.test(titleType)) return "SLINGBACK";
