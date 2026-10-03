@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03T00:34:48.997Z",
+  "updatedAt": "2026-10-03T09:25:09.505Z",
   "policy": {
     "maxAttemptsPerRun": 25,
     "maxActivationsPerRun": 3,
@@ -1308,9 +1308,9 @@
       "slug": "pedro-miralles",
       "priority": 81,
       "status": "PARTIAL",
-      "attempts": 3,
-      "lastAttemptAt": "2026-10-02T06:41:44.498Z",
-      "nextRetryAt": "2026-10-09T06:41:44.498Z",
+      "attempts": 4,
+      "lastAttemptAt": "2026-10-03T09:25:09.505Z",
+      "nextRetryAt": "2026-10-10T09:25:09.505Z",
       "sourceUrl": "https://www.pedromiralles.com",
       "detectedPlatform": "SHOPIFY",
       "collectorStrategy": "shopify-public",
