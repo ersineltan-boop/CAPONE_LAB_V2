@@ -57,8 +57,8 @@ export function isExcludedMerchCollection(handle: string, title: string): boolea
   );
 }
 
-const STRICT_NEW_ARRIVALS = /\b(new arrivals?|new in|just in|whats new)\b/i;
-const NEW_ARRIVAL_ROOTS = new Set(["new-arrivals", "new-arrival", "new-in", "just-in", "whats-new"]);
+const STRICT_NEW_ARRIVALS = /\b(new arrivals?|new in|just in|whats new|novedades)\b/i;
+const NEW_ARRIVAL_ROOTS = new Set(["new-arrivals", "new-arrival", "new-in", "just-in", "whats-new", "novedades"]);
 const DEDICATED_FOOTWEAR_ROOTS = ["shoes", "footwear", "us-shoes", "womens-shoes", "women-shoes"];
 
 export function isWomensNewArrivalsCollection(handle: string, title: string): boolean {
@@ -107,8 +107,13 @@ export function planWomensCollections(
   }
 
   if (seed?.womenCollectionPath) {
+    const rootHandle = seed.womenCollectionPath.replace(/^\/collections\//, "").replace(/\/$/, "");
+    const sale = collections.filter(collection =>
+      ["sale-" + rootHandle, rootHandle + "-sale"].includes(collection.handle) &&
+      collection.productsCount > 0 && isWomensFootwearCollection(collection.handle, collection.title) &&
+      !isExcludedMerchCollection(collection.handle, collection.title));
     return {
-      catalogPaths: [seed.womenCollectionPath],
+      catalogPaths: [seed.womenCollectionPath, ...sale.map(collection => collectionPath(collection.handle))],
       newArrivalsPaths,
       authoritative: true,
       reason: null,

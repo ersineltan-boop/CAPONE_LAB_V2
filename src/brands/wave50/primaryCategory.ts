@@ -48,6 +48,15 @@ export function isNonFootwearCatalogItem(input: { title?: string | null }): bool
 }
 
 function fromEvidenceText(text: string): PrimaryFootwearCategory | null {
+  if (/\b(?:derb(?:y|ie|ies)|oxfords?|brogues?|bluchers?)\b/.test(text)) return "OXFORD_DERBY";
+  if (/\bsneakers?\b|\btrainers?\b|\brunning shoes?\b|\bbaskets?\b/.test(text)) return "SNEAKER";
+  if (/\bmonk shoes?\b/.test(text)) return "LOAFER";
+  if (/\bbot[ií]n(?:es)?\b|\bbotines?\b/.test(text)) return "BOOT";
+  if (/\bmerceditas?\b|\bbailarinas?\b/.test(text)) return "BALLET_FLAT";
+  if (/\bmocas[ií]n(?:es)?\b/.test(text)) return "LOAFER";
+  if (/\bzuecos?\b/.test(text)) return "CLOG";
+  if (/\balpargatas?\b/.test(text)) return "ESPADRILLE";
+  if (/\bwallabees?\b/.test(text)) return "LOAFER";
   if (/mocassi[mn]/.test(text)) return "LOAFER";
   if (/\bsandals?\b|sand[aá]lias?/.test(text)) return "SANDAL";
   if (/\bbotas?\b|\bbottes?\b|\bbottines?\b|\bboot(?:s|ies?)?\b|\bwell(?:y|ies)\b|\bwellingtons?\b/.test(text)) {
@@ -76,7 +85,7 @@ function fromEvidenceText(text: string): PrimaryFootwearCategory | null {
   if (/\bflats?\b/.test(text)) return "BALLET_FLAT";
   if (/\bespadrilles?\b|\bjute sole\b/.test(text)) return "ESPADRILLE";
   if (/\blaces?\b/.test(text) && !/\bslippers?\b/.test(text)) return "BALLET_FLAT";
-  if (/\bslippers?\b/.test(text)) return "LOAFER";
+  if (/\bslippers?\b|\bhouse shoes?\b/.test(text)) return "LOAFER";
   return null;
 }
 
@@ -100,7 +109,7 @@ export function classifyOfficialFootwear(input: {
   const productType = normalizeType(input.productType);
   if (productType === "sapato" || productType === "sapatos") return "PUMP";
 
-  const tags = (input.tags ?? "").toLowerCase();
+  const tags = (input.tags ?? "").toLowerCase().replace(/[_|:]+/g, " ");
   if (!tags) return null;
   return fromEvidenceText(tags);
 }

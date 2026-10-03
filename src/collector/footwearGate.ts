@@ -162,6 +162,7 @@ const NON_FOOTWEAR_PATTERNS = [
   /\btote\b/i,
   /\bcrossbody/i,
   /\bshoe care/i,
+  /\bfoot care\b/i,
   /\bcare kit/i,
   /\baccessories\b/i,
   /\bjewell?ery/i,
@@ -225,8 +226,8 @@ const NON_FOOTWEAR_PATTERNS = [
 const FOOTWEAR_COLLECTION_HINT =
   /shoe|footwear|heel|sandal|boot|flat|pump|mule|loafer|sneaker|sapato|sapatos|soca|socas|salto|bota|botas|sapatilha|rasteira|chinelo|mocassim|escarpin|chaussure|bottine|ballerine/i;
 
-const MENS_ONLY_HINT = /\bmen'?s\b|\bmens\b|\bhomme\b|\bman\b|\bboy?s\b/i;
-const WOMENS_HINT = /\bwomen'?s\b|\bwomens\b|\bfemme\b|\bladies\b|\bwoman\b|\bgirl?s\b/i;
+const MENS_ONLY_HINT = /\bmen\b|\bmen'?s\b|\bmens\b|\bhomme\b|\bman\b|\bboy?s\b/i;
+const WOMENS_HINT = /\bwomen\b|\bwomen'?s\b|\bwomens\b|\bfemme\b|\bladies\b|\bwoman\b|\bgirl?s\b/i;
 
 function normalizeToken(value: string): string {
   return value.trim().toUpperCase();

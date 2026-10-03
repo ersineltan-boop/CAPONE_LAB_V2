@@ -1,0 +1,168 @@
+{
+  "generatedAt": "2026-10-03T17:42:24.293005+00:00",
+  "baseCommit": "e0a343b",
+  "publication": "VALIDATED_PENDING_PREVIEW_AND_PRODUCTION",
+  "accepted": [
+    {
+      "slug": "carel",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 182,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 0
+    },
+    {
+      "slug": "dolce-vita",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 674,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 260
+    },
+    {
+      "slug": "flattered",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 91,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 28
+    },
+    {
+      "slug": "hereu",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 181,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 56
+    },
+    {
+      "slug": "lemaire",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 71,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 27
+    },
+    {
+      "slug": "luis-onofre",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 153,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 34
+    },
+    {
+      "slug": "manu-atelier",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:26:06.922Z",
+      "products": 71,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 0
+    },
+    {
+      "slug": "sophia-webster",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 279,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 46
+    },
+    {
+      "slug": "larroude",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 490,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 97
+    },
+    {
+      "slug": "st-agni",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:24:18.580Z",
+      "products": 98,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 25
+    },
+    {
+      "slug": "naguisa",
+      "status": "ACCEPTED_FULL",
+      "collectedAt": "2026-10-03T17:35:49.461Z",
+      "products": 72,
+      "paginationExhausted": true,
+      "newArrivalsFootwear": 64
+    },
+    {
+      "slug": "loeffler-randall",
+      "status": "ACCEPTED_PARTIAL",
+      "collectedAt": "2026-10-03T17:25:29.348Z",
+      "products": 337,
+      "coverageNote": "Official overall women footwear total is not independently confirmed; archive retained."
+    },
+    {
+      "slug": "freda-salvador",
+      "status": "ACCEPTED_PARTIAL",
+      "collectedAt": "2026-10-03T17:25:16.755Z",
+      "products": 273,
+      "coverageNote": "Official overall women footwear total is not independently confirmed; archive retained."
+    },
+    {
+      "slug": "sarah-flint",
+      "status": "ACCEPTED_PARTIAL",
+      "collectedAt": "2026-10-03T17:25:21.878Z",
+      "products": 260,
+      "coverageNote": "Official overall women footwear total is not independently confirmed; archive retained."
+    },
+    {
+      "slug": "massimo-dutti",
+      "status": "ACCEPTED_PARTIAL",
+      "collectedAt": "2026-10-03T17:25:16.002Z",
+      "products": 121,
+      "coverageNote": "Official overall women footwear total is not independently confirmed; archive retained."
+    },
+    {
+      "slug": "ala-a",
+      "status": "ACCEPTED_PARTIAL",
+      "collectedAt": "2026-10-03T17:25:06.195Z",
+      "products": 209,
+      "coverageNote": "Official overall women footwear total is not independently confirmed; archive retained."
+    }
+  ],
+  "preserved": [
+    {
+      "slug": "jil-sander",
+      "status": "LAST_GOOD_RETAINED",
+      "sourceReportedTotal": 79,
+      "uniqueScopeProducts": 80,
+      "blocker": "SOURCE_TOTAL_NOT_RECONCILED",
+      "note": "Terminal page reached; total does not match unique scope product URLs. No safety gate bypass."
+    },
+    {
+      "slug": "casadei",
+      "status": "LAST_GOOD_RETAINED",
+      "sourceReportedTotal": 358,
+      "uniqueScopeProducts": 356,
+      "blocker": "SOURCE_TOTAL_NOT_RECONCILED",
+      "note": "Terminal page reached; total does not match unique scope product URLs. No safety gate bypass."
+    }
+  ],
+  "marketplaces": "Six marketplace catalogs retained; marketplace repair is outside this targeted brand recovery.",
+  "archive": {
+    "before": 20733,
+    "after": 20834,
+    "missingIds": 0,
+    "missingUrls": 0,
+    "missingImages": 0,
+    "duplicateIds": 0
+  },
+  "visual": {
+    "beforeModels": 20341,
+    "candidateModels": 20440,
+    "beforeVerifiedNew": 4406,
+    "candidateVerifiedNew": 4284
+  },
+  "validation": {
+    "tests": 1019,
+    "productionBuild": true,
+    "typescript": true
+  }
+}

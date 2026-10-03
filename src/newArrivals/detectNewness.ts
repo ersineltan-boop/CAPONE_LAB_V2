@@ -22,7 +22,7 @@ export function detectNewBadgeInText(...parts: Array<string | null | undefined>)
   // Only standalone source labels/tags; descriptive text is not a NEW badge.
   return parts.some((part) => {
     const label = part?.trim().toLowerCase().replace(/[-_]+/g, " ").replace(/\s+/g, " ");
-    return Boolean(label && /^(?:new|new in|just in|new arrivals?)$/.test(label));
+    return Boolean(label && /^(?:new|new in|just in|new arrivals?|novedades)$/.test(label));
   });
 }
 

@@ -279,7 +279,7 @@ export async function collectCasadeiWomensShoes(
     const offset = parsed.offset ?? 0;
     const covered = offset + parsed.hits.length;
     if (covered >= parsed.total || seen.size >= parsed.total) {
-      paginationExhausted = seen.size === parsed.total;
+      paginationExhausted = true;
       break;
     }
     if (added === 0) {

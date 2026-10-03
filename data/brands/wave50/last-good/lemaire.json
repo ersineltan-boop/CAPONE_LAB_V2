@@ -2,8 +2,8 @@
   "slug": "lemaire",
   "brand": "LEMAIRE",
   "officialUrl": "https://www.lemaire.fr",
-  "snapshotId": "lemaire:2026-09-26T11:56:35.990Z",
-  "collectedAt": "2026-09-26T11:56:35.990Z",
+  "snapshotId": "lemaire:2026-10-03T17:24:18.580Z",
+  "collectedAt": "2026-10-03T17:24:18.580Z",
   "catalogPaths": [
     "/collections/women-shoes"
   ],
@@ -14,13 +14,13 @@
     "/collections/new-arrivals-shoes-w"
   ],
   "coverage": {
-    "sourceTotal": 67,
-    "collected": 67,
+    "sourceTotal": 71,
+    "collected": 71,
     "missing": 0,
     "coverage": 100,
-    "excluded": 4,
+    "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 67,
+    "galleryComplete": 71,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -31,6 +31,40 @@
   "referenceFootwearMatch": null,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "lemaire--crease-sleeve-boot-shiny",
+      "brand": "LEMAIRE",
+      "canonicalName": "Crease Sleeve Boot Shiny",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_1.jpg?v=1782124798",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_2.jpg?v=1782124797",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_4.jpg?v=1782124797",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_5.jpg?v=1782124799"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
+          "handle": "crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
+          "title": "CREASE SLEEVE BOOTS IN SOFT SHINY CALF LEATHER",
+          "color": "CREASE SLEEVE BOOTS IN SOFT SHINY CALF LEATHER",
+          "sku": "FO0312 LL0270_BK999_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_1.jpg?v=1782124798",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_2.jpg?v=1782124797",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_4.jpg?v=1782124797",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_5.jpg?v=1782124799"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
     {
       "modelFamilyId": "lemaire--formal-slip-on-shiny-vegetable",
       "brand": "LEMAIRE",
@@ -215,7 +249,7 @@
       "modelFamilyId": "lemaire--piped-boot-40mm-heel-shiny-buffalo",
       "brand": "LEMAIRE",
       "canonicalName": "Piped Boot 40mm Heel Shiny Buffalo",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0316_LL0042_BR449_1_3e7c76ea-af45-4499-bf02-cfd10fcad7f1.jpg?v=1782642925",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0316_LL0042_BR449_2_cc9f75d1-d693-4425-a8d3-09a2e0a46565.jpg?v=1782642926",
@@ -235,7 +269,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0316_LL0042_BR449_4_822dd0bf-cd60-4574-87bd-552e2339328b.jpg?v=1782642926",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0316_LL0042_BR449_5_23a92b14-ab37-4071-b61e-9aecc4bba67a.jpg?v=1782642924"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -282,6 +316,40 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "lemaire--glove-ankle-boot-80mm-heel-hairy-calfskin",
+      "brand": "LEMAIRE",
+      "canonicalName": "Glove Ankle Boot 80mm Heel Hairy Calfskin",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_1_d0937fb1-5b7d-424e-be11-e19cc15246b7.jpg?v=1782642928",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_2_8a557b3c-15fa-4f2d-8a58-19a5d71230dd.jpg?v=1782642927",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_4_af8e6aa8-f8e1-4a6f-bd60-b0dd64c27fa7.jpg?v=1782642926",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_5_08eb97fe-9695-46dd-8801-0c6a74a392ee.jpg?v=1782642929"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
+          "handle": "glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
+          "title": "GLOVE ANKLE BOOTS 80MM HEEL IN HAIRY CALFSKIN LEATHER",
+          "color": "GLOVE ANKLE BOOTS 80MM HEEL IN HAIRY CALFSKIN LEATHER",
+          "sku": "FO0216 LL0223_BL424_36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_1_d0937fb1-5b7d-424e-be11-e19cc15246b7.jpg?v=1782642928",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_2_8a557b3c-15fa-4f2d-8a58-19a5d71230dd.jpg?v=1782642927",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_4_af8e6aa8-f8e1-4a6f-bd60-b0dd64c27fa7.jpg?v=1782642926",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_5_08eb97fe-9695-46dd-8801-0c6a74a392ee.jpg?v=1782642929"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "lemaire--pedille-ballerina-55mm-heel-goatskin--pedille-ballerina-55-women-bk999-black-ll0152-goatskin-leather-fo0318-ll0152-bk999",
       "brand": "LEMAIRE",
       "canonicalName": "Pedille Ballerina 55mm Heel Goatskin",
@@ -318,10 +386,46 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--crease-sleeve-boot-shiny",
+      "modelFamilyId": "lemaire--pedille-flat-ballerina-goatskin",
+      "brand": "LEMAIRE",
+      "canonicalName": "Pedille Flat Ballerina Goatskin",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_1_7ed26c93-180a-44f7-b276-4590ed20c014.jpg?v=1782642928",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_2_ecc5894d-b5de-484c-9feb-84ff7966f2eb.jpg?v=1782642928",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_4_addb9bc8-e764-45bd-9e82-e497fb38c045.jpg?v=1782642928",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_5_472f2f04-f2c3-475c-ac11-2e9a7f30d08d.jpg?v=1782642928",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_6_aa6777fd-cc99-48a6-89aa-afaee53bd1a0.jpg?v=1782642928"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
+          "handle": "pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
+          "title": "PEDILLE FLAT BALLERINA IN GOATSKIN LEATHER",
+          "color": "PEDILLE FLAT BALLERINA IN GOATSKIN LEATHER",
+          "sku": "FO0317 LL0152_BG218_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_1_7ed26c93-180a-44f7-b276-4590ed20c014.jpg?v=1782642928",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_2_ecc5894d-b5de-484c-9feb-84ff7966f2eb.jpg?v=1782642928",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_4_addb9bc8-e764-45bd-9e82-e497fb38c045.jpg?v=1782642928",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_5_472f2f04-f2c3-475c-ac11-2e9a7f30d08d.jpg?v=1782642928",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_6_aa6777fd-cc99-48a6-89aa-afaee53bd1a0.jpg?v=1782642928"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "lemaire--crease-sleeve-boot-shiny--crease-sleeve-boots-women-gy392-elephant-ll0270-soft-shiny-calf-leather-fo0312-ll0270-gy392",
       "brand": "LEMAIRE",
       "canonicalName": "Crease Sleeve Boot Shiny",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312_LL0270_GY392_1_0ef03578-6ab7-4aca-9102-9eb64e76ef14.jpg?v=1782642927",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312_LL0270_GY392_2_ee030d0e-250d-4dd5-bfcf-3f619dc502b6.jpg?v=1782642927",
@@ -341,7 +445,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312_LL0270_GY392_4_19b5ad1d-98a1-4259-9a8e-d822496ac724.jpg?v=1782642928",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312_LL0270_GY392_5_86f1b747-a528-444c-8192-682a7786b775.jpg?v=1782642926"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -352,7 +456,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--glove-ankle-boot-80mm-heel-hairy-calfskin",
+      "modelFamilyId": "lemaire--glove-ankle-boot-80mm-heel-hairy-calfskin--glove-ankle-boots-80-women-br490-dark-chocolate-ll0223-hairy-calfskin-leather-fo0216-ll0223-br490",
       "brand": "LEMAIRE",
       "canonicalName": "Glove Ankle Boot 80mm Heel Hairy Calfskin",
       "category": "ANKLE_BOOT",
@@ -564,7 +668,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--pedille-flat-ballerina-goatskin",
+      "modelFamilyId": "lemaire--pedille-flat-ballerina-goatskin--pedille-flat-ballerina-women-bk999-black-ll0152-goatskin-leather-fo0317-ll0152-bk999",
       "brand": "LEMAIRE",
       "canonicalName": "Pedille Flat Ballerina Goatskin",
       "category": "BALLERINA",
@@ -679,7 +783,7 @@
       "modelFamilyId": "lemaire--zipped-boot-shiny-vegetable",
       "brand": "LEMAIRE",
       "canonicalName": "Zipped Boot Shiny Vegetable",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243_LL0106_BK999_1_abf04cef-e4e9-4ead-9dab-45f9bd6c2c48.jpg?v=1782642925",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243_LL0106_BK999_2_5f8c5b9a-8f56-41bd-bf8a-3b3a820f3531.jpg?v=1782642926",
@@ -699,7 +803,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243_LL0106_BK999_4_ca0fc299-d1bf-4829-a3f2-b90edde8da4b.jpg?v=1782642924",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243_LL0106_BK999_5_560e636c-640d-4f03-bf0e-acd0900ea743.jpg?v=1782642926"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -744,10 +848,114 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "lemaire--anatomic-boot-80mm-heel-glossy-vegetable",
+      "brand": "LEMAIRE",
+      "canonicalName": "Anatomic Boot 80mm Heel Glossy Vegetable",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_1_6590bd4d-14d9-4036-ae08-326145f49a5e.jpg?v=1782828934",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_4.jpg?v=1782489247",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_5.jpg?v=1782489235",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_6.jpg?v=1782489235"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/anatomic-boots-80-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
+          "handle": "anatomic-boots-80-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
+          "title": "ANATOMIC BOOTS WITH 80MM HEEL IN GLOSSY VEGETABLE LEATHER",
+          "color": "ANATOMIC BOOTS WITH 80MM HEEL IN GLOSSY VEGETABLE LEATHER",
+          "sku": "FO0134 LL0078_BR449_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_1_6590bd4d-14d9-4036-ae08-326145f49a5e.jpg?v=1782828934",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_4.jpg?v=1782489247",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_5.jpg?v=1782489235",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134_LL0078_BR449_6.jpg?v=1782489235"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "lemaire--souris-classic-derbies-55mm-heel-washed",
+      "brand": "LEMAIRE",
+      "canonicalName": "Souris Classic Derbies 55mm Heel Washed",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_1_c5df00e6-2905-47bb-90c9-8bd961a4a447.jpg?v=1782826868",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_4_ddbab908-73c5-41de-a5fe-a75bc2410248.webp?v=1782826870",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_5_482312d1-1f90-486b-b3ab-fdc1900c1eb5.jpg?v=1782826876",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_6_49b0003f-b569-4d36-91ee-062b03b6241d.jpg?v=1782826877",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_7_e642a206-3646-4b65-986e-e74528b83701.jpg?v=1782826878"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/souris-classic-derbies-55-women-wh000-white-ll0070",
+          "handle": "souris-classic-derbies-55-women-wh000-white-ll0070",
+          "title": "SOURIS CLASSIC DERBIES 55MM HEEL IN WASHED NAPPA LAMBSKIN LEATHER",
+          "color": "SOURIS CLASSIC DERBIES 55MM HEEL IN WASHED NAPPA LAMBSKIN LEATHER",
+          "sku": "FO0246 LL0070_WH000_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_1_c5df00e6-2905-47bb-90c9-8bd961a4a447.jpg?v=1782826868",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_4_ddbab908-73c5-41de-a5fe-a75bc2410248.webp?v=1782826870",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_5_482312d1-1f90-486b-b3ab-fdc1900c1eb5.jpg?v=1782826876",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_6_49b0003f-b569-4d36-91ee-062b03b6241d.jpg?v=1782826877",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0246_LL0070_WH000_7_e642a206-3646-4b65-986e-e74528b83701.jpg?v=1782826878"
+          ],
+          "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "lemaire--anatomic-boot-55mm-heel-glossy-vegetable",
+      "brand": "LEMAIRE",
+      "canonicalName": "Anatomic Boot 55mm Heel Glossy Vegetable",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_1_be11bed3-3a42-4dc5-b194-a14f5056ca3f.jpg?v=1782828247",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_4_9ddaa857-fdeb-4a9e-9d94-e3db22386d0c.jpg?v=1782828266",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_5_790e4129-fa8d-4a1a-9ccd-1980a960acff.jpg?v=1782828280",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_6_0f962906-3456-430c-8756-55f34db17081.jpg?v=1782828290"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/anatomic-boots-55-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
+          "handle": "anatomic-boots-55-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
+          "title": "ANATOMIC BOOTS WITH 55MM HEEL IN GLOSSY VEGETABLE LEATHER",
+          "color": "ANATOMIC BOOTS WITH 55MM HEEL IN GLOSSY VEGETABLE LEATHER",
+          "sku": "FO0206 LL0078_BR449_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_1_be11bed3-3a42-4dc5-b194-a14f5056ca3f.jpg?v=1782828247",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_4_9ddaa857-fdeb-4a9e-9d94-e3db22386d0c.jpg?v=1782828266",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_5_790e4129-fa8d-4a1a-9ccd-1980a960acff.jpg?v=1782828280",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR449_6_0f962906-3456-430c-8756-55f34db17081.jpg?v=1782828290"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "lemaire--glove-high-boot-80mm-heel-smooth",
       "brand": "LEMAIRE",
       "canonicalName": "Glove High Boot 80mm Heel Smooth",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0215LL0154_BR490_1.jpg?v=1782125442",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0215LL0154_BR490_2.jpg?v=1782125442",
@@ -767,7 +975,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0215LL0154_BR490_4.jpg?v=1782125442",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0215LL0154_BR490_5.jpg?v=1782125442"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -814,44 +1022,10 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--crease-sleeve-boot-shiny--crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
-      "brand": "LEMAIRE",
-      "canonicalName": "Crease Sleeve Boot Shiny",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_1.jpg?v=1782124798",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_2.jpg?v=1782124797",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_4.jpg?v=1782124797",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_5.jpg?v=1782124799"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.lemaire.fr/products/crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
-          "handle": "crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
-          "title": "CREASE SLEEVE BOOTS IN SOFT SHINY CALF LEATHER",
-          "color": "CREASE SLEEVE BOOTS IN SOFT SHINY CALF LEATHER",
-          "sku": "FO0312 LL0270_BK999_35",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_1.jpg?v=1782124798",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_2.jpg?v=1782124797",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_4.jpg?v=1782124797",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0312LL0270_BK999_5.jpg?v=1782124799"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "lemaire--zipped-boot-shiny-vegetable--zipped-boots-women-br489-chocolate-ll0106-shiny-vegetable-leather-fo0243-ll0106-br489",
       "brand": "LEMAIRE",
       "canonicalName": "Zipped Boot Shiny Vegetable",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0106_BR489_1.jpg?v=1782124721",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0106_BR489_2.jpg?v=1782124722",
@@ -871,7 +1045,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0106_BR489_4.jpg?v=1782124721",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0106_BR489_5.jpg?v=1782124721"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -882,10 +1056,10 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--anatomic-boot-55mm-heel-glossy-vegetable",
+      "modelFamilyId": "lemaire--anatomic-boot-55mm-heel-glossy-vegetable--anatomic-boots-55-women-br512-ristretto-ll0078",
       "brand": "LEMAIRE",
       "canonicalName": "Anatomic Boot 55mm Heel Glossy Vegetable",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BR512_1.jpg?v=1782124594",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206_LL0078_BR512_2_3aad2c73-3773-48b4-aca7-991b24d1598e.webp?v=1750433034",
@@ -905,7 +1079,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BR512_5.jpg?v=1782124594",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BR512_6.jpg?v=1782124594"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -952,10 +1126,10 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--anatomic-boot-80mm-heel-glossy-vegetable",
+      "modelFamilyId": "lemaire--anatomic-boot-80mm-heel-glossy-vegetable--anatomic-boots-80-women-br512-ristretto-ll0078",
       "brand": "LEMAIRE",
       "canonicalName": "Anatomic Boot 80mm Heel Glossy Vegetable",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BR512_1.jpg?v=1782124451",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BR512_2.jpg?v=1782124452",
@@ -975,7 +1149,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BR512_5.jpg?v=1782124451",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BR512_6.jpg?v=1782124451"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1058,9 +1232,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--glove-mule-smooth",
+      "modelFamilyId": "lemaire--glove-mule-80mm-heel-smooth",
       "brand": "LEMAIRE",
-      "canonicalName": "Glove Mule Smooth",
+      "canonicalName": "Glove Mule 80mm Heel Smooth",
       "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0262LL0154_BR490_1.webp?v=1769599148",
@@ -1073,8 +1247,8 @@
         {
           "productUrl": "https://www.lemaire.fr/products/glove-mules-women-dark-chocolate-smooth-lambskin-leather-fo0262-ll0154-br490",
           "handle": "glove-mules-women-dark-chocolate-smooth-lambskin-leather-fo0262-ll0154-br490",
-          "title": "GLOVE MULES IN SMOOTH LAMBSKIN LEATHER",
-          "color": "GLOVE MULES IN SMOOTH LAMBSKIN LEATHER",
+          "title": "GLOVE MULES 80MM HEEL IN SMOOTH LAMBSKIN LEATHER",
+          "color": "GLOVE MULES 80MM HEEL IN SMOOTH LAMBSKIN LEATHER",
           "sku": "FO0262 LL0154_BR490_35",
           "images": [
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0262LL0154_BR490_1.webp?v=1769599148",
@@ -1200,7 +1374,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--souris-classic-derbies-55mm-heel-washed",
+      "modelFamilyId": "lemaire--souris-classic-derbies-55mm-heel-washed--souris-classic-derbies-55-women-br490-dark-chocolate-ll0070",
       "brand": "LEMAIRE",
       "canonicalName": "Souris Classic Derbies 55mm Heel Washed",
       "category": "PUMP",
@@ -1311,7 +1485,7 @@
       "modelFamilyId": "lemaire--anatomic-boot-55mm-heel-glossy-vegetable--anatomic-boots-55-women-bk999-black-ll0078-glossy-vegetable-leather",
       "brand": "LEMAIRE",
       "canonicalName": "Anatomic Boot 55mm Heel Glossy Vegetable",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BK999_1.jpg?v=1782124518",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BK999_4.jpg?v=1782124518",
@@ -1331,7 +1505,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BK999_5.jpg?v=1782124518",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0206LL0078_BK999_6.jpg?v=1782124519"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1345,7 +1519,7 @@
       "modelFamilyId": "lemaire--anatomic-boot-80mm-heel-glossy-vegetable--anatomic-boots-80-women-bk999-black-ll0078-glossy-vegetable-leather",
       "brand": "LEMAIRE",
       "canonicalName": "Anatomic Boot 80mm Heel Glossy Vegetable",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BK999_1.jpg?v=1782124376",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BK999_2.jpg?v=1782124376",
@@ -1365,7 +1539,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BK999_5.jpg?v=1782124376",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BK999_6.jpg?v=1782124377"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1412,10 +1586,44 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "lemaire--glove-ballerina-washed-buffalo",
+      "brand": "LEMAIRE",
+      "canonicalName": "Glove Ballerina Washed Buffalo",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_1.jpg?v=1783428157",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_5_013cd928-e6ab-4363-a4b4-5f0238f37694.webp?v=1782830315",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_6_301550e8-0fb4-42c1-a1ed-66123009fce0.webp?v=1782830329",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_7_9ab89e99-819f-487c-8ee8-16617d7499c2.webp?v=1782830340"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/glove-ballerina-women-washed-dark-brown-washed-buffalo-leather-fo0261-ll0199-br635",
+          "handle": "glove-ballerina-women-washed-dark-brown-washed-buffalo-leather-fo0261-ll0199-br635",
+          "title": "GLOVE BALLERINA IN WASHED BUFFALO LEATHER",
+          "color": "GLOVE BALLERINA IN WASHED BUFFALO LEATHER",
+          "sku": "FO0261 LL0199_BR635_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_1.jpg?v=1783428157",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_5_013cd928-e6ab-4363-a4b4-5f0238f37694.webp?v=1782830315",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_6_301550e8-0fb4-42c1-a1ed-66123009fce0.webp?v=1782830329",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0261_LL0199_BR635_7_9ab89e99-819f-487c-8ee8-16617d7499c2.webp?v=1782830340"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "lemaire--glove-boot-30-mm-heel-smooth",
       "brand": "LEMAIRE",
       "canonicalName": "Glove Boot 30 Mm Heel Smooth",
-      "category": "PUMP",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0264LL0154_BR490_1.jpg?v=1773054600",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0264LL0154_BR490_4.jpg?v=1773054601",
@@ -1435,7 +1643,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0264LL0154_BR490_5.jpg?v=1773054601",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0264LL0154_BR490_6.jpg?v=1773054601"
           ],
-          "category": "PUMP",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1521,7 +1729,7 @@
       "modelFamilyId": "lemaire--chelsea-boot-vegetable",
       "brand": "LEMAIRE",
       "canonicalName": "Chelsea Boot Vegetable",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0149_LL0106_BR521_1_a446ddb5-08aa-4a50-b633-fdc17cfb23e7.webp?v=1750433035",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0149_LL0106_BR521_2_7a64e6a5-1545-404d-9c93-03a31b5b3463.webp?v=1750433035",
@@ -1541,7 +1749,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0149_LL0106_BR521_3_50d4a4f1-c626-4a3e-9979-ea3038703b21.webp?v=1750433035",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0149_LL0106_BR521_4_acf37e42-9f91-4308-8596-958286605de1.webp?v=1750433035"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1726,7 +1934,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--glove-ballerina-washed-buffalo",
+      "modelFamilyId": "lemaire--glove-ballerina-washed-buffalo--glove-ballerina-women-washed-beige-washed-buffalo-leather-fo0261-ll0199-be947",
       "brand": "LEMAIRE",
       "canonicalName": "Glove Ballerina Washed Buffalo",
       "category": "BALLERINA",
@@ -1822,6 +2030,40 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0228LL0216_BK999_7.jpg?v=1773055244"
           ],
           "category": "OTHER_FOOTWEAR",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "lemaire--glove-ballerina-smooth",
+      "brand": "LEMAIRE",
+      "canonicalName": "Glove Ballerina Smooth",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_49_31.png?v=1788270896",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_52_24.png?v=1788270896",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_53_13.png?v=1788270896",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_54_12.png?v=1788270897"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
+          "handle": "glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
+          "title": "GLOVE BALLERINA IN SMOOTH LAMBSKIN LEATHER",
+          "color": "GLOVE BALLERINA IN SMOOTH LAMBSKIN LEATHER",
+          "sku": "FO0261 LL0023_BR490_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_49_31.png?v=1788270896",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_52_24.png?v=1788270896",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_53_13.png?v=1788270896",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_54_12.png?v=1788270897"
+          ],
+          "category": "BALLERINA",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -1941,7 +2183,7 @@
       "modelFamilyId": "lemaire--zipped-boot-calfskin",
       "brand": "LEMAIRE",
       "canonicalName": "Zipped Boot Calfskin",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0157_BK999_1.webp?v=1767708152",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0134LL0078_BK999_4b.webp?v=1767708193",
@@ -1961,7 +2203,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0157_BK999_5.webp?v=1767708193",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0243LL0157_BK999_6.webp?v=1767708193"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -2114,9 +2356,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--glove-mule-smooth--glove-mules-women-sesame-smooth-lambskin-leather-fo0262-ll0154-bg011",
+      "modelFamilyId": "lemaire--glove-mule-80mm-heel-smooth--glove-mules-women-sesame-smooth-lambskin-leather-fo0262-ll0154-bg011",
       "brand": "LEMAIRE",
-      "canonicalName": "Glove Mule Smooth",
+      "canonicalName": "Glove Mule 80mm Heel Smooth",
       "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0262LL0154_BG011_1.webp?v=1770302171",
@@ -2129,8 +2371,8 @@
         {
           "productUrl": "https://www.lemaire.fr/products/glove-mules-women-sesame-smooth-lambskin-leather-fo0262-ll0154-bg011",
           "handle": "glove-mules-women-sesame-smooth-lambskin-leather-fo0262-ll0154-bg011",
-          "title": "GLOVE MULES IN SMOOTH LAMBSKIN LEATHER",
-          "color": "GLOVE MULES IN SMOOTH LAMBSKIN LEATHER",
+          "title": "GLOVE MULES 80MM HEEL IN SMOOTH LAMBSKIN LEATHER",
+          "color": "GLOVE MULES 80MM HEEL IN SMOOTH LAMBSKIN LEATHER",
           "sku": "FO0262 LL0154_BG011_35",
           "images": [
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0262LL0154_BG011_1.webp?v=1770302171",
@@ -2140,6 +2382,42 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0262LL0154_BG011_7.webp?v=1770302171"
           ],
           "category": "MULE",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "lemaire--glove-slingback-80-mm-heel-washed-buffalo--glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
+      "brand": "LEMAIRE",
+      "canonicalName": "Glove Slingback 80 Mm Heel Washed Buffalo",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_1.webp?v=1770302005",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_4.webp?v=1770302006",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_5.webp?v=1770302006",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_6.webp?v=1770302005",
+        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_7.webp?v=1770302006"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.lemaire.fr/products/glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
+          "handle": "glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
+          "title": "GLOVE SLINGBACK PUMPS 80 MM HEEL IN WASHED BUFFALO LEATHER",
+          "color": "GLOVE SLINGBACK PUMPS 80 MM HEEL IN WASHED BUFFALO LEATHER",
+          "sku": "FO0256 LL0199_BE947_35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_1.webp?v=1770302005",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_4.webp?v=1770302006",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_5.webp?v=1770302006",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_6.webp?v=1770302005",
+            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_7.webp?v=1770302006"
+          ],
+          "category": "SLINGBACK",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -2186,40 +2464,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--glove-ankle-boot-80mm-heel-hairy-calfskin--glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
-      "brand": "LEMAIRE",
-      "canonicalName": "Glove Ankle Boot 80mm Heel Hairy Calfskin",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_1_d0937fb1-5b7d-424e-be11-e19cc15246b7.jpg?v=1782642928",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_2_8a557b3c-15fa-4f2d-8a58-19a5d71230dd.jpg?v=1782642927",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_4_af8e6aa8-f8e1-4a6f-bd60-b0dd64c27fa7.jpg?v=1782642926",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_5_08eb97fe-9695-46dd-8801-0c6a74a392ee.jpg?v=1782642929"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.lemaire.fr/products/glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
-          "handle": "glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
-          "title": "GLOVE ANKLE BOOTS 80MM HEEL IN HAIRY CALFSKIN LEATHER",
-          "color": "GLOVE ANKLE BOOTS 80MM HEEL IN HAIRY CALFSKIN LEATHER",
-          "sku": "FO0216 LL0223_BL424_36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_1_d0937fb1-5b7d-424e-be11-e19cc15246b7.jpg?v=1782642928",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_2_8a557b3c-15fa-4f2d-8a58-19a5d71230dd.jpg?v=1782642927",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_4_af8e6aa8-f8e1-4a6f-bd60-b0dd64c27fa7.jpg?v=1782642926",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0216_LL0223_BL424_5_08eb97fe-9695-46dd-8801-0c6a74a392ee.jpg?v=1782642929"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "lemaire--glove-slip-on-hairy-lamb",
       "brand": "LEMAIRE",
       "canonicalName": "Glove Slip On Hairy Lamb",
@@ -2256,46 +2500,10 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "lemaire--pedille-flat-ballerina-goatskin--pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
-      "brand": "LEMAIRE",
-      "canonicalName": "Pedille Flat Ballerina Goatskin",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_1_7ed26c93-180a-44f7-b276-4590ed20c014.jpg?v=1782642928",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_2_ecc5894d-b5de-484c-9feb-84ff7966f2eb.jpg?v=1782642928",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_4_addb9bc8-e764-45bd-9e82-e497fb38c045.jpg?v=1782642928",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_5_472f2f04-f2c3-475c-ac11-2e9a7f30d08d.jpg?v=1782642928",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_6_aa6777fd-cc99-48a6-89aa-afaee53bd1a0.jpg?v=1782642928"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.lemaire.fr/products/pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
-          "handle": "pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
-          "title": "PEDILLE FLAT BALLERINA IN GOATSKIN LEATHER",
-          "color": "PEDILLE FLAT BALLERINA IN GOATSKIN LEATHER",
-          "sku": "FO0317 LL0152_BG218_35",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_1_7ed26c93-180a-44f7-b276-4590ed20c014.jpg?v=1782642928",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_2_ecc5894d-b5de-484c-9feb-84ff7966f2eb.jpg?v=1782642928",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_4_addb9bc8-e764-45bd-9e82-e497fb38c045.jpg?v=1782642928",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_5_472f2f04-f2c3-475c-ac11-2e9a7f30d08d.jpg?v=1782642928",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0317_LL0152_BG218_6_aa6777fd-cc99-48a6-89aa-afaee53bd1a0.jpg?v=1782642928"
-          ],
-          "category": "BALLERINA",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "lemaire--knee-top-glove-flat-boot-shiny-lamb",
       "brand": "LEMAIRE",
       "canonicalName": "Knee Top Glove Flat Boot Shiny Lamb",
-      "category": "OTHER_FOOTWEAR",
+      "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0329_LL0023_BR490_1_96d4d8a0-7bda-4a91-8a78-01f5f94a4fdd.jpg?v=1782642928",
         "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0329_LL0023_BR490_2_973999fd-f61a-4d3b-b8a0-c2ba186b951e.jpg?v=1782642928",
@@ -2315,7 +2523,7 @@
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0329_LL0023_BR490_4_a45763f5-7861-495f-854d-bc242ca78a90.jpg?v=1782642928",
             "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0329_LL0023_BR490_5_43797686-e171-4fdb-bcb0-24f53caecedb.jpg?v=1782642926"
           ],
-          "category": "OTHER_FOOTWEAR",
+          "category": "BOOT",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -2324,79 +2532,10 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "lemaire--glove-ballerina-smooth",
-      "brand": "LEMAIRE",
-      "canonicalName": "Glove Ballerina Smooth",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_49_31.png?v=1788270896",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_52_24.png?v=1788270896",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_53_13.png?v=1788270896",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_54_12.png?v=1788270897"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.lemaire.fr/products/glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
-          "handle": "glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
-          "title": "GLOVE BALLERINA IN SMOOTH LAMBSKIN LEATHER",
-          "color": "GLOVE BALLERINA IN SMOOTH LAMBSKIN LEATHER",
-          "sku": "FO0261 LL0023_BR490_35",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_49_31.png?v=1788270896",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_52_24.png?v=1788270896",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_53_13.png?v=1788270896",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/ChatGPT_Image_1_sept._2026_15_54_12.png?v=1788270897"
-          ],
-          "category": "BALLERINA",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "lemaire--glove-slingback-80-mm-heel-washed-buffalo--glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
-      "brand": "LEMAIRE",
-      "canonicalName": "Glove Slingback 80 Mm Heel Washed Buffalo",
-      "category": "SLINGBACK",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_1.webp?v=1770302005",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_4.webp?v=1770302006",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_5.webp?v=1770302006",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_6.webp?v=1770302005",
-        "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_7.webp?v=1770302006"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.lemaire.fr/products/glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
-          "handle": "glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
-          "title": "GLOVE SLINGBACK PUMPS 80 MM HEEL IN WASHED BUFFALO LEATHER",
-          "color": "GLOVE SLINGBACK PUMPS 80 MM HEEL IN WASHED BUFFALO LEATHER",
-          "sku": "FO0256 LL0199_BE947_35",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_1.webp?v=1770302005",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_4.webp?v=1770302006",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_5.webp?v=1770302006",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_6.webp?v=1770302005",
-            "https://cdn.shopify.com/s/files/1/0431/7954/0638/files/FO0256LL0199_BE947_7.webp?v=1770302006"
-          ],
-          "category": "SLINGBACK",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     }
   ],
   "productUrls": [
+    "https://www.lemaire.fr/products/crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
     "https://www.lemaire.fr/products/formal-slip-on-unisex-bk999-black-ll0106-shiny-vegetable-leather-fo0326-ll0106-bk999",
     "https://www.lemaire.fr/products/pedille-ballerina-55-women-bk916-beige-grey-ll0259-2-tone-hairy-lamb-leather-fo0318-ll0259-bk916",
     "https://www.lemaire.fr/products/pedille-ballerina-55-women-bg218-light-mastic-ll0152-goatskin-leather-fo0318-ll0152-bg218",
@@ -2404,7 +2543,9 @@
     "https://www.lemaire.fr/products/pedille-ballerina-80-women-bg218-light-mastic-ll0152-goatskin-leather-fo0320-ll0152-bg218",
     "https://www.lemaire.fr/products/piped-boots-40-women-br449-dark-brown-ll0042-shiny-buffalo-leather-fo0316-ll0042-br449",
     "https://www.lemaire.fr/products/pedille-ballerina-80-women-bk999-black-ll0152-goatskin-leather-fo0320-ll0152-bk999",
+    "https://www.lemaire.fr/products/glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
     "https://www.lemaire.fr/products/pedille-ballerina-55-women-bk999-black-ll0152-goatskin-leather-fo0318-ll0152-bk999",
+    "https://www.lemaire.fr/products/pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
     "https://www.lemaire.fr/products/crease-sleeve-boots-women-gy392-elephant-ll0270-soft-shiny-calf-leather-fo0312-ll0270-gy392",
     "https://www.lemaire.fr/products/glove-ankle-boots-80-women-br490-dark-chocolate-ll0223-hairy-calfskin-leather-fo0216-ll0223-br490",
     "https://www.lemaire.fr/products/glove-slip-on-women-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0299-ll0023-br490",
@@ -2417,9 +2558,11 @@
     "https://www.lemaire.fr/products/gummy-grip-sneakers-women-bk999-black-ll0285-mix-nappa-suede-leathers-fo0328-ll0285-bk999",
     "https://www.lemaire.fr/products/zipped-boots-women-bk999-black-ll0106-shiny-vegetable-leather-fo0243-ll0106-bk999",
     "https://www.lemaire.fr/products/glove-ankle-boots-80-women-ye421-laminated-gold-ll0248-hairy-laminated-leather-fo0216-ll0248-ye421",
+    "https://www.lemaire.fr/products/anatomic-boots-80-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
+    "https://www.lemaire.fr/products/souris-classic-derbies-55-women-wh000-white-ll0070",
+    "https://www.lemaire.fr/products/anatomic-boots-55-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
     "https://www.lemaire.fr/products/glove-high-boots-80-women-br490-dark-chocolate-ll0154",
     "https://www.lemaire.fr/products/glove-mule-55-women-br490-dark-chocolate-ll0154-smooth-lambskin-leather-fo0315-ll0154-br490",
-    "https://www.lemaire.fr/products/crease-sleeve-boots-women-bk999-black-ll0270-soft-shiny-calf-leather-fo0312-ll0270-bk999",
     "https://www.lemaire.fr/products/zipped-boots-women-br489-chocolate-ll0106-shiny-vegetable-leather-fo0243-ll0106-br489",
     "https://www.lemaire.fr/products/anatomic-boots-55-women-br512-ristretto-ll0078",
     "https://www.lemaire.fr/products/anatomic-pump-55-women-bk999-black-ll0078-glossy-vegetable-leather",
@@ -2436,6 +2579,7 @@
     "https://www.lemaire.fr/products/anatomic-boots-55-women-bk999-black-ll0078-glossy-vegetable-leather",
     "https://www.lemaire.fr/products/anatomic-boots-80-women-bk999-black-ll0078-glossy-vegetable-leather",
     "https://www.lemaire.fr/products/piped-crepe-slippers-women-dark-brown-grained-cow-leather-fo0293-ll205-br449",
+    "https://www.lemaire.fr/products/glove-ballerina-women-washed-dark-brown-washed-buffalo-leather-fo0261-ll0199-br635",
     "https://www.lemaire.fr/products/glove-boots-30-women-dark-chocolate-smooth-lambskin-leather-fo0264-ll0154-br490",
     "https://www.lemaire.fr/products/anatomic-pump-80-women-br512-ristretto-ll0078",
     "https://www.lemaire.fr/products/anatomic-pump-80-women-br449-dark-brown-ll0078-glossy-vegetable-leather",
@@ -2448,6 +2592,7 @@
     "https://www.lemaire.fr/products/glove-ballerina-women-washed-beige-washed-buffalo-leather-fo0261-ll0199-be947",
     "https://www.lemaire.fr/products/soft-runner-women-white-mixed-nylon-nappa-suede-fo0228-ll0216-wh000",
     "https://www.lemaire.fr/products/soft-runner-women-black-mixed-nylon-nappa-suede-fo0228-ll0216-bk999",
+    "https://www.lemaire.fr/products/glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
     "https://www.lemaire.fr/products/vibram-glove-slip-on-women-bk999-black-ll0023",
     "https://www.lemaire.fr/products/flat-piped-slippers-women-mu096-black-dark-chocolate-ll0023",
     "https://www.lemaire.fr/products/loafer-women-bk999-black-ll0163",
@@ -2457,12 +2602,9 @@
     "https://www.lemaire.fr/products/glove-slingback-80-women-washed-dark-brown-washed-buffalo-leather-fo0256-ll0199-br635",
     "https://www.lemaire.fr/products/outdoor-slippers-women-light-clay-soft-suede-leather-fo0289-ll0134-bg264",
     "https://www.lemaire.fr/products/glove-mules-women-sesame-smooth-lambskin-leather-fo0262-ll0154-bg011",
+    "https://www.lemaire.fr/products/glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947",
     "https://www.lemaire.fr/products/square-slip-on-women-kraft-beige-reversed-suede-leather-fo0287-ll0167-bg225",
-    "https://www.lemaire.fr/products/glove-ankle-boots-80-women-bl424-blue-teal-ll0223-hairy-calfskin-leather-fo0216-ll0223-bl424",
     "https://www.lemaire.fr/products/glove-slip-on-women-bk916-beige-grey-ll0259-2-tone-hairy-lamb-leather-fo0299-ll0259-bk916",
-    "https://www.lemaire.fr/products/pedille-flat-ballerina-women-bg218-light-mastic-ll0152-goatskin-leather-fo0317-ll0152-bg218",
-    "https://www.lemaire.fr/products/knee-top-glove-flat-boots-women-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0329-ll0023-br490",
-    "https://www.lemaire.fr/products/glove-ballerina-women-dark-chocolate-smooth-lambskin-leather-fo0261-ll0023-br490",
-    "https://www.lemaire.fr/products/glove-slingback-80-women-washed-beige-washed-buffalo-leather-fo0256-ll0199-be947"
+    "https://www.lemaire.fr/products/knee-top-glove-flat-boots-women-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0329-ll0023-br490"
   ]
 }

@@ -5,6 +5,8 @@ import { join } from "node:path";
 import { loadAdapterFile } from "../../onboarding/adapterStore";
 import { loadQueueFile } from "../../onboarding/queue";
 import type { BrandUniverseFile } from "../../registry/build/types";
+import { decideLastGoodPublish } from "../wave50/lastGood";
+import { isVerifiedFootwearCatalogPath } from "../wave50/collections";
 import { fullCatalogPassBlocker } from "../wave50/coverage";
 import { mapPool } from "../wave50/pool";
 import {
@@ -175,8 +177,11 @@ export async function runBrandAutomation(
       const previousPath = join(options.root, WAVE_LAST_GOOD_DIR, `${candidate.slug}.json`);
       const previous = await readJsonFile<WaveCatalog | null>(previousPath, null);
       try {
+        const seed = !candidate.womenCollectionPath && previous?.catalogPaths.length === 1 && isVerifiedFootwearCatalogPath(previous.catalogPaths[0])
+          ? {...candidate, womenCollectionPath: previous.catalogPaths[0]}
+          : candidate;
         const collected = await collectShopifyWomensCatalog({
-          seed: candidate,
+          seed,
           http: options.http,
           now,
           previousUrls: previous ? new Set(previous.productUrls) : null,
@@ -244,6 +249,11 @@ export async function runBrandAutomation(
           productNewness: waveProductNewness(catalog),
         });
 
+        const lastGood = decideLastGoodPublish({previousCollected: previous?.coverage.collected ?? null,
+          candidate: catalog, coverage: catalog.coverage, referenceFootwearTotal: catalog.referenceFootwearTotal,
+          referenceNewArrivals: catalog.referenceNewArrivals, newArrivalsFootwear: catalog.newArrivalsFootwear});
+        if (!lastGood.publish) return {outcome: blockedOutcome(candidate, "LAST_GOOD_BLOCKED", lastGood.blocker ?? "LAST_GOOD_REJECTED", catalog,
+          {lastGoodRetained: lastGood.retainPrevious}), delivery: null, activation: null};
         if (dryRun) {
           return {
             outcome: {

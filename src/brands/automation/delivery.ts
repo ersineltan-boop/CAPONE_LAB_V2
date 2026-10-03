@@ -1,3 +1,5 @@
+import { reviewedOfficialCategory } from "./reviewedCategories";
+import { legacyCategoryForPrimary } from "../wave50/primaryCategory";
 import { unlink } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -55,16 +57,18 @@ function urlKey(value: string): string {
 async function productCopy(
   http: WaveHttp,
   productUrl: string,
-): Promise<{ description: string | null; tags: string | null }> {
+): Promise<{ description: string | null; tags: string | null; title?: string; productType?: string }> {
   const url = productJsonUrl(productUrl);
   if (!url) return { description: null, tags: null };
   const response = await http.fetch(url);
   if (!response.ok || !response.data || typeof response.data !== "object") {
     return { description: null, tags: null };
   }
-  const body = response.data as { product?: { body_html?: string; tags?: string | string[] } };
+  const body = response.data as { product?: { body_html?: string; tags?: string | string[]; title?: string; product_type?: string } };
   const tags = body.product?.tags;
   return {
+    title: body.product?.title,
+    productType: body.product?.product_type,
     description: (body.product?.body_html ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim() || null,
     tags: Array.isArray(tags) ? tags.join(", ") : (tags ?? null),
   };
@@ -72,10 +76,24 @@ async function productCopy(
 
 async function classifyFamily(http: WaveHttp, family: ModelFamily): Promise<ModelFamily> {
   if ((family.primaryCategory ?? "UNCLASSIFIED") !== "UNCLASSIFIED") return family;
+  const reviewed = reviewedOfficialCategory(family);
+  if (reviewed) return {...family, primaryCategory: reviewed, category: legacyCategoryForPrimary(reviewed)};
   let current = family;
   for (const variant of family.variants.slice(0, 3)) {
     if (!variant.url) continue;
     current = reclassifyWaveFamily(current, await productCopy(http, variant.url));
+    if ((current.primaryCategory ?? "UNCLASSIFIED") !== "UNCLASSIFIED") return current;
+  }
+  // Shopify JSON may omit the silhouette while the exact product page has it.
+  for (const variant of family.variants.slice(0, 3)) {
+    if (!variant.url) continue;
+    const response = await http.fetch(variant.url);
+    if (!response.ok) continue;
+    const canonical = response.text.match(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i)?.[1];
+    if (!canonical || urlKey(canonical) !== urlKey(variant.url)) continue;
+    const description = response.text.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i)?.[1];
+    if (!description) continue;
+    current = reclassifyWaveFamily(current, {description});
     if ((current.primaryCategory ?? "UNCLASSIFIED") !== "UNCLASSIFIED") return current;
   }
   return current;
@@ -330,6 +348,15 @@ export async function replaceAutomationBrandDeliveries(input: {
     writtenIds.add(family.modelFamilyId);
   }
   await atomicWriteJson(manifestPath, nextManifest);
+  const persisted = await readJsonFile<ModelFamilyDatasetManifest | null>(manifestPath, null);
+  if (!persisted || persisted.totalFamilies !== proposed.length ||
+      [...brandShards.keys()].some(slug => !persisted.shards.some(shard => shard.file === `${MODEL_FAMILY_BRAND_SHARD_PREFIX}${slug}.json`))) {
+    throw new Error("Brand delivery manifest did not retain the complete accepted catalog");
+  }
+  const persistedIds = new Set((await loadFamiliesFromManifest(dir, persisted)).map(family => family.modelFamilyId));
+  if (persistedIds.size !== ids.size || [...ids].some(id => !persistedIds.has(id))) {
+    throw new Error("Persisted brand delivery lost model identities");
+  }
   return replacedCount;
 }
 

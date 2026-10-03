@@ -328,7 +328,7 @@ export async function collectJilSanderWomensShoes(
       added += 1;
     }
     if (sourceReportedTotal !== null && tiles.size >= sourceReportedTotal) {
-      paginationExhausted = tiles.size === sourceReportedTotal;
+      paginationExhausted = true;
       break;
     }
     if (added === 0) {
