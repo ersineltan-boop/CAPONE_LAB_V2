@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { analyzeProducts } from "./analyzeProduct";
+import { serializeProductCatalog } from "../collector/catalogJson";
 import { buildMarketAnalysis } from "./buildMarketAnalysis";
 import { loadProductDateEnrichment } from "../productDates/loadEnrichment";
 import { mergeProductDatesBatch } from "../productDates/merge";
@@ -29,7 +30,7 @@ export async function runMultibrandAnalysis(): Promise<AnalysisRunReport> {
   await mkdir(MULTIBRAND_DIR, { recursive: true });
   await writeFile(
     join(MULTIBRAND_DIR, "analyzed-products.json"),
-    JSON.stringify(analyzed, null, 2),
+    serializeProductCatalog(analyzed),
     "utf-8",
   );
   await writeFile(

@@ -2,9 +2,10 @@ import { parseStorefrontProductCount } from '../brands/officialShopify/storefron
 import { defaultOnboardingHttp, type OnboardingHttp } from '../onboarding/http';
 import type { ProbeResult } from '../onboarding/types';
 import type { CollectionAttemptResult } from './collectWithFallback';
-import { evaluateFootwearProduct } from './footwearGate';
+import { evaluateFootwearProduct, inferFootwearCategoryFromSignals } from './footwearGate';
 import { shopifyProductToPilot } from './shopify';
-import type { PilotSourceConfig } from './types';
+import { normalizeProductImageUrls } from '../images/resolveImageQuality';
+import type { FootwearCategory, PilotSourceConfig } from './types';
 
 type RawProduct = Parameters<typeof shopifyProductToPilot>[0];
 export const OFFICIAL_BRAND_WAVE = {
@@ -17,6 +18,28 @@ export const OFFICIAL_BRAND_WAVE = {
 
 export function officialWaveScope(slug: string) {
   return OFFICIAL_BRAND_WAVE[slug as keyof typeof OFFICIAL_BRAND_WAVE] ?? null;
+}
+
+/** Shopify's explicit country selector prevents IP-based market redirects. */
+export function officialWaveUrl(slug: string, path: string, params: Record<string, string> = {}): string {
+  const scope = officialWaveScope(slug);
+  if (!scope) throw new Error('Unknown official wave source');
+  const url = new URL(path, scope.origin);
+  const country = ({ coperni: 'FR', pazzion: 'SG', 'moon-boot': 'DE' } as Record<string, string>)[slug];
+  if (country) url.searchParams.set('country', country);
+  for (const [key, value] of Object.entries(params)) url.searchParams.set(key, value);
+  return url.href;
+}
+
+/** Opaque model titles need the official product type / description, not guessed names. */
+export function officialWaveProductCategory(raw: RawProduct): FootwearCategory | undefined {
+  const description = (raw.body_html ?? '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').trim().split(/[.!?]/)[0] ?? '';
+  return inferFootwearCategoryFromSignals({
+    title: description.replace(/\bboots\b/gi, 'boot'),
+    productType: (raw.product_type ?? '').replace(/\bboots\b/gi, 'boot'),
+    tags: rawTags(raw),
+    handle: raw.handle.replaceAll('-', ' ').replace(/\bboots\b/gi, 'boot'),
+  }) ?? undefined;
 }
 
 export function sameOfficialWaveScope(requested: string, resolved: string): boolean {
@@ -73,11 +96,11 @@ export function parseWaveStorefrontCards(html: string, slug: string, pageUrl: st
 }
 
 const SPANISH_FOOTWEAR: Record<string, string> = {
-  BOTINES: 'Ankle Boots', BOTAS: 'Boots', 'ZAPATILLAS DEPORTIVAS': 'Sneakers',
+  BOTINES: 'Ankle Boot', BOTAS: 'Boot', 'ZAPATILLAS DEPORTIVAS': 'Sneakers',
   MULES: 'Mules', MOCASINES: 'Loafers', 'ZAPATOS DE TACÓN': 'Pumps',
   BAILARINAS: 'Ballerinas', 'SANDALIAS TACÓN': 'Sandals', 'SANDALIAS PLANAS': 'Sandals',
   'ZAPATOS PLANOS': 'Flats', CUÑAS: 'Wedges', ZUECOS: 'Clogs',
-  'ZAPATOS TACÓN': 'Pumps', 'SANDALIA TACÓN': 'Sandals',
+  'ZAPATOS TACÓN': 'Pumps', 'SANDALIA TACÓN': 'Sandals', 'SANDALIAS DE TACÓN': 'Sandals',
 };
 
 function rawTags(raw: RawProduct): string[] {
@@ -85,6 +108,9 @@ function rawTags(raw: RawProduct): string[] {
 }
 
 function pedroFootwearType(raw: RawProduct): string | undefined {
+  // Flat-shoe product types are broad; use the source's explicit ballerina tag.
+  if (raw.product_type?.toUpperCase().trim() === 'ZAPATOS PLANOS' && rawTags(raw).some(tag => tag.toUpperCase() === 'BAILARINAS')) return 'Ballerinas';
+  if (raw.product_type?.toUpperCase().trim() === 'ZAPATOS PLANOS' && /\bmocas[ií]n\b/i.test((raw.body_html ?? '').replace(/<[^>]+>/g, ' '))) return 'Loafers';
   const direct = SPANISH_FOOTWEAR[raw.product_type?.toUpperCase().trim() ?? ''];
   if (direct) return direct;
   // Category tags are retained by the official source even when product_type is empty.
@@ -95,6 +121,37 @@ function pedroFootwearType(raw: RawProduct): string | undefined {
     }
   }
   return undefined;
+}
+
+/** A Shopify video-only product can have real preview images only in its PDP schema. */
+export function parseOfficialProductGallery(html: string, productUrl: string): string[] {
+  const images: string[] = [];
+  for (const script of html.match(/<script\b[^>]*>[\s\S]*?<\/script>/gi) ?? []) {
+    if (attribute(script.slice(0, script.indexOf('>') + 1), 'type') !== 'application/ld+json') continue;
+    let data: unknown;
+    try { data = JSON.parse(script.slice(script.indexOf('>') + 1).replace(/<\/script>$/i, '')); } catch { continue; }
+    const nodes = Array.isArray(data) ? data : [data];
+    for (const node of nodes) {
+      if (!node || typeof node !== 'object') continue;
+      const product = node as Record<string, unknown>;
+      if (!['Product', 'ProductGroup'].includes(String(product['@type'])) || typeof product['@id'] !== 'string') continue;
+      try {
+        const identity = new URL(product['@id'], productUrl); identity.hash = '';
+        if (!sameOfficialWaveScope(productUrl, identity.href)) continue;
+      } catch { continue; }
+      const variants = Array.isArray(product.hasVariant) ? product.hasVariant : [];
+      for (const item of [product, ...variants]) {
+        if (!item || typeof item !== 'object') continue;
+        const value = (item as Record<string, unknown>).image;
+        for (const image of Array.isArray(value) ? value : [value]) {
+          if (typeof image === 'string') {
+            try { images.push(new URL(image, productUrl).href); } catch { /* Invalid source URL is not gallery evidence. */ }
+          }
+        }
+      }
+    }
+  }
+  return normalizeProductImageUrls(images);
 }
 
 function explicitExclusion(raw: RawProduct, slug: string): string | null {
@@ -113,7 +170,7 @@ function explicitExclusion(raw: RawProduct, slug: string): string | null {
 export async function collectOfficialBrandWave(config: PilotSourceConfig, http: OnboardingHttp = defaultOnboardingHttp): Promise<CollectionAttemptResult> {
   const scope = officialWaveScope(config.id);
   if (!scope || !sameOfficialWaveScope(scope.origin, new URL(config.baseUrl).origin)) throw new Error('Unregistered official wave source');
-  const rootUrl = scope.origin + scope.path;
+  const rootUrl = officialWaveUrl(config.id, scope.path);
   const errors: string[] = [];
   let pagesTraversed = 0;
   const fetchScoped = async (url: string) => {
@@ -123,7 +180,7 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
     if (response.status === 0 || [502, 503, 504].includes(response.status)) {
       response = await http.fetchText(url, { delayMs: 1000 }); pagesTraversed++;
     }
-    if (!response.ok || !sameOfficialWaveScope(url, response.url)) errors.push(`WAVE_SCOPE_OR_HTTP:${url}:${response.status}`);
+    if (!response.ok || !sameOfficialWaveScope(url, response.url)) errors.push(`WAVE_SCOPE_OR_HTTP:${url}:${response.status}:resolved=${response.url}`);
     return { ...response, ok: response.ok && sameOfficialWaveScope(url, response.url) };
   };
   const first = await fetchScoped(rootUrl);
@@ -143,15 +200,20 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
       if (storefrontHandles.size === before) { errors.push('WAVE_STOREFRONT_REPEATED_PAGE'); break; }
       if (!cards.next) { storefrontExhausted = true; break; }
       const expected = new URL(rootUrl); expected.searchParams.set('page', String(page + 1));
-      if (!sameOfficialWaveScope(expected.href, cards.next)) { errors.push('WAVE_STOREFRONT_NEXT_SCOPE_CHANGED'); break; }
-      pageUrl = cards.next; response = await fetchScoped(pageUrl);
+      const next = new URL(cards.next);
+      // Pagination links may omit the explicitly selected country. Carry it
+      // forward, but never overwrite a conflicting country or another filter.
+      const country = expected.searchParams.get('country');
+      if (country && !next.searchParams.has('country')) next.searchParams.set('country', country);
+      if (!sameOfficialWaveScope(expected.href, next.href)) { errors.push('WAVE_STOREFRONT_NEXT_SCOPE_CHANGED'); break; }
+      pageUrl = next.href; response = await fetchScoped(pageUrl);
     }
   } else if (sourceCount === null) errors.push('WAVE_STOREFRONT_COUNT_UNKNOWN');
 
   const rawById = new Map<number, RawProduct>();
   let jsonExhausted = false;
   for (let page = 1; page <= 40; page++) {
-    const url = `${rootUrl}/products.json?limit=250&page=${page}`;
+    const url = officialWaveUrl(config.id, `${scope.path}/products.json`, { limit: '250', page: String(page) });
     const response = await fetchScoped(url);
     if (!response.ok) break;
     let batch: RawProduct[];
@@ -181,15 +243,24 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
   const products: CollectionAttemptResult['products'] = [];
   const excluded: Array<{ url: string; reason: string; sourceType: string }> = [];
   const scopedConfig = { ...config, baseUrl: scope.origin, collectionPaths: [scope.path], verifiedFootwearPaths: [scope.path] };
-  for (const raw of rawById.values()) {
+  for (const original of rawById.values()) {
+    let raw = original;
     const reason = explicitExclusion(raw, config.id);
     if (reason) { excluded.push({ url: `${scope.origin}/products/${raw.handle}`, reason, sourceType: raw.product_type ?? '' }); continue; }
+    if (config.id === 'pedro-miralles' && !raw.images?.length) {
+      const url = `${scope.origin}/products/${raw.handle}`;
+      const detail = await fetchScoped(url);
+      const images = detail.ok ? parseOfficialProductGallery(detail.text, url) : [];
+      if (images.length) raw = { ...raw, images: images.map(src => ({ src })) };
+    }
     const tags = rawTags(raw);
     const coperniType = tags.includes('BALLERINAS') ? 'Ballerinas' : tags.includes('BOOTS') ? 'Boots' : tags.includes('SANDALS/FLIPFLOPS') ? 'Sandals' : tags.includes('MOCASSINS') ? 'Loafers' : undefined;
     const translation = config.id === 'pedro-miralles' ? pedroFootwearType(raw) : config.id === 'coperni' ? coperniType : undefined;
-    const product = shopifyProductToPilot(translation ? { ...raw, product_type: translation } : raw, scopedConfig, new Date().toISOString(), scope.path, scope.label);
+    const category = config.id === 'paloma-wool' ? officialWaveProductCategory(raw) : undefined;
+    const product = shopifyProductToPilot(translation ? { ...raw, product_type: translation } : raw, scopedConfig, new Date().toISOString(), scope.path, scope.label, category);
     if (!product || !product.images?.length) { errors.push(`WAVE_INCOMPLETE_FOOTWEAR:${raw.handle}`); continue; }
     if (translation) product.sourceProductType = `${raw.product_type} (${translation})`;
+    product.sourceProductTags = tags;
     const sizeIndex = (raw.options ?? []).findIndex(option => /^(?:shoe size|size|talla)$/i.test(option.name));
     if (sizeIndex >= 0 && sizeIndex < 3) {
       product.sourceSizes = (raw.variants ?? []).flatMap(variant => {
@@ -212,7 +283,7 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
 export async function probeOfficialBrandWave(slug: string, brand: string, http: OnboardingHttp): Promise<ProbeResult> {
   const scope = officialWaveScope(slug);
   if (!scope) throw new Error('Unknown official wave source');
-  const url = `${scope.origin}${scope.path}/products.json?limit=8&page=1`;
+  const url = officialWaveUrl(slug, `${scope.path}/products.json`, { limit: '8', page: '1' });
   const response = await http.fetchText(url);
   let raws: RawProduct[] = [];
   try { raws = JSON.parse(response.text).products ?? []; } catch { /* Report unavailable source. */ }

@@ -78,7 +78,8 @@
     "collect:luxury-staging": "tsx scripts/collect-luxury-staging.ts",
     "collect:official-shopify": "tsx scripts/collect-official-shopify.ts",
     "collect:official-shopify-next": "tsx scripts/collect-official-shopify-next.ts",
-    "collect:salesforce-womens-footwear": "tsx scripts/collect-salesforce-womens-footwear.ts"
+    "collect:salesforce-womens-footwear": "tsx scripts/collect-salesforce-womens-footwear.ts",
+    "postinstall": "node scripts/hydrate-existing-brand-delivery.mjs"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

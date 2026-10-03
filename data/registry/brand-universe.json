@@ -1998,23 +1998,29 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNSUPPORTED",
-      "collectionStatus": "NEEDS_CUSTOM_ADAPTER",
+      "isActive": true,
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion — NEEDS_CUSTOM_ADAPTER: Shopify products JSON erişilemedi",
+      "notes": "Onboarding FULL: shopify-public",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
       "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
+      "productLimit": 80,
+      "supportsMultipleImages": true,
       "discoverySources": [],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "collectionDiscoveryStatus": "AUTO_DISCOVERED",
+      "footwearCollectionHandles": [
+        "all-shoes"
+      ]
     },
     {
       "id": "acne-studios",
@@ -4691,23 +4697,29 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 2 — classification pending review",
+      "notes": "Onboarding FULL: shopify-public",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
       "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "productLimit": 80,
+      "supportsMultipleImages": true,
       "discoverySources": [],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "collectionDiscoveryStatus": "AUTO_DISCOVERED",
+      "footwearCollectionHandles": [
+        "shoes"
+      ]
     },
     {
       "id": "pedro",
@@ -5015,23 +5027,29 @@
       "segment": "UNCLASSIFIED",
       "influenceRole": "UNCLASSIFIED",
       "trackingPriority": "P2",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "SHOPIFY_PUBLIC",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Wave 1 candidate — probe before activation",
+      "notes": "Onboarding FULL: shopify-public",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
       "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
+      "collectionPaths": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ],
+      "productLimit": 80,
+      "supportsMultipleImages": true,
       "discoverySources": [],
       "classificationStatus": "UNREVIEWED",
-      "radarEligible": false
+      "radarEligible": false,
+      "collectionDiscoveryStatus": "AUTO_DISCOVERED",
+      "footwearCollectionHandles": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ]
     },
     {
       "id": "tkees",

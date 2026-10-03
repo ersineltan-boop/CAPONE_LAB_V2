@@ -1,10 +1,10 @@
 {
-  "rawProductCount": 20602,
-  "modelFamilyCount": 13234,
-  "totalVariants": 20602,
-  "multiVariantFamilyCount": 4890,
-  "reductionPercent": 35.8,
-  "collapsedVariantProducts": 7368,
+  "rawProductCount": 21346,
+  "modelFamilyCount": 13605,
+  "totalVariants": 21346,
+  "multiVariantFamilyCount": 5195,
+  "reductionPercent": 36.3,
+  "collapsedVariantProducts": 7741,
   "representativeImageStats": {
     "familiesWithMultipleRepresentativeImages": 13174,
     "averageRepresentativeImageCount": 6.2,
@@ -8704,5 +8704,14 @@
       "variantCount": 2,
       "groupingReason": "singleton"
     }
-  ]
+  ],
+  "reportScope": {
+    "method": "Incremental counts: base report plus verified Coperni, Moon Boot and Pazzion families.",
+    "baseCommit": "9e631c5b9d972f7cc0c05e2a0fc83c626bbbdb58",
+    "inheritedDetailFields": [
+      "representativeImageStats",
+      "largestVariantFamilies"
+    ],
+    "newSourceFamilies": 371
+  }
 }

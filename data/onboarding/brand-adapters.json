@@ -121,6 +121,39 @@
       "footwearPaths": [
         "/collections/shoes"
       ]
+    },
+    "coperni": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://coperni.com",
+      "collectionPaths": [
+        "/collections/all-shoes"
+      ],
+      "footwearPaths": [
+        "/collections/all-shoes"
+      ]
+    },
+    "pazzion": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.pazzion.com",
+      "collectionPaths": [
+        "/collections/shoes"
+      ],
+      "footwearPaths": [
+        "/collections/shoes"
+      ]
+    },
+    "moon-boot": {
+      "platform": "SHOPIFY",
+      "strategy": "shopify-public",
+      "sourceUrl": "https://www.moonboot.com",
+      "collectionPaths": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ],
+      "footwearPaths": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ]
     }
   }
 }

@@ -269,7 +269,7 @@ export function extractHandleFromProductUrl(productUrl: string): string {
 }
 
 export function isMerchandisingTag(tag: string): boolean {
-  return /^top sku$/i.test(tag.trim()) ||
+  return /^top (?:sku|ventas)$/i.test(tag.trim()) ||
     /^(collection|badge|color|colour|size|recommended-product|complementary-product)\s*:/i.test(tag.trim());
 }
 
