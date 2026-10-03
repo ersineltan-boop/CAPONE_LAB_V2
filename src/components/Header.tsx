@@ -1,4 +1,9 @@
-import { PRIMARY_NAV_ITEMS, isPrimaryNavView, type AppView } from "../navigation/primaryNav";
+import { type AppView } from "../navigation/primaryNav";
+import { primaryNavItemsForRole } from "../auth/permissions";
+import { LOCAL_USERS } from "../auth/roles";
+import { setSessionUserId } from "../auth/session";
+import { useSession } from "../auth/useSession";
+import { UI_COPY } from "../presentation/turkishLabels";
 
 export type { AppView };
 
@@ -8,7 +13,9 @@ interface HeaderProps {
 }
 
 export default function Header({ onNavigate, currentView }: HeaderProps) {
-  const selectValue = isPrimaryNavView(currentView) ? currentView : "brands";
+  const session = useSession();
+  const navItems = primaryNavItemsForRole(session.user.role);
+  const selectValue = navItems.some((item) => item.id === currentView) ? currentView : "brands";
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-cream/95 backdrop-blur-sm">
@@ -28,10 +35,11 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
           </button>
 
           <nav className="hidden items-center gap-1 sm:flex sm:flex-wrap">
-            {PRIMARY_NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <button
                 key={item.id}
                 type="button"
+                data-testid={`nav-${item.id}`}
                 onClick={() => onNavigate(item.id)}
                 className={`border px-2.5 py-1.5 text-[10px] tracking-widest transition-colors ${
                   currentView === item.id
@@ -44,18 +52,36 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
             ))}
           </nav>
 
-          <select
-            value={selectValue}
-            onChange={(e) => onNavigate(e.target.value as AppView)}
-            className="border border-line bg-cream px-2 py-1.5 text-[10px] tracking-wide text-ink-muted sm:hidden"
-            aria-label="Sayfa seç"
-          >
-            {PRIMARY_NAV_ITEMS.map((item) => (
-              <option key={item.id} value={item.id}>
-                {item.label}
-              </option>
-            ))}
-          </select>
+          <div className="flex items-center gap-2">
+            <select
+              data-testid="role-switcher"
+              value={session.user.id}
+              onChange={(event) => setSessionUserId(event.target.value)}
+              className="border border-line bg-cream px-2 py-1.5 text-[10px] tracking-wide text-ink-muted"
+              aria-label={UI_COPY.roleLabel}
+            >
+              {LOCAL_USERS.map((user) => (
+                <option key={user.id} value={user.id}>
+                  {user.role}
+                </option>
+              ))}
+            </select>
+            <span data-testid="current-role" className="hidden text-[10px] tracking-widest text-ink-faint sm:inline">
+              {session.user.role}
+            </span>
+            <select
+              value={selectValue}
+              onChange={(e) => onNavigate(e.target.value as AppView)}
+              className="border border-line bg-cream px-2 py-1.5 text-[10px] tracking-wide text-ink-muted sm:hidden"
+              aria-label="Sayfa seç"
+            >
+              {navItems.map((item) => (
+                <option key={item.id} value={item.id}>
+                  {item.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
     </header>

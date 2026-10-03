@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
+import { subscribeSession } from "../auth/session";
 import {
   getResearchStateRepository,
   type ResearchStateRepository,
@@ -16,8 +17,14 @@ export function useResearchState(modelFamilyId: string): {
   const [state, setState] = useState(() => repo.get(modelFamilyId));
 
   useEffect(() => {
-    setState(repo.get(modelFamilyId));
-    return repo.subscribe(() => setState(repo.get(modelFamilyId)));
+    const sync = () => setState(repo.get(modelFamilyId));
+    sync();
+    const unsubRepo = repo.subscribe(sync);
+    const unsubSession = subscribeSession(sync);
+    return () => {
+      unsubRepo();
+      unsubSession();
+    };
   }, [modelFamilyId, repo]);
 
   const setReviewed = useCallback(
@@ -41,8 +48,32 @@ export function useResearchStateMap(): Map<string, ModelFamilyResearchState> {
   const [map, setMap] = useState(() => repo.getAll());
 
   useEffect(() => {
-    setMap(repo.getAll());
-    return repo.subscribe(() => setMap(repo.getAll()));
+    const sync = () => setMap(repo.getAll());
+    sync();
+    const unsubRepo = repo.subscribe(sync);
+    const unsubSession = subscribeSession(sync);
+    return () => {
+      unsubRepo();
+      unsubSession();
+    };
+  }, [repo]);
+
+  return map;
+}
+
+export function useVisibleResearchStateMap(): Map<string, ModelFamilyResearchState> {
+  const repo = getResearchStateRepository();
+  const [map, setMap] = useState(() => repo.listVisible());
+
+  useEffect(() => {
+    const sync = () => setMap(repo.listVisible());
+    sync();
+    const unsubRepo = repo.subscribe(sync);
+    const unsubSession = subscribeSession(sync);
+    return () => {
+      unsubRepo();
+      unsubSession();
+    };
   }, [repo]);
 
   return map;

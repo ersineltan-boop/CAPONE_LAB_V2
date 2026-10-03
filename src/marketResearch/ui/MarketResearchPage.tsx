@@ -3,20 +3,42 @@ import { formatMarketResearchObservedAt } from "../format";
 import { romaniaBrandCards, romaniaCountrySummary } from "../romania/catalog";
 import ImagePlaceholder from "../../components/radar/ImagePlaceholder";
 import { isIncompleteMarketResearchVisual, marketResearchVisualLabel } from "../visualCopy";
+import { canSeeMarketResearch, readMarketResearchDataForRole } from "../../auth/permissions";
+import { useSession } from "../../auth/useSession";
 
 interface MarketResearchPageProps {
   onSelectBrand: (brandId: string) => void;
 }
 
 export default function MarketResearchPage({ onSelectBrand }: MarketResearchPageProps) {
-  const summary = romaniaCountrySummary();
-  const cards = romaniaBrandCards();
+  const session = useSession();
+  if (!canSeeMarketResearch(session.user.role)) {
+    return (
+      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
+        <p data-testid="market-research-denied" className="text-sm text-ink-muted">
+          {UI_COPY.marketResearchDenied}
+        </p>
+      </section>
+    );
+  }
+
+  const summary = readMarketResearchDataForRole(
+    session.user.role,
+    romaniaCountrySummary,
+  );
+  const cards =
+    readMarketResearchDataForRole(session.user.role, romaniaBrandCards) ?? [];
+
+  if (!summary) return null;
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
       <div className="space-y-6">
         <div>
-          <h2 className="font-serif text-2xl font-medium tracking-wide sm:text-3xl">
+          <h2
+            data-testid="market-research-page"
+            className="font-serif text-2xl font-medium tracking-wide sm:text-3xl"
+          >
             {UI_COPY.marketResearchTitle}
           </h2>
           <p className="mt-1 text-[11px] leading-relaxed text-ink-muted">

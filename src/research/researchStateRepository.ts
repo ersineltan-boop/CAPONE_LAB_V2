@@ -1,12 +1,18 @@
+import { filterVisibleRecords } from "../auth/permissions";
+import { OWNER_USER } from "../auth/roles";
+import { getSession } from "../auth/session";
 import {
   emptyResearchState,
   type ModelFamilyResearchState,
   type ResearchStateStore,
+  type ResearchStateStoreV1,
 } from "./types";
 
 export interface ResearchStateRepository {
   get(modelFamilyId: string): ModelFamilyResearchState;
   getAll(): Map<string, ModelFamilyResearchState>;
+  listVisible(): Map<string, ModelFamilyResearchState>;
+  listAllRecords(): ModelFamilyResearchState[];
   setReviewed(modelFamilyId: string, reviewed: boolean): ModelFamilyResearchState;
   setSaved(modelFamilyId: string, saved: boolean): ModelFamilyResearchState;
   setNote(modelFamilyId: string, note: string): ModelFamilyResearchState;
@@ -15,24 +21,92 @@ export interface ResearchStateRepository {
 
 const STORAGE_KEY = "capone-lab-v2-research-state-v1";
 
+function recordKey(ownerUserId: string, modelFamilyId: string): string {
+  return `${ownerUserId}::${modelFamilyId}`;
+}
+
+function currentUserId(): string {
+  return getSession().user.id;
+}
+
+function emptyStore(): ResearchStateStore {
+  return { version: 2, records: {}, updatedAt: new Date().toISOString() };
+}
+
+function migrateStore(raw: unknown): ResearchStateStore {
+  if (!raw || typeof raw !== "object") return emptyStore();
+  const data = raw as Partial<ResearchStateStore> & Partial<ResearchStateStoreV1>;
+  if (data.version === 2 && data.records) {
+    const records: Record<string, ModelFamilyResearchState> = {};
+    for (const [key, state] of Object.entries(data.records)) {
+      const ownerUserId = state.ownerUserId ?? state.userId ?? OWNER_USER.id;
+      const createdAt =
+        state.createdAt ??
+        state.reviewedAt ??
+        state.savedAt ??
+        data.updatedAt ??
+        new Date().toISOString();
+      records[key] = {
+        ...state,
+        userId: ownerUserId,
+        ownerUserId,
+        createdAt,
+      };
+    }
+    return {
+      version: 2,
+      records,
+      updatedAt: data.updatedAt ?? new Date().toISOString(),
+    };
+  }
+  if (data.version === 1 && data.states) {
+    const records: Record<string, ModelFamilyResearchState> = {};
+    for (const [modelFamilyId, state] of Object.entries(data.states)) {
+      const next: ModelFamilyResearchState = {
+        ...state,
+        userId: OWNER_USER.id,
+        ownerUserId: OWNER_USER.id,
+        createdAt:
+          state.reviewedAt ??
+          state.savedAt ??
+          data.updatedAt ??
+          new Date().toISOString(),
+      };
+      records[recordKey(OWNER_USER.id, modelFamilyId)] = next;
+    }
+    return { version: 2, records, updatedAt: data.updatedAt ?? new Date().toISOString() };
+  }
+  return emptyStore();
+}
+
 function loadStore(): ResearchStateStore {
   if (typeof window === "undefined") {
-    return { version: 1, states: {}, updatedAt: new Date().toISOString() };
+    return emptyStore();
   }
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return { version: 1, states: {}, updatedAt: new Date().toISOString() };
-    }
-    return JSON.parse(raw) as ResearchStateStore;
+    if (!raw) return emptyStore();
+    return migrateStore(JSON.parse(raw));
   } catch {
-    return { version: 1, states: {}, updatedAt: new Date().toISOString() };
+    return emptyStore();
   }
 }
 
 function saveStore(store: ResearchStateStore): void {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+}
+
+function mapByFamily(records: ModelFamilyResearchState[]): Map<string, ModelFamilyResearchState> {
+  const map = new Map<string, ModelFamilyResearchState>();
+  const viewerId = currentUserId();
+  for (const record of records) {
+    const existing = map.get(record.modelFamilyId);
+    if (!existing || record.ownerUserId === viewerId) {
+      map.set(record.modelFamilyId, record);
+    }
+  }
+  return map;
 }
 
 export class LocalResearchStateRepository implements ResearchStateRepository {
@@ -58,45 +132,64 @@ export class LocalResearchStateRepository implements ResearchStateRepository {
     this.notify();
   }
 
+  private ownRecord(modelFamilyId: string): ModelFamilyResearchState | undefined {
+    return this.store.records[recordKey(currentUserId(), modelFamilyId)];
+  }
+
   get(modelFamilyId: string): ModelFamilyResearchState {
-    return this.store.states[modelFamilyId] ?? emptyResearchState(modelFamilyId);
+    return this.ownRecord(modelFamilyId) ?? emptyResearchState(modelFamilyId, currentUserId());
   }
 
   getAll(): Map<string, ModelFamilyResearchState> {
-    return new Map(Object.entries(this.store.states));
+    const own = Object.values(this.store.records).filter(
+      (record) => record.ownerUserId === currentUserId(),
+    );
+    return mapByFamily(own);
+  }
+
+  listAllRecords(): ModelFamilyResearchState[] {
+    return Object.values(this.store.records);
+  }
+
+  listVisible(): Map<string, ModelFamilyResearchState> {
+    return mapByFamily(filterVisibleRecords(this.listAllRecords(), getSession().user));
+  }
+
+  private write(
+    modelFamilyId: string,
+    patch: Partial<ModelFamilyResearchState>,
+  ): ModelFamilyResearchState {
+    const ownerUserId = currentUserId();
+    const current = this.get(modelFamilyId);
+    const next: ModelFamilyResearchState = {
+      ...current,
+      ...patch,
+      modelFamilyId,
+      userId: ownerUserId,
+      ownerUserId,
+      createdAt: current.createdAt,
+    };
+    this.store.records[recordKey(ownerUserId, modelFamilyId)] = next;
+    this.persist();
+    return next;
   }
 
   setReviewed(modelFamilyId: string, reviewed: boolean): ModelFamilyResearchState {
-    const current = this.get(modelFamilyId);
-    const next: ModelFamilyResearchState = {
-      ...current,
+    return this.write(modelFamilyId, {
       reviewedAt: reviewed ? new Date().toISOString() : null,
-    };
-    this.store.states[modelFamilyId] = next;
-    this.persist();
-    return next;
+    });
   }
 
   setSaved(modelFamilyId: string, saved: boolean): ModelFamilyResearchState {
-    const current = this.get(modelFamilyId);
-    const next: ModelFamilyResearchState = {
-      ...current,
+    return this.write(modelFamilyId, {
       savedAt: saved ? new Date().toISOString() : null,
-    };
-    this.store.states[modelFamilyId] = next;
-    this.persist();
-    return next;
+    });
   }
 
   setNote(modelFamilyId: string, note: string): ModelFamilyResearchState {
-    const current = this.get(modelFamilyId);
-    const next: ModelFamilyResearchState = {
-      ...current,
+    return this.write(modelFamilyId, {
       note: note.trim() ? note.trim() : null,
-    };
-    this.store.states[modelFamilyId] = next;
-    this.persist();
-    return next;
+    });
   }
 }
 
@@ -109,10 +202,13 @@ export function getResearchStateRepository(): ResearchStateRepository {
   return singleton;
 }
 
-/** Test-only: reset singleton and optionally seed store. */
+/** Test-only: reset singleton and optionally seed store for the current user. */
 export function resetResearchStateRepositoryForTests(
   seed?: Record<string, ModelFamilyResearchState>,
 ): void {
+  if (typeof window !== "undefined") {
+    window.localStorage.removeItem(STORAGE_KEY);
+  }
   singleton = new LocalResearchStateRepository();
   if (seed) {
     for (const [id, state] of Object.entries(seed)) {

@@ -1,3 +1,5 @@
+import { resolveViewForRole } from "../auth/permissions";
+import type { UserRole } from "../auth/roles";
 import type { AppView } from "../components/Header";
 
 export interface AppNavigationState {
@@ -74,6 +76,15 @@ export function buildNavigationSearch(state: AppNavigationState): string {
   }
   const query = params.toString();
   return query ? `?${query}` : "";
+}
+
+export function guardNavigationForRole(
+  state: AppNavigationState,
+  role: UserRole,
+): AppNavigationState {
+  const view = resolveViewForRole(state.view, role);
+  if (view === state.view) return state;
+  return emptyNavigation(view);
 }
 
 export function readNavigationFromLocation(): AppNavigationState {

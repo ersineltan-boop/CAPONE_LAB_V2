@@ -1,8 +1,14 @@
 import { describe, expect, it } from "vitest";
 
 import { PRIMARY_NAV_ITEMS, isPrimaryNavView } from "../primaryNav";
-import { buildNavigationSearch, parseNavigationFromSearch } from "../appNavigation";
+import {
+  buildNavigationSearch,
+  emptyNavigation,
+  guardNavigationForRole,
+  parseNavigationFromSearch,
+} from "../appNavigation";
 import { PAZAR_OZETI_ENABLED } from "../../components/visualWall/visualWallSections";
+import { primaryNavItemsForRole } from "../../auth/permissions";
 
 describe("appNavigation", () => {
   it("defaults to brands view", () => {
@@ -79,5 +85,17 @@ describe("primary navigation", () => {
 
   it("does not expose Pazar Özeti on Visual", () => {
     expect(PAZAR_OZETI_ENABLED).toBe(false);
+  });
+
+  it("hides Pazar Araştırması from Producer navigation and deep links", () => {
+    expect(primaryNavItemsForRole("Producer").map((item) => item.id)).not.toContain(
+      "market-research",
+    );
+    expect(guardNavigationForRole(emptyNavigation("market-research"), "Producer").view).toBe(
+      "brands",
+    );
+    expect(guardNavigationForRole(emptyNavigation("market-research"), "Owner").view).toBe(
+      "market-research",
+    );
   });
 });

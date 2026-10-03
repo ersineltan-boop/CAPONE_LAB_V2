@@ -1,7 +1,7 @@
 import type { ModelFamily } from "../modelFamily/types";
 import type { ModelFamilyGridItem } from "./modelFamilyGrid";
 import { modelFamilyToGridItem } from "./modelFamilyGrid";
-import type { ModelFamilyResearchState } from "../research/types";
+import { emptyResearchState, type ModelFamilyResearchState } from "../research/types";
 import { isReviewed } from "../research/researchStateRepository";
 
 export type CategorySortMode = "newest" | "brand-az" | "unreviewed-first";
@@ -23,8 +23,12 @@ export function sortModelFamilies(
 
   if (mode === "unreviewed-first") {
     return sorted.sort((a, b) => {
-      const aReviewed = isReviewed(researchStates.get(a.modelFamilyId) ?? { modelFamilyId: a.modelFamilyId, reviewedAt: null, savedAt: null, note: null });
-      const bReviewed = isReviewed(researchStates.get(b.modelFamilyId) ?? { modelFamilyId: b.modelFamilyId, reviewedAt: null, savedAt: null, note: null });
+      const aReviewed = isReviewed(
+        researchStates.get(a.modelFamilyId) ?? emptyResearchState(a.modelFamilyId),
+      );
+      const bReviewed = isReviewed(
+        researchStates.get(b.modelFamilyId) ?? emptyResearchState(b.modelFamilyId),
+      );
       if (aReviewed !== bReviewed) return aReviewed ? 1 : -1;
       const aSeen = Date.parse(a.modelFamilyFirstSeenAt ?? "") || 0;
       const bSeen = Date.parse(b.modelFamilyFirstSeenAt ?? "") || 0;
