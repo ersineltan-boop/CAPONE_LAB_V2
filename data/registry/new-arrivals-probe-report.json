@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T10:41:42.893Z",
+  "generatedAt": "2026-10-03T12:01:16.244Z",
   "brandCount": 160,
   "marketplaceCount": 7,
-  "verifiedBrandSources": 7,
+  "verifiedBrandSources": 8,
   "verifiedMarketplaceSources": 1,
   "brands": [
     {
@@ -562,7 +562,7 @@
       "sourceId": "jil-sander",
       "sourceLabel": "JIL SANDER",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -617,7 +617,7 @@
       "sourceId": "coperni",
       "sourceLabel": "COPERNI",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -708,11 +708,15 @@
       "sourceLabel": "CECILIE BAHNSEN",
       "sourceType": "BRAND",
       "discoveryStatus": "VERIFIED",
-      "newArrivalDiscoveryStatus": "NEEDS_PROBE",
-      "candidateUrls": [],
-      "candidateHandles": [],
-      "verified": false,
-      "evidenceStrategy": null
+      "newArrivalDiscoveryStatus": "VERIFIED",
+      "candidateUrls": [
+        "https://ceciliebahnsen.com/collections/new-in"
+      ],
+      "candidateHandles": [
+        "new-in"
+      ],
+      "verified": true,
+      "evidenceStrategy": "NEW_ARRIVALS_COLLECTION"
     },
     {
       "sourceId": "simone-rocha",
@@ -828,7 +832,7 @@
       "sourceId": "sergio-rossi",
       "sourceLabel": "SERGIO ROSSI",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -839,7 +843,7 @@
       "sourceId": "casadei",
       "sourceLabel": "CASADEI",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -1498,7 +1502,7 @@
       "sourceId": "pazzion",
       "sourceLabel": "PAZZION",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -1630,7 +1634,7 @@
       "sourceId": "moon-boot",
       "sourceLabel": "MOON BOOT",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],
@@ -1729,7 +1733,7 @@
       "sourceId": "paloma-wool",
       "sourceLabel": "PALOMA WOOL",
       "sourceType": "BRAND",
-      "discoveryStatus": "UNKNOWN",
+      "discoveryStatus": "AUTO_DISCOVERED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",
       "candidateUrls": [],
       "candidateHandles": [],

@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-09-30T10:22:15.528Z",
-  "runFinishedAt": "2026-09-30T10:27:19.127Z",
-  "totalProducts": 19870,
+  "runStartedAt": "2026-10-03T11:38:56.564Z",
+  "runFinishedAt": "2026-10-03T11:44:51.107Z",
+  "totalProducts": 21399,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -33,7 +33,62 @@
         "/collections/edge-sandal",
         "/collections/edge-mule-and-pump"
       ],
-      "sourceReportedProductCount": 110
+      "sourceReportedProductCount": 119
+    },
+    {
+      "source": "JIL SANDER",
+      "status": "partial",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 78,
+      "parsedProducts": 78,
+      "productsWithImages": 78,
+      "productsWithMaterial": 0,
+      "errors": [
+        "Jil Sander size J16WQ0028P7685243/37 HTTP 403",
+        "Jil Sander size J16WQ0028P7685243/39 HTTP 403",
+        "Jil Sander size J16WQ0028P7685243/40 HTTP 403",
+        "Jil Sander size J16WQ0028P7690001/35 HTTP 403",
+        "Jil Sander size J16WQ0028P7690001/38 HTTP 403",
+        "Jil Sander size J16WQ0028P7690001/41 HTTP 403",
+        "Jil Sander size J16WQ0028P7685243/38 HTTP 403",
+        "Jil Sander size J16WQ0028P7690001/37 HTTP 403",
+        "Jil Sander size J16WQ0028P7690001/40 HTTP 403",
+        "Jil Sander size J15WR0032P7543001/37 HTTP 403",
+        "Jil Sander size J15WR0032P7543001/38 HTTP 403",
+        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED",
+        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED"
+      ],
+      "hitLegacyCap": true,
+      "footwearRoots": [
+        "/en-us/women/accessories/shoes"
+      ],
+      "pagesTraversed": 2,
+      "paginationExhausted": false,
+      "hitCollectionCrawlCap": true,
+      "collectionsCrawled": [
+        "/en-us/women/accessories/shoes"
+      ],
+      "sourceReportedProductCount": 77
+    },
+    {
+      "source": "COPERNI",
+      "status": "success",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 29,
+      "parsedProducts": 28,
+      "productsWithImages": 28,
+      "productsWithMaterial": 2,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/all-shoes"
+      ],
+      "pagesTraversed": 4,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/all-shoes"
+      ],
+      "sourceReportedProductCount": 28
     },
     {
       "source": "DRIES VAN NOTEN",
@@ -59,10 +114,10 @@
       "source": "PROENZA SCHOULER",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 220,
-      "parsedProducts": 157,
-      "productsWithImages": 155,
-      "productsWithMaterial": 153,
+      "discoveredProductLinks": 228,
+      "parsedProducts": 164,
+      "productsWithImages": 162,
+      "productsWithMaterial": 160,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -84,8 +139,8 @@
         "/collections/tee-sandal-edit",
         "/collections/sorel-mules"
       ],
-      "rawProductUrlsDiscovered": 220,
-      "duplicateCount": 63,
+      "rawProductUrlsDiscovered": 228,
+      "duplicateCount": 64,
       "pagesTraversed": 15,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -107,31 +162,39 @@
         "/collections/tee-sandal-edit",
         "/collections/sorel-mules"
       ],
-      "sourceReportedProductCount": 335
+      "sourceReportedProductCount": 347
     },
     {
       "source": "CECILIE BAHNSEN",
-      "status": "failed",
-      "method": "none",
-      "discoveredProductLinks": 0,
-      "parsedProducts": 0,
-      "productsWithImages": 0,
+      "status": "success",
+      "method": "shopify",
+      "discoveredProductLinks": 22,
+      "parsedProducts": 17,
+      "productsWithImages": 17,
       "productsWithMaterial": 0,
-      "errors": [
-        "Structured collection returned zero footwear products for CECILIE BAHNSEN"
-      ],
+      "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
         "/collections/shoes",
         "/collections/shoes-accessories",
         "/collections/shoe-edit"
-      ]
+      ],
+      "rawProductUrlsDiscovered": 22,
+      "duplicateCount": 5,
+      "pagesTraversed": 2,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/shoes",
+        "/collections/shoes-accessories",
+        "/collections/shoe-edit"
+      ],
+      "sourceReportedProductCount": 16
     },
     {
       "source": "SIMONE ROCHA",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 182,
+      "discoveredProductLinks": 183,
       "parsedProducts": 12,
       "productsWithImages": 12,
       "productsWithMaterial": 0,
@@ -142,8 +205,8 @@
         "/collections/brogues",
         "/collections/flats"
       ],
-      "rawProductUrlsDiscovered": 182,
-      "duplicateCount": 170,
+      "rawProductUrlsDiscovered": 183,
+      "duplicateCount": 171,
       "pagesTraversed": 3,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -174,13 +237,75 @@
       "sourceReportedProductCount": 67
     },
     {
+      "source": "SERGIO ROSSI",
+      "status": "success",
+      "method": "shopify",
+      "discoveredProductLinks": 98,
+      "parsedProducts": 98,
+      "productsWithImages": 98,
+      "productsWithMaterial": 0,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/womens-shoes",
+        "/collections/pumps",
+        "/collections/slingback",
+        "/collections/womens-sandals",
+        "/collections/ballet-flats",
+        "/collections/womens-loafers-and-slippers",
+        "/collections/womens-elegant-sneakers",
+        "/collections/womens-ankle-boots-and-booties",
+        "/collections/womens-boots",
+        "/collections/bridal-and-ceremony-shoes"
+      ],
+      "pagesTraversed": 9,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/womens-shoes",
+        "/collections/pumps",
+        "/collections/slingback",
+        "/collections/womens-sandals",
+        "/collections/ballet-flats",
+        "/collections/womens-loafers-and-slippers",
+        "/collections/womens-elegant-sneakers",
+        "/collections/womens-ankle-boots-and-booties",
+        "/collections/womens-boots",
+        "/collections/bridal-and-ceremony-shoes"
+      ],
+      "sourceReportedProductCount": 98
+    },
+    {
+      "source": "CASADEI",
+      "status": "partial",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 329,
+      "parsedProducts": 329,
+      "productsWithImages": 329,
+      "productsWithMaterial": 327,
+      "errors": [
+        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED",
+        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED"
+      ],
+      "hitLegacyCap": true,
+      "footwearRoots": [
+        "/en-us/shoes/"
+      ],
+      "pagesTraversed": 15,
+      "paginationExhausted": false,
+      "hitCollectionCrawlCap": true,
+      "collectionsCrawled": [
+        "/en-us/shoes/"
+      ],
+      "sourceReportedProductCount": 331
+    },
+    {
       "source": "GIA BORGHINI",
       "status": "success",
       "method": "shopify",
       "discoveredProductLinks": 89,
-      "parsedProducts": 69,
-      "productsWithImages": 69,
-      "productsWithMaterial": 69,
+      "parsedProducts": 80,
+      "productsWithImages": 80,
+      "productsWithMaterial": 80,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -190,7 +315,7 @@
         "/collections/flat-shoes"
       ],
       "rawProductUrlsDiscovered": 89,
-      "duplicateCount": 20,
+      "duplicateCount": 9,
       "pagesTraversed": 4,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -224,12 +349,32 @@
       "sourceReportedProductCount": 8
     },
     {
+      "source": "PAZZION",
+      "status": "success",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 586,
+      "parsedProducts": 574,
+      "productsWithImages": 574,
+      "productsWithMaterial": 573,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/shoes"
+      ],
+      "pagesTraversed": 6,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/shoes"
+      ],
+      "sourceReportedProductCount": 574
+    },
+    {
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 514,
-      "parsedProducts": 514,
-      "productsWithImages": 514,
+      "discoveredProductLinks": 546,
+      "parsedProducts": 546,
+      "productsWithImages": 546,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -237,18 +382,18 @@
         "https://www.zara.com/us/en/woman-shoes-l1251.html",
         "https://www.zara.com/us/en/woman-shoes-l1251.html",
         "https://www.zara.com/us/en/woman-shoes-flat-l1269.html",
-        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
-        "https://www.zara.com/us/en/woman-shoes-moccasins-l2260.html",
         "https://www.zara.com/us/en/woman-shoes-heeled-l1271.html",
         "https://www.zara.com/us/en/woman-shoes-boots-l1263.html",
         "https://www.zara.com/us/en/woman-shoes-ankle-boots-l1259.html",
+        "https://www.zara.com/us/en/woman-shoes-moccasins-l2260.html",
+        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
         "https://www.zara.com/us/en/woman-shoes-sandals-l1280.html",
         "https://www.zara.com/us/en/woman-shoes-sneakers-barefoot-l17512.html",
         "https://www.zara.com/us/en/woman-shoes-sneakers-l1287.html",
         "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 514,
+      "rawProductUrlsDiscovered": 546,
       "duplicateCount": 0,
       "pagesTraversed": 25,
       "paginationExhausted": true,
@@ -256,11 +401,11 @@
         "https://www.zara.com/us/en/woman-shoes-l1251.html",
         "https://www.zara.com/us/en/woman-shoes-l1251.html",
         "https://www.zara.com/us/en/woman-shoes-flat-l1269.html",
-        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
-        "https://www.zara.com/us/en/woman-shoes-moccasins-l2260.html",
         "https://www.zara.com/us/en/woman-shoes-heeled-l1271.html",
         "https://www.zara.com/us/en/woman-shoes-boots-l1263.html",
         "https://www.zara.com/us/en/woman-shoes-ankle-boots-l1259.html",
+        "https://www.zara.com/us/en/woman-shoes-moccasins-l2260.html",
+        "https://www.zara.com/us/en/woman-shoes-ballerinas-l1260.html",
         "https://www.zara.com/us/en/woman-shoes-sandals-l1280.html",
         "https://www.zara.com/us/en/woman-shoes-sneakers-barefoot-l17512.html",
         "https://www.zara.com/us/en/woman-shoes-sneakers-l1287.html",
@@ -268,6 +413,46 @@
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
       "sourceReportedProductCount": null
+    },
+    {
+      "source": "MOON BOOT",
+      "status": "success",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 142,
+      "parsedProducts": 142,
+      "productsWithImages": 142,
+      "productsWithMaterial": 7,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ],
+      "pagesTraversed": 9,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/en-eu/collections/woman-fall-winter-2026"
+      ],
+      "sourceReportedProductCount": 142
+    },
+    {
+      "source": "PALOMA WOOL",
+      "status": "success",
+      "method": "custom-adapter",
+      "discoveredProductLinks": 63,
+      "parsedProducts": 63,
+      "productsWithImages": 63,
+      "productsWithMaterial": 3,
+      "errors": [],
+      "hitLegacyCap": false,
+      "footwearRoots": [
+        "/collections/shoes"
+      ],
+      "pagesTraversed": 4,
+      "paginationExhausted": true,
+      "collectionsCrawled": [
+        "/collections/shoes"
+      ],
+      "sourceReportedProductCount": 63
     },
     {
       "source": "MARGAUX",
@@ -303,10 +488,10 @@
       "source": "4CCCCEES",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 202,
-      "parsedProducts": 191,
-      "productsWithImages": 191,
-      "productsWithMaterial": 191,
+      "discoveredProductLinks": 207,
+      "parsedProducts": 197,
+      "productsWithImages": 197,
+      "productsWithMaterial": 197,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -325,8 +510,8 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "rawProductUrlsDiscovered": 202,
-      "duplicateCount": 11,
+      "rawProductUrlsDiscovered": 207,
+      "duplicateCount": 10,
       "pagesTraversed": 8,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -345,16 +530,16 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "sourceReportedProductCount": 79
+      "sourceReportedProductCount": 81
     },
     {
       "source": "ALEXANDRE BIRMAN",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 668,
-      "parsedProducts": 667,
-      "productsWithImages": 667,
-      "productsWithMaterial": 665,
+      "discoveredProductLinks": 667,
+      "parsedProducts": 666,
+      "productsWithImages": 666,
+      "productsWithMaterial": 664,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -413,7 +598,7 @@
         "/collections/pumps-on-sale",
         "/collections/platforms-on-sale"
       ],
-      "rawProductUrlsDiscovered": 668,
+      "rawProductUrlsDiscovered": 667,
       "duplicateCount": 1,
       "pagesTraversed": 49,
       "paginationExhausted": true,
@@ -476,18 +661,24 @@
       "sourceReportedProductCount": 398
     }
   ],
-  "failedBrands": [
-    "CECILIE BAHNSEN"
-  ],
+  "failedBrands": [],
   "successfulBrands": [
     "CHRISTEN",
+    "JIL SANDER",
+    "COPERNI",
     "DRIES VAN NOTEN",
     "PROENZA SCHOULER",
+    "CECILIE BAHNSEN",
     "SIMONE ROCHA",
     "JW ANDERSON",
+    "SERGIO ROSSI",
+    "CASADEI",
     "GIA BORGHINI",
     "TUAS",
+    "PAZZION",
     "ZARA",
+    "MOON BOOT",
+    "PALOMA WOOL",
     "MARGAUX",
     "4CCCCEES",
     "ALEXANDRE BIRMAN"
