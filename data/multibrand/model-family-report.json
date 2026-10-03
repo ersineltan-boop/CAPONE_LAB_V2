@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 21346,
-  "modelFamilyCount": 13605,
-  "totalVariants": 21346,
-  "multiVariantFamilyCount": 5195,
-  "reductionPercent": 36.3,
-  "collapsedVariantProducts": 7741,
+  "rawProductCount": 21530,
+  "modelFamilyCount": 17233,
+  "totalVariants": 30607,
+  "multiVariantFamilyCount": 6266,
+  "reductionPercent": 43.7,
+  "collapsedVariantProducts": 13374,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 13174,
-    "averageRepresentativeImageCount": 6.2,
+    "familiesWithMultipleRepresentativeImages": 13631,
+    "averageRepresentativeImageCount": 6.21,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -4407,6 +4407,20 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-262-021700-0132-sneaker-base",
+      "brand": "DRIES VAN NOTEN",
+      "canonicalName": "Sneaker",
+      "variantCount": 3,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-261-021726-0126-sneaker-base",
+      "brand": "DRIES VAN NOTEN",
+      "canonicalName": "Sneaker",
+      "variantCount": 3,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-so-down-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "So-down",
@@ -4911,6 +4925,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15605810-boot-base",
+      "brand": "ZARA",
+      "canonicalName": "Ankle Boot",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-annica-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Annica",
@@ -5145,6 +5166,13 @@
       "modelFamilyId": "barbour--id-free-people-103751459-unclassified-base",
       "brand": "Barbour",
       "canonicalName": "Barbour Abbeyfield Wellies",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15451810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Barefoot Sneaker",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -7963,6 +7991,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-261-021745-0126-sneaker-mule",
+      "brand": "DRIES VAN NOTEN",
+      "canonicalName": "Sneaker",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "fp-collection--id-free-people-93670768-unclassified-base",
       "brand": "FP Collection",
       "canonicalName": "Snowball Slippers",
@@ -8704,14 +8739,5 @@
       "variantCount": 2,
       "groupingReason": "singleton"
     }
-  ],
-  "reportScope": {
-    "method": "Incremental counts: base report plus verified Coperni, Moon Boot and Pazzion families.",
-    "baseCommit": "9e631c5b9d972f7cc0c05e2a0fc83c626bbbdb58",
-    "inheritedDetailFields": [
-      "representativeImageStats",
-      "largestVariantFamilies"
-    ],
-    "newSourceFamilies": 371
-  }
+  ]
 }

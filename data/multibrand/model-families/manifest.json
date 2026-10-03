@@ -1,44 +1,44 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-01T15:45:43.321Z",
-  "totalFamilies": 17144,
-  "shardCount": 29,
+  "generatedAt": "2026-10-03T12:00:53.164Z",
+  "totalFamilies": 17267,
+  "shardCount": 28,
   "shards": [
     {
       "file": "part-000.json",
-      "familyCount": 2096,
-      "bytes": 16777320
+      "familyCount": 2087,
+      "bytes": 16776867
     },
     {
       "file": "part-001.json",
-      "familyCount": 2406,
-      "bytes": 16775948
+      "familyCount": 2420,
+      "bytes": 16778412
     },
     {
       "file": "part-002.json",
-      "familyCount": 2018,
-      "bytes": 16776118
+      "familyCount": 2008,
+      "bytes": 16774706
     },
     {
       "file": "part-003.json",
-      "familyCount": 2333,
-      "bytes": 16779050
+      "familyCount": 2314,
+      "bytes": 16773677
     },
     {
       "file": "part-004.json",
-      "familyCount": 2093,
-      "bytes": 16772131
+      "familyCount": 1996,
+      "bytes": 16774254
     },
     {
       "file": "part-005.json",
-      "familyCount": 1861,
-      "bytes": 16775815
+      "familyCount": 1779,
+      "bytes": 16775666
     },
     {
       "file": "part-006.json",
-      "familyCount": 654,
-      "bytes": 4019599
+      "familyCount": 1351,
+      "bytes": 8713835
     },
     {
       "file": "brands/4ccccees.json",
@@ -144,11 +144,6 @@
       "file": "brands/maison-margiela.json",
       "familyCount": 107,
       "bytes": 1278429
-    },
-    {
-      "file": "part-007.json",
-      "familyCount": 371,
-      "bytes": 3531960
     }
   ]
 }

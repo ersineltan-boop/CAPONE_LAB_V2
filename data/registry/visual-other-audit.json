@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-30T10:41:42.884Z",
-  "digerCount": 802,
-  "totalFamilies": 16479,
+  "generatedAt": "2026-10-03T12:01:16.233Z",
+  "digerCount": 825,
+  "totalFamilies": 17267,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 49,
-    "GENERIC_SOURCE_CATEGORY": 155,
-    "CONFLICTING_SOURCE_CATEGORIES": 49,
-    "UNMAPPED_SOURCE_CATEGORY": 549,
+    "GENERIC_SOURCE_CATEGORY": 163,
+    "CONFLICTING_SOURCE_CATEGORIES": 48,
+    "UNMAPPED_SOURCE_CATEGORY": 565,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -302,21 +302,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "alexandre-birman--id-shopify-alexandre-birman-thay-slouch-ttk-90-brown-unclassified-base",
-      "brand": "ALEXANDRE BIRMAN",
-      "sourceCategories": [
-        "All Shoes",
-        "Boots",
-        "Brogue",
-        "HIGH HEELS",
-        "High Heels 1",
-        "Texture Boots",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
       "modelFamilyId": "alma-rae--id-level-shoes-alma-rae-kali-slippers-beige-leather-women-slippers-hsjbpe-html-unclassified-base",
@@ -1593,6 +1578,7 @@
       "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-3-26kni53004-cbfleetwood-vest-winter-lambswool-winter-yellow-unclassified-base",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
+        "New In",
         "Shoes & Accessories"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1640,6 +1626,7 @@
       "modelFamilyId": "cecilie-bahnsen--name-cecilie-bahnsen-cbfleetwood-vest-winter-lambswool-unclassified-base",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
+        "New In",
         "Shoes & Accessories"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -1843,24 +1830,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-262-131716-0106-unclassified-mule",
-      "brand": "DRIES VAN NOTEN",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-262-131717-0603-unclassified-mule",
-      "brand": "DRIES VAN NOTEN",
-      "sourceCategories": [
-        "Women's Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "duha--id-level-shoes-duha-gina-slippers-brown-leather-women-slippers-wykoyr-html-unclassified-base",
@@ -4771,6 +4740,78 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "jil-sander--id-url-https-www-jilsander-com-en-us-elbe-slipper-j16ws0044p7902001-html-unclassified-base",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--id-url-https-www-jilsander-com-en-us-hamburg-lace-up-shoe-j16wq0025p7696001-html-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--id-url-https-www-jilsander-com-en-us-hood-lace-up-shoe-j15zj0037p7698001-html-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--style-jil-sander-j16wq0028-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--style-jil-sander-j16ws0042-unclassified-base",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--style-jil-sander-j16zj0027-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--style-jil-sander-j16zj0028-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "jil-sander--style-jil-sander-j16zj0031-unclassified-laceup",
+      "brand": "JIL SANDER",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "jimmy-choo--id-level-shoes-jimmy-choo-eliot-slippers-animal-print-pony-hair-women-slippers-bww8ca-html-unclassified-base",
       "brand": "Jimmy Choo",
       "sourceCategories": [
@@ -5944,6 +5985,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "paloma-wool--id-shopify-paloma-wool-micaela-pockets-lined-leather-loafer-pocket-detail-vamp-brown-unclassified-base",
+      "brand": "PALOMA WOOL",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "paris-texas--id-shopify-paris-texas-python-print-leather-flat-px1383xpttenatrocciascuro4-unclassified-base",
       "brand": "PARIS TEXAS",
       "sourceCategories": [
@@ -6391,6 +6441,260 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
+    },
+    {
+      "modelFamilyId": "pazzion--handle-pazzion-adriana-tied-bow-unclassified-base-adriana-tied-bow-flat",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Bow Shoes",
+        "Brown Flats",
+        "Brown Shoes",
+        "Casual Shoes",
+        "Flats",
+        "Pink Flats",
+        "Pink Shoes",
+        "Round Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--id-shopify-pazzion-5603-2a-wren-buckle-woven-foldable-flats-unclassified-braided",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Casual Shoes",
+        "Shoes",
+        "Silver Shoes",
+        "Square Toe Shoes",
+        "Women's Shoes",
+        "Woven Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--id-shopify-pazzion-js51-18-celina-glitter-weaved-flats-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Best Seller - Flats",
+        "Casual Shoes",
+        "Flats",
+        "Round Toe Shoes",
+        "Shoes",
+        "Silver Flats",
+        "Silver Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-alina-lace-diamante-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Beige Shoes",
+        "Black Shoes",
+        "Casual Shoes",
+        "Diamante Shoes",
+        "Round Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-arden-classic-lace-up-flat-unclassified-laceup",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Black Flats",
+        "Black Shoes",
+        "Casual Shoes",
+        "Flats",
+        "Round Toe Shoes",
+        "Shoes",
+        "White Flats",
+        "White Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-celina-weaved-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Best Seller - Flats",
+        "Casual Shoes",
+        "Flats",
+        "Gold Flats",
+        "Gold Shoes",
+        "Round Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-demi-laced-up-perforated-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Beige Flats",
+        "Beige Shoes",
+        "Casual Shoes",
+        "Flats",
+        "Shoes",
+        "Square Toe Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-givannia-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Almond Shoes",
+        "Blue Shoes",
+        "Casual Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-harivelle-embellished-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Black Shoes",
+        "Casual Shoes",
+        "Diamante Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Silver Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-helene-crystal-buckle-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Black Shoes",
+        "Casual Shoes",
+        "Diamante Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-maddox-crystal-buckle-pointed-toe-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Casual Shoes",
+        "Diamante Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Silver Shoes",
+        "Silver Wedding Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-renee-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Best Seller - Flats",
+        "Casual Shoes",
+        "Flats",
+        "Round Toe Shoes",
+        "Shoes",
+        "Silver Flats",
+        "Silver Shoes",
+        "Sneakerinas",
+        "White Flats",
+        "White Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-rylee-ruched-detail-covered-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Beige Flats",
+        "Beige Shoes",
+        "Best Seller - Flats",
+        "Black Flats",
+        "Black Formal Shoes",
+        "Black Shoes",
+        "Casual Shoes",
+        "Flats",
+        "Pink Flats",
+        "Pink Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-serena-braided-bow-foldable-flat-unclassified-braided",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Black Formal Shoes",
+        "Black Shoes",
+        "Bow Shoes",
+        "Casual Shoes",
+        "Khaki Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-stella-lace-diamante-buckle-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Almond Shoes",
+        "Casual Shoes",
+        "Diamante Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-vera-bow-lace-foldable-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Bow Shoes",
+        "Casual Shoes",
+        "Pink Shoes",
+        "Pointed-Toe Shoes",
+        "Shoes",
+        "Women's Shoes",
+        "Yellow Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "pedro-garc-a--id-level-shoes-pedro-garc-a-braidy-slippers-beige-suede-women-slippers-wmdn3i-html-unclassified-base",
@@ -7659,6 +7963,15 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "zara--id-zara-13538810-unclassified-laceup",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "zara--id-zara-13539810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
@@ -7857,13 +8170,11 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "maison-margiela--id-url-https-www-maisonmargiela-com-en-us-tabi-jazz-slipper-s58wr0126pr869t8013-html-unclassified-base",
-      "brand": "MAISON MARGIELA",
-      "sourceCategories": [
-        "Moccasins"
-      ],
+      "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-paisley-amber-velvet-unclassified-base",
+      "brand": "FREDA SALVADOR",
+      "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
+      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-black-leather-boat-shoe-unclassified-base",
@@ -7936,13 +8247,6 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-paisley-amber-velvet-unclassified-base",
-      "brand": "FREDA SALVADOR",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "sarah-flint--handle-sarah-flint-sarah-flint-x-mary-orton-cap-toe-unclassified-base-sarah-flint-x-mary-orton-perfect-cap-toe-flat",
       "brand": "SARAH FLINT",
       "sourceCategories": [],
@@ -7955,6 +8259,15 @@
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "maison-margiela--id-url-https-www-maisonmargiela-com-en-us-tabi-jazz-slipper-s58wr0126pr869t8013-html-unclassified-base",
+      "brand": "MAISON MARGIELA",
+      "sourceCategories": [
+        "Moccasins"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     }
   ],
   "topUnmappedSourceCategories": [
@@ -8024,7 +8337,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 68,
+      "count": 75,
       "brands": [
         "A.EMERY",
         "AEYDE",
@@ -8035,6 +8348,7 @@
         "LE MONDE BERYL",
         "MARGAUX",
         "NEOUS",
+        "PAZZION",
         "PROENZA SCHOULER",
         "SOPHIA WEBSTER",
         "SOULIERS MARTINEZ",
@@ -8090,6 +8404,14 @@
       "count": 22,
       "brands": [
         "FLABELUS"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Casual Shoes",
+      "count": 16,
+      "brands": [
+        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -8210,10 +8532,27 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Pointed-Toe Shoes",
+      "count": 8,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Leather Flats",
       "count": 7,
       "brands": [
         "A.EMERY"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "New In",
+      "count": 6,
+      "brands": [
+        "AEYDE",
+        "CECILIE BAHNSEN"
       ],
       "proposedMapping": null
     },
@@ -8230,6 +8569,22 @@
       "count": 6,
       "brands": [
         "AMINA MUADDI"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Round Toe Shoes",
+      "count": 6,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Black Shoes",
+      "count": 6,
+      "brands": [
+        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -8268,10 +8623,18 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "New In",
-      "count": 4,
+      "sourceCategory": "Silver Shoes",
+      "count": 5,
       "brands": [
-        "AEYDE"
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Diamante Shoes",
+      "count": 5,
+      "brands": [
+        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -8290,68 +8653,20 @@
         "AMINA MUADDI"
       ],
       "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women's Pre-Fall 2026",
-      "count": 4,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Womens New In Shoes",
-      "count": 4,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Flats For Women",
-      "count": 4,
-      "brands": [
-        "JUDE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Sale Footwear",
-      "count": 4,
-      "brands": [
-        "ST. AGNI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Shoes Flats",
-      "count": 4,
-      "brands": [
-        "TOTEME"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Flats Edit",
-      "count": 3,
-      "brands": [
-        "A.EMERY"
-      ],
-      "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 16479,
-    "babet": 1454,
-    "loafer": 920,
-    "topuklu": 2449,
-    "sandal": 4496,
-    "mule": 1425,
-    "bot-cizme": 3218,
-    "sneaker": 1459,
-    "espadril": 133,
-    "oxford-derby": 21,
+    "tumu": 17267,
+    "babet": 1579,
+    "loafer": 965,
+    "topuklu": 2567,
+    "sandal": 4618,
+    "mule": 1455,
+    "bot-cizme": 3443,
+    "sneaker": 1541,
+    "espadril": 150,
+    "oxford-derby": 22,
     "clog": 102,
-    "diger": 802
+    "diger": 825
   }
 }
