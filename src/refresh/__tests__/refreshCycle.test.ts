@@ -4,8 +4,30 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { assertRefreshCoverage, buildRefreshCyclePlan } from "../refreshCycle";
 import { transactionalRefreshLane } from "../transactionalLane";
+import { registryEntryToUniverseEntry } from "../../registry/build/convertBrandUniverse";
+import { brandEntries } from "../../registry/data/brands";
 
 describe("complete automatic refresh", () => {
+  it.each([true, false])("uses the current universe for a newly activated brand (supported: %s)", async (supported) => {
+    const root = await mkdtemp(join(tmpdir(), "capone-future-brand-"));
+    try {
+      await mkdir(join(root, "data/registry"), { recursive: true });
+      await mkdir(join(root, "data/brands/wave50/last-good"), { recursive: true });
+      const entry = registryEntryToUniverseEntry(brandEntries.find(brand => brand.id === "cecilie-bahnsen")!);
+      Object.assign(entry, { id: "future-brand", brand: "FUTURE BRAND", officialUrl: "https://future.example.com", isActive: true,
+        discoverySources: [], collectionStatus: supported ? "READY_AUTOMATIC" : "NEEDS_CUSTOM_ADAPTER",
+        collectorType: supported ? "SHOPIFY_PUBLIC" : "UNSUPPORTED" });
+      await writeFile(join(root, "data/registry/brand-universe.json"), JSON.stringify({ version: 1, brands: [entry] }));
+      await writeFile(join(root, "data/registry/marketplace-pilot.json"), JSON.stringify({ activeMarketplaceIds: [] }));
+      if (supported) {
+        const plan = await buildRefreshCyclePlan(root);
+        expect(plan.activeBrands).toEqual(["future-brand"]);
+        expect(plan.lanes.find(lane => lane.id === "cloud-brands")?.brands).toEqual(["future-brand"]);
+      } else {
+        await expect(buildRefreshCyclePlan(root)).rejects.toThrow("brand:future-brand");
+      }
+    } finally { await rm(root, { recursive: true, force: true }); }
+  });
   it("covers every current active brand and marketplace without new brand activation", async () => {
     const plan = await buildRefreshCyclePlan(process.cwd());
     expect(plan.activeBrands).toHaveLength(82);
