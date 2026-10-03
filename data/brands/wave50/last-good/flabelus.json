@@ -2,25 +2,27 @@
   "slug": "flabelus",
   "brand": "FLABELUS",
   "officialUrl": "https://flabelus.com",
-  "snapshotId": "flabelus:2026-09-26T11:56:35.990Z",
-  "collectedAt": "2026-09-26T11:56:35.990Z",
+  "snapshotId": "flabelus:2026-10-03T15:36:00.924Z",
+  "collectedAt": "2026-10-03T15:36:00.924Z",
   "catalogPaths": [
     "/collections/all"
   ],
-  "newArrivalsPaths": [],
+  "newArrivalsPaths": [
+    "/collections/new-in"
+  ],
   "coverage": {
-    "sourceTotal": 511,
-    "collected": 511,
+    "sourceTotal": 513,
+    "collected": 513,
     "missing": 0,
     "coverage": 100,
-    "excluded": 925,
+    "excluded": 926,
     "paginationExhausted": true,
-    "galleryComplete": 511,
+    "galleryComplete": 513,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 0,
+  "newArrivalsFootwear": 20,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -557,11 +559,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1018,10 +1020,10 @@
       "canonicalName": "Antonia",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4710.jpg?v=1773657664",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA1_4eac3cb4-9f9a-4adb-a989-fa9bbb720aa9.jpg?v=1773657664",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/products/Antonia1_41e8cd8b-e829-4b42-9827-a3c9a0eeae92.jpg?v=1773657664",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA1_4eac3cb4-9f9a-4adb-a989-fa9bbb720aa9.jpg?v=1773657664",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA2_15ff0923-4ec4-4d78-b4a2-cdb067e9e3d4.jpg?v=1773657664",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4710.jpg?v=1773657664",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA3_8a4a0500-657d-4327-b8a4-2b0966a9c7f0.jpg?v=1773657664",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4711.jpg?v=1773657554"
       ],
@@ -1033,10 +1035,10 @@
           "color": null,
           "sku": "SQ8836724",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4710.jpg?v=1773657664",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA1_4eac3cb4-9f9a-4adb-a989-fa9bbb720aa9.jpg?v=1773657664",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/products/Antonia1_41e8cd8b-e829-4b42-9827-a3c9a0eeae92.jpg?v=1773657664",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA1_4eac3cb4-9f9a-4adb-a989-fa9bbb720aa9.jpg?v=1773657664",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA2_15ff0923-4ec4-4d78-b4a2-cdb067e9e3d4.jpg?v=1773657664",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4710.jpg?v=1773657664",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/ANTONIA3_8a4a0500-657d-4327-b8a4-2b0966a9c7f0.jpg?v=1773657664",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/PEARCHAN4711.jpg?v=1773657554"
           ],
@@ -1109,11 +1111,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1445,11 +1447,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1935,11 +1937,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2001,11 +2003,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2139,11 +2141,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2439,11 +2441,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2558,12 +2560,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2659,11 +2661,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2853,11 +2855,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2887,11 +2889,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2951,11 +2953,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3565,11 +3567,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3633,11 +3635,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3664,12 +3666,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3794,12 +3796,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3927,11 +3929,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4061,11 +4063,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4093,11 +4095,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4159,11 +4161,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4227,11 +4229,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4258,12 +4260,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4290,12 +4292,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4325,11 +4327,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4421,11 +4423,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4557,11 +4559,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4654,12 +4656,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -4725,11 +4727,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -5217,11 +5219,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -5749,9 +5751,9 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://flabelus.com/products/finn-brown",
@@ -5766,12 +5768,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -6163,11 +6165,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6519,11 +6521,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6687,11 +6689,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6821,11 +6823,11 @@
           "category": "SANDAL",
           "productType": "Sandal",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6853,11 +6855,11 @@
           "category": "SANDAL",
           "productType": "Sandal",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6885,11 +6887,11 @@
           "category": "SANDAL",
           "productType": "Sandal",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6951,11 +6953,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -7015,11 +7017,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -7675,11 +7677,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -7837,11 +7839,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -8258,10 +8260,10 @@
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraBurgundy_1_30-09-25_029copia.jpg?v=1763973643",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraBurgundy_2_30-09-25_194copia.jpg?v=1763973645",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraBurgundy_3_30-09-25_373copia.jpg?v=1763973649",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/FLABELUS5993-2.jpg?v=1765191317",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_1_30-09-25_023copia.jpg?v=1765191317",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_2_30-09-25_179copia.jpg?v=1765191317",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_3_30-09-25_339copia.jpg?v=1765191317",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/FLABELUS5993-2.jpg?v=1765191317"
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_3_30-09-25_339copia.jpg?v=1765191317"
       ],
       "variants": [
         {
@@ -8305,10 +8307,10 @@
           "color": "Navy",
           "sku": "252FZ70VBL0435",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/FLABELUS5993-2.jpg?v=1765191317",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_1_30-09-25_023copia.jpg?v=1765191317",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_2_30-09-25_179copia.jpg?v=1765191317",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_3_30-09-25_339copia.jpg?v=1765191317",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/FLABELUS5993-2.jpg?v=1765191317"
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/KyraNavy_3_30-09-25_339copia.jpg?v=1765191317"
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
@@ -8370,9 +8372,9 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://flabelus.com/products/kyra-breeze-red",
@@ -8387,9 +8389,9 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://flabelus.com/products/kyra-breeze-sand",
@@ -8404,12 +8406,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -8436,12 +8438,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -8507,9 +8509,9 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://flabelus.com/products/kyra-slipper-breeze-blue",
@@ -8524,12 +8526,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -8556,12 +8558,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -8588,12 +8590,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -8655,11 +8657,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -8811,8 +8813,8 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Laurance",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/laurance-navy",
@@ -8833,7 +8835,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -8938,12 +8940,12 @@
       "canonicalName": "Leonor",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/LEONOR.heic?v=1781523656",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/IMG_3045.jpg?v=1756404309",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_1_04-10-23_0308copia.jpg?v=1756404309",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/24072025_cocktailsandchamrs_veracruz_jacquelinemrv_-095.jpg?v=1756404164",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_2_04-10-23_0137copia.jpg?v=1756404309",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_3_09-05-23_0061copia.jpg?v=1756404309",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/IMG_3045.jpg?v=1756404309"
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/LEONOR.heic?v=1781523656"
       ],
       "variants": [
         {
@@ -8953,12 +8955,12 @@
           "color": null,
           "sku": "SQ0206316",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/LEONOR.heic?v=1781523656",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/IMG_3045.jpg?v=1756404309",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_1_04-10-23_0308copia.jpg?v=1756404309",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/24072025_cocktailsandchamrs_veracruz_jacquelinemrv_-095.jpg?v=1756404164",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_2_04-10-23_0137copia.jpg?v=1756404309",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Leonor_3_09-05-23_0061copia.jpg?v=1756404309",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/IMG_3045.jpg?v=1756404309"
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/LEONOR.heic?v=1781523656"
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
@@ -9063,11 +9065,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -9185,11 +9187,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -9549,8 +9551,8 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mae",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/mae-silver-black",
@@ -9569,11 +9571,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mae",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -9603,11 +9605,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mae",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -9637,11 +9639,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mae",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -9682,8 +9684,8 @@
       "canonicalName": "Mafalda Jane",
       "category": "OTHER_FOOTWEAR",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_1_15-01-24_042copia_c1c9423a-8334-464c-9107-4e63cc93598e.jpg?v=1734005580",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/6_4dc83cd2-ea72-4c94-b541-cd4945b63b5a.jpg?v=1734005580",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_1_15-01-24_042copia_c1c9423a-8334-464c-9107-4e63cc93598e.jpg?v=1734005580",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_2_15-01-24_143copia_5b044a15-4c64-4d6b-8c7a-96673dbb7737.jpg?v=1734005580",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_3_15-01-24_054copia_aa303087-b61e-47fe-9681-fe60929b691c.jpg?v=1734005580"
       ],
@@ -9695,8 +9697,8 @@
           "color": null,
           "sku": "242FZ06CPNK1635",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_1_15-01-24_042copia_c1c9423a-8334-464c-9107-4e63cc93598e.jpg?v=1734005580",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/6_4dc83cd2-ea72-4c94-b541-cd4945b63b5a.jpg?v=1734005580",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_1_15-01-24_042copia_c1c9423a-8334-464c-9107-4e63cc93598e.jpg?v=1734005580",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_2_15-01-24_143copia_5b044a15-4c64-4d6b-8c7a-96673dbb7737.jpg?v=1734005580",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MafaldaDoublePink_3_15-01-24_054copia_aa303087-b61e-47fe-9681-fe60929b691c.jpg?v=1734005580"
           ],
@@ -9797,11 +9799,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mafalda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -9899,11 +9901,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -10209,8 +10211,8 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Matilda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/matilda-gray",
@@ -10227,8 +10229,8 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Matilda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/matilda-navy",
@@ -10245,8 +10247,8 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Matilda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/matilda-purple",
@@ -10263,11 +10265,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Matilda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -10295,11 +10297,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Matilda",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -10393,11 +10395,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -10576,13 +10578,13 @@
       "canonicalName": "Mellark",
       "category": "BALLERINA",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/0003__FlabelusOctAds_0026.jpg?v=1774433305",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_2_09-10-23_0151copia.jpg?v=1774433305",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/33e9934e-1a1a-455d-954a-0b6f76a5.jpg?v=1759220159",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_1_06-10-23_0044copia.jpg?v=1774433305",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/33e9934e-1a1a-455d-954a-0b6f76a5.jpg?v=1759220159",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Copia_de_26102025_dolores_paris-167.jpg?v=1774433305",
         "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_3_09-10-23_0195copia.jpg?v=1759220159",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MELLARK_2.jpg?v=1759220159",
-        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/0003__FlabelusOctAds_0026.jpg?v=1774433305"
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MELLARK_2.jpg?v=1759220159"
       ],
       "variants": [
         {
@@ -10592,13 +10594,13 @@
           "color": "Red",
           "sku": "232FZ021335",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/0003__FlabelusOctAds_0026.jpg?v=1774433305",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_2_09-10-23_0151copia.jpg?v=1774433305",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/33e9934e-1a1a-455d-954a-0b6f76a5.jpg?v=1759220159",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_1_06-10-23_0044copia.jpg?v=1774433305",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/33e9934e-1a1a-455d-954a-0b6f76a5.jpg?v=1759220159",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Copia_de_26102025_dolores_paris-167.jpg?v=1774433305",
             "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/Mellark_3_09-10-23_0195copia.jpg?v=1759220159",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MELLARK_2.jpg?v=1759220159",
-            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/0003__FlabelusOctAds_0026.jpg?v=1774433305"
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/MELLARK_2.jpg?v=1759220159"
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
@@ -10703,11 +10705,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mermaid",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -10737,11 +10739,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mermaid",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -10771,11 +10773,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Mermaid",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11005,11 +11007,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11259,11 +11261,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11325,11 +11327,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11359,11 +11361,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11425,11 +11427,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11623,11 +11625,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11657,11 +11659,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11786,12 +11788,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -11949,11 +11951,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -12625,11 +12627,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -12659,11 +12661,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -12757,11 +12759,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Ribbon",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -12919,11 +12921,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -13021,11 +13023,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -13257,8 +13259,8 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/sheena-red",
@@ -13275,11 +13277,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -13727,11 +13729,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -13827,11 +13829,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -13963,11 +13965,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -13997,11 +13999,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -14532,12 +14534,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -14721,11 +14723,11 @@
           "category": "PUMP",
           "productType": "Heel",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -14863,8 +14865,8 @@
           "category": "PUMP",
           "productType": "Heel",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://flabelus.com/products/the-dorsey-pumps-red",
@@ -14917,11 +14919,11 @@
           "category": "PUMP",
           "productType": "Heel",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -15087,11 +15089,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -15413,6 +15415,60 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "flabelus--twenties-ballerina",
+      "brand": "FLABELUS",
+      "canonicalName": "Twenties Ballerina",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN1_6cda91eb-e193-4f10-bc20-2936edf14cd0.jpg?v=1692356918",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN2.jpg?v=1692356917",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN3.jpg?v=1692356918",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE1_a8ddb738-8167-4040-8602-e4c49e1b1080.jpg?v=1692357071",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE2.jpg?v=1692357071",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE3.jpg?v=1692357072",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/F18-2.jpg?v=1750320862"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://flabelus.com/products/twenties-ballerina-green",
+          "handle": "twenties-ballerina-green",
+          "title": "Twenties Ballerina Green",
+          "color": "Green",
+          "sku": "SQ8726001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN1_6cda91eb-e193-4f10-bc20-2936edf14cd0.jpg?v=1692356918",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN2.jpg?v=1692356917",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAGREEN3.jpg?v=1692356918"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ribbon",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://flabelus.com/products/twenties-ballerina-orange",
+          "handle": "twenties-ballerina-orange",
+          "title": "Twenties Ballerina Orange",
+          "color": "Orange",
+          "sku": "SQ4807265",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE1_a8ddb738-8167-4040-8602-e4c49e1b1080.jpg?v=1692357071",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE2.jpg?v=1692357071",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/TWENTIESBALLERINAORANGE3.jpg?v=1692357072",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/F18-2.jpg?v=1750320862"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ribbon",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "flabelus--tybalt",
       "brand": "FLABELUS",
       "canonicalName": "Tybalt",
@@ -15439,11 +15495,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -15539,11 +15595,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -15805,11 +15861,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -15836,12 +15892,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Mary Jane",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -16035,11 +16091,11 @@
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -16101,11 +16157,11 @@
           "category": "BALLERINA",
           "productType": "Mary Jane",
           "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -16166,12 +16222,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Slipper",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -16825,6 +16881,8 @@
     "https://flabelus.com/products/tita",
     "https://flabelus.com/products/toby",
     "https://flabelus.com/products/tris-kids",
+    "https://flabelus.com/products/twenties-ballerina-green",
+    "https://flabelus.com/products/twenties-ballerina-orange",
     "https://flabelus.com/products/tybalt",
     "https://flabelus.com/products/ulla",
     "https://flabelus.com/products/ulla-kids",

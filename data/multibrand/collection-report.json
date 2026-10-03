@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-10-03T11:38:56.564Z",
-  "runFinishedAt": "2026-10-03T11:44:51.107Z",
-  "totalProducts": 21399,
+  "runStartedAt": "2026-10-03T15:36:44.010Z",
+  "runFinishedAt": "2026-10-03T15:42:21.463Z",
+  "totalProducts": 21538,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -44,17 +44,6 @@
       "productsWithImages": 78,
       "productsWithMaterial": 0,
       "errors": [
-        "Jil Sander size J16WQ0028P7685243/37 HTTP 403",
-        "Jil Sander size J16WQ0028P7685243/39 HTTP 403",
-        "Jil Sander size J16WQ0028P7685243/40 HTTP 403",
-        "Jil Sander size J16WQ0028P7690001/35 HTTP 403",
-        "Jil Sander size J16WQ0028P7690001/38 HTTP 403",
-        "Jil Sander size J16WQ0028P7690001/41 HTTP 403",
-        "Jil Sander size J16WQ0028P7685243/38 HTTP 403",
-        "Jil Sander size J16WQ0028P7690001/37 HTTP 403",
-        "Jil Sander size J16WQ0028P7690001/40 HTTP 403",
-        "Jil Sander size J15WR0032P7543001/37 HTTP 403",
-        "Jil Sander size J15WR0032P7543001/38 HTTP 403",
         "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED",
         "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED"
       ],
@@ -372,9 +361,9 @@
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 546,
-      "parsedProducts": 546,
-      "productsWithImages": 546,
+      "discoveredProductLinks": 545,
+      "parsedProducts": 545,
+      "productsWithImages": 545,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -393,7 +382,7 @@
         "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 546,
+      "rawProductUrlsDiscovered": 545,
       "duplicateCount": 0,
       "pagesTraversed": 25,
       "paginationExhausted": true,

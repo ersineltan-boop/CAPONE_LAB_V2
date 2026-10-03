@@ -2,8 +2,8 @@
   "slug": "jude",
   "brand": "JUDE",
   "officialUrl": "https://thejude.com",
-  "snapshotId": "jude:2026-09-26T12:12:06.740Z",
-  "collectedAt": "2026-09-26T12:12:06.740Z",
+  "snapshotId": "jude:2026-10-03T15:36:00.924Z",
+  "collectedAt": "2026-10-03T15:36:00.924Z",
   "catalogPaths": [
     "/collections/atlas-flat",
     "/collections/bloom-sandal",
@@ -20,11 +20,13 @@
     "/collections/date-mules",
     "/collections/date-pumps",
     "/collections/dusty-flat",
+    "/collections/edita-knee-boot",
     "/collections/faith-pump",
     "/collections/fame-pump",
     "/collections/fete-pump",
     "/collections/flats",
     "/collections/floor-ankle-boots",
+    "/collections/haze-knee-boot",
     "/collections/haze-pump",
     "/collections/haze-sandals",
     "/collections/heels",
@@ -53,13 +55,13 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 237,
-    "collected": 237,
+    "sourceTotal": 247,
+    "collected": 247,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 237,
+    "galleryComplete": 247,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -501,34 +503,246 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "jude--cas-ankle-boot",
+      "modelFamilyId": "jude--edita-knee-boot",
       "brand": "JUDE",
-      "canonicalName": "Cas Ankle Boot",
-      "category": "ANKLE_BOOT",
+      "canonicalName": "Edita Knee Boot",
+      "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---1web_2eb2cb35-c693-4c50-9ad7-503fd0f1cdf5.jpg?v=1788167776",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model-2.jpg?v=1788171005",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model.jpg?v=1788171006",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---2web.jpg?v=1787832668",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---4web.jpg?v=1787832668",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---3web.jpg?v=1787832668",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---5web.jpg?v=1787832669"
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---1web.jpg?v=1790347744",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE_fd47f449-208e-49b8-ad19-21232871ae46.jpg?v=1790347728",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---2web.jpg?v=1790347743",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---4web.jpg?v=1790347744",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---3web.jpg?v=1790347744",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---5web.jpg?v=1790347744",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--1web_42f7ef57-7e0f-4449-8d56-32ef83f4f0f6.jpg?v=1790602329",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER.jpg?v=1790340974",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--model.jpg?v=1790607016",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--model2.jpg?v=1790760321",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--2web_83de7215-67cf-4fc6-b300-6a0a553a1788.jpg?v=1790602617",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--4web.jpg?v=1790340974",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--3web.jpg?v=1790340974",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--5web_28876694-6b2d-4002-a663-e90e8f977445.jpg?v=1790602425",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--1web.jpg?v=1790172443",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE.jpg?v=1790172597",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model.jpg?v=1790257420",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model2.jpg?v=1790257419",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--2web.jpg?v=1790172443",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--4web.jpg?v=1790172444",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--3web.jpg?v=1790172444",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--5web.jpg?v=1790172444"
       ],
       "variants": [
         {
-          "productUrl": "https://thejude.com/products/cas-ankle-boot-black-leather",
-          "handle": "cas-ankle-boot-black-leather",
-          "title": "Cas Ankle Boot Black Leather",
-          "color": "Black Leather",
-          "sku": "PF26BO018BK001CL02335",
+          "productUrl": "https://thejude.com/products/edita-knee-boot-black-leather-and-black-suede",
+          "handle": "edita-knee-boot-black-leather-and-black-suede",
+          "title": "Edita Knee Boot Black Leather And Black Suede",
+          "color": "Black Leather And Black Suede",
+          "sku": "FW26BO029BK001CL02335",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---1web_2eb2cb35-c693-4c50-9ad7-503fd0f1cdf5.jpg?v=1788167776",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model-2.jpg?v=1788171005",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model.jpg?v=1788171006",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---2web.jpg?v=1787832668",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---4web.jpg?v=1787832668",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---3web.jpg?v=1787832668",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---5web.jpg?v=1787832669"
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---1web.jpg?v=1790347744",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE_fd47f449-208e-49b8-ad19-21232871ae46.jpg?v=1790347728",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---2web.jpg?v=1790347743",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---4web.jpg?v=1790347744",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---3web.jpg?v=1790347744",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-BLACK-SUEDE---5web.jpg?v=1790347744"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://thejude.com/products/edita-knee-boot-black-and-mocha-leather",
+          "handle": "edita-knee-boot-black-and-mocha-leather",
+          "title": "Edita Knee Boot Black And Mocha Leather",
+          "color": "Black And Mocha Leather",
+          "sku": "FW26BO029MC038CL01435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--1web_42f7ef57-7e0f-4449-8d56-32ef83f4f0f6.jpg?v=1790602329",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER.jpg?v=1790340974",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--model.jpg?v=1790607016",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--model2.jpg?v=1790760321",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--2web_83de7215-67cf-4fc6-b300-6a0a553a1788.jpg?v=1790602617",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--4web.jpg?v=1790340974",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--3web.jpg?v=1790340974",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-AND-MOCHA-LEATHER--5web_28876694-6b2d-4002-a663-e90e8f977445.jpg?v=1790602425"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://thejude.com/products/edita-knee-boot-black-leather-and-sand-suede",
+          "handle": "edita-knee-boot-black-leather-and-sand-suede",
+          "title": "Edita Knee Boot Black Leather And Sand Suede",
+          "color": "Black Leather And Sand Suede",
+          "sku": "FW26BO029MC039CL02335",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--1web.jpg?v=1790172443",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE.jpg?v=1790172597",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model.jpg?v=1790257420",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model2.jpg?v=1790257419",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--2web.jpg?v=1790172443",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--4web.jpg?v=1790172444",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--3web.jpg?v=1790172444",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--5web.jpg?v=1790172444"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "jude--haze-knee-boot-indigo-creased",
+      "brand": "JUDE",
+      "canonicalName": "Haze Knee Boot Indigo Creased",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-1web.jpg?v=1790322389",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-BOOT-BLACK-CREASED-LEATHER_3fc9c286-1870-461f-bc78-c2b54116c225.jpg?v=1790322720",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER--model2.jpg?v=1790326626",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER--model.jpg?v=1790326626",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-2web.jpg?v=1790322390",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-4web.jpg?v=1790322389",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-3web.jpg?v=1790322389",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-5web.jpg?v=1790322389"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/haze-knee-boot-indigo-creased-leather",
+          "handle": "haze-knee-boot-indigo-creased-leather",
+          "title": "Haze Knee Boot Indigo Creased Leather",
+          "color": "Leather",
+          "sku": "FW26BO030BL043CL02435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-1web.jpg?v=1790322389",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-BOOT-BLACK-CREASED-LEATHER_3fc9c286-1870-461f-bc78-c2b54116c225.jpg?v=1790322720",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER--model2.jpg?v=1790326626",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER--model.jpg?v=1790326626",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-2web.jpg?v=1790322390",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-4web.jpg?v=1790322389",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-3web.jpg?v=1790322389",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-INDIGO-CREASED-LEATHER-5web.jpg?v=1790322389"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--haze-knee-boot-grained",
+      "brand": "JUDE",
+      "canonicalName": "Haze Knee Boot Grained",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-1web.jpg?v=1790323043",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-model.jpg?v=1790328659",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-model2.jpg?v=1790328660",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-2web.jpg?v=1790323043",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-4web.jpg?v=1790323043",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-3web.jpg?v=1790323043",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-5web.jpg?v=1790323043"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/haze-knee-boot-tan-grained-leather",
+          "handle": "haze-knee-boot-tan-grained-leather",
+          "title": "Haze Knee Boot Tan Grained Leather",
+          "color": "Haze Knee Boot Tan Grained Leather",
+          "sku": "FW26BO030BR024GL00735",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-1web.jpg?v=1790323043",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-model.jpg?v=1790328659",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-model2.jpg?v=1790328660",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-2web.jpg?v=1790323043",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-4web.jpg?v=1790323043",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-3web.jpg?v=1790323043",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-KNEE-BOOT-TAN-GRAINED-LEATHER-5web.jpg?v=1790323043"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--credo-knee-boot-lamb",
+      "brand": "JUDE",
+      "canonicalName": "Credo Knee Boot Lamb",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--1web.jpg?v=1790585010",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--2web.jpg?v=1790585010",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--4web.jpg?v=1790585010",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--3web.jpg?v=1790585010",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--5web.jpg?v=1790585010"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/credo-knee-boot-black-lamb-leather",
+          "handle": "credo-knee-boot-black-lamb-leather",
+          "title": "Credo Knee Boot Black Lamb Leather",
+          "color": "Credo Knee Boot Black Lamb Leather",
+          "sku": "FW26BO027BK001LL00135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--1web.jpg?v=1790585010",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--2web.jpg?v=1790585010",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--4web.jpg?v=1790585010",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--3web.jpg?v=1790585010",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CREDO-KNEE-BOOT-BLACK-LAMB-LEATHER--5web.jpg?v=1790585010"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--theresa-ankle-boot-lamb",
+      "brand": "JUDE",
+      "canonicalName": "Theresa Ankle Boot Lamb",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---1web.jpg?v=1790337046",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---2web.jpg?v=1790337046",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---4web.jpg?v=1790337046",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---3web.jpg?v=1790337047",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---5web.jpg?v=1790337046"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/theresa-ankle-boot-black-lamb-leather",
+          "handle": "theresa-ankle-boot-black-lamb-leather",
+          "title": "Theresa Ankle Boot Black Lamb Leather",
+          "color": "Theresa Ankle Boot Black Lamb Leather",
+          "sku": "FW26BO035BK001LL00135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---1web.jpg?v=1790337046",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---2web.jpg?v=1790337046",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---4web.jpg?v=1790337046",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---3web.jpg?v=1790337047",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-BLACK-LAMB-LEATHER---5web.jpg?v=1790337046"
           ],
           "category": "ANKLE_BOOT",
           "productType": "SHOES",
@@ -541,34 +755,30 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "jude--cas-ankle-boot--cas-ankle-boot-dark-brown-distressed-suede-leather",
+      "modelFamilyId": "jude--theresa-ankle-boot-grained",
       "brand": "JUDE",
-      "canonicalName": "Cas Ankle Boot",
+      "canonicalName": "Theresa Ankle Boot Grained",
       "category": "ANKLE_BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---1web.jpg?v=1787832624",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model.jpg?v=1788180251",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model2.jpg?v=1788180251",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---2web.jpg?v=1787832624",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---4web.jpg?v=1787832624",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---3web.jpg?v=1787832624",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---5web.jpg?v=1787832625"
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---1web.jpg?v=1790331188",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---2web.jpg?v=1790331188",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---4web.jpg?v=1790331188",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---3web.jpg?v=1790331188",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---5web.jpg?v=1790331336"
       ],
       "variants": [
         {
-          "productUrl": "https://thejude.com/products/cas-ankle-boot-dark-brown-distressed-suede-leather",
-          "handle": "cas-ankle-boot-dark-brown-distressed-suede-leather",
-          "title": "Cas Ankle Boot Dark Brown Distressed Suede Leather",
-          "color": "Dark Brown Distressed Suede Leather",
-          "sku": "PF26BO018BR009SU00235",
+          "productUrl": "https://thejude.com/products/theresa-ankle-boot-tan-grained-leather",
+          "handle": "theresa-ankle-boot-tan-grained-leather",
+          "title": "Theresa Ankle Boot Tan Grained Leather",
+          "color": "Theresa Ankle Boot Tan Grained Leather",
+          "sku": "FW26BO035BR024CL01235",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---1web.jpg?v=1787832624",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model.jpg?v=1788180251",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model2.jpg?v=1788180251",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---2web.jpg?v=1787832624",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---4web.jpg?v=1787832624",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---3web.jpg?v=1787832624",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---5web.jpg?v=1787832625"
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---1web.jpg?v=1790331188",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---2web.jpg?v=1790331188",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---4web.jpg?v=1790331188",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---3web.jpg?v=1790331188",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/THERESA-ANKLE-BOOT-TAN-GRAINED-LEATHER---5web.jpg?v=1790331336"
           ],
           "category": "ANKLE_BOOT",
           "productType": "SHOES",
@@ -579,6 +789,74 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--dor-mid-boot",
+      "brand": "JUDE",
+      "canonicalName": "Dor Mid Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---1web.jpg?v=1787844110",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---model2.jpg?v=1788253843",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---model.jpg?v=1788253844",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---2web.jpg?v=1787844110",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---3web.jpg?v=1787844110",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---4web.jpg?v=1787844111",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---5web.jpg?v=1787844111",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---1web.jpg?v=1787844061",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---model2.jpg?v=1788248499",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---model.jpg?v=1788248499",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---2web.jpg?v=1787844061",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---3web.jpg?v=1787844062",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---4web.jpg?v=1787844062",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---5web.jpg?v=1787844062"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/dor-mid-calf-boot-black-leather",
+          "handle": "dor-mid-calf-boot-black-leather",
+          "title": "Dor Mid Calf Boot Black Leather",
+          "color": "Dor Mid Calf Boot Black Leather",
+          "sku": "FW26BO028BK001CL02335",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---1web.jpg?v=1787844110",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---model2.jpg?v=1788253843",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---model.jpg?v=1788253844",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---2web.jpg?v=1787844110",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---3web.jpg?v=1787844110",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---4web.jpg?v=1787844111",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-BLACK-LEATHER---5web.jpg?v=1787844111"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://thejude.com/products/dor-mid-calf-boot-dark-brown-suede-leather",
+          "handle": "dor-mid-calf-boot-dark-brown-suede-leather",
+          "title": "Dor Mid Calf Boot Dark Brown Suede Leather",
+          "color": "Dor Mid Calf Boot Dark Brown Suede Leather",
+          "sku": "FW26BO028BR009CL02335",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---1web.jpg?v=1787844061",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---model2.jpg?v=1788248499",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---model.jpg?v=1788248499",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---2web.jpg?v=1787844061",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---3web.jpg?v=1787844062",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---4web.jpg?v=1787844062",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/DOR-MID-CALF-BOOT-DARK-BROWN-SUEDE-LEATHER---5web.jpg?v=1787844062"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "jude--leif-boot",
@@ -653,6 +931,86 @@
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/LEIF-BOOT-TAN-DISTRESSED-LEATHER---5web.jpg?v=1787844187"
           ],
           "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--cas-ankle-boot",
+      "brand": "JUDE",
+      "canonicalName": "Cas Ankle Boot",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---1web_2eb2cb35-c693-4c50-9ad7-503fd0f1cdf5.jpg?v=1788167776",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model-2.jpg?v=1788171005",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model.jpg?v=1788171006",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---2web.jpg?v=1787832668",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---4web.jpg?v=1787832668",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---3web.jpg?v=1787832668",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---5web.jpg?v=1787832669"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/cas-ankle-boot-black-leather",
+          "handle": "cas-ankle-boot-black-leather",
+          "title": "Cas Ankle Boot Black Leather",
+          "color": "Black Leather",
+          "sku": "PF26BO018BK001CL02335",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---1web_2eb2cb35-c693-4c50-9ad7-503fd0f1cdf5.jpg?v=1788167776",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model-2.jpg?v=1788171005",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---model.jpg?v=1788171006",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---2web.jpg?v=1787832668",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---4web.jpg?v=1787832668",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---3web.jpg?v=1787832668",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-BLACK-LEATHER---5web.jpg?v=1787832669"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "jude--cas-ankle-boot--cas-ankle-boot-dark-brown-distressed-suede-leather",
+      "brand": "JUDE",
+      "canonicalName": "Cas Ankle Boot",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---1web.jpg?v=1787832624",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model.jpg?v=1788180251",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model2.jpg?v=1788180251",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---2web.jpg?v=1787832624",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---4web.jpg?v=1787832624",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---3web.jpg?v=1787832624",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---5web.jpg?v=1787832625"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://thejude.com/products/cas-ankle-boot-dark-brown-distressed-suede-leather",
+          "handle": "cas-ankle-boot-dark-brown-distressed-suede-leather",
+          "title": "Cas Ankle Boot Dark Brown Distressed Suede Leather",
+          "color": "Dark Brown Distressed Suede Leather",
+          "sku": "PF26BO018BR009SU00235",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---1web.jpg?v=1787832624",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model.jpg?v=1788180251",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---model2.jpg?v=1788180251",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---2web.jpg?v=1787832624",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---4web.jpg?v=1787832624",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---3web.jpg?v=1787832624",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/CAS-ANKLE-BOOT-DARK-BROWN-SUEDE---5web.jpg?v=1787832625"
+          ],
+          "category": "ANKLE_BOOT",
           "productType": "SHOES",
           "inNewArrivals": false,
           "isNew": false,
@@ -1043,11 +1401,16 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "jude--smoke-ankle-boot-brown-suede-leather",
+      "modelFamilyId": "jude--smoke-ankle-boot-dark-brown-leather",
       "brand": "JUDE",
-      "canonicalName": "Smoke Ankle Boot Brown Suede Leather",
+      "canonicalName": "Smoke Ankle Boot Dark Brown Leather",
       "category": "ANKLE_BOOT",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---1web.jpg?v=1790350387",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---2web.jpg?v=1790350387",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---4web.jpg?v=1790350387",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---3web.jpg?v=1790350387",
+        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---5web.jpg?v=1790350387",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-BROWN-SUEDE-LEATHER---1web.jpg?v=1788254171",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-BROWN-SUEDE-LEATHER---model.jpg?v=1788268583",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-BROWN-SUEDE-LEATHER---model2.jpg?v=1788269531",
@@ -1058,10 +1421,29 @@
       ],
       "variants": [
         {
+          "productUrl": "https://thejude.com/products/smoke-ankle-boot-dark-brown-leather",
+          "handle": "smoke-ankle-boot-dark-brown-leather",
+          "title": "Smoke Ankle Boot Dark Brown Leather",
+          "color": null,
+          "sku": "FW26BO034BR009CL01435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---1web.jpg?v=1790350387",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---2web.jpg?v=1790350387",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---4web.jpg?v=1790350387",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---3web.jpg?v=1790350387",
+            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-DARK-BROWN-LEATHER---5web.jpg?v=1790350387"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
           "productUrl": "https://thejude.com/products/smoke-ankle-boot-brown-suede-leather",
           "handle": "smoke-ankle-boot-brown-suede-leather",
           "title": "Smoke Ankle Boot Brown Suede Leather",
-          "color": null,
+          "color": "Smoke Ankle Boot Brown Suede Leather",
           "sku": "FW26BO034BR001SU00235",
           "images": [
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/SMOKE-ANKLE-BOOT-BROWN-SUEDE-LEATHER---1web.jpg?v=1788254171",
@@ -1080,49 +1462,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "jude--edita-knee-boot",
-      "brand": "JUDE",
-      "canonicalName": "Edita Knee Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--1web.jpg?v=1790172443",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE.jpg?v=1790172597",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model.jpg?v=1790257420",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model2.jpg?v=1790257419",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--2web.jpg?v=1790172443",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--4web.jpg?v=1790172444",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--3web.jpg?v=1790172444",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--5web.jpg?v=1790172444"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://thejude.com/products/edita-knee-boot-black-leather-and-sand-suede",
-          "handle": "edita-knee-boot-black-leather-and-sand-suede",
-          "title": "Edita Knee Boot Black Leather And Sand Suede",
-          "color": "Black Leather And Sand Suede",
-          "sku": "FW26BO029MC039CL02335",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--1web.jpg?v=1790172443",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE.jpg?v=1790172597",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model.jpg?v=1790257420",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--model2.jpg?v=1790257419",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--2web.jpg?v=1790172443",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--4web.jpg?v=1790172444",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--3web.jpg?v=1790172444",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/EDITA-KNEE-BOOT-BLACK-LEATHER-AND-SAND-SUEDE--5web.jpg?v=1790172444"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "jude--ride-knee-boot",
@@ -4802,7 +5142,6 @@
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze_brownsnake04.jpg?v=1775225993",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze_pump_in_red-web1_7ea9ce10-c2d7-4fad-8dad-3c97603a6dd1.jpg?v=1762789013",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE.jpg?v=1762789013",
-        "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-PUMP-RED-CREASED-LEATHER--model.jpg?v=1780490296",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze_pump_in_red-web_8ae0daa0-6b0a-41d5-8308-b0cf21f4cbd4.jpg?v=1762789013",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze-pump-in-red-creased-leather-top.jpg?v=1766997962",
         "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze02_0082copy.jpg?v=1766997962",
@@ -4905,7 +5244,6 @@
           "images": [
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze_pump_in_red-web1_7ea9ce10-c2d7-4fad-8dad-3c97603a6dd1.jpg?v=1762789013",
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE.jpg?v=1762789013",
-            "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/HAZE-PUMP-RED-CREASED-LEATHER--model.jpg?v=1780490296",
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze_pump_in_red-web_8ae0daa0-6b0a-41d5-8308-b0cf21f4cbd4.jpg?v=1762789013",
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze-pump-in-red-creased-leather-top.jpg?v=1766997962",
             "https://cdn.shopify.com/s/files/1/0900/6910/7037/files/haze02_0082copy.jpg?v=1766997962"
@@ -7973,10 +8311,20 @@
     "https://thejude.com/products/bloom-sandal-black-leather",
     "https://thejude.com/products/bonnie-pump-black-brushed-leather",
     "https://thejude.com/products/bonnie-pump-white-leather",
-    "https://thejude.com/products/cas-ankle-boot-black-leather",
-    "https://thejude.com/products/cas-ankle-boot-dark-brown-distressed-suede-leather",
+    "https://thejude.com/products/edita-knee-boot-black-leather-and-black-suede",
+    "https://thejude.com/products/edita-knee-boot-black-and-mocha-leather",
+    "https://thejude.com/products/edita-knee-boot-black-leather-and-sand-suede",
+    "https://thejude.com/products/haze-knee-boot-indigo-creased-leather",
+    "https://thejude.com/products/haze-knee-boot-tan-grained-leather",
+    "https://thejude.com/products/credo-knee-boot-black-lamb-leather",
+    "https://thejude.com/products/theresa-ankle-boot-black-lamb-leather",
+    "https://thejude.com/products/theresa-ankle-boot-tan-grained-leather",
+    "https://thejude.com/products/dor-mid-calf-boot-black-leather",
+    "https://thejude.com/products/dor-mid-calf-boot-dark-brown-suede-leather",
     "https://thejude.com/products/leif-boot-stone-distressed-suede-leather",
     "https://thejude.com/products/leif-boot-tan-distressed-suede-leather",
+    "https://thejude.com/products/cas-ankle-boot-black-leather",
+    "https://thejude.com/products/cas-ankle-boot-dark-brown-distressed-suede-leather",
     "https://thejude.com/products/brody-ankle-boot-black-lamb-leather",
     "https://thejude.com/products/brody-ankle-boot-butter-leather",
     "https://thejude.com/products/luna-ankle-boot-black-stretch-and-brushed-leather",
@@ -7987,8 +8335,8 @@
     "https://thejude.com/products/credo-ankle-boot-barolo-creased-leather",
     "https://thejude.com/products/credo-ankle-boot-red-creased-leather",
     "https://thejude.com/products/credo-ankle-boot-white-creased-leather",
+    "https://thejude.com/products/smoke-ankle-boot-dark-brown-leather",
     "https://thejude.com/products/smoke-ankle-boot-brown-suede-leather",
-    "https://thejude.com/products/edita-knee-boot-black-leather-and-sand-suede",
     "https://thejude.com/products/ride-knee-boot-black-leather",
     "https://thejude.com/products/romy-boot-black-nappa-leather",
     "https://thejude.com/products/theresa-knee-boot-black-nappa-leather",
