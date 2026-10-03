@@ -329,7 +329,7 @@ export async function listShopifyCollections(
     const url = `${baseUrl.replace(/\/$/, "")}/collections.json?limit=250&page=${page}`;
     const result = await fetchJson<ShopifyCollectionsResponse>(url, 800);
     if (!result.ok || !result.data) {
-      if (page === 1) errors.push(result.error ?? `Failed ${url}`);
+      errors.push(result.error ?? `Failed ${url}`);
       break;
     }
     if (!Array.isArray(result.data.collections)) {
@@ -365,7 +365,7 @@ export async function fetchShopifyCollectionCounts(
     const url = `${baseUrl.replace(/\/$/, "")}/collections.json?limit=250&page=${page}`;
     const result = await fetchJson<ShopifyCollectionsResponse>(url, 800);
     if (!result.ok || !result.data) {
-      if (page === 1) errors.push(result.error ?? `Failed ${url}`);
+      errors.push(result.error ?? `Failed ${url}`);
       break;
     }
     const batch = result.data.collections ?? [];

@@ -3,6 +3,8 @@ import { collectShopifyCollectionMembership, mergeVerifiedShopifyMembership } fr
 import { loadBrandRegistry } from "../../registry/data";
 import { brandToPilotSourceConfig } from "../../registry/collection/brandToCollector";
 
+const fixture = vi.hoisted(() => ({ titleOnlyNew: false }));
+
 vi.mock("../http", () => ({
   sleep: async () => {},
   fetchJson: async (url: string) => ({
@@ -17,7 +19,9 @@ vi.mock("../http", () => ({
 vi.mock("../shopify", async (original) => ({
   ...await original<typeof import("../shopify")>(),
   listShopifyCollections: async () => ({ collections: [
-    { handle: "new-in", title: "New In", productsCount: 3 },
+    fixture.titleOnlyNew
+      ? { handle: "women", title: "Women's New Arrivals", productsCount: 3 }
+      : { handle: "new-in", title: "New In", productsCount: 3 },
   ], errors: [] }),
 }));
 
@@ -41,6 +45,21 @@ describe("Cecilie verified mixed New In collection", () => {
     expect(result.products.map((product) => product.productName)).toEqual(["CBBLAISE | SOFT SNEAKERS NAVY"]);
     expect(result.verifiedNewArrivalPaths).toEqual(["/collections/new-in"]);
   });
+  it("uses the official NEW title when its collection handle has no NEW token", async () => {
+    fixture.titleOnlyNew = true;
+    try {
+      const config = brandToPilotSourceConfig(loadBrandRegistry().get("cecilie-bahnsen")!)!;
+      delete config.verifiedNewArrivalPaths;
+      const result = await collectShopifyCollectionMembership(config, { onlyNewCollections: true });
+      expect(result.errors).toEqual([]);
+      expect(result.verifiedNewArrivalPaths).toEqual(["/collections/women"]);
+      expect(result.crawledCollections.map((collection) => collection.path)).toEqual(["/collections/women"]);
+      expect(result.products).toHaveLength(1);
+      expect(result.products[0]?.isNewArrivalsCollection).toBe(true);
+      expect(result.products[0]?.collectionPath).toBe("/collections/women");
+    } finally { fixture.titleOnlyNew = false; }
+  });
+
   it("retires NEW after a complete empty listing discovered without manual pinning", async () => {
     const config = brandToPilotSourceConfig(loadBrandRegistry().get("cecilie-bahnsen")!)!;
     delete config.verifiedNewArrivalPaths;

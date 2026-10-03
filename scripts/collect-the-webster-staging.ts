@@ -17,7 +17,8 @@ const staging = join(
   "the-webster",
 );
 
-const result = await collectTheWebster();
+// First-import staging remains a baseline; the scheduled marketplace cycle refreshes NEW.
+const result = await collectTheWebster({ refresh: false });
 const publish = await publishTheWebsterStaging(staging, result);
 
 console.log(JSON.stringify({ coverage: result.coverage, publish }, null, 2));

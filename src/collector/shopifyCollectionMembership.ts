@@ -5,7 +5,7 @@ import {
   shopifyProductToPilot,
 } from "./shopify";
 import type { PilotProduct, PilotSourceConfig } from "./types";
-import { planWomensCollections } from "../brands/wave50/collections";
+import { isWomensNewArrivalsCollection, planWomensCollections } from "../brands/wave50/collections";
 import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { slugifyCategoryId } from "../source/sourceCategories";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
@@ -144,6 +144,8 @@ export async function paginateShopifyCollectionProducts(
         collection.title,
       );
       if (mapped) {
+        mapped.isNewArrivalsCollection = Boolean(mapped.isNewArrivalsCollection) ||
+          isWomensNewArrivalsCollection(collection.handle, collection.title);
         products.push(mapped);
         continue;
       }
@@ -200,7 +202,7 @@ export async function collectShopifyCollectionMembership(
     )
     .filter((collection) =>
       isWomensFootwearCollection(collection.handle, collection.title) ||
-      (verifiedNewPaths.has(collection.path) && isNewArrivalsCollectionPath(collection.path)),
+      verifiedNewPaths.has(collection.path),
     )
     .filter((collection) => !options?.onlyNewCollections || verifiedNewPaths.has(collection.path))
     .sort(

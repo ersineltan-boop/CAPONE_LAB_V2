@@ -176,7 +176,8 @@ export function theWebsterRawProductToPilot(
   };
 }
 
-export async function collectTheWebster(): Promise<TheWebsterCollectResult> {
+export async function collectTheWebster(options: { refresh?: boolean } = {}): Promise<TheWebsterCollectResult> {
+  const refresh = options.refresh ?? true;
   const collectedAt = new Date().toISOString();
   const errors: string[] = [];
   let sourceTotal: number | null = null;
@@ -229,12 +230,12 @@ export async function collectTheWebster(): Promise<TheWebsterCollectResult> {
       excludedBrands.add(normalizeBrand(raw.vendor));
       continue;
     }
-    const product = theWebsterRawProductToPilot(raw, collectedAt, true);
+    const product = theWebsterRawProductToPilot(raw, collectedAt, refresh);
     if (product) mapped.push(product);
   }
 
   const products = mergeProductCatalog([], mapped);
-  if (products.length > 0) {
+  if (refresh && products.length > 0) {
     try {
       const membership = await collectShopifyCollectionMembership({
         id: THE_WEBSTER_ID, brand: "The Webster", baseUrl: THE_WEBSTER_BASE_URL,
