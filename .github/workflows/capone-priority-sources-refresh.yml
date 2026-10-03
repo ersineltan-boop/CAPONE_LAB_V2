@@ -91,7 +91,7 @@ jobs:
           AUTOMATION_BRANCH: automation/priority-sources-refresh
           AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh verified Massimo and luxury sources"
           AUTOMATION_PR_TITLE: "chore(data): guarded priority brands refresh"
-          AUTOMATION_PR_BODY: "Massimo Dutti, Alaïa and Maison Margiela partial catalogs; fresh count, errors, last-good, tests, build and exact-head Vercel Preview guarded. Blocked sources keep last-good. No FULL claim."
+          AUTOMATION_PR_BODY: "Massimo Dutti, Alaïa and Maison Margiela partial catalogs; fresh count, errors, last-good, tests, build and exact-head Vercel Preview guarded. Blocked sources keep last-good. No FULL claim. Draft PR only; merge and production deployment are not automatic."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"

@@ -129,7 +129,7 @@ jobs:
           AUTOMATION_BRANCH: automation/new-brand-onboarding
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish validated new-brand onboarding"
           AUTOMATION_PR_TITLE: "chore(data): validated automatic new-brand onboarding"
-          AUTOMATION_PR_BODY: "Official-source new-brand onboarding. Maximum 25 attempts and 3 activations. Only FULL quality-gate deliveries proceed through tests, production build, Vercel Preview, exact-head merge and Production verification. Failed or partial candidates preserve last-good."
+          AUTOMATION_PR_BODY: "Official-source new-brand onboarding. Maximum 25 attempts and 3 activations. Only FULL quality-gate deliveries proceed through tests, production build and Vercel Preview to a draft PR. Failed or partial candidates preserve last-good; merge and production deployment are not automatic."
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -168,7 +168,7 @@ jobs:
             fi
             echo "- Validated data changed: ${DATA_CHANGED:-false}"
             echo "- Guarded PR: ${PR_URL:-none}"
-            echo "- Automatically merged: ${MERGED:-false}"
+            echo "- Merged by automation (must stay false): ${MERGED:-false}"
             echo "- Vercel production status: ${PRODUCTION_STATUS_URL:-none}"
             echo "- Failed/partial sources preserve last-good"
           } >> "$GITHUB_STEP_SUMMARY"

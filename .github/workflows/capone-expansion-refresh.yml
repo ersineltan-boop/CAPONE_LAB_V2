@@ -71,7 +71,7 @@ jobs:
           AUTOMATION_BRANCH: automation/expansion-refresh
           AUTOMATION_COMMIT_MESSAGE: "chore(data): refresh approved partial brand catalogs"
           AUTOMATION_PR_TITLE: "chore(data): verified expansion brand refresh"
-          AUTOMATION_PR_BODY: "Approved partial catalogs refreshed with fresh-count, pagination, error and last-good gates. Failed sources preserved. No FULL coverage claim. Full tests, production build and exact-commit Vercel preview required."
+          AUTOMATION_PR_BODY: "Approved partial catalogs refreshed with fresh-count, pagination, error and last-good gates. Failed sources preserved. No FULL coverage claim. Full tests, production build and exact-commit Vercel preview required. Draft PR only; merge and production deployment are not automatic."
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
