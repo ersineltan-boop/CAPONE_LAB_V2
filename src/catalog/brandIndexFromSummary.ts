@@ -6,6 +6,7 @@ import {
   filterBrandsByCountry,
 } from "../brands/countryGrouping";
 import type { CatalogBrandSummary, CatalogSummary } from "./types";
+import { matchesBrandPriceSegment, type BrandPriceSegmentFilter } from "../brands/brandPriceSegments";
 
 export function filterSummaryBrandsByCountry(
   brands: CatalogBrandSummary[],
@@ -26,8 +27,10 @@ export function sortSummaryBrands(brands: CatalogBrandSummary[]): CatalogBrandSu
 export function brandSummariesForIndex(
   summary: CatalogSummary,
   countryId: string = ALL_COUNTRIES_ID,
+  segment: BrandPriceSegmentFilter = "all",
 ): CatalogBrandSummary[] {
-  return sortSummaryBrands(filterSummaryBrandsByCountry(summary.brands, countryId));
+  return sortSummaryBrands(filterSummaryBrandsByCountry(summary.brands, countryId)
+    .filter((brand) => matchesBrandPriceSegment(segment, brand.brandId, brand.brandName)));
 }
 
 export function countryOptionsFromSummary(summary: CatalogSummary) {

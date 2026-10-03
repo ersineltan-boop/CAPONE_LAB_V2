@@ -1,5 +1,6 @@
 import type { VisualBasicCategoryId, VisualMappedCategoryId } from "./basicCategories";
 import type { ColorVariantView } from "../modelFamily/colorVariants";
+import type { BrandPriceSegment } from "../brands/brandPriceSegments";
 
 export interface VisualCard {
   modelFamilyId: string;
@@ -22,6 +23,7 @@ export interface VisualCategoryCount {
   label: string;
   count: number;
   verifiedNewCount?: number;
+  priceSegments?: Partial<Record<BrandPriceSegment, { count: number; verifiedNewCount: number }>>;
 }
 
 export interface VisualSummary {

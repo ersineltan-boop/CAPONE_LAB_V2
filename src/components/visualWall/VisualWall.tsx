@@ -17,6 +17,8 @@ import type { ModelFamilyGridItem } from "../../categories/modelFamilyGrid";
 import ModelFamilyProductGrid from "../modelFamily/ModelFamilyProductGrid";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
 import type { ModelFamily } from "../../modelFamily/types";
+import type { BrandPriceSegmentFilter as SegmentFilter } from "../../brands/brandPriceSegments";
+import BrandPriceSegmentFilter from "../brands/BrandPriceSegmentFilter";
 
 function cardToGridItem(card: VisualCard): ModelFamilyGridItem {
   return {
@@ -38,6 +40,7 @@ export default function VisualWall() {
   const [categoryId, setCategoryId] = useState<VisualBasicCategoryId>("tumu");
   const [searchQuery, setSearchQuery] = useState("");
   const [onlyNew, setOnlyNew] = useState(false);
+  const [segment, setSegment] = useState<SegmentFilter>("all");
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
   const [selectedFamily, setSelectedFamily] = useState<ModelFamily | null>(null);
   const researchStates = useResearchStateMap();
@@ -48,14 +51,14 @@ export default function VisualWall() {
 
   const filteredCards = useMemo(() => {
     if (shard.state.status !== "ready") return [];
-    return filterVisualCards(shard.state.data.cards, searchQuery, { onlyNew });
-  }, [shard.state, searchQuery, onlyNew]);
+    return filterVisualCards(shard.state.data.cards, searchQuery, { onlyNew, segment });
+  }, [shard.state, searchQuery, onlyNew, segment]);
 
   const gridItems = useMemo(() => filteredCards.map(cardToGridItem), [filteredCards]);
   const { visibleItems, hasMore, loadMore } = useProgressiveBatch(
     gridItems,
     48,
-    `${categoryId}|${searchQuery}|${onlyNew}|${filteredCards.length}`,
+    `${categoryId}|${searchQuery}|${onlyNew}|${segment}|${filteredCards.length}`,
   );
 
   const verifiedNewIds = useMemo(
@@ -81,12 +84,15 @@ export default function VisualWall() {
 
         {PAZAR_OZETI_ENABLED ? null : null}
 
+        <BrandPriceSegmentFilter value={segment} onChange={setSegment} />
+
         <div className="flex flex-wrap gap-2">
           {VISUAL_BASIC_CATEGORIES.map((category) => {
             const entry = summary.state.status === "ready"
               ? summary.state.data.categories.find((item) => item.id === category.id)
               : null;
-            const count = onlyNew ? entry?.verifiedNewCount : entry?.count;
+            const counts = segment === "all" ? entry : entry?.priceSegments?.[segment];
+            const count = onlyNew ? counts?.verifiedNewCount : counts?.count;
             const active = categoryId === category.id;
             return (
               <button

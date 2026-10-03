@@ -436,4 +436,30 @@ describe("Visual basic categories", () => {
     const card = buildVisualDelivery({ families: [model] }).shards[0]!.cards[0]!;
     expect(card.verifiedNewAt).toBe("2026-10-01");
   });
+
+  it("intersects class, category, source NEW and search for official and marketplace cards", () => {
+    const newer = family({ modelFamilyId: "aeyde-new", brand: "AEYDE", canonicalName: "New Boot" });
+    newer.sourceSightings![0]!.newness = { ...createNotVerifiedNewness(), status: "VERIFIED_NEW",
+      evidenceType: "NEW_BADGE", effectiveNewAt: "2026-10-02" };
+    const marketplace = family({ modelFamilyId: "hereu-market", brand: "Hereu", canonicalName: "New Boot" });
+    marketplace.sourceSightings![0]!.newness = { ...newer.sourceSightings![0]!.newness!, effectiveNewAt: "2026-10-01" };
+    const delivery = buildVisualDelivery({ families: [
+      family({ modelFamilyId: "aeyde-old", brand: "AEYDE" }), newer, marketplace,
+      family({ modelFamilyId: "row-boot", brand: "The Row" }),
+      family({ modelFamilyId: "unknown", brand: "Other Brand" }),
+      family({ modelFamilyId: "aeyde-sandal", brand: "AEYDE", category: "SANDAL",
+        sourceCategoryRefs: [] }),
+    ], brandIds: { "aeyde-new": "aeyde" }, marketplaceIds: { "hereu-market": "level-shoes" } });
+    const boots = delivery.shards.find((shard) => shard.id === "bot-cizme")!.cards;
+    const matching = filterVisualCards(boots, "new boot", { segment: "PREMIUM", onlyNew: true });
+    expect(matching.map((card) => card.modelFamilyId)).toEqual(["aeyde-new", "hereu-market"]);
+    expect(matching[1]?.marketplaceId).toBe("level-shoes");
+    expect(matching[0]?.images).toEqual(["https://ugg.com/a.jpg"]);
+    expect(filterVisualCards(boots, "", { segment: "MASS_MARKET" })).toHaveLength(0);
+    expect(filterVisualCards(boots, "")).toHaveLength(5);
+    expect(delivery.summary.categories.find((category) => category.id === "bot-cizme")?.priceSegments?.PREMIUM)
+      .toEqual({ count: 3, verifiedNewCount: 2 });
+    expect(delivery.summary.categories.find((category) => category.id === "tumu")?.priceSegments?.PREMIUM)
+      .toEqual({ count: 4, verifiedNewCount: 2 });
+  });
 });
