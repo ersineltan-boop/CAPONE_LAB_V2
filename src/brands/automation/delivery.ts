@@ -10,6 +10,8 @@ import {
   type ModelFamilyDatasetManifest,
 } from "../../modelFamily/dataset";
 import type { ModelFamily, ModelFamilyVariant } from "../../modelFamily/types";
+import { mergeSourceNewness } from "../../newArrivals/detectNewness";
+import { createNotVerifiedNewness, isVerifiedNew } from "../../newArrivals/newness";
 import {
   atomicWriteJson,
   atomicWriteText,
@@ -29,6 +31,7 @@ export interface BrandDeliveryReplacement {
   slug: string;
   brand: string;
   officialUrl: string;
+  collectedAt?: string;
   families: readonly ModelFamily[];
 }
 
@@ -44,14 +47,6 @@ function productJsonUrl(productUrl: string): string | null {
 
 function urlKey(value: string): string {
   return value.trim().replace(/\/+$/, "").toLowerCase();
-}
-
-function urlOrigin(value: string): string | null {
-  try {
-    return new URL(value).origin.toLowerCase();
-  } catch {
-    return null;
-  }
 }
 
 async function productCopy(
@@ -110,14 +105,16 @@ function imagesOf(variants: readonly ModelFamilyVariant[]): string[] {
 }
 
 function uniqueVariants(variants: readonly ModelFamilyVariant[]): ModelFamilyVariant[] {
-  const seen = new Set<string>();
-  const result: ModelFamilyVariant[] = [];
+  const byUrl = new Map<string, ModelFamilyVariant>();
   for (const variant of variants) {
     const key = urlKey(variant.url || variant.productId);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    result.push(variant);
+    if (!key) continue;
+    const prior = byUrl.get(key);
+    byUrl.set(key, prior
+      ? { ...prior, images: imagesOf([prior, variant]) }
+      : { ...variant, images: [...variant.images] });
   }
+  const result = [...byUrl.values()];
   return result;
 }
 
@@ -140,19 +137,6 @@ function rebuildFamily(
   };
 }
 
-function officialOrigins(delivery: BrandDeliveryReplacement): Set<string> {
-  const origins = new Set<string>();
-  const official = urlOrigin(delivery.officialUrl);
-  if (official) origins.add(official);
-  for (const family of delivery.families) {
-    for (const variant of family.variants) {
-      const origin = urlOrigin(variant.url);
-      if (origin) origins.add(origin);
-    }
-  }
-  return origins;
-}
-
 function isOfficialSighting(
   sighting: NonNullable<ModelFamily["sourceSightings"]>[number],
   slug: string,
@@ -160,41 +144,24 @@ function isOfficialSighting(
   return sighting.sourceKind === "BRAND_OFFICIAL" && sighting.sourceId === slug;
 }
 
-function stripOfficialSource(
-  family: ModelFamily,
-  slug: string,
-  origins: ReadonlySet<string>,
-): ModelFamily | null {
-  const sightings = (family.sourceSightings ?? []).filter((sighting) => !isOfficialSighting(sighting, slug));
-  const variants = family.variants.filter((variant) => {
-    const origin = urlOrigin(variant.url);
-    return !origin || !origins.has(origin);
-  });
-  if (variants.length === 0 || sightings.length === 0) return null;
-  const sourceCategoryRefs = family.sourceCategoryRefs?.filter((ref) => ref.sourceId !== slug);
-  return {
-    ...rebuildFamily(family, variants, sightings),
-    sourceCategoryRefs,
-  };
-}
-
 function mergeOfficialReplacement(
   previous: readonly ModelFamily[],
   fresh: ModelFamily,
   slug: string,
-  origins: ReadonlySet<string>,
 ): ModelFamily {
-  const marketplaceVariants = previous.flatMap((family) =>
-    family.variants.filter((variant) => {
-      const origin = urlOrigin(variant.url);
-      return !origin || !origins.has(origin);
-    }),
-  );
-  const variants = uniqueVariants([...fresh.variants, ...marketplaceVariants]);
+  const variants = uniqueVariants([...fresh.variants, ...previous.flatMap((family) => family.variants)]);
   const preservedSightings = previous.flatMap((family) =>
     (family.sourceSightings ?? []).filter((sighting) => !isOfficialSighting(sighting, slug)),
   );
-  const freshSightings = fresh.sourceSightings ?? [];
+  const freshSightings = (fresh.sourceSightings ?? []).map((sighting) => {
+    const prior = previous.flatMap((family) => family.sourceSightings ?? [])
+      .find((item) => item.sourceId === sighting.sourceId && item.sourceKind === sighting.sourceKind);
+    return {
+      ...sighting,
+      firstSeenAt: prior?.firstSeenAt ?? sighting.firstSeenAt,
+      newness: mergeSourceNewness(prior?.newness, sighting.newness, sighting.lastSeenAt),
+    };
+  });
   const sightings = [...preservedSightings, ...freshSightings].filter((sighting, index, all) =>
     all.findIndex((candidate) =>
       candidate.sourceId === sighting.sourceId && candidate.sourceKind === sighting.sourceKind,
@@ -219,16 +186,45 @@ function mergeOfficialReplacement(
 }
 
 /**
- * Replaces one official source without creating a second card. Marketplace
- * sightings and different-origin marketplace variants stay on the same ID.
+ * Refreshes official evidence while retaining the research archive and galleries.
+ * Marketplace sightings stay independent on the same model card.
  */
 export function applySourceAwareBrandReplacement(
   existing: readonly ModelFamily[],
   delivery: BrandDeliveryReplacement,
 ): { core: ModelFamily[]; brandShard: ModelFamily[] } {
   const brandKey = delivery.brand.trim().toUpperCase();
-  const origins = officialOrigins(delivery);
-  const replacementIds = new Set(delivery.families.map((family) => family.modelFamilyId));
+  // Collector grouping can change. Exact product URLs anchor the existing card;
+  // names alone never justify merging two models.
+  const priorByUrl = new Map<string, Set<string>>();
+  const priorById = new Map<string, ModelFamily>();
+  for (const family of existing.filter((item) => item.brand.trim().toUpperCase() === brandKey)) {
+    priorById.set(family.modelFamilyId, family);
+    for (const variant of family.variants) {
+      const key = urlKey(variant.url);
+      if (!key) continue;
+      const ids = priorByUrl.get(key) ?? new Set<string>();
+      ids.add(family.modelFamilyId);
+      priorByUrl.set(key, ids);
+    }
+  }
+  const incoming = new Map<string, ModelFamily>();
+  for (const fresh of delivery.families) {
+    const matches = new Set(fresh.variants.flatMap((variant) => [...(priorByUrl.get(urlKey(variant.url)) ?? [])]));
+    if (matches.size > 1) throw new Error(`Ambiguous existing model identity: ${fresh.modelFamilyId}`);
+    const id = matches.size === 1 ? [...matches][0]! : fresh.modelFamilyId;
+    const anchored = { ...fresh, modelFamilyId: id, canonicalName: priorById.get(id)?.canonicalName ?? fresh.canonicalName };
+    const previousIncoming = incoming.get(id);
+    if (!previousIncoming) incoming.set(id, anchored);
+    else {
+      const sightings = (anchored.sourceSightings ?? []).map((sighting) => {
+        const prior = previousIncoming.sourceSightings?.find((item) => item.sourceId === sighting.sourceId && item.sourceKind === sighting.sourceKind);
+        return prior && isVerifiedNew(prior.newness) && !isVerifiedNew(sighting.newness) ? prior : sighting;
+      });
+      incoming.set(id, rebuildFamily(previousIncoming, uniqueVariants([...previousIncoming.variants, ...anchored.variants]), sightings));
+    }
+  }
+  const replacementIds = new Set(incoming.keys());
   const buckets = new Map<string, ModelFamily[]>();
   const core: ModelFamily[] = [];
 
@@ -244,16 +240,28 @@ export function applySourceAwareBrandReplacement(
     }
   }
 
-  const brandShard = delivery.families.map((fresh) => {
+  const brandShard = [...incoming.values()].map((fresh) => {
     const previous = buckets.get(fresh.modelFamilyId) ?? [];
     buckets.delete(fresh.modelFamilyId);
-    return mergeOfficialReplacement(previous, fresh, delivery.slug, origins);
+    return mergeOfficialReplacement(previous, fresh, delivery.slug);
   });
 
   for (const stale of buckets.values()) {
     for (const family of stale) {
-      const residual = stripOfficialSource(family, delivery.slug, origins);
-      if (residual) core.push(residual);
+      // A successful full scan can retire NEW evidence, but never the research archive.
+      const sightings = (family.sourceSightings ?? []).map((sighting) =>
+        isOfficialSighting(sighting, delivery.slug)
+          ? {
+              ...sighting,
+              newness: mergeSourceNewness(
+                sighting.newness,
+                createNotVerifiedNewness(),
+                delivery.collectedAt ?? sighting.lastSeenAt,
+              ),
+            }
+          : sighting,
+      );
+      brandShard.push(rebuildFamily(family, family.variants, sightings));
     }
   }
   return { core, brandShard };

@@ -204,10 +204,12 @@ describe("source-aware official delivery replacement", () => {
     expect(combined.some((item) => item.modelFamilyId.includes("brand-official"))).toBe(false);
     expect(result.brandShard[0]?.variants.map((item) => item.url)).toEqual([
       "https://approved.test/products/new",
+      "https://approved.test/products/old",
       "https://market.test/item/1",
     ]);
     expect(result.brandShard[0]?.allImages).toEqual([
       "https://img.test/new.jpg",
+      "https://img.test/old.jpg",
       "https://img.test/market.jpg",
     ]);
     expect(result.brandShard[0]?.sourceSightings?.map((item) => item.sourceId).sort()).toEqual([
@@ -216,6 +218,50 @@ describe("source-aware official delivery replacement", () => {
     ]);
     expect(result.core).toContainEqual(unrelatedFailedSource);
   });
+  it("anchors changed collector grouping to exact product URLs without duplicating the old card", () => {
+    const old = family({ id: "approved--original", variants: [variant("https://approved.test/products/black", "https://img.test/old.jpg"), variant("https://approved.test/products/white", "https://img.test/white.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    const black = family({ id: "approved--new-black", variants: [variant("https://approved.test/products/black", "https://img.test/new.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    black.sourceSightings![0]!.newness = { status: "VERIFIED_NEW", evidenceType: "NEW_ARRIVALS_COLLECTION", firstVerifiedAt: NOW, lastVerifiedAt: NOW, effectiveNewAt: NOW };
+    const white = family({ id: "approved--new-white", variants: [old.variants[1]!], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    const result = applySourceAwareBrandReplacement([old], { slug: "approved", brand: "APPROVED", officialUrl: "https://approved.test", families: [black, white] });
+    expect(result.brandShard).toHaveLength(1);
+    expect(result.brandShard[0]!.modelFamilyId).toBe(old.modelFamilyId);
+    expect(result.brandShard[0]!.variants).toHaveLength(2);
+    expect(result.brandShard[0]!.allImages).toContain("https://img.test/old.jpg");
+    expect(result.brandShard[0]!.sourceSightings![0]!.newness.status).toBe("VERIFIED_NEW");
+  });
+
+  it("keeps a removed official model and gallery while retiring only its source NEW", () => {
+    const archived = family({ id: "approved--archived", variants: [variant("https://approved.test/products/archived", "https://img.test/archive.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    archived.sourceSightings![0]!.newness = { status: "VERIFIED_NEW", evidenceType: "NEW_ARRIVALS_COLLECTION", firstVerifiedAt: NOW, lastVerifiedAt: NOW, effectiveNewAt: NOW };
+    const current = family({ variants: [variant("https://approved.test/products/current", "https://img.test/current.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    const result = applySourceAwareBrandReplacement([archived], { slug: "approved", brand: "APPROVED", officialUrl: "https://approved.test", collectedAt: "2026-10-03T12:00:00.000Z", families: [current] });
+    const retained = result.brandShard.find((item) => item.modelFamilyId === archived.modelFamilyId)!;
+    expect(retained.variants).toEqual(archived.variants);
+    expect(retained.allImages).toEqual(archived.allImages);
+    expect(retained.sourceSightings![0]!.lastSeenAt).toBe(NOW);
+    expect(retained.sourceSightings![0]!.newness.status).toBe("FORMERLY_NEW");
+    expect(archived.sourceSightings![0]!.newness.status).toBe("VERIFIED_NEW");
+  });
+
+  it("merges same-URL galleries and keeps the first NEW verification when reverified", () => {
+    const old = family({ variants: [variant("https://approved.test/products/current", "https://img.test/old.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    old.sourceSightings![0]!.newness = { status: "VERIFIED_NEW", evidenceType: "NEW_ARRIVALS_COLLECTION", firstVerifiedAt: NOW, lastVerifiedAt: NOW, effectiveNewAt: NOW };
+    const fresh = family({ variants: [variant("https://approved.test/products/current", "https://img.test/new.jpg")], sourceId: "approved", sourceKind: "BRAND_OFFICIAL" });
+    const verifiedAt = "2026-10-03T12:00:00.000Z";
+    fresh.sourceSightings![0]!.lastSeenAt = verifiedAt;
+    fresh.sourceSightings![0]!.newness = { ...old.sourceSightings![0]!.newness, firstVerifiedAt: verifiedAt, lastVerifiedAt: verifiedAt, effectiveNewAt: verifiedAt };
+    const input = { slug: "approved", brand: "APPROVED", officialUrl: "https://approved.test", collectedAt: verifiedAt, families: [fresh] };
+    const first = applySourceAwareBrandReplacement([old], input).brandShard;
+    expect(first[0]!.variants).toHaveLength(1);
+    expect(first[0]!.allImages).toEqual(["https://img.test/new.jpg", "https://img.test/old.jpg"]);
+    expect(first[0]!.sourceSightings![0]!.newness.firstVerifiedAt).toBe(NOW);
+    expect(first[0]!.sourceSightings![0]!.newness.lastVerifiedAt).toBe(verifiedAt);
+    expect(applySourceAwareBrandReplacement(first, input).brandShard).toEqual(first);
+    fresh.sourceSightings![0]!.newness = createNotVerifiedNewness();
+    expect(applySourceAwareBrandReplacement(first, input).brandShard[0]!.sourceSightings![0]!.newness.status).toBe("FORMERLY_NEW");
+  });
+
 });
 
 describe("twice-weekly workflow contract", () => {

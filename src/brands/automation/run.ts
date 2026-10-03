@@ -1,3 +1,4 @@
+import { loadModelFamilies } from "../../modelFamily/dataset";
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -18,6 +19,7 @@ import {
 import { collectShopifyWomensCatalog } from "../wave50/shopifyAdapter";
 import type { WaveCatalog, WaveHttp } from "../wave50/types";
 import {
+  applySourceAwareBrandReplacement,
   prepareBrandDelivery,
   replaceAutomationBrandDeliveries,
   type BrandDeliveryReplacement,
@@ -157,6 +159,7 @@ export async function runBrandAutomation(
     limit: options.limit,
   });
   const delivered = await deliveredBrandSlugs(options.root);
+  const existingFamilies = await loadModelFamilies({ rootDir: join(options.root, "data/multibrand") });
 
   const results = await mapPool(
     plan.candidates,
@@ -210,7 +213,8 @@ export async function runBrandAutomation(
         }
 
         const changed = !previous || !sameCatalogPayload(previous, catalog);
-        const needsDelivery = changed || !delivered.has(candidate.slug);
+        // Reconfirm source evidence even when products and galleries did not change.
+        const needsDelivery = changed || !delivered.has(candidate.slug) || previous?.collectedAt !== now;
         const prepared = needsDelivery
           ? await prepareBrandDelivery({ catalog, http: options.http })
           : { families: [], unresolved: [] };
@@ -226,6 +230,15 @@ export async function runBrandAutomation(
             activation: null,
           };
         }
+
+        // Reject ambiguous identity before advancing last-good or writing any delivery.
+        if (needsDelivery) applySourceAwareBrandReplacement(existingFamilies, {
+          slug: candidate.slug,
+          brand: candidate.brand,
+          officialUrl: catalog.officialUrl,
+          collectedAt: now,
+          families: prepared.families,
+        });
 
         if (dryRun) {
           return {
@@ -289,6 +302,7 @@ export async function runBrandAutomation(
                 slug: candidate.slug,
                 brand: candidate.brand,
                 officialUrl: catalog.officialUrl,
+                collectedAt: now,
                 families: prepared.families,
               }
             : null,
