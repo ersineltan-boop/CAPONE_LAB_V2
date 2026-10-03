@@ -17,11 +17,13 @@ function run(file: string, args: readonly string[]): boolean {
   return result.status === 0;
 }
 
-const accepted: string[] = [];
+let accepted: string[] = [];
+const beforeSnapshots = new Map<string, string>();
 const preserved: Array<{ id: string; reason: string }> = [];
 for (const source of SOURCES) {
   const path = `data/onboarding/validated/${source.file}.json`;
   const before = await readFile(path, "utf8");
+  beforeSnapshots.set(source.id, before);
   const previous = JSON.parse(before) as { products?: unknown[] };
   const processSucceeded = source.id === "massimo-dutti"
     ? run("collect-massimo-staging", [])
@@ -63,8 +65,17 @@ for (const source of SOURCES) {
   accepted.push(source.id);
 }
 
-if (accepted.length > 0 && !run("publish-priority-brands", accepted)) {
-  throw new Error("Could not publish verified priority brand snapshots");
+if (accepted.length > 0) {
+  const publishStarted = Date.now();
+  run("publish-priority-brands", accepted);
+  const delivery = JSON.parse(await readFile("data/onboarding/staging/priority-publication/report.json", "utf8").catch(() => "{}"));
+  const delivered = new Set<string>(Date.parse(delivery.generatedAt ?? "") >= publishStarted ? delivery.accepted ?? [] : []);
+  for (const id of accepted) if (!delivered.has(id)) {
+    const source = SOURCES.find(source => source.id === id)!;
+    await writeFile(`data/onboarding/validated/${source.file}.json`, beforeSnapshots.get(id)!);
+    preserved.push({ id, reason: delivery.preserved?.find((row: { id: string }) => row.id === id)?.reason ?? "Delivery failed without fresh evidence" });
+  }
+  accepted = accepted.filter(id => delivered.has(id));
 }
 const report = { generatedAt: new Date().toISOString(), accepted, preserved, coverage: "PARTIAL" };
 await mkdir("data/onboarding/staging/priority-refresh", { recursive: true });

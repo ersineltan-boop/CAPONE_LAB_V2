@@ -23,6 +23,7 @@ for (const lane of outcomes) {
         source: row.slug ?? row.sourceId ?? row.id ?? row.source ?? row.brand,
         status: row.status ?? row.publicationCoverage,
         blocker: row.blocker ?? row.reason ?? row.reasons ?? row.errors,
+        collectorErrors: row.collectorErrors ?? row.errors,
         collected: row.collected ?? row.acceptedFootwear ?? row.parsedProducts ?? row.collectedProducts,
         lastGoodRetained: row.lastGoodRetained ?? row.lastGoodPreserved,
       })));

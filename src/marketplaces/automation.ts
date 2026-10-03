@@ -38,6 +38,7 @@ export interface MarketplaceGateReport {
   accepted: boolean;
   decision: "PUBLISH_TO_PROPOSAL" | "PRESERVE_LAST_GOOD";
   reasons: string[];
+  collectorErrors?: string[];
   coverageStatus: MarketplaceCoverageStatus;
   sourceTotal: number | null;
   rawCollected: number;
@@ -220,6 +221,7 @@ export function evaluateMarketplaceCandidate(input: {
       accepted,
       decision: accepted ? "PUBLISH_TO_PROPOSAL" : "PRESERVE_LAST_GOOD",
       reasons,
+      collectorErrors: [...input.candidate.errors],
       coverageStatus: input.candidate.coverageStatus,
       sourceTotal: input.candidate.sourceTotal,
       rawCollected: input.candidate.rawCollected,

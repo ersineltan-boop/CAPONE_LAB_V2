@@ -16,7 +16,8 @@ if (process.argv.includes("--plan-only")) {
 }
 const baseline = await cycleCatalogSnapshot(root);
 await writeFile(join(audit, "baseline.json"), JSON.stringify(baseline));
-// Preserve the preceding lanes' successful work when an individual process fails.
+// Source publishers isolate failures; lane rollback remains for process/runtime failures.
+// Keep the final archive identity gate even when every collection lane completes.
 const protectedPaths = ["data/multibrand", "data/brands/wave50/last-good", "data/onboarding/validated", "data/registry", "src/registry/data/brands.ts"];
 // Leave time for the single test/build and guarded Preview/Production publication.
 const collectionDeadline = Date.now() + 210 * 60 * 1000;

@@ -10,6 +10,8 @@ import {
   type ModelFamilyDatasetManifest,
 } from "../../modelFamily/dataset";
 import type { ModelFamily, ModelFamilyVariant } from "../../modelFamily/types";
+import { anchorRefreshFamilies } from "../../modelFamily/refreshIdentity";
+import type { SourceNewness } from "../../newArrivals/newness";
 import { mergeSourceNewness } from "../../newArrivals/detectNewness";
 import { createNotVerifiedNewness, isVerifiedNew } from "../../newArrivals/newness";
 import {
@@ -33,6 +35,7 @@ export interface BrandDeliveryReplacement {
   officialUrl: string;
   collectedAt?: string;
   families: readonly ModelFamily[];
+  productNewness?: ReadonlyMap<string, SourceNewness>;
 }
 
 function productJsonUrl(productUrl: string): string | null {
@@ -81,8 +84,9 @@ async function classifyFamily(http: WaveHttp, family: ModelFamily): Promise<Mode
 export async function prepareBrandDelivery(input: {
   catalog: WaveCatalog;
   http: WaveHttp;
+  previousFamilies?: readonly ModelFamily[];
 }): Promise<PreparedBrandDelivery> {
-  const incoming = omitNonFootwearFamilies(waveFamiliesToModelFamilies(input.catalog));
+  const incoming = anchorRefreshFamilies(input.previousFamilies ?? [], omitNonFootwearFamilies(waveFamiliesToModelFamilies(input.catalog)));
   const families = await mapPool(incoming, 8, async (family) => classifyFamily(input.http, family));
   const unresolved = families.filter(
     (family) => (family.primaryCategory ?? "UNCLASSIFIED") === "UNCLASSIFIED",
@@ -159,7 +163,7 @@ function mergeOfficialReplacement(
     return {
       ...sighting,
       firstSeenAt: prior?.firstSeenAt ?? sighting.firstSeenAt,
-      newness: mergeSourceNewness(prior?.newness, sighting.newness, sighting.lastSeenAt),
+      newness: mergeSourceNewness(prior?.newness, sighting.newness ?? createNotVerifiedNewness(), sighting.lastSeenAt),
     };
   });
   const sightings = [...preservedSightings, ...freshSightings].filter((sighting, index, all) =>
@@ -194,26 +198,15 @@ export function applySourceAwareBrandReplacement(
   delivery: BrandDeliveryReplacement,
 ): { core: ModelFamily[]; brandShard: ModelFamily[] } {
   const brandKey = delivery.brand.trim().toUpperCase();
-  // Collector grouping can change. Exact product URLs anchor the existing card;
-  // names alone never justify merging two models.
-  const priorByUrl = new Map<string, Set<string>>();
-  const priorById = new Map<string, ModelFamily>();
-  for (const family of existing.filter((item) => item.brand.trim().toUpperCase() === brandKey)) {
-    priorById.set(family.modelFamilyId, family);
-    for (const variant of family.variants) {
-      const key = urlKey(variant.url);
-      if (!key) continue;
-      const ids = priorByUrl.get(key) ?? new Set<string>();
-      ids.add(family.modelFamilyId);
-      priorByUrl.set(key, ids);
-    }
-  }
   const incoming = new Map<string, ModelFamily>();
-  for (const fresh of delivery.families) {
-    const matches = new Set(fresh.variants.flatMap((variant) => [...(priorByUrl.get(urlKey(variant.url)) ?? [])]));
-    if (matches.size > 1) throw new Error(`Ambiguous existing model identity: ${fresh.modelFamilyId}`);
-    const id = matches.size === 1 ? [...matches][0]! : fresh.modelFamilyId;
-    const anchored = { ...fresh, modelFamilyId: id, canonicalName: priorById.get(id)?.canonicalName ?? fresh.canonicalName };
+  for (const fresh of anchorRefreshFamilies(existing, delivery.families)) {
+    const id = fresh.modelFamilyId;
+    const observed = delivery.productNewness
+      ? fresh.variants.map((variant) => delivery.productNewness!.get(urlKey(variant.url))).filter((value): value is SourceNewness => Boolean(value))
+      : [];
+    const newness = observed.find(isVerifiedNew) ?? observed[0];
+    const anchored = newness ? { ...fresh, sourceSightings: fresh.sourceSightings?.map((sighting) =>
+      isOfficialSighting(sighting, delivery.slug) ? { ...sighting, newness } : sighting) } : fresh;
     const previousIncoming = incoming.get(id);
     if (!previousIncoming) incoming.set(id, anchored);
     else {
@@ -280,6 +273,24 @@ export async function replaceAutomationBrandDeliveries(input: {
   const manifest = await readJsonFile<ModelFamilyDatasetManifest | null>(manifestPath, null);
   if (!manifest) throw new Error("Model-family shard manifest is required for brand automation.");
 
+  const brandShards = new Map<string, ModelFamily[]>();
+  for (const delivery of [...input.deliveries].sort((a, b) => a.slug.localeCompare(b.slug, "en"))) {
+    const replaced = applySourceAwareBrandReplacement(core, delivery);
+    core = replaced.core;
+    brandShards.set(delivery.slug, replaced.brandShard);
+  }
+
+  const proposed = [...core, ...[...brandShards.values()].flat()];
+  const ids = new Set<string>();
+  for (const family of proposed) {
+    if (ids.has(family.modelFamilyId)) throw new Error(`Duplicate modelFamilyId before brand replacement: ${family.modelFamilyId}`);
+    ids.add(family.modelFamilyId);
+  }
+  for (const [slug, families] of brandShards) {
+    if (Buffer.byteLength(JSON.stringify(families), "utf8") > MODEL_FAMILY_SHARD_MAX_BYTES) {
+      throw new Error(`Brand automation shard ${slug} exceeds ${MODEL_FAMILY_SHARD_MAX_BYTES} bytes.`);
+    }
+  }
   const acceptedSlugs = new Set(input.deliveries.map((delivery) => delivery.slug));
   const oldAcceptedShards = manifest.shards.filter((shard) =>
     acceptedSlugs.has(shard.file.replace(MODEL_FAMILY_BRAND_SHARD_PREFIX, "").replace(/\.json$/, "")) &&
@@ -290,13 +301,6 @@ export async function replaceAutomationBrandDeliveries(input: {
   manifest.totalFamilies = manifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0);
   await atomicWriteJson(manifestPath, manifest);
   for (const shard of oldAcceptedShards) await unlink(join(dir, shard.file)).catch(() => undefined);
-
-  const brandShards = new Map<string, ModelFamily[]>();
-  for (const delivery of [...input.deliveries].sort((a, b) => a.slug.localeCompare(b.slug, "en"))) {
-    const replaced = applySourceAwareBrandReplacement(core, delivery);
-    core = replaced.core;
-    brandShards.set(delivery.slug, replaced.brandShard);
-  }
 
   const nextManifest = await writeModelFamilies(core, { rootDir, generatedAt: input.generatedAt });
   let replacedCount = 0;
@@ -318,12 +322,12 @@ export async function replaceAutomationBrandDeliveries(input: {
   nextManifest.generatedAt = input.generatedAt;
   nextManifest.totalFamilies = nextManifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0);
   nextManifest.shardCount = nextManifest.shards.length;
-  const ids = new Set<string>();
+  const writtenIds = new Set<string>();
   for (const family of await loadFamiliesFromManifest(dir, nextManifest)) {
-    if (ids.has(family.modelFamilyId)) {
+    if (writtenIds.has(family.modelFamilyId)) {
       throw new Error(`Duplicate modelFamilyId after brand replacement: ${family.modelFamilyId}`);
     }
-    ids.add(family.modelFamilyId);
+    writtenIds.add(family.modelFamilyId);
   }
   await atomicWriteJson(manifestPath, nextManifest);
   return replacedCount;
@@ -338,4 +342,17 @@ async function loadFamiliesFromManifest(
     families.push(...await readJsonFile<ModelFamily[]>(join(dir, shard.file), []));
   }
   return families;
+}
+
+export function waveProductNewness(catalog: WaveCatalog): ReadonlyMap<string, SourceNewness> {
+  return new Map(catalog.families.flatMap((family) => family.variants.map((variant) => {
+    const evidence = String(variant.newnessEvidence);
+    const verified = variant.isNew && ["NEW_ARRIVALS_COLLECTION", "NEW_BADGE", "SOURCE_BADGE"].includes(evidence);
+    const newness: SourceNewness = verified ? {
+      status: "VERIFIED_NEW", evidenceType: evidence === "NEW_ARRIVALS_COLLECTION" ? "NEW_ARRIVALS_COLLECTION" : "NEW_BADGE",
+      firstVerifiedAt: catalog.collectedAt, lastVerifiedAt: catalog.collectedAt, effectiveNewAt: catalog.collectedAt,
+      evidenceUrl: variant.productUrl, evidenceText: evidence !== "NEW_ARRIVALS_COLLECTION" ? "Resmi kaynak NEW etiketi" : "Resmi New Arrivals koleksiyonu", confidence: 0.9,
+    } : createNotVerifiedNewness();
+    return [urlKey(variant.productUrl), newness] as const;
+  })));
 }

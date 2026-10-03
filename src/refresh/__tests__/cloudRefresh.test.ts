@@ -82,12 +82,12 @@ function product(
 describe("cloud refresh sequence", () => {
   it("keeps last-good families for unrefreshed and failed brands without duplicating rebuilt families", () => {
     const family = (id: string, brandName: string) =>
-      ({ modelFamilyId: id, brand: brandName }) as ModelFamily;
+      ({ modelFamilyId: id, brand: brandName, variants: [] }) as unknown as ModelFamily;
     const rebuilt = [family("a-new", "BRAND A"), family("b-one", "BRAND B")];
     const prior = [family("a-old", "BRAND A"), family("b-one", "BRAND B"), family("c-one", "BRAND C")];
     expect(preserveUnrefreshedModelFamilies(rebuilt, prior, new Set(["BRAND A"])).map(
       (entry) => entry.modelFamilyId,
-    )).toEqual(["a-new", "b-one", "c-one"]);
+    )).toEqual(["a-new", "b-one", "a-old", "c-one"]);
   });
   it("uses the production data steps and excludes OpenAI, Vision and Radar", () => {
     expect([...CLOUD_REFRESH_STEPS]).toEqual([

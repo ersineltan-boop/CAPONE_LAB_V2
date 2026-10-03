@@ -1,17 +1,16 @@
 import { join } from "node:path";
 
 import {
-  MODEL_FAMILY_BRAND_SHARD_PREFIX,
+  loadModelFamilies,
   MODEL_FAMILY_DATASET_DIR_REPO,
   MODEL_FAMILY_SHARD_MAX_BYTES,
   sortModelFamiliesForPersistence,
   type ModelFamilyDatasetManifest,
 } from "../../modelFamily/dataset";
-import type { ModelFamily } from "../../modelFamily/types";
 import { buildBrandRegistryFromUniverseData } from "../../registry/build/buildBrandRegistry";
 import type { BrandProbeCacheFile, BrandUniverseEntry, BrandUniverseFile } from "../../registry/build/types";
 import { fullCatalogPassBlocker } from "../wave50/coverage";
-import { applySourceAwareBrandReplacement, prepareBrandDelivery } from "../automation/delivery";
+import { applySourceAwareBrandReplacement, prepareBrandDelivery, replaceAutomationBrandDeliveries, waveProductNewness } from "../automation/delivery";
 import {
   atomicWriteJson,
   atomicWriteText,
@@ -58,16 +57,6 @@ function asWaveHttp(http: OfficialHttp): WaveHttp {
   };
 }
 
-async function existingFamilyIds(root: string, manifest: ModelFamilyDatasetManifest): Promise<Set<string>> {
-  const ids = new Set<string>();
-  const dir = join(root, MODEL_FAMILY_DATASET_DIR_REPO);
-  for (const shard of manifest.shards) {
-    const families = await readJsonFile<ModelFamily[]>(join(dir, shard.file), []);
-    for (const family of families) ids.add(family.modelFamilyId);
-  }
-  return ids;
-}
-
 export async function publishOfficialBrandCatalog(input: {
   root: string;
   catalog: WaveCatalog | null;
@@ -78,7 +67,9 @@ export async function publishOfficialBrandCatalog(input: {
   const blocker = officialCatalogPublishBlocker(catalog, input.evidence);
   if (blocker || !catalog) return { published: false, blocker: blocker ?? "NOT_FULL", families: 0 };
 
+  const previousFamilies = await loadModelFamilies({ rootDir: join(input.root, "data/multibrand"), allowMonolithFallback: false });
   const prepared = await prepareBrandDelivery({
+    previousFamilies,
     catalog: catalog,
     http: asWaveHttp(input.http),
   });
@@ -92,27 +83,15 @@ export async function publishOfficialBrandCatalog(input: {
   const manifest = await readJsonFile<ModelFamilyDatasetManifest | null>(manifestPath, null);
   if (!manifest) return { published: false, blocker: "MODEL_FAMILY_MANIFEST_MISSING", families: 0 };
 
-  const file = `${MODEL_FAMILY_BRAND_SHARD_PREFIX}${catalog.slug}.json`;
-  const ownShard = `${MODEL_FAMILY_BRAND_SHARD_PREFIX}${catalog.slug}.json`;
-  const ids = await existingFamilyIds(input.root, {
-    ...manifest,
-    shards: manifest.shards.filter((shard) => shard.file !== ownShard),
-  });
-  const previousFamilies = await readJsonFile<ModelFamily[]>(join(dir, file), []);
-  const replacement = applySourceAwareBrandReplacement(previousFamilies, {
-    slug: catalog.slug, brand: catalog.brand, officialUrl: catalog.officialUrl,
-    collectedAt: catalog.collectedAt, families: prepared.families,
-  });
-  const families = sortModelFamiliesForPersistence([...replacement.core, ...replacement.brandShard]);
-  for (const family of families) {
-    if (ids.has(family.modelFamilyId)) {
-      return { published: false, blocker: `DUPLICATE_MODEL_FAMILY:${family.modelFamilyId}`, families: 0 };
-    }
+  const delivery = { slug: catalog.slug, brand: catalog.brand, officialUrl: catalog.officialUrl,
+    collectedAt: catalog.collectedAt, families: prepared.families, productNewness: waveProductNewness(catalog) };
+  const replacement = applySourceAwareBrandReplacement(previousFamilies, delivery);
+  const families = sortModelFamiliesForPersistence(replacement.brandShard);
+  const ids = new Set(replacement.core.map((family) => family.modelFamilyId));
+  if (families.some((family) => ids.has(family.modelFamilyId))) {
+    return { published: false, blocker: "DUPLICATE_MODEL_FAMILY", families: 0 };
   }
-
-  const body = JSON.stringify(families);
-  const bytes = Buffer.byteLength(body, "utf8");
-  if (bytes > MODEL_FAMILY_SHARD_MAX_BYTES) {
+  if (Buffer.byteLength(JSON.stringify(families), "utf8") > MODEL_FAMILY_SHARD_MAX_BYTES) {
     return { published: false, blocker: "BRAND_SHARD_TOO_LARGE", families: 0 };
   }
 
@@ -139,15 +118,7 @@ export async function publishOfficialBrandCatalog(input: {
   const lastGood = await publishLastGoodCatalog(input.root, catalog);
   if (!lastGood.published) return { published: false, blocker: lastGood.blocker, families: 0 };
 
-  await atomicWriteText(join(dir, file), body);
-  const previous = manifest.shards.find((shard) => shard.file === file);
-  manifest.shards = manifest.shards.filter((shard) => shard.file !== file);
-  manifest.shards.push({ file, familyCount: families.length, bytes });
-  manifest.shards.sort((left, right) => left.file.localeCompare(right.file, "en"));
-  manifest.totalFamilies += families.length - (previous?.familyCount ?? 0);
-  manifest.shardCount = manifest.shards.length;
-  manifest.generatedAt = catalog.collectedAt;
-  await atomicWriteJson(manifestPath, manifest);
+  await replaceAutomationBrandDeliveries({ root: input.root, deliveries: [delivery], generatedAt: catalog.collectedAt });
   await atomicWriteJson(universePath, nextUniverse);
   await atomicWriteJson(join(input.root, "data/registry/brand-universe-report.json"), built.report);
   await atomicWriteText(join(input.root, "src/registry/data/brands.ts"), built.brandsTsContent);

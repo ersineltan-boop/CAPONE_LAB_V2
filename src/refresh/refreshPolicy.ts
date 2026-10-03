@@ -1,5 +1,6 @@
 import { isTrackedModelFamilyDatasetPath } from "../modelFamily/dataset";
-import type { ModelFamily } from "../modelFamily/types";
+import type { ModelFamily, RawAnalyzedProduct } from "../modelFamily/types";
+import { retainModelFamilyArchive } from "../modelFamily/refreshIdentity";
 import type { BrandRegistryEntry } from "../registry/types/brand";
 import {
   brandToPilotSourceConfig,
@@ -49,16 +50,12 @@ export function preserveUnrefreshedModelFamilies(
   rebuilt: readonly ModelFamily[],
   prior: readonly ModelFamily[],
   refreshedBrands: ReadonlySet<string>,
+  products: readonly RawAnalyzedProduct[] = [],
 ): ModelFamily[] {
-  const currentIds = new Set(rebuilt.map((family) => family.modelFamilyId));
-  return [
-    ...rebuilt,
-    ...prior.filter(
-      (family) =>
-        !refreshedBrands.has(family.brand.trim().toUpperCase()) &&
-        !currentIds.has(family.modelFamilyId),
-    ),
-  ];
+  // Successful collection also retains absent research models and stable IDs.
+  // NEW exits are established by source membership, never by archive deletion.
+  void refreshedBrands;
+  return retainModelFamilyArchive(rebuilt, prior, products);
 }
 
 export const CLOUD_REFRESH_TRACKED_DATA_PATHS = [

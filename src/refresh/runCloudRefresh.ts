@@ -471,7 +471,7 @@ async function rebuildModelFamilies(refreshedBrands: ReadonlySet<string>): Promi
 
   // A daily crawl only refreshes a subset of the registry. Preserve last-good
   // families for brands that were not successfully collected this time.
-  const deliveryFamilies = preserveUnrefreshedModelFamilies(families, priorFamilies, refreshedBrands);
+  const deliveryFamilies = preserveUnrefreshedModelFamilies(families, priorFamilies, refreshedBrands, products);
   const preservedCount = deliveryFamilies.length - families.length;
   report.modelFamilyCount = deliveryFamilies.length;
   report.totalVariants = deliveryFamilies.reduce((sum, family) => sum + family.variantCount, 0);

@@ -1,3 +1,4 @@
+import { buildNewnessFromProductHints } from "../newArrivals/detectNewness";
 import { analyzeProducts } from "../analysis/analyzeProduct";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
 import type { ModelFamily } from "../modelFamily/types";
@@ -11,6 +12,7 @@ export function mergePriorityBrandDelivery(prior: ModelFamily[], products: Pilot
   const previousById = new Map(prior.map((family) => [family.modelFamilyId, family]));
   const replacement = applySourceAwareBrandReplacement(prior, {
     slug: input.id, brand: input.brand, officialUrl: input.officialUrl, collectedAt: input.collectedAt, families,
+    productNewness: new Map(products.map(product => [product.productUrl.replace(/\/+$/, "").toLowerCase(), buildNewnessFromProductHints(product, input.collectedAt)])),
   });
   const delivered = replacement.brandShard.map((family) => {
     const old = previousById.get(family.modelFamilyId);
