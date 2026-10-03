@@ -16,6 +16,8 @@ import {
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { useBrandFavorites } from "../../research/useBrandFavorites";
 import ImagePlaceholder from "../radar/ImagePlaceholder";
+import { brandPriceSegmentLabel, type BrandPriceSegmentFilter as SegmentFilter } from "../../brands/brandPriceSegments";
+import BrandPriceSegmentFilter from "./BrandPriceSegmentFilter";
 
 interface BrandsIndexProps {
   onSelectBrand: (brandId: string, brandName: string) => void;
@@ -55,6 +57,7 @@ function BrandCardImages({
 export default function BrandsIndex({ onSelectBrand }: BrandsIndexProps) {
   const { state, retry } = useCatalogResource(() => loadCatalogSummary(), []);
   const [countryId, setCountryId] = useState(ALL_COUNTRIES_ID);
+  const [segment, setSegment] = useState<SegmentFilter>("all");
   const [brandMode, setBrandMode] = useState<"all" | "saved">("all");
   const { isSaved, setSaved } = useBrandFavorites();
 
@@ -66,7 +69,7 @@ export default function BrandsIndex({ onSelectBrand }: BrandsIndexProps) {
   }
 
   const countryOptions = countryOptionsFromSummary(state.data);
-  const cards = brandSummariesForIndex(state.data, countryId).filter((card) =>
+  const cards = brandSummariesForIndex(state.data, countryId, segment).filter((card) =>
     brandMode === "saved" ? isSaved(card.brandId) : true,
   );
 
@@ -132,9 +135,13 @@ export default function BrandsIndex({ onSelectBrand }: BrandsIndexProps) {
           ))}
         </div>
 
+        <BrandPriceSegmentFilter value={segment} onChange={setSegment} />
+        <p className="text-[10px] text-ink-muted">{cards.length} marka</p>
+
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card, index) => {
             const saved = isSaved(card.brandId);
+            const segmentLabel = brandPriceSegmentLabel(card.brandId, card.brandName);
             return (
               <article
                 key={card.brandId}
@@ -156,6 +163,7 @@ export default function BrandsIndex({ onSelectBrand }: BrandsIndexProps) {
                     <h3 className="font-serif text-xl tracking-wide sm:text-2xl">{card.brandName}</h3>
                     <p className="text-[10px] uppercase tracking-[0.16em] text-ink-faint">
                       {brandCardCountryLabel(card)}
+                      {segmentLabel ? ` · ${segmentLabel}` : ""}
                     </p>
                     <p className="text-[11px] text-ink-muted">
                       {UI_COPY.productsCount(card.productCount)}
@@ -176,8 +184,9 @@ export default function BrandsIndex({ onSelectBrand }: BrandsIndexProps) {
             );
           })}
         </div>
-        {brandMode === "saved" && cards.length === 0 ? (
-          <p className="text-sm text-ink-muted">{UI_COPY.emptySavedBrands}</p>
+        {cards.length === 0 ? (
+          <p className="text-sm text-ink-muted">{brandMode === "saved" && segment === "all" && countryId === ALL_COUNTRIES_ID
+            ? UI_COPY.emptySavedBrands : "Seçtiğiniz filtrelere uygun marka bulunamadı."}</p>
         ) : null}
       </div>
     </section>

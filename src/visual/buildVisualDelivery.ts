@@ -12,6 +12,7 @@ import {
 import type { VisualCard, VisualShard, VisualSummary } from "./types";
 import { MAX_VISUAL_CARD_IMAGES } from "../catalog/types";
 import { isFashionMarketplaceFamily } from "../marketplaces/marketplacePolicy";
+import { BRAND_PRICE_SEGMENTS, brandPriceSegment, matchesBrandPriceSegment, type BrandPriceSegmentFilter } from "../brands/brandPriceSegments";
 
 export interface VisualDeliveryInput {
   families: ModelFamily[];
@@ -100,6 +101,11 @@ export function buildVisualDelivery(input: VisualDeliveryInput): VisualDeliveryA
           : (byCategory.get(item.id as VisualMappedCategoryId) ?? []).length,
       verifiedNewCount: (item.id === "tumu" ? all : byCategory.get(item.id as VisualMappedCategoryId) ?? [])
         .filter((card) => card.verifiedNew).length,
+      priceSegments: Object.fromEntries(BRAND_PRICE_SEGMENTS.map((segment) => {
+        const cards = (item.id === "tumu" ? all : byCategory.get(item.id as VisualMappedCategoryId) ?? [])
+          .filter((card) => brandPriceSegment(card.brandId, card.brand) === segment.id);
+        return [segment.id, { count: cards.length, verifiedNewCount: cards.filter((card) => card.verifiedNew).length }];
+      })),
     })),
   };
 
@@ -109,12 +115,13 @@ export function buildVisualDelivery(input: VisualDeliveryInput): VisualDeliveryA
 export function filterVisualCards(
   cards: VisualCard[],
   query: string,
-  options: { onlyNew?: boolean } = {},
+  options: { onlyNew?: boolean; segment?: BrandPriceSegmentFilter } = {},
 ): VisualCard[] {
   const trimmed = query.trim().toLowerCase();
   const matching = cards.filter(
     (card) =>
       (!options.onlyNew || card.verifiedNew) &&
+      matchesBrandPriceSegment(options.segment ?? "all", card.brandId, card.brand) &&
       (!trimmed || card.brand.toLowerCase().includes(trimmed) ||
       card.productName.toLowerCase().includes(trimmed)),
   );
