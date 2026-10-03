@@ -119,7 +119,7 @@ export async function paginateShopifyCollectionProducts(
     const result = await fetchJson<{ products?: ShopifyListingProduct[] }>(url, 900);
     pagesTraversed = page;
     if (!result.ok || !result.data) {
-      if (page === 1) errors.push(result.error ?? `Failed ${url}`);
+      errors.push(result.error ?? `Failed ${url}`);
       break;
     }
     const batch = result.data.products ?? [];
@@ -146,7 +146,8 @@ export async function paginateShopifyCollectionProducts(
         products.push(overlayMembershipProduct(raw, config, options.discoveredAt, collection));
       }
     }
-    if (newHandles === 0) break;
+    if (newHandles === 0 || batch.length < FULL_PRODUCTS_PER_PAGE) break;
+    if (page === maxPages) errors.push(`Membership page cap reached for ${collection.path}`);
     await sleep(550);
   }
 
@@ -175,6 +176,7 @@ export async function collectShopifyCollectionMembership(
     path: `/collections/${collection.handle}`,
     url: `${config.baseUrl.replace(/\/$/, "")}/collections/${collection.handle}`,
   }));
+  const verifiedNewPaths = new Set(config.verifiedNewArrivalPaths ?? []);
   const footwear = discovered
     .filter((collection) => collection.productsCount > 0)
     .filter(
@@ -186,7 +188,8 @@ export async function collectShopifyCollectionMembership(
         ),
     )
     .filter((collection) =>
-      isWomensFootwearCollection(collection.handle, collection.title),
+      isWomensFootwearCollection(collection.handle, collection.title) ||
+      (verifiedNewPaths.has(collection.path) && isNewArrivalsCollectionPath(collection.path)),
     )
     .sort(
       (a, b) =>
@@ -222,4 +225,41 @@ export async function collectShopifyCollectionMembership(
     pagesTraversed,
     errors,
   };
+}
+
+/** Apply a complete pinned New Arrivals scan without deleting research products. */
+export function mergeVerifiedShopifyMembership(
+  config: PilotSourceConfig,
+  catalog: readonly PilotProduct[],
+  collected: ShopifyMembershipResult,
+): PilotProduct[] {
+  const pinned = config.verifiedNewArrivalPaths ?? [];
+  if (pinned.length === 0) return mergeProductCatalog(catalog, collected.products);
+  if (collected.errors.length > 0 || !pinned.every((path) =>
+    collected.crawledCollections.some((collection) => collection.path === path),
+  )) return [...catalog];
+
+  const currentNewUrls = new Set(collected.products
+    .filter((product) => product.isNewArrivalsCollection)
+    .map((product) => product.productUrl.toLowerCase().replace(/\/$/, "")));
+  return mergeProductCatalog(catalog, collected.products).map((product) => {
+    if (product.source !== config.id) return product;
+    if (currentNewUrls.has(product.productUrl.toLowerCase().replace(/\/$/, ""))) {
+      return { ...product, isNewArrivalsCollection: true };
+    }
+    const oldNewPath = isNewArrivalsCollectionPath(product.collectionPath);
+    const oldNewSourcePath = isNewArrivalsCollectionPath(product.sourceCategoryPath);
+    return {
+      ...product,
+      isNewArrivalsCollection: false,
+      ...(oldNewPath ? { collectionPath: null, collectionLabel: null } : {}),
+      ...(oldNewSourcePath ? {
+        sourceCategoryId: null, sourceCategoryName: null,
+        sourceCategoryPath: null, sourceCategoryUrl: null,
+      } : {}),
+      sourceCategories: (product.sourceCategories ?? []).filter((category) =>
+        !isNewArrivalsCollectionPath(category.categoryPath ?? category.categoryUrl),
+      ),
+    };
+  });
 }

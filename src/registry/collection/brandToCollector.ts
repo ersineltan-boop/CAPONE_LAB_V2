@@ -41,6 +41,11 @@ export function brandToPilotSourceConfig(
       entry.collectionDiscoveryStatus === "AUTO_DISCOVERED"
         ? footwearPaths
         : footwearPaths,
+    ...(entry.newArrivalDiscoveryStatus === "VERIFIED" ? {
+      verifiedNewArrivalPaths: (entry.newArrivalCollectionHandles ?? []).map((handle) =>
+        handle.startsWith("/") ? handle : `/collections/${handle}`,
+      ),
+    } : {}),
     maxProducts: entry.productLimit,
     backfillLimit: entry.backfillLimit ?? 100,
     collectMode: "full",
