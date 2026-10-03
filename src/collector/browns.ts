@@ -2,12 +2,16 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
 import { analyzeProducts } from "../analysis/analyzeProduct";
+import type { ModelFamily } from "../modelFamily/types";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
 import type { MarketplaceGateReport } from "../marketplaces/automation";
 import { isExcludedMarketplaceBrand } from "../marketplaces/marketplacePolicy";
 import { fetchText, sleep } from "./http";
 import { isMensOnlyProduct } from "./footwearGate";
 import { shopifyProductToPilot } from "./shopify";
+import { detectNewBadgeInText, isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
+import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
+import { mergeProductCatalog } from "./mergeProducts";
 import type { FootwearCategory, PilotProduct, PilotSourceConfig } from "./types";
 
 export const BROWNS_ID = "browns";
@@ -89,6 +93,9 @@ export interface BrownsCoverage {
   status: "FULL" | "PARTIAL" | "FAILED";
   paginationExhausted: boolean;
   baselineNewArrivals: number;
+  refresh?: boolean;
+  verifiedNewProducts?: number;
+  newMembershipErrors?: string[];
   refreshCommand: typeof BROWNS_REFRESH_COMMAND;
   periodicRefresh: true;
   blocker: string | null;
@@ -170,7 +177,7 @@ export function isBrownsSportsProduct(vendor: string, title: string): boolean {
   return isExcludedMarketplaceBrand(vendor) || isExcludedMarketplaceBrand(title) || /\bjordan\b/i.test(`${vendor} ${title}`);
 }
 
-export function brownsRawProductToPilot(raw: BrownsRawProduct, discoveredAt: string): PilotProduct | null {
+export function brownsRawProductToPilot(raw: BrownsRawProduct, discoveredAt: string, refresh = false): PilotProduct | null {
   const vendor = (raw.vendor ?? "").trim().replace(/\s+/g, " ");
   if (!vendor) return null;
   const tags = normalizeTags(raw.tags);
@@ -227,7 +234,7 @@ export function brownsRawProductToPilot(raw: BrownsRawProduct, discoveredAt: str
     images,
     color: product.color,
     isNewArrivalsCollection: false,
-    hasNewBadge: false,
+    hasNewBadge: refresh && detectNewBadgeInText(...normalizeTags(raw.tags)),
   };
 }
 
@@ -253,6 +260,8 @@ const defaultHttp = (): BrownsHttp => ({
 export async function collectBrowns(options?: {
   now?: string;
   http?: BrownsHttp;
+  refresh?: boolean;
+  membership?: typeof collectShopifyCollectionMembership;
 }): Promise<BrownsCollectResult> {
   const collectedAt = options?.now ?? new Date().toISOString();
   const http = options?.http ?? defaultHttp();
@@ -320,13 +329,13 @@ export async function collectBrowns(options?: {
       bump(scopeExclusionReasons, "non-womens");
       continue;
     }
-    const product = brownsRawProductToPilot(raw, collectedAt);
+    const product = brownsRawProductToPilot(raw, collectedAt, options?.refresh);
     const reasons: string[] = [];
     if (!product) reasons.push("footwear-filter");
     else {
       if (!product.category || !CLASSIFIED.has(product.category)) reasons.push("unresolved-category");
       if (!product.imageUrl) reasons.push("missing-image");
-      if (product.isNewArrivalsCollection || product.hasNewBadge) {
+      if (!options?.refresh && (product.isNewArrivalsCollection || product.hasNewBadge)) {
         baselineNewArrivals += 1;
         reasons.push("baseline-new");
       }
@@ -341,6 +350,34 @@ export async function collectBrowns(options?: {
   }
 
   const scopeExcluded = Object.values(scopeExclusionReasons).reduce((sum, count) => sum + count, 0);
+  const newMembershipErrors: string[] = [];
+  if (options?.refresh && products.length > 0) {
+    try {
+      const membership = await (options.membership ?? collectShopifyCollectionMembership)({
+        id: BROWNS_ID, brand: "Browns", baseUrl: BROWNS_ORIGIN,
+        collectionPaths: [BROWNS_COLLECTION_PATH], verifiedFootwearPaths: [BROWNS_COLLECTION_PATH],
+        maxProducts: 10_000, collectMode: "full",
+      }, { knownProductUrls: products.map((product) => product.productUrl), onlyNewCollections: true });
+      newMembershipErrors.push(...membership.errors);
+      if (!membership.verifiedNewArrivalPaths?.every((path) => membership.crawledCollections.some((collection) => collection.path === path))) {
+        newMembershipErrors.push("Browns NEW collection scan incomplete");
+      }
+      if (!membership.verifiedNewArrivalPaths?.length) newMembershipErrors.push("No verified Browns New Arrivals collection discovered");
+      if (newMembershipErrors.length === 0) {
+        const newUrls = new Set(membership.products.filter((product) => product.isNewArrivalsCollection)
+          .map((product) => product.productUrl.toLowerCase().replace(/\/$/, "")));
+        const evidenceByUrl = new Map(membership.products.filter((product) => product.isNewArrivalsCollection)
+          .map((product) => [product.productUrl.toLowerCase().replace(/\/$/, ""), product]));
+        for (const product of products) {
+          const key = product.productUrl.toLowerCase().replace(/\/$/, "");
+          product.isNewArrivalsCollection = newUrls.has(key);
+          const evidence = evidenceByUrl.get(key);
+          if (evidence) { product.collectionPath = evidence.collectionPath; product.collectionLabel = evidence.collectionLabel; }
+        }
+      }
+    } catch (error) { newMembershipErrors.push(String(error)); }
+  }
+
   const fetchedProducts = rawById.size;
   const reconciled =
     storefrontProductCount !== null &&
@@ -370,6 +407,10 @@ export async function collectBrowns(options?: {
     status = "FULL";
   }
 
+  if (newMembershipErrors.length > 0) {
+    status = "PARTIAL";
+    blocker = `NEW_MEMBERSHIP_BLOCKED:${newMembershipErrors.join("; ")}`;
+  }
   return {
     products,
     quarantined,
@@ -390,6 +431,9 @@ export async function collectBrowns(options?: {
       status,
       paginationExhausted,
       baselineNewArrivals,
+      refresh: Boolean(options?.refresh),
+      verifiedNewProducts: products.filter((product) => product.isNewArrivalsCollection || product.hasNewBadge).length,
+      newMembershipErrors,
       refreshCommand: BROWNS_REFRESH_COMMAND,
       periodicRefresh: true,
       blocker,
@@ -407,8 +451,9 @@ export function brownsPublicationBlocker(result: BrownsCollectResult): string | 
     return coverage.blocker ?? "Browns fetched count does not match the storefront";
   }
   if (result.products.length === 0) return "Browns eligible women's footwear catalog is empty";
+  if (coverage.newMembershipErrors?.length) return `NEW_MEMBERSHIP_BLOCKED:${coverage.newMembershipErrors.join("; ")}`;
   if (coverage.baselineNewArrivals !== 0) return "baseline contains NEW products";
-  if (result.products.some((product) => product.isNewArrivalsCollection || product.hasNewBadge)) {
+  if (!coverage.refresh && result.products.some((product) => product.isNewArrivalsCollection || product.hasNewBadge)) {
     return "baseline contains NEW products";
   }
   if (result.products.some((product) => "price" in product)) return "price field present";
@@ -434,7 +479,35 @@ export async function publishBrownsCatalog(
   const blocker = brownsPublicationBlocker(result);
   if (blocker) return { published: false, reason: blocker, modelFamilies: 0 };
 
-  const { families } = buildModelFamilies(analyzeProducts(result.products as never) as never);
+  const catalogPath = join(root, "data/multibrand/model-families/marketplaces/browns.json");
+  let previous: PilotProduct[] = [];
+  let priorFamilies: ModelFamily[] = [];
+  try {
+    const stored = JSON.parse(await readFile(catalogPath, "utf8"));
+    if (Array.isArray(stored)) {
+      priorFamilies = stored;
+      const core = JSON.parse(await readFile(join(root, "data/multibrand/products.json"), "utf8").catch((error) => { throw new Error(`Browns prior core catalog unavailable: ${String(error)}`); })) as PilotProduct[];
+      previous = core.filter((product) => product.source.toLowerCase() === BROWNS_ID);
+    } else {
+      if (!Array.isArray(stored.products) || !Array.isArray(stored.families)) throw new Error("Invalid Browns last-good delivery");
+      previous = stored.products;
+      priorFamilies = stored.families;
+    }
+  }
+  catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
+  const baseline = previous.length === 0;
+  const incoming = baseline ? result.products.map((product) => ({ ...product, isNewArrivalsCollection: false, hasNewBadge: false })) : result.products;
+  // Retain research records and galleries even when products leave the live assortment.
+  const currentByUrl = new Map(incoming.map((product) => [product.productUrl, product]));
+  const products = mergeProductCatalog(previous, incoming).map((product) => {
+    const current = currentByUrl.get(product.productUrl);
+    return current ? { ...product, isNewArrivalsCollection: current.isNewArrivalsCollection, hasNewBadge: current.hasNewBadge }
+      : result.coverage.refresh ? {
+        ...product, isNewArrivalsCollection: false,
+        ...(isNewArrivalsCollectionPath(product.collectionPath) ? { collectionPath: null, collectionLabel: null } : {}),
+      } : product;
+  });
+  const { families } = buildModelFamilies(analyzeProducts(products as never) as never, { priorFamilies });
   const unresolved = families.filter(
     (family) => !family.primaryCategory || family.primaryCategory === "UNCLASSIFIED" || family.primaryCategory === "OTHER_FOOTWEAR",
   );
@@ -465,20 +538,20 @@ export async function publishBrownsCatalog(
     productsWithTaxonomy: result.products.length,
     duplicateUrls: 0,
     crossSourceUrlCollisions: 0,
-    baseline: true,
+    baseline,
     baselineVerifiedNewProducts: 0,
     priceHidden: true,
-    previousLastGoodProducts: 0,
+    previousLastGoodProducts: previous.length,
     previousPolicyEligibleProducts: 0,
     lastGoodRetentionRatio: null,
     minimumLastGoodRetentionRatio: 0.6,
-    lastGoodPreserved: false,
+    lastGoodPreserved: previous.length > 0,
   };
-  await atomicWriteJson(join(root, "data/multibrand/model-families/marketplaces/browns.json"), {
+  await atomicWriteJson(catalogPath, {
     sourceId: BROWNS_ID,
     origin: BROWNS_ORIGIN,
     updatedAt: result.coverage.collectedAt,
-    products: result.products,
+    products,
     families,
     report,
     quarantined: result.quarantined.map((item) => ({

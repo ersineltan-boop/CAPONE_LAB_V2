@@ -11,6 +11,7 @@ import {
 import { buildWaveCoverage, fullCatalogPassBlocker } from "./coverage";
 import { classifyWomensFootwear } from "./footwearScope";
 import { groupColorwaysIntoFamilies, type FamilyProduct } from "./families";
+import { detectNewBadgeInText } from "../../newArrivals/detectNewness";
 import { assignProductNewness } from "./newness";
 import type { WaveBrandSeed, WaveCatalog, WaveHttp, WaveHttpResponse } from "./types";
 
@@ -92,10 +93,10 @@ export async function listAllShopifyCollections(
       `${baseUrl}/collections.json?limit=250&page=${page}`,
     );
     if (!response.ok || !response.data || typeof response.data !== "object") {
-      if (page === 1) return { collections, error: response.error ?? `collections.json HTTP ${response.status}` };
-      break;
+      return { collections, error: response.error ?? `collections.json HTTP ${response.status} page ${page}` };
     }
-    const batch = (response.data as ShopifyCollectionsResponse).collections ?? [];
+    const batch = (response.data as ShopifyCollectionsResponse).collections;
+    if (!Array.isArray(batch)) return { collections, error: "INVALID_COLLECTION_LIST_PAYLOAD" };
     if (batch.length === 0) break;
     for (const collection of batch) {
       const handle = collection.handle?.trim();
@@ -108,6 +109,7 @@ export async function listAllShopifyCollections(
       });
     }
     if (batch.length < 250) break;
+    if (page === 20) return { collections, error: "COLLECTION_LIST_PAGE_CAP" };
   }
   return { collections, error: null };
 }
@@ -132,7 +134,8 @@ export async function paginateCollectionProducts(
       }
       return { products, exhausted: false, error: response.error ?? `HTTP ${response.status} page ${page}`, pages: page - 1 };
     }
-    const batch = (response.data as ShopifyProductsResponse).products ?? [];
+    const batch = (response.data as ShopifyProductsResponse).products;
+    if (!Array.isArray(batch)) return { products, exhausted: false, error: "INVALID_PRODUCTS_PAYLOAD", pages };
     if (batch.length === 0) {
       exhausted = true;
       pages = page - 1;
@@ -232,8 +235,8 @@ export async function collectShopifyWomensCatalog(input: {
   }
 
   const rawByHandle = new Map<string, ShopifyProduct>();
-  let paginationExhausted = true;
-  const errors: string[] = [];
+  let paginationExhausted = !listed.error;
+  const errors: string[] = listed.error ? [listed.error] : [];
   for (const path of plan.catalogPaths) {
     const page = await paginateCollectionProducts(input.http, baseUrl, path);
     if (!page.exhausted || page.error) {
@@ -285,7 +288,7 @@ export async function collectShopifyWomensCatalog(input: {
     const productUrl = `${baseUrl}/products/${handle}`;
     const inNewArrivals = newArrivalHandles.has(handle.toLowerCase());
     const newness = assignProductNewness(
-      { productUrl, inNewArrivals },
+      { productUrl, inNewArrivals, hasNewBadge: detectNewBadgeInText(...tags) },
       input.previousUrls,
     );
     footwear.push({

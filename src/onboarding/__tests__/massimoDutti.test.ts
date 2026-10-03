@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { collectMassimoDuttiCatalog, mapMassimoProduct, MASSIMO_SHOES_URL } from "../massimoDutti";
+import { collectMassimoDuttiCatalog, mapMassimoApiProduct, mapMassimoProduct, MASSIMO_SHOES_URL, MASSIMO_NEW_IN_URL } from "../massimoDutti";
 const media = { path: "https://static.massimodutti.net/assets/boot.jpg", contentType: { type: "image" } };
 const row = { id: "123", sectionNameEN: "WOMEN", productType: "Footwear", name: "Leather riding boot", familyNameEN: "BOOT", locationPath: "/us/leather-riding-boot-l11005850", colors: [{ name: "BLACK", medias: [media] }] };
 describe("Massimo official SSR adapter", () => {
@@ -43,5 +43,49 @@ describe("Massimo official SSR adapter", () => {
     const result = await collectMassimoDuttiCatalog({ fetchText: async () => ({ ok: false, status: 403, url: MASSIMO_SHOES_URL, text: "Access Denied" }) });
     expect(result.products).toEqual([]);
     expect(result.errors[0]).toContain("403");
+  });
+  it("maps source seasonal gallery paths without borrowing another color's gallery", () => {
+    const path = "/2026/I/1/1/p/1568/850/800";
+    const product = mapMassimoApiProduct({ ...row, productUrl: "leather-riding-boot-l11005850", mainColorid: "800",
+      detail: {colors: [{id: "800", name: "BLACK", image: {url: `${path}/1568850800`}},
+        {id: "700", name: "BROWN", image: {url: "/2026/I/1/1/p/1568/850/700/1568850700"}}],
+      xmedia: [{path, xmediaItems: [{medias: [{format: 1, url: media.path}]}]},
+        {path: "/unrelated", xmediaItems: [{medias: [{format: 1, url: "https://static.massimodutti.net/wrong.jpg"}]}]}]}}, "2026-10-03");
+    expect(product?.images).toEqual([media.path]);
+    expect(product?.variants?.[1].images).toEqual([]);
+  });
+  it("uses full New In grid membership and blocks publication when that collection fails", async () => {
+    const apiRow = { ...row, productUrl: "leather-riding-boot-l11005850", productUrlParam: 123,
+      detail: {colors: [{id: "800", name: "BLACK"}], xmedia: [{path: "/800", xmediaItems: [{medias: [{format: 1, url: media.path}]}]}]}};
+    const html = (ids: number[]) => `<script id="mdfrontw-state">${JSON.stringify({TRANSFER_CATEGORY_PRODUCTS: {categoryGrid: {gridElements: [{ccIds: ids}]}}})}</script>`;
+    let blocked = false;
+    let newIds = [123];
+    const http = {fetchText: async (url: string) => ({ok: !(blocked && url === MASSIMO_NEW_IN_URL),
+      status: blocked && url === MASSIMO_NEW_IN_URL ? 403 : 200, url,
+      text: url.includes("productsArray") ? JSON.stringify({products: [apiRow]}) : html(url === MASSIMO_NEW_IN_URL ? newIds : [123])})};
+    const fresh = await collectMassimoDuttiCatalog(http);
+    expect(fresh.paginationExhausted).toBe(true);
+    expect(fresh.products[0].isNewArrivalsCollection).toBe(true);
+    expect(fresh.products[0].sourceCategories).toContainEqual(expect.objectContaining({categoryName: "New In", categoryUrl: MASSIMO_NEW_IN_URL}));
+    newIds = [];
+    const departed = await collectMassimoDuttiCatalog(http);
+    expect(departed.paginationExhausted).toBe(true);
+    expect(departed.products[0].isNewArrivalsCollection).toBe(false);
+    blocked = true;
+    const failed = await collectMassimoDuttiCatalog(http);
+    expect(failed.paginationExhausted).toBe(false);
+    expect(failed.errors).toContain("Massimo New In HTTP 403");
+  });
+  it("bounds malformed large grids and keeps the collection incomplete", async () => {
+    let requests = 0;
+    const state = {TRANSFER_CATEGORY_PRODUCTS: {categoryGrid: {gridElements: [{ccIds: Array.from({length: 501}, (_, i) => i + 1)}]}}};
+    const result = await collectMassimoDuttiCatalog({fetchText: async url => {
+      requests++;
+      return {ok: true, status: 200, url, text: url.includes("productsArray") ? '{"products":[]}' : `<script id="mdfrontw-state">${JSON.stringify(state)}</script>`};
+    }});
+    expect(requests).toBe(26);
+    expect(result.paginationExhausted).toBe(false);
+    expect(result.sourceReportedProductCount).toBe(501);
+    expect(result.errors).toContain("Massimo grid exceeds 500-product collection safety cap");
   });
 });

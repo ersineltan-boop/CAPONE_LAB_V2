@@ -268,7 +268,7 @@ async function paginateShopifyProductsJson(
     pagesTraversed = page;
 
     if (!result.ok || !result.data) {
-      if (page === 1) errors.push(result.error ?? `Failed ${url}`);
+      errors.push(result.error ?? `Failed ${url}`);
       break;
     }
 
@@ -332,7 +332,11 @@ export async function listShopifyCollections(
       if (page === 1) errors.push(result.error ?? `Failed ${url}`);
       break;
     }
-    const batch = result.data.collections ?? [];
+    if (!Array.isArray(result.data.collections)) {
+      errors.push(`Invalid Shopify collections payload: ${url}`);
+      break;
+    }
+    const batch = result.data.collections;
     if (batch.length === 0) break;
     for (const collection of batch) {
       if (!collection.handle) continue;
@@ -346,6 +350,7 @@ export async function listShopifyCollections(
       });
     }
     if (batch.length < 250) break;
+    if (page === 20) errors.push("Shopify collection listing page cap reached");
     await sleep(600);
   }
   return { collections, errors };

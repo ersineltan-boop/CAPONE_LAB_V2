@@ -11,7 +11,7 @@ import type { ModelFamily } from "../../modelFamily/types";
 import { buildBrandRegistryFromUniverseData } from "../../registry/build/buildBrandRegistry";
 import type { BrandProbeCacheFile, BrandUniverseEntry, BrandUniverseFile } from "../../registry/build/types";
 import { fullCatalogPassBlocker } from "../wave50/coverage";
-import { prepareBrandDelivery } from "../automation/delivery";
+import { applySourceAwareBrandReplacement, prepareBrandDelivery } from "../automation/delivery";
 import {
   atomicWriteJson,
   atomicWriteText,
@@ -27,7 +27,7 @@ export function officialCatalogPublishBlocker(
 ): string | null {
   if (!catalog || evidence.status !== "FULL") return evidence.blocker ?? "NOT_FULL";
   if (evidence.baselineNewArrivals !== 0) return "BASELINE_MARKED_NEW";
-  if (catalog.families.some((family) => family.isNew || family.variants.some((variant) => variant.isNew))) {
+  if (!evidence.refresh && catalog.families.some((family) => family.isNew || family.variants.some((variant) => variant.isNew))) {
     return "BASELINE_MARKED_NEW";
   }
   if (catalog.productUrls.length !== evidence.storefrontProductCount) return "STOREFRONT_TOTAL_NOT_RECONCILED";
@@ -98,13 +98,18 @@ export async function publishOfficialBrandCatalog(input: {
     ...manifest,
     shards: manifest.shards.filter((shard) => shard.file !== ownShard),
   });
-  for (const family of prepared.families) {
+  const previousFamilies = await readJsonFile<ModelFamily[]>(join(dir, file), []);
+  const replacement = applySourceAwareBrandReplacement(previousFamilies, {
+    slug: catalog.slug, brand: catalog.brand, officialUrl: catalog.officialUrl,
+    collectedAt: catalog.collectedAt, families: prepared.families,
+  });
+  const families = sortModelFamiliesForPersistence([...replacement.core, ...replacement.brandShard]);
+  for (const family of families) {
     if (ids.has(family.modelFamilyId)) {
       return { published: false, blocker: `DUPLICATE_MODEL_FAMILY:${family.modelFamilyId}`, families: 0 };
     }
   }
 
-  const families = sortModelFamiliesForPersistence(prepared.families);
   const body = JSON.stringify(families);
   const bytes = Buffer.byteLength(body, "utf8");
   if (bytes > MODEL_FAMILY_SHARD_MAX_BYTES) {
@@ -115,6 +120,7 @@ export async function publishOfficialBrandCatalog(input: {
   const universe = await readJsonFile<BrandUniverseFile>(universePath, { version: 1, brands: [] });
   const current = universe.brands.find((entry) => entry.id === catalog.slug);
   if (!current) return { published: false, blocker: "UNIVERSE_ENTRY_MISSING", families: 0 };
+  if (input.evidence.refresh && !current.isActive) return { published: false, blocker: "REFRESH_SOURCE_NOT_ACTIVE", families: 0 };
   const nextUniverse: BrandUniverseFile = {
     ...universe,
     generatedAt: catalog.collectedAt,

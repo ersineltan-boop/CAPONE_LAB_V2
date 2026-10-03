@@ -33,11 +33,24 @@ describe("Cecilie verified mixed New In collection", () => {
     expect(result.products[0]?.isNewArrivalsCollection).toBe(true);
     expect(result.products[0]?.sourceProductTags).toEqual(["ACCESSORIES"]);
   });
-  it("does not automatically crawl an unverified mixed New In collection", async () => {
+  it("discovers official mixed New In collections while still rejecting non-footwear", async () => {
     const config = brandToPilotSourceConfig(loadBrandRegistry().get("cecilie-bahnsen")!)!;
     delete config.verifiedNewArrivalPaths;
-    expect((await collectShopifyCollectionMembership(config)).crawledCollections).toEqual([]);
+    const result = await collectShopifyCollectionMembership(config);
+    expect(result.crawledCollections.map((collection) => collection.path)).toEqual(["/collections/new-in"]);
+    expect(result.products.map((product) => product.productName)).toEqual(["CBBLAISE | SOFT SNEAKERS NAVY"]);
+    expect(result.verifiedNewArrivalPaths).toEqual(["/collections/new-in"]);
   });
+  it("retires NEW after a complete empty listing discovered without manual pinning", async () => {
+    const config = brandToPilotSourceConfig(loadBrandRegistry().get("cecilie-bahnsen")!)!;
+    delete config.verifiedNewArrivalPaths;
+    const result = await collectShopifyCollectionMembership(config);
+    const old = result.products[0]!;
+    const empty = { ...result, products: [], crawledCollections: result.crawledCollections.map((collection) => ({ ...collection, productsCount: 0 })) };
+    expect(mergeVerifiedShopifyMembership(config, [old], empty)[0]?.isNewArrivalsCollection).toBe(false);
+    expect(mergeVerifiedShopifyMembership(config, [old], { ...empty, errors: ["Incomplete listing"] })).toEqual([old]);
+  });
+
   it("retires collection NEW on removed products but preserves their galleries and other sources", async () => {
     const config = brandToPilotSourceConfig(loadBrandRegistry().get("cecilie-bahnsen")!)!;
     const result = await collectShopifyCollectionMembership(config);

@@ -134,7 +134,7 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
     const colorways = family.variants.filter((variant) => !isNonFootwearCatalogItem({ title: variant.title }));
     if (colorways.length === 0) return [];
     const evidenceText = colorways.find((variant) => variant.isNew)?.newnessEvidence ?? null;
-    const newness = family.isNew && evidenceText === "NEW_ARRIVALS_COLLECTION"
+    const newness = family.isNew && (evidenceText === "NEW_ARRIVALS_COLLECTION" || evidenceText === "SOURCE_BADGE")
       ? {
           status: "VERIFIED_NEW" as const,
           evidenceType: evidenceText,
@@ -142,7 +142,7 @@ export function waveFamiliesToModelFamilies(catalog: WaveCatalog): ModelFamily[]
           lastVerifiedAt: catalog.collectedAt,
           effectiveNewAt: catalog.collectedAt,
           evidenceUrl: colorways.find((variant) => variant.isNew)?.productUrl ?? null,
-          evidenceText: "Resmi New Arrivals koleksiyonu",
+          evidenceText: evidenceText === "SOURCE_BADGE" ? "Resmi kaynak NEW etiketi" : "Resmi New Arrivals koleksiyonu",
           confidence: 0.9,
         }
       : createNotVerifiedNewness();

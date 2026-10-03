@@ -1,4 +1,4 @@
-import { access, writeFile } from "node:fs/promises";
+import { access, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -16,10 +16,15 @@ const now = new Date().toISOString();
 const evidence: OfficialBrandEvidence[] = [];
 const published: string[] = [];
 
-for (const target of OFFICIAL_SHOPIFY_BRAND_TARGETS) {
+const refreshOnly = process.argv.includes("--refresh-only");
+const excludeIndex = process.argv.indexOf("--exclude");
+const excluded = new Set(excludeIndex >= 0 ? (process.argv[excludeIndex + 1] ?? "").split(",") : []);
+const universe = JSON.parse(await readFile(join(root, "data/registry/brand-universe.json"), "utf8")) as { brands: Array<{ id: string; isActive: boolean }> };
+const active = new Set(universe.brands.filter((brand) => brand.isActive).map((brand) => brand.id));
+for (const target of OFFICIAL_SHOPIFY_BRAND_TARGETS.filter((item) => !excluded.has(item.slug) && (!refreshOnly || active.has(item.slug)))) {
   process.stdout.write(`collect ${target.slug}\n`);
   try {
-    const result = await collectOfficialShopifyBrand(target, http, now);
+    const result = await collectOfficialShopifyBrand(target, http, now, { refresh: active.has(target.slug) });
     let publishBlocker: string | null = result.evidence.blocker;
     if (result.evidence.status === "FULL") {
       const delivery = await publishOfficialBrandCatalog({

@@ -97,7 +97,7 @@ export function planWomensCollections(
   } else {
     const matching = collections.filter(
       (collection) =>
-        isWomensNewArrivalsCollection(collection.handle, collection.title) && collection.productsCount > 0,
+        isWomensNewArrivalsCollection(collection.handle, collection.title),
     );
     const roots = matching.filter((collection) => NEW_ARRIVAL_ROOTS.has(collection.handle.toLowerCase()));
     const chosen = roots.length > 0

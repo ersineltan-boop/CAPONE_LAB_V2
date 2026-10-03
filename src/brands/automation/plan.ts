@@ -51,6 +51,7 @@ export function buildBrandAutomationPlan(input: {
   lastGoodSlugs: ReadonlySet<string>;
   only?: readonly string[];
   limit?: number;
+  refreshOnly?: boolean;
 }): BrandAutomationPlan {
   const skipped: BrandAutomationPlan["skipped"] = [];
   const bySlug = new Map(input.universe.brands.map((entry) => [entry.id, entry]));
@@ -80,6 +81,10 @@ export function buildBrandAutomationPlan(input: {
     const universeEntry = bySlug.get(queued.slug);
     if (!universeEntry) {
       skipped.push({ slug: queued.slug, reason: "UNIVERSE_ENTRY_REQUIRED" });
+      continue;
+    }
+    if (input.refreshOnly && !universeEntry.isActive) {
+      skipped.push({ slug: queued.slug, reason: "REFRESH_ONLY_SOURCE_NOT_ACTIVE" });
       continue;
     }
     const adapter = input.adapters.adapters[queued.slug];

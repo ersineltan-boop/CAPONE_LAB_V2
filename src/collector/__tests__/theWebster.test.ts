@@ -236,3 +236,13 @@ describe("The Webster construction evidence boundaries", () => {
     expect(theWebsterRawProductToPilot({...raw, body_html}, "2026-09-28")).toBeNull();
   });
 });
+
+
+it("retains only explicit retailer NEW labels when refreshing The Webster", () => {
+  const raw = { id: 1, title: "Le Coeur Slingback Pumps", handle: "le-coeur-pumps", vendor: "Alaia",
+    product_type: "Shoes", tags: ["women", "pumps", "New In"],
+    images: [{ src: "https://cdn.example/pump.jpg" }] };
+  expect(theWebsterRawProductToPilot(raw, "2026-10-03", true)?.hasNewBadge).toBe(true);
+  expect(theWebsterRawProductToPilot(raw, "2026-10-03")?.hasNewBadge).toBe(false);
+  expect(theWebsterRawProductToPilot({ ...raw, tags: ["women", "pumps", "New York", "new leather design"] }, "2026-10-03", true)?.hasNewBadge).toBe(false);
+});

@@ -21,6 +21,7 @@ import { loadBrandRegistry } from "../registry/data/index";
 import { brandToPilotSourceConfig } from "../registry/collection/brandToCollector";
 import { loadMarketplaceRegistry } from "../registry/data/marketplaces";
 import { MARKETPLACE_PROBE_CANDIDATES } from "../registry/marketplaceProbe";
+import { preserveSourceBeforeFailedMembership } from "./catalogRetention";
 import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { buildSourceCoverageReport } from "../source/buildCoverageReport";
 import {
@@ -83,6 +84,7 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
   console.log(`Active marketplaces: ${plan.marketplaces.map((item) => item.name).join(", ") || "(none)"}`);
   console.log("Excluded: OpenAI, Vision, taxonomy-vision, Radar");
 
+  const previousProducts = await readJson<PilotProduct[]>(PRODUCTS_PATH, []);
   const brandReport = await runMultibrandCollection({
     mode: "full",
     brandIds: plan.brands.map((brand) => brand.id),
@@ -133,7 +135,9 @@ export async function runCloudRefresh(): Promise<CloudRefreshSummary> {
   for (const brand of plan.membershipBrands) {
     const membership = await refreshBrandMembership(brand.id, brand.brand, products);
     outcomes.push(membership.outcome);
-    products = membership.products;
+    products = membership.outcome.status === "failed" || membership.outcome.status === "partial"
+      ? preserveSourceBeforeFailedMembership(membership.products, previousProducts, brand.id)
+      : membership.products;
   }
 
   await writeJson(PRODUCTS_PATH, products);

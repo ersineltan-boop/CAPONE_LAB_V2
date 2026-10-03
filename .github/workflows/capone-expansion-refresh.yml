@@ -1,15 +1,8 @@
-# Sunday/Wednesday 06:15 Türkiye (03:15 UTC). Approved partial catalogs only.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 name: CAPONE expansion brand refresh
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  schedule:
-    - cron: "15 3 * * 0,3"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/capone-expansion-refresh.yml
-      - scripts/refresh-expansion-brands.ts
-      - src/onboarding/expansionRefresh.ts
 concurrency:
   group: capone-catalog-automation
   queue: max

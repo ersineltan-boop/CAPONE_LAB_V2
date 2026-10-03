@@ -4,6 +4,8 @@ import { dirname } from "node:path";
 import { fetchJson, fetchText, sleep } from "./http";
 import { mergeProductCatalog } from "./mergeProducts";
 import { shopifyProductToPilot } from "./shopify";
+import { detectNewBadgeInText } from "../newArrivals/detectNewness";
+import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
 import type { PilotProduct, PilotSourceConfig } from "./types";
 
 export const THE_WEBSTER_ID = "the-webster";
@@ -137,6 +139,7 @@ export function extractTheWebsterFootwearType(raw: TheWebsterRawProduct): string
 export function theWebsterRawProductToPilot(
   raw: TheWebsterRawProduct,
   discoveredAt: string,
+  refresh = false,
 ): PilotProduct | null {
   const vendor = normalizeBrand(raw.vendor);
   if (!vendor || isTheWebsterExcludedBrand(vendor)) return null;
@@ -169,7 +172,7 @@ export function theWebsterRawProductToPilot(
     brand: vendor,
     color: vendorColor ?? (isTheWebsterSizeValue(product.color) ? null : product.color),
     isNewArrivalsCollection: false,
-    hasNewBadge: false,
+    hasNewBadge: refresh && detectNewBadgeInText(...(Array.isArray(raw.tags) ? raw.tags : (raw.tags ?? "").split(","))),
   };
 }
 
@@ -226,11 +229,37 @@ export async function collectTheWebster(): Promise<TheWebsterCollectResult> {
       excludedBrands.add(normalizeBrand(raw.vendor));
       continue;
     }
-    const product = theWebsterRawProductToPilot(raw, collectedAt);
+    const product = theWebsterRawProductToPilot(raw, collectedAt, true);
     if (product) mapped.push(product);
   }
 
   const products = mergeProductCatalog([], mapped);
+  if (products.length > 0) {
+    try {
+      const membership = await collectShopifyCollectionMembership({
+        id: THE_WEBSTER_ID, brand: "The Webster", baseUrl: THE_WEBSTER_BASE_URL,
+        collectionPaths: [THE_WEBSTER_WOMEN_SHOES_PATH], verifiedFootwearPaths: [THE_WEBSTER_WOMEN_SHOES_PATH],
+        maxProducts: 10_000, collectMode: "full",
+      }, { knownProductUrls: products.map((product) => product.productUrl), onlyNewCollections: true });
+      errors.push(...membership.errors);
+      if (!membership.verifiedNewArrivalPaths?.every((path) => membership.crawledCollections.some((collection) => collection.path === path))) {
+        errors.push("The Webster NEW collection scan incomplete");
+      }
+      if (!membership.verifiedNewArrivalPaths?.length) errors.push("No verified The Webster New Arrivals collection discovered");
+      if (errors.length === 0) {
+        const newUrls = new Set(membership.products.filter((product) => product.isNewArrivalsCollection)
+          .map((product) => product.productUrl.toLowerCase().replace(/\/$/, "")));
+        const evidenceByUrl = new Map(membership.products.filter((product) => product.isNewArrivalsCollection)
+          .map((product) => [product.productUrl.toLowerCase().replace(/\/$/, ""), product]));
+        for (const product of products) {
+          const key = product.productUrl.toLowerCase().replace(/\/$/, "");
+          product.isNewArrivalsCollection = newUrls.has(key);
+          const evidence = evidenceByUrl.get(key);
+          if (evidence) { product.collectionPath = evidence.collectionPath; product.collectionLabel = evidence.collectionLabel; }
+        }
+      }
+    } catch (error) { errors.push(String(error)); }
+  }
   const rawCollected = rawByHandle.size;
   const eligibleTotal =
     sourceTotal == null ? null : Math.max(0, sourceTotal - excludedByPolicy);
@@ -250,7 +279,7 @@ export async function collectTheWebster(): Promise<TheWebsterCollectResult> {
     paginationExhausted &&
     sourceTotal != null &&
     rawCollected >= sourceTotal &&
-    missing === 0
+    missing === 0 && errors.length === 0
   ) {
     status = "FULL";
   }
@@ -270,7 +299,7 @@ export async function collectTheWebster(): Promise<TheWebsterCollectResult> {
       productsWithImages: products.filter(
         (product) => Boolean(product.imageUrl) || (product.images?.length ?? 0) > 0,
       ).length,
-      verifiedNewProducts: 0,
+      verifiedNewProducts: products.filter((product) => product.isNewArrivalsCollection || product.hasNewBadge).length,
       pagesTraversed,
       paginationExhausted,
       status,

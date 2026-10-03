@@ -64,6 +64,7 @@ const report = await runBrandAutomation({
   root: ROOT,
   http: liveHttp(),
   dryRun: process.argv.includes("--dry-run"),
+  refreshOnly: process.argv.includes("--refresh-only"),
   limit,
   only: only.length > 0 ? only : undefined,
 });

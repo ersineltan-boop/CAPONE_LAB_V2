@@ -1,3 +1,7 @@
+import { planWomensCollections } from "../wave50/collections";
+import { listAllShopifyCollections, paginateCollectionProducts } from "../wave50/shopifyAdapter";
+import { assignProductNewness } from "../wave50/newness";
+import { detectNewBadgeInText } from "../../newArrivals/detectNewness";
 import { normalizeProductImageUrls } from "../../images/resolveImageQuality";
 import type { FootwearCategory } from "../../collector/types";
 import { classifyWomensFootwear } from "../wave50/footwearScope";
@@ -76,6 +80,8 @@ export interface OfficialBrandEvidence {
   refreshCommand: string;
   periodicRefresh: true;
   lastGoodRetained?: boolean;
+  refresh?: boolean;
+  verifiedNewArrivals?: number;
   note: string;
 }
 
@@ -212,6 +218,7 @@ export async function collectOfficialShopifyBrand(
   target: OfficialBrandTarget,
   http: OfficialHttp,
   now: string,
+  options: { refresh?: boolean } = {},
 ): Promise<OfficialCollectResult> {
   const sourceUrls = target.collections.map((collection) => collectionUrl(target, collection.handle));
   const reasons: Record<string, number> = {};
@@ -257,7 +264,12 @@ export async function collectOfficialShopifyBrand(
         errors.push(`${collection.handle} page ${page}: ${payload.error ?? "NO_JSON"}`);
         break;
       }
-      const batch = (payload.data as { products?: ShopifyProduct[] }).products ?? [];
+      const batch = (payload.data as { products?: ShopifyProduct[] }).products;
+      if (!Array.isArray(batch)) {
+        paginationExhausted = false;
+        errors.push(`${collection.handle} page ${page}: INVALID_PRODUCTS_PAYLOAD`);
+        break;
+      }
       if (batch.length === 0) {
         if (page === 1) paginationExhausted = displayed === 0;
         break;
@@ -284,6 +296,33 @@ export async function collectOfficialShopifyBrand(
     if (pageNew === 0 && displayed !== 0) paginationExhausted = false;
   }
 
+  const newArrivalHandles = new Set<string>();
+  let newArrivalsPaths: string[] = [];
+  if (options.refresh) {
+    const adapter = { async fetch(url: string) {
+      const response = await http.fetchText(url);
+      let data: unknown = null;
+      try { data = JSON.parse(response.text); } catch { /* Malformed evidence blocks promotion. */ }
+      return { ...response, data };
+    } };
+    const base = `${target.origin}${target.localePath}`;
+    const listed = await listAllShopifyCollections(adapter, base);
+    if (listed.error) { paginationExhausted = false; errors.push(`NEW discovery: ${listed.error}`); }
+    const paths = planWomensCollections(listed.collections).newArrivalsPaths;
+    newArrivalsPaths = paths.map((path) => `${target.localePath}${path}`);
+    for (const path of paths) {
+      const scan = await paginateCollectionProducts(adapter, base, path);
+      pagesVisited += scan.pages;
+      if (!scan.exhausted || scan.error) {
+        paginationExhausted = false;
+        errors.push(`NEW ${path}: ${scan.error ?? "NOT_EXHAUSTED"}`);
+      }
+      for (const product of scan.products) {
+        if (product.handle) newArrivalHandles.add(product.handle.trim().toLowerCase());
+      }
+    }
+  }
+
   const footwear: FamilyProduct[] = [];
   for (const { product, sourceUrl } of byId.values()) {
     const handle = product.handle?.trim();
@@ -306,6 +345,11 @@ export async function collectOfficialShopifyBrand(
     }
     const images = productImages(product);
     if (images.length === 0) bump(reasons, "missing-gallery");
+    const inNewArrivals = Boolean(options.refresh && newArrivalHandles.has(handle.toLowerCase()));
+    const newness = assignProductNewness({
+      productUrl: `${target.origin}${target.localePath}/products/${handle}`,
+      inNewArrivals, hasNewBadge: Boolean(options.refresh && detectNewBadgeInText(...tags)),
+    }, null);
     footwear.push({
       handle,
       productUrl: `${target.origin}${target.localePath}/products/${handle}`,
@@ -316,9 +360,9 @@ export async function collectOfficialShopifyBrand(
       category: scope.category,
       productType: product.product_type ?? "",
       tags,
-      inNewArrivals: false,
-      isNew: false,
-      newnessEvidence: null,
+      inNewArrivals,
+      isNew: newness.isNew,
+      newnessEvidence: newness.newnessEvidence,
     });
   }
 
@@ -333,7 +377,7 @@ export async function collectOfficialShopifyBrand(
   const reconciled = displayedTotal != null && paginationExhausted && byId.size === displayedTotal;
   const cleanFootwear = footwear.length === byId.size && galleryComplete === footwear.length && footwear.length > 0;
   const taxonomyPassed = families.length > 0 && families.every((family) => Boolean(family.category));
-  const full = reconciled && cleanFootwear && taxonomyPassed && families.every((family) => !family.isNew);
+  const full = reconciled && cleanFootwear && taxonomyPassed && (options.refresh || families.every((family) => !family.isNew));
   const status = full ? "FULL" : byId.size > 0 ? "PARTIAL" : "FAILED";
   const blocker = full
     ? null
@@ -373,9 +417,9 @@ export async function collectOfficialShopifyBrand(
         snapshotId: `${target.slug}:${now}`,
         collectedAt: now,
         catalogPaths: target.collections.map((collection) => `${target.localePath}/collections/${collection.handle}`),
-        newArrivalsPaths: [],
+        newArrivalsPaths,
         coverage,
-        newArrivalsFootwear: 0,
+        newArrivalsFootwear: footwear.filter((product) => product.inNewArrivals).length,
         referenceFootwearTotal: displayedTotal,
         referenceNewArrivals: null,
         referenceFootwearMatch: true,
@@ -403,10 +447,12 @@ export async function collectOfficialShopifyBrand(
       status,
       paginationExhausted,
       baselineNewArrivals: 0,
+      refresh: options.refresh ?? false,
+      verifiedNewArrivals: footwear.filter((product) => product.isNew).length,
       blocker: errors.length && !full ? `${blocker}: ${errors.join("; ")}` : blocker,
       refreshCommand: target.refreshCommand ?? OFFICIAL_SHOPIFY_REFRESH_COMMAND,
       periodicRefresh: true,
-      note: "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
+      note: options.refresh ? "Active refresh checks official NEW membership and standalone badges. A failed NEW scan retains the previous delivery." : "Initial import is a baseline and is not marked as New Arrivals. collection.products_count is recorded separately and is not the storefront total when it disagrees. Refresh uses the Sunday/Wednesday guarded new-source workflow.",
     },
   };
 }

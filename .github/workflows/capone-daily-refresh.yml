@@ -1,26 +1,9 @@
-# Sunday/Wednesday CAPONE data refresh.
-# Schedule: 07:00 Türkiye time = 04:00 UTC (UTC+3, no DST).
-#
-# Safety contract:
-# - collect into staging
-# - run full tests and production build
-# - stage only allow-listed refresh data
-# - require a Vercel Preview before automatically merging validated data
-# - never overwrite last-good after a failed/partial collect
-#
-# No OPENAI_API_KEY is used.
+# Manual recovery workflow; automatic work runs in the consolidated refresh cycle.
 
 name: CAPONE scheduled refresh
 
+# Automatic refresh is owned exclusively by capone-refresh-cycle.yml.
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/capone-daily-refresh.yml"
-      - "scripts/stage-cloud-refresh-data.ts"
-      - "src/refresh/runCloudRefresh.ts"
-  schedule:
-    - cron: "0 4 * * 0,3"
   workflow_dispatch:
 
 concurrency:

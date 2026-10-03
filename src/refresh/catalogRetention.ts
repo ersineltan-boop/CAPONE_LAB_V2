@@ -1,3 +1,5 @@
+import type { PilotProduct } from "../collector/types";
+
 export const MINIMUM_RETAINED_MODELS = 0.6;
 
 export function retainedModelCountBlocker(previous: number, proposed: number, source: string): string | null {
@@ -8,4 +10,16 @@ export function retainedModelCountBlocker(previous: number, proposed: number, so
     return `${source}: ${proposed} models would replace ${previous} last-good models`;
   }
   return null;
+}
+
+/** A failed membership check must retain the pre-run source, including NEW evidence. */
+export function preserveSourceBeforeFailedMembership(
+  catalog: readonly PilotProduct[],
+  previous: readonly PilotProduct[],
+  source: string,
+): PilotProduct[] {
+  return [
+    ...catalog.filter((product) => product.source !== source),
+    ...previous.filter((product) => product.source === source),
+  ];
 }
