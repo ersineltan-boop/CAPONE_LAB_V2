@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-03T15:59:17.285Z",
-  "digerCount": 443,
-  "totalFamilies": 17409,
+  "generatedAt": "2026-10-04T09:43:46.787Z",
+  "digerCount": 384,
+  "totalFamilies": 17524,
   "reasonCounts": {
-    "MISSING_SOURCE_CATEGORY": 49,
-    "GENERIC_SOURCE_CATEGORY": 162,
+    "MISSING_SOURCE_CATEGORY": 36,
+    "GENERIC_SOURCE_CATEGORY": 149,
     "CONFLICTING_SOURCE_CATEGORIES": 2,
-    "UNMAPPED_SOURCE_CATEGORY": 230,
+    "UNMAPPED_SOURCE_CATEGORY": 197,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -60,24 +60,6 @@
       "brand": "adidas",
       "sourceCategories": [
         "Sports & Performance"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-suede-vienne-ballerinas-brown-suede-women-ballerinas-kokmme-html-unclassified-base",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "ala-a--id-level-shoes-ala-a-vienne-slippers-black-suede-women-slippers-ghbsba-html-unclassified-base",
-      "brand": "Alaïa",
-      "sourceCategories": [
-        "Slippers"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -318,114 +300,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "carel--handle-carel-azur-derbies-cuir-et-unclassified-base-azur",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes Les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-beige-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-bi-bleu-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-jane-basket-cuir-velours-bi-marron-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-kaia-babies-compensees-cuir-verni-noir-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-sonia-derbies-cuir-noir-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-starter-bottes-cuir-velours-marron-avec-brides-vernies-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--id-shopify-carel-thalia-bottes-cuir-noir-a-boucle-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-gioia-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-lucca-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-malaga-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "carel--name-carel-vittoria-unclassified-base",
-      "brand": "CAREL",
-      "sourceCategories": [
-        "Toutes les Chaussures"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "casa-clara--id-free-people-102888559-unclassified-base",
       "brand": "Casa Clara",
       "sourceCategories": [
@@ -620,54 +494,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-comfort-cushion-pads-clear-unclassified-base",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "Shoes View All",
-        "VIEW ALL"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-comfort-pads-clear-unclassified-base",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "Shoes View All",
-        "VIEW ALL"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-gold-bow-charm-package-assorted-unclassified-base",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "SHOE CHARMS"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-pearl-charm-package-assorted-unclassified-base",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "SHOE CHARMS"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-safe-step-pads-black-unclassified-base",
-      "brand": "DOLCE VITA",
-      "sourceCategories": [
-        "Shoes View All",
-        "VIEW ALL"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "dr-martens--id-free-people-98844277-unclassified-base",
       "brand": "Dr. Martens",
       "sourceCategories": [
@@ -767,36 +593,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flattered--id-shopify-flattered-anna-unclassified-base",
-      "brand": "FLATTERED",
-      "sourceCategories": [
-        "All Shoes",
-        "All Shoes For Tax",
-        "Full Priced Collection Copy",
-        "Full Priced Collection ex. Shoe Care, Socks",
-        "tax:clothing"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flattered--id-shopify-flattered-cara-sand-suede-unclassified-base",
-      "brand": "FLATTERED",
-      "sourceCategories": [
-        "All Shoes For Tax",
-        "tax:clothing"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "flattered--id-shopify-flattered-polly-leather-unclassified-base",
-      "brand": "FLATTERED",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "fp-collection--id-free-people-103123402-unclassified-base",
@@ -1082,156 +878,6 @@
       "brand": "Gucci",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--handle-hereu-esportiu-woven-lace-up-sporty-shoe-unclassified-braided-laceup-esportiu",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women Sport Shoes",
-        "Women's Shoes",
-        "Women's Slim Sport Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--handle-hereu-plegada-shiny-deconstructed-lace-up-shoe-unclassified-laceup-plegada-shiny",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's New In Shoes",
-        "Women's Pre-Fall 2026",
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens New In",
-        "Womens New In Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--handle-hereu-tilla-suede-deconstructed-suede-babouche-unclassified-base-tilla",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--handle-hereu-tilla-supple-shiny-deconstructed-babouche-unclassified-base-tilla-supple-shiny",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-crinkled-glossy-deconstructed-lace-up-shoe-black-unclassified-laceup",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-shiny-for-all-deconstructed-lace-up-shoe-black-1-unclassified-laceup",
-      "brand": "HEREU",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--id-shopify-hereu-plegada-suede-deconstructed-lace-up-shoe-dark-brown-unclassified-laceup",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Women's New In Shoes",
-        "Women's Pre-Fall 2026",
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens New In",
-        "Womens New In Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-hereu-birla-chukka-unclassified-braided",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Slim Sport Shoes",
-        "Sport Shoes",
-        "Women's New In Shoes",
-        "Women's Pre-Fall 2026",
-        "Women's Shoes",
-        "Women's Slim Sport Shoes",
-        "Women's Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-hereu-birla-unclassified-braided",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "Slim Sport Shoes",
-        "Sport Shoes",
-        "Women Sport Shoes",
-        "Women's New In Shoes",
-        "Women's Pre-Fall 2026",
-        "Women's Shoes",
-        "Women's Slim Sport Shoes",
-        "Women's Soft Shoes",
-        "Womens New In",
-        "Womens New In Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-hereu-esportiu-unclassified-braided-laceup",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "New In Shoes For All",
-        "Slim Sport Shoes",
-        "Sport Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "hereu--name-hereu-juliol-lace-up-unclassified-laceup",
-      "brand": "HEREU",
-      "sourceCategories": [
-        "SHOES SELECTION - POPUP",
-        "Women's New In Shoes",
-        "Women's Shoes",
-        "Women's Soft Shoes",
-        "Womens New In Shoes",
-        "Womens Shoes",
-        "Womens Soft Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1525,16 +1171,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "larroude--id-shopify-larroude-cyprus-boat-shoe-cand-unclassified-base",
-      "brand": "LARROUDE",
-      "sourceCategories": [
-        "All Shoes",
-        "New Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "le-monde-beryl--id-level-shoes-le-monde-beryl-luna-slippers-beige-leather-women-ballerinas-jx2ckh-html-unclassified-base",
       "brand": "Le Monde Beryl",
       "sourceCategories": [
@@ -1542,318 +1178,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--id-shopify-lemaire-anatomic-slip-on-men-bk999-black-ll0042-shiny-buffalo-leather-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--id-shopify-lemaire-flat-piped-slippers-men-black-dark-chocolate-shiny-nappa-lamb-fo0290-ll0023-mu096-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--id-shopify-lemaire-flat-piped-slippers-women-mu096-black-dark-chocolate-ll0023-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--id-shopify-lemaire-glove-slip-on-men-bk916-beige-grey-ll0259-2-tone-hairy-lamb-leather-fo0299-ll0259-bk916-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "New Arrivals Shoes W",
-        "Shoes",
-        "Shoes New Arrivals",
-        "Women Shoes",
-        "Women Shoes New Arrivals"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--id-shopify-lemaire-glove-slip-on-unisex-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0299-ll0023-br490-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "New Arrivals Shoes W",
-        "Shoes",
-        "Shoes New Arrivals",
-        "Women Shoes",
-        "Women Shoes New Arrivals"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-outdoor-slippers-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-piped-crepe-slippers-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-runner-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-runners-unclassified-lite",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-souris-flat-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "lemaire--name-lemaire-vibram-glove-slip-on-unclassified-base",
-      "brand": "LEMAIRE",
-      "sourceCategories": [
-        "Shoes",
-        "Women Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--handle-luis-onofre-davos-unclassified-base-davos",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-brandy-alexander-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-h20388-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "New Arrivals"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0681-03-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0691-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0803-02-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0679-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0680-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0785-01-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0785-02-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1058-01-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1059-02-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1059-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-klosters-black-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-mocassin2-01-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-shesh-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-spark-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-wengen-black-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-baltasar-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-corretto-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-cozy-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-lungo-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-lusco-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [
-        "All Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-nitro-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-pocillo-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "luis-onofre--name-luis-onofre-toulon-unclassified-base",
-      "brand": "LUIS ONOFRE",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "magnanni--id-level-shoes-magnanni-sofia-slippers-black-suede-women-slippers-6sckwh-html-unclassified-base",
@@ -1917,52 +1241,6 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "manu-atelier--id-shopify-manu-atelier-15-woven-leather-slippers-water-green-unclassified-braided",
-      "brand": "MANU ATELIER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "manu-atelier--id-shopify-manu-atelier-15-woven-leather-slippers-white-black-unclassified-braided",
-      "brand": "MANU ATELIER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "manu-atelier--id-shopify-manu-atelier-beste-slippers-mocha-suede-unclassified-base",
-      "brand": "MANU ATELIER",
-      "sourceCategories": [
-        "Beste Slippers",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "manu-atelier--id-shopify-manu-atelier-freya-xx-white-unclassified-base",
-      "brand": "MANU ATELIER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "manu-atelier--id-shopify-manu-atelier-rey-xx-black-unclassified-base",
-      "brand": "MANU ATELIER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "margaux--name-margaux-the-paz-unclassified-braided",
@@ -2664,66 +1942,6 @@
       "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "sophia-webster--handle-sophia-webster-grace-platform-unclassified-platform-grace-platform",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-my-book-oh-my-gosh-i-love-your-shoes-unclassified-base",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--name-sophia-webster-blair-flat-unclassified-base",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Flats",
-        "Sale Flats",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--name-sophia-webster-blair-slipper-unclassified-base",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Flats",
-        "Sale Flats",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--name-sophia-webster-butterfly-flat-unclassified-base",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Flats",
-        "Sale Flats",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "sophia-webster--name-sophia-webster-chiara-flat-unclassified-base",
-      "brand": "SOPHIA WEBSTER",
-      "sourceCategories": [
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "sophique--id-level-shoes-sophique-dama-slippers-brown-leather-women-slippers-wkod8n-html-unclassified-base",
       "brand": "SOPHIQUE",
       "sourceCategories": [
@@ -2800,50 +2018,6 @@
       "brand": "St Agni",
       "sourceCategories": [
         "Slippers"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "st-agni--id-shopify-st-agni-classic-slip-on-flat-black-unclassified-base",
-      "brand": "ST. AGNI",
-      "sourceCategories": [
-        "Flats",
-        "Footwear",
-        "Sale Footwear"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "st-agni--id-shopify-st-agni-perforated-square-toe-flat-black-unclassified-base",
-      "brand": "ST. AGNI",
-      "sourceCategories": [
-        "Flats",
-        "Footwear",
-        "Sale Footwear"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "st-agni--name-st-agni-90s-square-toe-flat-unclassified-base",
-      "brand": "ST. AGNI",
-      "sourceCategories": [
-        "Flats",
-        "Footwear",
-        "Sale Footwear"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "st-agni--name-st-agni-pli-flat-unclassified-base",
-      "brand": "ST. AGNI",
-      "sourceCategories": [
-        "Flats",
-        "Footwear",
-        "Sale Footwear"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -3827,6 +3001,54 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-comfort-cushion-pads-clear-unclassified-base",
+      "brand": "DOLCE VITA",
+      "sourceCategories": [
+        "Shoes View All",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-comfort-pads-clear-unclassified-base",
+      "brand": "DOLCE VITA",
+      "sourceCategories": [
+        "Shoes View All",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-gold-bow-charm-package-assorted-unclassified-base",
+      "brand": "DOLCE VITA",
+      "sourceCategories": [
+        "SHOE CHARMS"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-pearl-charm-package-assorted-unclassified-base",
+      "brand": "DOLCE VITA",
+      "sourceCategories": [
+        "SHOE CHARMS"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "dolce-vita--id-shopify-dolce-vita-safe-step-pads-black-unclassified-base",
+      "brand": "DOLCE VITA",
+      "sourceCategories": [
+        "Shoes View All",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "ex--id-shopify-exe-sandalias-abf-97-riga-230-white-copia-unclassified-base",
       "brand": "EXÉ",
       "sourceCategories": [
@@ -3857,11 +3079,54 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "freda-salvador--id-shopify-freda-salvador-paisley-amber-velvet-unclassified-base",
-      "brand": "FREDA SALVADOR",
+      "modelFamilyId": "flattered--id-shopify-flattered-cara-sand-suede-unclassified-base",
+      "brand": "FLATTERED",
+      "sourceCategories": [
+        "All Shoes For Tax",
+        "tax:clothing"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "flattered--id-shopify-flattered-polly-leather-unclassified-base",
+      "brand": "FLATTERED",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hereu--id-shopify-hereu-plegada-shiny-for-all-deconstructed-lace-up-shoe-black-1-unclassified-laceup",
+      "brand": "HEREU",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hereu--name-hereu-birla-chukka-unclassified-braided",
+      "brand": "HEREU",
+      "sourceCategories": [
+        "Slim Sport Shoes",
+        "Sport Shoes",
+        "Women's New In Shoes",
+        "Women's Pre-Fall 2026",
+        "Women's Shoes",
+        "Women's Slim Sport Shoes",
+        "Women's Soft Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "hereu--name-hereu-esportiu-unclassified-braided-laceup",
+      "brand": "HEREU",
+      "sourceCategories": [
+        "New In Shoes For All",
+        "Slim Sport Shoes",
+        "Sport Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "khaite--handle-khaite-milly-flat-in-unclassified-base-milly-flat",
@@ -3959,83 +3224,237 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-black-leather-boat-shoe-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-cacao-green-boat-shoe-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-franco-espresso-butter-boat-shoe-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-marky-brown-white-gingham-slipper-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-noa-brown-cream-linen-bow-flat-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-noa-leopard-velvet-bow-flat-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-raina-caramel-black-mesh-flat-unclassified-mesh",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--id-shopify-loeffler-randall-raina-zebra-mesh-flat-unclassified-mesh",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--name-loeffler-randall-noa-moir-bow-flat-unclassified-base",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "loeffler-randall--name-loeffler-randall-raina-flat-unclassified-mesh",
-      "brand": "LOEFFLER RANDALL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "maison-margiela--id-url-https-www-maisonmargiela-com-en-us-tabi-jazz-slipper-s58wr0126pr869t8013-html-unclassified-base",
-      "brand": "MAISON MARGIELA",
+      "modelFamilyId": "lemaire--id-shopify-lemaire-anatomic-slip-on-men-bk999-black-ll0042-shiny-buffalo-leather-unclassified-base",
+      "brand": "LEMAIRE",
       "sourceCategories": [
-        "Moccasins"
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "lemaire--id-shopify-lemaire-flat-piped-slippers-men-black-dark-chocolate-shiny-nappa-lamb-fo0290-ll0023-mu096-unclassified-base",
+      "brand": "LEMAIRE",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "lemaire--id-shopify-lemaire-glove-slip-on-men-bk916-beige-grey-ll0259-2-tone-hairy-lamb-leather-fo0299-ll0259-bk916-unclassified-base",
+      "brand": "LEMAIRE",
+      "sourceCategories": [
+        "New Arrivals Shoes W",
+        "Shoes",
+        "Shoes New Arrivals",
+        "Women Shoes",
+        "Women Shoes New Arrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "lemaire--id-shopify-lemaire-glove-slip-on-unisex-br490-dark-chocolate-ll0023-shiny-nappa-lamb-fo0299-ll0023-br490-unclassified-base",
+      "brand": "LEMAIRE",
+      "sourceCategories": [
+        "New Arrivals Shoes W",
+        "Shoes",
+        "Shoes New Arrivals",
+        "Women Shoes",
+        "Women Shoes New Arrivals"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--handle-luis-onofre-davos-unclassified-base-davos",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-brandy-alexander-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-h20388-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "New Arrivals"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0681-03-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0691-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hb0803-02-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0679-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0680-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0785-01-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs0785-02-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1058-01-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1059-02-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-hs1059-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-klosters-black-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-mocassin2-01-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-shesh-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--id-shopify-luis-onofre-wengen-black-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-baltasar-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-corretto-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-cozy-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-lungo-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-lusco-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [
+        "All Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-nitro-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-pocillo-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "luis-onofre--name-luis-onofre-toulon-unclassified-base",
+      "brand": "LUIS ONOFRE",
+      "sourceCategories": [],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "malone-souliers--id-shopify-malone-souliers-maureen-flat-unclassified-base",
@@ -4077,18 +3496,22 @@
       "reason": "CONFLICTING_SOURCE_CATEGORIES"
     },
     {
-      "modelFamilyId": "sarah-flint--handle-sarah-flint-sarah-flint-x-mary-orton-cap-toe-unclassified-base-sarah-flint-x-mary-orton-perfect-cap-toe-flat",
-      "brand": "SARAH FLINT",
-      "sourceCategories": [],
+      "modelFamilyId": "sophia-webster--id-shopify-sophia-webster-my-book-oh-my-gosh-i-love-your-shoes-unclassified-base",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Shoes"
+      ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "sarah-flint--name-sarah-flint-fireside-house-shoe-unclassified-base",
-      "brand": "SARAH FLINT",
-      "sourceCategories": [],
+      "modelFamilyId": "sophia-webster--name-sophia-webster-chiara-flat-unclassified-base",
+      "brand": "SOPHIA WEBSTER",
+      "sourceCategories": [
+        "Shoes"
+      ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "staud--id-shopify-staud-custom-abby-slipper-cream-unclassified-base",
@@ -4186,10 +3609,9 @@
   "topUnmappedSourceCategories": [
     {
       "sourceCategory": "Slippers",
-      "count": 113,
+      "count": 111,
       "brands": [
         "ALMA RAE",
-        "Alaïa",
         "Axel Arigato",
         "Badgley Mischka",
         "Balenciaga",
@@ -4232,20 +3654,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flats",
-      "count": 20,
-      "brands": [
-        "KHAITE",
-        "MARGAUX",
-        "PAZZION",
-        "PROENZA SCHOULER",
-        "SOPHIA WEBSTER",
-        "ST. AGNI",
-        "STAUD"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "VIEW ALL SHOES",
       "count": 17,
       "brands": [
@@ -4278,6 +3686,18 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Flats",
+      "count": 13,
+      "brands": [
+        "KHAITE",
+        "MARGAUX",
+        "PAZZION",
+        "PROENZA SCHOULER",
+        "STAUD"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "FLAT SHOES",
       "count": 12,
       "brands": [
@@ -4286,34 +3706,10 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Toutes les Chaussures",
-      "count": 11,
-      "brands": [
-        "CAREL"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women's Soft Shoes",
-      "count": 9,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Shoes & Accessories",
       "count": 8,
       "brands": [
         "CECILIE BAHNSEN"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Womens Soft Shoes",
-      "count": 8,
-      "brands": [
-        "HEREU"
       ],
       "proposedMapping": null
     },
@@ -4358,14 +3754,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Women's New In Shoes",
-      "count": 5,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Silver Shoes",
       "count": 5,
       "brands": [
@@ -4382,66 +3770,10 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Women's Pre-Fall 2026",
-      "count": 4,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Womens New In Shoes",
-      "count": 4,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Best Seller - Flats",
       "count": 4,
       "brands": [
         "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Sale Footwear",
-      "count": 4,
-      "brands": [
-        "ST. AGNI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women's Slim Sport Shoes",
-      "count": 3,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Womens New In",
-      "count": 3,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Slim Sport Shoes",
-      "count": 3,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Sport Shoes",
-      "count": 3,
-      "brands": [
-        "HEREU"
       ],
       "proposedMapping": null
     },
@@ -4478,14 +3810,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Sale Flats",
-      "count": 3,
-      "brands": [
-        "SOPHIA WEBSTER"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "MOCASSINS, SAPATOS E STILETTOS",
       "count": 3,
       "brands": [
@@ -4510,6 +3834,120 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Flat Shoes",
+      "count": 2,
+      "brands": [
+        "Jennifer Chamandi",
+        "Le Monde Beryl"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Pink Flats",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Square Toe Shoes",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Silver Flats",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Black Flats",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "White Flats",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "White Shoes",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Beige Flats",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "New Arrivals",
+      "count": 2,
+      "brands": [
+        "LUIS ONOFRE",
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Almond Shoes",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Black Formal Shoes",
+      "count": 2,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Handbags and Shoes",
+      "count": 2,
+      "brands": [
+        "PROENZA SCHOULER"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "FALL WINTER 25/26 - SHOES",
+      "count": 2,
+      "brands": [
+        "AMINA MUADDI"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Fw25 Shoes 1",
+      "count": 2,
+      "brands": [
+        "AMINA MUADDI"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "SHOE CHARMS",
       "count": 2,
       "brands": [
@@ -4518,23 +3956,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "All Shoes For Tax",
-      "count": 2,
-      "brands": [
-        "FLATTERED"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "tax:clothing",
-      "count": 2,
-      "brands": [
-        "FLATTERED"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Women Sport Shoes",
+      "sourceCategory": "Slim Sport Shoes",
       "count": 2,
       "brands": [
         "HEREU"
@@ -4542,27 +3964,26 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flat Shoes",
+      "sourceCategory": "Sport Shoes",
       "count": 2,
       "brands": [
-        "Jennifer Chamandi",
-        "Le Monde Beryl"
+        "HEREU"
       ],
       "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 17409,
-    "babet": 1639,
-    "loafer": 1183,
-    "topuklu": 2635,
-    "sandal": 4669,
-    "mule": 1503,
-    "bot-cizme": 3517,
-    "sneaker": 1547,
-    "espadril": 148,
-    "oxford-derby": 22,
-    "clog": 103,
-    "diger": 443
+    "tumu": 17524,
+    "babet": 1685,
+    "loafer": 1221,
+    "topuklu": 2647,
+    "sandal": 4682,
+    "mule": 1511,
+    "bot-cizme": 3550,
+    "sneaker": 1552,
+    "espadril": 154,
+    "oxford-derby": 33,
+    "clog": 105,
+    "diger": 384
   }
 }

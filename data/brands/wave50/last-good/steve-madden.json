@@ -2,8 +2,8 @@
   "slug": "steve-madden",
   "brand": "STEVE MADDEN",
   "officialUrl": "https://www.stevemadden.com",
-  "snapshotId": "steve-madden:2026-10-03T15:36:00.924Z",
-  "collectedAt": "2026-10-03T15:36:00.924Z",
+  "snapshotId": "steve-madden:2026-10-04T09:20:08.974Z",
+  "collectedAt": "2026-10-04T09:20:08.974Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -13,18 +13,18 @@
     "/collections/womens-new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 1268,
-    "collected": 1268,
+    "sourceTotal": 1198,
+    "collected": 1198,
     "missing": 0,
     "coverage": 100,
-    "excluded": 1243,
+    "excluded": 1296,
     "paginationExhausted": true,
-    "galleryComplete": 1268,
+    "galleryComplete": 1198,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 409,
+  "newArrivalsFootwear": 383,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -9211,42 +9211,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--devour-mesh",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Devour Mesh",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_01.jpg?v=1773154027",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_02.jpg?v=1773154796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_05.jpg?v=1773154796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_04.jpg?v=1773154796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_03.jpg?v=1773154796"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/devour-m-black-mesh",
-          "handle": "devour-m-black-mesh",
-          "title": "DEVOUR BLACK MESH",
-          "color": "BLACK MESH",
-          "sku": "DEVOUR-M",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_01.jpg?v=1773154027",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_02.jpg?v=1773154796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_05.jpg?v=1773154796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_04.jpg?v=1773154796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DEVOUR-M_BLACK-MESH_03.jpg?v=1773154796"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--diablo",
       "brand": "STEVE MADDEN",
       "canonicalName": "Diablo",
@@ -12704,12 +12668,6 @@
       "canonicalName": "Foxx",
       "category": "SANDAL",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_01_db9d0903-a4ac-47ba-a1ca-b05a14b80e29.jpg?v=1753365257",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_2707.jpg?v=1753365257",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_02_3c1e74dc-f19d-4de3-b3c2-5d8ae864df0e.jpg?v=1753365257",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_05_85116636-8115-4a24-805f-2d239c399e52.jpg?v=1753365257",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_04_798c4850-58f4-4108-be4c-fe2545661c21.jpg?v=1753365257",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_03_fd67443d-6c52-4f8a-afdc-c993680ea9f5.jpg?v=1753365257",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BONE-PATENT_01.jpg?v=1768486415",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BONE-PATENT_0761.jpg?v=1771879929",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BONE-PATENT_02.jpg?v=1771879929",
@@ -12718,26 +12676,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BONE-PATENT_03.jpg?v=1771879929"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/foxx-black-patent",
-          "handle": "foxx-black-patent",
-          "title": "FOXX BLACK PATENT",
-          "color": "BLACK PATENT",
-          "sku": "FOXX",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_01_db9d0903-a4ac-47ba-a1ca-b05a14b80e29.jpg?v=1753365257",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_2707.jpg?v=1753365257",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_02_3c1e74dc-f19d-4de3-b3c2-5d8ae864df0e.jpg?v=1753365257",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_05_85116636-8115-4a24-805f-2d239c399e52.jpg?v=1753365257",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_04_798c4850-58f4-4108-be4c-fe2545661c21.jpg?v=1753365257",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FOXX_BLACK-PATENT_03_fd67443d-6c52-4f8a-afdc-c993680ea9f5.jpg?v=1753365257"
-          ],
-          "category": "SANDAL",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/foxx-bone-patent",
           "handle": "foxx-bone-patent",
@@ -12760,7 +12698,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--frankie-mesh",
@@ -15437,42 +15375,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--ives-box--ives-red-box",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Ives Box",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_01.jpg?v=1759422254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_02.jpg?v=1759422254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_05.jpg?v=1759422265",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_04.jpg?v=1759422265",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_03.jpg?v=1759422265"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/ives-red-box",
-          "handle": "ives-red-box",
-          "title": "IVES RED BOX",
-          "color": "RED BOX",
-          "sku": "IVES",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_01.jpg?v=1759422254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_02.jpg?v=1759422254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_05.jpg?v=1759422265",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_04.jpg?v=1759422265",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_IVES_RED-BOX_03.jpg?v=1759422265"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--izara",
       "brand": "STEVE MADDEN",
       "canonicalName": "Izara",
@@ -18117,12 +18019,7 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_02.jpg?v=1787919614",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_05.jpg?v=1787919615",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_04.jpg?v=1787919615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_03.jpg?v=1787919615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER01.jpg?v=1787851341",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER02.jpg?v=1787851341",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER05.jpg?v=1787851341",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER04.jpg?v=1787851341",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER03.jpg?v=1787851341"
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_03.jpg?v=1787919615"
       ],
       "variants": [
         {
@@ -18156,25 +18053,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_05.jpg?v=1787919615",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_04.jpg?v=1787919615",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_BURGUNDY-LEATHER_03.jpg?v=1787919615"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Women's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/karlson-natural-snake",
-          "handle": "karlson-natural-snake",
-          "title": "KARLSON NATURAL SNAKE",
-          "color": "NATURAL SNAKE",
-          "sku": "KARLSON",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER01.jpg?v=1787851341",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER02.jpg?v=1787851341",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER05.jpg?v=1787851341",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER04.jpg?v=1787851341",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KARLSON_NATURAL-SNAKE-LEATHER03.jpg?v=1787851341"
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women's Shoes",
@@ -18683,1680 +18561,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-abigal",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Abigal",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK.jpg?v=1755618691",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_01.jpg?v=1755618691",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_04.jpg?v=1755618691",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_03.jpg?v=1755618691",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_02.jpg?v=1755618691",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER.jpg?v=1755618674",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_01.jpg?v=1755618674",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_04.jpg?v=1755618674",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_03.jpg?v=1755618674",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_02.jpg?v=1755618674"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jabigal-black",
-          "handle": "jabigal-black",
-          "title": "KIDS' ABIGAL BLACK",
-          "color": "BLACK",
-          "sku": "JABIGAL",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK.jpg?v=1755618691",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_01.jpg?v=1755618691",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_04.jpg?v=1755618691",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_03.jpg?v=1755618691",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_BLACK_02.jpg?v=1755618691"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jabigal-silver",
-          "handle": "jabigal-silver",
-          "title": "KIDS' ABIGAL SILVER",
-          "color": "SILVER",
-          "sku": "JABIGAL",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER.jpg?v=1755618674",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_01.jpg?v=1755618674",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_04.jpg?v=1755618674",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_03.jpg?v=1755618674",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JABIGAL_SILVER_02.jpg?v=1755618674"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-adia-mesh",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Adia Mesh",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_01.jpg?v=1768339254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_02.jpg?v=1768339254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_05.jpg?v=1768339254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_04.jpg?v=1768339254",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_03.jpg?v=1768339254"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jadia-white-mesh",
-          "handle": "jadia-white-mesh",
-          "title": "KIDS' ADIA WHITE MESH",
-          "color": "WHITE MESH",
-          "sku": "JADIA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_01.jpg?v=1768339254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_02.jpg?v=1768339254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_05.jpg?v=1768339254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_04.jpg?v=1768339254",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JADIA_WHT-MESH_03.jpg?v=1768339254"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-avenue-rainbow",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Avenue Rainbow",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_01.jpg?v=1770347502",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_02.jpg?v=1770347502",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_05.jpg?v=1770347921",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_04.jpg?v=1770347921",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_03.jpg?v=1770347921"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/javenue-rainbow-multi",
-          "handle": "javenue-rainbow-multi",
-          "title": "KIDS' AVENUE RAINBOW MULTI",
-          "color": "RAINBOW MULTI",
-          "sku": "JAVENUE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_01.jpg?v=1770347502",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_02.jpg?v=1770347502",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_05.jpg?v=1770347921",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_04.jpg?v=1770347921",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JAVENUE_RAINBOW-MU_03.jpg?v=1770347921"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-beastie",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Beastie",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_01.jpg?v=1755006616",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_02.jpg?v=1755006616",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_05.jpg?v=1755006616",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_04.jpg?v=1755006616",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_03.jpg?v=1755006616",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_01.jpg?v=1755006629",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_02.jpg?v=1755006629",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_05.jpg?v=1755006629",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_04.jpg?v=1755006629",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_03.jpg?v=1755006629"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbeastie-pink",
-          "handle": "jbeastie-pink",
-          "title": "KIDS' BEASTIE PINK",
-          "color": "PINK",
-          "sku": "JBEASTIE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_01.jpg?v=1755006616",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_02.jpg?v=1755006616",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_05.jpg?v=1755006616",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_04.jpg?v=1755006616",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_PINK_03.jpg?v=1755006616"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbeastie-tan",
-          "handle": "jbeastie-tan",
-          "title": "KIDS' BEASTIE TAN",
-          "color": "TAN",
-          "sku": "JBEASTIE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_01.jpg?v=1755006629",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_02.jpg?v=1755006629",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_05.jpg?v=1755006629",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_04.jpg?v=1755006629",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBEASTIE_TAN_03.jpg?v=1755006629"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-bigmona",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Bigmona",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK.jpg?v=1711375314",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_01.jpg?v=1711375313",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_04.jpg?v=1711375317",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_03.jpg?v=1711375317",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_02.jpg?v=1711375317"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbigmona-black",
-          "handle": "jbigmona-black",
-          "title": "KIDS' BIGMONA BLACK",
-          "color": "BLACK",
-          "sku": "JBIGMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK.jpg?v=1711375314",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_01.jpg?v=1711375313",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_04.jpg?v=1711375317",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_03.jpg?v=1711375317",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_BLACK_02.jpg?v=1711375317"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-bigmona-raffia",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Bigmona Raffia",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA.jpg?v=1705011968",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_01.jpg?v=1705011968",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_03.jpg?v=1705013009",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_04.jpg?v=1705013009",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_02.jpg?v=1705011968"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbigmona-raffia",
-          "handle": "jbigmona-raffia",
-          "title": "KIDS' BIGMONA RAFFIA",
-          "color": "RAFFIA",
-          "sku": "JBIGMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA.jpg?v=1705011968",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_01.jpg?v=1705011968",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_03.jpg?v=1705013009",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_04.jpg?v=1705013009",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBIGMONA_RAFFIA_02.jpg?v=1705011968"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-brazin",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Brazin",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_01.jpg?v=1734557027",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_02.jpg?v=1734557027",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_05.jpg?v=1734557027",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_04.jpg?v=1734557027",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_03.jpg?v=1734557027"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbrazin-white",
-          "handle": "jbrazin-white",
-          "title": "KIDS' BRAZIN WHITE",
-          "color": "WHITE",
-          "sku": "JBRAZIN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_01.jpg?v=1734557027",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_02.jpg?v=1734557027",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_05.jpg?v=1734557027",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_04.jpg?v=1734557027",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBRAZIN_WHITE_03.jpg?v=1734557027"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-buddies",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Buddies",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_04.jpg?v=1790173796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_01.jpg?v=1790173797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_07.jpg?v=1790173796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_06.jpg?v=1790173796",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_03.jpg?v=1790173797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_05.jpg?v=1790173797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_02.jpg?v=1790173797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_04.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_02.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_07.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_06.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_03.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_05.jpg?v=1790173791",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_01.jpg?v=1790173792"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbuddies-brown",
-          "handle": "jbuddies-brown",
-          "title": "KIDS' BUDDIES BROWN",
-          "color": "BROWN",
-          "sku": "JBUDDIES",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_04.jpg?v=1790173796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_01.jpg?v=1790173797",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_07.jpg?v=1790173796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_06.jpg?v=1790173796",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_03.jpg?v=1790173797",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_05.jpg?v=1790173797",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_BROWN_02.jpg?v=1790173797"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jbuddies-pink",
-          "handle": "jbuddies-pink",
-          "title": "KIDS' BUDDIES PINK",
-          "color": "PINK",
-          "sku": "JBUDDIES",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_04.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_02.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_07.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_06.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_03.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_05.jpg?v=1790173791",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JBUDDIES_PINK_01.jpg?v=1790173792"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-charisa",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Charisa",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_01.jpg?v=1739981581",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_02.jpg?v=1739981581",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_05.jpg?v=1739981581",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_04.jpg?v=1739981581",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_03.jpg?v=1739981581",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_01.jpg?v=1739981615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_02.jpg?v=1739981615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_05.jpg?v=1739981615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_04.jpg?v=1739981615",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_03.jpg?v=1739981615"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jcharisa-black",
-          "handle": "jcharisa-black",
-          "title": "KIDS' CHARISA BLACK",
-          "color": "BLACK",
-          "sku": "JCHARISA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_01.jpg?v=1739981581",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_02.jpg?v=1739981581",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_05.jpg?v=1739981581",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_04.jpg?v=1739981581",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_BLACK_03.jpg?v=1739981581"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jcharisa-natural",
-          "handle": "jcharisa-natural",
-          "title": "KIDS' CHARISA NATURAL",
-          "color": "NATURAL",
-          "sku": "JCHARISA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_01.jpg?v=1739981615",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_02.jpg?v=1739981615",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_05.jpg?v=1739981615",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_04.jpg?v=1739981615",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARISA_NATURAL_03.jpg?v=1739981615"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-charms",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Charms",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_01.jpg?v=1784743699",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_02.jpg?v=1784743699",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_05.jpg?v=1784743699",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_04.jpg?v=1784743698",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_03.jpg?v=1784743699"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jcharms-black",
-          "handle": "jcharms-black",
-          "title": "KIDS' CHARMS BLACK",
-          "color": "BLACK",
-          "sku": "JCHARMS",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_01.jpg?v=1784743699",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_02.jpg?v=1784743699",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_05.jpg?v=1784743699",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_04.jpg?v=1784743698",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCHARMS_BLACK_03.jpg?v=1784743699"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-cloudy",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Cloudy",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_01.jpg?v=1788877545",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_02.jpg?v=1788877544",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_05.jpg?v=1788877545",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_04.jpg?v=1788877544",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_03.jpg?v=1788877545"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jcloudye-cognac-multi",
-          "handle": "jcloudye-cognac-multi",
-          "title": "KIDS' CLOUDY COGNAC MULTI",
-          "color": "COGNAC MULTI",
-          "sku": "JCLOUDYE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_01.jpg?v=1788877545",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_02.jpg?v=1788877544",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_05.jpg?v=1788877545",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_04.jpg?v=1788877544",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JCLOUDYE_COGNAC_03.jpg?v=1788877545"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-dori",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Dori",
-      "category": "WEDGE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_01.jpg?v=1772228831",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_02.jpg?v=1772232200",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_05.jpg?v=1772232200",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_04.jpg?v=1772232200",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_03.jpg?v=1772232200",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_01_JDORI_0039.jpg?v=1772232200"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jdori-white",
-          "handle": "jdori-white",
-          "title": "KIDS' DORI WHITE",
-          "color": "WHITE",
-          "sku": "JDORI",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_01.jpg?v=1772228831",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_02.jpg?v=1772232200",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_05.jpg?v=1772232200",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_04.jpg?v=1772232200",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JDORI_WHITE_03.jpg?v=1772232200",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_01_JDORI_0039.jpg?v=1772232200"
-          ],
-          "category": "WEDGE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-edna",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Edna",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_01.jpg?v=1782738543",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_02.jpg?v=1782738543",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_05.jpg?v=1782738542",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_04.jpg?v=1782738544",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_03.jpg?v=1782738542"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jedna-black",
-          "handle": "jedna-black",
-          "title": "KIDS' EDNA BLACK",
-          "color": "BLACK",
-          "sku": "JEDNA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_01.jpg?v=1782738543",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_02.jpg?v=1782738543",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_05.jpg?v=1782738542",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_04.jpg?v=1782738544",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JEDNA_BLACK_03.jpg?v=1782738542"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-gillian",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Gillian",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_01.jpg?v=1767198814",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_02.jpg?v=1767198814",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_05.jpg?v=1767198814",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_04-1.jpg?v=1767198814",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_03.jpg?v=1767198814"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jgillian-cognac-multi",
-          "handle": "jgillian-cognac-multi",
-          "title": "KIDS' GILLIAN COGNAC MULTI",
-          "color": "COGNAC MULTI",
-          "sku": "JGILLIAN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_01.jpg?v=1767198814",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_02.jpg?v=1767198814",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_05.jpg?v=1767198814",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_04-1.jpg?v=1767198814",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGILLIAN_COGNA-MUL_03.jpg?v=1767198814"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-glazer",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Glazer",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC.jpg?v=1726507353",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_01.jpg?v=1726507353",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_04.jpg?v=1726507353",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_03.jpg?v=1726507353",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_02.jpg?v=1726507353"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jglazer-cognac",
-          "handle": "jglazer-cognac",
-          "title": "KIDS' GLAZER COGNAC",
-          "color": "COGNAC",
-          "sku": "JGLAZER",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC.jpg?v=1726507353",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_01.jpg?v=1726507353",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_04.jpg?v=1726507353",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_03.jpg?v=1726507353",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGLAZER_COGNAC_02.jpg?v=1726507353"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-grovee-clear",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Grovee Clear",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_01.jpg?v=1772816884",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_02.jpg?v=1772816884",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_05.jpg?v=1772816884",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_04.jpg?v=1772816884",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_03.jpg?v=1772816884"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jgrovee-clear",
-          "handle": "jgrovee-clear",
-          "title": "KIDS' GROVEE CLEAR",
-          "color": "CLEAR",
-          "sku": "JGROVEE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_01.jpg?v=1772816884",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_02.jpg?v=1772816884",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_05.jpg?v=1772816884",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_04.jpg?v=1772816884",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_CLEAR_03.jpg?v=1772816884"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-grovee",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Grovee",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_01.jpg?v=1772816512",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_02.jpg?v=1772816512",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_05.jpg?v=1772817030",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_04.jpg?v=1772817030",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_03.jpg?v=1772826841"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jgrovee-pink",
-          "handle": "jgrovee-pink",
-          "title": "KIDS' GROVEE PINK",
-          "color": "PINK",
-          "sku": "JGROVEE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_01.jpg?v=1772816512",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_02.jpg?v=1772816512",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_05.jpg?v=1772817030",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_04.jpg?v=1772817030",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JGROVEE_PINK_03.jpg?v=1772826841"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-kiki",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Kiki",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK.jpg?v=1720446912",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_01.jpg?v=1720446912",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_04.jpg?v=1720446925",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_03.jpg?v=1720446912",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_02.jpg?v=1720446912"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jkiki-black",
-          "handle": "jkiki-black",
-          "title": "KIDS' KIKI BLACK",
-          "color": "BLACK",
-          "sku": "JKIKI",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK.jpg?v=1720446912",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_01.jpg?v=1720446912",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_04.jpg?v=1720446925",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_03.jpg?v=1720446912",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKI_BLACK_02.jpg?v=1720446912"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-kiko",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Kiko",
-      "category": "WEDGE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_01.jpg?v=1769528732",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_02.jpg?v=1769528732",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_05.jpg?v=1769528732",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_04.jpg?v=1769528732",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_03.jpg?v=1769528732"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jkiko-natural",
-          "handle": "jkiko-natural",
-          "title": "KIDS' KIKO NATURAL",
-          "color": "NATURAL",
-          "sku": "JKIKO",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_01.jpg?v=1769528732",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_02.jpg?v=1769528732",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_05.jpg?v=1769528732",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_04.jpg?v=1769528732",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKIKO_NATURAL_03.jpg?v=1769528732"
-          ],
-          "category": "WEDGE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-kya",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Kya",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_01.jpg?v=1755008330",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_02.jpg?v=1755008330",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_05.jpg?v=1755008330",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_04.jpg?v=1755008330",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_03.jpg?v=1755008330"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jkya-black",
-          "handle": "jkya-black",
-          "title": "KIDS' KYA BLACK",
-          "color": "BLACK",
-          "sku": "JKYA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_01.jpg?v=1755008330",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_02.jpg?v=1755008330",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_05.jpg?v=1755008330",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_04.jpg?v=1755008330",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JKYA_BLACK_03.jpg?v=1755008330"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-lundin",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Lundin",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_04.jpg?v=1782740462",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_02.jpg?v=1782740462",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_05.jpg?v=1782740462",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_01.jpg?v=1782740462",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_03.jpg?v=1782740462"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jlundin-black",
-          "handle": "jlundin-black",
-          "title": "KIDS' LUNDIN BLACK",
-          "color": "BLACK",
-          "sku": "JLUNDIN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_04.jpg?v=1782740462",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_02.jpg?v=1782740462",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_05.jpg?v=1782740462",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_01.jpg?v=1782740462",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUNDIN_BLACK_03.jpg?v=1782740462"
-          ],
-          "category": "LOAFER",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-luxelle",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Luxelle",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_01.jpg?v=1790955185",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_02.jpg?v=1790955185",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_05.jpg?v=1790955185",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_04.jpg?v=1790955185",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_03.jpg?v=1790955185"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jluxelle-tan",
-          "handle": "jluxelle-tan",
-          "title": "KIDS' LUXELLE TAN",
-          "color": "TAN",
-          "sku": "JLUXELLE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_01.jpg?v=1790955185",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_02.jpg?v=1790955185",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_05.jpg?v=1790955185",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_04.jpg?v=1790955185",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JLUXELLE_TAN_03.jpg?v=1790955185"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids",
-      "category": "WEDGE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_01.jpg?v=1771513470",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_02.jpg?v=1771513470",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_05.jpg?v=1771514035",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_04.jpg?v=1771514035",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_03.jpg?v=1771514035"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmagenta-natural-multi",
-          "handle": "jmagenta-natural-multi",
-          "title": "KIDS' MAGENTA NATURAL MULTI",
-          "color": "NATURAL MULTI",
-          "sku": "JMAGENTA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_01.jpg?v=1771513470",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_02.jpg?v=1771513470",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_05.jpg?v=1771514035",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_04.jpg?v=1771514035",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAGENTA_NAT-MULTI_03.jpg?v=1771514035"
-          ],
-          "category": "WEDGE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mazie",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mazie",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_01.jpg?v=1765479229",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_05.jpg?v=1765479228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_02.jpg?v=1765479228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_03.jpg?v=1765479228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_04.jpg?v=1765479229"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmazie-pink-multi",
-          "handle": "jmazie-pink-multi",
-          "title": "KIDS' MAZIE PINK MULTI",
-          "color": "PINK MULTI",
-          "sku": "JMAZIE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_01.jpg?v=1765479229",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_05.jpg?v=1765479228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_02.jpg?v=1765479228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_03.jpg?v=1765479228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMAZIE_PINK-MULTI_04.jpg?v=1765479229"
-          ],
-          "category": "MULE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mino",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mino",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_01.jpg?v=1784656746",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_02.jpg?v=1784656746",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_05.jpg?v=1784656746",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_04.jpg?v=1784656746",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_03.jpg?v=1784656746"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmino-blush",
-          "handle": "jmino-blush",
-          "title": "KIDS' MINO BLUSH",
-          "color": "BLUSH",
-          "sku": "JMINO",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_01.jpg?v=1784656746",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_02.jpg?v=1784656746",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_05.jpg?v=1784656746",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_04.jpg?v=1784656746",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMINO_BLUSH_03.jpg?v=1784656746"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mochi",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mochi",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_01.jpg?v=1790616527",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_02.jpg?v=1790616526",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_04.jpg?v=1790616527",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_03.jpg?v=1790616526"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmochi-cognac",
-          "handle": "jmochi-cognac",
-          "title": "KIDS' MOCHI COGNAC",
-          "color": "COGNAC",
-          "sku": "JMOCHI",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_01.jpg?v=1790616527",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_02.jpg?v=1790616526",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_04.jpg?v=1790616527",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMOCHI_COGNAC_03.jpg?v=1790616526"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mona",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mona",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK.jpg?v=1693345750",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_01.jpg?v=1693345750",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_02.jpg?v=1693345751",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_03.jpg?v=1693345749",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_04.jpg?v=1693345749",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_MAY_TRENDS_16_JMONA_BLACK_8973.jpg?v=1739295988",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE.jpg?v=1693345773",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_01.jpg?v=1693345773",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_02.jpg?v=1693345772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_04.jpg?v=1693345772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_03.jpg?v=1693345767",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_MAY_TRENDS_08_JMONA-BONE_8679.jpg?v=1714578513"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-black",
-          "handle": "jmona-black",
-          "title": "KIDS' MONA BLACK",
-          "color": "BLACK",
-          "sku": "JMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK.jpg?v=1693345750",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_01.jpg?v=1693345750",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_02.jpg?v=1693345751",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_03.jpg?v=1693345749",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BLACK_04.jpg?v=1693345749",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_MAY_TRENDS_16_JMONA_BLACK_8973.jpg?v=1739295988"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-bone",
-          "handle": "jmona-bone",
-          "title": "KIDS' MONA BONE",
-          "color": "BONE",
-          "sku": "JMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE.jpg?v=1693345773",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_01.jpg?v=1693345773",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_02.jpg?v=1693345772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_04.jpg?v=1693345772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_BONE_03.jpg?v=1693345767",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_MAY_TRENDS_08_JMONA-BONE_8679.jpg?v=1714578513"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mona-jelly",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mona Jelly",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_01.jpg?v=1772731652",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_02.jpg?v=1772731652",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_05.jpg?v=1772731652",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_04.jpg?v=1772731652",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_03.jpg?v=1772731652",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_01.jpg?v=1767797191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_02.jpg?v=1767797191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_05.jpg?v=1767797191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_04.jpg?v=1767797191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_03.jpg?v=1767797191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_01.jpg?v=1772731896",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_02.jpg?v=1772731896",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_05.jpg?v=1772731896",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_04.jpg?v=1772731896",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_03.jpg?v=1772731896",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_08_JMONA-J_0035.jpg?v=1772734705",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_01.jpg?v=1772731702",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_02.jpg?v=1772731702",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_05.jpg?v=1772731702",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_04.jpg?v=1772731702",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_03.jpg?v=1772731702",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_09_JMONA-J_0138.jpg?v=1772734670"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-j-blue",
-          "handle": "jmona-j-blue",
-          "title": "KIDS' MONA JELLY BLUE",
-          "color": "BLUE",
-          "sku": "JMONA-J",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_01.jpg?v=1772731652",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_02.jpg?v=1772731652",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_05.jpg?v=1772731652",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_04.jpg?v=1772731652",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_BLUE_03.jpg?v=1772731652"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-j-mint",
-          "handle": "jmona-j-mint",
-          "title": "KIDS' MONA JELLY MINT",
-          "color": "MINT",
-          "sku": "JMONA-J",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_01.jpg?v=1767797191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_02.jpg?v=1767797191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_05.jpg?v=1767797191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_04.jpg?v=1767797191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_MINT_03.jpg?v=1767797191"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-j-pink",
-          "handle": "jmona-j-pink",
-          "title": "KIDS' MONA JELLY PINK",
-          "color": "PINK",
-          "sku": "JMONA-J",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_01.jpg?v=1772731896",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_02.jpg?v=1772731896",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_05.jpg?v=1772731896",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_04.jpg?v=1772731896",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PINK_03.jpg?v=1772731896",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_08_JMONA-J_0035.jpg?v=1772734705"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-j-purple",
-          "handle": "jmona-j-purple",
-          "title": "KIDS' MONA JELLY PURPLE",
-          "color": "PURPLE",
-          "sku": "JMONA-J",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_01.jpg?v=1772731702",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_02.jpg?v=1772731702",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_05.jpg?v=1772731702",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_04.jpg?v=1772731702",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA-J_PURPLE_03.jpg?v=1772731702",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_SPRING_SUMMER_KIDS_09_JMONA-J_0138.jpg?v=1772734670"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-mona-pastel",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Mona Pastel",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_01.jpg?v=1769527543",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_02.jpg?v=1769527543",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_05.jpg?v=1769527592",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_04.jpg?v=1769527592",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_03_20a256c2-8c54-49b9-b6bf-19430c9f0536.jpg?v=1769536878"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jmona-pastel-multi",
-          "handle": "jmona-pastel-multi",
-          "title": "KIDS' MONA PASTEL MULTI",
-          "color": "PASTEL MULTI",
-          "sku": "JMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_01.jpg?v=1769527543",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_02.jpg?v=1769527543",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_05.jpg?v=1769527592",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_04.jpg?v=1769527592",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JMONA_PASTEL-MUL_03_20a256c2-8c54-49b9-b6bf-19430c9f0536.jpg?v=1769536878"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-oriolec",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Oriolec",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_01.jpg?v=1786924050",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_02.jpg?v=1786924051",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_05.jpg?v=1786924050",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_04.jpg?v=1786924050",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_03.jpg?v=1786924050"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/joriolec-brown",
-          "handle": "joriolec-brown",
-          "title": "KIDS' ORIOLEC BROWN",
-          "color": "BROWN",
-          "sku": "JORIOLEC",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_01.jpg?v=1786924050",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_02.jpg?v=1786924051",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_05.jpg?v=1786924050",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_04.jpg?v=1786924050",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JORIOLEC_BROWN_03.jpg?v=1786924050"
-          ],
-          "category": "BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-pepper",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Pepper",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_01.jpg?v=1727101779",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_02.jpg?v=1727101779",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_05.jpg?v=1727101779",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_04.jpg?v=1727101779",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_03.jpg?v=1727101779",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_01.jpg?v=1727101747",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_02.jpg?v=1727101747",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_05.jpg?v=1727101745",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_04.jpg?v=1727101745",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_03.jpg?v=1727101745"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jpepper-black",
-          "handle": "jpepper-black",
-          "title": "KIDS' PEPPER BLACK",
-          "color": "BLACK",
-          "sku": "JPEPPER",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_01.jpg?v=1727101779",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_02.jpg?v=1727101779",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_05.jpg?v=1727101779",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_04.jpg?v=1727101779",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_BLACK_03.jpg?v=1727101779"
-          ],
-          "category": "BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/jpepper-taupe",
-          "handle": "jpepper-taupe",
-          "title": "KIDS' PEPPER TAUPE",
-          "color": "TAUPE",
-          "sku": "JPEPPER",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_01.jpg?v=1727101747",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_02.jpg?v=1727101747",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_05.jpg?v=1727101745",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_04.jpg?v=1727101745",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPEPPER_TAUPE_03.jpg?v=1727101745"
-          ],
-          "category": "BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-pop-clear",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Pop Clear",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_01_b8fb466a-f719-4244-bfbc-7ab279c76df0.jpg?v=1765555218",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_02_757d4a59-fa50-4769-8505-d06716c61a07.jpg?v=1765555218",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_05_29934ecc-fd33-426e-a033-05142020cd61.jpg?v=1765555218",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_04_9f24e847-d7b3-4ca3-b2eb-512bac1602a8.jpg?v=1765555218",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_03_9d6272db-335e-4362-ab0a-c06dde62d65e.jpg?v=1765555218"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jpop-clear",
-          "handle": "jpop-clear",
-          "title": "KIDS' POP CLEAR",
-          "color": "CLEAR",
-          "sku": "JPOP",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_01_b8fb466a-f719-4244-bfbc-7ab279c76df0.jpg?v=1765555218",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_02_757d4a59-fa50-4769-8505-d06716c61a07.jpg?v=1765555218",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_05_29934ecc-fd33-426e-a033-05142020cd61.jpg?v=1765555218",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_04_9f24e847-d7b3-4ca3-b2eb-512bac1602a8.jpg?v=1765555218",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPOP_CLEAR_03_9d6272db-335e-4362-ab0a-c06dde62d65e.jpg?v=1765555218"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids--jpuff-cognac",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_01.jpg?v=1788963697",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_02.jpg?v=1788963698",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_05.jpg?v=1788963697",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_04.jpg?v=1788963698",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_03.jpg?v=1788963698",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_FALL_KIDS_03_JPUFF-COGNAC_JCLOUDY-COGNAC_DTC_WHLS_0152-6.jpg?v=1781793552"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jpuff-cognac",
-          "handle": "jpuff-cognac",
-          "title": "KIDS' PUFF COGNAC",
-          "color": "COGNAC",
-          "sku": "JPUFF",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_01.jpg?v=1788963697",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_02.jpg?v=1788963698",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_05.jpg?v=1788963697",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_04.jpg?v=1788963698",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JPUFF_COGNAC_03.jpg?v=1788963698",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_FALL_KIDS_03_JPUFF-COGNAC_JCLOUDY-COGNAC_DTC_WHLS_0152-6.jpg?v=1781793552"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-riggs",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Riggs",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_01.jpg?v=1755009799",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_02.jpg?v=1755009799",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_05.jpg?v=1755009799",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_04.jpg?v=1755009799",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_03.jpg?v=1755009799"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jriggs-tan",
-          "handle": "jriggs-tan",
-          "title": "KIDS' RIGGS TAN",
-          "color": "TAN",
-          "sku": "JRIGGS",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_01.jpg?v=1755009799",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_02.jpg?v=1755009799",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_05.jpg?v=1755009799",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_04.jpg?v=1755009799",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JRIGGS_TAN_03.jpg?v=1755009799"
-          ],
-          "category": "BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-roree-rhinestones",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Roree Rhinestones",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_01.jpg?v=1765914258",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_02.jpg?v=1765914258",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_05.jpg?v=1765914258",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_04.jpg?v=1765914258",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_03.jpg?v=1765914258"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jroree-r-natural",
-          "handle": "jroree-r-natural",
-          "title": "KIDS' ROREE NATURAL RHINESTONES",
-          "color": "NATURAL",
-          "sku": "JROREE-R",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_01.jpg?v=1765914258",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_02.jpg?v=1765914258",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_05.jpg?v=1765914258",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_04.jpg?v=1765914258",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JROREE-R_NATURAL_03.jpg?v=1765914258"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-selena",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Selena",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC.jpg?v=1734968431",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_01.jpg?v=1734968431",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_04.jpg?v=1734968446",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_03.jpg?v=1734968431",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_02.jpg?v=1734968425"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jselen-cognac",
-          "handle": "jselen-cognac",
-          "title": "KIDS' SELENA COGNAC",
-          "color": "COGNAC",
-          "sku": "JSELEN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC.jpg?v=1734968431",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_01.jpg?v=1734968431",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_04.jpg?v=1734968446",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_03.jpg?v=1734968431",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSELEN_COGNAC_02.jpg?v=1734968425"
-          ],
-          "category": "MULE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-sizzle",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Sizzle",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_01.jpg?v=1766068920",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_02.jpg?v=1766068920",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_05.jpg?v=1766068920",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_04.jpg?v=1766068920",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_03.jpg?v=1766068920"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jsizzle-gold",
-          "handle": "jsizzle-gold",
-          "title": "KIDS' SIZZLE GOLD",
-          "color": "GOLD",
-          "sku": "JSIZZLE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_01.jpg?v=1766068920",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_02.jpg?v=1766068920",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_05.jpg?v=1766068920",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_04.jpg?v=1766068920",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSIZZLE_GOLD_03.jpg?v=1766068920"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-sleigh",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Sleigh",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_01.jpg?v=1784642264",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_02.jpg?v=1784642265",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_05.jpg?v=1784642277",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_04.jpg?v=1784642265",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_03.jpg?v=1784642265"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jsleigh-cognac",
-          "handle": "jsleigh-cognac",
-          "title": "KIDS' SLEIGH COGNAC",
-          "color": "COGNAC",
-          "sku": "JSLEIGH",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_01.jpg?v=1784642264",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_02.jpg?v=1784642265",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_05.jpg?v=1784642277",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_04.jpg?v=1784642265",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_COGNAC_03.jpg?v=1784642265"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-sleigh--jsleigh-denim",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Sleigh",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_04.jpg?v=1783430992",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_02.jpg?v=1783430992",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_05.jpg?v=1783430992",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_01.jpg?v=1783430992",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_03.jpg?v=1783430992"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jsleigh-denim",
-          "handle": "jsleigh-denim",
-          "title": "KIDS' SLEIGH DENIM",
-          "color": "DENIM",
-          "sku": "JSLEIGH",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_04.jpg?v=1783430992",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_02.jpg?v=1783430992",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_05.jpg?v=1783430992",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_01.jpg?v=1783430992",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLEIGH_DENIM_03.jpg?v=1783430992"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--kids-slushy",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kids Slushy",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_01.jpg?v=1788546772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_02.jpg?v=1788546772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_05.jpg?v=1788546772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_04.jpg?v=1788546772",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_03.jpg?v=1788546772"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jslushy-cognac-multi",
-          "handle": "jslushy-cognac-multi",
-          "title": "KIDS' SLUSHY COGNAC MULTI",
-          "color": "COGNAC MULTI",
-          "sku": "JSLUSHY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_01.jpg?v=1788546772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_02.jpg?v=1788546772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_05.jpg?v=1788546772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_04.jpg?v=1788546772",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_JSLUSHY_COGNAC-MULTI_03.jpg?v=1788546772"
-          ],
-          "category": "MULE",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--kimmens",
@@ -21392,12 +19596,6 @@
       "canonicalName": "Lanti",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER01.jpg?v=1768935597",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER_0620.jpg?v=1771881574",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER02.jpg?v=1771881574",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER05.jpg?v=1771881574",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER04.jpg?v=1771881574",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER03.jpg?v=1771881574",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BONE-LEATHER01.jpg?v=1768935020",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BONE-LEATHER_0630.jpg?v=1771881544",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BONE-LEATHER02.jpg?v=1771881544",
@@ -21412,26 +19610,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BONE-LEATHER_0630_0eb50583-410e-48cc-8a52-04331ca59169.jpg?v=1771881604"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/lanti-black-leather",
-          "handle": "lanti-black-leather",
-          "title": "LANTI BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "LANTI",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER01.jpg?v=1768935597",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER_0620.jpg?v=1771881574",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER02.jpg?v=1771881574",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER05.jpg?v=1771881574",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER04.jpg?v=1771881574",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LANTI_BLACK-LEATHER03.jpg?v=1771881574"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/lanti-bone-leather",
           "handle": "lanti-bone-leather",
@@ -24663,9 +22841,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--madison-black-leather",
+      "modelFamilyId": "steve-madden--madison",
       "brand": "STEVE MADDEN",
-      "canonicalName": "MADISON BLACK LEATHER",
+      "canonicalName": "Madison",
       "category": "LOAFER",
       "images": [
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BLACK-LEATHER_01.jpg?v=1773257150",
@@ -24681,14 +22859,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BLACK-RED_04.jpg?v=1760713286",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BLACK-RED_02.jpg?v=1760713286",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_0287_6e8efeeb-bd41-4cfd-9e0e-744c4eafa18a.jpg?v=1760713286",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_01.jpg?v=1720805659",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_0287.jpg?v=1722446533",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_02.jpg?v=1720805659",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_05.jpg?v=1720805659",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_04.jpg?v=1720805658",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_03.jpg?v=1720805658",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_Q2_DILLARDS_STILLS_15_MADISON_0161.jpg?v=1760639817",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_AUGUST_PREPPY_19_MADISON_0643_f3f2f04a-1d42-4513-8ab4-220af578c6d5.jpg?v=1760639817",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_LEOPARD-SUEDE.jpg?v=1760714198",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_LEOPARD-SUEDE_4392.jpg?v=1762461497",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_LEOPARD-SUEDE_01.jpg?v=1762461497",
@@ -24737,28 +22907,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BLACK-RED_04.jpg?v=1760713286",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BLACK-RED_02.jpg?v=1760713286",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_0287_6e8efeeb-bd41-4cfd-9e0e-744c4eafa18a.jpg?v=1760713286"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/madison-burgundy",
-          "handle": "madison-burgundy",
-          "title": "MADISON BURGUNDY BOX LEATHER",
-          "color": "BURGUNDY",
-          "sku": "MADISON",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_01.jpg?v=1720805659",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_0287.jpg?v=1722446533",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_02.jpg?v=1720805659",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_05.jpg?v=1720805659",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_04.jpg?v=1720805658",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MADISON_BURGUNDY_03.jpg?v=1720805658",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_Q2_DILLARDS_STILLS_15_MADISON_0161.jpg?v=1760639817",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2024_AUGUST_PREPPY_19_MADISON_0643_f3f2f04a-1d42-4513-8ab4-220af578c6d5.jpg?v=1760639817"
           ],
           "category": "LOAFER",
           "productType": "Women's Shoes",
@@ -30262,6 +28410,42 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BONE-MESH04.jpg?v=1770053165",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BONE-MESH03.jpg?v=1770053165",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_APRIL_DTC_WHOLESALE_08_PRIVY_BONE_BPEACH-J_YELLOW_0924_14ae947a-68c1-4040-b505-d79b857e4538.jpg?v=1775050306"
+          ],
+          "category": "LOAFER",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--privy-mesh--privy-brown-mesh",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Privy Mesh",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH01.jpg?v=1770052565",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH02.jpg?v=1770053163",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH05.jpg?v=1770053163",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH04.jpg?v=1770053163",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH03.jpg?v=1770053163"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/privy-brown-mesh",
+          "handle": "privy-brown-mesh",
+          "title": "PRIVY BROWN MESH",
+          "color": "BROWN MESH",
+          "sku": "PRIVY",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH01.jpg?v=1770052565",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH02.jpg?v=1770053163",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH05.jpg?v=1770053163",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH04.jpg?v=1770053163",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PRIVY_BROWN-MESH03.jpg?v=1770053163"
           ],
           "category": "LOAFER",
           "productType": "Women's Shoes",
@@ -37158,42 +35342,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "steve-madden--sullivan",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Sullivan",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_01.jpg?v=1736536894",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_02.jpg?v=1736536894",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_05.jpg?v=1736536894",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_04.jpg?v=1736536894",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_03.jpg?v=1736536894"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/sullivan-black-patent",
-          "handle": "sullivan-black-patent",
-          "title": "SULLIVAN BLACK PATENT",
-          "color": "BLACK PATENT",
-          "sku": "SULLIVAN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_01.jpg?v=1736536894",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_02.jpg?v=1736536894",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_05.jpg?v=1736536894",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_04.jpg?v=1736536894",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SULLIVAN_BLACK-PATENT_03.jpg?v=1736536894"
-          ],
-          "category": "SANDAL",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--sunkissed-embellished",
       "brand": "STEVE MADDEN",
       "canonicalName": "Sunkissed Embellished",
@@ -38775,11 +36923,6 @@
       "canonicalName": "Tinsley",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_01.jpg?v=1789488071",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_02.jpg?v=1789488071",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_05.jpg?v=1789488071",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_04.jpg?v=1789488071",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_03.jpg?v=1789488113",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_TAN-LEATHER_01.jpg?v=1788200623",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_TAN-LEATHER_02.jpg?v=1788200623",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_TAN-LEATHER_05.jpg?v=1788200623",
@@ -38787,25 +36930,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_TAN-LEATHER_03.jpg?v=1788200623"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tinsley-black-leather",
-          "handle": "tinsley-black-leather",
-          "title": "TINSLEY BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "TINSLEY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_01.jpg?v=1789488071",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_02.jpg?v=1789488071",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_05.jpg?v=1789488071",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_04.jpg?v=1789488071",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TINSLEY_BLACK-LEATHER_03.jpg?v=1789488113"
-          ],
-          "category": "BOOT",
-          "productType": "Women's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/tinsley-tan-leather",
           "handle": "tinsley-tan-leather",
@@ -38827,7 +36951,7 @@
         }
       ],
       "isNew": true,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--titan",
@@ -38986,486 +37110,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-bubbles",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Bubbles",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_01.jpg?v=1790704780",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_02.jpg?v=1790704780",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_05.jpg?v=1790704780",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_04.jpg?v=1790704780",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_03.jpg?v=1790704780"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tbubbles-black",
-          "handle": "tbubbles-black",
-          "title": "TODDLERS' BUBBLES BLACK",
-          "color": "BLACK",
-          "sku": "TBUBBLES",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_01.jpg?v=1790704780",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_02.jpg?v=1790704780",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_05.jpg?v=1790704780",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_04.jpg?v=1790704780",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TBUBBLES_BLACK_03.jpg?v=1790704780"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-cloudy",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Cloudy",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_01.jpg?v=1789401272",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_02.jpg?v=1789401272",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_05.jpg?v=1789401272",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_04.jpg?v=1789401272",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_03.jpg?v=1789401272"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tcloudye-cognac-multi",
-          "handle": "tcloudye-cognac-multi",
-          "title": "TODDLERS' CLOUDY COGNAC MULTI",
-          "color": "COGNAC MULTI",
-          "sku": "TCLOUDYE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_01.jpg?v=1789401272",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_02.jpg?v=1789401272",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_05.jpg?v=1789401272",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_04.jpg?v=1789401272",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TCLOUDYE_COGNAC-MULTI_03.jpg?v=1789401272"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-debra",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Debra",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_01.jpg?v=1769703585",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_02.jpg?v=1769703585",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_05.jpg?v=1769703585",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_04.jpg?v=1769703585",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_03.jpg?v=1769703585"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tdebra-white",
-          "handle": "tdebra-white",
-          "title": "TODDLERS' DEBRA WHITE",
-          "color": "WHITE",
-          "sku": "TDEBRA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_01.jpg?v=1769703585",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_02.jpg?v=1769703585",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_05.jpg?v=1769703585",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_04.jpg?v=1769703585",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TDEBRA_WHITE_03.jpg?v=1769703585"
-          ],
-          "category": "PUMP",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-fleur",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Fleur",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_01.jpg?v=1788879235",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_02.jpg?v=1788879235",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_05.jpg?v=1788879235",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_04.jpg?v=1788879235",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_03.jpg?v=1788879235"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tfleur-silver",
-          "handle": "tfleur-silver",
-          "title": "TODDLERS' FLEUR SILVER",
-          "color": "SILVER",
-          "sku": "TFLEUR",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_01.jpg?v=1788879235",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_02.jpg?v=1788879235",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_05.jpg?v=1788879235",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_04.jpg?v=1788879235",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TFLEUR_SILVER_03.jpg?v=1788879235"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-locket",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Locket",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_01.jpg?v=1764614965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_02.jpg?v=1764614965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_05.jpg?v=1764614965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_04.jpg?v=1764614965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_03.jpg?v=1764614960"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tlocket-black",
-          "handle": "tlocket-black",
-          "title": "TODDLERS' LOCKET BLACK",
-          "color": "BLACK",
-          "sku": "TLOCKET",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_01.jpg?v=1764614965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_02.jpg?v=1764614965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_05.jpg?v=1764614965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_04.jpg?v=1764614965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLOCKET_BLACK_03.jpg?v=1764614960"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-luxelle",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Luxelle",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_05.jpg?v=1790687395",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_01.jpg?v=1790687395",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_04.jpg?v=1790687395",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_03.jpg?v=1790687395",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_02.jpg?v=1790687395"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tluxelle-tan",
-          "handle": "tluxelle-tan",
-          "title": "TODDLERS' LUXELLE TAN",
-          "color": "TAN",
-          "sku": "TLUXELLE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_05.jpg?v=1790687395",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_01.jpg?v=1790687395",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_04.jpg?v=1790687395",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_03.jpg?v=1790687395",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLUXELLE_TAN_02.jpg?v=1790687395"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-lyla",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Lyla",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_01.jpg?v=1771970255",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_02.jpg?v=1771970965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_05.jpg?v=1771970965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_04.jpg?v=1771970965",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_03.jpg?v=1771970965"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tlyla-white",
-          "handle": "tlyla-white",
-          "title": "TODDLERS' LYLA WHITE",
-          "color": "WHITE",
-          "sku": "TLYLA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_01.jpg?v=1771970255",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_02.jpg?v=1771970965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_05.jpg?v=1771970965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_04.jpg?v=1771970965",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TLYLA_WHITE_03.jpg?v=1771970965"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-mona",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Mona",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK.jpg?v=1705942736",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_01.jpg?v=1705957267",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_04.jpg?v=1705957267",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_03.jpg?v=1705942736",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_02.jpg?v=1705942723",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_01.jpg?v=1705954232",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_02.jpg?v=1705954232",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_05.jpg?v=1705954232",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_04.jpg?v=1705954232",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_03.jpg?v=1705954232"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tmona-black",
-          "handle": "tmona-black",
-          "title": "TODDLERS' MONA BLACK",
-          "color": "BLACK",
-          "sku": "TMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK.jpg?v=1705942736",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_01.jpg?v=1705957267",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_04.jpg?v=1705957267",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_03.jpg?v=1705942736",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BLACK_02.jpg?v=1705942723"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/tmona-bone",
-          "handle": "tmona-bone",
-          "title": "TODDLERS' MONA BONE",
-          "color": "BONE",
-          "sku": "TMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_01.jpg?v=1705954232",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_02.jpg?v=1705954232",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_05.jpg?v=1705954232",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_04.jpg?v=1705954232",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_BONE_03.jpg?v=1705954232"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-mona-pastel",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Mona Pastel",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_01.jpg?v=1769528228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_02.jpg?v=1769528228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_05.jpg?v=1769528228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_04.jpg?v=1769528228",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_03_4ffb6c45-3faa-4ade-b72b-6e49343e51fc.jpg?v=1769536902"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tmona-pastel-multi",
-          "handle": "tmona-pastel-multi",
-          "title": "TODDLERS' MONA PASTEL MULTI",
-          "color": "PASTEL MULTI",
-          "sku": "TMONA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_01.jpg?v=1769528228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_02.jpg?v=1769528228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_05.jpg?v=1769528228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_04.jpg?v=1769528228",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TMONA_PASTEL-MUL_03_4ffb6c45-3faa-4ade-b72b-6e49343e51fc.jpg?v=1769536902"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-pocket",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Pocket",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_01.jpg?v=1770218557",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_02.jpg?v=1770218557",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_05.jpg?v=1770218557",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_04.jpg?v=1770218557",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_03.jpg?v=1770218557",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_01.jpg?v=1770217976",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_02.jpg?v=1770217977",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_05.jpg?v=1770218699",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_04.jpg?v=1770218699",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_03.jpg?v=1770218699"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tpocket-blush",
-          "handle": "tpocket-blush",
-          "title": "TODDLERS' POCKET BLUSH",
-          "color": "BLUSH",
-          "sku": "TPOCKET",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_01.jpg?v=1770218557",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_02.jpg?v=1770218557",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_05.jpg?v=1770218557",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_04.jpg?v=1770218557",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_BLUSH_03.jpg?v=1770218557"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/tpocket-purple",
-          "handle": "tpocket-purple",
-          "title": "TODDLERS' POCKET PURPLE",
-          "color": "PURPLE",
-          "sku": "TPOCKET",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_01.jpg?v=1770217976",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_02.jpg?v=1770217977",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_05.jpg?v=1770218699",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_04.jpg?v=1770218699",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TPOCKET_PURPLE_03.jpg?v=1770218699"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-sadiee",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Sadiee",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_01.jpg?v=1790869739",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_02.jpg?v=1790869739",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_05.jpg?v=1790869739",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_04.jpg?v=1790869739",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_03.jpg?v=1790869739"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tsadiee-cognac",
-          "handle": "tsadiee-cognac",
-          "title": "TODDLERS' SADIEE COGNAC",
-          "color": "COGNAC",
-          "sku": "TSADIEE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_01.jpg?v=1790869739",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_02.jpg?v=1790869739",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_05.jpg?v=1790869739",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_04.jpg?v=1790869739",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSADIEE_COGNAC_03.jpg?v=1790869739"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--toddlers-slushy",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Toddlers Slushy",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_01.jpg?v=1788882203",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_02.jpg?v=1788882203",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_05.jpg?v=1788882203",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_04.jpg?v=1788882203",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_03.jpg?v=1788882203"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/tslushy-cognac-multi",
-          "handle": "tslushy-cognac-multi",
-          "title": "TODDLERS' SLUSHY COGNAC MULTI",
-          "color": "COGNAC MULTI",
-          "sku": "TSLUSHY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_01.jpg?v=1788882203",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_02.jpg?v=1788882203",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_05.jpg?v=1788882203",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_04.jpg?v=1788882203",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_KIDS_TSLUSHY_COGNAC-MULTI_03.jpg?v=1788882203"
-          ],
-          "category": "SANDAL",
-          "productType": "Kid's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--tourist-color",
@@ -42956,7 +40600,6 @@
     "https://www.stevemadden.com/products/devin-ost-pink-leather",
     "https://www.stevemadden.com/products/devin-tortoise",
     "https://www.stevemadden.com/products/devo-natural-raffia",
-    "https://www.stevemadden.com/products/devour-m-black-mesh",
     "https://www.stevemadden.com/products/diablo-taupe-suede",
     "https://www.stevemadden.com/products/diora-black",
     "https://www.stevemadden.com/products/diora-gold",
@@ -43061,7 +40704,6 @@
     "https://www.stevemadden.com/products/flutter-natural-gold",
     "https://www.stevemadden.com/products/fonza-black-leather",
     "https://www.stevemadden.com/products/fonza-perforated-wine",
-    "https://www.stevemadden.com/products/foxx-black-patent",
     "https://www.stevemadden.com/products/foxx-bone-patent",
     "https://www.stevemadden.com/products/frankie-mesh-black",
     "https://www.stevemadden.com/products/fredi-clear",
@@ -43143,7 +40785,6 @@
     "https://www.stevemadden.com/products/ina-black-multi",
     "https://www.stevemadden.com/products/ives-black-box",
     "https://www.stevemadden.com/products/ives-blush-box-leather",
-    "https://www.stevemadden.com/products/ives-red-box",
     "https://www.stevemadden.com/products/izara-black-leather1",
     "https://www.stevemadden.com/products/izara-cognac-patent",
     "https://www.stevemadden.com/products/jady-black-patent",
@@ -43226,7 +40867,6 @@
     "https://www.stevemadden.com/products/kaplan-camel-suede",
     "https://www.stevemadden.com/products/karlson-black-leather",
     "https://www.stevemadden.com/products/karlson-burgundy-leather",
-    "https://www.stevemadden.com/products/karlson-natural-snake",
     "https://www.stevemadden.com/products/kathy-black-leather",
     "https://www.stevemadden.com/products/kathy-taupe-leather",
     "https://www.stevemadden.com/products/kaylor-bone-leather",
@@ -43243,55 +40883,6 @@
     "https://www.stevemadden.com/products/kessey-black-leather",
     "https://www.stevemadden.com/products/kessey-brown-suede",
     "https://www.stevemadden.com/products/kessey-sand-suede",
-    "https://www.stevemadden.com/products/jabigal-black",
-    "https://www.stevemadden.com/products/jabigal-silver",
-    "https://www.stevemadden.com/products/jadia-white-mesh",
-    "https://www.stevemadden.com/products/javenue-rainbow-multi",
-    "https://www.stevemadden.com/products/jbeastie-pink",
-    "https://www.stevemadden.com/products/jbeastie-tan",
-    "https://www.stevemadden.com/products/jbigmona-black",
-    "https://www.stevemadden.com/products/jbigmona-raffia",
-    "https://www.stevemadden.com/products/jbrazin-white",
-    "https://www.stevemadden.com/products/jbuddies-brown",
-    "https://www.stevemadden.com/products/jbuddies-pink",
-    "https://www.stevemadden.com/products/jcharisa-black",
-    "https://www.stevemadden.com/products/jcharisa-natural",
-    "https://www.stevemadden.com/products/jcharms-black",
-    "https://www.stevemadden.com/products/jcloudye-cognac-multi",
-    "https://www.stevemadden.com/products/jdori-white",
-    "https://www.stevemadden.com/products/jedna-black",
-    "https://www.stevemadden.com/products/jgillian-cognac-multi",
-    "https://www.stevemadden.com/products/jglazer-cognac",
-    "https://www.stevemadden.com/products/jgrovee-clear",
-    "https://www.stevemadden.com/products/jgrovee-pink",
-    "https://www.stevemadden.com/products/jkiki-black",
-    "https://www.stevemadden.com/products/jkiko-natural",
-    "https://www.stevemadden.com/products/jkya-black",
-    "https://www.stevemadden.com/products/jlundin-black",
-    "https://www.stevemadden.com/products/jluxelle-tan",
-    "https://www.stevemadden.com/products/jmagenta-natural-multi",
-    "https://www.stevemadden.com/products/jmazie-pink-multi",
-    "https://www.stevemadden.com/products/jmino-blush",
-    "https://www.stevemadden.com/products/jmochi-cognac",
-    "https://www.stevemadden.com/products/jmona-black",
-    "https://www.stevemadden.com/products/jmona-bone",
-    "https://www.stevemadden.com/products/jmona-j-blue",
-    "https://www.stevemadden.com/products/jmona-j-mint",
-    "https://www.stevemadden.com/products/jmona-j-pink",
-    "https://www.stevemadden.com/products/jmona-j-purple",
-    "https://www.stevemadden.com/products/jmona-pastel-multi",
-    "https://www.stevemadden.com/products/joriolec-brown",
-    "https://www.stevemadden.com/products/jpepper-black",
-    "https://www.stevemadden.com/products/jpepper-taupe",
-    "https://www.stevemadden.com/products/jpop-clear",
-    "https://www.stevemadden.com/products/jpuff-cognac",
-    "https://www.stevemadden.com/products/jriggs-tan",
-    "https://www.stevemadden.com/products/jroree-r-natural",
-    "https://www.stevemadden.com/products/jselen-cognac",
-    "https://www.stevemadden.com/products/jsizzle-gold",
-    "https://www.stevemadden.com/products/jsleigh-cognac",
-    "https://www.stevemadden.com/products/jsleigh-denim",
-    "https://www.stevemadden.com/products/jslushy-cognac-multi",
     "https://www.stevemadden.com/products/kimmens-black",
     "https://www.stevemadden.com/products/kimmens-brown",
     "https://www.stevemadden.com/products/kingsly-black",
@@ -43323,7 +40914,6 @@
     "https://www.stevemadden.com/products/lando-brown-suede",
     "https://www.stevemadden.com/products/lanta-black-leather",
     "https://www.stevemadden.com/products/lanta-tan-leather",
-    "https://www.stevemadden.com/products/lanti-black-leather",
     "https://www.stevemadden.com/products/lanti-bone-leather",
     "https://www.stevemadden.com/products/lanti-red-leather",
     "https://www.stevemadden.com/products/larah-black-leather",
@@ -43423,7 +41013,6 @@
     "https://www.stevemadden.com/products/madison-mesh-black",
     "https://www.stevemadden.com/products/madison-black-red",
     "https://www.stevemadden.com/products/madison-c-brown-multi",
-    "https://www.stevemadden.com/products/madison-burgundy",
     "https://www.stevemadden.com/products/madison-f-black-leather",
     "https://www.stevemadden.com/products/madison-leopard-suede",
     "https://www.stevemadden.com/products/madison-red-suede",
@@ -43588,6 +41177,7 @@
     "https://www.stevemadden.com/products/primo-black-leat",
     "https://www.stevemadden.com/products/primo-dark-green-leather",
     "https://www.stevemadden.com/products/privy-bone-mesh",
+    "https://www.stevemadden.com/products/privy-brown-mesh",
     "https://www.stevemadden.com/products/priya-black-patent",
     "https://www.stevemadden.com/products/priya-g-black",
     "https://www.stevemadden.com/products/priya-flower-blue-satin",
@@ -43800,7 +41390,6 @@
     "https://www.stevemadden.com/products/suki-black-leather",
     "https://www.stevemadden.com/products/suki-gold-leather",
     "https://www.stevemadden.com/products/suki-multi",
-    "https://www.stevemadden.com/products/sullivan-black-patent",
     "https://www.stevemadden.com/products/sunkissed-embellished-multi",
     "https://www.stevemadden.com/products/sunkissed-multi-raffia",
     "https://www.stevemadden.com/products/sunkissed-raffia",
@@ -43847,27 +41436,12 @@
     "https://www.stevemadden.com/products/tilly-chestnut-suede",
     "https://www.stevemadden.com/products/tino-black",
     "https://www.stevemadden.com/products/tino-white",
-    "https://www.stevemadden.com/products/tinsley-black-leather",
     "https://www.stevemadden.com/products/tinsley-tan-leather",
     "https://www.stevemadden.com/products/titan-brown-suede",
     "https://www.stevemadden.com/products/titan-taupe-suede",
     "https://www.stevemadden.com/products/tobin-brown-suede",
     "https://www.stevemadden.com/products/tobin-chestnut-suede",
     "https://www.stevemadden.com/products/tobin-navy-suede",
-    "https://www.stevemadden.com/products/tbubbles-black",
-    "https://www.stevemadden.com/products/tcloudye-cognac-multi",
-    "https://www.stevemadden.com/products/tdebra-white",
-    "https://www.stevemadden.com/products/tfleur-silver",
-    "https://www.stevemadden.com/products/tlocket-black",
-    "https://www.stevemadden.com/products/tluxelle-tan",
-    "https://www.stevemadden.com/products/tlyla-white",
-    "https://www.stevemadden.com/products/tmona-black",
-    "https://www.stevemadden.com/products/tmona-bone",
-    "https://www.stevemadden.com/products/tmona-pastel-multi",
-    "https://www.stevemadden.com/products/tpocket-blush",
-    "https://www.stevemadden.com/products/tpocket-purple",
-    "https://www.stevemadden.com/products/tsadiee-cognac",
-    "https://www.stevemadden.com/products/tslushy-cognac-multi",
     "https://www.stevemadden.com/products/tourist-multicolor",
     "https://www.stevemadden.com/products/tourist-multi-raffia",
     "https://www.stevemadden.com/products/tovi-black-leather",
