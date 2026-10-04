@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:59:17.285Z",
+  "generatedAt": "2026-10-04T09:43:46.787Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -4690,7 +4690,7 @@
     {
       "brandId": "larroude",
       "brandName": "LARROUDE",
-      "modelFamilyCount": 332,
+      "modelFamilyCount": 346,
       "sourceProductCount": 692,
       "sourceFootwearCategoryCount": 194,
       "categories": [
@@ -6066,7 +6066,7 @@
     {
       "brandId": "dolce-vita",
       "brandName": "DOLCE VITA",
-      "modelFamilyCount": 637,
+      "modelFamilyCount": 647,
       "sourceProductCount": 1221,
       "sourceFootwearCategoryCount": 93,
       "categories": [
@@ -10192,7 +10192,7 @@
     {
       "brandId": "hereu",
       "brandName": "HEREU",
-      "modelFamilyCount": 93,
+      "modelFamilyCount": 100,
       "sourceProductCount": 215,
       "sourceFootwearCategoryCount": 37,
       "categories": [
@@ -10570,7 +10570,7 @@
     {
       "brandId": "luis-onofre",
       "brandName": "LUIS ONOFRE",
-      "modelFamilyCount": 266,
+      "modelFamilyCount": 267,
       "sourceProductCount": 314,
       "sourceFootwearCategoryCount": 41,
       "categories": [
@@ -12158,7 +12158,7 @@
     {
       "brandId": "maison-margiela",
       "brandName": "MAISON MARGIELA",
-      "modelFamilyCount": 107,
+      "modelFamilyCount": 109,
       "sourceProductCount": 15,
       "sourceFootwearCategoryCount": 7,
       "categories": [
@@ -12223,55 +12223,55 @@
     {
       "brandId": "lemaire",
       "brandName": "LEMAIRE",
-      "modelFamilyCount": 70,
-      "sourceProductCount": 93,
+      "modelFamilyCount": 74,
+      "sourceProductCount": 69,
       "sourceFootwearCategoryCount": 5,
       "categories": [
         {
           "categoryId": "shoes",
           "categoryName": "Shoes",
           "categoryPath": "/collections/shoes",
-          "productCount": 93,
+          "productCount": 69,
           "generic": true
         },
         {
           "categoryId": "women-shoes",
           "categoryName": "Women Shoes",
           "categoryPath": "/collections/women-shoes",
-          "productCount": 66,
+          "productCount": 57,
           "generic": true
         },
         {
           "categoryId": "shoes-new-arrivals",
           "categoryName": "Shoes New Arrivals",
           "categoryPath": "/collections/shoes-new-arrivals",
-          "productCount": 38,
+          "productCount": 27,
           "generic": false
         },
         {
           "categoryId": "new-arrivals-shoes-w",
           "categoryName": "New Arrivals Shoes W",
           "categoryPath": "/collections/new-arrivals-shoes-w",
-          "productCount": 25,
+          "productCount": 16,
           "generic": false
         },
         {
           "categoryId": "women-shoes-new-arrivals",
           "categoryName": "Women Shoes New Arrivals",
           "categoryPath": "/collections/new-arrivals-shoes-w",
-          "productCount": 25,
+          "productCount": 16,
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 38,
-      "productsWithNoMeaningfulCategory": 55,
-      "categoryCoveragePercent": 40.9,
-      "productsOnlyGenericCategory": 55,
+      "productsWithMeaningfulCategory": 27,
+      "productsWithNoMeaningfulCategory": 42,
+      "categoryCoveragePercent": 39.1,
+      "productsOnlyGenericCategory": 42,
       "collectionUrlsCrawled": [
         "https://www.lemaire.fr/collections/women-shoes"
       ],
       "collectionUrlsDiscoveredNotCrawled": [],
-      "needsRecrawl": false
+      "needsRecrawl": true
     },
     {
       "brandId": "coperni",
@@ -14515,7 +14515,7 @@
     {
       "brandId": "sophia-webster",
       "brandName": "SOPHIA WEBSTER",
-      "modelFamilyCount": 172,
+      "modelFamilyCount": 178,
       "sourceProductCount": 187,
       "sourceFootwearCategoryCount": 12,
       "categories": [
@@ -15928,7 +15928,7 @@
     {
       "brandId": "nine-west",
       "brandName": "NINE WEST",
-      "modelFamilyCount": 176,
+      "modelFamilyCount": 179,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -16577,7 +16577,7 @@
     {
       "brandId": "rouje",
       "brandName": "ROUJE",
-      "modelFamilyCount": 31,
+      "modelFamilyCount": 32,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -16628,7 +16628,7 @@
     {
       "brandId": "naguisa",
       "brandName": "NAGUISA",
-      "modelFamilyCount": 108,
+      "modelFamilyCount": 151,
       "sourceProductCount": 114,
       "sourceFootwearCategoryCount": 9,
       "categories": [
@@ -17644,7 +17644,7 @@
     {
       "brandId": "fly-london",
       "brandName": "FLY LONDON",
-      "modelFamilyCount": 959,
+      "modelFamilyCount": 965,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -18543,7 +18543,7 @@
     {
       "brandId": "massimo-dutti",
       "brandName": "MASSIMO DUTTI",
-      "modelFamilyCount": 107,
+      "modelFamilyCount": 112,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -18785,7 +18785,7 @@
     {
       "brandId": "loeffler-randall",
       "brandName": "LOEFFLER RANDALL",
-      "modelFamilyCount": 185,
+      "modelFamilyCount": 189,
       "sourceProductCount": 4,
       "sourceFootwearCategoryCount": 2,
       "categories": [
@@ -18815,7 +18815,7 @@
     {
       "brandId": "freda-salvador",
       "brandName": "FREDA SALVADOR",
-      "modelFamilyCount": 114,
+      "modelFamilyCount": 119,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -18830,7 +18830,7 @@
     {
       "brandId": "sarah-flint",
       "brandName": "SARAH FLINT",
-      "modelFamilyCount": 92,
+      "modelFamilyCount": 94,
       "sourceProductCount": 0,
       "sourceFootwearCategoryCount": 0,
       "categories": [],
@@ -18861,7 +18861,7 @@
       "brandId": "paloma-wool",
       "brandName": "PALOMA WOOL",
       "modelFamilyCount": 37,
-      "sourceProductCount": 128,
+      "sourceProductCount": 126,
       "sourceFootwearCategoryCount": 9,
       "categories": [
         {
@@ -18893,16 +18893,16 @@
           "generic": false
         },
         {
-          "categoryId": "sneakers",
-          "categoryName": "Sneakers",
-          "categoryPath": "/collections/sneakers",
-          "productCount": 16,
-          "generic": false
-        },
-        {
           "categoryId": "boots",
           "categoryName": "Boots",
           "categoryPath": "/collections/boots",
+          "productCount": 14,
+          "generic": false
+        },
+        {
+          "categoryId": "sneakers",
+          "categoryName": "Sneakers",
+          "categoryPath": "/collections/sneakers",
           "productCount": 14,
           "generic": false
         },
@@ -18928,9 +18928,9 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 62,
+      "productsWithMeaningfulCategory": 60,
       "productsWithNoMeaningfulCategory": 66,
-      "categoryCoveragePercent": 48.4,
+      "categoryCoveragePercent": 47.6,
       "productsOnlyGenericCategory": 66,
       "collectionUrlsCrawled": [
         "https://www.palomawool.com/collections/shoes"
@@ -19189,7 +19189,7 @@
       "brandName": "4CCCCEES",
       "modelFamilyCount": 166,
       "sourceProductCount": 202,
-      "sourceFootwearCategoryCount": 11,
+      "sourceFootwearCategoryCount": 12,
       "categories": [
         {
           "categoryId": "shoes",
@@ -19197,6 +19197,13 @@
           "categoryPath": "/shoes/",
           "productCount": 76,
           "generic": true
+        },
+        {
+          "categoryId": "novedades-aw26-tiktok",
+          "categoryName": "Novedades AW26 TikTok",
+          "categoryPath": "/collections/novedades-aw26-tiktok",
+          "productCount": 68,
+          "generic": false
         },
         {
           "categoryId": "sandals",
@@ -19269,10 +19276,10 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 185,
-      "productsWithNoMeaningfulCategory": 17,
-      "categoryCoveragePercent": 91.6,
-      "productsOnlyGenericCategory": 17,
+      "productsWithMeaningfulCategory": 190,
+      "productsWithNoMeaningfulCategory": 12,
+      "categoryCoveragePercent": 94.1,
+      "productsOnlyGenericCategory": 12,
       "collectionUrlsCrawled": [
         "https://www.4ccccees.com/collections/shoes",
         "https://www.4ccccees.com/collections/womens-shoes",
@@ -19683,7 +19690,7 @@
     {
       "brandId": "naked-wolfe",
       "brandName": "NAKED WOLFE",
-      "modelFamilyCount": 116,
+      "modelFamilyCount": 118,
       "sourceProductCount": 3,
       "sourceFootwearCategoryCount": 3,
       "categories": [

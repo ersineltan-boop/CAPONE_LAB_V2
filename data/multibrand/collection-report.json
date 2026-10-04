@@ -1,6 +1,6 @@
 {
-  "runStartedAt": "2026-10-03T15:36:44.010Z",
-  "runFinishedAt": "2026-10-03T15:42:21.463Z",
+  "runStartedAt": "2026-10-04T09:20:53.803Z",
+  "runFinishedAt": "2026-10-04T09:26:52.232Z",
   "totalProducts": 21538,
   "sources": [
     {
@@ -37,27 +37,23 @@
     },
     {
       "source": "JIL SANDER",
-      "status": "partial",
+      "status": "success",
       "method": "custom-adapter",
       "discoveredProductLinks": 78,
       "parsedProducts": 78,
       "productsWithImages": 78,
       "productsWithMaterial": 0,
-      "errors": [
-        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED",
-        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED"
-      ],
-      "hitLegacyCap": true,
+      "errors": [],
+      "hitLegacyCap": false,
       "footwearRoots": [
         "/en-us/women/accessories/shoes"
       ],
       "pagesTraversed": 2,
-      "paginationExhausted": false,
-      "hitCollectionCrawlCap": true,
+      "paginationExhausted": true,
       "collectionsCrawled": [
         "/en-us/women/accessories/shoes"
       ],
-      "sourceReportedProductCount": 77
+      "sourceReportedProductCount": 78
     },
     {
       "source": "COPERNI",
@@ -272,16 +268,15 @@
       "productsWithImages": 329,
       "productsWithMaterial": 327,
       "errors": [
-        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED",
-        "SALESFORCE_PARTIAL:PAGINATION_NOT_EXHAUSTED"
+        "SALESFORCE_PARTIAL:SOURCE_TOTAL_NOT_RECONCILED",
+        "SALESFORCE_PARTIAL:SOURCE_TOTAL_NOT_RECONCILED"
       ],
-      "hitLegacyCap": true,
+      "hitLegacyCap": false,
       "footwearRoots": [
         "/en-us/shoes/"
       ],
       "pagesTraversed": 15,
-      "paginationExhausted": false,
-      "hitCollectionCrawlCap": true,
+      "paginationExhausted": true,
       "collectionsCrawled": [
         "/en-us/shoes/"
       ],
@@ -361,9 +356,9 @@
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 545,
-      "parsedProducts": 545,
-      "productsWithImages": 545,
+      "discoveredProductLinks": 541,
+      "parsedProducts": 541,
+      "productsWithImages": 541,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -382,7 +377,7 @@
         "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 545,
+      "rawProductUrlsDiscovered": 541,
       "duplicateCount": 0,
       "pagesTraversed": 25,
       "paginationExhausted": true,
