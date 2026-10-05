@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T09:43:46.787Z",
+  "generatedAt": "2026-10-05T14:18:27.954Z",
   "brands": [
     {
       "brandId": "schutz",
@@ -7240,7 +7240,7 @@
     {
       "brandId": "steve-madden",
       "brandName": "STEVE MADDEN",
-      "modelFamilyCount": 834,
+      "modelFamilyCount": 835,
       "sourceProductCount": 1555,
       "sourceFootwearCategoryCount": 229,
       "categories": [
@@ -13014,50 +13014,50 @@
     {
       "brandId": "sergio-rossi",
       "brandName": "SERGIO ROSSI",
-      "modelFamilyCount": 41,
-      "sourceProductCount": 100,
+      "modelFamilyCount": 45,
+      "sourceProductCount": 108,
       "sourceFootwearCategoryCount": 28,
       "categories": [
         {
           "categoryId": "women-s-shoes",
           "categoryName": "Women’s Shoes",
           "categoryPath": "/collections/womens-shoes",
-          "productCount": 98,
+          "productCount": 106,
           "generic": true
         },
         {
           "categoryId": "new-arrivals",
           "categoryName": "New Arrivals",
           "categoryPath": "/collections/new-arrivals",
-          "productCount": 61,
+          "productCount": 69,
           "generic": false
         },
         {
           "categoryId": "pumps",
           "categoryName": "Pumps",
           "categoryPath": "/uk/shopping/women/pumps-1/items.aspx",
-          "productCount": 29,
+          "productCount": 30,
           "generic": false
         },
         {
           "categoryId": "ankle-boots-booties",
           "categoryName": "Ankle Boots & Booties",
           "categoryPath": "/collections/womens-ankle-boots-and-booties",
-          "productCount": 20,
+          "productCount": 25,
           "generic": false
         },
         {
           "categoryId": "booties",
           "categoryName": "Booties",
           "categoryPath": "/collections/womens-ankle-boots-and-booties",
-          "productCount": 20,
+          "productCount": 25,
           "generic": false
         },
         {
           "categoryId": "women-s-leather-ankle-boots",
           "categoryName": "Women’s Leather Ankle Boots",
           "categoryPath": "/collections/womens-leather-ankle-boots",
-          "productCount": 16,
+          "productCount": 19,
           "generic": false
         },
         {
@@ -13071,7 +13071,7 @@
           "categoryId": "sandals",
           "categoryName": "Sandals",
           "categoryPath": "/collections/womens-sandals",
-          "productCount": 13,
+          "productCount": 14,
           "generic": false
         },
         {
@@ -13110,6 +13110,13 @@
           "generic": false
         },
         {
+          "categoryId": "loafers-slippers",
+          "categoryName": "Loafers & Slippers",
+          "categoryPath": "/collections/womens-loafers-and-slippers",
+          "productCount": 8,
+          "generic": false
+        },
+        {
           "categoryId": "women-s-high-heel-sandals",
           "categoryName": "Women’s High Heel Sandals",
           "categoryPath": "/collections/womens-high-heel-sandals",
@@ -13117,17 +13124,17 @@
           "generic": false
         },
         {
-          "categoryId": "loafers-slippers",
-          "categoryName": "Loafers & Slippers",
-          "categoryPath": "/collections/womens-loafers-and-slippers",
+          "categoryId": "low-heel-pumps",
+          "categoryName": "Low Heel Pumps",
+          "categoryPath": "/collections/low-heel-pumps",
           "productCount": 7,
           "generic": false
         },
         {
-          "categoryId": "low-heel-pumps",
-          "categoryName": "Low Heel Pumps",
-          "categoryPath": "/collections/low-heel-pumps",
-          "productCount": 6,
+          "categoryId": "women-s-high-heel-ankle-boots",
+          "categoryName": "Women’s High Heel Ankle Boots",
+          "categoryPath": "/collections/womens-high-heel-ankle-boots",
+          "productCount": 7,
           "generic": false
         },
         {
@@ -13145,9 +13152,9 @@
           "generic": false
         },
         {
-          "categoryId": "women-s-high-heel-ankle-boots",
-          "categoryName": "Women’s High Heel Ankle Boots",
-          "categoryPath": "/collections/womens-high-heel-ankle-boots",
+          "categoryId": "women-s-medium-heel-sandals",
+          "categoryName": "Women’s Medium Heel Sandals",
+          "categoryPath": "/collections/womens-medium-heel-sandals",
           "productCount": 5,
           "generic": false
         },
@@ -13162,13 +13169,6 @@
           "categoryId": "women-s-black-sandals",
           "categoryName": "Women’s Black Sandals",
           "categoryPath": "/collections/womens-black-sandals",
-          "productCount": 4,
-          "generic": false
-        },
-        {
-          "categoryId": "women-s-medium-heel-sandals",
-          "categoryName": "Women’s Medium Heel Sandals",
-          "categoryPath": "/collections/womens-medium-heel-sandals",
           "productCount": 4,
           "generic": false
         },
@@ -13215,7 +13215,7 @@
           "generic": false
         }
       ],
-      "productsWithMeaningfulCategory": 100,
+      "productsWithMeaningfulCategory": 108,
       "productsWithNoMeaningfulCategory": 0,
       "categoryCoveragePercent": 100,
       "productsOnlyGenericCategory": 0,
@@ -16715,7 +16715,7 @@
     {
       "brandId": "flabelus",
       "brandName": "FLABELUS",
-      "modelFamilyCount": 459,
+      "modelFamilyCount": 461,
       "sourceProductCount": 351,
       "sourceFootwearCategoryCount": 13,
       "categories": [
@@ -18520,22 +18520,22 @@
     {
       "brandId": "zara",
       "brandName": "ZARA",
-      "modelFamilyCount": 560,
-      "sourceProductCount": 575,
+      "modelFamilyCount": 561,
+      "sourceProductCount": 576,
       "sourceFootwearCategoryCount": 1,
       "categories": [
         {
           "categoryId": "view-all",
           "categoryName": "VIEW ALL",
           "categoryPath": "/us/en/woman-shoes-l1251.html",
-          "productCount": 575,
+          "productCount": 576,
           "generic": true
         }
       ],
       "productsWithMeaningfulCategory": 0,
-      "productsWithNoMeaningfulCategory": 575,
+      "productsWithNoMeaningfulCategory": 576,
       "categoryCoveragePercent": 0,
-      "productsOnlyGenericCategory": 575,
+      "productsOnlyGenericCategory": 576,
       "collectionUrlsCrawled": [],
       "collectionUrlsDiscoveredNotCrawled": [],
       "needsRecrawl": true
