@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T09:44:45.923Z",
+  "generatedAt": "2026-10-05T14:19:25.708Z",
   "brands": [
     {
       "id": "schutz",
@@ -2190,7 +2190,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=130. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=131. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2198,7 +2198,7 @@
       "collectionPaths": [
         "/en/collections/shoes-all"
       ],
-      "productLimit": 130,
+      "productLimit": 131,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -2212,7 +2212,7 @@
         "shoes-all"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 130
+      "backfillLimit": 131
     },
     {
       "id": "ganni",
@@ -2695,7 +2695,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=557. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=558. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2703,7 +2703,7 @@
       "collectionPaths": [
         "/collections/shoes"
       ],
-      "productLimit": 557,
+      "productLimit": 558,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -2717,7 +2717,7 @@
         "shoes"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 557
+      "backfillLimit": 558
     },
     {
       "id": "paris-texas",
@@ -4547,7 +4547,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=1246. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1245. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,

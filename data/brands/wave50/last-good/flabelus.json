@@ -2,8 +2,8 @@
   "slug": "flabelus",
   "brand": "FLABELUS",
   "officialUrl": "https://flabelus.com",
-  "snapshotId": "flabelus:2026-10-04T09:20:08.974Z",
-  "collectedAt": "2026-10-04T09:20:08.974Z",
+  "snapshotId": "flabelus:2026-10-05T13:57:37.372Z",
+  "collectedAt": "2026-10-05T13:57:37.372Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 490,
-    "collected": 490,
+    "sourceTotal": 492,
+    "collected": 492,
     "missing": 0,
     "coverage": 100,
     "excluded": 949,
     "paginationExhausted": true,
-    "galleryComplete": 490,
+    "galleryComplete": 492,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 20,
+  "newArrivalsFootwear": 22,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -9113,6 +9113,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "flabelus--lula",
+      "brand": "FLABELUS",
+      "canonicalName": "Lula",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_1.jpg?v=1785768672",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_2.jpg?v=1785768672",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_3.jpg?v=1785768673"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://flabelus.com/products/lula",
+          "handle": "lula",
+          "title": "Lula",
+          "color": null,
+          "sku": "262FZ02VGLD0735",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_1.jpg?v=1785768672",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_2.jpg?v=1785768672",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane168Plata_3.jpg?v=1785768673"
+          ],
+          "category": "BALLERINA",
+          "productType": "Mary Jane",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "flabelus--lydia",
       "brand": "FLABELUS",
       "canonicalName": "Lydia",
@@ -13999,6 +14031,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "flabelus--tess",
+      "brand": "FLABELUS",
+      "canonicalName": "Tess",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_1.jpg?v=1785768714",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_2.jpg?v=1785768714",
+        "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_3.jpg?v=1785768714"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://flabelus.com/products/tess",
+          "handle": "tess",
+          "title": "Tess",
+          "color": null,
+          "sku": "262FZ02VGR0635",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_1.jpg?v=1785768714",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_2.jpg?v=1785768714",
+            "https://cdn.shopify.com/s/files/1/0592/3546/7424/files/CopyofMaryjane176gold_3.jpg?v=1785768714"
+          ],
+          "category": "BALLERINA",
+          "productType": "Mary Jane",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "flabelus--d-orsey-booty",
       "brand": "FLABELUS",
       "canonicalName": "D Orsey Booty",
@@ -15943,6 +16007,7 @@
     "https://flabelus.com/products/lucie",
     "https://flabelus.com/products/lucien",
     "https://flabelus.com/products/lucrecia",
+    "https://flabelus.com/products/lula",
     "https://flabelus.com/products/lydia",
     "https://flabelus.com/products/macbeth",
     "https://flabelus.com/products/mae-black",
@@ -16099,6 +16164,7 @@
     "https://flabelus.com/products/tennis-ballerina-pink",
     "https://flabelus.com/products/tennis-ballerina-yellow",
     "https://flabelus.com/products/teseo",
+    "https://flabelus.com/products/tess",
     "https://flabelus.com/products/the-dorsey-booty-black",
     "https://flabelus.com/products/the-dorsey-booty-double-biscuit",
     "https://flabelus.com/products/the-dorsey-booty-double-black",
