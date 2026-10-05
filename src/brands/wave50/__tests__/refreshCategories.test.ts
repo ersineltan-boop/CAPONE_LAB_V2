@@ -36,7 +36,7 @@ describe('refresh source category evidence',()=>{
 });
 
 import {reviewedOfficialCategory,REVIEWED_OFFICIAL_CATEGORIES} from '../../automation/reviewedCategories';
-import {planWomensCollections} from '../collections';
+import {approvedFootwearRoot,planWomensCollections} from '../collections';
 import {isWomensFootwearCollection} from '../../../collector/shopifyCollectionFilter';
 
 describe('verified refresh scope and reviewed exceptions',()=>{
@@ -51,6 +51,19 @@ describe('verified refresh scope and reviewed exceptions',()=>{
    {handle:'sale-footwear',title:'Sale Footwear',productsCount:88},
    {handle:'sale-ready-to-wear',title:'Sale Ready to Wear',productsCount:199},
   ],{womenCollectionPath:'/collections/footwear'}).catalogPaths).toEqual(['/collections/footwear','/collections/sale-footwear']);
+ });
+ it('restores the complete scope on the next refresh after publishing root plus sale',()=>{
+  const previousPaths=['/collections/footwear','/collections/sale-footwear'];
+  const root=approvedFootwearRoot(previousPaths);
+  expect(root).toBe('/collections/footwear');
+  expect(planWomensCollections([
+   {handle:'footwear',title:'Footwear',productsCount:34},
+   {handle:'sale-footwear',title:'Sale Footwear',productsCount:88},
+  ],{womenCollectionPath:root}).catalogPaths).toEqual(previousPaths);
+  expect(approvedFootwearRoot([...previousPaths].reverse())).toBe(root);
+  expect(approvedFootwearRoot(['/collections/shoes'])).toBe('/collections/shoes');
+  expect(approvedFootwearRoot(['/collections/footwear','/collections/womens-boots'])).toBeUndefined();
+  expect(approvedFootwearRoot(['/collections/all'])).toBeUndefined();
  });
  it('limits a visual review to the exact official URL and reviewed image',()=>{
   const review=REVIEWED_OFFICIAL_CATEGORIES[0]!;

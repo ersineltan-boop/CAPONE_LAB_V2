@@ -15,6 +15,20 @@ export function parseMassimoTransferState(html: string): Row | null {
   try { return JSON.parse(value); } catch { return null; }
 }
 
+async function fetchMassimoState(http: OnboardingHttp, url: string) {
+  let response = await http.fetchText(url, { timeoutMs: 20_000 });
+  let state = response.ok ? parseMassimoTransferState(response.text) : null;
+  // A single ordinary retry can recover an incomplete storefront response.
+  // Access-denied/challenge pages are blockers, never schema fallbacks.
+  const blocked = /access denied|captcha|verify you are human|checking your browser/i.test(response.text);
+  if (!state && !blocked && (response.status === 200 || response.status === 429 || response.status >= 500)) {
+    await new Promise(resolve => setTimeout(resolve, 1_000));
+    response = await http.fetchText(url, { timeoutMs: 20_000 });
+    state = response.ok ? parseMassimoTransferState(response.text) : null;
+  }
+  return { response, state };
+}
+
 export function isMassimoProductImage(url: string): boolean {
   try {
     const parsed = new URL(url);
@@ -71,8 +85,7 @@ export function mapMassimoApiProduct(row: Row, discoveredAt: string): PilotProdu
 }
 
 export async function collectMassimoDuttiCatalog(http: OnboardingHttp): Promise<CollectionAttemptResult> {
-  const response = await http.fetchText(MASSIMO_SHOES_URL);
-  const state = response.ok ? parseMassimoTransferState(response.text) : null;
+  const { response, state } = await fetchMassimoState(http, MASSIMO_SHOES_URL);
   const rows = state?.TRANSFER_PRODUCTS_WITH_IDS?.products;
   const now = new Date().toISOString();
   const baseline = (Array.isArray(rows) ? rows : []).map((row: Row) => mapMassimoProduct(row, MASSIMO_SHOES_URL, now)).filter((row): row is PilotProduct => Boolean(row));
@@ -103,8 +116,7 @@ export async function collectMassimoDuttiCatalog(http: OnboardingHttp): Promise<
   // Its full grid is membership evidence even when only initial rows are SSR.
   // A failed New In read must prevent publication of cleared NEW flags.
   if (state && errors.length === 0 && ids.length > 0) {
-    const newPage = await http.fetchText(MASSIMO_NEW_IN_URL, { timeoutMs: 20_000 });
-    const newState = newPage.ok ? parseMassimoTransferState(newPage.text) : null;
+    const { response: newPage, state: newState } = await fetchMassimoState(http, MASSIMO_NEW_IN_URL);
     const newElements = newState?.TRANSFER_CATEGORY_PRODUCTS?.categoryGrid?.gridElements;
     if (!newPage.ok || !Array.isArray(newElements)) {
       errors.push(!newPage.ok ? `Massimo New In HTTP ${newPage.status}` : "Massimo New In transfer-state grid missing");
