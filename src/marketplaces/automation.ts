@@ -30,10 +30,14 @@ export interface MarketplaceRefreshCandidate {
   errors: string[];
   preExcludedByPolicy?: number;
   newnessVerified?: boolean;
+  collectionProgress?: Record<string, unknown>;
+  retryWindow?: Record<string, unknown>;
 }
 
 export interface MarketplaceGateReport {
   newnessVerified?: boolean;
+  collectionProgress?: Record<string, unknown>;
+  retryWindow?: Record<string, unknown>;
   publicationCoverage: "FULL" | "PARTIAL";
   quarantinedProducts: number;
   sourceId: string;
@@ -218,6 +222,8 @@ export function evaluateMarketplaceCandidate(input: {
     eligibleProducts,
     report: {
       newnessVerified: input.candidate.newnessVerified ?? false,
+      collectionProgress: input.candidate.collectionProgress,
+      retryWindow: input.candidate.retryWindow,
       publicationCoverage: quarantined.length > 0 ? "PARTIAL" : "FULL",
       quarantinedProducts: quarantined.length,
       sourceId,

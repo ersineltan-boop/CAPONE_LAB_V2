@@ -2,7 +2,9 @@ import { appendFile, mkdir, rename, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { collectFarfetch, FARFETCH_ID } from "../src/collector/farfetch";
+import { FARFETCH_ID } from "../src/collector/farfetch";
+import {collectFarfetchProgress} from "../src/collector/farfetchProgress";
+import {recordSourceRetry, sourceRetryPause} from "../src/collector/sourceRetry";
 import { publishMarketplaceDelivery } from "../src/collector/marketplaceDelivery";
 import { collect24S } from "../src/collector/twentyFourS";
 import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
@@ -22,6 +24,7 @@ import { isExcludedMarketplaceBrand } from "../src/marketplaces/marketplacePolic
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ARTIFACT_DIR = join(ROOT, "data", "onboarding", "staging", "marketplace-refresh");
 const REPORT_PATH = join(ARTIFACT_DIR, "report.json");
+const PROGRESS_DIR = join(ROOT, "logs/marketplace-progress");
 
 interface MarketplaceAutomationReport {
   schemaVersion: 1;
@@ -83,7 +86,8 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
   }
 
   if (sourceId === FARFETCH_ID) {
-    const result = await collectFarfetch({ maxPagesPerListing: 80 });
+    const result = await collectFarfetchProgress({directory: join(PROGRESS_DIR, 'farfetch')});
+    await writeJson(join(ARTIFACT_DIR, "farfetch-progress.json"), {...result, products: undefined});
     return {
       sourceId,
       products: result.products,
@@ -93,6 +97,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
       eligibleTotal: result.sourceReportedProductCount === null ? null : result.sourceReportedProductCount - excludedCount(result.products),
       paginationExhausted: result.paginationExhausted,
       errors: result.errors,
+      collectionProgress: result.progress,
     };
   }
 
@@ -162,7 +167,19 @@ async function main(): Promise<void> {
     console.log(`\nCollecting ${sourceId}...`);
     let candidate: MarketplaceRefreshCandidate;
     try {
-      candidate = await collectCandidate(sourceId);
+      const resumable = [FARFETCH_ID, LEVEL_SHOES_ID, FREE_PEOPLE_ID].includes(sourceId);
+      const paused = resumable && !process.argv.includes('--retry-blocked') ? await sourceRetryPause(PROGRESS_DIR, sourceId) : null;
+      if (paused) {
+        candidate = failedCandidate(sourceId, `SOURCE_ACCESS_PAUSED: last check ${paused.checkedAt}; retry allowed from ${paused.retryAt}; ${paused.reason}`);
+        candidate.retryWindow = {...paused, probedThisRun:false};
+        await writeJson(join(ARTIFACT_DIR, `${sourceId}-retry.json`), candidate.retryWindow);
+      } else {
+        candidate = await collectCandidate(sourceId);
+        if (resumable) {
+          candidate.retryWindow = {...await recordSourceRetry(PROGRESS_DIR, sourceId, candidate.errors), probedThisRun:true};
+          await writeJson(join(ARTIFACT_DIR, `${sourceId}-retry.json`), candidate.retryWindow);
+        }
+      }
     } catch (error) {
       candidate = failedCandidate(sourceId, error);
     }
