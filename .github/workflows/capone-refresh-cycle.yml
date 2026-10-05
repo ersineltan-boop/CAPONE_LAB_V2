@@ -42,6 +42,13 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Restore bounded marketplace progress and retry windows
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: logs/marketplace-progress/
+          key: capone-marketplace-progress-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: capone-marketplace-progress-v1-${{ github.ref_name }}-
       - name: Verify every active source is covered
         run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
       - name: Install approved marketplace browser runtime
@@ -53,6 +60,7 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=4096
         run: node --import tsx scripts/run-refresh-cycle.ts
       - name: Full tests once for the complete delivery
+        # Save even when a later lane, validation or publication fails.
         id: tests
         run: npm test
       - name: Production build once for the complete delivery
@@ -96,6 +104,13 @@ jobs:
           PR_URL: ${{ steps.publish.outputs.pr_url }}
           PRODUCTION_STATUS_URL: ${{ steps.publish.outputs.production_status_url }}
         run: node --import tsx scripts/finalize-refresh-cycle.ts
+      - name: Save bounded marketplace progress and retry windows
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: logs/marketplace-progress/
+          key: capone-marketplace-progress-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -32,6 +32,13 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Restore bounded marketplace progress and retry windows
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: logs/marketplace-progress/
+          key: capone-marketplace-progress-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: capone-marketplace-progress-v1-${{ github.ref_name }}-
       - name: Verify marketplace policy
         run: npm test -- src/marketplaces/__tests__/marketplaceAutomation.test.ts src/marketplaces/__tests__/marketplacePolicy.test.ts
       - name: Install Free People browser runtime
@@ -41,6 +48,13 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
         run: npm run refresh:marketplaces
+      - name: Save bounded marketplace progress and retry windows
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: logs/marketplace-progress/
+          key: capone-marketplace-progress-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Upload auditable staging bundle
         if: always()
         uses: actions/upload-artifact@v4
