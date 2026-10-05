@@ -4,6 +4,7 @@ import {
   farfetchImageUrl,
   farfetchJsonLdToProduct,
   parseFarfetchItemList,
+  parseFarfetchCatalogPagination,
 } from "../farfetch";
 import { isFreePeopleAntiBot } from "../freePeople";
 
@@ -12,6 +13,15 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('reads the full catalog total independently of the JSON-LD page card count', () => {
+    const state = {apolloInitialState:{ROOT_QUERY:{'productCatalog:{"first":96}':{
+      totalCount:63123,pageInfo:{startCursor:btoa('97'),hasNextPage:true}},
+      myRecommendedProductCatalog:{totalCount:2}}}};
+    const html = `<script>window.__HYDRATION_STATE__=${JSON.stringify(JSON.stringify(state))};</script>`;
+    expect(parseFarfetchCatalogPagination(html)).toEqual({total:63123,page:2,size:96,hasNextPage:true});
+    expect(parseFarfetchCatalogPagination(FARFETCH_HTML)).toBeNull();
+    expect(parseFarfetchCatalogPagination('<script>window.__HYDRATION_STATE__="broken";</script>')).toBeNull();
+  });
   it("parses listing products with actual brand names and upgrades image width", () => {
     const items = parseFarfetchItemList(FARFETCH_HTML);
     expect(items).toHaveLength(2);

@@ -1,6 +1,7 @@
 import { fetchText } from './http';
 import { evaluateFootwearProduct } from './footwearGate';
 import type { PilotProduct } from './types';
+import {withExplicitMarketplaceTaxonomy} from './marketplaceTaxonomy';
 
 const SOURCE = 'https://www.24s.com/en-us/women/shoes';
 interface Hit {
@@ -35,7 +36,7 @@ export function parse24SPage(html: string, discoveredAt = new Date().toISOString
     if (gate.decision !== 'ACCEPT_FOOTWEAR' || !gate.category || images.length === 0) {
       rejected.push(hit.objectID); continue;
     }
-    products.push({source: '24s', brand: hit.brand, productName: hit.title,
+    products.push(withExplicitMarketplaceTaxonomy({source: '24s', brand: hit.brand, productName: hit.title,
       productUrl: `https://www.24s.com/en-us/${hit.productSlug}_${hit.objectID}`,
       imageUrl: images[0], images, category: gate.category, color: hit.color ?? null,
       material: null, toeShape: null, heelType: null, heelHeight: null, details: null,
@@ -44,7 +45,7 @@ export function parse24SPage(html: string, discoveredAt = new Date().toISOString
       sourceCategoryPath: '/women/shoes', sourceCategoryUrl: SOURCE,
       isNewArrivalsCollection: false, hasNewBadge: false,
       variants: [{title: hit.title, color: hit.color ?? null, sku: hit.objectID, images}],
-    });
+    }));
   }
   return {page: plp.page as number, pages: plp.nbPages as number, total: plp.nbHits as number,
     products, rejected, excluded, rawIds: (plp.hits as Hit[]).map(hit => hit.objectID)};

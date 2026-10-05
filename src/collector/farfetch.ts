@@ -50,6 +50,24 @@ export function parseFarfetchItemList(html: string): FarfetchJsonLdProduct[] {
   return [];
 }
 
+/** Source catalog total, never the JSON-LD count of cards on just one page. */
+export function parseFarfetchCatalogPagination(html: string): {total: number; hasNextPage: boolean; page: number; size: number} | null {
+  const match = html.match(/window\.__HYDRATION_STATE__\s*=\s*("(?:\\.|[^"\\])*")\s*;/);
+  if (!match) return null;
+  try {
+    const state = JSON.parse(JSON.parse(match[1]));
+    const query = state.apolloInitialState?.ROOT_QUERY;
+    const key = Object.keys(query ?? {}).find(key => key.startsWith("productCatalog:"));
+    if (!key) return null;
+    const catalog = query[key];
+    const size = JSON.parse(key.slice("productCatalog:".length)).first;
+    const start = Number(atob(catalog.pageInfo?.startCursor ?? ""));
+    if (!Number.isInteger(catalog.totalCount) || catalog.totalCount < 0 || !Number.isInteger(size) || size < 1 ||
+      !Number.isInteger(start) || start < 1 || typeof catalog.pageInfo?.hasNextPage !== "boolean") return null;
+    return {total: catalog.totalCount, hasNextPage: catalog.pageInfo.hasNextPage, page: Math.floor((start - 1) / size) + 1, size};
+  } catch {return null;}
+}
+
 export function discoverFarfetchFootwearListings(html: string, baseUrl: string): string[] {
   const urls = new Set<string>([baseUrl.split("?")[0]!]);
   for (const match of html.matchAll(/href="([^"]+)"/gi)) {
@@ -145,7 +163,9 @@ export async function collectFarfetch(options?: { maxPagesPerListing?: number })
   blocked: boolean;
   paginationExhausted: boolean;
   pagesTraversed: number;
-  coverageStatus: "PARTIAL" | "FAILED";
+  coverageStatus: "FULL" | "PARTIAL" | "FAILED";
+  sourceReportedProductCount: number | null;
+  rawSourceProducts: number;
   listingsCrawled: string[];
 }> {
   const maxPages = options?.maxPagesPerListing ?? 80;
@@ -165,6 +185,7 @@ export async function collectFarfetch(options?: { maxPagesPerListing?: number })
       paginationExhausted: false,
       pagesTraversed: 1,
       coverageStatus: "FAILED",
+      sourceReportedProductCount: null, rawSourceProducts: 0,
       listingsCrawled: [],
     };
   }
@@ -179,14 +200,26 @@ export async function collectFarfetch(options?: { maxPagesPerListing?: number })
       paginationExhausted: false,
       pagesTraversed: 1,
       coverageStatus: "FAILED",
+      sourceReportedProductCount: null, rawSourceProducts: 0,
       listingsCrawled: [],
     };
   }
 
-  const listings = discoverFarfetchFootwearListings(home.text, FARFETCH_SHOES_URL);
+  const initialPagination = parseFarfetchCatalogPagination(home.text);
+  const reported = initialPagination?.total ?? null;
+  const rawUrls = new Set<string>();
+  // The authoritative footwear root includes its subcategories. Traversing all
+  // of them again creates overlaps and multiplies the same crawl.
+  const listings = [FARFETCH_SHOES_URL];
+  const requiredPages = initialPagination ? Math.ceil(initialPagination.total / initialPagination.size) : null;
+  const crawlPages = requiredPages && requiredPages > maxPages ? 1 : maxPages;
+  if (requiredPages && requiredPages > maxPages) {
+    errors.push(`Farfetch source requires ${requiredPages} pages for ${reported} products; configured cap is ${maxPages}`);
+    paginationExhausted = false;
+  }
   for (const listingUrl of listings) {
     const seenOnListing = new Set<string>();
-    for (let page = 1; page <= maxPages; page += 1) {
+    for (let page = 1; page <= crawlPages; page += 1) {
       const url = page === 1 ? listingUrl : `${listingUrl}${listingUrl.includes("?") ? "&" : "?"}page=${page}`;
       const result =
         listingUrl === FARFETCH_SHOES_URL && page === 1
@@ -200,31 +233,41 @@ export async function collectFarfetch(options?: { maxPagesPerListing?: number })
         break;
       }
       const items = parseFarfetchItemList(result.text);
+      const meta = parseFarfetchCatalogPagination(result.text);
+      if (initialPagination && (!meta || meta.page !== page || meta.total !== reported || meta.size !== initialPagination.size)) {
+        errors.push(`Farfetch pagination metadata changed or returned wrong page ${page}`);
+        paginationExhausted = false; break;
+      }
       if (items.length === 0) {
         paginationExhausted = paginationExhausted && page > 1;
         break;
       }
       let added = 0;
       for (const item of items) {
+        if (item.offers?.url) rawUrls.add(new URL(item.offers.url, FARFETCH_BASE).href);
         const product = farfetchJsonLdToProduct(item, listingUrl, discoveredAt);
         if (!product || seenOnListing.has(product.productUrl)) continue;
         seenOnListing.add(product.productUrl);
         collected.push(product);
         added += 1;
       }
-      if (added === 0) break;
+      if (added === 0) {paginationExhausted = false; errors.push(`Farfetch repeated page ${page}`); break;}
+      if (meta && !meta.hasNextPage) break;
       if (page === maxPages) paginationExhausted = false;
     }
   }
 
   const products = mergeProductCatalog([], collected);
+  const full = reported !== null && rawUrls.size === reported && products.length === reported && errors.length === 0 && paginationExhausted;
   return {
     products,
     errors,
     blocked: blocked && products.length === 0,
     paginationExhausted: paginationExhausted && products.length > 0,
     pagesTraversed,
-    coverageStatus: products.length > 0 ? "PARTIAL" : "FAILED",
+    coverageStatus: full ? "FULL" : products.length > 0 ? "PARTIAL" : "FAILED",
+    sourceReportedProductCount: reported,
+    rawSourceProducts: rawUrls.size,
     listingsCrawled: listings,
   };
 }

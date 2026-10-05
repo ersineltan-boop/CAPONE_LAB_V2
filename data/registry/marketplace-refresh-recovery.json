@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "kind": "manual-source-recovery-evidence",
+  "baseCommit": "28990ac05de66823fecb79c516ab12ba87be4505",
+  "workflowRunId": null,
+  "publication": "LOCAL_VALIDATED_PENDING_PR",
+  "sources": [
+    {
+      "sourceId": "browns",
+      "status": "REFRESHED_PARTIAL_QUALITY",
+      "collectedAt": "2026-10-05T12:22:33.771Z",
+      "coverage": {
+        "source": "browns",
+        "sourceUrl": "https://www.brownsfashion.com/collections/woman-shoes",
+        "collectedAt": "2026-10-05T12:22:33.771Z",
+        "pagesVisited": 50,
+        "storefrontProductCount": 2464,
+        "collectionResourceCount": 2466,
+        "fetchedProducts": 2464,
+        "scopeExcluded": 61,
+        "scopeExclusionReasons": {
+          "sports-brand": 59,
+          "non-womens": 2
+        },
+        "acceptedFootwear": 2401,
+        "quarantined": 2,
+        "quarantineReasons": {
+          "footwear-filter": 1,
+          "missing-image": 1
+        },
+        "modelFamilies": null,
+        "status": "PARTIAL",
+        "paginationExhausted": true,
+        "baselineNewArrivals": 0,
+        "refresh": true,
+        "verifiedNewProducts": 2112,
+        "newMembershipErrors": [],
+        "refreshCommand": "npm run collect:browns",
+        "periodicRefresh": true,
+        "blocker": "Browns collection reconciled at 2464, with 2 product(s) held out of the catalog",
+        "note": "woman-shoes is the customer-facing Women's Designer Shoes collection. The duplicate women-shoes handle is not collected again. products_count is recorded and is not the storefront total. First import is not New Arrivals. Prices are omitted. This collector is on the guarded Sunday/Wednesday new-source refresh."
+      },
+      "qualityQuarantine": 2,
+      "newnessVerified": true,
+      "verifiedNewProducts": 2112,
+      "archivePreserved": true,
+      "specialCoding": "Gerekli",
+      "nextAction": "Resolve two source products held by footwear/image gates"
+    },
+    {
+      "sourceId": "the-webster",
+      "status": "REFRESHED_PARTIAL_QUALITY",
+      "collectedAt": "2026-10-05T12:22:33.772Z",
+      "coverage": {
+        "source": "the-webster",
+        "sourceUrl": "https://thewebster.com/collections/women-shoes",
+        "sourceTotal": 274,
+        "rawCollected": 274,
+        "excludedByPolicy": 25,
+        "eligibleTotal": 249,
+        "collected": 249,
+        "missing": 0,
+        "coverage": 1,
+        "productsWithImages": 249,
+        "verifiedNewProducts": 249,
+        "pagesTraversed": 2,
+        "paginationExhausted": true,
+        "status": "FULL",
+        "sourceUnavailable": false,
+        "errors": [],
+        "excludedBrands": [
+          "Nike",
+          "Salomon"
+        ],
+        "collectedAt": "2026-10-05T12:22:33.772Z"
+      },
+      "qualityQuarantine": 1,
+      "newnessVerified": true,
+      "verifiedNewProducts": 249,
+      "archivePreserved": true,
+      "specialCoding": "Gerekli",
+      "nextAction": "Resolve one opaque silhouette using source evidence"
+    },
+    {
+      "sourceId": "24s",
+      "status": "REFRESHED_PARTIAL_QUALITY",
+      "collectedAt": "2026-10-05T12:16:13.349Z",
+      "coverage": {
+        "source": "24s",
+        "status": "FULL",
+        "sourceReportedProductCount": 843,
+        "pagesTraversed": 12,
+        "expectedPages": 12,
+        "rawProductCount": 843,
+        "acceptedProductCount": 842,
+        "excluded": [
+          "ROW7CAR6BCK"
+        ],
+        "rejected": [],
+        "errors": []
+      },
+      "qualityQuarantine": 35,
+      "newnessVerified": false,
+      "verifiedNewProducts": null,
+      "archivePreserved": true,
+      "specialCoding": "Gerekli",
+      "nextAction": "35 unresolved silhouettes; verify a public NEW collection or source label before NEW classification"
+    },
+    {
+      "sourceId": "level-shoes",
+      "status": "NOT_REFRESHED",
+      "checkedAt": "2026-10-05T12:25:40.588Z",
+      "sourceTotal": 7294,
+      "collectedProducts": 47,
+      "errors": [
+        "Level Shoes storefront pagination API HTTP 403"
+      ],
+      "lastSuccessfulRefresh": null,
+      "archivePreserved": true,
+      "specialCoding": "Henüz belirlenemedi",
+      "nextAction": "Confirm authorized official API/data-feed access; root-page HTML alone cannot refresh catalog"
+    },
+    {
+      "sourceId": "farfetch",
+      "status": "NOT_REFRESHED",
+      "checkedAt": "2026-10-05T12:25:40.589Z",
+      "sourceTotal": 63123,
+      "collectedProducts": 96,
+      "errors": [
+        "Farfetch source requires 658 pages for 63123 products; configured cap is 80"
+      ],
+      "lastSuccessfulRefresh": null,
+      "archivePreserved": true,
+      "specialCoding": "Gerekli",
+      "nextAction": "Implement bounded resumable 658-page collection with complete source reconciliation; do not just lift cap blindly"
+    },
+    {
+      "sourceId": "free-people",
+      "status": "NOT_REFRESHED",
+      "checkedDate": "2026-10-05",
+      "errors": [
+        "Official catalog returned HTTP 403 access challenge"
+      ],
+      "lastSuccessfulRefresh": null,
+      "archivePreserved": true,
+      "specialCoding": "Henüz belirlenemedi",
+      "nextAction": "Confirm official authorized data access or appropriate accessible source; collector changes alone cannot promise access"
+    }
+  ],
+  "archive": {
+    "ids": {
+      "before": 20836,
+      "after": 21088,
+      "missing": 0,
+      "added": 252
+    },
+    "urls": {
+      "before": 31185,
+      "after": 31437,
+      "missing": 0,
+      "added": 252
+    },
+    "images": {
+      "before": 177358,
+      "after": 178603,
+      "missing": 0,
+      "added": 1245
+    }
+  },
+  "visibleModels": {
+    "before": 20442,
+    "after": 20694,
+    "added": 252
+  },
+  "verifiedNewModels": {
+    "before": 4260,
+    "after": 6603,
+    "delta": 2343
+  },
+  "validation": {
+    "tests": 1031,
+    "testFiles": 129,
+    "typecheck": "PASS",
+    "build": "PASS",
+    "sourceUrlGalleryLoss": 0
+  },
+  "note": "Manual recovery is not a new unified refresh-cycle run. Three sources are not refreshed and retain last-good data; existing NEW evidence for them is not a fresh verification. Product counts are distinct from model-family counts; colors are grouped by existing identity gates. No price reporting."
+}

@@ -6,6 +6,7 @@ import { mergeProductCatalog } from "./mergeProducts";
 import { shopifyProductToPilot } from "./shopify";
 import { detectNewBadgeInText } from "../newArrivals/detectNewness";
 import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
+import { withExplicitMarketplaceTaxonomy } from "./marketplaceTaxonomy";
 import type { PilotProduct, PilotSourceConfig } from "./types";
 
 export const THE_WEBSTER_ID = "the-webster";
@@ -165,7 +166,7 @@ export function theWebsterRawProductToPilot(
 
   const vendorColor = extractTheWebsterVendorColor(raw.body_html ?? product.material ?? undefined);
 
-  return {
+  return withExplicitMarketplaceTaxonomy({
     ...product,
     source: THE_WEBSTER_ID,
     sourceProductType: raw.product_type ?? "",
@@ -173,7 +174,7 @@ export function theWebsterRawProductToPilot(
     color: vendorColor ?? (isTheWebsterSizeValue(product.color) ? null : product.color),
     isNewArrivalsCollection: false,
     hasNewBadge: refresh && detectNewBadgeInText(...(Array.isArray(raw.tags) ? raw.tags : (raw.tags ?? "").split(","))),
-  };
+  });
 }
 
 export async function collectTheWebster(options: { refresh?: boolean } = {}): Promise<TheWebsterCollectResult> {
@@ -240,6 +241,8 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
       const membership = await collectShopifyCollectionMembership({
         id: THE_WEBSTER_ID, brand: "The Webster", baseUrl: THE_WEBSTER_BASE_URL,
         collectionPaths: [THE_WEBSTER_WOMEN_SHOES_PATH], verifiedFootwearPaths: [THE_WEBSTER_WOMEN_SHOES_PATH],
+        // The official women's menu labels this mixed collection "Shop All New".
+        verifiedNewArrivalPaths: ["/collections/women"],
         maxProducts: 10_000, collectMode: "full",
       }, { knownProductUrls: products.map((product) => product.productUrl), onlyNewCollections: true });
       errors.push(...membership.errors);

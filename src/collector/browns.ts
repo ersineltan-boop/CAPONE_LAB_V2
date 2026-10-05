@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { analyzeProducts } from "../analysis/analyzeProduct";
 import type { ModelFamily } from "../modelFamily/types";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
+import { retainModelFamilyArchive } from "../modelFamily/refreshIdentity";
 import type { MarketplaceGateReport } from "../marketplaces/automation";
 import { isExcludedMarketplaceBrand } from "../marketplaces/marketplacePolicy";
 import { fetchText, sleep } from "./http";
@@ -12,6 +13,7 @@ import { shopifyProductToPilot } from "./shopify";
 import { detectNewBadgeInText, isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
 import { mergeProductCatalog } from "./mergeProducts";
+import { readMarketplaceDelivery, writeMarketplaceDelivery } from "./marketplaceDelivery";
 import type { FootwearCategory, PilotProduct, PilotSourceConfig } from "./types";
 
 export const BROWNS_ID = "browns";
@@ -356,6 +358,8 @@ export async function collectBrowns(options?: {
       const membership = await (options.membership ?? collectShopifyCollectionMembership)({
         id: BROWNS_ID, brand: "Browns", baseUrl: BROWNS_ORIGIN,
         collectionPaths: [BROWNS_COLLECTION_PATH], verifiedFootwearPaths: [BROWNS_COLLECTION_PATH],
+        // Official women's menu: "New In Shoes" (not mens or brand campaign roots).
+        verifiedNewArrivalPaths: ["/collections/womens-new-in-shoes"],
         maxProducts: 10_000, collectMode: "full",
       }, { knownProductUrls: products.map((product) => product.productUrl), onlyNewCollections: true });
       newMembershipErrors.push(...membership.errors);
@@ -483,7 +487,7 @@ export async function publishBrownsCatalog(
   let previous: PilotProduct[] = [];
   let priorFamilies: ModelFamily[] = [];
   try {
-    const stored = JSON.parse(await readFile(catalogPath, "utf8"));
+    const stored = await readMarketplaceDelivery(catalogPath);
     if (Array.isArray(stored)) {
       priorFamilies = stored;
       const core = JSON.parse(await readFile(join(root, "data/multibrand/products.json"), "utf8").catch((error) => { throw new Error(`Browns prior core catalog unavailable: ${String(error)}`); })) as PilotProduct[];
@@ -503,11 +507,14 @@ export async function publishBrownsCatalog(
     const current = currentByUrl.get(product.productUrl);
     return current ? { ...product, isNewArrivalsCollection: current.isNewArrivalsCollection, hasNewBadge: current.hasNewBadge }
       : result.coverage.refresh ? {
-        ...product, isNewArrivalsCollection: false,
+        ...product, isNewArrivalsCollection: false, hasNewBadge: false,
         ...(isNewArrivalsCollectionPath(product.collectionPath) ? { collectionPath: null, collectionLabel: null } : {}),
       } : product;
   });
-  const { families } = buildModelFamilies(analyzeProducts(products as never) as never, { priorFamilies });
+  const analyzed = analyzeProducts(products.map(product => currentByUrl.has(product.productUrl)
+    ? {...product, discoveredAt: result.coverage.collectedAt} : product) as never);
+  const rebuilt = buildModelFamilies(analyzed as never, { priorFamilies }).families;
+  const families = retainModelFamilyArchive(rebuilt, priorFamilies, analyzed as never);
   const unresolved = families.filter(
     (family) => !family.primaryCategory || family.primaryCategory === "UNCLASSIFIED" || family.primaryCategory === "OTHER_FOOTWEAR",
   );
@@ -547,7 +554,7 @@ export async function publishBrownsCatalog(
     minimumLastGoodRetentionRatio: 0.6,
     lastGoodPreserved: previous.length > 0,
   };
-  await atomicWriteJson(catalogPath, {
+  await writeMarketplaceDelivery(root, {
     sourceId: BROWNS_ID,
     origin: BROWNS_ORIGIN,
     updatedAt: result.coverage.collectedAt,
