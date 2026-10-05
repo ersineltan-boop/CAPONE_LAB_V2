@@ -1,4 +1,4 @@
-import { appendFile, mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { appendFile, mkdir, rename, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -13,7 +13,6 @@ import type { PilotProduct } from "../src/collector/types";
 import {
   AUTOMATED_MARKETPLACE_IDS,
   evaluateMarketplaceCandidate,
-  replaceVerifiedMarketplaceCatalog,
   type AutomatedMarketplaceId,
   type MarketplaceGateReport,
   type MarketplaceRefreshCandidate,
@@ -21,7 +20,6 @@ import {
 import { isExcludedMarketplaceBrand } from "../src/marketplaces/marketplacePolicy";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PRODUCTS_PATH = join(ROOT, "data", "multibrand", "products.json");
 const ARTIFACT_DIR = join(ROOT, "data", "onboarding", "staging", "marketplace-refresh");
 const REPORT_PATH = join(ARTIFACT_DIR, "report.json");
 
@@ -80,6 +78,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
         : Math.max(0, result.sourceReportedProductCount - excluded),
       paginationExhausted: result.paginationExhausted,
       errors: result.errors,
+      newnessVerified: result.coverageStatus === "FULL",
     };
   }
 
@@ -89,9 +88,9 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
       sourceId,
       products: result.products,
       coverageStatus: result.coverageStatus,
-      sourceTotal: null,
-      rawCollected: result.products.length,
-      eligibleTotal: null,
+      sourceTotal: result.sourceReportedProductCount,
+      rawCollected: result.rawSourceProducts,
+      eligibleTotal: result.sourceReportedProductCount === null ? null : result.sourceReportedProductCount - excludedCount(result.products),
       paginationExhausted: result.paginationExhausted,
       errors: result.errors,
     };
@@ -132,6 +131,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
     paginationExhausted: result.coverage.paginationExhausted,
     errors: result.coverage.errors,
     preExcludedByPolicy: result.coverage.excludedByPolicy,
+    newnessVerified: result.coverage.errors.length === 0,
   };
 }
 
@@ -150,8 +150,6 @@ function failedCandidate(sourceId: AutomatedMarketplaceId, error: unknown): Mark
 
 async function main(): Promise<void> {
   const startedAt = new Date().toISOString();
-  const originalBody = await readFile(PRODUCTS_PATH, "utf8");
-  let catalog = JSON.parse(originalBody) as PilotProduct[];
   const gates: MarketplaceGateReport[] = [];
   let supplementalChanged = false;
 
@@ -168,9 +166,11 @@ async function main(): Promise<void> {
     } catch (error) {
       candidate = failedCandidate(sourceId, error);
     }
-    if (sourceId === "24s") {
+    {
       let decision;
-      try { decision = await publishMarketplaceDelivery(ROOT, candidate, "https://www.24s.com"); }
+      const origins: Record<string, string> = {"24s": "https://www.24s.com", "level-shoes": "https://www.levelshoes.com",
+        "farfetch": "https://www.farfetch.com", "free-people": "https://www.freepeople.com", "the-webster": "https://thewebster.com"};
+      try { decision = await publishMarketplaceDelivery(ROOT, candidate, origins[sourceId]); }
       catch (error) {
         decision = evaluateMarketplaceCandidate({ candidate: failedCandidate(sourceId, error), previousLastGood: [] });
       }
@@ -178,33 +178,11 @@ async function main(): Promise<void> {
       await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
       await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
       supplementalChanged ||= decision.report.accepted;
-      continue;
-    }
-    // Intentionally use the current in-run catalog. A source accepted earlier
-    // in this loop owns its URLs before the next source reaches the gate.
-    const decision = evaluateMarketplaceCandidate({ candidate, previousLastGood: catalog });
-    gates.push(decision.report);
-    await writeJson(join(ARTIFACT_DIR, `${sourceId}-candidate.json`), candidate.products);
-    await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
-    await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
-
-    if (decision.report.accepted) {
-      catalog = replaceVerifiedMarketplaceCatalog({
-        existing: catalog,
-        sourceId,
-        verified: decision.eligibleProducts,
-        preserveMissing: decision.report.publicationCoverage === "PARTIAL",
-      });
-      console.log(`${sourceId}: ${decision.report.publicationCoverage} delivery accepted; ${decision.quarantined.length} products quarantined.`);
-    } else {
-      console.log(`${sourceId}: last-good preserved (${decision.report.reasons.join("; ")}).`);
+      console.log(`${sourceId}: ${decision.report.accepted ? decision.report.publicationCoverage + " delivery accepted" : "last-good preserved (" + decision.report.reasons.join("; ") + ")"}.`);
     }
   }
 
-  const nextBody = JSON.stringify(catalog, null, 2);
-  const coreChanged = nextBody !== originalBody.trimEnd();
-  const dataChanged = coreChanged || supplementalChanged;
-  if (coreChanged) await atomicWrite(PRODUCTS_PATH, nextBody);
+  const dataChanged = supplementalChanged;
 
   const report: MarketplaceAutomationReport = {
     schemaVersion: 1,

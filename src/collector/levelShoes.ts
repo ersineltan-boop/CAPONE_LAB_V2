@@ -7,6 +7,7 @@ import { normalizeProductImageUrls } from "../images/resolveImageQuality";
 import { isAntiBotHtml } from "../registry/marketplaceProbe";
 import type { SourceNativeCategory } from "../source/types";
 import { mergeSourceCategories } from "../source/sourceCategories";
+import { evaluateFootwearProduct } from "./footwearGate";
 
 export const LEVEL_SHOES_ID = "level-shoes";
 export const LEVEL_SHOES_NAME = "Level Shoes";
@@ -332,7 +333,8 @@ export function levelShoesItemToPilot(
     productUrl: url.split("?")[0] ?? url,
     imageUrl: images[0] ?? null,
     images,
-    category: "OTHER_FOOTWEAR",
+    category: evaluateFootwearProduct({title: item.name ?? identity.name, productType: typeFromAnalytics ?? category.categoryName,
+      collectionPath: new URL(listingUrl).pathname, fromVerifiedFootwearCollection: true}).category ?? "OTHER_FOOTWEAR",
     color: item.color ?? null,
     material: null,
     toeShape: null,
@@ -567,6 +569,13 @@ export async function collectLevelShoes(options?: {
 
   const nextData = parseNextDataJson(root.text);
   const pageProps = (nextData?.props as { pageProps?: Record<string, unknown> } | undefined)?.pageProps;
+  const apollo = pageProps?.__APOLLO_STATE__ as Record<string, unknown> | undefined;
+  const query = apollo?.ROOT_QUERY as Record<string, unknown> | undefined;
+  const listingState = Object.values(query ?? {}).find(value => value && typeof value === "object" &&
+    Array.isArray((value as {products?: unknown}).products)) as {products: LevelShoesListingProduct[]; pagination?: {page?: number;size?: number;totalCount?: number}} | undefined;
+  if (listingState?.pagination && Number.isInteger(listingState.pagination.totalCount)) {
+    return collectLevelShoesStorefrontPages(listingState, discoveredAt, maxPages);
+  }
   const menuCategories = pageProps?.menuCategories ?? [];
   const fromMenu = extractLevelShoesFootwearCategories(menuCategories);
   const listings = [
@@ -626,6 +635,46 @@ export async function collectLevelShoes(options?: {
     method,
     paginationExhausted && laterPageAdded && unique > 48,
   );
+}
+
+/** The current storefront hydrates later pages through its public REST listing. */
+async function collectLevelShoesStorefrontPages(
+  first: {products: LevelShoesListingProduct[]; pagination?: {page?: number;size?: number;totalCount?: number}},
+  now: string,
+  maxPages: number,
+): Promise<LevelShoesCollectResult> {
+  const total = first.pagination!.totalCount!;
+  const size = first.pagination!.size;
+  const products: PilotProduct[] = [];
+  const seen = new Set<string>();
+  const errors: string[] = [];
+  let pages = 0;
+  let state = first;
+  if (!size || first.pagination?.page !== 0) errors.push("Level Shoes initial pagination metadata invalid");
+  for (let page = 0; size && page < Math.min(Math.ceil(total / size), maxPages) && !errors.length; page++) {
+    if (page > 0) {
+      // Same documented request used by the source's shipped Web product-list component.
+      const url = `https://api.levelshoes.com/catalog/ae/en/products/urlPath/v1?urlPath=women/shoes.html&groupID=null&museTier=0&page=${page}&count=${size}&genderType=women`;
+      const response = await fetchText(url, {delayMs: 800, headers: {"x-level-platform": "Web"}});
+      if (!response.ok) { errors.push(`Level Shoes storefront pagination API HTTP ${response.status}`); break; }
+      try {state = JSON.parse(response.text);} catch {errors.push("Level Shoes storefront pagination schema missing"); break;}
+    }
+    if (state.pagination?.page !== page || state.pagination.totalCount !== total || state.pagination.size !== size || !Array.isArray(state.products)) {
+      errors.push(`Level Shoes pagination changed or returned wrong page ${page}`); break;
+    }
+    let added = 0;
+    for (const item of state.products) {
+      const product = levelShoesItemToPilot(item, LEVEL_SHOES_FOOTWEAR_ROOT, now);
+      if (!product || seen.has(normalizeProductUrl(product.productUrl))) continue;
+      seen.add(normalizeProductUrl(product.productUrl)); products.push(product); added++;
+    }
+    pages++;
+    if (!added && total > 0) {errors.push(`Level Shoes empty or repeated page ${page}`); break;}
+  }
+  const complete = errors.length === 0 && seen.size === total && pages === Math.ceil(total / (size || 1));
+  if (!complete && !errors.length) errors.push(`Level Shoes collected ${seen.size}/${total}; page cap ${maxPages}`);
+  return finalizeResult(products, [{url: LEVEL_SHOES_FOOTWEAR_ROOT,name: "Shoes"}], pages, total, errors,
+    "nextjs-storefront-rest-pagination", complete);
 }
 
 function emptyFailed(

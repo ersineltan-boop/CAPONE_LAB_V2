@@ -1,5 +1,6 @@
 import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
+import {readMarketplaceDelivery} from "../src/collector/marketplaceDelivery";
 
 import { retainedModelCountBlocker } from "../src/refresh/catalogRetention";
 
@@ -20,6 +21,7 @@ function previousJson(path: string): unknown {
 }
 
 async function currentJson(path: string): Promise<unknown> {
+  if (path.includes('/marketplaces/')) return readMarketplaceDelivery(path);
   return JSON.parse(await readFile(path, "utf8")) as unknown;
 }
 
@@ -27,6 +29,13 @@ function countFamilies(value: unknown, path: string): number {
   if (Array.isArray(value)) return value.length;
   if (value && typeof value === "object" && "families" in value && Array.isArray(value.families)) {
     return value.families.length;
+  }
+  if (value && typeof value === 'object' && 'schema' in value &&
+      value.schema === 'capone.marketplace-delivery.parts.v1' && 'parts' in value && Array.isArray(value.parts)) {
+    const parts = value.parts.filter(part => part.field === 'families');
+    if (parts.length && parts.every(part => Number.isInteger(part.count) && part.count >= 0)) {
+      return parts.reduce((count, part) => count + part.count, 0);
+    }
   }
   throw new Error(`Invalid family shard: ${path}`);
 }

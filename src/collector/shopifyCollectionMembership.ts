@@ -176,7 +176,25 @@ export async function collectShopifyCollectionMembership(
   options?: { knownProductUrls?: Iterable<string>; maxCollections?: number; onlyNewCollections?: boolean },
 ): Promise<ShopifyMembershipResult> {
   const discoveredAt = new Date().toISOString();
-  const listed = await listShopifyCollections(config.baseUrl);
+  const pinnedNewPaths = config.verifiedNewArrivalPaths ?? [];
+  // A pinned refresh needs only the approved roots, not thousands of unrelated
+  // brand/campaign collections. Validate each pinned resource independently.
+  const listed = options?.onlyNewCollections && pinnedNewPaths.length
+    ? await (async () => {
+      const collections: Array<{handle: string; title: string; productsCount: number}> = [];
+      const errors: string[] = [];
+      for (const path of pinnedNewPaths) {
+        const response = await fetchJson<{collection?: {handle?: string; title?: string; products_count?: number}}>(`${config.baseUrl.replace(/\/$/, "")}${path}.json`, 300);
+        const collection = response.data?.collection;
+        if (!response.ok || !collection?.handle || `/collections/${collection.handle}` !== path) {
+          errors.push(response.error ?? `Verified New Arrivals collection missing or changed: ${path}`);
+          continue;
+        }
+        collections.push({handle: collection.handle, title: collection.title ?? collection.handle, productsCount: collection.products_count ?? 0});
+      }
+      return {collections, errors};
+    })()
+    : await listShopifyCollections(config.baseUrl);
   const discovered: ShopifyCollectionMeta[] = listed.collections.map((collection) => ({
     handle: collection.handle,
     title: collection.title,
@@ -186,15 +204,14 @@ export async function collectShopifyCollectionMembership(
   }));
   // Official collection names establish membership evidence; products still pass
   // the footwear gate (or match a previously known footwear URL).
-  const verifiedNewPaths = new Set([
-    ...(config.verifiedNewArrivalPaths ?? []),
-    ...planWomensCollections(discovered).newArrivalsPaths,
-  ]);
+  const verifiedNewPaths = new Set(pinnedNewPaths.length
+    ? pinnedNewPaths
+    : planWomensCollections(discovered).newArrivalsPaths);
   const footwear = discovered
     .filter((collection) => collection.productsCount > 0 || verifiedNewPaths.has(collection.path))
     .filter(
       (collection) =>
-        !isLikelyProductNamedCollection(
+        verifiedNewPaths.has(collection.path) || !isLikelyProductNamedCollection(
           collection.handle,
           collection.title,
           collection.productsCount,
@@ -230,6 +247,9 @@ export async function collectShopifyCollectionMembership(
       discoveredAt,
       knownUrls,
     });
+    if (verifiedNewPaths.has(collection.path)) {
+      for (const product of page.products) product.isNewArrivalsCollection = true;
+    }
     pagesTraversed += page.pagesTraversed;
     errors.push(...page.errors);
     products = mergeProductCatalog(products, page.products);

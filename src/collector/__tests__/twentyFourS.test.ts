@@ -10,6 +10,11 @@ describe('24S collection',()=>{
   expect(p.products[0].images).toEqual(['https://www.24s.com/static/images/signature/fit-in/500x0/imagehash']);
   expect(()=>parse24SPage(page(0,'ABC').replace('women_shoes','women_bags'))).toThrow();
  });
+ it('recovers explicit bootie wording but keeps unsupported and opaque silhouettes unresolved',()=>{
+  expect(parse24SPage(page(0,'ABC').replace('Fersi loafers','Leather booties')).products[0].category).toBe('BOOT');
+  expect(parse24SPage(page(0,'ABC').replace('Fersi loafers','Soft leather Derby')).products[0].category).toBe('OTHER_FOOTWEAR');
+  expect(parse24SPage(page(0,'ABC').replace('Fersi loafers','Leather lace-up shoes')).products[0].category).toBe('OTHER_FOOTWEAR');
+ });
  it('marks repeated pages partial rather than replacing last-good',async()=>{
   const result=await collect24S(async(url)=>({ok:true,status:200,text:page(0,'ABC'),url}));
   expect(result.coverage.status).toBe('PARTIAL');expect(result.coverage.errors.length).toBe(1);

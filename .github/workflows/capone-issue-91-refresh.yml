@@ -64,7 +64,7 @@ jobs:
             git add -- "data/brands/wave50/last-good/${id}.json" "data/multibrand/model-families/brands/${id}.json"
           done
           git add -- \
-            data/multibrand/model-families/marketplaces/browns.json \
+            data/multibrand/model-families/marketplaces \
             data/multibrand/model-families/manifest.json \
             data/registry/marketplace-pilot.json \
             data/registry/brand-universe.json \

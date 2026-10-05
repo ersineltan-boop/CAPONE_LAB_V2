@@ -3,11 +3,14 @@ import { collectShopifyCollectionMembership, mergeVerifiedShopifyMembership } fr
 import { loadBrandRegistry } from "../../registry/data";
 import { brandToPilotSourceConfig } from "../../registry/collection/brandToCollector";
 
-const fixture = vi.hoisted(() => ({ titleOnlyNew: false }));
+const fixture = vi.hoisted(() => ({ titleOnlyNew: false, metadataBlocked: false }));
 
 vi.mock("../http", () => ({
   sleep: async () => {},
-  fetchJson: async (url: string) => ({
+  fetchJson: async (url: string) => url.endsWith('/new-in.json') ? {
+    ok: !fixture.metadataBlocked, status: fixture.metadataBlocked ? 403 : 200,
+    data: fixture.metadataBlocked ? null : {collection: {handle: 'new-in', title: 'New In', products_count: 3}},
+  } : ({
     ok: true, status: 200,
     data: { products: url.includes("page=2") ? [] : [
       { id: 1, title: "CBBLAISE | SOFT SNEAKERS NAVY", handle: "blaise", product_type: "SHOES", tags: ["ACCESSORIES"], images: [{ src: "https://cdn.test/shoe.jpg" }] },
@@ -26,6 +29,18 @@ vi.mock("../shopify", async (original) => ({
 }));
 
 describe("Cecilie verified mixed New In collection", () => {
+  it('validates a pinned NEW resource directly and preserves evidence when it is blocked', async () => {
+    const config = brandToPilotSourceConfig(loadBrandRegistry().get('cecilie-bahnsen')!)!;
+    const result = await collectShopifyCollectionMembership(config, {onlyNewCollections: true});
+    expect(result.crawledCollections.map(c => c.path)).toEqual(['/collections/new-in']);
+    expect(result.products[0]?.isNewArrivalsCollection).toBe(true);
+    fixture.metadataBlocked = true;
+    try {
+      const failed = await collectShopifyCollectionMembership(config, {onlyNewCollections: true});
+      expect(failed.errors.length).toBeGreaterThan(0);
+      expect(mergeVerifiedShopifyMembership(config, result.products, failed)).toEqual(result.products);
+    } finally {fixture.metadataBlocked = false;}
+  });
   it("reads the pinned source collection, accepts shoes, and excludes bags and veils", async () => {
     const entry = loadBrandRegistry().get("cecilie-bahnsen")!;
     const config = brandToPilotSourceConfig(entry)!;

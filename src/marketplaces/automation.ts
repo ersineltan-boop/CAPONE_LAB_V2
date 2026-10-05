@@ -29,9 +29,11 @@ export interface MarketplaceRefreshCandidate {
   paginationExhausted: boolean;
   errors: string[];
   preExcludedByPolicy?: number;
+  newnessVerified?: boolean;
 }
 
 export interface MarketplaceGateReport {
+  newnessVerified?: boolean;
   publicationCoverage: "FULL" | "PARTIAL";
   quarantinedProducts: number;
   sourceId: string;
@@ -215,6 +217,7 @@ export function evaluateMarketplaceCandidate(input: {
     quarantined,
     eligibleProducts,
     report: {
+      newnessVerified: input.candidate.newnessVerified ?? false,
       publicationCoverage: quarantined.length > 0 ? "PARTIAL" : "FULL",
       quarantinedProducts: quarantined.length,
       sourceId,
