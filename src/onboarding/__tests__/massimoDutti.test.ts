@@ -44,6 +44,34 @@ describe("Massimo official SSR adapter", () => {
     expect(result.products).toEqual([]);
     expect(result.errors[0]).toContain("403");
   });
+  it("recovers one incomplete 200 storefront response, with a bounded retry", async () => {
+    let requests = 0;
+    const state = { TRANSFER_PRODUCTS_WITH_IDS: { products: [row] } };
+    const result = await collectMassimoDuttiCatalog({ fetchText: async url => ({ok: true, status: 200, url,
+      text: ++requests === 1 ? '<html>Temporary incomplete response</html>' : `<script id="mdfrontw-state">${JSON.stringify(state)}</script>`}) });
+    expect(requests).toBe(2);
+    expect(result.products).toHaveLength(1);
+    expect(result.paginationExhausted).toBe(false);
+  });
+  it.each([403, 200])("does not retry an access-denied response with HTTP %s", async status => {
+    let requests = 0;
+    const result = await collectMassimoDuttiCatalog({fetchText: async url => {
+      requests++;
+      return {ok: status === 200, status, url, text: '<title>Access Denied</title>'};
+    }});
+    expect(requests).toBe(1);
+    expect(result.products).toEqual([]);
+  });
+  it("stops after two ordinary responses when transfer state stays missing", async () => {
+    let requests = 0;
+    const result = await collectMassimoDuttiCatalog({fetchText: async url => {
+      requests++;
+      return {ok: true, status: 200, url, text: '<html>Incomplete response</html>'};
+    }});
+    expect(requests).toBe(2);
+    expect(result.products).toEqual([]);
+    expect(result.errors).toContain('Massimo transfer-state schema missing');
+  });
   it("maps source seasonal gallery paths without borrowing another color's gallery", () => {
     const path = "/2026/I/1/1/p/1568/850/800";
     const product = mapMassimoApiProduct({ ...row, productUrl: "leather-riding-boot-l11005850", mainColorid: "800",

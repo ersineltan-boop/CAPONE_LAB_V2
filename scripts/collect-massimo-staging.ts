@@ -3,8 +3,8 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { collectMassimoDuttiCatalog } from "../src/onboarding/massimoDutti";
 import { mergeProductCatalog } from "../src/collector/mergeProducts";
 import type { OnboardingHttp } from "../src/onboarding/http";
-const http: OnboardingHttp = { async fetchText(url) {
-  const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+const http: OnboardingHttp = { async fetchText(url, options) {
+  const response = await fetch(url, { signal: AbortSignal.timeout(options?.timeoutMs ?? 30000) });
   return { ok: response.ok, status: response.status, url: response.url, text: await response.text() };
 } };
 const result = await collectMassimoDuttiCatalog(http);

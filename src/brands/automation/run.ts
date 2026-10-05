@@ -6,7 +6,7 @@ import { loadAdapterFile } from "../../onboarding/adapterStore";
 import { loadQueueFile } from "../../onboarding/queue";
 import type { BrandUniverseFile } from "../../registry/build/types";
 import { decideLastGoodPublish } from "../wave50/lastGood";
-import { isVerifiedFootwearCatalogPath } from "../wave50/collections";
+import { approvedFootwearRoot } from "../wave50/collections";
 import { fullCatalogPassBlocker } from "../wave50/coverage";
 import { mapPool } from "../wave50/pool";
 import {
@@ -177,8 +177,9 @@ export async function runBrandAutomation(
       const previousPath = join(options.root, WAVE_LAST_GOOD_DIR, `${candidate.slug}.json`);
       const previous = await readJsonFile<WaveCatalog | null>(previousPath, null);
       try {
-        const seed = !candidate.womenCollectionPath && previous?.catalogPaths.length === 1 && isVerifiedFootwearCatalogPath(previous.catalogPaths[0])
-          ? {...candidate, womenCollectionPath: previous.catalogPaths[0]}
+        const previousRoot = previous ? approvedFootwearRoot(previous.catalogPaths) : undefined;
+        const seed = !candidate.womenCollectionPath && previousRoot
+          ? {...candidate, womenCollectionPath: previousRoot}
           : candidate;
         const collected = await collectShopifyWomensCatalog({
           seed,

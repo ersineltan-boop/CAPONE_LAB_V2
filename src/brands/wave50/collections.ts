@@ -43,6 +43,12 @@ export function isVerifiedFootwearCatalogPath(path: string): boolean {
   return isWomensFootwearCollection(handle, handle);
 }
 
+/** Restore a previously approved root, including snapshots with its sale companion. */
+export function approvedFootwearRoot(paths: readonly string[]): string | undefined {
+  return paths.find(root => isVerifiedFootwearCatalogPath(root) && paths.every(path =>
+    path === root || path === root.replace("/collections/", "/collections/sale-") || path === `${root}-sale`));
+}
+
 export function isMensCollection(handle: string, title: string): boolean {
   const hay = `${handle} ${title}`.replace(/-/g, " ");
   if (WOMEN.test(hay)) return false;
