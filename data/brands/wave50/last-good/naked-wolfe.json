@@ -2,8 +2,8 @@
   "slug": "naked-wolfe",
   "brand": "NAKED WOLFE",
   "officialUrl": "https://nakedwolfe.com",
-  "snapshotId": "naked-wolfe:2026-10-05T13:57:37.372Z",
-  "collectedAt": "2026-10-05T13:57:37.372Z",
+  "snapshotId": "naked-wolfe:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/view-all-womens"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 259,
-    "collected": 259,
+    "sourceTotal": 265,
+    "collected": 265,
     "missing": 0,
     "coverage": 100,
-    "excluded": 60,
+    "excluded": 61,
     "paginationExhausted": true,
-    "galleryComplete": 259,
+    "galleryComplete": 265,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 135,
+  "newArrivalsFootwear": 141,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -95,6 +95,84 @@
             "https://cdn.shopify.com/s/files/1/1117/4418/files/VOLTAGE-BLACK-EEL-02.jpg?v=1788470830",
             "https://cdn.shopify.com/s/files/1/1117/4418/files/VOLTAGE-BLACK-EEL-03.jpg?v=1788470830",
             "https://cdn.shopify.com/s/files/1/1117/4418/files/VOLTAGE-BLACK-EEL-04.jpg?v=1788470830"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "shopify-variant-tag"
+    },
+    {
+      "modelFamilyId": "naked-wolfe--berkley-black-leather",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Berkley Black Leather",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-01.jpg?v=1788801448",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-02.jpg?v=1788801448",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-03.jpg?v=1788801448",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-04.jpg?v=1788801448",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-01.jpg?v=1788801422",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-02.jpg?v=1788801422",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-03.jpg?v=1788801422",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-04.jpg?v=1788801422",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-01.jpg?v=1788801192",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-02.jpg?v=1788801192",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-03.jpg?v=1788801192",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-04.jpg?v=1788801192"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/berkley-black-leather",
+          "handle": "berkley-black-leather",
+          "title": "Berkley Black Leather",
+          "color": null,
+          "sku": "5059796581557",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-01.jpg?v=1788801448",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-02.jpg?v=1788801448",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-03.jpg?v=1788801448",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-LEATHER-FUR-04.jpg?v=1788801448"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/berkley-black-satin",
+          "handle": "berkley-black-satin",
+          "title": "Berkley Black Satin",
+          "color": "Berkley Black Satin",
+          "sku": "5059796540868",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-01.jpg?v=1788801422",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-02.jpg?v=1788801422",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-03.jpg?v=1788801422",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-BLACK-SATIN-FUR-04.jpg?v=1788801422"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/berkley-dark-brown",
+          "handle": "berkley-dark-brown",
+          "title": "Berkley Dark Brown",
+          "color": "Berkley Dark Brown",
+          "sku": "5059796956065",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-01.jpg?v=1788801192",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-02.jpg?v=1788801192",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-03.jpg?v=1788801192",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/BERKLEY-DARK-BROWN-LEATHER-FUR-04.jpg?v=1788801192"
           ],
           "category": "LOAFER",
           "productType": "Loafers",
@@ -7205,6 +7283,78 @@
       "groupingReason": "shopify-variant-tag"
     },
     {
+      "modelFamilyId": "naked-wolfe--liquor-mixed-pony",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Liquor Mixed Pony",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-01.jpg?v=1788526139",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-02.jpg?v=1788526139",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-03.jpg?v=1788526139",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-04.jpg?v=1788526139",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-05.jpg?v=1788526139"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/liquor-mixed-pony",
+          "handle": "liquor-mixed-pony",
+          "title": "Liquor Mixed Pony",
+          "color": null,
+          "sku": "5059796761478",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-01.jpg?v=1788526139",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-02.jpg?v=1788526139",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-03.jpg?v=1788526139",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-04.jpg?v=1788526139",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LIQUOR-MIXED-PONY-05.jpg?v=1788526139"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "naked-wolfe--hagen-zebra-pony",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Hagen Zebra Pony",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-01.jpg?v=1788711792",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-02.jpg?v=1788711792",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-03.jpg?v=1788711791",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-04.jpg?v=1788711792",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-05.jpg?v=1788711792"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/hagen-zebra-pony",
+          "handle": "hagen-zebra-pony",
+          "title": "Hagen Zebra Pony",
+          "color": null,
+          "sku": "5059796691119",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-01.jpg?v=1788711792",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-02.jpg?v=1788711792",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-03.jpg?v=1788711791",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-04.jpg?v=1788711792",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAGEN-ZEBRA-PONY-05.jpg?v=1788711792"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "naked-wolfe--lacy-satin",
       "brand": "NAKED WOLFE",
       "canonicalName": "Lacy Satin",
@@ -7336,6 +7486,42 @@
           ],
           "category": "BOOT",
           "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "naked-wolfe--hayes",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Hayes",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-01.jpg?v=1788707703",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-02.jpg?v=1788707703",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-03.jpg?v=1788707703",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-04.jpg?v=1788707703",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-05.jpg?v=1788707703"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/hayes-black-leather",
+          "handle": "hayes-black-leather",
+          "title": "Hayes Black Leather",
+          "color": "Black Leather",
+          "sku": "5059796506536",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-01.jpg?v=1788707703",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-02.jpg?v=1788707703",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-03.jpg?v=1788707703",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-04.jpg?v=1788707703",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HAYES-BLACK-05.jpg?v=1788707703"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -7848,9 +8034,14 @@
     }
   ],
   "productUrls": [
+    "https://nakedwolfe.com/products/liquor-mixed-pony",
+    "https://nakedwolfe.com/products/hagen-zebra-pony",
     "https://nakedwolfe.com/products/voltage-burgundy-eel",
     "https://nakedwolfe.com/products/voltage-black-leather",
     "https://nakedwolfe.com/products/voltage-black-eel",
+    "https://nakedwolfe.com/products/berkley-black-leather",
+    "https://nakedwolfe.com/products/berkley-black-satin",
+    "https://nakedwolfe.com/products/berkley-dark-brown",
     "https://nakedwolfe.com/products/bedford-black-white-leather",
     "https://nakedwolfe.com/products/bedford-zebra-pony",
     "https://nakedwolfe.com/products/bedford-white-leather",
@@ -7910,6 +8101,7 @@
     "https://nakedwolfe.com/products/hero-black-leather",
     "https://nakedwolfe.com/products/hero-zebra-pony",
     "https://nakedwolfe.com/products/hero-smudged-polka-dot-pony",
+    "https://nakedwolfe.com/products/hayes-black-leather",
     "https://nakedwolfe.com/products/luxury-black",
     "https://nakedwolfe.com/products/luxury-brown",
     "https://nakedwolfe.com/products/luxury-charcol",

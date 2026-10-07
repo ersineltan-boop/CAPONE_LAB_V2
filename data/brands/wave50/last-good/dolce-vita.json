@@ -2,8 +2,8 @@
   "slug": "dolce-vita",
   "brand": "DOLCE VITA",
   "officialUrl": "https://www.dolcevita.com",
-  "snapshotId": "dolce-vita:2026-10-05T13:57:37.372Z",
-  "collectedAt": "2026-10-05T13:57:37.372Z",
+  "snapshotId": "dolce-vita:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 665,
-    "collected": 665,
+    "sourceTotal": 675,
+    "collected": 675,
     "missing": 0,
     "coverage": 100,
-    "excluded": 133,
+    "excluded": 138,
     "paginationExhausted": true,
-    "galleryComplete": 665,
+    "galleryComplete": 675,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 247,
+  "newArrivalsFootwear": 255,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -993,6 +993,62 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "dolce-vita--anders-h2o-booties-lt-brown-suede",
+      "brand": "DOLCE VITA",
+      "canonicalName": "ANDERS H2O BOOTIES LT BROWN SUEDE",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-02_4010a7ef-c582-4717-bf46-875e164208c5.jpg?v=1788368009",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-10.jpg?v=1788368009",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-06_a551189d-118d-40af-97f9-562c696a992e.jpg?v=1788368009",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-11.jpg?v=1788368009",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-02_6833c9b6-a90d-434e-b511-81e44495a217.jpg?v=1788367933",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-10.jpg?v=1788367933",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-06_0e411da7-b6d4-4919-a57d-876d546de694.jpg?v=1788367933",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-11.jpg?v=1788367933"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/anders-h2o-booties-lt-brown-suede",
+          "handle": "anders-h2o-booties-lt-brown-suede",
+          "title": "ANDERS H2O BOOTIES LT BROWN SUEDE",
+          "color": "LT BROWN SUEDE",
+          "sku": "ANDERS H2O",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-02_4010a7ef-c582-4717-bf46-875e164208c5.jpg?v=1788368009",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-10.jpg?v=1788368009",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-06_a551189d-118d-40af-97f9-562c696a992e.jpg?v=1788368009",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_LTBROWNSUEDEH2O-11.jpg?v=1788368009"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://www.dolcevita.com/products/anders-h2o-booties-taupe-suede",
+          "handle": "anders-h2o-booties-taupe-suede",
+          "title": "ANDERS H2O BOOTIES TAUPE SUEDE",
+          "color": "TAUPE SUEDE",
+          "sku": "ANDERS H2O",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-02_6833c9b6-a90d-434e-b511-81e44495a217.jpg?v=1788367933",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-10.jpg?v=1788367933",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-06_0e411da7-b6d4-4919-a57d-876d546de694.jpg?v=1788367933",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-11.jpg?v=1788367933"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "dolce-vita--andey-heel",
       "brand": "DOLCE VITA",
       "canonicalName": "Andey Heel",
@@ -1707,6 +1763,56 @@
       ],
       "isNew": true,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "dolce-vita--baylee-grommet-flat-dk-perforated",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Baylee Grommet Flat Dk Perforated",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-02.jpg?v=1746802359",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/tatsgab_BAYLEE-GROMMET-DK-BROWN-PERFORATED_3.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-01.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEE_GROMMET_DK_BROWN_PERFORATED_SUEDE_SAHARA_COGNAC_1.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-03.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEE_GROMMET_DK_BROWN_PERFORATED_SUEDE_2.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-09.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-08.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-04.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-05.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-06.jpg?v=1771884279",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-07.jpg?v=1771884279"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/baylee-grommet-ballet-flats-dk-brown-perforated-suede",
+          "handle": "baylee-grommet-ballet-flats-dk-brown-perforated-suede",
+          "title": "BAYLEE GROMMET BALLET FLATS DK BROWN PERFORATED SUEDE",
+          "color": "DK BROWN PERFORATED SUEDE",
+          "sku": "BAYLEE GROMMET",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-02.jpg?v=1746802359",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/tatsgab_BAYLEE-GROMMET-DK-BROWN-PERFORATED_3.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-01.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEE_GROMMET_DK_BROWN_PERFORATED_SUEDE_SAHARA_COGNAC_1.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-03.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEE_GROMMET_DK_BROWN_PERFORATED_SUEDE_2.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-09.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-08.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-04.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-05.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-06.jpg?v=1771884279",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_BAYLEEGROMMET_DKBROWNPERFORATEDSUEDE-07.jpg?v=1771884279"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "dolce-vita--baylee-woven-flat-creme-woven-stella",
@@ -2491,6 +2597,64 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "dolce-vita--bohdi-espadrille-heels-lt-brown-suede",
+      "brand": "DOLCE VITA",
+      "canonicalName": "BOHDI ESPADRILLE HEELS LT BROWN SUEDE",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-02.jpg?v=1789657025",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-01_PAIR.jpg?v=1789657025",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-06.jpg?v=1789657025",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-09_PAIR.jpg?v=1789657025",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-10.jpg?v=1787678806",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-02_218bb94f-0882-4ef8-bd31-4c85f47d3e18.jpg?v=1789657053",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-01_PAIR.jpg?v=1789657053",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-06_538d6c27-ac97-4f29-b1c6-f9a6badfd9ca.jpg?v=1789657053",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-09_PAIR.jpg?v=1789657053"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/bohdi-espadrille-heels-lt-brown-suede",
+          "handle": "bohdi-espadrille-heels-lt-brown-suede",
+          "title": "BOHDI ESPADRILLE HEELS LT BROWN SUEDE",
+          "color": "LT BROWN SUEDE",
+          "sku": "BOHDI ESPADRILLE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-02.jpg?v=1789657025",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-01_PAIR.jpg?v=1789657025",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-06.jpg?v=1789657025",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-09_PAIR.jpg?v=1789657025",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_LTBROWNSUEDE-10.jpg?v=1787678806"
+          ],
+          "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://www.dolcevita.com/products/bohdi-espadrille-heels-olive-suede",
+          "handle": "bohdi-espadrille-heels-olive-suede",
+          "title": "BOHDI ESPADRILLE HEELS OLIVE SUEDE",
+          "color": "OLIVE SUEDE",
+          "sku": "BOHDI ESPADRILLE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-02_218bb94f-0882-4ef8-bd31-4c85f47d3e18.jpg?v=1789657053",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-01_PAIR.jpg?v=1789657053",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-06_538d6c27-ac97-4f29-b1c6-f9a6badfd9ca.jpg?v=1789657053",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BOHDIESPADRILLE_OLIVESUEDE-09_PAIR.jpg?v=1789657053"
+          ],
+          "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "dolce-vita--bowen-heel-raffia",
       "brand": "DOLCE VITA",
       "canonicalName": "Bowen Heel Raffia",
@@ -3019,6 +3183,50 @@
             "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_PRALINEJELLY-05.jpg?v=1767976915",
             "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_PRALINEJELLY-06.jpg?v=1767976915",
             "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_PRALINEJELLY-07.jpg?v=1767976915"
+          ],
+          "category": "THONG",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "dolce-vita--brevel-vinyl-heel-jelly--brevel-vinyl-heels-tortoise-jelly",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Brevel Vinyl Heel Jelly",
+      "category": "THONG",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-02.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-01.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-03.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-08.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-09.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-04.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-05.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-06.jpg?v=1770225338",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-07.jpg?v=1770225338"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/brevel-vinyl-heels-tortoise-jelly",
+          "handle": "brevel-vinyl-heels-tortoise-jelly",
+          "title": "BREVEL VINYL HEELS TORTOISE JELLY",
+          "color": "TORTOISE JELLY",
+          "sku": "BREVEL VINYL",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-02.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-01.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-03.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-08.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-09.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-04.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-05.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-06.jpg?v=1770225338",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_TORTOISEJELLY-07.jpg?v=1770225338"
           ],
           "category": "THONG",
           "productType": "Shoes",
@@ -9537,6 +9745,40 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "dolce-vita--hawkin-plush-boot",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Hawkin Plush Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-02_c442d80f-f975-4659-849b-9e3d066e6da6.jpg?v=1789656590",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-01_PAIR.jpg?v=1789656590",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-06_6d1a3b6b-a926-4467-9050-1af4231927ab.jpg?v=1789656590",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-09_PAIR.jpg?v=1789656590"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/hawkin-plush-boots-sand-suede",
+          "handle": "hawkin-plush-boots-sand-suede",
+          "title": "HAWKIN PLUSH BOOTS SAND SUEDE",
+          "color": "SAND SUEDE",
+          "sku": "HAWKIN PLUSH",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-02_c442d80f-f975-4659-849b-9e3d066e6da6.jpg?v=1789656590",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-01_PAIR.jpg?v=1789656590",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-06_6d1a3b6b-a926-4467-9050-1af4231927ab.jpg?v=1789656590",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_HAWKINPLUSH_SANDSUEDE-09_PAIR.jpg?v=1789656590"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "dolce-vita--helan-espadrille-wedge",
       "brand": "DOLCE VITA",
       "canonicalName": "Helan Espadrille Wedge",
@@ -9922,6 +10164,42 @@
         }
       ],
       "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "dolce-vita--hilah-mule-crinkle",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Hilah Mule Crinkle",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-02_9348c1e7-e391-4735-9f60-dc2edd13c3af.jpg?v=1787154002",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-01PAIR.jpg?v=1787154003",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-06_48f6f085-aede-4146-bd29-7223ac607586.jpg?v=1787154002",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/hilah_ravel.jpg?v=1787145198",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-09PAIR.jpg?v=1787154002"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/hilah-mules-oxblood-crinkle-patent",
+          "handle": "hilah-mules-oxblood-crinkle-patent",
+          "title": "HILAH MULES OXBLOOD CRINKLE PATENT",
+          "color": "OXBLOOD CRINKLE PATENT",
+          "sku": "HILAH",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-02_9348c1e7-e391-4735-9f60-dc2edd13c3af.jpg?v=1787154002",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-01PAIR.jpg?v=1787154003",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-06_48f6f085-aede-4146-bd29-7223ac607586.jpg?v=1787154002",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/hilah_ravel.jpg?v=1787145198",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_HILAH_OXBLOODCRINKLEPATENT-09PAIR.jpg?v=1787154002"
+          ],
+          "category": "MULE",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -10315,6 +10593,62 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "dolce-vita--huey-h2o-boot",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Huey H2o Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-02.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/16_1_93b90d61-b1ab-4cf5-945d-dc0d423a5578.jpg?v=1733254228",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-01.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/17_1_4c4fa668-8fc5-4525-8858-864ef3f8509d.jpg?v=1733254228",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-08.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/huey-black-pdp_7c5ba6b1-042b-4ed0-a901-ad4f4474415b.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-09.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/huey-h20.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/HUEY_H20_BLACK_LEATHER_ON_FOOT_3.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-03.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/HUEY_H20_BLACK_LEATHER_ON_FOOT_2.jpg?v=1695822906",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-04.jpg?v=1695822901",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-05.jpg?v=1695822901",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-06.jpg?v=1695822901",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-07.jpg?v=1695822901"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/huey-h2o-boots-in-black-leather",
+          "handle": "huey-h2o-boots-in-black-leather",
+          "title": "HUEY H2O BOOTS BLACK LEATHER",
+          "color": "BLACK LEATHER",
+          "sku": "V-HUEY-3",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-02.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/16_1_93b90d61-b1ab-4cf5-945d-dc0d423a5578.jpg?v=1733254228",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-01.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/17_1_4c4fa668-8fc5-4525-8858-864ef3f8509d.jpg?v=1733254228",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-08.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/huey-black-pdp_7c5ba6b1-042b-4ed0-a901-ad4f4474415b.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-09.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/huey-h20.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/HUEY_H20_BLACK_LEATHER_ON_FOOT_3.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-03.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/HUEY_H20_BLACK_LEATHER_ON_FOOT_2.jpg?v=1695822906",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-04.jpg?v=1695822901",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-05.jpg?v=1695822901",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-06.jpg?v=1695822901",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOTS_HUEYH20_BLACKLEATHERH20-07.jpg?v=1695822901"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "dolce-vita--icelyn-heel-satin",
@@ -11456,10 +11790,10 @@
       "canonicalName": "Julio Sandal Vinyl",
       "category": "SANDAL",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-02_2ea3b3c5-29e9-480d-956c-912a88d564e4.jpg?v=1790607597",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-01_PAIR.jpg?v=1790607598",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-06_b195bd30-a464-4612-97f5-06f54786a11a.jpg?v=1790607597",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-09_PAIR.jpg?v=1790607598",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-02_2ea3b3c5-29e9-480d-956c-912a88d564e4.jpg?v=1790607597"
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-09_PAIR.jpg?v=1790607598"
       ],
       "variants": [
         {
@@ -11469,10 +11803,10 @@
           "color": "CHOCOLATE VINYL",
           "sku": "JULIO X",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-02_2ea3b3c5-29e9-480d-956c-912a88d564e4.jpg?v=1790607597",
             "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-01_PAIR.jpg?v=1790607598",
             "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-06_b195bd30-a464-4612-97f5-06f54786a11a.jpg?v=1790607597",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-09_PAIR.jpg?v=1790607598",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-02_2ea3b3c5-29e9-480d-956c-912a88d564e4.jpg?v=1790607597"
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SANDAL_JULIOX_CHOCOLATEVINYL-09_PAIR.jpg?v=1790607598"
           ],
           "category": "SANDAL",
           "productType": "Shoes",
@@ -12754,15 +13088,6 @@
       "canonicalName": "Kendle Flat",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-02.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-01.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-03.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-08.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-09.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-04.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-05.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-06.jpg?v=1765988130",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-07.jpg?v=1765988130",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_WHITELEATHER-02.jpg?v=1765988139",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_WHITELEATHER-01.jpg?v=1765988139",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_WHITELEATHER-03.jpg?v=1765988139",
@@ -12774,29 +13099,6 @@
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_WHITELEATHER-07.jpg?v=1765988139"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.dolcevita.com/products/kendle-flats-black-leather",
-          "handle": "kendle-flats-black-leather",
-          "title": "KENDLE FLATS BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "KENDLE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-02.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-01.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-03.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-08.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-09.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-04.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-05.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-06.jpg?v=1765988130",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_KENDLE_BLACKLEATHER-07.jpg?v=1765988130"
-          ],
-          "category": "LOAFER",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.dolcevita.com/products/kendle-flats-white-leather",
           "handle": "kendle-flats-white-leather",
@@ -12822,7 +13124,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "dolce-vita--kenley-sandal",
@@ -15827,6 +16129,62 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "dolce-vita--michah-bootie",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Michah Bootie",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-02_e4560e34-0bf1-43fa-bee5-51e34eca8641.jpg?v=1788367224",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-10.jpg?v=1788367225",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-06_e7314464-2830-4175-85a0-d61d90d1a8c2.jpg?v=1788367224",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-11.jpg?v=1788367224",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-02_7acb4f60-f31b-4c39-89bc-3233b763f20d.jpg?v=1788367095",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-10.jpg?v=1788367094",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-06_32948d7d-b2df-4d83-8e4a-1ac1c87d01f2.jpg?v=1788367094",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-11.jpg?v=1788367094"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/michah-booties-black-leather",
+          "handle": "michah-booties-black-leather",
+          "title": "MICHAH BOOTIES BLACK LEATHER",
+          "color": "BLACK LEATHER",
+          "sku": "MICHAH",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-02_e4560e34-0bf1-43fa-bee5-51e34eca8641.jpg?v=1788367224",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-10.jpg?v=1788367225",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-06_e7314464-2830-4175-85a0-d61d90d1a8c2.jpg?v=1788367224",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BLACKLEATHER-11.jpg?v=1788367224"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://www.dolcevita.com/products/michah-booties-brown-leather",
+          "handle": "michah-booties-brown-leather",
+          "title": "MICHAH BOOTIES BROWN LEATHER",
+          "color": "BROWN LEATHER",
+          "sku": "MICHAH",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-02_7acb4f60-f31b-4c39-89bc-3233b763f20d.jpg?v=1788367095",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-10.jpg?v=1788367094",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-06_32948d7d-b2df-4d83-8e4a-1ac1c87d01f2.jpg?v=1788367094",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_MICHAH_BROWNLEATHER-11.jpg?v=1788367094"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "dolce-vita--mikel-flat-perforated",
       "brand": "DOLCE VITA",
       "canonicalName": "Mikel Flat Perforated",
@@ -18648,6 +19006,17 @@
       "canonicalName": "Ramia Heel",
       "category": "THONG",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-02.jpg?v=1762180731",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER_03.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-01.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER_02.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-03.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-08.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-09.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-04.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-05.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-06.jpg?v=1775576492",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-07.jpg?v=1775576492",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BONELEATHER-02.jpg?v=1779207103",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BONELEATHER-01.jpg?v=1779207103",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BONELEATHER-03.jpg?v=1779207103",
@@ -18670,6 +19039,31 @@
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_COGNACLEATHER-07.jpg?v=1775156266"
       ],
       "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/ramia-heels-black-leather",
+          "handle": "ramia-heels-black-leather",
+          "title": "RAMIA HEELS BLACK LEATHER",
+          "color": "BLACK LEATHER",
+          "sku": "RAMIA",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-02.jpg?v=1762180731",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER_03.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-01.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER_02.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-03.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-08.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-09.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-04.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-05.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-06.jpg?v=1775576492",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RAMIA_BLACKLEATHER-07.jpg?v=1775576492"
+          ],
+          "category": "THONG",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
         {
           "productUrl": "https://www.dolcevita.com/products/ramia-heels-bone-leather",
           "handle": "ramia-heels-bone-leather",
@@ -19126,15 +19520,6 @@
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DKBROWNSUEDE-06_0bdafab6-8c79-4a4e-a723-12e6a654c594.jpg?v=1787266359",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DKBROWNSUEDE_2_1.jpg?v=1785172188",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DKBROWNSUEDE-09_PAIR_a74a89b7-4559-4c89-91ed-1922b9558582.jpg?v=1787266359",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-02_8245a0b6-9bcd-4c81-aa80-6889fe84c9a8.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-01_7e12c566-336b-4456-a01f-7429d8b9dbad.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-03_adbdf1eb-6604-4010-a23e-e74f5996dd69.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-08_b175a9f7-792d-4550-b6dd-99926c028b11.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-09_80242282-8539-4218-becf-18372b1c1ab2.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-04_91636bc6-e4f5-487e-8679-98f57eba7ead.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-05_31bb338e-c79d-40bb-b62f-c910237119ce.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-06_680644f5-2168-47a8-ae64-a7c7a5347d9d.jpg?v=1727444415",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-07_4a9becc2-3855-485f-a4c8-6a3d8b99429f.jpg?v=1727444415",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_IVORYLEATHER-02_acbc1284-3d8c-4bff-a204-1ec5766f318d.jpg?v=1787153265",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_IVORYLEATHER-08_PAIR.jpg?v=1787153265",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_IVORYLEATHER-06_PAIR.jpg?v=1787153265",
@@ -19179,29 +19564,6 @@
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://www.dolcevita.com/products/reyes-flats-dusty-blue-suede",
-          "handle": "reyes-flats-dusty-blue-suede",
-          "title": "REYES BALLET FLATS DUSTY BLUE SUEDE",
-          "color": "DUSTY BLUE SUEDE",
-          "sku": "V-REYES",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-02_8245a0b6-9bcd-4c81-aa80-6889fe84c9a8.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-01_7e12c566-336b-4456-a01f-7429d8b9dbad.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-03_adbdf1eb-6604-4010-a23e-e74f5996dd69.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-08_b175a9f7-792d-4550-b6dd-99926c028b11.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-09_80242282-8539-4218-becf-18372b1c1ab2.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-04_91636bc6-e4f5-487e-8679-98f57eba7ead.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-05_31bb338e-c79d-40bb-b62f-c910237119ce.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-06_680644f5-2168-47a8-ae64-a7c7a5347d9d.jpg?v=1727444415",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYES_DUSTYBLUESUEDE-07_4a9becc2-3855-485f-a4c8-6a3d8b99429f.jpg?v=1727444415"
-          ],
-          "category": "BALLERINA",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
         },
         {
           "productUrl": "https://www.dolcevita.com/products/reyes-flats-ivory-leather",
@@ -19927,6 +20289,42 @@
       ],
       "isNew": true,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "dolce-vita--ritla-mid-heel-alabaster",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Ritla Mid Heel Alabaster",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-02.jpg?v=1791295041",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-11.jpg?v=1791295041",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-06.jpg?v=1791295041",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-12.jpg?v=1791295041",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-10.jpg?v=1791295041"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/ritla-mid-heels-alabaster-leather",
+          "handle": "ritla-mid-heels-alabaster-leather",
+          "title": "RITLA MID HEELS ALABASTER LEATHER",
+          "color": "ALABASTER LEATHER",
+          "sku": "RITLA MID",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-02.jpg?v=1791295041",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-11.jpg?v=1791295041",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-06.jpg?v=1791295041",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-12.jpg?v=1791295041",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLAMID_ALABASTERLEATHER-10.jpg?v=1791295041"
+          ],
+          "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "dolce-vita--ritla-mid-heels-black-leather",
@@ -21409,6 +21807,56 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "dolce-vita--sofya-sneaker-dk",
+      "brand": "DOLCE VITA",
+      "canonicalName": "Sofya Sneaker Dk",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-02.jpg?v=1753795745",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_9.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-01.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_8.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-03.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_3.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-09.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-08.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-04.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-05.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-06.jpg?v=1766779243",
+        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-07.jpg?v=1766779243"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.dolcevita.com/products/sofya-sneakers-dk-brown-suede",
+          "handle": "sofya-sneakers-dk-brown-suede",
+          "title": "SOFYA SNEAKERS DK BROWN SUEDE",
+          "color": "DK BROWN SUEDE",
+          "sku": "SOFYA",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-02.jpg?v=1753795745",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_9.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-01.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_8.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-03.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/stepholejn_SOFYA_DK_BROWN-_3.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-09.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-08.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-04.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-05.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-06.jpg?v=1766779243",
+            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKERS_SOFYA_DKBROWNSUEDE-07.jpg?v=1766779243"
+          ],
+          "category": "SNEAKER",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "dolce-vita--soline-h2o-bootie",
       "brand": "DOLCE VITA",
       "canonicalName": "Soline H2o Bootie",
@@ -22592,15 +23040,6 @@
       "canonicalName": "Tresa Sneaker",
       "category": "SNEAKER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-02.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-01.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-03.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-08.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-09.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-04.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-05.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-06.jpg?v=1774013932",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-07.jpg?v=1774013932",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-GOLDSUEDE-02_f631bf82-11f7-464d-bfaf-9382a4d81a15.jpg?v=1787262005",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-GOLDSUEDE-01_PAIR.jpg?v=1787262005",
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-GOLDSUEDE-06_PAIR.jpg?v=1787262005",
@@ -22608,29 +23047,6 @@
         "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-GOLDSUEDE-03_PAIR.jpg?v=1787262005"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.dolcevita.com/products/tresa-sneakers-white-black-leather",
-          "handle": "tresa-sneakers-white-black-leather",
-          "title": "TRESA SNEAKERS WHITE BLACK LEATHER",
-          "color": "WHITE BLACK LEATHER",
-          "sku": "TRESA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-02.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-01.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-03.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-08.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-09.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-04.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-05.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-06.jpg?v=1774013932",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_TRESA_WHITE-BLACKLEATHER-07.jpg?v=1774013932"
-          ],
-          "category": "SNEAKER",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.dolcevita.com/products/tresa-sneakers-white-gold-suede",
           "handle": "tresa-sneakers-white-gold-suede",
@@ -22652,7 +23068,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "dolce-vita--tricia-sneaker-dk",
@@ -24231,50 +24647,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "dolce-vita--zina-sneaker-zebra",
-      "brand": "DOLCE VITA",
-      "canonicalName": "Zina Sneaker Zebra",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-02.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-01.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-03.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-09.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-08.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-04.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-05.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-06.jpg?v=1772487703",
-        "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-07.jpg?v=1772487703"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.dolcevita.com/products/zina-sneakers-zebra-multi-calf-hair",
-          "handle": "zina-sneakers-zebra-multi-calf-hair",
-          "title": "ZINA SNEAKERS ZEBRA MULTI CALF HAIR",
-          "color": "ZEBRA MULTI CALF HAIR",
-          "sku": "ZINA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-02.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-01.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-03.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-09.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-08.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-04.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-05.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-06.jpg?v=1772487703",
-            "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-SNEAKER_ZINA_ZEBRAMULTICALFHAIR-07.jpg?v=1772487703"
-          ],
-          "category": "SNEAKER",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "dolce-vita--zina-wide-sneaker-woven",
       "brand": "DOLCE VITA",
       "canonicalName": "Zina Wide Sneaker Woven",
@@ -24338,6 +24710,8 @@
     "https://www.dolcevita.com/products/alwyn-heels-midnight-crinkle-patent",
     "https://www.dolcevita.com/products/anabel-heels-black-leather",
     "https://www.dolcevita.com/products/anabel-heels-cocoa-suede",
+    "https://www.dolcevita.com/products/anders-h2o-booties-lt-brown-suede",
+    "https://www.dolcevita.com/products/anders-h2o-booties-taupe-suede",
     "https://www.dolcevita.com/products/andey-heels-black-leather",
     "https://www.dolcevita.com/products/andey-heels-bone-leather",
     "https://www.dolcevita.com/products/andey-heels-brown-suede",
@@ -24358,6 +24732,7 @@
     "https://www.dolcevita.com/products/baxen-loafers-chestnut-suede",
     "https://www.dolcevita.com/products/baxen-loafers-noir-embossed-leather",
     "https://www.dolcevita.com/products/baxen-loafers-oxblood-leather",
+    "https://www.dolcevita.com/products/baylee-grommet-ballet-flats-dk-brown-perforated-suede",
     "https://www.dolcevita.com/products/baylee-woven-ballet-flats-creme-woven-stella",
     "https://www.dolcevita.com/products/baylee-woven-ballet-flats-gold-woven-stella",
     "https://www.dolcevita.com/products/baylee-woven-ballet-flats-saddle-woven-stella",
@@ -24380,6 +24755,8 @@
     "https://www.dolcevita.com/products/bobby-pearl-heels-white-pearls",
     "https://www.dolcevita.com/products/bodey-ballet-flats-bone-stella",
     "https://www.dolcevita.com/products/bodey-ballet-flats-saddle-stella",
+    "https://www.dolcevita.com/products/bohdi-espadrille-heels-lt-brown-suede",
+    "https://www.dolcevita.com/products/bohdi-espadrille-heels-olive-suede",
     "https://www.dolcevita.com/products/bowen-heels-cognac-raffia",
     "https://www.dolcevita.com/products/bowen-heels-ivory-stella",
     "https://www.dolcevita.com/products/bowen-heels-lt-natural-raffia",
@@ -24392,6 +24769,7 @@
     "https://www.dolcevita.com/products/brevel-heels-true-white-satin",
     "https://www.dolcevita.com/products/brevel-vinyl-heels-crystal-jelly",
     "https://www.dolcevita.com/products/brevel-vinyl-heels-praline-jelly",
+    "https://www.dolcevita.com/products/brevel-vinyl-heels-tortoise-jelly",
     "https://www.dolcevita.com/products/brevel-vinyl-heels-whiskey-jelly",
     "https://www.dolcevita.com/products/brevel-vinyl-wide-heels-crystal-jelly",
     "https://www.dolcevita.com/products/brevel-vinyl-wide-heels-dk-brown-jelly",
@@ -24568,6 +24946,7 @@
     "https://www.dolcevita.com/products/gyra-wide-calf-boots-black-leather",
     "https://www.dolcevita.com/products/gyra-wide-calf-boots-chocolate-leather",
     "https://www.dolcevita.com/products/hamya-heels-black-leather",
+    "https://www.dolcevita.com/products/hawkin-plush-boots-sand-suede",
     "https://www.dolcevita.com/products/helan-espadrille-wedges-brown-suede",
     "https://www.dolcevita.com/products/helan-espadrille-wedges-camel-suede",
     "https://www.dolcevita.com/products/helan-espadrille-wedges-tortoise-patent-leather",
@@ -24580,6 +24959,7 @@
     "https://www.dolcevita.com/products/heyes-boots-snake-tan-embossed-leather",
     "https://www.dolcevita.com/products/hilah-mules-chestnut-calf-hair",
     "https://www.dolcevita.com/products/hilah-mules-midnight-crinkle-patent",
+    "https://www.dolcevita.com/products/hilah-mules-oxblood-crinkle-patent",
     "https://www.dolcevita.com/products/hilah-mules-tiger-calf-hair",
     "https://www.dolcevita.com/products/hilery-heels-off-white-satin",
     "https://www.dolcevita.com/products/hinna-wedges-camel-suede",
@@ -24590,6 +24970,7 @@
     "https://www.dolcevita.com/products/holta-wedges-brown-suede",
     "https://www.dolcevita.com/products/holta-wedges-dk-brown-suede",
     "https://www.dolcevita.com/products/holta-wedges-olive-suede",
+    "https://www.dolcevita.com/products/huey-h2o-boots-in-black-leather",
     "https://www.dolcevita.com/products/icelyn-heels-ivory-satin",
     "https://www.dolcevita.com/products/itzy-sneakers-periwinkle-satin",
     "https://www.dolcevita.com/products/itzy-sneakers-pink-satin",
@@ -24654,7 +25035,6 @@
     "https://www.dolcevita.com/products/kayna-rhinestone-heels-white-satin",
     "https://www.dolcevita.com/products/keli-crystal-heels-white-satin",
     "https://www.dolcevita.com/products/kelson-pearl-heels-true-white-leather",
-    "https://www.dolcevita.com/products/kendle-flats-black-leather",
     "https://www.dolcevita.com/products/kendle-flats-white-leather",
     "https://www.dolcevita.com/products/kenley-sandals-black-leather",
     "https://www.dolcevita.com/products/kenley-sandals-gold-leather",
@@ -24744,6 +25124,8 @@
     "https://www.dolcevita.com/products/merit-velcro-sneakers-white-gold-leather",
     "https://www.dolcevita.com/products/mery-heels-black-leather",
     "https://www.dolcevita.com/products/mery-heels-brown-leather",
+    "https://www.dolcevita.com/products/michah-booties-black-leather",
+    "https://www.dolcevita.com/products/michah-booties-brown-leather",
     "https://www.dolcevita.com/products/mikel-ballet-flats-camel-perforated-suede",
     "https://www.dolcevita.com/products/mikel-ballet-flats-lt-brown-perforated-suede",
     "https://www.dolcevita.com/products/mikel-ballet-flats-plum-leather",
@@ -24818,6 +25200,7 @@
     "https://www.dolcevita.com/products/qaily-wide-wedges-lt-natural-raffia",
     "https://www.dolcevita.com/products/quinny-wedges-bamboo-suede",
     "https://www.dolcevita.com/products/quinny-wedges-black-leather",
+    "https://www.dolcevita.com/products/ramia-heels-black-leather",
     "https://www.dolcevita.com/products/ramia-heels-bone-leather",
     "https://www.dolcevita.com/products/ramia-heels-cafe-leather",
     "https://www.dolcevita.com/products/ramia-heels-cognac-leather",
@@ -24833,7 +25216,6 @@
     "https://www.dolcevita.com/products/reyes-flats-chocolate-woven-raffia",
     "https://www.dolcevita.com/products/reyes-flats-cranberry-crinkle-patent",
     "https://www.dolcevita.com/products/reyes-flats-dk-brown-suede",
-    "https://www.dolcevita.com/products/reyes-flats-dusty-blue-suede",
     "https://www.dolcevita.com/products/reyes-flats-ivory-leather",
     "https://www.dolcevita.com/products/reyes-flats-lt-natural-woven-raffia",
     "https://www.dolcevita.com/products/reyes-flats-olive-woven-raffia",
@@ -24854,6 +25236,7 @@
     "https://www.dolcevita.com/products/ritla-captoe-ballet-flats-dk-navy-suede",
     "https://www.dolcevita.com/products/ritla-captoe-ballet-flats-lt-tan-leather",
     "https://www.dolcevita.com/products/ritla-captoe-ballet-flats-pink-suede",
+    "https://www.dolcevita.com/products/ritla-mid-heels-alabaster-leather",
     "https://www.dolcevita.com/products/ritla-mid-heels-black-leather",
     "https://www.dolcevita.com/products/ritla-mid-heels-cocoa-suede",
     "https://www.dolcevita.com/products/ritla-mid-heels-cranberry-leather",
@@ -24897,6 +25280,7 @@
     "https://www.dolcevita.com/products/sidona-sandals-lt-natural-raffia",
     "https://www.dolcevita.com/products/simaya-h2o-boots-black-leather",
     "https://www.dolcevita.com/products/simaya-h2o-wide-boots-black-leather",
+    "https://www.dolcevita.com/products/sofya-sneakers-dk-brown-suede",
     "https://www.dolcevita.com/products/soline-h2o-booties-black-leather",
     "https://www.dolcevita.com/products/soline-h2o-booties-espresso-suede",
     "https://www.dolcevita.com/products/soya-sandals-light-tan-leather",
@@ -24929,7 +25313,6 @@
     "https://www.dolcevita.com/products/tilda-heels-true-white-satin",
     "https://www.dolcevita.com/products/tisha-heels-lt-blush-satin",
     "https://www.dolcevita.com/products/tisha-heels-true-white-satin",
-    "https://www.dolcevita.com/products/tresa-sneakers-white-black-leather",
     "https://www.dolcevita.com/products/tresa-sneakers-white-gold-suede",
     "https://www.dolcevita.com/products/tricia-sneakers-dk-brown-suede",
     "https://www.dolcevita.com/products/tricia-sneakers-dk-green-suede",
@@ -24973,7 +25356,6 @@
     "https://www.dolcevita.com/products/zina-360-sneakers-white-recycled-leather",
     "https://www.dolcevita.com/products/zina-sneakers-bone-gold-woven",
     "https://www.dolcevita.com/products/zina-sneakers-metallic-multi-leather",
-    "https://www.dolcevita.com/products/zina-sneakers-zebra-multi-calf-hair",
     "https://www.dolcevita.com/products/zina-wide-sneakers-bone-gold-woven"
   ]
 }

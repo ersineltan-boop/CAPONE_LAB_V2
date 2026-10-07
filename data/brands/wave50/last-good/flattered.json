@@ -2,8 +2,8 @@
   "slug": "flattered",
   "brand": "FLATTERED",
   "officialUrl": "https://flattered.com",
-  "snapshotId": "flattered:2026-10-05T13:57:37.372Z",
-  "collectedAt": "2026-10-05T13:57:37.372Z",
+  "snapshotId": "flattered:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/all-shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 90,
-    "collected": 90,
+    "sourceTotal": 91,
+    "collected": 91,
     "missing": 0,
     "coverage": 100,
     "excluded": 3,
     "paginationExhausted": true,
-    "galleryComplete": 90,
+    "galleryComplete": 91,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 27,
+  "newArrivalsFootwear": 29,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -211,9 +211,9 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://flattered.com/products/xena-suede-chocolate",
@@ -1438,7 +1438,16 @@
         "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONNA-LEATHER-BLACK-PAIR_20be029c-220a-43c6-900d-3b5f32daafe7.jpg?v=1789447584",
         "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONNA-LEATHER-BLACK-DETAIL_2_25a39900-9e33-41b6-8004-b864378ddde4.jpg?v=1789447585",
         "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONNA-LEATHER-BLACK-DETAIL_28bcb637-c64e-45d0-a9ed-cae76efebf2a.jpg?v=1789447584",
-        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONNA-LEATHER-BLACK-DETAIL_1_32d0c065-b347-4c1f-9427-55c7679bb982.jpg?v=1789447585"
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONNA-LEATHER-BLACK-DETAIL_1_32d0c065-b347-4c1f-9427-55c7679bb982.jpg?v=1789447585",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-SIDE.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FionaLeatherChocolate.jpg?v=1779967288",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TOP.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-PAIR.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-OUTSOLE_AND_TOE.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-DETAIL_2.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-DETAIL.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TALON.jpg?v=1789300671",
+        "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TOESHAPE.jpg?v=1789300671"
       ],
       "variants": [
         {
@@ -1461,10 +1470,33 @@
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://flattered.com/products/fiona-leather-chocolate",
+          "handle": "fiona-leather-chocolate",
+          "title": "Fiona Leather Chocolate",
+          "color": "Chocolate Leather",
+          "sku": "00000041100-002-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-SIDE.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FionaLeatherChocolate.jpg?v=1779967288",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TOP.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-PAIR.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-OUTSOLE_AND_TOE.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-DETAIL_2.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-DETAIL.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TALON.jpg?v=1789300671",
+            "https://cdn.shopify.com/s/files/1/0705/7224/5259/files/FLATTERED-FIONA-LEATHER_CHOCOLATE-TOESHAPE.jpg?v=1789300671"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "flattered--leonie",
@@ -3443,6 +3475,7 @@
     "https://flattered.com/products/franchesca-leather-burgundy",
     "https://flattered.com/products/iggy-suede-black",
     "https://flattered.com/products/octavia-leather-chocolate",
-    "https://flattered.com/products/amelia-suede-sand"
+    "https://flattered.com/products/amelia-suede-sand",
+    "https://flattered.com/products/fiona-leather-chocolate"
   ]
 }

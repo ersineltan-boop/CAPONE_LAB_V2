@@ -1,12 +1,12 @@
 {
-  "rawProductCount": 21513,
-  "modelFamilyCount": 13689,
-  "totalVariants": 21513,
-  "multiVariantFamilyCount": 5253,
+  "rawProductCount": 21538,
+  "modelFamilyCount": 13696,
+  "totalVariants": 21538,
+  "multiVariantFamilyCount": 5263,
   "reductionPercent": 36.4,
-  "collapsedVariantProducts": 7824,
+  "collapsedVariantProducts": 7842,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 13629,
+    "familiesWithMultipleRepresentativeImages": 13636,
     "averageRepresentativeImageCount": 6.21,
     "maxRepresentativeImageCount": 80
   },
@@ -5352,6 +5352,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Blucher Sneaker",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-booyah-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Booyah",
@@ -5642,13 +5649,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-conform-t-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Conform-t",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
-      "brand": "ZARA",
-      "canonicalName": "Contrast Heel",
       "variantCount": 2,
       "groupingReason": "singleton"
     },

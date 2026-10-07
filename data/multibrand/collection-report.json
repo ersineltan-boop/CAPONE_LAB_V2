@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-10-05T13:58:17.051Z",
-  "runFinishedAt": "2026-10-05T14:04:40.960Z",
-  "totalProducts": 21521,
+  "runStartedAt": "2026-10-07T09:47:36.384Z",
+  "runFinishedAt": "2026-10-07T09:53:16.714Z",
+  "totalProducts": 21545,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -48,7 +48,7 @@
       "footwearRoots": [
         "/en-us/women/accessories/shoes"
       ],
-      "pagesTraversed": 2,
+      "pagesTraversed": 3,
       "paginationExhausted": true,
       "collectionsCrawled": [
         "/en-us/women/accessories/shoes"
@@ -225,9 +225,9 @@
       "source": "SERGIO ROSSI",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 106,
-      "parsedProducts": 106,
-      "productsWithImages": 106,
+      "discoveredProductLinks": 113,
+      "parsedProducts": 113,
+      "productsWithImages": 113,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -257,7 +257,7 @@
         "/collections/womens-boots",
         "/collections/bridal-and-ceremony-shoes"
       ],
-      "sourceReportedProductCount": 106
+      "sourceReportedProductCount": 113
     },
     {
       "source": "CASADEI",
@@ -286,10 +286,10 @@
       "source": "GIA BORGHINI",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 89,
-      "parsedProducts": 80,
-      "productsWithImages": 80,
-      "productsWithMaterial": 80,
+      "discoveredProductLinks": 88,
+      "parsedProducts": 79,
+      "productsWithImages": 79,
+      "productsWithMaterial": 79,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -298,7 +298,7 @@
         "/collections/heeled-shoes",
         "/collections/flat-shoes"
       ],
-      "rawProductUrlsDiscovered": 89,
+      "rawProductUrlsDiscovered": 88,
       "duplicateCount": 9,
       "pagesTraversed": 4,
       "paginationExhausted": true,
@@ -336,10 +336,10 @@
       "source": "PAZZION",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 586,
-      "parsedProducts": 574,
-      "productsWithImages": 574,
-      "productsWithMaterial": 573,
+      "discoveredProductLinks": 596,
+      "parsedProducts": 584,
+      "productsWithImages": 584,
+      "productsWithMaterial": 583,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -350,7 +350,7 @@
       "collectionsCrawled": [
         "/collections/shoes"
       ],
-      "sourceReportedProductCount": 574
+      "sourceReportedProductCount": 584
     },
     {
       "source": "ZARA",
@@ -440,9 +440,9 @@
       "source": "MARGAUX",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 244,
-      "parsedProducts": 244,
-      "productsWithImages": 244,
+      "discoveredProductLinks": 245,
+      "parsedProducts": 245,
+      "productsWithImages": 245,
       "productsWithMaterial": 5,
       "errors": [],
       "hitLegacyCap": false,
@@ -464,16 +464,16 @@
         "/collections/heels",
         "/collections/flats"
       ],
-      "sourceReportedProductCount": 244
+      "sourceReportedProductCount": 245
     },
     {
       "source": "4CCCCEES",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 204,
-      "parsedProducts": 194,
-      "productsWithImages": 194,
-      "productsWithMaterial": 194,
+      "discoveredProductLinks": 202,
+      "parsedProducts": 192,
+      "productsWithImages": 192,
+      "productsWithMaterial": 192,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -492,7 +492,7 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "rawProductUrlsDiscovered": 204,
+      "rawProductUrlsDiscovered": 202,
       "duplicateCount": 10,
       "pagesTraversed": 8,
       "paginationExhausted": true,
@@ -512,16 +512,16 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "sourceReportedProductCount": 81
+      "sourceReportedProductCount": 80
     },
     {
       "source": "ALEXANDRE BIRMAN",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 667,
-      "parsedProducts": 666,
-      "productsWithImages": 666,
-      "productsWithMaterial": 664,
+      "discoveredProductLinks": 670,
+      "parsedProducts": 669,
+      "productsWithImages": 669,
+      "productsWithMaterial": 667,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -549,8 +549,8 @@
         "/collections/stiletto-heels",
         "/collections/scuptural-heels",
         "/collections/block-heels",
-        "/collections/mid-heels",
         "/collections/flats-sandals",
+        "/collections/mid-heels",
         "/collections/block-heels-2",
         "/collections/claritas-sandals",
         "/collections/wedding-bridal-shoes",
@@ -573,14 +573,14 @@
         "/collections/stiletto-boots",
         "/collections/midcalf-boots",
         "/collections/block-heel-boots",
-        "/collections/sandals-sale",
         "/collections/sandals-on-sale",
+        "/collections/sandals-sale",
         "/collections/flats-on-sale",
         "/collections/boots-on-sale",
         "/collections/pumps-on-sale",
         "/collections/platforms-on-sale"
       ],
-      "rawProductUrlsDiscovered": 667,
+      "rawProductUrlsDiscovered": 670,
       "duplicateCount": 1,
       "pagesTraversed": 49,
       "paginationExhausted": true,
@@ -609,8 +609,8 @@
         "/collections/stiletto-heels",
         "/collections/scuptural-heels",
         "/collections/block-heels",
-        "/collections/mid-heels",
         "/collections/flats-sandals",
+        "/collections/mid-heels",
         "/collections/block-heels-2",
         "/collections/claritas-sandals",
         "/collections/wedding-bridal-shoes",
@@ -633,14 +633,14 @@
         "/collections/stiletto-boots",
         "/collections/midcalf-boots",
         "/collections/block-heel-boots",
-        "/collections/sandals-sale",
         "/collections/sandals-on-sale",
+        "/collections/sandals-sale",
         "/collections/flats-on-sale",
         "/collections/boots-on-sale",
         "/collections/pumps-on-sale",
         "/collections/platforms-on-sale"
       ],
-      "sourceReportedProductCount": 398
+      "sourceReportedProductCount": 397
     }
   ],
   "failedBrands": [],

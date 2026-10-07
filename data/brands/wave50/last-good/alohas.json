@@ -2,8 +2,8 @@
   "slug": "alohas",
   "brand": "ALOHAS",
   "officialUrl": "https://alohas.com",
-  "snapshotId": "alohas:2026-10-04T09:20:08.974Z",
-  "collectedAt": "2026-10-04T09:20:08.974Z",
+  "snapshotId": "alohas:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 173,
-    "collected": 173,
+    "sourceTotal": 185,
+    "collected": 185,
     "missing": 0,
     "coverage": 100,
-    "excluded": 59,
+    "excluded": 73,
     "paginationExhausted": true,
-    "galleryComplete": 173,
+    "galleryComplete": 185,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 106,
+  "newArrivalsFootwear": 118,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -1931,6 +1931,114 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "alohas--linden-loafer",
+      "brand": "ALOHAS",
+      "canonicalName": "Linden Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-5.jpg?v=1785919452",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-20.jpg?v=1789398328",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-0.jpg?v=1785919467",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-6.jpg?v=1785919452",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-2.jpg?v=1787048228",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-3.jpg?v=1787048220",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-1.jpg?v=1785919452",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-1.jpg?v=1785919515",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-20.jpg?v=1789398288",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-0.jpg?v=1785920211",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-2.jpg?v=1785919515",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-4.jpg?v=1785919515",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-5.jpg?v=1785919515",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-3.jpg?v=1785919515"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/linden-black-leather-loafers",
+          "handle": "linden-black-leather-loafers",
+          "title": "Linden Black Leather Loafers",
+          "color": "Linden Black Leather Loafers",
+          "sku": "S101498-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-5.jpg?v=1785919452",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-20.jpg?v=1789398328",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-0.jpg?v=1785919467",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-6.jpg?v=1785919452",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-2.jpg?v=1787048228",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-3.jpg?v=1787048220",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-black-leather-loafers-1.jpg?v=1785919452"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://alohas.com/products/linden-suede-brown-leather-loafers",
+          "handle": "linden-suede-brown-leather-loafers",
+          "title": "Linden Suede Brown Leather Loafers",
+          "color": "Linden Suede Brown Leather Loafers",
+          "sku": "S101604-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-1.jpg?v=1785919515",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-20.jpg?v=1789398288",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-0.jpg?v=1785920211",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-2.jpg?v=1785919515",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-4.jpg?v=1785919515",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-5.jpg?v=1785919515",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-suede-brown-leather-loafers-3.jpg?v=1785919515"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "alohas--linden-effect-loafer",
+      "brand": "ALOHAS",
+      "canonicalName": "Linden Effect Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-2.jpg?v=1790163341",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-20.jpg?v=1790163349",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-0.jpg?v=1790163427",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-1.jpg?v=1790163341",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-4.jpg?v=1790163341",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-5.jpg?v=1790163341",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-3.jpg?v=1790163341"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/linden-vintage-effect-brown-leather-loafers",
+          "handle": "linden-vintage-effect-brown-leather-loafers",
+          "title": "Linden Vintage Effect Brown Leather Loafers",
+          "color": "Linden Vintage Effect Brown Leather Loafers",
+          "sku": "S101746-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-2.jpg?v=1790163341",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-20.jpg?v=1790163349",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-0.jpg?v=1790163427",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-1.jpg?v=1790163341",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-4.jpg?v=1790163341",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-5.jpg?v=1790163341",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/linden-vintage-effect-brown-leather-loafers-3.jpg?v=1790163341"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "alohas--luke-onix-flat",
       "brand": "ALOHAS",
       "canonicalName": "Luke Onix Flat",
@@ -2749,6 +2857,126 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "alohas--rosalind-all-eyelets-flat",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind All Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-4_2f7ee6e9-4c2b-4a75-a91a-f6765ace4c4a.jpg?v=1789474614",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-7.jpg?v=1789474614",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-0_07dbc8e0-22b0-4fda-8dc2-9baef871b40f.jpg?v=1789474614",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-2_af863619-6dbe-4ef9-bd27-31c3015aae54.jpg?v=1789474614",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-6_98be8992-48fe-4277-a7c7-78be5743f1e2.jpg?v=1789474615",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-5_5a1c1d3c-418a-4d34-bbfb-73986ca244ba.jpg?v=1789474615",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-3_8e05b058-2058-41cb-a29c-043effce5fa5.jpg?v=1789474614"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-all-eyelets-black-leather-ballet-flats",
+          "handle": "rosalind-all-eyelets-black-leather-ballet-flats",
+          "title": "Rosalind All Eyelets Black Leather Ballet Flats",
+          "color": "Rosalind All Eyelets Black Leather Ballet Flats",
+          "sku": "S101431-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-4_2f7ee6e9-4c2b-4a75-a91a-f6765ace4c4a.jpg?v=1789474614",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-7.jpg?v=1789474614",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-0_07dbc8e0-22b0-4fda-8dc2-9baef871b40f.jpg?v=1789474614",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-2_af863619-6dbe-4ef9-bd27-31c3015aae54.jpg?v=1789474614",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-6_98be8992-48fe-4277-a7c7-78be5743f1e2.jpg?v=1789474615",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-5_5a1c1d3c-418a-4d34-bbfb-73986ca244ba.jpg?v=1789474615",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-black-leather-ballet-flats-3_8e05b058-2058-41cb-a29c-043effce5fa5.jpg?v=1789474614"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "alohas--rosalind-all-eyelets-flat--rosalind-all-eyelets-blue-leather-ballet-flats",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind All Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-4.jpg?v=1785765141",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-20.jpg?v=1789397973",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-0.jpg?v=1785765164",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-2.jpg?v=1785765141",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-6.jpg?v=1785765141",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-5.jpg?v=1785765141",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-3.jpg?v=1785765141"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-all-eyelets-blue-leather-ballet-flats",
+          "handle": "rosalind-all-eyelets-blue-leather-ballet-flats",
+          "title": "Rosalind All Eyelets Blue Leather Ballet Flats",
+          "color": "Rosalind All Eyelets Blue Leather Ballet Flats",
+          "sku": "S101431-0435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-4.jpg?v=1785765141",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-20.jpg?v=1789397973",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-0.jpg?v=1785765164",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-2.jpg?v=1785765141",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-6.jpg?v=1785765141",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-5.jpg?v=1785765141",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-blue-leather-ballet-flats-3.jpg?v=1785765141"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "alohas--rosalind-all-eyelets-flat--rosalind-all-eyelets-patent-burgundy-leather-ballet-flats",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind All Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-2.jpg?v=1790240342",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-20.jpg?v=1790240310",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-0.jpg?v=1790240406",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-1.jpg?v=1790240343",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-4.jpg?v=1790240343",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-3.jpg?v=1790240342",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-6.jpg?v=1790240343"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats",
+          "handle": "rosalind-all-eyelets-patent-burgundy-leather-ballet-flats",
+          "title": "Rosalind All Eyelets Patent Burgundy Leather Ballet Flats",
+          "color": "Rosalind All Eyelets Patent Burgundy Leather Ballet Flats",
+          "sku": "S101747-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-2.jpg?v=1790240342",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-20.jpg?v=1790240310",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-0.jpg?v=1790240406",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-1.jpg?v=1790240343",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-4.jpg?v=1790240343",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-3.jpg?v=1790240342",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats-6.jpg?v=1790240343"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "alohas--rosalind-all-studs-flat",
       "brand": "ALOHAS",
       "canonicalName": "Rosalind All Studs Flat",
@@ -3425,6 +3653,124 @@
             "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-cut-out-vintage-effect-brown-leather-ballet-flats-5.jpg?v=1781516297",
             "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-cut-out-vintage-effect-brown-leather-ballet-flats-4.jpg?v=1781516298",
             "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-cut-out-vintage-effect-brown-leather-ballet-flats-2.jpg?v=1781516297"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "alohas--rosalind-eyelets-flat",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-3_70c3a796-8c56-45db-97b1-33f039fea314.jpg?v=1790242017",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-1_9a639d02-1db8-49dc-8c10-337a23426376.jpg?v=1790242017",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-0.jpg?v=1790242035",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-5_e4155bf5-8126-4b60-990d-394f5dbdeade.jpg?v=1790242017",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-4_6899fae3-6e13-48a8-99d1-b58fa65497e8.jpg?v=1790242018",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-2_3f894dd9-f229-48d5-8464-707c9c2a3088.jpg?v=1790242017"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-eyelets-black-leather-ballet-flats",
+          "handle": "rosalind-eyelets-black-leather-ballet-flats",
+          "title": "Rosalind Eyelets Black Leather Ballet Flats",
+          "color": "Rosalind Eyelets Black Leather Ballet Flats",
+          "sku": "S101748-0135",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-3_70c3a796-8c56-45db-97b1-33f039fea314.jpg?v=1790242017",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-1_9a639d02-1db8-49dc-8c10-337a23426376.jpg?v=1790242017",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-0.jpg?v=1790242035",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-5_e4155bf5-8126-4b60-990d-394f5dbdeade.jpg?v=1790242017",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-4_6899fae3-6e13-48a8-99d1-b58fa65497e8.jpg?v=1790242018",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-black-leather-ballet-flats-2_3f894dd9-f229-48d5-8464-707c9c2a3088.jpg?v=1790242017"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "alohas--rosalind-eyelets-flat--rosalind-eyelets-pink-leather-ballet-flats",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-4.jpg?v=1788335839",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-1.jpg?v=1788335839",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-0.jpg?v=1788335860",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-2.jpg?v=1788335839",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-6.jpg?v=1788335839",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-5.jpg?v=1788335839",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-3.jpg?v=1788335839"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-eyelets-pink-leather-ballet-flats",
+          "handle": "rosalind-eyelets-pink-leather-ballet-flats",
+          "title": "Rosalind Eyelets Pink Leather Ballet Flats",
+          "color": "Rosalind Eyelets Pink Leather Ballet Flats",
+          "sku": "S101748-0435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-4.jpg?v=1788335839",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-1.jpg?v=1788335839",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-0.jpg?v=1788335860",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-2.jpg?v=1788335839",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-6.jpg?v=1788335839",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-5.jpg?v=1788335839",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-pink-leather-ballet-flats-3.jpg?v=1788335839"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballet Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "alohas--rosalind-eyelets-flat--rosalind-eyelets-white-leather-ballet-flats",
+      "brand": "ALOHAS",
+      "canonicalName": "Rosalind Eyelets Flat",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-4.jpg?v=1788335772",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-1.jpg?v=1788335772",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-0.jpg?v=1788335792",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-2.jpg?v=1788335772",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-6.jpg?v=1788335772",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-5.jpg?v=1788335772",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-3.jpg?v=1788335772"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/rosalind-eyelets-white-leather-ballet-flats",
+          "handle": "rosalind-eyelets-white-leather-ballet-flats",
+          "title": "Rosalind Eyelets White Leather Ballet Flats",
+          "color": "Rosalind Eyelets White Leather Ballet Flats",
+          "sku": "S101748-0235",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-4.jpg?v=1788335772",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-1.jpg?v=1788335772",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-0.jpg?v=1788335792",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-2.jpg?v=1788335772",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-6.jpg?v=1788335772",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-5.jpg?v=1788335772",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/rosalind-eyelets-white-leather-ballet-flats-3.jpg?v=1788335772"
           ],
           "category": "BALLERINA",
           "productType": "Ballet Flats",
@@ -5383,6 +5729,102 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "alohas--tb-39-nylon-sneaker",
+      "brand": "ALOHAS",
+      "canonicalName": "Tb 39 Nylon Sneaker",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-6.jpg?v=1767605209",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-sneakers-20.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-0.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-5.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-2.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-3.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-1.jpg?v=1770742402",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-1.jpg?v=1767605287",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-sneakers-20.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-0.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-6.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-3.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-4.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-2.jpg?v=1770897513",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-2.jpg?v=1770742556",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-20.jpg?v=1770897195",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-0.jpg?v=1770897195",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-1.jpg?v=1770897195",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-4.jpg?v=1770897195",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-5.jpg?v=1770897195",
+        "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-3.jpg?v=1770897195"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://alohas.com/products/tb-39-nylon-burgundy-sneakers",
+          "handle": "tb-39-nylon-burgundy-sneakers",
+          "title": "Tb.39 Nylon Burgundy Sneakers",
+          "color": "Tb.39 Nylon Burgundy Sneakers",
+          "sku": "S101175-0535",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-6.jpg?v=1767605209",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-sneakers-20.jpg?v=1770742402",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-0.jpg?v=1770742402",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-5.jpg?v=1770742402",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-2.jpg?v=1770742402",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-3.jpg?v=1770742402",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-burgundy-leather-sneakers-1.jpg?v=1770742402"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://alohas.com/products/tb-39-nylon-ivory-sneakers",
+          "handle": "tb-39-nylon-ivory-sneakers",
+          "title": "Tb.39 Nylon Ivory Sneakers",
+          "color": "Tb.39 Nylon Ivory Sneakers",
+          "sku": "S101175-0335",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-1.jpg?v=1767605287",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-sneakers-20.jpg?v=1770897513",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-0.jpg?v=1770897513",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-6.jpg?v=1770897513",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-3.jpg?v=1770897513",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-4.jpg?v=1770897513",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-ivory-leather-sneakers-2.jpg?v=1770897513"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://alohas.com/products/tb-39-nylon-taupe-sneakers",
+          "handle": "tb-39-nylon-taupe-sneakers",
+          "title": "Tb.39 Nylon Taupe Sneakers",
+          "color": "Tb.39 Nylon Taupe Sneakers",
+          "sku": "S101175-0435",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-2.jpg?v=1770742556",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-20.jpg?v=1770897195",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-0.jpg?v=1770897195",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-1.jpg?v=1770897195",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-4.jpg?v=1770897195",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-5.jpg?v=1770897195",
+            "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-39-nylon-taupe-sneakers-3.jpg?v=1770897195"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "alohas--tb-490-club-sneaker",
       "brand": "ALOHAS",
       "canonicalName": "Tb 490 Club Sneaker",
@@ -6758,6 +7200,9 @@
     "https://alohas.com/products/lautan-cream-leather-ballet-flats",
     "https://alohas.com/products/liko-rift-dark-brown-leather-sandals",
     "https://alohas.com/products/liko-rift-red-leather-sandals",
+    "https://alohas.com/products/linden-black-leather-loafers",
+    "https://alohas.com/products/linden-suede-brown-leather-loafers",
+    "https://alohas.com/products/linden-vintage-effect-brown-leather-loafers",
     "https://alohas.com/products/luke-onix-black-leather-ballet-flats",
     "https://alohas.com/products/luke-onix-coffee-brown-leather-ballet-flats",
     "https://alohas.com/products/luke-onix-wine-burgundy-leather-ballet-flats",
@@ -6779,6 +7224,9 @@
     "https://alohas.com/products/rhiane-vintage-effect-brown-leather-pumps",
     "https://alohas.com/products/roebar-black-leather-ankle-boots",
     "https://alohas.com/products/roebar-vintage-effect-brown-leather-ankle-boots",
+    "https://alohas.com/products/rosalind-all-eyelets-black-leather-ballet-flats",
+    "https://alohas.com/products/rosalind-all-eyelets-blue-leather-ballet-flats",
+    "https://alohas.com/products/rosalind-all-eyelets-patent-burgundy-leather-ballet-flats",
     "https://alohas.com/products/rosalind-all-studs-black-leather-ballet-flats",
     "https://alohas.com/products/rosalind-all-studs-cream-leather-ballet-flats",
     "https://alohas.com/products/rosalind-all-studs-vintage-effect-brown-leather-ballet-flats",
@@ -6796,6 +7244,9 @@
     "https://alohas.com/products/rosalind-cut-out-black-leather-ballet-flats",
     "https://alohas.com/products/rosalind-cut-out-blue-leather-ballet-flats",
     "https://alohas.com/products/rosalind-cut-out-vintage-effect-brown-leather-ballet-flats",
+    "https://alohas.com/products/rosalind-eyelets-black-leather-ballet-flats",
+    "https://alohas.com/products/rosalind-eyelets-pink-leather-ballet-flats",
+    "https://alohas.com/products/rosalind-eyelets-white-leather-ballet-flats",
     "https://alohas.com/products/rosalind-gun-leather-ballet-flats",
     "https://alohas.com/products/rosalind-light-mesh-black-ballet-flats",
     "https://alohas.com/products/rosalind-mesh-beige-leather-ballet-flats",
@@ -6849,6 +7300,9 @@
     "https://alohas.com/products/tb-00-barefoot-rife-taupe-leather-sneakers",
     "https://alohas.com/products/tb-24-suede-burgundy-leather-sneakers",
     "https://alohas.com/products/tb-24-suede-chocolate-brown-leather-sneakers",
+    "https://alohas.com/products/tb-39-nylon-burgundy-sneakers",
+    "https://alohas.com/products/tb-39-nylon-ivory-sneakers",
+    "https://alohas.com/products/tb-39-nylon-taupe-sneakers",
     "https://alohas.com/products/tb-490-club-onix-cream-leather-sneakers",
     "https://alohas.com/products/tb-490-club-onix-deep-burgundy-leather-sneakers",
     "https://alohas.com/products/tb-490-club-soft-burgundy-leather-sneakers",

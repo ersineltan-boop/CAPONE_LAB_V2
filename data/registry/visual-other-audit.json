@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T14:18:27.953Z",
+  "generatedAt": "2026-10-07T10:10:36.853Z",
   "digerCount": 384,
-  "totalFamilies": 17532,
+  "totalFamilies": 17581,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
     "GENERIC_SOURCE_CATEGORY": 149,
@@ -1366,7 +1366,9 @@
       "brand": "PAZZION",
       "sourceCategories": [
         "Casual Shoes",
+        "Flats",
         "Shoes",
+        "Silver Flats",
         "Silver Shoes",
         "Square Toe Shoes",
         "Women's Shoes",
@@ -1395,10 +1397,14 @@
       "modelFamilyId": "pazzion--name-pazzion-alina-lace-diamante-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Beige Flats",
         "Beige Shoes",
+        "Best Seller - Flats",
+        "Black Flats",
         "Black Shoes",
         "Casual Shoes",
         "Diamante Shoes",
+        "Flats",
         "Round Toe Shoes",
         "Shoes",
         "Women's Shoes"
@@ -1459,9 +1465,11 @@
       "modelFamilyId": "pazzion--name-pazzion-givannia-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Almond Flats",
         "Almond Shoes",
         "Blue Shoes",
         "Casual Shoes",
+        "Flats",
         "Pointed-Toe Shoes",
         "Shoes",
         "Women's Shoes"
@@ -1473,11 +1481,14 @@
       "modelFamilyId": "pazzion--name-pazzion-harivelle-embellished-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Black Flats",
         "Black Shoes",
         "Casual Shoes",
         "Diamante Shoes",
+        "Flats",
         "Pointed-Toe Shoes",
         "Shoes",
+        "Silver Flats",
         "Silver Shoes",
         "Women's Shoes"
       ],
@@ -1488,9 +1499,12 @@
       "modelFamilyId": "pazzion--name-pazzion-helene-crystal-buckle-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Best Seller - Flats",
+        "Black Flats",
         "Black Shoes",
         "Casual Shoes",
         "Diamante Shoes",
+        "Flats",
         "Pointed-Toe Shoes",
         "Shoes",
         "Women's Shoes"
@@ -1504,8 +1518,10 @@
       "sourceCategories": [
         "Casual Shoes",
         "Diamante Shoes",
+        "Flats",
         "Pointed-Toe Shoes",
         "Shoes",
+        "Silver Flats",
         "Silver Shoes",
         "Silver Wedding Shoes",
         "Women's Shoes"
@@ -1557,10 +1573,13 @@
       "modelFamilyId": "pazzion--name-pazzion-serena-braided-bow-foldable-flat-unclassified-braided",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Best Seller - Flats",
+        "Black Flats",
         "Black Formal Shoes",
         "Black Shoes",
         "Bow Shoes",
         "Casual Shoes",
+        "Flats",
         "Khaki Shoes",
         "Pointed-Toe Shoes",
         "Shoes",
@@ -1573,9 +1592,11 @@
       "modelFamilyId": "pazzion--name-pazzion-stella-lace-diamante-buckle-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
+        "Almond Flats",
         "Almond Shoes",
         "Casual Shoes",
         "Diamante Shoes",
+        "Flats",
         "Pointed-Toe Shoes",
         "Shoes",
         "Women's Shoes"
@@ -1589,6 +1610,8 @@
       "sourceCategories": [
         "Bow Shoes",
         "Casual Shoes",
+        "Flats",
+        "Pink Flats",
         "Pink Shoes",
         "Pointed-Toe Shoes",
         "Shoes",
@@ -3654,6 +3677,18 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Flats",
+      "count": 22,
+      "brands": [
+        "KHAITE",
+        "MARGAUX",
+        "PAZZION",
+        "PROENZA SCHOULER",
+        "STAUD"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "VIEW ALL SHOES",
       "count": 17,
       "brands": [
@@ -3686,18 +3721,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Flats",
-      "count": 13,
-      "brands": [
-        "KHAITE",
-        "MARGAUX",
-        "PAZZION",
-        "PROENZA SCHOULER",
-        "STAUD"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "FLAT SHOES",
       "count": 12,
       "brands": [
@@ -3722,7 +3745,23 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Best Seller - Flats",
+      "count": 7,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Round Toe Shoes",
+      "count": 6,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Black Flats",
       "count": 6,
       "brands": [
         "PAZZION"
@@ -3754,6 +3793,14 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Silver Flats",
+      "count": 5,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Silver Shoes",
       "count": 5,
       "brands": [
@@ -3770,14 +3817,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Best Seller - Flats",
-      "count": 4,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Bow Shoes",
       "count": 3,
       "brands": [
@@ -3786,7 +3825,23 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "Pink Flats",
+      "count": 3,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Pink Shoes",
+      "count": 3,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Beige Flats",
       "count": 3,
       "brands": [
         "PAZZION"
@@ -3843,31 +3898,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Pink Flats",
-      "count": 2,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Square Toe Shoes",
-      "count": 2,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Silver Flats",
-      "count": 2,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Black Flats",
       "count": 2,
       "brands": [
         "PAZZION"
@@ -3891,18 +3922,18 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Beige Flats",
+      "sourceCategory": "New Arrivals",
       "count": 2,
       "brands": [
+        "LUIS ONOFRE",
         "PAZZION"
       ],
       "proposedMapping": null
     },
     {
-      "sourceCategory": "New Arrivals",
+      "sourceCategory": "Almond Flats",
       "count": 2,
       "brands": [
-        "LUIS ONOFRE",
         "PAZZION"
       ],
       "proposedMapping": null
@@ -3962,26 +3993,18 @@
         "HEREU"
       ],
       "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Sport Shoes",
-      "count": 2,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 17532,
-    "babet": 1688,
-    "loafer": 1221,
-    "topuklu": 2647,
-    "sandal": 4682,
-    "mule": 1512,
-    "bot-cizme": 3554,
-    "sneaker": 1552,
-    "espadril": 154,
+    "tumu": 17581,
+    "babet": 1696,
+    "loafer": 1227,
+    "topuklu": 2655,
+    "sandal": 4688,
+    "mule": 1515,
+    "bot-cizme": 3565,
+    "sneaker": 1554,
+    "espadril": 159,
     "oxford-derby": 33,
     "clog": 105,
     "diger": 384
