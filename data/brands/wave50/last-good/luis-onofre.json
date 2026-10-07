@@ -2,8 +2,8 @@
   "slug": "luis-onofre",
   "brand": "LUIS ONOFRE",
   "officialUrl": "https://luisonofre.com",
-  "snapshotId": "luis-onofre:2026-10-03T17:24:18.580Z",
-  "collectedAt": "2026-10-03T17:24:18.580Z",
+  "snapshotId": "luis-onofre:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/all-shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 153,
-    "collected": 153,
+    "sourceTotal": 154,
+    "collected": 154,
     "missing": 0,
     "coverage": 100,
     "excluded": 26,
     "paginationExhausted": true,
-    "galleryComplete": 153,
+    "galleryComplete": 154,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 34,
+  "newArrivalsFootwear": 35,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -252,6 +252,44 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--dune-platform-slingback",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Dune Platform Slingback",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-2.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-3.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-4.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-5.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-6.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-7.jpg?v=1791272207"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6106dune-taupe-platform-slingback-pumps",
+          "handle": "6106dune-taupe-platform-slingback-pumps",
+          "title": "Dune Taupe Platform Slingback Pumps",
+          "color": "Dune Taupe Platform Slingback Pumps",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-2.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-3.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-4.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-5.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-6.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-7.jpg?v=1791272207"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -5950,6 +5988,7 @@
     }
   ],
   "productUrls": [
+    "https://luisonofre.com/products/6106dune-taupe-platform-slingback-pumps",
     "https://luisonofre.com/products/6147-01mflocket-black-strappy-sandals",
     "https://luisonofre.com/products/6044",
     "https://luisonofre.com/products/6026-02mst",

@@ -2,8 +2,8 @@
   "slug": "toteme",
   "brand": "TOTEME",
   "officialUrl": "https://toteme.com",
-  "snapshotId": "toteme:2026-10-03T15:36:00.924Z",
-  "collectedAt": "2026-10-03T15:36:00.924Z",
+  "snapshotId": "toteme:2026-10-07T09:46:50.122Z",
+  "collectedAt": "2026-10-07T09:46:50.122Z",
   "catalogPaths": [
     "/collections/shoes-boots",
     "/collections/shoes-flats",
@@ -27,7 +27,7 @@
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 8,
+  "newArrivalsFootwear": 9,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -67,12 +67,12 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -577,9 +577,9 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://toteme.com/products/contour-naplack-pumps-black",
@@ -604,7 +604,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -2227,12 +2227,12 @@
           ],
           "category": "BALLERINA",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2371,9 +2371,9 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
@@ -2413,12 +2413,12 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2455,12 +2455,12 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -3041,12 +3041,12 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
