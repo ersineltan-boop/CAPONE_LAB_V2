@@ -21,7 +21,7 @@ async function fetchMassimoState(http: OnboardingHttp, url: string) {
   // A single ordinary retry can recover an incomplete storefront response.
   // Access-denied/challenge pages are blockers, never schema fallbacks.
   const blocked = /access denied|captcha|verify you are human|checking your browser/i.test(response.text);
-  if (!state && !blocked && (response.status === 200 || response.status === 429 || response.status >= 500)) {
+  if (!state && !blocked && (response.status === 0 || response.status === 200 || response.status === 429 || response.status >= 500)) {
     await new Promise(resolve => setTimeout(resolve, 1_000));
     response = await http.fetchText(url, { timeoutMs: 20_000 });
     state = response.ok ? parseMassimoTransferState(response.text) : null;
@@ -71,7 +71,8 @@ export function mapMassimoApiProduct(row: Row, discoveredAt: string): PilotProdu
     // path, e.g. /2026/I/1/1/p/1568/850/800, rather than only /800.
     const groups = (detailRow.detail?.xmedia ?? []).filter((group: Row) =>
       group.path === `/${color.id}` || (typeof color.image?.url === "string" &&
-        (group.path === color.image.url || color.image.url.startsWith(`${group.path}/`))));
+        (group.path === color.image.url || color.image.url.startsWith(`${group.path}/`) ||
+          (color.image.url === `/${color.id}` && typeof group.path === "string" && group.path.endsWith(`/${color.id}`)))));
     const medias = groups.flatMap((group: Row) => (group.xmediaItems ?? []).flatMap((item: Row) => item.medias ?? []))
       .filter((media: Row) => media.format === 1 && typeof media.url === "string")
       .map((media: Row) => ({path: media.url, contentType: {type: "image"}}));

@@ -268,11 +268,17 @@ export async function collectCasadeiWomensShoes(
       errors.push(`Casadei page ${page} did not include a source total`);
       break;
     }
+    if (sourceReportedTotal !== null && parsed.total !== sourceReportedTotal) {
+      errors.push(`Casadei source total changed at page ${page}`); break;
+    }
     sourceReportedTotal = parsed.total;
     currency ??= parsed.currency;
     let added = 0;
     for (const hit of parsed.hits) {
-      if (seen.has(hit.productId)) continue;
+      if (seen.has(hit.productId)) {
+        errors.push(`Casadei repeated product across pages: ${hit.productId} (page ${page})`);
+        continue;
+      }
       seen.set(hit.productId, hit);
       added += 1;
     }

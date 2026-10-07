@@ -39,12 +39,18 @@ for (const id of targets) {
       if (delivered.some(family => !family.primaryCategory || family.primaryCategory === 'UNCLASSIFIED')) throw new Error('Unresolved model category');
       await replaceAutomationBrandDeliveries({ root: process.cwd(), generatedAt: collectedAt,
         deliveries: [{ slug: id, brand: entry.brand, officialUrl: entry.officialUrl ?? '', collectedAt, families: delivered }] });
+      const full = id === 'massimo-dutti' && snapshot.paginationExhausted === true &&
+        Array.isArray(snapshot.errors) && snapshot.errors.length === 0 &&
+        snapshot.collectedThisRun > 0 && snapshot.collectedThisRun === snapshot.sourceReportedProductCount && rejected.size === 0;
+      const status = full ? 'FULL' : 'PARTIAL';
       entry.isActive = true; entry.collectorType = 'CUSTOM_ADAPTER'; entry.collectionStatus = 'NEEDS_PROBE';
-      entry.notes = `Verified PARTIAL official catalog: ${products.length} products. Dedicated priority-source collector; full coverage not confirmed.`;
+      entry.notes = full
+        ? `Verified FULL official catalog: ${snapshot.collectedThisRun} fresh products; preceding archive retained.`
+        : `Verified PARTIAL official catalog: ${products.length} products. Dedicated priority-source collector; full coverage not confirmed.`;
       const coverage: Record<string, unknown> = await read('data/registry/priority-brand-coverage.json').catch((error) => {
         if (error.code === 'ENOENT') return {}; throw error;
       });
-      coverage[id] = { status: 'PARTIAL', ready: products.length, pending: Math.max(0, (snapshot.sourceReportedProductCount ?? products.length) - products.length),
+      coverage[id] = { status, ready: full ? snapshot.collectedThisRun : products.length, pending: Math.max(0, (snapshot.sourceReportedProductCount ?? products.length) - products.length),
         totalKnown: typeof snapshot.sourceReportedProductCount === 'number', quarantined: rejected.size, updatedAt: collectedAt };
       const built = buildBrandRegistryFromUniverseData({ universeFile: universe, probeCache: emptyProbeCache() });
       if (!built.ok || !built.brandsTsContent) throw new Error('Registry build failed');
