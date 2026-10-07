@@ -8,7 +8,14 @@ vi.mock('../http', () => ({sleep: async () => {}, fetchJsonPost: async () => ({o
   fetchText: async (url: string) => {
     const api = url.startsWith('https://api.levelshoes.com/');
     if (api && fixture.mode === 'blocked') return {ok: false,status: 403,text: 'Access denied',url};
-    const state = {products: [product(api ? 2 : 1)], pagination: {page: api && fixture.mode !== 'repeated' ? 1 : 0,size: 1,totalCount: 2}};
+    const long = fixture.mode === 'long';
+    const page = api ? Number(new URL(url).searchParams.get('page')) : 0;
+    const item = product(long ? page + 1 : api ? 2 : 1);
+    if (fixture.mode === 'unisex') {
+      item.action.url = item.action.url.replace('-women', '');
+      (item.analytics as Record<string, string>).gender = 'Unisex';
+    }
+    const state = {products: [item], pagination: {page: long ? page : api && fixture.mode !== 'repeated' ? 1 : 0,size: 1,totalCount: long ? 81 : 2}};
     return {ok: true,status: 200,url,text: api ? JSON.stringify(state) : `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({props:{pageProps:{__APOLLO_STATE__:{ROOT_QUERY:{'_productList:{}':state}}}}})}</script>`};
   }}));
 describe('current Level Shoes storefront pagination', () => {
@@ -19,6 +26,27 @@ describe('current Level Shoes storefront pagination', () => {
     expect(result.sourceReportedProductCount).toBe(2);
     expect(result.products.map(p => p.category)).toEqual(['MULE','MULE']);
     expect(result.categoriesDiscovered[0].url).toBe(LEVEL_SHOES_FOOTWEAR_ROOT);
+  });
+  it('finishes a catalog beyond the old 80-page cap', async () => {
+    fixture.mode = 'long';
+    const result = await collectLevelShoes();
+    expect(result.coverageStatus).toBe('FULL');
+    expect(result.products).toHaveLength(81);
+    const capped = await collectLevelShoes({maxPagesPerListing: 80});
+    expect(capped.coverageStatus).toBe('PARTIAL');
+    expect(capped.paginationExhausted).toBe(false);
+  });
+  it('includes source-confirmed unisex shoes without a women slug', async () => {
+    fixture.mode = 'unisex';
+    const result = await collectLevelShoes();
+    expect(result.coverageStatus).toBe('FULL');
+    expect(result.products).toHaveLength(2);
+  });
+  it('stops at its time budget without publishing an incomplete catalog', async () => {
+    fixture.mode = 'complete';
+    const result = await collectLevelShoes({maxDurationMs: 0});
+    expect(result.coverageStatus).toBe('FAILED');
+    expect(result.errors).toContain('Level Shoes collection time budget exhausted');
   });
   it.each(['blocked','repeated'])('fails closed on %s later pages', async mode => {
     fixture.mode = mode;

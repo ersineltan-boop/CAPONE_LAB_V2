@@ -44,10 +44,10 @@ describe("Massimo official SSR adapter", () => {
     expect(result.products).toEqual([]);
     expect(result.errors[0]).toContain("403");
   });
-  it("recovers one incomplete 200 storefront response, with a bounded retry", async () => {
+  it.each([0, 200])("recovers one incomplete storefront response (HTTP %s), with a bounded retry", async status => {
     let requests = 0;
     const state = { TRANSFER_PRODUCTS_WITH_IDS: { products: [row] } };
-    const result = await collectMassimoDuttiCatalog({ fetchText: async url => ({ok: true, status: 200, url,
+    const result = await collectMassimoDuttiCatalog({ fetchText: async url => ({ok: requests > 0 || status === 200, status: requests > 0 ? 200 : status, url,
       text: ++requests === 1 ? '<html>Temporary incomplete response</html>' : `<script id="mdfrontw-state">${JSON.stringify(state)}</script>`}) });
     expect(requests).toBe(2);
     expect(result.products).toHaveLength(1);
@@ -79,6 +79,14 @@ describe("Massimo official SSR adapter", () => {
         {id: "700", name: "BROWN", image: {url: "/2026/I/1/1/p/1568/850/700/1568850700"}}],
       xmedia: [{path, xmediaItems: [{medias: [{format: 1, url: media.path}]}]},
         {path: "/unrelated", xmediaItems: [{medias: [{format: 1, url: "https://static.massimodutti.net/wrong.jpg"}]}]}]}}, "2026-10-03");
+    expect(product?.images).toEqual([media.path]);
+    expect(product?.variants?.[1].images).toEqual([]);
+  });
+  it("maps legacy color keys to seasonal galleries only for that exact color", () => {
+    const product = mapMassimoApiProduct({ ...row, productUrl: "leather-riding-boot-l11005850",
+      detail: {colors: [{id: "800", name: "BLACK", image: {url: "/800"}},
+        {id: "700", name: "BROWN", image: {url: "/700"}}],
+        xmedia: [{path: "/2026/I/1/1/p/1568/850/800", xmediaItems: [{medias: [{format: 1, url: media.path}]}]}]}}, "2026-10-07");
     expect(product?.images).toEqual([media.path]);
     expect(product?.variants?.[1].images).toEqual([]);
   });

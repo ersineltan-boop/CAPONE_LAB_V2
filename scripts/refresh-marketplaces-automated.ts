@@ -68,7 +68,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
     };
   }
   if (sourceId === LEVEL_SHOES_ID) {
-    const result = await collectLevelShoes({ maxPagesPerListing: 80, enrichDetails: false });
+    const result = await collectLevelShoes({ enrichDetails: false });
     const excluded = excludedCount(result.products);
     return {
       sourceId,

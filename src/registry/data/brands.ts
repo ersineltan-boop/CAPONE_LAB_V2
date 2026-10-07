@@ -4339,7 +4339,7 @@ export const brandEntries: BrandRegistryEntry[] = [
     supportsMultipleImages: false,
     discoverySources: [],
     isActive: true,
-    notes: "Verified PARTIAL official catalog: 121 products. Dedicated priority-source collector; full coverage not confirmed.",
+    notes: "Verified FULL official catalog: 117 fresh products; preceding archive retained.",
     classificationStatus: "UNREVIEWED",
     radarEligible: false,
   }),
