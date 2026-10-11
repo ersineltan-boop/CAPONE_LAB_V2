@@ -2,8 +2,8 @@
   "slug": "naguisa",
   "brand": "NAGUISA",
   "officialUrl": "https://naguisa.com",
-  "snapshotId": "naguisa:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "naguisa:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/alpargatas",
     "/collections/alpargatas-de-invierno",
@@ -23,18 +23,18 @@
     "/collections/novedades"
   ],
   "coverage": {
-    "sourceTotal": 78,
-    "collected": 78,
+    "sourceTotal": 77,
+    "collected": 77,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 78,
+    "galleryComplete": 77,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 64,
+  "newArrivalsFootwear": 62,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -2155,6 +2155,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "naguisa--archivo-imai-gloss",
+      "brand": "NAGUISA",
+      "canonicalName": "Archivo Imai Gloss",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_BURGUNDY-GLOSS_01_0329.jpg?v=1752220617",
+        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_MARRON_03_1290_9cc48eab-720f-4e53-999d-ca28a6b0e17d.jpg?v=1752220617",
+        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_BURGUNDY-GLOSS_02_0829.jpg?v=1752220617"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://naguisa.com/products/imai-burgundy-gloss",
+          "handle": "imai-burgundy-gloss",
+          "title": "ARCHIVO IMAI BURGUNDY GLOSS",
+          "color": "ARCHIVO IMAI BURGUNDY GLOSS",
+          "sku": "8447251035009",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_BURGUNDY-GLOSS_01_0329.jpg?v=1752220617",
+            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_MARRON_03_1290_9cc48eab-720f-4e53-999d-ca28a6b0e17d.jpg?v=1752220617",
+            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/25IIMA8EGG25_NAGUISA_IMAI_BURGUNDY-GLOSS_02_0829.jpg?v=1752220617"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "naguisa--glass-coco-oscuro",
       "brand": "NAGUISA",
       "canonicalName": "Glass Coco Oscuro",
@@ -2499,78 +2531,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "naguisa--dorotea-negro-wild",
-      "brand": "NAGUISA",
-      "canonicalName": "Dorotea Negro Wild",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_01_0156.jpg?v=1769164181",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_03_1015.jpg?v=1783672591",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_02_0305.jpg?v=1783672590"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://naguisa.com/products/dorotea-negro-wild",
-          "handle": "dorotea-negro-wild",
-          "title": "DOROTEA NEGRO WILD",
-          "color": null,
-          "sku": "8447251071328",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_01_0156.jpg?v=1769164181",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_03_1015.jpg?v=1783672591",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3BLA_NAGUISA_DOROTEA_BLACKWILD_02_0305.jpg?v=1783672590"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "naguisa--dorotea-wild",
-      "brand": "NAGUISA",
-      "canonicalName": "Dorotea Wild",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/Naguisa_L2_0073_DOROTEA_MARRON_WILD02.jpg?v=1769083739",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_03_1019.jpg?v=1783672587",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/Naguisa_L2_0080_DOROTEA_MARRON_WILD.jpg?v=1769083739",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_01_0161.jpg?v=1769164176",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_02_0308.jpg?v=1783672586",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/NAGUISA_AW2627_7_8a3e8abf-7859-4480-93e9-3113e870754f.jpg?v=1787729670",
-        "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/NAGUISA_AW2627_6_ab3c67af-2d01-4bba-b29b-de5e9b0c1523.jpg?v=1787729679"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://naguisa.com/products/dorotea-marron-wild",
-          "handle": "dorotea-marron-wild",
-          "title": "DOROTEA MARRON WILD",
-          "color": "DOROTEA MARRON WILD",
-          "sku": "8447251071397",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/Naguisa_L2_0073_DOROTEA_MARRON_WILD02.jpg?v=1769083739",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_03_1019.jpg?v=1783672587",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/Naguisa_L2_0080_DOROTEA_MARRON_WILD.jpg?v=1769083739",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_01_0161.jpg?v=1769164176",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/26IDOR3VIT_NAGUISA_DOROTEA_DARKBROWNWILD_02_0308.jpg?v=1783672586",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/NAGUISA_AW2627_7_8a3e8abf-7859-4480-93e9-3113e870754f.jpg?v=1787729670",
-            "https://cdn.shopify.com/s/files/1/0883/9715/2603/files/NAGUISA_AW2627_6_ab3c67af-2d01-4bba-b29b-de5e9b0c1523.jpg?v=1787729679"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "naguisa--khov-r-oscuro",
       "brand": "NAGUISA",
       "canonicalName": "Khov R Oscuro",
@@ -2809,6 +2769,7 @@
     "https://naguisa.com/products/leonora-multi-marron",
     "https://naguisa.com/products/imai-negro-4",
     "https://naguisa.com/products/imai-marron-oscuro",
+    "https://naguisa.com/products/imai-burgundy-gloss",
     "https://naguisa.com/products/glass-coco-marron-oscuro",
     "https://naguisa.com/products/glass-oliva-gloss-1",
     "https://naguisa.com/products/glass-chocolate-gloss",
@@ -2819,8 +2780,6 @@
     "https://naguisa.com/products/carmen-oliva",
     "https://naguisa.com/products/saturia-marron-oscuro",
     "https://naguisa.com/products/saturia-negro-wild",
-    "https://naguisa.com/products/dorotea-negro-wild",
-    "https://naguisa.com/products/dorotea-marron-wild",
     "https://naguisa.com/products/khov-r-marron-oscuro-marron",
     "https://naguisa.com/products/khov-marron-oscuro-1",
     "https://naguisa.com/products/khov-marron",

@@ -2,8 +2,8 @@
   "slug": "khaite",
   "brand": "KHAITE",
   "officialUrl": "https://khaite.com",
-  "snapshotId": "khaite:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "khaite:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 155,
-    "collected": 155,
+    "sourceTotal": 156,
+    "collected": 156,
     "missing": 0,
     "coverage": 100,
     "excluded": 1,
     "paginationExhausted": true,
-    "galleryComplete": 155,
+    "galleryComplete": 156,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 12,
+  "newArrivalsFootwear": 13,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -63,9 +63,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "khaite--davis-boot",
+      "modelFamilyId": "khaite--davis-knee-high-boot",
       "brand": "KHAITE",
-      "canonicalName": "Davis Boot",
+      "canonicalName": "Davis Knee High Boot",
       "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/1519/7996/files/DAVIS-KNEE-HIGH-BOOT_BLACK-LEATHER_F2001-712-200_A.jpg?v=1761063650",
@@ -78,7 +78,7 @@
         {
           "productUrl": "https://khaite.com/products/knee-high-boot-in-black-leather",
           "handle": "knee-high-boot-in-black-leather",
-          "title": "Davis Boot in Black Leather",
+          "title": "Davis Knee-High Boot in Black Leather",
           "color": "BLACK",
           "sku": "F2001-712-200",
           "images": [
@@ -99,9 +99,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "khaite--jane-flat-in-black-leather",
+      "modelFamilyId": "khaite--jane-flat-pebbled",
       "brand": "KHAITE",
-      "canonicalName": "Jane Flat in Black Leather",
+      "canonicalName": "Jane Flat Pebbled",
       "category": "OTHER_FOOTWEAR",
       "images": [
         "https://cdn.shopify.com/s/files/1/1519/7996/files/JANE-FLAT_BLACK-LEATHER_F4058-966-200_A.jpg?v=1761148924",
@@ -114,7 +114,7 @@
         {
           "productUrl": "https://khaite.com/products/jane-flat-in-black",
           "handle": "jane-flat-in-black",
-          "title": "Jane Flat in Black Leather",
+          "title": "Jane Flat in Black Pebbled Leather",
           "color": "BLACK",
           "sku": "F4058-966-200",
           "images": [
@@ -171,9 +171,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "khaite--arizona-boot",
+      "modelFamilyId": "khaite--arizona-ankle-boot",
       "brand": "KHAITE",
-      "canonicalName": "Arizona Boot",
+      "canonicalName": "Arizona Ankle Boot",
       "category": "ANKLE_BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/1519/7996/files/190228_Khaite_E_SL_1_ChrisBartlett_0081_main_322b91d2-c589-42ef-9910-083171b6ef26.jpg?v=1747859995",
@@ -186,7 +186,7 @@
         {
           "productUrl": "https://khaite.com/products/ankle-boot-in-black-leather",
           "handle": "ankle-boot-in-black-leather",
-          "title": "Arizona Boot in Black Leather",
+          "title": "Arizona Ankle Boot in Black Leather",
           "color": "BLACK",
           "sku": "F2000-712-200",
           "images": [
@@ -236,9 +236,9 @@
           ],
           "category": "PUMP",
           "productType": "Shoes",
-          "inNewArrivals": true,
+          "inNewArrivals": false,
           "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
       "isNew": true,
@@ -394,9 +394,9 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": false,
+          "inNewArrivals": true,
           "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://khaite.com/products/valerie-mid-calf-boot-in-black",
@@ -443,7 +443,7 @@
         {
           "productUrl": "https://khaite.com/products/nevada-ankle-stretch-boot-85-in-dark-brown",
           "handle": "nevada-ankle-stretch-boot-85-in-dark-brown",
-          "title": "Nevada Stretch High Boot in Dark Brown Nappa Leather",
+          "title": "Nevada Stretch High Boot in Black Leather",
           "color": "DARK BROWN",
           "sku": "F1067-836-950",
           "images": [
@@ -462,7 +462,7 @@
         {
           "productUrl": "https://khaite.com/products/nevada-ankle-stretch-boot-85-in-black-nappa",
           "handle": "nevada-ankle-stretch-boot-85-in-black-nappa",
-          "title": "Nevada Stretch High Boot in Black Nappa Leather",
+          "title": "Nevada Stretch High Boot in Dark Brown Leather",
           "color": "BLACK",
           "sku": "F1067-836-200",
           "images": [
@@ -510,9 +510,9 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Shoes",
-          "inNewArrivals": false,
+          "inNewArrivals": true,
           "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
@@ -618,9 +618,9 @@
           ],
           "category": "SANDAL",
           "productType": "Shoes",
-          "inNewArrivals": true,
+          "inNewArrivals": false,
           "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
       "isNew": true,
@@ -694,9 +694,9 @@
           ],
           "category": "PUMP",
           "productType": "Shoes",
-          "inNewArrivals": true,
+          "inNewArrivals": false,
           "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
       "isNew": true,
@@ -731,6 +731,150 @@
             "https://cdn.shopify.com/s/files/1/1519/7996/files/COLLEEN-PUMP-75_BLACK_F2060-1027-200_SWATCH_fa0ed61c-3f24-48f5-8d88-29a2e5139740.png?v=1786717807"
           ],
           "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "khaite--marlene-knee-high-boot",
+      "brand": "KHAITE",
+      "canonicalName": "Marlene Knee High Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A-ALT.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B-ALT.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_C.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_D.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_E.jpg?v=1784753839",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-13at4.09.24PM.png?v=1786651768",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_A.jpg?v=1784753876",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_B.jpg?v=1784753876",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_C.jpg?v=1784753876",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_D.jpg?v=1784753876",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_E.jpg?v=1784753876",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.53.34PM.png?v=1786827219"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/marlene-knee-high-boot-in-black-leather",
+          "handle": "marlene-knee-high-boot-in-black-leather",
+          "title": "Marlene Knee-High Boot in Black Leather",
+          "color": "BLACK",
+          "sku": "F1133-1027-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A-ALT.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B-ALT.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_C.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_D.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_E.jpg?v=1784753839",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-13at4.09.24PM.png?v=1786651768"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://khaite.com/products/marlene-knee-high-boot-in-natural-python",
+          "handle": "marlene-knee-high-boot-in-natural-python",
+          "title": "Marlene Knee-High Boot in Natural Python",
+          "color": "NATURAL",
+          "sku": "F1133-928-121",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_A.jpg?v=1784753876",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_B.jpg?v=1784753876",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_C.jpg?v=1784753876",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_D.jpg?v=1784753876",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_E.jpg?v=1784753876",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.53.34PM.png?v=1786827219"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "khaite--petra-knee-high-boot",
+      "brand": "KHAITE",
+      "canonicalName": "Petra Knee High Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_A.jpg?v=1784753925",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_B.jpg?v=1784753925",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_C.jpg?v=1784753925",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_D.jpg?v=1784753925",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_E.jpg?v=1784753925",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at5.00.07PM.png?v=1786827612"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/petra-knee-high-boot-in-black",
+          "handle": "petra-knee-high-boot-in-black",
+          "title": "Petra Knee-High Boot in Black",
+          "color": "BLACK",
+          "sku": "F1140-1071-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_A.jpg?v=1784753925",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_B.jpg?v=1784753925",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_C.jpg?v=1784753925",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_D.jpg?v=1784753925",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_E.jpg?v=1784753925",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at5.00.07PM.png?v=1786827612"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "khaite--petra-ankle-boot",
+      "brand": "KHAITE",
+      "canonicalName": "Petra Ankle Boot",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_A.jpg?v=1784753914",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_B.jpg?v=1784753915",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_C.jpg?v=1784753915",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_D.jpg?v=1784753914",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_E_1.jpg?v=1784753914",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-14at4.50.21PM.png?v=1786740630"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/petra-ankle-boot-in-black",
+          "handle": "petra-ankle-boot-in-black",
+          "title": "Petra Ankle Boot in Black",
+          "color": "BLACK",
+          "sku": "F1139-1071-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_A.jpg?v=1784753914",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_B.jpg?v=1784753915",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_C.jpg?v=1784753915",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_D.jpg?v=1784753914",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_E_1.jpg?v=1784753914",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-14at4.50.21PM.png?v=1786740630"
+          ],
+          "category": "ANKLE_BOOT",
           "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": true,
@@ -776,9 +920,9 @@
           ],
           "category": "ANKLE_BOOT",
           "productType": "Shoes",
-          "inNewArrivals": false,
+          "inNewArrivals": true,
           "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://khaite.com/products/clive-ankle-boot-35-in-black-leather",
@@ -1041,6 +1185,122 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "khaite--ona-knee-high-boot-glazed",
+      "brand": "KHAITE",
+      "canonicalName": "Ona Knee High Boot Glazed",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1014_product.jpg?v=1747859967",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1023_product.jpg?v=1747859967",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0930_product.jpg?v=1747859968",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_ANKLE_BLACK_0539_product.jpg?v=1747859968",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0001.jpg?v=1747859968",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2024-10-06at6.08.46PM.png?v=1747859968"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/ona-knee-high-boot-55-in-black",
+          "handle": "ona-knee-high-boot-55-in-black",
+          "title": "Ona Knee-High Boot in Black Glazed Leather",
+          "color": "BLACK",
+          "sku": "F1099-907-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1014_product.jpg?v=1747859967",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1023_product.jpg?v=1747859967",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0930_product.jpg?v=1747859968",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_ANKLE_BLACK_0539_product.jpg?v=1747859968",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0001.jpg?v=1747859968",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2024-10-06at6.08.46PM.png?v=1747859968"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "khaite--arizona-over-knee-stretch-boot",
+      "brand": "KHAITE",
+      "canonicalName": "Arizona Over Knee Stretch Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_A_jpg.jpg?v=1757969703",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_B_jpg.jpg?v=1757969703",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_D_jpg.jpg?v=1758813937",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C.jpg?v=1761141890",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_E.jpg?v=1765229600",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2025-09-25at12.00.28PM.png?v=1765229600",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C_jpg_e2f219c5-7c94-4792-9672-aa140ac25506.jpg?v=1765229600"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/arizona-otk-boot-40-in-black",
+          "handle": "arizona-otk-boot-40-in-black",
+          "title": "Arizona Over-the-Knee Stretch Boot in Black Nappa Leather",
+          "color": "BLACK",
+          "sku": "F1123-994-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_A_jpg.jpg?v=1757969703",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_B_jpg.jpg?v=1757969703",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_D_jpg.jpg?v=1758813937",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C.jpg?v=1761141890",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_E.jpg?v=1765229600",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2025-09-25at12.00.28PM.png?v=1765229600",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C_jpg_e2f219c5-7c94-4792-9672-aa140ac25506.jpg?v=1765229600"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "khaite--valerie-over-knee-boot",
+      "brand": "KHAITE",
+      "canonicalName": "Valerie Over Knee Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_A.jpg?v=1784753904",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_B.jpg?v=1784753904",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_C.jpg?v=1784753904",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_D.jpg?v=1784753905",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_E.jpg?v=1784753904",
+        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.59.19PM.png?v=1786827563"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://khaite.com/products/valerie-over-the-knee-boot-in-black",
+          "handle": "valerie-over-the-knee-boot-in-black",
+          "title": "Valerie Over-the-Knee Boot in Black",
+          "color": "BLACK",
+          "sku": "F1138-994-200",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_A.jpg?v=1784753904",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_B.jpg?v=1784753904",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_C.jpg?v=1784753904",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_D.jpg?v=1784753905",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/VALERIE-OTK-55_BLACK_F1138-994-200_E.jpg?v=1784753904",
+            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.59.19PM.png?v=1786827563"
+          ],
+          "category": "BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "khaite--colt-pump-ostrich",
@@ -1378,44 +1638,6 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "khaite--petra-knee-high-boot",
-      "brand": "KHAITE",
-      "canonicalName": "Petra Knee High Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_A.jpg?v=1784753925",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_B.jpg?v=1784753925",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_C.jpg?v=1784753925",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_D.jpg?v=1784753925",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_E.jpg?v=1784753925",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at5.00.07PM.png?v=1786827612"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://khaite.com/products/petra-knee-high-boot-in-black",
-          "handle": "petra-knee-high-boot-in-black",
-          "title": "Petra Knee-High Boot in Black",
-          "color": "BLACK",
-          "sku": "F1140-1071-200",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_A.jpg?v=1784753925",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_B.jpg?v=1784753925",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_C.jpg?v=1784753925",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_D.jpg?v=1784753925",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-KNEE-HIGH-BOOT-85_BLACK_F1140-1071-200_E.jpg?v=1784753925",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at5.00.07PM.png?v=1786827612"
-          ],
-          "category": "BOOT",
-          "productType": "Shoes",
           "inNewArrivals": false,
           "isNew": true,
           "newnessEvidence": "SOURCE_BADGE"
@@ -1423,112 +1645,6 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "khaite--petra-ankle-boot",
-      "brand": "KHAITE",
-      "canonicalName": "Petra Ankle Boot",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_A.jpg?v=1784753914",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_B.jpg?v=1784753915",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_C.jpg?v=1784753915",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_D.jpg?v=1784753914",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_E_1.jpg?v=1784753914",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-14at4.50.21PM.png?v=1786740630"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://khaite.com/products/petra-ankle-boot-in-black",
-          "handle": "petra-ankle-boot-in-black",
-          "title": "Petra Ankle Boot in Black",
-          "color": "BLACK",
-          "sku": "F1139-1071-200",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_A.jpg?v=1784753914",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_B.jpg?v=1784753915",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_C.jpg?v=1784753915",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_D.jpg?v=1784753914",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/PETRA-ANKLE-BOOT-85_BLACK_F1139-1071-200_E_1.jpg?v=1784753914",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-14at4.50.21PM.png?v=1786740630"
-          ],
-          "category": "ANKLE_BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "khaite--marlene-knee-high-boot",
-      "brand": "KHAITE",
-      "canonicalName": "Marlene Knee High Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A-ALT.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B-ALT.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_C.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_D.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_E.jpg?v=1784753839",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-13at4.09.24PM.png?v=1786651768",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_A.jpg?v=1784753876",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_B.jpg?v=1784753876",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_C.jpg?v=1784753876",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_D.jpg?v=1784753876",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_E.jpg?v=1784753876",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.53.34PM.png?v=1786827219"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://khaite.com/products/marlene-knee-high-boot-in-black-leather",
-          "handle": "marlene-knee-high-boot-in-black-leather",
-          "title": "Marlene Knee-High Boot in Black Leather",
-          "color": "BLACK",
-          "sku": "F1133-1027-200",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_A-ALT.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_B-ALT.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_C.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_D.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_BLACK_F1133-1027-200_E.jpg?v=1784753839",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-13at4.09.24PM.png?v=1786651768"
-          ],
-          "category": "BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://khaite.com/products/marlene-knee-high-boot-in-natural-python",
-          "handle": "marlene-knee-high-boot-in-natural-python",
-          "title": "Marlene Knee-High Boot in Natural Python",
-          "color": "NATURAL",
-          "sku": "F1133-928-121",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_A.jpg?v=1784753876",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_B.jpg?v=1784753876",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_C.jpg?v=1784753876",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_D.jpg?v=1784753876",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/MARLENE-KNEE-HIGH-BOOT-85_NATURAL_F1133-928-121_E.jpg?v=1784753876",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2026-08-15at4.53.34PM.png?v=1786827219"
-          ],
-          "category": "BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "khaite--nevada-stretch-low-boot",
@@ -1579,7 +1695,7 @@
         {
           "productUrl": "https://khaite.com/products/nevada-ankle-stretch-boot-40-in-black",
           "handle": "nevada-ankle-stretch-boot-40-in-black",
-          "title": "Nevada Stretch Low Boot in Black Nappa Leather",
+          "title": "Nevada Stretch Low Boot in Black Leather",
           "color": "BLACK",
           "sku": "F1068-836-200",
           "images": [
@@ -1599,7 +1715,7 @@
         {
           "productUrl": "https://khaite.com/products/nevada-ankle-stretch-boot-40-in-dark-brown",
           "handle": "nevada-ankle-stretch-boot-40-in-dark-brown",
-          "title": "Nevada Stretch Low Boot in Dark Brown Nappa Leather",
+          "title": "Nevada Stretch Low Boot in Dark Brown Leather",
           "color": "DARK BROWN",
           "sku": "F1068-836-950",
           "images": [
@@ -2912,7 +3028,7 @@
         {
           "productUrl": "https://khaite.com/products/arizona-ankle-boot-40-in-black",
           "handle": "arizona-ankle-boot-40-in-black",
-          "title": "Arizona Stretch Ankle Boot in Black Nappa Leather",
+          "title": "Arizona Stretch Ankle Boot in Black Leather",
           "color": "BLACK",
           "sku": "F1122-994-200",
           "images": [
@@ -3961,7 +4077,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "khaite--ona-knee-high-boot-glazed",
+      "modelFamilyId": "khaite--ona-knee-high-boot-glazed--ona-knee-high-boot-in-chocolate",
       "brand": "KHAITE",
       "canonicalName": "Ona Knee High Boot Glazed",
       "category": "BOOT",
@@ -3990,12 +4106,12 @@
           ],
           "category": "BOOT",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -5343,84 +5459,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "khaite--ona-knee-high-boot-glazed--ona-knee-high-boot-55-in-black",
-      "brand": "KHAITE",
-      "canonicalName": "Ona Knee High Boot Glazed",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1014_product.jpg?v=1747859967",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1023_product.jpg?v=1747859967",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0930_product.jpg?v=1747859968",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_ANKLE_BLACK_0539_product.jpg?v=1747859968",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0001.jpg?v=1747859968",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2024-10-06at6.08.46PM.png?v=1747859968"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://khaite.com/products/ona-knee-high-boot-55-in-black",
-          "handle": "ona-knee-high-boot-55-in-black",
-          "title": "Ona Knee-High Boot in Black Glazed Leather",
-          "color": "BLACK",
-          "sku": "F1099-907-200",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1014_product.jpg?v=1747859967",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_1023_product.jpg?v=1747859967",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0930_product.jpg?v=1747859968",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_ANKLE_BLACK_0539_product.jpg?v=1747859968",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ONA_KNEEHIGH_BLACK_0001.jpg?v=1747859968",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2024-10-06at6.08.46PM.png?v=1747859968"
-          ],
-          "category": "BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "khaite--arizona-over-knee-stretch-boot",
-      "brand": "KHAITE",
-      "canonicalName": "Arizona Over Knee Stretch Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_A_jpg.jpg?v=1757969703",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_B_jpg.jpg?v=1757969703",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_D_jpg.jpg?v=1758813937",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C.jpg?v=1761141890",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_E.jpg?v=1765229600",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2025-09-25at12.00.28PM.png?v=1765229600",
-        "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C_jpg_e2f219c5-7c94-4792-9672-aa140ac25506.jpg?v=1765229600"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://khaite.com/products/arizona-otk-boot-40-in-black",
-          "handle": "arizona-otk-boot-40-in-black",
-          "title": "Arizona Over-the-Knee Stretch Boot in Black Nappa Leather",
-          "color": "BLACK",
-          "sku": "F1123-994-200",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_A_jpg.jpg?v=1757969703",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_B_jpg.jpg?v=1757969703",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_D_jpg.jpg?v=1758813937",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C.jpg?v=1761141890",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_E.jpg?v=1765229600",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/Screenshot2025-09-25at12.00.28PM.png?v=1765229600",
-            "https://cdn.shopify.com/s/files/1/1519/7996/files/ARIZONA-OTK-BOOT-40_BLACK_F1123-994-200_C_jpg_e2f219c5-7c94-4792-9672-aa140ac25506.jpg?v=1765229600"
-          ],
-          "category": "BOOT",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "khaite--bella-pump-ruby-lizard",
       "brand": "KHAITE",
       "canonicalName": "Bella Pump Ruby Lizard",
@@ -5476,6 +5514,10 @@
     "https://khaite.com/products/eve-pump-in-black",
     "https://khaite.com/products/colleen-pump-in-butter-glazed-leather",
     "https://khaite.com/products/colleen-pump-in-black",
+    "https://khaite.com/products/marlene-knee-high-boot-in-black-leather",
+    "https://khaite.com/products/marlene-knee-high-boot-in-natural-python",
+    "https://khaite.com/products/petra-knee-high-boot-in-black",
+    "https://khaite.com/products/petra-ankle-boot-in-black",
     "https://khaite.com/products/clive-ankle-boot-35-in-caramel",
     "https://khaite.com/products/clive-ankle-boot-35-in-ebano-suede",
     "https://khaite.com/products/clive-ankle-boot-in-olive",
@@ -5484,6 +5526,10 @@
     "https://khaite.com/products/sybil-ankle-boot-40-in-rouge-noir",
     "https://khaite.com/products/sybil-ankle-boot-40-in-black",
     "https://khaite.com/products/sybil-ankle-boot-40-in-bordeaux",
+    "https://khaite.com/products/knee-high-boot-in-black-leather",
+    "https://khaite.com/products/ona-knee-high-boot-55-in-black",
+    "https://khaite.com/products/arizona-otk-boot-40-in-black",
+    "https://khaite.com/products/valerie-over-the-knee-boot-in-black",
     "https://khaite.com/products/colt-pump-in-olive-ostrich",
     "https://khaite.com/products/colt-pump-in-black-glazed-leather",
     "https://khaite.com/products/valerie-pump-55-in-golden-olive-haircalf",
@@ -5492,10 +5538,6 @@
     "https://khaite.com/products/marlene-pump-50-in-taupe",
     "https://khaite.com/products/marlene-pump-50-in-black",
     "https://khaite.com/products/marlene-pump-in-black-glazed-leather",
-    "https://khaite.com/products/petra-knee-high-boot-in-black",
-    "https://khaite.com/products/petra-ankle-boot-in-black",
-    "https://khaite.com/products/knee-high-boot-in-black-leather",
-    "https://khaite.com/products/marlene-knee-high-boot-in-black-leather",
     "https://khaite.com/products/nevada-ankle-stretch-boot-40-in-black-natural",
     "https://khaite.com/products/nevada-boot-in-black-natural",
     "https://khaite.com/products/nevada-ankle-stretch-boot-40-in-black",
@@ -5611,9 +5653,6 @@
     "https://khaite.com/products/miles-loafer-35-in-dark-honey-alligator",
     "https://khaite.com/products/miles-loafer-35-in-black-alligator",
     "https://khaite.com/products/colt-slip-on-loafer-in-bordeaux",
-    "https://khaite.com/products/ona-knee-high-boot-55-in-black",
-    "https://khaite.com/products/arizona-otk-boot-40-in-black",
-    "https://khaite.com/products/bella-pump-100-in-ruby-lizard",
-    "https://khaite.com/products/marlene-knee-high-boot-in-natural-python"
+    "https://khaite.com/products/bella-pump-100-in-ruby-lizard"
   ]
 }

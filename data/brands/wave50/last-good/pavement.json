@@ -2,8 +2,8 @@
   "slug": "pavement",
   "brand": "PAVEMENT",
   "officialUrl": "https://pavement-official.com",
-  "snapshotId": "pavement:2026-10-05T13:57:37.372Z",
-  "collectedAt": "2026-10-05T13:57:37.372Z",
+  "snapshotId": "pavement:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/boots",
     "/collections/espadrilles",
@@ -15,13 +15,13 @@
   ],
   "newArrivalsPaths": [],
   "coverage": {
-    "sourceTotal": 203,
-    "collected": 203,
+    "sourceTotal": 204,
+    "collected": 204,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 203,
+    "galleryComplete": 204,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -32,6 +32,90 @@
   "referenceFootwearMatch": null,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "pavement--paalmira",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paalmira",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020.jpg?v=1791371242",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-1.jpg?v=1791371242",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-2.jpg?v=1791371242",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-3.jpg?v=1791371242",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-4.jpg?v=1791371242",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067.jpg?v=1788268448",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-1.jpg?v=1788268448",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paalmira-croco-boots-black",
+          "handle": "paalmira-croco-boots-black",
+          "title": "PAAlmira Croco - Black",
+          "color": "Croco - Black",
+          "sku": "25283-2\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020.jpg?v=1791371242",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-1.jpg?v=1791371242",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-2.jpg?v=1791371242",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-3.jpg?v=1791371242",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-4.jpg?v=1791371242"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/paalmira-boots-brown",
+          "handle": "paalmira-boots-brown",
+          "title": "PAAlmira - Brown",
+          "color": "Brown",
+          "sku": "25283\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067.jpg?v=1788268448",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-1.jpg?v=1788268448",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/paalmira-boots-black",
+          "handle": "paalmira-boots-black",
+          "title": "PAAlmira - Black",
+          "color": "Black",
+          "sku": "25283\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
     {
       "modelFamilyId": "pavement--patanja",
       "brand": "PAVEMENT",
@@ -353,66 +437,6 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta-Boots-24482-1-Black_020-2.jpg?v=1788269835",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta-Boots-24482-1-Black_020-3.jpg?v=1788269835",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta-Boots-24482-1-Black_020-4.jpg?v=1788269835"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "pavement--paalmira",
-      "brand": "PAVEMENT",
-      "canonicalName": "Paalmira",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-1.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/paalmira-boots-brown",
-          "handle": "paalmira-boots-brown",
-          "title": "PAAlmira - Brown",
-          "color": "Brown",
-          "sku": "25283\\067\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067.jpg?v=1788268448",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-1.jpg?v=1788268448",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/paalmira-boots-black",
-          "handle": "paalmira-boots-black",
-          "title": "PAAlmira - Black",
-          "color": "Black",
-          "sku": "25283\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -6448,6 +6472,7 @@
     }
   ],
   "productUrls": [
+    "https://pavement-official.com/products/paalmira-croco-boots-black",
     "https://pavement-official.com/products/pa-tanja-boots-tan-white",
     "https://pavement-official.com/products/paisla-boots-brown-suede",
     "https://pavement-official.com/products/panord-boots-brown",

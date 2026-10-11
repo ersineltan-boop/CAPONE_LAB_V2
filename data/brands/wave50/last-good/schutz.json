@@ -2,8 +2,8 @@
   "slug": "schutz",
   "brand": "SCHUTZ",
   "officialUrl": "https://schutz-shoes.com",
-  "snapshotId": "schutz:2026-10-03T15:36:00.924Z",
-  "collectedAt": "2026-10-03T15:36:00.924Z",
+  "snapshotId": "schutz:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -12,18 +12,18 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 1048,
-    "collected": 1048,
+    "sourceTotal": 1082,
+    "collected": 1082,
     "missing": 0,
     "coverage": 100,
     "excluded": 5,
     "paginationExhausted": true,
-    "galleryComplete": 1048,
+    "galleryComplete": 1082,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 289,
+  "newArrivalsFootwear": 287,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -4156,9 +4156,9 @@
           ],
           "category": "PUMP",
           "productType": "Pumps",
-          "inNewArrivals": true,
+          "inNewArrivals": false,
           "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://schutz-shoes.com/products/boris-mid-pump-p26-heel-height-mid-s2131200540009",
@@ -7541,6 +7541,70 @@
       "canonicalName": "Delilah Sandal",
       "category": "WEDGE",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_01_621379a9-c804-453c-adb6-51febdf94184.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_02_249d84c7-7b35-4b25-9e49-f18485d01197.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_03_44e89e0a-4cfc-4550-9f48-931e3a4be70f.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_04_f87e8661-71f0-453f-af5f-8c92e55c4a02.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_06_8d881441-f1d3-4714-8f8c-22dad91ff58b.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_07_743de3c8-f8fe-442f-8c17-6d54176ab186.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_01_f3acc52a-b9db-4644-9ba6-8970a95216fb.jpg?v=1786037077",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_02_8be35eb9-f287-41da-806d-bd47ba7db9c5.jpg?v=1786037077",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_03_72263d0b-ecee-4a4b-b4b2-9d2a315be10c.jpg?v=1786037077",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_04_0a1c4e19-be2d-4a30-88b4-8aa8ce6d4fb9.jpg?v=1786037077",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_06_77086aed-5025-4de5-9eda-d633aee61a71.jpg?v=1786037077",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_07_2ec6abee-b36d-4ed1-8960-575458803b0c.jpg?v=1786037077"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/delilah-leather-sandal-f26-wedge-s2226400650006",
+          "handle": "delilah-leather-sandal-f26-wedge-s2226400650006",
+          "title": "Delilah Leather Sandal",
+          "color": "Black",
+          "sku": "S2226400650006",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_01_621379a9-c804-453c-adb6-51febdf94184.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_02_249d84c7-7b35-4b25-9e49-f18485d01197.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_03_44e89e0a-4cfc-4550-9f48-931e3a4be70f.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_04_f87e8661-71f0-453f-af5f-8c92e55c4a02.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_06_8d881441-f1d3-4714-8f8c-22dad91ff58b.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650006_07_743de3c8-f8fe-442f-8c17-6d54176ab186.jpg?v=1786037076"
+          ],
+          "category": "WEDGE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/delilah-leather-sandal-f26-wedge-s2226400650009",
+          "handle": "delilah-leather-sandal-f26-wedge-s2226400650009",
+          "title": "Delilah Leather Sandal",
+          "color": "Animal Print",
+          "sku": "S2226400650009",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_01_f3acc52a-b9db-4644-9ba6-8970a95216fb.jpg?v=1786037077",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_02_8be35eb9-f287-41da-806d-bd47ba7db9c5.jpg?v=1786037077",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_03_72263d0b-ecee-4a4b-b4b2-9d2a315be10c.jpg?v=1786037077",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_04_0a1c4e19-be2d-4a30-88b4-8aa8ce6d4fb9.jpg?v=1786037077",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_06_77086aed-5025-4de5-9eda-d633aee61a71.jpg?v=1786037077",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650009_07_2ec6abee-b36d-4ed1-8960-575458803b0c.jpg?v=1786037077"
+          ],
+          "category": "WEDGE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--delilah-sandal--delilah-patent-leather-sandal-f26-wedge-s2226400650002",
+      "brand": "SCHUTZ",
+      "canonicalName": "Delilah Sandal",
+      "category": "WEDGE",
+      "images": [
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_01_33ee8115-4c04-43f1-aeae-5e2452154a38.jpg?v=1789060749",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_05_4f8f4981-68b2-4857-90c0-e39831509205.jpg?v=1789060749",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_02_e274aebe-f731-4e28-9c39-32f781ee5c87.jpg?v=1789060749",
@@ -7564,6 +7628,44 @@
             "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_04_85b13acd-f7d6-4bfb-9910-f3b47d4d8629.jpg?v=1789060749",
             "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_06_02be5b7a-5b17-4217-8575-b1241437aa82.jpg?v=1789060749",
             "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650002_07_6f23b629-64f5-4a90-bb9d-cd7fbabefc38.jpg?v=1789060749"
+          ],
+          "category": "WEDGE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "schutz--delilah-sandal--delilah-nubuck-sandal-f26-wedge-s2226400650007",
+      "brand": "SCHUTZ",
+      "canonicalName": "Delilah Sandal",
+      "category": "WEDGE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_01_52649741-44a8-4d0b-b085-aa3b82043e24.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_02_57cc8116-b27a-4cb6-9127-027c5b3d072a.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_03_fe511c75-e069-4e4a-a9b8-cf314389c6bb.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_04_cecfdcb9-4eeb-435c-8f0d-b94a2a42b93b.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_06_3f9fabab-eb79-472b-a5f4-bdf0af8ad20f.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_07_56ff2fde-aa5c-4000-8439-b36a5c151aa0.jpg?v=1786037073"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/delilah-nubuck-sandal-f26-wedge-s2226400650007",
+          "handle": "delilah-nubuck-sandal-f26-wedge-s2226400650007",
+          "title": "Delilah Suede Sandal",
+          "color": "Maplewood",
+          "sku": "S2226400650007",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_01_52649741-44a8-4d0b-b085-aa3b82043e24.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_02_57cc8116-b27a-4cb6-9127-027c5b3d072a.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_03_fe511c75-e069-4e4a-a9b8-cf314389c6bb.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_04_cecfdcb9-4eeb-435c-8f0d-b94a2a42b93b.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_06_3f9fabab-eb79-472b-a5f4-bdf0af8ad20f.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2226400650007_07_56ff2fde-aa5c-4000-8439-b36a5c151aa0.jpg?v=1786037073"
           ],
           "category": "WEDGE",
           "productType": "Sandals",
@@ -11701,6 +11803,108 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "schutz--gio-pump",
+      "brand": "SCHUTZ",
+      "canonicalName": "Gio Pump",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_01_4ef805cb-b418-4403-aeab-682a414cffc6.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_02_e051acbd-993b-4eb4-97e0-5b6a8f3bf5ed.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_03_f6469b75-4960-4352-8a2b-16722715a7c8.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_04_5a05206c-8443-4b98-887f-4c7ea99b8de7.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_06_d548ee99-e8a7-41b2-9313-885a4c314ed1.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_07_88eee53a-c544-4d5b-a69d-4f702a557730.jpg?v=1791601814"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/gio-pump-w26-high-stiletto-s2263400130001",
+          "handle": "gio-pump-w26-high-stiletto-s2263400130001",
+          "title": "Gio  Pump",
+          "color": "Leopard Print",
+          "sku": "S2263400130001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_01_4ef805cb-b418-4403-aeab-682a414cffc6.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_02_e051acbd-993b-4eb4-97e0-5b6a8f3bf5ed.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_03_f6469b75-4960-4352-8a2b-16722715a7c8.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_04_5a05206c-8443-4b98-887f-4c7ea99b8de7.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_06_d548ee99-e8a7-41b2-9313-885a4c314ed1.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400130001_07_88eee53a-c544-4d5b-a69d-4f702a557730.jpg?v=1791601814"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "schutz--gio-pump--gio-croc-pump-w26-heel-height-high-s2263400060004",
+      "brand": "SCHUTZ",
+      "canonicalName": "Gio Pump",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_01_5c861f79-af5a-4d50-afaa-b96698506da1.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_02_f400804f-ba87-437e-a04b-18b4acd86560.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_03_be4bfce1-5b7d-41cb-8091-aea9f14ce190.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_04_4b374fc5-c485-492d-b33c-8b5cba5ef277.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_06_78770939-399b-4d26-bb06-f9cd5b3186a1.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_07_e7864d94-5709-4c76-a3de-b302420b55ed.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_01_d6c57cb9-3a1c-4475-8965-6260ba57ad03.jpg?v=1791601811",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_02_1681226c-372b-4187-b5fa-43829847ff47.jpg?v=1791601811",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_03_b8e822a2-d510-45cb-ace7-9733b9faed4d.jpg?v=1791601811",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_04_21f6f1a0-bb25-4dc3-8632-2d9a924df8ba.jpg?v=1791601811",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_06_a4ad8eaa-eeed-4697-86ae-defe8306f1c7.jpg?v=1791601811",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_07_2d3967f7-c1c8-451d-ad2f-33752b86d8c6.jpg?v=1791601811"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/gio-croc-pump-w26-heel-height-high-s2263400060004",
+          "handle": "gio-croc-pump-w26-heel-height-high-s2263400060004",
+          "title": "Gio Croc Pump",
+          "color": "Maplewood",
+          "sku": "S2263400060004",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_01_5c861f79-af5a-4d50-afaa-b96698506da1.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_02_f400804f-ba87-437e-a04b-18b4acd86560.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_03_be4bfce1-5b7d-41cb-8091-aea9f14ce190.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_04_4b374fc5-c485-492d-b33c-8b5cba5ef277.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_06_78770939-399b-4d26-bb06-f9cd5b3186a1.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060004_07_e7864d94-5709-4c76-a3de-b302420b55ed.jpg?v=1791601809"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/gio-croc-pump-w26-heel-height-high-s2263400060003",
+          "handle": "gio-croc-pump-w26-heel-height-high-s2263400060003",
+          "title": "Gio Croc Pump",
+          "color": "Black",
+          "sku": "S2263400060003",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_01_d6c57cb9-3a1c-4475-8965-6260ba57ad03.jpg?v=1791601811",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_02_1681226c-372b-4187-b5fa-43829847ff47.jpg?v=1791601811",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_03_b8e822a2-d510-45cb-ace7-9733b9faed4d.jpg?v=1791601811",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_04_21f6f1a0-bb25-4dc3-8632-2d9a924df8ba.jpg?v=1791601811",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_06_a4ad8eaa-eeed-4697-86ae-defe8306f1c7.jpg?v=1791601811",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2263400060003_07_2d3967f7-c1c8-451d-ad2f-33752b86d8c6.jpg?v=1791601811"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "schutz--grace-clog",
       "brand": "SCHUTZ",
       "canonicalName": "Grace Clog",
@@ -11975,13 +12179,7 @@
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010013_03_30181141-a3a3-48a9-9d35-79d2fbfafca5.jpg?v=1786037074",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010013_04_413d58eb-52ab-4a44-b626-d05881b43612.jpg?v=1786037074",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010013_06_2726a6ec-2aee-44bb-bc41-d8797fa2751b.jpg?v=1786037074",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010013_07_385ed8f6-cfd8-4ed1-a596-c7b4cf719464.jpg?v=1786037074",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_01.jpg?v=1787596626",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_02.jpg?v=1787596626",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_03.jpg?v=1787596626",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_04.jpg?v=1787596626",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_06.jpg?v=1787596626",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_07.jpg?v=1787596626"
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010013_07_385ed8f6-cfd8-4ed1-a596-c7b4cf719464.jpg?v=1786037074"
       ],
       "variants": [
         {
@@ -12003,30 +12201,10 @@
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://schutz-shoes.com/products/hadley-flat-f26-heel-height-flat-s2264400010015",
-          "handle": "hadley-flat-f26-heel-height-flat-s2264400010015",
-          "title": "Hadley Leather Ballet Flat",
-          "color": "Sugar White",
-          "sku": "S2264400010015",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_01.jpg?v=1787596626",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_02.jpg?v=1787596626",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_03.jpg?v=1787596626",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_04.jpg?v=1787596626",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_06.jpg?v=1787596626",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2264400010015_07.jpg?v=1787596626"
-          ],
-          "category": "BALLERINA",
-          "productType": "Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "schutz--hallea-glam-sandal",
@@ -13612,6 +13790,158 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "schutz--jaselle-sandal",
+      "brand": "SCHUTZ",
+      "canonicalName": "Jaselle Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_01_8894be14-ef77-4c1a-89fe-8e09b4e0234b.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_05_c9a92542-6c00-4f39-829f-5aa86445ae4d.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_02_3c193835-50d9-4bc3-a275-bfdc94683332.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_03_6c585996-0262-4f4e-a6a3-8ac4dedf8de8.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_04_7689e2d2-19b2-4397-a269-f1208e0c5f1f.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_06_8b4798ed-0b5e-4739-91b2-e6cc9afe28d8.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_07_12874696-b25e-47ca-95ca-0e0a7de8df4f.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_01_0558d963-59e1-4ec0-a50d-e3b10ccb56e2.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_05_760c1971-9497-4969-aadd-393cbfbef3b7.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_02_377e21e2-6323-4942-a702-9481ddbe94c1.jpg?v=1791601815",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_03_c0d1f4a9-f589-484e-8e72-5f7ab439ef28.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_04_af010103-64f2-4ebf-960a-9093b7342611.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_06_f19c8d2b-4028-4595-baf4-3dbc1a98f230.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_07_bac91f65-04b3-4823-8124-bac046b4a250.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_01_ddbf28ac-21e1-43ba-b770-3489c3fd8213.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_05_6b59c964-120b-42c5-b9b8-37f3a7415157.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_02_5c2bdb19-0561-4789-826d-93bd15fec371.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_03_56fcdceb-51bc-4182-8124-f439a0537c5e.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_04_306e1835-82e4-4028-9320-0a7adca0abc2.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_06_9cbbca0a-9210-4088-b080-86617f72f719.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_07_ca26d07c-5d34-43c0-bffa-89f41de42955.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_01_3b5a32f6-df0f-4958-93cd-e66f89d4b442.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_05_92f76f9b-fc6c-41b7-97c8-f37fc316fee9.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_02_7f9421ca-2e55-4617-acf7-3b0a92f5b3e9.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_03_737b83e0-9ae5-4bc8-9dd4-b7359bbf69d4.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_04_e68a1792-37b7-49ed-83ff-90cd59a7d94a.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_06_5ace8689-6249-40da-8064-d6e407ecb3c1.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_07_299e4b41-49f5-4a67-833d-9f234c8a413a.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_01_8da49309-7f0c-4f50-8fd2-b3be0a5cbcfa.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_05_4354890e-4efd-437e-99d0-0a12fdd1e44b.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_02_c407f739-6640-4c65-9c6d-4fd288a20d88.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_03_aa5bb485-6185-4e60-b8e5-a7653ffc5943.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_04_5348daa2-e845-4b28-991d-290f2b4c8a41.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_06_6815821f-507f-482f-a469-79d05dc8bb92.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_07_7218f20f-6979-42ee-8a79-88e2fb23b938.jpg?v=1791601817"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/jaselle-metallic-sandal-p26-heel-height-high-s2057201800005",
+          "handle": "jaselle-metallic-sandal-p26-heel-height-high-s2057201800005",
+          "title": "Jaselle Metallic Sandal",
+          "color": "Platinum",
+          "sku": "S2057201800005",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_01_8894be14-ef77-4c1a-89fe-8e09b4e0234b.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_05_c9a92542-6c00-4f39-829f-5aa86445ae4d.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_02_3c193835-50d9-4bc3-a275-bfdc94683332.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_03_6c585996-0262-4f4e-a6a3-8ac4dedf8de8.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_04_7689e2d2-19b2-4397-a269-f1208e0c5f1f.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_06_8b4798ed-0b5e-4739-91b2-e6cc9afe28d8.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800005_07_12874696-b25e-47ca-95ca-0e0a7de8df4f.jpg?v=1791601812"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/jaselle-metallic-sandal-p26-heel-height-high-s2057201800004",
+          "handle": "jaselle-metallic-sandal-p26-heel-height-high-s2057201800004",
+          "title": "Jaselle Metallic Sandal",
+          "color": "Silver",
+          "sku": "S2057201800004",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_01_0558d963-59e1-4ec0-a50d-e3b10ccb56e2.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_05_760c1971-9497-4969-aadd-393cbfbef3b7.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_02_377e21e2-6323-4942-a702-9481ddbe94c1.jpg?v=1791601815",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_03_c0d1f4a9-f589-484e-8e72-5f7ab439ef28.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_04_af010103-64f2-4ebf-960a-9093b7342611.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_06_f19c8d2b-4028-4595-baf4-3dbc1a98f230.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800004_07_bac91f65-04b3-4823-8124-bac046b4a250.jpg?v=1791601816"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800001",
+          "handle": "jaselle-patent-sandal-p26-heel-height-high-s2057201800001",
+          "title": "Jaselle Patent Sandal",
+          "color": "White",
+          "sku": "S2057201800001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_01_ddbf28ac-21e1-43ba-b770-3489c3fd8213.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_05_6b59c964-120b-42c5-b9b8-37f3a7415157.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_02_5c2bdb19-0561-4789-826d-93bd15fec371.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_03_56fcdceb-51bc-4182-8124-f439a0537c5e.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_04_306e1835-82e4-4028-9320-0a7adca0abc2.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_06_9cbbca0a-9210-4088-b080-86617f72f719.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800001_07_ca26d07c-5d34-43c0-bffa-89f41de42955.jpg?v=1791601808"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800002",
+          "handle": "jaselle-patent-sandal-p26-heel-height-high-s2057201800002",
+          "title": "Jaselle Patent Sandal",
+          "color": "Port Burgundy",
+          "sku": "S2057201800002",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_01_3b5a32f6-df0f-4958-93cd-e66f89d4b442.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_05_92f76f9b-fc6c-41b7-97c8-f37fc316fee9.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_02_7f9421ca-2e55-4617-acf7-3b0a92f5b3e9.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_03_737b83e0-9ae5-4bc8-9dd4-b7359bbf69d4.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_04_e68a1792-37b7-49ed-83ff-90cd59a7d94a.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_06_5ace8689-6249-40da-8064-d6e407ecb3c1.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800002_07_299e4b41-49f5-4a67-833d-9f234c8a413a.jpg?v=1791601808"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800003",
+          "handle": "jaselle-patent-sandal-p26-heel-height-high-s2057201800003",
+          "title": "Jaselle Patent Sandal",
+          "color": "Black",
+          "sku": "S2057201800003",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_01_8da49309-7f0c-4f50-8fd2-b3be0a5cbcfa.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_05_4354890e-4efd-437e-99d0-0a12fdd1e44b.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_02_c407f739-6640-4c65-9c6d-4fd288a20d88.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_03_aa5bb485-6185-4e60-b8e5-a7653ffc5943.jpg?v=1791601818",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_04_5348daa2-e845-4b28-991d-290f2b4c8a41.jpg?v=1791601818",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_06_6815821f-507f-482f-a469-79d05dc8bb92.jpg?v=1791601818",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201800003_07_7218f20f-6979-42ee-8a79-88e2fb23b938.jpg?v=1791601817"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "schutz--jenny-pump",
       "brand": "SCHUTZ",
       "canonicalName": "Jenny Pump",
@@ -14111,6 +14441,70 @@
     },
     {
       "modelFamilyId": "schutz--julie-pump",
+      "brand": "SCHUTZ",
+      "canonicalName": "Julie Pump",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_01_ac44ed5e-aec1-407f-be36-8e4ecb2db46b.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_02_288f0440-8483-492b-b83b-21959ba73773.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_03_6e41f2ae-56d6-4960-9824-35de70978aab.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_04_2f6ad218-b0f7-4530-85b2-fa49167f0154.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_06_79eb6511-2208-4f60-a266-5caa69691d32.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_07_9c7bf7ea-006e-4b36-a0f1-194600689ca9.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_01_49612981-6147-48b5-8954-51026dd9757e.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_02_94d09702-e861-4991-bdf5-998f70c5b05a.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_03_9f39f873-239b-456a-8402-e46fd3ef439b.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_04_48c27980-e1ce-4d33-b527-dc8ba7ff62e9.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_06_5e7eb5e0-2f34-4f52-9636-c56a620b3869.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_07_bac116b6-d4b5-4292-acfc-1b9d0951b5a1.jpg?v=1791601809"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/julie-patent-pump-w26-heel-height-mid-s2217900140033",
+          "handle": "julie-patent-pump-w26-heel-height-mid-s2217900140033",
+          "title": "Julie Patent Pump",
+          "color": "Black",
+          "sku": "S2217900140033",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_01_ac44ed5e-aec1-407f-be36-8e4ecb2db46b.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_02_288f0440-8483-492b-b83b-21959ba73773.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_03_6e41f2ae-56d6-4960-9824-35de70978aab.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_04_2f6ad218-b0f7-4530-85b2-fa49167f0154.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_06_79eb6511-2208-4f60-a266-5caa69691d32.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140033_07_9c7bf7ea-006e-4b36-a0f1-194600689ca9.jpg?v=1791601813"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/julie-patent-pump-w26-heel-height-mid-s2217900140030",
+          "handle": "julie-patent-pump-w26-heel-height-mid-s2217900140030",
+          "title": "Julie Patent Pump",
+          "color": "Maplewood",
+          "sku": "S2217900140030",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_01_49612981-6147-48b5-8954-51026dd9757e.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_02_94d09702-e861-4991-bdf5-998f70c5b05a.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_03_9f39f873-239b-456a-8402-e46fd3ef439b.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_04_48c27980-e1ce-4d33-b527-dc8ba7ff62e9.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_06_5e7eb5e0-2f34-4f52-9636-c56a620b3869.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2217900140030_07_bac116b6-d4b5-4292-acfc-1b9d0951b5a1.jpg?v=1791601809"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--julie-pump--julie-suede-pump-p25-heel-height-mid-s2217900140008",
       "brand": "SCHUTZ",
       "canonicalName": "Julie Pump",
       "category": "MULE",
@@ -17254,6 +17648,12 @@
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010068_04.jpg?v=1770901549",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010068_06.jpg?v=1770901549",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010068_07.jpg?v=1770901549",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_01.jpg?v=1768478666",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_02.jpg?v=1770901736",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_03.jpg?v=1770901736",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_04.jpg?v=1770901736",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_06.jpg?v=1770901736",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_07.jpg?v=1770901736",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010081_01.jpg?v=1783447933",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010081_02.jpg?v=1783447933",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010081_04.jpg?v=1783447933",
@@ -17540,6 +17940,27 @@
           "newnessEvidence": null
         },
         {
+          "productUrl": "https://schutz-shoes.com/products/lexi-patent-pump-r26-heel-height-high-s2212000010049",
+          "handle": "lexi-patent-pump-r26-heel-height-high-s2212000010049",
+          "title": "Lexi Patent Pump",
+          "color": "Maplewood",
+          "sku": "S2212000010049",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_01.jpg?v=1768478666",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/Prancheta_9_45ac8a4d-0c8e-4bff-83d3-ff32ca63e2e6.png?v=1770993267",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_02.jpg?v=1770901736",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_03.jpg?v=1770901736",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_04.jpg?v=1770901736",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_06.jpg?v=1770901736",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010049_07.jpg?v=1770901736"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
           "productUrl": "https://schutz-shoes.com/products/lexi-patent-pump-u26-heel-height-high-s2212000010081",
           "handle": "lexi-patent-pump-u26-heel-height-high-s2212000010081",
           "title": "Lexi Patent Pump",
@@ -17661,6 +18082,12 @@
       "canonicalName": "Lexi Pump",
       "category": "PUMP",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_01_d9255ad7-df68-4948-881d-2ce64badefee.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_02_ea42b917-dbb7-4983-86a1-05780463ad27.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_03_b4480462-280f-4481-9a63-fee7bdf12340.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_04_928e0f57-e439-4505-9713-f786e8901244.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_06_b0d016b6-6003-424c-aa3b-018efb1896b3.jpg?v=1786037076",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_07_fff2f3eb-0e7d-4a0b-9fca-d4f3258237d2.jpg?v=1786037076",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000390004_01_1c2d8c6a-1a3f-4127-baeb-694b0c2c806a.jpg?v=1789060749",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000390004_05_96812afc-9382-4187-9197-2ad49304c5e2.jpg?v=1789060749",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000390004_02_4d31abb9-8f11-4687-b87d-136d70c7124f.jpg?v=1789060749",
@@ -17676,6 +18103,26 @@
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000390005_07_6da67c96-c6be-44a7-bf72-30e3bfd5e5c5.jpg?v=1789060747"
       ],
       "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/lexi-leather-pump-f26-high-stiletto-s2212000010091",
+          "handle": "lexi-leather-pump-f26-high-stiletto-s2212000010091",
+          "title": "Lexi Leather Pump",
+          "color": "White Snake Print",
+          "sku": "S2212000010091",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_01_d9255ad7-df68-4948-881d-2ce64badefee.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_02_ea42b917-dbb7-4983-86a1-05780463ad27.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_03_b4480462-280f-4481-9a63-fee7bdf12340.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_04_928e0f57-e439-4505-9713-f786e8901244.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_06_b0d016b6-6003-424c-aa3b-018efb1896b3.jpg?v=1786037076",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010091_07_fff2f3eb-0e7d-4a0b-9fca-d4f3258237d2.jpg?v=1786037076"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
         {
           "productUrl": "https://schutz-shoes.com/products/lexi-leather-pump-f26-high-stiletto-s2212000390004",
           "handle": "lexi-leather-pump-f26-high-stiletto-s2212000390004",
@@ -18134,6 +18581,44 @@
       ],
       "isNew": true,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--lexi-pump--lexi-patent-pump-f26-high-stiletto-s2212000010088",
+      "brand": "SCHUTZ",
+      "canonicalName": "Lexi Pump",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_01_53dedd66-bdcd-434d-b4e2-241486f75107.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_02_c2e42137-c6b8-4511-8086-8e4f3fed634e.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_03_75153110-406e-4a1e-b866-12aa09d6e5c2.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_04_7b24d829-c043-4a0b-a9bb-52f6b6816174.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_06_c420ccfa-0e77-4431-ab49-e0dc032c950a.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_07_2129c8a2-535b-4d4c-8286-9c86dd0d955d.jpg?v=1786037075"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/lexi-patent-pump-f26-high-stiletto-s2212000010088",
+          "handle": "lexi-patent-pump-f26-high-stiletto-s2212000010088",
+          "title": "Lexi Patent Pump",
+          "color": "Purple",
+          "sku": "S2212000010088",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_01_53dedd66-bdcd-434d-b4e2-241486f75107.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_02_c2e42137-c6b8-4511-8086-8e4f3fed634e.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_03_75153110-406e-4a1e-b866-12aa09d6e5c2.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_04_7b24d829-c043-4a0b-a9bb-52f6b6816174.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_06_c420ccfa-0e77-4431-ab49-e0dc032c950a.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2212000010088_07_2129c8a2-535b-4d4c-8286-9c86dd0d955d.jpg?v=1786037075"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "schutz--lexi-pull-on-bootie",
@@ -19509,9 +19994,9 @@
           ],
           "category": "MULE",
           "productType": "Pumps",
-          "inNewArrivals": true,
+          "inNewArrivals": false,
           "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "newnessEvidence": "SOURCE_BADGE"
         },
         {
           "productUrl": "https://schutz-shoes.com/products/loren-pump-p26-heel-height-high-s2206100260010",
@@ -19889,13 +20374,13 @@
       "canonicalName": "Lou High Stiletto Honey Pump",
       "category": "SANDAL",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_01_63749619-cd78-4fc4-8a3a-7f4841bbf4bb.jpg?v=1729625954",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_03_d93482fb-1efc-4d03-9123-312d1437d657.jpg?v=1729625955",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_04_624dc719-57f4-4cf3-a48a-4dc2346c8c32.jpg?v=1729625954",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_01_66965a84-cdf4-4acd-a854-27e164945f36.jpg?v=1791657798",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_02.jpg?v=1791657798",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_03_3fa0a409-71c1-4567-b878-cc59816084fa.jpg?v=1791657798",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/HEADLESS-0209100010717U-20-BASEIMAGE-Hires-Headless.webp?v=1772021949",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_07_d99cdd3a-5349-42cd-be27-c39a4997a65c.jpg?v=1772021796",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_06_b8d608ec-44ae-446f-af96-cbb526c479fb.jpg?v=1772021796",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_05.jpg?v=1772021796"
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_04_74a240c7-16d8-4e5c-9323-d723c5060888.jpg?v=1791657798",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_07_03296540-0c6e-4f29-9075-53a4cb446ed9.jpg?v=1791657798",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_06_44cbcbe8-453b-42af-ae00-cac28bd93248.jpg?v=1791657797"
       ],
       "variants": [
         {
@@ -19905,13 +20390,13 @@
           "color": "Honey Beige",
           "sku": "S2080300010017",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_01_63749619-cd78-4fc4-8a3a-7f4841bbf4bb.jpg?v=1729625954",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_03_d93482fb-1efc-4d03-9123-312d1437d657.jpg?v=1729625955",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_04_624dc719-57f4-4cf3-a48a-4dc2346c8c32.jpg?v=1729625954",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_01_66965a84-cdf4-4acd-a854-27e164945f36.jpg?v=1791657798",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_02.jpg?v=1791657798",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_03_3fa0a409-71c1-4567-b878-cc59816084fa.jpg?v=1791657798",
             "https://cdn.shopify.com/s/files/1/0247/6975/files/HEADLESS-0209100010717U-20-BASEIMAGE-Hires-Headless.webp?v=1772021949",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_07_d99cdd3a-5349-42cd-be27-c39a4997a65c.jpg?v=1772021796",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_06_b8d608ec-44ae-446f-af96-cbb526c479fb.jpg?v=1772021796",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_05.jpg?v=1772021796"
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_04_74a240c7-16d8-4e5c-9323-d723c5060888.jpg?v=1791657798",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_07_03296540-0c6e-4f29-9075-53a4cb446ed9.jpg?v=1791657798",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2080300010017_06_44cbcbe8-453b-42af-ae00-cac28bd93248.jpg?v=1791657797"
           ],
           "category": "SANDAL",
           "productType": "Pumps",
@@ -22432,12 +22917,12 @@
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360001_04_d66d89df-e549-4acf-b6a8-4c8827a4ef41.jpg?v=1757084570",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360001_06_f339aecd-9a6d-4139-a83d-ad558bb7ac2b.jpg?v=1757084570",
         "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360001_07_f1a55444-d4d1-462a-843d-289765b27d15.jpg?v=1757084570",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_01.jpg?v=1761055487",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_02.jpg?v=1761055487",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_03.jpg?v=1761055487",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_04.jpg?v=1761055487",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_06.jpg?v=1761055487",
-        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_07.jpg?v=1761055487"
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_01_b3c9aecb-ce3d-4e48-92b0-dc937d0d74b1.jpg?v=1791657950",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_02_ad6e6ae1-de01-4579-9195-c64293215b6d.jpg?v=1791657949",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_03_642710c3-12c4-4963-814e-2cfbe3ccf4ec.jpg?v=1791657949",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_04_6ea3d365-c3d0-45d1-b670-5fd17f1ce106.jpg?v=1791657950",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_06_ecac8f95-04a1-4fb2-9b84-5bcd29a4219b.jpg?v=1791657950",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_07_c1b89958-6da6-44e0-bae8-9e6d29510414.jpg?v=1791657950"
       ],
       "variants": [
         {
@@ -22489,12 +22974,12 @@
           "color": "Pecan Brown",
           "sku": "S2205900360005",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_01.jpg?v=1761055487",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_02.jpg?v=1761055487",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_03.jpg?v=1761055487",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_04.jpg?v=1761055487",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_06.jpg?v=1761055487",
-            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_07.jpg?v=1761055487"
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_01_b3c9aecb-ce3d-4e48-92b0-dc937d0d74b1.jpg?v=1791657950",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_02_ad6e6ae1-de01-4579-9195-c64293215b6d.jpg?v=1791657949",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_03_642710c3-12c4-4963-814e-2cfbe3ccf4ec.jpg?v=1791657949",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_04_6ea3d365-c3d0-45d1-b670-5fd17f1ce106.jpg?v=1791657950",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_06_ecac8f95-04a1-4fb2-9b84-5bcd29a4219b.jpg?v=1791657950",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900360005_07_c1b89958-6da6-44e0-bae8-9e6d29510414.jpg?v=1791657950"
           ],
           "category": "PUMP",
           "productType": "Booties",
@@ -26060,6 +26545,176 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "schutz--noemie-sandal",
+      "brand": "SCHUTZ",
+      "canonicalName": "Noemie Sandal",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_01_04e09f3a-6993-4fec-8d4d-612952f532ac.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_02_a71b0e10-db4a-4eab-8aca-9b5b95fef27d.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_03_81c89535-466b-42d3-96c9-27872716727d.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_04_8cb04361-a9e2-42a7-8a1c-3f72a8c71876.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_06_f7724ef1-8819-43ef-b127-081b6ec00559.jpg?v=1786037075",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_07_6833b2f5-3022-4293-abe9-84745d38bb45.jpg?v=1786037075"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/noemie-leather-sandal-f26-high-stiletto-s2234600280008",
+          "handle": "noemie-leather-sandal-f26-high-stiletto-s2234600280008",
+          "title": "Noemie Leather Sandal",
+          "color": "White Snake Print",
+          "sku": "S2234600280008",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_01_04e09f3a-6993-4fec-8d4d-612952f532ac.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_02_a71b0e10-db4a-4eab-8aca-9b5b95fef27d.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_03_81c89535-466b-42d3-96c9-27872716727d.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_04_8cb04361-a9e2-42a7-8a1c-3f72a8c71876.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_06_f7724ef1-8819-43ef-b127-081b6ec00559.jpg?v=1786037075",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280008_07_6833b2f5-3022-4293-abe9-84745d38bb45.jpg?v=1786037075"
+          ],
+          "category": "MULE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "schutz--noemie-sandal--noemie-patent-leather-sandal-f26-high-stiletto-s2234600280002",
+      "brand": "SCHUTZ",
+      "canonicalName": "Noemie Sandal",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_01_7b7e189e-433a-4079-bcc6-67db380c226b.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_05_9b7439ae-3653-4573-9785-d0d7aacd1088.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_02_acf8baf6-0c8e-4da0-bf12-a19d70e6e2c3.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_03_1542f41a-427d-4667-9efe-d11982ec2f3a.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_04_340c683e-bb72-46e3-94b0-ce5edbc82451.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_06_70201229-00b5-4c75-9272-acc16263b085.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_07_5b84f068-f74d-4a95-b5fb-757570ff649c.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_01_210460a4-dc25-4dc0-908d-cb99768a1b30.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_05_640aa2ad-1f89-4ccb-8141-b781a3e40ed0.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_02_b8f32e60-9fd9-4812-9040-8a030d53f2c5.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_03_2a06a11b-88bf-4893-ab04-348fbe2097d2.jpg?v=1789060748",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_04_7c595f79-0b33-40bd-97a2-5fd1c091c40d.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_06_ed0189b4-e10e-442f-a86f-ecb0961f3c9a.jpg?v=1789060749",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_07_790126de-ed14-4097-a426-5c0187a7c2b2.jpg?v=1789060748"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/noemie-patent-leather-sandal-f26-high-stiletto-s2234600280002",
+          "handle": "noemie-patent-leather-sandal-f26-high-stiletto-s2234600280002",
+          "title": "Noemie Patent Leather Sandal",
+          "color": "White",
+          "sku": "S2234600280002",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_01_7b7e189e-433a-4079-bcc6-67db380c226b.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_05_9b7439ae-3653-4573-9785-d0d7aacd1088.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_02_acf8baf6-0c8e-4da0-bf12-a19d70e6e2c3.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_03_1542f41a-427d-4667-9efe-d11982ec2f3a.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_04_340c683e-bb72-46e3-94b0-ce5edbc82451.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_06_70201229-00b5-4c75-9272-acc16263b085.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280002_07_5b84f068-f74d-4a95-b5fb-757570ff649c.jpg?v=1789060748"
+          ],
+          "category": "MULE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/noemie-patent-leather-sandal-f26-high-stiletto-s2234600280004",
+          "handle": "noemie-patent-leather-sandal-f26-high-stiletto-s2234600280004",
+          "title": "Noemie Patent Leather Sandal",
+          "color": "Black",
+          "sku": "S2234600280004",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_01_210460a4-dc25-4dc0-908d-cb99768a1b30.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_05_640aa2ad-1f89-4ccb-8141-b781a3e40ed0.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_02_b8f32e60-9fd9-4812-9040-8a030d53f2c5.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_03_2a06a11b-88bf-4893-ab04-348fbe2097d2.jpg?v=1789060748",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_04_7c595f79-0b33-40bd-97a2-5fd1c091c40d.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_06_ed0189b4-e10e-442f-a86f-ecb0961f3c9a.jpg?v=1789060749",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280004_07_790126de-ed14-4097-a426-5c0187a7c2b2.jpg?v=1789060748"
+          ],
+          "category": "MULE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--noemie-sandal--noemie-patent-sandal-f26-high-stiletto-s2234600280007",
+      "brand": "SCHUTZ",
+      "canonicalName": "Noemie Sandal",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_01_0ec92abf-ab80-4f22-bb53-2ff76717838c.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_02_dd95d470-a35e-41d9-9e26-bf8eb688fcc2.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_03_08eb8f9b-383a-4c5f-ad94-c55fed348e2c.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_04_1dd82550-44e7-4d19-aa09-5c81fb2bdd95.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_06_2b5542e8-6999-47ef-9045-0db4b13536d6.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_07_79e78289-d086-41c8-83c5-e6bb4034546b.jpg?v=1786037074",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_01_325b9f1a-46e3-4636-9de2-6fa17dd6e7ca.jpg?v=1786037072",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_02_fd5bbf27-2c8b-4a98-b4ea-a86518d14dfa.jpg?v=1786037072",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_03_2aacd1ca-03c5-4c87-91a1-588fe715354f.jpg?v=1786037072",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_04_843d1f44-ba26-4d4a-96e8-41ccf02e9099.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_06_07215e7d-2470-48d8-810d-64b4271a1ef3.jpg?v=1786037073",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_07_2c97ab2a-62fa-4f54-9c66-0fb15872683e.jpg?v=1786037072"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/noemie-patent-sandal-f26-high-stiletto-s2234600280007",
+          "handle": "noemie-patent-sandal-f26-high-stiletto-s2234600280007",
+          "title": "Noemie Patent Sandal",
+          "color": "Myrtle Green",
+          "sku": "S2234600280007",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_01_0ec92abf-ab80-4f22-bb53-2ff76717838c.jpg?v=1786037074",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_02_dd95d470-a35e-41d9-9e26-bf8eb688fcc2.jpg?v=1786037074",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_03_08eb8f9b-383a-4c5f-ad94-c55fed348e2c.jpg?v=1786037074",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_04_1dd82550-44e7-4d19-aa09-5c81fb2bdd95.jpg?v=1786037074",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_06_2b5542e8-6999-47ef-9045-0db4b13536d6.jpg?v=1786037074",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280007_07_79e78289-d086-41c8-83c5-e6bb4034546b.jpg?v=1786037074"
+          ],
+          "category": "MULE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/noemie-patent-sandal-f26-high-stiletto-s2234600280005",
+          "handle": "noemie-patent-sandal-f26-high-stiletto-s2234600280005",
+          "title": "Noemie Patent Sandal",
+          "color": "Purple",
+          "sku": "S2234600280005",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_01_325b9f1a-46e3-4636-9de2-6fa17dd6e7ca.jpg?v=1786037072",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_02_fd5bbf27-2c8b-4a98-b4ea-a86518d14dfa.jpg?v=1786037072",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_03_2aacd1ca-03c5-4c87-91a1-588fe715354f.jpg?v=1786037072",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_04_843d1f44-ba26-4d4a-96e8-41ccf02e9099.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_06_07215e7d-2470-48d8-810d-64b4271a1ef3.jpg?v=1786037073",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2234600280005_07_2c97ab2a-62fa-4f54-9c66-0fb15872683e.jpg?v=1786037072"
+          ],
+          "category": "MULE",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "schutz--nylle-flat-sandal",
       "brand": "SCHUTZ",
       "canonicalName": "Nylle Flat Sandal",
@@ -26503,6 +27158,188 @@
         }
       ],
       "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--ophelia-leather-boot",
+      "brand": "SCHUTZ",
+      "canonicalName": "Ophelia Leather Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_01_378e0dc0-8d52-434c-896d-59a263d48f69.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_05_b5860a5f-b204-40ea-a47a-25326183c378.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_02_47eacd0b-87c3-4a46-b671-52bbd1f20c09.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_03_eaae6aa1-0f89-4e0d-9082-b55f8086a701.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_04_c9cb01e7-a1cc-4d45-a03a-991ce4510baf.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_06_3c1c2fa0-31fc-4261-882c-64168a8b8333.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_07_fe115d4c-3cab-41a0-8a7d-ea7c0a2f9cb4.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_01_bb5aa1e9-b844-4a68-a161-75531a80f03a.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_02_86b96075-44b0-4361-bf5f-f6f0bff3351d.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_03_b3066c79-521e-43db-9369-0f376bb1bfba.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_04_9d9a45e4-f357-4f47-a75e-e5a5da9f051c.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_06_16e95c80-25d3-42d9-b93e-2f524ff23756.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_07_39ee4086-8aae-4072-b7cc-66e328aa4ce8.jpg?v=1791601813",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_01_0a9e2c70-c2ae-4cbe-b78a-4e5e30d0991b.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_02_9a423a49-47a1-462a-b0c3-4565e8b409d2.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_03_13473ccd-f629-4abf-9ad5-30c84faab8cd.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_04_81228c35-79de-4e52-a9ed-f699dbf40ead.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_06_3cec102e-5034-4a3a-843b-3a3ebd39596b.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_07_571f30b8-8835-4574-ae5d-e0ac48c0f1e5.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_01_c30589cc-6165-49bb-87c0-c82a8606958a.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_02_ed1e0d5e-d82d-422c-80cd-fd50edf3af97.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_03_4af8e098-d33e-40c5-90eb-1ba5063856fe.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_04_f7fab962-7c6d-4931-bc43-001ba427359a.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_06_ab2a03fb-9f46-4678-95dd-8a3b420d0a61.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_07_a26d03b1-8754-4702-a255-6a78fedf102e.jpg?v=1791601809"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-leather-boot-p26-heel-height-high-s2205900740002",
+          "handle": "ophelia-leather-boot-p26-heel-height-high-s2205900740002",
+          "title": "Ophelia Leather Boot",
+          "color": "Maplewood",
+          "sku": "S2205900740002",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_01_378e0dc0-8d52-434c-896d-59a263d48f69.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_05_b5860a5f-b204-40ea-a47a-25326183c378.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_02_47eacd0b-87c3-4a46-b671-52bbd1f20c09.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_03_eaae6aa1-0f89-4e0d-9082-b55f8086a701.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_04_c9cb01e7-a1cc-4d45-a03a-991ce4510baf.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_06_3c1c2fa0-31fc-4261-882c-64168a8b8333.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740002_07_fe115d4c-3cab-41a0-8a7d-ea7c0a2f9cb4.jpg?v=1791601808"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-leather-boot-p26-heel-height-high-s2205900740001",
+          "handle": "ophelia-leather-boot-p26-heel-height-high-s2205900740001",
+          "title": "Ophelia Leather Boot",
+          "color": "Black",
+          "sku": "S2205900740001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_01_bb5aa1e9-b844-4a68-a161-75531a80f03a.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_02_86b96075-44b0-4361-bf5f-f6f0bff3351d.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_03_b3066c79-521e-43db-9369-0f376bb1bfba.jpg?v=1791601813",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_04_9d9a45e4-f357-4f47-a75e-e5a5da9f051c.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_06_16e95c80-25d3-42d9-b93e-2f524ff23756.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900740001_07_39ee4086-8aae-4072-b7cc-66e328aa4ce8.jpg?v=1791601813"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-patent-pump-p26-heel-height-high-s2206100520005",
+          "handle": "ophelia-patent-pump-p26-heel-height-high-s2206100520005",
+          "title": "Ophelia Patent Pump",
+          "color": "Black",
+          "sku": "S2206100520005",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_01_0a9e2c70-c2ae-4cbe-b78a-4e5e30d0991b.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_02_9a423a49-47a1-462a-b0c3-4565e8b409d2.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_03_13473ccd-f629-4abf-9ad5-30c84faab8cd.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_04_81228c35-79de-4e52-a9ed-f699dbf40ead.jpg?v=1791601818",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_06_3cec102e-5034-4a3a-843b-3a3ebd39596b.jpg?v=1791601818",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520005_07_571f30b8-8835-4574-ae5d-e0ac48c0f1e5.jpg?v=1791601817"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-patent-pump-p26-heel-height-high-s2206100520006",
+          "handle": "ophelia-patent-pump-p26-heel-height-high-s2206100520006",
+          "title": "Ophelia Patent Pump",
+          "color": "Port Burgundy",
+          "sku": "S2206100520006",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_01_c30589cc-6165-49bb-87c0-c82a8606958a.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_02_ed1e0d5e-d82d-422c-80cd-fd50edf3af97.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_03_4af8e098-d33e-40c5-90eb-1ba5063856fe.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_04_f7fab962-7c6d-4931-bc43-001ba427359a.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_06_ab2a03fb-9f46-4678-95dd-8a3b420d0a61.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2206100520006_07_a26d03b1-8754-4702-a255-6a78fedf102e.jpg?v=1791601809"
+          ],
+          "category": "PUMP",
+          "productType": "Pumps",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "schutz--ophelia-bootie",
+      "brand": "SCHUTZ",
+      "canonicalName": "Ophelia Bootie",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_01_0cfe6948-34f3-4cbe-b69a-43628401471b.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_02_b316db4d-28c6-420d-b8e9-dc868ecc716a.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_03_a1670292-ea6a-41e3-8ac4-aaf57a559159.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_04_666d7ae3-a58d-4e8d-95ef-db5492369a14.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_06_7dd5a97f-238b-4d58-8e49-ad2dab960d1c.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_07_16f8c6fe-056e-47e2-986b-e93dad07ddbf.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_01_b79e3eef-4ab1-4e61-beff-7f135e25161a.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_02_4db764e9-10a7-4b98-ab70-4546c8afc566.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_03_753a2b8f-fc19-410f-981f-dac0eb1c4414.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_04_12c948fc-24d0-4edf-a0c0-64e066701ade.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_06_2e0447b3-cdfe-4dee-82d2-32a3c4822002.jpg?v=1791601812",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_07_4eb021e6-220e-4093-a955-40789ddf74d2.jpg?v=1791601813"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-leather-bootie-p26-heel-height-high-s2205900730001",
+          "handle": "ophelia-leather-bootie-p26-heel-height-high-s2205900730001",
+          "title": "Ophelia Leather Bootie",
+          "color": "Black",
+          "sku": "S2205900730001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_01_0cfe6948-34f3-4cbe-b69a-43628401471b.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_02_b316db4d-28c6-420d-b8e9-dc868ecc716a.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_03_a1670292-ea6a-41e3-8ac4-aaf57a559159.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_04_666d7ae3-a58d-4e8d-95ef-db5492369a14.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_06_7dd5a97f-238b-4d58-8e49-ad2dab960d1c.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730001_07_16f8c6fe-056e-47e2-986b-e93dad07ddbf.jpg?v=1791601807"
+          ],
+          "category": "PUMP",
+          "productType": "Booties",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/ophelia-leather-bootie-p26-heel-height-high-s2205900730002",
+          "handle": "ophelia-leather-bootie-p26-heel-height-high-s2205900730002",
+          "title": "Ophelia Leather Bootie",
+          "color": "Maplewood",
+          "sku": "S2205900730002",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_01_b79e3eef-4ab1-4e61-beff-7f135e25161a.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_02_4db764e9-10a7-4b98-ab70-4546c8afc566.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_03_753a2b8f-fc19-410f-981f-dac0eb1c4414.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_04_12c948fc-24d0-4edf-a0c0-64e066701ade.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_06_2e0447b3-cdfe-4dee-82d2-32a3c4822002.jpg?v=1791601812",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2205900730002_07_4eb021e6-220e-4093-a955-40789ddf74d2.jpg?v=1791601813"
+          ],
+          "category": "PUMP",
+          "productType": "Booties",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -34480,9 +35317,9 @@
           ],
           "category": "BALLERINA",
           "productType": "Flats",
-          "inNewArrivals": false,
+          "inNewArrivals": true,
           "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
           "productUrl": "https://schutz-shoes.com/products/vick-buckle-leather-flat-p26-heel-height-flat-s2232900030017",
@@ -35332,6 +36169,236 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "schutz--zosia-leather-sandal",
+      "brand": "SCHUTZ",
+      "canonicalName": "Zosia Leather Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_01_4f358e5b-3e77-459e-89ca-91f7c570787a.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_05_cbfd9470-561d-4582-bbd7-7c65c1f75e2d.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_02_b071d7f9-6224-4e80-984e-2ff340f42df0.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_03_be88c4af-7736-4fe8-b346-34b9f6cd2bbc.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_04_00274ff2-8054-44ad-80db-adcc57d14f70.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_06_6e040c02-8a36-448d-8d75-3f17254567e5.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_07_e3b6a30f-3578-409c-be99-0d1e3a2c1653.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_01_bcd551bf-d799-47e2-8217-3595db13dab8.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_05_3cae0083-2eff-4ca1-9b6c-b69f0d1c8f96.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_02_d461157a-202a-4aaf-abfd-391513c00d35.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_03_bda4cd13-5e81-4289-88ef-7173cec344e6.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_04_4c50edb6-4021-4dc5-b295-ccd7caaad2f3.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_06_da3dba48-113f-4277-9ab0-5ab5186e914c.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_07_518dcf40-b303-40b8-b0c0-120a10d5f627.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_01_d7eb3a19-0ecd-4596-8c38-16955f211e72.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_05_ad6e346d-baf5-4b01-8fac-1b2d718c71f2.jpg?v=1791601809",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_02_8b91d3b3-4290-45f8-83d3-8aac172b2295.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_03_82c398aa-6625-48d0-a79c-405b89735a94.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_04_a336fe3a-cf7a-4fea-b021-5b3a364e2fa2.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_06_1eab0995-dbfa-42d3-ab2a-3578a2c5a835.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_07_d2e34092-89ac-4852-bc53-bab82007947a.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_01_e23cbc50-0091-4537-9404-aba41d8c0d22.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_02_813f51dc-f37a-4e40-8d1b-2f93c06fbfb1.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_03_6347e0f1-9459-4597-9b86-0c6e5e698c8d.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_04_534e9651-d3f8-4439-ad18-294741501ac6.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_06_cd6eb3cb-36c2-41de-8218-ac5c6eed964c.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_07_a1211b12-3111-48bb-a674-1e6f748b30dc.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_01_2f8a560d-c77b-4e46-9bd5-85e9d7c26022.jpg?v=1791601814",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_02_29a3a658-1c95-434a-aafd-e0aaec601450.jpg?v=1791601814",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_03_ed2c81ee-4651-449c-b32c-0971807a99e8.jpg?v=1791601815",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_04_6b492db5-a740-443b-a7e6-4a5bd56792a8.jpg?v=1791601815",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_06_f4bf7585-d7ac-4d30-a717-b32518c30d4f.jpg?v=1791601815",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_07_f5599ce7-a228-4233-b380-b2376329ad30.jpg?v=1791601815",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_01_ef9b034c-fb49-45e3-8173-773eb1d5f8c8.jpg?v=1791601806",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_05_7e2c0cab-9042-446a-a8e5-a31b5474ec7b.jpg?v=1791601806",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_02_da752dd0-4adf-45f1-86bf-fc8bbb2dc7e2.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_03_25eeb46b-cba7-4acc-ac8e-cfa12dd553a5.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_04_c2269723-2051-46a1-b2e3-416fd0b740f7.jpg?v=1791601806",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_06_b9dbfa7b-8ccb-423c-bad0-4d90ec31c671.jpg?v=1791601806",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_07_56445167-95fe-4628-8c54-e230ed387c6e.jpg?v=1791601807",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_01_214cecb2-f411-400d-a3dd-2715dd9fce9b.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_05_ef173b26-7212-4eb2-bb63-d194618a612b.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_02_61266838-41a3-455b-9a40-682ae119949a.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_03_d3bf43ef-a227-4706-a080-b64636a10578.jpg?v=1791601817",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_04_0ed83069-2a40-47e8-bd5f-c005d1e08b08.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_06_61abb06a-5433-45c7-99f7-440b768a284a.jpg?v=1791601816",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_07_b45d181e-c2ac-4b40-b750-e26f488ed0b2.jpg?v=1791601818",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_01_d40e01e9-fa37-4fcc-8044-c1e96b39e02b.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_02_9cb199ee-327e-4f0e-b3e8-b4641c1db790.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_03_b841d358-4d85-478a-9c01-7a165b1c353e.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_04_ba0e6a16-f4a7-4244-8c55-f1ec916cf352.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_06_e0a816c5-eba2-47d8-9b99-eae4521c2b67.jpg?v=1791601808",
+        "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_07_4aac6602-0090-43f0-9b85-39fbb2bc5298.jpg?v=1791601810"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790003",
+          "handle": "zosia-leather-sandal-p26-heel-height-high-s2057201790003",
+          "title": "Zosia Leather Sandal",
+          "color": "Black",
+          "sku": "S2057201790003",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_01_4f358e5b-3e77-459e-89ca-91f7c570787a.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_05_cbfd9470-561d-4582-bbd7-7c65c1f75e2d.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_02_b071d7f9-6224-4e80-984e-2ff340f42df0.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_03_be88c4af-7736-4fe8-b346-34b9f6cd2bbc.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_04_00274ff2-8054-44ad-80db-adcc57d14f70.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_06_6e040c02-8a36-448d-8d75-3f17254567e5.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790003_07_e3b6a30f-3578-409c-be99-0d1e3a2c1653.jpg?v=1791601816"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790001",
+          "handle": "zosia-leather-sandal-p26-heel-height-high-s2057201790001",
+          "title": "Zosia Leather Sandal",
+          "color": "White",
+          "sku": "S2057201790001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_01_bcd551bf-d799-47e2-8217-3595db13dab8.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_05_3cae0083-2eff-4ca1-9b6c-b69f0d1c8f96.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_02_d461157a-202a-4aaf-abfd-391513c00d35.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_03_bda4cd13-5e81-4289-88ef-7173cec344e6.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_04_4c50edb6-4021-4dc5-b295-ccd7caaad2f3.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_06_da3dba48-113f-4277-9ab0-5ab5186e914c.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790001_07_518dcf40-b303-40b8-b0c0-120a10d5f627.jpg?v=1791601808"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790002",
+          "handle": "zosia-leather-sandal-p26-heel-height-high-s2057201790002",
+          "title": "Zosia Leather Sandal",
+          "color": "Wine Berry",
+          "sku": "S2057201790002",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_01_d7eb3a19-0ecd-4596-8c38-16955f211e72.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_05_ad6e346d-baf5-4b01-8fac-1b2d718c71f2.jpg?v=1791601809",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_02_8b91d3b3-4290-45f8-83d3-8aac172b2295.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_03_82c398aa-6625-48d0-a79c-405b89735a94.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_04_a336fe3a-cf7a-4fea-b021-5b3a364e2fa2.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_06_1eab0995-dbfa-42d3-ab2a-3578a2c5a835.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790002_07_d2e34092-89ac-4852-bc53-bab82007947a.jpg?v=1791601808"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-metallic-sandal-p26-heel-height-high-s2057201790004",
+          "handle": "zosia-metallic-sandal-p26-heel-height-high-s2057201790004",
+          "title": "Zosia Metallic Sandal",
+          "color": "Silver",
+          "sku": "S2057201790004",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_01_e23cbc50-0091-4537-9404-aba41d8c0d22.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_02_813f51dc-f37a-4e40-8d1b-2f93c06fbfb1.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_03_6347e0f1-9459-4597-9b86-0c6e5e698c8d.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_04_534e9651-d3f8-4439-ad18-294741501ac6.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_06_cd6eb3cb-36c2-41de-8218-ac5c6eed964c.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790004_07_a1211b12-3111-48bb-a674-1e6f748b30dc.jpg?v=1791601808"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-metallic-sandal-p26-heel-height-high-s2057201790005",
+          "handle": "zosia-metallic-sandal-p26-heel-height-high-s2057201790005",
+          "title": "Zosia Metallic Sandal",
+          "color": "Platinum",
+          "sku": "S2057201790005",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_01_2f8a560d-c77b-4e46-9bd5-85e9d7c26022.jpg?v=1791601814",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_02_29a3a658-1c95-434a-aafd-e0aaec601450.jpg?v=1791601814",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_03_ed2c81ee-4651-449c-b32c-0971807a99e8.jpg?v=1791601815",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_04_6b492db5-a740-443b-a7e6-4a5bd56792a8.jpg?v=1791601815",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_06_f4bf7585-d7ac-4d30-a717-b32518c30d4f.jpg?v=1791601815",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2057201790005_07_f5599ce7-a228-4233-b380-b2376329ad30.jpg?v=1791601815"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150003",
+          "handle": "zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150003",
+          "title": "Zosia Mid Leather Sandal",
+          "color": "Black",
+          "sku": "S2103901150003",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_01_ef9b034c-fb49-45e3-8173-773eb1d5f8c8.jpg?v=1791601806",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_05_7e2c0cab-9042-446a-a8e5-a31b5474ec7b.jpg?v=1791601806",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_02_da752dd0-4adf-45f1-86bf-fc8bbb2dc7e2.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_03_25eeb46b-cba7-4acc-ac8e-cfa12dd553a5.jpg?v=1791601807",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_04_c2269723-2051-46a1-b2e3-416fd0b740f7.jpg?v=1791601806",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_06_b9dbfa7b-8ccb-423c-bad0-4d90ec31c671.jpg?v=1791601806",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150003_07_56445167-95fe-4628-8c54-e230ed387c6e.jpg?v=1791601807"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150001",
+          "handle": "zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150001",
+          "title": "Zosia Mid Leather Sandal",
+          "color": "White",
+          "sku": "S2103901150001",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_01_214cecb2-f411-400d-a3dd-2715dd9fce9b.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_05_ef173b26-7212-4eb2-bb63-d194618a612b.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_02_61266838-41a3-455b-9a40-682ae119949a.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_03_d3bf43ef-a227-4706-a080-b64636a10578.jpg?v=1791601817",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_04_0ed83069-2a40-47e8-bd5f-c005d1e08b08.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_06_61abb06a-5433-45c7-99f7-440b768a284a.jpg?v=1791601816",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150001_07_b45d181e-c2ac-4b40-b750-e26f488ed0b2.jpg?v=1791601818"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://schutz-shoes.com/products/zosia-mid-metallic-sandal-p26-heel-height-mid-s2103901150005",
+          "handle": "zosia-mid-metallic-sandal-p26-heel-height-mid-s2103901150005",
+          "title": "Zosia Mid Metallic Sandal",
+          "color": "Platinum",
+          "sku": "S2103901150005",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_01_d40e01e9-fa37-4fcc-8044-c1e96b39e02b.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_02_9cb199ee-327e-4f0e-b3e8-b4641c1db790.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_03_b841d358-4d85-478a-9c01-7a165b1c353e.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_04_ba0e6a16-f4a7-4244-8c55-f1ec916cf352.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_06_e0a816c5-eba2-47d8-9b99-eae4521c2b67.jpg?v=1791601808",
+            "https://cdn.shopify.com/s/files/1/0247/6975/files/S2103901150005_07_4aac6602-0090-43f0-9b85-39fbb2bc5298.jpg?v=1791601810"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
     }
   ],
   "productUrls": [
@@ -35549,7 +36616,10 @@
     "https://schutz-shoes.com/products/delila-bootie-f26-heel-height-low-s2265600010004",
     "https://schutz-shoes.com/products/delila-bootie-f26-heel-height-low-s2265600010001",
     "https://schutz-shoes.com/products/delila-suede-bootie-f26-heel-height-low-s2265600010003",
+    "https://schutz-shoes.com/products/delilah-leather-sandal-f26-wedge-s2226400650006",
+    "https://schutz-shoes.com/products/delilah-leather-sandal-f26-wedge-s2226400650009",
     "https://schutz-shoes.com/products/delilah-patent-leather-sandal-f26-wedge-s2226400650002",
+    "https://schutz-shoes.com/products/delilah-nubuck-sandal-f26-wedge-s2226400650007",
     "https://schutz-shoes.com/products/dellia-atanado-leather-bootie-f24-heel-height-mid-s2206900020003",
     "https://schutz-shoes.com/products/dellia-casual-bootie-f25-heel-height-mid-s2206900020011",
     "https://schutz-shoes.com/products/dellia-slouch-suede-bootie-f25-s2206900050002",
@@ -35673,6 +36743,9 @@
     "https://schutz-shoes.com/products/getty-flat-f26-heel-height-flat-s2264500010005",
     "https://schutz-shoes.com/products/gimenez-mid-deluxe-nappa-sandal-s23-heel-height-low-s2000103350079",
     "https://schutz-shoes.com/products/gimenez-strech-ot-sandal-s23-heel-height-high-s2014803520096",
+    "https://schutz-shoes.com/products/gio-pump-w26-high-stiletto-s2263400130001",
+    "https://schutz-shoes.com/products/gio-croc-pump-w26-heel-height-high-s2263400060004",
+    "https://schutz-shoes.com/products/gio-croc-pump-w26-heel-height-high-s2263400060003",
     "https://schutz-shoes.com/products/grace-calf-leather-flat-p25-heel-height-low-s2186700010010",
     "https://schutz-shoes.com/products/grace-atanado-leather-flat-f23-heel-height-mid-s2186700010006",
     "https://schutz-shoes.com/products/gwen-suede-boot-f23-heel-height-high-s2187500010001",
@@ -35680,7 +36753,6 @@
     "https://schutz-shoes.com/products/hadley-leather-flat-p26-heel-height-flat-s2264400010003",
     "https://schutz-shoes.com/products/hadley-leather-flat-p26-heel-height-flat-s2264400010007",
     "https://schutz-shoes.com/products/hadley-flat-f26-heel-height-flat-s2264400010013",
-    "https://schutz-shoes.com/products/hadley-flat-f26-heel-height-flat-s2264400010015",
     "https://schutz-shoes.com/products/hadley-suede-flat-p26-heel-height-flat-s2264400010012",
     "https://schutz-shoes.com/products/hadley-suede-flat-p26-heel-height-flat-s2264400010011",
     "https://schutz-shoes.com/products/hallea-glam-nubuck-sandal-u23-heel-height-flat-s0423705080001",
@@ -35731,6 +36803,11 @@
     "https://schutz-shoes.com/products/iris-mid-sandal-u26-heel-height-mid-s2208600510001",
     "https://schutz-shoes.com/products/iris-patent-leather-sandal-s26-heel-height-high-s2208700620003",
     "https://schutz-shoes.com/products/ivy-raffia-sandal-s24-heel-height-flat-s0423705250001",
+    "https://schutz-shoes.com/products/jaselle-metallic-sandal-p26-heel-height-high-s2057201800005",
+    "https://schutz-shoes.com/products/jaselle-metallic-sandal-p26-heel-height-high-s2057201800004",
+    "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800001",
+    "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800002",
+    "https://schutz-shoes.com/products/jaselle-patent-sandal-p26-heel-height-high-s2057201800003",
     "https://schutz-shoes.com/products/jenny-pump-f26-heel-height-high-s2193200280001",
     "https://schutz-shoes.com/products/jenny-pump-f26-heel-height-high-s2193200260004",
     "https://schutz-shoes.com/products/jessica-mid-mule-metallic-sandal-p25-heel-height-mid-s2208600200009",
@@ -35746,6 +36823,8 @@
     "https://schutz-shoes.com/products/jules-mid-metallic-sandal-p25-heel-height-mid-s2227600040004",
     "https://schutz-shoes.com/products/jules-patent-sandal-p25-s2209000250002",
     "https://schutz-shoes.com/products/jules-patent-sandal-p25-s2209000250005",
+    "https://schutz-shoes.com/products/julie-patent-pump-w26-heel-height-mid-s2217900140033",
+    "https://schutz-shoes.com/products/julie-patent-pump-w26-heel-height-mid-s2217900140030",
     "https://schutz-shoes.com/products/julie-suede-pump-p25-heel-height-mid-s2217900140008",
     "https://schutz-shoes.com/products/julie-suede-pump-p25-heel-height-mid-s2217900140013",
     "https://schutz-shoes.com/products/juno-leather-sandal-u25-s2094700160003",
@@ -35842,6 +36921,7 @@
     "https://schutz-shoes.com/products/lexi-pump-p26-heel-height-high-s2212000010062",
     "https://schutz-shoes.com/products/lexi-pump-p26-heel-height-high-s2212000010070",
     "https://schutz-shoes.com/products/lexi-leather-pump-u25-heel-height-high-s2212000010027",
+    "https://schutz-shoes.com/products/lexi-leather-pump-f26-high-stiletto-s2212000010091",
     "https://schutz-shoes.com/products/lexi-leather-pump-f26-high-stiletto-s2212000390004",
     "https://schutz-shoes.com/products/lexi-leather-pump-f26-high-stiletto-s2212000390005",
     "https://schutz-shoes.com/products/lexi-lo-patent-pump-p25-heel-height-mid-s2211900120005",
@@ -35864,7 +36944,9 @@
     "https://schutz-shoes.com/products/lexi-patent-pump-r26-heel-height-high-s2212000010034",
     "https://schutz-shoes.com/products/lexi-patent-pump-r26-heel-height-high-s2212000010038",
     "https://schutz-shoes.com/products/lexi-patent-pump-r26-heel-height-high-s2212000010068",
+    "https://schutz-shoes.com/products/lexi-patent-pump-r26-heel-height-high-s2212000010049",
     "https://schutz-shoes.com/products/lexi-patent-pump-u26-heel-height-high-s2212000010081",
+    "https://schutz-shoes.com/products/lexi-patent-pump-f26-high-stiletto-s2212000010088",
     "https://schutz-shoes.com/products/lexi-pull-on-bootie-f26-heel-height-mid-s2212500350001",
     "https://schutz-shoes.com/products/lexi-patent-leather-pump-p24-heel-height-high-s2212000010003",
     "https://schutz-shoes.com/products/lexi-sling-block-leather-pump-f26-heel-height-mid-s2261700050001",
@@ -36101,6 +37183,11 @@
     "https://schutz-shoes.com/products/nina-sandal-u26-heel-height-flat-s2165100350005",
     "https://schutz-shoes.com/products/nina-sandal-u26-heel-height-flat-s2165100350002",
     "https://schutz-shoes.com/products/noelle-patent-leather-pump-f25-heel-height-flat-s2238200010007",
+    "https://schutz-shoes.com/products/noemie-leather-sandal-f26-high-stiletto-s2234600280008",
+    "https://schutz-shoes.com/products/noemie-patent-leather-sandal-f26-high-stiletto-s2234600280002",
+    "https://schutz-shoes.com/products/noemie-patent-leather-sandal-f26-high-stiletto-s2234600280004",
+    "https://schutz-shoes.com/products/noemie-patent-sandal-f26-high-stiletto-s2234600280007",
+    "https://schutz-shoes.com/products/noemie-patent-sandal-f26-high-stiletto-s2234600280005",
     "https://schutz-shoes.com/products/nylle-metallic-sandal-u26-heel-height-flat-s2057101890006",
     "https://schutz-shoes.com/products/nylle-metallic-sandal-u26-heel-height-flat-s2057101890007",
     "https://schutz-shoes.com/products/nylle-patent-sandal-u26-heel-height-flat-s2057101890005",
@@ -36114,6 +37201,12 @@
     "https://schutz-shoes.com/products/olga-atanado-leather-sandal-s25-heel-height-low-s2000108610003",
     "https://schutz-shoes.com/products/olivia-bootie-f26-heel-height-low-s2233400320001",
     "https://schutz-shoes.com/products/olivia-bootie-f26-heel-height-low-s2233400320002",
+    "https://schutz-shoes.com/products/ophelia-leather-boot-p26-heel-height-high-s2205900740002",
+    "https://schutz-shoes.com/products/ophelia-leather-boot-p26-heel-height-high-s2205900740001",
+    "https://schutz-shoes.com/products/ophelia-leather-bootie-p26-heel-height-high-s2205900730001",
+    "https://schutz-shoes.com/products/ophelia-leather-bootie-p26-heel-height-high-s2205900730002",
+    "https://schutz-shoes.com/products/ophelia-patent-pump-p26-heel-height-high-s2206100520005",
+    "https://schutz-shoes.com/products/ophelia-patent-pump-p26-heel-height-high-s2206100520006",
     "https://schutz-shoes.com/products/paola-mid-suede-pump-f26-heel-height-mid-s2217900260022",
     "https://schutz-shoes.com/products/paola-leather-pump-p25-heel-height-mid-s2209500120016",
     "https://schutz-shoes.com/products/paola-sandal-r26-heel-height-mid-s2209500120025",
@@ -36382,6 +37475,14 @@
     "https://schutz-shoes.com/products/yumi-studs-nubuck-flat-p26-heel-height-flat-s2269400030001",
     "https://schutz-shoes.com/products/zachy-up-cloak-leather-boot-s24-heel-height-low-s2076900350002",
     "https://schutz-shoes.com/products/zadie-nubuck-sandal-r26-heel-height-low-s2248800030004",
-    "https://schutz-shoes.com/products/zaya-fabric-sandal-r26-heel-height-flat-s2246500040001"
+    "https://schutz-shoes.com/products/zaya-fabric-sandal-r26-heel-height-flat-s2246500040001",
+    "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790003",
+    "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790001",
+    "https://schutz-shoes.com/products/zosia-leather-sandal-p26-heel-height-high-s2057201790002",
+    "https://schutz-shoes.com/products/zosia-metallic-sandal-p26-heel-height-high-s2057201790004",
+    "https://schutz-shoes.com/products/zosia-metallic-sandal-p26-heel-height-high-s2057201790005",
+    "https://schutz-shoes.com/products/zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150003",
+    "https://schutz-shoes.com/products/zosia-mid-leather-sandal-p26-heel-height-mid-s2103901150001",
+    "https://schutz-shoes.com/products/zosia-mid-metallic-sandal-p26-heel-height-mid-s2103901150005"
   ]
 }

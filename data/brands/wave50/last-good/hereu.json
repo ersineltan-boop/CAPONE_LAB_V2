@@ -2,8 +2,8 @@
   "slug": "hereu",
   "brand": "HEREU",
   "officialUrl": "https://hereustudio.com",
-  "snapshotId": "hereu:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "hereu:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/womens-shoes"
   ],
@@ -14,13 +14,13 @@
     "/collections/womens-new-in"
   ],
   "coverage": {
-    "sourceTotal": 184,
-    "collected": 184,
+    "sourceTotal": 181,
+    "collected": 181,
     "missing": 0,
     "coverage": 100,
     "excluded": 2,
     "paginationExhausted": true,
-    "galleryComplete": 184,
+    "galleryComplete": 181,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -377,12 +377,10 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9353.jpg?v=1758641309",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/juliolblack_4a9aee76-f702-4f5e-a40b-8482704a7f51.jpg?v=1758641309",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/2401020010_1-11_1_IG.jpg?v=1758641309",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/Sans_titre_5.jpg?v=1740663451",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_DarkBrown_1.jpg?v=1740663451",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6518.jpg?v=1772035877",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6429.jpg?v=1772035877",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/juliolblack_33b579bb-5e23-49d1-954b-3c86cc0b2c7c.jpg?v=1772035871",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004130009copia.jpg?v=1740663452",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_DarkBrown_2.jpg?v=1772035871"
       ],
       "variants": [
@@ -413,12 +411,10 @@
           "color": "Dark Brown",
           "sku": "JULBWFA24.002.3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/Sans_titre_5.jpg?v=1740663451",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_DarkBrown_1.jpg?v=1740663451",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6518.jpg?v=1772035877",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6429.jpg?v=1772035877",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/juliolblack_33b579bb-5e23-49d1-954b-3c86cc0b2c7c.jpg?v=1772035871",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004130009copia.jpg?v=1740663452",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_DarkBrown_2.jpg?v=1772035871"
           ],
           "category": "BOOT",
@@ -615,6 +611,44 @@
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO_1141.jpg?v=1776871314"
           ],
           "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--lligada-belt-detail-knee-high-boot",
+      "brand": "HEREU",
+      "canonicalName": "Lligada Belt Detail Knee High Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6646_5784daaa-b2c8-4eb2-b5b3-dbd39af6481a.jpg?v=1791448368",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6645.jpg?v=1785827595",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/9c796b87-7255-4a00-a603-c345a7e1b6d4.jpg?v=1791448233",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/65ca626b-1e0a-4728-9522-f8cd8396aeaa.jpg?v=1777303154",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6647.jpg?v=1785827591",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/lligada-suede-belt-detail-knee-high-boot-auburn",
+          "handle": "lligada-suede-belt-detail-knee-high-boot-auburn",
+          "title": "LLIGADA SUEDE - Belt Detail Knee-High Boot",
+          "color": "Auburn",
+          "sku": "LLIGSUWFA26.007.12",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6646_5784daaa-b2c8-4eb2-b5b3-dbd39af6481a.jpg?v=1791448368",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6645.jpg?v=1785827595",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/9c796b87-7255-4a00-a603-c345a7e1b6d4.jpg?v=1791448233",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/65ca626b-1e0a-4728-9522-f8cd8396aeaa.jpg?v=1777303154",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6647.jpg?v=1785827591",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+          ],
+          "category": "BOOT",
           "productType": "SHOES",
           "inNewArrivals": true,
           "isNew": true,
@@ -1501,11 +1535,7 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_1.jpg?v=1772115048",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_2.jpg?v=1772115048",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_3.jpg?v=1772115048",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS27_MODELO5551_Sardana.jpg?v=1781598385",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1401.jpg?v=1773921597",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/6_WEB.jpg?v=1773921597",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_2.jpg?v=1773921597",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_3.jpg?v=1773921597"
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS27_MODELO5551_Sardana.jpg?v=1781598385"
       ],
       "variants": [
         {
@@ -1536,26 +1566,6 @@
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_1.jpg?v=1772115048",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_2.jpg?v=1772115048",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_3.jpg?v=1772115048",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_4.jpg?v=1773921597",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS27_MODELO5551_Sardana.jpg?v=1781598385"
-          ],
-          "category": "SLINGBACK",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        },
-        {
-          "productUrl": "https://hereustudio.com/products/sardana-lace-up-woven-slingback-sandal-ivory",
-          "handle": "sardana-lace-up-woven-slingback-sandal-ivory",
-          "title": "SARDANA - Lace-up Woven Slingback Sandal",
-          "color": "Ivory",
-          "sku": "SARDWFS26.003.7",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1401.jpg?v=1773921597",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/6_WEB.jpg?v=1773921597",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_2.jpg?v=1773921597",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_3.jpg?v=1773921597",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_4.jpg?v=1773921597",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS27_MODELO5551_Sardana.jpg?v=1781598385"
           ],
@@ -2400,6 +2410,42 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "hereu--lligada-belt-detail-knee-high-boot--lligada-belt-detail-knee-high-boot-black",
+      "brand": "HEREU",
+      "canonicalName": "Lligada Belt Detail Knee High Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_1.jpg?v=1777032133",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_2.jpg?v=1777032134",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_3.jpg?v=1777032133",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_4.jpg?v=1777032133",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/lligada-belt-detail-knee-high-boot-black",
+          "handle": "lligada-belt-detail-knee-high-boot-black",
+          "title": "LLIGADA - Belt Detail Knee-High Boot",
+          "color": "Black",
+          "sku": "LLIGWFA26.001.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_1.jpg?v=1777032133",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_2.jpg?v=1777032134",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_3.jpg?v=1777032133",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_4.jpg?v=1777032133",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "hereu--cintre-monk-shoe",
       "brand": "HEREU",
       "canonicalName": "Cintre Monk Shoe",
@@ -2436,32 +2482,30 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "hereu--lligada-belt-detail-knee-high-boot",
+      "modelFamilyId": "hereu--sarga-pleated-detail-ankle-boot",
       "brand": "HEREU",
-      "canonicalName": "Lligada Belt Detail Knee High Boot",
-      "category": "BOOT",
+      "canonicalName": "Sarga Pleated Detail Ankle Boot",
+      "category": "ANKLE_BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_1.jpg?v=1777032133",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_2.jpg?v=1777032134",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_3.jpg?v=1777032133",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_4.jpg?v=1777032133",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_1.jpg?v=1776783317",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_2.jpg?v=1776783317",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_3.jpg?v=1776783317",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_00611.jpg?v=1777898565"
       ],
       "variants": [
         {
-          "productUrl": "https://hereustudio.com/products/lligada-belt-detail-knee-high-boot-black",
-          "handle": "lligada-belt-detail-knee-high-boot-black",
-          "title": "LLIGADA - Belt Detail Knee-High Boot",
+          "productUrl": "https://hereustudio.com/products/sarga-pleated-detail-ankle-boot-black",
+          "handle": "sarga-pleated-detail-ankle-boot-black",
+          "title": "SARGA - Pleated Detail Ankle Boot",
           "color": "Black",
-          "sku": "LLIGWFA26.001.1",
+          "sku": "SARGWFA26.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_1.jpg?v=1777032133",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_2.jpg?v=1777032134",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_3.jpg?v=1777032133",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLIGWFA26_Black_4.jpg?v=1777032133",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_1.jpg?v=1776783317",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_2.jpg?v=1776783317",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_3.jpg?v=1776783317",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_00611.jpg?v=1777898565"
           ],
-          "category": "BOOT",
+          "category": "ANKLE_BOOT",
           "productType": "SHOES",
           "inNewArrivals": true,
           "isNew": true,
@@ -2500,40 +2544,6 @@
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1815.jpg?v=1773929746"
           ],
           "category": "BALLERINA",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "hereu--sarga-pleated-detail-ankle-boot",
-      "brand": "HEREU",
-      "canonicalName": "Sarga Pleated Detail Ankle Boot",
-      "category": "ANKLE_BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_1.jpg?v=1776783317",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_2.jpg?v=1776783317",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_3.jpg?v=1776783317",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_00611.jpg?v=1777898565"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/sarga-pleated-detail-ankle-boot-black",
-          "handle": "sarga-pleated-detail-ankle-boot-black",
-          "title": "SARGA - Pleated Detail Ankle Boot",
-          "color": "Black",
-          "sku": "SARGWFA26.001.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_1.jpg?v=1776783317",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_2.jpg?v=1776783317",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARGWFA26_Black_3.jpg?v=1776783317",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_00611.jpg?v=1777898565"
-          ],
-          "category": "ANKLE_BOOT",
           "productType": "SHOES",
           "inNewArrivals": true,
           "isNew": true,
@@ -2654,59 +2664,74 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "hereu--lina-woven-strappy-toe-post-sandal",
+      "modelFamilyId": "hereu--juliol-boot-low-boot--juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
       "brand": "HEREU",
-      "canonicalName": "Lina Woven Strappy Toe Post Sandal",
-      "category": "SANDAL",
+      "canonicalName": "Juliol Boot Low Boot",
+      "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black.jpg?v=1762350540",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black_3.jpg?v=1762350553",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black_2.jpg?v=1762350553",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/DIRASLMFS26_Black_4_d9d1333b-7421-4261-a27d-afcbc6bded47.jpg?v=1772108009",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Cream.jpg?v=1762353052",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP_02_PRODUCT1585.jpg?v=1772108009",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP_02_PRODUCT1504.jpg?v=1772108009"
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_1.jpg?v=1777018184",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_2.jpg?v=1777018184",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_3.jpg?v=1777018184",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Black_4.jpg?v=1757506081",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Darkbrown_5.jpg?v=1771330223"
       ],
       "variants": [
         {
-          "productUrl": "https://hereustudio.com/products/lina-woven-strappy-toe-post-sandal-black",
-          "handle": "lina-woven-strappy-toe-post-sandal-black",
-          "title": "LINA WOVEN - Strappy Toe-Post Sandal",
+          "productUrl": "https://hereustudio.com/products/juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
+          "handle": "juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
+          "title": "JULIOL BOOT CALF HAIR HEELED - Soft Low-Calf Boot",
           "color": "Black",
-          "sku": "LIWOWFS26.001.1",
+          "sku": "JUBCHHWFA26.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black.jpg?v=1762350540",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black_3.jpg?v=1762350553",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Black_2.jpg?v=1762350553",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/DIRASLMFS26_Black_4_d9d1333b-7421-4261-a27d-afcbc6bded47.jpg?v=1772108009"
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_1.jpg?v=1777018184",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_2.jpg?v=1777018184",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_3.jpg?v=1777018184",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Black_4.jpg?v=1757506081",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Darkbrown_5.jpg?v=1771330223"
           ],
-          "category": "SANDAL",
+          "category": "BOOT",
           "productType": "SHOES",
-          "inNewArrivals": false,
+          "inNewArrivals": true,
           "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        },
-        {
-          "productUrl": "https://hereustudio.com/products/lina-woven-strappy-toe-post-sandal-cream",
-          "handle": "lina-woven-strappy-toe-post-sandal-cream",
-          "title": "LINA WOVEN - Strappy Toe-Post Sandal",
-          "color": "Cream",
-          "sku": "LIWOWFS26.003.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LIWOWFS26_Cream.jpg?v=1762353052",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP_02_PRODUCT1585.jpg?v=1772108009",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP_02_PRODUCT1504.jpg?v=1772108009",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/DIRASLMFS26_Black_4_d9d1333b-7421-4261-a27d-afcbc6bded47.jpg?v=1772108009"
-          ],
-          "category": "SANDAL",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--resso-boot-bow-detail-wedged-boot",
+      "brand": "HEREU",
+      "canonicalName": "Resso Boot Bow Detail Wedged Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6665.jpg?v=1788766897",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6695.jpg?v=1788766897",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6680.jpg?v=1788766897",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black",
+          "handle": "resso-boot-bow-detail-wedged-boot-black",
+          "title": "RESSO BOOT - Bow-Detail Wedged Boot",
+          "color": "Black",
+          "sku": "RESBOWFA26.001.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6665.jpg?v=1788766897",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6695.jpg?v=1788766897",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6680.jpg?v=1788766897",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "hereu--ondina-pleated-flat-pump",
@@ -5759,114 +5784,6 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "hereu--juliol-boot-low-boot--juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
-      "brand": "HEREU",
-      "canonicalName": "Juliol Boot Low Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_1.jpg?v=1777018184",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_2.jpg?v=1777018184",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_3.jpg?v=1777018184",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Black_4.jpg?v=1757506081",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Darkbrown_5.jpg?v=1771330223"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
-          "handle": "juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
-          "title": "JULIOL BOOT CALF HAIR HEELED - Soft Low-Calf Boot",
-          "color": "Black",
-          "sku": "JUBCHHWFA26.001.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_1.jpg?v=1777018184",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_2.jpg?v=1777018184",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBCHHWFA26_Black_3.jpg?v=1777018184",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Black_4.jpg?v=1757506081",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBHEWFA_Darkbrown_5.jpg?v=1771330223"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "hereu--lligada-belt-detail-knee-high-boot--lligada-suede-belt-detail-knee-high-boot-auburn",
-      "brand": "HEREU",
-      "canonicalName": "Lligada Belt Detail Knee High Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/997c467a-c1a8-4528-8c05-bc81a2c3a7c1_1.jpg?v=1777303155",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6645.jpg?v=1785827595",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/9c796b87-7255-4a00-a603-c345a7e1b6d4.jpg?v=1777303154",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/65ca626b-1e0a-4728-9522-f8cd8396aeaa.jpg?v=1777303154",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6647.jpg?v=1785827591",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/lligada-suede-belt-detail-knee-high-boot-auburn",
-          "handle": "lligada-suede-belt-detail-knee-high-boot-auburn",
-          "title": "LLIGADA SUEDE - Belt Detail Knee-High Boot",
-          "color": "Auburn",
-          "sku": "LLIGSUWFA26.007.12",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/997c467a-c1a8-4528-8c05-bc81a2c3a7c1_1.jpg?v=1777303155",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6645.jpg?v=1785827595",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/9c796b87-7255-4a00-a603-c345a7e1b6d4.jpg?v=1777303154",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/65ca626b-1e0a-4728-9522-f8cd8396aeaa.jpg?v=1777303154",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6647.jpg?v=1785827591",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1787.jpg?v=1777032171"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "hereu--resso-boot-bow-detail-wedged-boot",
-      "brand": "HEREU",
-      "canonicalName": "Resso Boot Bow Detail Wedged Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6665.jpg?v=1788766897",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6695.jpg?v=1788766897",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6680.jpg?v=1788766897",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black",
-          "handle": "resso-boot-bow-detail-wedged-boot-black",
-          "title": "RESSO BOOT - Bow-Detail Wedged Boot",
-          "color": "Black",
-          "sku": "RESBOWFA26.001.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6665.jpg?v=1788766897",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6695.jpg?v=1788766897",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6680.jpg?v=1788766897",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
     }
   ],
   "productUrls": [
@@ -5884,6 +5801,7 @@
     "https://hereustudio.com/products/tilla-shearling-deconstructed-babouche-dark-brown",
     "https://hereustudio.com/products/juliol-w-suede-high-cut-deconstructed-loafer-dark-brown",
     "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-dark-brown",
+    "https://hereustudio.com/products/lligada-suede-belt-detail-knee-high-boot-auburn",
     "https://hereustudio.com/products/coraia-interwoven-mule-tan",
     "https://hereustudio.com/products/tilla-suede-deconstructed-suede-babouche-tan",
     "https://hereustudio.com/products/sastre-supple-shiny-braided-seam-slip-on-loafer-warm-taupe",
@@ -5918,19 +5836,20 @@
     "https://hereustudio.com/products/cairel-tasselled-loafer-dark-brown",
     "https://hereustudio.com/products/andreu-mid-calf-zipped-boot-dark-brown",
     "https://hereustudio.com/products/esportiu-mary-jane-woven-sporty-mary-jane-shoe-dark-brown",
+    "https://hereustudio.com/products/lligada-belt-detail-knee-high-boot-black",
     "https://hereustudio.com/products/cintre-soft-leather-monk-shoe-black",
     "https://hereustudio.com/products/juliol-boot-calf-suede-heeled-soft-low-calf-boot-dark-purple",
     "https://hereustudio.com/products/florida-flower-detail-mid-heel-pump-black",
     "https://hereustudio.com/products/plegada-suede-deconstructed-lace-up-shoe-dark-purple",
-    "https://hereustudio.com/products/lligada-belt-detail-knee-high-boot-black",
+    "https://hereustudio.com/products/sarga-pleated-detail-ankle-boot-black",
     "https://hereustudio.com/products/aresta-pointy-moccasin-flat-black",
     "https://hereustudio.com/products/resso-bow-detail-wedged-mule-black",
-    "https://hereustudio.com/products/sarga-pleated-detail-ankle-boot-black",
     "https://hereustudio.com/products/sio-2-polished-mary-jane-shoe-black",
     "https://hereustudio.com/products/sastre-velvet-braided-seam-slip-on-loafer-black",
     "https://hereustudio.com/products/alber-crinkled-glossy-womens-t-bar-loafer-black",
+    "https://hereustudio.com/products/juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
+    "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black",
     "https://hereustudio.com/products/soller-sport-tread-sole-t-bar-loafer-black",
-    "https://hereustudio.com/products/lina-woven-strappy-toe-post-sandal-black",
     "https://hereustudio.com/products/ondina-pleated-flat-pump-black",
     "https://hereustudio.com/products/bena-mid-velvet-interwoven-knotted-t-bar-heeled-sandal-black",
     "https://hereustudio.com/products/esportiu-mary-jane-woven-leather-sporty-mary-jane-shoe-black",
@@ -5983,7 +5902,6 @@
     "https://hereustudio.com/products/ondina-pleated-flat-pump-rose",
     "https://hereustudio.com/products/juliol-lace-up-deconstructed-shoe-rose",
     "https://hereustudio.com/products/esportiu-mary-jane-woven-leather-sporty-mary-jane-shoe-ice",
-    "https://hereustudio.com/products/sardana-lace-up-woven-slingback-sandal-ivory",
     "https://hereustudio.com/products/puntera-supple-shiny-pleated-toe-pump-cream",
     "https://hereustudio.com/products/juliol-slingback-high-cut-deconstructed-slingback-loafer-ivory",
     "https://hereustudio.com/products/floreta-t-bar-sandal-custard",
@@ -5992,7 +5910,6 @@
     "https://hereustudio.com/products/puntera-ronda-mid-heel-pump-ivory",
     "https://hereustudio.com/products/sastre-supple-shiny-braided-seam-pull-on-loafer-cream",
     "https://hereustudio.com/products/bonell-womens-woven-t-bar-mule-loafer-custard",
-    "https://hereustudio.com/products/lina-woven-strappy-toe-post-sandal-cream",
     "https://hereustudio.com/products/juliol-winter-supple-shiny-high-cut-deconstructed-loafer-cream",
     "https://hereustudio.com/products/sastre-sandal-braided-seam-sandal-cream",
     "https://hereustudio.com/products/pesca-fisherman-sandal-custard",
@@ -6050,9 +5967,6 @@
     "https://hereustudio.com/products/soller-womens-t-bar-moccasin-dark-brown",
     "https://hereustudio.com/products/alber-t-bar-loafer-dark-brown",
     "https://hereustudio.com/products/nombela-suede-interwoven-detail-slip-on-loafer-dark-brown",
-    "https://hereustudio.com/products/tabella-boot-woven-saddle-ankle-boot-dark-brown",
-    "https://hereustudio.com/products/juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
-    "https://hereustudio.com/products/lligada-suede-belt-detail-knee-high-boot-auburn",
-    "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black"
+    "https://hereustudio.com/products/tabella-boot-woven-saddle-ankle-boot-dark-brown"
   ]
 }
