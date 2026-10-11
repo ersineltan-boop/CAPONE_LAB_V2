@@ -2,8 +2,8 @@
   "slug": "luis-onofre",
   "brand": "LUIS ONOFRE",
   "officialUrl": "https://luisonofre.com",
-  "snapshotId": "luis-onofre:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "luis-onofre:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/all-shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 154,
-    "collected": 154,
+    "sourceTotal": 156,
+    "collected": 156,
     "missing": 0,
     "coverage": 100,
     "excluded": 26,
     "paginationExhausted": true,
-    "galleryComplete": 154,
+    "galleryComplete": 156,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 35,
+  "newArrivalsFootwear": 37,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -252,6 +252,84 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--lacquer-platform",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Lacquer Platform",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-2.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-3.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-4.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-5.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-6.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-7.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals.jpg?v=1791361271"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6120-01mstlacquer-deep-brown-platform",
+          "handle": "6120-01mstlacquer-deep-brown-platform",
+          "title": "Lacquer Deep Brown Platform",
+          "color": "Lacquer Deep Brown Platform",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-2.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-3.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-4.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-5.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-6.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-7.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals.jpg?v=1791361271"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--flute-pointed-toe-slingback",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Flute Pointed Toe Slingback",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-2.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-3.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-4.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-5.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-6.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-7.jpg?v=1791360886"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/flute-green-pointed-toe-slingbacks6060",
+          "handle": "flute-green-pointed-toe-slingbacks6060",
+          "title": "Flute Green Pointed-Toe Slingbacks",
+          "color": "Flute Green Pointed-Toe Slingbacks",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-2.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-3.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-4.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-5.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-6.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-7.jpg?v=1791360886"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -5988,6 +6066,8 @@
     }
   ],
   "productUrls": [
+    "https://luisonofre.com/products/6120-01mstlacquer-deep-brown-platform",
+    "https://luisonofre.com/products/flute-green-pointed-toe-slingbacks6060",
     "https://luisonofre.com/products/6106dune-taupe-platform-slingback-pumps",
     "https://luisonofre.com/products/6147-01mflocket-black-strappy-sandals",
     "https://luisonofre.com/products/6044",

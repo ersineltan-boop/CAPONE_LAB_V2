@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-07T10:10:36.853Z",
-  "digerCount": 384,
-  "totalFamilies": 17581,
+  "generatedAt": "2026-10-11T10:01:23.307Z",
+  "digerCount": 386,
+  "totalFamilies": 17738,
   "reasonCounts": {
     "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 149,
+    "GENERIC_SOURCE_CATEGORY": 151,
     "CONFLICTING_SOURCE_CATEGORIES": 2,
     "UNMAPPED_SOURCE_CATEGORY": 197,
     "NO_SAFE_FALLBACK": 0
@@ -402,6 +402,15 @@
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "christen--name-christen-home-slipper-unclassified-base",
+      "brand": "CHRISTEN",
+      "sourceCategories": [
+        "Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "christian-louboutin--id-level-shoes-christian-louboutin-chanme-donna-boat-shoes-beige-nubuck-leather-women-loafers-qmmbfn-html-unclassified-base",
@@ -1788,6 +1797,7 @@
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
+        "Glove Shoes",
         "Handbags and Shoes",
         "Shoes",
         "shoes_taxes-exclusion"
@@ -1799,8 +1809,10 @@
       "modelFamilyId": "proenza-schouler--id-shopify-proenza-schouler-ruched-tee-slippers-in-shearling-chocolate-unclassified-shearling",
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
+        "Flats",
         "Shoes",
-        "shoes_taxes-exclusion"
+        "shoes_taxes-exclusion",
+        "Tee Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1814,6 +1826,7 @@
         "New Arrivals White Label",
         "Shoes",
         "shoes_taxes-exclusion",
+        "Slant Shoes",
         "Summer New Arrivals"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2524,6 +2537,15 @@
     },
     {
       "modelFamilyId": "zara--id-zara-12533810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "GENERIC_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-12539810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
         "VIEW ALL"
@@ -3678,7 +3700,7 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 22,
+      "count": 23,
       "brands": [
         "KHAITE",
         "MARGAUX",
@@ -3996,17 +4018,17 @@
     }
   ],
   "visualCounts": {
-    "tumu": 17581,
-    "babet": 1696,
-    "loafer": 1227,
-    "topuklu": 2655,
-    "sandal": 4688,
-    "mule": 1515,
-    "bot-cizme": 3565,
-    "sneaker": 1554,
+    "tumu": 17738,
+    "babet": 1709,
+    "loafer": 1237,
+    "topuklu": 2678,
+    "sandal": 4734,
+    "mule": 1529,
+    "bot-cizme": 3611,
+    "sneaker": 1556,
     "espadril": 159,
-    "oxford-derby": 33,
+    "oxford-derby": 34,
     "clog": 105,
-    "diger": 384
+    "diger": 386
   }
 }

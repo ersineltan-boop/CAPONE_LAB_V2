@@ -2,8 +2,8 @@
   "slug": "pretty-ballerinas",
   "brand": "PRETTY BALLERINAS",
   "officialUrl": "https://www.prettyballerinas.com",
-  "snapshotId": "pretty-ballerinas:2026-10-07T10:11:35.892Z",
-  "collectedAt": "2026-10-07T10:11:35.892Z",
+  "snapshotId": "pretty-ballerinas:2026-10-11T10:02:15.790Z",
+  "collectedAt": "2026-10-11T10:02:15.790Z",
   "catalogPaths": [
     "/collections/collection"
   ],
@@ -11,23 +11,319 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 217,
-    "collected": 217,
+    "sourceTotal": 219,
+    "collected": 219,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 217,
+    "galleryComplete": 219,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 121,
-  "referenceFootwearTotal": 217,
+  "newArrivalsFootwear": 127,
+  "referenceFootwearTotal": 219,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": true,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-kamala-morados-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Kamala Morados Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_top.jpg?v=1791358151",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_pers.jpg?v=1791358151",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_side.jpg?v=1791358151",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_back.jpg?v=1791358151",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_det.jpg?v=1791358151"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-kamala-morados-piel",
+          "handle": "bailarinas-kamala-morados-piel",
+          "title": "Bailarinas Kamala Morados Piel",
+          "color": null,
+          "sku": "51662_004_370",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_top.jpg?v=1791358151",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_pers.jpg?v=1791358151",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_side.jpg?v=1791358151",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_back.jpg?v=1791358151",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_004_det.jpg?v=1791358151"
+          ],
+          "category": "BALLERINA",
+          "productType": "51662_004",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-kamala-negros-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Kamala Negros Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_top.jpg?v=1774937417",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_pers.jpg?v=1774937417",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_side.jpg?v=1774937417",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_det.jpg?v=1774937417"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-kamala-negros-piel",
+          "handle": "bailarinas-kamala-negros-piel",
+          "title": "Bailarinas Kamala Negros Piel",
+          "color": null,
+          "sku": "51662_C_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_top.jpg?v=1774937417",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_pers.jpg?v=1774937417",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_side.jpg?v=1774937417",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51662_C_det.jpg?v=1774937417"
+          ],
+          "category": "BALLERINA",
+          "productType": "51662_C",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-grises-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Paris Grises Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_top.jpg?v=1791358110",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_pers.jpg?v=1791358110",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_side.jpg?v=1791358110",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_back.jpg?v=1791358110",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_det.jpg?v=1791358110"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-grises-piel",
+          "handle": "bailarinas-paris-grises-piel",
+          "title": "Bailarinas Paris Grises Piel",
+          "color": null,
+          "sku": "53514_004_360",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_top.jpg?v=1791358110",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_pers.jpg?v=1791358110",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_side.jpg?v=1791358110",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_back.jpg?v=1791358110",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_004_det.jpg?v=1791358110"
+          ],
+          "category": "BALLERINA",
+          "productType": "53514_004",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-negros-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Paris Negros Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_top.jpg?v=1788952946",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_pers.jpg?v=1788952946",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_side.jpg?v=1788952944",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_back.jpg?v=1788952945",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_det.jpg?v=1788952944",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_top.jpg?v=1779439592",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_pers.jpg?v=1779439592",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_side.jpg?v=1779439591",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_back.jpg?v=1779439592",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_det.jpg?v=1779439591"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-3",
+          "handle": "bailarinas-paris-negros-piel-3",
+          "title": "Bailarinas Paris Negros Piel",
+          "color": null,
+          "sku": "53514_005_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_top.jpg?v=1788952946",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_pers.jpg?v=1788952946",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_side.jpg?v=1788952944",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_back.jpg?v=1788952945",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_det.jpg?v=1788952944"
+          ],
+          "category": "BALLERINA",
+          "productType": "53514_005",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-2",
+          "handle": "bailarinas-paris-negros-piel-2",
+          "title": "Bailarinas Paris Negros Piel",
+          "color": null,
+          "sku": "54043_001_355",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_top.jpg?v=1779439592",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_pers.jpg?v=1779439592",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_side.jpg?v=1779439591",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_back.jpg?v=1779439592",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_det.jpg?v=1779439591"
+          ],
+          "category": "BALLERINA",
+          "productType": "54043_001",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-marrones-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Paris Marrones Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_top.jpg?v=1788779749",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_pers.jpg?v=1788779748",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_side.jpg?v=1788779747",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_back.jpg?v=1788779748",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_det.jpg?v=1788779747"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-marrones-piel-2",
+          "handle": "bailarinas-paris-marrones-piel-2",
+          "title": "Bailarinas Paris Marrones Piel",
+          "color": null,
+          "sku": "53514_003_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_top.jpg?v=1788779749",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_pers.jpg?v=1788779748",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_side.jpg?v=1788779747",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_back.jpg?v=1788779748",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_det.jpg?v=1788779747"
+          ],
+          "category": "BALLERINA",
+          "productType": "53514_003",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-dorados-pieles-metalizadas",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Paris Dorados Pieles Metalizadas",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_top.jpg?v=1788360570",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_pers.jpg?v=1788360570",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_side.jpg?v=1788360568",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_back.jpg?v=1788360569",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_det.jpg?v=1788360568"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-dorados-pieles-metalizadas-1",
+          "handle": "bailarinas-paris-dorados-pieles-metalizadas-1",
+          "title": "Bailarinas Paris Dorados Pieles metalizadas",
+          "color": null,
+          "sku": "53261_003_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_top.jpg?v=1788360570",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_pers.jpg?v=1788360570",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_side.jpg?v=1788360568",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_back.jpg?v=1788360569",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_det.jpg?v=1788360568"
+          ],
+          "category": "BALLERINA",
+          "productType": "53261_003",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-nicole-beiges-piel",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Nicole Beiges Piel",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_top.jpg?v=1791358093",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_pers.jpg?v=1791358093",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_side.jpg?v=1791358093",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_back.jpg?v=1791358093",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_det.jpg?v=1791358093",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_top.jpg?v=1774938947",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_pers.jpg?v=1774938947",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_side.jpg?v=1774938947",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_det.jpg?v=1774938947"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-nicole-beiges-piel-4",
+          "handle": "bailarinas-nicole-beiges-piel-4",
+          "title": "Bailarinas Nicole Beiges Piel",
+          "color": null,
+          "sku": "50322_116_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_top.jpg?v=1791358093",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_pers.jpg?v=1791358093",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_side.jpg?v=1791358093",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_back.jpg?v=1791358093",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_116_det.jpg?v=1791358093"
+          ],
+          "category": "BALLERINA",
+          "productType": "50322_116",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-nicole-beiges-piel",
+          "handle": "bailarinas-nicole-beiges-piel",
+          "title": "Bailarinas Nicole Beiges Piel",
+          "color": null,
+          "sku": "50320_E_425",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_top.jpg?v=1774938947",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_pers.jpg?v=1774938947",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_side.jpg?v=1774938947",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_det.jpg?v=1774938947"
+          ],
+          "category": "BALLERINA",
+          "productType": "50320_E",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
     {
       "modelFamilyId": "pretty-ballerinas--bailarinas-rosario-animal-poni",
       "brand": "PRETTY BALLERINAS",
@@ -39,8 +335,8 @@
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/35663_180_side.jpg?v=1790148361",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/35663_180_back.jpg?v=1790148361",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/35663_180_det.jpg?v=1790148361",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_pers.jpg?v=1788953007",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_top.jpg?v=1788953008",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_pers.jpg?v=1788953007",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_side.jpg?v=1788953007",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_back.jpg?v=1788953007",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_det.jpg?v=1788953006"
@@ -72,8 +368,8 @@
           "color": "Bailarinas Rosario Animal print Poni",
           "sku": "53963_002_340",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_pers.jpg?v=1788953007",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_top.jpg?v=1788953008",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_pers.jpg?v=1788953007",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_side.jpg?v=1788953007",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_back.jpg?v=1788953007",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53963_002_det.jpg?v=1788953006"
@@ -166,8 +462,8 @@
       "canonicalName": "Bailarinas Alessia Beiges Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_pers.jpg?v=1790158818",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_top.jpg?v=1790158818",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_pers.jpg?v=1790158818",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_side.jpg?v=1790158818",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_back.jpg?v=1790158817",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_det.jpg?v=1790158817"
@@ -180,8 +476,8 @@
           "color": null,
           "sku": "54429_002_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_pers.jpg?v=1790158818",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_top.jpg?v=1790158818",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_pers.jpg?v=1790158818",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_side.jpg?v=1790158818",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_back.jpg?v=1790158817",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_002_det.jpg?v=1790158817"
@@ -202,8 +498,8 @@
       "canonicalName": "Bailarinas Alessia Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_pers.jpg?v=1790158765",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_top.jpg?v=1790158765",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_pers.jpg?v=1790158765",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_side.jpg?v=1790158765",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_back.jpg?v=1790158765",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_det.jpg?v=1790158765"
@@ -216,8 +512,8 @@
           "color": null,
           "sku": "54429_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_pers.jpg?v=1790158765",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_top.jpg?v=1790158765",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_pers.jpg?v=1790158765",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_side.jpg?v=1790158765",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_back.jpg?v=1790158765",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54429_001_det.jpg?v=1790158765"
@@ -238,8 +534,8 @@
       "canonicalName": "Bailarinas Yuma Morados Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_pers_6f1f3cb7-d9bc-4589-81ef-bcf946884eb7.jpg?v=1788782502",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_top_2dfab97e-b79f-4496-a2a1-fc0d76ae991f.jpg?v=1788782502",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_pers_6f1f3cb7-d9bc-4589-81ef-bcf946884eb7.jpg?v=1788782502",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_side_f98db591-fe42-452e-8b26-65c216c63632.jpg?v=1788782501",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_back.jpg?v=1788782501",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_det.jpg?v=1788782501"
@@ -252,8 +548,8 @@
           "color": null,
           "sku": "53654_004_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_pers_6f1f3cb7-d9bc-4589-81ef-bcf946884eb7.jpg?v=1788782502",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_top_2dfab97e-b79f-4496-a2a1-fc0d76ae991f.jpg?v=1788782502",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_pers_6f1f3cb7-d9bc-4589-81ef-bcf946884eb7.jpg?v=1788782502",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_side_f98db591-fe42-452e-8b26-65c216c63632.jpg?v=1788782501",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_back.jpg?v=1788782501",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_004_det.jpg?v=1788782501"
@@ -274,8 +570,8 @@
       "canonicalName": "Merceditas Yuma Blancos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_pers.jpg?v=1774943487",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_top.jpg?v=1774943487",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_pers.jpg?v=1774943487",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_side.jpg?v=1774943487",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_back.jpg?v=1774943487",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_det.jpg?v=1774943487"
@@ -288,8 +584,8 @@
           "color": null,
           "sku": "53654_002_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_pers.jpg?v=1774943487",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_top.jpg?v=1774943487",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_pers.jpg?v=1774943487",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_side.jpg?v=1774943487",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_back.jpg?v=1774943487",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_002_det.jpg?v=1774943487"
@@ -310,8 +606,8 @@
       "canonicalName": "Merceditas Yuma Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_pers.jpg?v=1774943478",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_top.jpg?v=1774943478",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_pers.jpg?v=1774943478",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_side.jpg?v=1774943478",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_back.jpg?v=1774943478",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_det.jpg?v=1774943478"
@@ -324,8 +620,8 @@
           "color": null,
           "sku": "53654_001_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_pers.jpg?v=1774943478",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_top.jpg?v=1774943478",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_pers.jpg?v=1774943478",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_side.jpg?v=1774943478",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_back.jpg?v=1774943478",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53654_001_det.jpg?v=1774943478"
@@ -346,8 +642,8 @@
       "canonicalName": "Bailarinas Nicole Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_pers.jpg?v=1779438713",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_top.jpg?v=1779438709",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_pers.jpg?v=1779438713",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_side.jpg?v=1779438708",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_back.jpg?v=1779438709",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_det.jpg?v=1779438708",
@@ -364,8 +660,8 @@
           "color": null,
           "sku": "53700_001_415",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_pers.jpg?v=1779438713",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_top.jpg?v=1779438709",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_pers.jpg?v=1779438713",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_side.jpg?v=1779438708",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_back.jpg?v=1779438709",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53700_001_det.jpg?v=1779438708"
@@ -482,9 +778,9 @@
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51604_002_side.jpg?v=1779438879",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51604_002_back.jpg?v=1779438879",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51604_002_det.jpg?v=1779438878",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_pers.jpg?v=1779439320",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00062.jpg?v=1789129108",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_top.jpg?v=1779439319",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00062.jpg?v=1789129108",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_pers.jpg?v=1779439320",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_side.jpg?v=1779439319",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_back.jpg?v=1779439318",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_det.jpg?v=1779439319"
@@ -517,9 +813,9 @@
           "color": null,
           "sku": "53889_003_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_pers.jpg?v=1779439320",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00062.jpg?v=1789129108",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_top.jpg?v=1779439319",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00062.jpg?v=1789129108",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_pers.jpg?v=1779439320",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_side.jpg?v=1779439319",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_back.jpg?v=1779439318",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53889_003_det.jpg?v=1779439319"
@@ -650,8 +946,8 @@
       "canonicalName": "Bailarinas Clementine Amarillos Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_pers.jpg?v=1779439287",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_top.jpg?v=1779439288",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_pers.jpg?v=1779439287",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_side.jpg?v=1779439287",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_back.jpg?v=1779439287",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_det.jpg?v=1779439288"
@@ -664,8 +960,8 @@
           "color": null,
           "sku": "53863_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_pers.jpg?v=1779439287",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_top.jpg?v=1779439288",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_pers.jpg?v=1779439287",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_side.jpg?v=1779439287",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_back.jpg?v=1779439287",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53863_001_det.jpg?v=1779439288"
@@ -686,8 +982,8 @@
       "canonicalName": "Mule Yvette Negros Ante",
       "category": "MULE",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_pers.jpg?v=1779439268",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_top.jpg?v=1779439266",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_pers.jpg?v=1779439268",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_side.jpg?v=1779439265",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_back.jpg?v=1779439265",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_det.jpg?v=1779439265"
@@ -700,8 +996,8 @@
           "color": "Mules Yvette Negros Ante",
           "sku": "53860_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_pers.jpg?v=1779439268",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_top.jpg?v=1779439266",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_pers.jpg?v=1779439268",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_side.jpg?v=1779439265",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_back.jpg?v=1779439265",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53860_001_det.jpg?v=1779439265"
@@ -722,13 +1018,13 @@
       "canonicalName": "Bailarinas Paris Negros Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_pers.jpg?v=1779439252",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_top.jpg?v=1779439252",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_pers.jpg?v=1779439252",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_side.jpg?v=1779439252",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_back.jpg?v=1779439252",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_det.jpg?v=1779439251",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_pers_1e9fe49c-1eda-4cb0-86d8-eda7394e258a.jpg?v=1782916211",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_top_9500cc74-2641-4d29-ac56-8527439cafea.jpg?v=1782916211",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_pers_1e9fe49c-1eda-4cb0-86d8-eda7394e258a.jpg?v=1782916211",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_side_ce6c4e9d-2a19-4bbb-9276-72549c028b55.jpg?v=1782916210",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_back_48ab1d01-40fa-4ac5-a67e-957206704dfc.jpg?v=1782916210",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_det_ee6c251d-33c8-4c6b-8914-443ad5f1421b.jpg?v=1782916210"
@@ -741,8 +1037,8 @@
           "color": null,
           "sku": "53858_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_pers.jpg?v=1779439252",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_top.jpg?v=1779439252",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_pers.jpg?v=1779439252",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_side.jpg?v=1779439252",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_back.jpg?v=1779439252",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53858_001_det.jpg?v=1779439251"
@@ -760,8 +1056,8 @@
           "color": null,
           "sku": "53735_001_395",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_pers_1e9fe49c-1eda-4cb0-86d8-eda7394e258a.jpg?v=1782916211",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_top_9500cc74-2641-4d29-ac56-8527439cafea.jpg?v=1782916211",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_pers_1e9fe49c-1eda-4cb0-86d8-eda7394e258a.jpg?v=1782916211",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_side_ce6c4e9d-2a19-4bbb-9276-72549c028b55.jpg?v=1782916210",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_back_48ab1d01-40fa-4ac5-a67e-957206704dfc.jpg?v=1782916210",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_001_det_ee6c251d-33c8-4c6b-8914-443ad5f1421b.jpg?v=1782916210"
@@ -782,8 +1078,8 @@
       "canonicalName": "Bailarinas Camille Negros Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_pers.jpg?v=1790158623",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_top.jpg?v=1790158624",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_pers.jpg?v=1790158623",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_side.jpg?v=1790158623",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_back.jpg?v=1790158623",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_det.jpg?v=1790158622"
@@ -796,8 +1092,8 @@
           "color": null,
           "sku": "54478_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_pers.jpg?v=1790158623",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_top.jpg?v=1790158624",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_pers.jpg?v=1790158623",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_side.jpg?v=1790158623",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_back.jpg?v=1790158623",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54478_001_det.jpg?v=1790158622"
@@ -943,109 +1239,13 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--salon-gretschen-azules-piel",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Salon Gretschen Azules Piel",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_pers.jpg?v=1788779852",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_top.jpg?v=1788779852",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_side.jpg?v=1788779850",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_back.jpg?v=1788779851",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_det.jpg?v=1788779850"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-azules-piel",
-          "handle": "salon-gretschen-azules-piel",
-          "title": "Salon Gretschen Azules Piel",
-          "color": null,
-          "sku": "53616_027_350",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_pers.jpg?v=1788779852",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_top.jpg?v=1788779852",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_side.jpg?v=1788779850",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_back.jpg?v=1788779851",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_det.jpg?v=1788779850"
-          ],
-          "category": "PUMP",
-          "productType": "53616_027",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pretty-ballerinas--salon-gretschen-negros-piel",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Salon Gretschen Negros Piel",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_pers.jpg?v=1788869733",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_top.jpg?v=1788869735",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_side.jpg?v=1788869732",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_back.jpg?v=1788869733",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_det.jpg?v=1788869732",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_pers.jpg?v=1779439630",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_top.jpg?v=1779439627",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_side.jpg?v=1779439626",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_back.jpg?v=1779439626",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_det.jpg?v=1779439626"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-3",
-          "handle": "salon-gretschen-negros-piel-3",
-          "title": "Salon Gretschen Negros Piel",
-          "color": null,
-          "sku": "53616_026_350",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_pers.jpg?v=1788869733",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_top.jpg?v=1788869735",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_side.jpg?v=1788869732",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_back.jpg?v=1788869733",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_det.jpg?v=1788869732"
-          ],
-          "category": "PUMP",
-          "productType": "53616_026",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-2",
-          "handle": "salon-gretschen-negros-piel-2",
-          "title": "Salon Gretschen Negros Piel",
-          "color": null,
-          "sku": "54044_001_355",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_pers.jpg?v=1779439630",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_top.jpg?v=1779439627",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_side.jpg?v=1779439626",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_back.jpg?v=1779439626",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_det.jpg?v=1779439626"
-          ],
-          "category": "PUMP",
-          "productType": "54044_001",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "handle-family"
-    },
-    {
       "modelFamilyId": "pretty-ballerinas--bailarinas-shirley-blancos-piel",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Bailarinas Shirley Blancos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_pers.jpg?v=1779439611",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_top.jpg?v=1779439610",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_pers.jpg?v=1779439611",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_side.jpg?v=1779439609",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_back.jpg?v=1779439610",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_det.jpg?v=1779439609"
@@ -1058,8 +1258,8 @@
           "color": null,
           "sku": "49431_008_340",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_pers.jpg?v=1779439611",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_top.jpg?v=1779439610",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_pers.jpg?v=1779439611",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_side.jpg?v=1779439609",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_back.jpg?v=1779439610",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49431_008_det.jpg?v=1779439609"
@@ -1080,8 +1280,8 @@
       "canonicalName": "Sandalias Lulu Negros Piel",
       "category": "SANDAL",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_pers.jpg?v=1779439639",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_top.jpg?v=1779439639",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_pers.jpg?v=1779439639",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_side.jpg?v=1779439638",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_back.jpg?v=1779439639",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_det.jpg?v=1779439638"
@@ -1094,8 +1294,8 @@
           "color": null,
           "sku": "54045_001_375",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_pers.jpg?v=1779439639",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_top.jpg?v=1779439639",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_pers.jpg?v=1779439639",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_side.jpg?v=1779439638",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_back.jpg?v=1779439639",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54045_001_det.jpg?v=1779439638"
@@ -1111,81 +1311,57 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-negros-piel",
+      "modelFamilyId": "pretty-ballerinas--salon-gretschen-negros-piel",
       "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Paris Negros Piel",
-      "category": "BALLERINA",
+      "canonicalName": "Salon Gretschen Negros Piel",
+      "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_pers.jpg?v=1779439592",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_top.jpg?v=1779439592",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_side.jpg?v=1779439591",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_back.jpg?v=1779439592",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_det.jpg?v=1779439591",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_top.jpg?v=1774942348",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_pers.jpg?v=1774942348",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_side.jpg?v=1774942348",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_back.jpg?v=1774942348",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_det.jpg?v=1774942348",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_top.jpg?v=1788952946",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_pers.jpg?v=1788952946",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_side.jpg?v=1788952944",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_back.jpg?v=1788952945",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_det.jpg?v=1788952944"
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_pers.jpg?v=1779439630",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_top.jpg?v=1779439627",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_side.jpg?v=1779439626",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_back.jpg?v=1779439626",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_det.jpg?v=1779439626",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_pers.jpg?v=1788869733",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_top.jpg?v=1788869735",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_side.jpg?v=1788869732",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_back.jpg?v=1788869733",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_det.jpg?v=1788869732"
       ],
       "variants": [
         {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-2",
-          "handle": "bailarinas-paris-negros-piel-2",
-          "title": "Bailarinas Paris Negros Piel",
+          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-2",
+          "handle": "salon-gretschen-negros-piel-2",
+          "title": "Salon Gretschen Negros Piel",
           "color": null,
-          "sku": "54043_001_355",
+          "sku": "54044_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_pers.jpg?v=1779439592",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_top.jpg?v=1779439592",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_side.jpg?v=1779439591",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_back.jpg?v=1779439592",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54043_001_det.jpg?v=1779439591"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_pers.jpg?v=1779439630",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_top.jpg?v=1779439627",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_side.jpg?v=1779439626",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_back.jpg?v=1779439626",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54044_001_det.jpg?v=1779439626"
           ],
-          "category": "BALLERINA",
-          "productType": "54043_001",
+          "category": "PUMP",
+          "productType": "54044_001",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         },
         {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-1",
-          "handle": "bailarinas-paris-negros-piel-1",
-          "title": "Bailarinas Paris Negros Piel",
+          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-3",
+          "handle": "salon-gretschen-negros-piel-3",
+          "title": "Salon Gretschen Negros Piel",
           "color": null,
-          "sku": "53261_002_350",
+          "sku": "53616_026_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_top.jpg?v=1774942348",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_pers.jpg?v=1774942348",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_side.jpg?v=1774942348",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_back.jpg?v=1774942348",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_002_det.jpg?v=1774942348"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_pers.jpg?v=1788869733",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_top.jpg?v=1788869735",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_side.jpg?v=1788869732",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_back.jpg?v=1788869733",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_026_det.jpg?v=1788869732"
           ],
-          "category": "BALLERINA",
-          "productType": "53261_002",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-3",
-          "handle": "bailarinas-paris-negros-piel-3",
-          "title": "Bailarinas Paris Negros Piel",
-          "color": null,
-          "sku": "53514_005_350",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_top.jpg?v=1788952946",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_pers.jpg?v=1788952946",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_side.jpg?v=1788952944",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_back.jpg?v=1788952945",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_005_det.jpg?v=1788952944"
-          ],
-          "category": "BALLERINA",
-          "productType": "53514_005",
+          "category": "PUMP",
+          "productType": "53616_026",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -1200,8 +1376,8 @@
       "canonicalName": "Bailarinas Tyra Blancos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_pers.jpg?v=1779438761",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_top.jpg?v=1779438764",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_pers.jpg?v=1779438761",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_side.jpg?v=1779438760",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_back.jpg?v=1779438761",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_det.jpg?v=1779438760"
@@ -1214,8 +1390,8 @@
           "color": null,
           "sku": "53678_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_pers.jpg?v=1779438761",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_top.jpg?v=1779438764",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_pers.jpg?v=1779438761",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_side.jpg?v=1779438760",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_back.jpg?v=1779438761",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53678_001_det.jpg?v=1779438760"
@@ -1236,8 +1412,8 @@
       "canonicalName": "Bailarinas Irma Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_pers.jpg?v=1779438844",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_top.jpg?v=1779438843",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_pers.jpg?v=1779438844",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_side.jpg?v=1779438842",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_back.jpg?v=1779438843",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_det.jpg?v=1779438842"
@@ -1250,8 +1426,8 @@
           "color": null,
           "sku": "53670_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_pers.jpg?v=1779438844",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_top.jpg?v=1779438843",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_pers.jpg?v=1779438844",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_side.jpg?v=1779438842",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_back.jpg?v=1779438843",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_002_det.jpg?v=1779438842"
@@ -1272,8 +1448,8 @@
       "canonicalName": "Bailarinas Irma Blancos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_pers.jpg?v=1779439121",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_top.jpg?v=1779439120",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_pers.jpg?v=1779439121",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_side.jpg?v=1779439119",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_back.jpg?v=1779439120",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_det.jpg?v=1779439119"
@@ -1286,8 +1462,8 @@
           "color": null,
           "sku": "53670_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_pers.jpg?v=1779439121",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_top.jpg?v=1779439120",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_pers.jpg?v=1779439121",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_side.jpg?v=1779439119",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_back.jpg?v=1779439120",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53670_001_det.jpg?v=1779439119"
@@ -1339,37 +1515,39 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-nicole-beiges-piel",
+      "modelFamilyId": "pretty-ballerinas--salon-gretschen-azules-piel",
       "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Nicole Beiges Piel",
-      "category": "BALLERINA",
+      "canonicalName": "Salon Gretschen Azules Piel",
+      "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_top.jpg?v=1774938947",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_pers.jpg?v=1774938947",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_side.jpg?v=1774938947",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_det.jpg?v=1774938947"
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_pers.jpg?v=1788779852",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_top.jpg?v=1788779852",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_side.jpg?v=1788779850",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_back.jpg?v=1788779851",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_det.jpg?v=1788779850"
       ],
       "variants": [
         {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-nicole-beiges-piel",
-          "handle": "bailarinas-nicole-beiges-piel",
-          "title": "Bailarinas Nicole Beiges Piel",
+          "productUrl": "https://www.prettyballerinas.com/products/salon-gretschen-azules-piel",
+          "handle": "salon-gretschen-azules-piel",
+          "title": "Salon Gretschen Azules Piel",
           "color": null,
-          "sku": "50320_E_425",
+          "sku": "53616_027_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_top.jpg?v=1774938947",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_pers.jpg?v=1774938947",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_side.jpg?v=1774938947",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50320_E_det.jpg?v=1774938947"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_pers.jpg?v=1788779852",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_top.jpg?v=1788779852",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_side.jpg?v=1788779850",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_back.jpg?v=1788779851",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53616_027_det.jpg?v=1788779850"
           ],
-          "category": "BALLERINA",
-          "productType": "50320_E",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "category": "PUMP",
+          "productType": "53616_027",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1409,49 +1587,13 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--loafer-paris-rosas-tejidos",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Loafer Paris Rosas Tejidos",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_pers.jpg?v=1779438610",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_top.jpg?v=1779438610",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_side.jpg?v=1779438609",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_back.jpg?v=1779438609",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_det.jpg?v=1779438609"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/loafers-paris-rosas-tejidos",
-          "handle": "loafers-paris-rosas-tejidos",
-          "title": "Loafers Paris Rosas Tejidos",
-          "color": "Loafers Paris Rosas Tejidos",
-          "sku": "53602_004_430",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_pers.jpg?v=1779438610",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_top.jpg?v=1779438610",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_side.jpg?v=1779438609",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_back.jpg?v=1779438609",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_det.jpg?v=1779438609"
-          ],
-          "category": "LOAFER",
-          "productType": "53602_004",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "pretty-ballerinas--bailarinas-nicole-negros-tejidos",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Bailarinas Nicole Negros Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_pers.jpg?v=1779439683",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_top.jpg?v=1779439683",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_pers.jpg?v=1779439683",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_side.jpg?v=1779439683",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_back.jpg?v=1779439683",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_det.jpg?v=1779439683"
@@ -1464,8 +1606,8 @@
           "color": null,
           "sku": "50321_025_415",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_pers.jpg?v=1779439683",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_top.jpg?v=1779439683",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_pers.jpg?v=1779439683",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_side.jpg?v=1779439683",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_back.jpg?v=1779439683",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50321_025_det.jpg?v=1779439683"
@@ -1481,13 +1623,49 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "pretty-ballerinas--loafer-paris-rosas-tejidos",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Loafer Paris Rosas Tejidos",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_top.jpg?v=1779438610",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_pers.jpg?v=1779438610",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_side.jpg?v=1779438609",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_back.jpg?v=1779438609",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_det.jpg?v=1779438609"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/loafers-paris-rosas-tejidos",
+          "handle": "loafers-paris-rosas-tejidos",
+          "title": "Loafers Paris Rosas Tejidos",
+          "color": "Loafers Paris Rosas Tejidos",
+          "sku": "53602_004_430",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_top.jpg?v=1779438610",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_pers.jpg?v=1779438610",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_side.jpg?v=1779438609",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_back.jpg?v=1779438609",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53602_004_det.jpg?v=1779438609"
+          ],
+          "category": "LOAFER",
+          "productType": "53602_004",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "pretty-ballerinas--bailarinas-paris-negros",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Bailarinas Paris Negros",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_pers.jpg?v=1779439070",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_top.jpg?v=1779439070",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_pers.jpg?v=1779439070",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_side.jpg?v=1779439069",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_back.jpg?v=1779439070",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_det.jpg?v=1779439069"
@@ -1500,8 +1678,8 @@
           "color": "Red",
           "sku": "53769_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_pers.jpg?v=1779439070",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_top.jpg?v=1779439070",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_pers.jpg?v=1779439070",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_side.jpg?v=1779439069",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_back.jpg?v=1779439070",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53769_002_det.jpg?v=1779439069"
@@ -1522,8 +1700,8 @@
       "canonicalName": "Bailarinas Georgia Negros",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_pers.jpg?v=1779438984",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_top.jpg?v=1779438984",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_pers.jpg?v=1779438984",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_side.jpg?v=1779438983",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_back.jpg?v=1779438984",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_det.jpg?v=1779438983"
@@ -1536,8 +1714,8 @@
           "color": "Red",
           "sku": "51539_012_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_pers.jpg?v=1779438984",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_top.jpg?v=1779438984",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_pers.jpg?v=1779438984",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_side.jpg?v=1779438983",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_back.jpg?v=1779438984",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51539_012_det.jpg?v=1779438983"
@@ -1558,8 +1736,8 @@
       "canonicalName": "Bailarinas Rosario Negros",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_pers.jpg?v=1779439733",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_top.jpg?v=1779439732",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_pers.jpg?v=1779439733",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_side.jpg?v=1779439731",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_back.jpg?v=1779439732",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_det.jpg?v=1779439731"
@@ -1572,8 +1750,8 @@
           "color": "Red",
           "sku": "51560_004_340",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_pers.jpg?v=1779439733",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_top.jpg?v=1779439732",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_pers.jpg?v=1779439733",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_side.jpg?v=1779439731",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_back.jpg?v=1779439732",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51560_004_det.jpg?v=1779439731"
@@ -1664,8 +1842,8 @@
       "canonicalName": "Bailarinas Carla Negros Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_pers.jpg?v=1786521014",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_top.jpg?v=1786521014",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_pers.jpg?v=1786521014",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_side.jpg?v=1786521013",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_back.jpg?v=1786521013",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_det.jpg?v=1786521013"
@@ -1678,8 +1856,8 @@
           "color": null,
           "sku": "47580_003_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_pers.jpg?v=1786521014",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_top.jpg?v=1786521014",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_pers.jpg?v=1786521014",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_side.jpg?v=1786521013",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_back.jpg?v=1786521013",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_003_det.jpg?v=1786521013"
@@ -1700,8 +1878,8 @@
       "canonicalName": "Bailarinas Carla Marrones Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_pers.jpg?v=1786521245",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_top.jpg?v=1786521243",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_pers.jpg?v=1786521245",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_side.jpg?v=1786521242",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_back.jpg?v=1786521243",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_det.jpg?v=1786521242"
@@ -1714,8 +1892,8 @@
           "color": null,
           "sku": "47580_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_pers.jpg?v=1786521245",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_top.jpg?v=1786521243",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_pers.jpg?v=1786521245",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_side.jpg?v=1786521242",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_back.jpg?v=1786521243",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_002_det.jpg?v=1786521242"
@@ -1736,8 +1914,8 @@
       "canonicalName": "Bailarinas Carla Animal Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_pers.jpg?v=1788359586",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_top.jpg?v=1788359586",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_pers.jpg?v=1788359586",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_side.jpg?v=1788359586",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_back.jpg?v=1788359585",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_det.jpg?v=1788359584"
@@ -1750,8 +1928,8 @@
           "color": "Bailarinas Carla Animal print Tejidos",
           "sku": "47580_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_pers.jpg?v=1788359586",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_top.jpg?v=1788359586",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_pers.jpg?v=1788359586",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_side.jpg?v=1788359586",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_back.jpg?v=1788359585",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/47580_001_det.jpg?v=1788359584"
@@ -1772,8 +1950,8 @@
       "canonicalName": "Bailarinas Nicole Marrones Poni",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_pers.jpg?v=1777448337",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_top.jpg?v=1777448337",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_pers.jpg?v=1777448337",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_side.jpg?v=1777448335",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_back.jpg?v=1777448336",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_det.jpg?v=1777448335"
@@ -1786,8 +1964,8 @@
           "color": null,
           "sku": "50322_084_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_pers.jpg?v=1777448337",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_top.jpg?v=1777448337",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_pers.jpg?v=1777448337",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_side.jpg?v=1777448335",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_back.jpg?v=1777448336",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_084_det.jpg?v=1777448335"
@@ -1808,8 +1986,8 @@
       "canonicalName": "Loafer Paris Marrones Poni",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_pers.jpg?v=1779439463",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_top.jpg?v=1779439462",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_pers.jpg?v=1779439463",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_side.jpg?v=1779439461",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_back.jpg?v=1779439461",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_det.jpg?v=1779439460"
@@ -1822,8 +2000,8 @@
           "color": "Loafers Paris Marrones Poni",
           "sku": "53429_004_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_pers.jpg?v=1779439463",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_top.jpg?v=1779439462",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_pers.jpg?v=1779439463",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_side.jpg?v=1779439461",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_back.jpg?v=1779439461",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53429_004_det.jpg?v=1779439460"
@@ -1899,33 +2077,33 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-kendall-grises-ante",
+      "modelFamilyId": "pretty-ballerinas--bailarinas-camille-animal-pieles-estampadas",
       "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Kendall Grises Ante",
+      "canonicalName": "Bailarinas Camille Animal Pieles Estampadas",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_pers_45440b4d-b6ef-4644-a10e-3b92b7ec0f19.jpg?v=1786520790",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_top.jpg?v=1786520790",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_side.jpg?v=1786520789",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_back.jpg?v=1786520790",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_det.jpg?v=1786520789"
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_top.jpg?v=1791358133",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_pers.jpg?v=1791358132",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_side.jpg?v=1791358132",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_back.jpg?v=1791358133",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_det.jpg?v=1791358133"
       ],
       "variants": [
         {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-kendall-grises-ante",
-          "handle": "bailarinas-kendall-grises-ante",
-          "title": "Bailarinas Kendall Grises Ante",
-          "color": null,
-          "sku": "53840_003_350",
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-camille-animal-print-pieles-estampadas",
+          "handle": "bailarinas-camille-animal-print-pieles-estampadas",
+          "title": "Bailarinas Camille Animal print Pieles estampadas",
+          "color": "Bailarinas Camille Animal print Pieles estampadas",
+          "sku": "54065_007_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_pers_45440b4d-b6ef-4644-a10e-3b92b7ec0f19.jpg?v=1786520790",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_top.jpg?v=1786520790",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_side.jpg?v=1786520789",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_back.jpg?v=1786520790",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_det.jpg?v=1786520789"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_top.jpg?v=1791358133",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_pers.jpg?v=1791358132",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_side.jpg?v=1791358132",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_back.jpg?v=1791358133",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/54065_007_det.jpg?v=1791358133"
           ],
           "category": "BALLERINA",
-          "productType": "53840_003",
+          "productType": "54065_007",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -1940,8 +2118,8 @@
       "canonicalName": "Bailarinas Odile Grises Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_pers.jpg?v=1786520904",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_top.jpg?v=1786520904",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_pers.jpg?v=1786520904",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_side.jpg?v=1786520903",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_back.jpg?v=1786520903",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_det.jpg?v=1786520903"
@@ -1954,14 +2132,52 @@
           "color": null,
           "sku": "53997_006_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_pers.jpg?v=1786520904",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_top.jpg?v=1786520904",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_pers.jpg?v=1786520904",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_side.jpg?v=1786520903",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_back.jpg?v=1786520903",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_006_det.jpg?v=1786520903"
           ],
           "category": "BALLERINA",
           "productType": "53997_006",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-odile-marrones-ante",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Odile Marrones Ante",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_top.jpg?v=1779439474",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-CampanaIA2026-See-Zapato8-6.jpg?v=1789128075",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_pers.jpg?v=1779439473",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_side.jpg?v=1779439473",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_back.jpg?v=1779439473",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_det.jpg?v=1779439472"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-odile-marrones-ante",
+          "handle": "bailarinas-odile-marrones-ante",
+          "title": "Bailarinas Odile Marrones Ante",
+          "color": null,
+          "sku": "53997_001_375",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_top.jpg?v=1779439474",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-CampanaIA2026-See-Zapato8-6.jpg?v=1789128075",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_pers.jpg?v=1779439473",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_side.jpg?v=1779439473",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_back.jpg?v=1779439473",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_det.jpg?v=1779439472"
+          ],
+          "category": "BALLERINA",
+          "productType": "53997_001",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -2007,35 +2223,33 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-odile-marrones-ante",
+      "modelFamilyId": "pretty-ballerinas--bailarinas-kendall-grises-ante",
       "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Odile Marrones Ante",
+      "canonicalName": "Bailarinas Kendall Grises Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_pers.jpg?v=1779439473",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-CampanaIA2026-See-Zapato8-6.jpg?v=1789128075",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_top.jpg?v=1779439474",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_side.jpg?v=1779439473",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_back.jpg?v=1779439473",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_det.jpg?v=1779439472"
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_pers_45440b4d-b6ef-4644-a10e-3b92b7ec0f19.jpg?v=1786520790",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_top.jpg?v=1786520790",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_side.jpg?v=1786520789",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_back.jpg?v=1786520790",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_det.jpg?v=1786520789"
       ],
       "variants": [
         {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-odile-marrones-ante",
-          "handle": "bailarinas-odile-marrones-ante",
-          "title": "Bailarinas Odile Marrones Ante",
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-kendall-grises-ante",
+          "handle": "bailarinas-kendall-grises-ante",
+          "title": "Bailarinas Kendall Grises Ante",
           "color": null,
-          "sku": "53997_001_375",
+          "sku": "53840_003_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_pers.jpg?v=1779439473",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-CampanaIA2026-See-Zapato8-6.jpg?v=1789128075",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_top.jpg?v=1779439474",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_side.jpg?v=1779439473",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_back.jpg?v=1779439473",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53997_001_det.jpg?v=1779439472"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_pers_45440b4d-b6ef-4644-a10e-3b92b7ec0f19.jpg?v=1786520790",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_top.jpg?v=1786520790",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_side.jpg?v=1786520789",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_back.jpg?v=1786520790",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53840_003_det.jpg?v=1786520789"
           ],
           "category": "BALLERINA",
-          "productType": "53997_001",
+          "productType": "53840_003",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -2050,8 +2264,8 @@
       "canonicalName": "Loafer Clementine Marrones Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_pers.jpg?v=1785244110",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_top.jpg?v=1785244111",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_pers.jpg?v=1785244110",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_side.jpg?v=1785244110",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_back.jpg?v=1785244110",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_det.jpg?v=1785244109"
@@ -2064,8 +2278,8 @@
           "color": "Loafers Clementine Marrones Ante",
           "sku": "49657_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_pers.jpg?v=1785244110",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_top.jpg?v=1785244111",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_pers.jpg?v=1785244110",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_side.jpg?v=1785244110",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_back.jpg?v=1785244110",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_001_det.jpg?v=1785244109"
@@ -2086,8 +2300,8 @@
       "canonicalName": "Loafer Clementine Grises Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_pers_16fb28f8-1084-4995-9b7b-c878c88cc8a3.jpg?v=1785152997",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_top.jpg?v=1785152997",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_pers_16fb28f8-1084-4995-9b7b-c878c88cc8a3.jpg?v=1785152997",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_side.jpg?v=1785152996",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_back.jpg?v=1785152997",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_det.jpg?v=1785152996"
@@ -2100,8 +2314,8 @@
           "color": "Loafers Clementine Grises Ante",
           "sku": "49657_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_pers_16fb28f8-1084-4995-9b7b-c878c88cc8a3.jpg?v=1785152997",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_top.jpg?v=1785152997",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_pers_16fb28f8-1084-4995-9b7b-c878c88cc8a3.jpg?v=1785152997",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_side.jpg?v=1785152996",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_back.jpg?v=1785152997",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49657_002_det.jpg?v=1785152996"
@@ -2122,8 +2336,8 @@
       "canonicalName": "Bailarinas Kristen Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_pers.jpg?v=1779439190",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_top.jpg?v=1779439191",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_pers.jpg?v=1779439190",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_side.jpg?v=1779439189",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_back.jpg?v=1779439190",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_det.jpg?v=1779439189"
@@ -2136,8 +2350,8 @@
           "color": null,
           "sku": "53649_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_pers.jpg?v=1779439190",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_top.jpg?v=1779439191",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_pers.jpg?v=1779439190",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_side.jpg?v=1779439189",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_back.jpg?v=1779439190",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_002_det.jpg?v=1779439189"
@@ -2158,8 +2372,8 @@
       "canonicalName": "Bailarinas Kristen Rojos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_pers.jpg?v=1779438727",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_top.jpg?v=1779438728",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_pers.jpg?v=1779438727",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_side.jpg?v=1779438726",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_back.jpg?v=1779438727",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_det.jpg?v=1779438726"
@@ -2172,8 +2386,8 @@
           "color": null,
           "sku": "53649_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_pers.jpg?v=1779438727",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_top.jpg?v=1779438728",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_pers.jpg?v=1779438727",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_side.jpg?v=1779438726",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_back.jpg?v=1779438727",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_001_det.jpg?v=1779438726"
@@ -2194,8 +2408,8 @@
       "canonicalName": "Bailarinas Kristen Marrones Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_pers.jpg?v=1779439490",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_top.jpg?v=1779439490",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_pers.jpg?v=1779439490",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_side.jpg?v=1779439489",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_back.jpg?v=1779439489",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_det.jpg?v=1779439488",
@@ -2213,8 +2427,8 @@
           "color": null,
           "sku": "53649_005_360",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_pers.jpg?v=1779439490",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_top.jpg?v=1779439490",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_pers.jpg?v=1779439490",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_side.jpg?v=1779439489",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_back.jpg?v=1779439489",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53649_005_det.jpg?v=1779439488"
@@ -2372,13 +2586,13 @@
       "canonicalName": "Bailarinas Camille Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_pers.jpg?v=1779439333",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_top.jpg?v=1779439333",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_pers.jpg?v=1779439333",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_side.jpg?v=1779439332",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_back.jpg?v=1779439332",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_det.jpg?v=1779439332",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_pers_4e3bbec0-3687-4a5f-b320-19aa1e5880fb.jpg?v=1779433719",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_top_47c9bcf1-8ef2-4e87-af34-c4268a465add.jpg?v=1774941607",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_pers_4e3bbec0-3687-4a5f-b320-19aa1e5880fb.jpg?v=1779433719",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_side_92fa1166-df8a-41c9-8d61-b8cfa1aa2a10.jpg?v=1774941607",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_back_50c3533b-6936-43b1-9fd5-910624ffe0be.jpg?v=1779433719",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_det_fb48ab3e-86ad-490a-b663-4ec006438596.jpg?v=1774941607"
@@ -2391,8 +2605,8 @@
           "color": null,
           "sku": "53950_001_415",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_pers.jpg?v=1779439333",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_top.jpg?v=1779439333",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_pers.jpg?v=1779439333",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_side.jpg?v=1779439332",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_back.jpg?v=1779439332",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_001_det.jpg?v=1779439332"
@@ -2410,8 +2624,8 @@
           "color": null,
           "sku": "49872_A_380",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_pers_4e3bbec0-3687-4a5f-b320-19aa1e5880fb.jpg?v=1779433719",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_top_47c9bcf1-8ef2-4e87-af34-c4268a465add.jpg?v=1774941607",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_pers_4e3bbec0-3687-4a5f-b320-19aa1e5880fb.jpg?v=1779433719",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_side_92fa1166-df8a-41c9-8d61-b8cfa1aa2a10.jpg?v=1774941607",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_back_50c3533b-6936-43b1-9fd5-910624ffe0be.jpg?v=1779433719",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_A_det_fb48ab3e-86ad-490a-b663-4ec006438596.jpg?v=1774941607"
@@ -2432,8 +2646,8 @@
       "canonicalName": "Loafer Faye Negros Piel",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_pers.jpg?v=1779439412",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_top.jpg?v=1779439412",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_pers.jpg?v=1779439412",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_side.jpg?v=1779439411",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_back.jpg?v=1779439412",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_det.jpg?v=1779439412"
@@ -2446,8 +2660,8 @@
           "color": "Loafers Faye Negros Piel",
           "sku": "53951_001_445",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_pers.jpg?v=1779439412",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_top.jpg?v=1779439412",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_pers.jpg?v=1779439412",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_side.jpg?v=1779439411",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_back.jpg?v=1779439412",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_001_det.jpg?v=1779439412"
@@ -2468,8 +2682,8 @@
       "canonicalName": "Bailarinas Camille Marrones Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_pers_383b82bc-531e-4810-925f-2b7cd1720842.jpg?v=1789111699",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_top_50ba8169-5e0e-4dbd-862a-ea139a4c5052.jpg?v=1789111700",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_pers_383b82bc-531e-4810-925f-2b7cd1720842.jpg?v=1789111699",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_side_ea063ad4-dcb6-40b7-bad1-954ba73034f8.jpg?v=1789111698",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_back_7b44699f-8850-4d34-a2a0-5cc60903b8e9.jpg?v=1789111699",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_det_04670e05-41f8-42ec-99e6-6322617797b0.jpg?v=1789111699",
@@ -2487,8 +2701,8 @@
           "color": null,
           "sku": "53950_002_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_pers_383b82bc-531e-4810-925f-2b7cd1720842.jpg?v=1789111699",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_top_50ba8169-5e0e-4dbd-862a-ea139a4c5052.jpg?v=1789111700",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_pers_383b82bc-531e-4810-925f-2b7cd1720842.jpg?v=1789111699",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_side_ea063ad4-dcb6-40b7-bad1-954ba73034f8.jpg?v=1789111698",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_back_7b44699f-8850-4d34-a2a0-5cc60903b8e9.jpg?v=1789111699",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53950_002_det_04670e05-41f8-42ec-99e6-6322617797b0.jpg?v=1789111699"
@@ -2528,8 +2742,8 @@
       "canonicalName": "Loafer Faye Marrones Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_pers.jpg?v=1788360834",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_top.jpg?v=1788360835",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_pers.jpg?v=1788360834",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_side.jpg?v=1788360833",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_back.jpg?v=1788360834",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_det.jpg?v=1788360833",
@@ -2547,8 +2761,8 @@
           "color": "Loafers Faye Marrones Ante",
           "sku": "53951_002_415",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_pers.jpg?v=1788360834",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_top.jpg?v=1788360835",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_pers.jpg?v=1788360834",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_side.jpg?v=1788360833",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_back.jpg?v=1788360834",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53951_002_det.jpg?v=1788360833"
@@ -2598,8 +2812,8 @@
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_062_side.jpg?v=1779439105",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_062_pers.jpg?v=1779439106",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/50322_062_back.jpg?v=1779439107",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_pers_1f030e4d-d510-4c9a-b3c7-6331ad92927c.jpg?v=1784612710",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_top.jpg?v=1784612710",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_pers_1f030e4d-d510-4c9a-b3c7-6331ad92927c.jpg?v=1784612710",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_side.jpg?v=1784612709",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_back.jpg?v=1784612709",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_det.jpg?v=1784612708",
@@ -2663,8 +2877,8 @@
           "color": null,
           "sku": "53167_003_420",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_pers_1f030e4d-d510-4c9a-b3c7-6331ad92927c.jpg?v=1784612710",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_top.jpg?v=1784612710",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_pers_1f030e4d-d510-4c9a-b3c7-6331ad92927c.jpg?v=1784612710",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_side.jpg?v=1784612709",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_back.jpg?v=1784612709",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_003_det.jpg?v=1784612708"
@@ -2776,8 +2990,8 @@
       "canonicalName": "Bailarinas Ella Marrones Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_pers.jpg?v=1782918895",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_top.jpg?v=1782918896",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_pers.jpg?v=1782918895",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_side.jpg?v=1782918894",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_back.jpg?v=1782918895",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_det.jpg?v=1782918894"
@@ -2790,8 +3004,8 @@
           "color": null,
           "sku": "51074_021_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_pers.jpg?v=1782918895",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_top.jpg?v=1782918896",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_pers.jpg?v=1782918895",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_side.jpg?v=1782918894",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_back.jpg?v=1782918895",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_021_det.jpg?v=1782918894"
@@ -2812,8 +3026,8 @@
       "canonicalName": "Bailarinas Ella Grises Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_pers.jpg?v=1777447791",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_top.jpg?v=1777447790",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_pers.jpg?v=1777447791",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_side.jpg?v=1777447789",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_back.jpg?v=1777447789",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_det.jpg?v=1777447788"
@@ -2826,8 +3040,8 @@
           "color": null,
           "sku": "51074_019_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_pers.jpg?v=1777447791",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_top.jpg?v=1777447790",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_pers.jpg?v=1777447791",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_side.jpg?v=1777447789",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_back.jpg?v=1777447789",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51074_019_det.jpg?v=1777447788"
@@ -2958,9 +3172,9 @@
       "canonicalName": "Loafer Paris Azules Tejidos",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_pers.jpg?v=1779439349",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00067.jpg?v=1789129456",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_top.jpg?v=1779439350",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00067.jpg?v=1789129456",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_pers.jpg?v=1779439349",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_side.jpg?v=1779439348",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_back.jpg?v=1779439349",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_det.jpg?v=1779439348"
@@ -2973,9 +3187,9 @@
           "color": "Loafers Paris Azules Tejidos",
           "sku": "53682_003_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_pers.jpg?v=1779439349",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00067.jpg?v=1789129456",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_top.jpg?v=1779439350",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00067.jpg?v=1789129456",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_pers.jpg?v=1779439349",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_side.jpg?v=1779439348",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_back.jpg?v=1779439349",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53682_003_det.jpg?v=1779439348"
@@ -2996,9 +3210,9 @@
       "canonicalName": "Bailarinas Rosario Azules Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_pers.jpg?v=1779438596",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00050.jpg?v=1789129308",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_top.jpg?v=1779438595",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00050.jpg?v=1789129308",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_pers.jpg?v=1779438596",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_side.jpg?v=1779438594",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_back.jpg?v=1779438595",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_det.jpg?v=1779438594"
@@ -3011,9 +3225,9 @@
           "color": null,
           "sku": "37667_018_340",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_pers.jpg?v=1779438596",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00050.jpg?v=1789129308",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_top.jpg?v=1779438595",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00050.jpg?v=1789129308",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_pers.jpg?v=1779438596",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_side.jpg?v=1779438594",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_back.jpg?v=1779438595",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/37667_018_det.jpg?v=1779438594"
@@ -3034,8 +3248,8 @@
       "canonicalName": "Bailarinas Nicole Azules Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_pers_4359e48b-c0a0-4a86-b423-2a88c5c1e29a.jpg?v=1784611527",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_top.jpg?v=1784611527",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_pers_4359e48b-c0a0-4a86-b423-2a88c5c1e29a.jpg?v=1784611527",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_side.jpg?v=1784611526",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_back.jpg?v=1784611527",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_det.jpg?v=1784611526",
@@ -3052,8 +3266,8 @@
           "color": null,
           "sku": "53167_002_420",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_pers_4359e48b-c0a0-4a86-b423-2a88c5c1e29a.jpg?v=1784611527",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_top.jpg?v=1784611527",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_pers_4359e48b-c0a0-4a86-b423-2a88c5c1e29a.jpg?v=1784611527",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_side.jpg?v=1784611526",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_back.jpg?v=1784611527",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53167_002_det.jpg?v=1784611526"
@@ -3092,8 +3306,8 @@
       "canonicalName": "Loafer Paris Rojos Tejidos",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_pers.jpg?v=1782920566",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_top.jpg?v=1782920565",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_pers.jpg?v=1782920566",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_side.jpg?v=1782920565",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_back.jpg?v=1782920565",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_det.jpg?v=1782920565"
@@ -3106,8 +3320,8 @@
           "color": "Loafers Paris Rojos Tejidos",
           "sku": "53879_003_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_pers.jpg?v=1782920566",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_top.jpg?v=1782920565",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_pers.jpg?v=1782920566",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_side.jpg?v=1782920565",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_back.jpg?v=1782920565",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53879_003_det.jpg?v=1782920565"
@@ -3128,8 +3342,8 @@
       "canonicalName": "Loafer Paris Marrones Piel",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_pers.jpg?v=1779439302",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_top.jpg?v=1779439302",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_pers.jpg?v=1779439302",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_side.jpg?v=1779439301",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_back.jpg?v=1779439302",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_det.jpg?v=1779439301"
@@ -3142,8 +3356,8 @@
           "color": "Loafers Paris Marrones Piel",
           "sku": "53878_002_405",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_pers.jpg?v=1779439302",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_top.jpg?v=1779439302",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_pers.jpg?v=1779439302",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_side.jpg?v=1779439301",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_back.jpg?v=1779439302",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53878_002_det.jpg?v=1779439301"
@@ -3164,8 +3378,8 @@
       "canonicalName": "Bailarinas Nicole Rosas Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_pers.jpg?v=1779438969",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_top.jpg?v=1779438969",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_pers.jpg?v=1779438969",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_side.jpg?v=1779438968",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_back.jpg?v=1779438969",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_det.jpg?v=1779438968"
@@ -3178,8 +3392,8 @@
           "color": null,
           "sku": "52566_010_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_pers.jpg?v=1779438969",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_top.jpg?v=1779438969",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_pers.jpg?v=1779438969",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_side.jpg?v=1779438968",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_back.jpg?v=1779438969",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_010_det.jpg?v=1779438968"
@@ -3200,9 +3414,9 @@
       "canonicalName": "Bailarinas Nicole Verdes Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_pers.jpg?v=1779438952",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00011.png?v=1789135796",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_top.jpg?v=1779438951",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00011.png?v=1789135796",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_pers.jpg?v=1779438952",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_side.jpg?v=1779438951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_back.jpg?v=1779438951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_det.jpg?v=1779438951"
@@ -3215,9 +3429,9 @@
           "color": null,
           "sku": "52566_009_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_pers.jpg?v=1779438952",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00011.png?v=1789135796",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_top.jpg?v=1779438951",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00011.png?v=1789135796",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_pers.jpg?v=1779438952",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_side.jpg?v=1779438951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_back.jpg?v=1779438951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52566_009_det.jpg?v=1779438951"
@@ -3566,13 +3780,13 @@
       "canonicalName": "Loafer Clementine Negros Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_pers.jpg?v=1779439234",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_top.jpg?v=1779439234",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_pers.jpg?v=1779439234",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_side.jpg?v=1779439234",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_back.jpg?v=1779439234",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_det.jpg?v=1779439233",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_pers.jpg?v=1779438746",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_top.jpg?v=1779438745",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_pers.jpg?v=1779438746",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_side.jpg?v=1779438745",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_back.jpg?v=1779438745",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_det.jpg?v=1779438745"
@@ -3585,8 +3799,8 @@
           "color": "Loafers Clementine Negros Ante",
           "sku": "53852_001_435",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_pers.jpg?v=1779439234",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_top.jpg?v=1779439234",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_pers.jpg?v=1779439234",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_side.jpg?v=1779439234",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_back.jpg?v=1779439234",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53852_001_det.jpg?v=1779439233"
@@ -3604,8 +3818,8 @@
           "color": "Loafers Clementine Negros Ante",
           "sku": "53674_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_pers.jpg?v=1779438746",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_top.jpg?v=1779438745",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_pers.jpg?v=1779438746",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_side.jpg?v=1779438745",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_back.jpg?v=1779438745",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53674_001_det.jpg?v=1779438745"
@@ -3801,6 +4015,42 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "pretty-ballerinas--botines-pat-azules-ante",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Botines Pat Azules Ante",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_pers.jpg?v=1791461041",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_top.jpg?v=1791461041",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_side.jpg?v=1791461040",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_back.jpg?v=1791461040",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_det.jpg?v=1791461040"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/botines-pat-azules-ante-1",
+          "handle": "botines-pat-azules-ante-1",
+          "title": "Botines Pat Azules Ante",
+          "color": null,
+          "sku": "53834_005_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_pers.jpg?v=1791461041",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_top.jpg?v=1791461041",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_side.jpg?v=1791461040",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_back.jpg?v=1791461040",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53834_005_det.jpg?v=1791461040"
+          ],
+          "category": "BOOT",
+          "productType": "53834_005",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "pretty-ballerinas--loafer-faye-azules-ante",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Loafer Faye Azules Ante",
@@ -3878,8 +4128,8 @@
       "canonicalName": "Bailarinas Rosario Extra Marrones Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_pers.jpg?v=1788359796",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_top.jpg?v=1788359796",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_pers.jpg?v=1788359796",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_side.jpg?v=1788359794",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_back.jpg?v=1788359796",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_det.jpg?v=1788359795"
@@ -3892,8 +4142,8 @@
           "color": "Bailarinas Rosario extra soft Marrones Ante",
           "sku": "45554_008_360",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_pers.jpg?v=1788359796",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_top.jpg?v=1788359796",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_pers.jpg?v=1788359796",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_side.jpg?v=1788359794",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_back.jpg?v=1788359796",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_008_det.jpg?v=1788359795"
@@ -3914,8 +4164,8 @@
       "canonicalName": "Bailarinas Rosario Extra Azules Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_pers.jpg?v=1788775678",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_top.jpg?v=1788775677",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_pers.jpg?v=1788775678",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_side.jpg?v=1788775676",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_back.jpg?v=1788775677",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_det.jpg?v=1788775676"
@@ -3928,8 +4178,8 @@
           "color": "Bailarinas Rosario extra soft Azules Ante",
           "sku": "45554_009_360",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_pers.jpg?v=1788775678",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_top.jpg?v=1788775677",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_pers.jpg?v=1788775678",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_side.jpg?v=1788775676",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_back.jpg?v=1788775677",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_009_det.jpg?v=1788775676"
@@ -3950,8 +4200,8 @@
       "canonicalName": "Bailarinas Rosario Extra Negros Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_pers.jpg?v=1779439366",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_top.jpg?v=1779439368",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_pers.jpg?v=1779439366",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_side.jpg?v=1779439367",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_back.jpg?v=1779439367",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_det.jpg?v=1779439366"
@@ -3964,8 +4214,8 @@
           "color": "Bailarinas Rosario extra soft Negros Ante",
           "sku": "45554_006_360",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_pers.jpg?v=1779439366",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_top.jpg?v=1779439368",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_pers.jpg?v=1779439366",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_side.jpg?v=1779439367",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_back.jpg?v=1779439367",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/45554_006_det.jpg?v=1779439366"
@@ -3986,9 +4236,9 @@
       "canonicalName": "Loafer Faye Marrones Tejidos",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_pers.jpg?v=1779439021",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00044B_6fa4ab24-e2d6-475c-9200-6747a5af55b1.jpg?v=1789136391",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_top.jpg?v=1779439021",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00044B_6fa4ab24-e2d6-475c-9200-6747a5af55b1.jpg?v=1789136391",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_pers.jpg?v=1779439021",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_side.jpg?v=1779439020",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_back.jpg?v=1779439021",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_det.jpg?v=1779439021"
@@ -4001,9 +4251,9 @@
           "color": "Loafers Faye Marrones Tejidos",
           "sku": "53746_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_pers.jpg?v=1779439021",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00044B_6fa4ab24-e2d6-475c-9200-6747a5af55b1.jpg?v=1789136391",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_top.jpg?v=1779439021",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00044B_6fa4ab24-e2d6-475c-9200-6747a5af55b1.jpg?v=1789136391",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_pers.jpg?v=1779439021",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_side.jpg?v=1779439020",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_back.jpg?v=1779439021",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53746_002_det.jpg?v=1779439021"
@@ -4024,9 +4274,9 @@
       "canonicalName": "Bailarinas Nicole Marrones Tejidos",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_pers.jpg?v=1779439002",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00038.png?v=1789136576",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_top.jpg?v=1779439004",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00038.png?v=1789136576",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_pers.jpg?v=1779439002",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_side.jpg?v=1779439001",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_back.jpg?v=1779439002",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_det.jpg?v=1779439001"
@@ -4039,9 +4289,9 @@
           "color": null,
           "sku": "53744_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_pers.jpg?v=1779439002",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00038.png?v=1789136576",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_top.jpg?v=1779439004",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/Touch_00038.png?v=1789136576",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_pers.jpg?v=1779439002",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_side.jpg?v=1779439001",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_back.jpg?v=1779439002",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53744_002_det.jpg?v=1779439001"
@@ -4482,8 +4732,8 @@
       "canonicalName": "Merceditas Lea Beiges Poni",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_pers.jpg?v=1774943930",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_top.jpg?v=1774943930",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_pers.jpg?v=1774943930",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_side.jpg?v=1774943930",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_det.jpg?v=1774943930"
       ],
@@ -4495,8 +4745,8 @@
           "color": null,
           "sku": "51579_B_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_pers.jpg?v=1774943930",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_top.jpg?v=1774943930",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_pers.jpg?v=1774943930",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_side.jpg?v=1774943930",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/51579_B_det.jpg?v=1774943930"
           ],
@@ -4516,8 +4766,8 @@
       "canonicalName": "Merceditas Lea Negros Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_pers_40076f57-00d2-4265-b78f-cb527df2b7b6.jpg?v=1774944131",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_top_e6816046-d49d-4a8e-bead-081914dfbdd6.jpg?v=1774944131",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_pers_40076f57-00d2-4265-b78f-cb527df2b7b6.jpg?v=1774944131",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_side_840ccba5-906e-463d-a241-54509816c947.jpg?v=1774944131"
       ],
       "variants": [
@@ -4528,8 +4778,8 @@
           "color": null,
           "sku": "52537_001_370",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_pers_40076f57-00d2-4265-b78f-cb527df2b7b6.jpg?v=1774944131",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_top_e6816046-d49d-4a8e-bead-081914dfbdd6.jpg?v=1774944131",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_pers_40076f57-00d2-4265-b78f-cb527df2b7b6.jpg?v=1774944131",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_001_side_840ccba5-906e-463d-a241-54509816c947.jpg?v=1774944131"
           ],
           "category": "BALLERINA",
@@ -4548,12 +4798,12 @@
       "canonicalName": "Merceditas Lea Marrones Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_pers.jpg?v=1774942723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_top.jpg?v=1774942723",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_pers.jpg?v=1774942723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_side.jpg?v=1774942723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_det.jpg?v=1774942723",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_pers_2f7ae8b9-199d-4d1b-8c19-4c233fd95ab0.jpg?v=1774944357",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_top_a8a59a26-1407-48d2-8354-99664ec07bac.jpg?v=1774944357",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_pers_2f7ae8b9-199d-4d1b-8c19-4c233fd95ab0.jpg?v=1774944357",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_side_f8b3f5a3-2cd6-421b-a01c-7f81c40b6938.jpg?v=1774944357",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_det_5c56b9b5-79ce-4f1c-8fa8-21f9a916a0a1.jpg?v=1774944357"
       ],
@@ -4565,8 +4815,8 @@
           "color": null,
           "sku": "52537_A_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_pers.jpg?v=1774942723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_top.jpg?v=1774942723",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_pers.jpg?v=1774942723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_side.jpg?v=1774942723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_A_det.jpg?v=1774942723"
           ],
@@ -4583,8 +4833,8 @@
           "color": null,
           "sku": "52537_003_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_pers_2f7ae8b9-199d-4d1b-8c19-4c233fd95ab0.jpg?v=1774944357",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_top_a8a59a26-1407-48d2-8354-99664ec07bac.jpg?v=1774944357",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_pers_2f7ae8b9-199d-4d1b-8c19-4c233fd95ab0.jpg?v=1774944357",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_side_f8b3f5a3-2cd6-421b-a01c-7f81c40b6938.jpg?v=1774944357",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/52537_003_det_5c56b9b5-79ce-4f1c-8fa8-21f9a916a0a1.jpg?v=1774944357"
           ],
@@ -4604,8 +4854,8 @@
       "canonicalName": "Bailarinas Camille Verdes Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_pers_23d3f8c2-482f-4c42-867f-867577087b53.jpg?v=1774941333",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_top_2b392d6c-8f37-4541-9b1d-dcbf2870316b.jpg?v=1774941333",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_pers_23d3f8c2-482f-4c42-867f-867577087b53.jpg?v=1774941333",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_side_b670bfe7-b733-48c4-9efd-6ffe9c62a40f.jpg?v=1774941333",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_det_e58e8445-39f7-4798-ae52-19588fcc7660.jpg?v=1774941333"
       ],
@@ -4617,8 +4867,8 @@
           "color": null,
           "sku": "49872_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_pers_23d3f8c2-482f-4c42-867f-867577087b53.jpg?v=1774941333",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_top_2b392d6c-8f37-4541-9b1d-dcbf2870316b.jpg?v=1774941333",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_pers_23d3f8c2-482f-4c42-867f-867577087b53.jpg?v=1774941333",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_side_b670bfe7-b733-48c4-9efd-6ffe9c62a40f.jpg?v=1774941333",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_002_det_e58e8445-39f7-4798-ae52-19588fcc7660.jpg?v=1774941333"
           ],
@@ -4638,8 +4888,8 @@
       "canonicalName": "Bailarinas Camille Rojos Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_pers_23d0a52d-64ac-4fde-bc14-1de07ce96137.jpg?v=1774940998",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_top_3aaed8ba-58fe-4c58-95c1-287c48d79716.jpg?v=1774940998",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_pers_23d0a52d-64ac-4fde-bc14-1de07ce96137.jpg?v=1774940998",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_side_bb8920ed-7e1d-432a-b22f-f4d260532ec5.jpg?v=1774940998",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_det_8e1bcf82-043c-4489-b673-4809de94e896.jpg?v=1774940998"
       ],
@@ -4651,8 +4901,8 @@
           "color": null,
           "sku": "49872_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_pers_23d0a52d-64ac-4fde-bc14-1de07ce96137.jpg?v=1774940998",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_top_3aaed8ba-58fe-4c58-95c1-287c48d79716.jpg?v=1774940998",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_pers_23d0a52d-64ac-4fde-bc14-1de07ce96137.jpg?v=1774940998",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_side_bb8920ed-7e1d-432a-b22f-f4d260532ec5.jpg?v=1774940998",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/49872_001_det_8e1bcf82-043c-4489-b673-4809de94e896.jpg?v=1774940998"
           ],
@@ -4672,8 +4922,8 @@
       "canonicalName": "Bailarinas Paris Rojos Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_pers.jpg?v=1785482682",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_top.jpg?v=1785482682",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_pers.jpg?v=1785482682",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_side.jpg?v=1785482681",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_back.jpg?v=1785482681",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_det.jpg?v=1785482681"
@@ -4686,8 +4936,8 @@
           "color": null,
           "sku": "53735_005_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_pers.jpg?v=1785482682",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_top.jpg?v=1785482682",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_pers.jpg?v=1785482682",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_side.jpg?v=1785482681",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_back.jpg?v=1785482681",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_005_det.jpg?v=1785482681"
@@ -4708,8 +4958,8 @@
       "canonicalName": "Bailarinas Paris Azules Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_pers.jpg?v=1785482662",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_top.jpg?v=1785482663",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_pers.jpg?v=1785482662",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_side.jpg?v=1785482662",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_back.jpg?v=1785482662",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_det.jpg?v=1785482662"
@@ -4722,8 +4972,8 @@
           "color": null,
           "sku": "53735_004_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_pers.jpg?v=1785482662",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_top.jpg?v=1785482663",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_pers.jpg?v=1785482662",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_side.jpg?v=1785482662",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_back.jpg?v=1785482662",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_004_det.jpg?v=1785482662"
@@ -4744,8 +4994,8 @@
       "canonicalName": "Bailarinas Paris Marrones Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_pers.jpg?v=1779438828",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_top.jpg?v=1779438829",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_pers.jpg?v=1779438828",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_side.jpg?v=1779438827",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_back.jpg?v=1779438828",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_det.jpg?v=1779438827"
@@ -4758,8 +5008,8 @@
           "color": null,
           "sku": "53735_002_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_pers.jpg?v=1779438828",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_top.jpg?v=1779438829",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_pers.jpg?v=1779438828",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_side.jpg?v=1779438827",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_back.jpg?v=1779438828",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53735_002_det.jpg?v=1779438827"
@@ -4775,14 +5025,50 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "pretty-ballerinas--bailarinas-georgia-rojos-ante",
+      "brand": "PRETTY BALLERINAS",
+      "canonicalName": "Bailarinas Georgia Rojos Ante",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_top.jpg?v=1791358210",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_pers.jpg?v=1791358210",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_side.jpg?v=1791358210",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_back.jpg?v=1791358210",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_det.jpg?v=1791358210"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-georgia-rojos-ante",
+          "handle": "bailarinas-georgia-rojos-ante",
+          "title": "Bailarinas Georgia Rojos Ante",
+          "color": null,
+          "sku": "53727_004_350",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_top.jpg?v=1791358210",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_pers.jpg?v=1791358210",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_side.jpg?v=1791358210",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_back.jpg?v=1791358210",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_004_det.jpg?v=1791358210"
+          ],
+          "category": "BALLERINA",
+          "productType": "53727_004",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "pretty-ballerinas--bailarinas-georgia-marrones-ante",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Bailarinas Georgia Marrones Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_pers.jpg?v=1779438777",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato4-7.jpg?v=1789128555",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_top.jpg?v=1779438777",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato4-7.jpg?v=1789128555",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_pers.jpg?v=1779438777",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_side.jpg?v=1779438776",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_back.jpg?v=1779438776",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_det.jpg?v=1779438776"
@@ -4795,9 +5081,9 @@
           "color": null,
           "sku": "53727_001_355",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_pers.jpg?v=1779438777",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato4-7.jpg?v=1789128555",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_top.jpg?v=1779438777",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato4-7.jpg?v=1789128555",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_pers.jpg?v=1779438777",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_side.jpg?v=1779438776",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_back.jpg?v=1779438776",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_001_det.jpg?v=1779438776"
@@ -4818,8 +5104,8 @@
       "canonicalName": "Bailarinas Georgia Negros Ante",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_pers.jpg?v=1779438793",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_top.jpg?v=1779438793",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_pers.jpg?v=1779438793",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_side.jpg?v=1779438791",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_back.jpg?v=1779438791",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_det.jpg?v=1779438791"
@@ -4832,8 +5118,8 @@
           "color": null,
           "sku": "53727_002_360",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_pers.jpg?v=1779438793",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_top.jpg?v=1779438793",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_pers.jpg?v=1779438793",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_side.jpg?v=1779438791",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_back.jpg?v=1779438791",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53727_002_det.jpg?v=1779438791"
@@ -4854,14 +5140,14 @@
       "canonicalName": "Mocasines Josephine Azules Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_pers.jpg?v=1782920723",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato6-2.jpg?v=1789128167",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_top.jpg?v=1782920724",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato6-2.jpg?v=1789128167",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_pers.jpg?v=1782920723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_side.jpg?v=1782920723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_back.jpg?v=1782920723",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_det.jpg?v=1782920723",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_pers.jpg?v=1774942129",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_top.jpg?v=1774942129",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_pers.jpg?v=1774942129",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_side.jpg?v=1774942129",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_back.jpg?v=1774942129",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_det.jpg?v=1774942129"
@@ -4874,9 +5160,9 @@
           "color": null,
           "sku": "53886_003_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_pers.jpg?v=1782920723",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato6-2.jpg?v=1789128167",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_top.jpg?v=1782920724",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato6-2.jpg?v=1789128167",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_pers.jpg?v=1782920723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_side.jpg?v=1782920723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_back.jpg?v=1782920723",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_003_det.jpg?v=1782920723"
@@ -4894,8 +5180,8 @@
           "color": null,
           "sku": "53254_010_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_pers.jpg?v=1774942129",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_top.jpg?v=1774942129",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_pers.jpg?v=1774942129",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_side.jpg?v=1774942129",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_back.jpg?v=1774942129",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_010_det.jpg?v=1774942129"
@@ -4916,9 +5202,9 @@
       "canonicalName": "Mocasines Josephine Marrones Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_pers.jpg?v=1779438629",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato5-3.jpg?v=1789128342",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_top.jpg?v=1779438631",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato5-3.jpg?v=1789128342",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_pers.jpg?v=1779438629",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_side.jpg?v=1779438628",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_back.jpg?v=1779438629",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_det.jpg?v=1779438628"
@@ -4931,9 +5217,9 @@
           "color": null,
           "sku": "53886_001_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_pers.jpg?v=1779438629",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato5-3.jpg?v=1789128342",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_top.jpg?v=1779438631",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/PrettyBallerinas-Campana2026-See-Zapato5-3.jpg?v=1789128342",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_pers.jpg?v=1779438629",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_side.jpg?v=1779438628",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_back.jpg?v=1779438629",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53886_001_det.jpg?v=1779438628"
@@ -5058,8 +5344,8 @@
       "canonicalName": "Bailarinas Rosario Dorados Pieles Metalizadas",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_pers.jpg?v=1774940469",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_top.jpg?v=1774940469",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_pers.jpg?v=1774940469",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_side.jpg?v=1774940469",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_back.jpg?v=1774940469",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_det.jpg?v=1774940469"
@@ -5072,8 +5358,8 @@
           "color": null,
           "sku": "53425_001_390",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_pers.jpg?v=1774940469",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_top.jpg?v=1774940469",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_pers.jpg?v=1774940469",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_side.jpg?v=1774940469",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_back.jpg?v=1774940469",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_001_det.jpg?v=1774940469"
@@ -5094,8 +5380,8 @@
       "canonicalName": "Bailarinas Rosario Animal Pieles Estampadas",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_pers_9b4def51-65ec-4b55-8168-0bb9c78204c4.jpg?v=1774943376",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_top_7ddf8f2e-6dfb-4b9c-bf03-cdb38fbe23d2.jpg?v=1774943376",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_pers_9b4def51-65ec-4b55-8168-0bb9c78204c4.jpg?v=1774943376",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_side_cf3b985a-d54f-439f-866e-02f869a409f2.jpg?v=1774943376",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_back_e016186b-4551-4e07-b3e4-063812586113.jpg?v=1774943376",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_det_76905df3-08c3-4c7b-b940-e3ae00973f05.jpg?v=1774943376"
@@ -5108,8 +5394,8 @@
           "color": "Bailarinas Rosario Animal print Pieles estampadas",
           "sku": "53376_001_370",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_pers_9b4def51-65ec-4b55-8168-0bb9c78204c4.jpg?v=1774943376",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_top_7ddf8f2e-6dfb-4b9c-bf03-cdb38fbe23d2.jpg?v=1774943376",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_pers_9b4def51-65ec-4b55-8168-0bb9c78204c4.jpg?v=1774943376",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_side_cf3b985a-d54f-439f-866e-02f869a409f2.jpg?v=1774943376",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_back_e016186b-4551-4e07-b3e4-063812586113.jpg?v=1774943376",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53376_001_det_76905df3-08c3-4c7b-b940-e3ae00973f05.jpg?v=1774943376"
@@ -5166,9 +5452,9 @@
       "canonicalName": "Bailarinas Rosario Negros Piel",
       "category": "BALLERINA",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_top_6927376c-83d6-4169-a710-7026d7ba5778.jpg?v=1786522432",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_pers_75763bbf-9ee4-49e0-9aaa-425d43c5b3be.jpg?v=1786522432",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_side_6eab88d4-0306-47ff-9e43-d4db105bf0fb.jpg?v=1786522431",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_top_6927376c-83d6-4169-a710-7026d7ba5778.jpg?v=1786522432"
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_side_6eab88d4-0306-47ff-9e43-d4db105bf0fb.jpg?v=1786522431"
       ],
       "variants": [
         {
@@ -5178,9 +5464,9 @@
           "color": null,
           "sku": "53425_002_340",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_top_6927376c-83d6-4169-a710-7026d7ba5778.jpg?v=1786522432",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_pers_75763bbf-9ee4-49e0-9aaa-425d43c5b3be.jpg?v=1786522432",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_side_6eab88d4-0306-47ff-9e43-d4db105bf0fb.jpg?v=1786522431",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_top_6927376c-83d6-4169-a710-7026d7ba5778.jpg?v=1786522432"
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53425_002_side_6eab88d4-0306-47ff-9e43-d4db105bf0fb.jpg?v=1786522431"
           ],
           "category": "BALLERINA",
           "productType": "53425_002",
@@ -6156,8 +6442,8 @@
       "canonicalName": "Mocasines Josephine Beiges Ante",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_pers.jpg?v=1774945951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_top.jpg?v=1774945951",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_pers.jpg?v=1774945951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_side.jpg?v=1774945951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_back.jpg?v=1774945951",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_det.jpg?v=1774945951"
@@ -6170,8 +6456,8 @@
           "color": null,
           "sku": "53254_008_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_pers.jpg?v=1774945951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_top.jpg?v=1774945951",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_pers.jpg?v=1774945951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_side.jpg?v=1774945951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_back.jpg?v=1774945951",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53254_008_det.jpg?v=1774945951"
@@ -6866,8 +7152,8 @@
       "canonicalName": "Bailarinas Nicole Marrones Piel",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_pers.jpg?v=1772559161",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_top.jpg?v=1772559161",
+        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_pers.jpg?v=1772559161",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_side.jpg?v=1772559161",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_back.jpg?v=1772559161",
         "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_det.jpg?v=1772559161"
@@ -6880,8 +7166,8 @@
           "color": null,
           "sku": "53373_005_350",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_pers.jpg?v=1772559161",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_top.jpg?v=1772559161",
+            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_pers.jpg?v=1772559161",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_side.jpg?v=1772559161",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_back.jpg?v=1772559161",
             "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53373_005_det.jpg?v=1772559161"
@@ -6894,42 +7180,6 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-dorados-pieles-metalizadas",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Paris Dorados Pieles Metalizadas",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_top.jpg?v=1788360570",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_pers.jpg?v=1788360570",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_side.jpg?v=1788360568",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_back.jpg?v=1788360569",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_det.jpg?v=1788360568"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-dorados-pieles-metalizadas-1",
-          "handle": "bailarinas-paris-dorados-pieles-metalizadas-1",
-          "title": "Bailarinas Paris Dorados Pieles metalizadas",
-          "color": null,
-          "sku": "53261_003_350",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_top.jpg?v=1788360570",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_pers.jpg?v=1788360570",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_side.jpg?v=1788360568",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_back.jpg?v=1788360569",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53261_003_det.jpg?v=1788360568"
-          ],
-          "category": "BALLERINA",
-          "productType": "53261_003",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -7005,96 +7255,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pretty-ballerinas--bolsos-bags-negros-piel",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bolsos Bags Negros Piel",
-      "category": "OTHER_FOOTWEAR",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_side_cafba5d7-b295-4456-8df4-eaf371a267d6.jpg?v=1788941879",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_pers.jpg?v=1788941879",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_lateral.jpg?v=1788941878",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_back.jpg?v=1788941878",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_top.jpg?v=1788941878",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_det.jpg?v=1788941879",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_side_a4c09e00-ae20-4fff-a05b-3efa6a8a5f69.jpg?v=1789038641",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_pers.jpg?v=1788948778",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_top_ddf7ffc5-817c-4688-a550-4b42f9f56bf0.jpg?v=1789038641",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_lateral.jpg?v=1788948779",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_back.jpg?v=1788948778",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_det.jpg?v=1788948778",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_side_aab496bb-64e3-4a39-bc83-6e83f5940182.jpg?v=1788420257",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_pers_fd7ae5d7-2fb9-4b75-855b-b15d5fcaa5ea.jpg?v=1788498630",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_lateral.jpg?v=1788498525",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_back.jpg?v=1788440392",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_top.jpg?v=1788505237",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_det.jpg?v=1788440392"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-16",
-          "handle": "bolsos-bags-negros-piel-16",
-          "title": "Bolsos Bags Negros Piel",
-          "color": null,
-          "sku": "69201_001_U",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_side_cafba5d7-b295-4456-8df4-eaf371a267d6.jpg?v=1788941879",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_pers.jpg?v=1788941879",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_lateral.jpg?v=1788941878",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_back.jpg?v=1788941878",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_top.jpg?v=1788941878",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69201_001_det.jpg?v=1788941879"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "69201_001",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-17",
-          "handle": "bolsos-bags-negros-piel-17",
-          "title": "Bolsos Bags Negros Piel",
-          "color": null,
-          "sku": "69202_001_U",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_side_a4c09e00-ae20-4fff-a05b-3efa6a8a5f69.jpg?v=1789038641",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_pers.jpg?v=1788948778",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_top_ddf7ffc5-817c-4688-a550-4b42f9f56bf0.jpg?v=1789038641",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_lateral.jpg?v=1788948779",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_back.jpg?v=1788948778",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69202_001_det.jpg?v=1788948778"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "69202_001",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-14",
-          "handle": "bolsos-bags-negros-piel-14",
-          "title": "Bolsos Bags Negros Piel",
-          "color": null,
-          "sku": "69231_004_U",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_side_aab496bb-64e3-4a39-bc83-6e83f5940182.jpg?v=1788420257",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_pers_fd7ae5d7-2fb9-4b75-855b-b15d5fcaa5ea.jpg?v=1788498630",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_lateral.jpg?v=1788498525",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_back.jpg?v=1788440392",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_top.jpg?v=1788505237",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/69231_004_det.jpg?v=1788440392"
-          ],
-          "category": "OTHER_FOOTWEAR",
-          "productType": "69231_004",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
       "modelFamilyId": "pretty-ballerinas--loafer-paris-cuero-ante",
       "brand": "PRETTY BALLERINAS",
       "canonicalName": "Loafer Paris Cuero Ante",
@@ -7124,42 +7284,6 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-paris-marrones-piel",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Paris Marrones Piel",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_top.jpg?v=1788779749",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_pers.jpg?v=1788779748",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_side.jpg?v=1788779747",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_back.jpg?v=1788779748",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_det.jpg?v=1788779747"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-paris-marrones-piel-2",
-          "handle": "bailarinas-paris-marrones-piel-2",
-          "title": "Bailarinas Paris Marrones Piel",
-          "color": null,
-          "sku": "53514_003_350",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_top.jpg?v=1788779749",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_pers.jpg?v=1788779748",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_side.jpg?v=1788779747",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_back.jpg?v=1788779748",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/53514_003_det.jpg?v=1788779747"
-          ],
-          "category": "BALLERINA",
-          "productType": "53514_003",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -7250,42 +7374,6 @@
           ],
           "category": "BALLERINA",
           "productType": "52998_001",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pretty-ballerinas--bailarinas-hannah-blancos-charol",
-      "brand": "PRETTY BALLERINAS",
-      "canonicalName": "Bailarinas Hannah Blancos Charol",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_pers.jpg?v=1789628079",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_top.jpg?v=1789628079",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_side.jpg?v=1789628079",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_back.jpg?v=1789628079",
-        "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_det.jpg?v=1789628079"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.prettyballerinas.com/products/bailarinas-hannah-blancos-charol",
-          "handle": "bailarinas-hannah-blancos-charol",
-          "title": "Bailarinas Hannah Blancos Charol",
-          "color": null,
-          "sku": "48404_BV_24",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_pers.jpg?v=1789628079",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_top.jpg?v=1789628079",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_side.jpg?v=1789628079",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_back.jpg?v=1789628079",
-            "https://cdn.shopify.com/s/files/1/0874/5870/9770/files/48404_BV_det.jpg?v=1789628079"
-          ],
-          "category": "BALLERINA",
-          "productType": "48404_BV",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -7404,6 +7492,13 @@
     }
   ],
   "productUrls": [
+    "https://www.prettyballerinas.com/products/bailarinas-kamala-morados-piel",
+    "https://www.prettyballerinas.com/products/bailarinas-kamala-negros-piel",
+    "https://www.prettyballerinas.com/products/bailarinas-paris-grises-piel",
+    "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-3",
+    "https://www.prettyballerinas.com/products/bailarinas-paris-marrones-piel-2",
+    "https://www.prettyballerinas.com/products/bailarinas-paris-dorados-pieles-metalizadas-1",
+    "https://www.prettyballerinas.com/products/bailarinas-nicole-beiges-piel-4",
     "https://www.prettyballerinas.com/products/bailarinas-rosario-animal-print-poni-4",
     "https://www.prettyballerinas.com/products/bailarinas-rosario-rojos-ante-1",
     "https://www.prettyballerinas.com/products/bailarinas-rosario-marrones-piel-2",
@@ -7428,8 +7523,6 @@
     "https://www.prettyballerinas.com/products/loafers-ella-marrones-ante-2",
     "https://www.prettyballerinas.com/products/loafers-ella-rojos-ante-1",
     "https://www.prettyballerinas.com/products/loafers-ella-azules-ante-2",
-    "https://www.prettyballerinas.com/products/salon-gretschen-azules-piel",
-    "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-3",
     "https://www.prettyballerinas.com/products/bailarinas-shirley-blancos-piel-4",
     "https://www.prettyballerinas.com/products/sandalias-lulu-negros-piel-1",
     "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-2",
@@ -7439,9 +7532,11 @@
     "https://www.prettyballerinas.com/products/bailarinas-irma-blancos-piel",
     "https://www.prettyballerinas.com/products/bailarinas-nicole-blancos-piel-7",
     "https://www.prettyballerinas.com/products/bailarinas-nicole-beiges-piel",
+    "https://www.prettyballerinas.com/products/salon-gretschen-azules-piel",
+    "https://www.prettyballerinas.com/products/salon-gretschen-negros-piel-3",
     "https://www.prettyballerinas.com/products/salon-gretschen-rosas-tejidos",
-    "https://www.prettyballerinas.com/products/loafers-paris-rosas-tejidos",
     "https://www.prettyballerinas.com/products/bailarinas-nicole-negros-tejidos-2",
+    "https://www.prettyballerinas.com/products/loafers-paris-rosas-tejidos",
     "https://www.prettyballerinas.com/products/bailarinas-paris-negros-red",
     "https://www.prettyballerinas.com/products/bailarinas-georgia-negros-red-4",
     "https://www.prettyballerinas.com/products/bailarinas-rosario-negros-red",
@@ -7454,10 +7549,11 @@
     "https://www.prettyballerinas.com/products/loafers-paris-marrones-poni",
     "https://www.prettyballerinas.com/products/bailarinas-paris-animal-print-poni-2",
     "https://www.prettyballerinas.com/products/bailarinas-paris-animal-print-poni-1",
-    "https://www.prettyballerinas.com/products/bailarinas-kendall-grises-ante",
+    "https://www.prettyballerinas.com/products/bailarinas-camille-animal-print-pieles-estampadas",
     "https://www.prettyballerinas.com/products/bailarinas-odile-grises-ante",
-    "https://www.prettyballerinas.com/products/bailarinas-kendall-marrones-ante",
     "https://www.prettyballerinas.com/products/bailarinas-odile-marrones-ante",
+    "https://www.prettyballerinas.com/products/bailarinas-kendall-marrones-ante",
+    "https://www.prettyballerinas.com/products/bailarinas-kendall-grises-ante",
     "https://www.prettyballerinas.com/products/loafers-clementine-marrones-ante-1",
     "https://www.prettyballerinas.com/products/loafers-clementine-grises-ante-1",
     "https://www.prettyballerinas.com/products/bailarinas-kristen-negros-piel-6",
@@ -7504,6 +7600,7 @@
     "https://www.prettyballerinas.com/products/botines-pat-azules-tejidos-1",
     "https://www.prettyballerinas.com/products/botines-pat-marrones-tejidos-1",
     "https://www.prettyballerinas.com/products/botines-pat-negros-ante",
+    "https://www.prettyballerinas.com/products/botines-pat-azules-ante-1",
     "https://www.prettyballerinas.com/products/botines-pat-marrones-ante-1",
     "https://www.prettyballerinas.com/products/loafers-faye-marrones-ante-2",
     "https://www.prettyballerinas.com/products/loafers-faye-azules-ante-3",
@@ -7540,6 +7637,7 @@
     "https://www.prettyballerinas.com/products/bailarinas-paris-azules-ante",
     "https://www.prettyballerinas.com/products/bailarinas-paris-marrones-ante-1",
     "https://www.prettyballerinas.com/products/bailarinas-paris-negros-ante",
+    "https://www.prettyballerinas.com/products/bailarinas-georgia-rojos-ante",
     "https://www.prettyballerinas.com/products/bailarinas-georgia-marrones-ante",
     "https://www.prettyballerinas.com/products/bailarinas-georgia-negros-ante",
     "https://www.prettyballerinas.com/products/mocasines-josephine-azules-ante-2",
@@ -7604,20 +7702,12 @@
     "https://www.prettyballerinas.com/products/alpargatas-esparto-deborah-marrones-ante",
     "https://www.prettyballerinas.com/products/alpargatas-esparto-deborah-marrones-ante-1",
     "https://www.prettyballerinas.com/products/bailarinas-nicole-marrones-piel",
-    "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-1",
-    "https://www.prettyballerinas.com/products/bailarinas-paris-dorados-pieles-metalizadas-1",
     "https://www.prettyballerinas.com/products/sandalias-judy-negros-piel-4",
     "https://www.prettyballerinas.com/products/sandalias-judy-negros-piel-5",
-    "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-16",
-    "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-17",
     "https://www.prettyballerinas.com/products/loafers-paris-cuero-ante",
-    "https://www.prettyballerinas.com/products/bolsos-bags-negros-piel-14",
-    "https://www.prettyballerinas.com/products/bailarinas-paris-marrones-piel-2",
     "https://www.prettyballerinas.com/products/bailarinas-clementine-dorados-pieles-metalizadas",
-    "https://www.prettyballerinas.com/products/bailarinas-paris-negros-piel-3",
     "https://www.prettyballerinas.com/products/bailarinas-ella-blancos-tejidos",
     "https://www.prettyballerinas.com/products/bailarinas-zoey-negros-piel",
-    "https://www.prettyballerinas.com/products/bailarinas-hannah-blancos-charol",
     "https://www.prettyballerinas.com/products/alpargatas-esparto-athena-azules-tejidos-1",
     "https://www.prettyballerinas.com/products/alpargatas-esparto-athena-azules-tejidos",
     "https://www.prettyballerinas.com/products/alpargatas-esparto-athena-rojos-tejidos"

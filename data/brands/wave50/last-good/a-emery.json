@@ -2,8 +2,8 @@
   "slug": "a-emery",
   "brand": "A.EMERY",
   "officialUrl": "https://aemery.com",
-  "snapshotId": "a-emery:2026-10-05T13:57:37.372Z",
-  "collectedAt": "2026-10-05T13:57:37.372Z",
+  "snapshotId": "a-emery:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/footwear"
   ],
@@ -11,23 +11,411 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 118,
-    "collected": 118,
+    "sourceTotal": 153,
+    "collected": 153,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 118,
+    "galleryComplete": 153,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 56,
+  "newArrivalsFootwear": 60,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "a-emery--somerset-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Somerset Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S09-Somerset_Sandal_Black_Suede-26251-A.Emery-A-0083.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S09-Somerset_Sandal_Black_Suede-26251-A.Emery-A-0303.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Somerset_Sandal_Black_Suede-26255-A.Emery-0381.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-somerset-sandal-black-suede",
+          "handle": "the-somerset-sandal-black-suede",
+          "title": "The Somerset Sandal",
+          "color": "Black Suede",
+          "sku": "242387-BSU-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S09-Somerset_Sandal_Black_Suede-26251-A.Emery-A-0083.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S09-Somerset_Sandal_Black_Suede-26251-A.Emery-A-0303.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Somerset_Sandal_Black_Suede-26255-A.Emery-0381.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--somerset-sandal--the-somerset-sandal-dune-embossed-snake",
+      "brand": "A.EMERY",
+      "canonicalName": "Somerset Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Somerset_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0175.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Somerset_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0386.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S9-Somerset_Sandal_Dune_Embossed_Snake-26255-A.Emery-0132.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-somerset-sandal-dune-embossed-snake",
+          "handle": "the-somerset-sandal-dune-embossed-snake",
+          "title": "The Somerset Sandal",
+          "color": "Dune Embossed Snake",
+          "sku": "242387-DES-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Somerset_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0175.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Somerset_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0386.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S9-Somerset_Sandal_Dune_Embossed_Snake-26255-A.Emery-0132.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--epps-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Epps Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-EppsHeeledSandal_Black-26558-A.Emery-D-0288.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-Epps_Heeled_Sandal_Black-26558-A.Emery-D-0369.jpg?v=1789948141",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-Epps_Heeled_Sandal_Black-26558-A.Emery-E-0211.jpg?v=1789948142",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Epps_Heeled_Sandal_Black-26255-A.Emery-0346.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-epps-heeled-sandal-black",
+          "handle": "the-epps-heeled-sandal-black",
+          "title": "The Epps Heeled Sandal",
+          "color": "Black",
+          "sku": "242385-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-EppsHeeledSandal_Black-26558-A.Emery-D-0288.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-Epps_Heeled_Sandal_Black-26558-A.Emery-D-0369.jpg?v=1789948141",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S354-Epps_Heeled_Sandal_Black-26558-A.Emery-E-0211.jpg?v=1789948142",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Epps_Heeled_Sandal_Black-26255-A.Emery-0346.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--epps-sandal--the-epps-heeled-sandal-dune-embossed-snake",
+      "brand": "A.EMERY",
+      "canonicalName": "Epps Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0303.jpg?v=1789948142",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0382.jpg?v=1789948142",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0215.jpg?v=1789948181",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S24-Epps_Heeled_Sandal_Dune_Embossed_Snake-26255-A.Emery-0233.jpg?v=1788847370"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-epps-heeled-sandal-dune-embossed-snake",
+          "handle": "the-epps-heeled-sandal-dune-embossed-snake",
+          "title": "The Epps Heeled Sandal",
+          "color": "Dune Embossed Snake",
+          "sku": "242385-DES-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0303.jpg?v=1789948142",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0382.jpg?v=1789948142",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S355-Epps_Heeled_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0215.jpg?v=1789948181",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S24-Epps_Heeled_Sandal_Dune_Embossed_Snake-26255-A.Emery-0233.jpg?v=1788847370"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--jervis-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Jervis Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Black-26251-A.Emery-A-0098.jpg?v=1788847335",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Black-26251-A.Emery-A-0344.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S47-Jervis_Sandal_Black-26255-A.Emery-0482.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-jervis-sandal-black",
+          "handle": "the-jervis-sandal-black",
+          "title": "The Jervis Sandal",
+          "color": "Black",
+          "sku": "242369-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Black-26251-A.Emery-A-0098.jpg?v=1788847335",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Black-26251-A.Emery-A-0344.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S47-Jervis_Sandal_Black-26255-A.Emery-0482.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--jervis-sandal--the-jervis-sandal-shiitake",
+      "brand": "A.EMERY",
+      "canonicalName": "Jervis Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Shiitake-26251-A.Emery-A-0099.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Shiitake-26251-A.Emery-A-0100.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S4-Jervis_Sandal_Shiitake-26255-A.Emery-0072.jpg?v=1788847371"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-jervis-sandal-shiitake",
+          "handle": "the-jervis-sandal-shiitake",
+          "title": "The Jervis Sandal",
+          "color": "Shiitake",
+          "sku": "242369-SHI-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Shiitake-26251-A.Emery-A-0099.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Shiitake-26251-A.Emery-A-0100.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S4-Jervis_Sandal_Shiitake-26255-A.Emery-0072.jpg?v=1788847371"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--jervis-sandal--the-jervis-sandal-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Jervis Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S16-Jervis_Sandal_Claret-26251-A.Emery-A-0094.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S16-Jervis_Sandal_Claret-26251-A.Emery-A-0095.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Claret-26255-A.Emery-0184.jpg?v=1788847371"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-jervis-sandal-claret",
+          "handle": "the-jervis-sandal-claret",
+          "title": "The Jervis Sandal",
+          "color": "Claret",
+          "sku": "242369-CLA-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S16-Jervis_Sandal_Claret-26251-A.Emery-A-0094.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S16-Jervis_Sandal_Claret-26251-A.Emery-A-0095.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jervis_Sandal_Claret-26255-A.Emery-0184.jpg?v=1788847371"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--jervis-sandal--the-jervis-sandal-vintage-bone",
+      "brand": "A.EMERY",
+      "canonicalName": "Jervis Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-Jervis_Sandal_Vintage_Bone-26251-A.Emery-A-0096.jpg?v=1788847334",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-Jervis_Sandal_Vintage_Bone-26251-A.Emery-A-0097.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Vintage_Bone-26255-A.Emery-0191.jpg?v=1788847370"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-jervis-sandal-vintage-bone",
+          "handle": "the-jervis-sandal-vintage-bone",
+          "title": "The Jervis Sandal",
+          "color": "Vintage Bone",
+          "sku": "242369-VBN-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-Jervis_Sandal_Vintage_Bone-26251-A.Emery-A-0096.jpg?v=1788847334",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-Jervis_Sandal_Vintage_Bone-26251-A.Emery-A-0097.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S19-Jervis_Sandal_Vintage_Bone-26255-A.Emery-0191.jpg?v=1788847370"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--marcelle-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Marcelle Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S02-Marcelle_Sandal_Black-26251-A.Emery-A-0075.jpg?v=1788847335",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S02-Marcelle_Sandal_Black-26251-A.Emery-A-0274.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S49-Marcelle_Sandal_Black-26255-A.Emery-0524.jpg?v=1788847378"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-marcelle-sandal-black",
+          "handle": "the-marcelle-sandal-black",
+          "title": "The Marcelle Sandal",
+          "color": "Black",
+          "sku": "242386-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S02-Marcelle_Sandal_Black-26251-A.Emery-A-0075.jpg?v=1788847335",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S02-Marcelle_Sandal_Black-26251-A.Emery-A-0274.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S49-Marcelle_Sandal_Black-26255-A.Emery-0524.jpg?v=1788847378"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--marcelle-sandal--the-marcelle-sandal-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Marcelle Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Marcelle_Sandal_Claret-26251-A.Emery-A-0076.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Marcelle_Sandal_Claret-26251-A.Emery-A-0276.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S8-Marcelle_Sandal_Claret-26255-A.Emery-0123.jpg?v=1788847373"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-marcelle-sandal-claret",
+          "handle": "the-marcelle-sandal-claret",
+          "title": "The Marcelle Sandal",
+          "color": "Claret",
+          "sku": "242386-CLA-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Marcelle_Sandal_Claret-26251-A.Emery-A-0076.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Marcelle_Sandal_Claret-26251-A.Emery-A-0276.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S8-Marcelle_Sandal_Claret-26255-A.Emery-0123.jpg?v=1788847373"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--adley-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Adley Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S308-Adley_Sandal_Black-26558-A.Emery-D-0035.jpg?v=1789950836",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S308-Adley_Sandal_Black-26558-A.Emery-E-0062.jpg?v=1789950836",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Adley_Sandal_Black-26255-A.Emery-0360.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-adley-sandal-black",
+          "handle": "the-adley-sandal-black",
+          "title": "The Adley Sandal",
+          "color": "Black",
+          "sku": "242366-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S308-Adley_Sandal_Black-26558-A.Emery-D-0035.jpg?v=1789950836",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S308-Adley_Sandal_Black-26558-A.Emery-E-0062.jpg?v=1789950836",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S34-Adley_Sandal_Black-26255-A.Emery-0360.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--adley-sandal--the-adley-sandal-dune-embossed-snake",
+      "brand": "A.EMERY",
+      "canonicalName": "Adley Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S309-Adley_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0039.jpg?v=1789950835",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S309-Adley_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0064.jpg?v=1789950835",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S56-Adley_Sandal_Dune_Snake_Emboss-26556-A.Emery-0877.jpg?v=1789950921"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-adley-sandal-dune-embossed-snake",
+          "handle": "the-adley-sandal-dune-embossed-snake",
+          "title": "The Adley Sandal",
+          "color": "Dune Embossed Snake",
+          "sku": "242366-DES-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S309-Adley_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0039.jpg?v=1789950835",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S309-Adley_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0064.jpg?v=1789950835",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S56-Adley_Sandal_Dune_Snake_Emboss-26556-A.Emery-0877.jpg?v=1789950921"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
     {
       "modelFamilyId": "a-emery--clara-sandal",
       "brand": "A.EMERY",
@@ -37,11 +425,11 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0071.jpg?v=1779248764",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0456.jpg?v=1779248765",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0676.jpg?v=1779248766",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S8-Clara_Sandal_Black-251006-A.Emery-0053.jpg?v=1779248798",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-ClaraSandal_Black-26255-A.Emery-0355.jpg?v=1791495239",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0066.jpg?v=1779248735",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0443.jpg?v=1779248735",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0666.jpg?v=1779248739",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S9-Clara_Sandal_Greige-251006-A.Emery-0046.jpg?v=1779248799"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-ClaraSandal_Greige-26255-A.Emery-0299.jpg?v=1791495211"
       ],
       "variants": [
         {
@@ -54,7 +442,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0071.jpg?v=1779248764",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0456.jpg?v=1779248765",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Black-25999-A.Emery-A-0676.jpg?v=1779248766",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S8-Clara_Sandal_Black-251006-A.Emery-0053.jpg?v=1779248798"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-ClaraSandal_Black-26255-A.Emery-0355.jpg?v=1791495239"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -72,7 +460,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0066.jpg?v=1779248735",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0443.jpg?v=1779248735",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S10-Clara_Sandal_Greige-25999-A.Emery-A-0666.jpg?v=1779248739",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S9-Clara_Sandal_Greige-251006-A.Emery-0046.jpg?v=1779248799"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-ClaraSandal_Greige-26255-A.Emery-0299.jpg?v=1791495211"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -83,6 +471,204 @@
       ],
       "isNew": true,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "a-emery--clara-sandal--the-clara-sandal-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Clara Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Claret-26251-A.Emery-A-0087.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Claret-26251-A.Emery-A-0088.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S39-Clara_Sandal_Claret-26255-A.Emery-0400.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-clara-sandal-claret",
+          "handle": "the-clara-sandal-claret",
+          "title": "The Clara Sandal",
+          "color": "Claret",
+          "sku": "242352-CLA-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Claret-26251-A.Emery-A-0087.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S12-Clara_Sandal_Claret-26251-A.Emery-A-0088.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S39-Clara_Sandal_Claret-26255-A.Emery-0400.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--york-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "York Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0267.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0268.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0410.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S43-York_Heeled_Sandal_Black-26255-A.Emery-0449.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-york-heeled-sandal-black",
+          "handle": "the-york-heeled-sandal-black",
+          "title": "The York Heeled Sandal",
+          "color": "Black",
+          "sku": "242377-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0267.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0268.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-York_Heeled_Sandal_Black-26251-A.Emery-A-0410.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S43-York_Heeled_Sandal_Black-26255-A.Emery-0449.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--wanda-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Wanda Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0219.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0220.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0399.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26255-A.Emery-0386.jpg?v=1788847373"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-wanda-heeled-sandal-black",
+          "handle": "the-wanda-heeled-sandal-black",
+          "title": "The Wanda Heeled Sandal",
+          "color": "Black",
+          "sku": "242378-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0219.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0220.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26251-A.Emery-A-0399.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Wanda_Heeled_Sandal_Black-26255-A.Emery-0386.jpg?v=1788847373"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--wanda-sandal--the-wanda-heeled-sandal-vintage-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Wanda Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0204.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0209.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0395.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S44-Wanda_Heeled_Sandal_Vintage_Claret-26255-A.Emery-0455.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-wanda-heeled-sandal-vintage-claret",
+          "handle": "the-wanda-heeled-sandal-vintage-claret",
+          "title": "The Wanda Heeled Sandal",
+          "color": "Vintage Claret",
+          "sku": "242378-VCL-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0204.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0209.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S37-Wanda_Heeled_Sandal_Vintage_Claret-26251-A.Emery-A-0395.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S44-Wanda_Heeled_Sandal_Vintage_Claret-26255-A.Emery-0455.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--raslo-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Raslo Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Raslo_Sandal_Black_Suede-26251-A.Emery-A-0132.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Raslo_Sandal_Black_Suede-26251-A.Emery-A-0359.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S41-Raslo_Sandal_Black_Suede-26255-A.Emery-0433.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-raslo-sandal-black-suede",
+          "handle": "the-raslo-sandal-black-suede",
+          "title": "The Raslo Sandal",
+          "color": "Black Suede",
+          "sku": "242380-BSU-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Raslo_Sandal_Black_Suede-26251-A.Emery-A-0132.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Raslo_Sandal_Black_Suede-26251-A.Emery-A-0359.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S41-Raslo_Sandal_Black_Suede-26255-A.Emery-0433.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--raslo-sandal--the-raslo-sandal-dune-embossed-snake",
+      "brand": "A.EMERY",
+      "canonicalName": "Raslo Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Raslo_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0184.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Raslo_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0364.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S21-Raslo_Sandal_Dune_Embossed_Snake-26255-A.Emery-0210.jpg?v=1788847373"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-raslo-sandal-dune-embossed-snake",
+          "handle": "the-raslo-sandal-dune-embossed-snake",
+          "title": "The Raslo Sandal",
+          "color": "Dune Embossed Snake",
+          "sku": "242380-DES-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Raslo_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0184.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Raslo_Sandal_Dune_Embossed_Snake-26251-A.Emery-A-0364.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S21-Raslo_Sandal_Dune_Embossed_Snake-26255-A.Emery-0210.jpg?v=1788847373"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "a-emery--jalen-sandal",
@@ -185,6 +771,38 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "a-emery--jalen-sandal--the-jalen-sandal-vintage-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Jalen Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Jalen_Sandal_Vintage_Claret-26251-A.Emery-A-0199.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Jalen_Sandal_Vintage_Claret-26251-A.Emery-A-0392.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Sandal_Vintage_Claret-26255-A.Emery-0319.jpg?v=1788847373"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-jalen-sandal-vintage-claret",
+          "handle": "the-jalen-sandal-vintage-claret",
+          "title": "The Jalen Sandal",
+          "color": "Vintage Claret",
+          "sku": "2022306-VCL-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Jalen_Sandal_Vintage_Claret-26251-A.Emery-A-0199.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Jalen_Sandal_Vintage_Claret-26251-A.Emery-A-0392.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Sandal_Vintage_Claret-26255-A.Emery-0319.jpg?v=1788847373"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "a-emery--jalen-slim-sandal",
       "brand": "A.EMERY",
       "canonicalName": "Jalen Slim Sandal",
@@ -193,11 +811,14 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-side.jpg?v=1753768644",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-angle.jpg?v=1753768644",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-over.jpg?v=1753768645",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/JALEN_SLIM_BLACK.jpg?v=1753768645",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S20-JalenSlimSandal_Black-26255-A.Emery-0200.jpg?v=1791495124",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Slim_Sandal_Walnut-26251-A.Emery-A-0151.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Slim_Sandal_Walnut-26251-A.Emery-A-0370.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S48-Jalen_Slim_Sandal_Walnut-26255-A.Emery-0497.jpg?v=1788847378",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0031.jpg?v=1768173658",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0076.jpg?v=1768173655",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0121.jpg?v=1768173673",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S47-Jalen_Slim_Sandal_Cognac-251006-A.Emery-0076.jpg?v=1768521362"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S5-Jalen_Slim_Sandal_Cognac-26255-A.Emery-0091.jpg?v=1788847373"
       ],
       "variants": [
         {
@@ -210,10 +831,27 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-side.jpg?v=1753768644",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-angle.jpg?v=1753768644",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S18-Jalen_Slim_Sandal_Black-over.jpg?v=1753768645",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/JALEN_SLIM_BLACK.jpg?v=1753768645"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S20-JalenSlimSandal_Black-26255-A.Emery-0200.jpg?v=1791495124"
           ],
           "category": "SANDAL",
           "productType": "Heeled Sandal",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-jalen-slim-sandal-walnut",
+          "handle": "the-jalen-slim-sandal-walnut",
+          "title": "The Jalen Slim Sandal",
+          "color": "Walnut",
+          "sku": "242233-W-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Slim_Sandal_Walnut-26251-A.Emery-A-0151.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Jalen_Slim_Sandal_Walnut-26251-A.Emery-A-0370.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S48-Jalen_Slim_Sandal_Walnut-26255-A.Emery-0497.jpg?v=1788847378"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -228,7 +866,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0031.jpg?v=1768173658",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0076.jpg?v=1768173655",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Jalen_Slim_Sandal_Cognac-25755-A.Emery-0121.jpg?v=1768173673",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S47-Jalen_Slim_Sandal_Cognac-251006-A.Emery-0076.jpg?v=1768521362"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S5-Jalen_Slim_Sandal_Cognac-26255-A.Emery-0091.jpg?v=1788847373"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -249,7 +887,10 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S06-Leon_Sandal_Black-25718-A.Emery-0060.jpg?v=1768173652",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S06-Leon_Sandal_Black-25718-A.Emery-0441.jpg?v=1768173652",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S06-Leon_Sandal_Black-25718-A.Emery-0848.jpg?v=1768173668",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S06-Leon_Sandal_Black-25743-A.Emery-0118.jpg?v=1768173040"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S06-Leon_Sandal_Black-25743-A.Emery-0118.jpg?v=1768173040",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Leon_Sandal_Greige-26251-A.Emery-A-0091.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Leon_Sandal_Greige-26251-A.Emery-A-0336.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Leon_Sandal_Greige-26255-A.Emery-0312.jpg?v=1788847373"
       ],
       "variants": [
         {
@@ -269,10 +910,27 @@
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-leon-sandal-greige",
+          "handle": "the-leon-sandal-greige",
+          "title": "The Leon Sandal",
+          "color": "Greige",
+          "sku": "242329-GRE-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Leon_Sandal_Greige-26251-A.Emery-A-0091.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Leon_Sandal_Greige-26251-A.Emery-A-0336.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Leon_Sandal_Greige-26255-A.Emery-0312.jpg?v=1788847373"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "a-emery--kinto-sandal",
@@ -283,7 +941,7 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_Black-side.jpg?v=1753768610",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_black-angle.jpg?v=1753768611",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_Black-over.jpg?v=1753768611",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S22-KintoSandal_Black-25024-A.Emery-0013.jpg?v=1753768611",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S1-Kinto_Sandal_Black-26255-A.Emery-0039.jpg?v=1788847370",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Chestnut_SuedeBlack-25999-A.Emery-A-0009.jpg?v=1779248735",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Chestnut_SuedeBlack-25999-A.Emery-A-0392.jpg?v=1779248737",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Chestnut_SuedeBlack-25999-A.Emery-A-0618.jpg?v=1779248743",
@@ -291,11 +949,11 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0027.jpg?v=1757908222",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0263.jpg?v=1757908222",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0453.jpg?v=1757908223",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Kinto_Sandal_Cognac-25340-A.Emery-0322.jpg?v=1757908159",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S2-Kinto_Sandal_Cognac-26255-A.Emery-0062.jpg?v=1788847371",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-B-0155_df4a8d55-6d54-4123-8bfd-9bd08ea6d5c1.jpg?v=1753768618",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-B-0528_287f0b52-415f-4f37-9ea4-f367a51c82b9.jpg?v=1753768619",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-A-0195_5db69f84-60a9-48ff-852b-1d9f30742b96.jpg?v=1753768619",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-2022412_WALNUT-23727-A.Emery-D2-0299_347499e5-06a8-4160-8b42-d7fddfdda746.jpg?v=1753768619"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S3-Kinto_Sandal_Walnut-26255-A.Emery-0067.jpg?v=1788847372"
       ],
       "variants": [
         {
@@ -308,7 +966,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_Black-side.jpg?v=1753768610",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_black-angle.jpg?v=1753768611",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-KintoSandal_Black-over.jpg?v=1753768611",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S22-KintoSandal_Black-25024-A.Emery-0013.jpg?v=1753768611"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S1-Kinto_Sandal_Black-26255-A.Emery-0039.jpg?v=1788847370"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -344,13 +1002,13 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0027.jpg?v=1757908222",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0263.jpg?v=1757908222",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S03-Kinto_Sandal_Cognac-25339-A.Emery-0453.jpg?v=1757908223",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S38-Kinto_Sandal_Cognac-25340-A.Emery-0322.jpg?v=1757908159"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S2-Kinto_Sandal_Cognac-26255-A.Emery-0062.jpg?v=1788847371"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-kinto-sandal-walnut",
@@ -362,17 +1020,417 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-B-0155_df4a8d55-6d54-4123-8bfd-9bd08ea6d5c1.jpg?v=1753768618",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-B-0528_287f0b52-415f-4f37-9ea4-f367a51c82b9.jpg?v=1753768619",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S17-23722-A.Emery-A-0195_5db69f84-60a9-48ff-852b-1d9f30742b96.jpg?v=1753768619",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-2022412_WALNUT-23727-A.Emery-D2-0299_347499e5-06a8-4160-8b42-d7fddfdda746.jpg?v=1753768619"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S3-Kinto_Sandal_Walnut-26255-A.Emery-0067.jpg?v=1788847372"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
       "isNew": true,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "a-emery--kinto-sandal--the-kinto-sandal-shiitake",
+      "brand": "A.EMERY",
+      "canonicalName": "Kinto Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Shiitake-26251-A.Emery-A-0074.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Shiitake-26251-A.Emery-A-0273.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Kinto_Sandal_Shiitake-26255-A.Emery-0293.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-kinto-sandal-shiitake",
+          "handle": "the-kinto-sandal-shiitake",
+          "title": "The Kinto Sandal",
+          "color": "Shiitake",
+          "sku": "2022412-SHI-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Shiitake-26251-A.Emery-A-0074.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S01-Kinto_Sandal_Shiitake-26251-A.Emery-A-0273.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Kinto_Sandal_Shiitake-26255-A.Emery-0293.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--kinto-sandal--the-kinto-sandal-dune-embossed-snake",
+      "brand": "A.EMERY",
+      "canonicalName": "Kinto Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S304-Kinto_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0013.jpg?v=1789951231",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S304-Kinto_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0052.jpg?v=1790049792",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S54-Kinto_Sandal_Dune_Snake_Emboss-26556-A.Emery-0825.jpg?v=1789951196"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-kinto-sandal-dune-embossed-snake",
+          "handle": "the-kinto-sandal-dune-embossed-snake",
+          "title": "The Kinto Sandal",
+          "color": "Dune Embossed Snake",
+          "sku": "2022412-DES-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S304-Kinto_Sandal_Dune_Snake_Emboss-26558-A.Emery-D-0013.jpg?v=1789951231",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S304-Kinto_Sandal_Dune_Snake_Emboss-26558-A.Emery-E-0052.jpg?v=1790049792",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S54-Kinto_Sandal_Dune_Snake_Emboss-26556-A.Emery-0825.jpg?v=1789951196"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--phyllis-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Phyllis Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Phyllis_Sandal_Black-26251-A.Emery-A-0077.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Phyllis_Sandal_Black-26251-A.Emery-A-0279.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S46-Phyllis_Sandal_Black-26255-A.Emery-0476.jpg?v=1788847378"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-phyllis-sandal-black",
+          "handle": "the-phyllis-sandal-black",
+          "title": "The Phyllis Sandal",
+          "color": "Black",
+          "sku": "242367-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Phyllis_Sandal_Black-26251-A.Emery-A-0077.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S04-Phyllis_Sandal_Black-26251-A.Emery-A-0279.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S46-Phyllis_Sandal_Black-26255-A.Emery-0476.jpg?v=1788847378"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--sawyer-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Sawyer Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-Sawyer_Sandal_Black-26251-A.Emery-A-0173.jpg?v=1788847335",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-Sawyer_Sandal_Black-26251-A.Emery-A-0384.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-Sawyer_Sandal_Black-26255-A.Emery-0407.jpg?v=1788847377",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S31-Sawyer_Sandal_Cognac-26251-A.Emery-A-0160.jpg?v=1788847336",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S31-Sawyer_Sandal_Cognac-26251-A.Emery-A-0374.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Sawyer_Sandal_Cognac-26255-A.Emery-0325.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-sawyer-sandal-black",
+          "handle": "the-sawyer-sandal-black",
+          "title": "The Sawyer Sandal",
+          "color": "Black",
+          "sku": "242379-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-Sawyer_Sandal_Black-26251-A.Emery-A-0173.jpg?v=1788847335",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S33-Sawyer_Sandal_Black-26251-A.Emery-A-0384.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S40-Sawyer_Sandal_Black-26255-A.Emery-0407.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-sawyer-sandal-cognac",
+          "handle": "the-sawyer-sandal-cognac",
+          "title": "The Sawyer Sandal",
+          "color": "Cognac",
+          "sku": "242379-COG-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S31-Sawyer_Sandal_Cognac-26251-A.Emery-A-0160.jpg?v=1788847336",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S31-Sawyer_Sandal_Cognac-26251-A.Emery-A-0374.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Sawyer_Sandal_Cognac-26255-A.Emery-0325.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "a-emery--sawyer-sandal--the-sawyer-sandal-shiitake",
+      "brand": "A.EMERY",
+      "canonicalName": "Sawyer Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Sawyer_Sandal_Shiitake-26251-A.Emery-A-0166.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Sawyer_Sandal_Shiitake-26251-A.Emery-A-0383.jpg?v=1788847340",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Sawyer_Sandal_Shiitake-26255-A.Emery-0371.jpg?v=1788847374"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-sawyer-sandal-shiitake",
+          "handle": "the-sawyer-sandal-shiitake",
+          "title": "The Sawyer Sandal",
+          "color": "Shiitake",
+          "sku": "242379-SHI-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Sawyer_Sandal_Shiitake-26251-A.Emery-A-0166.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S32-Sawyer_Sandal_Shiitake-26251-A.Emery-A-0383.jpg?v=1788847340",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S36-Sawyer_Sandal_Shiitake-26255-A.Emery-0371.jpg?v=1788847374"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--kasper-sandal",
+      "brand": "A.EMERY",
+      "canonicalName": "Kasper Sandal",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Kasper_Sandal_Black-26251-A.Emery-A-0081.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Kasper_Sandal_Black-26251-A.Emery-A-0293.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S7-Kasper_Sandal_Black-26255-A.Emery-0113.jpg?v=1788847371",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Kasper_Sandal_Claret-26251-A.Emery-A-0156.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Kasper_Sandal_Claret-26251-A.Emery-A-0300.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S42-Kasper_Sandal_Claret-26255-A.Emery-0437.jpg?v=1788847377",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S08-Kasper_Sandal_Black_Bone-26251-A.Emery-A-0082.jpg?v=1788847335",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S08-Kasper_Sandal_Black_Bone-26251-A.Emery-A-0294.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S22-Kasper_Sandal_Black_Bone-26255-A.Emery-0220.jpg?v=1788847372"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-kasper-sandal-black",
+          "handle": "the-kasper-sandal-black",
+          "title": "The Kasper Sandal",
+          "color": "Black",
+          "sku": "242381-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Kasper_Sandal_Black-26251-A.Emery-A-0081.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Kasper_Sandal_Black-26251-A.Emery-A-0293.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S7-Kasper_Sandal_Black-26255-A.Emery-0113.jpg?v=1788847371"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-kasper-sandal",
+          "handle": "the-kasper-sandal",
+          "title": "The Kasper Sandal",
+          "color": "Claret",
+          "sku": "242381-CLA-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Kasper_Sandal_Claret-26251-A.Emery-A-0156.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S30-Kasper_Sandal_Claret-26251-A.Emery-A-0300.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S42-Kasper_Sandal_Claret-26255-A.Emery-0437.jpg?v=1788847377"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-kasper-sandal-bone-black",
+          "handle": "the-kasper-sandal-bone-black",
+          "title": "The Kasper Sandal",
+          "color": "Bone Black",
+          "sku": "242381-BBK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S08-Kasper_Sandal_Black_Bone-26251-A.Emery-A-0082.jpg?v=1788847335",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S08-Kasper_Sandal_Black_Bone-26251-A.Emery-A-0294.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S22-Kasper_Sandal_Black_Bone-26255-A.Emery-0220.jpg?v=1788847372"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "a-emery--mabel-flat",
+      "brand": "A.EMERY",
+      "canonicalName": "Mabel Flat",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S343-MabelFlat_Black-26558-A.Emery-D-0238.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S343-MabelFlat_Black-26558-A.Emery-E-0166.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S27-Mabel_Flat_Black-26556-A.Emery-0536.jpg?v=1789947488",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S341-MabelFlat_Bone-26558-A.Emery-D-0231.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S341-MabelFlat_Bone-26558-A.Emery-E-0162.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Mabel_Flat_Bone-26556-A.Emery-0562.jpg?v=1789947488"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-mabel-flat-vintage-black",
+          "handle": "the-mabel-flat-vintage-black",
+          "title": "The Mabel Flat",
+          "color": "Vintage Black",
+          "sku": "242371-VBK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S343-MabelFlat_Black-26558-A.Emery-D-0238.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S343-MabelFlat_Black-26558-A.Emery-E-0166.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S27-Mabel_Flat_Black-26556-A.Emery-0536.jpg?v=1789947488"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://aemery.com/products/the-mabel-flat-vintage-bone",
+          "handle": "the-mabel-flat-vintage-bone",
+          "title": "The Mabel Flat",
+          "color": "Vintage Bone",
+          "sku": "242371-VBN-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S341-MabelFlat_Bone-26558-A.Emery-D-0231.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S341-MabelFlat_Bone-26558-A.Emery-E-0162.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S29-Mabel_Flat_Bone-26556-A.Emery-0562.jpg?v=1789947488"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "a-emery--mabel-flat--the-mabel-flat-vintage-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Mabel Flat",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S342-MabelFlat_Claret-26558-A.Emery-D-0235.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S342-MabelFlat_Claret-26558-A.Emery-E-0164.jpg?v=1789947440",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Mabel_Flat_Claret-26556-A.Emery-0554.jpg?v=1789947488"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-mabel-flat-vintage-claret",
+          "handle": "the-mabel-flat-vintage-claret",
+          "title": "The Mabel Flat",
+          "color": "Vintage Claret",
+          "sku": "242371-VCL-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S342-MabelFlat_Claret-26558-A.Emery-D-0235.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S342-MabelFlat_Claret-26558-A.Emery-E-0164.jpg?v=1789947440",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S28-Mabel_Flat_Claret-26556-A.Emery-0554.jpg?v=1789947488"
+          ],
+          "category": "SANDAL",
+          "productType": "Flat Sandal",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--griffin-flat",
+      "brand": "A.EMERY",
+      "canonicalName": "Griffin Flat",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-Griffin_Flat_Black-26251-A.Emery-A-0120.jpg?v=1788847337",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-Griffin_Flat_Black-26251-A.Emery-A-0352.jpg?v=1788847339",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S51-Griffin_Flat_Black-26255-A.Emery-0559.jpg?v=1788847377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-griffin-flat-black",
+          "handle": "the-griffin-flat-black",
+          "title": "The Griffin Flat",
+          "color": "Black",
+          "sku": "242375-BLK-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-Griffin_Flat_Black-26251-A.Emery-A-0120.jpg?v=1788847337",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S26-Griffin_Flat_Black-26251-A.Emery-A-0352.jpg?v=1788847339",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S51-Griffin_Flat_Black-26255-A.Emery-0559.jpg?v=1788847377"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "Closed Toe Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "a-emery--griffin-flat--the-griffin-flat-vintage-claret",
+      "brand": "A.EMERY",
+      "canonicalName": "Griffin Flat",
+      "category": "OTHER_FOOTWEAR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Griffin_Flat_Vintage_Claret-26251-A.Emery-A-0118.jpg?v=1788847338",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Griffin_Flat_Vintage_Claret-26251-A.Emery-A-0351.jpg?v=1788847341",
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S45-Griffin_Flat_Vintage_Claret-26255-A.Emery-0468.jpg?v=1788847376"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://aemery.com/products/the-griffin-flat-vintage-claret",
+          "handle": "the-griffin-flat-vintage-claret",
+          "title": "The Griffin Flat",
+          "color": "Vintage Claret",
+          "sku": "242375-DUN-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Griffin_Flat_Vintage_Claret-26251-A.Emery-A-0118.jpg?v=1788847338",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S25-Griffin_Flat_Vintage_Claret-26251-A.Emery-A-0351.jpg?v=1788847341",
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S45-Griffin_Flat_Vintage_Claret-26255-A.Emery-0468.jpg?v=1788847376"
+          ],
+          "category": "OTHER_FOOTWEAR",
+          "productType": "Closed Toe Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "a-emery--jude-knee-high-boot",
@@ -506,9 +1564,9 @@
           ],
           "category": "BOOT",
           "productType": "Flat Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-easton-boot-bistre-suede",
@@ -558,12 +1616,12 @@
           ],
           "category": "MULE",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -596,9 +1654,9 @@
           ],
           "category": "MULE",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-lou-clog-chestnut-suede",
@@ -614,12 +1672,12 @@
           ],
           "category": "MULE",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -682,12 +1740,12 @@
           ],
           "category": "BOOT",
           "productType": "Flat Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -750,12 +1808,12 @@
           ],
           "category": "BOOT",
           "productType": "Flat Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -806,9 +1864,9 @@
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
       "isNew": true,
@@ -882,9 +1940,9 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-spencer-flat-greige",
@@ -900,9 +1958,9 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-spencer-flat-walnut",
@@ -923,7 +1981,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -956,9 +2014,9 @@
           ],
           "category": "LOAFER",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-clarence-soft-loafer-greige",
@@ -974,12 +2032,12 @@
           ],
           "category": "LOAFER",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -1042,12 +2100,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1166,12 +2224,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1200,12 +2258,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1234,12 +2292,12 @@
           ],
           "category": "BOOT",
           "productType": "Flat Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1268,12 +2326,12 @@
           ],
           "category": "BOOT",
           "productType": "Flat Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1310,9 +2368,9 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-flora-sandal-greige",
@@ -1328,9 +2386,9 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-flora-sandal-cedar-suede",
@@ -1351,7 +2409,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -1380,12 +2438,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1448,12 +2506,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1516,12 +2574,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1601,7 +2659,7 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0282.jpg?v=1768173656",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0604.jpg?v=1768173655",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0937.jpg?v=1768173666",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25743-A.Emery-0152.jpg?v=1768173039"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S52-LaneLoafer_Black-26255-A.Emery-0594.jpg?v=1791495320"
       ],
       "variants": [
         {
@@ -1614,7 +2672,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0282.jpg?v=1768173656",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0604.jpg?v=1768173655",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25718-A.Emery-0937.jpg?v=1768173666",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-Lane_Loafer_Black-25743-A.Emery-0152.jpg?v=1768173039"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S52-LaneLoafer_Black-26255-A.Emery-0594.jpg?v=1791495320"
           ],
           "category": "LOAFER",
           "productType": "Closed Toe Flats",
@@ -1686,12 +2744,12 @@
           ],
           "category": "LOAFER",
           "productType": "Closed Toe Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2014,12 +3072,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2124,9 +3182,9 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-elmer-sandal-cognac-suede",
@@ -2165,7 +3223,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -2194,12 +3252,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2425,7 +3483,7 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0110.jpg?v=1768173657",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0472.jpg?v=1768173657",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0875.jpg?v=1768173670",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25743-A.Emery-0163.jpg?v=1768173040"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S6-JalenSandal_Black-26255-A.Emery-0110.jpg?v=1791495164"
       ],
       "variants": [
         {
@@ -2438,7 +3496,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0110.jpg?v=1768173657",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0472.jpg?v=1768173657",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25718-A.Emery-0875.jpg?v=1768173670",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S14-Jalen_Sandal_Black_Woven-25743-A.Emery-0163.jpg?v=1768173040"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S6-JalenSandal_Black-26255-A.Emery-0110.jpg?v=1791495164"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -2697,7 +3755,7 @@
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0078.jpg?v=1768173654",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0437.jpg?v=1768173655",
         "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0851.jpg?v=1768173670",
-        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25743-A.Emery-0101.jpg?v=1768173040"
+        "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-LeonSandal_Black-26255-A.Emery-0368.jpg?v=1791495277"
       ],
       "variants": [
         {
@@ -2710,7 +3768,7 @@
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0078.jpg?v=1768173654",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0437.jpg?v=1768173655",
             "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25718-A.Emery-0851.jpg?v=1768173670",
-            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S07-Leon_Sandal_Vintage_Forest-25743-A.Emery-0101.jpg?v=1768173040"
+            "https://cdn.shopify.com/s/files/1/0479/8283/7926/files/S35-LeonSandal_Black-26255-A.Emery-0368.jpg?v=1791495277"
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
@@ -2816,12 +3874,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2918,12 +3976,12 @@
           ],
           "category": "SANDAL",
           "productType": "Heeled Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -3180,9 +4238,9 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://aemery.com/products/the-paton-sandal-olive-suede",
@@ -3203,7 +4261,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -3232,12 +4290,12 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -3684,25 +4742,60 @@
           ],
           "category": "SANDAL",
           "productType": "Flat Sandal",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     }
   ],
   "productUrls": [
+    "https://aemery.com/products/the-somerset-sandal-black-suede",
+    "https://aemery.com/products/the-somerset-sandal-dune-embossed-snake",
+    "https://aemery.com/products/the-epps-heeled-sandal-black",
+    "https://aemery.com/products/the-epps-heeled-sandal-dune-embossed-snake",
+    "https://aemery.com/products/the-jervis-sandal-black",
+    "https://aemery.com/products/the-jervis-sandal-shiitake",
+    "https://aemery.com/products/the-jervis-sandal-claret",
+    "https://aemery.com/products/the-jervis-sandal-vintage-bone",
+    "https://aemery.com/products/the-marcelle-sandal-black",
+    "https://aemery.com/products/the-marcelle-sandal-claret",
+    "https://aemery.com/products/the-adley-sandal-black",
+    "https://aemery.com/products/the-adley-sandal-dune-embossed-snake",
     "https://aemery.com/products/the-clara-sandal-black",
     "https://aemery.com/products/the-clara-sandal-greige",
+    "https://aemery.com/products/the-clara-sandal-claret",
+    "https://aemery.com/products/the-york-heeled-sandal-black",
+    "https://aemery.com/products/the-wanda-heeled-sandal-black",
+    "https://aemery.com/products/the-wanda-heeled-sandal-vintage-claret",
+    "https://aemery.com/products/the-raslo-sandal-black-suede",
+    "https://aemery.com/products/the-raslo-sandal-dune-embossed-snake",
     "https://aemery.com/products/the-jalen-sandal-black",
+    "https://aemery.com/products/the-jalen-sandal-vintage-claret",
     "https://aemery.com/products/the-jalen-slim-sandal-black",
+    "https://aemery.com/products/the-jalen-slim-sandal-walnut",
     "https://aemery.com/products/the-leon-sandal-black",
+    "https://aemery.com/products/the-leon-sandal-greige",
     "https://aemery.com/products/the-kinto-sandal-black",
+    "https://aemery.com/products/the-kinto-sandal-shiitake",
+    "https://aemery.com/products/the-kinto-sandal-dune-embossed-snake",
     "https://aemery.com/products/the-kinto-sandal-chestnut-suede",
     "https://aemery.com/products/the-kinto-sandal-cognac",
     "https://aemery.com/products/the-kinto-sandal-walnut",
+    "https://aemery.com/products/the-phyllis-sandal-black",
+    "https://aemery.com/products/the-sawyer-sandal-black",
+    "https://aemery.com/products/the-sawyer-sandal-cognac",
+    "https://aemery.com/products/the-sawyer-sandal-shiitake",
+    "https://aemery.com/products/the-kasper-sandal-black",
+    "https://aemery.com/products/the-kasper-sandal",
+    "https://aemery.com/products/the-kasper-sandal-bone-black",
+    "https://aemery.com/products/the-mabel-flat-vintage-black",
+    "https://aemery.com/products/the-mabel-flat-vintage-claret",
+    "https://aemery.com/products/the-mabel-flat-vintage-bone",
+    "https://aemery.com/products/the-griffin-flat-black",
+    "https://aemery.com/products/the-griffin-flat-vintage-claret",
     "https://aemery.com/products/the-jude-knee-high-boot-black",
     "https://aemery.com/products/the-jude-knee-high-boot-bistre-embossed-croc",
     "https://aemery.com/products/the-easton-boot-black",

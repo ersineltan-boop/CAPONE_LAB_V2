@@ -2,8 +2,8 @@
   "slug": "sophia-webster",
   "brand": "SOPHIA WEBSTER",
   "officialUrl": "https://www.sophiawebster.com",
-  "snapshotId": "sophia-webster:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "sophia-webster:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -22,7 +22,7 @@
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 46,
+  "newArrivalsFootwear": 47,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -2238,12 +2238,12 @@
           ],
           "category": "SANDAL",
           "productType": "Footwear",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -6404,8 +6404,8 @@
       "canonicalName": "Rosette Mid Slingback",
       "category": "SLINGBACK",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_1.jpg?v=1786029578",
         "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_2.jpg?v=1786029592",
+        "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_1.jpg?v=1786029578",
         "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_3.jpg?v=1786029592"
       ],
       "variants": [
@@ -6416,8 +6416,8 @@
           "color": null,
           "sku": "SAW26035_35",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_1.jpg?v=1786029578",
             "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_2.jpg?v=1786029592",
+            "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_1.jpg?v=1786029578",
             "https://cdn.shopify.com/s/files/1/0950/6648/9157/files/SAW26035_SW_3.jpg?v=1786029592"
           ],
           "category": "SLINGBACK",

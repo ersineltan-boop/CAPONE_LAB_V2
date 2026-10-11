@@ -2,8 +2,8 @@
   "slug": "toteme",
   "brand": "TOTEME",
   "officialUrl": "https://toteme.com",
-  "snapshotId": "toteme:2026-10-07T09:46:50.122Z",
-  "collectedAt": "2026-10-07T09:46:50.122Z",
+  "snapshotId": "toteme:2026-10-11T09:39:48.122Z",
+  "collectedAt": "2026-10-11T09:39:48.122Z",
   "catalogPaths": [
     "/collections/shoes-boots",
     "/collections/shoes-flats",
@@ -16,13 +16,13 @@
     "/collections/new-in"
   ],
   "coverage": {
-    "sourceTotal": 113,
-    "collected": 113,
+    "sourceTotal": 117,
+    "collected": 117,
     "missing": 0,
     "coverage": 100,
     "excluded": 2,
     "paginationExhausted": true,
-    "galleryComplete": 113,
+    "galleryComplete": 117,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -76,6 +76,48 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "toteme--soft-suede-ankle-boots-black",
+      "brand": "TOTEME",
+      "canonicalName": "Soft suede ankle boots black",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_side_GB.jpg?v=1781702639",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0354-LE0012-001_SUEDE_BLACK_SOFT_SUEDE_ANKLE_BOOTS_BLACK__001_A.jpg?v=1783005101",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0354-LE0012-001_SUEDE_BLACK_SOFT_SUEDE_ANKLE_BOOTS_BLACK__021_B.jpg?v=1783005100",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_quarter_GB.jpg?v=1781702642",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_back_GB.jpg?v=1781702642",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_detail_heel_GB.jpg?v=1781702642",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_detail_toe_GB.jpg?v=1781702643",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_side_GB_70a7c5f8-7be0-489c-b049-5b9ca28f3dff.jpg?v=1781702642"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/soft-suede-ankle-boots-black",
+          "handle": "soft-suede-ankle-boots-black",
+          "title": "Soft suede ankle boots black",
+          "color": null,
+          "sku": "7330037572946",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_side_GB.jpg?v=1781702639",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0354-LE0012-001_SUEDE_BLACK_SOFT_SUEDE_ANKLE_BOOTS_BLACK__001_A.jpg?v=1783005101",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0354-LE0012-001_SUEDE_BLACK_SOFT_SUEDE_ANKLE_BOOTS_BLACK__021_B.jpg?v=1783005100",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_quarter_GB.jpg?v=1781702642",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_back_GB.jpg?v=1781702642",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_detail_heel_GB.jpg?v=1781702642",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_detail_toe_GB.jpg?v=1781702643",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-001_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BLACK_side_GB_70a7c5f8-7be0-489c-b049-5b9ca28f3dff.jpg?v=1781702642"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "toteme--soft-suede-ankle-boots-brown",
       "brand": "TOTEME",
       "canonicalName": "Soft suede ankle boots brown",
@@ -106,6 +148,48 @@
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-102_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BROWN_detail_heel_GB.jpg?v=1781702685",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-102_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BROWN_detail_toe_GB.jpg?v=1781702685",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0354-LE0012-102_SHOES_SOFT_SUEDE_ANKLE_BOOTS_BROWN_side_GB_73df209e-64c0-4e6f-87e5-727fa9166009.jpg?v=1781702685"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--soft-nappa-ankle-boots-black",
+      "brand": "TOTEME",
+      "canonicalName": "Soft nappa ankle boots black",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_side_GB_5a6d3c15-7891-4600-baa8-86a0a976779c.jpg?v=1778061633",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-213_SOFT_NAPPA_ANKLE_BOOTS_BLACK__2918.jpg?v=1788871994",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-213_SOFT_NAPPA_ANKLE_BOOTS_BLACK__2930.jpg?v=1788871994",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_back_GB_a61a2eee-a6b4-45ba-862c-44fa6d53e123.jpg?v=1778061644",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_detail_heel_GB_42861320-a135-4665-9ee3-b7d5788faca1.jpg?v=1778061644",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_detail_toe_GB_b0c85a75-f828-416b-b2df-be4aa3574bb9.jpg?v=1778061644",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_quarter_GB_9becf6e4-19bd-4590-8568-a18b54e94130.jpg?v=1778061644",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_side_GB_ab8bb5cb-e5cc-43fd-8c4e-c859cdb26e2c.jpg?v=1778061644"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/soft-nappa-ankle-boots-black",
+          "handle": "soft-nappa-ankle-boots-black",
+          "title": "Soft nappa ankle boots black",
+          "color": null,
+          "sku": "7330037515646",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_side_GB_5a6d3c15-7891-4600-baa8-86a0a976779c.jpg?v=1778061633",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-213_SOFT_NAPPA_ANKLE_BOOTS_BLACK__2918.jpg?v=1788871994",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-213_SOFT_NAPPA_ANKLE_BOOTS_BLACK__2930.jpg?v=1788871994",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_back_GB_a61a2eee-a6b4-45ba-862c-44fa6d53e123.jpg?v=1778061644",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_detail_heel_GB_42861320-a135-4665-9ee3-b7d5788faca1.jpg?v=1778061644",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_detail_toe_GB_b0c85a75-f828-416b-b2df-be4aa3574bb9.jpg?v=1778061644",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_quarter_GB_9becf6e4-19bd-4590-8568-a18b54e94130.jpg?v=1778061644",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BLACK_side_GB_ab8bb5cb-e5cc-43fd-8c4e-c859cdb26e2c.jpg?v=1778061644"
           ],
           "category": "ANKLE_BOOT",
           "productType": "Shoes",
@@ -235,12 +319,12 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -680,6 +764,48 @@
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BARK_detail_toe_GB.jpg?v=1788871860",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BARK_detail_heel_GB.jpg?v=1788871860",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-001__SOFT_NAPPA_ANKLE_BOOTS_BARK_side_GB_af4f9600-3171-4942-97f4-636f97f08b92.jpg?v=1788871859"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--ankle-boot-chai",
+      "brand": "TOTEME",
+      "canonicalName": "Ankle Boot Chai",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_side_GB_940d1c25-4f3d-44a6-85ef-e7586a8b6315.jpg?v=1778061675",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-378_SOFT_NAPPA_ANKLE_BOOTS_CHAI__0009.jpg?v=1775723463",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-378_SOFT_NAPPA_ANKLE_BOOTS_CHAI__2596.jpg?v=1775723463",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_back_GB_fc672e72-3469-4f17-81a9-bc7289eaf8be.jpg?v=1778061679",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_detail_heel_GB_e80dfe2d-f2d6-420a-b131-ce2f9011ce02.jpg?v=1778061679",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_detail_toe_GB_bec5a35a-37b1-43d2-b485-658c780b36a1.jpg?v=1778061679",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_quarter_GB_6ed2f684-d263-4b51-9023-da45e4ef590a.jpg?v=1778061679",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_side_GB_20908ce9-91a6-4aed-8eb8-cd417108d6af.jpg?v=1778061679"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/soft-nappa-ankle-boots-chai",
+          "handle": "soft-nappa-ankle-boots-chai",
+          "title": "Soft nappa ankle boots chai",
+          "color": "Soft nappa ankle boots chai",
+          "sku": "7330037515721",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_side_GB_940d1c25-4f3d-44a6-85ef-e7586a8b6315.jpg?v=1778061675",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-378_SOFT_NAPPA_ANKLE_BOOTS_CHAI__0009.jpg?v=1775723463",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0354-LE0231-378_SOFT_NAPPA_ANKLE_BOOTS_CHAI__2596.jpg?v=1775723463",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_back_GB_fc672e72-3469-4f17-81a9-bc7289eaf8be.jpg?v=1778061679",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_detail_heel_GB_e80dfe2d-f2d6-420a-b131-ce2f9011ce02.jpg?v=1778061679",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_detail_toe_GB_bec5a35a-37b1-43d2-b485-658c780b36a1.jpg?v=1778061679",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_quarter_GB_6ed2f684-d263-4b51-9023-da45e4ef590a.jpg?v=1778061679",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0354-LE0231-378__SOFT_NAPPA_ANKLE_BOOTS_CHAI_side_GB_20908ce9-91a6-4aed-8eb8-cd417108d6af.jpg?v=1778061679"
           ],
           "category": "ANKLE_BOOT",
           "productType": "Shoes",
@@ -1423,6 +1549,132 @@
         }
       ],
       "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--slip-ballerina-tiger",
+      "brand": "TOTEME",
+      "canonicalName": "Slip Ballerina Tiger",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_e6379d32-2e06-4ad4-a70d-8d8e790e4be5.jpg?v=1783585088",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__007_A.jpg?v=1783003898",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__036_B.jpg?v=1783003898",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_quarter_GB_ec3686de-abae-4a3a-baf5-52b0702d2f68.jpg?v=1783585094",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_above_GB_30358ff8-7804-47e6-8dc6-5c288b1839cb.jpg?v=1783585094",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_heel_GB_4e985bd2-7aef-41e5-9338-7385729de873.jpg?v=1783585094",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_toe_GB_f144b9cc-247d-4de3-b335-e65e98e350bb.jpg?v=1783585094",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_6a0afae7-f8c1-4702-8732-d465f7569daa.jpg?v=1783585094"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/slip-pony-hair-ballerinas-tiger",
+          "handle": "slip-pony-hair-ballerinas-tiger",
+          "title": "Slip pony hair ballerinas tiger",
+          "color": "Slip pony hair ballerinas tiger",
+          "sku": "7330037576166",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_e6379d32-2e06-4ad4-a70d-8d8e790e4be5.jpg?v=1783585088",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__007_A.jpg?v=1783003898",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__036_B.jpg?v=1783003898",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_quarter_GB_ec3686de-abae-4a3a-baf5-52b0702d2f68.jpg?v=1783585094",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_above_GB_30358ff8-7804-47e6-8dc6-5c288b1839cb.jpg?v=1783585094",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_heel_GB_4e985bd2-7aef-41e5-9338-7385729de873.jpg?v=1783585094",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_toe_GB_f144b9cc-247d-4de3-b335-e65e98e350bb.jpg?v=1783585094",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_6a0afae7-f8c1-4702-8732-d465f7569daa.jpg?v=1783585094"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--slip-ballerina-zebra",
+      "brand": "TOTEME",
+      "canonicalName": "Slip Ballerina Zebra",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_side_GB.jpg?v=1781702488",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0268-483_ZEBRA_ZEBRA_SLIP_PONY_HAIR_BALLERINAS_ZEBRA__099_A.jpg?v=1783003922",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0268-483_ZEBRA_ZEBRA_SLIP_PONY_HAIR_BALLERINAS_ZEBRA__119_B.jpg?v=1783003922",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_above_GB.jpg?v=1781702494",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_detail_heel_GB.jpg?v=1781702494",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_detail_toe_GB.jpg?v=1781702494",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_quarter_GB.jpg?v=1781702494",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_side_GB_71e5cd1c-5fb0-4c93-8d03-ea142393ac37.jpg?v=1781702494"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/slip-pony-hair-ballerinas-zebra",
+          "handle": "slip-pony-hair-ballerinas-zebra",
+          "title": "Slip pony hair ballerinas zebra",
+          "color": "Slip pony hair ballerinas zebra",
+          "sku": "7330037559923",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_side_GB.jpg?v=1781702488",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0268-483_ZEBRA_ZEBRA_SLIP_PONY_HAIR_BALLERINAS_ZEBRA__099_A.jpg?v=1783003922",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0268-483_ZEBRA_ZEBRA_SLIP_PONY_HAIR_BALLERINAS_ZEBRA__119_B.jpg?v=1783003922",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_above_GB.jpg?v=1781702494",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_detail_heel_GB.jpg?v=1781702494",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_detail_toe_GB.jpg?v=1781702494",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_quarter_GB.jpg?v=1781702494",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0264-483_SHOES_SLIP_PONY_HAIR_BALLERINAS_ZEBRA_side_GB_71e5cd1c-5fb0-4c93-8d03-ea142393ac37.jpg?v=1781702494"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--slip-jersey-ballerina",
+      "brand": "TOTEME",
+      "canonicalName": "Slip Jersey Ballerina",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB.jpg?v=1781703653",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__009_A.jpg?v=1783003716",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__018_B.jpg?v=1783003716",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_above_GB.jpg?v=1781703659",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_quarter_GB.jpg?v=1781703658",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_heel_GB.jpg?v=1781703659",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_toe_GB.jpg?v=1781703659",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB_9d737135-0e6b-458a-9031-193ba75db684.jpg?v=1781703659"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/slip-jersey-ballerinas-black",
+          "handle": "slip-jersey-ballerinas-black",
+          "title": "Slip jersey ballerinas black",
+          "color": "s black",
+          "sku": "7330037576562",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB.jpg?v=1781703653",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__009_A.jpg?v=1783003716",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__018_B.jpg?v=1783003716",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_above_GB.jpg?v=1781703659",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_quarter_GB.jpg?v=1781703658",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_heel_GB.jpg?v=1781703659",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_toe_GB.jpg?v=1781703659",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB_9d737135-0e6b-458a-9031-193ba75db684.jpg?v=1781703659"
+          ],
+          "category": "BALLERINA",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2194,90 +2446,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "toteme--slip-ballerina-tiger",
-      "brand": "TOTEME",
-      "canonicalName": "Slip Ballerina Tiger",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_e6379d32-2e06-4ad4-a70d-8d8e790e4be5.jpg?v=1783585088",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__007_A.jpg?v=1783003898",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__036_B.jpg?v=1783003898",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_quarter_GB_ec3686de-abae-4a3a-baf5-52b0702d2f68.jpg?v=1783585094",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_above_GB_30358ff8-7804-47e6-8dc6-5c288b1839cb.jpg?v=1783585094",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_heel_GB_4e985bd2-7aef-41e5-9338-7385729de873.jpg?v=1783585094",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_toe_GB_f144b9cc-247d-4de3-b335-e65e98e350bb.jpg?v=1783585094",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_6a0afae7-f8c1-4702-8732-d465f7569daa.jpg?v=1783585094"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://toteme.com/products/slip-pony-hair-ballerinas-tiger",
-          "handle": "slip-pony-hair-ballerinas-tiger",
-          "title": "Slip pony hair ballerinas tiger",
-          "color": "Slip pony hair ballerinas tiger",
-          "sku": "7330037576166",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_e6379d32-2e06-4ad4-a70d-8d8e790e4be5.jpg?v=1783585088",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__007_A.jpg?v=1783003898",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0313-LE0263-482_BABY_CALF_PONY_TIGER_SLIP_PONY_HAIR_BALLERINAS_TIGER__036_B.jpg?v=1783003898",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_quarter_GB_ec3686de-abae-4a3a-baf5-52b0702d2f68.jpg?v=1783585094",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_above_GB_30358ff8-7804-47e6-8dc6-5c288b1839cb.jpg?v=1783585094",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_heel_GB_4e985bd2-7aef-41e5-9338-7385729de873.jpg?v=1783585094",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_detail_toe_GB_f144b9cc-247d-4de3-b335-e65e98e350bb.jpg?v=1783585094",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0313-LE0263-482_SHOES_SLIP_PONY_HAIR_BALLERINAS_TIGER_side_GB_6a0afae7-f8c1-4702-8732-d465f7569daa.jpg?v=1783585094"
-          ],
-          "category": "BALLERINA",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "toteme--slip-jersey-ballerina",
-      "brand": "TOTEME",
-      "canonicalName": "Slip Jersey Ballerina",
-      "category": "BALLERINA",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB.jpg?v=1781703653",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__009_A.jpg?v=1783003716",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__018_B.jpg?v=1783003716",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_above_GB.jpg?v=1781703659",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_quarter_GB.jpg?v=1781703658",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_heel_GB.jpg?v=1781703659",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_toe_GB.jpg?v=1781703659",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB_9d737135-0e6b-458a-9031-193ba75db684.jpg?v=1781703659"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://toteme.com/products/slip-jersey-ballerinas-black",
-          "handle": "slip-jersey-ballerinas-black",
-          "title": "Slip jersey ballerinas black",
-          "color": "s black",
-          "sku": "7330037576562",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB.jpg?v=1781703653",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__009_A.jpg?v=1783003716",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0389-FB0784-001_JERSEY_FABRIC_BLACK_SLIP_JERSEY_BALLERINAS_BLACK__018_B.jpg?v=1783003716",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_above_GB.jpg?v=1781703659",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_quarter_GB.jpg?v=1781703658",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_heel_GB.jpg?v=1781703659",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_detail_toe_GB.jpg?v=1781703659",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0389-FB0784-001_SHOES_SLIP_JERSEY_BALLERINAS_BLACK_side_GB_9d737135-0e6b-458a-9031-193ba75db684.jpg?v=1781703659"
-          ],
-          "category": "BALLERINA",
-          "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "toteme--slip-naplack-pumps-black",
       "brand": "TOTEME",
       "canonicalName": "Slip naplack pumps black",
@@ -2349,9 +2517,9 @@
           ],
           "category": "MULE",
           "productType": "Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://toteme.com/products/slip-naplack-pumps-off-white",
@@ -2464,90 +2632,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "toteme--contour-mule",
-      "brand": "TOTEME",
-      "canonicalName": "Contour Mule",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_side_GB.jpg?v=1781703380",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-102_SUEDE_BROWN_CONTOUR_SUEDE_MULES_BROWN__209_A.jpg?v=1782919597",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-102_SUEDE_BROWN_CONTOUR_SUEDE_MULES_BROWN__229_B.jpg?v=1782919597",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_quarter_GB.jpg?v=1781703390",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_above_GB.jpg?v=1781703391",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_detail_heel_GB.jpg?v=1781703391",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_detail_toe_GB.jpg?v=1781703391",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_side_GB_49d26f65-4621-4bf5-91a4-25823ad9b2b4.jpg?v=1781703390"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://toteme.com/products/contour-suede-mules-brown",
-          "handle": "contour-suede-mules-brown",
-          "title": "Contour suede mules brown",
-          "color": "Contour suede mules brown",
-          "sku": "7330037575602",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_side_GB.jpg?v=1781703380",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-102_SUEDE_BROWN_CONTOUR_SUEDE_MULES_BROWN__209_A.jpg?v=1782919597",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-102_SUEDE_BROWN_CONTOUR_SUEDE_MULES_BROWN__229_B.jpg?v=1782919597",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_quarter_GB.jpg?v=1781703390",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_above_GB.jpg?v=1781703391",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_detail_heel_GB.jpg?v=1781703391",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_detail_toe_GB.jpg?v=1781703391",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-102_SHOES_CONTOUR_SUEDE_MULES_BROWN_side_GB_49d26f65-4621-4bf5-91a4-25823ad9b2b4.jpg?v=1781703390"
-          ],
-          "category": "MULE",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "toteme--bar-mule",
-      "brand": "TOTEME",
-      "canonicalName": "Bar Mule",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_side_GB.jpg?v=1781702576",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0325-LE0244-317_PYTHON_PRINT_LEATHER_BLACK_ECRU_BAR_PYTHON-EMBOSSED_MULES_BLACK_ECRU__007_A.jpg?v=1782916069",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0325-LE0244-317_PYTHON_PRINT_LEATHER_BLACK_ECRU_BAR_PYTHON-EMBOSSED_MULES_BLACK_ECRU__024_B.jpg?v=1782916069",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_above_GB.jpg?v=1781702581",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_detail_heel_GB.jpg?v=1781702581",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_detail_toe_GB.jpg?v=1781702581",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_quarter_GB.jpg?v=1781702581",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_side_GB_ae9ea882-f5be-4e2e-9747-2766ad7a2ce6.jpg?v=1781702581"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://toteme.com/products/bar-python-embossed-mules-black-ecru",
-          "handle": "bar-python-embossed-mules-black-ecru",
-          "title": "Bar python-embossed mules black/ecru",
-          "color": "Bar python-embossed mules black/ecru",
-          "sku": "7330037578405",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_side_GB.jpg?v=1781702576",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0325-LE0244-317_PYTHON_PRINT_LEATHER_BLACK_ECRU_BAR_PYTHON-EMBOSSED_MULES_BLACK_ECRU__007_A.jpg?v=1782916069",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0325-LE0244-317_PYTHON_PRINT_LEATHER_BLACK_ECRU_BAR_PYTHON-EMBOSSED_MULES_BLACK_ECRU__024_B.jpg?v=1782916069",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_above_GB.jpg?v=1781702581",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_detail_heel_GB.jpg?v=1781702581",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_detail_toe_GB.jpg?v=1781702581",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_quarter_GB.jpg?v=1781702581",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0325-LE0244-317_SHOES_CONTOUR_PYTHON_MULES_BLACK-ECRU_side_GB_ae9ea882-f5be-4e2e-9747-2766ad7a2ce6.jpg?v=1781702581"
-          ],
-          "category": "MULE",
-          "productType": "Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "toteme--mule-bark",
       "brand": "TOTEME",
       "canonicalName": "Mule Bark",
@@ -2578,6 +2662,48 @@
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0364-LE0231-213_SHOES_SOFT_NAPPA_MULES_BARK_detail_heel_GB.jpg?v=1781703286",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0364-LE0231-213_SHOES_SOFT_NAPPA_MULES_BARK_detail_toe_GB.jpg?v=1781703287",
             "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0364-LE0231-213_SHOES_SOFT_NAPPA_MULES_BARK_side_GB_3f4d907e-9939-4139-b4a5-1d30d748d959.jpg?v=1781703287"
+          ],
+          "category": "MULE",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "toteme--contour-mule",
+      "brand": "TOTEME",
+      "canonicalName": "Contour Mule",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_side_GB.jpg?v=1781703341",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-001_SUEDE_BLACK_CONTOUR_SUEDE_MULES_BLACK__177_A.jpg?v=1782919560",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-001_SUEDE_BLACK_CONTOUR_SUEDE_MULES_BLACK__226_B.jpg?v=1782919560",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_quarter_GB.jpg?v=1781703348",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_above_GB.jpg?v=1781703349",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_detail_heel_GB.jpg?v=1781703348",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_detail_toe_GB.jpg?v=1781703348",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_side_GB_fc24ce50-c798-414b-a53f-53e24ad4f482.jpg?v=1781703347"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/contour-suede-mules-black",
+          "handle": "contour-suede-mules-black",
+          "title": "Contour suede mules black",
+          "color": "Contour suede mules black",
+          "sku": "7330037575527",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_side_GB.jpg?v=1781703341",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-001_SUEDE_BLACK_CONTOUR_SUEDE_MULES_BLACK__177_A.jpg?v=1782919560",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_FW26_264-WAS0380-LE0012-001_SUEDE_BLACK_CONTOUR_SUEDE_MULES_BLACK__226_B.jpg?v=1782919560",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_quarter_GB.jpg?v=1781703348",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_above_GB.jpg?v=1781703349",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_detail_heel_GB.jpg?v=1781703348",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_detail_toe_GB.jpg?v=1781703348",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_FW26_264-WAS0380-LE0012-001_SHOES_CONTOUR_SUEDE_MULES_BLACK_side_GB_fc24ce50-c798-414b-a53f-53e24ad4f482.jpg?v=1781703347"
           ],
           "category": "MULE",
           "productType": "Shoes",
@@ -2842,7 +2968,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "toteme--bar-mule--bar-leather-mules-black",
+      "modelFamilyId": "toteme--bar-mule",
       "brand": "TOTEME",
       "canonicalName": "Bar Mule",
       "category": "MULE",
@@ -3380,6 +3506,48 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "toteme--flip-flops-off",
+      "brand": "TOTEME",
+      "canonicalName": "Flip Flops Off",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_side_GB_5798298c-ca54-4c2a-8b03-a85be5bfdf52.jpg?v=1778060775",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE__2446.jpg?v=1775660060",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE__2471.jpg?v=1775660060",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_above_GB_8a1bf95c-8595-4b89-95a4-a16746fe38d3.jpg?v=1778060775",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_detail_heel_GB_ad952a07-439c-4882-91e2-13f4d24d6f03.jpg?v=1778060776",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_detail_toe_GB_d88eca4c-bc50-46c5-9342-ceb87af03ae0.jpg?v=1778060778",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_quarter_GB_e6c6ad6f-222c-4c0c-8356-13b59e3d1812.jpg?v=1778060775",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_side_GB_1467027f-27cb-446a-8c66-dc086f9ac4a2.jpg?v=1778060777"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://toteme.com/products/naplack-flip-flops-off-white",
+          "handle": "naplack-flip-flops-off-white",
+          "title": "Naplack flip flops off-white",
+          "color": "Naplack -white",
+          "sku": "7330037517169",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_side_GB_5798298c-ca54-4c2a-8b03-a85be5bfdf52.jpg?v=1778060775",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE__2446.jpg?v=1775660060",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE__2471.jpg?v=1775660060",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_above_GB_8a1bf95c-8595-4b89-95a4-a16746fe38d3.jpg?v=1778060775",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_detail_heel_GB_ad952a07-439c-4882-91e2-13f4d24d6f03.jpg?v=1778060776",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_detail_toe_GB_d88eca4c-bc50-46c5-9342-ceb87af03ae0.jpg?v=1778060778",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_quarter_GB_e6c6ad6f-222c-4c0c-8356-13b59e3d1812.jpg?v=1778060775",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_262-WAS4557-LE0046-059_NAPLACK_FLIP_FLOPS_OFF-WHITE_side_GB_1467027f-27cb-446a-8c66-dc086f9ac4a2.jpg?v=1778060777"
+          ],
+          "category": "SANDAL",
+          "productType": "Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "toteme--croco-embossed-flip-flops-dark-green",
       "brand": "TOTEME",
       "canonicalName": "Croco-embossed flip flops dark green",
@@ -3900,7 +4068,15 @@
         "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-102__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BROWN_above_GB.jpg?v=1775722623",
         "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-102__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BROWN_detail_heel_GB.jpg?v=1775722623",
         "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-102__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BROWN_detail_toe_GB.jpg?v=1775722623",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-102__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BROWN_side_GB_f05cb315-303e-423f-94be-68a6ae4b98f7.jpg?v=1775722623"
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-102__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BROWN_side_GB_f05cb315-303e-423f-94be-68a6ae4b98f7.jpg?v=1775722623",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_side_GB.jpg?v=1774617089",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0399-LE0228-001_SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK__0004.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0399-LE0228-001_SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK__1852.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_quarter_GB.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_above_GB.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_detai_toe_GB.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_detail_heel_GB.jpg?v=1775722587",
+        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_side_GB_2d0a29d4-2b00-44d2-9439-6fba450b9383.jpg?v=1775722587"
       ],
       "variants": [
         {
@@ -3924,42 +4100,22 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "toteme--contoured-flip-flops",
-      "brand": "TOTEME",
-      "canonicalName": "Contoured Flip Flops",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_side_GB.jpg?v=1774616381",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0333-LE0046-001_SWIFT_NAPLACK_SANDALS_BLACK__2324.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0333-LE0046-001_SWIFT_NAPLACK_SANDALS_BLACK__2343.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_quarter_GB.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_above_GB.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_detail_heel_GB.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_detail_toe_GB.jpg?v=1775727406",
-        "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_side_GB_4832b001-c9b5-4703-99aa-32cbdc703dbc.jpg?v=1775727406"
-      ],
-      "variants": [
+        },
         {
-          "productUrl": "https://toteme.com/products/contoured-naplack-flip-flops-black",
-          "handle": "contoured-naplack-flip-flops-black",
-          "title": "Contoured naplack flip flops black",
-          "color": "Contoured naplack flip flops black",
-          "sku": "7330037514915",
+          "productUrl": "https://toteme.com/products/slim-lizard-embossed-bandeau-slides-black",
+          "handle": "slim-lizard-embossed-bandeau-slides-black",
+          "title": "Slim lizard-embossed bandeau slides black",
+          "color": "Slim lizard-embossed bandeau slides black",
+          "sku": "7330037515806",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_side_GB.jpg?v=1774616381",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0333-LE0046-001_SWIFT_NAPLACK_SANDALS_BLACK__2324.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0333-LE0046-001_SWIFT_NAPLACK_SANDALS_BLACK__2343.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_quarter_GB.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_above_GB.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_detail_heel_GB.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_detail_toe_GB.jpg?v=1775727406",
-            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0333-LE0046-001__SWIFT_NAPLACK_SANDALS_BLACK_side_GB_4832b001-c9b5-4703-99aa-32cbdc703dbc.jpg?v=1775727406"
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_side_GB.jpg?v=1774617089",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0399-LE0228-001_SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK__0004.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_ECOM_SEASONAL_SHOES_PF26_263-WAS0399-LE0228-001_SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK__1852.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_quarter_GB.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_above_GB.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_detai_toe_GB.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_detail_heel_GB.jpg?v=1775722587",
+            "https://cdn.shopify.com/s/files/1/0480/1141/1607/files/TOTEME_FLATS_PF26_SHOES_263-WAS0399-LE0228-001__SLIM_LIZARD-EMBOSSED_BANDEAU_SLIDES_BLACK_side_GB_2d0a29d4-2b00-44d2-9439-6fba450b9383.jpg?v=1775722587"
           ],
           "category": "SANDAL",
           "productType": "Shoes",
@@ -3969,7 +4125,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "toteme--contoured-lizard-flip-flops",
@@ -4533,8 +4689,11 @@
     "https://toteme.com/products/contour-nappa-boots-black",
     "https://toteme.com/products/nappa-mid-heel-boots-black",
     "https://toteme.com/products/nappa-mid-heel-boots-bark",
+    "https://toteme.com/products/soft-suede-ankle-boots-black",
     "https://toteme.com/products/soft-suede-ankle-boots-brown",
     "https://toteme.com/products/soft-nappa-ankle-boots-bark",
+    "https://toteme.com/products/soft-nappa-ankle-boots-black",
+    "https://toteme.com/products/soft-nappa-ankle-boots-chai",
     "https://toteme.com/products/the-city-boot-black-suede",
     "https://toteme.com/products/slim-suede-ankle-boots-black",
     "https://toteme.com/products/slim-naplack-ankle-boots-black",
@@ -4555,6 +4714,9 @@
     "https://toteme.com/products/downtown-shearling-boots-black-beige",
     "https://toteme.com/products/fold-down-shearling-boots-black",
     "https://toteme.com/products/fold-down-shearling-boots-pepper",
+    "https://toteme.com/products/slip-pony-hair-ballerinas-tiger",
+    "https://toteme.com/products/slip-pony-hair-ballerinas-zebra",
+    "https://toteme.com/products/slip-jersey-ballerinas-black",
     "https://toteme.com/products/slip-jersey-ballerinas-grey-melange",
     "https://toteme.com/products/slip-nappa-ballerinas-black",
     "https://toteme.com/products/slip-naplack-ballerinas-black",
@@ -4563,6 +4725,7 @@
     "https://toteme.com/products/slip-suede-ballerinas-black",
     "https://toteme.com/products/velvet-venetian-slippers-red",
     "https://toteme.com/products/velvet-venetian-slippers-saffron",
+    "https://toteme.com/products/velvet-venetian-slippers-black",
     "https://toteme.com/products/slingback-satin-mary-janes-black",
     "https://toteme.com/products/slingback-naplack-mary-janes-flamingo",
     "https://toteme.com/products/slingback-patent-mary-janes-off-white",
@@ -4571,22 +4734,18 @@
     "https://toteme.com/products/wool-cashmere-lounge-slippers-black",
     "https://toteme.com/products/grained-leather-loafers-black",
     "https://toteme.com/products/velvet-loafers-black",
-    "https://toteme.com/products/velvet-venetian-slippers-black",
+    "https://toteme.com/products/soft-nappa-loafers-black",
     "https://toteme.com/products/minimalist-suede-ballerinas-black",
     "https://toteme.com/products/slip-naplack-ballerinas-off-white",
-    "https://toteme.com/products/slip-pony-hair-ballerinas-tiger",
-    "https://toteme.com/products/soft-nappa-loafers-black",
-    "https://toteme.com/products/slip-jersey-ballerinas-black",
     "https://toteme.com/products/slip-naplack-pumps-black",
     "https://toteme.com/products/slip-naplack-pumps-cherry",
     "https://toteme.com/products/pierced-nappa-pumps-cashew",
     "https://toteme.com/products/pierced-nappa-pumps-black",
     "https://toteme.com/products/slip-naplack-pumps-off-white",
     "https://toteme.com/products/contour-naplack-pumps-black",
-    "https://toteme.com/products/contour-suede-mules-brown",
-    "https://toteme.com/products/bar-python-embossed-mules-black-ecru",
     "https://toteme.com/products/soft-nappa-mules-bark",
     "https://toteme.com/products/soft-nappa-mules-black",
+    "https://toteme.com/products/contour-suede-mules-black",
     "https://toteme.com/products/slip-jersey-pumps-black",
     "https://toteme.com/products/contour-naplack-pumps-cashew",
     "https://toteme.com/products/summer-pony-hair-mules-leopard",
@@ -4607,6 +4766,7 @@
     "https://toteme.com/products/croco-embossed-heeled-flip-flops-tangerine",
     "https://toteme.com/products/croco-embossed-heeled-flip-flops-dark-green",
     "https://toteme.com/products/croco-embossed-heeled-flip-flops-off-white",
+    "https://toteme.com/products/naplack-flip-flops-off-white",
     "https://toteme.com/products/croco-embossed-flip-flops-dark-green",
     "https://toteme.com/products/naplack-flip-flops-buttercup",
     "https://toteme.com/products/croco-embossed-flip-flops-off-white",
@@ -4624,7 +4784,7 @@
     "https://toteme.com/products/studded-leather-slides-sienna",
     "https://toteme.com/products/studded-velvet-slides-black",
     "https://toteme.com/products/slim-lizard-embossed-bandeau-slides-brown",
-    "https://toteme.com/products/contoured-naplack-flip-flops-black",
+    "https://toteme.com/products/slim-lizard-embossed-bandeau-slides-black",
     "https://toteme.com/products/contoured-lizard-embossed-flip-flops-beige-black",
     "https://toteme.com/products/contour-naplack-slingbacks-black",
     "https://toteme.com/products/contour-lizard-embossed-slingbacks-brown",
