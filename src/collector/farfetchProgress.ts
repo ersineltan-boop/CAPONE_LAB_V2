@@ -6,7 +6,7 @@ import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchJsonLdToProduct, parseFarfetc
 import type {PilotProduct} from './types';
 
 interface Page {urls: string[]; products: PilotProduct[]; collectedAt: string; fingerprint: string;}
-interface Progress {version: 1; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
+interface Progress {version: 1; listing?: string; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
 const digest = (text: string) => createHash('sha256').update(text).digest('hex');
 async function atomic(path: string, value: unknown) {
   await writeFile(path + '.tmp', JSON.stringify(value)); await rename(path + '.tmp', path);
@@ -15,9 +15,16 @@ async function atomic(path: string, value: unknown) {
 /** Saved pages are collection progress, never a publishable partial catalog. */
 export async function collectFarfetchProgress(options: {
   directory: string; maxPages?: number; budgetMs?: number;
+  listingUrl?: string;
   http?: typeof fetchText; now?: () => number;
 }) {
   const http = options.http ?? fetchText, now = options.now ?? Date.now;
+  const listing = options.listingUrl ?? FARFETCH_SHOES_URL;
+  const target = new URL(listing);
+  if (target.origin !== FARFETCH_BASE || target.username || target.password || target.search || target.hash ||
+      !/^\/uk\/shopping\/women\/(?:shoes|trainers|boots|pumps|sandals|ballerinas|loafers|mules|espadrilles)-1\/items\.aspx$/.test(target.pathname)) {
+    throw new Error('Invalid Farfetch footwear listing');
+  }
   const began = now(), deadline = began + Math.min(options.budgetMs ?? 20 * 60_000, 20 * 60_000);
   const pageLimit = Math.min(Math.max(1, options.maxPages ?? 800), 800);
   const directory = options.directory, statePath = join(directory, 'progress.json');
@@ -26,10 +33,20 @@ export async function collectFarfetchProgress(options: {
   let pagesTraversed = 0, rawSourceProducts = 0;
   let sourceValidated = false;
   const errors: string[] = [];
+  const request = async (url: string, delayMs: number) => {
+    let response = await http(url, {delayMs}); pagesTraversed++;
+    // Retry a temporary transport/server failure once, within the same budget.
+    // Access denials and rate limits are never retried or routed around.
+    if ((response.status === 0 || response.status >= 500) && now() + 17_000 <= deadline) {
+      response = await http(url, {delayMs:900}); pagesTraversed++;
+    }
+    return response;
+  };
   const result = (products: PilotProduct[] = [], full = false, blocked = false) => ({
     products, coverageStatus: full ? 'FULL' as const : sourceValidated ? 'PARTIAL' as const : 'FAILED' as const,
     errors, blocked, paginationExhausted: full, pagesTraversed,
-    sourceReportedProductCount: progress?.total ?? null, rawSourceProducts,
+    sourceReportedProductCount: progress?.total ?? null,
+    rawSourceProducts: rawSourceProducts || Math.min((progress?.parts.length ?? 0) * (progress?.size ?? 0), progress?.total ?? 0),
     progress: {nextPage: progress?.nextPage ?? 1, expectedPages: progress ? Math.ceil(progress.total / progress.size) : null,
       startedAt: progress?.startedAt ?? null, checkedAt: new Date(now()).toISOString(), resetReason,
       savedPages: progress?.parts.length ?? 0},
@@ -45,7 +62,7 @@ export async function collectFarfetchProgress(options: {
     if ((error as NodeJS.ErrnoException).code !== 'ENOENT') resetReason = 'CHECKPOINT_INVALID';
     progress = undefined;
   }
-  const home = await http(FARFETCH_SHOES_URL, {delayMs: 500}); pagesTraversed++;
+  const home = await request(listing, 500);
   if (!home.ok) {errors.push(`Farfetch HTTP ${home.status}: ${home.error ?? 'source unavailable'}`); return result([], false, [403,429].includes(home.status));}
   const initial = parseFarfetchCatalogPagination(home.text);
   const firstItems = parseFarfetchItemList(home.text);
@@ -60,7 +77,7 @@ export async function collectFarfetchProgress(options: {
     }
     const collectedAt = new Date(now()).toISOString();
     return {urls, products: items.flatMap(item => {
-      const product = farfetchJsonLdToProduct(item, FARFETCH_SHOES_URL, collectedAt); return product ? [product] : [];
+      const product = farfetchJsonLdToProduct(item, listing, collectedAt); return product ? [product] : [];
     }), collectedAt, fingerprint: digest(JSON.stringify(urls))};
   };
   let first: Page;
@@ -68,13 +85,13 @@ export async function collectFarfetchProgress(options: {
   sourceValidated = true;
   // A rolling storefront is not an immutable snapshot. Old/different epochs
   // cannot be joined and called a fresh complete collection.
-  if (progress && (progress.total !== initial.total || progress.size !== initial.size || progress.first !== first.fingerprint ||
+  if (progress && ((progress.listing ?? FARFETCH_SHOES_URL) !== listing || progress.total !== initial.total || progress.size !== initial.size || progress.first !== first.fingerprint ||
       began - Date.parse(progress.startedAt) > 60 * 60_000 || began < Date.parse(progress.startedAt))) {
     resetReason = 'SOURCE_CHANGED_OR_CHECKPOINT_STALE'; progress = undefined;
   }
   if (!progress) {
     await rm(directory, {recursive: true, force: true}); await mkdir(directory, {recursive: true});
-    progress = {version: 1, startedAt: new Date(began).toISOString(), total: initial.total, size: initial.size,
+    progress = {version: 1, listing, startedAt: new Date(began).toISOString(), total: initial.total, size: initial.size,
       first: first.fingerprint, nextPage: 1, parts: []};
   }
   const required = Math.ceil(progress.total / progress.size);
@@ -83,12 +100,11 @@ export async function collectFarfetchProgress(options: {
     // Reserve the HTTP helper's timeout plus throttling before starting a page.
     if (now() + 16_000 > deadline) {errors.push('FARFETCH_TIME_BUDGET_REACHED_PROGRESS_SAVED'); break;}
     const pageNumber = progress.nextPage;
-    const response = pageNumber === 1 ? home : await http(`${FARFETCH_SHOES_URL}?page=${pageNumber}`, {delayMs: 900});
-    if (pageNumber !== 1) pagesTraversed++;
+    const response = pageNumber === 1 ? home : await request(`${listing}?page=${pageNumber}`, 900);
     if (!response.ok) {errors.push(`Farfetch page ${pageNumber} HTTP ${response.status}: ${response.error ?? 'source unavailable'}`); return result([], false, [403,429].includes(response.status));}
     const meta = parseFarfetchCatalogPagination(response.text);
     if (!meta || meta.page !== pageNumber || meta.total !== progress.total || meta.size !== progress.size ||
-      meta.hasNextPage !== (pageNumber < required)) {errors.push(`Farfetch pagination changed at page ${pageNumber}; incomplete snapshot retained`); break;}
+      meta.hasNextPage !== (pageNumber < required)) {errors.push(`Farfetch pagination changed at page ${pageNumber} (expected total ${progress.total}, observed ${meta?.total ?? 'missing'}); incomplete snapshot retained`); break;}
     let page: Page;
     try {page = pageNumber === 1 ? first : readPage(response.text);} catch (error) {errors.push(String(error)); break;}
     const expected = pageNumber < required ? progress.size : progress.total - (required - 1) * progress.size;
@@ -121,7 +137,7 @@ export async function collectFarfetchProgress(options: {
     await rm(directory, {recursive:true,force:true}); return result();
   }
   if (now() + 16_000 > deadline) {errors.push('FARFETCH_FINAL_CHECK_PENDING_PROGRESS_SAVED'); return result();}
-  const final = await http(FARFETCH_SHOES_URL, {delayMs:500}); pagesTraversed++;
+  const final = await request(listing, 500);
   const finalMeta = final.ok ? parseFarfetchCatalogPagination(final.text) : null;
   let sameFirst = false;
   try {sameFirst = final.ok && readPage(final.text).fingerprint === progress.first;} catch { /* Fail closed. */ }

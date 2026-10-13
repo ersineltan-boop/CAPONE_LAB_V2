@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { FARFETCH_ID } from "../src/collector/farfetch";
-import {collectFarfetchProgress} from "../src/collector/farfetchProgress";
+import {collectFarfetchCategories} from "../src/collector/farfetchCategories";
 import {recordSourceRetry, sourceRetryPause} from "../src/collector/sourceRetry";
 import { publishMarketplaceDelivery } from "../src/collector/marketplaceDelivery";
 import { collect24S } from "../src/collector/twentyFourS";
@@ -86,7 +86,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
   }
 
   if (sourceId === FARFETCH_ID) {
-    const result = await collectFarfetchProgress({directory: join(PROGRESS_DIR, 'farfetch')});
+    const result = await collectFarfetchCategories({directory: join(PROGRESS_DIR, 'farfetch-categories')});
     await writeJson(join(ARTIFACT_DIR, "farfetch-progress.json"), {...result, products: undefined});
     return {
       sourceId,
