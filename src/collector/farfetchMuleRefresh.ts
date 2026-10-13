@@ -13,9 +13,11 @@ import type {PilotProduct} from './types';
 
 const digest=(s:string)=>createHash('sha256').update(s).digest('hex');
 /** Listing observations discover URLs; only independent product-page proof can publish. */
-export async function collectFarfetchMuleCandidate(options:{directory:string;previousProducts?:readonly PilotProduct[];maxProducts?:number;budgetMs?:number;concurrency?:number}):Promise<MarketplaceRefreshCandidate> {
+export async function collectFarfetchMuleCandidate(options:{directory:string;previousProducts?:readonly PilotProduct[];maxProducts?:number;budgetMs?:number;concurrency?:number;http?:typeof fetchText}):Promise<MarketplaceRefreshCandidate> {
  await mkdir(options.directory,{recursive:true});
- const root=await fetchText(FARFETCH_SHOES_URL,{delayMs:500});
+ const http=options.http??fetchText;
+ let root=await http(FARFETCH_SHOES_URL,{delayMs:500});
+ if(!farfetchAccessBlocked(root)&&(root.status===0||root.status>=500))root=await http(FARFETCH_SHOES_URL,{delayMs:900});
  if(farfetchAccessBlocked(root))throw new Error(`Farfetch access blocked (HTTP ${root.status})`);
  const source=root.ok?parseFarfetchCatalogPagination(root.text):null;
  if(!source||source.page!==1||source.total<1)throw new Error(`Farfetch authoritative root unavailable: HTTP ${root.status}`);
@@ -27,7 +29,7 @@ export async function collectFarfetchMuleCandidate(options:{directory:string;pre
    body.urls.every((url:unknown)=>typeof url==='string'&&farfetchProductId(url)&&!new URL(url).search&&!new URL(url).hash))queue=body;
  }catch { /* Recollect absent, damaged or expired discovery evidence. */ }
  if(!queue){
-  const listing=await collectFarfetchProgress({directory:join(options.directory,'listing'),listingUrl:FARFETCH_MULES_URL,reconcileCountChanges:true,captureObservations:true,budgetMs:3*60_000});
+  const listing=await collectFarfetchProgress({directory:join(options.directory,'listing'),listingUrl:FARFETCH_MULES_URL,reconcileCountChanges:true,captureObservations:true,budgetMs:3*60_000,http});
   if(listing.blocked)throw new Error(listing.errors.join('; '));
   const urls=[...new Set((listing.observations??[]).map(p=>p.productUrl))];
   if(!urls.length)throw new Error('No authoritative Mule observations');
@@ -36,7 +38,7 @@ export async function collectFarfetchMuleCandidate(options:{directory:string;pre
   await rename(join(options.directory,'queue.json.tmp'),join(options.directory,'queue.json'));
  }
  console.log(`Farfetch Mule queue: ${queue.urls.length} product URLs`);
- const result=await collectFarfetchProductRefresh({directory:join(options.directory,'products'),urls:queue.urls,previousProducts:options.previousProducts,maxProducts:options.maxProducts,budgetMs:options.budgetMs,concurrency:options.concurrency});
+ const result=await collectFarfetchProductRefresh({directory:join(options.directory,'products'),urls:queue.urls,previousProducts:options.previousProducts,maxProducts:options.maxProducts,budgetMs:options.budgetMs,concurrency:options.concurrency,http});
  await writeFile(join(options.directory,'result.json'),JSON.stringify(result));
  return {sourceId:'farfetch',publicationMode:'verified-products',verifiedProducts:result.verifiedProducts,
   products:result.products,coverageStatus:'PARTIAL',sourceTotal:source.total,rawCollected:result.products.length,
