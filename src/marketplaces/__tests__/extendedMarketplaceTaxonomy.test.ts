@@ -24,4 +24,12 @@ describe('supported marketplace primary taxonomy',()=>{
     const d=evaluateMarketplaceCandidate({candidate:{sourceId:'24s',products:[p],coverageStatus:'PARTIAL',sourceTotal:2,rawCollected:1,
       eligibleTotal:2,paginationExhausted:false,errors:[]},previousLastGood:[]});expect(d.report.accepted).toBe(false);
   });
+  it('admits opaque Farfetch names only with an exact supported source category',()=>{
+    const p={...product('Opaque model name'),source:'farfetch',productUrl:'https://www.farfetch.com/uk/shopping/women/test-item-1.aspx',
+      sourceCategoryPath:'/uk/shopping/women/espadrilles-1/items.aspx',sourceCategoryUrl:'https://www.farfetch.com/uk/shopping/women/espadrilles-1/items.aspx'};
+    const d=evaluateMarketplaceCandidate({candidate:{sourceId:'farfetch',products:[p],coverageStatus:'FULL',sourceTotal:1,rawCollected:1,
+      eligibleTotal:1,paginationExhausted:true,errors:[]},previousLastGood:[]});
+    expect(d.report.accepted).toBe(true);expect(d.quarantined).toEqual([]);
+    expect(buildModelFamilies(analyzeProducts(d.eligibleProducts)).families[0]?.primaryCategory).toBe('ESPADRILLE');
+  });
 });

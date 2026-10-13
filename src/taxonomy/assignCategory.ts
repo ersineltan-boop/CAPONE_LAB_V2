@@ -253,6 +253,14 @@ export function assignPrimaryCategory(input: CategoryAssignmentInput): CategoryA
   const exactSourceCategory =
     sourceText.includes("ballet pumps") || sourceText.includes("/women/shoes/ballet-pumps")
       ? "BALLET_FLAT"
+      : sourceText.includes("/uk/shopping/women/espadrilles-1/items.aspx")
+        ? "ESPADRILLE"
+        : sourceText.includes("/uk/shopping/women/derby-oxford-shoes-1/items.aspx")
+          ? "OXFORD_DERBY"
+          : sourceText.includes("/uk/shopping/women/slippers-1/items.aspx")
+            ? "LOAFER"
+            : sourceText.includes("/uk/shopping/women/flip-flops-slides-1/items.aspx")
+              ? "SANDAL"
       : sourceText.includes("oxfords & derbies") || sourceText.includes("/women/shoes/oxfords-derbies")
         ? "OXFORD_DERBY"
         : sourceText === "sneakers" || sourceText.includes("/women/shoes/sneakers")
