@@ -1,20 +1,6 @@
 import { createHash } from 'node:crypto';
 import type { CasadeiSearchPage } from './casadei';
-
-export interface CasadeiPageEvidence {
-  url: string;
-  offset: number | null;
-  total: number | null;
-  rawCount: number;
-  products: Array<{productId: string; productUrl: string}>;
-  identitySha256: string;
-}
-export interface CasadeiReconciliation {
-  pages: CasadeiPageEvidence[];
-  replayIdentitySha256: string[];
-  duplicateOccurrences: number;
-  uniqueProductCount: number;
-}
+import type { CasadeiPageEvidence, CasadeiReconciliation } from './types';
 export function casadeiPageEvidence(url: string, page: CasadeiSearchPage): CasadeiPageEvidence {
   const products = page.hits.map(({productId, productUrl}) => ({productId, productUrl}));
   const identity = {offset: page.offset, total: page.total, rawCount: page.rawCount, products};

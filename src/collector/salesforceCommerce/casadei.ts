@@ -2,8 +2,10 @@ import { evaluateFootwearProduct, inferFootwearCategoryFromSignals } from "../fo
 import { assessSalesforceCatalog } from "./coverage";
 import { canonicalProductUrl, dedupeUrls } from "./gallery";
 import { groupColorwaysIntoModelCards } from "./families";
-import { casadeiPageEvidence, reconciledCasadeiTotal, type CasadeiPageEvidence, type CasadeiReconciliation } from './casadeiReconciliation';
+import { casadeiPageEvidence, reconciledCasadeiTotal } from './casadeiReconciliation';
 import type {
+  CasadeiPageEvidence,
+  CasadeiReconciliation,
   SalesforceCatalog,
   SalesforceColorway,
   SalesforceGender,

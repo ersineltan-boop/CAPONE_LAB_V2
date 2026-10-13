@@ -73,8 +73,25 @@ export interface SalesforceModelCard {
   isNew: false;
 }
 
+// Pure evidence types may be consumed by browser-facing model types.
+// Keep collector hashing and Node APIs in the collector implementation.
+export interface CasadeiPageEvidence {
+  url: string;
+  offset: number | null;
+  total: number | null;
+  rawCount: number;
+  products: Array<{productId: string; productUrl: string}>;
+  identitySha256: string;
+}
+export interface CasadeiReconciliation {
+  pages: CasadeiPageEvidence[];
+  replayIdentitySha256: string[];
+  duplicateOccurrences: number;
+  uniqueProductCount: number;
+}
+
 export interface SalesforceCatalog {
-  casadeiReconciliation?: import('./casadeiReconciliation').CasadeiReconciliation;
+  casadeiReconciliation?: CasadeiReconciliation;
   scope: SalesforceScope;
   collectedAt: string;
   status: SalesforceCatalogStatus;
