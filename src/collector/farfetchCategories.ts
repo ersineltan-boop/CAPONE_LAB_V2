@@ -1,11 +1,10 @@
 import {join} from 'node:path';
 import {fetchText} from './http';
 import {collectFarfetchProgress} from './farfetchProgress';
-import {discoverFarfetchFootwearListings, FARFETCH_SHOES_URL, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
+import {discoverFarfetchFootwearListings, FARFETCH_SHOES_URL, farfetchCategoryKey, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
 import {mergeProductCatalog} from './mergeProducts';
 import type {PilotProduct} from './types';
 
-const SUPPORTED = /^https:\/\/www\.farfetch\.com\/uk\/shopping\/women\/(trainers|boots|pumps|sandals|ballerinas|loafers|mules|espadrilles)-1\/items\.aspx$/;
 const rootIdentity = (html: string) => JSON.stringify(parseFarfetchItemList(html).map(item => item.offers?.url));
 
 /** Independent category checkpoints do not certify whole-marketplace coverage. */
@@ -39,15 +38,17 @@ export async function collectFarfetchCategories(options: {
   total = initial.total;
   // Use only category links advertised by the official source. Smaller groups
   // normally occur last in the menu, so reverse it to retain useful work first.
-  const listings = discoverFarfetchFootwearListings(home.text, FARFETCH_SHOES_URL).filter(url => SUPPORTED.test(url)).reverse();
+  const listings = discoverFarfetchFootwearListings(home.text, FARFETCH_SHOES_URL)
+    .filter(url => url !== FARFETCH_SHOES_URL && farfetchCategoryKey(url)).reverse();
   if (!listings.length) {errors.push('Farfetch official category links missing'); return result();}
   for (const listing of listings) {
     if (now() + 32_000 >= deadline || pagesTraversed >= maxPages) {
       errors.push('FARFETCH_CATEGORY_BUDGET_REACHED_PROGRESS_SAVED'); break;
     }
-    const key = listing.match(SUPPORTED)![1];
+    const key = farfetchCategoryKey(listing)!;
     const collection = await collectFarfetchProgress({
       directory:join(options.directory, key), listingUrl:listing,
+      reconcileCountChanges:true,
       budgetMs:deadline - now() - 16_000, maxPages:maxPages - pagesTraversed, http, now,
     });
     pagesTraversed += collection.pagesTraversed;
