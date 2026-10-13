@@ -29,7 +29,10 @@ esac
   } finally { rmSync(root, { recursive: true, force: true }); }
 }
 
-describe("exact-head PR CI publication gate", () => {
+// This shell gate runs on GitHub's Ubuntu runner, which supplies jq. Vercel's
+// frontend build image does not. CI executes the integration cases there;
+// frontend previews must not fail merely because that runner tool is absent.
+describe.skipIf(spawnSync("jq", ["--version"]).status !== 0)("exact-head PR CI publication gate", () => {
   it("accepts the successful test/build job after initial run discovery delay", () => {
     expect(gate([run], [job], true).status).toBe(0);
   });
