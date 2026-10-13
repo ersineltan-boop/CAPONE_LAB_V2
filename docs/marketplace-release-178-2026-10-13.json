@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-13T18:52:52.299Z",
+  "mergeSha": "127a2253178473a9e36e2440dbdf240eb041c6e2",
+  "sources": {
+    "farfetch": {
+      "httpStatus": 200,
+      "visibleModels": 3406,
+      "pending": 446,
+      "coverage": "PARTIAL",
+      "missingPriorLiveIds": 0,
+      "exactPreparedShardMatch": true
+    },
+    "24s": {
+      "httpStatus": 200,
+      "visibleModels": 820,
+      "pending": 26,
+      "coverage": "PARTIAL",
+      "missingPriorLiveIds": 0,
+      "exactPreparedShardMatch": true
+    }
+  },
+  "pr": 178,
+  "headSha": "45f8779c32143ccd8abd47440e7aea6741c44346",
+  "treeSha": "71617aea6a654b358473267b451160c664c0c123",
+  "ciRun": 38449592046,
+  "ciJob": 115476753995,
+  "tests": 1128,
+  "testFiles": 138,
+  "productionBuild": "PASS",
+  "previewDeployment": "dpl_J5oKj9BnTjgr3WzXHjqfGaYzWYD2",
+  "previewState": "READY",
+  "productionDeployment": "dpl_DRyNTGW814Zt9vjf64UzerBmuADP",
+  "productionState": "READY"
+}
