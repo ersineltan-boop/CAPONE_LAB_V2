@@ -22,6 +22,7 @@ export interface PilotProductVariant {
 }
 
 export interface PilotProduct {
+  sourceVerifiedAt?: string;
   sourceModelCode?: string;
   sourceHsCode?: string;
   sourceSizes?: Array<{ size: string; displaySize: string | null; sku: string | null; selectable: boolean | null }>;

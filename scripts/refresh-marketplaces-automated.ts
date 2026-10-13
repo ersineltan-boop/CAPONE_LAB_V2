@@ -4,8 +4,9 @@ import { fileURLToPath } from "node:url";
 
 import { FARFETCH_ID } from "../src/collector/farfetch";
 import {collectFarfetchCategories} from "../src/collector/farfetchCategories";
+import {collectFarfetchMuleCandidate} from "../src/collector/farfetchMuleRefresh";
 import {recordSourceRetry, sourceRetryPause} from "../src/collector/sourceRetry";
-import { publishMarketplaceDelivery } from "../src/collector/marketplaceDelivery";
+import { publishMarketplaceDelivery,loadMarketplaceDeliveries } from "../src/collector/marketplaceDelivery";
 import { collect24S } from "../src/collector/twentyFourS";
 import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
 import { collectFreePeopleWithBrowser } from "../src/collector/freePeopleBrowser";
@@ -86,7 +87,7 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
   }
 
   if (sourceId === FARFETCH_ID) {
-    const result = await collectFarfetchCategories({directory: join(PROGRESS_DIR, 'farfetch-categories')});
+    const result = await collectFarfetchCategories({directory: join(PROGRESS_DIR, 'farfetch-categories'),budgetMs:8*60_000});
     await writeJson(join(ARTIFACT_DIR, "farfetch-progress.json"), {...result, products: undefined});
     return {
       sourceId,
@@ -165,6 +166,19 @@ async function main(): Promise<void> {
   console.log(`Sources: ${AUTOMATED_MARKETPLACE_IDS.join(", ")}`);
   console.log("Automatic site discovery: disabled");
 
+  const publish = async (candidate:MarketplaceRefreshCandidate, artifactId=candidate.sourceId) => {
+    const origins: Record<string, string> = {"24s": "https://www.24s.com", "level-shoes": "https://www.levelshoes.com",
+      "farfetch": "https://www.farfetch.com", "free-people": "https://www.freepeople.com", "the-webster": "https://thewebster.com"};
+    let decision;
+    try {decision=await publishMarketplaceDelivery(ROOT,candidate,origins[candidate.sourceId]);}
+    catch(error){decision=evaluateMarketplaceCandidate({candidate:failedCandidate(candidate.sourceId,error),previousLastGood:[]});}
+    gates.push(decision.report);
+    await writeJson(join(ARTIFACT_DIR,`${artifactId}-gate.json`),decision.report);
+    await writeJson(join(ARTIFACT_DIR,`${artifactId}-quarantine.json`),decision.quarantined);
+    supplementalChanged ||= decision.report.accepted;
+    console.log(`${artifactId}: ${decision.report.accepted ? decision.report.publicationCoverage + " delivery accepted" : "last-good preserved (" + decision.report.reasons.join("; ") + ")"}.`);
+  };
+
   for (const sourceId of AUTOMATED_MARKETPLACE_IDS) {
     console.log(`\nCollecting ${sourceId}...`);
     let candidate: MarketplaceRefreshCandidate;
@@ -184,20 +198,21 @@ async function main(): Promise<void> {
       }
     } catch (error) {
       candidate = failedCandidate(sourceId, error);
+      if([FARFETCH_ID,LEVEL_SHOES_ID,FREE_PEOPLE_ID].includes(sourceId))await recordSourceRetry(PROGRESS_DIR,sourceId,candidate.errors);
     }
-    {
-      let decision;
-      const origins: Record<string, string> = {"24s": "https://www.24s.com", "level-shoes": "https://www.levelshoes.com",
-        "farfetch": "https://www.farfetch.com", "free-people": "https://www.freepeople.com", "the-webster": "https://thewebster.com"};
-      try { decision = await publishMarketplaceDelivery(ROOT, candidate, origins[sourceId]); }
-      catch (error) {
-        decision = evaluateMarketplaceCandidate({ candidate: failedCandidate(sourceId, error), previousLastGood: [] });
-      }
-      gates.push(decision.report);
-      await writeJson(join(ARTIFACT_DIR, `${sourceId}-gate.json`), decision.report);
-      await writeJson(join(ARTIFACT_DIR, `${sourceId}-quarantine.json`), decision.quarantined);
-      supplementalChanged ||= decision.report.accepted;
-      console.log(`${sourceId}: ${decision.report.accepted ? decision.report.publicationCoverage + " delivery accepted" : "last-good preserved (" + decision.report.reasons.join("; ") + ")"}.`);
+    await publish(candidate);
+    // Keep independently complete categories and product-page proofs separate.
+    // The second append reads the just-published archive, so neither loses the other.
+    // Shared access blocks always stop further requests for this source.
+    if(sourceId===FARFETCH_ID&&!await sourceRetryPause(PROGRESS_DIR,sourceId)) {
+      let productsCandidate:MarketplaceRefreshCandidate;
+      try {
+        productsCandidate=await collectFarfetchMuleCandidate({directory:join(PROGRESS_DIR,'farfetch-mule-products'),budgetMs:12*60_000,concurrency:2,
+          previousProducts:(await loadMarketplaceDeliveries(ROOT)).find(d=>d.sourceId===sourceId)?.products});
+      }catch(error){productsCandidate=failedCandidate(sourceId,error);}
+      productsCandidate.retryWindow={...await recordSourceRetry(PROGRESS_DIR,sourceId,productsCandidate.errors),probedThisRun:true};
+      await writeJson(join(ARTIFACT_DIR,'farfetch-products-progress.json'),productsCandidate.collectionProgress??{});
+      await publish(productsCandidate,'farfetch-products');
     }
   }
 
@@ -211,8 +226,8 @@ async function main(): Promise<void> {
     discoveryEnabled: false,
     excludedMarketplaceIds: ["amazon", "emag", "trendyol", "otto"],
     dataChanged,
-    acceptedSources: gates.filter((gate) => gate.accepted).map((gate) => gate.sourceId),
-    preservedSources: gates.filter((gate) => !gate.accepted).map((gate) => gate.sourceId),
+    acceptedSources: [...new Set(gates.filter((gate) => gate.accepted).map((gate) => gate.sourceId))],
+    preservedSources: [...new Set(gates.filter((gate) => !gate.accepted && !gates.some(other=>other.sourceId===gate.sourceId&&other.accepted)).map((gate) => gate.sourceId))],
     gates,
   };
   await writeJson(REPORT_PATH, report);

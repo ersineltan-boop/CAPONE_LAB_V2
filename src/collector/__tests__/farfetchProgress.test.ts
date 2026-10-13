@@ -16,6 +16,17 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('stops a visible HTTP 200 access challenge before collecting another listing page',async()=>{
+  const calls:string[]=[];
+  const r=await collectFarfetchProgress({directory:await directory(),http:async url=>{calls.push(url);return {ok:true,status:200,url,text:'<h1>Verify you are human</h1>'};}});
+  expect(r.blocked).toBe(true);expect(r.products).toEqual([]);expect(calls).toEqual([FARFETCH_SHOES_URL]);
+ });
+ it('exposes discovery observations from an interrupted snapshot without certifying them for publication',async()=>{
+  let roots=0;
+  const r=await collectFarfetchProgress({directory:await directory(),captureObservations:true,http:async url=>({ok:true,status:200,url,
+   text:url.includes('?')?page(2):page(1,++roots===1?[1,2]:[7,8])})});
+  expect(r.coverageStatus).toBe('PARTIAL');expect(r.products).toEqual([]);expect(r.observations).toHaveLength(4);
+ });
  it('keeps the default strict count mode and isolates checkpoints when the mode changes',async()=>{
   const moving:typeof fetchText=async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],5)});
   const dir=await directory();const first=await collectFarfetchProgress({directory:dir,http:moving});
@@ -103,6 +114,10 @@ describe('bounded Farfetch progress',()=>{
  });
 });
 describe('source retry windows',()=>{
+ it('pauses further collection after a human-verification page with HTTP 200',async()=>{
+  const dir=await directory(),now=Date.now();await recordSourceRetry(dir,'farfetch',['Farfetch product access blocked (HTTP 200)'],now);
+  expect(await sourceRetryPause(dir,'farfetch',now+86400_000)).not.toBeNull();
+ });
  it('pauses403 for a week and allows another automatic probe after expiry',async()=>{
   const dir=await directory(),now=Date.parse('2026-10-05T13:00:00Z');await recordSourceRetry(dir,'level-shoes',['API HTTP 403'],now);
   expect(await sourceRetryPause(dir,'level-shoes',now+86400_000)).not.toBeNull();expect(await sourceRetryPause(dir,'level-shoes',now+7*86400_000)).toBeNull();

@@ -2,6 +2,7 @@ import {createHash} from 'node:crypto';
 import {mkdir, readFile, rename, rm, writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
 import {fetchText} from './http';
+import {farfetchAccessBlocked} from './farfetchAccess';
 import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchCategoryKey, farfetchJsonLdToProduct, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
 import type {PilotProduct} from './types';
 
@@ -17,6 +18,7 @@ export async function collectFarfetchProgress(options: {
   directory: string; maxPages?: number; budgetMs?: number;
   listingUrl?: string;
   reconcileCountChanges?: boolean;
+  captureObservations?: boolean;
   http?: typeof fetchText; now?: () => number;
 }) {
   const http = options.http ?? fetchText, now = options.now ?? Date.now;
@@ -32,17 +34,19 @@ export async function collectFarfetchProgress(options: {
   let pagesTraversed = 0, rawSourceProducts = 0;
   let sourceValidated = false;
   const errors: string[] = [];
+  const observations: PilotProduct[] = [];
   const request = async (url: string, delayMs: number) => {
     let response = await http(url, {delayMs}); pagesTraversed++;
     // Retry a temporary transport/server failure once, within the same budget.
     // Access denials and rate limits are never retried or routed around.
-    if ((response.status === 0 || response.status >= 500) && now() + 17_000 <= deadline) {
+    if (!farfetchAccessBlocked(response) && (response.status === 0 || response.status >= 500) && now() + 17_000 <= deadline) {
       response = await http(url, {delayMs:900}); pagesTraversed++;
     }
     return response;
   };
   const result = (products: PilotProduct[] = [], full = false, blocked = false) => ({
     products, coverageStatus: full ? 'FULL' as const : sourceValidated ? 'PARTIAL' as const : 'FAILED' as const,
+    observations:options.captureObservations ? observations : undefined,
     errors, blocked, paginationExhausted: full, pagesTraversed,
     sourceReportedProductCount: progress?.total ?? null,
     rawSourceProducts: rawSourceProducts || Math.min((progress?.parts.length ?? 0) * (progress?.size ?? 0), progress?.total ?? 0),
@@ -62,6 +66,7 @@ export async function collectFarfetchProgress(options: {
     progress = undefined;
   }
   const home = await request(listing, 500);
+  if(farfetchAccessBlocked(home)){errors.push(`Farfetch access blocked (HTTP ${home.status})`);return result([],false,true);}
   if (!home.ok) {errors.push(`Farfetch HTTP ${home.status}: ${home.error ?? 'source unavailable'}`); return result([], false, [403,429].includes(home.status));}
   const initial = parseFarfetchCatalogPagination(home.text);
   const firstItems = parseFarfetchItemList(home.text);
@@ -93,6 +98,13 @@ export async function collectFarfetchProgress(options: {
     progress = {version: 1, listing, reconcileCountChanges:Boolean(options.reconcileCountChanges), startedAt: new Date(began).toISOString(), total: initial.total, size: initial.size,
       first: first.fingerprint, nextPage: 1, parts: []};
   }
+  if (options.captureObservations) {
+    for (const hash of progress.parts) {
+      const body=await readFile(join(directory, `${hash}.json`), 'utf8');
+      if (digest(body)!==hash) {errors.push('Farfetch observation checkpoint checksum mismatch');return result();}
+      observations.push(...(JSON.parse(body) as Page).products);
+    }
+  }
   let required = Math.ceil(progress.total / progress.size);
   let savedThisRun = 0;
   while (progress.nextPage <= required && savedThisRun < pageLimit) {
@@ -100,9 +112,13 @@ export async function collectFarfetchProgress(options: {
     if (now() + 16_000 > deadline) {errors.push('FARFETCH_TIME_BUDGET_REACHED_PROGRESS_SAVED'); break;}
     const pageNumber = progress.nextPage;
     const response = pageNumber === 1 ? home : await request(`${listing}?page=${pageNumber}`, 900);
+    if(farfetchAccessBlocked(response)){errors.push(`Farfetch access blocked (HTTP ${response.status})`);return result([],false,true);}
     if (!response.ok) {errors.push(`Farfetch page ${pageNumber} HTTP ${response.status}: ${response.error ?? 'source unavailable'}`); return result([], false, [403,429].includes(response.status));}
     const meta = parseFarfetchCatalogPagination(response.text);
     const pageCount = meta ? Math.ceil(meta.total / progress.size) : required;
+    if (options.captureObservations && meta?.page === pageNumber && meta.size === progress.size) {
+      try {observations.push(...(pageNumber === 1 ? first : readPage(response.text)).products);} catch { /* No unvalidated observation. */ }
+    }
     if (!meta || meta.page !== pageNumber || meta.size !== progress.size || pageNumber > pageCount ||
       (!options.reconcileCountChanges && meta.total !== progress.total) ||
       meta.hasNextPage !== (pageNumber < pageCount)) {errors.push(`Farfetch pagination changed at page ${pageNumber} (expected total ${progress.total}, observed ${meta?.total ?? 'missing'}); incomplete snapshot retained`); break;}
@@ -143,6 +159,7 @@ export async function collectFarfetchProgress(options: {
   }
   if (now() + 16_000 > deadline) {errors.push('FARFETCH_FINAL_CHECK_PENDING_PROGRESS_SAVED'); return result();}
   const final = await request(listing, 500);
+  if(farfetchAccessBlocked(final)){errors.push(`Farfetch access blocked (HTTP ${final.status})`);return result([],false,true);}
   const finalMeta = final.ok ? parseFarfetchCatalogPagination(final.text) : null;
   let sameFirst = false;
   try {sameFirst = final.ok && readPage(final.text).fingerprint === progress.first;} catch { /* Fail closed. */ }

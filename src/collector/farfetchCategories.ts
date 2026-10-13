@@ -1,5 +1,6 @@
 import {join} from 'node:path';
 import {fetchText} from './http';
+import {farfetchAccessBlocked} from './farfetchAccess';
 import {collectFarfetchProgress} from './farfetchProgress';
 import {discoverFarfetchFootwearListings, FARFETCH_SHOES_URL, farfetchCategoryKey, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
 import {mergeProductCatalog} from './mergeProducts';
@@ -33,6 +34,7 @@ export async function collectFarfetchCategories(options: {
     progress: {strategy: 'categories', startedAt: new Date(started).toISOString(), categories},
   });
   const home = await http(FARFETCH_SHOES_URL, {delayMs:500}); pagesTraversed++;
+  if(farfetchAccessBlocked(home)){blocked=true;errors.push(`Farfetch access blocked (HTTP ${home.status})`);return result();}
   if (!home.ok) {blocked = [403,429].includes(home.status); errors.push(`Farfetch root HTTP ${home.status}: ${home.error ?? 'unavailable'}`); return result();}
   const initial = parseFarfetchCatalogPagination(home.text);
   if (!initial || initial.page !== 1 || !parseFarfetchItemList(home.text).length) {
@@ -80,6 +82,7 @@ export async function collectFarfetchCategories(options: {
   }
   if (now() + 16_000 > deadline) {errors.push('FARFETCH_CATEGORY_FINAL_CHECK_PENDING'); return result();}
   const final = await http(FARFETCH_SHOES_URL, {delayMs:500}); pagesTraversed++;
+  if(farfetchAccessBlocked(final)){blocked=true;errors.push(`Farfetch access blocked (HTTP ${final.status})`);return result();}
   const meta = final.ok ? parseFarfetchCatalogPagination(final.text) : null;
   if (!meta || meta.page !== 1 || meta.total !== total || meta.size !== initial.size || rootIdentity(final.text) !== rootIdentity(home.text)) {
     blocked = [403,429].includes(final.status);

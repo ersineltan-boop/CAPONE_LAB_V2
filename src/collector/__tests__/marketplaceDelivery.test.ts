@@ -12,6 +12,24 @@ function family(id:string, urls:string[]):ModelFamily {
  variants:urls.map(url=>({url,productId:url,images:['img']})),sourceSightings:urls.map(url=>({sourceId:url.includes('24s.com')?'24s':'test',sourceKind:url.includes('24s.com')?'LUXURY_MARKETPLACE':'BRAND_OFFICIAL'}))} as ModelFamily;
 }
 describe('supplemental marketplace delivery',()=>{
+ it('promotes an individually verified pending product while preserving its raw gallery and quarantine history',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'product-delivery-'));
+  try {
+   const listing='https://www.farfetch.com/uk/shopping/women/mules-1/items.aspx',checkedAt=new Date().toISOString();
+   const row={source:'farfetch',brand:'Aeyde',productName:'Leather mule',productUrl:'https://www.farfetch.com/uk/shopping/women/leather-mule-item-11.aspx',category:'MULE',
+    imageUrl:'https://img.test/new.jpg',images:['https://img.test/new.jpg'],sourceCategoryUrl:listing,sourceVerifiedAt:checkedAt,discoveredAt:checkedAt,
+    hasNewBadge:false,isNewArrivalsCollection:false,variants:[],color:null,material:null,toeShape:null,heelType:null,heelHeight:null,details:null} as PilotProduct;
+   const pending={product:{...row,category:null,images:['https://img.test/raw-old.jpg'],imageUrl:'https://img.test/raw-old.jpg'},reasons:['unresolved category']};
+   await mkdir(join(root,'data/multibrand'),{recursive:true});await writeFile(join(root,'data/multibrand/products.json'),'[]');
+   await writeMarketplaceDelivery(root,{sourceId:'farfetch',origin:'https://www.farfetch.com',updatedAt:'2026-01-01',products:[],families:[],report:{} as never,quarantined:[pending]});
+   const decision=await publishMarketplaceDelivery(root,{sourceId:'farfetch',products:[row],publicationMode:'verified-products',coverageStatus:'PARTIAL',sourceTotal:100,
+    rawCollected:1,eligibleTotal:1,paginationExhausted:false,errors:[],verifiedProducts:[{url:row.productUrl,productId:'11',listingUrl:listing,checkedAt,documentSha256:'a'.repeat(64)}]},'https://www.farfetch.com');
+   expect(decision.report.accepted).toBe(true);
+   const stored=(await loadMarketplaceDeliveries(root))[0];
+   expect(stored.products[0].images).toEqual(expect.arrayContaining(['https://img.test/raw-old.jpg','https://img.test/new.jpg']));
+   expect(stored.quarantined).toEqual([]);expect(stored.quarantineArchive).toContainEqual(pending);expect(stored.report.verifiedProductCount).toBe(1);
+  }finally{await rm(root,{recursive:true,force:true});}
+ });
  it('publishes a verified category without changing untouched records, IDs, galleries or other-category quarantine',async()=>{
   const root=await mkdtemp(join(tmpdir(),'scoped-delivery-'));
   try {
