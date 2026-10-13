@@ -1,5 +1,6 @@
 import { mergeProductRecords, normalizeProductUrl } from "../collector/mergeProducts";
 import type { PilotProduct } from "../collector/types";
+import {validateVerifiedCategoryScopes, type VerifiedCategoryScope} from './verifiedCategoryScopes';
 import {
   isExcludedMarketplaceBrand,
   MARKETPLACE_PRESENTATION_POLICY,
@@ -20,6 +21,8 @@ export type AutomatedMarketplaceId = (typeof AUTOMATED_MARKETPLACE_IDS)[number];
 export type MarketplaceCoverageStatus = "FULL" | "PARTIAL" | "FAILED";
 
 export interface MarketplaceRefreshCandidate {
+  publicationMode?: 'verified-categories';
+  verifiedScopes?: VerifiedCategoryScope[];
   sourceId: string;
   products: PilotProduct[];
   coverageStatus: MarketplaceCoverageStatus;
@@ -35,6 +38,8 @@ export interface MarketplaceRefreshCandidate {
 }
 
 export interface MarketplaceGateReport {
+  publicationMode?: 'verified-categories';
+  refreshedCategories?: Array<{url: string; products: number; checkedAt: string}>;
   newnessVerified?: boolean;
   collectionProgress?: Record<string, unknown>;
   retryWindow?: Record<string, unknown>;
@@ -118,6 +123,7 @@ function duplicateUrlCount(products: readonly PilotProduct[]): number {
 export function evaluateMarketplaceCandidate(input: {
   candidate: MarketplaceRefreshCandidate;
   previousLastGood: readonly PilotProduct[];
+  preserveMissing?: boolean;
 }): MarketplaceGateDecision {
   const sourceId = normalizeMarketplaceSourceId(input.candidate.sourceId);
   const previous = input.previousLastGood.filter(
@@ -160,17 +166,25 @@ export function evaluateMarketplaceCandidate(input: {
     ? null
     : sourceEligibleProducts.length / previousEligible.length;
   const reasons: string[] = [];
+  const scoped = input.candidate.publicationMode === 'verified-categories';
+  if (scoped) {
+    reasons.push(...validateVerifiedCategoryScopes({sourceId, products:sourceProducts,
+      scopes:input.candidate.verifiedScopes ?? [], preserveMissing:input.preserveMissing === true,
+      rawCollected:input.candidate.rawCollected}));
+    if (input.candidate.coverageStatus !== 'PARTIAL') reasons.push('category publication must declare PARTIAL marketplace coverage');
+    if (input.candidate.newnessVerified) reasons.push('category refresh is not proof of new arrivals');
+  }
 
   if (!ALLOWED_IDS.has(sourceId)) reasons.push("source is not on the approved adapter allow-list");
   if (wrongSourceCount > 0) reasons.push(`${wrongSourceCount} product(s) belong to another source`);
-  if (input.candidate.coverageStatus !== "FULL") {
+  if (!scoped && input.candidate.coverageStatus !== "FULL") {
     reasons.push(`coverage is ${input.candidate.coverageStatus}, not FULL`);
   }
-  if (!input.candidate.paginationExhausted) reasons.push("pagination is not exhausted");
+  if (!scoped && !input.candidate.paginationExhausted) reasons.push("pagination is not exhausted");
   if (input.candidate.sourceTotal === null) reasons.push("source total is unavailable");
   if (input.candidate.eligibleTotal === null) reasons.push("eligible source total is unavailable");
   if (
-    input.candidate.sourceTotal !== null &&
+    !scoped && input.candidate.sourceTotal !== null &&
     input.candidate.rawCollected < input.candidate.sourceTotal
   ) {
     reasons.push(`raw source coverage is ${input.candidate.rawCollected}/${input.candidate.sourceTotal}`);
@@ -193,14 +207,14 @@ export function evaluateMarketplaceCandidate(input: {
     reasons.push(`catalog collides with ${crossSourceUrlCollisions} other-source URL(s)`);
   }
   if (
-    lastGoodRetentionRatio !== null &&
+    !scoped && lastGoodRetentionRatio !== null &&
     lastGoodRetentionRatio < MIN_LAST_GOOD_RETENTION_RATIO
   ) {
     reasons.push(
       `catastrophic drop: retained ${(lastGoodRetentionRatio * 100).toFixed(1)}% of policy-eligible last-good`,
     );
   }
-  if (input.candidate.errors.length > 0) {
+  if (input.candidate.errors.length > 0 && (!scoped || input.candidate.errors.some(error => /HTTP\s*(403|429)/i.test(error)))) {
     reasons.push(`collector reported ${input.candidate.errors.length} error(s)`);
   }
   if (MARKETPLACE_PRESENTATION_POLICY.showPrice !== false) {
@@ -224,7 +238,9 @@ export function evaluateMarketplaceCandidate(input: {
       newnessVerified: input.candidate.newnessVerified ?? false,
       collectionProgress: input.candidate.collectionProgress,
       retryWindow: input.candidate.retryWindow,
-      publicationCoverage: quarantined.length > 0 ? "PARTIAL" : "FULL",
+      publicationMode: input.candidate.publicationMode,
+      refreshedCategories: scoped ? input.candidate.verifiedScopes?.map(scope => ({url:scope.url, products:scope.sourceTotal, checkedAt:scope.checkedAt})) : undefined,
+      publicationCoverage: scoped || quarantined.length > 0 ? "PARTIAL" : "FULL",
       quarantinedProducts: quarantined.length,
       sourceId,
       accepted,

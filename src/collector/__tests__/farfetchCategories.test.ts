@@ -34,7 +34,7 @@ describe('Farfetch category completeness',()=>{
  it('never treats an exhausted category as complete marketplace coverage',async()=>{
   const http:typeof fetchText=async url=>response(url,html([1,2],url===FARFETCH_SHOES_URL?4:2,url===FARFETCH_SHOES_URL?[mules]:[]));
   const r=await collectFarfetchCategories({directory:await directory(),http});
-  expect(r.coverageStatus).toBe('PARTIAL');expect(r.products).toEqual([]);
+  expect(r.coverageStatus).toBe('PARTIAL');expect(r.products).toHaveLength(2);expect(r.verifiedScopes).toHaveLength(1);
   expect(r.errors.join()).toContain('2/4');
  });
  it('stops the whole source on access denial without probing another category',async()=>{
@@ -47,7 +47,7 @@ describe('Farfetch category completeness',()=>{
   let roots=0;
   const http:typeof fetchText=async url=>response(url,html(url===FARFETCH_SHOES_URL&&++roots===2?[8,9]:[1,2],2,url===FARFETCH_SHOES_URL?[mules]:[]));
   const r=await collectFarfetchCategories({directory:await directory(),http});
-  expect(r.products).toEqual([]);expect(r.errors.join()).toContain('final root check failed');
+  expect(r.products).toHaveLength(2);expect(r.coverageStatus).toBe('PARTIAL');expect(r.errors.join()).toContain('final root check failed');
  });
  it('does not guess category routes when official links are missing',async()=>{
   const r=await collectFarfetchCategories({directory:await directory(),http:async url=>response(url,html([1,2]))});
