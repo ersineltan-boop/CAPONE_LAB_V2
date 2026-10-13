@@ -2,8 +2,8 @@
   "slug": "naked-wolfe",
   "brand": "NAKED WOLFE",
   "officialUrl": "https://nakedwolfe.com",
-  "snapshotId": "naked-wolfe:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "naked-wolfe:2026-10-13T08:06:11.689Z",
+  "collectedAt": "2026-10-13T08:06:11.689Z",
   "catalogPaths": [
     "/collections/view-all-womens"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 261,
-    "collected": 261,
+    "sourceTotal": 271,
+    "collected": 271,
     "missing": 0,
     "coverage": 100,
-    "excluded": 56,
+    "excluded": 61,
     "paginationExhausted": true,
-    "galleryComplete": 261,
+    "galleryComplete": 271,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 141,
+  "newArrivalsFootwear": 151,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -1189,6 +1189,66 @@
       "groupingReason": "shopify-variant-tag"
     },
     {
+      "modelFamilyId": "naked-wolfe--hilly-black-stretch",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Hilly Black Stretch",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-01.jpg?v=1788706218",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-02.jpg?v=1788706218",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-03.jpg?v=1788706218",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-04.jpg?v=1788706218",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-05.jpg?v=1788706218",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-01.jpg?v=1788706334",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-02.jpg?v=1788706334",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-03.jpg?v=1788706334",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-04.jpg?v=1788706334",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-05.jpg?v=1788706334"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/hilly-black-stretch",
+          "handle": "hilly-black-stretch",
+          "title": "Hilly Black Stretch",
+          "color": null,
+          "sku": "5059796696640",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-01.jpg?v=1788706218",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-02.jpg?v=1788706218",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-03.jpg?v=1788706218",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-04.jpg?v=1788706218",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-05.jpg?v=1788706218"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/hilly-black-suede",
+          "handle": "hilly-black-suede",
+          "title": "Hilly Black Suede",
+          "color": "Hilly Black Suede",
+          "sku": "5059796888168",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-01.jpg?v=1788706334",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-02.jpg?v=1788706334",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-03.jpg?v=1788706334",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-04.jpg?v=1788706334",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-SUEDE-05.jpg?v=1788706334"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "shopify-variant-tag"
+    },
+    {
       "modelFamilyId": "naked-wolfe--hue-black-leather",
       "brand": "NAKED WOLFE",
       "canonicalName": "Hue Black Leather",
@@ -1649,6 +1709,84 @@
       "groupingReason": "shopify-variant-tag"
     },
     {
+      "modelFamilyId": "naked-wolfe--lola-zebra-pony",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Lola Zebra Pony",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-01.jpg?v=1789565350",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-02.jpg?v=1789565350",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-03.jpg?v=1789565350",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-04.jpg?v=1789565350",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-01_cf23cda1-8a41-4ccb-b3f4-00d9c40d95c1.jpg?v=1789571282",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-02_1c9d9c6f-32bd-42fd-8df0-9127904fb32d.jpg?v=1789571281",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-03_157adf2d-e3d4-4987-b5b0-ca6cd228d67e.jpg?v=1789571281",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-04_7e2db5d2-4264-4229-b596-bf0fe5b3bb8e.jpg?v=1789571282",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-01.jpg?v=1789565315",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-02.jpg?v=1789565315",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-03.jpg?v=1789565315",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-04.jpg?v=1789565315"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/lola-zebra-pony",
+          "handle": "lola-zebra-pony",
+          "title": "Lola Zebra Pony",
+          "color": null,
+          "sku": "5059796603266",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-01.jpg?v=1789565350",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-02.jpg?v=1789565350",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-03.jpg?v=1789565350",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-ZEBRA-04.jpg?v=1789565350"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals/Slides",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/lola-mushroom-suede",
+          "handle": "lola-mushroom-suede",
+          "title": "Lola Mushroom Suede",
+          "color": "Lola Mushroom Suede",
+          "sku": "5059796699351",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-01_cf23cda1-8a41-4ccb-b3f4-00d9c40d95c1.jpg?v=1789571282",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-02_1c9d9c6f-32bd-42fd-8df0-9127904fb32d.jpg?v=1789571281",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-03_157adf2d-e3d4-4987-b5b0-ca6cd228d67e.jpg?v=1789571281",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-MUSHROOM-04_7e2db5d2-4264-4229-b596-bf0fe5b3bb8e.jpg?v=1789571282"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals/Slides",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/lola-black-suede",
+          "handle": "lola-black-suede",
+          "title": "Lola Black Suede",
+          "color": "Lola Black Suede",
+          "sku": "5059796513756",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-01.jpg?v=1789565315",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-02.jpg?v=1789565315",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-03.jpg?v=1789565315",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/LOLA-BLACK-04.jpg?v=1789565315"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals/Slides",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "shopify-variant-tag"
+    },
+    {
       "modelFamilyId": "naked-wolfe--luxury",
       "brand": "NAKED WOLFE",
       "canonicalName": "Luxury",
@@ -1788,6 +1926,198 @@
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "shopify-variant-tag"
+    },
+    {
+      "modelFamilyId": "naked-wolfe--melrose",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Melrose",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-01_cb2424f7-5e0c-4413-9cc1-a39813d4fa5f.jpg?v=1790259982",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-02_7dc74bcb-0a08-444f-b015-efdb333a0411.jpg?v=1790259982",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-03_10ea2eb8-83e3-4304-865d-ca82aa2e1c38.jpg?v=1790259982",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-04_a4a5e364-150a-47e9-8580-d044e44bb43e.jpg?v=1790259982",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-05_e8714e6d-dbe5-47b2-b024-8b55dbbd07c3.jpg?v=1790259983",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-01_8ae2c6dc-cf55-445a-896f-5ba8bd504f61.jpg?v=1790259956",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-02_bd66dada-fa61-49ae-aa4d-86ab9ea61bfc.jpg?v=1790259956",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-03_eb9bfb7d-d452-4e0a-8101-114b07fde4f1.jpg?v=1790259955",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-04_973f93c1-947c-4e1b-a0a0-0b22e51d9997.jpg?v=1790259956",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-05_0a0d9505-714a-479a-b8df-a259c3776809.jpg?v=1790259956",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-01_4be104c0-002a-414c-8305-74f4eab6d53f.jpg?v=1790260010",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-02_9d2f6e58-e172-4179-893e-ec564b3d53e9.jpg?v=1790260010",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-03_f3f1976b-e5f5-4169-a7aa-78be619a6713.jpg?v=1790260010",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-04_cee4c1c7-b634-4afd-b21c-1f28fdf8edf4.jpg?v=1790260010",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-05_ea0329ee-f1df-4f6e-8f7d-528e37280ce0.jpg?v=1790260010"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/melrose-tan-suede",
+          "handle": "melrose-tan-suede",
+          "title": "Melrose Tan Suede",
+          "color": "Tan Suede",
+          "sku": "5059796809248",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-01_cb2424f7-5e0c-4413-9cc1-a39813d4fa5f.jpg?v=1790259982",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-02_7dc74bcb-0a08-444f-b015-efdb333a0411.jpg?v=1790259982",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-03_10ea2eb8-83e3-4304-865d-ca82aa2e1c38.jpg?v=1790259982",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-04_a4a5e364-150a-47e9-8580-d044e44bb43e.jpg?v=1790259982",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-TAN-SUEDE-05_e8714e6d-dbe5-47b2-b024-8b55dbbd07c3.jpg?v=1790259983"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/melrose-sand-suede",
+          "handle": "melrose-sand-suede",
+          "title": "Melrose Sand Suede",
+          "color": "Sand Suede",
+          "sku": "5059796982217",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-01_8ae2c6dc-cf55-445a-896f-5ba8bd504f61.jpg?v=1790259956",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-02_bd66dada-fa61-49ae-aa4d-86ab9ea61bfc.jpg?v=1790259956",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-03_eb9bfb7d-d452-4e0a-8101-114b07fde4f1.jpg?v=1790259955",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-04_973f93c1-947c-4e1b-a0a0-0b22e51d9997.jpg?v=1790259956",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-SAND-SUEDE-05_0a0d9505-714a-479a-b8df-a259c3776809.jpg?v=1790259956"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/melrose-black-leather",
+          "handle": "melrose-black-leather",
+          "title": "Melrose Black Leather",
+          "color": "Black Leather",
+          "sku": "5059796802805",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-01_4be104c0-002a-414c-8305-74f4eab6d53f.jpg?v=1790260010",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-02_9d2f6e58-e172-4179-893e-ec564b3d53e9.jpg?v=1790260010",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-03_f3f1976b-e5f5-4169-a7aa-78be619a6713.jpg?v=1790260010",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-04_cee4c1c7-b634-4afd-b21c-1f28fdf8edf4.jpg?v=1790260010",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/MELROSE-BLACK-LEATHER-05_ea0329ee-f1df-4f6e-8f7d-528e37280ce0.jpg?v=1790260010"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "shopify-variant-tag"
+    },
+    {
+      "modelFamilyId": "naked-wolfe--hollywood",
+      "brand": "NAKED WOLFE",
+      "canonicalName": "Hollywood",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-01-1.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-01.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-02-1.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-02.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-03-1.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-03.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-04-1.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-04.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-05.jpg?v=1790182409",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-01-1.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-01.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-02-1.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-02.jpg?v=1790182391",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-03-1.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-03.jpg?v=1790182391",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-04-1.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-04.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-05.jpg?v=1790182390",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-01-1.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-01.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-02-1.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-02.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-03-1.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-03.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-04-1.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-04.jpg?v=1790182320",
+        "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-05.jpg?v=1790182320"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://nakedwolfe.com/products/hollywood-tan-suede",
+          "handle": "hollywood-tan-suede",
+          "title": "Hollywood Tan Suede",
+          "color": "Tan Suede",
+          "sku": "5059796744822",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-01-1.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-01.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-02-1.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-02.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-03-1.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-03.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-04-1.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-04.jpg?v=1790182409",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-TAN-05.jpg?v=1790182409"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/hollywood-black-suede",
+          "handle": "hollywood-black-suede",
+          "title": "Hollywood Black Suede",
+          "color": "Black Suede",
+          "sku": "5059796666438",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-01-1.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-01.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-02-1.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-02.jpg?v=1790182391",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-03-1.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-03.jpg?v=1790182391",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-04-1.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-04.jpg?v=1790182390",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-BLACK-SUEDE-05.jpg?v=1790182390"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://nakedwolfe.com/products/hollywood-sand-suede",
+          "handle": "hollywood-sand-suede",
+          "title": "Hollywood Sand Suede",
+          "color": "Sand Suede",
+          "sku": "5059796561603",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-01-1.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-01.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-02-1.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-02.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-03-1.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-03.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-04-1.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-04.jpg?v=1790182320",
+            "https://cdn.shopify.com/s/files/1/1117/4418/files/HOLLYWOOD-SAND-SUEDE-05.jpg?v=1790182320"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
           "inNewArrivals": true,
           "isNew": true,
           "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
@@ -7271,42 +7601,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "naked-wolfe--hilly-stretch",
-      "brand": "NAKED WOLFE",
-      "canonicalName": "Hilly Stretch",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-01.jpg?v=1788706218",
-        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-02.jpg?v=1788706218",
-        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-03.jpg?v=1788706218",
-        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-04.jpg?v=1788706218",
-        "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-05.jpg?v=1788706218"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://nakedwolfe.com/products/hilly-black-stretch",
-          "handle": "hilly-black-stretch",
-          "title": "Hilly Black Stretch",
-          "color": "Hilly Black Stretch",
-          "sku": "5059796696640",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-01.jpg?v=1788706218",
-            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-02.jpg?v=1788706218",
-            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-03.jpg?v=1788706218",
-            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-04.jpg?v=1788706218",
-            "https://cdn.shopify.com/s/files/1/1117/4418/files/HILLY-BLACK-LEATHER-05.jpg?v=1788706218"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "naked-wolfe--heat-burnish",
       "brand": "NAKED WOLFE",
       "canonicalName": "Heat Burnish",
@@ -7962,6 +8256,7 @@
     "https://nakedwolfe.com/products/harness-tan-leather",
     "https://nakedwolfe.com/products/harness-brown-suede",
     "https://nakedwolfe.com/products/hilly-black-stretch",
+    "https://nakedwolfe.com/products/hilly-black-suede",
     "https://nakedwolfe.com/products/hue-black-leather",
     "https://nakedwolfe.com/products/hue-grey-leather",
     "https://nakedwolfe.com/products/hue-dark-brown-leather",
@@ -7982,12 +8277,21 @@
     "https://nakedwolfe.com/products/hero-zebra-pony",
     "https://nakedwolfe.com/products/hero-smudged-polka-dot-pony",
     "https://nakedwolfe.com/products/hayes-black-leather",
+    "https://nakedwolfe.com/products/lola-zebra-pony",
+    "https://nakedwolfe.com/products/lola-mushroom-suede",
+    "https://nakedwolfe.com/products/lola-black-suede",
     "https://nakedwolfe.com/products/luxury-black",
     "https://nakedwolfe.com/products/luxury-brown",
     "https://nakedwolfe.com/products/luxury-charcol",
     "https://nakedwolfe.com/products/luxury-purple",
     "https://nakedwolfe.com/products/luxury-grey",
     "https://nakedwolfe.com/products/luxury-rust",
+    "https://nakedwolfe.com/products/melrose-tan-suede",
+    "https://nakedwolfe.com/products/melrose-sand-suede",
+    "https://nakedwolfe.com/products/melrose-black-leather",
+    "https://nakedwolfe.com/products/hollywood-tan-suede",
+    "https://nakedwolfe.com/products/hollywood-black-suede",
+    "https://nakedwolfe.com/products/hollywood-sand-suede",
     "https://nakedwolfe.com/products/corded-black-black",
     "https://nakedwolfe.com/products/corded-cotto-suede",
     "https://nakedwolfe.com/products/corded-khaki-suede",

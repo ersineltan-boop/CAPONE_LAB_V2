@@ -2,8 +2,8 @@
   "slug": "steve-madden",
   "brand": "STEVE MADDEN",
   "officialUrl": "https://www.stevemadden.com",
-  "snapshotId": "steve-madden:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "steve-madden:2026-10-13T08:06:11.689Z",
+  "collectedAt": "2026-10-13T08:06:11.689Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -13,13 +13,13 @@
     "/collections/womens-new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 1189,
-    "collected": 1189,
+    "sourceTotal": 1170,
+    "collected": 1170,
     "missing": 0,
     "coverage": 100,
-    "excluded": 1298,
+    "excluded": 1280,
     "paginationExhausted": true,
-    "galleryComplete": 1189,
+    "galleryComplete": 1170,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -613,42 +613,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--adeline",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Adeline",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER01.jpg?v=1765216337",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER02.jpg?v=1765216337",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER05.jpg?v=1765216337",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER04.jpg?v=1765216337",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER03.jpg?v=1765216312"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/adeline-black-leather",
-          "handle": "adeline-black-leather",
-          "title": "ADELINE BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "ADELINE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER01.jpg?v=1765216337",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER02.jpg?v=1765216337",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER05.jpg?v=1765216337",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER04.jpg?v=1765216337",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ADELINE_BLACK-LEATHER03.jpg?v=1765216312"
-          ],
-          "category": "MULE",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--affinity",
@@ -1399,6 +1363,44 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "steve-madden--alyse-zebra-mesh",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Alyse Zebra Mesh",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_01.jpg?v=1767727831",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_02.jpg?v=1767727831",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_04.jpg?v=1767727893",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_05.jpg?v=1767727893",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_03.jpg?v=1767727893",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE_BLACK-MESH_0022_4871f341-8ff9-4d64-836c-03f4eb0e8ba3.jpg?v=1773934216"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/alyse-m-zebra",
+          "handle": "alyse-m-zebra",
+          "title": "ALYSE ZEBRA MESH",
+          "color": "ZEBRA",
+          "sku": "ALYSE-M",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_01.jpg?v=1767727831",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_02.jpg?v=1767727831",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_04.jpg?v=1767727893",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_05.jpg?v=1767727893",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE-M_ZEBRA_03.jpg?v=1767727893",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ALYSE_BLACK-MESH_0022_4871f341-8ff9-4d64-836c-03f4eb0e8ba3.jpg?v=1773934216"
+          ],
+          "category": "MULE",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--amias",
@@ -3339,44 +3341,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--besette",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Besette",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_01.jpg?v=1762525650",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_02.jpg?v=1762525650",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_05.jpg?v=1762525808",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_04.jpg?v=1762525808",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_03.jpg?v=1762525808",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BLACK-LEATHER_0842_11a33d5b-db4c-4d39-a852-c24a6f67970d.jpg?v=1762534809"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/besette-bone-leather",
-          "handle": "besette-bone-leather",
-          "title": "BESETTE BONE LEATHER",
-          "color": "BONE LEATHER",
-          "sku": "BESETTE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_01.jpg?v=1762525650",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_02.jpg?v=1762525650",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_05.jpg?v=1762525808",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_04.jpg?v=1762525808",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BONE-LEATHER_03.jpg?v=1762525808",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BESETTE_BLACK-LEATHER_0842_11a33d5b-db4c-4d39-a852-c24a6f67970d.jpg?v=1762534809"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--bexley",
       "brand": "STEVE MADDEN",
       "canonicalName": "Bexley",
@@ -3561,44 +3525,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--bigschmona-jelly",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Bigschmona Jelly",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_01.jpg?v=1733500838",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_0016.jpg?v=1733501058",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_02.jpg?v=1733500838",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_05.jpg?v=1733500839",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_04.jpg?v=1733500838",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_03.jpg?v=1733500839"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/bigschmonj-natural",
-          "handle": "bigschmonj-natural",
-          "title": "BIGSCHMONA JELLY NATURAL",
-          "color": "NATURAL",
-          "sku": "BIGSCHMONJ",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_01.jpg?v=1733500838",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_0016.jpg?v=1733501058",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_02.jpg?v=1733500838",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_05.jpg?v=1733500839",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_04.jpg?v=1733500838",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BIGSCHMONJ_NATURAL_03.jpg?v=1733500839"
-          ],
-          "category": "SANDAL",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--bing",
@@ -5783,42 +5709,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "steve-madden--calora",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Calora",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER02.jpg?v=1785189959",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER01.jpg?v=1785189959",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER05.jpg?v=1785189959",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER04.jpg?v=1785189959",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER03.jpg?v=1785189959"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/calora-black-leather",
-          "handle": "calora-black-leather",
-          "title": "CALORA BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "CALORA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER02.jpg?v=1785189959",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER01.jpg?v=1785189959",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER05.jpg?v=1785189959",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER04.jpg?v=1785189959",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_CALORA_BLACK-LEATHER03.jpg?v=1785189959"
-          ],
-          "category": "BOOT",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--canal",
       "brand": "STEVE MADDEN",
       "canonicalName": "Canal",
@@ -7949,70 +7839,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "steve-madden--danger",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Danger",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_01.jpg?v=1747336326",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MULTI_0971_da115f48-a6ab-49ff-b811-1f02ccd22927.jpg?v=1761661694",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_02.jpg?v=1761661694",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_05.jpg?v=1761661694",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_04.jpg?v=1761661694",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_03.jpg?v=1761661694",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI.jpg?v=1747336361",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_1317.jpg?v=1755098289",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_01.jpg?v=1755098289",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_04.jpg?v=1755098289",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_03.jpg?v=1755098289",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_02.jpg?v=1755098289"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/danger-black-multi",
-          "handle": "danger-black-multi",
-          "title": "DANGER BLACK MULTI",
-          "color": "BLACK MULTI",
-          "sku": "DANGER",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_01.jpg?v=1747336326",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MULTI_0971_da115f48-a6ab-49ff-b811-1f02ccd22927.jpg?v=1761661694",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_02.jpg?v=1761661694",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_05.jpg?v=1761661694",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_04.jpg?v=1761661694",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BLACK-MUTI_03.jpg?v=1761661694"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/danger-burgundy-multi",
-          "handle": "danger-burgundy-multi",
-          "title": "DANGER BURGUNDY MULTI",
-          "color": "BURGUNDY MULTI",
-          "sku": "DANGER",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI.jpg?v=1747336361",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_1317.jpg?v=1755098289",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_01.jpg?v=1755098289",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_04.jpg?v=1755098289",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_03.jpg?v=1755098289",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DANGER_BURGUNDY-MULTI_02.jpg?v=1755098289"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
       "modelFamilyId": "steve-madden--danika",
       "brand": "STEVE MADDEN",
       "canonicalName": "Danika",
@@ -9728,13 +9554,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_05.jpg?v=1772030207",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_04.jpg?v=1772030207",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_03.jpg?v=1772030207",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_01.jpg?v=1766180797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_02.jpg?v=1766180797",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_05.jpg?v=1766181074",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_04.jpg?v=1766181074",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_03.jpg?v=1766181074",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_BLACK-LEATHER_0580_850f6a0f-bf3d-472c-b0d2-ccddf9ce2aa1.jpg?v=1771879525",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_FEBRUARY_DTC_10_DIVVY_PINK_089.jpg?v=1771879525",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_WHITE-BROWN-LEATHER_01_87c07425-8fb7-45b4-9f46-f95930c8bb64.jpg?v=1770301292",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_WHITE-BROWN-LEATHER_02_23f128ff-ee2c-4357-a8e6-16e65fb0011d.jpg?v=1770301292",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_WHITE-BROWN-LEATHER_05_5ca99bfe-9df2-4f9a-a044-3a82dc134f66.jpg?v=1770301303",
@@ -9756,27 +9575,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_05.jpg?v=1772030207",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_04.jpg?v=1772030207",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_COGNAC-LEATHER_03.jpg?v=1772030207"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/divy-pink-leather",
-          "handle": "divy-pink-leather",
-          "title": "DIVY PINK LEATHER",
-          "color": "PINK LEATHER",
-          "sku": "DIVY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_01.jpg?v=1766180797",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_02.jpg?v=1766180797",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_05.jpg?v=1766181074",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_04.jpg?v=1766181074",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_PINK-LEATHER_03.jpg?v=1766181074",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_DIVY_BLACK-LEATHER_0580_850f6a0f-bf3d-472c-b0d2-ccddf9ce2aa1.jpg?v=1771879525",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_FEBRUARY_DTC_10_DIVVY_PINK_089.jpg?v=1771879525"
           ],
           "category": "LOAFER",
           "productType": "Women's Shoes",
@@ -10576,11 +10374,6 @@
       "canonicalName": "Edin",
       "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_01.jpg?v=1774297007",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_02.jpg?v=1774297007",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_05.jpg?v=1774297007",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_04.jpg?v=1774297007",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_03.jpg?v=1774297007",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_SNAKE01.jpg?v=1774297111",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_SNAKE02.jpg?v=1774297111",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_SNAKE05.jpg?v=1774297111",
@@ -10588,25 +10381,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_SNAKE03.jpg?v=1774296324"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/edin-champagne",
-          "handle": "edin-champagne",
-          "title": "EDIN CHAMPAGNE",
-          "color": "CHAMPAGNE",
-          "sku": "EDIN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_01.jpg?v=1774297007",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_02.jpg?v=1774297007",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_05.jpg?v=1774297007",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_04.jpg?v=1774297007",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EDIN_CHAMPAGNE_03.jpg?v=1774297007"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/edin-snake",
           "handle": "edin-snake",
@@ -10628,7 +10402,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--edna",
@@ -10973,44 +10747,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT-P_IVORY-MESH_04.jpg?v=1765462792",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT-P_IVORY-MESH_03.jpg?v=1765462792",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_APRIL_BRIDAL_RSVP_EDIT_ELEGANT_PEARL_482.jpg?v=1776172062"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--elegant-crocodile",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Elegant Crocodile",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO01.jpg?v=1764102186",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO_0495_808209d5-b4fe-4488-a002-cafff4dc3ebb.jpg?v=1770059859",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO02.jpg?v=1770059859",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO05.jpg?v=1770059859",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO04.jpg?v=1770059859",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO03.jpg?v=1770059859"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/elegant-red-crocodile",
-          "handle": "elegant-red-crocodile",
-          "title": "ELEGANT RED CROCODILE",
-          "color": "RED CROCODILE",
-          "sku": "ELEGANT",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO01.jpg?v=1764102186",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO_0495_808209d5-b4fe-4488-a002-cafff4dc3ebb.jpg?v=1770059859",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO02.jpg?v=1770059859",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO05.jpg?v=1770059859",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO04.jpg?v=1770059859",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEGANT_RED-CROCO03.jpg?v=1770059859"
           ],
           "category": "PUMP",
           "productType": "Women's Shoes",
@@ -11503,6 +11239,42 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BLACK-CROCO05.jpg?v=1782498778",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BLACK-CROCO04.jpg?v=1782498778",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BLACK-CROCO03.jpg?v=1782498778"
+          ],
+          "category": "ANKLE_BOOT",
+          "productType": "Women's Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--enella-zebra",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Enella Zebra",
+      "category": "ANKLE_BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA01.jpg?v=1782498784",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA02.jpg?v=1782498784",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA05.jpg?v=1782498785",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA04.jpg?v=1782498784",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA03.jpg?v=1782498784"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/enella-zebra",
+          "handle": "enella-zebra",
+          "title": "ENELLA ZEBRA",
+          "color": "ZEBRA",
+          "sku": "ENELLA",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA01.jpg?v=1782498784",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA02.jpg?v=1782498784",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA05.jpg?v=1782498785",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA04.jpg?v=1782498784",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ENELLA_BROWN-ZEBRA03.jpg?v=1782498784"
           ],
           "category": "ANKLE_BOOT",
           "productType": "Women's Shoes",
@@ -12085,70 +11857,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--exotica",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Exotica",
-      "category": "SANDAL",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT01_35d54095-7ef5-431b-963f-5cb70925311e.jpg?v=1772550177",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096.jpg?v=1780604661",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT02_908938a2-61ad-42da-994a-cbe3381bd4b0.jpg?v=1772550177",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT05_2474b529-5159-4681-81fe-861f8bfa06df.jpg?v=1772550177",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT04_c7964d6b-3c26-4024-a27b-a7160dc1370f.jpg?v=1772550177",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT03_74ca51e6-ea7f-4cf1-b121-0a87999770e1.jpg?v=1772550177",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT01.jpg?v=1772485818",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT02.jpg?v=1772485818",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT05.jpg?v=1772486190",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT04.jpg?v=1772486190",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT03.jpg?v=1772486190",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096_3a7ff5f6-0732-4244-8917-8995991dabaa.jpg?v=1780604699"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/exotica-black-patent",
-          "handle": "exotica-black-patent",
-          "title": "EXOTICA BLACK PATENT",
-          "color": "BLACK PATENT",
-          "sku": "EXOTICA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT01_35d54095-7ef5-431b-963f-5cb70925311e.jpg?v=1772550177",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096.jpg?v=1780604661",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT02_908938a2-61ad-42da-994a-cbe3381bd4b0.jpg?v=1772550177",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT05_2474b529-5159-4681-81fe-861f8bfa06df.jpg?v=1772550177",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT04_c7964d6b-3c26-4024-a27b-a7160dc1370f.jpg?v=1772550177",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT03_74ca51e6-ea7f-4cf1-b121-0a87999770e1.jpg?v=1772550177"
-          ],
-          "category": "SANDAL",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/exotica-red-orange-patent",
-          "handle": "exotica-red-orange-patent",
-          "title": "EXOTICA RED ORANGE PATENT",
-          "color": "RED ORANGE PATENT",
-          "sku": "EXOTICA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT01.jpg?v=1772485818",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT02.jpg?v=1772485818",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT05.jpg?v=1772486190",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT04.jpg?v=1772486190",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT03.jpg?v=1772486190",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096_3a7ff5f6-0732-4244-8917-8995991dabaa.jpg?v=1780604699"
-          ],
-          "category": "SANDAL",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
       "modelFamilyId": "steve-madden--exotica-lime",
       "brand": "STEVE MADDEN",
       "canonicalName": "Exotica Lime",
@@ -12175,6 +11883,44 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_LIME-PATENT04.jpg?v=1772486135",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_LIME-PATENT03.jpg?v=1772486135",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096_5e76e921-8ede-49d7-abdd-d6d6cd9a0e47.jpg?v=1780604685"
+          ],
+          "category": "SANDAL",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--exotica",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Exotica",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT01.jpg?v=1772485818",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT02.jpg?v=1772485818",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT05.jpg?v=1772486190",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT04.jpg?v=1772486190",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT03.jpg?v=1772486190",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096_3a7ff5f6-0732-4244-8917-8995991dabaa.jpg?v=1780604699"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/exotica-red-orange-patent",
+          "handle": "exotica-red-orange-patent",
+          "title": "EXOTICA RED ORANGE PATENT",
+          "color": "RED ORANGE PATENT",
+          "sku": "EXOTICA",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT01.jpg?v=1772485818",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT02.jpg?v=1772485818",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT05.jpg?v=1772486190",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT04.jpg?v=1772486190",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_RED-PATENT03.jpg?v=1772486190",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_EXOTICA_BLACK-PATENT_1096_3a7ff5f6-0732-4244-8917-8995991dabaa.jpg?v=1780604699"
           ],
           "category": "SANDAL",
           "productType": "Women's Shoes",
@@ -12264,12 +12010,6 @@
       "canonicalName": "Faroh",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI01.jpg?v=1776272063",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI02.jpg?v=1776272063",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI05.jpg?v=1776272063",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI04.jpg?v=1776272063",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI03.jpg?v=1776272063",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_BLACK-PATENT_0172_fc87205a-00d7-4884-b16e-405817b381e0.jpg?v=1776271842",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_WHITE-PATENT01.jpg?v=1770757309",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_WHITE-PATENT_0171.jpg?v=1773934714",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_WHITE-PATENT02.jpg?v=1773934714",
@@ -12278,26 +12018,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_WHITE-PATENT03.jpg?v=1773934714"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/faroh-stone-natural-multi",
-          "handle": "faroh-stone-natural-multi",
-          "title": "FAROH STONE NATURAL MULTI",
-          "color": "NATURAL MULTI",
-          "sku": "FAROH-STONE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI01.jpg?v=1776272063",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI02.jpg?v=1776272063",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI05.jpg?v=1776272063",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI04.jpg?v=1776272063",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH-STONES_NATURAL-MULTI03.jpg?v=1776272063",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FAROH_BLACK-PATENT_0172_fc87205a-00d7-4884-b16e-405817b381e0.jpg?v=1776271842"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/faroh-white-patent",
           "handle": "faroh-white-patent",
@@ -12320,7 +12040,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--fay",
@@ -12376,12 +12096,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_05.jpg?v=1770059968",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_04.jpg?v=1770059968",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_03.jpg?v=1770059968",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_01.jpg?v=1763131400",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_0132.jpg?v=1769446490",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_02.jpg?v=1769446490",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_05.jpg?v=1769446490",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_04.jpg?v=1769446490",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_03.jpg?v=1769446490",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_TAUPE-SUEDE_01.jpg?v=1763130209",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_TAUPE-SUEDE_0140.jpg?v=1769446540",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_TAUPE-SUEDE_02.jpg?v=1769446540",
@@ -12423,26 +12137,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_05.jpg?v=1770059968",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_04.jpg?v=1770059968",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_BROWN-SUEDE_03.jpg?v=1770059968"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/fern-navy-suede",
-          "handle": "fern-navy-suede",
-          "title": "FERN NAVY SUEDE",
-          "color": "NAVY SUEDE",
-          "sku": "FERN",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_01.jpg?v=1763131400",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_0132.jpg?v=1769446490",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_02.jpg?v=1769446490",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_05.jpg?v=1769446490",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_04.jpg?v=1769446490",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_FERN_NAVY-SUEDE_03.jpg?v=1769446490"
           ],
           "category": "LOAFER",
           "productType": "Women's Shoes",
@@ -15386,11 +15080,6 @@
       "canonicalName": "Illia",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_02.jpg?v=1773773424",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_01.jpg?v=1773773424",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_05.jpg?v=1773322827",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_04.jpg?v=1773322827",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_03.jpg?v=1773322827",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_COGNAC-LEATHER_02.jpg?v=1773773413",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_COGNAC-LEATHER_01.jpg?v=1773773413",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_COGNAC-LEATHER_05.jpg?v=1773322836",
@@ -15398,25 +15087,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_COGNAC-LEATHER_03.jpg?v=1773322836"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/illia-black-leather",
-          "handle": "illia-black-leather",
-          "title": "ILLIA BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "ILLIA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_02.jpg?v=1773773424",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_01.jpg?v=1773773424",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_05.jpg?v=1773322827",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_04.jpg?v=1773322827",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ILLIA_BLACK-LEATHER_03.jpg?v=1773322827"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/illia-cognac-leather",
           "handle": "illia-cognac-leather",
@@ -15438,7 +15108,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--ina",
@@ -16376,12 +16046,6 @@
       "canonicalName": "Jella",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN01.jpg?v=1773542576",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DARK-BROWN_0081.jpg?v=1773935083",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN02.jpg?v=1773935083",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN05.jpg?v=1773935083",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN04.jpg?v=1773935083",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN03.jpg?v=1773935083",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_RED01.jpg?v=1769640528",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_RED_0423.jpg?v=1777908320",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_RED02.jpg?v=1769640528",
@@ -16397,26 +16061,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_APRIL_DTC_06_JELLA_WHITE_0784.jpg?v=1775050517"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/jella-dark-brown",
-          "handle": "jella-dark-brown",
-          "title": "JELLA DARK BROWN",
-          "color": "DARK BROWN",
-          "sku": "JELLA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN01.jpg?v=1773542576",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DARK-BROWN_0081.jpg?v=1773935083",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN02.jpg?v=1773935083",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN05.jpg?v=1773935083",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN04.jpg?v=1773935083",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JELLA_DK-BROWN03.jpg?v=1773935083"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/jella-red",
           "handle": "jella-red",
@@ -16846,6 +16490,44 @@
     },
     {
       "modelFamilyId": "steve-madden--jetty-raffia",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Jetty Raffia",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA.jpg?v=1752518445",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_01.jpg?v=1752518445",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_04.jpg?v=1752518445",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_03.jpg?v=1752518445",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_02.jpg?v=1752518433",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_RAFFIA_2138_4ba0be8a-ef4a-4b0f-856d-e3dc56a14faa.jpg?v=1752760530"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/jetty-blue-raffia",
+          "handle": "jetty-blue-raffia",
+          "title": "JETTY BLUE RAFFIA",
+          "color": "BLUE RAFFIA",
+          "sku": "JETTY",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA.jpg?v=1752518445",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_01.jpg?v=1752518445",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_04.jpg?v=1752518445",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_03.jpg?v=1752518445",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_BLUE-RAFFIA_02.jpg?v=1752518433",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_JETTY_RAFFIA_2138_4ba0be8a-ef4a-4b0f-856d-e3dc56a14faa.jpg?v=1752760530"
+          ],
+          "category": "MULE",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--jetty-raffia--jetty-raffia",
       "brand": "STEVE MADDEN",
       "canonicalName": "Jetty Raffia",
       "category": "MULE",
@@ -18133,42 +17815,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "steve-madden--kaia",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Kaia",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_04.jpg?v=1784048149",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_02.jpg?v=1784048149",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_05.jpg?v=1784048149",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_01.jpg?v=1784048149",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_03.jpg?v=1784048149"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/kaia-black-leather",
-          "handle": "kaia-black-leather",
-          "title": "KAIA BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "KAIA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_04.jpg?v=1784048149",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_02.jpg?v=1784048149",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_05.jpg?v=1784048149",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_01.jpg?v=1784048149",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KAIA_BLACK-LEATHER_03.jpg?v=1784048149"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--kaplan",
       "brand": "STEVE MADDEN",
       "canonicalName": "Kaplan",
@@ -19122,11 +18768,6 @@
       "canonicalName": "Klutzy",
       "category": "WEDGE",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER01.jpg?v=1765222233",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER02.jpg?v=1765222233",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER05.jpg?v=1765222233",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER04.jpg?v=1765222233",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER03.jpg?v=1765222233",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_RED-PATENT-LEATHER01.jpg?v=1765222170",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_RED-PATENT-LEATHER02.jpg?v=1765222170",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_RED-PATENT-LEATHER05.jpg?v=1765222170",
@@ -19134,25 +18775,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_RED-PATENT-LEATHER03.jpg?v=1765222170"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/klutzy-black-patent",
-          "handle": "klutzy-black-patent",
-          "title": "KLUTZY BLACK PATENT",
-          "color": "BLACK PATENT",
-          "sku": "KLUTZY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER01.jpg?v=1765222233",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER02.jpg?v=1765222233",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER05.jpg?v=1765222233",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER04.jpg?v=1765222233",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_KLUTZY_BLACK-PATENT-LEATHER03.jpg?v=1765222233"
-          ],
-          "category": "WEDGE",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/klutzy-red-patent",
           "handle": "klutzy-red-patent",
@@ -19174,7 +18796,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--knoti-satin",
@@ -19983,44 +19605,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA-EMBL_IVORY05.jpg?v=1781180350",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA-EMBL_IVORY04.jpg?v=1781180350",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA-EMBL_IVORY03.jpg?v=1781180350"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--larina-hot-satin",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Larina Hot Satin",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN_01_5b4486dc-e009-4ca1-bace-cb9ddf18940d.jpg?v=1775158391",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN02.jpg?v=1775158391",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN_05_6f394cc1-b26e-47a1-9b9f-619266c17890.jpg?v=1775158391",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN04.jpg?v=1775158391",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN03.jpg?v=1775158391",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_IVORY-SATIN_0654_02ef1ce7-8b53-4d73-b93a-7dfc544e34c0.jpg?v=1775158391"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/larina-hot-pink-satin",
-          "handle": "larina-hot-pink-satin",
-          "title": "LARINA HOT PINK SATIN",
-          "color": "HOT PINK SATIN",
-          "sku": "LARINA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN_01_5b4486dc-e009-4ca1-bace-cb9ddf18940d.jpg?v=1775158391",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN02.jpg?v=1775158391",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN_05_6f394cc1-b26e-47a1-9b9f-619266c17890.jpg?v=1775158391",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN04.jpg?v=1775158391",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_HOT-PINK-SATIN03.jpg?v=1775158391",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_LARINA_IVORY-SATIN_0654_02ef1ce7-8b53-4d73-b93a-7dfc544e34c0.jpg?v=1775158391"
           ],
           "category": "PUMP",
           "productType": "Women's Shoes",
@@ -23351,6 +22935,44 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "steve-madden--marble",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Marble",
+      "category": "THONG",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_01.jpg?v=1770330526",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_0723.jpg?v=1777908743",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_02.jpg?v=1770330526",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_05.jpg?v=1770330779",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_04.jpg?v=1770330779",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_03.jpg?v=1770330779"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/marble-natural-multi",
+          "handle": "marble-natural-multi",
+          "title": "MARBLE NATURAL MULTI",
+          "color": "NATURAL MULTI",
+          "sku": "MARBLE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_01.jpg?v=1770330526",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_0723.jpg?v=1777908743",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_02.jpg?v=1770330526",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_05.jpg?v=1770330779",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_04.jpg?v=1770330779",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MARBLE_NATURAL-MULTI_03.jpg?v=1770330779"
+          ],
+          "category": "THONG",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "steve-madden--marble-rhinestones",
       "brand": "STEVE MADDEN",
       "canonicalName": "Marble Rhinestones",
@@ -24820,11 +24442,6 @@
       "canonicalName": "Mitsy",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_01.jpg?v=1750776207",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_02.jpg?v=1750776207",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_05.jpg?v=1750776207",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_04.jpg?v=1750776207",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_03.jpg?v=1750776207",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_WHITE-BLACK_01.jpg?v=1750776202",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_WHITE-BLACK_02.jpg?v=1750776202",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_WHITE-BLACK_05.jpg?v=1750776202",
@@ -24832,25 +24449,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_WHITE-BLACK_03.jpg?v=1750776202"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/mitsy-black-black",
-          "handle": "mitsy-black-black",
-          "title": "MITSY BLACK/BLACK",
-          "color": "BLACK/BLACK",
-          "sku": "MITSY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_01.jpg?v=1750776207",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_02.jpg?v=1750776207",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_05.jpg?v=1750776207",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_04.jpg?v=1750776207",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MITSY_BLACK-BLACK_03.jpg?v=1750776207"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/mitsy-white-black",
           "handle": "mitsy-white-black",
@@ -24872,7 +24470,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--mizuna-rhinestones",
@@ -26342,44 +25940,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR_COBALT_04.jpg?v=1767126889",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR_COBALT_03.jpg?v=1767126889",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR_BLACK-LEATHER_3012_06a0251d-1153-4c54-a137-06dc865ffac7.jpg?v=1767126334"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--fawn",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Fawn",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_01_071544d2-51c0-4a31-8bf7-ba9bd704e8e6.jpg?v=1775757471",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_02_41844547-5984-4d63-b372-582bb5f40240.jpg?v=1775757471",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_05_d3646cca-1c5b-41f1-a12e-378931a2b577.jpg?v=1775757471",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_04_d87e1e70-b8fd-476d-8e34-021afa4bde76.jpg?v=1775757471",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_03_dee96f44-2f33-48ed-aad0-d7e3792e1596.jpg?v=1775757471",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR_BLACK-LEATHER_3012_892d5818-d1f4-439c-91b6-dd7b183169ae.jpg?v=1775757471"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/noir-h-fawn",
-          "handle": "noir-h-fawn",
-          "title": "NOIR FAWN",
-          "color": "FAWN",
-          "sku": "NOIR-H",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_01_071544d2-51c0-4a31-8bf7-ba9bd704e8e6.jpg?v=1775757471",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_02_41844547-5984-4d63-b372-582bb5f40240.jpg?v=1775757471",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_05_d3646cca-1c5b-41f1-a12e-378931a2b577.jpg?v=1775757471",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_04_d87e1e70-b8fd-476d-8e34-021afa4bde76.jpg?v=1775757471",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR-H_FAWN_03_dee96f44-2f33-48ed-aad0-d7e3792e1596.jpg?v=1775757471",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_NOIR_BLACK-LEATHER_3012_892d5818-d1f4-439c-91b6-dd7b183169ae.jpg?v=1775757471"
           ],
           "category": "PUMP",
           "productType": "Women's Shoes",
@@ -28623,11 +28183,6 @@
       "canonicalName": "Pulse",
       "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_01.jpg?v=1773259406",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_02.jpg?v=1773259406",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_05.jpg?v=1773259406",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_04.jpg?v=1773259406",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_03.jpg?v=1773259406",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK-WHITE01.jpg?v=1788373294",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK-WHITE02.jpg?v=1788373295",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK-WHITE04.jpg?v=1788373294",
@@ -28644,25 +28199,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_WHITE-RED_03.jpg?v=1789058089"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/pulse-black",
-          "handle": "pulse-black",
-          "title": "PULSE BLACK",
-          "color": "BLACK",
-          "sku": "PULSE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_01.jpg?v=1773259406",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_02.jpg?v=1773259406",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_05.jpg?v=1773259406",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_04.jpg?v=1773259406",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_PULSE_BLACK_03.jpg?v=1773259406"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/pulse-black-white",
           "handle": "pulse-black-white",
@@ -29082,6 +28618,42 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "steve-madden--raftus",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Raftus",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_01_90113007-6942-47bc-ae7f-9d34c1881cd7.jpg?v=1753993346",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_02_f07c42bf-3a9f-4bc8-8677-b99d706503d4.jpg?v=1753993346",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_05_9d659721-61f8-4588-9996-46a90d7f94a5.jpg?v=1753993346",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_04_e69b712f-85d1-4aee-ad8c-9a018a9cff69.jpg?v=1753993346",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_03_d82fcd3f-f53c-4673-bebe-235203749d8d.jpg?v=1753993346"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/raftus-black-leather",
+          "handle": "raftus-black-leather",
+          "title": "RAFTUS BLACK LEATHER",
+          "color": "BLACK LEATHER",
+          "sku": "RAFTUS",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_01_90113007-6942-47bc-ae7f-9d34c1881cd7.jpg?v=1753993346",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_02_f07c42bf-3a9f-4bc8-8677-b99d706503d4.jpg?v=1753993346",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_05_9d659721-61f8-4588-9996-46a90d7f94a5.jpg?v=1753993346",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_04_e69b712f-85d1-4aee-ad8c-9a018a9cff69.jpg?v=1753993346",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAFTUS_BLACK-LEATHER_03_d82fcd3f-f53c-4673-bebe-235203749d8d.jpg?v=1753993346"
+          ],
+          "category": "LOAFER",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "steve-madden--ralia",
       "brand": "STEVE MADDEN",
       "canonicalName": "Ralia",
@@ -29347,11 +28919,6 @@
       "canonicalName": "Raquelle",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_01-1.jpg?v=1772120962",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_02_cf1bd3f2-b518-4b38-b546-1089b6b4fa7c.jpg?v=1772120962",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_05-1.jpg?v=1772120979",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_04-1.jpg?v=1772120979",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_03_098a5ea3-8577-48c3-acda-5d495ab031a8.jpg?v=1772120979",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_TAN-NUBUCK_01.jpg?v=1772031703",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_TAN-NUBUCK_02.jpg?v=1772031703",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_TAN-NUBUCK_05.jpg?v=1772031410",
@@ -29359,25 +28926,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_TAN-NUBUCK_03.jpg?v=1772031410"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/raquelle-brown-multi",
-          "handle": "raquelle-brown-multi",
-          "title": "RAQUELLE BROWN MULTI",
-          "color": "BROWN MULTI",
-          "sku": "RAQUELLE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_01-1.jpg?v=1772120962",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_02_cf1bd3f2-b518-4b38-b546-1089b6b4fa7c.jpg?v=1772120962",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_05-1.jpg?v=1772120979",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_04-1.jpg?v=1772120979",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_BROWN-MULTI_03_098a5ea3-8577-48c3-acda-5d495ab031a8.jpg?v=1772120979"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/raquelle-chestnut-suede",
           "handle": "raquelle-chestnut-suede",
@@ -29392,42 +28940,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RAQUELLE_TAN-NUBUCK_03.jpg?v=1772031410"
           ],
           "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--rashida-mesh",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Rashida Mesh",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH.jpg?v=1757353922",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_01.jpg?v=1757353922",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_04.jpg?v=1757353922",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_03.jpg?v=1757353922",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_02.jpg?v=1757353922"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/rashida-blush-mesh",
-          "handle": "rashida-blush-mesh",
-          "title": "RASHIDA BLUSH MESH",
-          "color": "BLUSH MESH",
-          "sku": "RASHIDA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH.jpg?v=1757353922",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_01.jpg?v=1757353922",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_04.jpg?v=1757353922",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_03.jpg?v=1757353922",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RASHIDA_BLUSH-MESH_02.jpg?v=1757353922"
-          ],
-          "category": "BOOT",
           "productType": "Women's Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -30441,12 +29953,6 @@
       "canonicalName": "Ritzy",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK.jpg?v=1756930668",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_01.jpg?v=1756930707",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_04.jpg?v=1756930707",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_03.jpg?v=1756930707",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_02.jpg?v=1756930707",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_WOVEN-BLACK_0544_5d5472b4-5561-4671-a82c-04653182e1db.jpg?v=1776359265",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_GOLD01.jpg?v=1776185711",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_GOLD-_0846.jpg?v=1780605439",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_GOLD02.jpg?v=1776185711",
@@ -30461,26 +29967,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_COASTAL-EDIT_WHOLESALE_8A_BP402083_SA06623_RITZY_BLUXXAR_0022.jpg?v=1777644292"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/ritzy-black",
-          "handle": "ritzy-black",
-          "title": "RITZY BLACK",
-          "color": "BLACK",
-          "sku": "RITZY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK.jpg?v=1756930668",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_01.jpg?v=1756930707",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_04.jpg?v=1756930707",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_03.jpg?v=1756930707",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_BLACK_02.jpg?v=1756930707",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_RITZY_WOVEN-BLACK_0544_5d5472b4-5561-4671-a82c-04653182e1db.jpg?v=1776359265"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/ritzy-gold",
           "handle": "ritzy-gold",
@@ -30784,44 +30270,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "steve-madden--rocky--rocky-cognac-distressed",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Rocky",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_04.jpg?v=1763053346",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_0393.jpg?v=1765470375",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_01.jpg?v=1765470375",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_05.jpg?v=1765470375",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_03.jpg?v=1765470375",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_02.jpg?v=1765470375"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/rocky-cognac-distressed",
-          "handle": "rocky-cognac-distressed",
-          "title": "ROCKY COGNAC DISTRESSED",
-          "color": "COGNAC DISTRESSED",
-          "sku": "ROCKY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_04.jpg?v=1763053346",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_0393.jpg?v=1765470375",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_01.jpg?v=1765470375",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_05.jpg?v=1765470375",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_03.jpg?v=1765470375",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROCKY_COGNAC-DISTRESSED_02.jpg?v=1765470375"
-          ],
-          "category": "BOOT",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "steve-madden--rocky-wide--rocky-w-cognac-distressed",
       "brand": "STEVE MADDEN",
       "canonicalName": "Rocky Wide",
@@ -30913,7 +30361,13 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_RED-LEATHER05.jpg?v=1770781210",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_RED-LEATHER04.jpg?v=1770781210",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_RED-LEATHER03.jpg?v=1770781210",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_CHOCOLATE-BROWN-SUEDE_0289_993daae0-99c1-42e0-9f87-c445318d12a8.jpg?v=1770781210"
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_CHOCOLATE-BROWN-SUEDE_0289_993daae0-99c1-42e0-9f87-c445318d12a8.jpg?v=1770781210",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_01.jpg?v=1769442927",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_0593.jpg?v=1771883250",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_02.jpg?v=1771883250",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_05.jpg?v=1771883250",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_04.jpg?v=1771883250",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_03.jpg?v=1771883250"
       ],
       "variants": [
         {
@@ -30950,6 +30404,26 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_RED-LEATHER04.jpg?v=1770781210",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_RED-LEATHER03.jpg?v=1770781210",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_CHOCOLATE-BROWN-SUEDE_0289_993daae0-99c1-42e0-9f87-c445318d12a8.jpg?v=1770781210"
+          ],
+          "category": "LOAFER",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://www.stevemadden.com/products/roger-taupe-suede",
+          "handle": "roger-taupe-suede",
+          "title": "ROGER TAUPE SUEDE",
+          "color": "TAUPE SUEDE",
+          "sku": "ROGER",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_01.jpg?v=1769442927",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_0593.jpg?v=1771883250",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_02.jpg?v=1771883250",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_05.jpg?v=1771883250",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_04.jpg?v=1771883250",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ROGER_TAUPE-SUEDE_03.jpg?v=1771883250"
           ],
           "category": "LOAFER",
           "productType": "Women's Shoes",
@@ -31891,6 +31365,42 @@
         }
       ],
       "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--sady",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Sady",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_01.jpg?v=1752863453",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_02.jpg?v=1752863453",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_05.jpg?v=1752863453",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_04.jpg?v=1752863453",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_03.jpg?v=1752863453"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/sady-black-leather",
+          "handle": "sady-black-leather",
+          "title": "SADY BLACK LEATHER",
+          "color": "BLACK LEATHER",
+          "sku": "SADY",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_01.jpg?v=1752863453",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_02.jpg?v=1752863453",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_05.jpg?v=1752863453",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_04.jpg?v=1752863453",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SADY_BLACK-LEATHER_03.jpg?v=1752863453"
+          ],
+          "category": "BOOT",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -32964,44 +32474,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "steve-madden--shay--shay-l-leopard",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Shay",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_01.jpg?v=1758729755",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_02.jpg?v=1758729755",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_05.jpg?v=1758729755",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_04.jpg?v=1758729755",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_03.jpg?v=1758729755",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY_BURGUNDY-LEATHER_0399_1654c818-9c96-433d-91e1-62d3398f6582.jpg?v=1761664467"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/shay-l-leopard",
-          "handle": "shay-l-leopard",
-          "title": "SHAY LEOPARD",
-          "color": "LEOPARD",
-          "sku": "SHAY-L",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_01.jpg?v=1758729755",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_02.jpg?v=1758729755",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_05.jpg?v=1758729755",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_04.jpg?v=1758729755",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY-L_LEOPARD_03.jpg?v=1758729755",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SHAY_BURGUNDY-LEATHER_0399_1654c818-9c96-433d-91e1-62d3398f6582.jpg?v=1761664467"
-          ],
-          "category": "LOAFER",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--shay-woven",
@@ -36015,11 +35487,6 @@
       "canonicalName": "Terry",
       "category": "THONG",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK01.jpg?v=1776089182",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK02.jpg?v=1776089182",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK05.jpg?v=1776089182",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK04.jpg?v=1776089182",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK03.jpg?v=1776089182",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_MILKY01.jpg?v=1776089205",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_MILKY02.jpg?v=1776089205",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_MILKY05.jpg?v=1776089205",
@@ -36027,25 +35494,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_MILKY03.jpg?v=1776089205"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/terry-black-snake",
-          "handle": "terry-black-snake",
-          "title": "TERRY BLACK SNAKE",
-          "color": "BLACK SNAKE",
-          "sku": "TERRY",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK01.jpg?v=1776089182",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK02.jpg?v=1776089182",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK05.jpg?v=1776089182",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK04.jpg?v=1776089182",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TERRY_BLACK03.jpg?v=1776089182"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/terry-bone-snake",
           "handle": "terry-bone-snake",
@@ -36067,7 +35515,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--thelma",
@@ -36468,6 +35916,46 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIDES_OFF-WHITE_02.jpg?v=1758036469"
           ],
           "category": "SANDAL",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "steve-madden--tigress",
+      "brand": "STEVE MADDEN",
+      "canonicalName": "Tigress",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI01.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI_0091.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI02.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI05.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI04.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI03.jpg?v=1774298495",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_APRIL_DTC_12_TIGRESS_BROWN_1381.jpg?v=1775050558"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://www.stevemadden.com/products/tigress-brown-multi",
+          "handle": "tigress-brown-multi",
+          "title": "TIGRESS BROWN MULTI",
+          "color": "BROWN MULTI",
+          "sku": "TIGRESS",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI01.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI_0091.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI02.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI05.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI04.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TIGRESS_BROWN-MULTI03.jpg?v=1774298495",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/SM_2026_APRIL_DTC_12_TIGRESS_BROWN_1381.jpg?v=1775050558"
+          ],
+          "category": "PUMP",
           "productType": "Women's Shoes",
           "inNewArrivals": false,
           "isNew": false,
@@ -37225,12 +36713,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOE_TRELLA_BLACK-SUEDE_04.jpg?v=1751464478",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOE_TRELLA_BLACK-SUEDE_03.jpg?v=1751464478",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_BLACK-PATENT_0130_da72bd99-7e01-45aa-8608-0e3e31bbe3de.jpg?v=1773938517",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT01.jpg?v=1770309829",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT_0128copy.jpg?v=1774388390",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT02.jpg?v=1774388390",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT05.jpg?v=1774388390",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT04.jpg?v=1774388390",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT03.jpg?v=1774388390",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_TAN-LEATHER_01_8106aeed-4b32-4a9a-a562-73e29c47a501.jpg?v=1770387429",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_TAN-LEATHER_0132.jpg?v=1773938441",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_TAN-LEATHER_02_c0988c19-ad87-44d4-bdec-2c05daf61279.jpg?v=1773938441",
@@ -37284,26 +36766,6 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOE_TRELLA_BLACK-SUEDE_04.jpg?v=1751464478",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOE_TRELLA_BLACK-SUEDE_03.jpg?v=1751464478",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_BLACK-PATENT_0130_da72bd99-7e01-45aa-8608-0e3e31bbe3de.jpg?v=1773938517"
-          ],
-          "category": "THONG",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://www.stevemadden.com/products/trella-red-orange-patent",
-          "handle": "trella-red-orange-patent",
-          "title": "TRELLA RED ORANGE PATENT",
-          "color": "RED ORANGE PATENT",
-          "sku": "TRELLA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT01.jpg?v=1770309829",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT_0128copy.jpg?v=1774388390",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT02.jpg?v=1774388390",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT05.jpg?v=1774388390",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT04.jpg?v=1774388390",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_TRELLA_RED-ORANGE-PATENT03.jpg?v=1774388390"
           ],
           "category": "THONG",
           "productType": "Women's Shoes",
@@ -38130,6 +37592,11 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_FRONT.jpg?v=1773165116",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_TOP_PAIR.jpg?v=1773165116",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_ANGLE1_PAIR.jpg?v=1773165116",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_01.jpg?v=1773241860",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_02.jpg?v=1773241861",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_05.jpg?v=1773242081",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_04.jpg?v=1773242081",
+        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_03.jpg?v=1773242081",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_WHITE_SIDE2_68fab67c-5948-4fa6-8cab-1e55ea8fe84f.jpg?v=1773242128",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_WHITE_02.jpg?v=1791574809",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_WHITE_FRONT_PAIR.jpg?v=1773242128",
@@ -38149,6 +37616,25 @@
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_FRONT.jpg?v=1773165116",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_TOP_PAIR.jpg?v=1773165116",
             "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVE_MADDEN_SHOES_VALENTIN_BLACK_ANGLE1_PAIR.jpg?v=1773165116"
+          ],
+          "category": "THONG",
+          "productType": "Women's Shoes",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://www.stevemadden.com/products/valentin-blue-leather",
+          "handle": "valentin-blue-leather",
+          "title": "VALENTIN BLUE LEATHER",
+          "color": "BLUE LEATHER",
+          "sku": "VALENTIN",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_01.jpg?v=1773241860",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_02.jpg?v=1773241861",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_05.jpg?v=1773242081",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_04.jpg?v=1773242081",
+            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_VALENTIN_BLUE-LEATHER_03.jpg?v=1773242081"
           ],
           "category": "THONG",
           "productType": "Women's Shoes",
@@ -39167,11 +38653,6 @@
       "canonicalName": "Weyra",
       "category": "MULE",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_01.jpg?v=1781011191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_02.jpg?v=1781011191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_05.jpg?v=1781011191",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_04.jpg?v=1781011192",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_03.jpg?v=1781011191",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_TAN-LEATHER_01.jpg?v=1781011187",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_TAN-LEATHER_02.jpg?v=1781011187",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_TAN-LEATHER_05.jpg?v=1781011187",
@@ -39179,25 +38660,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_TAN-LEATHER_03.jpg?v=1781011187"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/weyra-black-leather",
-          "handle": "weyra-black-leather",
-          "title": "WEYRA BLACK LEATHER",
-          "color": "BLACK LEATHER",
-          "sku": "WEYRA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_01.jpg?v=1781011191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_02.jpg?v=1781011191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_05.jpg?v=1781011191",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_04.jpg?v=1781011192",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_WEYRA_BLACK-LEATHER_03.jpg?v=1781011191"
-          ],
-          "category": "MULE",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/weyra-tan-leather",
           "handle": "weyra-tan-leather",
@@ -39219,7 +38681,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--wiley",
@@ -40041,7 +39503,6 @@
     "https://www.stevemadden.com/products/achilles-light-blue",
     "https://www.stevemadden.com/products/achilles-off-white",
     "https://www.stevemadden.com/products/achilles-red",
-    "https://www.stevemadden.com/products/adeline-black-leather",
     "https://www.stevemadden.com/products/affinity-metallic-multi",
     "https://www.stevemadden.com/products/affinity-pearl-ivory-satin",
     "https://www.stevemadden.com/products/affinity-white-patent",
@@ -40064,6 +39525,7 @@
     "https://www.stevemadden.com/products/altman-taupe-suede",
     "https://www.stevemadden.com/products/alyse-m-black",
     "https://www.stevemadden.com/products/alyse-m-mocha",
+    "https://www.stevemadden.com/products/alyse-m-zebra",
     "https://www.stevemadden.com/products/amias-black-suede",
     "https://www.stevemadden.com/products/amias-tan-suede",
     "https://www.stevemadden.com/products/anaya-st-black-leather",
@@ -40120,12 +39582,10 @@
     "https://www.stevemadden.com/products/berkleigh-black",
     "https://www.stevemadden.com/products/berkleighw-black",
     "https://www.stevemadden.com/products/berkshire-black-leather",
-    "https://www.stevemadden.com/products/besette-bone-leather",
     "https://www.stevemadden.com/products/bexley-black-leather",
     "https://www.stevemadden.com/products/bigmona-f-natural",
     "https://www.stevemadden.com/products/bigmona-natural-raffia",
     "https://www.stevemadden.com/products/bigschmona-black-black-suede",
-    "https://www.stevemadden.com/products/bigschmonj-natural",
     "https://www.stevemadden.com/products/bigschmona-taupe-suede",
     "https://www.stevemadden.com/products/bing-gold",
     "https://www.stevemadden.com/products/blizzard-chocolate-brown-suede",
@@ -40191,7 +39651,6 @@
     "https://www.stevemadden.com/products/callie-black-leather",
     "https://www.stevemadden.com/products/callie-snake",
     "https://www.stevemadden.com/products/callie-tan-leather",
-    "https://www.stevemadden.com/products/calora-black-leather",
     "https://www.stevemadden.com/products/canal-brown-leather",
     "https://www.stevemadden.com/products/canter-black-leather",
     "https://www.stevemadden.com/products/canter-w-black-leather",
@@ -40256,8 +39715,6 @@
     "https://www.stevemadden.com/products/daciana-black-leather",
     "https://www.stevemadden.com/products/daley-black-leather",
     "https://www.stevemadden.com/products/daley-cognac-leather",
-    "https://www.stevemadden.com/products/danger-black-multi",
-    "https://www.stevemadden.com/products/danger-burgundy-multi",
     "https://www.stevemadden.com/products/danika-cognac-leather",
     "https://www.stevemadden.com/products/darcey-black-patent",
     "https://www.stevemadden.com/products/darcey-wine-patent",
@@ -40309,7 +39766,6 @@
     "https://www.stevemadden.com/products/distortion-gold-glitter",
     "https://www.stevemadden.com/products/divy-cognac-leather",
     "https://www.stevemadden.com/products/divy-lime-leather",
-    "https://www.stevemadden.com/products/divy-pink-leather",
     "https://www.stevemadden.com/products/divy-white-brown-leather",
     "https://www.stevemadden.com/products/dock-raffia-black",
     "https://www.stevemadden.com/products/dorelia-bone",
@@ -40334,7 +39790,6 @@
     "https://www.stevemadden.com/products/dynasty-c-tortoise",
     "https://www.stevemadden.com/products/dyra-black-gold",
     "https://www.stevemadden.com/products/dyra-black-satin",
-    "https://www.stevemadden.com/products/edin-champagne",
     "https://www.stevemadden.com/products/edin-snake",
     "https://www.stevemadden.com/products/edna-black-leather",
     "https://www.stevemadden.com/products/edna-champagne-leather",
@@ -40346,7 +39801,6 @@
     "https://www.stevemadden.com/products/elegant-mocha",
     "https://www.stevemadden.com/products/elegant-natural-raffia",
     "https://www.stevemadden.com/products/elegant-p-ivory-mesh",
-    "https://www.stevemadden.com/products/elegant-red-crocodile",
     "https://www.stevemadden.com/products/eleve-black-leather",
     "https://www.stevemadden.com/products/eleve-bronze-leather",
     "https://www.stevemadden.com/products/eleve-red-leather",
@@ -40362,6 +39816,7 @@
     "https://www.stevemadden.com/products/elvia-bone-leather",
     "https://www.stevemadden.com/products/elvia-brown-leather",
     "https://www.stevemadden.com/products/enella-black-crocodile",
+    "https://www.stevemadden.com/products/enella-zebra",
     "https://www.stevemadden.com/products/ennie-meshr-gold-leather",
     "https://www.stevemadden.com/products/eralyn-black",
     "https://www.stevemadden.com/products/eralyn-brown",
@@ -40379,19 +39834,16 @@
     "https://www.stevemadden.com/products/evoque-black-patent",
     "https://www.stevemadden.com/products/evoque-brown-patent",
     "https://www.stevemadden.com/products/evren-blue-print",
-    "https://www.stevemadden.com/products/exotica-black-patent",
     "https://www.stevemadden.com/products/exotica-lime-patent",
     "https://www.stevemadden.com/products/exotica-red-orange-patent",
     "https://www.stevemadden.com/products/fanya-silver",
     "https://www.stevemadden.com/products/fare-black-leather",
-    "https://www.stevemadden.com/products/faroh-stone-natural-multi",
     "https://www.stevemadden.com/products/faroh-white-patent",
     "https://www.stevemadden.com/products/fay-black-suede",
     "https://www.stevemadden.com/products/fern-black-leather",
     "https://www.stevemadden.com/products/fern-brown-suede",
     "https://www.stevemadden.com/products/fern-denim",
     "https://www.stevemadden.com/products/fern-knit-taupe",
-    "https://www.stevemadden.com/products/fern-navy-suede",
     "https://www.stevemadden.com/products/fern-mesh-tan-raffia",
     "https://www.stevemadden.com/products/fern-taupe-suede",
     "https://www.stevemadden.com/products/fisk-tan-leather",
@@ -40477,7 +39929,6 @@
     "https://www.stevemadden.com/products/icon-multi",
     "https://www.stevemadden.com/products/icon-red",
     "https://www.stevemadden.com/products/idaline-natural",
-    "https://www.stevemadden.com/products/illia-black-leather",
     "https://www.stevemadden.com/products/illia-cognac-leather",
     "https://www.stevemadden.com/products/ina-black-multi",
     "https://www.stevemadden.com/products/ives-black-box",
@@ -40507,7 +39958,6 @@
     "https://www.stevemadden.com/products/jayce-raffia-white",
     "https://www.stevemadden.com/products/jelina-brown",
     "https://www.stevemadden.com/products/jelina-clear",
-    "https://www.stevemadden.com/products/jella-dark-brown",
     "https://www.stevemadden.com/products/jella-red",
     "https://www.stevemadden.com/products/jella-white",
     "https://www.stevemadden.com/products/jellie-bone",
@@ -40521,6 +39971,7 @@
     "https://www.stevemadden.com/products/jeter-black",
     "https://www.stevemadden.com/products/jeter-a-black-snake",
     "https://www.stevemadden.com/products/jeter-brown",
+    "https://www.stevemadden.com/products/jetty-blue-raffia",
     "https://www.stevemadden.com/products/jetty-raffia",
     "https://www.stevemadden.com/products/jezzica-black-patent",
     "https://www.stevemadden.com/products/jezzica-black-zebra",
@@ -40561,7 +40012,6 @@
     "https://www.stevemadden.com/products/jypsey-yellow",
     "https://www.stevemadden.com/products/kaeli-dark-grey-suede",
     "https://www.stevemadden.com/products/kaeli-taupe-suede",
-    "https://www.stevemadden.com/products/kaia-black-leather",
     "https://www.stevemadden.com/products/kaplan-black-leather",
     "https://www.stevemadden.com/products/kaplan-camel-suede",
     "https://www.stevemadden.com/products/karlson-black-leather",
@@ -40593,7 +40043,6 @@
     "https://www.stevemadden.com/products/kipp-black-leather",
     "https://www.stevemadden.com/products/kipp-white-leather",
     "https://www.stevemadden.com/products/klio-coral-multi",
-    "https://www.stevemadden.com/products/klutzy-black-patent",
     "https://www.stevemadden.com/products/klutzy-red-patent",
     "https://www.stevemadden.com/products/knoti-black-satin",
     "https://www.stevemadden.com/products/knoti-blue-satin",
@@ -40618,7 +40067,6 @@
     "https://www.stevemadden.com/products/larina-black-satin",
     "https://www.stevemadden.com/products/larina-blue-satin",
     "https://www.stevemadden.com/products/larina-embellished-ivory",
-    "https://www.stevemadden.com/products/larina-hot-pink-satin",
     "https://www.stevemadden.com/products/larina-ivory-satin",
     "https://www.stevemadden.com/products/larina-pink-satin",
     "https://www.stevemadden.com/products/larina-red-satin",
@@ -40717,6 +40165,7 @@
     "https://www.stevemadden.com/products/mandy-natural-linen",
     "https://www.stevemadden.com/products/mandy-white-leather",
     "https://www.stevemadden.com/products/mania-blush-leather",
+    "https://www.stevemadden.com/products/marble-natural-multi",
     "https://www.stevemadden.com/products/marble-r-silver-multi",
     "https://www.stevemadden.com/products/marelyn-olive-multi",
     "https://www.stevemadden.com/products/marelyn-w-olive-multi",
@@ -40760,7 +40209,6 @@
     "https://www.stevemadden.com/products/miro-black",
     "https://www.stevemadden.com/products/misty-brown-multi",
     "https://www.stevemadden.com/products/misty-light-pink",
-    "https://www.stevemadden.com/products/mitsy-black-black",
     "https://www.stevemadden.com/products/mitsy-white-black",
     "https://www.stevemadden.com/products/mizuna-r-black-multi",
     "https://www.stevemadden.com/products/mizuna-black-patent",
@@ -40807,7 +40255,6 @@
     "https://www.stevemadden.com/products/nitro-white",
     "https://www.stevemadden.com/products/noir-black-leather",
     "https://www.stevemadden.com/products/noir-cobalt",
-    "https://www.stevemadden.com/products/noir-h-fawn",
     "https://www.stevemadden.com/products/noir-gold-leather",
     "https://www.stevemadden.com/products/noir-red-leather",
     "https://www.stevemadden.com/products/noir-white-leather",
@@ -40876,7 +40323,6 @@
     "https://www.stevemadden.com/products/priya-stone-olive",
     "https://www.stevemadden.com/products/provoque-black",
     "https://www.stevemadden.com/products/provoque-red",
-    "https://www.stevemadden.com/products/pulse-black",
     "https://www.stevemadden.com/products/pulse-black-white",
     "https://www.stevemadden.com/products/pulse-bone",
     "https://www.stevemadden.com/products/pulse-white-red",
@@ -40891,6 +40337,7 @@
     "https://www.stevemadden.com/products/rafe-taupe-suede",
     "https://www.stevemadden.com/products/rafe-umber-suede",
     "https://www.stevemadden.com/products/rafe-white-leather",
+    "https://www.stevemadden.com/products/raftus-black-leather",
     "https://www.stevemadden.com/products/ralia-black",
     "https://www.stevemadden.com/products/ralia-chestnut-suede",
     "https://www.stevemadden.com/products/ramble-black-multi",
@@ -40899,9 +40346,7 @@
     "https://www.stevemadden.com/products/ramos-natural-snake",
     "https://www.stevemadden.com/products/rapid-black-leather",
     "https://www.stevemadden.com/products/rapid-brown-satin",
-    "https://www.stevemadden.com/products/raquelle-brown-multi",
     "https://www.stevemadden.com/products/raquelle-chestnut-suede",
-    "https://www.stevemadden.com/products/rashida-blush-mesh",
     "https://www.stevemadden.com/products/ravine-black",
     "https://www.stevemadden.com/products/ravine-grey-distr",
     "https://www.stevemadden.com/products/reef-black-leather",
@@ -40932,7 +40377,6 @@
     "https://www.stevemadden.com/products/riggs-w-rust-leather",
     "https://www.stevemadden.com/products/riggs-stitch-cognac-leather",
     "https://www.stevemadden.com/products/riggs-taupe-nubuck",
-    "https://www.stevemadden.com/products/ritzy-black",
     "https://www.stevemadden.com/products/ritzy-gold",
     "https://www.stevemadden.com/products/ritzy-natural-snake",
     "https://www.stevemadden.com/products/ritzy-wood-brown-multi",
@@ -40942,11 +40386,11 @@
     "https://www.stevemadden.com/products/rivena-cognac-leather",
     "https://www.stevemadden.com/products/rocky-brown-distressed",
     "https://www.stevemadden.com/products/rocky-w-brown-distressed",
-    "https://www.stevemadden.com/products/rocky-cognac-distressed",
     "https://www.stevemadden.com/products/rocky-w-cognac-distressed",
     "https://www.stevemadden.com/products/rocky-floral-tan-nubuck",
     "https://www.stevemadden.com/products/roger-black-leather",
     "https://www.stevemadden.com/products/roger-red-leather",
+    "https://www.stevemadden.com/products/roger-taupe-suede",
     "https://www.stevemadden.com/products/romeo-fur-black",
     "https://www.stevemadden.com/products/romeo-fur-brown-tan",
     "https://www.stevemadden.com/products/rona-black-leather",
@@ -40975,6 +40419,7 @@
     "https://www.stevemadden.com/products/sacramento-champagne",
     "https://www.stevemadden.com/products/sacramento-natural-leather",
     "https://www.stevemadden.com/products/sadley-cognac-leather",
+    "https://www.stevemadden.com/products/sady-black-leather",
     "https://www.stevemadden.com/products/safra-black-suede",
     "https://www.stevemadden.com/products/safra-taupe-suede",
     "https://www.stevemadden.com/products/sail-l-leopard",
@@ -41009,7 +40454,6 @@
     "https://www.stevemadden.com/products/shaina-snake",
     "https://www.stevemadden.com/products/shay-black-leather",
     "https://www.stevemadden.com/products/shay-burgundy-leather",
-    "https://www.stevemadden.com/products/shay-l-leopard",
     "https://www.stevemadden.com/products/shay-olive-leather",
     "https://www.stevemadden.com/products/shay-snake",
     "https://www.stevemadden.com/products/shay-w-cognac",
@@ -41101,7 +40545,6 @@
     "https://www.stevemadden.com/products/teacup-ivory-satin",
     "https://www.stevemadden.com/products/teddy-t-bright-multi",
     "https://www.stevemadden.com/products/teddy-t-pastel-multi",
-    "https://www.stevemadden.com/products/terry-black-snake",
     "https://www.stevemadden.com/products/terry-bone-snake",
     "https://www.stevemadden.com/products/thelma-bone-leather",
     "https://www.stevemadden.com/products/thelma-gold-leather",
@@ -41115,6 +40558,7 @@
     "https://www.stevemadden.com/products/tibby-black-leather",
     "https://www.stevemadden.com/products/tides-cognac",
     "https://www.stevemadden.com/products/tides-pearl",
+    "https://www.stevemadden.com/products/tigress-brown-multi",
     "https://www.stevemadden.com/products/tilly-black-leather",
     "https://www.stevemadden.com/products/tilly-chestnut-suede",
     "https://www.stevemadden.com/products/tino-black",
@@ -41144,7 +40588,6 @@
     "https://www.stevemadden.com/products/trella-j-clear",
     "https://www.stevemadden.com/products/trella-j-pink-print",
     "https://www.stevemadden.com/products/trella-j-tan",
-    "https://www.stevemadden.com/products/trella-red-orange-patent",
     "https://www.stevemadden.com/products/trella-tan-leather",
     "https://www.stevemadden.com/products/trella-tortoise",
     "https://www.stevemadden.com/products/trella-white-leather",
@@ -41166,6 +40609,7 @@
     "https://www.stevemadden.com/products/twain-black",
     "https://www.stevemadden.com/products/tyra-black-leather",
     "https://www.stevemadden.com/products/valentin-black-leather",
+    "https://www.stevemadden.com/products/valentin-blue-leather",
     "https://www.stevemadden.com/products/valentin-white-leather",
     "https://www.stevemadden.com/products/valerie-black-multi",
     "https://www.stevemadden.com/products/valerie-black-hickory",
@@ -41196,7 +40640,6 @@
     "https://www.stevemadden.com/products/wess-black-patent",
     "https://www.stevemadden.com/products/wess-multi",
     "https://www.stevemadden.com/products/wess-silver",
-    "https://www.stevemadden.com/products/weyra-black-leather",
     "https://www.stevemadden.com/products/weyra-tan-leather",
     "https://www.stevemadden.com/products/wiley-blush-patent",
     "https://www.stevemadden.com/products/winnick-black-leather",

@@ -2,8 +2,8 @@
   "slug": "exe",
   "brand": "EXÉ",
   "officialUrl": "https://exe.pt",
-  "snapshotId": "exe:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "exe:2026-10-13T08:06:11.689Z",
+  "collectedAt": "2026-10-13T08:06:11.689Z",
   "catalogPaths": [
     "/collections/fw26-sapatilhas-e-tenis",
     "/collections/sapatos",
@@ -13,13 +13,13 @@
   ],
   "newArrivalsPaths": [],
   "coverage": {
-    "sourceTotal": 383,
-    "collected": 383,
+    "sourceTotal": 384,
+    "collected": 384,
     "missing": 0,
     "coverage": 100,
     "excluded": 1,
     "paginationExhausted": true,
-    "galleryComplete": 383,
+    "galleryComplete": 384,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -537,6 +537,36 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "exe--sapatilha-exe-999-20",
+      "brand": "EXÉ",
+      "canonicalName": "Sapatilha Exe 999 20",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-1.jpg?v=1754762019",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-2.jpg?v=1754762019"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sapatilha-exe-999-20",
+          "handle": "sapatilha-exe-999-20",
+          "title": "SAPATILHA EXE 999-20 BRONZE/GREEN",
+          "color": "BRONZE/GREEN",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-1.jpg?v=1754762019",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-2.jpg?v=1754762019"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "exe--sapatilha-exe-19v03-6",
       "brand": "EXÉ",
       "canonicalName": "Sapatilha Exe 19v03 6",
@@ -603,36 +633,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "exe--sapatilha-exe-999-20",
-      "brand": "EXÉ",
-      "canonicalName": "Sapatilha Exe 999 20",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-1.jpg?v=1754762019",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-2.jpg?v=1754762019"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://exe.pt/products/sapatilha-exe-999-20",
-          "handle": "sapatilha-exe-999-20",
-          "title": "SAPATILHA EXE 999-20 BRONZE/GREEN",
-          "color": "BRONZE/GREEN",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-1.jpg?v=1754762019",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/999-20_BRONZE_GREEN_LEATHER-2.jpg?v=1754762019"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "exe--sapatilhas-abf-97-lana-glitter",
@@ -1013,6 +1013,44 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "exe--sapatilhas-abf-97-lana",
+      "brand": "EXÉ",
+      "canonicalName": "Sapatilhas Abf 97 Lana",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/IMG_4239.jpg?v=1779122824",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-64.jpg?v=1776093215",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-63.jpg?v=1776093215",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-65.jpg?v=1776093215",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-16.jpg?v=1776093215",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-15.jpg?v=1776093215"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-lana-camel",
+          "handle": "sapatilhas-abf-97-lana-camel",
+          "title": "SAPATILHAS ABF-97 LANA CAMEL",
+          "color": "SAPATILHAS ABF-97 LANA CAMEL",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/IMG_4239.jpg?v=1779122824",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-64.jpg?v=1776093215",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-63.jpg?v=1776093215",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-65.jpg?v=1776093215",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-16.jpg?v=1776093215",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-15.jpg?v=1776093215"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "exe--sapatilhas-exe-134-208p",
       "brand": "EXÉ",
       "canonicalName": "Sapatilhas Exe 134 208p",
@@ -1091,44 +1129,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "exe--sapatilhas-abf-97-lana",
-      "brand": "EXÉ",
-      "canonicalName": "Sapatilhas Abf 97 Lana",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/IMG_4239.jpg?v=1779122824",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-64.jpg?v=1776093215",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-63.jpg?v=1776093215",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-65.jpg?v=1776093215",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-16.jpg?v=1776093215",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-15.jpg?v=1776093215"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-lana-camel",
-          "handle": "sapatilhas-abf-97-lana-camel",
-          "title": "SAPATILHAS ABF-97 LANA CAMEL",
-          "color": "SAPATILHAS ABF-97 LANA CAMEL",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/IMG_4239.jpg?v=1779122824",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-64.jpg?v=1776093215",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-63.jpg?v=1776093215",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ABF_ESTUDIO-65.jpg?v=1776093215",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-16.jpg?v=1776093215",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/PRODUTO-15.jpg?v=1776093215"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "exe--sapatilha-exe-134-10--sapatilha-exe-134-10-multicolor-copia",
@@ -1217,36 +1217,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "exe--sapatilha-exe-929-100-fuxia",
-      "brand": "EXÉ",
-      "canonicalName": "Sapatilha Exe 929 100 Fuxia",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-1.jpg?v=1754746461",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-2.jpg?v=1754746474"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://exe.pt/products/sapatilha-exe-999-100-fuxia-pink",
-          "handle": "sapatilha-exe-999-100-fuxia-pink",
-          "title": "SAPATILHA EXE 929-100 FUXIA/PINK",
-          "color": "FUXIA/PINK",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-1.jpg?v=1754746461",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-2.jpg?v=1754746474"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "exe--sapatilhas-abf-97-3973-6",
       "brand": "EXÉ",
       "canonicalName": "Sapatilhas Abf 97 3973 6",
@@ -1309,6 +1279,36 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "exe--sapatilha-exe-929-100-fuxia",
+      "brand": "EXÉ",
+      "canonicalName": "Sapatilha Exe 929 100 Fuxia",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-1.jpg?v=1754746461",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-2.jpg?v=1754746474"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sapatilha-exe-999-100-fuxia-pink",
+          "handle": "sapatilha-exe-999-100-fuxia-pink",
+          "title": "SAPATILHA EXE 929-100 FUXIA/PINK",
+          "color": "FUXIA/PINK",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-1.jpg?v=1754746461",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/929-100_FUXIA_PINK_LEATHER-2.jpg?v=1754746474"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "exe--sapatilhas-exe-134-10p",
@@ -1893,6 +1893,86 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "exe--sapatilhas-abf-97-b02-40",
+      "brand": "EXÉ",
+      "canonicalName": "Sapatilhas Abf 97 B02 40",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_1.png?v=1790868940",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_2.png?v=1790868940",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_3.png?v=1790868941",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_1.png?v=1790869145",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_211.37.06.png?v=1790869145"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-b02-40-beige",
+          "handle": "sapatilhas-abf-97-b02-40-beige",
+          "title": "SAPATILHAS ABF-97 B02-40 BEIGE",
+          "color": "SAPATILHAS ABF-97 B02-40 BEIGE",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_1.png?v=1790868940",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_2.png?v=1790868940",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_3.png?v=1790868941"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-b02-40-dark-brown",
+          "handle": "sapatilhas-abf-97-b02-40-dark-brown",
+          "title": "SAPATILHAS ABF-97 B02-40 DARK BROWN",
+          "color": "SAPATILHAS ABF-97 B02-40 DARK BROWN",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_1.png?v=1790869145",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_211.37.06.png?v=1790869145"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "exe--sapatilhas-d190608-13c",
+      "brand": "EXÉ",
+      "canonicalName": "Sapatilhas D190608 13c",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-1.jpg?v=1784906295",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-2.jpg?v=1784906295"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sapatilhas-d190608-13c-pewter-grey",
+          "handle": "sapatilhas-d190608-13c-pewter-grey",
+          "title": "SAPATILHAS D190608-13C PEWTER/GREY",
+          "color": "SAPATILHAS D190608-13C PEWTER/GREY",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-1.jpg?v=1784906295",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-2.jpg?v=1784906295"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sapatilhas e Ténis",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "exe--sapatilhas-exe-d190608-22",
       "brand": "EXÉ",
       "canonicalName": "Sapatilhas Exe D190608 22",
@@ -1955,56 +2035,6 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "exe--sapatilhas-abf-97-b02-40",
-      "brand": "EXÉ",
-      "canonicalName": "Sapatilhas Abf 97 B02 40",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_1.png?v=1790868940",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_2.png?v=1790868940",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_3.png?v=1790868941",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_1.png?v=1790869145",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_211.37.06.png?v=1790869145"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-b02-40-beige",
-          "handle": "sapatilhas-abf-97-b02-40-beige",
-          "title": "SAPATILHAS ABF-97 B02-40 BEIGE",
-          "color": "SAPATILHAS ABF-97 B02-40 BEIGE",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_1.png?v=1790868940",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_2.png?v=1790868940",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_BEIGE_3.png?v=1790868941"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://exe.pt/products/sapatilhas-abf-97-b02-40-dark-brown",
-          "handle": "sapatilhas-abf-97-b02-40-dark-brown",
-          "title": "SAPATILHAS ABF-97 B02-40 DARK BROWN",
-          "color": "SAPATILHAS ABF-97 B02-40 DARK BROWN",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_1.png?v=1790869145",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/B02-40_DARK_211.37.06.png?v=1790869145"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "exe--sapatilhas-abf-97-b02-39",
@@ -2175,36 +2205,6 @@
       ],
       "isNew": false,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "exe--sapatilhas-d190608-13c",
-      "brand": "EXÉ",
-      "canonicalName": "Sapatilhas D190608 13c",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-1.jpg?v=1784906295",
-        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-2.jpg?v=1784906295"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://exe.pt/products/sapatilhas-d190608-13c-pewter-grey",
-          "handle": "sapatilhas-d190608-13c-pewter-grey",
-          "title": "SAPATILHAS D190608-13C PEWTER/GREY",
-          "color": "SAPATILHAS D190608-13C PEWTER/GREY",
-          "sku": null,
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-1.jpg?v=1784906295",
-            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/D190608-13CPEWTERGREYPU-2.jpg?v=1784906295"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sapatilhas e Ténis",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "exe--sapatilhas-134-160",
@@ -6837,6 +6837,36 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "exe--sandalias-exe-angelia-716",
+      "brand": "EXÉ",
+      "canonicalName": "Sandalias Exe Angelia 716",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ANGELIA-716BEIGEGOLDSTRASS-1.jpg?v=1774451978",
+        "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ANGELIA-716BEIGEGOLDSTRASS-2.jpg?v=1774451978"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://exe.pt/products/sandalias-exe-angelia-716-beige-gold",
+          "handle": "sandalias-exe-angelia-716-beige-gold",
+          "title": "SANDALIAS EXE ANGELIA-716 BEIGE/GOLD",
+          "color": "SANDALIAS EXE ANGELIA-716 BEIGE/GOLD",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ANGELIA-716BEIGEGOLDSTRASS-1.jpg?v=1774451978",
+            "https://cdn.shopify.com/s/files/1/0910/6191/1891/files/ANGELIA-716BEIGEGOLDSTRASS-2.jpg?v=1774451978"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandálias",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "exe--sandalias-befree-lia-3820",
       "brand": "EXÉ",
       "canonicalName": "Sandalias Befree Lia 3820",
@@ -11287,8 +11317,8 @@
     "https://exe.pt/products/sapatilha-exe-134-10-grey-silver",
     "https://exe.pt/products/sapatilha-exe-d190608-13b-white-pink",
     "https://exe.pt/products/sapatilha-exe-d190608-13b-white-beige",
-    "https://exe.pt/products/sapatilha-exe-19v03-6-silver",
     "https://exe.pt/products/sapatilha-exe-999-20",
+    "https://exe.pt/products/sapatilha-exe-19v03-6-silver",
     "https://exe.pt/products/sapatilhas-abf-97-lana-glitter-silver-black",
     "https://exe.pt/products/sapatilha-exe-d190608-13b-purple",
     "https://exe.pt/products/sapatilha-exe-134-10-leopard-taupe",
@@ -11299,17 +11329,17 @@
     "https://exe.pt/products/sapatilha-exe-2025-3m-tan-black",
     "https://exe.pt/products/sapatilha-exe-3020-8a-silver-black-copia",
     "https://exe.pt/products/sapatilhas-exe-d190608-17i-silver",
-    "https://exe.pt/products/sapatilhas-exe-134-208p-blue-white",
     "https://exe.pt/products/sapatilhas-abf-97-lana-camel",
+    "https://exe.pt/products/sapatilhas-exe-134-208p-blue-white",
     "https://exe.pt/products/sapatilha-exe-134-10-multicolor-copia",
     "https://exe.pt/products/sapatilha-exe-k134-offwhite",
-    "https://exe.pt/products/sapatilha-exe-999-100-fuxia-pink",
     "https://exe.pt/products/sapatilhas-abf-97-3973-6-white",
+    "https://exe.pt/products/sapatilha-exe-999-100-fuxia-pink",
+    "https://exe.pt/products/sapatilhas-exe-134-10p-camel-beige",
     "https://exe.pt/products/sapatilha-exe-134-10-leopard-grey",
     "https://exe.pt/products/sapatilhas-exe-928-22-black",
-    "https://exe.pt/products/sapatilha-exe-134-10-orange",
-    "https://exe.pt/products/sapatilhas-exe-134-10p-camel-beige",
     "https://exe.pt/products/sapatilhas-exe-928-22-grey-pewter",
+    "https://exe.pt/products/sapatilha-exe-134-10-orange",
     "https://exe.pt/products/sapatilhas-exe-d190608-17i-white-gold-copia",
     "https://exe.pt/products/sapatilhas-exe-928-20-black",
     "https://exe.pt/products/sapatilhas-exe-d190608-17i-brown-bronze",
@@ -11331,31 +11361,32 @@
     "https://exe.pt/products/sapatilhas-exe-d190608-13c-gold-beige",
     "https://exe.pt/products/sapatilhas-exe-d190608-24-black-red",
     "https://exe.pt/products/sapatilhas-abf-97-3973-6-leopard",
+    "https://exe.pt/products/sapatilhas-abf-97-b02-40-beige",
+    "https://exe.pt/products/sapatilhas-d190608-13c-pewter-grey",
     "https://exe.pt/products/sapatilhas-exe-d190608-22-grey-pink",
     "https://exe.pt/products/sapatilhas-exe-134-210-grey-black",
-    "https://exe.pt/products/sapatilhas-abf-97-b02-40-beige",
     "https://exe.pt/products/sapatilhas-abf-97-b20-39-camel",
     "https://exe.pt/products/sapatilhas-abf-97-24049-51-brown",
     "https://exe.pt/products/sapatilhas-exe-134-10p-black-pewter",
     "https://exe.pt/products/sapatilhas-exe-134-28p-camel",
-    "https://exe.pt/products/sapatilhas-d190608-13c-pewter-grey",
     "https://exe.pt/products/sapatilhas-exe-d190608-17i-bronze-black",
     "https://exe.pt/products/sapatilhas-134-160-black-bronze",
     "https://exe.pt/products/sapatilhas-abf-97-b02-39-black",
+    "https://exe.pt/products/sapatilhas-abf-97-24049-51-olive-green",
+    "https://exe.pt/products/sapatilhas-abf-97-b02-40-dark-brown",
+    "https://exe.pt/products/sapatilhas-abf-97-b02-39-leopard",
     "https://exe.pt/products/sapatilhas-exe-928-16-black-blush",
     "https://exe.pt/products/sapatilhas-exe-928-16-beige-gold",
     "https://exe.pt/products/sapatilha-134-208-grey-fuxia",
     "https://exe.pt/products/sapatilha-exe-134-28p-black-grey",
     "https://exe.pt/products/sapatilha-exe-928-15-silver-grey",
     "https://exe.pt/products/sapatilhas-befree-siena-332-wine",
-    "https://exe.pt/products/sapatilhas-abf-97-24049-51-olive-green",
-    "https://exe.pt/products/sapatilhas-abf-97-b02-40-dark-brown",
-    "https://exe.pt/products/sapatilhas-abf-97-b02-39-leopard",
     "https://exe.pt/products/sapatilhas-abf-97-b02-39-olive-green",
     "https://exe.pt/products/sapatilhas-exe-d190608-31-black-beige",
     "https://exe.pt/products/sapatilhas-exe-d190608-31-black-grey",
     "https://exe.pt/products/sapatilhas-exe-928-15-black-grey",
     "https://exe.pt/products/sapatilhas-exe-d190608-24-black-grey",
+    "https://exe.pt/products/sapatilhas-exe-928-10-grey",
     "https://exe.pt/products/sapatilhas-exe-134-108-grey-black",
     "https://exe.pt/products/sapatilhas-exe-134-108-beige-blush",
     "https://exe.pt/products/sapatilhas-exe-928-16-black-silver",
@@ -11368,7 +11399,6 @@
     "https://exe.pt/products/sapatilhas-abf-97-24049-51-light-beige",
     "https://exe.pt/products/sapatilhas-abf-97-3973-6-taupe",
     "https://exe.pt/products/sapatilhas-exe-928-12-black-purple",
-    "https://exe.pt/products/sapatilhas-exe-928-10-grey",
     "https://exe.pt/products/sapatilhas-134-108-black-silver",
     "https://exe.pt/products/sapatilhas-exe-134-108-black-blush",
     "https://exe.pt/products/sapatilhas-exe-134-108-silver-black",
@@ -11505,6 +11535,7 @@
     "https://exe.pt/products/sandalias-exe-silver-636-gold",
     "https://exe.pt/products/sandalias-exe-silver-636-black",
     "https://exe.pt/products/sandalias-exe-jenifer-725-orange-green",
+    "https://exe.pt/products/sandalias-exe-angelia-716-beige-gold",
     "https://exe.pt/products/sandalias-befree-lia-3820-camel",
     "https://exe.pt/products/sandalias-exe-katy-410-taupe-beige",
     "https://exe.pt/products/sandalias-exe-katy-410-black-beige",

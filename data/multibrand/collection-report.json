@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-10-11T09:40:30.079Z",
-  "runFinishedAt": "2026-10-11T09:46:53.739Z",
-  "totalProducts": 21620,
+  "runStartedAt": "2026-10-13T08:06:55.911Z",
+  "runFinishedAt": "2026-10-13T08:13:10.856Z",
+  "totalProducts": 21637,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -99,7 +99,7 @@
       "source": "PROENZA SCHOULER",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 229,
+      "discoveredProductLinks": 236,
       "parsedProducts": 165,
       "productsWithImages": 165,
       "productsWithMaterial": 163,
@@ -136,8 +136,8 @@
         "/collections/dome_shoes",
         "/collections/sorel-mules"
       ],
-      "rawProductUrlsDiscovered": 229,
-      "duplicateCount": 64,
+      "rawProductUrlsDiscovered": 236,
+      "duplicateCount": 71,
       "pagesTraversed": 27,
       "paginationExhausted": true,
       "collectionsCrawled": [
@@ -287,24 +287,12 @@
       "source": "CASADEI",
       "status": "partial",
       "method": "custom-adapter",
-      "discoveredProductLinks": 328,
-      "parsedProducts": 328,
-      "productsWithImages": 328,
-      "productsWithMaterial": 326,
+      "discoveredProductLinks": 329,
+      "parsedProducts": 329,
+      "productsWithImages": 329,
+      "productsWithMaterial": 327,
       "errors": [
         "SALESFORCE_PARTIAL:SOURCE_TOTAL_NOT_RECONCILED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
-        "SALESFORCE_SOURCE_TOTAL_CHANGED",
         "SALESFORCE_PARTIAL:SOURCE_TOTAL_NOT_RECONCILED"
       ],
       "hitLegacyCap": false,
@@ -316,7 +304,7 @@
       "collectionsCrawled": [
         "/en-us/shoes/"
       ],
-      "sourceReportedProductCount": 331
+      "sourceReportedProductCount": 330
     },
     {
       "source": "GIA BORGHINI",
@@ -392,9 +380,9 @@
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 557,
-      "parsedProducts": 557,
-      "productsWithImages": 557,
+      "discoveredProductLinks": 552,
+      "parsedProducts": 552,
+      "productsWithImages": 552,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -412,7 +400,7 @@
         "https://www.zara.com/us/en/woman-shoes-leather-l1275.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 557,
+      "rawProductUrlsDiscovered": 552,
       "duplicateCount": 0,
       "pagesTraversed": 23,
       "paginationExhausted": true,
@@ -506,10 +494,10 @@
       "source": "4CCCCEES",
       "status": "success",
       "method": "shopify",
-      "discoveredProductLinks": 204,
-      "parsedProducts": 194,
-      "productsWithImages": 194,
-      "productsWithMaterial": 194,
+      "discoveredProductLinks": 203,
+      "parsedProducts": 193,
+      "productsWithImages": 193,
+      "productsWithMaterial": 193,
       "errors": [],
       "hitLegacyCap": false,
       "footwearRoots": [
@@ -528,7 +516,7 @@
         "/collections/sneakers-1",
         "/collections/boots-1"
       ],
-      "rawProductUrlsDiscovered": 204,
+      "rawProductUrlsDiscovered": 203,
       "duplicateCount": 10,
       "pagesTraversed": 8,
       "paginationExhausted": true,
