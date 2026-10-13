@@ -249,6 +249,7 @@ export function buildTaxonomyQaReport(families: ModelFamily[]): TaxonomyQaReport
   const valueDistributions: Record<string, Record<string, number>> = {};
   const categoryProvenance: Record<CategoryAssignmentProvenance, number> = {
     PRODUCT_EVIDENCE: 0,
+    SOURCE_CATEGORY: 0,
     LEGACY_CATEGORY: 0,
     INSUFFICIENT: 0,
   };

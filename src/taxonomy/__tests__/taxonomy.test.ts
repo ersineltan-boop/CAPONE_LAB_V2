@@ -34,6 +34,12 @@ function minimalProduct(overrides: Partial<RawAnalyzedProduct> = {}): RawAnalyze
 }
 
 describe("assignPrimaryCategory boundary cases", () => {
+  it("prefers an exact product source category over an ambiguous or conflicting title", () => {
+    const oxford = assignPrimaryCategory({productName:"Awar lace up",legacyCategory:"OTHER_FOOTWEAR",sourceCategoryText:"/en-us/women/shoes/oxfords-derbies"});
+    const loafer = assignPrimaryCategory({productName:"LV Oxford",legacyCategory:"OTHER_FOOTWEAR",sourceCategoryText:"/en-us/women/shoes/loafers"});
+    expect(oxford).toMatchObject({primaryCategory:"OXFORD_DERBY",provenance:"SOURCE_CATEGORY"});
+    expect(loafer).toMatchObject({primaryCategory:"LOAFER",provenance:"SOURCE_CATEGORY"});
+  });
   it("Ballet sneaker -> SNEAKER + BALLET influence", () => {
     const result = assignPrimaryCategory({ productName: "Ballet sneaker in leather" });
     expect(result.primaryCategory).toBe("SNEAKER");

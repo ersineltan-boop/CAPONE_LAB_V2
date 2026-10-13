@@ -542,6 +542,8 @@ export function evaluateFootwearProduct(input: FootwearGateInput): FootwearGateR
 
 export function evaluateStoredPilotProduct(input: {
   sourceDescription?: string;
+  sourceCategoryPath?: string | null;
+  sourceCategoryUrl?: string | null;
   productName: string;
   productUrl: string;
   category: FootwearCategory | null;
@@ -566,6 +568,13 @@ export function evaluateStoredPilotProduct(input: {
       validationMethod: "STORED_PRODUCT_REVIEW",
     };
   }
+
+  const exactProductFootwearCategory=/\/women\/shoes\/(?:ballet-pumps|oxfords-derbies|sneakers|loafers)(?:\/|\s|$)/
+    .test(`${input.sourceCategoryPath??''} ${input.sourceCategoryUrl??''}`);
+  if(input.category==='OTHER_FOOTWEAR'&&exactProductFootwearCategory)return {
+    decision:'ACCEPT_FOOTWEAR',category:input.category,validationMethod:'STORED_PRODUCT_REVIEW',
+    matchedSignals:['exact-source-product-category'],
+  };
 
   const titleSupport = hasTitleHandleFootwearSupport({
     title: input.productName,

@@ -2,11 +2,42 @@ import { fetchText } from './http';
 import { evaluateFootwearProduct } from './footwearGate';
 import type { PilotProduct } from './types';
 import {withExplicitMarketplaceTaxonomy} from './marketplaceTaxonomy';
+import type {SourceNativeCategory} from '../source/types';
 
 const SOURCE = 'https://www.24s.com/en-us/women/shoes';
 interface Hit {
   objectID: string; title: string; brand: string; productSlug: string;
   color?: string; images: Record<string, string>;
+}
+
+const DETAIL_REQUEST_LIMIT=50;
+const ACCESS_CHALLENGE=/captcha|cloudflare|verify you are human|security verification/i;
+const DETAIL_CATEGORY_LEGACY:Record<string,PilotProduct['category']>={
+  'ballet-pumps':'BALLERINA',
+  loafers:'LOAFER',
+  sneakers:'SNEAKER',
+  'oxfords-derbies':'OTHER_FOOTWEAR',
+};
+
+/** Read only the product's own breadcrumb, not the navigation menu. */
+export function parse24SProductCategory(html:string):SourceNativeCategory|null {
+  const breadcrumb=html.match(/<div class="breadcrumb">([\s\S]*?)<\/div>/)?.[1]??'';
+  for(const match of breadcrumb.matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)) {
+    const url=match[1].replaceAll('&amp;','&');
+    const path=new URL(url,'https://www.24s.com').pathname;
+    const categoryId=path.match(/\/women\/shoes\/([^/]+)$/)?.[1];
+    if(!categoryId||!(categoryId in DETAIL_CATEGORY_LEGACY))continue;
+    return {categoryId,categoryName:match[2].replaceAll('&amp;','&'),categoryPath:path,
+      categoryUrl:new URL(url,'https://www.24s.com').toString()};
+  }
+  return null;
+}
+
+function apply24SProductCategory(product:PilotProduct,category:SourceNativeCategory):PilotProduct {
+  return {...product,category:DETAIL_CATEGORY_LEGACY[category.categoryId]??product.category,
+    sourceCategoryId:category.categoryId,sourceCategoryName:category.categoryName,
+    sourceCategoryPath:category.categoryPath,sourceCategoryUrl:category.categoryUrl,
+    sourceCategories:[category]};
 }
 export function parse24SPage(html: string, discoveredAt = new Date().toISOString()) {
   const match = html.match(/<script\b[^>]*id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
@@ -73,6 +104,17 @@ export async function collect24S(http = fetchText, maxPages = 100) {
       parsed.excluded.forEach(id => excluded.add(id));
       parsed.products.forEach(product => products.set(product.productUrl, product));
     } catch (error) { errors.push(String(error)); break; }
+  }
+  const unresolved=[...products.values()].filter(product=>product.category==='OTHER_FOOTWEAR');
+  if(unresolved.length>DETAIL_REQUEST_LIMIT)errors.push(`unresolved detail review exceeds request limit: ${unresolved.length}/${DETAIL_REQUEST_LIMIT}`);
+  else for(const product of unresolved){
+    const response=await http(product.productUrl);
+    if([401,403,429].includes(response.status)||ACCESS_CHALLENGE.test(response.text)){
+      errors.push(`detail access stopped at HTTP ${response.status}; no retry/bypass`);break;
+    }
+    if(!response.ok){errors.push(`detail ${product.productUrl}: HTTP ${response.status}`);break;}
+    const category=parse24SProductCategory(response.text);
+    if(category)products.set(product.productUrl,apply24SProductCategory(product,category));
   }
   const full = errors.length === 0 && rejected.length === 0 && traversed === pages && ids.size === total && products.size + excluded.size === total;
   return {products: [...products.values()], coverage: {source: '24s', status: full ? 'FULL' : products.size ? 'PARTIAL' : 'FAILED',

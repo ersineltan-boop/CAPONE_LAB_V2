@@ -36,6 +36,17 @@ describe('stable refresh archive identities', () => {
     expect(result[0].variants).toHaveLength(1);
     expect(result[1].variants).toHaveLength(2);
   });
+  it('keeps the archive ID while allowing exact source-category evidence to correct the silhouette', () => {
+    const old = {...family('stable-jazz-id', [variant('jazz')]), category: 'BALLERINA' as const,
+      primaryCategory: 'BALLET_FLAT' as const, taxonomy: {categoryProvenance: 'PRODUCT_EVIDENCE'} as ModelFamily['taxonomy']};
+    const fresh = {...family('fresh-jazz-id', [variant('jazz')]), category: 'SNEAKER' as const,
+      primaryCategory: 'SNEAKER' as const, taxonomy: {categoryProvenance: 'SOURCE_CATEGORY'} as ModelFamily['taxonomy']};
+    const [result] = anchorRefreshFamilies([old], [fresh]);
+    expect(result?.modelFamilyId).toBe('stable-jazz-id');
+    expect(result?.primaryCategory).toBe('SNEAKER');
+    expect(result?.category).toBe('SNEAKER');
+    expect(result?.taxonomy?.categoryProvenance).toBe('SOURCE_CATEGORY');
+  });
   it('updates NEW independently for old cards joined by the new collector', () => {
     const old = [family('black', [variant('black')]), family('white', [variant('white')])];
     const fresh = family('joined', [variant('black'), variant('white')]);

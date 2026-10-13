@@ -248,6 +248,27 @@ export function assignPrimaryCategory(input: CategoryAssignmentInput): CategoryA
   const construction = input.construction ?? [];
   const hybrid: HybridInfluence[] = [];
 
+  // Exact product-detail breadcrumbs are stronger than ambiguous product names.
+  // Do not interpret a generic Shoes collection as silhouette evidence.
+  const exactSourceCategory =
+    sourceText.includes("ballet pumps") || sourceText.includes("/women/shoes/ballet-pumps")
+      ? "BALLET_FLAT"
+      : sourceText.includes("oxfords & derbies") || sourceText.includes("/women/shoes/oxfords-derbies")
+        ? "OXFORD_DERBY"
+        : sourceText === "sneakers" || sourceText.includes("/women/shoes/sneakers")
+          ? "SNEAKER"
+          : sourceText === "loafers" || sourceText.includes("/women/shoes/loafers")
+            ? "LOAFER"
+            : null;
+  if (exactSourceCategory) {
+    return {
+      primaryCategory: exactSourceCategory,
+      hybridInfluences: [],
+      reason: "exact-source-product-category",
+      provenance: "SOURCE_CATEGORY",
+    };
+  }
+
   // Product-title sneaker evidence only — collection "… e ténis" is not mass-sneaker proof.
   if (isSneakerDominant(text)) {
     if (textIncludesAny(text, ["ballet sneaker", "ballerina sneaker", "mary jane sneaker"])) {
