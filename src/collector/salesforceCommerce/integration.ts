@@ -5,6 +5,8 @@ import type { PilotProduct, PilotSourceConfig } from '../types';
 import { collectCasadeiWomensShoes, CASADEI_SCOPE, parseCasadeiMobifySearch } from './casadei';
 import { collectJilSanderWomensShoes, JIL_SANDER_SCOPE, parseJilSanderResultTotal, parseJilSanderTiles } from './jilSander';
 import type { SalesforceCatalog, SalesforceHttp, SalesforceScope } from './types';
+import { casadeiPageEvidence, casadeiPageIdentity, reconciledCasadeiTotal } from './casadeiReconciliation';
+import { farfetchAccessBlocked } from '../farfetchAccess';
 
 export function salesforceScope(slug: string): SalesforceScope | null {
   return slug === 'casadei' ? CASADEI_SCOPE : slug === 'jil-sander' ? JIL_SANDER_SCOPE : null;
@@ -27,8 +29,15 @@ export function sameSalesforceRequestScope(requested: string, resolved: string):
 
 function guardedHttp(http: OnboardingHttp, scope: SalesforceScope, errors: string[]): SalesforceHttp {
   let firstTotal: number | null = null;
+  let accessBlocked: Awaited<ReturnType<OnboardingHttp['fetchText']>> | null = null;
   return { async fetchText(url) {
+    if (accessBlocked) return {...accessBlocked, ok: false, url, text: ''};
     const response = await http.fetchText(url, { delayMs: 150 });
+    if (farfetchAccessBlocked(response)) {
+      errors.push(`SALESFORCE_ACCESS_BLOCKED HTTP ${response.status}`);
+      accessBlocked = response;
+      return {...response, ok: false};
+    }
     if (!response.ok) return response;
     if (!sameSalesforceRequestScope(url, response.url)) {
       errors.push('SALESFORCE_STOREFRONT_SCOPE_CHANGED');
@@ -51,6 +60,10 @@ export function salesforceCatalogToAttempt(catalog: SalesforceCatalog): Collecti
   if (new Set(classified).size !== urls.size || classified.some(url => !urls.has(url))) errors.push('SALESFORCE_URL_IDENTITY_MISMATCH');
   if (catalog.status !== 'FULL') errors.push(`SALESFORCE_${catalog.status}:${catalog.blocker}`);
   const exclusions = catalog.quarantined.filter(p => p.reason === 'mens' || p.reason === 'non-footwear').length;
+  const sourceTotal = catalog.scope.slug === 'casadei'
+    ? reconciledCasadeiTotal(catalog.sourceReportedTotal, catalog.scopeProductUrls, catalog.casadeiReconciliation) ?? catalog.sourceReportedTotal
+    : catalog.sourceReportedTotal;
+  if (catalog.casadeiReconciliation && sourceTotal === catalog.sourceReportedTotal) errors.push('SALESFORCE_DUPLICATE_EVIDENCE_INVALID');
   const products: PilotProduct[] = catalog.accepted.map(p => ({
     source: catalog.scope.slug, brand: catalog.scope.brand, productName: p.productName,
     productUrl: p.productUrl, imageUrl: p.images[0] ?? null, images: p.images,
@@ -63,9 +76,10 @@ export function salesforceCatalogToAttempt(catalog: SalesforceCatalog): Collecti
     variants: [{title: p.productName, color: p.color, sku: p.sku, imageUrl: p.images[0] ?? null, images: p.images}],
   }));
   return { products, errors, method: 'custom-adapter', discoveredLinks: new Set(products.map(p => p.productUrl)),
+    duplicateCount: catalog.casadeiReconciliation && sourceTotal !== catalog.sourceReportedTotal ? catalog.casadeiReconciliation.duplicateOccurrences : 0,
     rawProductUrlsDiscovered: urls.size, pagesTraversed: catalog.pagesVisited.length,
     paginationExhausted: catalog.paginationExhausted, hitCollectionCrawlCap: !catalog.paginationExhausted,
-    sourceReportedProductCount: catalog.sourceReportedTotal === null ? null : catalog.sourceReportedTotal - exclusions,
+    sourceReportedProductCount: sourceTotal === null ? null : sourceTotal - exclusions,
     collectionsCrawled: [new URL(catalog.scope.collectionUrl).pathname],
   };
 }
@@ -79,13 +93,16 @@ export async function collectVerifiedSalesforceCatalog(config: PilotSourceConfig
   const final = await guarded.fetchText(scope.collectionUrl);
   const finalTotal = config.id === 'casadei' ? parseCasadeiMobifySearch(final.text).total : parseJilSanderResultTotal(final.text);
   if (!final.ok || finalTotal === null || finalTotal !== catalog.sourceReportedTotal) errors.push('SALESFORCE_FINAL_SOURCE_COUNT_UNVERIFIED');
+  if (catalog.casadeiReconciliation && casadeiPageIdentity(casadeiPageEvidence(scope.collectionUrl, parseCasadeiMobifySearch(final.text))) !==
+      casadeiPageIdentity(catalog.casadeiReconciliation.pages[0]!)) errors.push('SALESFORCE_FINAL_SOURCE_IDENTITY_CHANGED');
   if (catalog.scope.storefrontCurrency !== 'USD') errors.push('SALESFORCE_US_CURRENCY_UNVERIFIED');
   const result = salesforceCatalogToAttempt(catalog);
   result.errors.push(...errors);
   if (result.errors.length) { catalog.status = catalog.status === "FULL" ? "PARTIAL" : catalog.status; catalog.blocker ??= result.errors[0]; }
   catalog.errors = result.errors;
   console.log(`[${config.id}] ${JSON.stringify({status: catalog.status, scope: catalog.scope, sourceTotal: catalog.sourceReportedTotal,
-    scopeUrls: catalog.scopeProductUrls.length, accepted: catalog.accepted.length, excluded: catalog.quarantined,
+    scopeUrls: catalog.scopeProductUrls.length, accepted: catalog.accepted.length, excluded: catalog.quarantined.length,
+    duplicateOccurrences: catalog.casadeiReconciliation?.duplicateOccurrences ?? 0,
     pages: catalog.pagesVisited.length, errors: result.errors})}`);
   return catalog;
 }

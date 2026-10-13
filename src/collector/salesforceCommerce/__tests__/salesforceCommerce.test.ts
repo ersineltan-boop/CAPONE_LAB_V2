@@ -371,7 +371,7 @@ describe("Salesforce Commerce women's footwear adapters", () => {
   });
 });
 
-it('reports a terminal-page count mismatch instead of a pagination cap, and retains last-good',async()=>{
+it('reconciles repeated source slots only after an identical second traversal',async()=>{
  const http:SalesforceHttp={async fetchText(url){return {ok:true,status:200,url,text:casadeiHtml({offset:0,total:3,hits:[
   casadeiHit({id:'A',name:'Leather Sandal',model:'A',categoryId:'shoes-sandals',categoryName:'Sandals'}),
   casadeiHit({id:'A',name:'Leather Sandal',model:'A',categoryId:'shoes-sandals',categoryName:'Sandals'}),
@@ -379,6 +379,10 @@ it('reports a terminal-page count mismatch instead of a pagination cap, and reta
  ]})}}};
  const result=await collectCasadeiWomensShoes(http);
  expect(result.paginationExhausted).toBe(true);
- expect(result.blocker).toBe('SOURCE_TOTAL_NOT_RECONCILED');
+ expect(result.status).toBe('FULL');
+ expect(result.sourceReportedTotal).toBe(3);
+ expect(result.scopeProductUrls).toHaveLength(2);
+ expect(result.casadeiReconciliation).toMatchObject({duplicateOccurrences:1,uniqueProductCount:2});
+ // Existing catastrophic-drop protection still applies to the actual unique count.
  expect(decideSalesforcePublish({previousAccepted:5,status:result.status,acceptedFootwear:result.accepted.length})).toMatchObject({publish:false,retainPrevious:true});
 });

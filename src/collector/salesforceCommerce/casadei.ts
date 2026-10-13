@@ -2,7 +2,10 @@ import { evaluateFootwearProduct, inferFootwearCategoryFromSignals } from "../fo
 import { assessSalesforceCatalog } from "./coverage";
 import { canonicalProductUrl, dedupeUrls } from "./gallery";
 import { groupColorwaysIntoModelCards } from "./families";
+import { casadeiPageEvidence, casadeiPageIdentity, reconciledCasadeiTotal } from './casadeiReconciliation';
 import type {
+  CasadeiPageEvidence,
+  CasadeiReconciliation,
   SalesforceCatalog,
   SalesforceColorway,
   SalesforceGender,
@@ -36,6 +39,7 @@ export function casadeiListingUrl(page: number): string {
 }
 
 export interface CasadeiSearchPage {
+  rawCount: number;
   total: number | null;
   offset: number | null;
   limit: number | null;
@@ -163,21 +167,22 @@ function mapHit(value: unknown): CasadeiHit | null {
 export function parseCasadeiMobifySearch(html: string): CasadeiSearchPage {
   const match = html.match(/<script[^>]*id="mobify-data"[^>]*>([\s\S]*?)<\/script>/i);
   if (!match?.[1]) {
-    return { total: null, offset: null, limit: null, currency: null, hits: [] };
+    return { total: null, offset: null, limit: null, currency: null, hits: [], rawCount: 0 };
   }
   let payload: unknown;
   try {
     payload = JSON.parse(match[1]);
   } catch {
-    return { total: null, offset: null, limit: null, currency: null, hits: [] };
+    return { total: null, offset: null, limit: null, currency: null, hits: [], rawCount: 0 };
   }
   const search = collectSearchPayloads(payload)
     .sort((a, b) => (typeof b.total === "number" ? b.total : 0) - (typeof a.total === "number" ? a.total : 0))[0];
   if (!search) {
-    return { total: null, offset: null, limit: null, currency: null, hits: [] };
+    return { total: null, offset: null, limit: null, currency: null, hits: [], rawCount: 0 };
   }
   const hits = hitsFromPages(search.pages).map(mapHit).filter((hit): hit is CasadeiHit => hit !== null);
   return {
+    rawCount: hitsFromPages(search.pages).length,
     total: typeof search.total === "number" ? search.total : null,
     offset: typeof search.offset === "number" ? search.offset : null,
     limit: typeof search.limit === "number" ? search.limit : null,
@@ -254,6 +259,7 @@ export async function collectCasadeiWomensShoes(
   let sourceReportedTotal: number | null = null;
   let currency: string | null = null;
   let paginationExhausted = false;
+  const pageEvidence: CasadeiPageEvidence[] = [];
 
   for (let page = 1; page <= maxPages; page += 1) {
     const url = casadeiListingUrl(page);
@@ -269,10 +275,17 @@ export async function collectCasadeiWomensShoes(
       break;
     }
     sourceReportedTotal = parsed.total;
+    pageEvidence.push(casadeiPageEvidence(url, parsed));
     currency ??= parsed.currency;
     let added = 0;
     for (const hit of parsed.hits) {
-      if (seen.has(hit.productId)) continue;
+      const previous = seen.get(hit.productId);
+      if (previous) {
+        if (previous.productUrl !== hit.productUrl) errors.push(`Casadei product identity changed: ${hit.productId}`);
+        previous.images = dedupeUrls([...previous.images, ...hit.images]);
+        previous.sizes = [...new Map([...previous.sizes, ...hit.sizes].map(size => [`${size.sku}|${size.size}`, size])).values()];
+        continue;
+      }
       seen.set(hit.productId, hit);
       added += 1;
     }
@@ -318,9 +331,28 @@ export async function collectCasadeiWomensShoes(
   accepted.sort((a, b) => a.productUrl.localeCompare(b.productUrl));
   quarantined.sort((a, b) => a.productUrl.localeCompare(b.productUrl));
   const scopeProductUrls = [...seen.values()].map((hit) => hit.productUrl).sort();
+  let casadeiReconciliation: CasadeiReconciliation | undefined;
+  if (paginationExhausted && !errors.length && sourceReportedTotal !== null && seen.size < sourceReportedTotal) {
+    const proposed: CasadeiReconciliation = {pages: pageEvidence, replayPages: pageEvidence,
+      duplicateOccurrences: sourceReportedTotal - seen.size, uniqueProductCount: seen.size};
+    // Validate continuous offsets, every raw slot and exact identities before making a replay.
+    if (reconciledCasadeiTotal(sourceReportedTotal, scopeProductUrls, proposed) !== null) {
+      proposed.replayPages = [];
+      for (const page of pageEvidence) {
+        const response = await http.fetchText(page.url);
+        const replay = casadeiPageEvidence(page.url, parseCasadeiMobifySearch(response.text));
+        if (!response.ok || response.url !== page.url || casadeiPageIdentity(replay) !== casadeiPageIdentity(page)) {
+          errors.push(`Casadei duplicate reconciliation changed: ${page.url}`);
+          break;
+        }
+        proposed.replayPages.push(replay);
+      }
+      if (reconciledCasadeiTotal(sourceReportedTotal, scopeProductUrls, proposed) !== null) casadeiReconciliation = proposed;
+    }
+  }
   const assessment = assessSalesforceCatalog({
     blocked: false,
-    sourceReportedTotal,
+    sourceReportedTotal: reconciledCasadeiTotal(sourceReportedTotal, scopeProductUrls, casadeiReconciliation) ?? sourceReportedTotal,
     scopeProductUrls,
     accepted,
     quarantined,
@@ -329,6 +361,7 @@ export async function collectCasadeiWomensShoes(
   });
 
   return {
+    casadeiReconciliation,
     scope: { ...CASADEI_SCOPE, storefrontCurrency: currency },
     collectedAt: options.collectedAt ?? new Date().toISOString(),
     status: assessment.status,

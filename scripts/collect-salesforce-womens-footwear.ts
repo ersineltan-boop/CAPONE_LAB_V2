@@ -40,6 +40,7 @@ function summarize(catalog: SalesforceCatalog, publish: { publish: boolean; reta
     collectedAt: catalog.collectedAt,
     scope: catalog.scope,
     sourceReportedTotal: catalog.sourceReportedTotal,
+    casadeiReconciliation: catalog.casadeiReconciliation,
     scopeProductUrls: catalog.scopeProductUrls.length,
     acceptedFootwear: catalog.accepted.length,
     quarantined: catalog.quarantined.length,

@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 
 import { getCollectableBrands } from "../../../registry/collection/brandToCollector";
 import { loadBrandRegistry } from "../../../registry/data";
@@ -52,6 +52,17 @@ describe("brands wave 50 delivery QA", () => {
   const part006 = shardFamilies("part-006.json", WAVE_DELIVERY_DIR);
   const part007 = shardFamilies("part-007.json", WAVE_DELIVERY_DIR);
   const waveFamilies = [...part006, ...part007];
+  const currentUrls = new Set<string>();
+  const rebuiltCore: ModelFamily[] = [];
+  beforeAll(() => {
+    // Preparing the complete persisted catalog is fixture I/O, not the retention assertion.
+    // Read each shard once and keep only the URL index plus the core needed below.
+    for (const shard of manifest.shards) {
+      const families = shardFamilies(shard.file);
+      for (const url of variantUrls(families)) currentUrls.add(url);
+      if (/^part-00[0-5]\.json$/.test(shard.file)) rebuiltCore.push(...families);
+    }
+  }, 30_000);
 
   it("reports staging, published catalogs, and net-new brands without addedBrands", () => {
     expect(report).not.toHaveProperty("addedBrands");
@@ -119,17 +130,12 @@ describe("brands wave 50 delivery QA", () => {
     expect(report.siteDeliveryFamilies).toBe(waveFamilies.length);
     expect(report.siteDeliveryProducts).toBe(urls.size);
     expect(report.siteDeliveryFamilies).toBeGreaterThan(report.initialSiteDeliveryFamilies);
-    const currentFamilies = manifest.shards.flatMap((shard) => shardFamilies(shard.file));
-    const currentUrls = variantUrls(currentFamilies);
     expect([...urls].filter((url) => !currentUrls.has(url))).toEqual([]);
     expect(manifest.totalFamilies).toBe(manifest.shards.reduce((sum, shard) => sum + shard.familyCount, 0));
   });
 
   it("retains wave product URLs when onboarding rebuilds core families", async () => {
     const { retainHistoricalWaveDelivery } = await import("../../../onboarding/activate");
-    const rebuiltCore = manifest.shards
-      .filter((shard) => /^part-00[0-5]\.json$/.test(shard.file))
-      .flatMap((shard) => shardFamilies(shard.file));
     const rebuilt = await retainHistoricalWaveDelivery(process.cwd(), rebuiltCore);
     const urls = variantUrls(rebuilt);
     for (const url of variantUrls(waveFamilies)) expect(urls.has(url)).toBe(true);
