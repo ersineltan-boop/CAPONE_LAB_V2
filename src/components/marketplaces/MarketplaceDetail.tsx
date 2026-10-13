@@ -14,6 +14,7 @@ import {
   filterFamiliesByBasicCategory,
 } from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
+import {marketplaceCoverageText} from '../../presentation/marketplaceCoverage';
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
 type MarketplaceMode = "all" | "verified-new" | "categories" | "brands";
@@ -90,7 +91,7 @@ export default function MarketplaceDetail({
         </div>
 
         {state.status === "ready" && state.data.coverage?.status === "PARTIAL" ? (
-          <p className="text-xs text-ink-muted">Katalog kısmi: {state.data.coverage.ready} ürün hazır, {state.data.coverage.pending} ürün incelemede.</p>
+          <p className="text-xs text-ink-muted">{marketplaceCoverageText(state.data.coverage)}</p>
         ) : null}
         {state.status === "loading" ? <CatalogLoadingState /> : null}
         {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}

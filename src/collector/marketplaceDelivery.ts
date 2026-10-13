@@ -106,7 +106,7 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
   const priorProducts: PilotProduct[] = previous?.products ?? core
     .filter(product => product.source === candidate.sourceId);
   const belongs = (url: string) => {try{return new URL(url).hostname.replace(/^www\./, '') === new URL(origin).hostname.replace(/^www\./, '');}catch{return false;}};
-  const decision = evaluateMarketplaceCandidate({candidate, previousLastGood: [
+  const decision = evaluateMarketplaceCandidate({candidate, preserveMissing:true, previousLastGood: [
     ...core.filter(product => product.source !== candidate.sourceId), ...priorProducts]});
   if (!decision.report.accepted) return decision;
   const priorFamilies = previous?.families ?? (await loadModelFamilies({rootDir: join(root, 'data/multibrand')}))
@@ -126,6 +126,14 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
       return {...product, isNewArrivalsCollection: observed?.isNewArrivalsCollection ?? false,
         hasNewBadge: observed?.hasNewBadge ?? false};
     });
+  if (candidate.publicationMode === 'verified-categories' && previous) {
+    const scopes = new Set(candidate.verifiedScopes?.map(scope => scope.url));
+    const observed = new Set(candidate.products.map(product => product.productUrl));
+    const retained = previous.quarantined.filter(row => !observed.has(row.product.productUrl) &&
+      !scopes.has(row.product.sourceCategoryUrl ?? '') && !row.product.sourceCategories?.some(ref => scopes.has(ref.categoryUrl ?? '')));
+    decision.quarantined = [...retained, ...decision.quarantined];
+    decision.report.quarantinedProducts = decision.quarantined.length;
+  }
   const updatedAt = new Date().toISOString();
   const analyzed = analyzeProducts(products.map(product => current.has(product.productUrl) ? {...product, discoveredAt: updatedAt} : product) as never);
   const rebuilt = buildModelFamilies(analyzed as never, {priorFamilies}).families;
