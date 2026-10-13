@@ -13,7 +13,12 @@ export const FARFETCH_SHOES_URL =
   "https://www.farfetch.com/uk/shopping/women/shoes-1/items.aspx";
 
 const FOOTWEAR_LISTING =
-  /\/uk\/shopping\/women\/(?:shoes|trainers|sneakers|boots|sandals|pumps|heels|flats|loafers|mules|clogs|espadrilles|ballerinas|mary-janes?)[^/]*-\d+\/items\.aspx/i;
+  /\/uk\/shopping\/women\/(?:shoes|trainers|sneakers|boots|sandals|pumps|heels|flats|loafers|mules|clogs|espadrilles|ballerinas|mary-janes?|derby-oxford-shoes|flip-flops-slides|slippers)[^/]*-\d+\/items\.aspx/i;
+
+/** Supported top-level footwear partitions; never an accessory or brand route. */
+export function farfetchCategoryKey(url: string): string | null {
+  return url.match(/^https:\/\/www\.farfetch\.com\/uk\/shopping\/women\/(shoes|trainers|boots|pumps|sandals|ballerinas|loafers|mules|espadrilles|derby-oxford-shoes|flip-flops-slides|slippers)-1\/items\.aspx$/)?.[1] ?? null;
+}
 
 interface FarfetchJsonLdProduct {
   "@type"?: string;

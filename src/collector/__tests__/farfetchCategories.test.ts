@@ -3,7 +3,7 @@ import {mkdtemp, rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {collectFarfetchCategories} from '../farfetchCategories';
-import {FARFETCH_SHOES_URL} from '../farfetch';
+import {FARFETCH_SHOES_URL, discoverFarfetchFootwearListings, farfetchCategoryKey} from '../farfetch';
 import type {fetchText} from '../http';
 const dirs:string[]=[];
 async function directory() {const dir=await mkdtemp(join(tmpdir(),'farfetch-categories-'));dirs.push(dir);return dir;}
@@ -17,6 +17,13 @@ function html(ids:number[], total=ids.length, links:string[]=[]) {
 }
 const response=(url:string,text:string)=>({url,text,ok:true,status:200});
 describe('Farfetch category completeness',()=>{
+ it('includes official Oxford, slide and slipper routes while excluding accessories and brand pages',()=>{
+  const routes=['derby-oxford-shoes','flip-flops-slides','slippers'].map(key=>FARFETCH_SHOES_URL.replace('shoes-1',key+'-1'));
+  const forbidden=[FARFETCH_SHOES_URL.replace('shoes-1','shoe-accessories-1'),FARFETCH_SHOES_URL.replace('shoes-1','test-brand/shoes-1')];
+  const found=discoverFarfetchFootwearListings(html([1,2],2,[...routes,...forbidden]),FARFETCH_SHOES_URL).filter(url=>url!==FARFETCH_SHOES_URL&&farfetchCategoryKey(url));
+  expect(found).toEqual(routes);
+  for(const url of forbidden)expect(farfetchCategoryKey(url)).toBeNull();
+ });
  it('merges overlapping categories only after root and every category reconcile',async()=>{
   const calls:string[]=[];
   const http:typeof fetchText=async url=>{calls.push(url);return response(url,html([1,2],2,url===FARFETCH_SHOES_URL?[mules,loafers]:[]));};

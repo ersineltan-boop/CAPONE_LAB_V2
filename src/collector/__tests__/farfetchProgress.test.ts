@@ -16,6 +16,28 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('keeps the default strict count mode and isolates checkpoints when the mode changes',async()=>{
+  const moving:typeof fetchText=async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],5)});
+  const dir=await directory();const first=await collectFarfetchProgress({directory:dir,http:moving});
+  expect(first.products).toEqual([]);expect(first.errors.join()).toContain('pagination changed');
+  const next=await collectFarfetchProgress({directory:dir,http:moving,maxPages:1,reconcileCountChanges:true});
+  expect(next.progress.resetReason).toBe('SOURCE_CHANGED_OR_CHECKPOINT_STALE');expect(next.progress.nextPage).toBe(2);
+ });
+ it('reconciles a changing count only against complete unique cards and the final source count',async()=>{
+  let roots=0;
+  const moving:typeof fetchText=async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],++roots===1?5:4)});
+  const r=await collectFarfetchProgress({directory:await directory(),http:moving,reconcileCountChanges:true});
+  expect(r.coverageStatus).toBe('FULL');expect(r.products).toHaveLength(4);expect(r.sourceReportedProductCount).toBe(4);
+ });
+ it('still rejects overlapping pages while reconciling moving counts',async()=>{
+  let roots=0;
+  const r=await collectFarfetchProgress({directory:await directory(),reconcileCountChanges:true,http:async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[2,3],4):page(1,[1,2],++roots===1?5:4)})});
+  expect(r.products).toEqual([]);expect(r.errors.join()).toContain('overlapping pages');
+ });
+ it('does not certify moving counts when the final source disagrees',async()=>{
+  const r=await collectFarfetchProgress({directory:await directory(),reconcileCountChanges:true,http:async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],5)})});
+  expect(r.products).toEqual([]);expect(r.errors.join()).toContain('final source check failed');
+ });
  it('retries a temporary connection failure once and completes without losing saved pages',async()=>{
   let attempts=0;
   const r=await collectFarfetchProgress({directory:await directory(),http:async(url,opts)=>{
