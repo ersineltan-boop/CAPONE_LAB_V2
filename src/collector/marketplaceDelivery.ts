@@ -131,6 +131,17 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
       return {...product, isNewArrivalsCollection: observed?.isNewArrivalsCollection ?? false,
         hasNewBadge: observed?.hasNewBadge ?? false};
     });
+  const retainedByUrl = new Map(products.map(product => [product.productUrl, product]));
+  for (const oldProduct of priorProducts) {
+    const retained = retainedByUrl.get(oldProduct.productUrl);
+    if (!retained) throw new Error('Marketplace archive product URL lost; previous delivery preserved');
+    const sizeKeys = new Set((retained.sourceSizes ?? []).map(size => JSON.stringify([size.sku, size.size])));
+    const variantKeys = new Set(retained.variants.map(variant => JSON.stringify([variant.sku, variant.title.trim().toLowerCase(), variant.color?.trim().toLowerCase() ?? null])));
+    if ((oldProduct.sourceSizes ?? []).some(size => !sizeKeys.has(JSON.stringify([size.sku, size.size]))) ||
+        oldProduct.variants.some(variant => !variantKeys.has(JSON.stringify([variant.sku, variant.title.trim().toLowerCase(), variant.color?.trim().toLowerCase() ?? null])))) {
+      throw new Error('Marketplace archive size or variant identity lost; previous delivery preserved');
+    }
+  }
   if (candidate.publicationMode && previous) {
     const scopes = new Set(candidate.verifiedScopes?.map(scope => scope.url));
     const observed = new Set(candidate.products.map(product => product.productUrl));

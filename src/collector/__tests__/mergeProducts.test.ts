@@ -29,6 +29,26 @@ function product(overrides: Partial<PilotProduct> & Pick<PilotProduct, "productU
 }
 
 describe("mergeProducts", () => {
+  it('retains detail attributes and every size SKU when a thin listing refresh has only one colour',()=>{
+    const existing=product({productUrl:'https://example.com/a',sourceVerifiedAt:'2026-10-13T10:00:00Z',sourceModelCode:'STYLE1',sourceHsCode:'64035911',
+      material:'Suede',details:'Own detail page evidence',sourceSizes:[{size:'35',displaySize:'IT35',sku:'SKU35',selectable:true},{size:'36',displaySize:'IT36',sku:'SKU36',selectable:null}],
+      variants:[{title:'Model',color:'Black',sku:'SKU35',images:['https://cdn.example/35.jpg']},{title:'Model',color:'Black',sku:'SKU36',images:['https://cdn.example/36.jpg']}]});
+    const thin=product({productUrl:existing.productUrl,variants:[{title:'Model',color:null,sku:null}]});
+    const merged=mergeProductCatalog([existing],[thin])[0]!;
+    expect(merged.sourceSizes).toEqual(existing.sourceSizes);expect(merged.sourceVerifiedAt).toBe(existing.sourceVerifiedAt);
+    expect(merged.sourceModelCode).toBe('STYLE1');expect(merged.sourceHsCode).toBe('64035911');
+    expect(merged.material).toBe('Suede');expect(merged.details).toBe(existing.details);
+    expect(new Set(merged.variants.map(v=>v.sku))).toEqual(new Set(['SKU35','SKU36',null]));
+    expect(merged.variants.find(v=>v.sku==='SKU35')?.images).toContain('https://cdn.example/35.jpg');
+  });
+  it('keeps distinct size titles when a supplier reuses one SKU, and refreshes exact observed size evidence',()=>{
+    const existing=product({productUrl:'https://example.com/a',sourceSizes:[{size:'35',displaySize:'IT35',sku:'REUSED',selectable:true},{size:'36',displaySize:'IT36',sku:'REUSED',selectable:true}],
+      variants:[{title:'IT35',color:'Black',sku:'REUSED'},{title:'IT36',color:'Black',sku:'REUSED'}]});
+    const incoming=product({productUrl:existing.productUrl,sourceSizes:[{size:'35',displaySize:'IT35',sku:'REUSED',selectable:false}],
+      variants:[{title:'IT35',color:'Black',sku:'REUSED'}]});
+    const merged=mergeProductCatalog([existing],[incoming])[0]!;
+    expect(merged.variants).toHaveLength(2);expect(merged.sourceSizes).toEqual([...incoming.sourceSizes!,{size:'36',displaySize:'IT36',sku:'REUSED',selectable:null}]);
+  });
   it("clears a historical NEW badge when the source explicitly reports no badge", () => {
     const existing = product({ productUrl: "https://example.com/products/a", hasNewBadge: true });
     const incoming = product({ productUrl: existing.productUrl, hasNewBadge: false });

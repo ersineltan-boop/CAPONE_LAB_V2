@@ -21,8 +21,10 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    published: 1,999 verified pages; 3,077 visible models, 3,175 archived
    products and 754 current quality-pending records. Coverage remains PARTIAL.
    Remaining Farfetch categories and pending taxonomy are still open. A bounded
-   category collection was started at 17:28 UTC on 13 October; inspect current
-   checkpoints/results rather than start an overlapping collection. Free People
+   category collection from 17:28 to 17:48 UTC completed three scopes; extended
+   taxonomy/metadata retention repair is prepared on `fix/marketplace-extended-taxonomy`.
+   Inspect its PR/CI/production before treating its prepared 3,406 Farfetch models
+   (446 pending) and 820 24S models (26 pending) as live. Free People
    is blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals
@@ -30,8 +32,10 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    footwear products and 26 bags. Exact-head 1,110 tests/build and Preview passed.
 5. Source quality: current Schutz public catalog has no missing-gallery row.
    Webster Tyler was reviewed against its exact own gallery, corrected to BOOT,
-   and its preserving full refresh prepared on `fix/webster-reviewed-tyler`.
-   Inspect its actual PR/CI/deployment before treating it as live. Browns Autry
+   and its preserving full refresh is live in PR177 (merge
+   `c3fce3af8e7e8d5709255309c898956216666b62`): 269 visible models, no pending rows,
+   1,118 passing tests, full staging/CI/Preview and production READY; live shard
+   HTTP200 with the original Tyler ID now BOOT and its three images. Browns Autry
    `autry-medalist-low-sneakers-in-leather-olsaw2600174895` still has zero source
    images and no manufacturer style/color identity; do not substitute a similar
    Medalist. Source quality reviews and retention proof are recorded separately.
