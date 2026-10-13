@@ -1,6 +1,8 @@
 import { mergeProductRecords, normalizeProductUrl } from "../collector/mergeProducts";
 import type { PilotProduct } from "../collector/types";
 import {validateVerifiedCategoryScopes, type VerifiedCategoryScope} from './verifiedCategoryScopes';
+import {validateVerifiedProducts} from './verifiedProductEvidence';
+import type {VerifiedFarfetchProduct} from '../collector/farfetchProductIdentity';
 import {
   isExcludedMarketplaceBrand,
   MARKETPLACE_PRESENTATION_POLICY,
@@ -21,7 +23,8 @@ export type AutomatedMarketplaceId = (typeof AUTOMATED_MARKETPLACE_IDS)[number];
 export type MarketplaceCoverageStatus = "FULL" | "PARTIAL" | "FAILED";
 
 export interface MarketplaceRefreshCandidate {
-  publicationMode?: 'verified-categories';
+  publicationMode?: 'verified-categories' | 'verified-products';
+  verifiedProducts?: VerifiedFarfetchProduct[];
   verifiedScopes?: VerifiedCategoryScope[];
   sourceId: string;
   products: PilotProduct[];
@@ -38,7 +41,9 @@ export interface MarketplaceRefreshCandidate {
 }
 
 export interface MarketplaceGateReport {
-  publicationMode?: 'verified-categories';
+  verifiedProducts?: VerifiedFarfetchProduct[];
+  publicationMode?: 'verified-categories' | 'verified-products';
+  verifiedProductCount?: number;
   refreshedCategories?: Array<{url: string; products: number; checkedAt: string}>;
   newnessVerified?: boolean;
   collectionProgress?: Record<string, unknown>;
@@ -166,13 +171,14 @@ export function evaluateMarketplaceCandidate(input: {
     ? null
     : sourceEligibleProducts.length / previousEligible.length;
   const reasons: string[] = [];
-  const scoped = input.candidate.publicationMode === 'verified-categories';
+  const scoped = input.candidate.publicationMode === 'verified-categories' || input.candidate.publicationMode === 'verified-products';
   if (scoped) {
-    reasons.push(...validateVerifiedCategoryScopes({sourceId, products:sourceProducts,
+    if(input.candidate.publicationMode === 'verified-categories')reasons.push(...validateVerifiedCategoryScopes({sourceId, products:sourceProducts,
       scopes:input.candidate.verifiedScopes ?? [], preserveMissing:input.preserveMissing === true,
       rawCollected:input.candidate.rawCollected}));
-    if (input.candidate.coverageStatus !== 'PARTIAL') reasons.push('category publication must declare PARTIAL marketplace coverage');
-    if (input.candidate.newnessVerified) reasons.push('category refresh is not proof of new arrivals');
+    else reasons.push(...validateVerifiedProducts({sourceId,products:sourceProducts,evidence:input.candidate.verifiedProducts??[],preserveMissing:input.preserveMissing===true,rawCollected:input.candidate.rawCollected}));
+    if (input.candidate.coverageStatus !== 'PARTIAL') reasons.push('scoped publication must declare PARTIAL marketplace coverage');
+    if (input.candidate.newnessVerified) reasons.push('scoped refresh is not proof of new arrivals');
   }
 
   if (!ALLOWED_IDS.has(sourceId)) reasons.push("source is not on the approved adapter allow-list");
@@ -214,7 +220,7 @@ export function evaluateMarketplaceCandidate(input: {
       `catastrophic drop: retained ${(lastGoodRetentionRatio * 100).toFixed(1)}% of policy-eligible last-good`,
     );
   }
-  if (input.candidate.errors.length > 0 && (!scoped || input.candidate.errors.some(error => /HTTP\s*(403|429)/i.test(error)))) {
+  if (input.candidate.errors.length > 0 && (!scoped || input.candidate.errors.some(error => /HTTP\s*(401|403|429)\b|access blocked|verify (?:that )?you are human/i.test(error)))) {
     reasons.push(`collector reported ${input.candidate.errors.length} error(s)`);
   }
   if (MARKETPLACE_PRESENTATION_POLICY.showPrice !== false) {
@@ -239,6 +245,8 @@ export function evaluateMarketplaceCandidate(input: {
       collectionProgress: input.candidate.collectionProgress,
       retryWindow: input.candidate.retryWindow,
       publicationMode: input.candidate.publicationMode,
+      verifiedProductCount:input.candidate.publicationMode==='verified-products'?input.candidate.verifiedProducts?.length:undefined,
+      verifiedProducts:input.candidate.publicationMode==='verified-products'&&accepted?input.candidate.verifiedProducts:undefined,
       refreshedCategories: scoped ? input.candidate.verifiedScopes?.map(scope => ({url:scope.url, products:scope.sourceTotal, checkedAt:scope.checkedAt})) : undefined,
       publicationCoverage: scoped || quarantined.length > 0 ? "PARTIAL" : "FULL",
       quarantinedProducts: quarantined.length,

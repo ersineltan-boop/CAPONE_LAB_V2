@@ -14,6 +14,30 @@ function candidate():MarketplaceRefreshCandidate {
   verifiedScopes:[{url:category,sourceTotal:2,rawCollected:2,productUrls:rows.map(p=>p.productUrl),checkedAt:new Date().toISOString(),coverageStatus:'FULL',paginationExhausted:true}]};
 }
 describe('verified category publication',()=>{
+ it('allows only matched individual product proofs, always with PARTIAL coverage and archive preservation',()=>{
+  const refresh=candidate();refresh.publicationMode='verified-products';refresh.verifiedScopes=undefined;
+  const mule=category.replace('espadrilles','mules');
+  const checkedAt=new Date().toISOString();
+  refresh.products=refresh.products.map(p=>({...p,sourceCategoryUrl:mule,sourceVerifiedAt:checkedAt}));
+  refresh.verifiedProducts=refresh.products.map((p,i)=>({url:p.productUrl,productId:String(i+1),listingUrl:mule,checkedAt,documentSha256:'a'.repeat(64)}));
+  const decision=evaluateMarketplaceCandidate({candidate:refresh,previousLastGood:[],preserveMissing:true});
+  expect(decision.report.accepted).toBe(true);expect(decision.report.publicationCoverage).toBe('PARTIAL');expect(decision.report.verifiedProductCount).toBe(2);
+  refresh.verifiedProducts[0].productId='999';
+  expect(evaluateMarketplaceCandidate({candidate:refresh,previousLastGood:[],preserveMissing:true}).report.accepted).toBe(false);
+ });
+ it('rejects stale, future, missing and duplicate individual product proofs',()=>{
+  const checkedAt=new Date().toISOString(),mule=category.replace('espadrilles','mules');
+  const base=candidate();base.publicationMode='verified-products';base.verifiedScopes=undefined;
+  base.products=base.products.map(p=>({...p,sourceCategoryUrl:mule,sourceVerifiedAt:checkedAt}));
+  base.verifiedProducts=base.products.map((p,i)=>({url:p.productUrl,productId:String(i+1),listingUrl:mule,checkedAt,documentSha256:'a'.repeat(64)}));
+  for(const mutate of [
+   (c:MarketplaceRefreshCandidate)=>{c.verifiedProducts![0].checkedAt=new Date(Date.now()-25*3600_000).toISOString();},
+   (c:MarketplaceRefreshCandidate)=>{c.verifiedProducts![0].checkedAt=new Date(Date.now()+3600_000).toISOString();},
+   (c:MarketplaceRefreshCandidate)=>{c.verifiedProducts!.pop();},
+   (c:MarketplaceRefreshCandidate)=>{c.verifiedProducts![1]=c.verifiedProducts![0];},
+   (c:MarketplaceRefreshCandidate)=>{c.errors=['Farfetch access blocked (HTTP 200)'];},
+  ]) {const refresh=structuredClone(base);mutate(refresh);expect(evaluateMarketplaceCandidate({candidate:refresh,previousLastGood:[],preserveMissing:true}).report.accepted).toBe(false);}
+ });
  it('appends a small complete category while retaining every old product/gallery and PARTIAL coverage',()=>{
   const prior=Array.from({length:10},(_,index)=>product(index+1));prior[0].images!.push('https://images.test/old-gallery.jpg');
   const decision=evaluateMarketplaceCandidate({candidate:candidate(),previousLastGood:prior,preserveMissing:true});

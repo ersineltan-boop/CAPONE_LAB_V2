@@ -109,6 +109,11 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
   const decision = evaluateMarketplaceCandidate({candidate, preserveMissing:true, previousLastGood: [
     ...core.filter(product => product.source !== candidate.sourceId), ...priorProducts]});
   if (!decision.report.accepted) return decision;
+  const pendingBefore = new Map(previous?.quarantined.map(row => [row.product.productUrl,row.product]));
+  decision.eligibleProducts = decision.eligibleProducts.map(product => {
+    const archived = pendingBefore.get(product.productUrl);
+    return archived ? mergeProductRecords(archived, product) : product;
+  });
   const priorFamilies = previous?.families ?? (await loadModelFamilies({rootDir: join(root, 'data/multibrand')}))
     .filter(family => family.variants.some(variant => belongs(variant.url)))
     .map(family => ({...withFamilyVariants(family, family.variants.filter(variant => belongs(variant.url))),
@@ -126,7 +131,7 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
       return {...product, isNewArrivalsCollection: observed?.isNewArrivalsCollection ?? false,
         hasNewBadge: observed?.hasNewBadge ?? false};
     });
-  if (candidate.publicationMode === 'verified-categories' && previous) {
+  if (candidate.publicationMode && previous) {
     const scopes = new Set(candidate.verifiedScopes?.map(scope => scope.url));
     const observed = new Set(candidate.products.map(product => product.productUrl));
     const retained = previous.quarantined.filter(row => !observed.has(row.product.productUrl) &&

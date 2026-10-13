@@ -17,6 +17,11 @@ function html(ids:number[], total=ids.length, links:string[]=[]) {
 }
 const response=(url:string,text:string)=>({url,text,ok:true,status:200});
 describe('Farfetch category completeness',()=>{
+ it('stops the entire source at an HTTP 200 human-verification page',async()=>{
+  const calls:string[]=[];
+  const r=await collectFarfetchCategories({directory:await directory(),http:async url=>{calls.push(url);return response(url,'<h1>Verify you are human</h1>');}});
+  expect(r.blocked).toBe(true);expect(r.products).toEqual([]);expect(calls).toEqual([FARFETCH_SHOES_URL]);
+ });
  it('includes official Oxford, slide and slipper routes while excluding accessories and brand pages',()=>{
   const routes=['derby-oxford-shoes','flip-flops-slides','slippers'].map(key=>FARFETCH_SHOES_URL.replace('shoes-1',key+'-1'));
   const forbidden=[FARFETCH_SHOES_URL.replace('shoes-1','shoe-accessories-1'),FARFETCH_SHOES_URL.replace('shoes-1','test-brand/shoes-1')];
