@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import type { ModelFamily } from '../modelFamily/types';
 import type { PilotProduct } from '../collector/types';
+import { mergeProductRecords } from './mergeProducts';
 import { loadModelFamilies } from '../modelFamily/dataset';
 import { retainModelFamilyArchive, withFamilyVariants } from '../modelFamily/refreshIdentity';
 import { analyzeProducts } from '../analysis/analyzeProduct';
@@ -17,6 +18,20 @@ export interface MarketplaceDelivery {
   families: ModelFamily[];
   report: MarketplaceGateReport;
   quarantined: Array<{product: PilotProduct; reasons: string[]}>;
+  // Historical source evidence, separate from the current pending count.
+  quarantineArchive?: Array<{product: PilotProduct; reasons: string[]}>;
+}
+
+export function archiveMarketplaceQuarantine(previous: Pick<MarketplaceDelivery, 'quarantined' | 'quarantineArchive'>) {
+  const archive = new Map<string, {product: PilotProduct; reasons: string[]}>();
+  for (const row of [...(previous.quarantineArchive ?? []), ...previous.quarantined]) {
+    const old = archive.get(row.product.productUrl);
+    archive.set(row.product.productUrl, old ? {
+      product: mergeProductRecords(old.product, row.product),
+      reasons: [...new Set([...old.reasons, ...row.reasons])],
+    } : row);
+  }
+  return [...archive.values()];
 }
 const directory = (root: string) => join(root, 'data/multibrand/model-families/marketplaces');
 const MAX_DELIVERY_PART_BYTES = 6 * 1024 * 1024;
@@ -121,7 +136,8 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
   }
   decision.report.lastGoodPreserved = true;
   const delivery: MarketplaceDelivery = {sourceId:candidate.sourceId, origin, updatedAt, products,
-    families, report:decision.report, quarantined:decision.quarantined};
+    families, report:decision.report, quarantined:decision.quarantined,
+    ...(previous ? {quarantineArchive: archiveMarketplaceQuarantine(previous)} : {})};
   await writeMarketplaceDelivery(root, delivery);
   return decision;
 }
