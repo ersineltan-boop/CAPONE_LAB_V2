@@ -17,6 +17,34 @@ function page(id:number,offer=url(id)) {
 async function directory(){const dir=await mkdtemp(join(tmpdir(),'ff-product-'));dirs.push(dir);return dir;}
 afterEach(async()=>{await Promise.all(dirs.splice(0).map(dir=>rm(dir,{recursive:true,force:true})));});
 describe('Farfetch model-level verification',()=>{
+ it('checks at most two pages together with one global request interval',async()=>{
+  let active=0,peak=0;const starts:number[]=[];
+  const r=await collectFarfetchProductRefresh({directory:await directory(),urls:[url(11),url(12),url(13)],concurrency:2,http:async u=>{
+   starts.push(Date.now());active++;peak=Math.max(peak,active);
+   await new Promise(resolve=>setTimeout(resolve,1400));active--;
+   return {ok:true,status:200,url:u,text:page(Number(u.match(/item-(\d+)/)![1]))};
+  }});
+  expect(peak).toBe(2);expect(r.products).toHaveLength(3);expect(r.progress.checkedThisRun).toBe(3);
+  for(let i=1;i<starts.length;i++)expect(starts[i]-starts[i-1]).toBeGreaterThanOrEqual(890);
+ },10000);
+ it('stops queued starts when either active page returns an access denial',async()=>{
+  const calls:string[]=[];
+  const r=await collectFarfetchProductRefresh({directory:await directory(),urls:[url(11),url(12),url(13)],concurrency:2,http:async u=>{
+   calls.push(u);await new Promise(resolve=>setTimeout(resolve,u===url(11)?1100:1900));
+   return u===url(11)?{ok:false,status:403,url:u,text:'Access denied'}:{ok:true,status:200,url:u,text:page(12)};
+  }});
+  expect(calls).toEqual([url(11),url(12)]);expect(r.blocked).toBe(true);expect(r.products).toEqual([]);expect(r.verifiedProducts).toEqual([]);
+ },10000);
+ it('shares the maximum product limit across workers and retries a transient response only once',async()=>{
+  let calls=0;
+  const r=await collectFarfetchProductRefresh({directory:await directory(),urls:[url(11),url(12)],maxProducts:1,concurrency:2,http:async u=>{
+   calls++;return calls===1?{ok:false,status:500,url:u,text:''}:{ok:true,status:200,url:u,text:page(11)};
+  }});
+  expect(calls).toBe(2);expect(r.progress.checkedThisRun).toBe(1);expect(r.progress.pending).toBe(1);expect(r.products.map(p=>p.productUrl)).toEqual([url(11)]);
+ });
+ it('rejects a concurrency above the source limit before making any request',async()=>{
+  await expect(collectFarfetchProductRefresh({directory:await directory(),urls:[url(11)],concurrency:3,http:async()=>{throw new Error('No request');}})).rejects.toThrow('Invalid Farfetch product budget');
+ });
  it('reads ProductGroup, sizes and only the requested variation gallery',()=>{
   const r=parseFarfetchProductDetails(page(11),url(11),'2026-10-13T00:00:00Z')!;
   expect(r.product.images).toEqual([image(11),image(111)]);expect(r.product.images).not.toContain(image(999));

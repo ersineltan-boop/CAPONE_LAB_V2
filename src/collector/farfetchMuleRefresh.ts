@@ -13,7 +13,7 @@ import type {PilotProduct} from './types';
 
 const digest=(s:string)=>createHash('sha256').update(s).digest('hex');
 /** Listing observations discover URLs; only independent product-page proof can publish. */
-export async function collectFarfetchMuleCandidate(options:{directory:string;previousProducts?:readonly PilotProduct[];maxProducts?:number;budgetMs?:number}):Promise<MarketplaceRefreshCandidate> {
+export async function collectFarfetchMuleCandidate(options:{directory:string;previousProducts?:readonly PilotProduct[];maxProducts?:number;budgetMs?:number;concurrency?:number}):Promise<MarketplaceRefreshCandidate> {
  await mkdir(options.directory,{recursive:true});
  const root=await fetchText(FARFETCH_SHOES_URL,{delayMs:500});
  if(farfetchAccessBlocked(root))throw new Error(`Farfetch access blocked (HTTP ${root.status})`);
@@ -36,7 +36,7 @@ export async function collectFarfetchMuleCandidate(options:{directory:string;pre
   await rename(join(options.directory,'queue.json.tmp'),join(options.directory,'queue.json'));
  }
  console.log(`Farfetch Mule queue: ${queue.urls.length} product URLs`);
- const result=await collectFarfetchProductRefresh({directory:join(options.directory,'products'),urls:queue.urls,previousProducts:options.previousProducts,maxProducts:options.maxProducts,budgetMs:options.budgetMs});
+ const result=await collectFarfetchProductRefresh({directory:join(options.directory,'products'),urls:queue.urls,previousProducts:options.previousProducts,maxProducts:options.maxProducts,budgetMs:options.budgetMs,concurrency:options.concurrency});
  await writeFile(join(options.directory,'result.json'),JSON.stringify(result));
  return {sourceId:'farfetch',publicationMode:'verified-products',verifiedProducts:result.verifiedProducts,
   products:result.products,coverageStatus:'PARTIAL',sourceTotal:source.total,rawCollected:result.products.length,

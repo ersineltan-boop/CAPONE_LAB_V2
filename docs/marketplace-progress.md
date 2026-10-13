@@ -13,7 +13,7 @@ Kapı raporundaki `collectionProgress` ve `retryWindow` alanları, bekletilen ka
 
 ## Farfetch ürün sayfası doğrulaması
 
-- Otomatik tur kategori koleksiyonuna 8 dakika, bağımsız Mule ürün sayfalarına 12 dakika ayırır. Gerekirse Mule URL keşfi ayrıca en fazla 3 dakika sürer. Manuel ürün kontrolü en fazla 20 dakika ve 2.500 yeni ürün denetler; 15 saniyelik HTTP timeout ve tek geçici hata tekrarı korunur.
+- Otomatik tur kategori koleksiyonuna 8 dakika, bağımsız Mule ürün sayfalarına 12 dakika ayırır. Gerekirse Mule URL keşfi ayrıca en fazla 3 dakika sürer. Manuel ürün kontrolü en fazla 20 dakika ve 2.500 yeni ürün denetler; 15 saniyelik HTTP timeout ve tek geçici hata tekrarı korunur. En fazla iki sayfa aynı anda kontrol edilir; tekrarlar dahil tüm gerçek istek başlangıçları arasında ortak 900 ms sınır uygulanır. Kuyrukta bekleyen isteğin süresi/erişim engeli başlangıçtan hemen önce yeniden kontrol edilir.
 - Liste gözlemleri yalnız URL keşfidir. Başka ürüne yönlenen sayfa, farklı ürün kimliği, yalnız erkek ürünü teklifi veya eksik ürün metadatası yayına giremez. Tamamlanmamış listenin kendisi FULL olamaz.
 - Her yayımlanan ürünün kendi ProductGroup kimliği, kadın ürün URL'si, gerçek kaynak görselleri, doğrulama tarihi ve HTML SHA-256 kanıtı bulunur. Tavsiye edilen ürünlerin görselleri alınmaz. Beden stok bilgisi yoksa bilinmiyor bırakılır.
 - Doğrulanan ürünler ve 404/410 sonuçları 24 saat taze sayılır. Cache checksum ile korunur. Cache kaybolursa arşivdeki eski ürün doğrulama tarihleri yalnız sıralama için kullanılır; taze ürün sayfası kanıtı yerine geçmez. Denenmemiş URL'ler önce kontrol edilir; haftalık turlarda eski ilk kayıtların süresi dolsa bile sıranın sonu sürekli geride kalmaz. Süresi geçmiş kayıt yeni doğrulanmış diye yayımlanmaz.

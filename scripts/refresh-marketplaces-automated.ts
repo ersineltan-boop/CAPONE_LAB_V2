@@ -207,7 +207,7 @@ async function main(): Promise<void> {
     if(sourceId===FARFETCH_ID&&!await sourceRetryPause(PROGRESS_DIR,sourceId)) {
       let productsCandidate:MarketplaceRefreshCandidate;
       try {
-        productsCandidate=await collectFarfetchMuleCandidate({directory:join(PROGRESS_DIR,'farfetch-mule-products'),budgetMs:12*60_000,
+        productsCandidate=await collectFarfetchMuleCandidate({directory:join(PROGRESS_DIR,'farfetch-mule-products'),budgetMs:12*60_000,concurrency:2,
           previousProducts:(await loadMarketplaceDeliveries(ROOT)).find(d=>d.sourceId===sourceId)?.products});
       }catch(error){productsCandidate=failedCandidate(sourceId,error);}
       productsCandidate.retryWindow={...await recordSourceRetry(PROGRESS_DIR,sourceId,productsCandidate.errors),probedThisRun:true};
