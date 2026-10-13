@@ -16,6 +16,27 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('retries a temporary connection failure once and completes without losing saved pages',async()=>{
+  let attempts=0;
+  const r=await collectFarfetchProgress({directory:await directory(),http:async(url,opts)=>{
+   if(url.includes('page=2')&&++attempts===1)return {ok:false,status:0,url,text:'',error:'timeout'};
+   return http(url,opts);
+  }});
+  expect(attempts).toBe(2);expect(r.coverageStatus).toBe('FULL');expect(r.products).toHaveLength(4);
+ });
+ it('isolates checkpoints by category even when the first cards match',async()=>{
+  const dir=await directory(); await collectFarfetchProgress({directory:dir,maxPages:1,http});
+  const listingUrl='https://www.farfetch.com/uk/shopping/women/mules-1/items.aspx';
+  const r=await collectFarfetchProgress({directory:dir,maxPages:1,http,listingUrl});
+  expect(r.progress.resetReason).toBe('SOURCE_CHANGED_OR_CHECKPOINT_STALE');
+  expect(r.progress.nextPage).toBe(2);
+  expect(JSON.parse(await readFile(join(dir,'progress.json'),'utf8')).listing).toBe(listingUrl);
+ });
+ it('rejects non-source and query-bearing category URLs before fetching',async()=>{
+  for(const listingUrl of ['https://example.com/uk/shopping/women/mules-1/items.aspx', FARFETCH_SHOES_URL+'?page=2']) {
+   await expect(collectFarfetchProgress({directory:await directory(),listingUrl,http})).rejects.toThrow('Invalid Farfetch');
+  }
+ });
  it('resumes persisted pages and publishes only a reconciled complete source',async()=>{
   const dir=await directory(); const first=await collectFarfetchProgress({directory:dir,maxPages:1,http});
   expect(first.coverageStatus).toBe('PARTIAL');expect(first.products).toEqual([]);expect(first.progress.nextPage).toBe(2);
