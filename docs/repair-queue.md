@@ -15,17 +15,23 @@ on the queue, but an unavailable Cursor session must not stop independent work.
 2. Massimo Dutti: fixed and published in PR170, 116 fresh products and 119
    archived/live models. Level Shoes pagination/budget logic fixed; full
    refresh remains blocked by source HTTP403.
-3. Marketplace completeness: 24S restored in PR171, 828 footwear records,
-   790 eligible and 38 quality-pending. Farfetch category/recovery/independent
-   product mechanisms were added in PR172–175. Mule product verification is
-   published: 1,999 verified pages; 3,077 visible models, 3,175 archived
-   products and 754 current quality-pending records. Coverage remains PARTIAL.
-   Remaining Farfetch categories and pending taxonomy are still open. A bounded
-   category collection from 17:28 to 17:48 UTC completed three scopes; extended
-   taxonomy/metadata retention repair is prepared on `fix/marketplace-extended-taxonomy`.
-   Inspect its PR/CI/production before treating its prepared 3,406 Farfetch models
-   (446 pending) and 820 24S models (26 pending) as live. Free People
-   is blocked by its official source access check.
+3. Marketplace completeness: category admission and thin-refresh archive
+   retention are fixed and live in PR178 (merge
+   `127a2253178473a9e36e2440dbdf240eb041c6e2`). Exact-head 1,128 tests in 138
+   files and production build passed; Preview and production are READY for the
+   corresponding SHAs. Live HTTP200 shards match the prepared files exactly:
+   Farfetch 3,406 visible models, 3,504 archived products, 3,498 families and
+   446 pending; 24S 820 visible models, 837 archived products/families and
+   26 pending. Both remain PARTIAL. Zero old IDs, URLs, gallery images or
+   size/SKU identities were lost; no NEW claim was invented.
+   Farfetch's bounded 17:28–17:48 UTC collection completed espadrilles (496),
+   slippers (613) and mules (2,009). Remaining scopes failed reconciliation,
+   overlapped or timed out and were not admitted. No collector is still running.
+   Next independent work: inspect actual source evidence for the 26 unresolved
+   24S categories and continue bounded remaining Farfetch scopes without
+   treating stale checkpoints as fresh proof. All 446 Farfetch and 26 24S
+   pending rows currently report unresolved category; do not guess them.
+   Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals
    account for 356 source slots, 355 identities, one duplicate, 329 eligible
