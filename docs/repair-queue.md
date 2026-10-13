@@ -52,11 +52,14 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    baseline, it loses zero archived URL, family ID, real image, size/SKU or
    variant identity; no old NEW flag changed and no new row was marked NEW.
    Full validation passes (1,140 tests in 138 files and production build).
-   This is not live until the exact PR head also has green CI and a READY
-   Preview, followed by merge-SHA production and live Farfetch shard checks.
-   Next independent work after release: keep Ponti pending unless stronger
-   exact source evidence appears, then continue the remaining bounded Farfetch
-   scopes without treating stale checkpoints as fresh proof.
+   This follow-up is live via PR182 (merge
+   `1393c7e676ba252ffece1429c8632d11a6243695`): exact-head CI and the same-SHA
+   Vercel Preview passed before merge, and the merge-SHA production deployment
+   is READY. The production alias returned the Farfetch shard over HTTP with
+   3,852 visible families and coverage `PARTIAL / ready 3950 / pending 0`.
+   Next independent work: keep Ponti pending unless stronger exact source
+   evidence appears, then continue the remaining bounded Farfetch scopes
+   without treating stale checkpoints as fresh proof.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals
