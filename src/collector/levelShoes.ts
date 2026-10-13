@@ -18,7 +18,7 @@ export const LEVEL_SHOES_NEW_IN = "https://www.levelshoes.com/women/shoes/new.ht
 const PRODUCT_HREF =
   /href="([^"]*[a-z0-9-]+-women(?:s)?-[a-z0-9-]+\.html)"/gi;
 
-const MAX_PAGES_PER_LISTING = 80;
+const MAX_PAGES_PER_LISTING = 250;
 const MAX_DETAIL_PAGES = 2500;
 
 const MULTI_WORD_BRANDS = [
@@ -267,7 +267,7 @@ interface LevelShoesListingProduct {
   brandName?: string;
   imagePreviewGallery?: Array<{ url?: string }>;
   action?: { url?: string; urlPath?: string; urlSlug?: string };
-  analytics?: { brand?: string; category1?: string; category2?: string; category3?: string };
+  analytics?: { gender?: string; brand?: string; category1?: string; category2?: string; category3?: string };
   bottomBadges?: Array<{ text?: string }>;
   color?: string;
 }
@@ -303,7 +303,12 @@ export function levelShoesItemToPilot(
     (item.action?.urlSlug
       ? `https://www.levelshoes.com${item.action.urlSlug.startsWith("/") ? "" : "/"}${item.action.urlSlug}`
       : null);
-  if (!url || !/-women(?:s)?-/i.test(url)) return null;
+  if (!url) return null;
+  try { if (new URL(url).origin !== LEVEL_SHOES_BASE) return null; } catch { return null; }
+  // The official women's listing includes unisex shoes without a gender in their slug.
+  const gender = item.analytics?.gender?.trim() ?? "";
+  if (/^(?:men|male)$/i.test(gender)) return null;
+  if (!/-women(?:s)?-/i.test(url) && !/^(?:women|female|unisex)$/i.test(gender)) return null;
   const slug = url.split("/").pop() ?? "Product";
   const identity = identityFromLevelShoesSlug(slug);
   const structuredBrand = item.brandName?.trim() || item.analytics?.brand?.trim() || null;
@@ -552,6 +557,7 @@ export async function collectLevelShoes(options?: {
   maxPagesPerListing?: number;
   enrichDetails?: boolean;
   maxDetailPages?: number;
+  maxDurationMs?: number;
 }): Promise<LevelShoesCollectResult> {
   const discoveredAt = new Date().toISOString();
   const maxPages = options?.maxPagesPerListing ?? MAX_PAGES_PER_LISTING;
@@ -574,7 +580,7 @@ export async function collectLevelShoes(options?: {
   const listingState = Object.values(query ?? {}).find(value => value && typeof value === "object" &&
     Array.isArray((value as {products?: unknown}).products)) as {products: LevelShoesListingProduct[]; pagination?: {page?: number;size?: number;totalCount?: number}} | undefined;
   if (listingState?.pagination && Number.isInteger(listingState.pagination.totalCount)) {
-    return collectLevelShoesStorefrontPages(listingState, discoveredAt, maxPages);
+    return collectLevelShoesStorefrontPages(listingState, discoveredAt, maxPages, options?.maxDurationMs ?? 20 * 60_000);
   }
   const menuCategories = pageProps?.menuCategories ?? [];
   const fromMenu = extractLevelShoesFootwearCategories(menuCategories);
@@ -642,7 +648,9 @@ async function collectLevelShoesStorefrontPages(
   first: {products: LevelShoesListingProduct[]; pagination?: {page?: number;size?: number;totalCount?: number}},
   now: string,
   maxPages: number,
+  maxDurationMs: number,
 ): Promise<LevelShoesCollectResult> {
+  const deadline = Date.now() + maxDurationMs;
   const total = first.pagination!.totalCount!;
   const size = first.pagination!.size;
   const products: PilotProduct[] = [];
@@ -652,6 +660,7 @@ async function collectLevelShoesStorefrontPages(
   let state = first;
   if (!size || first.pagination?.page !== 0) errors.push("Level Shoes initial pagination metadata invalid");
   for (let page = 0; size && page < Math.min(Math.ceil(total / size), maxPages) && !errors.length; page++) {
+    if (Date.now() >= deadline) { errors.push("Level Shoes collection time budget exhausted"); break; }
     if (page > 0) {
       // Same documented request used by the source's shipped Web product-list component.
       const url = `https://api.levelshoes.com/catalog/ae/en/products/urlPath/v1?urlPath=women/shoes.html&groupID=null&museTier=0&page=${page}&count=${size}&genderType=women`;
@@ -661,6 +670,10 @@ async function collectLevelShoesStorefrontPages(
     }
     if (state.pagination?.page !== page || state.pagination.totalCount !== total || state.pagination.size !== size || !Array.isArray(state.products)) {
       errors.push(`Level Shoes pagination changed or returned wrong page ${page}`); break;
+    }
+    const expectedCount = Math.min(size, total - page * size);
+    if (state.products.length !== expectedCount) {
+      errors.push(`Level Shoes page ${page} cardinality mismatch`); break;
     }
     let added = 0;
     for (const item of state.products) {

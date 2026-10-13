@@ -34,6 +34,7 @@ for (const source of SOURCES) {
       const current = JSON.parse(await readFile(path, "utf8")) as {
         products?: unknown[];
         collectedThisRun?: number;
+        paginationExhausted?: boolean;
         errors?: string[];
         coverage?: {
           acceptedFemaleFootwearProducts?: number;
@@ -50,7 +51,7 @@ for (const source of SOURCES) {
           : current.coverage?.acceptedFemaleFootwearProducts ?? 0,
         errors: source.id === "massimo-dutti" ? current.errors ?? [] : current.coverage?.errors ?? [],
         completed: source.id === "massimo-dutti"
-          ? true
+          ? current.paginationExhausted === true
           : current.coverage?.sitemapTraversalExhausted === true && current.coverage?.bounded === false,
       });
     } catch (error) {

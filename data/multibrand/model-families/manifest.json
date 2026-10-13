@@ -1,20 +1,10 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-11T10:11:38.361Z",
-  "totalFamilies": 17758,
+  "generatedAt": "2026-10-13T08:19:46.018Z",
+  "totalFamilies": 17765,
   "shardCount": 67,
   "shards": [
-    {
-      "file": "part-000.json",
-      "familyCount": 2819,
-      "bytes": 16777172
-    },
-    {
-      "file": "part-001.json",
-      "familyCount": 2429,
-      "bytes": 16686389
-    },
     {
       "file": "brands/4ccccees.json",
       "familyCount": 151,
@@ -217,8 +207,8 @@
     },
     {
       "file": "brands/massimo-dutti.json",
-      "familyCount": 112,
-      "bytes": 1264378
+      "familyCount": 119,
+      "bytes": 1328338
     },
     {
       "file": "brands/naguisa.json",
@@ -339,6 +329,16 @@
       "file": "brands/yuul-yie.json",
       "familyCount": 38,
       "bytes": 191391
+    },
+    {
+      "file": "part-000.json",
+      "familyCount": 2819,
+      "bytes": 16777172
+    },
+    {
+      "file": "part-001.json",
+      "familyCount": 2429,
+      "bytes": 16686389
     }
   ]
 }
