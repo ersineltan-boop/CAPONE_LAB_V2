@@ -164,6 +164,7 @@ export interface FootwearTaxonomyCategoryFields {
 
 export type CategoryAssignmentProvenance =
   | "PRODUCT_EVIDENCE"
+  | "SOURCE_CATEGORY"
   | "LEGACY_CATEGORY"
   | "INSUFFICIENT";
 

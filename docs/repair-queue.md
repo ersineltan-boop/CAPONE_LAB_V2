@@ -27,10 +27,20 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    Farfetch's bounded 17:28–17:48 UTC collection completed espadrilles (496),
    slippers (613) and mules (2,009). Remaining scopes failed reconciliation,
    overlapped or timed out and were not admitted. No collector is still running.
-   Next independent work: inspect actual source evidence for the 26 unresolved
-   24S categories and continue bounded remaining Farfetch scopes without
-   treating stale checkpoints as fresh proof. All 446 Farfetch and 26 24S
-   pending rows currently report unresolved category; do not guess them.
+   A fresh bounded 24S follow-up at `2026-10-13T19:49:04.864Z` completed all
+   12 source pages (828 raw, 827 accepted, one policy exclusion, no collector
+   error) and checked the 26 product pages. Exact product breadcrumbs resolved
+   25 rows; the proposed archive is 860 products/families and the built catalog
+   has 843 visible families. `Ponti slip-ons` (`ROWQKQT7BRW`) exposes only the
+   generic `Shoes` breadcrumb and remains the sole pending row, so publication
+   remains PARTIAL. The 837-row baseline lost no URL, model ID, gallery, source
+   product link or SKU identity, and none of the 23 new rows was marked NEW.
+   This is delivery evidence, not a live claim; the exact-head CI/Preview and
+   merge-SHA production/live-shard gates below still apply.
+   Next independent work: keep Ponti pending unless stronger exact source
+   evidence appears, and continue bounded remaining Farfetch scopes without
+   treating stale checkpoints as fresh proof. The 446 Farfetch pending rows
+   still report unresolved category; do not guess them.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals

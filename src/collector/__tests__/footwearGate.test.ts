@@ -176,6 +176,12 @@ describe("footwear gate", () => {
       }).decision,
     ).toBe("EXCLUDE_UNCERTAIN_PRODUCT_TYPE");
   });
+  it("accepts OTHER only when an exact product-detail footwear category is stored", () => {
+    expect(evaluateStoredPilotProduct({productName:'Awar lace up',productUrl:'https://www.24s.com/p',category:'OTHER_FOOTWEAR',
+      sourceCategoryPath:'/en-us/women/shoes/oxfords-derbies'})).toMatchObject({decision:'ACCEPT_FOOTWEAR',matchedSignals:['exact-source-product-category']});
+    expect(evaluateStoredPilotProduct({productName:'Ponti',productUrl:'https://www.24s.com/p',category:'OTHER_FOOTWEAR',
+      sourceCategoryPath:'/en-us/women/shoes'}).decision).toBe('EXCLUDE_UNCERTAIN_PRODUCT_TYPE');
+  });
 
   it("lipstick excluded in stored review", () => {
     expect(

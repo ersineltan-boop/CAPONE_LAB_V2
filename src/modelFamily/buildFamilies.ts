@@ -247,6 +247,16 @@ function categoryMergeKey(product: RawAnalyzedProduct): string {
     toeShape: product.normalized.toeShape,
     details: product.normalized.details,
     materialFamily: product.normalized.materialFamily,
+    sourceCategoryText: [
+      product.sourceCategoryName,
+      product.sourceCategoryPath,
+      ...(product.sourceCategories ?? []).flatMap((category) => [
+        category.categoryName,
+        category.categoryPath,
+      ]),
+    ]
+      .filter(Boolean)
+      .join(" "),
   }).primaryCategory;
   if (primary === "BOOT") return "BOOT";
   return primary;

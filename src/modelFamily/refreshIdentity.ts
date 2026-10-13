@@ -53,12 +53,16 @@ export function anchorRefreshFamilies(previous: readonly ModelFamily[], incoming
     const result: ModelFamily[] = [...buckets.entries()].map(([id, bucket]) => ({
       ...withFamilyVariants(fresh, bucket.variants), modelFamilyId: id,
       canonicalName: bucket.old.canonicalName,
-      // Group-level classification must not overwrite a different old silhouette.
-      primaryCategory: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED"
+      // Keep the stable archive identity, but let an exact product-detail source
+      // category correct an older text-derived silhouette.
+      primaryCategory: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED" &&
+        fresh.taxonomy?.categoryProvenance !== "SOURCE_CATEGORY"
         ? bucket.old.primaryCategory : fresh.primaryCategory,
-      category: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED"
+      category: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED" &&
+        fresh.taxonomy?.categoryProvenance !== "SOURCE_CATEGORY"
         ? bucket.old.category : fresh.category,
-      taxonomy: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED"
+      taxonomy: bucket.old.primaryCategory && bucket.old.primaryCategory !== "UNCLASSIFIED" &&
+        fresh.taxonomy?.categoryProvenance !== "SOURCE_CATEGORY"
         ? bucket.old.taxonomy : fresh.taxonomy,
     }));
     if (unmatched.length) {

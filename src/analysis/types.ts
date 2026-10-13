@@ -112,6 +112,13 @@ export interface PilotProductRaw {
   publishedAt?: string | null;
   createdAt?: string | null;
   updatedAt?: string | null;
+  sourceCategoryId?: string | null;
+  sourceCategoryName?: string | null;
+  sourceCategoryPath?: string | null;
+  sourceCategoryUrl?: string | null;
+  sourceCategories?: Array<{
+    categoryId:string; categoryName:string; categoryPath?:string|null; categoryUrl?:string|null;
+  }>;
 }
 
 export interface NormalizedFields {
