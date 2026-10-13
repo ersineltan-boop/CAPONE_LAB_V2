@@ -1,0 +1,1616 @@
+{
+  "checkedAt": "2026-10-13T16:57:52.215Z",
+  "scope": {
+    "brand": "CASADEI",
+    "slug": "casadei",
+    "officialUrl": "https://www.casadei.com",
+    "storefront": "en-us",
+    "country": "US",
+    "collectionUrl": "https://www.casadei.com/en-us/shoes/",
+    "collectionId": "shoes",
+    "sourceStrategy": "salesforce-mobify-embedded-search",
+    "storefrontCurrency": "USD"
+  },
+  "status": "FULL",
+  "sourceReportedTotal": 356,
+  "uniqueProducts": 355,
+  "eligibleFootwear": 329,
+  "excludedBags": 26,
+  "errors": [],
+  "duplicates": {
+    "1T831E1401T00059000": [
+      {
+        "page": 8,
+        "offset": 191,
+        "url": "https://www.casadei.com/en/shoes/platforms/flora-over-the-knee%C2%A0%C2%A0-1T831E1401T00059000.html"
+      },
+      {
+        "page": 9,
+        "offset": 192,
+        "url": "https://www.casadei.com/en/shoes/platforms/flora-over-the-knee%C2%A0%C2%A0-1T831E1401T00059000.html"
+      }
+    ]
+  },
+  "reconciliation": {
+    "pages": [
+      {
+        "url": "https://www.casadei.com/en-us/shoes/",
+        "offset": 0,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1L486C1301T05943715",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/patty-platform-diva-sandal-1L486C1301T05943715.html"
+          },
+          {
+            "productId": "1L487C100TT05939999",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-diva-minorca-sandal-1L487C100TT05939999.html"
+          },
+          {
+            "productId": "1L487C100TT05949000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-diva-minorca-sandal-1L487C100TT05949000.html"
+          },
+          {
+            "productId": "1L495C120TT0597C170",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/cappa-blade-heaven-sandal-1L495C120TT0597C170.html"
+          },
+          {
+            "productId": "1A314C0101C31142413",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/new-ballet-flat-1A314C0101C31142413.html"
+          },
+          {
+            "productId": "1A314C0101C31149000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/new-ballet-flat-1A314C0101C31149000.html"
+          },
+          {
+            "productId": "1D264Y0101C31129000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/grays-peak-loafer-1D264Y0101C31129000.html"
+          },
+          {
+            "productId": "1D264Y0101C3112B195",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/grays-peak-loafer-1D264Y0101C3112B195.html"
+          },
+          {
+            "productId": "1D298A0111C31052403",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/bufaland-loafer-1D298A0111C31052403.html"
+          },
+          {
+            "productId": "1D298A0111C31069000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/bufaland-loafer-1D298A0111C31069000.html"
+          },
+          {
+            "productId": "1F013A1001MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/micheele-minorca-pump-1F013A1001MINOR9000.html"
+          },
+          {
+            "productId": "1F063C030TCAMOS3715",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/giselle-pump-1F063C030TCAMOS3715.html"
+          },
+          {
+            "productId": "1F063C030TCAMOS9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/giselle-suede-pump-1F063C030TCAMOS9000.html"
+          },
+          {
+            "productId": "1F064C1001CAMOS3711",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-cats-pump-1F064C1001CAMOS3711.html"
+          },
+          {
+            "productId": "1F064C1001CAMOS4607",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-cats-pump-1F064C1001CAMOS4607.html"
+          },
+          {
+            "productId": "1F064C1001CAMOS9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-cats-pump-1F064C1001CAMOS9000.html"
+          },
+          {
+            "productId": "1F070C0801SHINY3615",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/nina-pump-1F070C0801SHINY3615.html"
+          },
+          {
+            "productId": "1F070C0801SHINY9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/nina-pump-1F070C0801SHINY9000.html"
+          },
+          {
+            "productId": "1F070C1001CAMOS3127",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/nina-pump-1F070C1001CAMOS3127.html"
+          },
+          {
+            "productId": "1F070C1001CAMOS4607",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/nina-pump-1F070C1001CAMOS4607.html"
+          },
+          {
+            "productId": "1F070C1001CAMOS9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/nina-pump-1F070C1001CAMOS9000.html"
+          },
+          {
+            "productId": "1F074C100MC14443610",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-my-love-pump-1F074C100MC14443610.html"
+          },
+          {
+            "productId": "1F074C100MC14449000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-my-love-pump-1F074C100MC14449000.html"
+          },
+          {
+            "productId": "1F076C100TKITANZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-kitana-pump-1F076C100TKITANZZZZ.html"
+          }
+        ],
+        "identitySha256": "09fc28d13b11c33ea99c54f67eab4e9d6ba1ef1f8f64904674a866d8a3817fd5"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=2",
+        "offset": 24,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1F078C100TPANDO3206",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-pandora-pump-1F078C100TPANDO3206.html"
+          },
+          {
+            "productId": "1F082C0801RIGEL9701",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-rigel-pump-1F082C0801RIGEL9701.html"
+          },
+          {
+            "productId": "1F082C1001RIGEL9709",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-rigel-pump-1F082C1001RIGEL9709.html"
+          },
+          {
+            "productId": "1F084C1001C30799000",
+            "productUrl": "https://www.casadei.com/en/shoes/in-the-mood-for/evening-elegance/julia-heaven-pump-1F084C1001C30799000.html"
+          },
+          {
+            "productId": "1F911W1001TIFFA3812",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-pump-1F911W1001TIFFA3812.html"
+          },
+          {
+            "productId": "2X129C070NC30959000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-salento-sneaker-2X129C070NC30959000.html"
+          },
+          {
+            "productId": "2X139C0701HUSKY9001",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/nexus-husky-sneaker-2X139C0701HUSKY9001.html"
+          },
+          {
+            "productId": "2X145C0701C31456809",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/nexus-cayenne-snekaer-2X145C0701C31456809.html"
+          },
+          {
+            "productId": "2X975W0701C31443206",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-peak-sneaker-2X975W0701C31443206.html"
+          },
+          {
+            "productId": "2X975W070NC31449000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-peak-sneaker-2X975W070NC31449000.html"
+          },
+          {
+            "productId": "1Q211C0801CAMOS2413",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/julia-ankle-boot-1Q211C0801CAMOS2413.html"
+          },
+          {
+            "productId": "1R566C100MC18329000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-berlino-ankle-boot-1R566C100MC18329000.html"
+          },
+          {
+            "productId": "1S363A0501RENNA2403",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/jula-renna-boot-1S363A0501RENNA2403.html"
+          },
+          {
+            "productId": "1S435C080MC14443812",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-tiffany-boot-1S435C080MC14443812.html"
+          },
+          {
+            "productId": "1S435C080MC14449000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-tiffany-boot-1S435C080MC14449000.html"
+          },
+          {
+            "productId": "1S436C100MC18329000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/blade-berlino-boot-1S436C100MC18329000.html"
+          },
+          {
+            "productId": "1S439C0501T0561B325",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/beat-sub-zero-boot-1S439C0501T0561B325.html"
+          },
+          {
+            "productId": "2S397A0811SUBZE9999",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/double-face-sub-zero-boot-2S397A0811SUBZE9999.html"
+          },
+          {
+            "productId": "2S397A081NSUBZE9000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/double-face-sub-zero-boot-2S397A081NSUBZE9000.html"
+          },
+          {
+            "productId": "2S420C080NCAYEN9000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/double-face-dakota-boot-2S420C080NCAYEN9000.html"
+          },
+          {
+            "productId": "2S420C080NTIPIIZZZZ",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/double-face-dakota-boot-2S420C080NTIPIIZZZZ.html"
+          },
+          {
+            "productId": "2S444C080NCHAMO9000",
+            "productUrl": "https://www.casadei.com/en/special-categories/early-access-fw26/double-face-chamonix-boot-2S444C080NCHAMO9000.html"
+          },
+          {
+            "productId": "2X894U070NSALEN9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-sneaker--2X894U070NSALEN9000.html"
+          },
+          {
+            "productId": "2X067J070NSALEN9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-sabot-sneaker-2X067J070NSALEN9000.html"
+          }
+        ],
+        "identitySha256": "6f056b7b23758ef40a78c1ee398448853ed671af08ea911ee377b874de9f72a4"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=3",
+        "offset": 48,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1L488N120MC05963200",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-minorca-v-celebriety-sandal-1L488N120MC05963200.html"
+          },
+          {
+            "productId": "1L488N120MC26295204",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade--v-celebrity-solar-eclipse-sandal-1L488N120MC26295204.html"
+          },
+          {
+            "productId": "1LG40D100MC11553302",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-minorca-sandal-1LG40D100MC11553302.html"
+          },
+          {
+            "productId": "1LG40D100MC11559000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-minorca-sandal-1LG40D100MC11559000.html"
+          },
+          {
+            "productId": "3W485A0000PKIMG2403",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/mini-park-avenue-bag-3W485A0000PKIMG2403.html"
+          },
+          {
+            "productId": "3W486A0000BRRON3217",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/brera-bag-3W486A0000BRRON3217.html"
+          },
+          {
+            "productId": "1L413B100MC11559000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-minorca-sandal-1L413B100MC11559000.html"
+          },
+          {
+            "productId": "1L413B100MC26271200",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-solar-eclipse-sandal-1L413B100MC26271200.html"
+          },
+          {
+            "productId": "1L414B1001TIFFA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-samurai-double-belts-sandal--1L414B1001TIFFA9000.html"
+          },
+          {
+            "productId": "1L414B1001TIFFA9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-samurai-double-belts-sandal--1L414B1001TIFFA9999.html"
+          },
+          {
+            "productId": "3W492B0000VDMNO9999",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/mini-vandome--bag-3W492B0000VDMNO9999.html"
+          },
+          {
+            "productId": "2S336Y0801RENNA3219",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-high-boot-2S336Y0801RENNA3219.html"
+          },
+          {
+            "productId": "1LG50D125MC26272807",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-solar-eclipse-sandal-1LG50D125MC26272807.html"
+          },
+          {
+            "productId": "1L420B0801INTER1100",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-interstellar-sandal-1L420B0801INTER1100.html"
+          },
+          {
+            "productId": "1L420B0801SOLAE9700",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-solar-eclipse-sandal-1L420B0801SOLAE9700.html"
+          },
+          {
+            "productId": "1L420B1001SATIN9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-satin-sandal-1L420B1001SATIN9999.html"
+          },
+          {
+            "productId": "1H052B100MC13139000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-sin-samurai-pump--1H052B100MC13139000.html"
+          },
+          {
+            "productId": "1F915W100MC11553200",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump-1F915W100MC11553200.html"
+          },
+          {
+            "productId": "1F915W100MC11559000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump-1F915W100MC11559000.html"
+          },
+          {
+            "productId": "1F916W120MINTER3306",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-interstellar-pump---1F916W120MINTER3306.html"
+          },
+          {
+            "productId": "1G621J0501MINOR3302",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-minorca-slingback-1G621J0501MINOR3302.html"
+          },
+          {
+            "productId": "1G671B0101TIFFA9999",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/double-belts--slingback-1G671B0101TIFFA9999.html"
+          },
+          {
+            "productId": "2Y263B0101BEACH6301",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal-2Y263B0101BEACH6301.html"
+          },
+          {
+            "productId": "2Y263B0101BEACH9000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal-2Y263B0101BEACH9000.html"
+          }
+        ],
+        "identitySha256": "b30646163ad37cfac002216f08327a49ed7f5ffb540068f2ffc7c3060e92a1fd"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=4",
+        "offset": 72,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1A255X0101C23665315",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/hanoi-loafer-with-c-chain--1A255X0101C23665315.html"
+          },
+          {
+            "productId": "1LG50D125MC26265315",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-solar-eclipse-sandal-1LG50D125MC26265315.html"
+          },
+          {
+            "productId": "1R532A1301LAABD9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/patty-ankle-boot%C2%A0-1R532A1301LAABD9000.html"
+          },
+          {
+            "productId": "1T076A100MC18322403",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-corsair-over-the-knee-1T076A100MC18322403.html"
+          },
+          {
+            "productId": "1S376A0501NOMAD2403",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/muni-nomad-boot-1S376A0501NOMAD2403.html"
+          },
+          {
+            "productId": "1D315A0811C28842403",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/concept-pump%C2%A0-1D315A0811C28842403.html"
+          },
+          {
+            "productId": "1S246Z1201RENNA3702",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-ankle-boot%C2%A0-1S246Z1201RENNA3702.html"
+          },
+          {
+            "productId": "1T084A1301LAABD2608",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/patty-over-the-knee%C2%A0-1T084A1301LAABD2608.html"
+          },
+          {
+            "productId": "1L405A1301INTER1100",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-interstellar-sandal-1L405A1301INTER1100.html"
+          },
+          {
+            "productId": "2X082A0801RENNA3121",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/high-top-sneaker-2X082A0801RENNA3121.html"
+          },
+          {
+            "productId": "1R528A0501NOMAD3121",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/muni-nomad-ankle-boot%C2%A0-1R528A0501NOMAD3121.html"
+          },
+          {
+            "productId": "1T081A0501NOMAD9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/muni-nomad-over-the-knee%C2%A0-1T081A0501NOMAD9000.html"
+          },
+          {
+            "productId": "1L405A1301INTER9700",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-interstellar-sandal-1L405A1301INTER9700.html"
+          },
+          {
+            "productId": "1R475Y100MC21492413",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-stretch-ankle-boot-1R475Y100MC21492413.html"
+          },
+          {
+            "productId": "1G660A080TCAMOS2413",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-slingback-1G660A080TCAMOS2413.html"
+          },
+          {
+            "productId": "2S336Y0801RENNA2403",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-ankle-boot-2S336Y0801RENNA2403.html"
+          },
+          {
+            "productId": "1R532A1301LAABD2608",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/patty-platform-ankle-boot-1R532A1301LAABD2608.html"
+          },
+          {
+            "productId": "1G659A1301CAMOS2413",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-suede-sandal-1G659A1301CAMOS2413.html"
+          },
+          {
+            "productId": "1R665E120MC22743810",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-ankle-boot%C2%A0-1R665E120MC22743810.html"
+          },
+          {
+            "productId": "1S329Y100MC18323702",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-boot-1S329Y100MC18323702.html"
+          },
+          {
+            "productId": "1T069Y100MC21493810",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/balde-over-the-knee-1T069Y100MC21493810.html"
+          },
+          {
+            "productId": "1S381A1301LOVEC9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/patty-boot-1S381A1301LOVEC9000.html"
+          },
+          {
+            "productId": "1S363A0501PLONG9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/julia-plonge-boot-1S363A0501PLONG9000.html"
+          },
+          {
+            "productId": "1T079A1001NOMAD3121",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/michelle-corsair-over-the-knee-1T079A1001NOMAD3121.html"
+          }
+        ],
+        "identitySha256": "49fd698c011f406ac9e731c7861ebbede57f2973d07d4c8d0e3d892336c8224e"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=5",
+        "offset": 96,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1T076A100MC18329000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-corsair-over-the-knee-1T076A100MC18329000.html"
+          },
+          {
+            "productId": "1F916W120TMINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump-1F916W120TMINOR9000.html"
+          },
+          {
+            "productId": "2X896U0701HANOI3301",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-hanoi-2X896U0701HANOI3301.html"
+          },
+          {
+            "productId": "2X129C0701C30959999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-salento-sneaker-2X129C0701C30959999.html"
+          },
+          {
+            "productId": "2X924Z0711GYPEKC037",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-grays-peak-sneaker-2X924Z0711GYPEKC037.html"
+          },
+          {
+            "productId": "1T000D125TT00059000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-over-the-knee-1T000D125TT00059000.html"
+          },
+          {
+            "productId": "1L480C120TC30729000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-godyva-sandal-1L480C120TC30729000.html"
+          },
+          {
+            "productId": "2X145C070NC3101B032",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-tipi-%2B-salento-sneaker-2X145C070NC3101B032.html"
+          },
+          {
+            "productId": "2X144C0701C3100B345",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-pandora-sneaker-2X144C0701C3100B345.html"
+          },
+          {
+            "productId": "2X140C0701C3096B359",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-rigel-sneaker-2X140C0701C3096B359.html"
+          },
+          {
+            "productId": "1L492C1001T0597C161",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-heaven-sandal-1L492C1001T0597C161.html"
+          },
+          {
+            "productId": "2X895U0701T02682625",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-versilia-sneaker-2X895U0701T02682625.html"
+          },
+          {
+            "productId": "2X924Z071NGYPEK9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-grays-peak-sneaker-2X924Z071NGYPEK9000.html"
+          },
+          {
+            "productId": "1F916W120MC11559000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-leather-pump%C2%A0%C2%A0-1F916W120MC11559000.html"
+          },
+          {
+            "productId": "2X140C0701C3096A944",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-rigel-sneaker-2X140C0701C3096A944.html"
+          },
+          {
+            "productId": "1G688C1301INTER9104",
+            "productUrl": "https://www.casadei.com/en/shoes/in-the-mood-for/lets-get-party/patty-platform-interstellar-sandal-1G688C1301INTER9104.html"
+          },
+          {
+            "productId": "1M564B0101C21249999",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jane-slide-sandal-1M564B0101C21249999.html"
+          },
+          {
+            "productId": "1LG50D125TGLDFGZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-goldfinger-sandal%C2%A0%C2%A0-1LG50D125TGLDFGZZZZ.html"
+          },
+          {
+            "productId": "2X895U0701T02689999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-versilia-2X895U0701T02689999.html"
+          },
+          {
+            "productId": "1L405A1301INTER1501",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-interstellar-sandal-1L405A1301INTER1501.html"
+          },
+          {
+            "productId": "1R532A1301ARCEU9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/patty-arceus-ankle-boot%C2%A0-1R532A1301ARCEU9000.html"
+          },
+          {
+            "productId": "1N254B0501C30253301",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/kitten-chic-sandals-1N254B0501C30253301.html"
+          },
+          {
+            "productId": "1R665E120TT00059000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-ankle-boot%C2%A0-1R665E120TT00059000.html"
+          },
+          {
+            "productId": "1N263B0101C30252804",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/soraya-thong-sandal-1N263B0101C30252804.html"
+          }
+        ],
+        "identitySha256": "c7cff32c5901ebb22b381f13a15397507169f1bd5ff7404888a7ecab8ea9fc10"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=6",
+        "offset": 120,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1L287Y1401TIFFA3812",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-sandal-1L287Y1401TIFFA3812.html"
+          },
+          {
+            "productId": "1L481C100MC3073A905",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-godyva-sandal-1L481C100MC3073A905.html"
+          },
+          {
+            "productId": "2X976W0701C31442621",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-peak-sneaker-2X976W0701C31442621.html"
+          },
+          {
+            "productId": "1L287Y1401TIFFA3116",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-sandal-1L287Y1401TIFFA3116.html"
+          },
+          {
+            "productId": "1F915W100MC30882804",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-basilisco-pump-1F915W100MC30882804.html"
+          },
+          {
+            "productId": "1G619J1001MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-leather-slingback-1G619J1001MINOR9000.html"
+          },
+          {
+            "productId": "2T092C0501RENNA2403",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/high-box-over-the-knee-2T092C0501RENNA2403.html"
+          },
+          {
+            "productId": "1M563B0501C21242615",
+            "productUrl": "https://www.casadei.com/en/shoes/mules/julia-kitten-jane-mule-1M563B0501C21242615.html"
+          },
+          {
+            "productId": "1F911W1001MINOR9999",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-minorca-pump-1F911W1001MINOR9999.html"
+          },
+          {
+            "productId": "1F915W100TPANTEZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-panthera-pump%C2%A0-1F915W100TPANTEZZZZ.html"
+          },
+          {
+            "productId": "1L488N120MC05969000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-v-celebrity-1L488N120MC05969000.html"
+          },
+          {
+            "productId": "1F916W120TMINOR9999",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump-1F916W120TMINOR9999.html"
+          },
+          {
+            "productId": "1L495C120MT0597C161",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-heaven-sandal-1L495C120MT0597C161.html"
+          },
+          {
+            "productId": "2X139C0701HUSKY2415",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-husky-sneaker-2X139C0701HUSKY2415.html"
+          },
+          {
+            "productId": "2X896U0701HANOI9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-hanoi%C2%A0sneaker%C2%A0-2X896U0701HANOI9999.html"
+          },
+          {
+            "productId": "2X125C070NC30919000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-bucle-sneaker-2X125C070NC30919000.html"
+          },
+          {
+            "productId": "1R665E120MC21492616",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-ankle-boot-1R665E120MC21492616.html"
+          },
+          {
+            "productId": "2T092C0501RENNA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/high-box-over-the-knee-2T092C0501RENNA9000.html"
+          },
+          {
+            "productId": "1L488C1001C3077A317",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-c-love-sandal-1L488C1001C3077A317.html"
+          },
+          {
+            "productId": "2X145C0701C31452413",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-cayenne-sneaker-2X145C0701C31452413.html"
+          },
+          {
+            "productId": "1L287Y1401MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform--sandal-1L287Y1401MINOR9000.html"
+          },
+          {
+            "productId": "1R417W1001LABBB9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/geraldine-ankle-boot-1R417W1001LABBB9000.html"
+          },
+          {
+            "productId": "2X121B0501HEDON3206",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/sneaker-i-box--2X121B0501HEDON3206.html"
+          },
+          {
+            "productId": "1L162W120MT05149700",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-interstellar-marta-sandal-1L162W120MT05149700.html"
+          }
+        ],
+        "identitySha256": "c72ca3d690857a81a2a242fd52bbf5b2312dc12c820a35222c0cacb685488393"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=7",
+        "offset": 144,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1H079B0501C30299000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/chic-julia-kitten-sandal-1H079B0501C30299000.html"
+          },
+          {
+            "productId": "1G678B100MC14443812",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/superblade-slingback-1G678B100MC14443812.html"
+          },
+          {
+            "productId": "2X822P0201HANOI2804",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-2X822P0201HANOI2804.html"
+          },
+          {
+            "productId": "2X895U0701T02685315",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-versilia-sneaker-2X895U0701T02685315.html"
+          },
+          {
+            "productId": "2X150C0511C31122621",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/explorer-sneaker-2X150C0511C31122621.html"
+          },
+          {
+            "productId": "1L162W120MC20153302",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/marta-minorca-sandal%C2%A0-1L162W120MC20153302.html"
+          },
+          {
+            "productId": "1L556P120MAMINO9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-criss-cross-sandal%C2%A0%C2%A0-1L556P120MAMINO9000.html"
+          },
+          {
+            "productId": "1N254B0501C30252625",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/chic-julia-kitten-sandal-1N254B0501C30252625.html"
+          },
+          {
+            "productId": "1R665E120MC22742608",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-ankle-boot-1R665E120MC22742608.html"
+          },
+          {
+            "productId": "1S329Y100MC18322608",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-nomad-boot-1S329Y100MC18322608.html"
+          },
+          {
+            "productId": "1F324K1401TIFFA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-1F324K1401TIFFA9000.html"
+          },
+          {
+            "productId": "1L287Y1401BASIL2608",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-basilisco-sandal-1L287Y1401BASIL2608.html"
+          },
+          {
+            "productId": "1F911W1001MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-minorca-pump-1F911W1001MINOR9000.html"
+          },
+          {
+            "productId": "2S432C080NT06009000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-ontario-boot-2S432C080NT06009000.html"
+          },
+          {
+            "productId": "2X149C0511C31123206",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/grays-peak-sneaker-2X149C0511C31123206.html"
+          },
+          {
+            "productId": "2X125C0701C30902704",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-bucle-sneaker-2X125C0701C30902704.html"
+          },
+          {
+            "productId": "1R532A1301ARCEU6809",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/patty-arceus-ankle-boot-1R532A1301ARCEU6809.html"
+          },
+          {
+            "productId": "1G659A1301BASIL9500",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-basilisco-sandal-1G659A1301BASIL9500.html"
+          },
+          {
+            "productId": "1N264B0501C30259000",
+            "productUrl": "https://www.casadei.com/en/shoes/mules/chic-julia-kitten-mule-1N264B0501C30259000.html"
+          },
+          {
+            "productId": "1G660A080MC15883302",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-slingback%C2%A0-1G660A080MC15883302.html"
+          },
+          {
+            "productId": "1F911W1001TIFFA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-pump-1F911W1001TIFFA9000.html"
+          },
+          {
+            "productId": "1F916W120MC15883715",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump-1F916W120MC15883715.html"
+          },
+          {
+            "productId": "1H085C100TCAMOS9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-debby-pump-1H085C100TCAMOS9000.html"
+          },
+          {
+            "productId": "1S329Y100MC18322403",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-suede-boot%C2%A0-1S329Y100MC18322403.html"
+          }
+        ],
+        "identitySha256": "61f74ccf25c4aa821e9e0ae5f0fad9452399153c43953890a4248a10926bf762"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=8",
+        "offset": 168,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1T094C0801NOMAD9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/venus-nomad-over-the-knee-1T094C0801NOMAD9000.html"
+          },
+          {
+            "productId": "2X068J0701HANOI2804",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-sabot-hanoi-sneaker-2X068J0701HANOI2804.html"
+          },
+          {
+            "productId": "1S381A1301BASIL2608",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/patty-basilisco-boot-1S381A1301BASIL2608.html"
+          },
+          {
+            "productId": "1F916W120TCAMOS3715",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-pump-1F916W120TCAMOS3715.html"
+          },
+          {
+            "productId": "1T000D125TT02389000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-leather-over-the-knee%C2%A0%C2%A0-1T000D125TT02389000.html"
+          },
+          {
+            "productId": "2X924Z0711GYPEKC157",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-grays-peak-sneaker-2X924Z0711GYPEKC157.html"
+          },
+          {
+            "productId": "2X023Y0801NOMAD2403",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/high-top-sneaker-2X023Y0801NOMAD2403.html"
+          },
+          {
+            "productId": "1N234J0101SOLAC9700",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/soraya-solar-eclipse-flat-sandals%C2%A0-1N234J0101SOLAC9700.html"
+          },
+          {
+            "productId": "1G659A1301RENNA3702",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-renna-sandal-1G659A1301RENNA3702.html"
+          },
+          {
+            "productId": "1S381A1301RENNA2403",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/patty-renna-boot-1S381A1301RENNA2403.html"
+          },
+          {
+            "productId": "1L162W120MT03959999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-leather-sandals-1L162W120MT03959999.html"
+          },
+          {
+            "productId": "1F916W120MINTER2413",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-interstellar-pump-1F916W120MINTER2413.html"
+          },
+          {
+            "productId": "1F916W120TSATIN3302",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-twenties-pump-1F916W120TSATIN3302.html"
+          },
+          {
+            "productId": "1R559C100MC22319000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/superblade-tempest-ankle-boot-1R559C100MC22319000.html"
+          },
+          {
+            "productId": "2S263Z070NLAABR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/maxxxi-over-the-knee-2S263Z070NLAABR9000.html"
+          },
+          {
+            "productId": "2X136C0511C3117C037",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/explorer-sneaker-2X136C0511C3117C037.html"
+          },
+          {
+            "productId": "1L166W120MC21549000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-marta-sandal-1L166W120MC21549000.html"
+          },
+          {
+            "productId": "1G693C060TPANDO3206",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/kitten-blade-pandora-slingback-1G693C060TPANDO3206.html"
+          },
+          {
+            "productId": "1F916W120MC14449000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-patent-leather-pump-1F916W120MC14449000.html"
+          },
+          {
+            "productId": "2S420C0801CAYEN2413",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-dakota-boot-2S420C0801CAYEN2413.html"
+          },
+          {
+            "productId": "1S425C0601C30829000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/uma-alabama-boot-1S425C0601C30829000.html"
+          },
+          {
+            "productId": "2X121B0501HEDON6809",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/high-box-sneaker-2X121B0501HEDON6809.html"
+          },
+          {
+            "productId": "2X869T020NC22099000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-leather-sneaker-2X869T020NC22099000.html"
+          },
+          {
+            "productId": "1T831E1401T00059000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-over-the-knee%C2%A0%C2%A0-1T831E1401T00059000.html"
+          }
+        ],
+        "identitySha256": "76b30e0d1eb358fd183cd64b6968667775a3e5d1f2152e739bbff62cc8931521"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=9",
+        "offset": 192,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1T831E1401T00059000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-over-the-knee%C2%A0%C2%A0-1T831E1401T00059000.html"
+          },
+          {
+            "productId": "1N253B0301C29719999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/belle-epoque-sandal-1N253B0301C29719999.html"
+          },
+          {
+            "productId": "1F915W100TGLDFGZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-goldfinger-pump-1F915W100TGLDFGZZZZ.html"
+          },
+          {
+            "productId": "1T000D125TT00053127",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-over-the-knee-1T000D125TT00053127.html"
+          },
+          {
+            "productId": "1T094C0801NOMAD6809",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/venus-nomad-over-the-knee-1T094C0801NOMAD6809.html"
+          },
+          {
+            "productId": "1R556C030TARCEU9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/giselle-arceus-ankle-boot-1R556C030TARCEU9000.html"
+          },
+          {
+            "productId": "1T079A1001PLONG9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/micheele-over-the-knee-1T079A1001PLONG9000.html"
+          },
+          {
+            "productId": "2S430C0811T05983121",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-eureka-boot-2S430C0811T05983121.html"
+          },
+          {
+            "productId": "2X022Y0201ORMLKZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-leather-sneaker-2X022Y0201ORMLKZZZZ.html"
+          },
+          {
+            "productId": "2S397A081NHUSKY9001",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-husky-boot-2S397A081NHUSKY9001.html"
+          },
+          {
+            "productId": "2X894U0701BASIL9500",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-basilisco-sneaker-2X894U0701BASIL9500.html"
+          },
+          {
+            "productId": "2X135C051NC31179000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/explorer-sneaker-2X135C051NC31179000.html"
+          },
+          {
+            "productId": "2X121B0501HEDON9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/sneaker-i-box--2X121B0501HEDON9999.html"
+          },
+          {
+            "productId": "2X023Y080NSALEN9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/high-top-sneaker-2X023Y080NSALEN9000.html"
+          },
+          {
+            "productId": "1A283J0101C26759000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/crystal-ballet-flat-1A283J0101C26759000.html"
+          },
+          {
+            "productId": "1L214L1401TIFFA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-sandal--1L214L1401TIFFA9000.html"
+          },
+          {
+            "productId": "1G659A1301INTER2413",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-interstellar-sandal-1G659A1301INTER2413.html"
+          },
+          {
+            "productId": "1L556P120MAMINO9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-criss-cross-sandal-1L556P120MAMINO9999.html"
+          },
+          {
+            "productId": "1L491C1001T0596C163",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-heaven-sandal-1L491C1001T0596C163.html"
+          },
+          {
+            "productId": "1G694C1001C30803300",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-heaven-slingback-1G694C1001C30803300.html"
+          },
+          {
+            "productId": "1M408J0501MINOR3200",
+            "productUrl": "https://www.casadei.com/en/shoes/mules/julia-minorca-mule-1M408J0501MINOR3200.html"
+          },
+          {
+            "productId": "1F920W100MC14449000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/superblade-pump-1F920W100MC14449000.html"
+          },
+          {
+            "productId": "1S416C030TARCEU2413",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/giselle-arceus-boot-1S416C030TARCEU2413.html"
+          },
+          {
+            "productId": "1F911W1001MINOR3302",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-minorca-pump-1F911W1001MINOR3302.html"
+          }
+        ],
+        "identitySha256": "2531bce9bbc394d15b22c516e39000fbe3814a73540005488a164279dfbe2fde"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=10",
+        "offset": 216,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1R665E120TT00054607",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/blade-ankle-boot-1R665E120TT00054607.html"
+          },
+          {
+            "productId": "1T023V100MC21489000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-over-the-knee-1T023V100MC21489000.html"
+          },
+          {
+            "productId": "2S430C0811T05983218",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-eureka-boot-2S430C0811T05983218.html"
+          },
+          {
+            "productId": "1R522A0801C28609000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/concept-symphony-combat-boot-1R522A0801C28609000.html"
+          },
+          {
+            "productId": "1T012Z1001ARCEU2616",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/julia-over-the-knee-1T012Z1001ARCEU2616.html"
+          },
+          {
+            "productId": "2X822P0201HANOI9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-2X822P0201HANOI9999.html"
+          },
+          {
+            "productId": "1LG50D125MATIFN9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-sandal-1LG50D125MATIFN9000.html"
+          },
+          {
+            "productId": "1L420B1001SATIN3601",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-satin-sandal-1L420B1001SATIN3601.html"
+          },
+          {
+            "productId": "1F916W120MINTER9700",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-interstellar-pump-1F916W120MINTER9700.html"
+          },
+          {
+            "productId": "1F916W120MC11909000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-pump-1F916W120MC11909000.html"
+          },
+          {
+            "productId": "1F916W120MINTER1501",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-interstellar-pump-1F916W120MINTER1501.html"
+          },
+          {
+            "productId": "1S415C0801LABBB9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/nina-boot-1S415C0801LABBB9000.html"
+          },
+          {
+            "productId": "1S329Y100MC18329000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-suede-boot%C2%A0-1S329Y100MC18329000.html"
+          },
+          {
+            "productId": "2X894U0701BASIL2608",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-basilisco-sneaker-2X894U0701BASIL2608.html"
+          },
+          {
+            "productId": "2X894U0701SALEN9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-leather-sneakers-2X894U0701SALEN9999.html"
+          },
+          {
+            "productId": "2S227T070NRENNA9000",
+            "productUrl": "https://www.casadei.com/en/nexus-ankle-boot-2S227T070NRENNA9000.html"
+          },
+          {
+            "productId": "1G688C1301RENNA1407",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-renna-sandal-1G688C1301RENNA1407.html"
+          },
+          {
+            "productId": "1S335Y1001LABBB9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/michelle-boot-1S335Y1001LABBB9000.html"
+          },
+          {
+            "productId": "1S246Z1201RENNA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-ankle-boot%C2%A0-1S246Z1201RENNA9000.html"
+          },
+          {
+            "productId": "1L482C1301C30749000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/patty-platform-godyva-sandal-1L482C1301C30749000.html"
+          },
+          {
+            "productId": "1T094C0801NOMAD3702",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/venus-nomad-over-the-knee-1T094C0801NOMAD3702.html"
+          },
+          {
+            "productId": "1S369A0301C28602413",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/concept-symphony-boot-1S369A0301C28602413.html"
+          },
+          {
+            "productId": "1L483C0801C30729000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-godyva-sandal-1L483C0801C30729000.html"
+          },
+          {
+            "productId": "1F993J0501MINOR3200",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-leather-pump-1F993J0501MINOR3200.html"
+          }
+        ],
+        "identitySha256": "7be65ee349b49326a4472c905c31da26a9a117c51e2d0ec5b094085c7646047f"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=11",
+        "offset": 240,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1F916W120MINTER1301",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-interstellar-pump-1F916W120MINTER1301.html"
+          },
+          {
+            "productId": "1H083C1001MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/julia-flavour-minorca-pump-1H083C1001MINOR9000.html"
+          },
+          {
+            "productId": "1H085C100MC30889500",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-basilisco-debby-pump-1H085C100MC30889500.html"
+          },
+          {
+            "productId": "1F915W100MC30889500",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-basilisco-pump-1F915W100MC30889500.html"
+          },
+          {
+            "productId": "1G678B100MC15883615",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/superblade-minorca-slingback-1G678B100MC15883615.html"
+          },
+          {
+            "productId": "1F916W120TCAMOS4607",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-pump-1F916W120TCAMOS4607.html"
+          },
+          {
+            "productId": "1S413C080TT0522B353",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-sueade-debby-boot-1S413C080TT0522B353.html"
+          },
+          {
+            "productId": "2S397A0811HUSKY2415",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-husky-boot-2S397A0811HUSKY2415.html"
+          },
+          {
+            "productId": "1T081A0501NOMAD3121",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/new-muny-boot-1T081A0501NOMAD3121.html"
+          },
+          {
+            "productId": "1S330Y100MC22749000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-boot-1S330Y100MC22749000.html"
+          },
+          {
+            "productId": "1S370A0801C28603107",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/concept-symphony-boot-1S370A0801C28603107.html"
+          },
+          {
+            "productId": "2S432C0801T0600B364",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-ontario-boot-2S432C0801T0600B364.html"
+          },
+          {
+            "productId": "1T095W120TULTRA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/ultravox-over-the-knee-1T095W120TULTRA9000.html"
+          },
+          {
+            "productId": "1S329Y100MC18322703",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-nomad-boot-1S329Y100MC18322703.html"
+          },
+          {
+            "productId": "1T000D125TT00053715",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-over-the-knee-1T000D125TT00053715.html"
+          },
+          {
+            "productId": "1S246Z1201RENNA3121",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-ankle-boot%C2%A0-1S246Z1201RENNA3121.html"
+          },
+          {
+            "productId": "1L293J1001MINOR9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-minorca-sandal-1L293J1001MINOR9999.html"
+          },
+          {
+            "productId": "1F916W120MC15884408",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-minorca-pump%C2%A0-1F916W120MC15884408.html"
+          },
+          {
+            "productId": "1F916W120TCAMOS6809",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-pump-1F916W120TCAMOS6809.html"
+          },
+          {
+            "productId": "1R627L1401T00059000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/flora-ankle-boot-1R627L1401T00059000.html"
+          },
+          {
+            "productId": "1T012Z1001ARCEU9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/julia-over-the-knee-1T012Z1001ARCEU9000.html"
+          },
+          {
+            "productId": "1S419C120TKITANZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-kitana-boot-1S419C120TKITANZZZZ.html"
+          },
+          {
+            "productId": "1S410C0801BASIL2804",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/venus-basilisco-boot-1S410C0801BASIL2804.html"
+          },
+          {
+            "productId": "1S429C120TPANDL9999",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-pandora-boot-1S429C120TPANDL9999.html"
+          }
+        ],
+        "identitySha256": "0f8bfcc343d5c6038e49dde7133aedc942e4047cf0c256ae998ca72371305777"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=12",
+        "offset": 264,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1T076A080MC18326809",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-nomad-over-the-knee-1T076A080MC18326809.html"
+          },
+          {
+            "productId": "1S329Y100MC18326809",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-nomad-boot-1S329Y100MC18326809.html"
+          },
+          {
+            "productId": "2S338Y080NNOMAD9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/double-face-ankle-boot-2S338Y080NNOMAD9000.html"
+          },
+          {
+            "productId": "1S246Z1201RENNA2403",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-ankle-boot%C2%A0-1S246Z1201RENNA2403.html"
+          },
+          {
+            "productId": "2X951V0201C19673301",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-versilia-sneaker-2X951V0201C19673301.html"
+          },
+          {
+            "productId": "1T831E1401T00539000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-over-the-knee-1T831E1401T00539000.html"
+          },
+          {
+            "productId": "1L492C0801T0596C162",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-heaven-sandal-1L492C0801T0596C162.html"
+          },
+          {
+            "productId": "1M407J0801MINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/mules/julia-minorca-mule-1M407J0801MINOR9000.html"
+          },
+          {
+            "productId": "1N253B0301C29709000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/belle-epoque-samurai-sandal-1N253B0301C29709000.html"
+          },
+          {
+            "productId": "1LG50D125MC26263615",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/cappa-blade-solar-eclipse-sandal%C2%A0-1LG50D125MC26263615.html"
+          },
+          {
+            "productId": "1H091C030TMINOR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/giselle-minorca-pump-1H091C030TMINOR9000.html"
+          },
+          {
+            "productId": "1T076A080MC18323702",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-nomad-over-the-knee-1T076A080MC18323702.html"
+          },
+          {
+            "productId": "1S416C030TLABBB9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/giselle-boot-1S416C030TLABBB9000.html"
+          },
+          {
+            "productId": "2S444C0801CHAMO6809",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/double-face-chamonix-boot-2S444C0801CHAMO6809.html"
+          },
+          {
+            "productId": "3W483A0000VDMNO9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/vandome-bag%C2%A0-3W483A0000VDMNO9000.html"
+          },
+          {
+            "productId": "2R567C140NC15119000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/mammouth-boot-2R567C140NC15119000.html"
+          },
+          {
+            "productId": "1A315C0101C31472821",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/marmolada-ballet-flat-1A315C0101C31472821.html"
+          },
+          {
+            "productId": "1L287Y1401INTER9700",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform--interstellar-sandal-1L287Y1401INTER9700.html"
+          },
+          {
+            "productId": "1L287Y1401INTER1100",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform--interstellar-sandal-1L287Y1401INTER1100.html"
+          },
+          {
+            "productId": "3W436Y0000LOVEC9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-daily-bag%C2%A0-3W436Y0000LOVEC9000.html"
+          },
+          {
+            "productId": "2Q178Z070NLAABR9000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/maxxxi-ankle-boot-2Q178Z070NLAABR9000.html"
+          },
+          {
+            "productId": "2X023Y0801SALEN9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/high-top-sneaker-2X023Y0801SALEN9999.html"
+          },
+          {
+            "productId": "1T012Z1001NEONA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/julia-over-the-knee-1T012Z1001NEONA9000.html"
+          },
+          {
+            "productId": "1T076A100TGLDFGZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/blade-goldfinger-corsair-1T076A100TGLDFGZZZZ.html"
+          }
+        ],
+        "identitySha256": "13cb9792eff0f093fdb84beb213172e765557ae89a02ad53043978f3ab595fad"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=13",
+        "offset": 288,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1S410C0801BASIL2608",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/venus-basilisco-boot-1S410C0801BASIL2608.html"
+          },
+          {
+            "productId": "2S336Y0801RENNA6809",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/duble-face-ankle-boot-2S336Y0801RENNA6809.html"
+          },
+          {
+            "productId": "1T028W1401ARCEU9000",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/flora-over-the-knee-1T028W1401ARCEU9000.html"
+          },
+          {
+            "productId": "1A283J0101C26759999",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/crystal-ballet-flat-1A283J0101C26759999.html"
+          },
+          {
+            "productId": "2Y010D0101BEACH3401",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal--2Y010D0101BEACH3401.html"
+          },
+          {
+            "productId": "2Y010D0101BEACH3114",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-2Y010D0101BEACH3114.html"
+          },
+          {
+            "productId": "1A315C0101C31489999",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/marmolada-ballet-flat-1A315C0101C31489999.html"
+          },
+          {
+            "productId": "1H085C100MC14443812",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-debby-pump-1H085C100MC14443812.html"
+          },
+          {
+            "productId": "1H085C080TCAMOS4607",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-suede-debby-pump-1H085C080TCAMOS4607.html"
+          },
+          {
+            "productId": "1R569C0111C28929000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/village-renna-ankle-boot-1R569C0111C28929000.html"
+          },
+          {
+            "productId": "3W483A0000VDMVL8500",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/vandome-bag%C2%A0-3W483A0000VDMVL8500.html"
+          },
+          {
+            "productId": "1Q202Y0501C18342403",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/beat-ankle-book-1Q202Y0501C18342403.html"
+          },
+          {
+            "productId": "1S438C1211T05993206",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-winnipeg-ankle-boot-1S438C1211T05993206.html"
+          },
+          {
+            "productId": "1D340C0111C15992627",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/renna-loafer-1D340C0111C15992627.html"
+          },
+          {
+            "productId": "1D340C0111C15999000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/renna-loafer-1D340C0111C15999000.html"
+          },
+          {
+            "productId": "1L091V1401PANTEZZZZ",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-panthera-sandal%C2%A0-1L091V1401PANTEZZZZ.html"
+          },
+          {
+            "productId": "1F156E1401CAMOS9000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-1F156E1401CAMOS9000.html"
+          },
+          {
+            "productId": "1R569C0111C28922627",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/village-renna-ankle-boot-1R569C0111C28922627.html"
+          },
+          {
+            "productId": "3W501B0000VANDMMTCL",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/vandome-bag-3W501B0000VANDMMTCL.html"
+          },
+          {
+            "productId": "1S438C1211T05999000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nancy-winnipeg-ankle-boot-1S438C1211T05999000.html"
+          },
+          {
+            "productId": "3W458J0000PAKVL2403",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/park-avenue-bag%C2%A0-3W458J0000PAKVL2403.html"
+          },
+          {
+            "productId": "2X822P0201HANOI9000",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/off-road-2X822P0201HANOI9000.html"
+          },
+          {
+            "productId": "1N234J0101SOLAC1200",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/soraya-solar-eclipse-flat-sandals%C2%A0-1N234J0101SOLAC1200.html"
+          },
+          {
+            "productId": "1M889V100MC11559999",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-minorca-mule-1M889V100MC11559999.html"
+          }
+        ],
+        "identitySha256": "9ba9d2edf1a17642f04f3db0fa746b76f9d239b719e4b89fdd980add950cf2c1"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=14",
+        "offset": 312,
+        "total": 356,
+        "rawCount": 24,
+        "products": [
+          {
+            "productId": "1M889V100MC11559000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-minorca-mule-1M889V100MC11559000.html"
+          },
+          {
+            "productId": "1T028W1401ARCEU3810",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/flora-over-the-knee%C2%A0%C2%A0-1T028W1401ARCEU3810.html"
+          },
+          {
+            "productId": "1T095W120TULTRA3705",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/ultravox-over-the-knee-1T095W120TULTRA3705.html"
+          },
+          {
+            "productId": "3W382W0000LOVEC9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-leather%C2%A0bag-3W382W0000LOVEC9000.html"
+          },
+          {
+            "productId": "1S330Y100MC22742608",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/blade-boot-1S330Y100MC22742608.html"
+          },
+          {
+            "productId": "2T009T070NNEONA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/nexus-over-the-knee-2T009T070NNEONA9000.html"
+          },
+          {
+            "productId": "1T028W1401ARCEU2616",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/flora-over-the-knee-1T028W1401ARCEU2616.html"
+          },
+          {
+            "productId": "2R308T070NC15119000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/nexus-ankle-boot-2R308T070NC15119000.html"
+          },
+          {
+            "productId": "1R627L1401T00539000",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-ankle-boot-1R627L1401T00539000.html"
+          },
+          {
+            "productId": "1L488C1001C3077A863",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/julia-c-love-sandal-1L488C1001C3077A863.html"
+          },
+          {
+            "productId": "1F916W120TSATIN9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/blade-twenties-pump-1F916W120TSATIN9000.html"
+          },
+          {
+            "productId": "1T095W120TULTRA4607",
+            "productUrl": "https://www.casadei.com/en/shoes/overtheknee/ultravox-over-the-knee-1T095W120TULTRA4607.html"
+          },
+          {
+            "productId": "3W458J0000PKAVN3217",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/park-avenue-bag-3W458J0000PKAVN3217.html"
+          },
+          {
+            "productId": "3W457J0000BEAURMTCL",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-daily-bag%C2%A0-3W457J0000BEAURMTCL.html"
+          },
+          {
+            "productId": "2Y256J0101BHGLTA514",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal--2Y256J0101BHGLTA514.html"
+          },
+          {
+            "productId": "1F982Y1001TIFFA9000",
+            "productUrl": "https://www.casadei.com/en/shoes/pumps/michelle-platform-pump-1F982Y1001TIFFA9000.html"
+          },
+          {
+            "productId": "2S336Y0801RENNA3121",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/double-face-ankle-boot-2S336Y0801RENNA3121.html"
+          },
+          {
+            "productId": "3W503C0000GALVL2403",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/galleria-valour-bag-3W503C0000GALVL2403.html"
+          },
+          {
+            "productId": "2R360Z0701C15119999",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/maxxxi-leather-boot-2R360Z0701C15119999.html"
+          },
+          {
+            "productId": "3W457J0000BEAUR9999",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-daily-bag%C2%A0-3W457J0000BEAUR9999.html"
+          },
+          {
+            "productId": "3W500B0000VANDMB352",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/vandome-bag-3W500B0000VANDMB352.html"
+          },
+          {
+            "productId": "2Y010D0101BEACHA177",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-2Y010D0101BEACHA177.html"
+          },
+          {
+            "productId": "2Y010D0101BEACH9000",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal--2Y010D0101BEACH9000.html"
+          },
+          {
+            "productId": "1L091V1401SOLEC3300",
+            "productUrl": "https://www.casadei.com/en/shoes/platforms/flora-platform-solar-eclipse-sandal--1L091V1401SOLEC3300.html"
+          }
+        ],
+        "identitySha256": "a3935d48648c000560da4f4bcd29b5a921545c2ae0542839a345953cf31f3c21"
+      },
+      {
+        "url": "https://www.casadei.com/en-us/shoes/?page=15",
+        "offset": 336,
+        "total": 356,
+        "rawCount": 20,
+        "products": [
+          {
+            "productId": "3W507C0000BIGVL8500",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/bigli-velour-bag-3W507C0000BIGVL8500.html"
+          },
+          {
+            "productId": "2X067J0701SALEN9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-sabot-salento%C2%A0-2X067J0701SALEN9999.html"
+          },
+          {
+            "productId": "1S425C0601C30822413",
+            "productUrl": "https://www.casadei.com/en/shoes/high-boots/uma-alabama-boot-1S425C0601C30822413.html"
+          },
+          {
+            "productId": "1H093C100MC30769000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/superblade-ankle-boot-1H093C100MC30769000.html"
+          },
+          {
+            "productId": "3W511C0000FLRCX9999",
+            "productUrl": "https://www.casadei.com/en/special-categories/prefw26/chamonix-bag-3W511C0000FLRCX9999.html"
+          },
+          {
+            "productId": "2R360Z070NC30639000",
+            "productUrl": "https://www.casadei.com/en/shoes/ankle-boots/maxxxi-leather-2R360Z070NC30639000.html"
+          },
+          {
+            "productId": "3W458J0000PAKAL6809",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/park-avenue-alabama-bag-3W458J0000PAKAL6809.html"
+          },
+          {
+            "productId": "3W507C0000BIGBS2608",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/bigli-basilisco-bag-3W507C0000BIGBS2608.html"
+          },
+          {
+            "productId": "3W511C0000FLRCX9000",
+            "productUrl": "https://www.casadei.com/en/special-categories/prefw26/chamonix-bag-3W511C0000FLRCX9000.html"
+          },
+          {
+            "productId": "2X068J0701HANOI9999",
+            "productUrl": "https://www.casadei.com/en/shoes/sneakers/nexus-sabot-hanoi%C2%A0-2X068J0701HANOI9999.html"
+          },
+          {
+            "productId": "2Y000D0101BEACH3401",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal-2Y000D0101BEACH3401.html"
+          },
+          {
+            "productId": "3W383W0000LOVEC9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/ale-leather-bag-3W383W0000LOVEC9000.html"
+          },
+          {
+            "productId": "3W510C0000CTNCX9000",
+            "productUrl": "https://www.casadei.com/en/special-categories/prefw26/cortina-chamonix-bag-3W510C0000CTNCX9000.html"
+          },
+          {
+            "productId": "3W513C0000SUBZE2608",
+            "productUrl": "https://www.casadei.com/en/special-categories/prefw26/sub-zero-bag-3W513C0000SUBZE2608.html"
+          },
+          {
+            "productId": "2Y255J0101BHGLTA513",
+            "productUrl": "https://www.casadei.com/en/shoes/flats/jelly-thong-sandal-2Y255J0101BHGLTA513.html"
+          },
+          {
+            "productId": "1L488N120MC03529000",
+            "productUrl": "https://www.casadei.com/en/shoes/sandals/blade-v-celebrity%C2%A0sandal-1L488N120MC03529000.html"
+          },
+          {
+            "productId": "3W380V0000BEAUR9999",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-shopper%C2%A0bag-3W380V0000BEAUR9999.html"
+          },
+          {
+            "productId": "3W380V0000BEAUR9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-mini-shopper-3W380V0000BEAUR9000.html"
+          },
+          {
+            "productId": "3W379V0000BEAURMTCL",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/beaurivage-shopper%C2%A0bag-3W379V0000BEAURMTCL.html"
+          },
+          {
+            "productId": "3W458J0000PKAVN9000",
+            "productUrl": "https://www.casadei.com/en/accessories/bags/park-avenue-bag%C2%A0-3W458J0000PKAVN9000.html"
+          }
+        ],
+        "identitySha256": "79aff7c310edab26a9a42099fe36b319df7ca9f0f70ed05efa2d51e29e6bedb1"
+      }
+    ],
+    "replayIdentitySha256": [
+      "09fc28d13b11c33ea99c54f67eab4e9d6ba1ef1f8f64904674a866d8a3817fd5",
+      "6f056b7b23758ef40a78c1ee398448853ed671af08ea911ee377b874de9f72a4",
+      "b30646163ad37cfac002216f08327a49ed7f5ffb540068f2ffc7c3060e92a1fd",
+      "49fd698c011f406ac9e731c7861ebbede57f2973d07d4c8d0e3d892336c8224e",
+      "c7cff32c5901ebb22b381f13a15397507169f1bd5ff7404888a7ecab8ea9fc10",
+      "c72ca3d690857a81a2a242fd52bbf5b2312dc12c820a35222c0cacb685488393",
+      "61f74ccf25c4aa821e9e0ae5f0fad9452399153c43953890a4248a10926bf762",
+      "76b30e0d1eb358fd183cd64b6968667775a3e5d1f2152e739bbff62cc8931521",
+      "2531bce9bbc394d15b22c516e39000fbe3814a73540005488a164279dfbe2fde",
+      "7be65ee349b49326a4472c905c31da26a9a117c51e2d0ec5b094085c7646047f",
+      "0f8bfcc343d5c6038e49dde7133aedc942e4047cf0c256ae998ca72371305777",
+      "13cb9792eff0f093fdb84beb213172e765557ae89a02ad53043978f3ab595fad",
+      "9ba9d2edf1a17642f04f3db0fa746b76f9d239b719e4b89fdd980add950cf2c1",
+      "a3935d48648c000560da4f4bcd29b5a921545c2ae0542839a345953cf31f3c21",
+      "79aff7c310edab26a9a42099fe36b319df7ca9f0f70ed05efa2d51e29e6bedb1"
+    ],
+    "duplicateOccurrences": 1,
+    "uniqueProductCount": 355
+  }
+}

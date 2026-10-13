@@ -74,6 +74,7 @@ export interface SalesforceModelCard {
 }
 
 export interface SalesforceCatalog {
+  casadeiReconciliation?: import('./casadeiReconciliation').CasadeiReconciliation;
   scope: SalesforceScope;
   collectedAt: string;
   status: SalesforceCatalogStatus;
