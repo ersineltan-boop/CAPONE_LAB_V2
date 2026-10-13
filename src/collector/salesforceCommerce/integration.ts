@@ -5,7 +5,7 @@ import type { PilotProduct, PilotSourceConfig } from '../types';
 import { collectCasadeiWomensShoes, CASADEI_SCOPE, parseCasadeiMobifySearch } from './casadei';
 import { collectJilSanderWomensShoes, JIL_SANDER_SCOPE, parseJilSanderResultTotal, parseJilSanderTiles } from './jilSander';
 import type { SalesforceCatalog, SalesforceHttp, SalesforceScope } from './types';
-import { casadeiPageEvidence, reconciledCasadeiTotal } from './casadeiReconciliation';
+import { casadeiPageEvidence, casadeiPageIdentity, reconciledCasadeiTotal } from './casadeiReconciliation';
 import { farfetchAccessBlocked } from '../farfetchAccess';
 
 export function salesforceScope(slug: string): SalesforceScope | null {
@@ -93,8 +93,8 @@ export async function collectVerifiedSalesforceCatalog(config: PilotSourceConfig
   const final = await guarded.fetchText(scope.collectionUrl);
   const finalTotal = config.id === 'casadei' ? parseCasadeiMobifySearch(final.text).total : parseJilSanderResultTotal(final.text);
   if (!final.ok || finalTotal === null || finalTotal !== catalog.sourceReportedTotal) errors.push('SALESFORCE_FINAL_SOURCE_COUNT_UNVERIFIED');
-  if (catalog.casadeiReconciliation && casadeiPageEvidence(scope.collectionUrl, parseCasadeiMobifySearch(final.text)).identitySha256 !==
-      catalog.casadeiReconciliation.pages[0]?.identitySha256) errors.push('SALESFORCE_FINAL_SOURCE_IDENTITY_CHANGED');
+  if (catalog.casadeiReconciliation && casadeiPageIdentity(casadeiPageEvidence(scope.collectionUrl, parseCasadeiMobifySearch(final.text))) !==
+      casadeiPageIdentity(catalog.casadeiReconciliation.pages[0]!)) errors.push('SALESFORCE_FINAL_SOURCE_IDENTITY_CHANGED');
   if (catalog.scope.storefrontCurrency !== 'USD') errors.push('SALESFORCE_US_CURRENCY_UNVERIFIED');
   const result = salesforceCatalogToAttempt(catalog);
   result.errors.push(...errors);

@@ -12,7 +12,7 @@ offsets are contiguous from zero to the exact source total, each repeated ID
 keeps the same URL, and a second complete traversal returns identical ordered
 identities. A final page-one check must also match. The eligible count used by
 the publication gate is then 329, after proven duplicates and non-footwear
-exclusions. Checksum evidence and both traversals are preserved in the adjacent
+exclusions. Exact ordered identity evidence from both traversals is preserved in the adjacent
 JSON audit. Duplicate galleries are merged rather than discarded.
 
 Missing offsets, malformed rows, changed identities, changed totals, failed

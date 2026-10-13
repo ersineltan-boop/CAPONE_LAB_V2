@@ -2,7 +2,7 @@ import { evaluateFootwearProduct, inferFootwearCategoryFromSignals } from "../fo
 import { assessSalesforceCatalog } from "./coverage";
 import { canonicalProductUrl, dedupeUrls } from "./gallery";
 import { groupColorwaysIntoModelCards } from "./families";
-import { casadeiPageEvidence, reconciledCasadeiTotal } from './casadeiReconciliation';
+import { casadeiPageEvidence, casadeiPageIdentity, reconciledCasadeiTotal } from './casadeiReconciliation';
 import type {
   CasadeiPageEvidence,
   CasadeiReconciliation,
@@ -333,19 +333,19 @@ export async function collectCasadeiWomensShoes(
   const scopeProductUrls = [...seen.values()].map((hit) => hit.productUrl).sort();
   let casadeiReconciliation: CasadeiReconciliation | undefined;
   if (paginationExhausted && !errors.length && sourceReportedTotal !== null && seen.size < sourceReportedTotal) {
-    const proposed: CasadeiReconciliation = {pages: pageEvidence, replayIdentitySha256: pageEvidence.map(p => p.identitySha256),
+    const proposed: CasadeiReconciliation = {pages: pageEvidence, replayPages: pageEvidence,
       duplicateOccurrences: sourceReportedTotal - seen.size, uniqueProductCount: seen.size};
     // Validate continuous offsets, every raw slot and exact identities before making a replay.
     if (reconciledCasadeiTotal(sourceReportedTotal, scopeProductUrls, proposed) !== null) {
-      proposed.replayIdentitySha256 = [];
+      proposed.replayPages = [];
       for (const page of pageEvidence) {
         const response = await http.fetchText(page.url);
         const replay = casadeiPageEvidence(page.url, parseCasadeiMobifySearch(response.text));
-        if (!response.ok || response.url !== page.url || replay.identitySha256 !== page.identitySha256) {
+        if (!response.ok || response.url !== page.url || casadeiPageIdentity(replay) !== casadeiPageIdentity(page)) {
           errors.push(`Casadei duplicate reconciliation changed: ${page.url}`);
           break;
         }
-        proposed.replayIdentitySha256.push(replay.identitySha256);
+        proposed.replayPages.push(replay);
       }
       if (reconciledCasadeiTotal(sourceReportedTotal, scopeProductUrls, proposed) !== null) casadeiReconciliation = proposed;
     }

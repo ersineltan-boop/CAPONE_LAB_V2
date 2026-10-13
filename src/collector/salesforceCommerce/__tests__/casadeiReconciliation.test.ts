@@ -21,7 +21,7 @@ describe('Casadei duplicate reconciliation', () => {
     expect(c.accepted).toHaveLength(3);
     expect(salesforceCatalogToAttempt(c)).toMatchObject({sourceReportedProductCount:3,rawProductUrlsDiscovered:3,duplicateCount:1,errors:[]});
     const evidence=structuredClone(c.casadeiReconciliation!);
-    evidence.replayIdentitySha256[1]='0'.repeat(64);
+    evidence.replayPages[1]!.products[0]!.productUrl='https://www.casadei.com/en/shoes/other.html';
     expect(reconciledCasadeiTotal(4,c.scopeProductUrls,evidence)).toBeNull();
     expect(salesforceCatalogToAttempt({...c,casadeiReconciliation:evidence}).errors).toContain('SALESFORCE_DUPLICATE_EVIDENCE_INVALID');
   });
