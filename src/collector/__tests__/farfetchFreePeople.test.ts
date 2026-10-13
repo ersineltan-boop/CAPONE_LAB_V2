@@ -46,6 +46,21 @@ describe("Farfetch marketplace JSON-LD collector", () => {
     );
     expect(tote).toBeNull();
   });
+
+  it("uses an explicit Farfetch slipper category when the title omits the silhouette", () => {
+    const product = farfetchJsonLdToProduct(
+      {
+        "@type": "Product",
+        name: "London shearling shoes",
+        image: "https://cdn-images.farfetch-contents.com/1_480.jpg",
+        brand: { name: "Birkenstock" },
+        offers: { url: "/uk/shopping/women/birkenstock-london-item-1.aspx" },
+      },
+      "https://www.farfetch.com/uk/shopping/women/slippers-1/items.aspx",
+      "2026-10-13T20:00:00.000Z",
+    );
+    expect(product?.category).toBe("LOAFER");
+  });
 });
 
 describe("Free People marketplace blocker", () => {

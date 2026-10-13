@@ -40,6 +40,15 @@ describe("assignPrimaryCategory boundary cases", () => {
     expect(oxford).toMatchObject({primaryCategory:"OXFORD_DERBY",provenance:"SOURCE_CATEGORY"});
     expect(loafer).toMatchObject({primaryCategory:"LOAFER",provenance:"SOURCE_CATEGORY"});
   });
+  it.each([
+    ["/uk/shopping/women/espadrilles-1/items.aspx", "ESPADRILLE"],
+    ["/uk/shopping/women/derby-oxford-shoes-1/items.aspx", "OXFORD_DERBY"],
+    ["/uk/shopping/women/slippers-1/items.aspx", "LOAFER"],
+    ["/uk/shopping/women/flip-flops-slides-1/items.aspx", "SANDAL"],
+  ])("uses the exact Farfetch source category %s", (sourceCategoryText, primaryCategory) => {
+    expect(assignPrimaryCategory({productName:"Opaque model name",legacyCategory:"OTHER_FOOTWEAR",sourceCategoryText}))
+      .toMatchObject({primaryCategory,provenance:"SOURCE_CATEGORY"});
+  });
   it("Ballet sneaker -> SNEAKER + BALLET influence", () => {
     const result = assignPrimaryCategory({ productName: "Ballet sneaker in leather" });
     expect(result.primaryCategory).toBe("SNEAKER");

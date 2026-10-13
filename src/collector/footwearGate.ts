@@ -416,6 +416,10 @@ export function inferFootwearCategoryFromSignals(input: FootwearGateInput): Foot
   }
 
   if (/\bloafer|\bmocassim|\bmoccasin|\bmocassin/.test(collectionText)) return "LOAFER";
+  // The legacy taxonomy has no dedicated slipper bucket.  Keep the existing
+  // project convention and map an explicit retailer slipper category to the
+  // closest supported silhouette instead of leaving it unresolved.
+  if (/\bslippers?\b/.test(collectionText)) return "LOAFER";
   if (/\bmule/.test(collectionText)) return "MULE";
   if (/\bwedge/.test(collectionText)) return "WEDGE";
   if (/\bsandal|\bslide|\bsandalia|\bsandália|\brasteira/.test(collectionText)) return "SANDAL";
@@ -569,7 +573,7 @@ export function evaluateStoredPilotProduct(input: {
     };
   }
 
-  const exactProductFootwearCategory=/\/women\/shoes\/(?:ballet-pumps|oxfords-derbies|sneakers|loafers)(?:\/|\s|$)/
+  const exactProductFootwearCategory=/\/women\/shoes\/(?:ballet-pumps|oxfords-derbies|sneakers|loafers)(?:\/|\s|$)|\/uk\/shopping\/women\/(?:espadrilles|derby-oxford-shoes|slippers|flip-flops-slides)-1\/items\.aspx(?:\s|$)/
     .test(`${input.sourceCategoryPath??''} ${input.sourceCategoryUrl??''}`);
   if(input.category==='OTHER_FOOTWEAR'&&exactProductFootwearCategory)return {
     decision:'ACCEPT_FOOTWEAR',category:input.category,validationMethod:'STORED_PRODUCT_REVIEW',
