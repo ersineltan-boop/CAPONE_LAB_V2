@@ -24,6 +24,7 @@ case "$2" in
 esac
 `, { mode: 0o755 });
     writeFileSync(join(root, "sleep"), "#!/usr/bin/env bash\nexit 0\n", { mode: 0o755 });
+    writeFileSync(join(root, "seq"), "#!/usr/bin/env bash\nprintf '1\\n2\\n3\\n'\n", { mode: 0o755 });
     return spawnSync("bash", [resolve("scripts/wait-for-pr-ci.sh"), sha], { encoding: "utf8", env: { ...process.env, PATH: `${root}:${process.env.PATH}`, MOCK_ROOT: root, DELAYED: delayed ? "1" : "0", GH_TOKEN: "test-placeholder", GITHUB_REPOSITORY: "example/repo" }, timeout: 10000 });
   } finally { rmSync(root, { recursive: true, force: true }); }
 }

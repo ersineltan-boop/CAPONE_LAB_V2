@@ -22,7 +22,7 @@ for _attempt in $(seq 1 60); do
       fi
       run_id="$(jq -r '.id' <<< "$run")"
       jobs="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${run_id}/jobs")"
-      if ! jq -e '[.jobs[] | select(.name == "Full tests and production build" and .head_sha == "'"$head_sha"'")] | length == 1 and all(.[]; .status == "completed" and .conclusion == "success")' <<< "$jobs" >/dev/null; then
+      if ! jq -e --arg sha "$head_sha" '[.jobs[] | select(.name == "Full tests and production build" and .head_sha == $sha)] | length == 1 and all(.[]; .status == "completed" and .conclusion == "success")' <<< "$jobs" >/dev/null; then
         echo "PR CI has no successful exact-head test/build job; publication stopped: ${run_url}" >&2
         exit 1
       fi
