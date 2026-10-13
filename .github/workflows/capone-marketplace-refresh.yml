@@ -14,6 +14,7 @@ permissions:
   contents: write
   pull-requests: write
   statuses: read
+  actions: read
 
 jobs:
   refresh:

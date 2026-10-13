@@ -88,9 +88,13 @@ else
 fi
 
 pr_number="${pr_url##*/}"
+bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "$head_sha"
 require_unchanged_main
 merged="false"
 for _attempt in $(seq 1 12); do
+  # Recheck on retries: approvals/check reruns can change while merging waits.
+  bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "$head_sha"
+  require_unchanged_main
   if gh pr merge "$pr_url" \
     --squash \
     --delete-branch \
