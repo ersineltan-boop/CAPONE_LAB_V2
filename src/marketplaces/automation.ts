@@ -3,6 +3,9 @@ import type { PilotProduct } from "../collector/types";
 import {validateVerifiedCategoryScopes, type VerifiedCategoryScope} from './verifiedCategoryScopes';
 import {validateVerifiedProducts} from './verifiedProductEvidence';
 import type {VerifiedFarfetchProduct} from '../collector/farfetchProductIdentity';
+import {evaluateStoredPilotProduct} from '../collector/footwearGate';
+import {analyzeProduct} from '../analysis/analyzeProduct';
+import {buildTaxonomyFromProduct} from '../taxonomy/buildTaxonomy';
 import {
   isExcludedMarketplaceBrand,
   MARKETPLACE_PRESENTATION_POLICY,
@@ -103,7 +106,13 @@ function hasImage(product: PilotProduct): boolean {
 }
 
 function hasTaxonomy(product: PilotProduct): boolean {
-  return typeof product.category === "string" && CLASSIFIED_FOOTWEAR_CATEGORIES.has(product.category);
+  if (typeof product.category === 'string' && CLASSIFIED_FOOTWEAR_CATEGORIES.has(product.category)) return true;
+  // These supported primary categories have no distinct legacy enum value.
+  // OTHER_FOOTWEAR alone is not proof: require the same product evidence and
+  // classifier used to build its delivered family, plus the footwear gate.
+  if (product.category !== 'OTHER_FOOTWEAR' || evaluateStoredPilotProduct(product).decision !== 'ACCEPT_FOOTWEAR') return false;
+  const primary = buildTaxonomyFromProduct(analyzeProduct(product)).primaryCategory;
+  return primary === 'ESPADRILLE' || primary === 'OXFORD_DERBY' || primary === 'CLOG';
 }
 
 function policyEligible(products: readonly PilotProduct[]): PilotProduct[] {

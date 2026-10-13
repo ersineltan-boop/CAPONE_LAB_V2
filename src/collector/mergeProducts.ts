@@ -19,7 +19,10 @@ function pickDate(
 }
 
 function variantColorKey(variant: PilotProductVariant): string {
-  return (variant.color ?? "").trim().toLowerCase() || (variant.title ?? "").trim().toLowerCase() || "default";
+  // A colour can contain several independent size SKUs. A vendor may also reuse
+  // one SKU for different size titles, so neither colour nor SKU alone is identity.
+  return JSON.stringify([variant.sku?.trim() || null, (variant.color ?? '').trim().toLowerCase(),
+    (variant.title ?? '').trim().toLowerCase()]);
 }
 
 function mergeVariantImages(
@@ -84,6 +87,7 @@ export function mergeProductRecords(
     null;
 
   return {
+    ...existing,
     ...incoming,
     discoveredAt: earliestIsoDate(existing.discoveredAt, incoming.discoveredAt),
     publishedAt: pickDate(incoming.publishedAt, existing.publishedAt),
@@ -93,6 +97,18 @@ export function mergeProductRecords(
     imageUrl: images[0] ?? incoming.imageUrl ?? existing.imageUrl,
     color,
     variants,
+    // Thin listing cards omit detail-page attributes; omission is not deletion.
+    sourceVerifiedAt: incoming.sourceVerifiedAt ?? existing.sourceVerifiedAt,
+    sourceModelCode: incoming.sourceModelCode ?? existing.sourceModelCode,
+    sourceHsCode: incoming.sourceHsCode ?? existing.sourceHsCode,
+    sourceSizes: existing.sourceSizes || incoming.sourceSizes
+      ? [...new Map([...(existing.sourceSizes ?? []).map(size => incoming.sourceSizes === undefined ? size : {...size, selectable: null}), ...(incoming.sourceSizes ?? [])]
+        .map(size => [JSON.stringify([size.sku, size.size]), size])).values()] : undefined,
+    material: incoming.material ?? existing.material,
+    toeShape: incoming.toeShape ?? existing.toeShape,
+    heelType: incoming.heelType ?? existing.heelType,
+    heelHeight: incoming.heelHeight ?? existing.heelHeight,
+    details: incoming.details ?? existing.details,
     isNewArrivalsCollection:
       Boolean(existing.isNewArrivalsCollection) || Boolean(incoming.isNewArrivalsCollection),
     // A current explicit badge result replaces a historical badge, including false.
