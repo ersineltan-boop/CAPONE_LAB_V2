@@ -35,8 +35,13 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    generic `Shoes` breadcrumb and remains the sole pending row, so publication
    remains PARTIAL. The 837-row baseline lost no URL, model ID, gallery, source
    product link or SKU identity, and none of the 23 new rows was marked NEW.
-   This is delivery evidence, not a live claim; the exact-head CI/Preview and
-   merge-SHA production/live-shard gates below still apply.
+   This follow-up is live via PR180 (merge
+   `3e90291897c61231ede6d299b697fe2f481eeaf5`): exact-head full CI and Preview
+   passed, the merge-SHA production deployment is READY, and the production
+   alias returned the 24S shard with 843 visible families and coverage
+   `PARTIAL / ready 860 / pending 1`. The corrected Jazz and LV Oxford rows use
+   the exact source categories while retaining their old IDs; Ponti is absent
+   from the visible shard.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, and continue bounded remaining Farfetch scopes without
    treating stale checkpoints as fresh proof. The 446 Farfetch pending rows
