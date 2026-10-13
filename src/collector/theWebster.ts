@@ -7,6 +7,7 @@ import { shopifyProductToPilot } from "./shopify";
 import { detectNewBadgeInText } from "../newArrivals/detectNewness";
 import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
 import { withExplicitMarketplaceTaxonomy } from "./marketplaceTaxonomy";
+import { reviewedTheWebsterCategory } from './theWebsterReviewedCategories';
 import type { PilotProduct, PilotSourceConfig } from "./types";
 
 export const THE_WEBSTER_ID = "the-webster";
@@ -124,6 +125,9 @@ export function parseTheWebsterSourceTotal(html: string): number | null {
 // Recover only explicit retailer category tags or description statements; never
 // infer a footwear type from collection membership alone.
 export function extractTheWebsterFootwearType(raw: TheWebsterRawProduct): string | null {
+  // A concrete source type takes precedence over generic construction copy.
+  // Only known migration/generic types need tag or description recovery.
+  if (raw.product_type?.trim() && !/^(?:Migration_Size|Shoes?|Footwear)$/i.test(raw.product_type.trim())) return raw.product_type;
   const tags = Array.isArray(raw.tags) ? raw.tags : (raw.tags ?? "").split(",");
   const types = tags.map((tag) => tag.replace(/^product_type_merchandise:/i, "").trim());
   for (const type of types) {
@@ -168,6 +172,7 @@ export function theWebsterRawProductToPilot(
 
   return withExplicitMarketplaceTaxonomy({
     ...product,
+    category: product.category === 'OTHER_FOOTWEAR' ? reviewedTheWebsterCategory(raw) ?? product.category : product.category,
     source: THE_WEBSTER_ID,
     sourceProductType: raw.product_type ?? "",
     brand: vendor,
