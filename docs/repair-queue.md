@@ -72,9 +72,13 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    1,141 in 138 files; catalog, TypeScript and Vite production build passed.
    The prepared Farfetch shard contains 4,389 visible families with
    `PARTIAL / ready 4487 / pending 0`.
-   Release still requires exact-head CI/Preview and
-   merge-SHA production/live-shard verification; this paragraph is not a live
-   claim.
+   Released through PR184: exact-head CI and same-SHA Preview READY passed
+   before merge. Production is READY for merge
+   `827d37905652bfe4175e5c898cf25765ab112d63`. The live HTTP200 Farfetch shard
+   is byte-identical to the prepared shard: 4,389 visible families,
+   `PARTIAL / ready 4487 / pending 0`. Recovered George Cox `17598550` is
+   visible as OXFORD_DERBY with both actual source images. Remaining source
+   scopes are still incomplete; do not label the whole marketplace FULL.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.
