@@ -13,6 +13,19 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('recognizes D-ring creepers as footwear without admitting actual rings or bags', () => {
+    const item = {name:'x 10 Corso Como D-ring embellished creepers',brand:{name:'George Cox'},
+      image:['https://cdn-images.farfetch-contents.com/17/59/85/50/17598550_36651036_480.jpg'],
+      offers:{url:'/uk/shopping/women/george-cox-d-ring-creepers-item-17598550.aspx'}};
+    const listing='https://www.farfetch.com/uk/shopping/women/derby-oxford-shoes-1/items.aspx';
+    const product=farfetchJsonLdToProduct(item,listing,'2026-10-14T08:00:00Z');
+    expect(product?.productName).toBe(item.name);
+    expect(product?.sourceCategoryUrl).toBe(listing);
+    for(const name of ['D-ring embellished ring','creepers-print tote bag']) {
+      const offers={url:`/uk/shopping/women/test-${name.replaceAll(' ','-')}-item-2.aspx`};
+      expect(farfetchJsonLdToProduct({...item,name,offers},listing,'2026-10-14T08:00:00Z')).toBeNull();
+    }
+  });
   it('reads the full catalog total independently of the JSON-LD page card count', () => {
     const state = {apolloInitialState:{ROOT_QUERY:{'productCatalog:{"first":96}':{
       totalCount:63123,pageInfo:{startCursor:btoa('97'),hasNextPage:true}},

@@ -455,6 +455,7 @@ function hasTitleHandleFootwearSupport(input: FootwearGateInput): string | null 
     /\bmary[- ]?janes?\b/i,
     /\bslingback/i,
     /\bclog/i,
+    /\bcreepers?\b/i,
   ];
   for (const pattern of hits) {
     if (pattern.test(text)) return pattern.source;
