@@ -57,6 +57,24 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    Vercel Preview passed before merge, and the merge-SHA production deployment
    is READY. The production alias returned the Farfetch shard over HTTP with
    3,852 visible families and coverage `PARTIAL / ready 3950 / pending 0`.
+   On 14 October, a fresh bounded Oxford/Derby traversal identified why this
+   small scope previously failed reconciliation: the George Cox
+   `17598550` D-ring creepers were incorrectly excluded as a ring, leaving
+   536 converted products for 537 source cards. A narrow footwear vocabulary
+   fix recognizes creepers while regression tests continue excluding real
+   rings and bags. A new atomic/checksummed epoch at
+   `2026-10-14T08:17:54.328Z` reconciled 537 unique URLs and 537 products over
+   six listing pages plus the final unchanged first-page/count check, with no
+   access or collector errors. The accepted PARTIAL marketplace proposal has
+   4,487 archived products, 4,481 families and zero pending. The 3,950-product
+   baseline loses no URL, family ID, gallery image, size/SKU, variant identity
+   or NEW state; none of the 537 additions was marked NEW. Full local tests:
+   1,141 in 138 files; catalog, TypeScript and Vite production build passed.
+   The prepared Farfetch shard contains 4,389 visible families with
+   `PARTIAL / ready 4487 / pending 0`.
+   Release still requires exact-head CI/Preview and
+   merge-SHA production/live-shard verification; this paragraph is not a live
+   claim.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.
