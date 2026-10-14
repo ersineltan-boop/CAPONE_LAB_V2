@@ -79,6 +79,21 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    `PARTIAL / ready 4487 / pending 0`. Recovered George Cox `17598550` is
    visible as OXFORD_DERBY with both actual source images. Remaining source
    scopes are still incomplete; do not label the whole marketplace FULL.
+   On 14 October, a bounded official Flip-flops/Slides traversal saw 1,145
+   source cards over 12 pages. Two source-listed products (`Havaianas`
+   `39058882` and `Coperni` `33883777`) were initially excluded because
+   their real footwear titles include `Top` and `belt`. The narrow footwear
+   title support now recognizes flip-flops and retains the clothing/accessory
+   exclusions. A fresh atomic/checksummed epoch at
+   `2026-10-14T13:21:17.214Z` reconciled 1,145 source URLs to 1,145
+   products and rechecked unchanged count/first-page identity without access
+   errors. Policy excludes 116 items; the verified category has 1,029
+   eligible rows. The preserving proposal grows the Farfetch archive from
+   4,487 products / 4,481 families to 5,504 products / 5,497 families,
+   pending zero. It adds 1,017 archived products without losing any previous
+   URL, family ID, real image, size/SKU or NEW state; no addition is marked NEW.
+   This is a category-only PARTIAL marketplace proposal. Release validation
+   and live proof remain pending.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.
