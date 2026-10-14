@@ -396,7 +396,7 @@ export function inferFootwearCategoryFromSignals(input: FootwearGateInput): Foot
   const collectionText = categoryEvidenceText(input);
   const titleType = productTitleEvidence(input);
 
-  if (/\bthong\b|\bflip flop\b|\bchinelo\b/.test(collectionText)) return "THONG";
+  if (/\bthong\b|\bflip[- ]flops?\b|\bchinelo\b/.test(collectionText)) return "THONG";
   if (/\bankle boot|\bankle-boot/.test(collectionText)) return "ANKLE_BOOT";
   if (/\bknee[- ]high boot|\bknee boot|\bboots?\b|\bbota\b|\bbotas\b|\bbottine/.test(collectionText)) {
     return "BOOT";
@@ -446,6 +446,7 @@ function hasTitleHandleFootwearSupport(input: FootwearGateInput): string | null 
     /\bmule/i,
     /\bsneaker/i,
     /\bslide/i,
+    /\bflip[- ]flops?\b/i,
     /\bslipper/i,
     /\bwedge/i,
     /\bespar/i,

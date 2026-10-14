@@ -13,6 +13,25 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('keeps source-listed flip-flops with clothing or accessory words in the style name', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/flip-flops-slides-1/items.aspx';
+    for (const [name, brand, slug] of [
+      ['X Kidsuper Top Camo flip-flops','Havaianas','havaianas-x-kidsuper-top-camo-flip-flops-item-39058882'],
+      ['belt flip flops','Coperni','coperni-belt-flip-flops-item-33883777'],
+    ]) {
+      const item={name,brand:{name},image:['https://cdn-images.farfetch-contents.com/a_480.jpg'],
+        offers:{url:`/uk/shopping/women/${slug}.aspx`}};
+      const product=farfetchJsonLdToProduct(item,listing,'2026-10-14T13:00:00Z');
+      expect(product?.category).toBe('THONG');
+      expect(product?.sourceCategoryUrl).toBe(listing);
+    }
+    for (const [name, slug] of [
+      ['Kidsuper camo top','kidsuper-camo-top-item-1'],
+      ['Coperni leather belt','coperni-leather-belt-item-2'],
+    ]) {
+      expect(farfetchJsonLdToProduct({name,brand:{name:'Test'},offers:{url:`/uk/shopping/women/${slug}.aspx`}},listing,'2026-10-14T13:00:00Z')).toBeNull();
+    }
+  });
   it('recognizes D-ring creepers as footwear without admitting actual rings or bags', () => {
     const item = {name:'x 10 Corso Como D-ring embellished creepers',brand:{name:'George Cox'},
       image:['https://cdn-images.farfetch-contents.com/17/59/85/50/17598550_36651036_480.jpg'],
