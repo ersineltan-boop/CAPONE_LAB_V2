@@ -92,8 +92,13 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    4,487 products / 4,481 families to 5,504 products / 5,497 families,
    pending zero. It adds 1,017 archived products without losing any previous
    URL, family ID, real image, size/SKU or NEW state; no addition is marked NEW.
-   This is a category-only PARTIAL marketplace proposal. Release validation
-   and live proof remain pending.
+   Released via PR186. Exact-head full CI (1,142 tests and production build)
+   and same-SHA Preview READY passed before merge. Production is READY for
+   merge `ec65c699ebf5b4d6c501658ebe4769f623922fb5`. The live production
+   alias returned the Farfetch shard with HTTP200, byte-identical to the
+   prepared shard: 5,405 visible families, `PARTIAL / ready 5504 / pending 0`.
+   Both recovered source products are present. Only this category is FULL;
+   the marketplace remains PARTIAL.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.
