@@ -6,8 +6,8 @@ import {
   PRODUCT_PHOTO_FIT_CLASS,
   nextCarouselIndex,
   prevCarouselIndex,
-  resolveSwipeDirection,
 } from "../visualWall/carouselNavigation";
+import { useGallerySwipe } from "../visualWall/useGallerySwipe";
 import {
   filterGenuineGalleryImages,
   galleryForSelectedColor,
@@ -66,7 +66,6 @@ export default function ProductGalleryModal({
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [failedKeys, setFailedKeys] = useState<Set<string>>(() => new Set());
-  const touchStartXRef = useRef<number | null>(null);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const titleId = useId();
@@ -216,38 +215,11 @@ export default function ProductGalleryModal({
     [visibleImages.length],
   );
 
-  const handleTouchStart = useCallback(
-    (event: React.TouchEvent) => {
-      zoom.handlers.onTouchStart(event);
-      if (zoom.isZoomed || event.touches.length !== 1) return;
-      touchStartXRef.current = event.touches[0]?.clientX ?? null;
-    },
-    [zoom],
-  );
-
-  const handleTouchMove = useCallback(
-    (event: React.TouchEvent) => {
-      zoom.handlers.onTouchMove(event);
-    },
-    [zoom],
-  );
-
-  const handleTouchEnd = useCallback(
-    (event: React.TouchEvent) => {
-      zoom.handlers.onTouchEnd(event);
-      if (zoom.isZoomed || !hasMultiple) {
-        touchStartXRef.current = null;
-        return;
-      }
-      const startX = touchStartXRef.current;
-      touchStartXRef.current = null;
-      if (startX == null) return;
-      const endX = event.changedTouches[0]?.clientX ?? startX;
-      const direction = resolveSwipeDirection(startX, endX);
-      if (direction === "next") goNext(event);
-      if (direction === "prev") goPrev(event);
-    },
-    [goNext, goPrev, hasMultiple, zoom],
+  const swipe = useGallerySwipe(
+    open && hasMultiple && !zoom.isZoomed,
+    `${open}|${selectedVariantId}|${galleryImages.join("|")}`,
+    goNext,
+    goPrev,
   );
 
   useEffect(() => {
@@ -364,14 +336,29 @@ export default function ProductGalleryModal({
               data-gallery-pinch="true"
               style={{ touchAction: "none", cursor: zoom.isZoomed ? "grab" : "zoom-in" }}
               onWheel={zoom.handlers.onWheel}
-              onPointerDown={zoom.handlers.onPointerDown}
-              onPointerMove={zoom.handlers.onPointerMove}
-              onPointerUp={zoom.handlers.onPointerUp}
-              onPointerCancel={zoom.handlers.onPointerCancel}
+              onPointerDown={(event) => {
+                swipe.onPointerDown(event);
+                if (!(event.target as Element).closest("[data-carousel-control]")) {
+                  zoom.handlers.onPointerDown(event);
+                }
+              }}
+              onPointerMove={(event) => {
+                swipe.onPointerMove(event);
+                zoom.handlers.onPointerMove(event);
+              }}
+              onPointerUp={(event) => {
+                swipe.onPointerUp(event);
+                zoom.handlers.onPointerUp(event);
+              }}
+              onPointerCancel={(event) => {
+                swipe.onPointerCancel(event);
+                zoom.handlers.onPointerCancel(event);
+              }}
+              onClickCapture={swipe.onClickCapture}
               onDoubleClick={zoom.handlers.onDoubleClick}
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
+              onTouchStart={zoom.handlers.onTouchStart}
+              onTouchMove={zoom.handlers.onTouchMove}
+              onTouchEnd={zoom.handlers.onTouchEnd}
             >
               <img
                 key={activeImage}
@@ -398,6 +385,7 @@ export default function ProductGalleryModal({
                 <>
                   <button
                     type="button"
+                    data-carousel-control
                     onClick={goPrev}
                     aria-label={UI_COPY.prevPhoto}
                     className="absolute left-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
@@ -406,6 +394,7 @@ export default function ProductGalleryModal({
                   </button>
                   <button
                     type="button"
+                    data-carousel-control
                     onClick={goNext}
                     aria-label={UI_COPY.nextPhoto}
                     className="absolute right-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
