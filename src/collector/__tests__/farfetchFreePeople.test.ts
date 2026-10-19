@@ -14,6 +14,28 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('retains source-listed boot construction details without admitting bags, pouches or clothing', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/boots-1/items.aspx';
+    for(const [name,brand,slug] of [
+      ['Monolith leather and Re-nylon boots with pouch','Prada','prada-monolith-leather-and-re-nylon-boots-with-pouch-item-17303590'],
+      ['mesh fabric and brushed leather booties with pouch','Prada','prada-mesh-fabric-and-brushed-leather-booties-with-pouch-item-33075116'],
+      ['40mm pouch boots','Prada','prada-40mm-pouch-boots-item-28538715'],
+      ['Classic Sweater Letter boots','UGG','ugg-classic-sweater-letter-boots-item-27668045'],
+      ['quilted bag detail pin heel short boots','Maison Mihara Yasuhiro','maison-mihara-yasuhiro-quilted-bag-detail-pin-heel-short-boots-item-32566851'],
+    ]) {
+      const item={name,brand:{name:brand},offers:{url:`/uk/shopping/women/${slug}.aspx`}};
+      const product=farfetchJsonLdToProduct(item,listing,'2026-10-19T14:52:00Z');
+      expect(product?.category).toBe('BOOT');
+      expect(product?.productName).toBe(name);
+      expect(evaluateStoredPilotProduct(product!).decision).toBe('ACCEPT_FOOTWEAR');
+      expect(farfetchJsonLdToProduct(item,listing.replace('boots-1','shoes-1'),'2026-10-19T14:52:00Z')).toBeNull();
+      for(const title of ['boots-print pouch','boots with pouch tote bag','pouch leather boots with pouch','boots and leather pouch',
+        'boots-print sweater','pouch quilted bag detail boots','bag quilted bag detail boots','sweater quilted bag detail boots']) {
+        const offers={url:`/uk/shopping/women/prada-${title.replaceAll(' ','-')}-item-2.aspx`};
+        expect(farfetchJsonLdToProduct({...item,name:title,offers},listing,'2026-10-19T14:52:00Z')).toBeNull();
+      }
+    }
+  });
   it('uses exact official trainer and ballerina scopes for opaque style names while retaining explicit silhouettes', () => {
     const item={name:'Uma',brand:{name:'Test'},offers:{url:'/uk/shopping/women/test-uma-item-1.aspx'}};
     for(const [scope,category] of [['trainers','SNEAKER'],['ballerinas','BALLERINA']]) {

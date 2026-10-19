@@ -305,7 +305,21 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   // Remove only that modifier; any other bag signal still excludes the item.
   const bagEmbellishedPump = explicitShoeType && input.fromVerifiedFootwearCollection === true &&
     /\bbag[- ]embellished\b/i.test(input.title) && /\bpumps?\s*$/i.test(input.title);
-  const haystack = bagEmbellishedPump ? rawSignals.replace(/\bbag[- ]embellished\b/gi,'embellished') : rawSignals;
+  // Observed official Boots styles name attached pouches, bag details and
+  // sweater-letter uppers. Strip only those construction phrases; independent
+  // bag, pouch or clothing evidence still excludes the product.
+  const officialBoots = explicitShoeType && input.fromVerifiedFootwearCollection === true &&
+    /^(?:https:\/\/www\.farfetch\.com)?\/uk\/shopping\/women\/boots-1\/items\.aspx$/.test(input.collectionPath ?? '');
+  let constructionSignals = rawSignals;
+  if (officialBoots && /\b(?:boots?|booties) with pouch\s*$/i.test(input.title))
+    constructionSignals = constructionSignals.replace(/\b(boots?|booties)[ -]+with[ -]+pouch\b/gi,'$1');
+  if (officialBoots && /\b\d+(?:\.\d+)?mm pouch boots?\s*$/i.test(input.title))
+    constructionSignals = constructionSignals.replace(/\bpouch([ -]+boots?)\b/gi,'$1');
+  if (officialBoots && /\bsweater letter boots?\s*$/i.test(input.title))
+    constructionSignals = constructionSignals.replace(/\bsweater([ -]+letter[ -]+boots?)\b/gi,'$1');
+  if (officialBoots && /\bbag[- ]detail\b/i.test(input.title) && /\bboots?\s*$/i.test(input.title))
+    constructionSignals = constructionSignals.replace(/\bbag[- ]detail\b/gi,'detail');
+  const haystack = bagEmbellishedPump ? constructionSignals.replace(/\bbag[- ]embellished\b/gi,'embellished') : constructionSignals;
 
   const footwearOverride = hasTitleHandleFootwearSupport(input) ??
     (/^ballerina$/i.test(input.productType ?? "") && isOfficialJilSanderRingBallerina(input.title, input.handle ?? "")

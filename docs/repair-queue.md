@@ -149,8 +149,16 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    variant identities and NEW states are retained; none of the 11,846 additions
    is marked NEW. Full local validation passed: 1,156 tests in 138 files,
    catalog and market-research generation, TypeScript and Vite production build.
-   This proposal still requires exact-head CI, Preview READY and production
-   verification before it can be recorded as released.
+   Released through PR189. Exact-head full local validation and CI run
+   39272098330 passed; Preview dpl_4L45JcRw2k6QUysFFmQDF7kdbCfb was READY
+   for head 9dbaf43b6592977d020f729da2aa8f9653177db8 before merge against
+   unchanged main. Production dpl_4aaRYd2S5dPQEX1Q2FNRA5fWcR53 is READY for
+   merge ff617dc59a215e7468bc08f85fb0ceddfa0ef501. The live HTTP200 Farfetch
+   shard is byte-identical to the prepared data: 17,197 visible families,
+   PARTIAL / ready 17,350 / pending 0; SHA256
+   e4563c41279abebded6c013cfa83c11b10d539737531b3fe1b04c0c846b11f6b.
+   Every one of the 5,405 prior visible model IDs, galleries and variant URLs
+   remains in the live shard. This verifies seven scopes, not the whole source.
    Four categories remain unverified: Trainers had a changed final-page card
    count; Boots, Sandals and Flip-flops/Slides had repeated/overlapping pages.
    Those epochs were withheld, not counted FULL. Offline review also found
@@ -159,6 +167,18 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    then-current 29,594 total, so there is no demonstrated pagination ceiling
    or access denial. Rolling source pagination must reconcile unique URLs and
    counts before these remaining scopes or the whole marketplace can be FULL.
+   The next fresh bounded traversal exposed seven source-listed boots falsely
+   excluded by construction words: Prada boots/booties with pouch (17303590,
+   37427485, 26345853, 33075116), Prada 40mm pouch boots (28538715), UGG Classic
+   Sweater Letter boots (27668045), and Maison Mihara Yasuhiro quilted bag-detail
+   boots (32566851). Narrow rules require Shoes type, verified collection and
+   the exact official Boots scope, then strip only the observed construction
+   phrase from classification signals. Actual names, URLs and galleries are
+   untouched; independent bag/pouch/clothing evidence still excludes. Regression
+   checks cover actual source styles and adversarial bags, pouches, sweaters,
+   wrong collection evidence and stored-product review. This is a code-only
+   follow-up; remaining category collection and any new delivery need their own
+   fresh completeness, retention, full-test/build and deployment gates.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.
