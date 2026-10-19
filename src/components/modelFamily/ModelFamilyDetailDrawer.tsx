@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import type { ModelFamily } from "../../modelFamily/types";
 import { collectModelFamilyImages } from "../../modelFamily/familyImages";
@@ -17,8 +17,28 @@ import {
   SEASON_LABELS,
 } from "../../season/productSeason";
 import { formatDateTurkishShort } from "../../presentation/turkishDates";
+import { getResearchStateRepository } from "../../research/researchStateRepository";
 import { useResearchState } from "../../research/useResearchState";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
+import {
+  commitNoteOnBlur,
+  editNoteDraft,
+  idleNoteDraft,
+  noteFieldValue,
+  switchNoteFamily,
+  type NoteDraftState,
+  type NoteStore,
+} from "./noteEditing";
+
+function noteStore(): NoteStore {
+  const repo = getResearchStateRepository();
+  return {
+    getNote: (id) => repo.get(id).note,
+    setNote: (id, note) => {
+      repo.setNote(id, note);
+    },
+  };
+}
 
 interface ModelFamilyDetailDrawerProps {
   family: ModelFamily | null;
@@ -36,14 +56,24 @@ export default function ModelFamilyDetailDrawer({
   sourceId = null,
 }: ModelFamilyDetailDrawerProps) {
   const familyId = family?.modelFamilyId ?? "";
-  const { state, setReviewed, setSaved, setNote } = useResearchState(familyId);
-  const [noteDraft, setNoteDraft] = useState("");
+  const { state, setReviewed, setSaved } = useResearchState(familyId);
+  const [noteState, setNoteState] = useState<NoteDraftState>(() => idleNoteDraft(familyId));
+  const noteStateRef = useRef(noteState);
+  noteStateRef.current = noteState;
   const variants = family ? colorVariantsForFamily(family) : [];
   const [selectedVariantId, setSelectedVariantId] = useState<string | null>(null);
 
   useEffect(() => {
     setSelectedVariantId(variants[0]?.id ?? null);
-    setNoteDraft("");
+  }, [familyId]);
+
+  useEffect(() => {
+    const store = noteStore();
+    const next = switchNoteFamily(noteStateRef.current, familyId, store);
+    if (next !== noteStateRef.current) {
+      noteStateRef.current = next;
+      setNoteState(next);
+    }
   }, [familyId]);
 
   if (!open || !family) return null;
@@ -241,9 +271,23 @@ export default function ModelFamilyDetailDrawer({
               {UI_COPY.productNote}
             </label>
             <textarea
-              value={noteDraft || state.note || ""}
-              onChange={(event) => setNoteDraft(event.target.value)}
-              onBlur={() => setNote(noteDraft)}
+              value={noteFieldValue(
+                noteState,
+                getResearchStateRepository().get(familyId).note,
+                familyId,
+              )}
+              onChange={(event) => {
+                const next = editNoteDraft(familyId, event.target.value);
+                noteStateRef.current = next;
+                setNoteState(next);
+              }}
+              onBlur={() => {
+                const next = commitNoteOnBlur(noteStateRef.current, familyId, noteStore());
+                if (next !== noteStateRef.current) {
+                  noteStateRef.current = next;
+                  setNoteState(next);
+                }
+              }}
               rows={3}
               className="w-full border border-line bg-cream px-2 py-1.5 text-[10px] text-ink"
               placeholder={UI_COPY.addNote}

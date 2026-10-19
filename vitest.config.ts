@@ -45,6 +45,7 @@ export default defineConfig({
       "src/presentation/**/*.test.ts",
       "src/productDates/**/*.test.ts",
       "src/components/visualWall/**/*.test.ts",
+      "src/components/modelFamily/**/*.test.ts",
       "src/radar/master/**/*.test.ts",
       "src/radar/__tests__/radarMainCategories.test.ts",
       "src/refresh/**/*.test.ts",
