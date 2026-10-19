@@ -194,10 +194,19 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    URL, model ID, real image, size/SKU, variant identity or NEW state. No new
    product is marked NEW. Prepared frontend: 26,974 visible models; all 17,197
    previous visible model IDs, galleries and variant URLs remain present.
-   Marketplace coverage stays PARTIAL. This delivery still needs exact-head
-   Preview READY and merge-SHA production/live verification. The final local
-   validation passed all 1,161 tests in 138 files, TypeScript and the production
-   build. Sandals stopped at the bounded time budget; no partial rows were published.
+   Marketplace coverage stays PARTIAL. Released through PR191 on 19 October:
+   head 55f35e24a06e7b1913c0fd8a72dc22b64cf8451a passed all 1,161 tests in 138
+   files, TypeScript and the production build; CI run 39279869419 succeeded and
+   Preview dpl_7Y46kkMWLwFU2qKYWgj5zrPLGzGg was READY for the same SHA.
+   Main was unchanged at e592411 before the authorized squash merge.
+   Production dpl_21b1RkS6XZWVbu7BmCV3ANhfAwv2 is READY for exact merge
+   8d4645f65c65b9874d6a6bd66252db417c6ce7b1. The public Farfetch catalog
+   returned HTTP200 with SHA256
+   b280a56d9014e67c58bea3e06a34f740d1d98ce46b33fa614810a934d0fd74cd:
+   26,974 visible / ready 27,136 / pending 0 / PARTIAL. Live retention checks
+   confirmed all 17,197 previous visible model IDs, real galleries and variant
+   URLs, with zero losses. Sandals stopped at the bounded time budget;
+   no partial rows were published.
    A fresh unchanged checkpoint with overlapping source pages can now rewind
    atomically to the earliest repeated card and recollect that range within
    the existing time/request limits. It never deduplicates a bad snapshot into
@@ -219,9 +228,11 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    the complete page union reported 29,622. The bounded tail recheck still
    disagreed, so those products were withheld. Do not bypass these source
    inconsistencies or mark the remaining scopes/the whole marketplace FULL.
-   Next independent work: keep Ponti pending unless stronger exact source
-   evidence appears, then continue the remaining bounded Farfetch scopes
-   without treating stale checkpoints as fresh proof.
+   User-directed scope change (19 October): pause additional catalog expansion
+   and repeated Farfetch source experiments while finishing the usable site.
+   Cursor local desktop has received the model-note edit/delete regression task;
+   it is assigned, not completed or verified. Do not duplicate its changes.
+   Keep Ponti and other source-quality issues pending unless new evidence appears.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals
