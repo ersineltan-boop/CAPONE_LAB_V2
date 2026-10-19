@@ -18,6 +18,45 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('recollects an overlapping saved range and requires a new unique complete source check',async()=>{
+  const dir=await directory();
+  const moving:typeof fetchText=async url=>{const n=Number(new URL(url).searchParams.get('page')??1);return {ok:true,status:200,url,text:page(n,n===1?[1,2]:n===2?[3,4]:[4,6],6)};};
+  const first=await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true});
+  expect(first.coverageStatus).toBe('PARTIAL');expect(first.products).toEqual([]);
+  expect(first.errors.join()).toContain('overlapping pages');
+  const calls:string[]=[];
+  const recovered=await collectFarfetchProgress({directory:dir,reconcileCountChanges:true,http:async url=>{
+   calls.push(url);const n=Number(new URL(url).searchParams.get('page')??1);
+   return {ok:true,status:200,url,text:page(n,n===1?[1,2]:n===2?[3,5]:[4,6],6)};
+  }});
+  expect(recovered.coverageStatus).toBe('FULL');expect(recovered.products).toHaveLength(6);
+  expect(recovered.progress.overlapRewinds).toEqual([2]);expect(recovered.errors).toEqual([]);
+  expect(calls).toEqual([FARFETCH_SHOES_URL,FARFETCH_SHOES_URL+'?page=2',FARFETCH_SHOES_URL+'?page=3',FARFETCH_SHOES_URL]);
+ });
+ it('keeps overlapping range recollection bounded and never accepts a still-overlapping source',async()=>{
+  const dir=await directory(),calls:string[]=[];
+  const moving:typeof fetchText=async url=>{calls.push(url);const n=Number(new URL(url).searchParams.get('page')??1);return {ok:true,status:200,url,text:page(n,n===1?[1,2]:n===2?[3,4]:[4,6],6)};};
+  await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true});calls.length=0;
+  const partial=await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true,maxPages:1});
+  expect(partial.coverageStatus).toBe('PARTIAL');expect(partial.products).toEqual([]);expect(partial.progress.nextPage).toBe(3);
+  expect(calls).toEqual([FARFETCH_SHOES_URL,FARFETCH_SHOES_URL+'?page=2']);calls.length=0;
+  const repeated=await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true});
+  expect(repeated.coverageStatus).toBe('PARTIAL');expect(repeated.products).toEqual([]);
+  expect(repeated.errors.join()).toContain('overlapping pages');expect(calls).toHaveLength(2);
+ });
+ it('never repairs a damaged or stale overlap checkpoint into completeness',async()=>{
+  for(const damage of [true,false]){
+   const dir=await directory(),start=Date.parse('2026-10-19T15:00:00Z');
+   const moving:typeof fetchText=async url=>{const n=Number(new URL(url).searchParams.get('page')??1);return {ok:true,status:200,url,text:page(n,n===1?[1,2]:n===2?[3,4]:[4,6],6)};};
+   await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true,now:()=>start});
+   const state=JSON.parse(await readFile(join(dir,'progress.json'),'utf8'));
+   if(damage)await writeFile(join(dir,state.parts[0]+'.json'),'damaged');
+   const result=await collectFarfetchProgress({directory:dir,http:moving,reconcileCountChanges:true,maxPages:1,now:()=>start+(damage?1:61*60_000)});
+   expect(result.coverageStatus).toBe('PARTIAL');expect(result.products).toEqual([]);
+   if(damage)expect(result.errors.join()).toContain('checksum mismatch');
+   else expect(result.progress.resetReason).toBe('SOURCE_CHANGED_OR_CHECKPOINT_STALE');
+  }
+ });
  it('resumes a fresh unchanged first page across count changes without discarding its validated prefix',async()=>{
   for(const maxPages of [1,2]){
    const dir=await directory();await collectFarfetchProgress({directory:dir,maxPages,http,reconcileCountChanges:true});

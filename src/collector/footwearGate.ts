@@ -295,11 +295,27 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   const evidenceTags = (input.tags ?? []).filter((tag) =>
     !isMerchandisingTag(tag) && !(explicitShoeType && /^accessories$/i.test(tag.trim())),
   );
+  const officialTrainers = explicitShoeType && input.fromVerifiedFootwearCollection === true &&
+    /^(?:https:\/\/www\.farfetch\.com)?\/uk\/shopping\/women\/trainers-1\/items\.aspx$/.test(input.collectionPath ?? '');
+  let reviewTitle=input.title,reviewHandle=input.handle??'';
+  if(officialTrainers&&/\b(?:sneakers?|trainers?)\s*$/i.test(input.title)){
+    // A quoted model/colorway nickname is not its product type. Remove only
+    // that quoted span and its unambiguous URL slug; outside evidence stays.
+    for(const match of input.title.matchAll(/"([^"]+)"/g)){
+      reviewTitle=reviewTitle.replace(match[0],'');
+      const slug=match[1]!.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
+        .replace(/['"/]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      if(!slug)continue;
+      const pattern=`(^|[-/])${slug}(?=[-./?#]|$)`;
+      if([...reviewHandle.matchAll(new RegExp(pattern,'gi'))].length===1)
+        reviewHandle=reviewHandle.replace(new RegExp(pattern,'i'),'$1');
+    }
+  }
   const rawSignals = joinSignals([
-    input.title,
+    reviewTitle,
     input.productType,
     ...evidenceTags,
-    input.handle,
+    reviewHandle,
   ]);
   // A bag-shaped ornament on an explicitly named pump is construction detail.
   // Remove only that modifier; any other bag signal still excludes the item.
@@ -319,6 +335,21 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
     constructionSignals = constructionSignals.replace(/\bsweater([ -]+letter[ -]+boots?)\b/gi,'$1');
   if (officialBoots && /\bbag[- ]detail\b/i.test(input.title) && /\bboots?\s*$/i.test(input.title))
     constructionSignals = constructionSignals.replace(/\bbag[- ]detail\b/gi,'detail');
+  if(officialTrainers){
+    // Height and sock-upper descriptions are not tops or standalone socks.
+    constructionSignals=constructionSignals.replace(/\b(low|mid|high|hi)[ -]+top\b/gi,'$1');
+    if(/\bhigh[- ]sock sneaks?\b/i.test(input.title))
+      constructionSignals=constructionSignals.replace(/\bhigh[- ]sock([ -]+sneaks?)\b/gi,'high$1');
+    // Observed model/collaboration names need a terminal footwear noun.
+    // Any independent dress, blazer, makeup or handbag signal remains intact.
+    if(/\bsneakers?\s*$/i.test(input.title)){
+      if(/\bdress[- ]up\b/i.test(input.title))constructionSignals=constructionSignals.replace(/\bdress[- ]up\b/gi,'style');
+      if(/\bblazer (?:low|mid)\b/i.test(input.title))constructionSignals=constructionSignals.replace(/\bblazer([ -]+(?:low|mid))\b/gi,'$1');
+      if(/\bblack[- ]jeans sneakers?\s*$/i.test(input.title))constructionSignals=constructionSignals.replace(/\bblack[- ]jeans\b/gi,'denim');
+      if(/^Tommy Jeans\b/i.test(input.title))constructionSignals=constructionSignals.replace(/\btommy[ -]+jeans\b/gi,'brand');
+      if(/^Bape Clutch Sta sneakers?\s*$/i.test(input.title))constructionSignals=constructionSignals.replace(/\bclutch[ -]+sta\b/gi,'style');
+    }
+  }
   const haystack = bagEmbellishedPump ? constructionSignals.replace(/\bbag[- ]embellished\b/gi,'embellished') : constructionSignals;
 
   const footwearOverride = hasTitleHandleFootwearSupport(input) ??
