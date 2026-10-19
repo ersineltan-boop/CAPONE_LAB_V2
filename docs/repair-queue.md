@@ -177,11 +177,69 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    untouched; independent bag/pouch/clothing evidence still excludes. Regression
    checks cover actual source styles and adversarial bags, pouches, sweaters,
    wrong collection evidence and stored-product review. This is a code-only
-   follow-up; remaining category collection and any new delivery need their own
-   fresh completeness, retention, full-test/build and deployment gates.
-   Next independent work: keep Ponti pending unless stronger exact source
-   evidence appears, then continue the remaining bounded Farfetch scopes
-   without treating stale checkpoints as fresh proof.
+   follow-up, released via PR190. Exact-head 1,157 tests and production build,
+   CI run 39274397903 and same-SHA Preview READY passed before merge. Production
+   dpl_bUxvxRfPwuvto9mpKiBXUiG4WWFa is READY for merge
+   e592411b71a79a41950c37e71cfdcd6c5b59b7a3. Live HTTP200 data retains the
+   PR189 byte hash and 17,197 visible / ready 17,350 / pending 0 / PARTIAL.
+   Remaining category collection and any new delivery need their own fresh
+   completeness, retention, full-test/build and deployment gates.
+   The 412-request bounded fresh follow-up verified Flip-flops/Slides (1,174
+   source URLs; checked 14:52:41Z) and Boots (9,749; checked 14:56:57Z). Their
+   10,923-product union has 10,774 policy-eligible rows. Reclassification from
+   immutable checksummed source items recovers the seven real boots above;
+   names, URLs and galleries remain original. The preserving proposal grows
+   the archive from 17,350 products / 17,289 families to 27,136 products /
+   27,068 families, pending zero. It adds 9,786 products without losing any old
+   URL, model ID, real image, size/SKU, variant identity or NEW state. No new
+   product is marked NEW. Prepared frontend: 26,974 visible models; all 17,197
+   previous visible model IDs, galleries and variant URLs remain present.
+   Marketplace coverage stays PARTIAL. Released through PR191 on 19 October:
+   head 55f35e24a06e7b1913c0fd8a72dc22b64cf8451a passed all 1,161 tests in 138
+   files, TypeScript and the production build; CI run 39279869419 succeeded and
+   Preview dpl_7Y46kkMWLwFU2qKYWgj5zrPLGzGg was READY for the same SHA.
+   Main was unchanged at e592411 before the authorized squash merge.
+   Production dpl_21b1RkS6XZWVbu7BmCV3ANhfAwv2 is READY for exact merge
+   8d4645f65c65b9874d6a6bd66252db417c6ce7b1. The public Farfetch catalog
+   returned HTTP200 with SHA256
+   b280a56d9014e67c58bea3e06a34f740d1d98ce46b33fa614810a934d0fd74cd:
+   26,974 visible / ready 27,136 / pending 0 / PARTIAL. Live retention checks
+   confirmed all 17,197 previous visible model IDs, real galleries and variant
+   URLs, with zero losses. Sandals stopped at the bounded time budget;
+   no partial rows were published.
+   A fresh unchanged checkpoint with overlapping source pages can now rewind
+   atomically to the earliest repeated card and recollect that range within
+   the existing time/request limits. It never deduplicates a bad snapshot into
+   FULL; changed first pages, expired epochs, corrupt parts, repeated cards,
+   mismatched totals and access denials still prevent completeness. Rewinds
+   are recorded in progress; failing source evidence is retained for review.
+   Regression checks cover successful recollection, persistent overlap, page
+   budget exhaustion, checksum damage and stale epochs. Exact official Trainers
+   context also separates source-listed height/upper/material and quoted
+   model/colorway names from real clothing, bags and cosmetics. Wrong scopes
+   and independent non-footwear words still exclude; original source fields
+   are preserved. Contradictory source titles such as actual sweater/sweatshirt
+   wording remain unresolved rather than receiving an invented category.
+   Trainers and Sandals remain unverified. On 19 October, two bounded traversals
+   reproduced boundary repeats. A two-request diagnostic at 15:22Z found that
+   the primary embedded catalog and JSON-LD matched exactly, and those same
+   source page boundaries had since changed. A later range replay removed the
+   trainer overlaps, but its final canonical first page reported 29,619 while
+   the complete page union reported 29,622. The bounded tail recheck still
+   disagreed, so those products were withheld. Do not bypass these source
+   inconsistencies or mark the remaining scopes/the whole marketplace FULL.
+   User-directed scope change (19 October): pause additional catalog expansion
+   and repeated Farfetch source experiments while finishing the usable site.
+   Cursor desktop delivered the four-file model-note edit/delete repair in
+   draft PR193 (original head 708be4162655dc8f2986a1681ae8ffecda7a891f).
+   Review confirmed the scope and merged current main into the repair branch
+   without changing its catalog data. Linux passed all 1,168 tests in 139 files,
+   including seven note regressions; the reported Windows import-path failure
+   did not reproduce. Browser verification is still unconfirmed: the local
+   Playwright browser was absent and its installer returned a truncated archive.
+   Do not claim a browser click-through or a release before remaining gates pass.
+   Cursor work is now on GitHub and can be continued with the user's PC off.
+   Keep Ponti and other source-quality issues pending unless new evidence appears.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
    `13744a808b3e3f96e4e7a2a375f9b9b1f4d70521`). Two complete identical traversals
@@ -202,6 +260,10 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    evade this block. It requires an authorized, usable session to continue.
 
 ## Continue safely
+
+Current user priority (19 October): finish Farfetch issue 1 before starting the
+other outstanding issues. Publish already verified preserving work promptly;
+do not hold an accepted independent delivery behind repeated source experiments.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
 existing validated repair before opening a duplicate. Keep each collection
