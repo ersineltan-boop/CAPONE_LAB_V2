@@ -230,8 +230,15 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    inconsistencies or mark the remaining scopes/the whole marketplace FULL.
    User-directed scope change (19 October): pause additional catalog expansion
    and repeated Farfetch source experiments while finishing the usable site.
-   Cursor local desktop has received the model-note edit/delete regression task;
-   it is assigned, not completed or verified. Do not duplicate its changes.
+   Cursor desktop delivered the four-file model-note edit/delete repair in
+   draft PR193 (original head 708be4162655dc8f2986a1681ae8ffecda7a891f).
+   Review confirmed the scope and merged current main into the repair branch
+   without changing its catalog data. Linux passed all 1,168 tests in 139 files,
+   including seven note regressions; the reported Windows import-path failure
+   did not reproduce. Browser verification is still unconfirmed: the local
+   Playwright browser was absent and its installer returned a truncated archive.
+   Do not claim a browser click-through or a release before remaining gates pass.
+   Cursor work is now on GitHub and can be continued with the user's PC off.
    Keep Ponti and other source-quality issues pending unless new evidence appears.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
