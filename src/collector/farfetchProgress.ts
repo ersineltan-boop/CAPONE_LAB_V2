@@ -7,13 +7,13 @@ import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchCategoryKey, farfetchJsonLdTo
 import type {PilotProduct} from './types';
 
 interface Page {urls: string[]; products: PilotProduct[]; sourceItems?: ReturnType<typeof parseFarfetchItemList>; collectedAt: string; fingerprint: string;}
-interface Progress {version: 1; listing?: string; reconcileCountChanges?: boolean; countChanges?: Array<{page: number; previous: number; observed: number}>; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
+interface Progress {version: 1; listing?: string; reconcileCountChanges?: boolean; countChanges?: Array<{page: number; previous: number; observed: number}>; overlapRewinds?:number[]; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
 interface FarfetchProgressResult {
   products:PilotProduct[]; observations?:PilotProduct[]; coverageStatus:'FULL'|'PARTIAL'|'FAILED';
   errors:string[]; blocked:boolean; paginationExhausted:boolean; pagesTraversed:number;
   sourceReportedProductCount:number|null; rawSourceProducts:number;
   progress:{nextPage:number;expectedPages:number|null;startedAt:string|null;checkedAt:string;resetReason:string|null;
-    savedPages:number;countChanges:Array<{page:number;previous:number;observed:number}>};
+    savedPages:number;countChanges:Array<{page:number;previous:number;observed:number}>;overlapRewinds:number[]};
 }
 const digest = (text: string) => createHash('sha256').update(text).digest('hex');
 async function atomic(path: string, value: unknown) {
@@ -61,7 +61,7 @@ export async function collectFarfetchProgress(options: {
     rawSourceProducts: rawSourceProducts || Math.min((progress?.parts.length ?? 0) * (progress?.size ?? 0), progress?.total ?? 0),
     progress: {nextPage: progress?.nextPage ?? 1, expectedPages: progress ? Math.ceil(progress.total / progress.size) : null,
       startedAt: progress?.startedAt ?? null, checkedAt: new Date(now()).toISOString(), resetReason,
-      savedPages: progress?.parts.length ?? 0, countChanges:progress?.countChanges ?? []},
+      savedPages: progress?.parts.length ?? 0, countChanges:progress?.countChanges ?? [],overlapRewinds:progress?.overlapRewinds??[]},
   });
   if (!Number.isFinite(deadline) || deadline <= began || !Number.isInteger(pageLimit)) throw new Error('Invalid Farfetch collection budget');
   try {
@@ -127,6 +127,28 @@ export async function collectFarfetchProgress(options: {
     (progress.countChanges??=[]).push({page:1,previous:progress.total,observed:initial.total});
     progress.total=initial.total;await atomic(statePath,progress);
   }
+  if(options.reconcileCountChanges&&progress.parts.length){
+    // A moving storefront may shift cards across an already captured boundary.
+    // Recollect from the earliest repeated card, never deduplicate it into FULL.
+    // The unchanged first-page/age checks above still bind this source epoch.
+    const seen=new Map<string,number>();let rewind:number|null=null;
+    try{
+      for(const [index,hash] of progress.parts.entries()){
+        const body=await readFile(join(directory,`${hash}.json`),'utf8');
+        if(digest(body)!==hash)throw new Error('Farfetch checkpoint checksum mismatch');
+        const page=JSON.parse(body) as Page;productsForPage(page);
+        for(const url of page.urls){
+          const previous=seen.get(url);
+          if(previous!==undefined)rewind=Math.min(rewind??previous,previous);
+          else seen.set(url,index);
+        }
+      }
+    }catch(error){errors.push(String(error));await rm(directory,{recursive:true,force:true});return result();}
+    if(rewind!==null){
+      progress.parts=progress.parts.slice(0,rewind);progress.nextPage=rewind+1;
+      (progress.overlapRewinds??=[]).push(rewind+1);await atomic(statePath,progress);
+    }
+  }
   if (options.captureObservations) {
     for (const hash of progress.parts) {
       const body=await readFile(join(directory, `${hash}.json`), 'utf8');
@@ -180,7 +202,14 @@ export async function collectFarfetchProgress(options: {
       for (const url of page.urls) {if (urls.has(url)) throw new Error('Farfetch repeated/overlapping pages'); urls.add(url);}
       products.push(...productsForPage(page));
     }
-  } catch (error) {errors.push(String(error)); await rm(directory, {recursive:true,force:true}); return result();}
+  } catch (error) {
+    errors.push(String(error));
+    // Retain checksummed evidence for the next bounded range recollection.
+    // No products are returned until a fresh traversal is completely unique.
+    if(!options.reconcileCountChanges||!String(error).includes('Farfetch repeated/overlapping pages'))
+      await rm(directory,{recursive:true,force:true});
+    return result();
+  }
   rawSourceProducts = urls.size;
   if (now() - Date.parse(progress.startedAt) > 60 * 60_000 || urls.size !== progress.total) {
     errors.push('Farfetch complete snapshot is stale or does not reconcile; last-good preserved');

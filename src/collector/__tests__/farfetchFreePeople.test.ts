@@ -14,6 +14,46 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('uses exact Trainer source evidence for height, upper and collaboration words without admitting clothing', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/trainers-1/items.aspx';
+    for(const [name,brand,slug] of [
+      ['low-top Royal Project','Philipp Plein','philipp-plein-low-top-royal-project-item-34099691'],
+      ['Sunny F black and chocolate leather-mix and perforated leather low top trainers','Jimmy Choo','jimmy-choo-sunny-f-black-and-chocolate-leather-mix-and-perforated-leather-low-top-trainers-item-35093865'],
+      ['X Vans low-top trainer in fabric with VLogo checkerboard print','Valentino Garavani','valentino-garavani-x-vans-low-top-trainer-in-fabric-with-vlogo-checkerboard-print-item-31679945'],
+      ['Speedcat Ballet Dress-Up Wns buckle-fastening sneakers','PUMA','puma-speedcat-ballet-dress-up-wns-buckle-fastening-sneakers-item-34918063'],
+      ['Tower high-sock sneaks in stretch denim','Rick Owens DRKSHDW','rick-owens-drkshdw-tower-high-sock-sneaks-in-stretch-denim-item-37826812'],
+      ['Classic Vegan Rise "Milk Makeup - Equipment Room" trainers','Reebok','reebok-classic-vegan-rise-milk-makeup-equipment-room-trainers-item-28564147'],
+      ['Air Jordan 1 Retro High OG "Luxury Handbag" sneakers','Jordan','jordan-air-jordan-1-retro-high-og-luxury-handbag-sneakers-item-20255447'],
+      ['The 10: Blazer Mid "Grim Reaper" sneakers','Nike X Off-White','nike-x-off-white-the-10-blazer-mid-grim-reaper-sneakers-item-13555690'],
+      ['Y-3 Nizzastar Hi-top trainers','Y-3','y-3-y-3-nizzastar-hi-top-trainers-item-31802648'],
+      ['high-top leather trainers','TWINSET','twinset-high-top-leather-trainers-item-37020013'],
+      ['Be Right Back black-jeans sneakers','Off-White','off-white-be-right-back-black-jeans-sneakers-item-39246053'],
+      ['kick satin mid top trainers','Chloé','chloe-kick-satin-mid-top-trainers-item-32465276'],
+      ['Tommy Jeans low-top sneakers','Tommy Hilfiger','tommy-hilfiger-tommy-jeans-low-top-sneakers-item-35721299'],
+      ['Bape Clutch Sta sneakers','A BATHING APE®','a-bathing-ape-bape-clutch-sta-sneakers-item-31123823'],
+      ['Air Jordan 7 Retro "Sweater" sneakers','Jordan','jordan-air-jordan-7-retro-sweater-sneakers-item-14105956'],
+      ['Air Jordan 1 Mid SE "Barcelona Sweater" sneakers','Jordan','jordan-air-jordan-1-mid-se-barcelona-sweater-sneakers-item-17500549'],
+      ['x UNDEFEATED Air Jordan 37 "Flight Jacket" sneakers','Jordan','jordan-x-undefeated-air-jordan-37-flight-jacket-sneakers-item-19648598'],
+      ['BB4000 2 "Letterman Jacket Pack" sneakers','Reebok','reebok-bb4000-2-letterman-jacket-pack-sneakers-item-21684999'],
+      ['Azura Lite "Ski Jacket" sneakers','Saucony','saucony-azura-lite-ski-jacket-sneakers-item-17988546'],
+      ['Skate Chukka Low "Dress Blue" sneakers','Vans','vans-skate-chukka-low-dress-blue-sneakers-item-21285702'],
+      ['Air Jordan 14 Low "Red Lipstick" sneakers','Jordan','jordan-air-jordan-14-low-red-lipstick-sneakers-item-17373033'],
+    ]){
+      const item={name,brand:{name:brand},offers:{url:`/uk/shopping/women/${slug}.aspx`}};
+      const product=farfetchJsonLdToProduct(item,listing,'2026-10-19T15:00:00Z');
+      expect(product?.category).toBe('SNEAKER');expect(product?.productName).toBe(name);
+      expect(evaluateStoredPilotProduct(product!).decision).toBe('ACCEPT_FOOTWEAR');
+      expect(farfetchJsonLdToProduct(item,listing.replace('trainers-1','shoes-1'),'2026-10-19T15:00:00Z')).toBeNull();
+    }
+    for(const name of ['low-top cotton shirt','high-top leather tote bag','sweater with high-sock sneaks',
+      'dress with Dress-Up sneakers','makeup Milk Makeup trainers','leather blazer and Blazer Mid sneakers',
+      'tote "Luxury Handbag" sneakers','Gel-1130 round toe sweater','Essential Lite logo-detail sweatshirt',
+      'jeans with black-jeans sneakers','Tommy Jeans sweater sneakers','Bape Clutch Sta tote bag',
+      'sweater "Barcelona Sweater" sneakers','makeup "Milk Makeup" trainers','"Flight Jacket" sweatshirt']){
+      const item={name,brand:{name:'Test'},offers:{url:`/uk/shopping/women/test-${name.replaceAll(' ','-').replaceAll('"','')}-item-2.aspx`}};
+      expect(farfetchJsonLdToProduct(item,listing,'2026-10-19T15:00:00Z')).toBeNull();
+    }
+  });
   it('retains source-listed boot construction details without admitting bags, pouches or clothing', () => {
     const listing='https://www.farfetch.com/uk/shopping/women/boots-1/items.aspx';
     for(const [name,brand,slug] of [
