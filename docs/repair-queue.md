@@ -116,9 +116,49 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    category evidence. This code repair contains no new catalog delivery.
    Bounded fresh category follow-up is staged separately; source counts have
    moved during traversal, and whole-marketplace completeness is unverified.
-   Local validation passed: 1,149 tests in 138 files, catalog/market-research
-   build, TypeScript and Vite production build. Exact-head CI, Preview and
-   production verification remain pending.
+   Released via PR188: 1,149 local tests in 138 files and production build
+   passed; exact-head full CI and same-SHA Preview READY passed before merge.
+   Production is READY for merge
+   `595555a65bdf2d2e79fc7fead18bb2b5e3bb4933`; live HTTP200 Farfetch data is
+   byte-identical to the safe baseline (5,405 visible, ready 5,504, pending 0).
+   This verifies the code release, not completion of the remaining source scope.
+   The follow-up keeps source capture separate from taxonomy admission:
+   structurally complete source observations with contradictory type names
+   carry a null category into quarantine, retaining their actual URL and
+   gallery. They are not admitted as footwear. Exact official Trainers and
+   Ballerinas scopes resolve opaque titles only when no explicit silhouette
+   was already classified. Fresh unchanged first pages can now resume across
+   count drift, with an atomic cursor rollback/re-read of the old last page
+   when necessary. A final count change gets at most one bounded tail
+   reconciliation; changed identities, damaged/overlapping pages and stale
+   epochs still block FULL. Source requests use the same official URLs and a
+   standard cache-revalidation header, with no access bypass. Root completeness
+   requires the final source count and full unique category union to agree;
+   category epochs which expire during aggregation cannot certify FULL.
+   Source page 262 returned complete valid data on a bounded diagnostic after
+   an interrupted response, so no hard pagination ceiling has been established.
+   On 19 October, a bounded 244-request follow-up completed seven official
+   categories with fresh atomic/checksummed epochs: Pumps 6,257, Ballerinas
+   2,622, Loafers 2,949, Mules 2,070, Oxford/Derby 549, Slippers 636 and
+   Espadrilles 538. Final source rechecks ran from 14:15:04Z to 14:25:47Z;
+   their union contains 15,576 distinct source products (15,473 policy-eligible).
+   Publication accepted these seven independently verified scopes as PARTIAL,
+   with zero pending. The preserving proposal grows the archive from 5,504
+   products / 5,497 families to 17,350 products / 17,289 families. All previous
+   product URLs, family IDs, real galleries, family variant URLs, sizes/SKUs,
+   variant identities and NEW states are retained; none of the 11,846 additions
+   is marked NEW. Full local validation passed: 1,156 tests in 138 files,
+   catalog and market-research generation, TypeScript and Vite production build.
+   This proposal still requires exact-head CI, Preview READY and production
+   verification before it can be recorded as released.
+   Four categories remain unverified: Trainers had a changed final-page card
+   count; Boots, Sandals and Flip-flops/Slides had repeated/overlapping pages.
+   Those epochs were withheld, not counted FULL. Offline review also found
+   108 duplicate trainer URLs in the saved prefix. A later bounded source
+   diagnostic returned HTTP200 and the correct 26-card page 309 against its
+   then-current 29,594 total, so there is no demonstrated pagination ceiling
+   or access denial. Rolling source pagination must reconcile unique URLs and
+   counts before these remaining scopes or the whole marketplace can be FULL.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.

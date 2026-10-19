@@ -24,6 +24,7 @@ export async function collectFarfetchCategories(options: {
   const errors: string[] = [], observed: PilotProduct[] = [];
   const categories: Array<{url: string; status: string; raw: number; progress: unknown; errors: string[]}> = [];
   const verifiedScopes: VerifiedCategoryScope[] = [];
+  const completedEpochStarts: number[] = [];
   let pagesTraversed = 0, blocked = false, rawSourceProducts = 0;
   let total: number | null = null;
   const result = (full = false) => ({
@@ -33,7 +34,7 @@ export async function collectFarfetchCategories(options: {
     sourceReportedProductCount: total, rawSourceProducts,
     progress: {strategy: 'categories', startedAt: new Date(started).toISOString(), categories},
   });
-  const home = await http(FARFETCH_SHOES_URL, {delayMs:500}); pagesTraversed++;
+  const home = await http(FARFETCH_SHOES_URL, {delayMs:500,headers:{'Cache-Control':'no-cache'}}); pagesTraversed++;
   if(farfetchAccessBlocked(home)){blocked=true;errors.push(`Farfetch access blocked (HTTP ${home.status})`);return result();}
   if (!home.ok) {blocked = [403,429].includes(home.status); errors.push(`Farfetch root HTTP ${home.status}: ${home.error ?? 'unavailable'}`); return result();}
   const initial = parseFarfetchCatalogPagination(home.text);
@@ -66,9 +67,11 @@ export async function collectFarfetchCategories(options: {
     errors.push(...collection.errors.map(error => `${key}: ${error}`));
     if (collection.blocked) {blocked = true; break;}
     if (collection.coverageStatus === 'FULL') {
+      completedEpochStarts.push(Date.parse(collection.progress.startedAt ?? ''));
       observed.push(...collection.products);
       verifiedScopes.push({url:listing, sourceTotal:collection.sourceReportedProductCount!, rawCollected:collection.rawSourceProducts,
         productUrls:collection.products.map(product => product.productUrl), checkedAt:collection.progress.checkedAt,
+        epochStartedAt:collection.progress.startedAt ?? '',
         coverageStatus:'FULL', paginationExhausted:true});
     }
   }
@@ -77,16 +80,23 @@ export async function collectFarfetchCategories(options: {
   if (categories.length !== advertised.length || categories.some(category => category.status !== 'FULL') || errors.length) return result();
   // Menu categories may overlap or omit products. Exact URL union and final
   // root validation are mandatory before any publication can be accepted.
+  if (now() + 16_000 > deadline) {errors.push('FARFETCH_CATEGORY_FINAL_CHECK_PENDING'); return result();}
+  const final = await http(FARFETCH_SHOES_URL, {delayMs:500,headers:{'Cache-Control':'no-cache'}}); pagesTraversed++;
+  if(farfetchAccessBlocked(final)){blocked=true;errors.push(`Farfetch access blocked (HTTP ${final.status})`);return result();}
+  const meta = final.ok ? parseFarfetchCatalogPagination(final.text) : null;
+  if (!meta || meta.page !== 1 || meta.size !== initial.size || rootIdentity(final.text) !== rootIdentity(home.text)) {
+    blocked = [403,429].includes(final.status);
+    errors.push(`Farfetch category final root check failed (HTTP ${final.status})`); return result();
+  }
+  // The storefront can grow during a bounded traversal. Its final authoritative
+  // count, unchanged first-page identity and complete category URL union must
+  // agree; an earlier count alone must neither certify nor reject the snapshot.
+  total = meta.total;
   if (unique.length !== total) {
     errors.push(`Farfetch category union does not reconcile: ${unique.length}/${total}`); return result();
   }
-  if (now() + 16_000 > deadline) {errors.push('FARFETCH_CATEGORY_FINAL_CHECK_PENDING'); return result();}
-  const final = await http(FARFETCH_SHOES_URL, {delayMs:500}); pagesTraversed++;
-  if(farfetchAccessBlocked(final)){blocked=true;errors.push(`Farfetch access blocked (HTTP ${final.status})`);return result();}
-  const meta = final.ok ? parseFarfetchCatalogPagination(final.text) : null;
-  if (!meta || meta.page !== 1 || meta.total !== total || meta.size !== initial.size || rootIdentity(final.text) !== rootIdentity(home.text)) {
-    blocked = [403,429].includes(final.status);
-    errors.push(`Farfetch category final root check failed (HTTP ${final.status})`); return result();
+  if (completedEpochStarts.some(start => !Number.isFinite(start) || now() < start || now() - start > 60 * 60_000)) {
+    errors.push('Farfetch completed category epoch became stale before the final root check'); return result();
   }
   return result(true);
 }
