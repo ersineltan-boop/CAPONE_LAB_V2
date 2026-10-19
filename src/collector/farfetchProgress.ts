@@ -3,11 +3,18 @@ import {mkdir, readFile, rename, rm, writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
 import {fetchText} from './http';
 import {farfetchAccessBlocked} from './farfetchAccess';
-import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchCategoryKey, farfetchJsonLdToProduct, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
+import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchCategoryKey, farfetchJsonLdToSourceObservation, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
 import type {PilotProduct} from './types';
 
 interface Page {urls: string[]; products: PilotProduct[]; sourceItems?: ReturnType<typeof parseFarfetchItemList>; collectedAt: string; fingerprint: string;}
 interface Progress {version: 1; listing?: string; reconcileCountChanges?: boolean; countChanges?: Array<{page: number; previous: number; observed: number}>; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
+interface FarfetchProgressResult {
+  products:PilotProduct[]; observations?:PilotProduct[]; coverageStatus:'FULL'|'PARTIAL'|'FAILED';
+  errors:string[]; blocked:boolean; paginationExhausted:boolean; pagesTraversed:number;
+  sourceReportedProductCount:number|null; rawSourceProducts:number;
+  progress:{nextPage:number;expectedPages:number|null;startedAt:string|null;checkedAt:string;resetReason:string|null;
+    savedPages:number;countChanges:Array<{page:number;previous:number;observed:number}>};
+}
 const digest = (text: string) => createHash('sha256').update(text).digest('hex');
 async function atomic(path: string, value: unknown) {
   await writeFile(path + '.tmp', JSON.stringify(value)); await rename(path + '.tmp', path);
@@ -19,8 +26,10 @@ export async function collectFarfetchProgress(options: {
   listingUrl?: string;
   reconcileCountChanges?: boolean;
   captureObservations?: boolean;
+  /** Internal cap: at most one final-page reconciliation per bounded call. */
+  tailReconciliationUsed?: boolean;
   http?: typeof fetchText; now?: () => number;
-}) {
+}):Promise<FarfetchProgressResult> {
   const http = options.http ?? fetchText, now = options.now ?? Date.now;
   const listing = options.listingUrl ?? FARFETCH_SHOES_URL;
   if (!farfetchCategoryKey(listing)) {
@@ -36,11 +45,11 @@ export async function collectFarfetchProgress(options: {
   const errors: string[] = [];
   const observations: PilotProduct[] = [];
   const request = async (url: string, delayMs: number) => {
-    let response = await http(url, {delayMs}); pagesTraversed++;
+    let response = await http(url, {delayMs,headers:{'Cache-Control':'no-cache'}}); pagesTraversed++;
     // Retry a temporary transport/server failure once, within the same budget.
     // Access denials and rate limits are never retried or routed around.
     if (!farfetchAccessBlocked(response) && (response.status === 0 || response.status >= 500) && now() + 17_000 <= deadline) {
-      response = await http(url, {delayMs:900}); pagesTraversed++;
+      response = await http(url, {delayMs:900,headers:{'Cache-Control':'no-cache'}}); pagesTraversed++;
     }
     return response;
   };
@@ -81,7 +90,7 @@ export async function collectFarfetchProgress(options: {
     }
     const collectedAt = new Date(now()).toISOString();
     return {urls, sourceItems:items, products: items.flatMap(item => {
-      const product = farfetchJsonLdToProduct(item, listing, collectedAt); return product ? [product] : [];
+      const product = farfetchJsonLdToSourceObservation(item, listing, collectedAt); return product ? [product] : [];
     }), collectedAt, fingerprint: digest(JSON.stringify(urls))};
   };
   const productsForPage = (page: Page) => {
@@ -93,7 +102,7 @@ export async function collectFarfetchProgress(options: {
     // Re-run the current classifier against immutable source observations.
     // A fixed vocabulary rule does not require downloading the same pages.
     return page.sourceItems.flatMap(item => {
-      const product=farfetchJsonLdToProduct(item,listing,page.collectedAt);
+      const product=farfetchJsonLdToSourceObservation(item,listing,page.collectedAt);
       return product ? [product] : [];
     });
   };
@@ -102,7 +111,8 @@ export async function collectFarfetchProgress(options: {
   sourceValidated = true;
   // A rolling storefront is not an immutable snapshot. Old/different epochs
   // cannot be joined and called a fresh complete collection.
-  if (progress && ((progress.listing ?? FARFETCH_SHOES_URL) !== listing || Boolean(progress.reconcileCountChanges) !== Boolean(options.reconcileCountChanges) || progress.total !== initial.total || progress.size !== initial.size || progress.first !== first.fingerprint ||
+  if (progress && ((progress.listing ?? FARFETCH_SHOES_URL) !== listing || Boolean(progress.reconcileCountChanges) !== Boolean(options.reconcileCountChanges) ||
+      (!options.reconcileCountChanges && progress.total !== initial.total) || progress.size !== initial.size || progress.first !== first.fingerprint ||
       began - Date.parse(progress.startedAt) > 60 * 60_000 || began < Date.parse(progress.startedAt))) {
     resetReason = 'SOURCE_CHANGED_OR_CHECKPOINT_STALE'; progress = undefined;
   }
@@ -110,6 +120,12 @@ export async function collectFarfetchProgress(options: {
     await rm(directory, {recursive: true, force: true}); await mkdir(directory, {recursive: true});
     progress = {version: 1, listing, reconcileCountChanges:Boolean(options.reconcileCountChanges), startedAt: new Date(began).toISOString(), total: initial.total, size: initial.size,
       first: first.fingerprint, nextPage: 1, parts: []};
+  } else if (progress.total !== initial.total) {
+    const wasComplete=progress.nextPage>Math.ceil(progress.total/progress.size);
+    const keep=Math.max(0,Math.min(progress.parts.length-(wasComplete?1:0),Math.ceil(initial.total/progress.size)-1));
+    progress.parts=progress.parts.slice(0,keep);progress.nextPage=keep+1;
+    (progress.countChanges??=[]).push({page:1,previous:progress.total,observed:initial.total});
+    progress.total=initial.total;await atomic(statePath,progress);
   }
   if (options.captureObservations) {
     for (const hash of progress.parts) {
@@ -181,8 +197,18 @@ export async function collectFarfetchProgress(options: {
   let sameFirst = false;
   try {sameFirst = final.ok && readPage(final.text).fingerprint === progress.first;} catch { /* Fail closed. */ }
   if (!finalMeta || finalMeta.page !== 1 || finalMeta.total !== progress.total || finalMeta.size !== progress.size || !sameFirst) {
+    const countOnlyChange=finalMeta?.page===1&&finalMeta.size===progress.size&&sameFirst&&finalMeta.total>0&&finalMeta.total!==progress.total;
+    if(countOnlyChange&&options.reconcileCountChanges&&!options.tailReconciliationUsed&&
+       now()+48_000<=deadline&&pageLimit-savedThisRun>=1){
+      const keep=Math.max(0,Math.min(progress.parts.length-1,Math.ceil(finalMeta.total/progress.size)-1));
+      (progress.countChanges??=[]).push({page:1,previous:progress.total,observed:finalMeta.total});
+      progress.total=finalMeta.total;progress.parts=progress.parts.slice(0,keep);progress.nextPage=keep+1;
+      await atomic(statePath,progress);
+      const next=await collectFarfetchProgress({...options,budgetMs:deadline-now(),maxPages:pageLimit-savedThisRun,tailReconciliationUsed:true});
+      return {...next,pagesTraversed:pagesTraversed+next.pagesTraversed};
+    }
     errors.push(`Farfetch final source check failed (HTTP ${final.status}, expected total ${progress.total}, observed ${finalMeta?.total ?? 'missing'}, first page unchanged ${sameFirst}); last-good preserved`);
-    if (final.ok) await rm(directory, {recursive:true,force:true});
+    if (final.ok&&!countOnlyChange) await rm(directory, {recursive:true,force:true});
     return result([], false, [403,429].includes(final.status));
   }
   // Keep the complete epoch until the caller has published successfully. A

@@ -8,6 +8,7 @@ export interface VerifiedCategoryScope {
   rawCollected: number;
   productUrls: string[];
   checkedAt: string;
+  epochStartedAt?: string;
   coverageStatus: 'FULL';
   paginationExhausted: true;
 }
@@ -29,6 +30,10 @@ export function validateVerifiedCategoryScopes(input: {
     categories.add(scope.url);
     const age = now - Date.parse(scope.checkedAt);
     if (!Number.isFinite(age) || age < 0 || age > 60 * 60_000) errors.push('verified category evidence is stale');
+    if (scope.epochStartedAt !== undefined) {
+      const epochAge=now-Date.parse(scope.epochStartedAt);
+      if(!Number.isFinite(epochAge)||epochAge<0||epochAge>60*60_000)errors.push('verified category collection epoch is stale');
+    }
     const urls = scope.productUrls.map(normalizeProductUrl);
     if (scope.coverageStatus !== 'FULL' || scope.paginationExhausted !== true ||
         !Number.isInteger(scope.sourceTotal) || scope.sourceTotal < 1 || scope.rawCollected !== scope.sourceTotal ||

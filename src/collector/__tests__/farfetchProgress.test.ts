@@ -7,6 +7,7 @@ import {collectFarfetchProgress} from '../farfetchProgress';
 import {FARFETCH_SHOES_URL} from '../farfetch';
 import {recordSourceRetry, sourceRetryPause} from '../sourceRetry';
 import type {fetchText} from '../http';
+import {evaluateMarketplaceCandidate} from '../../marketplaces/automation';
 const directories: string[] = [];
 async function directory() {const dir=await mkdtemp(join(tmpdir(),'farfetch-progress-'));directories.push(dir);return dir;}
 afterEach(async()=>{await Promise.all(directories.splice(0).map(dir=>rm(dir,{recursive:true,force:true})));});
@@ -17,6 +18,41 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('resumes a fresh unchanged first page across count changes without discarding its validated prefix',async()=>{
+  for(const maxPages of [1,2]){
+   const dir=await directory();await collectFarfetchProgress({directory:dir,maxPages,http,reconcileCountChanges:true});
+   const calls:string[]=[];
+   const r=await collectFarfetchProgress({directory:dir,reconcileCountChanges:true,http:async url=>{
+    calls.push(url);const n=Number(new URL(url).searchParams.get('page')??1);
+    return {ok:true,status:200,url,text:page(n,n===1?[1,2]:n===2?[3,4]:[5],5)};
+   }});
+   expect(r.coverageStatus).toBe('FULL');expect(r.products).toHaveLength(5);
+   expect(r.progress.resetReason).toBeNull();expect(r.progress.countChanges).toContainEqual({page:1,previous:4,observed:5});
+   expect(calls).toEqual([FARFETCH_SHOES_URL,FARFETCH_SHOES_URL+'?page=2',FARFETCH_SHOES_URL+'?page=3',FARFETCH_SHOES_URL]);
+  }
+ });
+ it('rechecks the final page once when a moving final count can be reconciled to actual new cards',async()=>{
+  let roots=0,seconds=0;const calls:string[]=[];
+  const r=await collectFarfetchProgress({directory:await directory(),reconcileCountChanges:true,http:async url=>{
+   calls.push(url);
+   if(url.includes('page=3'))return {ok:true,status:200,url,text:page(3,[5],5)};
+   if(url.includes('page=2'))return {ok:true,status:200,url,text:page(2,[3,4],++seconds===1?4:5)};
+   return {ok:true,status:200,url,text:page(1,[1,2],++roots===1?4:5)};
+  }});
+  expect(r.coverageStatus).toBe('FULL');expect(r.products).toHaveLength(5);expect(r.pagesTraversed).toBe(7);
+  expect(calls.filter(url=>url.includes('page=2'))).toHaveLength(2);
+ });
+ it('counts every source card but quarantines unresolved product types instead of inventing footwear',async()=>{
+  const r=await collectFarfetchProgress({directory:await directory(),http:async(url,opts)=>{
+   const response=await http(url,opts);return {...response,text:response.text.replace('Leather mule 4','leather tote bag')};
+  }});
+  expect(r.coverageStatus).toBe('FULL');expect(r.rawSourceProducts).toBe(4);expect(r.products).toHaveLength(4);
+  expect(r.products.find(p=>p.productName==='leather tote bag')?.category).toBeNull();
+  const decision=evaluateMarketplaceCandidate({candidate:{sourceId:'farfetch',products:r.products,coverageStatus:'FULL',
+   sourceTotal:4,rawCollected:4,eligibleTotal:4,paginationExhausted:true,errors:[],newnessVerified:false},previousLastGood:[],preserveMissing:true});
+  expect(decision.report.accepted).toBe(true);expect(decision.report.publicationCoverage).toBe('PARTIAL');
+  expect(decision.eligibleProducts).toHaveLength(3);expect(decision.quarantined).toHaveLength(1);
+ });
  it('reclassifies saved source items instead of trusting an older converted cache',async()=>{
   const dir=await directory();await collectFarfetchProgress({directory:dir,maxPages:1,http});
   const state=JSON.parse(await readFile(join(dir,'progress.json'),'utf8'));
@@ -33,11 +69,11 @@ describe('bounded Farfetch progress',()=>{
  });
  it('retains an unconverted source epoch without publishing it and still rejects stale reuse',async()=>{
   const dir=await directory(),start=Date.parse('2026-10-19T13:00:00Z');
-  const withBag:typeof fetchText=async(url,opts)=>{const r=await http(url,opts);return {...r,text:r.text.replace('Leather mule 4','leather tote bag')};};
-  const r=await collectFarfetchProgress({directory:dir,http:withBag,now:()=>start});
+  const missingIdentity:typeof fetchText=async(url,opts)=>{const r=await http(url,opts);return {...r,text:r.text.replace('"name":"Leather mule 4","brand":{"name":"Test"}','"name":"Leather mule 4"')};};
+  const r=await collectFarfetchProgress({directory:dir,http:missingIdentity,now:()=>start});
   expect(r.products).toEqual([]);expect(r.errors.join()).toContain('product conversion does not reconcile: 3/4');
   expect(JSON.parse(await readFile(join(dir,'progress.json'),'utf8')).nextPage).toBe(3);
-  const next=await collectFarfetchProgress({directory:dir,http:withBag,maxPages:1,now:()=>start+61*60_000});
+  const next=await collectFarfetchProgress({directory:dir,http:missingIdentity,maxPages:1,now:()=>start+61*60_000});
   expect(next.coverageStatus).toBe('PARTIAL');expect(next.progress.resetReason).toBe('SOURCE_CHANGED_OR_CHECKPOINT_STALE');
  });
  it('stops a visible HTTP 200 access challenge before collecting another listing page',async()=>{
@@ -70,8 +106,10 @@ describe('bounded Farfetch progress',()=>{
   expect(r.products).toEqual([]);expect(r.errors.join()).toContain('overlapping pages');
  });
  it('does not certify moving counts when the final source disagrees',async()=>{
-  const r=await collectFarfetchProgress({directory:await directory(),reconcileCountChanges:true,http:async url=>({ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],5)})});
+  let calls=0;
+  const r=await collectFarfetchProgress({directory:await directory(),reconcileCountChanges:true,http:async url=>{calls++;return {ok:true,status:200,url,text:url.includes('?')?page(2,[3,4],4):page(1,[1,2],5)};}});
   expect(r.products).toEqual([]);expect(r.errors.join()).toContain('final source check failed');
+  expect(calls).toBeLessThanOrEqual(7);
  });
  it('retries a temporary connection failure once and completes without losing saved pages',async()=>{
   let attempts=0;

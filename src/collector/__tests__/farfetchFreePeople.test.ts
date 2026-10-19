@@ -14,6 +14,15 @@ const FARFETCH_HTML = `
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('uses exact official trainer and ballerina scopes for opaque style names while retaining explicit silhouettes', () => {
+    const item={name:'Uma',brand:{name:'Test'},offers:{url:'/uk/shopping/women/test-uma-item-1.aspx'}};
+    for(const [scope,category] of [['trainers','SNEAKER'],['ballerinas','BALLERINA']]) {
+      const listing=`https://www.farfetch.com/uk/shopping/women/${scope}-1/items.aspx`;
+      expect(farfetchJsonLdToProduct(item,listing,'2026-10-19T13:00:00Z')?.category).toBe(category);
+      expect(farfetchJsonLdToProduct({...item,name:'leather boot'},listing,'2026-10-19T13:00:00Z')?.category).toBe('BOOT');
+    }
+    expect(farfetchJsonLdToProduct(item,'https://www.farfetch.com/uk/shopping/women/shoes-1/items.aspx','2026-10-19T13:00:00Z')?.category).toBe('OTHER_FOOTWEAR');
+  });
   it('distinguishes bag-shaped pump ornaments from an actual bag', () => {
     const listing='https://www.farfetch.com/uk/shopping/women/pumps-1/items.aspx';
     const item={name:'Sicily bag-embellished pointed-toe pumps',brand:{name:'Dolce & Gabbana'},

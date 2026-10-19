@@ -3,6 +3,7 @@ import {mkdtemp, rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {collectFarfetchCategories} from '../farfetchCategories';
+import {collectFarfetchProgress} from '../farfetchProgress';
 import {FARFETCH_SHOES_URL, discoverFarfetchFootwearListings, farfetchCategoryKey} from '../farfetch';
 import type {fetchText} from '../http';
 const dirs:string[]=[];
@@ -17,6 +18,29 @@ function html(ids:number[], total=ids.length, links:string[]=[]) {
 }
 const response=(url:string,text:string)=>({url,text,ok:true,status:200});
 describe('Farfetch category completeness',()=>{
+ it('does not certify a category epoch which expires while later categories are collected',async()=>{
+  const dir=await directory();
+  await collectFarfetchProgress({directory:join(dir,'mules'),listingUrl:mules,reconcileCountChanges:true,
+   now:()=>0,http:async url=>response(url,html([1,2]))});
+  let clock=50*60_000,moved=false;
+  const r=await collectFarfetchCategories({directory:dir,budgetMs:20*60_000,now:()=>clock,http:async url=>{
+   if(url===loafers&&!moved){clock+=15*60_000;moved=true;}
+   return response(url,html([1,2],2,url===FARFETCH_SHOES_URL?[loafers,mules]:[]));
+  }});
+  expect(r.coverageStatus).toBe('PARTIAL');expect(r.errors.join()).toContain('epoch became stale');
+ });
+ it('reconciles a moving root count only against the final count and complete category union',async()=>{
+  let roots=0;
+  const r=await collectFarfetchCategories({directory:await directory(),http:async url=>response(url,
+   html([1,2],url===FARFETCH_SHOES_URL&&++roots===1?3:2,url===FARFETCH_SHOES_URL?[mules]:[]))});
+  expect(r.coverageStatus).toBe('FULL');expect(r.sourceReportedProductCount).toBe(2);expect(r.products).toHaveLength(2);
+ });
+ it('keeps a changing root PARTIAL when its final count does not match the collected union',async()=>{
+  let roots=0;
+  const r=await collectFarfetchCategories({directory:await directory(),http:async url=>response(url,
+   html([1,2],url===FARFETCH_SHOES_URL&&++roots===2?3:2,url===FARFETCH_SHOES_URL?[mules]:[]))});
+  expect(r.coverageStatus).toBe('PARTIAL');expect(r.sourceReportedProductCount).toBe(3);expect(r.errors.join()).toContain('2/3');
+ });
  it('stops the entire source at an HTTP 200 human-verification page',async()=>{
   const calls:string[]=[];
   const r=await collectFarfetchCategories({directory:await directory(),http:async url=>{calls.push(url);return response(url,'<h1>Verify you are human</h1>');}});

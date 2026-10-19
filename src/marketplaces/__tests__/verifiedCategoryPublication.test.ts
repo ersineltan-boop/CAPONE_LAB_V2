@@ -51,6 +51,9 @@ describe('verified category publication',()=>{
   const variants:MarketplaceRefreshCandidate[]=[];
   const missing=candidate();missing.verifiedScopes=[];variants.push(missing);
   const stale=candidate();stale.verifiedScopes![0].checkedAt=new Date(Date.now()-61*60_000).toISOString();variants.push(stale);
+  for(const epochStartedAt of [new Date(Date.now()-61*60_000).toISOString(),new Date(Date.now()+60_000).toISOString(),'invalid']) {
+   const oldEpoch=candidate();oldEpoch.verifiedScopes![0].epochStartedAt=epochStartedAt;variants.push(oldEpoch);
+  }
   const interrupted=candidate();interrupted.verifiedScopes![0].paginationExhausted=false as never;variants.push(interrupted);
   const wrongTotal=candidate();wrongTotal.verifiedScopes![0].sourceTotal=3;variants.push(wrongTotal);
   const unmatched=candidate();unmatched.products[0].sourceCategoryUrl=category.replace('espadrilles','boots');variants.push(unmatched);

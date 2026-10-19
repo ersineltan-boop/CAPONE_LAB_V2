@@ -4,7 +4,7 @@ import { evaluateFootwearProduct } from "./footwearGate";
 import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { slugifyCategoryId } from "../source/sourceCategories";
 import { normalizeProductImageUrls } from "../images/resolveImageQuality";
-import type { PilotProduct } from "./types";
+import type { FootwearCategory, PilotProduct } from "./types";
 
 export const FARFETCH_ID = "farfetch";
 export const FARFETCH_NAME = "Farfetch";
@@ -18,6 +18,12 @@ const FOOTWEAR_LISTING =
 /** Supported top-level footwear partitions; never an accessory or brand route. */
 export function farfetchCategoryKey(url: string): string | null {
   return url.match(/^https:\/\/www\.farfetch\.com\/uk\/shopping\/women\/(shoes|trainers|boots|pumps|sandals|ballerinas|loafers|mules|espadrilles|derby-oxford-shoes|flip-flops-slides|slippers)-1\/items\.aspx$/)?.[1] ?? null;
+}
+
+export function resolveFarfetchCategoryFallback(category: FootwearCategory, listingUrl: string): FootwearCategory {
+  if(category!=='OTHER_FOOTWEAR')return category;
+  const key=farfetchCategoryKey(listingUrl);
+  return key==='trainers'?'SNEAKER':key==='ballerinas'?'BALLERINA':category;
 }
 
 interface FarfetchJsonLdProduct {
@@ -96,6 +102,24 @@ export function farfetchJsonLdToProduct(
   listingUrl: string,
   discoveredAt: string,
 ): PilotProduct | null {
+  return farfetchJsonLdToSourceItem(item,listingUrl,discoveredAt,false);
+}
+
+/** Complete source observations may carry unresolved taxonomy for quarantine. */
+export function farfetchJsonLdToSourceObservation(
+  item: FarfetchJsonLdProduct,
+  listingUrl: string,
+  discoveredAt: string,
+): PilotProduct | null {
+  return farfetchJsonLdToSourceItem(item,listingUrl,discoveredAt,true);
+}
+
+function farfetchJsonLdToSourceItem(
+  item: FarfetchJsonLdProduct,
+  listingUrl: string,
+  discoveredAt: string,
+  retainUnresolved: boolean,
+): PilotProduct | null {
   const name = item.name?.trim();
   const brand = typeof item.brand === "string" ? item.brand.trim() : item.brand?.name?.trim();
   const href = item.offers?.url?.trim();
@@ -127,7 +151,9 @@ export function farfetchJsonLdToProduct(
     collectionPath: listingPath,
     fromVerifiedFootwearCollection: true,
   });
-  if (gate.decision !== "ACCEPT_FOOTWEAR" || !gate.category) return null;
+  const category=gate.decision==='ACCEPT_FOOTWEAR' && gate.category
+    ? resolveFarfetchCategoryFallback(gate.category,listingUrl) : null;
+  if (!category && !retainUnresolved) return null;
 
   const images = normalizeProductImageUrls(
     (Array.isArray(item.image) ? item.image : item.image ? [item.image] : []).map(farfetchImageUrl),
@@ -148,7 +174,7 @@ export function farfetchJsonLdToProduct(
     productUrl,
     imageUrl: images[0] ?? null,
     images,
-    category: gate.category,
+    category,
     color: null,
     material: null,
     toeShape: null,
