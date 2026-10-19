@@ -295,16 +295,26 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   const evidenceTags = (input.tags ?? []).filter((tag) =>
     !isMerchandisingTag(tag) && !(explicitShoeType && /^accessories$/i.test(tag.trim())),
   );
-  const haystack = joinSignals([
+  const rawSignals = joinSignals([
     input.title,
     input.productType,
     ...evidenceTags,
     input.handle,
   ]);
+  // A bag-shaped ornament on an explicitly named pump is construction detail.
+  // Remove only that modifier; any other bag signal still excludes the item.
+  const bagEmbellishedPump = explicitShoeType && input.fromVerifiedFootwearCollection === true &&
+    /\bbag[- ]embellished\b/i.test(input.title) && /\bpumps?\s*$/i.test(input.title);
+  const haystack = bagEmbellishedPump ? rawSignals.replace(/\bbag[- ]embellished\b/gi,'embellished') : rawSignals;
 
   const footwearOverride = hasTitleHandleFootwearSupport(input) ??
     (/^ballerina$/i.test(input.productType ?? "") && isOfficialJilSanderRingBallerina(input.title, input.handle ?? "")
       ? "official-jil-sander-ring-ballerina" : null);
+  // "Lipstick" names real loafer and ballet-flat styles. Require
+  // the footwear collection, explicit shoe type and terminal shoe noun; a
+  // lipstick with a footwear-print name remains cosmetics.
+  const lipstickFootwearStyle = explicitShoeType && input.fromVerifiedFootwearCollection === true &&
+    /\blipstick\b/i.test(input.title) && /\b(?:loafers?|ballet flats?)\s*$/i.test(input.title);
 
   if (input.handle && /^bag/i.test(input.handle)) return "handle:bag";
   if (input.handle && /^b-/i.test(input.handle) && /\bbag\b/i.test(haystack)) {
@@ -315,13 +325,14 @@ export function hasStrongNonFootwearSignal(input: FootwearGateInput): string | n
   }
   if (/\brouteins\b/i.test(haystack)) return "route-protection";
   if (/\bgift[- ]card/i.test(haystack)) return "gift-card";
-  if (/\blipstick/i.test(haystack)) return "lipstick";
+  if (/\blipstick/i.test(haystack) && !lipstickFootwearStyle) return "lipstick";
   if (/\bmakeup/i.test(haystack)) return "makeup";
 
   for (const pattern of NON_FOOTWEAR_PATTERNS) {
     if (pattern.test(haystack)) {
       const source = pattern.source;
       const overrideSafe =
+        (lipstickFootwearStyle && source.includes("lipstick")) ||
         source.includes("scarf") ||
         source.includes("belt") ||
         source.includes("cap") ||
@@ -433,6 +444,10 @@ export function inferFootwearCategoryFromSignals(input: FootwearGateInput): Foot
 }
 
 function hasTitleHandleFootwearSupport(input: FootwearGateInput): string | null {
+  // The terminal shoe noun distinguishes "ring ballerinas" from a
+  // "ballerina ring" without weakening the jewellery exclusion.
+  if (input.fromVerifiedFootwearCollection && /^shoes$/i.test(input.productType ?? '') &&
+      /\bballerinas?\s*$/i.test(input.title)) return "terminal-ballerina";
   const text = joinSignals([input.title, input.handle]).toLowerCase();
   const hits = [
     /\bshoe/i,
@@ -560,12 +575,16 @@ export function evaluateStoredPilotProduct(input: {
   }
   const officialRingBallerina = input.category === "BALLERINA" && isOfficialJilSanderRingBallerina(input.productName, input.productUrl);
   const handle = officialRingBallerina ? input.productUrl : extractHandleFromProductUrl(input.productUrl);
+  const verifiedFarfetchCollection = /^https:\/\/www\.farfetch\.com\/uk\/shopping\/women\/[^/?#]+-item-\d+\.aspx$/.test(input.productUrl) &&
+    /^https:\/\/www\.farfetch\.com\/uk\/shopping\/women\/(?:trainers|boots|pumps|sandals|ballerinas|loafers|mules|espadrilles|derby-oxford-shoes|flip-flops-slides|slippers)-1\/items\.aspx$/.test(input.sourceCategoryUrl ?? '');
 
   const nonFootwearGate = evaluateFootwearProduct({
     title: input.productName,
-    productType: officialRingBallerina ? "Ballerina" : "",
-    tags: [],
+    productType: officialRingBallerina ? "Ballerina" : verifiedFarfetchCollection ? "Shoes" : "",
+    tags: verifiedFarfetchCollection ? ['women'] : [],
     handle,
+    fromVerifiedFootwearCollection: verifiedFarfetchCollection,
+    collectionPath: verifiedFarfetchCollection ? input.sourceCategoryPath ?? input.sourceCategoryUrl ?? undefined : undefined,
   });
 
   if (nonFootwearGate.decision === "EXCLUDE_NON_FOOTWEAR") {

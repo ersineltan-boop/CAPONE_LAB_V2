@@ -7,12 +7,72 @@ import {
   parseFarfetchCatalogPagination,
 } from "../farfetch";
 import { isFreePeopleAntiBot } from "../freePeople";
+import {evaluateStoredPilotProduct} from '../footwearGate';
 
 const FARFETCH_HTML = `
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","numberOfItems":2,"itemListElement":[{"@type":"Product","name":"Teju 85 leather mules","image":["https://cdn-images.farfetch-contents.com/30/95/87/31/30958731_60261410_480.jpg"],"brand":{"@type":"Brand","name":"Paris Texas"},"offers":{"@type":"Offer","url":"/uk/shopping/women/paris-texas-teju-85-leather-mules-item-30958731.aspx"}},{"@type":"Product","name":"Leather tote","image":["https://cdn-images.farfetch-contents.com/x_480.jpg"],"brand":{"name":"The Row"},"offers":{"url":"/uk/shopping/women/the-row-leather-tote-item-1.aspx"}}]}</script>
 `;
 
 describe("Farfetch marketplace JSON-LD collector", () => {
+  it('distinguishes bag-shaped pump ornaments from an actual bag', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/pumps-1/items.aspx';
+    const item={name:'Sicily bag-embellished pointed-toe pumps',brand:{name:'Dolce & Gabbana'},
+      offers:{url:'/uk/shopping/women/dolce-gabbana-sicily-bag-embellished-pointed-toe-pumps-item-39036642.aspx'}};
+    expect(farfetchJsonLdToProduct(item,listing,'2026-10-19T13:00:00Z')?.category).toBe('PUMP');
+    for(const name of ['Sicily pump-embellished bag','bag-embellished pumps tote bag','leather bag and bag-embellished pumps']) {
+      expect(farfetchJsonLdToProduct({...item,name},listing,'2026-10-19T13:00:00Z')).toBeNull();
+    }
+  });
+  it('does not use a brand name in the source URL as clothing evidence', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/sandals-1/items.aspx';
+    const url='/uk/shopping/women/karl-lagerfeld-jeans-waverly-double-strap-wedges-item-35092767.aspx';
+    const item={name:'waverly double-strap wedges',brand:{name:'Karl Lagerfeld Jeans'},offers:{url}};
+    const product=farfetchJsonLdToProduct(item,listing,'2026-10-19T13:00:00Z');
+    expect(product?.category).toBe('WEDGE');
+    expect(product?.brand).toBe('Karl Lagerfeld Jeans');
+    expect(product?.productUrl).toBe(`https://www.farfetch.com${url}`);
+    expect(farfetchJsonLdToProduct({...item,name:'leather jeans',offers:{url:'/uk/shopping/women/karl-lagerfeld-jeans-leather-jeans-item-1.aspx'}},listing,'2026-10-19T13:00:00Z')).toBeNull();
+    expect(farfetchJsonLdToProduct({...item,name:'Waverly tote bag'},listing,'2026-10-19T13:00:00Z')).toBeNull();
+    expect(farfetchJsonLdToProduct({name:'Baguette slides',brand:{name:'Fendi'},
+      offers:{url:'/uk/shopping/women/fendi-baguette-slides-item-29476258.aspx'}},listing,'2026-10-19T13:00:00Z')?.category).toBe('SANDAL');
+  });
+  it('keeps source-listed Lipstick loafers while rejecting actual cosmetics and bags', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/loafers-1/items.aspx';
+    const item={name:'Lipstick V.2 loafers',brand:{name:'Henderson Baracco'},
+      offers:{url:'/uk/shopping/women/henderson-baracco-lipstick-v2-loafers-item-27073292.aspx'}};
+    const product=farfetchJsonLdToProduct(item,listing,'2026-10-19T13:00:00Z')!;
+    expect(product.category).toBe('LOAFER');
+    expect(evaluateStoredPilotProduct(product).decision).toBe('ACCEPT_FOOTWEAR');
+    expect(evaluateStoredPilotProduct({...product,sourceCategoryUrl:'https://unverified.example/loafers'}).decision).toBe('EXCLUDE_NON_FOOTWEAR');
+    expect(evaluateStoredPilotProduct({...product,productName:'Loafers-print lipstick'}).decision).toBe('EXCLUDE_NON_FOOTWEAR');
+    for(const name of ['Lipstick','Loafers-print lipstick','Lipstick loafers tote bag']) {
+      const offers={url:`/uk/shopping/women/test-${name.replaceAll(' ','-')}-item-2.aspx`};
+      expect(farfetchJsonLdToProduct({...item,name,offers},listing,'2026-10-19T13:00:00Z')).toBeNull();
+    }
+  });
+  it('keeps source-listed ring ballerinas and Lipstick ballet flats without admitting a ballerina ring', () => {
+    const listing='https://www.farfetch.com/uk/shopping/women/ballerinas-1/items.aspx';
+    for(const [name,brand,url] of [
+      ['ring ballerinas','Jil Sander','/uk/shopping/women/jil-sander-ring-ballerinas-item-32486201.aspx'],
+      ['Lipstick pointed-toe leather ballet flats','Babu Milano','/uk/shopping/women/babu-milano-lipstick-pointed-toe-leather-ballet-flats-item-39397978.aspx'],
+    ]) {
+      const product=farfetchJsonLdToProduct({name,brand:{name:brand},offers:{url}},listing,'2026-10-19T13:00:00Z');
+      expect(product?.category).toBe('BALLERINA');
+    }
+    const ring={name:'ballerina ring',brand:{name:'Test'},offers:{url:'/uk/shopping/women/test-ballerina-ring-item-2.aspx'}};
+    expect(farfetchJsonLdToProduct(ring,listing,'2026-10-19T13:00:00Z')).toBeNull();
+  });
+  it('reads the source ItemList inside JSON-LD @graph without treating breadcrumbs as products', () => {
+    const products=parseFarfetchItemList(FARFETCH_HTML);
+    const graph={"@context":"https://schema.org","@graph":[
+      {"@type":"CollectionPage",mainEntity:{"@id":"#catalog"}},
+      {"@type":"ItemList","@id":"#catalog",numberOfItems:products.length,itemListElement:products},
+    ]};
+    const breadcrumb={"@type":"BreadcrumbList",itemListElement:[{name:'Shoes'}]};
+    const html=`<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script><script type="application/ld+json">${JSON.stringify(graph)}</script>`;
+    expect(parseFarfetchItemList(html)).toEqual(products);
+    expect(parseFarfetchItemList(`<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`)).toEqual([]);
+  });
   it('keeps source-listed flip-flops with clothing or accessory words in the style name', () => {
     const listing='https://www.farfetch.com/uk/shopping/women/flip-flops-slides-1/items.aspx';
     for (const [name, brand, slug] of [
