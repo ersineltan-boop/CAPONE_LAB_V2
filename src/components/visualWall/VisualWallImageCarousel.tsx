@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import ProductGalleryModal from "../gallery/ProductGalleryModal";
 import ImagePlaceholder from "../radar/ImagePlaceholder";
@@ -17,8 +17,8 @@ import {
   PRODUCT_PHOTO_FIT_CLASS,
   nextCarouselIndex,
   prevCarouselIndex,
-  resolveSwipeDirection,
 } from "./carouselNavigation";
+import { useGallerySwipe } from "./useGallerySwipe";
 
 export { PRODUCT_PHOTO_FIT_CLASS };
 
@@ -52,7 +52,6 @@ export default function VisualWallImageCarousel({
   const [failedKeys, setFailedKeys] = useState<Set<string>>(() => new Set());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [galleryOpen, setGalleryOpen] = useState(false);
-  const touchStartXRef = useRef<number | null>(null);
 
   const visibleImages = useMemo(() => {
     if (failedKeys.size === 0) return initialImages;
@@ -107,23 +106,11 @@ export default function VisualWallImageCarousel({
     });
   }, [activeImage]);
 
-  const handleTouchStart = useCallback((event: React.TouchEvent) => {
-    touchStartXRef.current = event.touches[0]?.clientX ?? null;
-  }, []);
-
-  const handleTouchEnd = useCallback(
-    (event: React.TouchEvent) => {
-      if (!hasMultipleImages) return;
-      const startX = touchStartXRef.current;
-      touchStartXRef.current = null;
-      if (startX == null) return;
-
-      const endX = event.changedTouches[0]?.clientX ?? startX;
-      const direction = resolveSwipeDirection(startX, endX);
-      if (direction === "next") goNext(event);
-      if (direction === "prev") goPrev(event);
-    },
-    [goNext, goPrev, hasMultipleImages],
+  const swipe = useGallerySwipe(
+    hasMultipleImages,
+    initialImages.join("|"),
+    goNext,
+    goPrev,
   );
 
   const handleImageClick = useCallback(() => {
@@ -143,8 +130,7 @@ export default function VisualWallImageCarousel({
   return (
     <div
       className="relative h-full w-full touch-pan-y"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
+      {...swipe}
     >
       <button
         type="button"
@@ -162,6 +148,7 @@ export default function VisualWallImageCarousel({
           alt={alt}
           loading={priority && currentIndex === 0 ? "eager" : "lazy"}
           decoding="async"
+          draggable={false}
           onError={handleImageError}
           className={PRODUCT_PHOTO_FIT_CLASS}
         />

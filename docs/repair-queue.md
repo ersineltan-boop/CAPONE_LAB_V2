@@ -235,10 +235,14 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    Review confirmed the scope and merged current main into the repair branch
    without changing its catalog data. Linux passed all 1,168 tests in 139 files,
    including seven note regressions; the reported Windows import-path failure
-   did not reproduce. Browser verification is still unconfirmed: the local
-   Playwright browser was absent and its installer returned a truncated archive.
-   Do not claim a browser click-through or a release before remaining gates pass.
-   Cursor work is now on GitHub and can be continued with the user's PC off.
+   did not reproduce. Released via PR193, merge
+   06da18547e4779a6c1f3d6a6a0514177adf76073. Exact-head CI 39288284540
+   succeeded; Preview dpl_AsjuNuZVvRysmSgHEBFz3e35ZXVM and exact merge-SHA
+   production dpl_GLrtP6EmZYzSi2pmj4o7PjkeAs7N were READY. Public-browser
+   checks on actual Camille/Georgia models verified saving, unchanged blur,
+   separate models, complete deletion, reopen and page reload. The temporary
+   note was removed, restoring the original empty field. Farfetch live HTTP200
+   retained the PR191 hash/counts. Cursor's note repair is complete and live.
    Keep Ponti and other source-quality issues pending unless new evidence appears.
    Free People remains blocked by its official source access check.
 4. Casadei count mismatch: fixed and live in PR176 (merge
@@ -261,9 +265,27 @@ on the queue, but an unavailable Cursor session must not stop independent work.
 
 ## Continue safely
 
-Current user priority (19 October): finish Farfetch issue 1 before starting the
-other outstanding issues. Publish already verified preserving work promptly;
-do not hold an accepted independent delivery behind repeated source experiments.
+Current user priority (19–20 October): finish a usable site before the China
+trip. Pause additional catalog expansion and repeated source experiments.
+Preserve independent verified deliveries; blocked sources do not hold site work.
+
+20 October UI audit: Visual search for Pretty Ballerinas returned 216 models;
+the Nicole detail opened with a real source URL, gallery and two color controls.
+Escape from the detail note field did not close the drawer; that remains pending.
+Real mobile viewport testing and remaining site flows are unverified, not bugs
+invented from a checklist.
+
+User-reported gallery swipe repair is under validation in
+fix/gallery-swipe-20261020. Shared pointer gestures cover touch/pen/mouse in
+inline and fullscreen galleries, preserve vertical scroll, reject pinch,
+cancelled and zoomed gestures, and suppress the post-drag image click. Arrow
+buttons remain independent; portal events cannot advance the parent gallery.
+Eleven new gesture/handler regressions plus existing zoom/navigation tests
+passed (18 focused checks), including portal isolation, controls and mouse
+capture cancellation. The initial full run passed 1,175 tests; four added
+handler tests also passed. Exact-head CI must include all 1,179 tests. Final
+build, same-head Preview and release verification are still required.
+Real iPhone swipe behavior has not been claimed as tested.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
 existing validated repair before opening a duplicate. Keep each collection
