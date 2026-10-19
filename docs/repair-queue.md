@@ -99,6 +99,26 @@ on the queue, but an unavailable Cursor session must not stop independent work.
    prepared shard: 5,405 visible families, `PARTIAL / ready 5504 / pending 0`.
    Both recovered source products are present. Only this category is FULL;
    the marketplace remains PARTIAL.
+   On 19 October, the official root advertised 64,338 products but the
+   current reader returned zero cards: Farfetch now wraps the 96-card
+   ItemList in JSON-LD `@graph`. Support for that observed structure retains
+   the old direct-ItemList format and ignores breadcrumbs. Actual source
+   observations also exposed false exclusions for Lipstick loafers/ballet
+   flats, Jil Sander ring ballerinas, the `Jeans` word in brand URL prefixes,
+   and a bag-shaped ornament on explicitly named pumps. Narrow evidence rules
+   keep the original names, brands, URLs and actual images while continuing
+   to reject real clothing, cosmetics, bags and jewellery. Brand-prefix review
+   keeps a full URL so `Baguette` styles do not trigger a bag-handle shortcut.
+   New checksummed page parts retain actual source items, reclassify them
+   with current rules and preserve a conversion-failed epoch for review;
+   stale epochs, mismatched source URLs, overlapping pages and damaged parts
+   still cannot publish. Stored source reviews retain the exact official
+   category evidence. This code repair contains no new catalog delivery.
+   Bounded fresh category follow-up is staged separately; source counts have
+   moved during traversal, and whole-marketplace completeness is unverified.
+   Local validation passed: 1,149 tests in 138 files, catalog/market-research
+   build, TypeScript and Vite production build. Exact-head CI, Preview and
+   production verification remain pending.
    Next independent work: keep Ponti pending unless stronger exact source
    evidence appears, then continue the remaining bounded Farfetch scopes
    without treating stale checkpoints as fresh proof.

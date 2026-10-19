@@ -53,6 +53,8 @@ export function applyFootwearGateToProducts(products: PilotProduct[]): {
         productName: product.productName,
         productUrl: product.productUrl,
         category: product.category,
+        sourceCategoryPath: product.sourceCategoryPath,
+        sourceCategoryUrl: product.sourceCategoryUrl,
       });
 
       validationMethod = gate.validationMethod;

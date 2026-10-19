@@ -2,6 +2,7 @@ import {afterEach, describe, expect, it} from 'vitest';
 import {mkdtemp, readFile, readdir, rm, writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
+import {createHash} from 'node:crypto';
 import {collectFarfetchProgress} from '../farfetchProgress';
 import {FARFETCH_SHOES_URL} from '../farfetch';
 import {recordSourceRetry, sourceRetryPause} from '../sourceRetry';
@@ -16,6 +17,29 @@ function page(number: number, ids = number === 1 ? [1,2] : [3,4], total=4) {
 }
 const http: typeof fetchText=async url=>({ok:true,status:200,url,text:page(url.includes('page=2')?2:1)});
 describe('bounded Farfetch progress',()=>{
+ it('reclassifies saved source items instead of trusting an older converted cache',async()=>{
+  const dir=await directory();await collectFarfetchProgress({directory:dir,maxPages:1,http});
+  const state=JSON.parse(await readFile(join(dir,'progress.json'),'utf8'));
+  const saved=JSON.parse(await readFile(join(dir,state.parts[0]+'.json'),'utf8'));
+  expect(saved.sourceItems).toHaveLength(2);
+  saved.products=[];
+  const body=JSON.stringify(saved),hash=createHash('sha256').update(body).digest('hex');
+  await writeFile(join(dir,hash+'.json'),body);state.parts[0]=hash;
+  await writeFile(join(dir,'progress.json'),JSON.stringify(state));
+  const calls:string[]=[];
+  const r=await collectFarfetchProgress({directory:dir,http:async(url,opts)=>{calls.push(url);return http(url,opts);}});
+  expect(r.coverageStatus).toBe('FULL');expect(r.products).toHaveLength(4);
+  expect(calls).toEqual([FARFETCH_SHOES_URL,FARFETCH_SHOES_URL+'?page=2',FARFETCH_SHOES_URL]);
+ });
+ it('retains an unconverted source epoch without publishing it and still rejects stale reuse',async()=>{
+  const dir=await directory(),start=Date.parse('2026-10-19T13:00:00Z');
+  const withBag:typeof fetchText=async(url,opts)=>{const r=await http(url,opts);return {...r,text:r.text.replace('Leather mule 4','leather tote bag')};};
+  const r=await collectFarfetchProgress({directory:dir,http:withBag,now:()=>start});
+  expect(r.products).toEqual([]);expect(r.errors.join()).toContain('product conversion does not reconcile: 3/4');
+  expect(JSON.parse(await readFile(join(dir,'progress.json'),'utf8')).nextPage).toBe(3);
+  const next=await collectFarfetchProgress({directory:dir,http:withBag,maxPages:1,now:()=>start+61*60_000});
+  expect(next.coverageStatus).toBe('PARTIAL');expect(next.progress.resetReason).toBe('SOURCE_CHANGED_OR_CHECKPOINT_STALE');
+ });
  it('stops a visible HTTP 200 access challenge before collecting another listing page',async()=>{
   const calls:string[]=[];
   const r=await collectFarfetchProgress({directory:await directory(),http:async url=>{calls.push(url);return {ok:true,status:200,url,text:'<h1>Verify you are human</h1>'};}});

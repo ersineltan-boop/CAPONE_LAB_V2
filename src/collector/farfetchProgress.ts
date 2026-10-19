@@ -6,7 +6,7 @@ import {farfetchAccessBlocked} from './farfetchAccess';
 import {FARFETCH_BASE, FARFETCH_SHOES_URL, farfetchCategoryKey, farfetchJsonLdToProduct, parseFarfetchCatalogPagination, parseFarfetchItemList} from './farfetch';
 import type {PilotProduct} from './types';
 
-interface Page {urls: string[]; products: PilotProduct[]; collectedAt: string; fingerprint: string;}
+interface Page {urls: string[]; products: PilotProduct[]; sourceItems?: ReturnType<typeof parseFarfetchItemList>; collectedAt: string; fingerprint: string;}
 interface Progress {version: 1; listing?: string; reconcileCountChanges?: boolean; countChanges?: Array<{page: number; previous: number; observed: number}>; startedAt: string; total: number; size: number; first: string; nextPage: number; parts: string[];}
 const digest = (text: string) => createHash('sha256').update(text).digest('hex');
 async function atomic(path: string, value: unknown) {
@@ -80,9 +80,22 @@ export async function collectFarfetchProgress(options: {
       throw new Error('Farfetch malformed or duplicate source URLs');
     }
     const collectedAt = new Date(now()).toISOString();
-    return {urls, products: items.flatMap(item => {
+    return {urls, sourceItems:items, products: items.flatMap(item => {
       const product = farfetchJsonLdToProduct(item, listing, collectedAt); return product ? [product] : [];
     }), collectedAt, fingerprint: digest(JSON.stringify(urls))};
+  };
+  const productsForPage = (page: Page) => {
+    if (page.sourceItems === undefined) return page.products; // Legacy checkpoints.
+    if (!Array.isArray(page.sourceItems) || page.sourceItems.length !== page.urls.length ||
+        page.sourceItems.some((item,index) => new URL(item.offers?.url ?? '', FARFETCH_BASE).href.split('?')[0] !== page.urls[index])) {
+      throw new Error('Farfetch checkpoint source evidence mismatch');
+    }
+    // Re-run the current classifier against immutable source observations.
+    // A fixed vocabulary rule does not require downloading the same pages.
+    return page.sourceItems.flatMap(item => {
+      const product=farfetchJsonLdToProduct(item,listing,page.collectedAt);
+      return product ? [product] : [];
+    });
   };
   let first: Page;
   try {first = readPage(home.text);} catch (error) {errors.push(String(error)); return result();}
@@ -102,7 +115,7 @@ export async function collectFarfetchProgress(options: {
     for (const hash of progress.parts) {
       const body=await readFile(join(directory, `${hash}.json`), 'utf8');
       if (digest(body)!==hash) {errors.push('Farfetch observation checkpoint checksum mismatch');return result();}
-      observations.push(...(JSON.parse(body) as Page).products);
+      observations.push(...productsForPage(JSON.parse(body) as Page));
     }
   }
   let required = Math.ceil(progress.total / progress.size);
@@ -149,13 +162,17 @@ export async function collectFarfetchProgress(options: {
       if (digest(body) !== hash) throw new Error('Farfetch checkpoint checksum mismatch');
       const page = JSON.parse(body) as Page;
       for (const url of page.urls) {if (urls.has(url)) throw new Error('Farfetch repeated/overlapping pages'); urls.add(url);}
-      products.push(...page.products);
+      products.push(...productsForPage(page));
     }
   } catch (error) {errors.push(String(error)); await rm(directory, {recursive:true,force:true}); return result();}
   rawSourceProducts = urls.size;
-  if (now() - Date.parse(progress.startedAt) > 60 * 60_000 || urls.size !== progress.total || products.length !== progress.total) {
+  if (now() - Date.parse(progress.startedAt) > 60 * 60_000 || urls.size !== progress.total) {
     errors.push('Farfetch complete snapshot is stale or does not reconcile; last-good preserved');
     await rm(directory, {recursive:true,force:true}); return result();
+  }
+  if (products.length !== progress.total) {
+    errors.push(`Farfetch product conversion does not reconcile: ${products.length}/${progress.total}; source checkpoint retained, last-good preserved`);
+    return result();
   }
   if (now() + 16_000 > deadline) {errors.push('FARFETCH_FINAL_CHECK_PENDING_PROGRESS_SAVED'); return result();}
   const final = await request(listing, 500);

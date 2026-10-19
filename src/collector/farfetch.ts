@@ -30,6 +30,7 @@ interface FarfetchJsonLdProduct {
 
 interface FarfetchItemList {
   "@type"?: string;
+  "@graph"?: FarfetchItemList[];
   numberOfItems?: number;
   itemListElement?: FarfetchJsonLdProduct[];
 }
@@ -45,8 +46,11 @@ export function parseFarfetchItemList(html: string): FarfetchJsonLdProduct[] {
   for (const block of blocks) {
     try {
       const json = JSON.parse(block) as FarfetchItemList;
-      if (json["@type"] === "ItemList" && Array.isArray(json.itemListElement)) {
-        return json.itemListElement.filter((item) => item["@type"] === "Product" || Boolean(item.name));
+      const nodes = [json, ...(Array.isArray(json["@graph"]) ? json["@graph"] : [])];
+      for (const node of nodes) {
+        if (node?.["@type"] === "ItemList" && Array.isArray(node.itemListElement)) {
+          return node.itemListElement.filter((item) => item["@type"] === "Product" || Boolean(item.name));
+        }
       }
     } catch {
       continue;
@@ -105,11 +109,21 @@ export function farfetchJsonLdToProduct(
   }
 
   const listingPath = new URL(listingUrl).pathname;
+  const productSlug = new URL(productUrl).pathname.split('/').at(-1) ?? '';
+  const brandSlug = brand.normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  // A source brand such as "Karl Lagerfeld Jeans" is not clothing evidence.
+  // Remove only its exact prefix from the handle used for product-type review;
+  // keep the original URL and every product-name signal unchanged.
+  const reviewHandle = brandSlug && productSlug.startsWith(`${brandSlug}-`)
+    ? productUrl.slice(0, productUrl.length - productSlug.length) + productSlug.slice(brandSlug.length + 1)
+    : productUrl;
   const gate = evaluateFootwearProduct({
     title: name,
     productType: "Shoes",
     tags: ["women", listingPath],
-    handle: productUrl,
+    handle: reviewHandle,
+    officialProductUrl: productUrl,
     collectionPath: listingPath,
     fromVerifiedFootwearCollection: true,
   });
