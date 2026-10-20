@@ -213,7 +213,7 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
 
               <ModelFamilyProductGrid
                 items={visibleItems}
-                emptyMessage={UI_COPY.emptySaved}
+                emptyMessage={savedIds.length === 0 ? UI_COPY.emptySaved : UI_COPY.emptyFilters}
                 density="visual"
                 researchStates={researchStates}
                 onSelectItem={setSelectedFamilyId}

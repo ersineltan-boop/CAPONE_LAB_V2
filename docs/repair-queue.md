@@ -318,17 +318,32 @@ unverified; do not duplicate the completed keyboard repair.
 Its report is dated 3 October while promising "tonight", and hardcoded limit
 copy says 5 although current queue policy is 25; no schedule change is authorized.
 
-Current bounded repair: saved-product brand filter omits marketplace-only
+Saved-product brand filter repair: the previous filter omitted marketplace-only
 brands. Live reproduction saved Farfetch Christian Louboutin 100mm Hot Chick
 Pump: card appeared, but brand select had only the 82 registered brands.
 Pretty Ballerinas save/reload/detail and combined Visual Premium/new/BABET/search
 checks passed. Own temporary saves were removed; saved list returned zero.
-The proposed fix retains registered options and adds actual saved-family brands,
+The fix retains registered options and adds actual saved-family brands,
 deduplicated and Turkish-sorted without changing exact brand values. Options
 do not depend on the selected brand/source/search, so other saved brands remain
 selectable. Catalog records, IDs, galleries, notes and schedules are unchanged.
-Tests/build, exact-head CI/Preview and merge-SHA production/live checks are
-required before claiming this repair released.
+Released via PR196, merge 6f768ec9cd5a0cc11d4f20236f24b64a9f8c41e2.
+Head 3b57654f8e3d97f57ad3d00eed698e221b868f92 passed all 1,190 tests in 143
+files and production build locally and in CI39374206512. Preview
+dpl_5CRapGjDenS9YpAyQZqEoVAHk33i was READY for that head; production
+dpl_HDpMbW65W4chLXVfNDJRDrSxXvR9 was READY for the exact merge. Public
+browser checks confirmed Christian Louboutin appears in the dropdown, remains
+selectable with another brand active, filters correctly with Farfetch/search,
+and persists after reload. The temporary save was removed, restoring zero saved
+products. Live Farfetch HTTP200 retained the PR191 hash/counts.
+
+Current bounded repair: when saved products exist but none match a brand,
+source or search filter, the saved grid incorrectly says no products have been
+saved. Use the existing filter-empty message while any saved IDs exist; keep
+the existing genuinely-empty message when there are no saved IDs. Verification
+must cover no saves, a nonmatching filter, clearing filters and removing the
+temporary save. Full tests/build, exact-head CI/Preview and exact merge-SHA
+production/live checks remain required before claiming release.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
 existing validated repair before opening a duplicate. Keep each collection
