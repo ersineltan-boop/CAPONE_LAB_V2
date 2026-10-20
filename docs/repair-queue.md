@@ -337,13 +337,32 @@ selectable with another brand active, filters correctly with Farfetch/search,
 and persists after reload. The temporary save was removed, restoring zero saved
 products. Live Farfetch HTTP200 retained the PR191 hash/counts.
 
-Current bounded repair: when saved products exist but none match a brand,
+Saved empty-result repair: when saved products exist but none match a brand,
 source or search filter, the saved grid incorrectly says no products have been
 saved. Use the existing filter-empty message while any saved IDs exist; keep
 the existing genuinely-empty message when there are no saved IDs. Verification
 must cover no saves, a nonmatching filter, clearing filters and removing the
 temporary save. Full tests/build, exact-head CI/Preview and exact merge-SHA
-production/live checks remain required before claiming release.
+production/live checks passed for release PR197: head
+56021de633cdf3ccfb2c9afdc1d919b43ab10dde, CI39384509011 (1,190 tests in 143
+files and production build), Preview dpl_mun8XwLygTyfiLwWtCACAxfd6snK READY.
+Production dpl_AovNsa4G7ZUVETRBazBq5UxAPUs7 was READY for exact merge
+89172cf34c03b3661e17e9e305ab31d99218cd17. Public browser checks verified
+brand/source/search empty results, clearing filters restoring the saved model,
+and removing the temporary save restoring the genuine no-saves message.
+Live Farfetch HTTP200 retained the PR191 hash/counts.
+
+Current bounded repair: mobile touch targets. Existing card photo arrows were
+about 17x21px, save18px high and color buttons32x32px, with the same sizing
+below the mobile breakpoint. A shared CSS utility makes affected card, inline
+photo, detail and fullscreen-gallery controls at least44x44px on narrow screens
+or devices with a coarse primary pointer. Existing wrapping handles the larger
+color/action controls. Desktop fine-pointer sizing remains unchanged.
+The cloud browser exposes no viewport/device emulation capability; DevTools
+and zoom shortcuts left measured viewport1363x936. Do not claim physical-phone
+or narrow-screen rendering was tested. Validate built CSS, full tests/build,
+Preview and production commits and actual available live control behavior.
+Automatic Upload remains last; no source collection or scheduler changes.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
 existing validated repair before opening a duplicate. Keep each collection

@@ -55,7 +55,7 @@ function ColorVariantStrip({
                 event.stopPropagation();
                 onSelect(variant.id);
               }}
-              className={`h-8 w-8 overflow-hidden border ${
+              className={`touch-target h-8 w-8 overflow-hidden border ${
                 active ? "border-ink" : "border-line hover:border-ink"
               }`}
               title={variant.color ?? undefined}
@@ -150,7 +150,7 @@ function ProductCard({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(event) => event.stopPropagation()}
-            className="absolute right-1 top-1 z-20 border border-line bg-white/90 px-1.5 py-0.5 text-[9px] text-ink-muted transition-colors hover:border-ink hover:text-ink"
+            className="touch-target absolute right-1 top-1 z-20 inline-flex items-center justify-center border border-line bg-white/90 px-1.5 py-0.5 text-[9px] text-ink-muted transition-colors hover:border-ink hover:text-ink"
             aria-label={UI_COPY.openAtSource}
             title={UI_COPY.openAtSource}
           >
@@ -200,7 +200,7 @@ function ProductCard({
             <button
               type="button"
               onClick={() => onToggleReviewed(item.modelFamilyId, !reviewed)}
-              className={`border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
+              className={`touch-target border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
                 reviewed
                   ? "border-ink bg-ink text-cream"
                   : "border-line text-ink-muted hover:border-ink"
@@ -213,7 +213,7 @@ function ProductCard({
             <button
               type="button"
               onClick={() => onToggleSaved(item.modelFamilyId, !saved)}
-              className={`border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
+              className={`touch-target border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
                 saved
                   ? "border-ink bg-ink text-cream"
                   : "border-line text-ink-muted hover:border-ink"

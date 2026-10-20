@@ -28,6 +28,13 @@
 }
 
 @layer utilities {
+  @media (width < 40rem), (pointer: coarse) {
+    .touch-target {
+      min-width: 44px;
+      min-height: 44px;
+    }
+  }
+
   .font-serif {
     font-family: var(--font-serif);
   }
