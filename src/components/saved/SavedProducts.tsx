@@ -15,6 +15,7 @@ import { ALL_COUNTRIES_ID } from "../../brands/countryGrouping";
 import { filterSavedFamilies, filterFamiliesBySearch } from "../../categories/categoryResearch";
 import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
 import { useBrandFavorites } from "../../research/useBrandFavorites";
+import { savedBrandOptions } from "../../research/savedBrandOptions";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { slugifyBrandId } from "../../source/sourceProductQuery";
@@ -79,8 +80,11 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
 
   const brandOptions = useMemo(() => {
     if (state.status !== "ready") return [];
-    return state.data.summary.brands.map((brand) => brand.brandName);
-  }, [state]);
+    return savedBrandOptions(
+      state.data.summary.brands.map((brand) => brand.brandName),
+      filterSavedFamilies(state.data.families, researchStates).map((family) => family.brand),
+    );
+  }, [state, researchStates]);
 
   const sourceOptions = useMemo(() => {
     if (state.status !== "ready") return [];
