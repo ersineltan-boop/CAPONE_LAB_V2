@@ -33,6 +33,10 @@
       min-width: 44px;
       min-height: 44px;
     }
+
+    .touch-target[data-carousel-control] {
+      opacity: 1;
+    }
   }
 
   .font-serif {

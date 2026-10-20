@@ -357,7 +357,9 @@ about 17x21px, save18px high and color buttons32x32px, with the same sizing
 below the mobile breakpoint. A shared CSS utility makes affected card, inline
 photo, detail and fullscreen-gallery controls at least44x44px on narrow screens
 or devices with a coarse primary pointer. Existing wrapping handles the larger
-color/action controls. Desktop fine-pointer sizing remains unchanged.
+color/action controls. Carousel arrows remain visible under the same mobile/touch
+conditions, including wide coarse-pointer screens otherwise using hover-only
+desktop rules. Desktop fine-pointer sizing remains unchanged.
 The cloud browser exposes no viewport/device emulation capability; DevTools
 and zoom shortcuts left measured viewport1363x936. Do not claim physical-phone
 or narrow-screen rendering was tested. Validate built CSS, full tests/build,
