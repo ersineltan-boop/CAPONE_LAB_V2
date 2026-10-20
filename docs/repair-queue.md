@@ -275,17 +275,35 @@ Escape from the detail note field did not close the drawer; that remains pending
 Real mobile viewport testing and remaining site flows are unverified, not bugs
 invented from a checklist.
 
-User-reported gallery swipe repair is under validation in
-fix/gallery-swipe-20261020. Shared pointer gestures cover touch/pen/mouse in
+User-reported gallery swipe repair is released via PR194, merge
+ab8a01e1fcf258ebe5d4849555cfa0616d482876. Shared pointer gestures cover touch/pen/mouse in
 inline and fullscreen galleries, preserve vertical scroll, reject pinch,
 cancelled and zoomed gestures, and suppress the post-drag image click. Arrow
 buttons remain independent; portal events cannot advance the parent gallery.
 Eleven new gesture/handler regressions plus existing zoom/navigation tests
 passed (18 focused checks), including portal isolation, controls and mouse
 capture cancellation. The initial full run passed 1,175 tests; four added
-handler tests also passed. Exact-head CI must include all 1,179 tests. Final
-build, same-head Preview and release verification are still required.
-Real iPhone swipe behavior has not been claimed as tested.
+handler tests also passed. Exact-head CI 39343737256 passed all 1,179 tests in
+141 files and the production build. Preview dpl_AQ4g2uNUwik4MHsXFA2fU9F5LPG4
+was READY for head 8dc25804ecaf1b2e3306e13e54ba20fc4b663028. Exact merge-SHA
+production dpl_6AM4MnRicT86p6pLrkjqrqbywwDD was READY. Live browser comparison
+reproduced the old 1/4-stuck drag and verified new card/detail 1/4 to 2/4 and
+reverse, fullscreen 2/4 to 3/4, zoomed pan staying 3/4 at 110%, arrow to 4/4,
+unchanged parent gallery index, and real color switching to its own 1/5 images.
+Live Farfetch HTTP200 retained the PR191 hash/counts. User confirmed the swipe
+fix at 03:47 Istanbul on 20 October. Physical iPhone gestures were not directly
+tested by the agent.
+
+20 October next bounded repair: product detail keyboard/focus behavior in
+fix/detail-dialog-keyboard-20261020. Escape closes the detail; Tab wraps around
+visible controls; initial/return focus is managed and background focus is
+contained. Nested fullscreen galleries retain their own keyboard behavior.
+The detail uses an independent document-element scroll lock so nested gallery
+body locks cannot restore stale values. Composition, repeated Escape, browser
+shortcuts and already-handled events are left alone. Six keyboard regressions
+and seven note regressions passed. The full suite passed all 1,185 tests in
+142 files. Production build, exact-head Preview/CI and live verification remain
+required before claiming this repair released.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
 existing validated repair before opening a duplicate. Keep each collection
