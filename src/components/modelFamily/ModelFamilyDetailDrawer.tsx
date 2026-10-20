@@ -121,7 +121,7 @@ export default function ModelFamilyDetailDrawer({
             ref={closeButtonRef}
             type="button"
             onClick={onClose}
-            className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
+            className="touch-target border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
           >
             Kapat
           </button>
@@ -255,7 +255,7 @@ export default function ModelFamilyDetailDrawer({
             <button
               type="button"
               onClick={() => setReviewed(!state.reviewedAt)}
-              className={`border px-2 py-1 text-[10px] ${
+              className={`touch-target border px-2 py-1 text-[10px] ${
                 state.reviewedAt ? "border-ink bg-ink text-cream" : "border-line text-ink-muted"
               }`}
             >
@@ -264,7 +264,7 @@ export default function ModelFamilyDetailDrawer({
             <button
               type="button"
               onClick={() => setSaved(!state.savedAt)}
-              className={`border px-2 py-1 text-[10px] ${
+              className={`touch-target border px-2 py-1 text-[10px] ${
                 state.savedAt ? "border-ink bg-ink text-cream" : "border-line text-ink-muted"
               }`}
             >
@@ -305,7 +305,7 @@ export default function ModelFamilyDetailDrawer({
               href={productUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 border border-ink bg-ink px-3 py-2 text-[10px] tracking-widest text-cream transition-colors hover:bg-transparent hover:text-ink"
+              className="touch-target inline-flex items-center gap-1 border border-ink bg-ink px-3 py-2 text-[10px] tracking-widest text-cream transition-colors hover:bg-transparent hover:text-ink"
             >
               {UI_COPY.openAtSource} ↗
             </a>
@@ -315,7 +315,7 @@ export default function ModelFamilyDetailDrawer({
             <button
               type="button"
               onClick={onNextUnreviewed}
-              className="w-full border border-line px-3 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink"
+              className="touch-target w-full border border-line px-3 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink"
             >
               {UI_COPY.nextUnreviewed}
             </button>

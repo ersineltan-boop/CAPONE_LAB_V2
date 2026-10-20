@@ -291,7 +291,7 @@ export default function ProductGalleryModal({
                 onClick={zoom.zoomOut}
                 disabled={!zoom.isZoomed}
                 aria-label={UI_COPY.zoomOut}
-                className="border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+                className="touch-target border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
               >
                 −
               </button>
@@ -300,7 +300,7 @@ export default function ProductGalleryModal({
                 onClick={zoom.reset}
                 disabled={!zoom.isZoomed}
                 aria-label={UI_COPY.resetZoom}
-                className="min-w-12 border border-line px-2 py-1 text-[9px] tabular-nums text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+                className="touch-target min-w-12 border border-line px-2 py-1 text-[9px] tabular-nums text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {zoomPercent}%
               </button>
@@ -309,7 +309,7 @@ export default function ProductGalleryModal({
                 onClick={zoom.zoomIn}
                 disabled={zoom.transform.scale >= 4}
                 aria-label={UI_COPY.zoomIn}
-                className="border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
+                className="touch-target border border-line px-2 py-1 text-[11px] text-ink-muted hover:border-ink hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
               >
                 +
               </button>
@@ -318,7 +318,7 @@ export default function ProductGalleryModal({
               ref={closeButtonRef}
               type="button"
               onClick={onClose}
-              className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
+              className="touch-target border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
             >
               {UI_COPY.closeGallery}
             </button>
@@ -388,7 +388,7 @@ export default function ProductGalleryModal({
                     data-carousel-control
                     onClick={goPrev}
                     aria-label={UI_COPY.prevPhoto}
-                    className="absolute left-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
+                    className="touch-target absolute left-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
                   >
                     ‹
                   </button>
@@ -397,7 +397,7 @@ export default function ProductGalleryModal({
                     data-carousel-control
                     onClick={goNext}
                     aria-label={UI_COPY.nextPhoto}
-                    className="absolute right-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
+                    className="touch-target absolute right-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
                   >
                     ›
                   </button>

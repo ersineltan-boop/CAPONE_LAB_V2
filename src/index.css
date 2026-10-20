@@ -28,6 +28,17 @@
 }
 
 @layer utilities {
+  @media (width < 40rem), (pointer: coarse) {
+    .touch-target {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .touch-target[data-carousel-control] {
+      opacity: 1;
+    }
+  }
+
   .font-serif {
     font-family: var(--font-serif);
   }

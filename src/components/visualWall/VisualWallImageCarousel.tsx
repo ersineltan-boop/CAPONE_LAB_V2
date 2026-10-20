@@ -161,7 +161,7 @@ export default function VisualWallImageCarousel({
             data-carousel-control
             onClick={goPrev}
             aria-label="Önceki fotoğraf"
-            className={`absolute left-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:left-2 ${
+            className={`touch-target absolute left-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:left-2 ${
               hideControlsUntilHover
                 ? "opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                 : ""
@@ -174,7 +174,7 @@ export default function VisualWallImageCarousel({
             data-carousel-control
             onClick={goNext}
             aria-label="Sonraki fotoğraf"
-            className={`absolute right-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:right-2 ${
+            className={`touch-target absolute right-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:right-2 ${
               hideControlsUntilHover
                 ? "opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                 : ""
