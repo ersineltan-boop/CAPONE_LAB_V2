@@ -150,11 +150,11 @@ function ProductCard({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(event) => event.stopPropagation()}
-            className="touch-target absolute right-1 top-1 z-20 inline-flex items-center justify-center border border-line bg-white/90 px-1.5 py-0.5 text-[9px] text-ink-muted transition-colors hover:border-ink hover:text-ink"
+            className="touch-target compact-arrow compact-arrow-source absolute right-1 top-1 z-20 inline-flex items-center justify-center border border-line bg-white/90 px-1.5 py-0.5 text-[9px] text-ink-muted transition-colors hover:border-ink hover:text-ink"
             aria-label={UI_COPY.openAtSource}
             title={UI_COPY.openAtSource}
           >
-            ↗
+            <span aria-hidden="true">↗</span>
           </a>
         )}
       </div>

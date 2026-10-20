@@ -34,6 +34,40 @@
       min-height: 44px;
     }
 
+    /* The hit area stays 44px; only the small inner tile is visible. */
+    .compact-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+
+    .compact-arrow > span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 26px;
+      border: 1px solid var(--color-line);
+      background: rgb(255 255 255 / 90%);
+      font-size: 12px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .compact-arrow-source > span {
+      height: 22px;
+      font-size: 10px;
+    }
+
+    .compact-arrow:hover > span {
+      border-color: var(--color-ink);
+    }
+
     .touch-target[data-carousel-control] {
       opacity: 1;
     }

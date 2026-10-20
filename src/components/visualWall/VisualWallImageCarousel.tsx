@@ -161,26 +161,26 @@ export default function VisualWallImageCarousel({
             data-carousel-control
             onClick={goPrev}
             aria-label="Önceki fotoğraf"
-            className={`touch-target absolute left-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:left-2 ${
+            className={`touch-target compact-arrow absolute left-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:left-2 ${
               hideControlsUntilHover
                 ? "opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                 : ""
             }`}
           >
-            ‹
+            <span aria-hidden="true">‹</span>
           </button>
           <button
             type="button"
             data-carousel-control
             onClick={goNext}
             aria-label="Sonraki fotoğraf"
-            className={`touch-target absolute right-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:right-2 ${
+            className={`touch-target compact-arrow absolute right-1.5 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/85 px-1.5 py-1 text-[11px] leading-none text-ink-muted transition-all hover:border-ink hover:text-ink sm:right-2 ${
               hideControlsUntilHover
                 ? "opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                 : ""
             }`}
           >
-            ›
+            <span aria-hidden="true">›</span>
           </button>
           <span
             className={`absolute bottom-1.5 right-1.5 z-10 border border-line bg-white/85 px-1.5 py-0.5 text-[8px] tabular-nums tracking-[0.08em] text-ink-muted ${
