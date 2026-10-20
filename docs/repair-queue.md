@@ -271,7 +271,8 @@ Preserve independent verified deliveries; blocked sources do not hold site work.
 
 20 October UI audit: Visual search for Pretty Ballerinas returned 216 models;
 the Nicole detail opened with a real source URL, gallery and two color controls.
-Escape from the detail note field did not close the drawer; that remains pending.
+Escape from the detail note field did not close the drawer; PR195 subsequently
+fixed and released that behavior (release evidence below).
 Real mobile viewport testing and remaining site flows are unverified, not bugs
 invented from a checklist.
 
@@ -302,7 +303,31 @@ The detail uses an independent document-element scroll lock so nested gallery
 body locks cannot restore stale values. Composition, repeated Escape, browser
 shortcuts and already-handled events are left alone. Six keyboard regressions
 and seven note regressions passed. The full suite passed all 1,185 tests in
-142 files. Production build, exact-head Preview/CI and live verification remain
+142 files. Released through PR195: exact head
+999a78b06a274a7b247ca1389720dd3dd9b9f082 passed full CI39350281958 and
+production build. Preview dpl_6z1no6vLC8eBW2z4vemdJ2QP7ntv was READY.
+Production dpl_5kC9D5yr5GtWRPt8oEk2hvyLzSuV was READY for exact merge
+d56bc55c98914453284e981e9104ad7060696020. Public browser confirmed initial
+Close focus, Tab/Shift+Tab wrapping, Escape from notes restoring the model
+opener and scroll locks, and nested gallery Escape closing only the gallery.
+A temporary note saved on Escape and was then removed, restoring empty.
+Live Farfetch HTTP200 retained the PR191 hash/counts. Physical mobile remains
+unverified; do not duplicate the completed keyboard repair.
+
+20 October owner priority: leave Automatic Upload dashboard repairs until last.
+Its report is dated 3 October while promising "tonight", and hardcoded limit
+copy says 5 although current queue policy is 25; no schedule change is authorized.
+
+Current bounded repair: saved-product brand filter omits marketplace-only
+brands. Live reproduction saved Farfetch Christian Louboutin 100mm Hot Chick
+Pump: card appeared, but brand select had only the 82 registered brands.
+Pretty Ballerinas save/reload/detail and combined Visual Premium/new/BABET/search
+checks passed. Own temporary saves were removed; saved list returned zero.
+The proposed fix retains registered options and adds actual saved-family brands,
+deduplicated and Turkish-sorted without changing exact brand values. Options
+do not depend on the selected brand/source/search, so other saved brands remain
+selectable. Catalog records, IDs, galleries, notes and schedules are unchanged.
+Tests/build, exact-head CI/Preview and merge-SHA production/live checks are
 required before claiming this repair released.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
