@@ -20,6 +20,7 @@ import { formatDateTurkishShort } from "../../presentation/turkishDates";
 import { getResearchStateRepository } from "../../research/researchStateRepository";
 import { useResearchState } from "../../research/useResearchState";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
+import { useDetailDialog } from "./useDetailDialog";
 import {
   commitNoteOnBlur,
   editNoteDraft,
@@ -56,6 +57,7 @@ export default function ModelFamilyDetailDrawer({
   sourceId = null,
 }: ModelFamilyDetailDrawerProps) {
   const familyId = family?.modelFamilyId ?? "";
+  const { dialogRef, closeButtonRef } = useDetailDialog(open && family !== null, onClose);
   const { state, setReviewed, setSaved } = useResearchState(familyId);
   const [noteState, setNoteState] = useState<NoteDraftState>(() => idleNoteDraft(familyId));
   const noteStateRef = useRef(noteState);
@@ -100,11 +102,14 @@ export default function ModelFamilyDetailDrawer({
     <div className="fixed inset-0 z-50 flex justify-end bg-ink/30" role="presentation">
       <button
         type="button"
+        tabIndex={-1}
         className="absolute inset-0 cursor-default"
         aria-label="Kapat"
         onClick={onClose}
       />
       <aside
+        ref={dialogRef}
+        tabIndex={-1}
         className="relative flex h-full w-full max-w-lg flex-col border-l border-line bg-cream shadow-xl sm:max-w-xl"
         role="dialog"
         aria-modal="true"
@@ -113,6 +118,7 @@ export default function ModelFamilyDetailDrawer({
         <div className="flex items-center justify-between border-b border-line px-4 py-3">
           <h2 className="font-serif text-sm tracking-wide">{UI_COPY.productDetail}</h2>
           <button
+            ref={closeButtonRef}
             type="button"
             onClick={onClose}
             className="border border-line px-2 py-1 text-[10px] tracking-wide text-ink-muted hover:border-ink hover:text-ink"
