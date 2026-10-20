@@ -388,18 +388,18 @@ export default function ProductGalleryModal({
                     data-carousel-control
                     onClick={goPrev}
                     aria-label={UI_COPY.prevPhoto}
-                    className="touch-target absolute left-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
+                    className="touch-target compact-arrow absolute left-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
                   >
-                    ‹
+                    <span aria-hidden="true">‹</span>
                   </button>
                   <button
                     type="button"
                     data-carousel-control
                     onClick={goNext}
                     aria-label={UI_COPY.nextPhoto}
-                    className="touch-target absolute right-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
+                    className="touch-target compact-arrow absolute right-2 top-1/2 z-10 -translate-y-1/2 border border-line bg-white/90 px-2 py-1 text-sm text-ink-muted hover:border-ink hover:text-ink"
                   >
-                    ›
+                    <span aria-hidden="true">›</span>
                   </button>
                 </>
               ) : null}

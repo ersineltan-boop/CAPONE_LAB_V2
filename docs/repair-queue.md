@@ -352,18 +352,18 @@ brand/source/search empty results, clearing filters restoring the saved model,
 and removing the temporary save restoring the genuine no-saves message.
 Live Farfetch HTTP200 retained the PR191 hash/counts.
 
-Current bounded repair: mobile touch targets. Existing card photo arrows were
-about 17x21px, save18px high and color buttons32x32px, with the same sizing
-below the mobile breakpoint. A shared CSS utility makes affected card, inline
-photo, detail and fullscreen-gallery controls at least44x44px on narrow screens
-or devices with a coarse primary pointer. Existing wrapping handles the larger
-color/action controls. Carousel arrows remain visible under the same mobile/touch
-conditions, including wide coarse-pointer screens otherwise using hover-only
-desktop rules. Desktop fine-pointer sizing remains unchanged.
-The cloud browser exposes no viewport/device emulation capability; DevTools
-and zoom shortcuts left measured viewport1363x936. Do not claim physical-phone
-or narrow-screen rendering was tested. Validate built CSS, full tests/build,
-Preview and production commits and actual available live control behavior.
+Mobile touch-target repair was released through PR198, merge
+7c4bae0c3019f8938289b6b300505ce190531a3b. Exact head passed 1,190 tests,
+production build, full CI and Preview; production was READY for the merge.
+
+20 October owner follow-up: the visible arrow tiles are too large. Keep the
+44x44px narrow/coarse-pointer hit areas, but render carousel arrows as small
+22x26px inner tiles and the source-link arrow as a 22x22px tile. Preserve labels,
+focus, swipe isolation, desktop fine-pointer sizing and photo handlers.
+Add a black/cream vector C monogram with PNG favicon, iPhone180px touch icon,
+192/512px app icons and a same-origin standalone web manifest. No service worker
+or offline promise. Verify mobile viewport geometry, gallery navigation and
+icon/manifest delivery, then full exact-head CI/Preview and merge-SHA production.
 Automatic Upload remains last; no source collection or scheduler changes.
 
 Read fresh main, open PRs and the latest queue/docs/reports first. Finish an
