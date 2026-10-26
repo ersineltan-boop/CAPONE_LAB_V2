@@ -10,6 +10,7 @@ export interface ResearchStateRepository {
   setReviewed(modelFamilyId: string, reviewed: boolean): ModelFamilyResearchState;
   setSaved(modelFamilyId: string, saved: boolean): ModelFamilyResearchState;
   setNote(modelFamilyId: string, note: string): ModelFamilyResearchState;
+  mergeImported(states: ModelFamilyResearchState[]): number;
   subscribe(listener: () => void): () => void;
 }
 
@@ -97,6 +98,25 @@ export class LocalResearchStateRepository implements ResearchStateRepository {
     this.store.states[modelFamilyId] = next;
     this.persist();
     return next;
+  }
+
+  mergeImported(states: ModelFamilyResearchState[]): number {
+    let changed = 0;
+    for (const incoming of states) {
+      const current = this.get(incoming.modelFamilyId);
+      const next: ModelFamilyResearchState = {
+        modelFamilyId: incoming.modelFamilyId,
+        reviewedAt: current.reviewedAt ?? incoming.reviewedAt,
+        savedAt: current.savedAt ?? incoming.savedAt,
+        note: current.note ?? incoming.note,
+      };
+      if (next.reviewedAt !== current.reviewedAt || next.savedAt !== current.savedAt || next.note !== current.note) {
+        this.store.states[incoming.modelFamilyId] = next;
+        changed++;
+      }
+    }
+    if (changed) this.persist();
+    return changed;
   }
 }
 

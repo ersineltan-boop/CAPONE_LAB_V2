@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import type { ChangeEvent } from "react";
 
 import {
   loadCatalogSummary,
@@ -15,6 +16,8 @@ import { ALL_COUNTRIES_ID } from "../../brands/countryGrouping";
 import { filterSavedFamilies, filterFamiliesBySearch } from "../../categories/categoryResearch";
 import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
 import { useBrandFavorites } from "../../research/useBrandFavorites";
+import { getBrandFavoriteRepository } from "../../research/brandFavoritesRepository";
+import { createPortableBackup, importPortableBackup, parsePortableBackup } from "../../research/portableBackup";
 import { savedBrandOptions } from "../../research/savedBrandOptions";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import { UI_COPY } from "../../presentation/turkishLabels";
@@ -36,10 +39,37 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
   const [sourceFilter, setSourceFilter] = useState<string>("ALL");
   const [countryId, setCountryId] = useState(ALL_COUNTRIES_ID);
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
+  const [backupMessage, setBackupMessage] = useState("");
 
   const researchStates = useResearchStateMap();
   const researchRepo = useResearchStateRepository();
   const { isSaved, setSaved } = useBrandFavorites();
+
+  function downloadBackup() {
+    const json = createPortableBackup(researchRepo, getBrandFavoriteRepository());
+    const url = URL.createObjectURL(new Blob([json], { type: "application/json" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `capone-kayitlar-${new Date().toISOString().slice(0, 10)}.json`;
+    link.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    setBackupMessage("Yedek indirildi. Telefonda açmak için dosyayı güvenli biçimde o cihaza aktarın.");
+  }
+
+  async function uploadBackup(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+    try {
+      if (file.size > 5_000_000) throw new Error("Dosya çok büyük (en fazla 5 MB).");
+      const backup = parsePortableBackup(await file.text());
+      const result = importPortableBackup(backup, researchRepo, getBrandFavoriteRepository());
+      setBackupMessage(`${result.products} ürün kaydı ve ${result.brands} marka aktarıldı.` +
+        (result.keptLocalNotes ? ` ${result.keptLocalNotes} çakışan notta bu cihazdaki not korundu.` : ""));
+    } catch (error) {
+      setBackupMessage(error instanceof Error ? error.message : "Yedek okunamadı.");
+    }
+  }
   const savedIds = useMemo(
     () =>
       [...researchStates.values()]
@@ -143,6 +173,17 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
             <p className="mt-1 text-[10px] leading-relaxed text-ink-muted">
               {UI_COPY.savedProductsSubtitle}
             </p>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <button type="button" onClick={downloadBackup} className="border border-line px-3 py-2 text-[11px] hover:border-ink">
+                Kayıtları yedekle
+              </button>
+              <label className="cursor-pointer border border-line px-3 py-2 text-[11px] hover:border-ink focus-within:border-ink">
+                Yedeği içe aktar
+                <input type="file" accept=".json,application/json" onChange={uploadBackup} className="sr-only" aria-label="Yedeği içe aktar" />
+              </label>
+            </div>
+            <p className="mt-2 text-[11px] text-ink-muted">Kayıtlar bu tarayıcıda saklanır. Başka cihazda görmek için yedeği o cihazda içe aktarın. Aktarım mevcut notları silmez.</p>
+            {backupMessage ? <p role="status" className="mt-2 text-[11px] text-ink">{backupMessage}</p> : null}
           </div>
 
           <div className="flex flex-wrap gap-2">

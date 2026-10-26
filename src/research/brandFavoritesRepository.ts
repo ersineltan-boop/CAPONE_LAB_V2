@@ -4,6 +4,7 @@ export interface BrandFavoriteRepository {
   isSaved(brandId: string): boolean;
   getAll(): BrandFavorite[];
   setSaved(brandId: string, saved: boolean): void;
+  mergeImported(brands: BrandFavorite[]): number;
   subscribe(listener: () => void): () => void;
 }
 
@@ -67,6 +68,17 @@ export class LocalBrandFavoriteRepository implements BrandFavoriteRepository {
       delete this.store.brands[brandId];
     }
     this.persist();
+  }
+
+  mergeImported(brands: BrandFavorite[]): number {
+    let changed = 0;
+    for (const brand of brands) {
+      if (this.store.brands[brand.brandId]) continue;
+      this.store.brands[brand.brandId] = brand;
+      changed++;
+    }
+    if (changed) this.persist();
+    return changed;
   }
 }
 
