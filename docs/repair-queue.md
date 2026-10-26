@@ -379,3 +379,29 @@ Report in short plain Turkish, one concrete result or blocker at a time.
 Do not repeatedly report the same unchanged block. Update this queue after a
 verified release; leave blocked and partially completed work explicit. Existing
 Sunday/Wednesday data refresh schedules are separate from repair work.
+
+26 October follow-up: PR199 is released, merge
+`504247f703e3fbd045deb2f211eac4a6d586b5f3`. Its exact head passed all
+1,190 tests and production build in CI39443165751; matching Preview and exact
+merge-SHA production deployments were READY. Live mobile-width Chromium checks
+confirmed 22x26px arrow tiles, 44x44px hit areas and photo navigation; the
+favicon, touch icon and manifest are publicly served. No offline service worker
+or physical iPhone installation has been verified. The old 20 October arrow
+follow-up above is historical, not an open repair.
+
+26 October live core-flow audit on the production main: Visual search for
+`Nicole Beiges` returned three products. The Pretty Ballerinas Piel gallery
+advanced 1/4 to 2/4 and loaded a distinct real image. Saving the model showed
+one entry in Kaydettiklerim; a temporary note survived closing the detail,
+reopening it and reloading the page. The temporary note and save were removed
+and the empty note / zero saved products were verified. This verifies this
+browser's local flow, not cross-device synchronization.
+
+Travel-critical gap discovered: product research state and favorite brands are
+stored in browser localStorage, so a saved item on the desktop does not appear
+on the phone. Work on `fix/portable-research-backup-20261026` adds a portable
+JSON export/import on Kaydettiklerim. Import validates the file and merges
+saved/reviewed dates and favorites without overwriting existing local notes.
+This is a manual transfer, not automatic sync or offline support. Do not mark
+it live until exact-head full tests/build, Preview READY, merge-SHA production
+READY and public flow checks pass. Automatic Upload remains last.
