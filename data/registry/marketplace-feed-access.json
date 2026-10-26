@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-05",
+  "publication": "RESEARCH_ONLY_NOT_CONNECTED",
+  "credentialInspection": {
+    "localConfiguredAccessKeys": [],
+    "githubSecrets": "UNKNOWN_CONNECTOR_CANNOT_LIST",
+    "valuesRead": false
+  },
+  "sources": [
+    {
+      "sourceId": "farfetch",
+      "route": "APPROVED_DAILY_PRODUCT_FEED",
+      "routeConfirmed": true,
+      "status": "ACCESS_REQUIRED",
+      "officialDocumentation": "https://www.farfetch.com/id/pag1987.aspx",
+      "contact": "affiliates@farfetch.com",
+      "required": ["Affiliate approval for CAPONE", "Authorized feed endpoint and authentication method", "Actual feed sample and schema", "Country and women footwear scope with complete source total"],
+      "nextAction": "Obtain approved daily feed access, then implement its actual schema and reconcile a complete snapshot before publication",
+      "specialCoding": "Gerekli",
+      "lastGoodPreserved": true
+    },
+    {
+      "sourceId": "free-people",
+      "route": "RAKUTEN_PRODUCT_CATALOG_SFTP",
+      "routeConfirmed": false,
+      "status": "ADVERTISER_CATALOG_APPROVAL_REQUIRED",
+      "officialDocumentation": "https://www.freepeople.com/fpmovement/help/affiliates/",
+      "networkDocumentation": "https://pubhelp.rakutenadvertising.com/hc/en-us/articles/4412243880333-Download-Product-Catalog-Data-Feed-Files",
+      "required": ["Rakuten publisher account", "Free People advertiser approval", "Confirmation that Free People offers Product Catalog for this account", "SFTP technical setup and advertiser catalog approval", "Actual feed sample and schema"],
+      "nextAction": "Verify advertiser Product Catalog availability and approval; affiliate membership alone does not establish feed access",
+      "specialCoding": "Henüz belirlenemedi",
+      "lastGoodPreserved": true
+    },
+    {
+      "sourceId": "level-shoes",
+      "route": "AUTHORIZED_READ_ONLY_CATALOG_FEED_TO_BE_CONFIRMED",
+      "routeConfirmed": false,
+      "status": "CATALOG_READ_ACCESS_NOT_ESTABLISHED",
+      "officialDocumentation": "https://api-docs.levelshoes.com/",
+      "contact": "integration@levelshoes.com",
+      "documentedPartnerApi": "Stock push and partner order posting; not a documented full-catalog GET API",
+      "required": ["Written confirmation of an authorized whole-catalog read API or feed", "Women footwear scope and country", "Read credentials, actual schema, pagination and source totals"],
+      "nextAction": "Confirm a read-only catalog route; do not use stock-push/order-write APIs for catalog collection",
+      "specialCoding": "Henüz belirlenemedi",
+      "lastGoodPreserved": true
+    }
+  ]
+}
