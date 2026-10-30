@@ -405,3 +405,24 @@ saved/reviewed dates and favorites without overwriting existing local notes.
 This is a manual transfer, not automatic sync or offline support. Do not mark
 it live until exact-head full tests/build, Preview READY, merge-SHA production
 READY and public flow checks pass. Automatic Upload remains last.
+
+30 October owner direction: pause the saved-record transfer test and resume
+brand expansion, starting with JONAK, BOBBIES and BATA (Europe, BATA-only women).
+Main is 10b1c55547f2652b0a7df1c4b37edab23309e91b, production READY.
+No duplicate brand repair PR was open. All three exact official collection
+pages returned HTTP200 without a visible human-verification challenge.
+Evidence: data/registry/selected-brand-access-20261030.json.
+
+JONAK official listing staging reconciles 663 distinct source IDs and URLs with
+3,351 actual image URLs. Canonical pagination is cumulative: page 2 includes
+pages 1 and 2, rather than 48 new cards only. A bounded run fetched pages 1
+and 14 and rechecked page 1; count, exact prefix and final first page agree.
+The compressed checksummed archive retains original metadata, URLs and galleries
+at data/brands/jonak-staging/verified-listing.json.gz. LISTING_VERIFIED is not
+FULL publication: source taxonomy review and guarded registry/refresh integration
+remain pending. No new products were marked NEW and no active registry/catalog
+was changed. The collector caps requests/time/body size, writes atomic progress,
+and stops on access denial with a seven-day retry window (429: one hour).
+The initial small response cap and one read timeout produced PARTIAL states;
+the final fresh bounded traversal passed. Offline parser regression checks pass.
+BOBBIES and BATA are reachable but have not been collected or activated.
