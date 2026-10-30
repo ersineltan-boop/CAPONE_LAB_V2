@@ -426,3 +426,18 @@ and stops on access denial with a seven-day retry window (429: one hour).
 The initial small response cap and one read timeout produced PARTIAL states;
 the final fresh bounded traversal passed. Offline parser regression checks pass.
 BOBBIES and BATA are reachable but have not been collected or activated.
+
+JONAK taxonomy follow-up: the verified 663-row snapshot reconciles to 640
+footwear products and 23 explicit accessories (14 socks, 5 gloves, 3 tights,
+1 gaiter). Seasonal/iconic rows are classified from their exact source titles;
+slingback ballet flats remain BALLERINA and lowboots are ANKLE_BOOT. The 14
+legacy OTHER_FOOTWEAR records are explicit derbies, whose modern primary
+category must remain OXFORD_DERBY during integration. No unresolved category
+remains in the prepared input. Original names, URLs, gallery order and all
+images are retained; no publication/NEW timestamp is invented. The converter
+rejects stale (>24h), future, partial, duplicate or identity/gallery-damaged
+snapshots. Three regression tests cover the full captured source and rejection
+paths. Reproducible review: data/registry/jonak-taxonomy-review.json.
+Next: guarded registry/refresh integration and exact-head release gates on PR201;
+the brand is still not active or live. Do not recollect the other two sources
+or start a duplicate branch before finishing this integration.
