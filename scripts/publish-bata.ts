@@ -1,6 +1,6 @@
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { prepareBataProducts, type BataSnapshot } from "../src/collector/bata";
+import { bataPrimaryCategory, prepareBataProducts, type BataSnapshot } from "../src/collector/bata";
 import { waveFamiliesToModelFamilies } from "../src/brands/wave50/publish";
 import { replaceAutomationBrandDeliveries } from "../src/brands/automation/delivery";
 import type { WaveCatalog, WaveModelFamily } from "../src/brands/wave50/types";
@@ -51,7 +51,12 @@ const catalog: WaveCatalog = { slug: "bata", brand: "BATA", officialUrl: "https:
     paginationExhausted: true, galleryComplete: products.length, taxonomyPassed: true, womenFootwearOnly: true, sampleOnly: false },
   newArrivalsFootwear: 0, referenceFootwearTotal: null, referenceNewArrivals: null, referenceFootwearMatch: null, referenceNewArrivalsMatch: null,
   productUrls: products.map(product => product.productUrl), families: [...groups.values()] };
-const families = waveFamiliesToModelFamilies(catalog);
+const primaryByUrl = new Map(snapshot.products.map(detail => [detail.url, bataPrimaryCategory(detail)]));
+const families = waveFamiliesToModelFamilies(catalog).map(family => {
+  const categories = new Set(family.variants.map(variant => primaryByUrl.get(variant.url)));
+  if (categories.size !== 1 || categories.has(null) || categories.has(undefined)) throw new Error("BATA inconsistent family classification");
+  return { ...family, primaryCategory: primaryByUrl.get(family.variants[0]!.url)! };
+});
 if (families.some(family => !family.primaryCategory || family.primaryCategory === "UNCLASSIFIED")) throw new Error("BATA unresolved primary category");
 const proposed = new Map(families.flatMap(family => family.variants.map(variant => [variant.url, variant.images] as const)));
 if (proposed.size !== products.length || products.some(product => hash(proposed.get(product.productUrl)) !== hash(product.images))) {

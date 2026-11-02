@@ -16,6 +16,14 @@ export interface BataSnapshot {
   excludedIds: string[];
 }
 
+// Keep the own-product classification through publication; broad source departments
+// remain evidence, but must not replace a more specific shoe title.
+export function bataPrimaryCategory({ listing, product }: BataDetail) {
+  return /\bflip[\s-]?flops?\b/i.test(product.name) ? "SANDAL" as const
+    : classifyOfficialFootwear({ title: product.name, description: [listing.name, product.description].filter(Boolean).join(" "), productType: listing.category3 })
+      ?? (listing.category3 === "Pump Shoes" ? "PUMP" as const : null);
+}
+
 export function prepareBataProducts(snapshot: BataSnapshot, now = Date.now()) {
   const checked = Date.parse(snapshot.checkedAt);
   if (snapshot.status !== "SOURCE_VERIFIED" || !Number.isFinite(checked) || checked > now || now - checked > 24 * 3600_000 ||
@@ -32,7 +40,7 @@ export function prepareBataProducts(snapshot: BataSnapshot, now = Date.now()) {
     if (!womenScope || listing.brand.toUpperCase() !== "BATA" || product.brand.name.toUpperCase() !== "BATA" || !ownIdentity || ids.has(listing.id) ||
         !detail.url.startsWith("https://www.bata.com/pt/") || urls.has(detail.url) || !product.image.length ||
         product.image.some(url => !url.startsWith("https://www.bata.com/dw/image/"))) throw new Error("BATA identity/gallery mismatch");
-    const primary = classifyOfficialFootwear({ title: product.name, description: [listing.name, product.description].filter(Boolean).join(" "), productType: listing.category3 });
+    const primary = bataPrimaryCategory(detail);
     const category = /\bflip[\s-]?flops?\b/i.test(product.name) ? "THONG" as const
       : primary ? legacyCategoryForPrimary(primary)
       : listing.category3 === "Pump Shoes" ? "PUMP" as const : null;

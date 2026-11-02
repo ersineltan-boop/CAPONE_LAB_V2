@@ -442,3 +442,9 @@ filter is Mass market, while unassessed influence scores remain unclassified
 and Radar-ineligible. Full local 1,199 tests / 146 files and production build
 passed. Exact-head CI/Preview, merge-SHA production and live source delivery
 checks remain required before claiming released. Keep JONAK PR201 blocked.
+
+Final BATA taxonomy gate: own-product primary classification now survives wave
+publication; 39 model cards had been overridden by broad source departments.
+The source department evidence remains unchanged. A barefoot ankle-boot regression
+covers the observed Sneakers override. Regeneration preserves all 509 URLs,
+full galleries, 365 family identities and all 17,765 existing records.

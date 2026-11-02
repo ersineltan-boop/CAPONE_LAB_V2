@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import fixture from "./fixtures/bata-product.json";
-import { prepareBataProducts, type BataSnapshot } from "../bata";
+import { bataPrimaryCategory, prepareBataProducts, type BataSnapshot } from "../bata";
 
 const checkedAt = "2026-11-02T00:00:00.000Z";
 const now = Date.parse(checkedAt);
@@ -17,6 +17,14 @@ describe("BATA own colorway/gallery conversion", () => {
     expect(product.hasNewBadge).toBe(false);
     expect(product.isNewArrivalsCollection).toBe(false);
     expect(product.publishedAt).toBeUndefined();
+  });
+  it("keeps a barefoot ankle boot out of Sneakers despite its broad source department", () => {
+    const detail = { ...fixture, listing: { ...fixture.listing, category3: "Sneakers", name: "Lace-up Barefoot leather ankle boot for women Bata" },
+      product: { ...fixture.product, name: "Lace-up Barefoot leather ankle boot for women Bata" } };
+    expect(bataPrimaryCategory(detail)).toBe("BOOT");
+    const [product] = prepareBataProducts({ ...snapshot, products: [detail] }, now);
+    expect(product.category).toBe("BOOT");
+    expect(product.sourceCategoryName).toBe("Sneakers");
   });
   it("refuses partial, stale and unreconciled source snapshots", () => {
     expect(() => prepareBataProducts({ ...snapshot, status: "PARTIAL" }, now)).toThrow();
