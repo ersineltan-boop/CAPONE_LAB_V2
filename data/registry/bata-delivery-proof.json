@@ -142,5 +142,23 @@
   "previousFieldsPreserved": 17765,
   "newFlags": 0,
   "snapshotHash": "4fe0d12c48f34c79b887bb398e028e6d5e1384d0ffb514e628b43f84f1924f5c",
-  "countryEvidence": "https://www.thebatacompany.com/bata-company/history.html"
+  "countryEvidence": "https://www.thebatacompany.com/bata-company/history.html",
+  "release": {
+    "date": "2026-11-02",
+    "pr": 202,
+    "head": "4d419ac3fcf4a5fd09d1d68528b0ebb4918ef863",
+    "mergeSha": "b6114bfec5aa6223b092e498b11f89bd4b955424",
+    "tree": "f6698a5b72ce49f7d00eab35a8bff476f30c5a5a",
+    "ciRun": 41375165371,
+    "tests": 1201,
+    "testFiles": 147,
+    "preview": "dpl_6DaykmmVZpXSkpY49WYJ6ZdqPVs8",
+    "production": "dpl_ETCip13iLfMP8qzTVfQAdSiNMCGY",
+    "productionReady": true,
+    "liveShardSHA256": "4dcd96cc503ef1c52ee863e86d4432f9129417a2e9f78d3c0c7c4609f2a71cde",
+    "liveFamilies": 365,
+    "liveVariants": 509,
+    "sourceImageStatus": 200,
+    "sourceImageMime": "image/jpeg"
+  }
 }
