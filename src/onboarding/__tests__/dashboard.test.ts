@@ -24,7 +24,8 @@ describe("brand onboarding dashboard", () => {
     expect(dashboard.summary.candidatePool).toBe((universe as BrandUniverseFile).brands.length - activeCount);
     expect(dashboard.summary.tonight).toBeLessThanOrEqual(queue.policy.maxAttemptsPerRun);
     expect(dashboard.summary.discovered).toBe(discovery.candidates.length);
-    expect(dashboard.brands).toHaveLength(160);
+    expect(dashboard.brands).toHaveLength(161);
+    expect(dashboard.brands.find((entry) => entry.id === "bata")).toMatchObject({ isActive: true, status: "ACTIVE" });
     expect(dashboard.brands[0]?.id).toBe("massimo-dutti");
     expect(dashboard.brands.find((entry) => entry.id === "massimo-dutti")).toMatchObject({
       isPriority: true,

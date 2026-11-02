@@ -405,3 +405,46 @@ saved/reviewed dates and favorites without overwriting existing local notes.
 This is a manual transfer, not automatic sync or offline support. Do not mark
 it live until exact-head full tests/build, Preview READY, merge-SHA production
 READY and public flow checks pass. Automatic Upload remains last.
+
+2 November brand expansion continuation: JONAK PR201 remains draft and unmerged
+because its real image URL redirected to Google in this environment. Its 640-row
+proposal must not be described as live. Continue independently with BATA from
+current main 10b1c55547f2652b0a7df1c4b37edab23309e91b; do not include JONAK's
+unreleased registry/catalog changes in BATA's delivery.
+
+BATA's official Europe PT BATA-only women scope reports 641 rows. The exact
+visible listing links identify colourways more accurately than repeated
+analytics parent links. All 641 unique listing identities are staged; 509
+women's footwear records and 132 giyim/accessory records reconcile the scope.
+Two generic-category sneaker records have explicit own women's evidence.
+Own product pages provide full schema galleries; a two-digit source SKU suffix
+is preserved rather than truncated, and unrelated parent IDs are rejected.
+Gallery verification is ongoing, not FULL. The checkpoint archive and report
+at data/brands/bata-checkpoints and data/registry/bata-staging-progress.json
+retain checksummed atomic listing/gallery progress. No live data is activated
+until all galleries, final count/first-page replay, source taxonomy, image MIME,
+exact-head full tests/build, Preview and production/live gates pass.
+The collector uses two workers, shared pacing/request limits, source retry
+windows (401/403/human: seven days; 429: one hour), a source lock and bounded
+resumable chunks. Existing Pazar/Catalog refresh schedules are unchanged.
+
+BATA source completion supersedes the ongoing-gallery note above: all 509
+own product pages and galleries were verified; the 641-row listing equals
+509 women's footwear records plus 132 excluded clothing/accessory records.
+Final source count and first-page replay passed. The prepared delivery groups
+colourways into 365 model families using source-provided shared parent links,
+matching own titles and categories; every selected URL and own gallery remains
+in its variant. Three sampled image requests returned image MIME without a
+redirect. The preserving writer verified all 17,765 previous core/brand records
+exactly; marketplace shards were unchanged. No added NEW flags or invented
+publication dates. Candidate registry: 161 total brands, 83 active; BATA price
+filter is Mass market, while unassessed influence scores remain unclassified
+and Radar-ineligible. Full local 1,199 tests / 146 files and production build
+passed. Exact-head CI/Preview, merge-SHA production and live source delivery
+checks remain required before claiming released. Keep JONAK PR201 blocked.
+
+Final BATA taxonomy gate: own-product primary classification now survives wave
+publication; 39 model cards had been overridden by broad source departments.
+The source department evidence remains unchanged. A barefoot ankle-boot regression
+covers the observed Sneakers override. Regeneration preserves all 509 URLs,
+full galleries, 365 family identities and all 17,765 existing records.

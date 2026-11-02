@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T08:20:42.648Z",
-  "totalBrands": 160,
-  "activeBrands": 82,
+  "generatedAt": "2026-11-02T00:56:02.267188+00:00",
+  "totalBrands": 161,
+  "activeBrands": 83,
   "inactiveBrands": 78,
-  "readyAutomatic": 63,
+  "readyAutomatic": 64,
   "needsProbe": 69,
   "needsCustomAdapter": 22,
   "failed": 6,
@@ -37,29 +37,30 @@
     "Singapore": 3,
     "Canada": 1,
     "UK": 1,
-    "Korea": 1
+    "Korea": 1,
+    "Çekya": 1
   },
   "segmentCounts": {
     "CONTEMPORARY": 13,
     "PREMIUM": 10,
     "MASS_MARKET": 6,
     "DIRECTIONAL": 6,
-    "UNCLASSIFIED": 125
+    "UNCLASSIFIED": 126
   },
   "priorityCounts": {
     "P1": 20,
-    "P2": 138,
+    "P2": 139,
     "P3": 2
   },
   "collectorTypeCounts": {
     "SHOPIFY_PUBLIC": 60,
-    "CUSTOM_ADAPTER": 22,
+    "CUSTOM_ADAPTER": 23,
     "UNSUPPORTED": 18,
     "UNKNOWN": 60
   },
   "duplicateWarnings": [],
   "validationErrors": [],
   "probeCacheApplied": 0,
-  "unreviewedBrands": 125,
-  "radarIneligibleBrands": 125
+  "unreviewedBrands": 126,
+  "radarIneligibleBrands": 126
 }

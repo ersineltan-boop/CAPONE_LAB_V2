@@ -94,7 +94,8 @@ describe("brands wave 50 delivery QA", () => {
       expect(catalog.coverage.paginationExhausted).toBe(true);
     }
 
-    expect(universe.brands).toHaveLength(160);
+    expect(universe.brands).toHaveLength(161);
+    expect(universe.brands.find((brand) => brand.id === "bata")?.isActive).toBe(true);
     expect(universe.brands.filter((brand) => brand.isActive).length).toBeGreaterThanOrEqual(report.activeBrandsAfter);
     expect(universe.brands.find((brand) => brand.id === "naked-wolfe")?.isActive).toBe(true);
     expect(universe.brands.find((brand) => brand.id === "maria-carlota")?.isActive).toBe(true);
