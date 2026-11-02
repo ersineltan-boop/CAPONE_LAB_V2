@@ -1109,23 +1109,31 @@
       "segment": "CONTEMPORARY",
       "influenceRole": "MARKET",
       "trackingPriority": "P1",
-      "isActive": false,
-      "collectorType": "UNKNOWN",
-      "collectionStatus": "NEEDS_PROBE",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "READY_AUTOMATIC",
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Expansion Wave 1 — COMMERCIAL",
+      "notes": "Official listing: 663 source rows = 640 footwear + 23 accessories. Guarded JONAK collector; existing refresh schedule unchanged.",
       "footwearInfluence": 58,
       "directionalInfluence": 45,
       "commercialInfluence": 72,
-      "collectionUrl": null,
-      "collectionPaths": [],
-      "productLimit": 20,
-      "supportsMultipleImages": false,
+      "collectionUrl": "https://www.jonak-paris.com",
+      "collectionPaths": [
+        "/collection/woman-shoes.html"
+      ],
+      "productLimit": 640,
+      "supportsMultipleImages": true,
       "discoverySources": [],
       "classificationStatus": "REVIEWED",
-      "radarEligible": true
+      "radarEligible": true,
+      "footwearCollectionUrls": [
+        "https://www.jonak-paris.com/collection/woman-shoes.html"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "backfillLimit": 640,
+      "preferPilotCache": false
     },
     {
       "id": "bobbies",

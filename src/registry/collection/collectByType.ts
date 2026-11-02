@@ -203,6 +203,11 @@ export async function collectBrandByCollectorType(
 
   const mode = options.mode ?? config.collectMode ?? "legacy";
 
+  if (entry.id === "jonak") {
+    const { collectJonak } = await import("../../collector/collectJonak");
+    return collectJonak();
+  }
+
   if (entry.id === "casadei" || entry.id === "jil-sander") {
     const { collectOfficialSalesforce } = await import("../../collector/salesforceCommerce/integration");
     return collectOfficialSalesforce(config);

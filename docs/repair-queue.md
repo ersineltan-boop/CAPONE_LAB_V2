@@ -441,3 +441,17 @@ paths. Reproducible review: data/registry/jonak-taxonomy-review.json.
 Next: guarded registry/refresh integration and exact-head release gates on PR201;
 the brand is still not active or live. Do not recollect the other two sources
 or start a duplicate branch before finishing this integration.
+
+2 November continuation supersedes that pending integration note: a fresh
+three-request bounded official traversal again reconciled 663 rows, 640 shoes
+and 23 accessories. The existing registry refresh now routes JONAK through the
+bounded collector; failed/partial new runs cannot fall back to cached FULL.
+The prepared brand shard contains 640 families, including modern OXFORD_DERBY
+for the 14 legacy OTHER_FOOTWEAR derby records. The preserving writer verified
+all 17,765 existing core/brand families byte-for-byte by serialized content;
+marketplace shards were not changed. Only JONAK's registry entry is activated
+in the proposed release (83 active); unrelated cached probe overrides were
+excluded. Existing schedules are unchanged. Fresh source archive and retention
+proof: verified-listing-20261102.json.gz and jonak-delivery-proof.json.
+Publication remains pending exact-head full tests/build, matching Preview READY,
+merge-SHA production READY and live catalog/image checks. Continue PR201.

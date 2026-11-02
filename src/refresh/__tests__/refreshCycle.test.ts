@@ -30,7 +30,8 @@ describe("complete automatic refresh", () => {
   });
   it("covers every current active brand and marketplace without new brand activation", async () => {
     const plan = await buildRefreshCyclePlan(process.cwd());
-    expect(plan.activeBrands).toHaveLength(82);
+    expect(plan.activeBrands).toHaveLength(83);
+    expect(plan.activeBrands).toContain("jonak");
     expect(plan.activeMarketplaces).toHaveLength(6);
     expect(plan.lanes.flatMap((lane) => lane.scripts).some((args) => args.includes("--refresh-only"))).toBe(true);
     expect(() => assertRefreshCoverage([...plan.activeBrands, "future-brand"], plan.activeMarketplaces, plan.lanes)).toThrow("brand:future-brand");

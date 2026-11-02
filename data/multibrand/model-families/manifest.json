@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-13T08:19:46.018Z",
-  "totalFamilies": 17765,
-  "shardCount": 67,
+  "generatedAt": "2026-11-02T00:39:18.853281+00:00",
+  "totalFamilies": 18405,
+  "shardCount": 68,
   "shards": [
     {
       "file": "brands/4ccccees.json",
@@ -129,6 +129,11 @@
       "file": "brands/jeffrey-campbell.json",
       "familyCount": 795,
       "bytes": 5479881
+    },
+    {
+      "file": "brands/jonak.json",
+      "familyCount": 640,
+      "bytes": 1841465
     },
     {
       "file": "brands/jude.json",
