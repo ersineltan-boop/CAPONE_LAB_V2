@@ -455,3 +455,16 @@ excluded. Existing schedules are unchanged. Fresh source archive and retention
 proof: verified-listing-20261102.json.gz and jonak-delivery-proof.json.
 Publication remains pending exact-head full tests/build, matching Preview READY,
 merge-SHA production READY and live catalog/image checks. Continue PR201.
+
+2 November actual release blocker: image delivery verification prevented merge.
+The exact JONAK catalog cover image returned HTTP200 text/html after redirecting
+to https://www.google.com/ in this environment (one initial check and one
+diagnostic, no further image attempts). This is not proof of a global site
+outage or bot detection; it does mean real image delivery is unverified here.
+PR201 remains unmerged and is returned to draft despite CI41368707348 success
+and matching Preview dpl_FNSDcU3NGD3AXnS7865yZt3dYufz READY for e974527.
+Main/production are unchanged. The publisher now requires sampled image MIME
+delivery without redirects before any write. Do not claim JONAK is live.
+The 640-family local proposal is not a published source refresh. Keep JONAK's
+prepared work intact; continue independent BOBBIES/BATA work while this source
+delivery issue is unresolved. No alternate endpoint/referrer/proxy bypass.

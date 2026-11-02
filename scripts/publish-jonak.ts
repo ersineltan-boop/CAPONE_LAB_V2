@@ -11,6 +11,17 @@ const snapshot = JSON.parse(await readFile("data/brands/jonak-staging/catalog.js
 const progress = JSON.parse(await readFile("data/brands/jonak-staging/progress.json", "utf8"));
 if (progress.status !== "LISTING_VERIFIED" || progress.checkedAt !== snapshot.checkedAt) throw new Error("Current traversal not verified");
 const prepared = prepareJonakProducts(snapshot);
+// Listing galleries alone are insufficient: refuse redirects and HTML in place of image bytes.
+for (const index of [...new Set([0, Math.floor(prepared.products.length / 2), prepared.products.length - 1])]) {
+  const response = await fetch(prepared.products[index]!.images![0]!, {
+    redirect: "manual", signal: AbortSignal.timeout(15_000),
+  });
+  const contentType = response.headers.get("content-type") ?? "";
+  await response.body?.cancel();
+  if (!response.ok || !contentType.startsWith("image/")) {
+    throw new Error(`JONAK_IMAGE_DELIVERY_BLOCKED: HTTP ${response.status}; ${contentType}; location=${response.headers.get("location") ?? "none"}`);
+  }
+}
 const catalog: WaveCatalog = {
   slug: "jonak", brand: "JONAK", officialUrl: "https://www.jonak-paris.com", snapshotId: snapshot.checkedAt,
   collectedAt: snapshot.checkedAt, catalogPaths: ["/collection/woman-shoes.html"], newArrivalsPaths: [],
