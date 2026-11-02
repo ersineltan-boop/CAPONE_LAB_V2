@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { prepareBataProducts, type BataSnapshot } from "../src/collector/bata";
 import { waveFamiliesToModelFamilies } from "../src/brands/wave50/publish";
@@ -16,7 +16,16 @@ for (const index of [...new Set([0, Math.floor(products.length / 2), products.le
   const response = await fetch(products[index]!.images![0]!, { redirect: "manual", signal: AbortSignal.timeout(15_000) });
   const type = response.headers.get("content-type") ?? "";
   await response.body?.cancel();
-  if (!response.ok || !type.startsWith("image/")) throw new Error(`BATA image delivery unverified: ${response.status} ${type}`);
+  if (!response.ok || !type.startsWith("image/")) {
+    if ([401, 403, 429].includes(response.status)) {
+      const now = Date.now();
+      const retry = "data/brands/bata-staging/retry.json";
+      await writeFile(retry + ".tmp", JSON.stringify({ checkedAt: new Date(now).toISOString(),
+        retryAt: new Date(now + (response.status === 429 ? 3600_000 : 7 * 86400_000)).toISOString(), reason: `Image HTTP ${response.status}` }));
+      await rename(retry + ".tmp", retry);
+    }
+    throw new Error(`BATA image delivery unverified: ${response.status} ${type}`);
+  }
 }
 const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 const byUrl = new Map(products.map(product => [product.productUrl, product]));
@@ -44,18 +53,17 @@ const catalog: WaveCatalog = { slug: "bata", brand: "BATA", officialUrl: "https:
   productUrls: products.map(product => product.productUrl), families: [...groups.values()] };
 const families = waveFamiliesToModelFamilies(catalog);
 if (families.some(family => !family.primaryCategory || family.primaryCategory === "UNCLASSIFIED")) throw new Error("BATA unresolved primary category");
+const proposed = new Map(families.flatMap(family => family.variants.map(variant => [variant.url, variant.images] as const)));
+if (proposed.size !== products.length || products.some(product => hash(proposed.get(product.productUrl)) !== hash(product.images))) {
+  throw new Error("BATA conversion lost an original product URL or gallery");
+}
 const before = await loadModelFamilies();
 const old = new Map(before.map(family => [family.modelFamilyId, hash(family)]));
-await replaceAutomationBrandDeliveries({ root: process.cwd(), generatedAt: snapshot.checkedAt,
-  deliveries: [{ slug: "bata", brand: "BATA", officialUrl: catalog.officialUrl, collectedAt: snapshot.checkedAt, families }] });
-const after = await loadModelFamilies();
-const current = new Map(after.map(family => [family.modelFamilyId, hash(family)]));
-if ([...old].some(([id, checksum]) => current.get(id) !== checksum)) throw new Error("Existing model identity/content changed");
 const universePath = "data/registry/brand-universe.json";
 const universe: BrandUniverseFile = JSON.parse(await readFile(universePath, "utf8"));
 if (universe.brands.some(brand => brand.id === "bata")) throw new Error("Existing BATA activation requires an explicit preserving refresh");
 const brand: BrandUniverseEntry = { id: "bata", brand: "BATA", officialUrl: "https://www.bata.com", country: "Çekya",
-  segment: "MASS_MARKET", influenceRole: "MARKET", trackingPriority: "P2", isActive: true, collectorType: "CUSTOM_ADAPTER",
+  segment: "UNCLASSIFIED", influenceRole: "UNCLASSIFIED", trackingPriority: "P2", isActive: true, collectorType: "CUSTOM_ADAPTER",
   collectionStatus: "READY_AUTOMATIC", footwearFocus: "WOMENS_FOOTWEAR", womenFootwearRelevant: true, sourceType: "BRAND",
   notes: `Official Europe PT BATA-only women. ${snapshot.sourceTotal} rows reconciled; ${products.length} footwear; ${snapshot.excludedIds.length} excluded. Country denotes Czech brand origin (official company history). Influence scores not assessed. Existing refresh schedule unchanged.`,
   footwearInfluence: 0, directionalInfluence: 0, commercialInfluence: 0, collectionUrl: "https://www.bata.com",
@@ -72,6 +80,13 @@ const registryPath = "src/registry/data/brands.ts";
 const registry = await readFile(registryPath, "utf8");
 const nextRegistry = registry.replace(/\n\];\s*$/, `,\n${block.replace(/,$/, "")}\n];\n`);
 if (nextRegistry === registry) throw new Error("Registry insertion failed");
+await replaceAutomationBrandDeliveries({ root: process.cwd(), generatedAt: snapshot.checkedAt,
+  deliveries: [{ slug: "bata", brand: "BATA", officialUrl: catalog.officialUrl, collectedAt: snapshot.checkedAt, families }] });
+const after = await loadModelFamilies();
+const current = new Map(after.map(family => [family.modelFamilyId, hash(family)]));
+if ([...old].some(([id, checksum]) => current.get(id) !== checksum)) throw new Error("Existing model identity/content changed");
+const persisted = new Map(after.filter(family => family.brand === "BATA").flatMap(family => family.variants.map(variant => [variant.url, variant.images] as const)));
+if (products.some(product => hash(persisted.get(product.productUrl)) !== hash(product.images))) throw new Error("Persisted BATA source URL/gallery lost");
 await writeFile(universePath, JSON.stringify(universe, null, 2));
 await writeFile(registryPath, nextRegistry);
 // Preserve the previous report's existing-brand assessment; update only this brand's contribution.

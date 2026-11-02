@@ -127,7 +127,7 @@ def main():
     def expire(_signum, _frame):
         raise TimeoutError('Absolute staging deadline')
 
-    def get(url):
+    def get(url, retries=1):
         nonlocal requests
         parsed = urllib.parse.urlparse(url)
         if parsed.scheme != 'https' or parsed.netloc != 'www.bata.com':
@@ -144,6 +144,11 @@ def main():
             response = urllib.request.urlopen(request, timeout=15)
         except urllib.error.HTTPError as error:
             response = error
+        except urllib.error.URLError as error:
+            if retries and isinstance(error.reason, (TimeoutError, OSError)):
+                return get(url, retries - 1)
+            stopped.set()
+            raise RuntimeError(f'Official request failed after bounded retry: {url}: {error}') from error
         body = response.read(3_000_001)
         human = bool(re.search(b'verify (?:that )?you are human|checking your browser|captcha-delivery.com|just a moment', body, re.I))
         if response.code in [401, 403, 429] or human:
@@ -170,13 +175,21 @@ def main():
             if state['total'] is not None and state['total'] != page.total:
                 raise RuntimeError('Source count changed during traversal')
             state['total'] = page.total
+            if len(page.items) != min(24, page.total - len(parts)):
+                raise RuntimeError('Incomplete official listing page')
+            if page.next:
+                next_url = urllib.parse.urlparse(page.next)
+                query = urllib.parse.parse_qs(next_url.query)
+                if next_url.netloc != 'www.bata.com' or next_url.path != '/on/demandware.store/Sites-bata-eu-Site/en_PT/Search-UpdateGrid' or query != {
+                    'cgid': ['EU_Woman_Brand_bata'], 'start': [str(len(parts) + len(page.items))], 'sz': ['24']}:
+                    raise RuntimeError('Unexpected official pagination scope/offset')
             known = {item['id'] for item in parts}
             urls = [item['id'] for item in page.items]
             if len(set(urls)) != len(urls) or known.intersection(urls):
                 raise RuntimeError('Duplicate listing page/card')
             name = f'listing-{len(state["parts"]):03}.json'
             atomic(ROOT / name, page.items)
-            state['parts'].append({'file': name, 'sha256': digest(page.items)})
+            state['parts'].append({'file': name, 'sha256': digest(page.items), 'sourceUrl': state['next']})
             parts.extend(page.items)
             state['next'] = page.next
             atomic(path, state)

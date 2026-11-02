@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T10:02:15.790Z",
+  "generatedAt": "2026-11-02T00:56:02.267188+00:00",
   "brands": [
     {
       "id": "schutz",
@@ -5486,6 +5486,42 @@
       "supportsMultipleImages": true,
       "discoverySources": [
         "wave50"
+      ],
+      "classificationStatus": "UNREVIEWED",
+      "radarEligible": false
+    },
+    {
+      "id": "bata",
+      "brand": "BATA",
+      "officialUrl": "https://www.bata.com",
+      "country": "Çekya",
+      "segment": "UNCLASSIFIED",
+      "influenceRole": "UNCLASSIFIED",
+      "trackingPriority": "P2",
+      "isActive": true,
+      "collectorType": "CUSTOM_ADAPTER",
+      "collectionStatus": "READY_AUTOMATIC",
+      "footwearFocus": "WOMENS_FOOTWEAR",
+      "womenFootwearRelevant": true,
+      "sourceType": "BRAND",
+      "notes": "Official Europe PT BATA-only women. 641 rows reconciled; 509 footwear; 132 excluded. Country denotes Czech brand origin (official company history). Influence scores not assessed. Existing refresh schedule unchanged.",
+      "footwearInfluence": 0,
+      "directionalInfluence": 0,
+      "commercialInfluence": 0,
+      "collectionUrl": "https://www.bata.com",
+      "collectionPaths": [
+        "/pt/woman/brand/bata/"
+      ],
+      "footwearCollectionUrls": [
+        "https://www.bata.com/pt/woman/brand/bata/"
+      ],
+      "collectionDiscoveryStatus": "VERIFIED",
+      "productLimit": 509,
+      "backfillLimit": 509,
+      "supportsMultipleImages": true,
+      "preferPilotCache": false,
+      "discoverySources": [
+        "official-bata-europe"
       ],
       "classificationStatus": "UNREVIEWED",
       "radarEligible": false

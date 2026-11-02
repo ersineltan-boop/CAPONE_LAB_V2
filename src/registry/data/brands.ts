@@ -4914,5 +4914,37 @@ export const brandEntries: BrandRegistryEntry[] = [
     notes: "Wave 50 full official women's footwear. source_total=328 coverage=100",
     classificationStatus: "UNREVIEWED",
     radarEligible: false,
+  }),
+  brand({
+    id: "bata",
+    brand: "BATA",
+    country: "Çekya",
+    collectionUrl: "https://www.bata.com",
+    footwearCollectionUrls: [
+      "https://www.bata.com/pt/woman/brand/bata/",
+    ],
+    collectionDiscoveryStatus: "VERIFIED",
+    backfillLimit: 509,
+    segment: "UNCLASSIFIED",
+    role: "UNCLASSIFIED",
+    footwearInfluence: 0,
+    directionalInfluence: 0,
+    commercialInfluence: 0,
+    trackingPriority: "P2",
+    officialUrl: "https://www.bata.com",
+    collectionPaths: [
+      "/pt/woman/brand/bata/",
+    ],
+    collectorType: "CUSTOM_ADAPTER",
+    collectionStatus: "READY_AUTOMATIC",
+    productLimit: 509,
+    supportsMultipleImages: true,
+    discoverySources: [
+      "official-bata-europe",
+    ],
+    isActive: true,
+    notes: "Official Europe PT BATA-only women. 641 rows reconciled; 509 footwear; 132 excluded. Country denotes Czech brand origin (official company history). Influence scores not assessed. Existing refresh schedule unchanged.",
+    classificationStatus: "UNREVIEWED",
+    radarEligible: false,
   })
 ];

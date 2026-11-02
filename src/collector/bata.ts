@@ -27,7 +27,7 @@ export function prepareBataProducts(snapshot: BataSnapshot, now = Date.now()) {
   for (const detail of snapshot.products) {
     const { listing, product } = detail;
     const womenScope = listing.category1 === "Woman" && listing.category2 === "Shoes" && !["Men", "Gentlemen", "Boys"].includes(listing["gender-name"])
-      || listing["gender-name"] === "Ladies" && !["Clothing", "Accessories"].includes(listing.category2) && /\b(?:sneakers?|loafers?|ballerinas?|sandals?|boots?|moccasins?|pumps?|espadrilles?)\b/i.test(listing.name);
+      || listing["gender-name"] === "Ladies" && (listing.category2 === undefined || listing.category2 === "Collections") && /\b(?:sneakers?|loafers?|ballerinas?|sandals?|boots?|moccasins?|pumps?|espadrilles?)\b/i.test(listing.name);
     const ownIdentity = product.mpn === listing.id || product.mpn.startsWith(listing.id + "_") && /^[0-9]{2}$/.test(product.mpn.slice(listing.id.length + 1));
     if (!womenScope || listing.brand.toUpperCase() !== "BATA" || product.brand.name.toUpperCase() !== "BATA" || !ownIdentity || ids.has(listing.id) ||
         !detail.url.startsWith("https://www.bata.com/pt/") || urls.has(detail.url) || !product.image.length ||
@@ -39,14 +39,15 @@ export function prepareBataProducts(snapshot: BataSnapshot, now = Date.now()) {
     if (!category) throw new Error(`Unresolved BATA category: ${listing.id}; ${product.name}`);
     ids.add(listing.id);
     urls.add(detail.url);
+    const color = listing.color && listing.color !== "null" ? listing.color : null;
     products.push({ source: "bata", brand: "BATA", productName: product.name, productUrl: detail.url,
-      imageUrl: product.image[0], images: [...product.image], category, color: listing.color ?? null,
+      imageUrl: product.image[0], images: [...product.image], category, color,
       material: null, toeShape: null, heelType: null, heelHeight: null, details: product.description ?? null,
       discoveredAt: snapshot.checkedAt, sourceVerifiedAt: snapshot.checkedAt, sourceModelCode: product.mpn,
       sourceCategoryId: listing.category ?? null, sourceCategoryName: listing.category3 ?? null,
       sourceCategoryPath: [listing.category1, listing.category2, listing.category3].filter(Boolean).join("/"),
       collectionPath: "/pt/woman/brand/bata/", hasNewBadge: false, isNewArrivalsCollection: false,
-      variants: [{ title: product.name, color: listing.color ?? null, sku: product.mpn, images: [...product.image] }],
+      variants: [{ title: product.name, color, sku: product.mpn, images: [...product.image] }],
     });
   }
   return products;

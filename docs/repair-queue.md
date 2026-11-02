@@ -427,3 +427,18 @@ exact-head full tests/build, Preview and production/live gates pass.
 The collector uses two workers, shared pacing/request limits, source retry
 windows (401/403/human: seven days; 429: one hour), a source lock and bounded
 resumable chunks. Existing Pazar/Catalog refresh schedules are unchanged.
+
+BATA source completion supersedes the ongoing-gallery note above: all 509
+own product pages and galleries were verified; the 641-row listing equals
+509 women's footwear records plus 132 excluded clothing/accessory records.
+Final source count and first-page replay passed. The prepared delivery groups
+colourways into 365 model families using source-provided shared parent links,
+matching own titles and categories; every selected URL and own gallery remains
+in its variant. Three sampled image requests returned image MIME without a
+redirect. The preserving writer verified all 17,765 previous core/brand records
+exactly; marketplace shards were unchanged. No added NEW flags or invented
+publication dates. Candidate registry: 161 total brands, 83 active; BATA price
+filter is Mass market, while unassessed influence scores remain unclassified
+and Radar-ineligible. Full local 1,199 tests / 146 files and production build
+passed. Exact-head CI/Preview, merge-SHA production and live source delivery
+checks remain required before claiming released. Keep JONAK PR201 blocked.

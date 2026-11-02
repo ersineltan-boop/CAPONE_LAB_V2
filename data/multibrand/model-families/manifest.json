@@ -1,9 +1,9 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-13T08:19:46.018Z",
-  "totalFamilies": 17765,
-  "shardCount": 67,
+  "generatedAt": "2026-11-02T00:56:02.267188+00:00",
+  "totalFamilies": 18130,
+  "shardCount": 68,
   "shards": [
     {
       "file": "brands/4ccccees.json",
@@ -54,6 +54,11 @@
       "file": "brands/atp-atelier.json",
       "familyCount": 113,
       "bytes": 661265
+    },
+    {
+      "file": "brands/bata.json",
+      "familyCount": 365,
+      "bytes": 2052736
     },
     {
       "file": "brands/brother-vellies.json",

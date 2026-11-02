@@ -7,6 +7,14 @@ Page = module['Page']
 
 
 class BataPageTests(unittest.TestCase):
+    def test_scope_uses_own_women_evidence_without_collecting_men_clothing_or_other_brands(self):
+        scope = module['footwear_scope']
+        base = {'brand': 'BATA', 'category1': 'Woman', 'category2': 'Shoes', 'gender-name': 'Others', 'name': 'Classic Sneakers'}
+        self.assertTrue(scope(base))
+        self.assertFalse(scope({**base, 'gender-name': 'Men'}))
+        self.assertFalse(scope({**base, 'brand': 'OTHER'}))
+        self.assertFalse(scope({**base, 'category2': 'Clothing', 'gender-name': 'Ladies'}))
+        self.assertTrue(scope({'brand': 'BATA', 'gender-name': 'Ladies', 'name': "BATA Women's Sneakers with Platform and Zip"}))
     def test_accepts_only_exact_style_or_observed_two_digit_variant_qualification(self):
         same = module['same_source_style']
         self.assertTrue(same('170R_2021_5946405', '170R_2021_5946405_04'))
