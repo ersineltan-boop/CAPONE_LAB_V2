@@ -405,3 +405,25 @@ saved/reviewed dates and favorites without overwriting existing local notes.
 This is a manual transfer, not automatic sync or offline support. Do not mark
 it live until exact-head full tests/build, Preview READY, merge-SHA production
 READY and public flow checks pass. Automatic Upload remains last.
+
+2 November brand expansion continuation: JONAK PR201 remains draft and unmerged
+because its real image URL redirected to Google in this environment. Its 640-row
+proposal must not be described as live. Continue independently with BATA from
+current main 10b1c55547f2652b0a7df1c4b37edab23309e91b; do not include JONAK's
+unreleased registry/catalog changes in BATA's delivery.
+
+BATA's official Europe PT BATA-only women scope reports 641 rows. The exact
+visible listing links identify colourways more accurately than repeated
+analytics parent links. All 641 unique listing identities are staged; 509
+women's footwear records and 132 giyim/accessory records reconcile the scope.
+Two generic-category sneaker records have explicit own women's evidence.
+Own product pages provide full schema galleries; a two-digit source SKU suffix
+is preserved rather than truncated, and unrelated parent IDs are rejected.
+Gallery verification is ongoing, not FULL. The checkpoint archive and report
+at data/brands/bata-checkpoints and data/registry/bata-staging-progress.json
+retain checksummed atomic listing/gallery progress. No live data is activated
+until all galleries, final count/first-page replay, source taxonomy, image MIME,
+exact-head full tests/build, Preview and production/live gates pass.
+The collector uses two workers, shared pacing/request limits, source retry
+windows (401/403/human: seven days; 429: one hour), a source lock and bounded
+resumable chunks. Existing Pazar/Catalog refresh schedules are unchanged.
