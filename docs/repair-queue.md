@@ -448,3 +448,25 @@ publication; 39 model cards had been overridden by broad source departments.
 The source department evidence remains unchanged. A barefoot ankle-boot regression
 covers the observed Sneakers override. Regeneration preserves all 509 URLs,
 full galleries, 365 family identities and all 17,765 existing records.
+
+### BATA released — 2026-11-02
+
+PR #202 merged as b6114bfec5aa6223b092e498b11f89bd4b955424.
+Exact head 4d419ac3fcf4a5fd09d1d68528b0ebb4918ef863 passed 1,201 tests
+in 147 files and the full production build in CI run 41375165371.
+Preview dpl_6DaykmmVZpXSkpY49WYJ6ZdqPVs8 was READY for that head;
+main was unchanged before merge and the merged tree matched the tested tree.
+Production dpl_ETCip13iLfMP8qzTVfQAdSiNMCGY is READY for the merge SHA.
+The public BATA shard matches the tested build byte-for-byte (SHA256
+4dcd96cc503ef1c52ee863e86d4432f9129417a2e9f78d3c0c7c4609f2a71cde):
+365 model cards, 509 product variants; live summary has 83 brands and BATA
+has zero verified NEW flags. A sampled exact source image returned HTTP 200,
+image/jpeg without redirect. All 17,765 previous records remain preserved.
+This supersedes the candidate/pending-release notes above.
+
+Next independent brand: BOBBIES. The exact official women's View All page,
+one own PDP and one exact own gallery image passed bounded read-only probes.
+No total coverage or activation is claimed; full bounded collection, identity,
+gallery and release validation remain required. JONAK #201 remains blocked
+by the previously recorded source-image delivery issue; do not retry through
+alternate endpoints. Cursor and the paused saved-record transfer remain listed.
