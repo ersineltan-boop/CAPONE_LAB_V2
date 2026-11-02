@@ -468,3 +468,9 @@ delivery without redirects before any write. Do not claim JONAK is live.
 The 640-family local proposal is not a published source refresh. Keep JONAK's
 prepared work intact; continue independent BOBBIES/BATA work while this source
 delivery issue is unresolved. No alternate endpoint/referrer/proxy bypass.
+
+Independent BATA image check on 2 November: the exact image URL extracted from
+its official BATA-only women page returned HTTP200 image/jpeg at the same URL,
+without redirect. One request, 15-second timeout, 64 response bytes read.
+Evidence: data/registry/bata-image-access-20261102.json. This verifies one sample
+image only; it does not activate BATA or establish complete catalog coverage.
