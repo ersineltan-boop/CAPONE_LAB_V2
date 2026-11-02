@@ -1,0 +1,78 @@
+{
+  "sources": [
+    {
+      "id": "jonak",
+      "url": "https://www.jonak-paris.com/collection/woman-shoes.html",
+      "checkedAt": "2026-10-30T10:37:22.258730+00:00",
+      "requestBudget": 1,
+      "timeoutSeconds": 15,
+      "status": 200,
+      "finalUrl": "https://www.jonak-paris.com/collection/woman-shoes.html",
+      "bytes": 1840829,
+      "sha256": "a31581141f09dc96701ef0725bbbe394647e376b5c28bad0f4188cc81a43d089",
+      "truncated": false,
+      "humanVerification": false
+    },
+    {
+      "id": "bobbies",
+      "url": "https://www.bobbies.com/en/1201002191-shoes-women",
+      "checkedAt": "2026-10-30T10:37:22.259816+00:00",
+      "requestBudget": 1,
+      "timeoutSeconds": 15,
+      "status": 200,
+      "finalUrl": "https://www.bobbies.com/en/1201002191-shoes-women",
+      "bytes": 151536,
+      "sha256": "f2e630336108dcd649bb43b12640e31a98c49a815e6908df62f978db84887842",
+      "truncated": false,
+      "humanVerification": false
+    },
+    {
+      "id": "bata",
+      "url": "https://www.bata.com/pt/woman/brand/bata/?start=0",
+      "checkedAt": "2026-10-30T10:37:22.260390+00:00",
+      "requestBudget": 1,
+      "timeoutSeconds": 15,
+      "status": 200,
+      "finalUrl": "https://www.bata.com/pt/woman/brand/bata/?start=0",
+      "bytes": 964485,
+      "sha256": "14fc2517c32ccf23ee6e109d81008db28b36218bab27a0c0ece87ab0517e7efe",
+      "truncated": false,
+      "humanVerification": false
+    }
+  ],
+  "jonak": {
+    "brand": "JONAK",
+    "scopeUrl": "https://www.jonak-paris.com/collection/woman-shoes.html",
+    "sourceTotal": 663,
+    "checkedAt": "2026-10-30T10:40:59.789426+00:00",
+    "status": "LISTING_VERIFIED",
+    "note": "Staging only. No NEW inference, no brand activation, no live publication."
+  },
+  "products": 663,
+  "images": 3351,
+  "progress": {
+    "status": "LISTING_VERIFIED",
+    "checkedAt": "2026-10-30T10:40:59.789426+00:00",
+    "sourceTotal": 663,
+    "requests": 3,
+    "parts": [
+      {
+        "path": "page-001.json",
+        "sha256CanonicalJson": "cf59ff9e8a4e8693d9c391684121f38c7d7913a007c45cb85ef804def426eefa",
+        "count": 48
+      },
+      {
+        "path": "page-014.json",
+        "sha256CanonicalJson": "6330c034c9e5cf24e578123337aac9fc3f0c068ed5b96ace0ce2b448ab9ab04d",
+        "count": 663
+      }
+    ],
+    "published": false
+  },
+  "publication": "NOT_PUBLISHED; taxonomy and existing registry refresh integration pending",
+  "archive": {
+    "path": "data/brands/jonak-staging/verified-listing.json.gz",
+    "sha256": "e3698db3a1bd280f4cb3caad3a6311cda8926c221da0d9555a9fece79428d7b8",
+    "uncompressedSha256": "518b11971a2ef9a5e57056e2307b4d324070dbb95eef648bcbb03abb7d589f8c"
+  }
+}

@@ -405,3 +405,72 @@ saved/reviewed dates and favorites without overwriting existing local notes.
 This is a manual transfer, not automatic sync or offline support. Do not mark
 it live until exact-head full tests/build, Preview READY, merge-SHA production
 READY and public flow checks pass. Automatic Upload remains last.
+
+30 October owner direction: pause the saved-record transfer test and resume
+brand expansion, starting with JONAK, BOBBIES and BATA (Europe, BATA-only women).
+Main is 10b1c55547f2652b0a7df1c4b37edab23309e91b, production READY.
+No duplicate brand repair PR was open. All three exact official collection
+pages returned HTTP200 without a visible human-verification challenge.
+Evidence: data/registry/selected-brand-access-20261030.json.
+
+JONAK official listing staging reconciles 663 distinct source IDs and URLs with
+3,351 actual image URLs. Canonical pagination is cumulative: page 2 includes
+pages 1 and 2, rather than 48 new cards only. A bounded run fetched pages 1
+and 14 and rechecked page 1; count, exact prefix and final first page agree.
+The compressed checksummed archive retains original metadata, URLs and galleries
+at data/brands/jonak-staging/verified-listing.json.gz. LISTING_VERIFIED is not
+FULL publication: source taxonomy review and guarded registry/refresh integration
+remain pending. No new products were marked NEW and no active registry/catalog
+was changed. The collector caps requests/time/body size, writes atomic progress,
+and stops on access denial with a seven-day retry window (429: one hour).
+The initial small response cap and one read timeout produced PARTIAL states;
+the final fresh bounded traversal passed. Offline parser regression checks pass.
+BOBBIES and BATA are reachable but have not been collected or activated.
+
+JONAK taxonomy follow-up: the verified 663-row snapshot reconciles to 640
+footwear products and 23 explicit accessories (14 socks, 5 gloves, 3 tights,
+1 gaiter). Seasonal/iconic rows are classified from their exact source titles;
+slingback ballet flats remain BALLERINA and lowboots are ANKLE_BOOT. The 14
+legacy OTHER_FOOTWEAR records are explicit derbies, whose modern primary
+category must remain OXFORD_DERBY during integration. No unresolved category
+remains in the prepared input. Original names, URLs, gallery order and all
+images are retained; no publication/NEW timestamp is invented. The converter
+rejects stale (>24h), future, partial, duplicate or identity/gallery-damaged
+snapshots. Three regression tests cover the full captured source and rejection
+paths. Reproducible review: data/registry/jonak-taxonomy-review.json.
+Next: guarded registry/refresh integration and exact-head release gates on PR201;
+the brand is still not active or live. Do not recollect the other two sources
+or start a duplicate branch before finishing this integration.
+
+2 November continuation supersedes that pending integration note: a fresh
+three-request bounded official traversal again reconciled 663 rows, 640 shoes
+and 23 accessories. The existing registry refresh now routes JONAK through the
+bounded collector; failed/partial new runs cannot fall back to cached FULL.
+The prepared brand shard contains 640 families, including modern OXFORD_DERBY
+for the 14 legacy OTHER_FOOTWEAR derby records. The preserving writer verified
+all 17,765 existing core/brand families byte-for-byte by serialized content;
+marketplace shards were not changed. Only JONAK's registry entry is activated
+in the proposed release (83 active); unrelated cached probe overrides were
+excluded. Existing schedules are unchanged. Fresh source archive and retention
+proof: verified-listing-20261102.json.gz and jonak-delivery-proof.json.
+Publication remains pending exact-head full tests/build, matching Preview READY,
+merge-SHA production READY and live catalog/image checks. Continue PR201.
+
+2 November actual release blocker: image delivery verification prevented merge.
+The exact JONAK catalog cover image returned HTTP200 text/html after redirecting
+to https://www.google.com/ in this environment (one initial check and one
+diagnostic, no further image attempts). This is not proof of a global site
+outage or bot detection; it does mean real image delivery is unverified here.
+PR201 remains unmerged and is returned to draft despite CI41368707348 success
+and matching Preview dpl_FNSDcU3NGD3AXnS7865yZt3dYufz READY for e974527.
+Main/production are unchanged. The publisher now requires sampled image MIME
+delivery without redirects before any write. Do not claim JONAK is live.
+The 640-family local proposal is not a published source refresh. Keep JONAK's
+prepared work intact; continue independent BOBBIES/BATA work while this source
+delivery issue is unresolved. No alternate endpoint/referrer/proxy bypass.
+
+Independent BATA image check on 2 November: the exact image URL extracted from
+its official BATA-only women page returned HTTP200 image/jpeg at the same URL,
+without redirect. One request, 15-second timeout, 64 response bytes read.
+Evidence: data/registry/bata-image-access-20261102.json. This verifies one sample
+image only; it does not activate BATA or establish complete catalog coverage.
