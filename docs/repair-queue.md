@@ -470,3 +470,28 @@ No total coverage or activation is claimed; full bounded collection, identity,
 gallery and release validation remain required. JONAK #201 remains blocked
 by the previously recorded source-image delivery issue; do not retry through
 alternate endpoints. Cursor and the paused saved-record transfer remain listed.
+
+### BOBBIES bounded work-block checkpoint — 2026-11-05
+
+Base main26e770a37612024ec38be0161049e1c1075e75d6 and its production READY
+were checked; no existing BOBBIES PR/work was duplicated. Official women's
+View All pagination exhausted22 pages with426 unique listing identities.
+No explicit source total was found:426 is the observed card union, not a
+claimed source total or a validated footwear count. First-page replay matched.
+Six own PDPs passed brand, offer URL, canonical, SKU and full gallery checks;
+the source's offers.image array is retained instead of its single thumbnail.
+The next request encountered a remote connection close (not401/403/human/429).
+This block is paused with checksummed atomic PARTIAL progress, not FULL.
+No BOBBIES activation, live catalogue, old IDs, URLs, galleries, NEW flags,
+Pazar/Catalog schedules or accounts were changed. Data and resumable progress
+are archived under data/brands/bobbies-checkpoints; report records the SHA256.
+Collector caps chunks at180sec/80requests and complete runs at25minutes,
+uses a source lock and common source-local access pause, and stops on denied
+access (7days) or429 (at least1hour), without alternate endpoints.
+Offline own-identity/gallery/pagination/checksum/retry regressions are in CI.
+Next bounded goal: remaining420 PDP galleries, source-based footwear taxonomy,
+then a preserving candidate. Resume this same branch/checkpoint; never start
+a parallel BOBBIES collector. If epoch is older than24h archive it explicitly
+before a fresh run. Exact-head full tests/build, Preview READY, unchanged main,
+merge-SHA Production READY and live checks remain mandatory before publication.
+JONAK's existing image blocker, Cursor and the paused saved transfer remain.
