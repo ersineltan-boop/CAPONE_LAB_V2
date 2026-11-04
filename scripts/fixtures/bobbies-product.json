@@ -1,0 +1,98 @@
+{
+  "listing": {
+    "id": "4000785429",
+    "attributeId": "80467",
+    "url": "https://www.bobbies.com/en/4000785429-bettany-nebbiolo.html"
+  },
+  "product": {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "Bettany - Nebbiolo",
+    "description": "Fall for the Bettany Mary Janes Pumps in Nebbiolo leather by Bobbies. Handcrafted in Portugal, blending elegance and comfort. Fast shipping and free returns.",
+    "category": "Mary Janes",
+    "image": "https://images.bobbies.com/W26/S-W26WO-BTT01/1024/BETTANY-Nebbiolo-004-SITE-c2093418.jpg?vcache=1790237713",
+    "sku": "S-W26WO-BTT01",
+    "mpn": "S-W26WO-BTT01",
+    "brand": {
+      "@type": "Brand",
+      "name": "Bobbies"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "name": "Bettany - Nebbiolo",
+      "price": "290",
+      "url": "https://www.bobbies.com/en/4000785429-bettany-nebbiolo.html",
+      "priceValidUntil": "2026-11-19",
+      "image": [
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-004-SITE-c2093418.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-165-f28e83f7.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-001-SITE-3a595ead.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-007-SITE-106d9595.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-014-SITE-989b8a5e.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Gammes-012-SITE-c8886f5c.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-535-df0b5886.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-536-4a360b72.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-537-d97b6df5.jpg?vcache=1790237713",
+        "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-165-f28e83f7-a90ea481.jpg?vcache=1790237713"
+      ],
+      "mpn": "S-W26WO-BTT01",
+      "sku": "S-W26WO-BTT01",
+      "availability": "http://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Bobbies"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "20",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 2,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 6,
+            "unitCode": "d"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "merchantReturnDays": "15",
+        "returnFees": "https://schema.org/FreeReturn",
+        "refundType": "https://schema.org/FullRefund",
+        "applicableCountry": "US",
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow"
+      }
+    }
+  },
+  "url": "https://www.bobbies.com/en/4000785429-bettany-nebbiolo.html",
+  "canonical": "https://www.bobbies.com/en/4000785429-bettany-nebbiolo.html",
+  "images": [
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-004-SITE-c2093418.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-165-f28e83f7.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-001-SITE-3a595ead.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-007-SITE-106d9595.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-014-SITE-989b8a5e.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Gammes-012-SITE-c8886f5c.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-535-df0b5886.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-536-4a360b72.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-537-d97b6df5.jpg?vcache=1790237713",
+    "https://images.bobbies.com/W26/S-W26WO-BTT01/2304/BETTANY-Nebbiolo-165-f28e83f7-a90ea481.jpg?vcache=1790237713"
+  ]
+}
