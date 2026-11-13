@@ -27,35 +27,37 @@ async function isFresh(): Promise<boolean> {
   }
 }
 
-export async function buildCatalogFrontend(options?: { force?: boolean }): Promise<void> {
-  if (!options?.force && (await isFresh())) {
+export async function buildCatalogFrontend(options?: { force?: boolean; outputDir?: string; families?: Awaited<ReturnType<typeof loadModelFamilies>>; generatedAt?: string }): Promise<void> {
+  const output = options?.outputDir ?? OUT_DIR;
+  if (!options?.force && !options?.outputDir && !options?.families && (await isFresh())) {
     console.log("Catalog frontend shards are up to date.");
     return;
   }
 
   const deliveries = await loadMarketplaceDeliveries(ROOT);
-  const families = applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
+  const families = options?.families ?? applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
   const artifacts = buildCatalogDelivery({
     families,
     brands: loadBrandRegistry().all(),
     marketplaces: browsableMarketplaces(),
+    generatedAt: options?.generatedAt,
   });
   const emptyBrands = artifacts.brandShards.filter((shard) => shard.families.length === 0);
   if (emptyBrands.length > 0) {
     throw new Error(`Active brands have no delivered products: ${emptyBrands.map((shard) => shard.id).join(", ")}`);
   }
 
-  await mkdir(join(OUT_DIR, "brands"), { recursive: true });
-  await mkdir(join(OUT_DIR, "marketplaces"), { recursive: true });
-  await mkdir(join(OUT_DIR, "visual"), { recursive: true });
+  await mkdir(join(output, "brands"), { recursive: true });
+  await mkdir(join(output, "marketplaces"), { recursive: true });
+  await mkdir(join(output, "visual"), { recursive: true });
 
-  await writeFile(join(OUT_DIR, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
-  await writeFile(join(OUT_DIR, "id-index.json"), JSON.stringify(artifacts.idIndex), "utf-8");
+  await writeFile(join(output, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
+  await writeFile(join(output, "id-index.json"), JSON.stringify(artifacts.idIndex), "utf-8");
 
   const brandCoverage = JSON.parse(await readFile(join(ROOT, "data/registry/priority-brand-coverage.json"), "utf8").catch((error) => { if (error.code === "ENOENT") return "{}"; throw error; }));
   for (const shard of artifacts.brandShards) {
     if (brandCoverage[shard.id]) shard.coverage = brandCoverage[shard.id];
-    await writeFile(join(OUT_DIR, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
+    await writeFile(join(output, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
   for (const shard of artifacts.marketplaceShards) {
     const delivery = deliveries.find(item => item.sourceId === shard.id);
@@ -63,7 +65,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
       pending: delivery.quarantined.length, refreshedCategories:delivery.report.refreshedCategories,
       verifiedProductCount:delivery.report.verifiedProductCount};
     await writeFile(
-      join(OUT_DIR, "marketplaces", `${shard.id}.json`),
+      join(output, "marketplaces", `${shard.id}.json`),
       JSON.stringify(shard),
       "utf-8",
     );
@@ -81,9 +83,9 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     brandIds,
     marketplaceIds,
   });
-  await writeFile(join(OUT_DIR, "visual-summary.json"), JSON.stringify(visual.summary), "utf-8");
+  await writeFile(join(output, "visual-summary.json"), JSON.stringify(visual.summary), "utf-8");
   for (const shard of visual.shards) {
-    await writeFile(join(OUT_DIR, "visual", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
+    await writeFile(join(output, "visual", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
 
   const largestBrand = artifacts.brandShards.reduce(
@@ -97,7 +99,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
   console.log(`Id index entries: ${Object.keys(artifacts.idIndex.families).length}`);
   console.log(`Visual families: ${visual.summary.totalCount}`);
   console.log(`Largest brand shard: ${largestBrand.id} (${largestBrand.size} bytes)`);
-  console.log(`Output: ${OUT_DIR}`);
+  console.log(`Output: ${output}`);
 }
 
 const isDirectRun = process.argv[1]?.replaceAll("\\", "/").endsWith("build-catalog-frontend.ts");
