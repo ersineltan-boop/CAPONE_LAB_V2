@@ -175,6 +175,14 @@ describe("registry-driven collection", () => {
     });
   });
 
+  it("keeps a Shopify collection seed out of the base URL", () => {
+    const origin = "https://brand-a.example.com";
+    const config = brandToPilotSourceConfig(entry({ collectionUrl: `${origin}/collections/shoes` }));
+    expect(config?.baseUrl + config?.collectionPaths[0]!).toBe(`${origin}/collections/shoes`);
+    const localized = brandToPilotSourceConfig(entry({ collectionUrl: `${origin}/en-eu` }));
+    expect(localized?.baseUrl).toBe(`${origin}/en-eu`);
+  });
+
   it("CUSTOM_ADAPTER otomatik collect etmez", async () => {
     const result = await collectBrandByCollectorType(
       entry({ collectorType: "CUSTOM_ADAPTER" }),

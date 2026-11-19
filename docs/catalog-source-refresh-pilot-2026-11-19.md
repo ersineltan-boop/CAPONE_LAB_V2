@@ -1,0 +1,14 @@
+# Source refresh through the catalog archive
+
+Follow-up to [the independent delivery pilot](./catalog-independent-delivery-pilot-2026-11-13.md). The collectors and analysis can now use a shared catalog store. The scheduled workflow still uses the legacy adapter. The November 18 refresh reached the 90 MiB staging guard without delivering the collected changes. Keep that guard in place until the scheduled path has passed a staging rehearsal with the new archive.
+
+Run `node --import tsx scripts/refresh-catalog-store-pilot.ts` from the repository root with normal access to the public storefronts. The script copies the published data into `logs/catalog-pilot/source-refresh-*`, tries ALOHAS, Dear Frances and 24S, then builds a local delivery snapshot. Brand collection requires a matching storefront count, complete pagination and images. The 24S candidate uses the marketplace delivery gate. The script checks all previous model IDs, product and gallery URLs and the exact archive parts for untouched sources. The per-run `report.json` distinguishes what was collected from what was accepted. Shopify product URLs now use the storefront origin when the registry seed is a collection URL.
+
+## Next engineering pass (Cursor)
+
+1. Review this change alongside #207. Classify every remaining reader and writer of `products.json` and `analyzed-products.json` used in scheduled or manual refreshes. Adapt the scheduled chain in a staging-only job, including any preflight, validation, analysis and snapshot steps that expect the legacy files. Keep a legacy read path during the transition.
+2. Replay the November 18 failure with a candidate larger than 90 MiB, first reproducing it on the legacy route, then verifying that the staged archive contains only approved paths and that every individual staged file remains below the existing guard. Use archived input to prove a one-source update does not rewrite the other sources, and run a failed-source case to check that the last good delivery survives.
+3. Test failure between writing parts and publishing the release manifest, and test switching back to the previous release from an independent reader. The local adapter swaps each manifest separately; the scheduled workflow still needs one consistent release pointer for raw, analyzed and browser delivery, plus protection from concurrent writers. Keep raw parts private and keep the prior browser snapshot readable during rollback.
+4. Return the run links, file sizes and model and gallery counts. Keep the work in a draft until staging and Preview pass. Production release requires Ersin's decision.
+
+Track source reliability separately: add brands in small groups with visible checks on freshness, pagination, coverage and galleries. Measure the amount of data the Visual page downloads on open before expanding it; progressively loading a view is a separate improvement from splitting the archive.

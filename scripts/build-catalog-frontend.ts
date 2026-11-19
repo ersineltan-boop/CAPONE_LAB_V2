@@ -27,15 +27,19 @@ async function isFresh(): Promise<boolean> {
   }
 }
 
-export async function buildCatalogFrontend(options?: { force?: boolean; outputDir?: string; families?: Awaited<ReturnType<typeof loadModelFamilies>>; generatedAt?: string }): Promise<void> {
+export async function buildCatalogFrontend(options?: { force?: boolean; outputDir?: string; dataRoot?: string; families?: Awaited<ReturnType<typeof loadModelFamilies>>; generatedAt?: string }): Promise<void> {
   const output = options?.outputDir ?? OUT_DIR;
   if (!options?.force && !options?.outputDir && !options?.families && (await isFresh())) {
     console.log("Catalog frontend shards are up to date.");
     return;
   }
 
-  const deliveries = await loadMarketplaceDeliveries(ROOT);
-  const families = options?.families ?? applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
+  const dataRoot = options?.dataRoot ?? ROOT;
+  const deliveries = await loadMarketplaceDeliveries(dataRoot);
+  const families = options?.families ?? applyMarketplaceDeliveries(await loadModelFamilies({
+    rootDir: join(dataRoot, "data/multibrand"),
+    allowMonolithFallback: !options?.dataRoot,
+  }), deliveries);
   const artifacts = buildCatalogDelivery({
     families,
     brands: loadBrandRegistry().all(),
@@ -54,7 +58,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean; outputDi
   await writeFile(join(output, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
   await writeFile(join(output, "id-index.json"), JSON.stringify(artifacts.idIndex), "utf-8");
 
-  const brandCoverage = JSON.parse(await readFile(join(ROOT, "data/registry/priority-brand-coverage.json"), "utf8").catch((error) => { if (error.code === "ENOENT") return "{}"; throw error; }));
+  const brandCoverage = JSON.parse(await readFile(join(dataRoot, "data/registry/priority-brand-coverage.json"), "utf8").catch((error) => { if (error.code === "ENOENT") return "{}"; throw error; }));
   for (const shard of artifacts.brandShards) {
     if (brandCoverage[shard.id]) shard.coverage = brandCoverage[shard.id];
     await writeFile(join(output, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
