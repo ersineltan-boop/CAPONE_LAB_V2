@@ -3,15 +3,29 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createServer } from "node:http";
 import { extname, join, resolve } from "node:path";
 import { chromium, devices } from "playwright";
-import type { VisualShard } from "../src/visual/types";
+import type { VisualCard, VisualSearchIndex, VisualShard } from "../src/visual/types";
+import { VISUAL_PAGE_SIZE } from "../src/visual/visualPages";
+import { BRAND_PRICE_SEGMENTS } from "../src/brands/brandPriceSegments";
+import { VISUAL_BASIC_CATEGORIES } from "../src/visual/basicCategories";
 
 assert(process.argv[2] && process.argv[3], "Pass the isolated refresh directory and Vite build directory");
 const run = resolve(process.argv[2]);
 const site = resolve(process.argv[3]);
-const visual = JSON.parse(await readFile(join(run, "frontend/visual/tumu.json"), "utf8")) as VisualShard;
-const model = visual.cards.find(card => card.brand.toUpperCase() === "ALOHAS" && card.images.length > 1 &&
-  (card.variants?.length ?? 0) <= 1 &&
-  visual.cards.filter(other => other.productName === card.productName).length === 1);
+const readVisual = async <T,>(name: string) => JSON.parse(await readFile(join(run, "frontend/visual", `${name}.json`), "utf8")) as T;
+const index = await readVisual<VisualSearchIndex>("tumu-index");
+const nameCounts = new Map<string, number>();
+for (const [, name] of index.rows) nameCounts.set(name, (nameCounts.get(name) ?? 0) + 1);
+let model: VisualCard | undefined, modelPosition = -1;
+for (let i = VISUAL_PAGE_SIZE * 2; i < index.rows.length; i++) {
+  const [brand, name, segment] = index.rows[i]!;
+  if (brand !== "alohas" || !segment || nameCounts.get(name) !== 1) continue;
+  const page = await readVisual<VisualShard>(`tumu-${Math.floor(i / VISUAL_PAGE_SIZE)}`);
+  const card = page.cards[i % VISUAL_PAGE_SIZE]!;
+  if (card.images.length < 2 || (card.variants?.length ?? 0) > 1) continue;
+  model = card;
+  modelPosition = i;
+  break;
+}
 assert(model, "Expected a uniquely named ALOHAS model with a gallery");
 let catalogBytes = 0, catalogRequests = 0;
 const server = createServer(async (req, res) => {
@@ -45,9 +59,21 @@ try {
   const report = { viewport: page.viewportSize(), visualMilliseconds: Math.round(performance.now() - start),
     visualCatalogBytes: catalogBytes - before.bytes, visualCatalogRequests: catalogRequests - before.requests,
     modelId: model.modelFamilyId };
-  assert(report.visualCatalogBytes > 0 && report.visualCatalogRequests > 0);
+  assert(report.visualCatalogBytes > 0 && report.visualCatalogBytes < 750_000 && report.visualCatalogRequests <= 6, JSON.stringify(report));
+  assert.equal(await page.locator("main h3").count(), VISUAL_PAGE_SIZE);
+  await page.getByRole("button", { name: /^daha fazla/i }).click();
+  await page.waitForFunction(count => document.querySelectorAll("main h3").length === count, VISUAL_PAGE_SIZE * 2);
+  assert.equal(await page.getByRole("heading", { name: model.productName, exact: true }).count(), 0);
   await page.getByPlaceholder("Marka veya model ara").fill(model.productName);
-  await page.getByRole("heading", { name: model.productName, exact: true }).click();
+  const match = page.getByRole("heading", { name: model.productName, exact: true });
+  await match.waitFor();
+  const priceSegment = BRAND_PRICE_SEGMENTS.find(entry => entry.id === index.rows[modelPosition]![2]);
+  assert(priceSegment);
+  await page.getByRole("button", { name: priceSegment.label, exact: true }).click();
+  const category = VISUAL_BASIC_CATEGORIES.find(entry => entry.id === model.basicCategory);
+  assert(category);
+  await page.getByRole("button", { name: new RegExp(`^${category.label} \\d+$`) }).click();
+  await match.click();
   const detail = page.getByRole("dialog", { name: "Ürün Detayı" });
   await detail.getByRole("heading", { name: model.productName, exact: true }).waitFor();
   const image = detail.getByRole("img", { name: model.productName, exact: true }).first();

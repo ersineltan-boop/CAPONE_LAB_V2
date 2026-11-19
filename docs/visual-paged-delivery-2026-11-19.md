@@ -1,0 +1,7 @@
+# Visual paging and mobile acceptance
+
+Visual used to read the complete category before showing 48 cards. The new delivery builds ordered pages of 48. The initial screen asks only for the category summary and one page; additional pages load on request. Search, price class and verified-new filtering use a separate index of all models in the selected category. The index is loaded only when a filter is used and contains no gallery data. Only pages containing the requested matches are fetched. Existing model IDs, order within the same freshness rank, galleries and product details are preserved.
+
+Snapshots keep the old full-category URL as an alias of the same immutable objects. The new client also accepts an older snapshot without paging. This keeps the existing archive and refresh pilots usable during review.
+
+Cursor review: compare the mobile admission run with the 57,095,851-byte baseline from #208. The test refuses more than 750,000 uncompressed catalog bytes or six catalog requests from tapping Visual to seeing the first cards. It also opens the second page, searches for a model beyond the first two pages, applies price class and category filters and advances its gallery. Run the existing catalog rehearsal on this branch before considering a release. This is an emulated phone test with external images stubbed; it does not measure a cellular connection. No production schedule changes are part of this work.

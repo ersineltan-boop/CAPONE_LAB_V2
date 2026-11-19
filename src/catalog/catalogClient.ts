@@ -5,7 +5,9 @@ import type {
 } from "./types";
 import { CATALOG_PUBLIC_BASE } from "./types";
 import type { VisualBasicCategoryId } from "../visual/basicCategories";
-import type { VisualShard, VisualSummary } from "../visual/types";
+import type { VisualCard, VisualSearchIndex, VisualShard, VisualSummary } from "../visual/types";
+import { filterVisualCards } from "../visual/buildVisualDelivery";
+import type { BrandPriceSegmentFilter } from "../brands/brandPriceSegments";
 import type { ModelFamily } from "../modelFamily/types";
 import { parseCatalogSnapshotManifest } from "./snapshotManifest";
 import type { CatalogSnapshotManifest } from "./snapshotManifest";
@@ -99,6 +101,47 @@ export function loadVisualSummary(): Promise<VisualSummary> {
 
 export function loadVisualShard(categoryId: VisualBasicCategoryId): Promise<VisualShard> {
   return loadJson<VisualShard>(`visual/${categoryId}.json`);
+}
+
+export async function loadVisualResults(categoryId: VisualBasicCategoryId, filters: {
+  query: string; onlyNew: boolean; segment: BrandPriceSegmentFilter;
+}, limit: number): Promise<{ cards: VisualCard[]; total: number }> {
+  const summary = await loadVisualSummary();
+  const size = summary.pageSize;
+  if (!size) {
+    const cards = filterVisualCards((await loadVisualShard(categoryId)).cards, filters.query, filters);
+    return { cards: cards.slice(0, limit), total: cards.length };
+  }
+  if (!Number.isSafeInteger(size) || size < 1) throw new Error("Invalid Visual page size");
+  const category = summary.categories.find(item => item.id === categoryId);
+  if (!category) throw new Error(`Missing Visual category: ${categoryId}`);
+  const query = filters.query.trim().toLowerCase();
+  const filtered = Boolean(query || filters.onlyNew || filters.segment !== "all");
+  const matches: number[] = [];
+  let total = category.count;
+  if (filtered) {
+    const index = await loadJson<VisualSearchIndex>(`visual/${categoryId}-index.json`);
+    if (index.id !== categoryId || index.rows.length !== category.count) throw new Error("Invalid Visual search index");
+    total = 0;
+    index.rows.forEach(([brand, name, segment, isNew], position) => {
+      if ((filters.onlyNew && !isNew) || (filters.segment !== "all" && filters.segment !== segment) ||
+          (query && !brand.includes(query) && !name.includes(query))) return;
+      if (matches.length < limit) matches.push(position);
+      total++;
+    });
+  } else {
+    for (let position = 0; position < Math.min(limit, total); position++) matches.push(position);
+  }
+  const pages = [...new Set(matches.map(position => Math.floor(position / size)))];
+  const entries = await Promise.all(pages.map(async number => {
+    const page = await loadJson<VisualShard>(`visual/${categoryId}-${number}.json`);
+    if (page.id !== categoryId || page.cards.length !== Math.min(size, category.count - number * size)) {
+      throw new Error(`Invalid Visual page: ${categoryId}-${number}`);
+    }
+    return [number, page.cards] as const;
+  }));
+  const byPage = new Map(entries);
+  return { cards: matches.map(position => byPage.get(Math.floor(position / size))![position % size]!), total };
 }
 
 export async function loadFamilyById(modelFamilyId: string): Promise<ModelFamily | null> {

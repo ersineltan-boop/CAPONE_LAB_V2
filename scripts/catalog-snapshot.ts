@@ -37,7 +37,7 @@ export async function publishLocalCatalogSnapshot(input: string, store: string) 
   };
   for (const path of paths) {
     const body = await readFile(join(input, path));
-    if (!/^(brands|marketplaces|visual)\//.test(path)) {
+    if (!/^(brands|marketplaces|visual)\//.test(path) || (path.startsWith("visual/") && path.endsWith("-index.json"))) {
       files[path] = await put(body);
       continue;
     }
@@ -56,6 +56,20 @@ export async function publishLocalCatalogSnapshot(input: string, store: string) 
       parts.push(await put(part));
     }
     files[path] = { field, parts };
+  }
+  // Older snapshot clients still request the whole shard. Alias the same immutable
+  // page objects instead of publishing a second copy of the Visual catalog.
+  const pages = new Map<string, string[]>();
+  for (const [path, entry] of Object.entries(files)) {
+    const page = /^visual\/([a-z0-9-]+)-(\d+)\.json$/.exec(path);
+    if (!page || typeof entry !== "string") continue;
+    const list = pages.get(page[1]!) ?? [];
+    list[Number(page[2])] = entry;
+    pages.set(page[1]!, list);
+  }
+  for (const [id, parts] of pages) {
+    if (parts.filter(Boolean).length !== parts.length) throw new Error(`Missing Visual page: ${id}`);
+    files[`visual/${id}.json`] = { field: "cards", parts };
   }
   const manifest = parseCatalogSnapshotManifest({ schema: CATALOG_SNAPSHOT_SCHEMA, files });
   const pointer = join(store, "manifest.json");
