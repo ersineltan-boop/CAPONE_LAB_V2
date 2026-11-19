@@ -59,6 +59,7 @@ export async function runMultibrandCollection(
     outputDirectory?: string;
     catalog?: ProductCatalogStore;
     acceptSource?: (report: SourceCollectionReport) => boolean;
+    collectSource?: typeof collectBrandByCollectorType;
   } = {},
 ): Promise<CollectionReport> {
   const runStartedAt = new Date().toISOString();
@@ -133,7 +134,7 @@ export async function runMultibrandCollection(
     );
 
     try {
-      const collected = await collectBrandByCollectorType(entry, { mode });
+      const collected = await (options.collectSource ?? collectBrandByCollectorType)(entry, { mode });
       const {
         products,
         discoveredLinks,
