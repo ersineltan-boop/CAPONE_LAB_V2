@@ -62,6 +62,15 @@ export interface PilotProduct {
   variants: PilotProductVariant[];
 }
 
+export interface ShopifyCollectionEvidence {
+  path: string;
+  scope: "candidate-root" | "mixed-root" | "category";
+  reportedCollectionCount: number | null;
+  publicProductCount: number;
+  eligibleProductCount: number;
+  paginationExhausted: boolean;
+}
+
 export interface SourceCollectionReport {
   source: string;
   status: "success" | "partial" | "failed";
@@ -75,6 +84,7 @@ export interface SourceCollectionReport {
   rawProductUrlsDiscovered?: number;
   duplicateCount?: number;
   sourceReportedProductCount?: number | null;
+  shopifyCollectionEvidence?: ShopifyCollectionEvidence[];
   footwearRoots?: string[];
   sourceCategoriesCollected?: string[];
   paginationExhausted?: boolean;

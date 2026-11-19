@@ -1,0 +1,156 @@
+import assert from "node:assert/strict";
+import { cp, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
+import { join, resolve } from "node:path";
+import { parseArgs } from "node:util";
+import { runMultibrandAnalysis } from "../src/analysis/runMultibrandAnalysis";
+import type { AnalyzedProduct } from "../src/analysis/types";
+import { replaceAutomationBrandDeliveries } from "../src/brands/automation/delivery";
+import { fetchText } from "../src/collector/http";
+import { publishMarketplaceDelivery, readMarketplaceDelivery } from "../src/collector/marketplaceDelivery";
+import { runMultibrandCollection } from "../src/collector/runMultibrand";
+import { createLegacyProductCatalogStore, createShardedProductCatalogStore } from "../src/collector/sourceProductArchive";
+import { collect24S } from "../src/collector/twentyFourS";
+import type { PilotProduct, SourceCollectionReport } from "../src/collector/types";
+import { buildModelFamilies } from "../src/modelFamily/buildFamilies";
+import { loadModelFamilies } from "../src/modelFamily/dataset";
+import type { RawAnalyzedProduct } from "../src/modelFamily/types";
+import { cycleCatalogSnapshot } from "../src/refresh/cycleCatalogSnapshot";
+import { buildCatalogFrontend } from "./build-catalog-frontend";
+import { publishLocalCatalogSnapshot } from "./catalog-snapshot";
+
+const repo = process.cwd();
+const { values: args } = parseArgs({ options: { only: { type: "string" }, "skip-marketplace": { type: "boolean" }, rehearsal: { type: "boolean" } } });
+assert(!args.rehearsal || (!args.only && !args["skip-marketplace"]), "Rehearsal uses a fixed mixed-source scenario");
+const knownBrands = [
+  { slug: "alohas", brand: "ALOHAS", officialUrl: "https://alohas.com", requiresShopifyRoot: true },
+  { slug: "dear-frances", brand: "DEAR FRANCES", officialUrl: "https://dearfrances.com", requiresShopifyRoot: true },
+  { slug: "margaux", brand: "MARGAUX", officialUrl: "https://margauxny.com", requiresShopifyRoot: false },
+];
+const requested = new Set((args.only ?? "alohas,dear-frances").split(","));
+const brandSpecs = knownBrands.filter(brand => requested.has(brand.slug));
+assert.equal(brandSpecs.length, requested.size, "Unsupported --only brand");
+const runs = resolve("logs/catalog-pilot");
+await mkdir(runs, { recursive: true });
+const run = await mkdtemp(join(runs, "source-refresh-"));
+console.log(`Isolated refresh: ${run}`);
+const data = join(run, "data/multibrand");
+const original = join(repo, "data/multibrand");
+await mkdir(data, { recursive: true });
+await cp(join(original, "model-families"), join(data, "model-families"), { recursive: true });
+for (const file of ["collect-state.json", "product-date-enrichment.json"]) {
+  await cp(join(original, file), join(data, file));
+}
+await mkdir(join(run, "data/registry"), { recursive: true });
+await cp(join(repo, "data/registry/priority-brand-coverage.json"), join(run, "data/registry/priority-brand-coverage.json"));
+const legacy = createLegacyProductCatalogStore(original);
+const archive = createShardedProductCatalogStore(join(run, "archive"));
+const raw = await legacy.read<PilotProduct>("products");
+const analyzed = await legacy.read<AnalyzedProduct>("analyzed-products");
+const rawBefore = await archive.write("products", raw);
+const analyzedBefore = await archive.write("analyzed-products", analyzed);
+const baseline = await cycleCatalogSnapshot(run);
+const epoch = new Date().toISOString();
+const eligibleBrand = (row: SourceCollectionReport) => row.status === "success" && row.parsedProducts > 0 &&
+  row.productsWithImages === row.parsedProducts && row.paginationExhausted === true &&
+  !row.hitLegacyCap && !row.hitCollectionCrawlCap && typeof row.sourceReportedProductCount === "number" &&
+  row.sourceReportedProductCount === row.parsedProducts && (brandSpecs.some(brand => brand.brand === row.source && !brand.requiresShopifyRoot) ||
+  row.shopifyCollectionEvidence?.some(scope =>
+    scope.scope === "candidate-root" && scope.paginationExhausted && scope.reportedCollectionCount === row.parsedProducts &&
+    scope.publicProductCount === row.parsedProducts && scope.eligibleProductCount === row.parsedProducts) === true);
+const started = performance.now();
+const brands = await runMultibrandCollection({ mode: "full", brandIds: brandSpecs.map(b => b.slug),
+  catalog: archive, outputDirectory: data, acceptSource: eligibleBrand,
+  collectSource: args.rehearsal ? async entry => {
+    if (entry.id === "dear-frances") throw new Error("Rehearsal: brand temporarily unavailable");
+    assert.equal(entry.id, "alohas");
+    const products = raw.filter(row => row.source === entry.id)
+      .map(row => ({ ...row, discoveredAt: epoch, sourceVerifiedAt: epoch }));
+    const discoveredLinks = new Set(products.map(row => row.productUrl));
+    assert(products.length && products.length === discoveredLinks.size);
+    return { products, discoveredLinks, errors: [], method: "shopify", paginationExhausted: true,
+      sourceReportedProductCount: products.length,
+      shopifyCollectionEvidence: [{ path: "/collections/shoes", scope: "candidate-root",
+        reportedCollectionCount: products.length, publicProductCount: products.length,
+        eligibleProductCount: products.length, paginationExhausted: true }] };
+  } : undefined });
+const accepted = new Set(brandSpecs.filter(b => brands.sources.some(row => row.source === b.brand && eligibleBrand(row))).map(b => b.slug));
+console.log("Accepted brands:", [...accepted].join(", ") || "none");
+await runMultibrandAnalysis({ directory: data, catalog: archive, sourceIds: accepted });
+const freshAnalysis = await archive.read<RawAnalyzedProduct & { source: string }>("analyzed-products");
+const priorFamilies = await loadModelFamilies({ rootDir: data, allowMonolithFallback: false });
+await replaceAutomationBrandDeliveries({ root: run, generatedAt: epoch, deliveries: brandSpecs.filter(b => accepted.has(b.slug)).map(brand => ({
+  ...brand,
+  collectedAt: epoch,
+  families: buildModelFamilies(freshAnalysis.filter(row => row.source === brand.slug), { priorFamilies }).families,
+})) });
+
+async function refreshMarketplace() {
+  const marketPath = join(data, "model-families/marketplaces/24s.json");
+  const marketBefore = await readMarketplaceDelivery(marketPath);
+  let requests = 0, stop = "";
+  const result = await collect24S(async url => {
+    if (stop || requests >= 35) return { ok: false, status: 0, url, text: "", error: stop || "Pilot request budget exhausted" };
+    requests++;
+    if (args.rehearsal) {
+      stop = "Rehearsal: marketplace temporarily unavailable";
+      return { ok: false, status: 503, url, text: "", error: stop };
+    }
+    const response = await fetchText(url, { delayMs: 250 });
+    if ([401, 403, 429].includes(response.status) || /verify you are human|security verification|cf-chl-/i.test(response.text)) {
+      stop = `Access restriction at HTTP ${response.status}`;
+      return { ...response, ok: false, text: "", error: stop };
+    }
+    if (!response.ok) stop = response.error ?? `HTTP ${response.status}`;
+    return response;
+  }, 20);
+  const coverage = result.coverage;
+  const market = await publishMarketplaceDelivery(run, {
+    sourceId: "24s", products: result.products,
+    coverageStatus: coverage.status === "FULL" ? "FULL" : coverage.status === "PARTIAL" ? "PARTIAL" : "FAILED",
+    sourceTotal: coverage.sourceReportedProductCount,
+    rawCollected: coverage.rawProductCount,
+    eligibleTotal: coverage.acceptedProductCount,
+    paginationExhausted: coverage.pagesTraversed === coverage.expectedPages,
+    errors: [...coverage.errors, ...(stop ? [stop] : [])],
+  }, "https://www.24s.com", archive);
+  const marketAfter = await readMarketplaceDelivery(marketPath);
+  if (!market.report.accepted) assert.deepEqual(marketAfter, marketBefore, "Rejected marketplace changed its archive");
+  return { requests, coverage, accepted: market.report.accepted, reasons: market.report.reasons, before: marketBefore.families.length, after: marketAfter.families.length };
+}
+const marketplace = args["skip-marketplace"] ? null : await refreshMarketplace();
+
+const rawAfter = JSON.parse(await readFile(join(run, "archive/products/manifest.json"), "utf8")) as typeof rawBefore;
+const analyzedAfter = JSON.parse(await readFile(join(run, "archive/analyzed-products/manifest.json"), "utf8")) as typeof analyzedBefore;
+assert.deepEqual(rawAfter.parts.filter(p => !accepted.has(p.source)), rawBefore.parts.filter(p => !accepted.has(p.source)));
+assert.deepEqual(analyzedAfter.parts.filter(p => !accepted.has(p.source)), analyzedBefore.parts.filter(p => !accepted.has(p.source)));
+if (args.rehearsal) {
+  assert.deepEqual([...accepted], ["alohas"]);
+  assert(brands.sources.some(row => row.source === "DEAR FRANCES" && row.status === "failed"));
+  assert(marketplace && !marketplace.accepted && marketplace.before > 0 && marketplace.before === marketplace.after);
+  assert.notDeepEqual(rawAfter.parts.filter(p => p.source === "alohas"), rawBefore.parts.filter(p => p.source === "alohas"));
+}
+const candidate = await cycleCatalogSnapshot(run);
+const ids = new Set(candidate.modelIds);
+assert(baseline.modelIds.every(id => ids.has(id)), "Refresh lost archived model IDs");
+const proposed = new Map((await archive.read<PilotProduct>("products")).map(p => [p.productUrl, p]));
+for (const old of raw) {
+  const product = proposed.get(old.productUrl);
+  assert(product, `Archive lost URL: ${old.productUrl}`);
+  const gallery = new Set([product.imageUrl, ...(product.images ?? []), ...product.variants.flatMap(v => v.images ?? [])]);
+  assert([old.imageUrl, ...(old.images ?? []), ...old.variants.flatMap(v => v.images ?? [])].every(url => !url || gallery.has(url)),
+    `Archive lost gallery URL for ${old.productUrl}`);
+}
+const frontend = join(run, "frontend");
+await buildCatalogFrontend({ outputDir: frontend, dataRoot: run, generatedAt: epoch });
+const store = await publishLocalCatalogSnapshot(frontend, join(run, "store"));
+const report = {
+  mode: args.rehearsal ? "archived-data rehearsal" : "live collection",
+  brands: brands.sources.map(b => ({ ...b, accepted: brandSpecs.some(s => s.brand === b.source && accepted.has(s.slug)) })),
+  marketplace,
+  baseline: baseline.totalModels, candidate: candidate.totalModels,
+  rawParts: rawAfter.parts.length, analyzedParts: analyzedAfter.parts.length,
+  largestRawBytes: Math.max(...rawAfter.parts.map(p => p.bytes)),
+  largestPublicBytes: store.largestBytes, durationSeconds: Math.round((performance.now() - started) / 1000),
+};
+await writeFile(join(run, "report.json"), JSON.stringify(report, null, 2));
+console.log(JSON.stringify({ ...report, marketplace: marketplace ? { ...marketplace, coverage: marketplace.coverage.status } : null }, null, 2));

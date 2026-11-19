@@ -1,4 +1,6 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
+
+afterEach(() => vi.useRealTimers());
 
 import { flattenBrandDisplayCategories } from "../flattenBrandCategories";
 import { dedupeDisplayCategories } from "../dedupeDisplayCategories";
@@ -85,6 +87,8 @@ describe("source-native category controls", () => {
   });
 
   it("counts unique Model Families and intersects verified new with a category", () => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-08-22T00:00:00Z"));
     const bootA = family({
       modelFamilyId: "ugg--classic-a",
       sourceCategoryRefs: [

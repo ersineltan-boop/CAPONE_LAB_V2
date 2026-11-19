@@ -10,6 +10,12 @@ const COLLECTABLE_STATUSES = new Set<BrandRegistryEntry["collectionStatus"]>([
 export function resolveBrandBaseUrl(entry: BrandRegistryEntry): string | null {
   const raw = entry.collectionUrl ?? entry.officialUrl;
   if (!raw) return null;
+  // A Shopify collection URL is a seed, not a base for a second /collections/ path.
+  // Leave localized and non-Shopify storefront bases to their existing adapters.
+  if ((entry.collectorType === "SHOPIFY_PUBLIC" || entry.collectorType === "SHOPIFY_JSON") && URL.canParse(raw)) {
+    const url = new URL(raw);
+    if (/^\/collections(?:\/|$)/.test(url.pathname)) return url.origin;
+  }
   return raw.replace(/\/$/, "");
 }
 

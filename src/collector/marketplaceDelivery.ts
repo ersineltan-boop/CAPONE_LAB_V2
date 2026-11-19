@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import type { ModelFamily } from '../modelFamily/types';
 import type { PilotProduct } from '../collector/types';
+import { createLegacyProductCatalogStore, type ProductCatalogStore } from './sourceProductArchive';
 import { mergeProductRecords } from './mergeProducts';
 import { loadModelFamilies } from '../modelFamily/dataset';
 import { retainModelFamilyArchive, withFamilyVariants } from '../modelFamily/refreshIdentity';
@@ -100,9 +101,10 @@ export function applyMarketplaceDeliveries(base: ModelFamily[], deliveries: Mark
   }
   return result;
 }
-export async function publishMarketplaceDelivery(root: string, candidate: MarketplaceRefreshCandidate, origin: string) {
+export async function publishMarketplaceDelivery(root: string, candidate: MarketplaceRefreshCandidate, origin: string,
+  catalog: ProductCatalogStore = createLegacyProductCatalogStore(join(root, 'data/multibrand'))) {
   const previous = (await loadMarketplaceDeliveries(root)).find(d => d.sourceId === candidate.sourceId);
-  const core = JSON.parse(await readFile(join(root, 'data/multibrand/products.json'), 'utf8')) as PilotProduct[];
+  const core = await catalog.read<PilotProduct>('products');
   const priorProducts: PilotProduct[] = previous?.products ?? core
     .filter(product => product.source === candidate.sourceId);
   const belongs = (url: string) => {try{return new URL(url).hostname.replace(/^www\./, '') === new URL(origin).hostname.replace(/^www\./, '');}catch{return false;}};

@@ -1,0 +1,54 @@
+name: CAPONE catalog rehearsal
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/capone-catalog-rehearsal.yml'
+      - 'scripts/*refresh*'
+      - 'scripts/catalog-snapshot.ts'
+      - 'scripts/build-catalog-frontend.ts'
+      - 'src/collector/**'
+      - 'src/catalog/**'
+      - 'src/analysis/**'
+      - 'src/refresh/**'
+      - 'src/components/visualWall/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rehearsal:
+    name: Mixed-source failure recovery and mobile preview
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Rehearse the staging file limit and roll back a failed write
+        run: node --import tsx scripts/rehearse-refresh-staging.ts
+      - name: Refresh archived fixtures through the source checks
+        run: node --import tsx scripts/refresh-catalog-store-pilot.ts --rehearsal
+      - name: Verify a phone-sized catalog preview
+        env:
+          VITE_CATALOG_SNAPSHOT_BASE: /pilot-store
+        run: |
+          npx playwright install --with-deps chromium
+          node node_modules/vite/bin/vite.js build --outDir logs/catalog-pilot/mobile-site
+          node --import tsx scripts/check-refresh-preview.ts logs/catalog-pilot/source-refresh-* logs/catalog-pilot/mobile-site
+      - name: Upload rehearsal measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-rehearsal-reports
+          path: |
+            logs/refresh-cycle-rehearsal/run-*/report.json
+            logs/catalog-pilot/source-refresh-*/report.json
+            logs/catalog-pilot/source-refresh-*/mobile-preview.json
+          if-no-files-found: warn

@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildSourceReport, globalDedupe } from "./dedupe";
-import { serializeProductCatalog } from "./catalogJson";
+import { createLegacyProductCatalogStore, type ProductCatalogStore } from "./sourceProductArchive";
 import { mergeCatalogPreservingFailedSources } from "./mergeProducts";
 import {
   loadCollectState,
@@ -22,16 +22,6 @@ import type { CollectionReport, PilotProduct, SourceCollectionReport } from "./t
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const OUTPUT_DIR = join(ROOT, "data", "multibrand");
 const PILOT_PRODUCTS_FILE = join(ROOT, "data", "pilot", "products.json");
-const COLLECT_STATE_FILE = join(OUTPUT_DIR, "collect-state.json");
-
-async function loadExistingMultibrandProducts(): Promise<PilotProduct[]> {
-  try {
-    const raw = await readFile(join(OUTPUT_DIR, "products.json"), "utf-8");
-    return JSON.parse(raw) as PilotProduct[];
-  } catch {
-    return [];
-  }
-}
 
 async function loadPilotProducts(): Promise<PilotProduct[]> {
   try {
@@ -66,18 +56,32 @@ export async function runMultibrandCollection(
   options: {
     mode?: "legacy" | "backfill" | "incremental" | "full";
     brandIds?: readonly string[];
+    outputDirectory?: string;
+    catalog?: ProductCatalogStore;
+    acceptSource?: (report: SourceCollectionReport) => boolean;
+    collectSource?: typeof collectBrandByCollectorType;
   } = {},
 ): Promise<CollectionReport> {
   const runStartedAt = new Date().toISOString();
   const incomingProducts: PilotProduct[] = [];
   const sourceReports: SourceCollectionReport[] = [];
   const pilotProducts = await loadPilotProducts();
-  const existingProducts = await loadExistingMultibrandProducts();
+  const output = options.outputDirectory ?? OUTPUT_DIR;
+  const catalog = options.catalog ?? createLegacyProductCatalogStore(output);
+  const existingProducts = await catalog.read<PilotProduct>("products").catch((error) => {
+    if (!options.catalog && error.code === "ENOENT") return [];
+    throw error;
+  });
   const registry = loadBrandRegistry();
   const collectableBrands = selectRequestedCollectableBrands(registry.all(), options.brandIds);
   const seenBrands = new Set<string>();
   const mode = options.mode ?? "full";
-  let collectState = await loadCollectState(COLLECT_STATE_FILE);
+  const stateFile = join(output, "collect-state.json");
+  let collectState = await loadCollectState(stateFile);
+  const acceptedSources = new Set<string>();
+  if (options.acceptSource && (mode !== "full" || !options.brandIds?.length)) {
+    throw new Error("Scoped catalog refresh requires explicit brands in full mode");
+  }
 
   console.log(
     `Registry-driven collection (${mode}): ${collectableBrands.length} active brand(s)`,
@@ -130,7 +134,7 @@ export async function runMultibrandCollection(
     );
 
     try {
-      const collected = await collectBrandByCollectorType(entry, { mode });
+      const collected = await (options.collectSource ?? collectBrandByCollectorType)(entry, { mode });
       const {
         products,
         discoveredLinks,
@@ -140,7 +144,6 @@ export async function runMultibrandCollection(
         catalogFootwearCount,
       } = collected;
 
-      incomingProducts.push(...products);
       const report = buildSourceReport(
         entry.brand,
         discoveredLinks.size,
@@ -183,7 +186,19 @@ export async function runMultibrandCollection(
           | number
           | null;
       }
+      if (collected.shopifyCollectionEvidence) {
+        report.shopifyCollectionEvidence = collected.shopifyCollectionEvidence;
+      }
+      if (options.acceptSource) {
+        if (!options.acceptSource(report)) {
+          sourceReports.push(report);
+          continue;
+        }
+        if (products.some(row => row.source !== entry.id)) throw new Error(`Unexpected source in ${entry.id} refresh`);
+        acceptedSources.add(entry.id);
+      }
       sourceReports.push(report);
+      incomingProducts.push(...products);
 
       collectState = updateBrandCollectState({
         state: collectState,
@@ -222,9 +237,11 @@ export async function runMultibrandCollection(
       .map((report) => report.source.trim().toUpperCase()),
   );
 
-  const deduped = globalDedupe(
-    mergeCatalogPreservingFailedSources(existingProducts, incomingProducts, failedBrandKeys),
-  );
+  const deduped = options.acceptSource
+    ? [...existingProducts.filter(product => !acceptedSources.has(product.source)),
+      ...globalDedupe(mergeCatalogPreservingFailedSources(
+        existingProducts.filter(product => acceptedSources.has(product.source)), incomingProducts, failedBrandKeys))]
+    : globalDedupe(mergeCatalogPreservingFailedSources(existingProducts, incomingProducts, failedBrandKeys));
   const runFinishedAt = new Date().toISOString();
   const failedBrands = sourceReports
     .filter((report) => report.status === "failed")
@@ -241,18 +258,14 @@ export async function runMultibrandCollection(
       .map((report) => report.source),
   };
 
-  await mkdir(OUTPUT_DIR, { recursive: true });
+  await mkdir(output, { recursive: true });
+  if (!options.acceptSource || acceptedSources.size) await catalog.write("products", deduped);
   await writeFile(
-    join(OUTPUT_DIR, "products.json"),
-    serializeProductCatalog(deduped),
-    "utf-8",
-  );
-  await writeFile(
-    join(OUTPUT_DIR, "collection-report.json"),
+    join(output, "collection-report.json"),
     JSON.stringify(report, null, 2),
     "utf-8",
   );
-  await saveCollectState(COLLECT_STATE_FILE, collectState);
+  await saveCollectState(stateFile, collectState);
 
   return report;
 }

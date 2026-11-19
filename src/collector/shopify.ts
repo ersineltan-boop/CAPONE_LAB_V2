@@ -11,7 +11,7 @@ import {
   type TotemeCollectStats,
 } from "./totemeFootwear";
 import { mergeProductCatalog, sortProductsNewestFirst } from "./mergeProducts";
-import type { FootwearCategory, PilotProduct, PilotProductVariant, PilotSourceConfig } from "./types";
+import type { FootwearCategory, PilotProduct, PilotProductVariant, PilotSourceConfig, ShopifyCollectionEvidence } from "./types";
 import { fetchJson, sleep } from "./http";
 import { extractShopifyProductDates } from "../productDates/shopifyDates";
 import {
@@ -31,9 +31,11 @@ import {
   FULL_VARIANT_CAP,
   LEGACY_BACKFILL_CAP,
   LEGACY_COLLECTION_PAGE_CAP,
+  isFullCatalogRootPath,
 } from "./fullCoveragePaths";
 import {
   authoritativeFootwearReportedCount,
+  isMixedCatalogPath,
   selectShopifyFootwearCollectionsToCrawl,
 } from "./shopifyCollectionFilter";
 
@@ -272,7 +274,11 @@ async function paginateShopifyProductsJson(
       break;
     }
 
-    const batch = result.data.products ?? [];
+    const batch = result.data.products;
+    if (!Array.isArray(batch)) {
+      errors.push(`Invalid Shopify products payload: ${url}`);
+      break;
+    }
     if (batch.length === 0) {
       exhausted = true;
       pagesTraversed = Math.max(0, page - 1);
@@ -433,6 +439,7 @@ export async function collectShopifyFootwearBackfill(
   duplicateCount: number;
   paginationExhausted: boolean;
   sourceReportedProductCount: number | null;
+  shopifyCollectionEvidence?: ShopifyCollectionEvidence[];
   hitCollectionCrawlCap?: boolean;
   collectionsCrawled?: string[];
   totemeStats?: TotemeCollectStats;
@@ -484,6 +491,7 @@ export async function collectShopifyFootwearBackfill(
     counts.set(`/collections/${collection.handle}`.toLowerCase(), collection.productsCount);
   }
   let sourceReportedProductCount = sourceReportedCountForPaths(counts, collectionPaths);
+  const shopifyCollectionEvidence: ShopifyCollectionEvidence[] = [];
   if (totemeStats) {
     const shoesMeta = listed.collections.find((collection) => collection.handle.toLowerCase() === "shoes");
     totemeStats.shoesAdminProductCount = shoesMeta?.productsCount ?? counts.get("/collections/shoes") ?? null;
@@ -532,6 +540,16 @@ export async function collectShopifyFootwearBackfill(
     for (const link of page.discoveredLinks) discoveredLinks.add(link);
     errors.push(...page.errors);
     collected.push(...page.products);
+    if (fullCoverage) {
+      shopifyCollectionEvidence.push({
+        path: collectionPath,
+        scope: isMixedCatalogPath(collectionPath) ? "mixed-root" : isFullCatalogRootPath(collectionPath) ? "candidate-root" : "category",
+        reportedCollectionCount: counts.get(collectionPath.toLowerCase()) ?? null,
+        publicProductCount: page.discoveredLinks.size,
+        eligibleProductCount: page.products.length,
+        paginationExhausted: page.exhausted,
+      });
+    }
   }
 
   if (totemeSource && totemeStats) {
@@ -579,6 +597,7 @@ export async function collectShopifyFootwearBackfill(
     duplicateCount,
     paginationExhausted,
     sourceReportedProductCount,
+    ...(fullCoverage ? { shopifyCollectionEvidence } : {}),
     hitCollectionCrawlCap,
     collectionsCrawled: collectionPaths,
     totemeStats,
