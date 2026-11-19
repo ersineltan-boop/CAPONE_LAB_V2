@@ -185,6 +185,9 @@ export async function runMultibrandCollection(
           | number
           | null;
       }
+      if (collected.shopifyCollectionEvidence) {
+        report.shopifyCollectionEvidence = collected.shopifyCollectionEvidence;
+      }
       if (options.acceptSource) {
         if (!options.acceptSource(report)) {
           sourceReports.push(report);

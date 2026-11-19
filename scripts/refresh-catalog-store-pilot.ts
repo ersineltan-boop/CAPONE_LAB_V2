@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { cp, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
+import { parseArgs } from "node:util";
 import { runMultibrandAnalysis } from "../src/analysis/runMultibrandAnalysis";
 import type { AnalyzedProduct } from "../src/analysis/types";
 import { replaceAutomationBrandDeliveries } from "../src/brands/automation/delivery";
@@ -18,6 +19,15 @@ import { buildCatalogFrontend } from "./build-catalog-frontend";
 import { publishLocalCatalogSnapshot } from "./catalog-snapshot";
 
 const repo = process.cwd();
+const { values: args } = parseArgs({ options: { only: { type: "string" }, "skip-marketplace": { type: "boolean" } } });
+const knownBrands = [
+  { slug: "alohas", brand: "ALOHAS", officialUrl: "https://alohas.com", requiresShopifyRoot: true },
+  { slug: "dear-frances", brand: "DEAR FRANCES", officialUrl: "https://dearfrances.com", requiresShopifyRoot: true },
+  { slug: "margaux", brand: "MARGAUX", officialUrl: "https://margauxny.com", requiresShopifyRoot: false },
+];
+const requested = new Set((args.only ?? "alohas,dear-frances").split(","));
+const brandSpecs = knownBrands.filter(brand => requested.has(brand.slug));
+assert.equal(brandSpecs.length, requested.size, "Unsupported --only brand");
 const runs = resolve("logs/catalog-pilot");
 await mkdir(runs, { recursive: true });
 const run = await mkdtemp(join(runs, "source-refresh-"));
@@ -39,14 +49,13 @@ const rawBefore = await archive.write("products", raw);
 const analyzedBefore = await archive.write("analyzed-products", analyzed);
 const baseline = await cycleCatalogSnapshot(run);
 const epoch = new Date().toISOString();
-const brandSpecs = [
-  { slug: "alohas", brand: "ALOHAS", officialUrl: "https://alohas.com" },
-  { slug: "dear-frances", brand: "DEAR FRANCES", officialUrl: "https://dearfrances.com" },
-];
 const eligibleBrand = (row: SourceCollectionReport) => row.status === "success" && row.parsedProducts > 0 &&
   row.productsWithImages === row.parsedProducts && row.paginationExhausted === true &&
   !row.hitLegacyCap && !row.hitCollectionCrawlCap && typeof row.sourceReportedProductCount === "number" &&
-  row.sourceReportedProductCount === row.parsedProducts;
+  row.sourceReportedProductCount === row.parsedProducts && (brandSpecs.some(brand => brand.brand === row.source && !brand.requiresShopifyRoot) ||
+  row.shopifyCollectionEvidence?.some(scope =>
+    scope.scope === "candidate-root" && scope.paginationExhausted && scope.reportedCollectionCount === row.parsedProducts &&
+    scope.publicProductCount === row.parsedProducts && scope.eligibleProductCount === row.parsedProducts) === true);
 const started = performance.now();
 const brands = await runMultibrandCollection({ mode: "full", brandIds: brandSpecs.map(b => b.slug),
   catalog: archive, outputDirectory: data, acceptSource: eligibleBrand });
@@ -61,32 +70,36 @@ await replaceAutomationBrandDeliveries({ root: run, generatedAt: epoch, deliveri
   families: buildModelFamilies(freshAnalysis.filter(row => row.source === brand.slug), { priorFamilies }).families,
 })) });
 
-const marketPath = join(data, "model-families/marketplaces/24s.json");
-const marketBefore = await readMarketplaceDelivery(marketPath);
-let requests = 0, stop = "";
-const result = await collect24S(async url => {
-  if (stop || requests >= 35) return { ok: false, status: 0, url, text: "", error: stop || "Pilot request budget exhausted" };
-  requests++;
-  const response = await fetchText(url, { delayMs: 250 });
-  if ([401, 403, 429].includes(response.status) || /verify you are human|security verification|cf-chl-/i.test(response.text)) {
-    stop = `Access restriction at HTTP ${response.status}`;
-    return { ...response, ok: false, text: "", error: stop };
-  }
-  if (!response.ok) stop = response.error ?? `HTTP ${response.status}`;
-  return response;
-}, 20);
-const coverage = result.coverage;
-const market = await publishMarketplaceDelivery(run, {
-  sourceId: "24s", products: result.products,
-  coverageStatus: coverage.status === "FULL" ? "FULL" : coverage.status === "PARTIAL" ? "PARTIAL" : "FAILED",
-  sourceTotal: coverage.sourceReportedProductCount,
-  rawCollected: coverage.rawProductCount,
-  eligibleTotal: coverage.acceptedProductCount,
-  paginationExhausted: coverage.pagesTraversed === coverage.expectedPages,
-  errors: [...coverage.errors, ...(stop ? [stop] : [])],
-}, "https://www.24s.com", archive);
-const marketAfter = await readMarketplaceDelivery(marketPath);
-if (!market.report.accepted) assert.deepEqual(marketAfter, marketBefore, "Rejected marketplace changed its archive");
+async function refreshMarketplace() {
+  const marketPath = join(data, "model-families/marketplaces/24s.json");
+  const marketBefore = await readMarketplaceDelivery(marketPath);
+  let requests = 0, stop = "";
+  const result = await collect24S(async url => {
+    if (stop || requests >= 35) return { ok: false, status: 0, url, text: "", error: stop || "Pilot request budget exhausted" };
+    requests++;
+    const response = await fetchText(url, { delayMs: 250 });
+    if ([401, 403, 429].includes(response.status) || /verify you are human|security verification|cf-chl-/i.test(response.text)) {
+      stop = `Access restriction at HTTP ${response.status}`;
+      return { ...response, ok: false, text: "", error: stop };
+    }
+    if (!response.ok) stop = response.error ?? `HTTP ${response.status}`;
+    return response;
+  }, 20);
+  const coverage = result.coverage;
+  const market = await publishMarketplaceDelivery(run, {
+    sourceId: "24s", products: result.products,
+    coverageStatus: coverage.status === "FULL" ? "FULL" : coverage.status === "PARTIAL" ? "PARTIAL" : "FAILED",
+    sourceTotal: coverage.sourceReportedProductCount,
+    rawCollected: coverage.rawProductCount,
+    eligibleTotal: coverage.acceptedProductCount,
+    paginationExhausted: coverage.pagesTraversed === coverage.expectedPages,
+    errors: [...coverage.errors, ...(stop ? [stop] : [])],
+  }, "https://www.24s.com", archive);
+  const marketAfter = await readMarketplaceDelivery(marketPath);
+  if (!market.report.accepted) assert.deepEqual(marketAfter, marketBefore, "Rejected marketplace changed its archive");
+  return { requests, coverage, accepted: market.report.accepted, reasons: market.report.reasons, before: marketBefore.families.length, after: marketAfter.families.length };
+}
+const marketplace = args["skip-marketplace"] ? null : await refreshMarketplace();
 
 const rawAfter = JSON.parse(await readFile(join(run, "archive/products/manifest.json"), "utf8")) as typeof rawBefore;
 const analyzedAfter = JSON.parse(await readFile(join(run, "archive/analyzed-products/manifest.json"), "utf8")) as typeof analyzedBefore;
@@ -108,11 +121,11 @@ await buildCatalogFrontend({ outputDir: frontend, dataRoot: run, generatedAt: ep
 const store = await publishLocalCatalogSnapshot(frontend, join(run, "store"));
 const report = {
   brands: brands.sources.map(b => ({ ...b, accepted: brandSpecs.some(s => s.brand === b.source && accepted.has(s.slug)) })),
-  marketplace: { requests, coverage, accepted: market.report.accepted, reasons: market.report.reasons, before: marketBefore.families.length, after: marketAfter.families.length },
+  marketplace,
   baseline: baseline.totalModels, candidate: candidate.totalModels,
   rawParts: rawAfter.parts.length, analyzedParts: analyzedAfter.parts.length,
   largestRawBytes: Math.max(...rawAfter.parts.map(p => p.bytes)),
   largestPublicBytes: store.largestBytes, durationSeconds: Math.round((performance.now() - started) / 1000),
 };
 await writeFile(join(run, "report.json"), JSON.stringify(report, null, 2));
-console.log(JSON.stringify({ ...report, marketplace: { ...report.marketplace, coverage: coverage.status } }, null, 2));
+console.log(JSON.stringify({ ...report, marketplace: marketplace ? { ...marketplace, coverage: marketplace.coverage.status } : null }, null, 2));

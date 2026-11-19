@@ -2,7 +2,7 @@ import { resolveCollectionPaths } from "./discoverPaths";
 import { collectHtmlListingProducts } from "./htmlListing";
 import { collectSchemaOrgProducts } from "./schemaOrg";
 import { collectShopifyCollectionProducts } from "./shopify";
-import type { CollectionMethod, PilotProduct, PilotSourceConfig } from "./types";
+import type { CollectionMethod, PilotProduct, PilotSourceConfig, ShopifyCollectionEvidence } from "./types";
 
 export interface CollectionAttemptResult {
   products: PilotProduct[];
@@ -14,6 +14,7 @@ export interface CollectionAttemptResult {
   duplicateCount?: number;
   paginationExhausted?: boolean;
   sourceReportedProductCount?: number | null;
+  shopifyCollectionEvidence?: ShopifyCollectionEvidence[];
   hitCollectionCrawlCap?: boolean;
   collectionsCrawled?: string[];
 }
