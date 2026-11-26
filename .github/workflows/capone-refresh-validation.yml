@@ -1,0 +1,97 @@
+name: CAPONE refresh validation without publishing
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/capone-refresh-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: capone-refresh-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dry-run:
+    name: Collect, test, build and check the delivery size
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 270
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify active source coverage
+        run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+      - name: Install approved marketplace browser runtime
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+      - name: Refresh all active sources with lane rollback
+        id: collect
+        run: node --import tsx scripts/run-refresh-cycle.ts
+      - name: Test the collected catalog
+        id: tests
+        run: npm test
+      - name: Build the collected catalog
+        id: build
+        run: npm run build
+      - name: Record sizes of candidate delivery files
+        if: ${{ always() && steps.collect.outcome != 'skipped' }}
+        run: |
+          mkdir -p logs/refresh-cycle
+          node --import tsx --input-type=module <<'NODE' | tee logs/refresh-cycle/delivery-sizes.tsv
+          import { readdirSync, lstatSync } from 'node:fs';
+          import { join } from 'node:path';
+          import { CYCLE_DELIVERY_PATHS } from './src/refresh/refreshCycle.ts';
+          const files = new Map();
+          function scan(path) {
+            const stat = lstatSync(path, { throwIfNoEntry: false });
+            if (stat?.isDirectory()) for (const name of readdirSync(path)) scan(join(path, name));
+            if (stat?.isFile()) files.set(path, stat.size);
+          }
+          for (const path of CYCLE_DELIVERY_PATHS) scan(path);
+          const limit = 90 * 1024 * 1024;
+          console.log('bytes\tlimit_check\tfile');
+          for (const [path, size] of [...files].sort((a, b) => b[1] - a[1])) {
+            console.log(`${size}\t${size >= limit ? 'AT_OR_OVER_LIMIT' : 'UNDER_LIMIT'}\t${path}`);
+          }
+          NODE
+      - name: Check the existing staging guard
+        id: stage
+        shell: bash
+        run: node --import tsx scripts/stage-refresh-cycle.ts 2>&1 | tee logs/refresh-cycle/staging.log
+      - name: Summarize the validation without publishing
+        if: always()
+        env:
+          COLLECTION: ${{ steps.collect.outcome }}
+          TESTS: ${{ steps.tests.outcome }}
+          BUILD: ${{ steps.build.outcome }}
+          STAGING: ${{ steps.stage.outcome }}
+        run: |
+          {
+            printf '## Refresh dry run (no publication)\n\n'
+            printf 'Collection: %s · Tests: %s · Build: %s · Staging: %s\n\n' "$COLLECTION" "$TESTS" "$BUILD" "$STAGING"
+            if test -f logs/refresh-cycle/delivery-sizes.tsv; then
+              printf 'Largest candidate files (90 MiB limit):\n\n```text\n'
+              head -n 9 logs/refresh-cycle/delivery-sizes.tsv
+              printf '```\n'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refresh-validation-${{ github.run_id }}
+          path: logs/refresh-cycle/
+          retention-days: 14
+          if-no-files-found: warn
