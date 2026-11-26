@@ -2,9 +2,13 @@ name: CAPONE refresh validation without publishing
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, 'fix/refresh-test-clock']
     paths:
       - '.github/workflows/capone-refresh-validation.yml'
+      - 'src/refresh/refreshArchiveHandoff.ts'
+      - 'src/refresh/refreshStaging.ts'
+      - 'src/collector/sourceProductArchive.ts'
+      - 'scripts/refresh-archive-handoff.ts'
   workflow_dispatch:
 
 permissions:
@@ -32,6 +36,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Restore the previous product archives for the collectors
+        run: node --import tsx scripts/refresh-archive-handoff.ts hydrate
       - name: Verify active source coverage
         run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
       - name: Install approved marketplace browser runtime
@@ -67,10 +73,22 @@ jobs:
             console.log(`${size}\t${size >= limit ? 'AT_OR_OVER_LIMIT' : 'UNDER_LIMIT'}\t${path}`);
           }
           NODE
-      - name: Check the existing staging guard
+      - name: Stage verified source archives under the same 90 MiB cap
         id: stage
         shell: bash
-        run: node --import tsx scripts/stage-refresh-cycle.ts 2>&1 | tee logs/refresh-cycle/staging.log
+        run: node --import tsx scripts/refresh-archive-handoff.ts stage | tee logs/refresh-cycle/archive-staging.json
+      - name: Restore the staged archives in a fresh directory
+        id: restore
+        shell: bash
+        run: |
+          next=$(mktemp -d)
+          trap 'rm -rf -- "$next"' EXIT
+          git ls-files -z -- data/multibrand/products.json data/multibrand/analyzed-products.json data/multibrand/source-archive/ |
+            git checkout-index --stdin -z --prefix="$next/"
+          node --import tsx scripts/refresh-archive-handoff.ts hydrate "$next" | tee logs/refresh-cycle/archive-restoration.json
+          node --import tsx scripts/refresh-archive-handoff.ts digest "$next" > logs/refresh-cycle/restored-digests.json
+          node --import tsx scripts/refresh-archive-handoff.ts digest > logs/refresh-cycle/candidate-digests.json
+          diff -u logs/refresh-cycle/candidate-digests.json logs/refresh-cycle/restored-digests.json
       - name: Summarize the validation without publishing
         if: always()
         env:
@@ -78,13 +96,19 @@ jobs:
           TESTS: ${{ steps.tests.outcome }}
           BUILD: ${{ steps.build.outcome }}
           STAGING: ${{ steps.stage.outcome }}
+          RESTORE: ${{ steps.restore.outcome }}
         run: |
           {
             printf '## Refresh dry run (no publication)\n\n'
-            printf 'Collection: %s · Tests: %s · Build: %s · Staging: %s\n\n' "$COLLECTION" "$TESTS" "$BUILD" "$STAGING"
+            printf 'Collection: %s · Tests: %s · Build: %s · Archive staging: %s · Fresh restore: %s\n\n' "$COLLECTION" "$TESTS" "$BUILD" "$STAGING" "$RESTORE"
             if test -f logs/refresh-cycle/delivery-sizes.tsv; then
-              printf 'Largest candidate files (90 MiB limit):\n\n```text\n'
+              printf 'Largest candidate files before archiving (90 MiB limit):\n\n```text\n'
               head -n 9 logs/refresh-cycle/delivery-sizes.tsv
+              printf '```\n'
+            fi
+            if test -s logs/refresh-cycle/archive-staging.json; then
+              printf '\nArchive staging report:\n\n```json\n'
+              cat logs/refresh-cycle/archive-staging.json
               printf '```\n'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
