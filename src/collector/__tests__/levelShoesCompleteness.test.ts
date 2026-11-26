@@ -1,4 +1,6 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
+
+afterEach(() => vi.useRealTimers());
 
 import {
   extractMagentoFootwearCategoryUrls,
@@ -173,6 +175,8 @@ describe("Level Shoes completeness", () => {
   });
 
   it("does not treat firstSeen as New, but a real New collection does", () => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-08-22T00:00:00Z"));
     const products = [
       {
         productUrl: "https://www.levelshoes.com/aquazzura-tequila.html",
