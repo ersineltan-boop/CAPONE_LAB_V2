@@ -2,8 +2,8 @@
   "slug": "steve-madden",
   "brand": "STEVE MADDEN",
   "officialUrl": "https://www.stevemadden.com",
-  "snapshotId": "steve-madden:2026-11-28T08:59:32.656Z",
-  "collectedAt": "2026-11-28T08:59:32.656Z",
+  "snapshotId": "steve-madden:2026-11-28T10:57:19.110Z",
+  "collectedAt": "2026-11-28T10:57:19.110Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -13,13 +13,13 @@
     "/collections/womens-new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 1148,
-    "collected": 1148,
+    "sourceTotal": 1146,
+    "collected": 1146,
     "missing": 0,
     "coverage": 100,
     "excluded": 1292,
     "paginationExhausted": true,
-    "galleryComplete": 1148,
+    "galleryComplete": 1146,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -3454,42 +3454,6 @@
     },
     {
       "modelFamilyId": "steve-madden--bougie-satin",
-      "brand": "STEVE MADDEN",
-      "canonicalName": "Bougie Satin",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_01.jpg?v=1784840719",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_02.jpg?v=1784840719",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_05.jpg?v=1784840719",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_04.jpg?v=1784840719",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_03.jpg?v=1784840719"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/bougie-black-satin",
-          "handle": "bougie-black-satin",
-          "title": "BOUGIE BLACK SATIN",
-          "color": "BLACK SATIN",
-          "sku": "BOUGIE",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_01.jpg?v=1784840719",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_02.jpg?v=1784840719",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_05.jpg?v=1784840719",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_04.jpg?v=1784840719",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLACK-SATIN_03.jpg?v=1784840719"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "steve-madden--bougie-satin--bougie-blue-satin",
       "brand": "STEVE MADDEN",
       "canonicalName": "Bougie Satin",
       "category": "PUMP",
@@ -10983,16 +10947,6 @@
       "canonicalName": "Erba",
       "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_06.jpg?v=1760723097",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_0129.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_0146.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_01.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_07.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_02.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_10.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_04.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_08.jpg?v=1765462919",
-        "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_03.jpg?v=1765462919",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_OLIVE-SUEDE.jpg?v=1759759304",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_OLIVE-SUEDE_01.jpg?v=1759759304",
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_OLIVE-SUEDE_02.jpg?v=1759759304",
@@ -11005,30 +10959,6 @@
         "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_0146_04f1feb0-2c2e-4d1f-84fd-14c31a53caf9.jpg?v=1765462950"
       ],
       "variants": [
-        {
-          "productUrl": "https://www.stevemadden.com/products/erba-brown-suede",
-          "handle": "erba-brown-suede",
-          "title": "ERBA BROWN SUEDE",
-          "color": "BROWN SUEDE",
-          "sku": "ERBA",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_06.jpg?v=1760723097",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_0129.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_0146.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_01.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_07.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_02.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_10.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_04.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_08.jpg?v=1765462919",
-            "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ERBA_BROWN-SUEDE_03.jpg?v=1765462919"
-          ],
-          "category": "PUMP",
-          "productType": "Women's Shoes",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
         {
           "productUrl": "https://www.stevemadden.com/products/erba-olive-suede",
           "handle": "erba-olive-suede",
@@ -11055,7 +10985,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "steve-madden--eska",
@@ -38564,7 +38494,6 @@
     "https://www.stevemadden.com/products/bossa-b-black-multi",
     "https://www.stevemadden.com/products/bossa-black-patent",
     "https://www.stevemadden.com/products/bossa-cherry-pearl",
-    "https://www.stevemadden.com/products/bougie-black-satin",
     "https://www.stevemadden.com/products/bougie-blue-satin",
     "https://www.stevemadden.com/products/bougie-ivory-satin",
     "https://www.stevemadden.com/products/bowie-black-crocodile",
@@ -38788,7 +38717,6 @@
     "https://www.stevemadden.com/products/eralyn-black",
     "https://www.stevemadden.com/products/eralyn-brown",
     "https://www.stevemadden.com/products/eras-white-leather",
-    "https://www.stevemadden.com/products/erba-brown-suede",
     "https://www.stevemadden.com/products/erba-olive-suede",
     "https://www.stevemadden.com/products/eska-black-leather",
     "https://www.stevemadden.com/products/esme-black-leather",

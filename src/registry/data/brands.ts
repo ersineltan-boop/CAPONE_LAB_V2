@@ -4113,7 +4113,7 @@ export const brandEntries: BrandRegistryEntry[] = [
       "issue-91",
     ],
     isActive: true,
-    notes: "Issue 91 official storefront women's footwear. source_total=1172. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+    notes: "Issue 91 official storefront women's footwear. source_total=1171. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
     classificationStatus: "UNREVIEWED",
     radarEligible: false,
   }),
