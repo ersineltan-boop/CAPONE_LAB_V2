@@ -7,7 +7,7 @@ import type {
 } from "../onboarding/types";
 import type { BrandDiscoveryReport, DiscoveredBrandCandidate } from "../onboarding/discovery";
 import { PRIORITY_BRAND_IDS, priorityBrandRank } from "../onboarding/adapterWorkQueue";
-import { selectQueueCandidates } from "../onboarding/selection";
+import { selectQueueCandidates, SCHEDULED_ONBOARDING_MAX_ATTEMPTS } from "../onboarding/selection";
 
 export type DashboardFilter =
   | "ALL"
@@ -39,9 +39,11 @@ export interface DashboardBrand {
 
 export interface BrandOnboardingDashboard {
   generatedAt: string;
-  lastRunAt: string | null;
-  lastRunAttempted: number;
-  lastRunActivated: number;
+  lastRun: {
+    at: string;
+    attempted: number;
+    activated: number;
+  } | null;
   summary: {
     active: number;
     candidatePool: number;
@@ -101,7 +103,8 @@ export function buildBrandOnboardingDashboard(
   const nextCandidateIds = new Set(
     selectQueueCandidates(queue, {
       now,
-      limit: queue.policy.maxAttemptsPerRun,
+      limit: SCHEDULED_ONBOARDING_MAX_ATTEMPTS,
+      scheduled: true,
       skipSlugs: new Set(brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
     }).map((entry) => entry.slug),
   );
@@ -109,9 +112,11 @@ export function buildBrandOnboardingDashboard(
 
   return {
     generatedAt: discovery.generatedAt,
-    lastRunAt: report.generatedAt || null,
-    lastRunAttempted: report.summary.attempted,
-    lastRunActivated: report.summary.activated,
+    lastRun: !report.dryRun && Number.isFinite(Date.parse(report.generatedAt)) ? {
+      at: report.generatedAt,
+      attempted: report.summary.attempted,
+      activated: report.summary.activated,
+    } : null,
     summary: {
       active: brands.filter((entry) => entry.isActive).length,
       candidatePool: brands.filter((entry) => !entry.isActive).length,

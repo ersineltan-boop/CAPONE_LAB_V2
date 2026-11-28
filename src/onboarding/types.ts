@@ -123,6 +123,8 @@ export interface OnboardingAdapterFile {
 
 export interface OnboardingRunOptions {
   dryRun: boolean;
+  scheduled?: boolean;
+  archiveDelivery?: boolean;
   limit?: number;
   maxActivations?: number;
   only?: string[];

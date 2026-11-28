@@ -17,14 +17,14 @@ for (const lane of outcomes) {
   sourceEvidence[lane.id] = [];
   for (const file of lane.reports) {
     const evidence = JSON.parse(await readFile(`logs/refresh-cycle/${file}`, "utf8"));
-    const rows = evidence.outcomes ?? evidence.brands ?? evidence.gates ?? evidence.sources;
+    const rows = evidence.outcomes ?? evidence.brands ?? evidence.gates ?? evidence.sources ?? evidence.attempts;
     if (Array.isArray(rows)) {
       sourceEvidence[lane.id].push(...rows.map((row: Record<string, unknown>) => ({
         source: row.slug ?? row.sourceId ?? row.id ?? row.source ?? row.brand,
         status: row.accepted === false ? "LAST_GOOD_PRESERVED" : row.status ?? row.publicationCoverage,
         blocker: row.blocker ?? row.reason ?? row.reasons ?? row.errors,
         collectorErrors: row.collectorErrors ?? row.errors,
-        collected: row.collected ?? row.eligibleProducts ?? row.acceptedFootwear ?? row.parsedProducts ?? row.collectedProducts,
+        collected: row.collected ?? row.eligibleProducts ?? row.acceptedFootwear ?? row.parsedProducts ?? row.collectedProducts ?? row.productsFound,
         sourceTotal: row.sourceTotal,
         unmappedProducts: row.unmappedProducts,
         quarantinedProducts: row.quarantinedProducts,
@@ -32,8 +32,8 @@ for (const lane of outcomes) {
         lastGoodRetained: row.lastGoodRetained ?? row.lastGoodPreserved,
       })));
     } else {
-      const { successfulSources, partialSources, failedSources, skippedSources, accepted, preserved, acceptedSources, preservedSources, source, status, blocker } = evidence;
-      sourceEvidence[lane.id].push({ successfulSources, partialSources, failedSources, skippedSources, accepted, preserved, acceptedSources, preservedSources, source, status, blocker });
+      const { successfulSources, partialSources, failedSources, skippedSources, accepted, preserved, acceptedSources, preservedSources, source, status, blocker, summary } = evidence;
+      sourceEvidence[lane.id].push({ successfulSources, partialSources, failedSources, skippedSources, accepted, preserved, acceptedSources, preservedSources, source, status, blocker, summary });
     }
   }
 }

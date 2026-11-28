@@ -155,6 +155,22 @@ describe("onboarding queue policy", () => {
     expect(blockedDoesNotConsumeActivationQuota("ACTIVE")).toBe(false);
   });
 
+  it("rotates a scheduled slot across candidates with a due official source", () => {
+    const now = new Date("2026-11-29T03:00:00.000Z");
+    const queue = createInitialQueue();
+    queue.entries = [
+      { ...queue.entries[0]!, sourceUrl: "https://priority.example", lastAttemptAt: "2026-11-01T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "recent", sourceUrl: "https://recent.example", priority: 100, lastAttemptAt: "2026-11-20T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "oldest", sourceUrl: "https://oldest.example", priority: 200, lastAttemptAt: "2026-10-01T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "future", sourceUrl: "https://future.example", priority: 300, nextRetryAt: retryAt(now) },
+      { ...queue.entries[0]!, slug: "missing-source", sourceUrl: null, priority: 400 },
+    ];
+    expect(selectQueueCandidates(queue, { now, limit: 2, scheduled: true }).map(entry => entry.slug))
+      .toEqual(["naked-wolfe", "oldest"]);
+    expect(selectQueueCandidates(queue, { now, limit: 2 }).map(entry => entry.slug))
+      .toEqual(["naked-wolfe", "recent"]);
+  });
+
   it("preserves queue state across reruns", () => {
     const first = createInitialQueue({ "maison-margiela": "https://www.maisonmargiela.com" });
     const updated = updateQueueEntry(first, "maison-margiela", {
