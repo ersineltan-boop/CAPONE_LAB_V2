@@ -149,7 +149,7 @@ export default function VisualWall() {
               onSelectItem={(id) => {
                 void openFamily(id);
               }}
-              onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
+              onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
               verifiedNewIds={verifiedNewIds}
               hideTaxonomy
               loadMoreSlot={

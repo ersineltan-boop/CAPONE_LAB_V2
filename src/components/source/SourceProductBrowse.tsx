@@ -154,7 +154,7 @@ export default function SourceProductBrowse({
           density="visual"
           researchStates={researchStates}
           onSelectItem={setSelectedFamilyId}
-          onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
+          onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
           hideBrand={hideBrandName}
           hideTaxonomy
           showPrice={showPrice}

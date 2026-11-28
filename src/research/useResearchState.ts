@@ -9,7 +9,7 @@ import type { ModelFamilyResearchState } from "./types";
 export function useResearchState(modelFamilyId: string): {
   state: ModelFamilyResearchState;
   setReviewed: (reviewed: boolean) => void;
-  setSaved: (saved: boolean) => void;
+  setSaved: (saved: boolean, note?: string) => void;
   setNote: (note: string) => void;
 } {
   const repo = getResearchStateRepository();
@@ -25,7 +25,7 @@ export function useResearchState(modelFamilyId: string): {
     [modelFamilyId, repo],
   );
   const setSaved = useCallback(
-    (saved: boolean) => setState(repo.setSaved(modelFamilyId, saved)),
+    (saved: boolean, note?: string) => setState(repo.setSaved(modelFamilyId, saved, note)),
     [modelFamilyId, repo],
   );
   const setNote = useCallback(

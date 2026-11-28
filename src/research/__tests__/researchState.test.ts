@@ -30,6 +30,24 @@ describe("research state repository", () => {
     expect(repo.get("family-a").note).toBe("Test notu");
   });
 
+  it("saves a product and its note with one repository update", () => {
+    const repo = getResearchStateRepository();
+    const observed: Array<ReturnType<typeof repo.get>> = [];
+    const unsubscribe = repo.subscribe(() => observed.push(repo.get("family-a")));
+    repo.setSaved("family-a", true, "  İnce bantla numune yap  ");
+    unsubscribe();
+    expect(observed).toHaveLength(1);
+    expect(observed[0]?.savedAt).toBeTruthy();
+    expect(observed[0]?.note).toBe("İnce bantla numune yap");
+  });
+
+  it("preserves an existing note on an unsave or a blank save", () => {
+    const repo = getResearchStateRepository();
+    repo.setSaved("family-a", true, "Mevcut not");
+    expect(repo.setSaved("family-a", false, "Kullanılmayacak").note).toBe("Mevcut not");
+    expect(repo.setSaved("family-a", true, " ").note).toBe("Mevcut not");
+  });
+
   it("model rebuild does not affect research state keys", () => {
     const repo = getResearchStateRepository();
     repo.setReviewed("family-a", true);

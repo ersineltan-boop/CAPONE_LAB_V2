@@ -21,6 +21,7 @@ import { getResearchStateRepository } from "../../research/researchStateReposito
 import { useResearchState } from "../../research/useResearchState";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
 import { useDetailDialog } from "./useDetailDialog";
+import ProductSaveControl from "./ProductSaveControl";
 import {
   commitNoteOnBlur,
   editNoteDraft,
@@ -59,6 +60,7 @@ export default function ModelFamilyDetailDrawer({
   const familyId = family?.modelFamilyId ?? "";
   const { dialogRef, closeButtonRef } = useDetailDialog(open && family !== null, onClose);
   const { state, setReviewed, setSaved } = useResearchState(familyId);
+  const [composingSaveNote, setComposingSaveNote] = useState(false);
   const [noteState, setNoteState] = useState<NoteDraftState>(() => idleNoteDraft(familyId));
   const noteStateRef = useRef(noteState);
   noteStateRef.current = noteState;
@@ -68,6 +70,8 @@ export default function ModelFamilyDetailDrawer({
   useEffect(() => {
     setSelectedVariantId(variants[0]?.id ?? null);
   }, [familyId]);
+
+  useEffect(() => setComposingSaveNote(false), [familyId, open]);
 
   useEffect(() => {
     const store = noteStore();
@@ -261,44 +265,47 @@ export default function ModelFamilyDetailDrawer({
             >
               {state.reviewedAt ? UI_COPY.reviewed : UI_COPY.markReviewed}
             </button>
-            <button
-              type="button"
-              onClick={() => setSaved(!state.savedAt)}
+            <ProductSaveControl
+              key={familyId}
+              saved={Boolean(state.savedAt)}
+              note={getResearchStateRepository().get(familyId).note}
+              onSave={setSaved}
+              onComposeChange={setComposingSaveNote}
               className={`touch-target border px-2 py-1 text-[10px] ${
                 state.savedAt ? "border-ink bg-ink text-cream" : "border-line text-ink-muted"
               }`}
-            >
-              {state.savedAt ? UI_COPY.saved : UI_COPY.save}
-            </button>
-          </div>
-
-          <div>
-            <label className="mb-1 block text-[9px] tracking-[0.16em] text-ink-muted">
-              {UI_COPY.productNote}
-            </label>
-            <textarea
-              value={noteFieldValue(
-                noteState,
-                getResearchStateRepository().get(familyId).note,
-                familyId,
-              )}
-              onChange={(event) => {
-                const next = editNoteDraft(familyId, event.target.value);
-                noteStateRef.current = next;
-                setNoteState(next);
-              }}
-              onBlur={() => {
-                const next = commitNoteOnBlur(noteStateRef.current, familyId, noteStore());
-                if (next !== noteStateRef.current) {
-                  noteStateRef.current = next;
-                  setNoteState(next);
-                }
-              }}
-              rows={3}
-              className="w-full border border-line bg-cream px-2 py-1.5 text-[10px] text-ink"
-              placeholder={UI_COPY.addNote}
             />
           </div>
+
+          {!composingSaveNote && (
+            <div>
+              <label className="mb-1 block text-[9px] tracking-[0.16em] text-ink-muted">
+                {UI_COPY.productNote}
+              </label>
+              <textarea
+                value={noteFieldValue(
+                  noteState,
+                  getResearchStateRepository().get(familyId).note,
+                  familyId,
+                )}
+                onChange={(event) => {
+                  const next = editNoteDraft(familyId, event.target.value);
+                  noteStateRef.current = next;
+                  setNoteState(next);
+                }}
+                onBlur={() => {
+                  const next = commitNoteOnBlur(noteStateRef.current, familyId, noteStore());
+                  if (next !== noteStateRef.current) {
+                    noteStateRef.current = next;
+                    setNoteState(next);
+                  }
+                }}
+                rows={3}
+                className="w-full border border-line bg-cream px-2 py-1.5 text-[10px] text-ink"
+                placeholder={UI_COPY.addNote}
+              />
+            </div>
+          )}
 
           {productUrl && (
             <a
