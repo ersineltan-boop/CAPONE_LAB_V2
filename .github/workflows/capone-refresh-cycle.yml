@@ -1,9 +1,9 @@
-# Sunday and Wednesday 06:00 Türkiye. Validation is the default.
-name: CAPONE twice-weekly complete refresh
+# Sunday 06:00 Türkiye. Validation is the default.
+name: CAPONE weekly complete refresh
 
 on:
   schedule:
-    - cron: "0 3 * * 0,3"
+    - cron: "0 3 * * 0"
   workflow_dispatch:
     inputs:
       dry_run:

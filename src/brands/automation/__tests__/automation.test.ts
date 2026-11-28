@@ -273,12 +273,12 @@ describe("source-aware official delivery replacement", () => {
 
 });
 
-describe("twice-weekly workflow contract", () => {
+describe("weekly workflow contract", () => {
   it("processes all approved brands and publishes only through the guarded Vercel gate", () => {
     const workflow = readFileSync(".github/workflows/capone-brand-onboarding.yml", "utf-8");
     const publisher = readFileSync("scripts/publish-validated-automation-pr.sh", "utf-8");
     expect(workflow).not.toContain("  schedule:");
-    expect(readFileSync(".github/workflows/capone-refresh-cycle.yml", "utf-8")).toContain('cron: "0 3 * * 0,3"');
+    expect(readFileSync(".github/workflows/capone-refresh-cycle.yml", "utf-8")).toContain('cron: "0 3 * * 0"');
     expect(workflow).toContain("npm run automate:brands");
     expect(workflow).toContain("group: capone-catalog-automation");
     expect(workflow).toContain("bash scripts/publish-validated-automation-pr.sh");

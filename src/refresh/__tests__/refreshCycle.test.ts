@@ -58,10 +58,10 @@ describe("complete automatic refresh", () => {
       expect(await readFile(join(root, "data/third.json"), "utf8")).toBe("third-lane-success");
     } finally { await rm(root, { recursive: true, force: true }); }
   });
-  it("has one twice-weekly schedule, one publication gate and no automatic new-brand work", async () => {
+  it("has one weekly schedule, one publication gate and no automatic new-brand work", async () => {
     const workflow = await readFile(".github/workflows/capone-refresh-cycle.yml", "utf8");
     const job = await readFile(".github/workflows/capone-refresh-cycle-run.yml", "utf8");
-    expect(workflow).toContain('cron: "0 3 * * 0,3"');
+    expect(workflow).toContain('cron: "0 3 * * 0"');
     expect(workflow).not.toMatch(/^  push:/m);
     expect(workflow).toContain("default: true");
     const [, validation, publication] = workflow.split(/^  (?:validate|publish):\s*$/m);
