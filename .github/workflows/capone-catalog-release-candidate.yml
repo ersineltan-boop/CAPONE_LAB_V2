@@ -1,0 +1,86 @@
+name: CAPONE one-time catalog release candidate
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - refresh/run-catalog-release-20261128
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capone-catalog-automation
+  cancel-in-progress: false
+
+jobs:
+  rehearse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify every active source is covered
+        run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+      - name: Index the current catalog before collection
+        run: node --import tsx scripts/refresh-live-rehearsal-report.ts snapshot
+      - name: Install approved marketplace browser runtime
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+      - name: Refresh all active sources with lane rollback
+        id: collect
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: node --import tsx scripts/run-refresh-cycle.ts
+      - name: Report every source without publishing
+        if: always()
+        run: node --import tsx scripts/refresh-live-rehearsal-report.ts report
+      - name: Archive both catalogs under the 90 MiB cap
+        id: stage
+        if: steps.collect.outcome == 'success'
+        run: node --import tsx scripts/stage-refresh-cycle.ts
+      - name: Test and build the archived release candidate
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: |
+          set -euo pipefail
+          candidate="$RUNNER_TEMP/catalog-release"
+          git worktree add --detach "$candidate" ae461a4e31412262ed8f92d3c6594c44baaa3531
+          git diff --cached --binary > "$RUNNER_TEMP/catalog-data.patch"
+          test -s "$RUNNER_TEMP/catalog-data.patch"
+          node --import tsx scripts/refresh-archive-handoff.ts digest > logs/refresh-cycle/runner-digests.json
+          git -C "$candidate" apply --index "$RUNNER_TEMP/catalog-data.patch"
+          git -C "$candidate" diff --cached --check
+          ln -s "$GITHUB_WORKSPACE/node_modules" "$candidate/node_modules"
+          (
+            cd "$candidate"
+            node --import tsx scripts/refresh-archive-handoff.ts hydrate >&2
+            node --import tsx scripts/refresh-archive-handoff.ts digest
+          ) > logs/refresh-cycle/candidate-digests.json
+          diff -u logs/refresh-cycle/runner-digests.json logs/refresh-cycle/candidate-digests.json
+          (
+            cd "$candidate"
+            npm test
+            npm run build
+          )
+          cp "$candidate/public/data/catalog/summary.json" logs/refresh-cycle/release-catalog-summary.json
+          git -C "$candidate" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh the CAPONE product catalog"
+          git -C "$candidate" push origin HEAD:refs/heads/refresh/catalog-release-20261128
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog-release-evidence-${{ github.run_id }}
+          path: |
+            logs/refresh-cycle/report.json
+            logs/refresh-cycle/source-rehearsal.*
+            logs/refresh-cycle/*digests*
+            logs/refresh-cycle/release-catalog-summary.json
+          retention-days: 14
