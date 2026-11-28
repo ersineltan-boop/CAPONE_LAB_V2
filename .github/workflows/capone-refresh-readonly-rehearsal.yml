@@ -1,0 +1,89 @@
+# Separate from the scheduled refresh. Read-only Linux rehearsal; no publication.
+name: CAPONE read-only live catalog rehearsal
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: capone-readonly-live-rehearsal
+  cancel-in-progress: false
+
+jobs:
+  rehearse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify every active source is covered
+        run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+      - name: Index the current catalog before collection
+        run: node --import tsx scripts/refresh-live-rehearsal-report.ts snapshot
+      - name: Install approved marketplace browser runtime
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+      - name: Refresh all active sources with lane rollback
+        id: collect
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: node --import tsx scripts/run-refresh-cycle.ts
+      - name: Report every source without publishing
+        if: always()
+        run: node --import tsx scripts/refresh-live-rehearsal-report.ts report
+      - name: Archive both catalogs under the 90 MiB cap
+        id: stage
+        if: steps.collect.outcome == 'success'
+        run: node --import tsx scripts/stage-refresh-cycle.ts
+      - name: Build the site catalog from the archive in a clean directory
+        id: clean
+        if: steps.stage.outcome == 'success'
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: |
+          set -euo pipefail
+          clean="${RUNNER_TEMP}/catalog-clean"
+          rm -rf "$clean"
+          mkdir -p "$clean"
+          git checkout-index --all --prefix="$clean/"
+          cp -a node_modules "$clean/node_modules"
+          node --import tsx scripts/refresh-archive-handoff.ts hydrate "$clean" | tee logs/refresh-cycle/clean-hydrate.json
+          node --import tsx scripts/refresh-archive-handoff.ts digest "$clean" > logs/refresh-cycle/clean-digests.json
+          node --import tsx scripts/refresh-archive-handoff.ts digest > logs/refresh-cycle/runner-digests.json
+          diff -u logs/refresh-cycle/runner-digests.json logs/refresh-cycle/clean-digests.json
+          (
+            cd "$clean"
+            node --import tsx scripts/build-catalog-frontend.ts --force
+          )
+          cp "$clean/public/data/catalog/summary.json" logs/refresh-cycle/clean-catalog-summary.json
+          node --input-type=module <<'NODE'
+          import { readFileSync } from "node:fs";
+          const summary = JSON.parse(readFileSync("logs/refresh-cycle/clean-catalog-summary.json", "utf8"));
+          const hydrate = JSON.parse(readFileSync("logs/refresh-cycle/clean-hydrate.json", "utf8"));
+          if (hydrate.source !== "archive") throw new Error("Clean directory did not open the produced archive");
+          if (!summary.brands?.length || !summary.marketplaces?.length) throw new Error("Clean catalog build produced no brands or marketplaces");
+          console.log(JSON.stringify({
+            archive: hydrate,
+            brands: summary.brands.length,
+            marketplaces: summary.marketplaces.length,
+            brandProducts: summary.brands.reduce((sum, brand) => sum + brand.productCount, 0),
+            marketplaceProducts: summary.marketplaces.reduce((sum, market) => sum + market.productCount, 0),
+          }));
+          NODE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: readonly-live-rehearsal-${{ github.run_id }}
+          path: logs/refresh-cycle/
+          retention-days: 14
+          if-no-files-found: warn
