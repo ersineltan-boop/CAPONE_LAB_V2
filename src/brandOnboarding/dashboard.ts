@@ -12,7 +12,7 @@ import { selectQueueCandidates } from "../onboarding/selection";
 export type DashboardFilter =
   | "ALL"
   | "PRIORITY"
-  | "TONIGHT"
+  | "NEXT_CANDIDATES"
   | "READY"
   | "PARTIAL"
   | "CUSTOM_ADAPTER_REQUIRED"
@@ -33,19 +33,20 @@ export interface DashboardBrand {
   blocker: string | null;
   platform: string | null;
   priority: number;
-  isTonight: boolean;
+  isNextCandidate: boolean;
   isPriority: boolean;
 }
 
 export interface BrandOnboardingDashboard {
   generatedAt: string;
   lastRunAt: string | null;
-  nextRunLabel: string;
+  lastRunAttempted: number;
+  lastRunActivated: number;
   summary: {
     active: number;
     candidatePool: number;
-    tonight: number;
-    readyOrActivated: number;
+    nextCandidates: number;
+    ready: number;
     customAdapter: number;
     blocked: number;
     discovered: number;
@@ -84,7 +85,7 @@ export function buildBrandOnboardingDashboard(
       country: entry.country,
       officialUrl: entry.officialUrl || null,
       isActive: entry.isActive,
-      status: queued?.status ?? fallbackStatus(entry),
+      status: entry.isActive ? "ACTIVE" : (queued?.status ?? fallbackStatus(entry)),
       attempts: queued?.attempts ?? 0,
       lastAttemptAt: queued?.lastAttemptAt ?? null,
       nextRetryAt: queued?.nextRetryAt ?? null,
@@ -92,31 +93,30 @@ export function buildBrandOnboardingDashboard(
       blocker: queued?.blocker ?? null,
       platform: queued?.detectedPlatform ?? null,
       priority: queued?.priority ?? fallbackPriority.get(entry.id) ?? 99_999,
-      isTonight: false,
+      isNextCandidate: false,
       isPriority: PRIORITY_BRAND_IDS.includes(entry.id),
     };
   });
 
-  const tonightIds = new Set(
+  const nextCandidateIds = new Set(
     selectQueueCandidates(queue, {
       now,
       limit: queue.policy.maxAttemptsPerRun,
       skipSlugs: new Set(brands.filter((entry) => entry.isActive).map((entry) => entry.id)),
     }).map((entry) => entry.slug),
   );
-  for (const brand of brands) brand.isTonight = tonightIds.has(brand.id);
+  for (const brand of brands) brand.isNextCandidate = nextCandidateIds.has(brand.id);
 
   return {
     generatedAt: discovery.generatedAt,
     lastRunAt: report.generatedAt || null,
-    nextRunLabel: "Her gün 00:30 Türkiye saati",
+    lastRunAttempted: report.summary.attempted,
+    lastRunActivated: report.summary.activated,
     summary: {
       active: brands.filter((entry) => entry.isActive).length,
       candidatePool: brands.filter((entry) => !entry.isActive).length,
-      tonight: tonightIds.size,
-      readyOrActivated: brands.filter(
-        (entry) => entry.status === "READY" || (entry.status === "ACTIVE" && entry.attempts > 0),
-      ).length,
+      nextCandidates: nextCandidateIds.size,
+      ready: brands.filter((entry) => entry.status === "READY").length,
       customAdapter: brands.filter((entry) => entry.status === "CUSTOM_ADAPTER_REQUIRED").length,
       blocked: brands.filter((entry) =>
         ["BLOCKED", "PRIORITY_BLOCKED", "FAILED", "STORAGE_LIMIT"].includes(entry.status),
@@ -128,7 +128,7 @@ export function buildBrandOnboardingDashboard(
       if (a.isPriority && b.isPriority) {
         return priorityBrandRank(a.id) - priorityBrandRank(b.id);
       }
-      if (a.isTonight !== b.isTonight) return a.isTonight ? -1 : 1;
+      if (a.isNextCandidate !== b.isNextCandidate) return a.isNextCandidate ? -1 : 1;
       if (a.isActive !== b.isActive) return a.isActive ? 1 : -1;
       return a.priority - b.priority || a.brand.localeCompare(b.brand, "tr");
     }),

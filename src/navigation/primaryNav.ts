@@ -15,7 +15,7 @@ export interface PrimaryNavItem {
 export const PRIMARY_NAV_ITEMS: readonly PrimaryNavItem[] = [
   { id: "brands", label: "MARKALAR" },
   { id: "marketplaces", label: "PAZARYERLERİ" },
-  { id: "brand-automation", label: "OTOMATİK YÜKLEME" },
+  { id: "brand-automation", label: "MARKA ADAYLARI" },
   { id: "visual-wall", label: "VISUAL" },
   { id: "saved", label: "KAYDETTİKLERİM" },
 ];
