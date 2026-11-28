@@ -16,8 +16,8 @@ import type { BrandUniverseFile } from "../../registry/build/types";
 const FILTERS: Array<{ id: DashboardFilter; label: string }> = [
   { id: "ALL", label: "Tüm adaylar" },
   { id: "PRIORITY", label: "Öncelikli markalar" },
-  { id: "TONIGHT", label: "Bu gece" },
-  { id: "READY", label: "Hazır / eklendi" },
+  { id: "NEXT_CANDIDATES", label: "Sıradaki adaylar" },
+  { id: "READY", label: "Yüklemeye hazır" },
   { id: "PARTIAL", label: "Eksik kapsam" },
   { id: "CUSTOM_ADAPTER_REQUIRED", label: "Özel adaptör" },
   { id: "BLOCKED", label: "Engelli" },
@@ -54,8 +54,8 @@ export default function BrandOnboardingDashboard() {
     }
     if (filter === "ALL") return !entry.isActive;
     if (filter === "PRIORITY") return entry.isPriority && !entry.isActive;
-    if (filter === "TONIGHT") return entry.isTonight;
-    if (filter === "READY") return entry.status === "READY" || entry.status === "ACTIVE";
+    if (filter === "NEXT_CANDIDATES") return entry.isNextCandidate;
+    if (filter === "READY") return entry.status === "READY";
     if (filter === "PARTIAL") return entry.status === "PARTIAL";
     if (filter === "CUSTOM_ADAPTER_REQUIRED") return entry.status === "CUSTOM_ADAPTER_REQUIRED";
     if (filter === "BLOCKED") {
@@ -72,8 +72,8 @@ export default function BrandOnboardingDashboard() {
   const cards = [
     ["Aktif marka", dashboard.summary.active],
     ["Aday havuzu", dashboard.summary.candidatePool],
-    ["Bu gece denenecek", dashboard.summary.tonight],
-    ["Hazır / eklenen", dashboard.summary.readyOrActivated],
+    ["Sıradaki adaylar", dashboard.summary.nextCandidates],
+    ["Yüklemeye hazır", dashboard.summary.ready],
     ["Özel adaptör", dashboard.summary.customAdapter],
     ["Engelli / başarısız", dashboard.summary.blocked],
     ["Yeni keşfedilen", dashboard.summary.discovered],
@@ -82,16 +82,10 @@ export default function BrandOnboardingDashboard() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="border-b border-line pb-6">
-        <p className="text-[10px] uppercase tracking-[0.24em] text-ink-muted">Kontrol merkezi</p>
-        <h2 className="mt-2 font-serif text-3xl tracking-wide sm:text-5xl">Otomatik Marka Yükleme</h2>
+        <h2 className="font-serif text-3xl tracking-wide sm:text-5xl">Marka Adayları</h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">
-          Sistem her gece resmi kaynaklı adayları sırayla dener. Yalnız tam kadın ayakkabısı
-          kataloğu, görsel ve kategori kontrollerinin tamamını geçen markalar otomatik eklenir.
-          Eksik veya engelli kaynaklar mevcut sağlam veriyi değiştiremez.
-        </p>
-        <p className="mt-2 max-w-3xl text-xs leading-5 text-ink-muted">
-          Massimo Dutti ve seçili lüks markalar öncelikli takipte. Özel adaptör gerekenler bu listede
-          görünür; doğrulanmış resmî katalog sağlandığında yükleme kapısına geçer.
+          Yeni marka taraması şu anda elle başlatılıyor. Markalar, resmî kadın ayakkabısı
+          kataloğu ve görselleri doğrulandıktan sonra eklenebiliyor.
         </p>
       </div>
 
@@ -105,9 +99,10 @@ export default function BrandOnboardingDashboard() {
       </div>
 
       <div className="mb-5 border border-line bg-cream-dark/50 p-4 text-xs leading-5 text-ink-muted sm:flex sm:items-center sm:justify-between">
-        <p><span className="font-medium text-ink">Son çalışma:</span> {formatDate(dashboard.lastRunAt)}</p>
-        <p><span className="font-medium text-ink">Otomatik çalışma:</span> {dashboard.nextRunLabel}</p>
-        <p><span className="font-medium text-ink">Sınır:</span> 5 deneme · en fazla 3 yeni marka</p>
+        <p><span className="font-medium text-ink">Son kayıtlı tarama</span> · {formatDate(dashboard.lastRunAt)}</p>
+        {dashboard.lastRunAt ? (
+          <p>{dashboard.lastRunAttempted} aday denendi · {dashboard.lastRunActivated} marka eklendi</p>
+        ) : null}
       </div>
 
       <div className="mb-5 grid gap-3 sm:grid-cols-[1fr_auto]">
@@ -144,12 +139,12 @@ export default function BrandOnboardingDashboard() {
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {visibleBrands.map((entry) => (
-            <article key={entry.id} className={`border p-4 ${entry.isTonight ? "border-ink bg-white/70" : "border-line bg-white/35"}`}>
+            <article key={entry.id} className="border border-line bg-white/35 p-4">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-[9px] uppercase tracking-[0.15em] text-ink-muted">
-                    {entry.isPriority ? "Öncelikli takip" : entry.isTonight ? "Bu gece denenecek" : statusLabel(entry.status)}
-                  </p>
+                  {entry.isPriority ? (
+                    <p className="text-[9px] uppercase tracking-[0.15em] text-ink-muted">Öncelikli takip</p>
+                  ) : null}
                   <h3 className="mt-1 font-serif text-xl">{entry.brand}</h3>
                   <p className="text-xs text-ink-muted">{entry.country || "Ülke belirtilmemiş"}</p>
                 </div>

@@ -60,7 +60,7 @@ describe("primary navigation", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
-      "OTOMATİK YÜKLEME",
+      "MARKA ADAYLARI",
       "VISUAL",
       "KAYDETTİKLERİM",
     ]);
