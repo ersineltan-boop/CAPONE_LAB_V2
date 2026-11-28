@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { loadBrandShard } from "../../catalog/catalogClient";
 import { CatalogErrorState, CatalogLoadingState } from "../../catalog/CatalogStatus";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
-import { countVerifiedNewForSource, slugifyBrandId } from "../../source/sourceProductQuery";
+import { filterVerifiedNewForSource, slugifyBrandId } from "../../source/sourceProductQuery";
 import {
   countFamiliesByBasicCategory,
   filterFamiliesByBasicCategory,
@@ -41,15 +41,21 @@ export default function BrandDetail({
     [brandFamilies],
   );
 
-  const verifiedNewCount = useMemo(
-    () => countVerifiedNewForSource(brandFamilies, sourceId, "90D"),
+  const verifiedNewIds = useMemo(
+    () => new Set(filterVerifiedNewForSource(brandFamilies, sourceId, "90D")
+      .map((family) => family.modelFamilyId)),
     [brandFamilies, sourceId],
   );
+  const verifiedNewCount = verifiedNewIds.size;
 
-  const displayFamilies = useMemo(
-    () => filterFamiliesByBasicCategory(brandFamilies, categoryId),
-    [brandFamilies, categoryId],
-  );
+  const displayFamilies = useMemo(() => {
+    const families = filterFamiliesByBasicCategory(brandFamilies, categoryId);
+    return [...families].sort(
+      (first, second) =>
+        Number(verifiedNewIds.has(second.modelFamilyId)) -
+        Number(verifiedNewIds.has(first.modelFamilyId)),
+    );
+  }, [brandFamilies, categoryId, verifiedNewIds]);
 
   const hasVerifiedNew = verifiedNewCount > 0;
 
