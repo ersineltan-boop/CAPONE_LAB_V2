@@ -156,6 +156,56 @@ describe("catalog delivery", () => {
     expect(brandShards[0]?.brandFreshness).toEqual({ kind: "verified-update", at: verifiedAt });
   });
 
+  it("shows the last product check on both marketplace surfaces from that source only", () => {
+    const model = family();
+    const fallBack = {
+      ...model.sourceSightings![0]!,
+      sourceId: "level-shoes",
+      sourceKind: "LUXURY_MARKETPLACE" as const,
+      lastSeenAt: "2026-09-13T09:29:43Z",
+    };
+    model.sourceSightings = [
+      fallBack,
+      { ...fallBack, sourceKind: "BRAND_OFFICIAL", lastSeenAt: "2026-11-27T09:00:00Z" },
+      { ...fallBack, sourceId: "farfetch", lastSeenAt: "2026-11-28T09:00:00Z" },
+    ];
+    const { marketplaceShards, summary } = buildCatalogDelivery({
+      families: [model],
+      brands: [],
+      marketplaces: [{ id: "level-shoes", name: "Level Shoes", isActive: true }],
+      generatedAt: "2026-11-30T09:00:00Z",
+    });
+    const freshness = { kind: "official-product-check", at: fallBack.lastSeenAt };
+    expect(marketplaceShards[0]?.marketplaceFreshness).toEqual(freshness);
+    expect(summary.marketplaces[0]?.marketplaceFreshness).toEqual(freshness);
+  });
+
+  it("keeps the marketplace delivery date and partial coverage on the published catalog", () => {
+    const model = family();
+    model.sourceSightings = [{
+      ...model.sourceSightings![0]!,
+      sourceId: "farfetch",
+      sourceKind: "LUXURY_MARKETPLACE",
+      lastSeenAt: "2026-11-28T09:00:00Z",
+    }];
+    const coverage = {
+      status: "PARTIAL" as const,
+      ready: 100,
+      pending: 5,
+      lastVerifiedAt: "2026-10-19T09:00:00Z",
+    };
+    const { marketplaceShards, summary } = buildCatalogDelivery({
+      families: [model],
+      brands: [],
+      marketplaces: [{ id: "farfetch", name: "Farfetch", isActive: true }],
+      marketplaceCoverage: new Map([["farfetch", coverage]]),
+    });
+    const freshness = { kind: "verified-update", at: coverage.lastVerifiedAt };
+    expect(marketplaceShards[0]?.coverage).toEqual(coverage);
+    expect(marketplaceShards[0]?.marketplaceFreshness).toEqual(freshness);
+    expect(summary.marketplaces[0]?.marketplaceFreshness).toEqual(freshness);
+  });
+
   it("precomputes representative brand images instead of requiring a live full-catalog scan", () => {
     const artifacts = buildCatalogDelivery({
       families: [

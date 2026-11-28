@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { loadBrandShard } from "../../catalog/catalogClient";
+import { CatalogFreshnessLine } from "../../catalog/CatalogFreshnessLine";
 import { CatalogErrorState, CatalogLoadingState } from "../../catalog/CatalogStatus";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { filterVerifiedNewForSource, slugifyBrandId } from "../../source/sourceProductQuery";
@@ -9,7 +10,6 @@ import {
   filterFamiliesByBasicCategory,
 } from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
-import { formatDateTurkish } from "../../presentation/turkishDates";
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
 type BrandDetailMode = "all" | "verified-new";
@@ -37,7 +37,6 @@ export default function BrandDetail({
 
   const shard = state.status === "ready" && state.data.id === brandId ? state.data : undefined;
   const brandFamilies = shard?.families ?? [];
-  const freshness = shard?.brandFreshness;
 
   const basicCategories = useMemo(
     () => countFamiliesByBasicCategory(brandFamilies),
@@ -95,16 +94,10 @@ export default function BrandDetail({
             </p>
           ) : null}
           {shard && (
-            <p className="text-xs text-ink-muted">
-              {freshness ? (
-                <>
-                  {freshness.kind === "verified-update"
-                    ? "Son doğrulanmış güncelleme"
-                    : "Resmî kaynakta son ürün kontrolü"}{" "}
-                  <time dateTime={freshness.at}>{formatDateTurkish(freshness.at, "Europe/Istanbul")}</time>
-                </>
-              ) : "Son doğrulanmış güncelleme tarihi bulunamadı."}
-            </p>
+            <CatalogFreshnessLine
+              freshness={shard.brandFreshness}
+              productCheckLabel="Resmî kaynakta son ürün kontrolü"
+            />
           )}
           {shard?.coverage?.status === "PARTIAL" && (
             <p className="text-xs text-ink-muted">Katalog kısmi. Doğrulanmış ürünler gösteriliyor.</p>
