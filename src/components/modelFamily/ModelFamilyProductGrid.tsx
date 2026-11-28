@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 
 import type { ModelFamilyGridItem } from "../../categories/modelFamilyGrid";
 import { galleryForSelectedColor } from "../../images/galleryImages";
@@ -18,6 +18,7 @@ interface ModelFamilyProductGridProps {
   researchStates?: Map<string, ModelFamilyResearchState>;
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
   onToggleSaved?: (modelFamilyId: string, saved: boolean) => void;
+  onSaveNote?: (modelFamilyId: string, note: string) => void;
   verifiedNewIds?: Set<string>;
   loadMoreSlot?: React.ReactNode;
   hideBrand?: boolean;
@@ -78,6 +79,81 @@ function ColorVariantStrip({
   );
 }
 
+function ProductCardNote({
+  note,
+  productName,
+  onSave,
+}: {
+  note: string | null;
+  productName: string;
+  onSave: (note: string) => void;
+}) {
+  const inputId = useId();
+  const [draft, setDraft] = useState<string | null>(null);
+
+  if (draft !== null) {
+    return (
+      <form
+        className="space-y-2 border-t border-line pt-2"
+        onSubmit={(event) => {
+          event.preventDefault();
+          onSave(draft);
+          setDraft(null);
+        }}
+      >
+        <label htmlFor={inputId} className="block text-xs font-medium text-ink">
+          Ürün notu
+        </label>
+        <textarea
+          autoFocus
+          id={inputId}
+          rows={3}
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          className="w-full resize-y border border-line bg-white/60 p-2 text-xs leading-relaxed text-ink"
+        />
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="submit"
+            className="touch-target border border-ink bg-ink px-2 py-1 text-xs text-cream"
+          >
+            Notu kaydet
+          </button>
+          <button
+            type="button"
+            onClick={() => setDraft(null)}
+            className="touch-target border border-line px-2 py-1 text-xs text-ink-muted hover:border-ink"
+          >
+            Vazgeç
+          </button>
+        </div>
+      </form>
+    );
+  }
+
+  const actionLabel = note ? "Notu düzenle" : "Not ekle";
+  return (
+    <div className="space-y-1.5 border-t border-line pt-2">
+      {note ? (
+        <div>
+          <p className="text-xs font-medium text-ink">Ürün notu</p>
+          <p className="mt-1 whitespace-pre-wrap text-xs leading-relaxed text-ink-muted [overflow-wrap:anywhere]">
+            {note}
+          </p>
+        </div>
+      ) : null}
+      <button
+        type="button"
+        aria-label={`${actionLabel} · ${productName}`}
+        onClick={() => setDraft(note ?? "")}
+        className="touch-target border border-line px-2 py-1 text-xs text-ink-muted hover:border-ink"
+      >
+        {actionLabel}
+      </button>
+    </div>
+  );
+}
+
 function ProductCard({
   item,
   index,
@@ -85,6 +161,7 @@ function ProductCard({
   researchState,
   onToggleReviewed,
   onToggleSaved,
+  onSaveNote,
   isVerifiedNew,
   hideBrand,
   hideTaxonomy,
@@ -96,6 +173,7 @@ function ProductCard({
   researchState?: ModelFamilyResearchState;
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
   onToggleSaved?: (modelFamilyId: string, saved: boolean) => void;
+  onSaveNote?: (modelFamilyId: string, note: string) => void;
   isVerifiedNew: boolean;
   hideBrand: boolean;
   hideTaxonomy: boolean;
@@ -223,6 +301,13 @@ function ProductCard({
             </button>
           )}
         </div>
+        {onSaveNote ? (
+          <ProductCardNote
+            note={researchState?.note ?? null}
+            productName={item.canonicalName}
+            onSave={(note) => onSaveNote(item.modelFamilyId, note)}
+          />
+        ) : null}
       </div>
     </article>
   );
@@ -236,6 +321,7 @@ export default function ModelFamilyProductGrid({
   researchStates,
   onToggleReviewed,
   onToggleSaved,
+  onSaveNote,
   verifiedNewIds,
   loadMoreSlot,
   hideBrand = false,
@@ -260,6 +346,7 @@ export default function ModelFamilyProductGrid({
             researchState={researchStates?.get(item.modelFamilyId)}
             onToggleReviewed={onToggleReviewed}
             onToggleSaved={onToggleSaved}
+            onSaveNote={onSaveNote}
             isVerifiedNew={verifiedNewIds?.has(item.modelFamilyId) ?? false}
             hideBrand={hideBrand}
             hideTaxonomy={hideTaxonomy}
