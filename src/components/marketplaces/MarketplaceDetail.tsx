@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 
 import { loadMarketplaceShard } from "../../catalog/catalogClient";
+import { CatalogFreshnessLine } from "../../catalog/CatalogFreshnessLine";
 import { CatalogErrorState, CatalogLoadingState } from "../../catalog/CatalogStatus";
+import type { CatalogSourceFreshness } from "../../catalog/types";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { getMarketplaceById } from "../../registry/data/marketplaces";
 import {
@@ -15,7 +17,6 @@ import {
 } from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { marketplaceCoverageText } from "../../presentation/marketplaceCoverage";
-import { formatDateTurkish } from "../../presentation/turkishDates";
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
 type MarketplaceMode = "all" | "verified-new" | "categories" | "brands";
@@ -44,9 +45,14 @@ export default function MarketplaceDetail({
     [marketplaceId],
   );
 
-  const shardFamilies = state.status === "ready" ? state.data.families : [];
-  const coverage = state.status === "ready" ? state.data.coverage : undefined;
+  const shard = state.status === "ready" && state.data.id === marketplaceId ? state.data : undefined;
+  const shardFamilies = shard?.families ?? [];
+  const coverage = shard?.coverage;
   const lastVerifiedAt = coverage?.lastVerifiedAt;
+  const freshness: CatalogSourceFreshness | undefined = shard?.marketplaceFreshness ??
+    (lastVerifiedAt && Number.isFinite(Date.parse(lastVerifiedAt))
+      ? { kind: "verified-update", at: lastVerifiedAt }
+      : undefined);
 
   const marketplacePresentation = useMemo(
     () => marketplaceBrowsePresentation(shardFamilies, marketplaceId, selectedBrand),
@@ -85,7 +91,7 @@ export default function MarketplaceDetail({
             ← {UI_COPY.backToMarketplaces}
           </button>
           <h2 className="font-serif text-lg font-medium tracking-wide">{marketplace.name}</h2>
-          {state.status === "ready" ? (
+          {shard ? (
             <p className="text-[10px] text-ink-muted">
               {UI_COPY.modelsCount(marketplaceFamilies.length)} · {brands.length} marka ·{" "}
               {categories.length} kategori
@@ -93,11 +99,12 @@ export default function MarketplaceDetail({
           ) : null}
         </div>
 
-        {lastVerifiedAt ? (
-          <p className="text-xs text-ink-muted">
-            Son doğrulanmış güncelleme <time dateTime={lastVerifiedAt}>{formatDateTurkish(lastVerifiedAt)}</time>
-          </p>
-        ) : null}
+        {shard && (
+          <CatalogFreshnessLine
+            freshness={freshness}
+            productCheckLabel="Pazaryerinde son ürün kontrolü"
+          />
+        )}
         {coverage?.status === "PARTIAL" ? (
           <p className="text-xs text-ink-muted">
             {marketplaceCoverageText(coverage)}
@@ -107,7 +114,7 @@ export default function MarketplaceDetail({
         {state.status === "loading" ? <CatalogLoadingState /> : null}
         {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}
 
-        {state.status === "ready" ? (
+        {shard ? (
           <>
             <div className="flex flex-wrap gap-2">
               {(

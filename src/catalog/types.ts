@@ -17,6 +17,7 @@ export interface CatalogMarketplaceSummary {
   categoryCount: number;
   verifiedNewCount: number;
   images: string[];
+  marketplaceFreshness?: CatalogSourceFreshness;
 }
 
 export interface CatalogSummary {
@@ -25,7 +26,14 @@ export interface CatalogSummary {
   marketplaces: CatalogMarketplaceSummary[];
 }
 
+export interface CatalogSourceFreshness {
+  kind: "verified-update" | "official-product-check";
+  at: string;
+}
+
 export interface CatalogShard {
+  brandFreshness?: CatalogSourceFreshness;
+  marketplaceFreshness?: CatalogSourceFreshness;
   coverage?: {
     status: "FULL" | "PARTIAL";
     ready: number;
@@ -38,6 +46,11 @@ export interface CatalogShard {
   id: string;
   kind: "brand" | "marketplace";
   families: ModelFamily[];
+}
+
+export interface BrandUpdateEvidence {
+  verifiedAt?: string;
+  coverage?: CatalogShard["coverage"];
 }
 
 export interface FamilyLocator {

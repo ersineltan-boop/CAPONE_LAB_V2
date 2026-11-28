@@ -21,7 +21,7 @@ export function slugifyBrandId(brand: string): string {
   return slugifyCategoryId(brand);
 }
 
-function isOfficialChannelSighting(
+export function isOfficialChannelSighting(
   family: ModelFamily,
   sighting: NonNullable<ModelFamily["sourceSightings"]>[number],
 ): boolean {

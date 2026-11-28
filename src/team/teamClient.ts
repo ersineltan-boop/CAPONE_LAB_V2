@@ -9,6 +9,14 @@ export const TEAM_ROLE_LABELS = {
 } as const;
 
 export type TeamRole = keyof typeof TEAM_ROLE_LABELS;
+export type NewTeamMemberRole = Exclude<TeamRole, "owner">;
+
+export interface NewTeamMemberRequest {
+  username: string;
+  displayName: string;
+  role: NewTeamMemberRole;
+  password: string;
+}
 
 export interface TeamMember {
   user_id: string;
@@ -36,5 +44,17 @@ function hasSafeProjectUrl(value: string): boolean {
 
 export const teamClient = typeof window !== "undefined" && url && hasSafeProjectUrl(url) &&
   publishableKey?.startsWith("sb_publishable_")
-  ? createClient(url, publishableKey, { auth: { flowType: "implicit" } })
+  ? createClient(url, publishableKey, { auth: { detectSessionInUrl: false } })
   : null;
+
+export function createTeamReauthenticationClient() {
+  if (!teamClient || !url || !publishableKey) return null;
+  return createClient(url, publishableKey, {
+    auth: {
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+      persistSession: false,
+      storageKey: "capone-team-password-change",
+    },
+  });
+}

@@ -1,12 +1,13 @@
 const TR_LOCALE = "tr-TR";
 
-export function formatDateTurkish(value: string): string {
+export function formatDateTurkish(value: string, timeZone?: string): string {
   const parsed = Date.parse(value);
   if (Number.isNaN(parsed)) return value;
   return new Date(parsed).toLocaleDateString(TR_LOCALE, {
     day: "numeric",
     month: "long",
     year: "numeric",
+    timeZone,
   });
 }
 

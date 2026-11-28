@@ -102,6 +102,110 @@ const summaryFixture: CatalogSummary = {
 };
 
 describe("catalog delivery", () => {
+  it("reports the latest official product check without using marketplace or build dates", () => {
+    const model = family();
+    const official = model.sourceSightings![0]!;
+    model.sourceSightings = [
+      official,
+      { ...official, lastSeenAt: "not a date" },
+      { ...official, sourceId: "farfetch", sourceKind: "LUXURY_MARKETPLACE", lastSeenAt: "2026-11-28T09:00:00Z" },
+    ];
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      generatedAt: "2026-11-30T09:00:00Z",
+      brandUpdates: new Map([["jeffrey-campbell", { verifiedAt: "2026-11-29T09:00:00Z" }]]),
+    });
+    expect(brandShards[0]?.brandFreshness).toEqual({
+      kind: "official-product-check",
+      at: official.lastSeenAt,
+    });
+  });
+
+  it("keeps a published partial refresh date distinct from earlier product observations", () => {
+    const model = family();
+    const coverage = {
+      status: "PARTIAL" as const,
+      ready: 120,
+      pending: 5,
+      lastVerifiedAt: "2026-10-11T10:05:00Z",
+    };
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      brandUpdates: new Map([["jeffrey-campbell", { coverage }]]),
+    });
+    expect(brandShards[0]?.coverage).toEqual(coverage);
+    expect(brandShards[0]?.brandFreshness).toEqual({
+      kind: "verified-update",
+      at: coverage.lastVerifiedAt,
+    });
+  });
+
+  it("shows a verified archive date when it is backed by the shipped official source", () => {
+    const model = family();
+    const verifiedAt = model.sourceSightings![0]!.lastSeenAt;
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      brandUpdates: new Map([["jeffrey-campbell", { verifiedAt }]]),
+    });
+    expect(brandShards[0]?.brandFreshness).toEqual({ kind: "verified-update", at: verifiedAt });
+  });
+
+  it("shows the last product check on both marketplace surfaces from that source only", () => {
+    const model = family();
+    const fallBack = {
+      ...model.sourceSightings![0]!,
+      sourceId: "level-shoes",
+      sourceKind: "LUXURY_MARKETPLACE" as const,
+      lastSeenAt: "2026-09-13T09:29:43Z",
+    };
+    model.sourceSightings = [
+      fallBack,
+      { ...fallBack, sourceKind: "BRAND_OFFICIAL", lastSeenAt: "2026-11-27T09:00:00Z" },
+      { ...fallBack, sourceId: "farfetch", lastSeenAt: "2026-11-28T09:00:00Z" },
+    ];
+    const { marketplaceShards, summary } = buildCatalogDelivery({
+      families: [model],
+      brands: [],
+      marketplaces: [{ id: "level-shoes", name: "Level Shoes", isActive: true }],
+      generatedAt: "2026-11-30T09:00:00Z",
+    });
+    const freshness = { kind: "official-product-check", at: fallBack.lastSeenAt };
+    expect(marketplaceShards[0]?.marketplaceFreshness).toEqual(freshness);
+    expect(summary.marketplaces[0]?.marketplaceFreshness).toEqual(freshness);
+  });
+
+  it("keeps the marketplace delivery date and partial coverage on the published catalog", () => {
+    const model = family();
+    model.sourceSightings = [{
+      ...model.sourceSightings![0]!,
+      sourceId: "farfetch",
+      sourceKind: "LUXURY_MARKETPLACE",
+      lastSeenAt: "2026-11-28T09:00:00Z",
+    }];
+    const coverage = {
+      status: "PARTIAL" as const,
+      ready: 100,
+      pending: 5,
+      lastVerifiedAt: "2026-10-19T09:00:00Z",
+    };
+    const { marketplaceShards, summary } = buildCatalogDelivery({
+      families: [model],
+      brands: [],
+      marketplaces: [{ id: "farfetch", name: "Farfetch", isActive: true }],
+      marketplaceCoverage: new Map([["farfetch", coverage]]),
+    });
+    const freshness = { kind: "verified-update", at: coverage.lastVerifiedAt };
+    expect(marketplaceShards[0]?.coverage).toEqual(coverage);
+    expect(marketplaceShards[0]?.marketplaceFreshness).toEqual(freshness);
+    expect(summary.marketplaces[0]?.marketplaceFreshness).toEqual(freshness);
+  });
+
   it("precomputes representative brand images instead of requiring a live full-catalog scan", () => {
     const artifacts = buildCatalogDelivery({
       families: [
