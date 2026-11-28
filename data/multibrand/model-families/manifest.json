@@ -1,10 +1,25 @@
 {
   "schema": "capone.model-families.shards.v1",
   "version": 1,
-  "generatedAt": "2026-10-11T10:05:39.182Z",
+  "generatedAt": "2026-11-28T11:43:38.423Z",
   "totalFamilies": 19930,
   "shardCount": 69,
   "shards": [
+    {
+      "file": "part-000.json",
+      "familyCount": 2761,
+      "bytes": 16777056
+    },
+    {
+      "file": "part-001.json",
+      "familyCount": 2278,
+      "bytes": 16775101
+    },
+    {
+      "file": "part-002.json",
+      "familyCount": 606,
+      "bytes": 4154421
+    },
     {
       "file": "brands/4ccccees.json",
       "familyCount": 151,
@@ -18,7 +33,7 @@
     {
       "file": "brands/aeyde.json",
       "familyCount": 231,
-      "bytes": 2592458
+      "bytes": 2592511
     },
     {
       "file": "brands/ala-a.json",
@@ -43,12 +58,12 @@
     {
       "file": "brands/amina-muaddi.json",
       "familyCount": 216,
-      "bytes": 1161309
+      "bytes": 1161286
     },
     {
       "file": "brands/ancient-greek-sandals.json",
       "familyCount": 437,
-      "bytes": 3060788
+      "bytes": 3060789
     },
     {
       "file": "brands/atp-atelier.json",
@@ -78,7 +93,7 @@
     {
       "file": "brands/cult-gaia.json",
       "familyCount": 138,
-      "bytes": 796211
+      "bytes": 796241
     },
     {
       "file": "brands/dear-frances.json",
@@ -88,7 +103,7 @@
     {
       "file": "brands/dolce-vita.json",
       "familyCount": 752,
-      "bytes": 7979837
+      "bytes": 7979729
     },
     {
       "file": "brands/emme-parsons.json",
@@ -98,7 +113,7 @@
     {
       "file": "brands/exe.json",
       "familyCount": 304,
-      "bytes": 1418299
+      "bytes": 1418296
     },
     {
       "file": "brands/flabelus.json",
@@ -108,12 +123,12 @@
     {
       "file": "brands/flattered.json",
       "familyCount": 120,
-      "bytes": 1277096
+      "bytes": 1277145
     },
     {
       "file": "brands/fly-london.json",
       "familyCount": 1074,
-      "bytes": 3731512
+      "bytes": 3731474
     },
     {
       "file": "brands/freda-salvador.json",
@@ -128,7 +143,7 @@
     {
       "file": "brands/isabel-marant.json",
       "familyCount": 60,
-      "bytes": 640859
+      "bytes": 640868
     },
     {
       "file": "brands/jeffrey-campbell.json",
@@ -148,7 +163,7 @@
     {
       "file": "brands/khaite.json",
       "familyCount": 140,
-      "bytes": 840147
+      "bytes": 840159
     },
     {
       "file": "brands/larroude.json",
@@ -158,12 +173,12 @@
     {
       "file": "brands/le-monde-beryl.json",
       "familyCount": 149,
-      "bytes": 915092
+      "bytes": 915110
     },
     {
       "file": "brands/le-silla.json",
       "familyCount": 139,
-      "bytes": 1818544
+      "bytes": 1818439
     },
     {
       "file": "brands/lemaire.json",
@@ -198,7 +213,7 @@
     {
       "file": "brands/maray.json",
       "familyCount": 148,
-      "bytes": 764750
+      "bytes": 764806
     },
     {
       "file": "brands/maria-carlota.json",
@@ -228,7 +243,7 @@
     {
       "file": "brands/neous.json",
       "familyCount": 41,
-      "bytes": 218410
+      "bytes": 218408
     },
     {
       "file": "brands/nine-west.json",
@@ -248,7 +263,7 @@
     {
       "file": "brands/pavement.json",
       "familyCount": 146,
-      "bytes": 789831
+      "bytes": 789853
     },
     {
       "file": "brands/pretty-ballerinas.json",
@@ -258,7 +273,7 @@
     {
       "file": "brands/repetto.json",
       "familyCount": 64,
-      "bytes": 542489
+      "bytes": 542358
     },
     {
       "file": "brands/rouje.json",
@@ -283,7 +298,7 @@
     {
       "file": "brands/souliers-martinez.json",
       "familyCount": 70,
-      "bytes": 788156
+      "bytes": 788176
     },
     {
       "file": "brands/st-agni.json",
@@ -293,12 +308,12 @@
     {
       "file": "brands/staud.json",
       "familyCount": 234,
-      "bytes": 1682616
+      "bytes": 1682622
     },
     {
       "file": "brands/steve-madden.json",
       "familyCount": 924,
-      "bytes": 7139343
+      "bytes": 7139328
     },
     {
       "file": "brands/studio-amelia.json",
@@ -313,7 +328,7 @@
     {
       "file": "brands/the-row.json",
       "familyCount": 146,
-      "bytes": 846169
+      "bytes": 846170
     },
     {
       "file": "brands/tkees.json",
@@ -334,21 +349,6 @@
       "file": "brands/yuul-yie.json",
       "familyCount": 38,
       "bytes": 191410
-    },
-    {
-      "file": "part-000.json",
-      "familyCount": 2772,
-      "bytes": 16775765
-    },
-    {
-      "file": "part-001.json",
-      "familyCount": 2311,
-      "bytes": 16775525
-    },
-    {
-      "file": "part-002.json",
-      "familyCount": 562,
-      "bytes": 3789558
     }
   ]
 }

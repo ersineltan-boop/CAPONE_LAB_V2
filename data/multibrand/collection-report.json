@@ -1,7 +1,7 @@
 {
-  "runStartedAt": "2026-11-28T09:00:01.999Z",
-  "runFinishedAt": "2026-11-28T09:12:33.215Z",
-  "totalProducts": 22120,
+  "runStartedAt": "2026-11-28T10:57:57.567Z",
+  "runFinishedAt": "2026-11-28T11:10:23.048Z",
+  "totalProducts": 22304,
   "sources": [
     {
       "source": "CHRISTEN",
@@ -420,9 +420,9 @@
       "source": "ZARA",
       "status": "success",
       "method": "custom-adapter",
-      "discoveredProductLinks": 745,
-      "parsedProducts": 745,
-      "productsWithImages": 745,
+      "discoveredProductLinks": 743,
+      "parsedProducts": 743,
+      "productsWithImages": 743,
       "productsWithMaterial": 0,
       "errors": [],
       "hitLegacyCap": false,
@@ -440,7 +440,7 @@
         "https://www.zara.com/us/en/woman-shoes-heeled-l1271.html",
         "https://www.zara.com/us/en/preowned-woman-shoes2-l16394.html"
       ],
-      "rawProductUrlsDiscovered": 745,
+      "rawProductUrlsDiscovered": 743,
       "duplicateCount": 0,
       "pagesTraversed": 13,
       "paginationExhausted": true,
