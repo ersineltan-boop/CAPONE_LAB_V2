@@ -27,10 +27,15 @@ export interface VisualCategoryCount {
 }
 
 export interface VisualSummary {
+  pageSize?: number;
   generatedAt: string;
   totalCount: number;
   categories: VisualCategoryCount[];
 }
+
+/** Rows are in display order. Their array positions locate the full cards. */
+export type VisualSearchRow = [brand: string, name: string, segment: BrandPriceSegment | null, isNew: 0 | 1];
+export type VisualSearchIndex = { id: VisualBasicCategoryId; rows: VisualSearchRow[] };
 
 export interface VisualShard {
   id: VisualBasicCategoryId;

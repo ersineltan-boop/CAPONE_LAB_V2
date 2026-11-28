@@ -1,0 +1,43 @@
+name: CAPONE mobile Visual check
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/capone-visual-mobile.yml'
+      - 'scripts/build-catalog-frontend.ts'
+      - 'scripts/check-visual-mobile.ts'
+      - 'src/catalog/**'
+      - 'src/components/modelFamily/**'
+      - 'src/components/saved/**'
+      - 'src/components/visualWall/**'
+      - 'src/visual/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build the site with the bundled catalog
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Check paging, search, filters, gallery, saved model and note
+        run: node --import tsx scripts/check-visual-mobile.ts dist mobile-visual-result.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mobile-visual-result
+          path: mobile-visual-result.json

@@ -1,10 +1,13 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { applyMarketplaceDeliveries, loadMarketplaceDeliveries } from "../src/collector/marketplaceDelivery";
 import { buildCatalogDelivery } from "../src/catalog/buildCatalogDelivery";
-import { buildVisualDelivery } from "../src/visual/buildVisualDelivery";
+import { buildVisualDelivery, filterVisualCards } from "../src/visual/buildVisualDelivery";
+import { brandPriceSegment } from "../src/brands/brandPriceSegments";
+import { VISUAL_PAGE_SIZE } from "../src/visual/visualPages";
+import type { VisualSearchIndex } from "../src/visual/types";
 import { loadModelFamilies, modelFamilyDatasetMtimeMs } from "../src/modelFamily/dataset";
 import { loadBrandRegistry } from "../src/registry/data/index";
 import { browsableMarketplaces } from "../src/registry/data/marketplaces";
@@ -21,6 +24,7 @@ async function isFresh(): Promise<boolean> {
       stat(join(OUT_DIR, "summary.json")),
       stat(join(OUT_DIR, "visual-summary.json")),
     ]);
+    await stat(join(OUT_DIR, "visual", "tumu-0.json"));
     return summaryStat.mtimeMs >= familiesMtime && visualStat.mtimeMs >= familiesMtime;
   } catch {
     return false;
@@ -47,6 +51,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
 
   await mkdir(join(OUT_DIR, "brands"), { recursive: true });
   await mkdir(join(OUT_DIR, "marketplaces"), { recursive: true });
+  await rm(join(OUT_DIR, "visual"), { recursive: true, force: true });
   await mkdir(join(OUT_DIR, "visual"), { recursive: true });
 
   await writeFile(join(OUT_DIR, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
@@ -81,10 +86,17 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     brandIds,
     marketplaceIds,
   });
-  await writeFile(join(OUT_DIR, "visual-summary.json"), JSON.stringify(visual.summary), "utf-8");
   for (const shard of visual.shards) {
-    await writeFile(join(OUT_DIR, "visual", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
+    const cards = filterVisualCards(shard.cards, "");
+    const index: VisualSearchIndex = { id: shard.id, rows: cards.map(card => [card.brand.toLowerCase(),
+      card.productName.toLowerCase(), brandPriceSegment(card.brandId, card.brand), card.verifiedNew ? 1 : 0]) };
+    await writeFile(join(OUT_DIR, "visual", `${shard.id}-index.json`), JSON.stringify(index));
+    for (let offset = 0; offset < Math.max(1, cards.length); offset += VISUAL_PAGE_SIZE) {
+      await writeFile(join(OUT_DIR, "visual", `${shard.id}-${offset / VISUAL_PAGE_SIZE}.json`),
+        JSON.stringify({ id: shard.id, cards: cards.slice(offset, offset + VISUAL_PAGE_SIZE) }));
+    }
   }
+  await writeFile(join(OUT_DIR, "visual-summary.json"), JSON.stringify({ ...visual.summary, pageSize: VISUAL_PAGE_SIZE }), "utf-8");
 
   const largestBrand = artifacts.brandShards.reduce(
     (best, shard) => (JSON.stringify(shard).length > best.size ? { id: shard.id, size: JSON.stringify(shard).length } : best),
