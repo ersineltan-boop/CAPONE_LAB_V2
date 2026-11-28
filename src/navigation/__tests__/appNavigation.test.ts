@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { PRIMARY_NAV_ITEMS, isPrimaryNavView } from "../primaryNav";
+import { CATALOG_NAV_ITEMS, PRIMARY_NAV_ITEMS, SECONDARY_NAV_ITEMS, isPrimaryNavView } from "../primaryNav";
 import { buildNavigationSearch, parseNavigationFromSearch } from "../appNavigation";
 import { PAZAR_OZETI_ENABLED } from "../../components/visualWall/visualWallSections";
 
@@ -56,17 +56,20 @@ describe("appNavigation", () => {
 });
 
 describe("primary navigation", () => {
-  it("exposes catalog, automation, visual and saved navigation", () => {
-    expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
+  it("puts catalog views above saved products and brand candidates", () => {
+    expect(CATALOG_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
-      "MARKA ADAYLARI",
       "VISUAL",
+    ]);
+    expect(SECONDARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "KAYDETTİKLERİM",
+      "MARKA ADAYLARI",
     ]);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "market-research")).toBe(false);
     expect(PRIMARY_NAV_ITEMS.some((item) => item.id === "visual-wall")).toBe(true);
     expect(isPrimaryNavView("visual-wall")).toBe(true);
+    expect(parseNavigationFromSearch("?view=saved").view).toBe("saved");
   });
 
   it("keeps the visual-wall route parseable", () => {

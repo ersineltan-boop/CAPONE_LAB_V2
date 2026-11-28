@@ -12,12 +12,20 @@ export interface PrimaryNavItem {
   label: string;
 }
 
-export const PRIMARY_NAV_ITEMS: readonly PrimaryNavItem[] = [
+export const CATALOG_NAV_ITEMS: readonly PrimaryNavItem[] = [
   { id: "brands", label: "MARKALAR" },
   { id: "marketplaces", label: "PAZARYERLERİ" },
-  { id: "brand-automation", label: "MARKA ADAYLARI" },
   { id: "visual-wall", label: "VISUAL" },
+];
+
+export const SECONDARY_NAV_ITEMS: readonly PrimaryNavItem[] = [
   { id: "saved", label: "KAYDETTİKLERİM" },
+  { id: "brand-automation", label: "MARKA ADAYLARI" },
+];
+
+export const PRIMARY_NAV_ITEMS: readonly PrimaryNavItem[] = [
+  ...CATALOG_NAV_ITEMS,
+  ...SECONDARY_NAV_ITEMS,
 ];
 
 export function isPrimaryNavView(view: AppView): boolean {

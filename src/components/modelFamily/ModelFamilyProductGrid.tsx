@@ -300,6 +300,16 @@ function ProductCard({
               }`}
             />
           )}
+          {onSelectItem && (
+            <button
+              type="button"
+              onClick={() => onSelectItem(item.modelFamilyId)}
+              aria-label={`Ürün Detayı · ${item.canonicalName}`}
+              className="touch-target ml-auto border border-ink px-2 py-1 text-[10px] font-medium text-ink transition-colors hover:bg-ink hover:text-cream"
+            >
+              Ürün Detayı
+            </button>
+          )}
         </div>
         {onSaveNote ? (
           <ProductCardNote
