@@ -5,7 +5,8 @@ let report: Record<string, unknown> = {};
 try { report = JSON.parse(await readFile("logs/refresh-cycle/report.json", "utf8")); }
 catch { try { report = JSON.parse(await readFile("logs/refresh-cycle/plan.json", "utf8")); } catch { /* Preflight failed. */ } }
 const env = process.env;
-const gatesPassed = env.COLLECT_OUTCOME === "success" && env.TESTS_OUTCOME === "success" && env.BUILD_OUTCOME === "success";
+const gatesPassed = [env.COLLECT_OUTCOME, env.TESTS_OUTCOME, env.BUILD_OUTCOME, env.STAGE_OUTCOME]
+  .every((outcome) => outcome === "success");
 const publication = !gatesPassed ? "FAILED_LAST_GOOD_PRESERVED"
   : env.DRY_RUN === "true" ? "DRY_RUN_NOT_PUBLISHED"
   : env.DATA_CHANGED === "false" ? "VALIDATED_NO_CHANGE"
@@ -35,7 +36,7 @@ for (const lane of outcomes) {
 }
 const final = { ...report, completedAt: new Date().toISOString(), publication,
   runId: env.GITHUB_RUN_ID, prUrl: env.PR_URL ?? null, productionStatusUrl: env.PRODUCTION_STATUS_URL ?? null,
-  gates: { collection: env.COLLECT_OUTCOME, tests: env.TESTS_OUTCOME, build: env.BUILD_OUTCOME, publication: env.PUBLISH_OUTCOME },
+  gates: { collection: env.COLLECT_OUTCOME, tests: env.TESTS_OUTCOME, build: env.BUILD_OUTCOME, archive: env.STAGE_OUTCOME, publication: env.PUBLISH_OUTCOME },
   sourceEvidence,
 };
 await writeFile("logs/refresh-cycle/report.json", JSON.stringify(final, null, 2));
