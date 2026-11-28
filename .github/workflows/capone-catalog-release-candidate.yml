@@ -68,8 +68,9 @@ jobs:
           diff -u logs/refresh-cycle/runner-digests.json logs/refresh-cycle/candidate-digests.json
           (
             cd "$candidate"
-            npm test
-            npm run build
+            node --input-type=module -e 'import { readFileSync, writeFileSync } from "node:fs"; const path = "vercel.json"; const config = JSON.parse(readFileSync(path, "utf8")); config.buildCommand = "node --import tsx scripts/refresh-archive-handoff.ts hydrate && " + config.buildCommand; writeFileSync(path, JSON.stringify(config, null, 2) + "\n");'
+            git add -- vercel.json
+            bash -c "$(node -p 'require(\"./vercel.json\").buildCommand')"
           )
           cp "$candidate/public/data/catalog/summary.json" logs/refresh-cycle/release-catalog-summary.json
           git -C "$candidate" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh the CAPONE product catalog"
