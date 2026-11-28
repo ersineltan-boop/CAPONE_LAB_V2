@@ -37,11 +37,26 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
   const deliveries = await loadMarketplaceDeliveries(ROOT);
   const families = applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
   const brands = loadBrandRegistry().all();
+  const marketplaceCoverage = new Map(deliveries.map((delivery) => [
+    delivery.sourceId,
+    {
+      status: delivery.report.publicationCoverage,
+      ready: delivery.products.length,
+      pending: delivery.quarantined.length,
+      unmapped: delivery.report.unmappedProducts,
+      lastVerifiedAt: delivery.report.accepted && Number.isFinite(Date.parse(delivery.updatedAt))
+        ? delivery.updatedAt
+        : undefined,
+      refreshedCategories: delivery.report.refreshedCategories,
+      verifiedProductCount: delivery.report.verifiedProductCount,
+    },
+  ] as const));
   const artifacts = buildCatalogDelivery({
     families,
     brands,
     marketplaces: browsableMarketplaces(),
     brandUpdates: await loadBrandUpdateEvidence(ROOT, brands.filter((brand) => brand.isActive).map((brand) => brand.id)),
+    marketplaceCoverage,
   });
   const emptyBrands = artifacts.brandShards.filter((shard) => shard.families.length === 0);
   if (emptyBrands.length > 0) {
@@ -59,18 +74,6 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
     await writeFile(join(OUT_DIR, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
   for (const shard of artifacts.marketplaceShards) {
-    const delivery = deliveries.find(item => item.sourceId === shard.id);
-    if (delivery) {
-      shard.coverage = {
-        status: delivery.report.publicationCoverage,
-        ready: delivery.products.length,
-        pending: delivery.quarantined.length,
-        unmapped: delivery.report.unmappedProducts,
-        lastVerifiedAt: Number.isFinite(Date.parse(delivery.updatedAt)) ? delivery.updatedAt : undefined,
-        refreshedCategories: delivery.report.refreshedCategories,
-        verifiedProductCount: delivery.report.verifiedProductCount,
-      };
-    }
     await writeFile(
       join(OUT_DIR, "marketplaces", `${shard.id}.json`),
       JSON.stringify(shard),

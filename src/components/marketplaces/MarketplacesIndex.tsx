@@ -1,4 +1,5 @@
 import { loadCatalogSummary } from "../../catalog/catalogClient";
+import { CatalogFreshnessLine } from "../../catalog/CatalogFreshnessLine";
 import { CatalogErrorState, CatalogLoadingState } from "../../catalog/CatalogStatus";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { UI_COPY } from "../../presentation/turkishLabels";
@@ -71,6 +72,10 @@ export default function MarketplacesIndex({ onSelectMarketplace }: MarketplacesI
                       {UI_COPY.productsCount(entry.productCount)} · {entry.brandCount} marka ·{" "}
                       {entry.categoryCount} kategori
                     </p>
+                    <CatalogFreshnessLine
+                      freshness={entry.marketplaceFreshness}
+                      productCheckLabel="Pazaryerinde son ürün kontrolü"
+                    />
                     {entry.verifiedNewCount > 0 && (
                       <p className="text-[10px] text-ink-faint">
                         {UI_COPY.newCount(entry.verifiedNewCount)}
