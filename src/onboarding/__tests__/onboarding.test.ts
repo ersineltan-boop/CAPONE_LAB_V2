@@ -6,6 +6,8 @@ import { describe, expect, it, vi } from "vitest";
 import { getCollectableBrands } from "../../registry/collection/brandToCollector";
 import { loadBrandRegistry } from "../../registry/data";
 import type { PilotProduct } from "../../collector/types";
+import { analyzeProducts } from "../../analysis/analyzeProduct";
+import { buildModelFamilies } from "../../modelFamily/buildFamilies";
 import { isGenericModelTitle } from "../../modelFamily/genericModelTitle";
 import {
   createInitialQueue,
@@ -325,12 +327,21 @@ describe("onboarding safety gates", () => {
     expect(evaluateOfficialSourceCoverage({ ...complete, hitCollectionCrawlCap: undefined }).full).toBe(false);
   });
 
-  it("starts the first official brand catalog without false NEW badges", () => {
-    const incoming = shoe({ isNewArrivalsCollection: true, hasNewBadge: true });
-    expect(prepareFirstBrandBaseline([incoming])[0]).toMatchObject({
+  it.each(["collectionPath", "sourceCategoryPath"] as const)("does not derive baseline NEW from %s", (pathField) => {
+    const newPath = "/collections/new-arrivals-shoes";
+    const category = { categoryId: "pumps", categoryName: "Pumps", categoryPath: "/collections/pumps" };
+    const incoming = shoe({ [pathField]: newPath, sourceCategories: [category], isNewArrivalsCollection: true, hasNewBadge: true });
+    const baseline = prepareFirstBrandBaseline([incoming]);
+    expect(baseline[0]).toMatchObject({
+      [pathField]: null,
+      category: "PUMP",
+      sourceCategories: [category],
       isNewArrivalsCollection: false,
       hasNewBadge: false,
     });
+    const { families } = buildModelFamilies(analyzeProducts(baseline as never));
+    expect(families[0]?.sourceSightings?.[0]?.newness?.status).toBe("NOT_VERIFIED");
+    expect(incoming[pathField]).toBe(newPath);
     expect(incoming.isNewArrivalsCollection).toBe(true);
   });
 

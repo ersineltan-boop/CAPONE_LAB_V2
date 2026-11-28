@@ -3,6 +3,7 @@ import { join } from "node:path";
 
 import { analyzeProducts } from "../analysis/analyzeProduct";
 import { buildMarketAnalysis } from "../analysis/buildMarketAnalysis";
+import { isNewArrivalsCollectionPath } from "../newArrivals/detectNewness";
 import { mergeIncomingSourceIntoCatalog } from "../refresh/refreshPolicy";
 import { retainModelFamilyArchive } from "../modelFamily/refreshIdentity";
 import { buildModelFamilies } from "../modelFamily/buildFamilies";
@@ -53,6 +54,8 @@ export async function mergeValidatedBrandIntoCatalog(input: {
 export function prepareFirstBrandBaseline(products: readonly PilotProduct[]): PilotProduct[] {
   return products.map((product) => ({
     ...product,
+    ...(isNewArrivalsCollectionPath(product.collectionPath) ? { collectionPath: null } : {}),
+    ...(isNewArrivalsCollectionPath(product.sourceCategoryPath) ? { sourceCategoryPath: null } : {}),
     isNewArrivalsCollection: false,
     hasNewBadge: false,
   }));
