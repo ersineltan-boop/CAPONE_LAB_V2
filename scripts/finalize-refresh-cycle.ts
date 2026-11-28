@@ -21,10 +21,14 @@ for (const lane of outcomes) {
     if (Array.isArray(rows)) {
       sourceEvidence[lane.id].push(...rows.map((row: Record<string, unknown>) => ({
         source: row.slug ?? row.sourceId ?? row.id ?? row.source ?? row.brand,
-        status: row.status ?? row.publicationCoverage,
+        status: row.accepted === false ? "LAST_GOOD_PRESERVED" : row.status ?? row.publicationCoverage,
         blocker: row.blocker ?? row.reason ?? row.reasons ?? row.errors,
         collectorErrors: row.collectorErrors ?? row.errors,
-        collected: row.collected ?? row.acceptedFootwear ?? row.parsedProducts ?? row.collectedProducts,
+        collected: row.collected ?? row.eligibleProducts ?? row.acceptedFootwear ?? row.parsedProducts ?? row.collectedProducts,
+        sourceTotal: row.sourceTotal,
+        unmappedProducts: row.unmappedProducts,
+        quarantinedProducts: row.quarantinedProducts,
+        retryWindow: row.retryWindow,
         lastGoodRetained: row.lastGoodRetained ?? row.lastGoodPreserved,
       })));
     } else {

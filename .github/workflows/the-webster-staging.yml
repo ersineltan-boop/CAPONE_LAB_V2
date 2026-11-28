@@ -14,6 +14,10 @@ on:
     paths:
       - "src/collector/theWebster.ts"
       - "src/collector/__tests__/theWebster.test.ts"
+      - "src/collector/__tests__/marketplaceDelivery.test.ts"
+      - "src/collector/marketplaceDelivery.ts"
+      - "src/marketplaces/automation.ts"
+      - "scripts/pilot-the-webster-partial.ts"
       - "scripts/collect-the-webster-staging.ts"
       - "package.json"
       - ".github/workflows/the-webster-staging.yml"
@@ -24,6 +28,7 @@ permissions:
 
 jobs:
   collect-and-verify:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -66,4 +71,31 @@ jobs:
           name: the-webster-staging
           path: data/onboarding/staging/marketplaces/the-webster/
           if-no-files-found: error
+          retention-days: 7
+  verify-partial-refresh:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test -- src/collector/__tests__/theWebster.test.ts src/collector/__tests__/marketplaceDelivery.test.ts
+      - name: Verify a partial delivery in an isolated catalog
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: |
+          set -euo pipefail
+          node --import tsx scripts/pilot-the-webster-partial.ts | tee the-webster-partial-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: the-webster-partial-verification
+          path: the-webster-partial-report.json
+          if-no-files-found: ignore
           retention-days: 7

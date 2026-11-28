@@ -8,6 +8,7 @@ import { loadModelFamilies } from '../modelFamily/dataset';
 import { retainModelFamilyArchive, withFamilyVariants } from '../modelFamily/refreshIdentity';
 import { analyzeProducts } from '../analysis/analyzeProduct';
 import { buildModelFamilies } from '../modelFamily/buildFamilies';
+import { createNotVerifiedNewness } from '../newArrivals/newness';
 import { evaluateMarketplaceCandidate, replaceVerifiedMarketplaceCatalog, type MarketplaceRefreshCandidate, type MarketplaceGateReport } from '../marketplaces/automation';
 
 export interface MarketplaceDelivery {
@@ -153,7 +154,19 @@ export async function publishMarketplaceDelivery(root: string, candidate: Market
   const updatedAt = new Date().toISOString();
   const analyzed = analyzeProducts(products.map(product => current.has(product.productUrl) ? {...product, discoveredAt: updatedAt} : product) as never);
   const rebuilt = buildModelFamilies(analyzed as never, {priorFamilies}).families;
-  const families = retainModelFamilyArchive(rebuilt, priorFamilies, analyzed as never);
+  let families = retainModelFamilyArchive(rebuilt, priorFamilies, analyzed as never);
+  if (candidate.publicationMode === 'the-webster-verified-subset') {
+    const priorById = new Map(priorFamilies.map(family => [family.modelFamilyId, family]));
+    families = families.map(family => {
+      const priorSighting = priorById.get(family.modelFamilyId)?.sourceSightings?.find(sighting => sighting.sourceId === candidate.sourceId);
+      return {
+        ...family,
+        sourceSightings: family.sourceSightings?.map(sighting => sighting.sourceId === candidate.sourceId
+          ? { ...sighting, newness: priorSighting?.newness ?? createNotVerifiedNewness() }
+          : sighting),
+      };
+    });
+  }
   const oldIds = new Set(priorFamilies.map(family => family.modelFamilyId));
   if (!families.length || families.some(f => !oldIds.has(f.modelFamilyId) && (!f.primaryCategory || f.primaryCategory === 'UNCLASSIFIED'))) {
     throw new Error('Marketplace delivery contains unresolved model families; previous delivery preserved');

@@ -6,6 +6,7 @@ import type {VerifiedFarfetchProduct} from '../collector/farfetchProductIdentity
 import {evaluateStoredPilotProduct} from '../collector/footwearGate';
 import {analyzeProduct} from '../analysis/analyzeProduct';
 import {buildTaxonomyFromProduct} from '../taxonomy/buildTaxonomy';
+import { isNewArrivalsCollectionPath } from '../newArrivals/detectNewness';
 import {
   isExcludedMarketplaceBrand,
   MARKETPLACE_PRESENTATION_POLICY,
@@ -26,7 +27,8 @@ export type AutomatedMarketplaceId = (typeof AUTOMATED_MARKETPLACE_IDS)[number];
 export type MarketplaceCoverageStatus = "FULL" | "PARTIAL" | "FAILED";
 
 export interface MarketplaceRefreshCandidate {
-  publicationMode?: 'verified-categories' | 'verified-products';
+  publicationMode?: 'verified-categories' | 'verified-products' | 'the-webster-verified-subset';
+  unmappedProductUrls?: string[];
   verifiedProducts?: VerifiedFarfetchProduct[];
   verifiedScopes?: VerifiedCategoryScope[];
   sourceId: string;
@@ -45,7 +47,8 @@ export interface MarketplaceRefreshCandidate {
 
 export interface MarketplaceGateReport {
   verifiedProducts?: VerifiedFarfetchProduct[];
-  publicationMode?: 'verified-categories' | 'verified-products';
+  publicationMode?: MarketplaceRefreshCandidate['publicationMode'];
+  unmappedProducts?: number;
   verifiedProductCount?: number;
   refreshedCategories?: Array<{url: string; products: number; checkedAt: string}>;
   newnessVerified?: boolean;
@@ -176,10 +179,36 @@ export function evaluateMarketplaceCandidate(input: {
   const crossSourceUrlCollisions = eligibleProducts.filter((product) =>
     otherSourceUrls.has(normalizeProductUrl(product.productUrl)),
   ).length;
+  const websterSubset = input.candidate.publicationMode === 'the-webster-verified-subset';
   const lastGoodRetentionRatio = baseline
     ? null
-    : sourceEligibleProducts.length / previousEligible.length;
+    : (websterSubset ? eligibleProducts.length : sourceEligibleProducts.length) / previousEligible.length;
   const reasons: string[] = [];
+  const unmapped = input.candidate.unmappedProductUrls ?? [];
+  if (websterSubset) {
+    const productPrefix = 'https://thewebster.com/products/';
+    const urls = [...sourceProducts.map(product => product.productUrl), ...unmapped];
+    const canonicalUrls = new Set(urls.map(normalizeProductUrl));
+    if (sourceId !== 'the-webster' || !input.preserveMissing || baseline) {
+      reasons.push('The Webster subset requires its own existing archive and preservation of missing products');
+    }
+    if (input.candidate.coverageStatus !== 'PARTIAL') reasons.push('The Webster subset must declare PARTIAL coverage');
+    if (!Number.isSafeInteger(input.candidate.sourceTotal) || input.candidate.rawCollected !== input.candidate.sourceTotal ||
+        !Number.isSafeInteger(excludedByPolicy) || excludedByPolicy < 0 ||
+        input.candidate.eligibleTotal !== input.candidate.rawCollected - excludedByPolicy) {
+      reasons.push('The Webster storefront total, fetched rows and policy exclusions do not reconcile');
+    }
+    if (input.candidate.eligibleTotal !== null && eligibleProducts.length < MIN_LAST_GOOD_RETENTION_RATIO * input.candidate.eligibleTotal) {
+      reasons.push('The Webster subset did not verify enough of the current storefront');
+    }
+    if (!input.candidate.unmappedProductUrls || canonicalUrls.size !== urls.length || urls.some(url =>
+      !url.startsWith(productPrefix) || !/^[a-z0-9-]+\/?$/i.test(url.slice(productPrefix.length)),
+    )) reasons.push('The Webster subset contains missing, duplicate or non-source product identities');
+    if (input.candidate.newnessVerified || sourceProducts.some(product => product.hasNewBadge ||
+      product.isNewArrivalsCollection || isNewArrivalsCollectionPath(product.collectionPath ?? product.sourceCategoryPath))) {
+      reasons.push('The Webster subset cannot assert new arrivals without a separate verification');
+    }
+  }
   const scoped = input.candidate.publicationMode === 'verified-categories' || input.candidate.publicationMode === 'verified-products';
   if (scoped) {
     if(input.candidate.publicationMode === 'verified-categories')reasons.push(...validateVerifiedCategoryScopes({sourceId, products:sourceProducts,
@@ -192,7 +221,7 @@ export function evaluateMarketplaceCandidate(input: {
 
   if (!ALLOWED_IDS.has(sourceId)) reasons.push("source is not on the approved adapter allow-list");
   if (wrongSourceCount > 0) reasons.push(`${wrongSourceCount} product(s) belong to another source`);
-  if (!scoped && input.candidate.coverageStatus !== "FULL") {
+  if (!scoped && !websterSubset && input.candidate.coverageStatus !== "FULL") {
     reasons.push(`coverage is ${input.candidate.coverageStatus}, not FULL`);
   }
   if (!scoped && !input.candidate.paginationExhausted) reasons.push("pagination is not exhausted");
@@ -206,7 +235,7 @@ export function evaluateMarketplaceCandidate(input: {
   }
   if (
     input.candidate.eligibleTotal !== null &&
-    sourceEligibleProducts.length !== input.candidate.eligibleTotal
+    sourceEligibleProducts.length + (websterSubset ? unmapped.length : 0) !== input.candidate.eligibleTotal
   ) {
     reasons.push(`eligible coverage is ${sourceEligibleProducts.length}/${input.candidate.eligibleTotal}`);
   }
@@ -222,7 +251,7 @@ export function evaluateMarketplaceCandidate(input: {
     reasons.push(`catalog collides with ${crossSourceUrlCollisions} other-source URL(s)`);
   }
   if (
-    !scoped && lastGoodRetentionRatio !== null &&
+    !scoped && !websterSubset && lastGoodRetentionRatio !== null &&
     lastGoodRetentionRatio < MIN_LAST_GOOD_RETENTION_RATIO
   ) {
     reasons.push(
@@ -254,10 +283,11 @@ export function evaluateMarketplaceCandidate(input: {
       collectionProgress: input.candidate.collectionProgress,
       retryWindow: input.candidate.retryWindow,
       publicationMode: input.candidate.publicationMode,
+      unmappedProducts: websterSubset ? unmapped.length : undefined,
       verifiedProductCount:input.candidate.publicationMode==='verified-products'?input.candidate.verifiedProducts?.length:undefined,
       verifiedProducts:input.candidate.publicationMode==='verified-products'&&accepted?input.candidate.verifiedProducts:undefined,
       refreshedCategories: scoped ? input.candidate.verifiedScopes?.map(scope => ({url:scope.url, products:scope.sourceTotal, checkedAt:scope.checkedAt})) : undefined,
-      publicationCoverage: scoped || quarantined.length > 0 ? "PARTIAL" : "FULL",
+      publicationCoverage: scoped || websterSubset || quarantined.length > 0 ? "PARTIAL" : "FULL",
       quarantinedProducts: quarantined.length,
       sourceId,
       accepted,

@@ -5,6 +5,7 @@ import { buildRefreshCyclePlan } from "../src/refresh/refreshCycle";
 import { hydrateRefreshArchive } from "../src/refresh/refreshArchiveHandoff";
 import { transactionalRefreshLane } from "../src/refresh/transactionalLane";
 import { cycleCatalogSnapshot } from "../src/refresh/cycleCatalogSnapshot";
+import type { MarketplaceGateReport } from "../src/marketplaces/automation";
 
 const root = process.cwd();
 const audit = join(root, "logs/refresh-cycle");
@@ -46,10 +47,16 @@ for (const lane of plan.lanes) {
     }
     // Marketplace collection stages raw products; rebuild its accepted deliveries once.
     if (succeeded && lane.id === "marketplaces") {
-      const report = JSON.parse(await readFile(join(root, lane.reports[0]!), "utf8"));
+      const report = JSON.parse(await readFile(join(root, lane.reports[0]!), "utf8")) as {
+        acceptedSources: string[];
+        gates: MarketplaceGateReport[];
+      };
       if (report.acceptedSources.length) {
+        const authoritativeSources = report.gates
+          .filter(gate => gate.accepted && gate.publicationCoverage === 'FULL')
+          .map(gate => gate.sourceId);
         for (const script of ["analyze-multibrand.ts", "build-model-families.ts", "source-coverage.ts", "taxonomy-qa.ts"]) {
-          if (!run([script], { CAPONE_AUTHORITATIVE_MARKETPLACE_SOURCES: report.acceptedSources.join(",") })) { succeeded = false; break; }
+          if (!run([script], { CAPONE_AUTHORITATIVE_MARKETPLACE_SOURCES: authoritativeSources.join(",") })) { succeeded = false; break; }
         }
       }
     }

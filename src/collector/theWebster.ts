@@ -8,6 +8,7 @@ import { detectNewBadgeInText } from "../newArrivals/detectNewness";
 import { collectShopifyCollectionMembership } from "./shopifyCollectionMembership";
 import { withExplicitMarketplaceTaxonomy } from "./marketplaceTaxonomy";
 import { reviewedTheWebsterCategory } from './theWebsterReviewedCategories';
+import type { MarketplaceRefreshCandidate } from '../marketplaces/automation';
 import type { PilotProduct, PilotSourceConfig } from "./types";
 
 export const THE_WEBSTER_ID = "the-webster";
@@ -80,6 +81,7 @@ export interface TheWebsterCoverage {
 export interface TheWebsterCollectResult {
   products: PilotProduct[];
   coverage: TheWebsterCoverage;
+  unmappedProducts: Array<{ productUrl: string; title: string; vendor: string; sourceType: string }>;
 }
 
 function normalizeBrand(value: string | undefined): string {
@@ -189,18 +191,19 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
   let sourceTotal: number | null = null;
 
   const listing = await fetchText(THE_WEBSTER_WOMEN_SHOES_URL, { delayMs: 300 });
+  const accessDenied = [401, 403, 429].includes(listing.status);
   if (listing.ok) {
     sourceTotal = parseTheWebsterSourceTotal(listing.text);
   } else {
-    errors.push(listing.error ?? `Unable to read ${THE_WEBSTER_WOMEN_SHOES_URL}`);
+    errors.push(listing.error ?? `HTTP ${listing.status} for ${THE_WEBSTER_WOMEN_SHOES_URL}`);
   }
 
   const rawByHandle = new Map<string, TheWebsterRawProduct>();
   let pagesTraversed = 0;
   let paginationExhausted = false;
-  let firstPageUnavailable = false;
+  let firstPageUnavailable = accessDenied;
 
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
+  for (let page = 1; !accessDenied && page <= MAX_PAGES; page += 1) {
     const url =
       `${THE_WEBSTER_WOMEN_SHOES_URL}/products.json?limit=${PAGE_SIZE}&page=${page}`;
     const response = await fetchJson<ShopifyProductsResponse>(url, page === 1 ? 300 : 700);
@@ -230,6 +233,7 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
   const excludedBrands = new Set<string>();
   let excludedByPolicy = 0;
   const mapped: PilotProduct[] = [];
+  const unmappedProducts: TheWebsterCollectResult["unmappedProducts"] = [];
   for (const raw of rawByHandle.values()) {
     if (isTheWebsterExcludedBrand(raw.vendor)) {
       excludedByPolicy += 1;
@@ -238,6 +242,12 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
     }
     const product = theWebsterRawProductToPilot(raw, collectedAt, refresh);
     if (product) mapped.push(product);
+    else unmappedProducts.push({
+      productUrl: `${THE_WEBSTER_BASE_URL}/products/${raw.handle}`,
+      title: raw.title,
+      vendor: normalizeBrand(raw.vendor),
+      sourceType: raw.product_type ?? "",
+    });
   }
 
   const products = mergeProductCatalog([], mapped);
@@ -295,6 +305,7 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
 
   return {
     products,
+    unmappedProducts,
     coverage: {
       source: THE_WEBSTER_ID,
       sourceUrl: THE_WEBSTER_WOMEN_SHOES_URL,
@@ -318,6 +329,24 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
       collectedAt,
     },
   };
+}
+
+export async function collectTheWebsterSubset() {
+  const { coverage, products, unmappedProducts } = await collectTheWebster({ refresh: false });
+  const candidate: MarketplaceRefreshCandidate = {
+    sourceId: THE_WEBSTER_ID,
+    products,
+    publicationMode: 'the-webster-verified-subset',
+    coverageStatus: coverage.status === 'FAILED' ? 'FAILED' : 'PARTIAL',
+    sourceTotal: coverage.sourceTotal,
+    rawCollected: coverage.rawCollected,
+    eligibleTotal: coverage.eligibleTotal,
+    paginationExhausted: coverage.paginationExhausted,
+    errors: coverage.errors,
+    preExcludedByPolicy: coverage.excludedByPolicy,
+    unmappedProductUrls: unmappedProducts.map(product => product.productUrl),
+  };
+  return { candidate, unmappedProducts, checkedAt: coverage.collectedAt };
 }
 
 export async function publishTheWebsterStaging(

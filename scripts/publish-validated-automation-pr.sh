@@ -9,6 +9,15 @@ set -euo pipefail
 : "${AUTOMATION_PR_BODY:?AUTOMATION_PR_BODY is required}"
 
 base_sha="$(git rev-parse HEAD)"
+dispatch_ci="${AUTOMATION_DISPATCH_CI:-false}"
+if [[ "$dispatch_ci" == "true" ]] && [[
+  "$AUTOMATION_BRANCH" != "automation/complete-refresh" ||
+  "${GITHUB_WORKFLOW_REF:-}" != "$GITHUB_REPOSITORY/.github/workflows/capone-refresh-cycle.yml@refs/heads/main" ||
+  "${GITHUB_REF:-}" != "refs/heads/main"
+]]; then
+  echo "Only the consolidated workflow on main can dispatch publication CI." >&2
+  exit 1
+fi
 
 require_unchanged_main() {
   git fetch origin main:refs/remotes/origin/main
@@ -53,8 +62,12 @@ fi
 
 git switch -C "$AUTOMATION_BRANCH"
 git commit -m "$AUTOMATION_COMMIT_MESSAGE"
-git push --force-with-lease --set-upstream origin "$AUTOMATION_BRANCH"
 head_sha="$(git rev-parse HEAD)"
+if [[ "$dispatch_ci" == "true" ]] && ! git diff --quiet "$base_sha" "$head_sha" -- .github/workflows/capone-ci.yml; then
+  echo "Refusing to dispatch a CI workflow modified by the generated delivery." >&2
+  exit 1
+fi
+git push --force-with-lease --set-upstream origin "$AUTOMATION_BRANCH"
 
 # The Vercel Git integration attaches this status to a branch preview. A
 # generated delivery is never merged until its exact commit is READY.
@@ -88,12 +101,30 @@ else
 fi
 
 pr_number="${pr_url##*/}"
-bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "$head_sha"
+ci_args=("$head_sha")
+if [[ "$dispatch_ci" == "true" ]]; then
+  require_unchanged_main
+  pr="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${pr_number}")"
+  if ! jq -e --arg sha "$head_sha" --arg base "$base_sha" --arg branch "$AUTOMATION_BRANCH" --arg repo "$GITHUB_REPOSITORY" '
+    .state == "open" and .head.sha == $sha and .head.ref == $branch and .head.repo.full_name == $repo and
+    .base.sha == $base and .base.ref == "main" and .base.repo.full_name == $repo
+  ' <<< "$pr" >/dev/null; then
+    echo "Pull request does not match the consolidated delivery; publication stopped." >&2
+    exit 1
+  fi
+  # GITHUB_TOKEN-created pull requests can require a human to start their CI.
+  # Request the same test/build workflow explicitly and validate that run alone.
+  dispatch_payload="$(gh api --method POST -H 'X-GitHub-Api-Version: 2026-03-10' \
+    "repos/${GITHUB_REPOSITORY}/actions/workflows/capone-ci.yml/dispatches" -f "ref=$AUTOMATION_BRANCH")"
+  dispatch_run_id="$(jq -er '.workflow_run_id | select(type == "number" and . > 0 and . == floor)' <<< "$dispatch_payload")"
+  ci_args+=("$dispatch_run_id")
+fi
+bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "${ci_args[@]}"
 require_unchanged_main
 merged="false"
 for _attempt in $(seq 1 12); do
   # Recheck on retries: approvals/check reruns can change while merging waits.
-  bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "$head_sha"
+  bash "$(dirname "${BASH_SOURCE[0]}")/wait-for-pr-ci.sh" "${ci_args[@]}"
   require_unchanged_main
   if gh pr merge "$pr_url" \
     --squash \

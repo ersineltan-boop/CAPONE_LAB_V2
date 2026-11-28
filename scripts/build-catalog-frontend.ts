@@ -59,9 +59,17 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
   }
   for (const shard of artifacts.marketplaceShards) {
     const delivery = deliveries.find(item => item.sourceId === shard.id);
-    if (delivery) shard.coverage = {status: delivery.report.publicationCoverage, ready: delivery.products.length,
-      pending: delivery.quarantined.length, refreshedCategories:delivery.report.refreshedCategories,
-      verifiedProductCount:delivery.report.verifiedProductCount};
+    if (delivery) {
+      shard.coverage = {
+        status: delivery.report.publicationCoverage,
+        ready: delivery.products.length,
+        pending: delivery.quarantined.length,
+        unmapped: delivery.report.unmappedProducts,
+        lastVerifiedAt: Number.isFinite(Date.parse(delivery.updatedAt)) ? delivery.updatedAt : undefined,
+        refreshedCategories: delivery.report.refreshedCategories,
+        verifiedProductCount: delivery.report.verifiedProductCount,
+      };
+    }
     await writeFile(
       join(OUT_DIR, "marketplaces", `${shard.id}.json`),
       JSON.stringify(shard),
