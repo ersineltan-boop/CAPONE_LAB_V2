@@ -304,9 +304,9 @@ describe("startup architecture", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.label)).toEqual([
       "MARKALAR",
       "PAZARYERLERİ",
-      "MARKA ADAYLARI",
       "VISUAL",
       "KAYDETTİKLERİM",
+      "MARKA ADAYLARI",
     ]);
     expect(UI_COPY.appLoading).toBe("CAPONE yükleniyor…");
     expect(UI_COPY.catalogLoading).toBe("Ürünler yükleniyor…");

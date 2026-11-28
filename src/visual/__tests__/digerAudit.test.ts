@@ -151,9 +151,9 @@ describe("Visual DİĞER diagnostics", () => {
     expect(PRIMARY_NAV_ITEMS.map((item) => item.id)).toEqual([
       "brands",
       "marketplaces",
-      "brand-automation",
       "visual-wall",
       "saved",
+      "brand-automation",
     ]);
   });
 });
