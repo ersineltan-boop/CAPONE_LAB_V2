@@ -3,6 +3,9 @@ name: CAPONE read-only live catalog rehearsal
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - refresh/readonly-live-rehearsal
 
 permissions:
   contents: read
