@@ -4,15 +4,14 @@ import { join } from 'node:path';
 
 import { publishMarketplaceDelivery, readMarketplaceDelivery, writeMarketplaceDelivery } from '../src/collector/marketplaceDelivery';
 import { createShardedProductCatalogStore } from '../src/collector/sourceProductArchive';
-import { collectTheWebster, THE_WEBSTER_BASE_URL, THE_WEBSTER_ID } from '../src/collector/theWebster';
+import { collectTheWebsterSubset, THE_WEBSTER_BASE_URL, THE_WEBSTER_ID } from '../src/collector/theWebster';
 import { refreshArchivePath } from '../src/refresh/refreshArchiveHandoff';
 import { isVerifiedNew } from '../src/newArrivals/newness';
 
 const root = process.cwd();
 const catalogPath = join('data', 'multibrand', 'model-families', 'marketplaces', `${THE_WEBSTER_ID}.json`);
 const previous = await readMarketplaceDelivery(join(root, catalogPath));
-const collection = await collectTheWebster({ refresh: false });
-const { coverage, products, unmappedProducts } = collection;
+const { candidate, unmappedProducts, checkedAt } = await collectTheWebsterSubset();
 const scratch = await mkdtemp(join(tmpdir(), 'the-webster-partial-'));
 
 try {
@@ -30,19 +29,7 @@ try {
   await writeFile(join(scratch, 'data/multibrand/products.json'), JSON.stringify(core));
   await writeMarketplaceDelivery(scratch, previous);
 
-  const decision = await publishMarketplaceDelivery(scratch, {
-    sourceId: THE_WEBSTER_ID,
-    products,
-    publicationMode: 'the-webster-verified-subset',
-    coverageStatus: coverage.status === 'FAILED' ? 'FAILED' : 'PARTIAL',
-    sourceTotal: coverage.sourceTotal,
-    rawCollected: coverage.rawCollected,
-    eligibleTotal: coverage.eligibleTotal,
-    paginationExhausted: coverage.paginationExhausted,
-    errors: coverage.errors,
-    preExcludedByPolicy: coverage.excludedByPolicy,
-    unmappedProductUrls: unmappedProducts.map(product => product.productUrl),
-  }, THE_WEBSTER_BASE_URL);
+  const decision = await publishMarketplaceDelivery(scratch, candidate, THE_WEBSTER_BASE_URL);
 
   const proposed = await readMarketplaceDelivery(join(scratch, catalogPath));
   const productsByUrl = new Map(proposed.products.map(product => [product.productUrl, product]));
@@ -62,7 +49,7 @@ try {
   const newnessChanged = beforeNew.size !== afterNew.size || [...afterNew].some(id => !beforeNew.has(id));
 
   console.log(JSON.stringify({
-    checkedAt: coverage.collectedAt,
+    checkedAt,
     gate: decision.report,
     archiveProductsBefore: previous.products.length,
     archiveProductsAfter: proposed.products.length,

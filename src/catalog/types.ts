@@ -26,9 +26,15 @@ export interface CatalogSummary {
 }
 
 export interface CatalogShard {
-  coverage?: {status: "FULL" | "PARTIAL"; ready: number; pending: number;
-    verifiedProductCount?:number;
-    refreshedCategories?: Array<{url: string; products: number; checkedAt: string}>};
+  coverage?: {
+    status: "FULL" | "PARTIAL";
+    ready: number;
+    pending: number;
+    unmapped?: number;
+    lastVerifiedAt?: string;
+    verifiedProductCount?: number;
+    refreshedCategories?: Array<{ url: string; products: number; checkedAt: string }>;
+  };
   id: string;
   kind: "brand" | "marketplace";
   families: ModelFamily[];

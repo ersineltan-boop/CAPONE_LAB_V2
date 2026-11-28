@@ -1,7 +1,7 @@
 import {mkdir, readFile, rename, writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
 interface Pause {reason: string; checkedAt: string; retryAt: string;}
-const allowed = new Set(['farfetch','free-people','level-shoes']);
+const allowed = new Set(['farfetch','free-people','level-shoes','24s','the-webster']);
 const pathFor = (directory: string, sourceId: string) => {
   if (!allowed.has(sourceId)) throw new Error('Unsupported retry source'); return join(directory, `${sourceId}-retry.json`);
 };

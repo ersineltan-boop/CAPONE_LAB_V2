@@ -27,7 +27,7 @@ permissions:
   contents: write
   pull-requests: write
   statuses: read
-  actions: read
+  actions: write
 
 jobs:
   refresh:
@@ -87,6 +87,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           AUTOMATION_BRANCH: automation/complete-refresh
+          AUTOMATION_DISPATCH_CI: "true"
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish complete twice-weekly refresh"
           AUTOMATION_PR_TITLE: "chore(data): complete automatic CAPONE refresh"
           AUTOMATION_PR_BODY: "All active brands and marketplaces covered in one cycle. Failed lanes roll back, failed sources preserve last-good. One full test/build gate, exact-head Vercel Preview, guarded merge and Production verification. NEW is based on explicit official-source evidence."

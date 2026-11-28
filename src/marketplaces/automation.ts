@@ -194,8 +194,12 @@ export function evaluateMarketplaceCandidate(input: {
     }
     if (input.candidate.coverageStatus !== 'PARTIAL') reasons.push('The Webster subset must declare PARTIAL coverage');
     if (!Number.isSafeInteger(input.candidate.sourceTotal) || input.candidate.rawCollected !== input.candidate.sourceTotal ||
+        !Number.isSafeInteger(excludedByPolicy) || excludedByPolicy < 0 ||
         input.candidate.eligibleTotal !== input.candidate.rawCollected - excludedByPolicy) {
       reasons.push('The Webster storefront total, fetched rows and policy exclusions do not reconcile');
+    }
+    if (input.candidate.eligibleTotal !== null && eligibleProducts.length < MIN_LAST_GOOD_RETENTION_RATIO * input.candidate.eligibleTotal) {
+      reasons.push('The Webster subset did not verify enough of the current storefront');
     }
     if (!input.candidate.unmappedProductUrls || canonicalUrls.size !== urls.length || urls.some(url =>
       !url.startsWith(productPrefix) || !/^[a-z0-9-]+\/?$/i.test(url.slice(productPrefix.length)),
@@ -247,7 +251,7 @@ export function evaluateMarketplaceCandidate(input: {
     reasons.push(`catalog collides with ${crossSourceUrlCollisions} other-source URL(s)`);
   }
   if (
-    !scoped && lastGoodRetentionRatio !== null &&
+    !scoped && !websterSubset && lastGoodRetentionRatio !== null &&
     lastGoodRetentionRatio < MIN_LAST_GOOD_RETENTION_RATIO
   ) {
     reasons.push(

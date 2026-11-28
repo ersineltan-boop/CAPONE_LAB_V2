@@ -1,12 +1,26 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import {
+  collectTheWebsterSubset,
   isTheWebsterExcludedBrand,
   parseTheWebsterSourceTotal,
   theWebsterRawProductToPilot,
 } from "../theWebster";
 
 describe("The Webster marketplace collector", () => {
+  it("stops the partial refresh when the official listing denies access", async () => {
+    const fetch = vi.fn().mockResolvedValue(new Response('Access denied', { status: 403 }));
+    vi.stubGlobal('fetch', fetch);
+    try {
+      const { candidate } = await collectTheWebsterSubset();
+      expect(candidate.coverageStatus).toBe('FAILED');
+      expect(candidate.errors[0]).toContain('HTTP 403');
+      expect(fetch).toHaveBeenCalledTimes(1);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+
   it("reads the official source total", () => {
     expect(parseTheWebsterSourceTotal("<div>Filter & Sort - 246 Products</div>")).toBe(246);
     expect(parseTheWebsterSourceTotal("<span>2,781 Results</span>")).toBe(2781);

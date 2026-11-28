@@ -11,7 +11,7 @@ import { collect24S } from "../src/collector/twentyFourS";
 import { FREE_PEOPLE_ID } from "../src/collector/freePeople";
 import { collectFreePeopleWithBrowser } from "../src/collector/freePeopleBrowser";
 import { collectLevelShoes, LEVEL_SHOES_ID } from "../src/collector/levelShoes";
-import { collectTheWebster, THE_WEBSTER_ID } from "../src/collector/theWebster";
+import { collectTheWebster, collectTheWebsterSubset, THE_WEBSTER_ID } from "../src/collector/theWebster";
 import type { PilotProduct } from "../src/collector/types";
 import {
   AUTOMATED_MARKETPLACE_IDS,
@@ -26,6 +26,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ARTIFACT_DIR = join(ROOT, "data", "onboarding", "staging", "marketplace-refresh");
 const REPORT_PATH = join(ARTIFACT_DIR, "report.json");
 const PROGRESS_DIR = join(ROOT, "logs/marketplace-progress");
+const COOLDOWN_SOURCES = new Set([FARFETCH_ID, LEVEL_SHOES_ID, FREE_PEOPLE_ID, '24s', THE_WEBSTER_ID]);
 
 interface MarketplaceAutomationReport {
   schemaVersion: 1;
@@ -128,6 +129,11 @@ async function collectCandidate(sourceId: AutomatedMarketplaceId): Promise<Marke
     };
   }
 
+  if (process.argv.includes('--the-webster-subset')) {
+    const { candidate, unmappedProducts, checkedAt } = await collectTheWebsterSubset();
+    await writeJson(join(ARTIFACT_DIR, 'the-webster-unmapped.json'), { checkedAt, products: unmappedProducts });
+    return candidate;
+  }
   const result = await collectTheWebster();
   return {
     sourceId: THE_WEBSTER_ID,
@@ -183,22 +189,22 @@ async function main(): Promise<void> {
     console.log(`\nCollecting ${sourceId}...`);
     let candidate: MarketplaceRefreshCandidate;
     try {
-      const resumable = [FARFETCH_ID, LEVEL_SHOES_ID, FREE_PEOPLE_ID].includes(sourceId);
-      const paused = resumable && !process.argv.includes('--retry-blocked') ? await sourceRetryPause(PROGRESS_DIR, sourceId) : null;
+      const usesCooldown = COOLDOWN_SOURCES.has(sourceId);
+      const paused = usesCooldown && !process.argv.includes('--retry-blocked') ? await sourceRetryPause(PROGRESS_DIR, sourceId) : null;
       if (paused) {
         candidate = failedCandidate(sourceId, `SOURCE_ACCESS_PAUSED: last check ${paused.checkedAt}; retry allowed from ${paused.retryAt}; ${paused.reason}`);
         candidate.retryWindow = {...paused, probedThisRun:false};
         await writeJson(join(ARTIFACT_DIR, `${sourceId}-retry.json`), candidate.retryWindow);
       } else {
         candidate = await collectCandidate(sourceId);
-        if (resumable) {
+        if (usesCooldown) {
           candidate.retryWindow = {...await recordSourceRetry(PROGRESS_DIR, sourceId, candidate.errors), probedThisRun:true};
           await writeJson(join(ARTIFACT_DIR, `${sourceId}-retry.json`), candidate.retryWindow);
         }
       }
     } catch (error) {
       candidate = failedCandidate(sourceId, error);
-      if([FARFETCH_ID,LEVEL_SHOES_ID,FREE_PEOPLE_ID].includes(sourceId))await recordSourceRetry(PROGRESS_DIR,sourceId,candidate.errors);
+      if (COOLDOWN_SOURCES.has(sourceId)) await recordSourceRetry(PROGRESS_DIR, sourceId, candidate.errors);
     }
     await publish(candidate);
     // Keep independently complete categories and product-page proofs separate.

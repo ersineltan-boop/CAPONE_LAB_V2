@@ -67,7 +67,7 @@ export async function buildRefreshCyclePlan(root: string) {
     { id: "browns", brands: [], marketplaces: ["browns"], scripts: [["collect-browns.ts"], ["verify-issue-91-refresh.ts"]], reports: ["data/registry/issue-91-browns-marketplace.json"] },
     { id: "expansion", brands: active(EXPANSION_REFRESH_IDS), marketplaces: [], scripts: [["refresh-expansion-brands.ts"]], reports: ["data/onboarding/staging/expansion-refresh/report.json"] },
     { id: "priority", brands: active(["massimo-dutti", "ala-a", "maison-margiela"]), marketplaces: [], scripts: [["refresh-priority-sources.ts"]], reports: ["data/onboarding/staging/priority-refresh/report.json"] },
-    { id: "marketplaces", brands: [], marketplaces: [...AUTOMATED_MARKETPLACE_IDS], scripts: [["refresh-marketplaces-automated.ts"]], reports: ["data/onboarding/staging/marketplace-refresh/report.json"] },
+    { id: "marketplaces", brands: [], marketplaces: [...AUTOMATED_MARKETPLACE_IDS], scripts: [["refresh-marketplaces-automated.ts", "--the-webster-subset"]], reports: ["data/onboarding/staging/marketplace-refresh/report.json"] },
   ];
   assertRefreshCoverage(activeBrands, activeMarketplaces, lanes);
   return { schemaVersion: 1, startedAt: new Date().toISOString(), activeBrands, activeMarketplaces, lanes };

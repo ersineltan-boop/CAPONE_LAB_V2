@@ -14,7 +14,8 @@ import {
   filterFamiliesByBasicCategory,
 } from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
-import {marketplaceCoverageText} from '../../presentation/marketplaceCoverage';
+import { marketplaceCoverageText } from "../../presentation/marketplaceCoverage";
+import { formatDateTurkish } from "../../presentation/turkishDates";
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
 type MarketplaceMode = "all" | "verified-new" | "categories" | "brands";
@@ -44,6 +45,8 @@ export default function MarketplaceDetail({
   );
 
   const shardFamilies = state.status === "ready" ? state.data.families : [];
+  const coverage = state.status === "ready" ? state.data.coverage : undefined;
+  const lastVerifiedAt = coverage?.lastVerifiedAt;
 
   const marketplacePresentation = useMemo(
     () => marketplaceBrowsePresentation(shardFamilies, marketplaceId, selectedBrand),
@@ -90,8 +93,16 @@ export default function MarketplaceDetail({
           ) : null}
         </div>
 
-        {state.status === "ready" && state.data.coverage?.status === "PARTIAL" ? (
-          <p className="text-xs text-ink-muted">{marketplaceCoverageText(state.data.coverage)}</p>
+        {lastVerifiedAt ? (
+          <p className="text-xs text-ink-muted">
+            Son doğrulanmış güncelleme <time dateTime={lastVerifiedAt}>{formatDateTurkish(lastVerifiedAt)}</time>
+          </p>
+        ) : null}
+        {coverage?.status === "PARTIAL" ? (
+          <p className="text-xs text-ink-muted">
+            {marketplaceCoverageText(coverage)}
+            {coverage.unmapped ? ` ${coverage.unmapped} ürün eşleştirilemedi.` : ""}
+          </p>
         ) : null}
         {state.status === "loading" ? <CatalogLoadingState /> : null}
         {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}

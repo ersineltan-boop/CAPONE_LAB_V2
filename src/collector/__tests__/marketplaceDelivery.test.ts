@@ -57,7 +57,7 @@ describe('supplemental marketplace delivery',()=>{
    expect(stored.families.map(f=>f.modelFamilyId)).toEqual(expect.arrayContaining(families.map(f=>f.modelFamilyId)));
   } finally {await rm(root,{recursive:true,force:true});}
  });
- it('keeps the Webster archive intact when an exhaustive scan has unresolved products', async () => {
+ it('refreshes a reconciled Webster subset repeatedly without losing the growing archive or NEW evidence', async () => {
   const root = await mkdtemp(join(tmpdir(), 'webster-subset-'));
   try {
    const origin = 'https://thewebster.com';
@@ -90,19 +90,27 @@ describe('supplemental marketplace delivery',()=>{
     ...row('archive-only', 'Lemaire', 'https://cdn.example.com/archived.jpg'),
     hasNewBadge: true,
    };
-   const previousProducts = [old, archived];
+   const previousProducts = [
+    old,
+    archived,
+    row('archive-espadrille', 'Carel', 'https://cdn.example.com/carel-archived.jpg'),
+    row('archive-mule', 'Loewe', 'https://cdn.example.com/loewe-archived.jpg'),
+    row('archive-slide', 'Chloe', 'https://cdn.example.com/chloe-archived.jpg'),
+   ];
    const previousFamilies = buildModelFamilies(analyzeProducts(previousProducts as never) as never).families;
    const observed = row('known-style', 'Aeyde', 'https://cdn.example.com/known-updated.jpg');
    const newcomer = row('fresh-style', 'Khaite', 'https://cdn.example.com/fresh.jpg');
+   const secondNewcomer = row('second-fresh-style', 'Repetto', 'https://cdn.example.com/second-fresh.jpg');
    const unresolved = { ...row('unresolved-style', 'Toteme', 'https://cdn.example.com/unresolved.jpg'), category: null };
    const candidate: MarketplaceRefreshCandidate = {
     sourceId: 'the-webster',
-    products: [observed, newcomer, unresolved],
+    products: [observed, newcomer, secondNewcomer, unresolved],
     publicationMode: 'the-webster-verified-subset',
     coverageStatus: 'PARTIAL',
-    sourceTotal: 4,
-    rawCollected: 4,
-    eligibleTotal: 4,
+    sourceTotal: 6,
+    rawCollected: 6,
+    eligibleTotal: 5,
+    preExcludedByPolicy: 1,
     unmappedProductUrls: [`${origin}/products/unmapped-style`],
     paginationExhausted: true,
     errors: [],
@@ -117,20 +125,27 @@ describe('supplemental marketplace delivery',()=>{
    const archivePath = join(root, 'data/multibrand/model-families/marketplaces/the-webster.json');
    const before = await readFile(archivePath, 'utf8');
    for (const invalid of [
-    { ...candidate, sourceTotal: 5, eligibleTotal: 5 },
+    { ...candidate, sourceTotal: 7, eligibleTotal: 6 },
+    { ...candidate, eligibleTotal: 6 },
     { ...candidate, errors: ['The Webster listing returned HTTP 403'] },
-    { ...candidate, products: [observed, { ...newcomer, hasNewBadge: true }, unresolved] },
-    { ...candidate, products: [observed, { ...newcomer, sourceCategoryPath: '/collections/new-in' }, unresolved] },
+    { ...candidate, products: [observed, { ...newcomer, hasNewBadge: true }, secondNewcomer, unresolved] },
+    { ...candidate, products: [observed, { ...newcomer, sourceCategoryPath: '/collections/new-in' }, secondNewcomer, unresolved] },
+    { ...candidate, products: [observed, newcomer, { ...secondNewcomer, category: null }, unresolved] },
    ]) {
     const rejected = await publishMarketplaceDelivery(root, invalid, origin);
     expect(rejected.report.accepted).toBe(false);
     expect(await readFile(archivePath, 'utf8')).toBe(before);
    }
 
+   const expectedCoverage = {
+    accepted: true, publicationCoverage: 'PARTIAL', lastGoodPreserved: true,
+    sourceTotal: 6, rawCollected: 6, eligibleTotal: 5, eligibleProducts: 3, excludedByPolicy: 1,
+   };
    const decision = await publishMarketplaceDelivery(root, candidate, origin);
-   expect(decision.report).toMatchObject({ accepted: true, publicationCoverage: 'PARTIAL', lastGoodPreserved: true });
+   expect(decision.report).toMatchObject(expectedCoverage);
    expect(decision.quarantined.map((entry) => entry.product.productUrl)).toContain(unresolved.productUrl);
    const stored = (await loadMarketplaceDeliveries(root))[0];
+   expect(stored.products).toHaveLength(7);
    const byUrl = new Map(stored.products.map((product) => [product.productUrl, product]));
    expect(byUrl.get(archived.productUrl)).toEqual(archived);
    expect(byUrl.get(old.productUrl)?.images).toEqual(expect.arrayContaining([old.imageUrl, observed.imageUrl]));
@@ -148,6 +163,23 @@ describe('supplemental marketplace delivery',()=>{
    const newFamily = stored.families.find((family) => family.variants.some((variant) => variant.url === newcomer.productUrl));
    expect(newFamily).toBeDefined();
    expect(newFamily?.sourceSightings?.some((sighting) => isVerifiedNew(sighting.newness))).toBe(false);
+
+   const nextScanAt = new Date(Date.parse(observedAt) + 1000).toISOString();
+   const repeat = await publishMarketplaceDelivery(root, {
+    ...candidate,
+    products: candidate.products.map((product) => ({ ...product, discoveredAt: nextScanAt })),
+   }, origin);
+   expect(repeat.report).toMatchObject(expectedCoverage);
+   expect(repeat.report.eligibleProducts / repeat.report.eligibleTotal!).toBe(0.6);
+   expect(repeat.report.eligibleProducts / stored.products.length).toBeLessThan(0.6);
+   const repeated = (await loadMarketplaceDeliveries(root))[0];
+   expect(repeated.products.map((product) => product.productUrl).sort()).toEqual([...byUrl.keys()].sort());
+   expect(repeated.families.map((family) => family.modelFamilyId).sort()).toEqual(storedIds.sort());
+   expect(repeated.quarantined.map((entry) => entry.product.productUrl)).toEqual([unresolved.productUrl]);
+   expect(repeated.products.find((product) => product.productUrl === old.productUrl)?.images)
+    .toEqual(expect.arrayContaining([old.imageUrl, observed.imageUrl]));
+   const repeatedFamily = repeated.families.find((family) => family.modelFamilyId === previousObservedFamily?.modelFamilyId);
+   expect(repeatedFamily?.sourceSightings?.find((sighting) => sighting.sourceId === 'the-webster')?.newness).toEqual(previousNewness);
   } finally {
    await rm(root, { recursive: true, force: true });
   }
