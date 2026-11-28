@@ -1,16 +1,15 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-import { loadFamilyById, loadVisualShard, loadVisualSummary } from "../../catalog/catalogClient";
+import { loadFamilyById, loadVisualResults, loadVisualSummary } from "../../catalog/catalogClient";
 import { CatalogErrorState, CatalogLoadingState } from "../../catalog/CatalogStatus";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
-import { filterVisualCards } from "../../visual/buildVisualDelivery";
 import {
   VISUAL_BASIC_CATEGORIES,
   type VisualBasicCategoryId,
 } from "../../visual/basicCategories";
 import type { VisualCard } from "../../visual/types";
 import { PAZAR_OZETI_ENABLED } from "./visualWallSections";
-import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
+import { VISUAL_PAGE_SIZE } from "../../visual/visualPages";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
 import type { ModelFamilyGridItem } from "../../categories/modelFamilyGrid";
@@ -43,28 +42,8 @@ export default function VisualWall() {
   const [segment, setSegment] = useState<SegmentFilter>("all");
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
   const [selectedFamily, setSelectedFamily] = useState<ModelFamily | null>(null);
-  const researchStates = useResearchStateMap();
-  const researchRepo = useResearchStateRepository();
-
   const summary = useCatalogResource(() => loadVisualSummary(), []);
-  const shard = useCatalogResource(() => loadVisualShard(categoryId), [categoryId]);
-
-  const filteredCards = useMemo(() => {
-    if (shard.state.status !== "ready") return [];
-    return filterVisualCards(shard.state.data.cards, searchQuery, { onlyNew, segment });
-  }, [shard.state, searchQuery, onlyNew, segment]);
-
-  const gridItems = useMemo(() => filteredCards.map(cardToGridItem), [filteredCards]);
-  const { visibleItems, hasMore, loadMore } = useProgressiveBatch(
-    gridItems,
-    48,
-    `${categoryId}|${searchQuery}|${onlyNew}|${segment}|${filteredCards.length}`,
-  );
-
-  const verifiedNewIds = useMemo(
-    () => new Set(filteredCards.filter((card) => card.verifiedNew).map((card) => card.modelFamilyId)),
-    [filteredCards],
-  );
+  const query = searchQuery.trim();
 
   const openFamily = async (modelFamilyId: string) => {
     setSelectedFamilyId(modelFamilyId);
@@ -98,6 +77,7 @@ export default function VisualWall() {
               <button
                 key={category.id}
                 type="button"
+                aria-pressed={active}
                 onClick={() => setCategoryId(category.id)}
                 className={`border px-4 py-2.5 text-xs tracking-widest transition-colors ${
                   active
@@ -130,44 +110,9 @@ export default function VisualWall() {
           {UI_COPY.visualOnlyNew}
         </label>
 
-        {summary.state.status === "loading" || shard.state.status === "loading" ? (
-          <CatalogLoadingState />
-        ) : null}
         {summary.state.status === "error" ? <CatalogErrorState onRetry={summary.retry} /> : null}
-        {shard.state.status === "error" ? <CatalogErrorState onRetry={shard.retry} /> : null}
-
-        {shard.state.status === "ready" ? (
-          <>
-            <p className="text-[10px] text-ink-muted">
-              {UI_COPY.modelsCount(filteredCards.length)} · {UI_COPY.visualNewFirst}
-            </p>
-            <ModelFamilyProductGrid
-              items={visibleItems}
-              emptyMessage={UI_COPY.emptyFilters}
-              density="wall"
-              researchStates={researchStates}
-              onSelectItem={(id) => {
-                void openFamily(id);
-              }}
-              onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
-              verifiedNewIds={verifiedNewIds}
-              hideTaxonomy
-              loadMoreSlot={
-                hasMore ? (
-                  <div className="flex justify-center pt-2">
-                    <button
-                      type="button"
-                      onClick={loadMore}
-                      className="border border-line px-4 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink"
-                    >
-                      {UI_COPY.loadMore}
-                    </button>
-                  </div>
-                ) : null
-              }
-            />
-          </>
-        ) : null}
+        <VisualResults key={JSON.stringify([categoryId, query, onlyNew, segment])}
+          categoryId={categoryId} query={query} onlyNew={onlyNew} segment={segment} openFamily={openFamily} />
       </div>
 
       <ModelFamilyDetailDrawer
@@ -180,4 +125,60 @@ export default function VisualWall() {
       />
     </section>
   );
+}
+
+function VisualResults({ categoryId, query, onlyNew, segment, openFamily }: {
+  categoryId: VisualBasicCategoryId; query: string; onlyNew: boolean; segment: SegmentFilter;
+  openFamily: (id: string) => Promise<void>;
+}) {
+  const researchStates = useResearchStateMap();
+  const researchRepo = useResearchStateRepository();
+  const [limit, setLimit] = useState(VISUAL_PAGE_SIZE);
+  const [attempt, setAttempt] = useState(0);
+  const [result, setResult] = useState<Awaited<ReturnType<typeof loadVisualResults>>>();
+  const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+  useEffect(() => {
+    let current = true;
+    const timer = window.setTimeout(() => {
+      void loadVisualResults(categoryId, { query, onlyNew, segment }, limit).then(data => {
+        if (current) { setResult(data); setStatus("ready"); }
+      }, () => {
+        if (current) setStatus("error");
+      });
+    }, query && limit === VISUAL_PAGE_SIZE ? 180 : 0);
+    return () => { current = false; window.clearTimeout(timer); };
+  }, [categoryId, query, onlyNew, segment, limit, attempt]);
+
+  const items = useMemo(() => result?.cards.map(cardToGridItem) ?? [], [result]);
+  const newIds = useMemo(() => new Set(result?.cards.filter(card => card.verifiedNew)
+    .map(card => card.modelFamilyId)), [result]);
+
+  return <>
+    {status === "loading" && !result ? <CatalogLoadingState /> : null}
+    {status === "error" ? <CatalogErrorState onRetry={() => { setStatus("loading"); setAttempt(x => x + 1); }} /> : null}
+    {result ? <>
+      <p className="text-[10px] text-ink-muted">
+        {UI_COPY.modelsCount(result.total)} · {UI_COPY.visualNewFirst}
+      </p>
+      <ModelFamilyProductGrid
+        items={items}
+        emptyMessage={UI_COPY.emptyFilters}
+        density="wall"
+        researchStates={researchStates}
+        onSelectItem={(id) => { void openFamily(id); }}
+        onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
+        verifiedNewIds={newIds}
+        hideTaxonomy
+        loadMoreSlot={items.length < result.total ? (
+          <div className="flex justify-center pt-2">
+            <button type="button" disabled={status !== "ready"} aria-busy={status === "loading"}
+              onClick={() => { setStatus("loading"); setLimit(x => x + VISUAL_PAGE_SIZE); }}
+              className="border border-line px-4 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink">
+              {UI_COPY.loadMore}
+            </button>
+          </div>
+        ) : null}
+      />
+    </> : null}
+  </>;
 }
