@@ -84,6 +84,8 @@ export function auditFootwearLeakage(products: readonly PilotProduct[]): string[
         productName: product.productName,
         productUrl: product.productUrl,
         category: product.category,
+        sourceProductType: product.sourceProductType,
+        collectionPath: product.collectionPath,
       });
       if (stored.decision !== "ACCEPT_FOOTWEAR") leaks.push(product.productUrl);
     }

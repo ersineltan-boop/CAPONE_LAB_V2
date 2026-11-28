@@ -108,9 +108,15 @@ function rawTags(raw: RawProduct): string[] {
 }
 
 function pedroFootwearType(raw: RawProduct): string | undefined {
-  // Flat-shoe product types are broad; use the source's explicit ballerina tag.
-  if (raw.product_type?.toUpperCase().trim() === 'ZAPATOS PLANOS' && rawTags(raw).some(tag => tag.toUpperCase() === 'BAILARINAS')) return 'Ballerinas';
-  if (raw.product_type?.toUpperCase().trim() === 'ZAPATOS PLANOS' && /\bmocas[ií]n\b/i.test((raw.body_html ?? '').replace(/<[^>]+>/g, ' '))) return 'Loafers';
+  if (raw.product_type?.toUpperCase().trim() === 'ZAPATOS PLANOS') {
+    const tags = rawTags(raw);
+    const description = (raw.body_html ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    if (tags.some(tag => /^BAILARINAS(?: MUJER| CALZADO)?$/i.test(tag.trim())) || /^bailarinas?\b/i.test(description)) return 'Ballerinas';
+    if (tags.some(tag => /^MOCASINES(?: MUJER| CALZADO)?$/i.test(tag.trim())) ||
+        /\bmocas[ií]n\b/i.test(description) || /^(?:elegantes\s+)?mocasines\b/i.test(description)) return 'Loafers';
+    const opening = description.split(/[.!?]/, 1)[0] ?? '';
+    if (/^zapatos planos\b.*\bcon cordones\b/i.test(opening) && !/\b(?:sin|no)\b/i.test(opening)) return 'Lace-up footwear';
+  }
   const direct = SPANISH_FOOTWEAR[raw.product_type?.toUpperCase().trim() ?? ''];
   if (direct) return direct;
   // Category tags are retained by the official source even when product_type is empty.
@@ -124,7 +130,7 @@ function pedroFootwearType(raw: RawProduct): string | undefined {
 }
 
 /** A Shopify video-only product can have real preview images only in its PDP schema. */
-export function parseOfficialProductGallery(html: string, productUrl: string): string[] {
+export function parseOfficialProductGallery(html: string, productUrl: string, productGroupId?: number): string[] {
   const images: string[] = [];
   for (const script of html.match(/<script\b[^>]*>[\s\S]*?<\/script>/gi) ?? []) {
     if (attribute(script.slice(0, script.indexOf('>') + 1), 'type') !== 'application/ld+json') continue;
@@ -135,6 +141,8 @@ export function parseOfficialProductGallery(html: string, productUrl: string): s
       if (!node || typeof node !== 'object') continue;
       const product = node as Record<string, unknown>;
       if (!['Product', 'ProductGroup'].includes(String(product['@type'])) || typeof product['@id'] !== 'string') continue;
+      if (productGroupId !== undefined &&
+          (product['@type'] !== 'ProductGroup' || String(product.productGroupID) !== String(productGroupId))) continue;
       try {
         const identity = new URL(product['@id'], productUrl); identity.hash = '';
         if (!sameOfficialWaveScope(productUrl, identity.href)) continue;
@@ -231,6 +239,19 @@ export async function collectOfficialBrandWave(config: PilotSourceConfig, http: 
   }
   const handles = new Set([...rawById.values()].map(raw => raw.handle));
   if (handles.size !== rawById.size) errors.push('WAVE_DUPLICATE_HANDLE');
+  if (config.id === 'pedro-miralles' && storefrontExhausted && jsonExhausted &&
+      handles.size === storefrontHandles.size + 1 && [...storefrontHandles].every(handle => handles.has(handle))) {
+    // A sold-out row can be omitted from storefront cards while it remains in the scoped feed.
+    const unlisted = [...rawById.values()].find(raw => !storefrontHandles.has(raw.handle));
+    if (unlisted?.variants?.length && unlisted.variants.every(variant => variant.available === false) &&
+        /^[a-z0-9-]+$/.test(unlisted.handle)) {
+      const canonical = officialWaveUrl(config.id, `/products/${unlisted.handle}`);
+      const contextual = await fetchScoped(officialWaveUrl(config.id, `${scope.path}/products/${unlisted.handle}`));
+      if (contextual.ok && parseOfficialProductGallery(contextual.text, canonical, unlisted.id).length) {
+        storefrontHandles.add(unlisted.handle);
+      }
+    }
+  }
   const expected = scope.proof === 'count' ? sourceCount : storefrontHandles.size;
   if (expected === null || expected !== handles.size) errors.push(`WAVE_SOURCE_COUNT_MISMATCH:${handles.size}/${expected}`);
   if (scope.proof === 'cards' && (storefrontHandles.size !== handles.size || [...handles].some(handle => !storefrontHandles.has(handle)))) errors.push('WAVE_STOREFRONT_URL_IDENTITY_MISMATCH');

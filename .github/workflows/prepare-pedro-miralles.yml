@@ -1,0 +1,69 @@
+name: Prepare verified Pedro Miralles delivery
+
+on:
+  push:
+    branches: [codex/prepare-pedro-miralles-20261128]
+    paths: [".github/workflows/prepare-pedro-miralles.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Load the verified production catalog
+        run: |
+          node --import tsx scripts/refresh-archive-handoff.ts hydrate
+          node --import tsx --input-type=module <<'NODE'
+          import { writeFile } from 'node:fs/promises';
+          import { cycleCatalogSnapshot } from './src/refresh/cycleCatalogSnapshot.ts';
+          const catalog = await cycleCatalogSnapshot(process.cwd());
+          await writeFile('/tmp/pedro-baseline-ids.json', JSON.stringify(catalog.modelIds));
+          NODE
+      - name: Collect and validate the official Pedro Miralles scope
+        run: node --import tsx scripts/onboard-brands.ts --only pedro-miralles --limit 1 --max-activations 1 --archive-delivery
+      - name: Verify the activation and retain the existing archive
+        run: |
+          node --import tsx --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          import { cycleCatalogSnapshot } from './src/refresh/cycleCatalogSnapshot.ts';
+          import { buildRefreshCyclePlan } from './src/refresh/refreshCycle.ts';
+          const report = JSON.parse(await readFile('data/registry/brand-onboarding-report.json','utf8'));
+          if (report.summary.activated !== 1 || report.attempts[0]?.slug !== 'pedro-miralles' ||
+              report.attempts[0]?.status !== 'ACTIVE') throw new Error('Pedro Miralles did not pass official source and quality gates.');
+          const baseline = JSON.parse(await readFile('/tmp/pedro-baseline-ids.json','utf8'));
+          const catalog = await cycleCatalogSnapshot(process.cwd());
+          const ids = new Set(catalog.modelIds);
+          if (baseline.some(id => !ids.has(id))) throw new Error('The candidate would lose prior model IDs.');
+          if (catalog.sourceNew['pedro-miralles']) throw new Error('First catalog must remain a baseline.');
+          const plan = await buildRefreshCyclePlan(process.cwd());
+          if (!plan.activeBrands.includes('pedro-miralles')) throw new Error('Pedro Miralles is not covered by subsequent refreshes.');
+          console.log(JSON.stringify({ baselineModelCount: baseline.length, modelCount: ids.size, activation: report.attempts[0] }));
+          NODE
+      - name: Stage and deliver a reviewable branch
+        run: |
+          set -euo pipefail
+          node --import tsx scripts/stage-refresh-cycle.ts
+          git rm .github/workflows/prepare-pedro-miralles.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add the verified Pedro Miralles official catalog"
+          git push origin HEAD:refs/heads/codex/pedro-miralles-20261128
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pedro-miralles-source-proof
+          path: data/registry/brand-onboarding-report.json
+          retention-days: 7

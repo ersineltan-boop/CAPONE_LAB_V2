@@ -53,6 +53,8 @@ export function applyFootwearGateToProducts(products: PilotProduct[]): {
         productName: product.productName,
         productUrl: product.productUrl,
         category: product.category,
+        sourceProductType: product.sourceProductType,
+        collectionPath: product.collectionPath,
         sourceCategoryPath: product.sourceCategoryPath,
         sourceCategoryUrl: product.sourceCategoryUrl,
       });

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { OnboardingHttp } from '../../onboarding/http';
-import { evaluateOfficialSourceCoverage } from '../../onboarding/validate';
+import { auditFootwearLeakage, evaluateOfficialSourceCoverage } from '../../onboarding/validate';
 import { collectOfficialBrandWave, officialWaveUrl, parseOfficialProductGallery, parseWaveCount, parseWaveStorefrontCards, sameOfficialWaveScope } from '../officialBrandWave';
 import { evaluateFootwearProduct, evaluateStoredPilotProduct } from '../footwearGate';
 
@@ -48,6 +48,33 @@ describe('Pinned official-source brand wave', () => {
     expect(sameOfficialWaveScope(url, url)).toBe(true);
     for (const changed of [url.replace('/en-eu/', '/en-us/'), url.replace('page=2', 'page=1'), url + '&filter.v.availability=1', url.replace('moonboot.com', 'example.com')]) expect(sameOfficialWaveScope(url, changed)).toBe(false);
   });
+  it.each([true, false])('reconciles a single sold-out Pedro row only with exact product proof (%s)', async (match) => {
+    const origin = 'https://pedromiralles.com';
+    const path = '/collections/ver-todo-calzado';
+    const products = ['listed-boot', 'unlisted-boot'].map((handle, index) => ({
+      id: index + 1, handle, title: 'Boot', product_type: 'BOTAS',
+      images: [{ src: `${origin}/${handle}.jpg` }], variants: [{ available: index === 0 }],
+    }));
+    const requests: string[] = [];
+    const http: OnboardingHttp = { async fetchText(url) {
+      requests.push(url);
+      const parsed = new URL(url);
+      const text = parsed.pathname.endsWith('/products.json')
+        ? JSON.stringify({ products: parsed.searchParams.get('page') === '1' ? products : [] })
+        : parsed.pathname.endsWith('/products/unlisted-boot')
+          ? `<script type="application/ld+json">${JSON.stringify({
+            '@type': 'ProductGroup', '@id': '/products/unlisted-boot#product',
+            productGroupID: match ? '2' : '99', hasVariant: [{ image: `${origin}/unlisted-boot.jpg` }],
+          })}</script>`
+          : '<div class="collection-listing"><product-block><a href="/products/listed-boot"></a></product-block></div>';
+      return { ok: true, status: 200, text, url };
+    } };
+    const result = await collectOfficialBrandWave({
+      ...config, id: 'pedro-miralles', brand: 'PEDRO MIRALLES', baseUrl: origin,
+    }, http);
+    expect(requests).toContain(`${origin}${path}/products/unlisted-boot`);
+    expect(evaluateOfficialSourceCoverage({ ...result, acceptedProductCount: result.products.length }).full).toBe(match);
+  });
   it('selects one country on both the storefront and every JSON page without accepting market changes', async () => {
     const requested: string[] = [];
     const mock = transport();
@@ -90,6 +117,38 @@ describe('Pinned official-source brand wave', () => {
     const html = script('/products/other#product', 'https://pedromiralles.com/other.jpg') + script('/products/29710-03-almada#product', 'https://pedromiralles.com/real-preview.jpg');
     expect(parseOfficialProductGallery(html, url)).toEqual(['https://pedromiralles.com/real-preview.jpg']);
     expect(parseOfficialProductGallery('<img src="https://pedromiralles.com/recommendation.jpg">', url)).toEqual([]);
+  });
+  it('uses Pedro’s distinct loafer, ballerina, and lace-up evidence within flat shoes', async () => {
+    const products = [
+      { handle: '22175-04-cambridge', title: 'CAMBRIDGE', tags: ['MOCASINES CALZADO'] },
+      { handle: '24086-01-gaborone', title: 'GABORONE', body_html: '<p>Elegantes mocasines planos confeccionados en piel.</p>' },
+      { handle: '17581-07-serna', title: 'SERNA', tags: ['BAILARINAS MUJER'] },
+      { handle: 'serna-brown', title: 'SERNA', body_html: '<p>Bailarinas destalonadas con puntera negra.</p>' },
+      { handle: '22303-05-ligos', title: 'LIGOS', tags: ['ZAPATOS PLANOS CALZADO'], body_html: '<p>Zapatos planos de ante de color marrón con cordones.</p>' },
+      { handle: 'generic', title: 'MODEL', tags: ['ZAPATOS PLANOS CALZADO'], body_html: '<p>Zapatos planos de ante sin adornos. Combínalos con accesorios con cordones.</p>' },
+    ].map((product, index) => ({
+      ...product,
+      id: index + 1,
+      product_type: 'ZAPATOS PLANOS',
+      images: [{ src: `https://pedromiralles.com/${product.handle}.jpg` }],
+    }));
+    const cards = products.map(product => `<product-block><a href="/products/${product.handle}"></a></product-block>`).join('');
+    const http: OnboardingHttp = { async fetchText(url) {
+      const text = url.includes('products.json') ? JSON.stringify({ products: url.includes('page=1') ? products : [] }) : `<div class="collection-listing">${cards}</div>`;
+      return { ok: true, status: 200, url, text };
+    } };
+    const result = await collectOfficialBrandWave({ ...config, id: 'pedro-miralles', brand: 'PEDRO MIRALLES', baseUrl: 'https://pedromiralles.com' }, http);
+    expect(result.errors).toEqual(['WAVE_INCOMPLETE_FOOTWEAR:generic']);
+    expect(result.products.map(product => product.category)).toEqual(['LOAFER', 'LOAFER', 'BALLERINA', 'BALLERINA', 'OTHER_FOOTWEAR']);
+    expect(result.products[0]?.sourceProductType).toBe('ZAPATOS PLANOS (Loafers)');
+    expect(result.products[2]?.sourceProductTags).toEqual(['BAILARINAS MUJER']);
+    const laceUp = result.products[4]!;
+    expect(laceUp.productName).toBe('LIGOS');
+    expect(laceUp.sourceProductType).toBe('ZAPATOS PLANOS (Lace-up footwear)');
+    expect(auditFootwearLeakage(result.products)).toEqual([]);
+    expect(evaluateStoredPilotProduct(laceUp).decision).toBe('ACCEPT_FOOTWEAR');
+    expect(evaluateStoredPilotProduct({ ...laceUp, productUrl: 'https://other.example/products/22303-05-ligos' }).decision).toBe('EXCLUDE_UNCERTAIN_PRODUCT_TYPE');
+    expect(evaluateStoredPilotProduct({ ...laceUp, collectionPath: '/collections/all' }).decision).toBe('EXCLUDE_UNCERTAIN_PRODUCT_TYPE');
   });
   it('keeps Pedro partial when an official product has no proven gallery', async () => {
     const products = [

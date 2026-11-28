@@ -608,6 +608,8 @@ export function evaluateFootwearProduct(input: FootwearGateInput): FootwearGateR
 
 export function evaluateStoredPilotProduct(input: {
   sourceDescription?: string;
+  sourceProductType?: string;
+  collectionPath?: string | null;
   sourceCategoryPath?: string | null;
   sourceCategoryUrl?: string | null;
   productName: string;
@@ -636,6 +638,20 @@ export function evaluateStoredPilotProduct(input: {
     return {
       ...nonFootwearGate,
       validationMethod: "STORED_PRODUCT_REVIEW",
+    };
+  }
+
+  // Pedro's collector verifies this translation against the product's own
+  // description. Laces alone do not establish Oxford or Derby construction.
+  if (input.category === "OTHER_FOOTWEAR" &&
+      input.collectionPath === "/collections/ver-todo-calzado" &&
+      /^https:\/\/pedromiralles\.com\/products\/[a-z0-9-]+$/.test(input.productUrl) &&
+      /^(?:Lace-up footwear|ZAPATOS PLANOS\s+\(Lace-up footwear\))$/i.test(input.sourceProductType?.trim() ?? "")) {
+    return {
+      decision: "ACCEPT_FOOTWEAR",
+      category: input.category,
+      validationMethod: "STORED_PRODUCT_REVIEW",
+      matchedSignals: ["official-pedro-lace-up-footwear"],
     };
   }
 
