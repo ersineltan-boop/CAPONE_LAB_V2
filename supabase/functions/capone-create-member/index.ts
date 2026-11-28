@@ -13,7 +13,7 @@ type ErrorCode =
   | "request_failed";
 
 function configuredAppOrigin(): string | null {
-  const value = Deno.env.get("CAPONE_TEAM_APP_ORIGIN");
+  const value = Deno.env.get("CAPONE_TEAM_APP_ORIGIN") ?? "https://capone-lab-v2.vercel.app";
   if (!value) return null;
   try {
     const url = new URL(value);
