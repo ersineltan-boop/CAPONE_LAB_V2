@@ -1,4 +1,5 @@
 import { CATALOG_NAV_ITEMS, SECONDARY_NAV_ITEMS, type AppView } from "../navigation/primaryNav";
+import TeamAccountMenu from "../team/TeamAccountMenu";
 
 export type { AppView };
 
@@ -27,38 +28,41 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
             </p>
           </button>
 
-          <nav aria-label="Ana menü" className="flex min-w-0 flex-col sm:shrink-0">
-            <div className="flex flex-wrap items-center gap-x-5 sm:gap-x-6">
-              {CATALOG_NAV_ITEMS.map((item) => (
-                <button
-                  key={item.id}
-                  type="button"
-                  aria-current={currentView === item.id ? "page" : undefined}
-                  onClick={() => onNavigate(item.id)}
-                  className={`${NAV_LINK_CLASS} text-[13px] font-medium ${
-                    currentView === item.id ? "text-ink underline" : "text-ink-muted"
-                  }`}
-                >
-                  {item.label.toLocaleLowerCase(item.id === "visual-wall" ? "en" : "tr")}
-                </button>
-              ))}
-            </div>
-            <div className="flex flex-wrap items-center gap-x-4">
-              {SECONDARY_NAV_ITEMS.map((item) => (
-                <button
-                  key={item.id}
-                  type="button"
-                  aria-current={currentView === item.id ? "page" : undefined}
-                  onClick={() => onNavigate(item.id)}
-                  className={`${NAV_LINK_CLASS} ${
-                    item.id === "saved" ? "text-xs font-medium" : "text-[11px]"
-                  } ${currentView === item.id ? "text-ink underline" : "text-ink-muted"}`}
-                >
-                  {item.label.toLocaleLowerCase("tr")}
-                </button>
-              ))}
-            </div>
-          </nav>
+          <div className="flex min-w-0 flex-wrap items-start gap-x-6 gap-y-1 sm:flex-nowrap sm:items-center">
+            <nav aria-label="Ana menü" className="flex min-w-0 flex-col sm:shrink-0">
+              <div className="flex flex-wrap items-center gap-x-5 sm:gap-x-6">
+                {CATALOG_NAV_ITEMS.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    aria-current={currentView === item.id ? "page" : undefined}
+                    onClick={() => onNavigate(item.id)}
+                    className={`${NAV_LINK_CLASS} text-[13px] font-medium ${
+                      currentView === item.id ? "text-ink underline" : "text-ink-muted"
+                    }`}
+                  >
+                    {item.label.toLocaleLowerCase(item.id === "visual-wall" ? "en" : "tr")}
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-wrap items-center gap-x-4">
+                {SECONDARY_NAV_ITEMS.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    aria-current={currentView === item.id ? "page" : undefined}
+                    onClick={() => onNavigate(item.id)}
+                    className={`${NAV_LINK_CLASS} ${
+                      item.id === "saved" ? "text-xs font-medium" : "text-[11px]"
+                    } ${currentView === item.id ? "text-ink underline" : "text-ink-muted"}`}
+                  >
+                    {item.label.toLocaleLowerCase("tr")}
+                  </button>
+                ))}
+              </div>
+            </nav>
+            <TeamAccountMenu />
+          </div>
         </div>
       </div>
     </header>

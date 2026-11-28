@@ -32,6 +32,7 @@ export default defineConfig({
       "src/newArrivals/**/*.test.ts",
       "src/source/**/*.test.ts",
       "src/research/**/*.test.ts",
+      "src/team/**/*.test.ts",
       "src/categories/**/*.test.ts",
       "src/navigation/**/*.test.ts",
       "src/images/**/*.test.ts",

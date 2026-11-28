@@ -82,6 +82,7 @@
     "postinstall": "node scripts/hydrate-existing-brand-delivery.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.119.2",
     "dotenv": "^17.4.2",
     "openai": "^7.5.0",
     "react": "^19.1.0",

@@ -19,6 +19,8 @@ import {
 import { formatDateTurkishShort } from "../../presentation/turkishDates";
 import { getResearchStateRepository } from "../../research/researchStateRepository";
 import { useResearchState } from "../../research/useResearchState";
+import { TeamProductNotes } from "../../team/TeamProductNotes";
+import { useTeamNotes } from "../../team/useTeamNotes";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
 import { useDetailDialog } from "./useDetailDialog";
 import ProductSaveControl from "./ProductSaveControl";
@@ -60,6 +62,7 @@ export default function ModelFamilyDetailDrawer({
   const familyId = family?.modelFamilyId ?? "";
   const { dialogRef, closeButtonRef } = useDetailDialog(open && family !== null, onClose);
   const { state, setReviewed, setSaved } = useResearchState(familyId);
+  const teamNotes = useTeamNotes(open && familyId ? [familyId] : []);
   const [composingSaveNote, setComposingSaveNote] = useState(false);
   const [noteState, setNoteState] = useState<NoteDraftState>(() => idleNoteDraft(familyId));
   const noteStateRef = useRef(noteState);
@@ -266,7 +269,7 @@ export default function ModelFamilyDetailDrawer({
               {state.reviewedAt ? UI_COPY.reviewed : UI_COPY.markReviewed}
             </button>
             <ProductSaveControl
-              key={familyId}
+              modelFamilyId={familyId}
               saved={Boolean(state.savedAt)}
               note={getResearchStateRepository().get(familyId).note}
               onSave={setSaved}
@@ -305,6 +308,16 @@ export default function ModelFamilyDetailDrawer({
                 placeholder={UI_COPY.addNote}
               />
             </div>
+          )}
+
+          {teamNotes.enabled && (
+            <TeamProductNotes
+              key={familyId}
+              notes={teamNotes.notesByModel.get(familyId)}
+              loading={teamNotes.loading}
+              error={teamNotes.error}
+              onAddNote={(body) => teamNotes.addNote(familyId, body)}
+            />
           )}
 
           {productUrl && (

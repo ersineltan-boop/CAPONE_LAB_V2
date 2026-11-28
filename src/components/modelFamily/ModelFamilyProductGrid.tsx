@@ -1,4 +1,4 @@
-import { useId, useMemo, useState } from "react";
+import { useId, useMemo, useState, type ReactNode } from "react";
 
 import type { ModelFamilyGridItem } from "../../categories/modelFamilyGrid";
 import { galleryForSelectedColor } from "../../images/galleryImages";
@@ -20,6 +20,7 @@ interface ModelFamilyProductGridProps {
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
   onToggleSaved?: (modelFamilyId: string, saved: boolean, note?: string) => void;
   onSaveNote?: (modelFamilyId: string, note: string) => void;
+  renderTeamNotes?: (modelFamilyId: string) => ReactNode;
   verifiedNewIds?: Set<string>;
   loadMoreSlot?: React.ReactNode;
   hideBrand?: boolean;
@@ -164,6 +165,7 @@ function ProductCard({
   onToggleReviewed,
   onToggleSaved,
   onSaveNote,
+  teamNotes,
   isVerifiedNew,
   hideBrand,
   hideTaxonomy,
@@ -176,6 +178,7 @@ function ProductCard({
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
   onToggleSaved?: (modelFamilyId: string, saved: boolean, note?: string) => void;
   onSaveNote?: (modelFamilyId: string, note: string) => void;
+  teamNotes?: ReactNode;
   isVerifiedNew: boolean;
   hideBrand: boolean;
   hideTaxonomy: boolean;
@@ -296,6 +299,7 @@ function ProductCard({
           )}
           {onToggleSaved && (
             <ProductSaveControl
+              modelFamilyId={item.modelFamilyId}
               saved={saved}
               note={researchState?.note ?? null}
               onSave={(nextSaved, note) => onToggleSaved(item.modelFamilyId, nextSaved, note)}
@@ -326,6 +330,7 @@ function ProductCard({
             onSave={(note) => onSaveNote(item.modelFamilyId, note)}
           />
         ) : null}
+        {teamNotes}
       </div>
     </article>
   );
@@ -340,6 +345,7 @@ export default function ModelFamilyProductGrid({
   onToggleReviewed,
   onToggleSaved,
   onSaveNote,
+  renderTeamNotes,
   verifiedNewIds,
   loadMoreSlot,
   hideBrand = false,
@@ -365,6 +371,7 @@ export default function ModelFamilyProductGrid({
             onToggleReviewed={onToggleReviewed}
             onToggleSaved={onToggleSaved}
             onSaveNote={onSaveNote}
+            teamNotes={renderTeamNotes?.(item.modelFamilyId)}
             isVerifiedNew={verifiedNewIds?.has(item.modelFamilyId) ?? false}
             hideBrand={hideBrand}
             hideTaxonomy={hideTaxonomy}

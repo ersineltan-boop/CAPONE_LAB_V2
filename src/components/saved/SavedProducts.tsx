@@ -28,6 +28,8 @@ import type { ModelFamily } from "../../modelFamily/types";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
 import ModelFamilyProductGrid from "../modelFamily/ModelFamilyProductGrid";
 import { modelFamilyToSimpleGridItem } from "../source/SourceProductBrowse";
+import { TeamProductNotes } from "../../team/TeamProductNotes";
+import { useTeamNotes } from "../../team/useTeamNotes";
 
 interface SavedProductsProps {
   onSelectBrand?: (brandId: string, brandName: string) => void;
@@ -167,6 +169,10 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
     [savedFamilies, sourceFilter],
   );
   const { visibleItems, hasMore, loadMore } = useProgressiveBatch(gridItems);
+  const teamNotes = useTeamNotes(visibleItems.map((item) => item.modelFamilyId));
+  const productSearchLabel = teamNotes.enabled
+    ? "Marka, model veya kişisel not ara"
+    : "Marka, model veya not ara";
 
   const selectedFamily = selectedFamilyId
     ? familyById.get(selectedFamilyId) ?? null
@@ -239,8 +245,8 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                   type="search"
                   value={searchQuery}
                   onChange={(event) => setSearchQuery(event.target.value)}
-                  placeholder="Marka, model veya not ara"
-                  aria-label="Marka, model veya not ara"
+                  placeholder={productSearchLabel}
+                  aria-label={productSearchLabel}
                   className={`${FIELD_CLASS} col-span-2 lg:col-span-1`}
                 />
                 <select
@@ -276,7 +282,7 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                     checked={withNotes}
                     onChange={(event) => setWithNotes(event.target.checked)}
                   />
-                  Notu olanlar
+                  {teamNotes.enabled ? "Kişisel notu olanlar" : "Notu olanlar"}
                 </label>
               </div>
               <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
@@ -301,6 +307,15 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
               onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
               onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
               onSaveNote={(id, note) => researchRepo.setNote(id, note)}
+              renderTeamNotes={teamNotes.enabled ? (id) => (
+                <TeamProductNotes
+                  key={id}
+                  notes={teamNotes.notesByModel.get(id)}
+                  loading={teamNotes.loading}
+                  error={teamNotes.error}
+                  onAddNote={(body) => teamNotes.addNote(id, body)}
+                />
+              ) : undefined}
               loadMoreSlot={
                 hasMore ? (
                   <div className="flex justify-center pt-2">
