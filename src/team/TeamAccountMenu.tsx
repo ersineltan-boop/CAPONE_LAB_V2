@@ -14,12 +14,12 @@ interface TeamAccountMenuProps {
 }
 
 export default function TeamAccountMenu({ className, triggerClassName }: TeamAccountMenuProps) {
-  const { configured, member, signedIn } = useTeamAccount();
+  const { member } = useTeamAccount();
   const panelId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const [open, setOpen] = useState(false);
 
-  if (!configured) return null;
+  if (!member) return null;
 
   function close() {
     setOpen(false);
@@ -41,14 +41,14 @@ export default function TeamAccountMenu({ className, triggerClassName }: TeamAcc
         onClick={() => setOpen(!open)}
         className={`${triggerClassName} ${open ? "text-ink underline" : "text-ink-muted"}`}
       >
-        {signedIn ? "Hesabım" : "Üye girişi"}
+        Hesabım
       </button>
       {open && (
         <div
           id={panelId}
           className="absolute right-0 top-full z-10 mt-1 max-h-[65dvh] w-72 max-w-[calc(100vw-2rem)] space-y-3 overflow-y-auto border border-line bg-cream p-4 text-sm shadow-md"
         >
-          <AccountPanel key={member?.user_id ?? (signedIn ? "signed-in" : "signed-out")} onClose={close} />
+          <AccountPanel key={member.user_id} onClose={close} />
         </div>
       )}
     </div>
@@ -73,45 +73,6 @@ function AccountPanel({ onClose }: { onClose: () => void }) {
     } finally {
       setPending(false);
     }
-  }
-
-  if (account.loading) return <p role="status">Hesap kontrol ediliyor…</p>;
-
-  if (!account.signedIn) {
-    function submit(event: FormEvent<HTMLFormElement>) {
-      event.preventDefault();
-      const form = event.currentTarget;
-      const fields = new FormData(form);
-      const username = String(fields.get("username") ?? "");
-      const password = String(fields.get("password") ?? "");
-      (form.elements.namedItem("password") as HTMLInputElement).value = "";
-      void run(() => account.signIn(username, password), "Giriş yapılamadı.");
-    }
-
-    return (
-      <form className="space-y-3" onSubmit={submit}>
-        <label className="block space-y-1 text-xs font-medium">
-          <span>Kullanıcı adı</span>
-          <input
-            name="username"
-            required
-            autoComplete="username"
-            autoCapitalize="none"
-            spellCheck={false}
-            maxLength={32}
-            className={fieldClass}
-          />
-        </label>
-        <label className="block space-y-1 text-xs font-medium">
-          <span>Şifre</span>
-          <input name="password" type="password" autoComplete="current-password" className={fieldClass} required />
-        </label>
-        <button type="submit" disabled={pending} className={`${submitClass} w-full`}>
-          {pending ? "Giriş yapılıyor…" : "Giriş yap"}
-        </button>
-        {error && <p role="alert" className="text-xs">{error}</p>}
-      </form>
-    );
   }
 
   if (view === "member" && account.member?.role === "owner") {
