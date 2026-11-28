@@ -7,6 +7,7 @@ import type { ModelFamilyResearchState } from "../../research/types";
 import { isReviewed, isSaved } from "../../research/researchStateRepository";
 import VisualWallImageCarousel from "../visualWall/VisualWallImageCarousel";
 import type { ColorVariantView } from "../../modelFamily/colorVariants";
+import ProductSaveControl from "./ProductSaveControl";
 
 export type GridDensity = "visual" | "compact" | "wall";
 
@@ -17,7 +18,7 @@ interface ModelFamilyProductGridProps {
   density?: GridDensity;
   researchStates?: Map<string, ModelFamilyResearchState>;
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
-  onToggleSaved?: (modelFamilyId: string, saved: boolean) => void;
+  onToggleSaved?: (modelFamilyId: string, saved: boolean, note?: string) => void;
   onSaveNote?: (modelFamilyId: string, note: string) => void;
   verifiedNewIds?: Set<string>;
   loadMoreSlot?: React.ReactNode;
@@ -172,7 +173,7 @@ function ProductCard({
   onSelectItem?: (modelFamilyId: string) => void;
   researchState?: ModelFamilyResearchState;
   onToggleReviewed?: (modelFamilyId: string, reviewed: boolean) => void;
-  onToggleSaved?: (modelFamilyId: string, saved: boolean) => void;
+  onToggleSaved?: (modelFamilyId: string, saved: boolean, note?: string) => void;
   onSaveNote?: (modelFamilyId: string, note: string) => void;
   isVerifiedNew: boolean;
   hideBrand: boolean;
@@ -288,17 +289,16 @@ function ProductCard({
             </button>
           )}
           {onToggleSaved && (
-            <button
-              type="button"
-              onClick={() => onToggleSaved(item.modelFamilyId, !saved)}
+            <ProductSaveControl
+              saved={saved}
+              note={researchState?.note ?? null}
+              onSave={(nextSaved, note) => onToggleSaved(item.modelFamilyId, nextSaved, note)}
               className={`touch-target border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
                 saved
                   ? "border-ink bg-ink text-cream"
                   : "border-line text-ink-muted hover:border-ink"
               }`}
-            >
-              {saved ? UI_COPY.saved : UI_COPY.save}
-            </button>
+            />
           )}
         </div>
         {onSaveNote ? (

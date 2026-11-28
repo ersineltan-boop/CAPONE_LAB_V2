@@ -315,7 +315,7 @@ export default function CategoryDetail({
                 verifiedNewIds={verifiedNewIds}
                 onSelectItem={setSelectedFamilyId}
                 onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
-                onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
+                onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
                 loadMoreSlot={
                   hasMore ? (
                     <div className="flex justify-center pt-2">

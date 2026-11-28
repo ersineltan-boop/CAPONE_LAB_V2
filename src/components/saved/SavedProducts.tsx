@@ -259,7 +259,7 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                 researchStates={researchStates}
                 onSelectItem={setSelectedFamilyId}
                 onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
-                onToggleSaved={(id, saved) => researchRepo.setSaved(id, saved)}
+                onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
                 onSaveNote={(id, note) => researchRepo.setNote(id, note)}
                 loadMoreSlot={
                   hasMore ? (

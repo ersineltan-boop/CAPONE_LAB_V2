@@ -8,7 +8,7 @@ export interface ResearchStateRepository {
   get(modelFamilyId: string): ModelFamilyResearchState;
   getAll(): Map<string, ModelFamilyResearchState>;
   setReviewed(modelFamilyId: string, reviewed: boolean): ModelFamilyResearchState;
-  setSaved(modelFamilyId: string, saved: boolean): ModelFamilyResearchState;
+  setSaved(modelFamilyId: string, saved: boolean, note?: string): ModelFamilyResearchState;
   setNote(modelFamilyId: string, note: string): ModelFamilyResearchState;
   mergeImported(states: ModelFamilyResearchState[]): number;
   subscribe(listener: () => void): () => void;
@@ -78,11 +78,12 @@ export class LocalResearchStateRepository implements ResearchStateRepository {
     return next;
   }
 
-  setSaved(modelFamilyId: string, saved: boolean): ModelFamilyResearchState {
+  setSaved(modelFamilyId: string, saved: boolean, note?: string): ModelFamilyResearchState {
     const current = this.get(modelFamilyId);
     const next: ModelFamilyResearchState = {
       ...current,
       savedAt: saved ? new Date().toISOString() : null,
+      note: (saved ? note?.trim() : undefined) || current.note,
     };
     this.store.states[modelFamilyId] = next;
     this.persist();
