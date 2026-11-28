@@ -1,4 +1,5 @@
 import { CATALOG_NAV_ITEMS, SECONDARY_NAV_ITEMS, type AppView } from "../navigation/primaryNav";
+import TeamAccountMenu from "../team/TeamAccountMenu";
 
 export type { AppView };
 
@@ -44,6 +45,7 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
               ))}
             </div>
             <div className="flex flex-wrap items-center gap-1 sm:justify-end">
+              <TeamAccountMenu />
               {SECONDARY_NAV_ITEMS.map((item) => (
                 <button
                   key={item.id}

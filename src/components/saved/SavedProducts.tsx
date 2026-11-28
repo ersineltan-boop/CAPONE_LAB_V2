@@ -27,6 +27,8 @@ import type { ModelFamily } from "../../modelFamily/types";
 import ModelFamilyDetailDrawer from "../modelFamily/ModelFamilyDetailDrawer";
 import ModelFamilyProductGrid from "../modelFamily/ModelFamilyProductGrid";
 import { modelFamilyToSimpleGridItem } from "../source/SourceProductBrowse";
+import { TeamProductNotes } from "../../team/TeamProductNotes";
+import { useTeamNotes } from "../../team/useTeamNotes";
 
 interface SavedProductsProps {
   onSelectBrand?: (brandId: string, brandName: string) => void;
@@ -157,6 +159,7 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
     [savedFamilies, sourceFilter],
   );
   const { visibleItems, hasMore, loadMore } = useProgressiveBatch(gridItems);
+  const teamNotes = useTeamNotes(visibleItems.map((item) => item.modelFamilyId));
 
   const selectedFamily = selectedFamilyId
     ? familyById.get(selectedFamilyId) ?? null
@@ -261,6 +264,15 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                 onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
                 onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
                 onSaveNote={(id, note) => researchRepo.setNote(id, note)}
+                renderTeamNotes={teamNotes.enabled ? (id) => (
+                  <TeamProductNotes
+                    key={id}
+                    notes={teamNotes.notesByModel.get(id)}
+                    loading={teamNotes.loading}
+                    error={teamNotes.error}
+                    onAddNote={(body) => teamNotes.addNote(id, body)}
+                  />
+                ) : undefined}
                 loadMoreSlot={
                   hasMore ? (
                     <div className="flex justify-center pt-2">
