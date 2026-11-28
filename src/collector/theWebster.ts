@@ -80,6 +80,7 @@ export interface TheWebsterCoverage {
 export interface TheWebsterCollectResult {
   products: PilotProduct[];
   coverage: TheWebsterCoverage;
+  unmappedProducts: Array<{ productUrl: string; title: string; vendor: string; sourceType: string }>;
 }
 
 function normalizeBrand(value: string | undefined): string {
@@ -230,6 +231,7 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
   const excludedBrands = new Set<string>();
   let excludedByPolicy = 0;
   const mapped: PilotProduct[] = [];
+  const unmappedProducts: TheWebsterCollectResult["unmappedProducts"] = [];
   for (const raw of rawByHandle.values()) {
     if (isTheWebsterExcludedBrand(raw.vendor)) {
       excludedByPolicy += 1;
@@ -238,6 +240,12 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
     }
     const product = theWebsterRawProductToPilot(raw, collectedAt, refresh);
     if (product) mapped.push(product);
+    else unmappedProducts.push({
+      productUrl: `${THE_WEBSTER_BASE_URL}/products/${raw.handle}`,
+      title: raw.title,
+      vendor: normalizeBrand(raw.vendor),
+      sourceType: raw.product_type ?? "",
+    });
   }
 
   const products = mergeProductCatalog([], mapped);
@@ -295,6 +303,7 @@ export async function collectTheWebster(options: { refresh?: boolean } = {}): Pr
 
   return {
     products,
+    unmappedProducts,
     coverage: {
       source: THE_WEBSTER_ID,
       sourceUrl: THE_WEBSTER_WOMEN_SHOES_URL,
