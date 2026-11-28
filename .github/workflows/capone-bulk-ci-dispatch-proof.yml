@@ -1,0 +1,33 @@
+name: Verify explicit catalog CI dispatch
+on:
+  push:
+    branches: [pilot/bulk-ci-dispatch-proof]
+    paths: [.github/workflows/capone-bulk-ci-dispatch-proof.yml]
+permissions:
+  actions: write
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Start the existing test and build workflow for this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          dispatch="$(gh api --method POST -H 'X-GitHub-Api-Version: 2026-03-10' "repos/$GITHUB_REPOSITORY/actions/workflows/capone-ci.yml/dispatches" -f "ref=$GITHUB_REF_NAME")"
+          run_id="$(jq -er '.workflow_run_id | select(type == "number" and . > 0 and . == floor)' <<< "$dispatch")"
+          echo "CI run: https://github.com/$GITHUB_REPOSITORY/actions/runs/$run_id"
+          gh run watch "$run_id" --repo "$GITHUB_REPOSITORY" --exit-status --interval 10
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run_id" | jq -e --arg sha "$GITHUB_SHA" --arg branch "$GITHUB_REF_NAME" --arg repo "$GITHUB_REPOSITORY" '
+            .status == "completed" and .conclusion == "success" and .head_sha == $sha and
+            .head_branch == $branch and .repository.full_name == $repo and .head_repository.full_name == $repo and
+            .event == "workflow_dispatch" and .path == ".github/workflows/capone-ci.yml" and .run_attempt == 1
+          '
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run_id/attempts/1/jobs" | jq -e --arg sha "$GITHUB_SHA" --arg branch "$GITHUB_REF_NAME" --arg id "$run_id" '
+            [.jobs[] | select(.name == "Full tests and production build" and .head_sha == $sha)] |
+            length == 1 and all(.[]; .status == "completed" and .conclusion == "success" and .head_branch == $branch and
+            (.run_id | tostring) == $id and .run_attempt == 1 and .workflow_name == "CAPONE CI" and
+            ([.steps[] | select((.name == "Checkout" or .name == "Full test suite" or .name == "Production build") and .conclusion == "success") | .name] | unique | length) == 3)
+          '
