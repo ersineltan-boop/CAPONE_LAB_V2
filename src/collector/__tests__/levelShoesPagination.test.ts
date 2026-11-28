@@ -8,6 +8,7 @@ vi.mock('../http', () => ({sleep: async () => {}, fetchJsonPost: async () => ({o
   fetchText: async (url: string) => {
     const api = url.startsWith('https://api.levelshoes.com/');
     if (api && fixture.mode === 'blocked') return {ok: false,status: 403,text: 'Access denied',url};
+    if (api && fixture.mode === 'challenge') return {ok: true,status: 200,text: '<title>Cloudflare challenge</title>',url};
     const long = fixture.mode === 'long';
     const page = api ? Number(new URL(url).searchParams.get('page')) : 0;
     const item = product(long ? page + 1 : api ? 2 : 1);
@@ -15,7 +16,11 @@ vi.mock('../http', () => ({sleep: async () => {}, fetchJsonPost: async () => ({o
       item.action.url = item.action.url.replace('-women', '');
       (item.analytics as Record<string, string>).gender = 'Unisex';
     }
-    const state = {products: [item], pagination: {page: long ? page : api && fixture.mode !== 'repeated' ? 1 : 0,size: 1,totalCount: long ? 81 : 2}};
+    const state = {products: api && fixture.mode === 'empty' ? [] : [item], pagination: {
+      page: long ? page : api && fixture.mode !== 'repeated' ? 1 : 0,
+      size: 1,
+      totalCount: long ? 81 : api && fixture.mode === 'drift' ? 3 : 2,
+    }};
     return {ok: true,status: 200,url,text: api ? JSON.stringify(state) : `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({props:{pageProps:{__APOLLO_STATE__:{ROOT_QUERY:{'_productList:{}':state}}}}})}</script>`};
   }}));
 describe('current Level Shoes storefront pagination', () => {
@@ -54,5 +59,16 @@ describe('current Level Shoes storefront pagination', () => {
     expect(result.coverageStatus).toBe('PARTIAL');
     expect(result.paginationExhausted).toBe(false);
     expect(result.errors[0]).toContain(mode === 'blocked' ? 'HTTP 403' : 'wrong page');
+  });
+  it.each([
+    ['drift', 'total 2 → 3'],
+    ['empty', 'expected 1 products, received 0'],
+    ['challenge', 'access blocked by a challenge'],
+  ])('reports the cause of an incomplete %s response', async (mode, reason) => {
+    fixture.mode = mode;
+    const result = await collectLevelShoes();
+    expect(result.coverageStatus).toBe('PARTIAL');
+    expect(result.pagesTraversed).toBe(1);
+    expect(result.errors[0]).toContain(reason);
   });
 });

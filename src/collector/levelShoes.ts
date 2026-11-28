@@ -570,7 +570,7 @@ export async function collectLevelShoes(options?: {
     return emptyFailed(root.error ?? `HTTP ${root.status}`, method, "Women's shoes root was not accessible.");
   }
   if (isAntiBotHtml(root.text, root.status)) {
-    return emptyFailed("Anti-bot page at women's shoes root", method, "Source blocked the listing with an anti-bot challenge.", 1);
+    return emptyFailed("Level Shoes access blocked by a challenge at the women's shoes root", method, "Source blocked the listing with an anti-bot challenge.", 1);
   }
 
   const nextData = parseNextDataJson(root.text);
@@ -665,15 +665,30 @@ async function collectLevelShoesStorefrontPages(
       // Same documented request used by the source's shipped Web product-list component.
       const url = `https://api.levelshoes.com/catalog/ae/en/products/urlPath/v1?urlPath=women/shoes.html&groupID=null&museTier=0&page=${page}&count=${size}&genderType=women`;
       const response = await fetchText(url, {delayMs: 800, headers: {"x-level-platform": "Web"}});
-      if (!response.ok) { errors.push(`Level Shoes storefront pagination API HTTP ${response.status}`); break; }
-      try {state = JSON.parse(response.text);} catch {errors.push("Level Shoes storefront pagination schema missing"); break;}
+      if (!response.ok) { errors.push(`Level Shoes page ${page + 1}: storefront pagination API HTTP ${response.status}`); break; }
+      if (response.text.trimStart().startsWith("<") && isAntiBotHtml(response.text, response.status)) {
+        errors.push(`Level Shoes access blocked by a challenge on page ${page + 1}`);
+        break;
+      }
+      try {state = JSON.parse(response.text);} catch {errors.push(`Level Shoes page ${page + 1}: invalid storefront JSON`); break;}
     }
-    if (state.pagination?.page !== page || state.pagination.totalCount !== total || state.pagination.size !== size || !Array.isArray(state.products)) {
-      errors.push(`Level Shoes pagination changed or returned wrong page ${page}`); break;
+    const metadata = state?.pagination;
+    if (!metadata || !Number.isInteger(metadata.page) || !Number.isInteger(metadata.totalCount) ||
+        !Number.isInteger(metadata.size) || !Array.isArray(state.products)) {
+      errors.push(`Level Shoes page ${page + 1}: storefront pagination metadata or product list missing`);
+      break;
+    }
+    if (metadata.page !== page) {
+      errors.push(`Level Shoes storefront returned wrong page: requested index ${page}, received ${metadata.page}`);
+      break;
+    }
+    if (metadata.totalCount !== total || metadata.size !== size) {
+      errors.push(`Level Shoes page ${page + 1}: storefront snapshot changed (total ${total} → ${metadata.totalCount}, page size ${size} → ${metadata.size})`);
+      break;
     }
     const expectedCount = Math.min(size, total - page * size);
     if (state.products.length !== expectedCount) {
-      errors.push(`Level Shoes page ${page} cardinality mismatch`); break;
+      errors.push(`Level Shoes page ${page + 1}: expected ${expectedCount} products, received ${state.products.length}`); break;
     }
     let added = 0;
     for (const item of state.products) {

@@ -89,8 +89,19 @@ export async function collect24S(http = fetchText, maxPages = 100) {
   const rejected: string[] = [];
   const excluded = new Set<string>();
   let total = 0, pages = 1, traversed = 0;
+  let accessStopped = false;
   for (let page = 0; page < pages && page < maxPages; page++) {
     const response = await http(page === 0 ? SOURCE : `${SOURCE}?page=${page + 1}`);
+    if ([401, 403, 429].includes(response.status)) {
+      accessStopped = true;
+      errors.push(`page ${page + 1}: HTTP ${response.status}`);
+      break;
+    }
+    if (!response.text.includes('__NEXT_DATA__') && ACCESS_CHALLENGE.test(response.text)) {
+      accessStopped = true;
+      errors.push(`page ${page + 1}: 24S access blocked by a challenge (HTTP ${response.status})`);
+      break;
+    }
     if (!response.ok) { errors.push(`page ${page + 1}: HTTP ${response.status}`); break; }
     try {
       const parsed = parse24SPage(response.text);
@@ -106,11 +117,11 @@ export async function collect24S(http = fetchText, maxPages = 100) {
     } catch (error) { errors.push(String(error)); break; }
   }
   const unresolved=[...products.values()].filter(product=>product.category==='OTHER_FOOTWEAR');
-  if(unresolved.length>DETAIL_REQUEST_LIMIT)errors.push(`unresolved detail review exceeds request limit: ${unresolved.length}/${DETAIL_REQUEST_LIMIT}`);
-  else for(const product of unresolved){
+  if(!accessStopped && unresolved.length>DETAIL_REQUEST_LIMIT)errors.push(`unresolved detail review exceeds request limit: ${unresolved.length}/${DETAIL_REQUEST_LIMIT}`);
+  else for(const product of accessStopped ? [] : unresolved){
     const response=await http(product.productUrl);
     if([401,403,429].includes(response.status)||ACCESS_CHALLENGE.test(response.text)){
-      errors.push(`detail access stopped at HTTP ${response.status}; no retry/bypass`);break;
+      errors.push(`24S detail access blocked (HTTP ${response.status})`);break;
     }
     if(!response.ok){errors.push(`detail ${product.productUrl}: HTTP ${response.status}`);break;}
     const category=parse24SProductCategory(response.text);
