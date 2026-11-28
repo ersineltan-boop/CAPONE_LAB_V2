@@ -13,12 +13,13 @@ import {
 } from "../../catalog/brandIndexFromSummary";
 import { useCatalogResource } from "../../catalog/useCatalogResource";
 import { ALL_COUNTRIES_ID } from "../../brands/countryGrouping";
-import { filterSavedFamilies, filterFamiliesBySearch } from "../../categories/categoryResearch";
+import { filterSavedFamilies } from "../../categories/categoryResearch";
 import { useResearchStateMap, useResearchStateRepository } from "../../research/useResearchState";
 import { useBrandFavorites } from "../../research/useBrandFavorites";
 import { getBrandFavoriteRepository } from "../../research/brandFavoritesRepository";
 import { createPortableBackup, importPortableBackup, parsePortableBackup } from "../../research/portableBackup";
 import { savedBrandOptions } from "../../research/savedBrandOptions";
+import { filterSavedProducts } from "../../research/savedProductFilters";
 import { useProgressiveBatch } from "../../ui/useProgressiveBatch";
 import { UI_COPY } from "../../presentation/turkishLabels";
 import { slugifyBrandId } from "../../source/sourceProductQuery";
@@ -32,11 +33,15 @@ interface SavedProductsProps {
   onSelectBrand?: (brandId: string, brandName: string) => void;
 }
 
+const FIELD_CLASS = "touch-target min-w-0 border border-line bg-cream px-3 py-2 text-base text-ink sm:text-sm";
+
 export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
   const [pageTab, setPageTab] = useState<"products" | "brands">("products");
   const [searchQuery, setSearchQuery] = useState("");
+  const [brandSearchQuery, setBrandSearchQuery] = useState("");
   const [brandFilter, setBrandFilter] = useState<string>("ALL");
   const [sourceFilter, setSourceFilter] = useState<string>("ALL");
+  const [withNotes, setWithNotes] = useState(false);
   const [countryId, setCountryId] = useState(ALL_COUNTRIES_ID);
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(null);
   const [backupMessage, setBackupMessage] = useState("");
@@ -108,13 +113,17 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
     [state],
   );
 
+  const allSavedFamilies = useMemo(
+    () => state.status === "ready" ? filterSavedFamilies(state.data.families, researchStates) : [],
+    [state, researchStates],
+  );
   const brandOptions = useMemo(() => {
     if (state.status !== "ready") return [];
     return savedBrandOptions(
       state.data.summary.brands.map((brand) => brand.brandName),
-      filterSavedFamilies(state.data.families, researchStates).map((family) => family.brand),
+      allSavedFamilies.map((family) => family.brand),
     );
-  }, [state, researchStates]);
+  }, [state, allSavedFamilies]);
 
   const sourceOptions = useMemo(() => {
     if (state.status !== "ready") return [];
@@ -128,23 +137,24 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
     return [...sources.entries()].sort((a, b) => a[1].localeCompare(b[1], "tr"));
   }, [state]);
 
-  const savedFamilies = useMemo(() => {
-    if (state.status !== "ready") return [];
-    let families = filterSavedFamilies(state.data.families, researchStates);
-    if (brandFilter !== "ALL") {
-      families = families.filter((family) => family.brand === brandFilter);
-    }
-    if (sourceFilter !== "ALL") {
-      families = families.filter((family) =>
-        family.sourceSightings?.some((s) => s.sourceId === sourceFilter),
-      );
-    }
-    return filterFamiliesBySearch(families, searchQuery).sort((a, b) => {
-      const aSaved = Date.parse(researchStates.get(a.modelFamilyId)?.savedAt ?? "");
-      const bSaved = Date.parse(researchStates.get(b.modelFamilyId)?.savedAt ?? "");
-      return bSaved - aSaved;
-    });
-  }, [state, researchStates, brandFilter, sourceFilter, searchQuery]);
+  const savedFamilies = useMemo(
+    () => filterSavedProducts(allSavedFamilies, researchStates, {
+      query: searchQuery,
+      brand: brandFilter,
+      source: sourceFilter,
+      withNotes,
+    }),
+    [allSavedFamilies, researchStates, brandFilter, sourceFilter, searchQuery, withNotes],
+  );
+  const hasProductFilters = Boolean(searchQuery.trim()) ||
+    brandFilter !== "ALL" || sourceFilter !== "ALL" || withNotes;
+
+  function clearProductFilters() {
+    setSearchQuery("");
+    setBrandFilter("ALL");
+    setSourceFilter("ALL");
+    setWithNotes(false);
+  }
 
   const gridItems = useMemo(
     () =>
@@ -164,70 +174,80 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
 
   return (
     <>
-      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
-        <div className="space-y-4 border border-line bg-white/20 p-4 sm:p-5">
-          <div>
-            <h2 className="font-serif text-lg font-medium tracking-wide sm:text-xl">
-              {UI_COPY.savedProductsTitle}
-            </h2>
-            <p className="mt-1 text-[10px] leading-relaxed text-ink-muted">
-              {UI_COPY.savedProductsSubtitle}
-            </p>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <button type="button" onClick={downloadBackup} className="border border-line px-3 py-2 text-[11px] hover:border-ink">
-                Kayıtları yedekle
-              </button>
-              <label className="cursor-pointer border border-line px-3 py-2 text-[11px] hover:border-ink focus-within:border-ink">
-                Yedeği içe aktar
-                <input type="file" accept=".json,application/json" onChange={uploadBackup} className="sr-only" aria-label="Yedeği içe aktar" />
-              </label>
-            </div>
-            <p className="mt-2 text-[11px] text-ink-muted">Kayıtlar bu tarayıcıda saklanır. Başka cihazda görmek için yedeği o cihazda içe aktarın. Aktarım mevcut notları silmez.</p>
-            {backupMessage ? <p role="status" className="mt-2 text-[11px] text-ink">{backupMessage}</p> : null}
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => setPageTab("products")}
-              className={`border px-3 py-1.5 text-[10px] tracking-widest ${
-                pageTab === "products"
-                  ? "border-ink bg-ink text-cream"
-                  : "border-line text-ink-muted hover:border-ink"
-              }`}
-            >
-              {UI_COPY.savedPageProducts}
-            </button>
-            <button
-              type="button"
-              onClick={() => setPageTab("brands")}
-              className={`border px-3 py-1.5 text-[10px] tracking-widest ${
-                pageTab === "brands"
-                  ? "border-ink bg-ink text-cream"
-                  : "border-line text-ink-muted hover:border-ink"
-              }`}
-            >
-              {UI_COPY.savedPageBrands}
-            </button>
-          </div>
-
-          {state.status === "loading" ? <CatalogLoadingState /> : null}
-          {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}
-
-          {state.status === "ready" && pageTab === "products" ? (
-            <>
+      <section className="mx-auto max-w-7xl space-y-5 px-4 py-5 sm:px-6 sm:py-8">
+        <div className="flex items-start justify-between gap-3">
+          <h2 className="min-w-0 font-serif text-lg font-medium tracking-wide sm:text-2xl">
+            {UI_COPY.savedProductsTitle}
+          </h2>
+          <details className="relative shrink-0">
+            <summary className="touch-target cursor-pointer border border-line bg-cream px-3 py-2 text-sm text-ink hover:border-ink">
+              Yedekleme
+            </summary>
+            <div className="absolute right-0 top-full z-20 mt-1 w-[min(20rem,calc(100vw-2rem))] space-y-3 border border-line bg-cream p-4 text-sm shadow-lg">
+              <p className="leading-relaxed text-ink-muted">
+                Kayıtlar bu tarayıcıda saklanır. Başka bir cihazda görmek için yedeği o cihazda içe aktar.
+              </p>
               <div className="flex flex-wrap gap-2">
+                <button type="button" onClick={downloadBackup} className="touch-target border border-line px-3 py-2 hover:border-ink">
+                  Yedeği indir
+                </button>
+                <label className="touch-target cursor-pointer border border-line px-3 py-2 hover:border-ink focus-within:border-ink">
+                  Yedeği içe aktar
+                  <input type="file" accept=".json,application/json" onChange={uploadBackup} className="sr-only" aria-label="Yedeği içe aktar" />
+                </label>
+              </div>
+              {backupMessage && <p role="status" className="text-ink">{backupMessage}</p>}
+            </div>
+          </details>
+        </div>
+
+        <div className="flex gap-2 border-b border-line pb-2" role="group" aria-label="Kayıt türü">
+          <button
+            type="button"
+            onClick={() => setPageTab("products")}
+            aria-pressed={pageTab === "products"}
+            className={`touch-target border px-4 py-2 text-xs font-medium tracking-wide ${
+              pageTab === "products"
+                ? "border-ink bg-ink text-cream"
+                : "border-line text-ink-muted hover:border-ink"
+            }`}
+          >
+            {UI_COPY.savedPageProducts}
+          </button>
+          <button
+            type="button"
+            onClick={() => setPageTab("brands")}
+            aria-pressed={pageTab === "brands"}
+            className={`touch-target border px-4 py-2 text-xs font-medium tracking-wide ${
+              pageTab === "brands"
+                ? "border-ink bg-ink text-cream"
+                : "border-line text-ink-muted hover:border-ink"
+            }`}
+          >
+            {UI_COPY.savedPageBrands}
+          </button>
+        </div>
+
+        {state.status === "loading" ? <CatalogLoadingState /> : null}
+        {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}
+
+        {state.status === "ready" && pageTab === "products" ? (
+          <>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-2 lg:grid-cols-[minmax(0,1fr)_13rem_13rem_auto]">
                 <input
                   type="search"
                   value={searchQuery}
                   onChange={(event) => setSearchQuery(event.target.value)}
-                  placeholder={UI_COPY.searchPlaceholder}
-                  className="min-w-[180px] flex-1 border border-line bg-cream px-2.5 py-1.5 text-[10px] text-ink"
+                  placeholder="Marka, model veya not ara"
+                  aria-label="Marka, model veya not ara"
+                  className={`${FIELD_CLASS} col-span-2 lg:col-span-1`}
                 />
                 <select
+                  aria-label="Markaya göre filtrele"
                   value={brandFilter}
                   onChange={(event) => setBrandFilter(event.target.value)}
-                  className="border border-line bg-cream px-2 py-1.5 text-[10px] text-ink-muted"
+                  className={FIELD_CLASS}
                 >
                   <option value="ALL">Tüm Markalar</option>
                   {brandOptions.map((brand) => (
@@ -237,9 +257,10 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                   ))}
                 </select>
                 <select
+                  aria-label="Kaynağa göre filtrele"
                   value={sourceFilter}
                   onChange={(event) => setSourceFilter(event.target.value)}
-                  className="border border-line bg-cream px-2 py-1.5 text-[10px] text-ink-muted"
+                  className={FIELD_CLASS}
                 >
                   <option value="ALL">Tüm Kaynaklar</option>
                   {sourceOptions.map(([sourceId, label]) => (
@@ -248,49 +269,67 @@ export default function SavedProducts({ onSelectBrand }: SavedProductsProps) {
                     </option>
                   ))}
                 </select>
+                <label className="touch-target col-span-2 inline-flex w-fit cursor-pointer items-center gap-2 border border-line px-3 py-2 text-sm hover:border-ink lg:col-span-1">
+                  <input
+                    type="checkbox"
+                    className="size-4 accent-ink"
+                    checked={withNotes}
+                    onChange={(event) => setWithNotes(event.target.checked)}
+                  />
+                  Notu olanlar
+                </label>
               </div>
+              <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+                <p role="status" className="text-sm text-ink-muted">
+                  <span className="font-medium text-ink">{UI_COPY.modelsCount(savedFamilies.length)}</span>
+                  {savedFamilies.length > 1 && " · Son kaydedilenler önce"}
+                </p>
+                {hasProductFilters && (
+                  <button type="button" onClick={clearProductFilters} className="touch-target text-sm text-ink underline underline-offset-4">
+                    Filtreleri temizle
+                  </button>
+                )}
+              </div>
+            </div>
 
-              <p className="text-[10px] text-ink-muted">{UI_COPY.modelsCount(savedFamilies.length)}</p>
-
-              <ModelFamilyProductGrid
-                items={visibleItems}
-                emptyMessage={savedIds.length === 0 ? UI_COPY.emptySaved : UI_COPY.emptyFilters}
-                density="visual"
-                researchStates={researchStates}
-                onSelectItem={setSelectedFamilyId}
-                onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
-                onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
-                onSaveNote={(id, note) => researchRepo.setNote(id, note)}
-                loadMoreSlot={
-                  hasMore ? (
-                    <div className="flex justify-center pt-2">
-                      <button
-                        type="button"
-                        onClick={loadMore}
-                        className="border border-line px-4 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink"
-                      >
-                        {UI_COPY.loadMore}
-                      </button>
-                    </div>
-                  ) : null
-                }
-              />
-            </>
-          ) : null}
-
-          {state.status === "ready" && pageTab === "brands" ? (
-            <SavedBrandsPanel
-              summary={state.data.summary}
-              searchQuery={searchQuery}
-              onSearchQuery={setSearchQuery}
-              countryId={countryId}
-              onCountryId={setCountryId}
-              isSaved={isSaved}
-              setSaved={setSaved}
-              onSelectBrand={onSelectBrand}
+            <ModelFamilyProductGrid
+              items={visibleItems}
+              emptyMessage={savedIds.length === 0 ? UI_COPY.emptySaved : UI_COPY.emptyFilters}
+              density="visual"
+              researchStates={researchStates}
+              onSelectItem={setSelectedFamilyId}
+              onToggleReviewed={(id, reviewed) => researchRepo.setReviewed(id, reviewed)}
+              onToggleSaved={(id, saved, note) => researchRepo.setSaved(id, saved, note)}
+              onSaveNote={(id, note) => researchRepo.setNote(id, note)}
+              loadMoreSlot={
+                hasMore ? (
+                  <div className="flex justify-center pt-2">
+                    <button
+                      type="button"
+                      onClick={loadMore}
+                      className="border border-line px-4 py-2 text-[10px] tracking-widest text-ink-muted hover:border-ink hover:text-ink"
+                    >
+                      {UI_COPY.loadMore}
+                    </button>
+                  </div>
+                ) : null
+              }
             />
-          ) : null}
-        </div>
+          </>
+        ) : null}
+
+        {state.status === "ready" && pageTab === "brands" ? (
+          <SavedBrandsPanel
+            summary={state.data.summary}
+            searchQuery={brandSearchQuery}
+            onSearchQuery={setBrandSearchQuery}
+            countryId={countryId}
+            onCountryId={setCountryId}
+            isSaved={isSaved}
+            setSaved={setSaved}
+            onSelectBrand={onSelectBrand}
+          />
+        ) : null}
       </section>
 
       <ModelFamilyDetailDrawer
@@ -331,18 +370,20 @@ function SavedBrandsPanel({
 
   return (
     <div className="space-y-3">
-      <div className="flex flex-wrap gap-2">
+      <div className="grid gap-2 sm:grid-cols-[minmax(0,1fr)_13rem]">
         <input
           type="search"
           value={searchQuery}
           onChange={(event) => onSearchQuery(event.target.value)}
-          placeholder={UI_COPY.searchPlaceholder}
-          className="min-w-[180px] flex-1 border border-line bg-cream px-2.5 py-1.5 text-[10px] text-ink"
+          placeholder="Kayıtlı marka ara"
+          aria-label="Kayıtlı marka ara"
+          className={FIELD_CLASS}
         />
         <select
+          aria-label="Ülkeye göre filtrele"
           value={countryId}
           onChange={(event) => onCountryId(event.target.value)}
-          className="border border-line bg-cream px-2 py-1.5 text-[10px] text-ink-muted"
+          className={FIELD_CLASS}
         >
           <option value={ALL_COUNTRIES_ID}>{UI_COPY.allCountries}</option>
           {countryOptions.map((option) => (
@@ -353,7 +394,11 @@ function SavedBrandsPanel({
         </select>
       </div>
       {cards.length === 0 ? (
-        <p className="text-sm text-ink-muted">{UI_COPY.emptySavedBrands}</p>
+        <p className="py-8 text-center text-sm text-ink-muted">
+          {searchQuery.trim() || countryId !== ALL_COUNTRIES_ID
+            ? "Filtrelere uygun kayıtlı marka bulunamadı."
+            : UI_COPY.emptySavedBrands}
+        </p>
       ) : (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
