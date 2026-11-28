@@ -8,7 +8,12 @@ const menuButton = "touch-target px-2.5 py-1 text-xs font-medium text-ink-muted 
 const fieldClass = "w-full border border-line bg-cream px-2 py-1.5 text-base sm:text-sm";
 const submitClass = "touch-target border border-ink bg-ink px-3 py-1.5 text-xs text-cream disabled:opacity-60";
 
-export default function TeamAccountMenu() {
+interface TeamAccountMenuProps {
+  className: string;
+  triggerClassName: string;
+}
+
+export default function TeamAccountMenu({ className, triggerClassName }: TeamAccountMenuProps) {
   const { configured, member, signedIn } = useTeamAccount();
   const panelId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -22,7 +27,7 @@ export default function TeamAccountMenu() {
   }
 
   return (
-    <div className="relative" onKeyDown={(event) => {
+    <div className={`relative ${className}`} onKeyDown={(event) => {
       if (open && event.key === "Escape") {
         event.stopPropagation();
         close();
@@ -34,14 +39,14 @@ export default function TeamAccountMenu() {
         aria-controls={panelId}
         aria-expanded={open}
         onClick={() => setOpen(!open)}
-        className={menuButton}
+        className={`${triggerClassName} ${open ? "text-ink underline" : "text-ink-muted"}`}
       >
-        {signedIn ? "Hesabım" : "Ekip girişi"}
+        {signedIn ? "Hesabım" : "Üye girişi"}
       </button>
       {open && (
         <div
           id={panelId}
-          className="mt-1 max-h-[65vh] w-72 max-w-[calc(100vw-2rem)] space-y-3 overflow-y-auto border border-line bg-cream p-4 text-sm shadow-md sm:absolute sm:right-0 sm:z-10"
+          className="absolute right-0 top-full z-10 mt-1 max-h-[65dvh] w-72 max-w-[calc(100vw-2rem)] space-y-3 overflow-y-auto border border-line bg-cream p-4 text-sm shadow-md"
         >
           <AccountPanel key={member?.user_id ?? (signedIn ? "signed-in" : "signed-out")} onClose={close} />
         </div>
@@ -101,7 +106,7 @@ function AccountPanel({ onClose }: { onClose: () => void }) {
           <span>Şifre</span>
           <input name="password" type="password" autoComplete="current-password" className={fieldClass} required />
         </label>
-        <button type="submit" disabled={pending} className={submitClass}>
+        <button type="submit" disabled={pending} className={`${submitClass} w-full`}>
           {pending ? "Giriş yapılıyor…" : "Giriş yap"}
         </button>
         {error && <p role="alert" className="text-xs">{error}</p>}
