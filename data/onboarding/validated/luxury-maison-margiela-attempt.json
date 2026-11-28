@@ -1,0 +1,25 @@
+{
+  "source": "maison-margiela",
+  "brand": "MAISON MARGIELA",
+  "collectedAt": "2026-11-28T09:32:10.677Z",
+  "products": [],
+  "coverage": {
+    "status": "FAILED",
+    "activated": false,
+    "sourceReportedWomensFootwearTotal": null,
+    "discoveredCandidateUrls": 0,
+    "attemptedPages": 0,
+    "successfulPages": 0,
+    "excludedOrUnparsedPages": 0,
+    "acceptedFemaleFootwearProducts": 0,
+    "bounded": false,
+    "sitemapTraversalExhausted": true,
+    "sitemapsVisited": [
+      "https://www.maisonmargiela.com/en-us/sitemap_index.xml"
+    ],
+    "note": "Staging only. Candidate URL discovery is heuristic; source womens footwear total is unknown. Exclusions include male/unknown audience and unparsed schema. Full mode exhausts discovered candidates, not a completeness guarantee.",
+    "errors": [
+      "Sitemap 403: https://www.maisonmargiela.com/en-us/sitemap_index.xml"
+    ]
+  }
+}

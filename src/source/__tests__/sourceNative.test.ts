@@ -1,4 +1,6 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
+
+afterEach(() => vi.useRealTimers());
 
 import {
   categoryFromCollectionPath,
@@ -145,6 +147,8 @@ describe("true new for source browse", () => {
   });
 
   it("new arrivals collection evidence counts as verified new", () => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-08-22T00:00:00Z"));
     const newness = buildNewnessFromProductHints(
       { isNewArrivalsCollection: true, collectionPath: "/collections/new-arrivals" },
       "2026-08-21T00:00:00.000Z",

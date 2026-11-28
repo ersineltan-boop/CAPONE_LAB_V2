@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T10:01:23.312Z",
-  "brandCount": 160,
+  "generatedAt": "2026-11-28T09:27:47.200Z",
+  "brandCount": 161,
   "marketplaceCount": 7,
   "verifiedBrandSources": 8,
   "verifiedMarketplaceSources": 1,
@@ -1787,6 +1787,17 @@
     {
       "sourceId": "naked-wolfe",
       "sourceLabel": "NAKED WOLFE",
+      "sourceType": "BRAND",
+      "discoveryStatus": "VERIFIED",
+      "newArrivalDiscoveryStatus": "NEEDS_PROBE",
+      "candidateUrls": [],
+      "candidateHandles": [],
+      "verified": false,
+      "evidenceStrategy": null
+    },
+    {
+      "sourceId": "bata",
+      "sourceLabel": "BATA",
       "sourceType": "BRAND",
       "discoveryStatus": "VERIFIED",
       "newArrivalDiscoveryStatus": "NEEDS_PROBE",

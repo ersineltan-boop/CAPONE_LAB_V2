@@ -1,13 +1,13 @@
 {
-  "rawProductCount": 21629,
-  "modelFamilyCount": 13743,
-  "totalVariants": 21629,
-  "multiVariantFamilyCount": 5283,
-  "reductionPercent": 36.5,
-  "collapsedVariantProducts": 7886,
+  "rawProductCount": 22300,
+  "modelFamilyCount": 19661,
+  "totalVariants": 30895,
+  "multiVariantFamilyCount": 5573,
+  "reductionPercent": 36.4,
+  "collapsedVariantProducts": 11234,
   "representativeImageStats": {
-    "familiesWithMultipleRepresentativeImages": 13683,
-    "averageRepresentativeImageCount": 6.2,
+    "familiesWithMultipleRepresentativeImages": 14081,
+    "averageRepresentativeImageCount": 6.22,
     "maxRepresentativeImageCount": 80
   },
   "largestVariantFamilies": [
@@ -3077,6 +3077,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "zara--id-zara-15085810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Barefoot Sneaker",
+      "variantCount": 3,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-basquiat-boot-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Basquiat",
@@ -3352,7 +3359,7 @@
     {
       "modelFamilyId": "zara--id-zara-12600710-sandal-sandal",
       "brand": "ZARA",
-      "canonicalName": "Crossover Flat",
+      "canonicalName": "Crossed Flat",
       "variantCount": 3,
       "groupingReason": "singleton"
     },
@@ -5142,6 +5149,13 @@
       "groupingReason": "singleton"
     },
     {
+      "modelFamilyId": "dries-van-noten--id-shopify-dries-van-noten-262-131702-0115-sneaker-base",
+      "brand": "DRIES VAN NOTEN",
+      "canonicalName": "Ballerina",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
       "modelFamilyId": "zara--id-zara-15207810-ballet-flat-base",
       "brand": "ZARA",
       "canonicalName": "Ballet Flat",
@@ -5348,6 +5362,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-blissful-sandal-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Blissful",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Blucher Sneaker",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -5642,13 +5663,6 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-conform-t-pump-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Conform-t",
-      "variantCount": 2,
-      "groupingReason": "singleton"
-    },
-    {
-      "modelFamilyId": "zara--id-zara-15016810-sneaker-base",
-      "brand": "ZARA",
-      "canonicalName": "Contrast Heel",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -6062,6 +6076,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-fallow-boot-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Fallow",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15601810-boot-shearling",
+      "brand": "ZARA",
+      "canonicalName": "Faux Shearling Lined Ankle Boot",
       "variantCount": 2,
       "groupingReason": "singleton"
     },
@@ -8722,6 +8743,13 @@
       "modelFamilyId": "jeffrey-campbell--id-shopify-jeffrey-campbell-yee-haw-boot-base",
       "brand": "JEFFREY CAMPBELL",
       "canonicalName": "Yee-haw",
+      "variantCount": 2,
+      "groupingReason": "singleton"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-15879810-sneaker-base",
+      "brand": "ZARA",
+      "canonicalName": "Zara Vans Sneaker",
       "variantCount": 2,
       "groupingReason": "singleton"
     },

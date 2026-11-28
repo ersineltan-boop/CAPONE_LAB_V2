@@ -2,6 +2,7 @@ import { spawnSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { buildRefreshCyclePlan } from "../src/refresh/refreshCycle";
+import { hydrateRefreshArchive } from "../src/refresh/refreshArchiveHandoff";
 import { transactionalRefreshLane } from "../src/refresh/transactionalLane";
 import { cycleCatalogSnapshot } from "../src/refresh/cycleCatalogSnapshot";
 
@@ -14,6 +15,9 @@ if (process.argv.includes("--plan-only")) {
   console.log(`All ${plan.activeBrands.length} brands and ${plan.activeMarketplaces.length} marketplaces are covered.`);
   process.exit(0);
 }
+// A missing or corrupt archive part rejects the run before the working files change.
+const restored = await hydrateRefreshArchive(root);
+console.log(`Catalog working files: ${JSON.stringify(restored)}`);
 const baseline = await cycleCatalogSnapshot(root);
 await writeFile(join(audit, "baseline.json"), JSON.stringify(baseline));
 // Source publishers isolate failures; lane rollback remains for process/runtime failures.

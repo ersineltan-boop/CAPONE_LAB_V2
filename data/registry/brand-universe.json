@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T00:56:02.267188+00:00",
+  "generatedAt": "2026-11-28T09:28:36.275Z",
   "brands": [
     {
       "id": "schutz",
@@ -695,7 +695,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 16 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 20 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 56,
       "directionalInfluence": 68,
       "commercialInfluence": 42,
@@ -803,7 +803,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=79. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=58. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 56,
       "directionalInfluence": 68,
       "commercialInfluence": 42,
@@ -2190,7 +2190,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=132. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=154. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2198,7 +2198,7 @@
       "collectionPaths": [
         "/en/collections/shoes-all"
       ],
-      "productLimit": 132,
+      "productLimit": 154,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -2212,7 +2212,7 @@
         "shoes-all"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 132
+      "backfillLimit": 154
     },
     {
       "id": "ganni",
@@ -2695,7 +2695,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=562. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=738. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -2703,7 +2703,7 @@
       "collectionPaths": [
         "/collections/shoes"
       ],
-      "productLimit": 562,
+      "productLimit": 738,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -2717,7 +2717,7 @@
         "shoes"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 562
+      "backfillLimit": 738
     },
     {
       "id": "paris-texas",
@@ -3253,7 +3253,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 465 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 504 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3505,7 +3505,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=239. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=266. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3513,7 +3513,7 @@
       "collectionPaths": [
         "/collections/catalogue-femme-chaussures"
       ],
-      "productLimit": 244,
+      "productLimit": 266,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3527,7 +3527,7 @@
         "catalogue-femme-chaussures"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 244
+      "backfillLimit": 266
     },
     {
       "id": "nomasei",
@@ -3569,7 +3569,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=128. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=129. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3577,7 +3577,7 @@
       "collectionPaths": [
         "/collections/sandale-tropezienne-femme"
       ],
-      "productLimit": 128,
+      "productLimit": 129,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3591,7 +3591,7 @@
         "sandale-tropezienne-femme"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 128
+      "backfillLimit": 129
     },
     {
       "id": "s-zane",
@@ -3633,7 +3633,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=53. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=38. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3697,7 +3697,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=219. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=316. Refresh: npm run collect:official-shopify-next. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -3705,7 +3705,7 @@
       "collectionPaths": [
         "/collections/collection"
       ],
-      "productLimit": 219,
+      "productLimit": 316,
       "supportsMultipleImages": true,
       "discoverySources": [
         "issue-91"
@@ -3719,7 +3719,7 @@
         "collection"
       ],
       "collectionDiscoveryStatus": "VERIFIED",
-      "backfillLimit": 219
+      "backfillLimit": 316
     },
     {
       "id": "hispanitas",
@@ -4547,7 +4547,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Issue 91 official storefront women's footwear. source_total=1007. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
+      "notes": "Issue 91 official storefront women's footwear. source_total=1172. Refresh: npm run collect:official-shopify. Sunday/Wednesday guarded automatic refresh.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -5072,7 +5072,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 213 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 269 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -5124,7 +5124,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 339 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 371 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -5150,7 +5150,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 281 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 290 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -5176,7 +5176,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 262 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 308 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,
@@ -5228,7 +5228,7 @@
       "footwearFocus": "WOMENS_FOOTWEAR",
       "womenFootwearRelevant": true,
       "sourceType": "BRAND",
-      "notes": "Verified PARTIAL official catalog: 37 products. Dedicated priority-source collector; full coverage not confirmed.",
+      "notes": "Verified PARTIAL official catalog: 40 products. Dedicated priority-source collector; full coverage not confirmed.",
       "footwearInfluence": 0,
       "directionalInfluence": 0,
       "commercialInfluence": 0,

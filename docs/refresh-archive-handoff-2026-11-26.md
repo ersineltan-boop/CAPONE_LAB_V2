@@ -1,0 +1,7 @@
+# Refresh archive handoff
+
+The November 26 validation collected and built the catalog after all 1,201 tests passed. The Git staging check then refused `data/multibrand/products.json` at 98,925,914 bytes (limit: 94,371,840). Increasing the cap would postpone the same failure. This draft wires the source archive from #208 into the independent validation from #210.
+
+The collector and production build keep using their existing JSON files. The validation restores the last paired archive before collection, when one exists, and fails closed if either half is corrupt. After collection and build, it stages both verified archives in place of the two large working JSON files. The 90 MiB guard also checks nested files. The existing tracked JSON files remain as a baseline and are not updated by this staging step. The runner reconstructs the staged catalog in a fresh directory and compares the ordered contents of both files. Older commits keep the previous set of parts, without storing unreferenced parts in every new tree.
+
+The validation workflow has read-only access to the repo and no publication step. The existing scheduled workflow and live site are unchanged. Before a production switch, Cursor should review every scheduled consumer that still reads either legacy JSON directly, ensure it restores the archive in its own checkout, and verify the archive and other staged data together in a release candidate. Test that a corrupt paired archive cannot silently fall back to the old monolith. Prepare a separate production PR after those checks and Ersin's decision.

@@ -2,8 +2,8 @@
   "slug": "luis-onofre",
   "brand": "LUIS ONOFRE",
   "officialUrl": "https://luisonofre.com",
-  "snapshotId": "luis-onofre:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "luis-onofre:2026-11-28T08:59:32.656Z",
+  "collectedAt": "2026-11-28T08:59:32.656Z",
   "catalogPaths": [
     "/collections/all-shoes"
   ],
@@ -11,18 +11,18 @@
     "/collections/new-arrivals"
   ],
   "coverage": {
-    "sourceTotal": 156,
-    "collected": 156,
+    "sourceTotal": 162,
+    "collected": 162,
     "missing": 0,
     "coverage": 100,
     "excluded": 26,
     "paginationExhausted": true,
-    "galleryComplete": 156,
+    "galleryComplete": 162,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 37,
+  "newArrivalsFootwear": 43,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -261,12 +261,95 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "luis-onofre--taper-kitten-heel",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Taper Kitten Heel",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg1.jpg?v=1792076721",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F0bc789aa-82af-438b-a5ed-47e754a2f84e_2Ftaper-desfile-editada.jpg?v=1795025218",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg3.jpg?v=1792076736",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg5.jpg?v=1792076752",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg6.jpg?v=1792076761",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg4.jpg?v=1792076743",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg2.jpg?v=1792076728"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6082-01mst",
+          "handle": "6082-01mst",
+          "title": "Taper Kitten Heels",
+          "color": "s",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg1.jpg?v=1792076721",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F0bc789aa-82af-438b-a5ed-47e754a2f84e_2Ftaper-desfile-editada.jpg?v=1795025218",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg3.jpg?v=1792076736",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg5.jpg?v=1792076752",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg6.jpg?v=1792076761",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg4.jpg?v=1792076743",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-taper-brown-embossed-patent-kitten-heels.jpg2.jpg?v=1792076728"
+          ],
+          "category": "PUMP",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--clasp-slingback",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Clasp Slingback",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks1.jpg?v=1792075516",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F01aee91d-57fc-4134-9a13-c7b3cd357cc9_2Fclasp-desfile-editada.jpg?v=1795091592",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg5.jpg?v=1792075552",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg4.jpg?v=1792075543",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg7.jpg?v=1792075568",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg6.jpg?v=1792075560",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg3.jpg?v=1792075535",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks2.jpg?v=1792075526"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6077clasp-slingback",
+          "handle": "6077clasp-slingback",
+          "title": "Clasp Slingback",
+          "color": null,
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks1.jpg?v=1792075516",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F01aee91d-57fc-4134-9a13-c7b3cd357cc9_2Fclasp-desfile-editada.jpg?v=1795091592",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg5.jpg?v=1792075552",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg4.jpg?v=1792075543",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg7.jpg?v=1792075568",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg6.jpg?v=1792075560",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks.jpg3.jpg?v=1792075535",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-clasp-tan-suede-kitten-heel-slingbacks2.jpg?v=1792075526"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Sandals",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "luis-onofre--lacquer-platform",
       "brand": "LUIS ONOFRE",
       "canonicalName": "Lacquer Platform",
       "category": "SANDAL",
       "images": [
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-2.jpg?v=1791361270",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F32e4d849-8f5f-4482-a31e-6471de3dafe8_2Flacquer-lfw-DCS_3745.jpg?v=1795019935",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-3.jpg?v=1791361270",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-4.jpg?v=1791361270",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-5.jpg?v=1791361270",
@@ -283,6 +366,7 @@
           "sku": null,
           "images": [
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-2.jpg?v=1791361270",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F32e4d849-8f5f-4482-a31e-6471de3dafe8_2Flacquer-lfw-DCS_3745.jpg?v=1795019935",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-3.jpg?v=1791361270",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-4.jpg?v=1791361270",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6120_01mst-LACQUERDeepbrownplatformsandals-5.jpg?v=1791361270",
@@ -307,6 +391,7 @@
       "category": "SLINGBACK",
       "images": [
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-2.jpg?v=1791360885",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fb7f758ec-b32d-4ebc-9e74-8e40fab48084_2Fflute-desfile-editada-v2.jpg?v=1795105074",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-3.jpg?v=1791360885",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-4.jpg?v=1791360885",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-5.jpg?v=1791360885",
@@ -322,6 +407,7 @@
           "sku": null,
           "images": [
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-2.jpg?v=1791360885",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fb7f758ec-b32d-4ebc-9e74-8e40fab48084_2Fflute-desfile-editada-v2.jpg?v=1795105074",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-3.jpg?v=1791360885",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-4.jpg?v=1791360885",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6060-FLUTEgreenpointed-toeslingbacks-5.jpg?v=1791360885",
@@ -345,6 +431,7 @@
       "category": "SLINGBACK",
       "images": [
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-2.jpg?v=1791272207",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fa7be9840-3c14-4e04-b624-28465a79c6b9_2Fdune-lfw-DCS_3546.jpg?v=1795019890",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-3.jpg?v=1791272207",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-4.jpg?v=1791272207",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-5.jpg?v=1791272207",
@@ -360,11 +447,88 @@
           "sku": null,
           "images": [
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-2.jpg?v=1791272207",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fa7be9840-3c14-4e04-b624-28465a79c6b9_2Fdune-lfw-DCS_3546.jpg?v=1795019890",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-3.jpg?v=1791272207",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-4.jpg?v=1791272207",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-5.jpg?v=1791272207",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-6.jpg?v=1791272207",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6106-DUNETaupeplatformslingbackpumps-7.jpg?v=1791272207"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--summit-sneaker",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Summit Sneaker",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers1.jpg?v=1791923459",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers.jpg7.jpg?v=1791923502",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers5.jpg?v=1791923494",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers4.jpg?v=1791923486",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers3.jpg?v=1791923479",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers2.jpg?v=1791923470"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/5884summit-sneakers",
+          "handle": "5884summit-sneakers",
+          "title": "Summit Sneakers",
+          "color": "s",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers1.jpg?v=1791923459",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers.jpg7.jpg?v=1791923502",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers5.jpg?v=1791923494",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers4.jpg?v=1791923486",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers3.jpg?v=1791923479",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-summit-white-chunky-leather-sneakers2.jpg?v=1791923470"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--vintage-slingback-sage-green",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Vintage Slingback Sage Green",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps1.jpg?v=1791923319",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.jp6.jpg?v=1791923360",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.5.jpg?v=1791923352",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps4.jpg?v=1791923343",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.3.jpg?v=1791923336",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps2.jpg?v=1791923328"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/5811-1vintage-slingback-sage-green",
+          "handle": "5811-1vintage-slingback-sage-green",
+          "title": "Vintage Slingback Sage Green",
+          "color": null,
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps1.jpg?v=1791923319",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.jp6.jpg?v=1791923360",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.5.jpg?v=1791923352",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps4.jpg?v=1791923343",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps.3.jpg?v=1791923336",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-corsage-sage-green-slingback-pumps2.jpg?v=1791923328"
           ],
           "category": "SLINGBACK",
           "productType": "Shoes",
@@ -383,11 +547,13 @@
       "category": "SANDAL",
       "images": [
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-2.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fee889402-7ad1-4296-93df-2d8b04c2246b_2Flocket-lfw-DCS_3461.jpg?v=1795019920",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-3.jpg?v=1790874013",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-4.jpg?v=1790874013",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-5.jpg?v=1790874013",
         "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-6.jpg?v=1790874013",
-        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013"
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F198a4d6f-58df-4175-92b1-c96f4eabe57e_2Flocket-lfw-DCS_3132.jpg?v=1795019924"
       ],
       "variants": [
         {
@@ -398,13 +564,95 @@
           "sku": null,
           "images": [
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-2.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Fee889402-7ad1-4296-93df-2d8b04c2246b_2Flocket-lfw-DCS_3461.jpg?v=1795019920",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-3.jpg?v=1790874013",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-4.jpg?v=1790874013",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-5.jpg?v=1790874013",
             "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals-6.jpg?v=1790874013",
-            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013"
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/LuisOnofrePortugueseShoes-1938_THERECODE-FW26-27-6147_01MF-LOCKETBlackstrappysandals.jpg?v=1790874013",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F198a4d6f-58df-4175-92b1-c96f4eabe57e_2Flocket-lfw-DCS_3132.jpg?v=1795019924"
           ],
           "category": "SANDAL",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--bell-slingback",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Bell Slingback",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps..jpg?v=1791920426",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Feb1e0fcd-fb0f-46c5-b996-4bd5823e4eef_2Fbell-desfile-editada.jpg?v=1795091557",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.6.jpg?v=1791920471",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.5.jpg?v=1791920462",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps4.jpg?v=1791920454",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.3.jpg?v=1791920445",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.1.jpg?v=1791920436"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6082-02bell-navy-slingback-pumps",
+          "handle": "6082-02bell-navy-slingback-pumps",
+          "title": "Bell Navy Slingback Pumps",
+          "color": "Bell Navy Slingback Pumps",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps..jpg?v=1791920426",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2Feb1e0fcd-fb0f-46c5-b996-4bd5823e4eef_2Fbell-desfile-editada.jpg?v=1795091557",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.6.jpg?v=1791920471",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.5.jpg?v=1791920462",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps4.jpg?v=1791920454",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.3.jpg?v=1791920445",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/uis-onofre-bell-midnight-navy-slingback-pumps.1.jpg?v=1791920436"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Shoes",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "luis-onofre--talon-pointed-toe-slingback",
+      "brand": "LUIS ONOFRE",
+      "canonicalName": "Talon Pointed Toe Slingback",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.6.jpg?v=1791920814",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F3583f833-37b4-4e02-b409-5e02f07e59f8_2Ftalon-desfile-editada.jpg?v=1795091532",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks5.jpg?v=1791920804",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks4.jpg?v=1791920796",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.3.jpg?v=1791920779",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.2.jpg?v=1791920770",
+        "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.1.jpg?v=1791920761"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://luisonofre.com/products/6108cav80talon-bordeaux-pointed-toe-slingbacks",
+          "handle": "6108cav80talon-bordeaux-pointed-toe-slingbacks",
+          "title": "Talon Bordeaux Pointed-Toe Slingbacks",
+          "color": "Talon Bordeaux Pointed-Toe Slingbacks",
+          "sku": null,
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.6.jpg?v=1791920814",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/workspace-assets-uploads_2FFQqoJ6FhgNO3FWuiwSkb_2Fcustom-models-manual-uploads_2F3583f833-37b4-4e02-b409-5e02f07e59f8_2Ftalon-desfile-editada.jpg?v=1795091532",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks5.jpg?v=1791920804",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks4.jpg?v=1791920796",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.3.jpg?v=1791920779",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.2.jpg?v=1791920770",
+            "https://cdn.shopify.com/s/files/1/0661/1160/2910/files/luis-onofre-talon-bordeaux-embossed-leather-slingbacks.1.jpg?v=1791920761"
+          ],
+          "category": "SLINGBACK",
           "productType": "Shoes",
           "inNewArrivals": true,
           "isNew": true,
@@ -6066,10 +6314,16 @@
     }
   ],
   "productUrls": [
+    "https://luisonofre.com/products/6082-01mst",
+    "https://luisonofre.com/products/6077clasp-slingback",
     "https://luisonofre.com/products/6120-01mstlacquer-deep-brown-platform",
     "https://luisonofre.com/products/flute-green-pointed-toe-slingbacks6060",
     "https://luisonofre.com/products/6106dune-taupe-platform-slingback-pumps",
+    "https://luisonofre.com/products/5884summit-sneakers",
+    "https://luisonofre.com/products/5811-1vintage-slingback-sage-green",
     "https://luisonofre.com/products/6147-01mflocket-black-strappy-sandals",
+    "https://luisonofre.com/products/6082-02bell-navy-slingback-pumps",
+    "https://luisonofre.com/products/6108cav80talon-bordeaux-pointed-toe-slingbacks",
     "https://luisonofre.com/products/6044",
     "https://luisonofre.com/products/6026-02mst",
     "https://luisonofre.com/products/5996-02mf",

@@ -2,30 +2,30 @@
   "slug": "hereu",
   "brand": "HEREU",
   "officialUrl": "https://hereustudio.com",
-  "snapshotId": "hereu:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "hereu:2026-11-28T08:59:32.656Z",
+  "collectedAt": "2026-11-28T08:59:32.656Z",
   "catalogPaths": [
     "/collections/womens-shoes"
   ],
   "newArrivalsPaths": [
     "/collections/all-for-all-new-in",
     "/collections/new-in-shoes-for-all",
-    "/collections/womens-new-in-shoes",
-    "/collections/womens-new-in"
+    "/collections/womens-new-in",
+    "/collections/womens-new-in-shoes"
   ],
   "coverage": {
-    "sourceTotal": 181,
-    "collected": 181,
+    "sourceTotal": 198,
+    "collected": 198,
     "missing": 0,
     "coverage": 100,
     "excluded": 2,
     "paginationExhausted": true,
-    "galleryComplete": 181,
+    "galleryComplete": 198,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
   },
-  "newArrivalsFootwear": 59,
+  "newArrivalsFootwear": 61,
   "referenceFootwearTotal": null,
   "referenceNewArrivals": null,
   "referenceFootwearMatch": null,
@@ -147,7 +147,7 @@
           "handle": "juliol-winter-supple-shiny-high-cut-deconstructed-loafer-black",
           "title": "JULIOL W SUPPLE SHINY - High-Cut Deconstructed Loafer",
           "color": "Black",
-          "sku": "JUWSSWFA24.001.1",
+          "sku": "JUWSSWFA26.001.1",
           "images": [
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Black_1.jpg?v=1740663404",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6511.jpg?v=1740663405",
@@ -464,6 +464,70 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "hereu--resso-bow-detail-wedged-mule",
+      "brand": "HEREU",
+      "canonicalName": "Resso Bow Detail Wedged Mule",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black.jpg?v=1776781513",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6658.jpg?v=1785826742",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_067_41ddc56f-3480-4821-b7f7-369ada565957.jpg?v=1785168542",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6633.jpg?v=1785826738",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1865.jpg?v=1776781513",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_083.jpg?v=1784186099",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_1.jpg?v=1776781869",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_2.jpg?v=1776781869",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_4.jpg?v=1776781869",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_3.jpg?v=1776781513",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000007.jpg?v=1784206293"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/resso-bow-detail-wedged-mule-black",
+          "handle": "resso-bow-detail-wedged-mule-black",
+          "title": "RESSO - Bow-Detail Wedged Mule",
+          "color": "Black",
+          "sku": "RESSWFA26.001.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black.jpg?v=1776781513",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6658.jpg?v=1785826742",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_067_41ddc56f-3480-4821-b7f7-369ada565957.jpg?v=1785168542",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6633.jpg?v=1785826738",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1865.jpg?v=1776781513",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_083.jpg?v=1784186099"
+          ],
+          "category": "MULE",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/resso-bow-detail-wedged-mule-burgundy",
+          "handle": "resso-bow-detail-wedged-mule-burgundy",
+          "title": "RESSO - Bow-Detail Wedged Mule",
+          "color": "Burgundy",
+          "sku": "RESSWFA26.007.7",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_1.jpg?v=1776781869",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_2.jpg?v=1776781869",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_4.jpg?v=1776781869",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_3.jpg?v=1776781513",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000007.jpg?v=1784206293"
+          ],
+          "category": "MULE",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "hereu--juliol-boot-low-boot--juliol-boot-heeled-soft-low-calf-boot-black",
       "brand": "HEREU",
       "canonicalName": "Juliol Boot Low Boot",
@@ -525,66 +589,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "hereu--juliol-boot-low-boot--juliol-boot-suede-soft-ankle-boot-black",
-      "brand": "HEREU",
-      "canonicalName": "Juliol Boot Low Boot",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0018.jpg?v=1740665739",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9851.jpg?v=1740665739",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9877.jpg?v=1740665739",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004650025V2.jpg?v=1762343514",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_1.jpg?v=1762343514",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_2.jpg?v=1740663351",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_3.jpg?v=1740663351"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-black",
-          "handle": "juliol-boot-suede-soft-ankle-boot-black",
-          "title": "JULIOL BOOT SUEDE - Soft Low-Calf Boot",
-          "color": "Black",
-          "sku": "JULBSUWFA24.001.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0018.jpg?v=1740665739",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9851.jpg?v=1740665739",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9877.jpg?v=1740665739",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        },
-        {
-          "productUrl": "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-dark-brown",
-          "handle": "juliol-boot-suede-soft-ankle-boot-dark-brown",
-          "title": "JULIOL BOOT SUEDE - Soft Low-Calf Boot",
-          "color": "Dark Brown",
-          "sku": "JULBSUWFA24.002.3",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004650025V2.jpg?v=1762343514",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_1.jpg?v=1762343514",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_2.jpg?v=1740663351",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_3.jpg?v=1740663351",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042"
-          ],
-          "category": "BOOT",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "handle-family"
-    },
-    {
       "modelFamilyId": "hereu--juliol-w-high-cut-deconstructed-loafer",
       "brand": "HEREU",
       "canonicalName": "Juliol W High Cut Deconstructed Loafer",
@@ -619,6 +623,66 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--juliol-boot-low-boot--juliol-boot-suede-soft-ankle-boot-dark-brown",
+      "brand": "HEREU",
+      "canonicalName": "Juliol Boot Low Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_1.jpg?v=1762343514",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004650025V2.jpg?v=1762343514",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_2.jpg?v=1740663351",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_3.jpg?v=1740663351",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0018.jpg?v=1740665739",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9851.jpg?v=1740665739",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9877.jpg?v=1740665739"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-dark-brown",
+          "handle": "juliol-boot-suede-soft-ankle-boot-dark-brown",
+          "title": "JULIOL BOOT SUEDE - Soft Low-Calf Boot",
+          "color": "Dark Brown",
+          "sku": "JULBSUWFA24.002.3",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_1.jpg?v=1762343514",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000004650025V2.jpg?v=1762343514",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_2.jpg?v=1740663351",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBSUWFA24_DarkBrown_3.jpg?v=1740663351",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-black",
+          "handle": "juliol-boot-suede-soft-ankle-boot-black",
+          "title": "JULIOL BOOT SUEDE - Soft Low-Calf Boot",
+          "color": "Black",
+          "sku": "JULBSUWFA24.001.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0018.jpg?v=1740665739",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9851.jpg?v=1740665739",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9877.jpg?v=1740665739",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4_32338f14-946d-45ad-a72f-49945047a1a9.jpg?v=1740665740",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUBVEWFA26_Black_MODELO.jpg?v=1791357042"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "hereu--lligada-belt-detail-knee-high-boot",
@@ -728,13 +792,13 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6404.jpg?v=1740663458",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355.jpg?v=1740663458",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_4_c3944989-8c4c-4f70-9215-dce8cc5a8e16.jpg?v=1740663460",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_1.jpg?v=1740663456",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_3.jpg?v=1740663456",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_1.jpg?v=1740663456",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_2.jpg?v=1740663456",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355_1.jpg?v=1768922539",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_4.jpg?v=1768922539",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFS25_Beige_1.jpg?v=1740663312",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0336.jpg?v=1740663312",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFS25_Beige_1.jpg?v=1740663312",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0295.jpg?v=1740663312",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7427.jpg?v=1740663460",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7505.jpg?v=1740663460",
@@ -768,8 +832,8 @@
           "color": "Dark Brown",
           "sku": "TISUWFA24.002.3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_1.jpg?v=1740663456",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_3.jpg?v=1740663456",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_1.jpg?v=1740663456",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_2.jpg?v=1740663456",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355_1.jpg?v=1768922539",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_4.jpg?v=1768922539"
@@ -787,8 +851,8 @@
           "color": "Beige",
           "sku": "TISUWFS25.003.6",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFS25_Beige_1.jpg?v=1740663312",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0336.jpg?v=1740663312",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFS25_Beige_1.jpg?v=1740663312",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A0295.jpg?v=1740663312",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355_1.jpg?v=1768922539",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TISUWFA24_DarkBrown_4_c3944989-8c4c-4f70-9215-dce8cc5a8e16.jpg?v=1740663460"
@@ -828,9 +892,9 @@
       "canonicalName": "Sastre Supple Shiny Braided Seam Slip On Loafer",
       "category": "LOAFER",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0385.jpg?v=1781089185",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSWFA26_WarmTaupe.jpg?v=1774530997",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/63A0364.jpg?v=1782727059",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0385.jpg?v=1781089185",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0345.jpg?v=1781089184",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_6edb029f-069a-4241-ace7-feea41e9382c_1.jpg?v=1740663250",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSMFS25_Chestnut_4.jpg?v=1740663248"
@@ -843,9 +907,9 @@
           "color": "Warm Taupe",
           "sku": "SASTSSWFA26.002.37",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0385.jpg?v=1781089185",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSWFA26_WarmTaupe.jpg?v=1774530997",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/63A0364.jpg?v=1782727059",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0385.jpg?v=1781089185",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0345.jpg?v=1781089184",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_6edb029f-069a-4241-ace7-feea41e9382c_1.jpg?v=1740663250",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSMFS25_Chestnut_4.jpg?v=1740663248"
@@ -871,8 +935,8 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_PRODUCT_1813.jpg?v=1774541055",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORMUWFS26_Chestnut_4.jpg?v=1774541055",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1115.jpg?v=1774541055",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/13_WEB_copy.jpg?v=1773921758",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6419.jpg?v=1773921758",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/13_WEB_copy.jpg?v=1773921758",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2367.jpg?v=1773921758",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2300.jpg?v=1773921758",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2221.jpg?v=1773921758",
@@ -906,8 +970,8 @@
           "color": "Black",
           "sku": "CORBWFA25.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/13_WEB_copy.jpg?v=1773921758",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6419.jpg?v=1773921758",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/13_WEB_copy.jpg?v=1773921758",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2367.jpg?v=1773921758",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2300.jpg?v=1773921758",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2221.jpg?v=1773921758",
@@ -1011,8 +1075,8 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A2646.jpg?v=1740663557",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A2620.jpg?v=1740663557",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_PRODUCT_1869.jpg?v=1774541464",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1625.jpg?v=1740663574",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1646.jpg?v=1740663574",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1625.jpg?v=1740663574",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1644.jpg?v=1740663574",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PUNTERA.jpg?v=1769075016",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PLSHWFS26_Cream.jpg?v=1759841326",
@@ -1069,8 +1133,8 @@
           "color": "Mahogany",
           "sku": "WFPLSH",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1625.jpg?v=1740663574",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1646.jpg?v=1740663574",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1625.jpg?v=1740663574",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1644.jpg?v=1740663574",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PUNTERA.jpg?v=1769075016",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PLEGWFS24_Black_5.jpg?v=1774541464"
@@ -1223,8 +1287,8 @@
       "canonicalName": "Llasada Supple Shiny Front Knot Pump",
       "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7823.jpg?v=1745571923",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7887.jpg?v=1745571923",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7823.jpg?v=1745571923",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7853.jpg?v=1745571923",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PUNTERA_67e848c7-5a68-4865-ba53-a66661fde856.jpg?v=1745571923",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLSSWFA24_Cream_2_efd30eef-6b09-4398-a30b-db92efb60e85.jpg?v=1740665856",
@@ -1247,8 +1311,8 @@
           "color": "Chestnut",
           "sku": "LLSSWFA24.002.6",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7823.jpg?v=1745571923",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7887.jpg?v=1745571923",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7823.jpg?v=1745571923",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7853.jpg?v=1745571923",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/PUNTERA_67e848c7-5a68-4865-ba53-a66661fde856.jpg?v=1745571923",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LLSSWFA24_Cream_2_efd30eef-6b09-4398-a30b-db92efb60e85.jpg?v=1740665856"
@@ -1307,10 +1371,11 @@
       "canonicalName": "Corbati Bow Detail Slip On Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_1.jpg?v=1774262261",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_2.jpg?v=1774262262",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_1.jpg?v=1774262261",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_3.jpg?v=1774262261",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOCHWFA25_DarkBrown_4.jpg?v=1773921758"
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOCHWFA25_DarkBrown_4.jpg?v=1773921758",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1115.jpg?v=1774541055"
       ],
       "variants": [
         {
@@ -1320,10 +1385,11 @@
           "color": "Dark Brown",
           "sku": "CORSUWFA26.002.3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_1.jpg?v=1774262261",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_2.jpg?v=1774262262",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_1.jpg?v=1774262261",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CORSUWFA26_DarkBrown_3.jpg?v=1774262261",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOCHWFA25_DarkBrown_4.jpg?v=1773921758"
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOCHWFA25_DarkBrown_4.jpg?v=1773921758",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1115.jpg?v=1774541055"
           ],
           "category": "LOAFER",
           "productType": "SHOES",
@@ -1474,8 +1540,8 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6631.jpg?v=1785827296",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MAIAWFS26_Terracota_4_copia.jpg?v=1785827499",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_MODEL.jpg?v=1776954905",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_1_481e649a-4e26-4bcc-a34a-445c49039002.jpg?v=1785490333",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_2_722961c3-f436-4fe4-9f8c-c7bba799583a.jpg?v=1785490334",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_1_481e649a-4e26-4bcc-a34a-445c49039002.jpg?v=1785490333",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_3_19bf516e-8945-4a30-918f-30df7609042c.jpg?v=1785490333",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_MODEL_af0a23a2-2362-4142-9476-7e5d0a41a63f.jpg?v=1785490334"
       ],
@@ -1506,8 +1572,8 @@
           "color": "Black",
           "sku": "BENMVEWFA26.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_1_481e649a-4e26-4bcc-a34a-445c49039002.jpg?v=1785490333",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_2_722961c3-f436-4fe4-9f8c-c7bba799583a.jpg?v=1785490334",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_1_481e649a-4e26-4bcc-a34a-445c49039002.jpg?v=1785490333",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_3_19bf516e-8945-4a30-918f-30df7609042c.jpg?v=1785490333",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MAIAWFS26_Terracota_4_copia.jpg?v=1785827499",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/BENMVEWFA26_Black_MODEL_af0a23a2-2362-4142-9476-7e5d0a41a63f.jpg?v=1785490334"
@@ -1528,8 +1594,8 @@
       "canonicalName": "Sardana Lace Up Woven Slingback Sandal",
       "category": "SLINGBACK",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFA26_Cherry.jpg?v=1776782449",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0390..jpg?v=1781089500",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFA26_Cherry.jpg?v=1776782449",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0351.jpg?v=1781089499",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_4.jpg?v=1773921597",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Black_1.jpg?v=1772115048",
@@ -1545,8 +1611,8 @@
           "color": "Cherry",
           "sku": "SARDWFA26.007.6",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFA26_Cherry.jpg?v=1776782449",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0390..jpg?v=1781089500",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFA26_Cherry.jpg?v=1776782449",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0351.jpg?v=1781089499",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SARDWFS26_Ivory_4.jpg?v=1773921597"
           ],
@@ -1786,8 +1852,8 @@
       "canonicalName": "Aresta Pointy Moccasin Flat",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_1.jpg?v=1773932258",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_2.jpg?v=1773932258",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_1.jpg?v=1773932258",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_3.jpg?v=1773932258",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1815.jpg?v=1773929746"
       ],
@@ -1799,8 +1865,8 @@
           "color": "Russet",
           "sku": "ARESWFA26.002.7",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_1.jpg?v=1773932258",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_2.jpg?v=1773932258",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_1.jpg?v=1773932258",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ARESWFA26_Russet_3.jpg?v=1773932258",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1815.jpg?v=1773929746"
           ],
@@ -2042,70 +2108,6 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "hereu--resso-bow-detail-wedged-mule",
-      "brand": "HEREU",
-      "canonicalName": "Resso Bow Detail Wedged Mule",
-      "category": "MULE",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_1.jpg?v=1776781869",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_2.jpg?v=1776781869",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_4.jpg?v=1776781869",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_3.jpg?v=1776781513",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000007.jpg?v=1784206293",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_067_41ddc56f-3480-4821-b7f7-369ada565957.jpg?v=1785168542",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black.jpg?v=1776781513",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6658.jpg?v=1785826742",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6633.jpg?v=1785826738",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1865.jpg?v=1776781513",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_083.jpg?v=1784186099"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/resso-bow-detail-wedged-mule-burgundy",
-          "handle": "resso-bow-detail-wedged-mule-burgundy",
-          "title": "RESSO - Bow-Detail Wedged Mule",
-          "color": "Burgundy",
-          "sku": "RESSWFA26.007.7",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_1.jpg?v=1776781869",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_2.jpg?v=1776781869",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_4.jpg?v=1776781869",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Burgundy_3.jpg?v=1776781513",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000007.jpg?v=1784206293"
-          ],
-          "category": "MULE",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        },
-        {
-          "productUrl": "https://hereustudio.com/products/resso-bow-detail-wedged-mule-black",
-          "handle": "resso-bow-detail-wedged-mule-black",
-          "title": "RESSO - Bow-Detail Wedged Mule",
-          "color": "Black",
-          "sku": "RESSWFA26.001.1",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_067_41ddc56f-3480-4821-b7f7-369ada565957.jpg?v=1785168542",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black.jpg?v=1776781513",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6658.jpg?v=1785826742",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6633.jpg?v=1785826738",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSWFA26_Black_2.jpg?v=1791356823",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1865.jpg?v=1776781513",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RESSO_083.jpg?v=1784186099"
-          ],
-          "category": "MULE",
-          "productType": "SHOES",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "hereu--soller-sport-tread-sole-t-bar-loafer",
@@ -2595,8 +2597,8 @@
       "canonicalName": "Sastre Velvet Braided Seam Slip On Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_1.jpg?v=1777556462",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_2.jpg?v=1777556463",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_1.jpg?v=1777556462",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_3.jpg?v=1777556463",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_6edb029f-069a-4241-ace7-feea41e9382c_1.jpg?v=1740663250",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_MODELO.jpg?v=1777556463"
@@ -2609,8 +2611,8 @@
           "color": "Black",
           "sku": "SASTVEWFA26.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_1.jpg?v=1777556462",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_2.jpg?v=1777556463",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_1.jpg?v=1777556462",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_3.jpg?v=1777556463",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_6edb029f-069a-4241-ace7-feea41e9382c_1.jpg?v=1740663250",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTVEWFA26_Black_MODELO.jpg?v=1777556463"
@@ -2700,9 +2702,9 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "hereu--resso-boot-bow-detail-wedged-boot",
+      "modelFamilyId": "hereu--resso-boot-wedged-boot",
       "brand": "HEREU",
-      "canonicalName": "Resso Boot Bow Detail Wedged Boot",
+      "canonicalName": "Resso Boot Wedged Boot",
       "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6665.jpg?v=1788766897",
@@ -2712,9 +2714,9 @@
       ],
       "variants": [
         {
-          "productUrl": "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black",
-          "handle": "resso-boot-bow-detail-wedged-boot-black",
-          "title": "RESSO BOOT - Bow-Detail Wedged Boot",
+          "productUrl": "https://hereustudio.com/products/resso-boot-wedged-boot-black",
+          "handle": "resso-boot-wedged-boot-black",
+          "title": "RESSO BOOT - Wedged Boot",
           "color": "Black",
           "sku": "RESBOWFA26.001.1",
           "images": [
@@ -2739,14 +2741,14 @@
       "canonicalName": "Ondina Pleated Flat Pump",
       "category": "PUMP",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_2.jpg?v=1776696171",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_1.jpg?v=1776696171",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_2.jpg?v=1776696171",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_3.jpg?v=1776696171",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4.jpg?v=1776696205",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1861.jpg?v=1776696205",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Rose.jpg?v=1776696436",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/HEREU_10_c3a28012-d0f5-426e-aacf-287054c2818f.jpg?v=1786547744",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0395.jpg?v=1781090185",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/HEREU_10_c3a28012-d0f5-426e-aacf-287054c2818f.jpg?v=1786547744",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0358.jpg?v=1781090184"
       ],
       "variants": [
@@ -2757,8 +2759,8 @@
           "color": "Black",
           "sku": "ONDIWFA26.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_2.jpg?v=1776696171",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_1.jpg?v=1776696171",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_2.jpg?v=1776696171",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Black_3.jpg?v=1776696171",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4.jpg?v=1776696205",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1861.jpg?v=1776696205"
@@ -2777,8 +2779,8 @@
           "sku": "ONDIWFA26.007.4",
           "images": [
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ONDIWFA26_Rose.jpg?v=1776696436",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/HEREU_10_c3a28012-d0f5-426e-aacf-287054c2818f.jpg?v=1786547744",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0395.jpg?v=1781090185",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/HEREU_10_c3a28012-d0f5-426e-aacf-287054c2818f.jpg?v=1786547744",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0358.jpg?v=1781090184",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULBWFA24_Taupe_4.jpg?v=1776696205",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1861.jpg?v=1776696205"
@@ -2956,8 +2958,8 @@
       "canonicalName": "Priego Squared Lace Up Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_1.jpg?v=1740662413",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6258.jpg?v=1740662413",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_1.jpg?v=1740662413",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6194.jpg?v=1740662413",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A9671_c3f15876-308e-40e5-8d32-499d88ddc3e7.jpg?v=1740662413",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_2.jpg?v=1780044535"
@@ -2970,8 +2972,8 @@
           "color": "Black",
           "sku": "WFPRSQ",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_1.jpg?v=1740662413",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6258.jpg?v=1740662413",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_1.jpg?v=1740662413",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6194.jpg?v=1740662413",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A9671_c3f15876-308e-40e5-8d32-499d88ddc3e7.jpg?v=1740662413",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFPRSQ_Black_2.jpg?v=1780044535"
@@ -3174,8 +3176,8 @@
       "canonicalName": "Tabella Woven Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_1.jpg?v=1748532565",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2299.jpg?v=1753436870",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_1.jpg?v=1748532565",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2217.jpg?v=1753436870",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2245.jpg?v=1753439809",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_5.jpg?v=1753439809"
@@ -3188,8 +3190,8 @@
           "color": "Black",
           "sku": "TABEWFA25.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_1.jpg?v=1748532565",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2299.jpg?v=1753436870",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_1.jpg?v=1748532565",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2217.jpg?v=1753436870",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2245.jpg?v=1753439809",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_5.jpg?v=1753439809"
@@ -3749,7 +3751,7 @@
           "productUrl": "https://hereustudio.com/products/nombela-interwoven-detail-slip-on-loafer-dark-brown",
           "handle": "nombela-interwoven-detail-slip-on-loafer-dark-brown",
           "title": "NOMBELA - Interwoven Detail Slip-On Loafer",
-          "color": "NOMBELA - Interwoven Detail Slip-On Loafer",
+          "color": "Dark Brown",
           "sku": "WFNOMB",
           "images": [
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP22NOMB003.jpg?v=1740663733",
@@ -3862,7 +3864,7 @@
           "productUrl": "https://hereustudio.com/products/alber-t-bar-moccasin-reddish-tan",
           "handle": "alber-t-bar-moccasin-reddish-tan",
           "title": "ALBER - T-bar Loafer",
-          "color": "ALBER - T-bar Loafer",
+          "color": "Tan",
           "sku": "WFALBE",
           "images": [
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7802_ddd1fbff-2efe-42b3-be31-085b06782cd1.jpg?v=1745501161",
@@ -3925,8 +3927,8 @@
       "canonicalName": "Tabella Woven Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_1.jpg?v=1748870675",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_2.jpg?v=1748870675",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_1.jpg?v=1748870675",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_3.jpg?v=1748870675",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2245.jpg?v=1753439809",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_5.jpg?v=1753439809"
@@ -3939,11 +3941,47 @@
           "color": "Russet",
           "sku": "TABEWFA25.002.7",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_1.jpg?v=1748870675",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_2.jpg?v=1748870675",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_1.jpg?v=1748870675",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Russet_3.jpg?v=1748870675",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A2245.jpg?v=1753439809",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/TABEWFA25_Black_5.jpg?v=1753439809"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--juliol-w-supple-shiny-high-cut-deconstructed-loafer--juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
+      "brand": "HEREU",
+      "canonicalName": "Juliol W Supple Shiny High Cut Deconstructed Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3557.jpg?v=1764160136",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3500.jpg?v=1764160136",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3534.jpg?v=1755847369",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Chestnut_4.jpg?v=1755847369",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Black_2.jpg?v=1755847369"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
+          "handle": "juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
+          "title": "JULIOL W SUPPLE SHINY - High-Cut Deconstructed Loafer",
+          "color": "Chestnut",
+          "sku": "JUWSSWFA26.002.6",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3557.jpg?v=1764160136",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3500.jpg?v=1764160136",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3534.jpg?v=1755847369",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Chestnut_4.jpg?v=1755847369",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Black_2.jpg?v=1755847369"
           ],
           "category": "LOAFER",
           "productType": "SHOES",
@@ -4009,42 +4047,6 @@
       ],
       "isNew": true,
       "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "hereu--juliol-w-supple-shiny-high-cut-deconstructed-loafer--juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
-      "brand": "HEREU",
-      "canonicalName": "Juliol W Supple Shiny High Cut Deconstructed Loafer",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3557.jpg?v=1764160136",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3500.jpg?v=1764160136",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3534.jpg?v=1755847369",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Chestnut_4.jpg?v=1755847369",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Black_2.jpg?v=1755847369"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://hereustudio.com/products/juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
-          "handle": "juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
-          "title": "JULIOL W SUPPLE SHINY - High-Cut Deconstructed Loafer",
-          "color": "Chestnut",
-          "sku": "JUWSSWFA24.002.6",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3557.jpg?v=1764160136",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3500.jpg?v=1764160136",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3534.jpg?v=1755847369",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Chestnut_4.jpg?v=1755847369",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JUWSSWFA24_Black_2.jpg?v=1755847369"
-          ],
-          "category": "LOAFER",
-          "productType": "SHOES",
-          "inNewArrivals": false,
-          "isNew": true,
-          "newnessEvidence": "SOURCE_BADGE"
-        }
-      ],
-      "isNew": true,
-      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "hereu--soller-t-bar-moccasin",
@@ -4174,8 +4176,8 @@
       "canonicalName": "Alda Sport Tread Sole Low Chelsea Boot",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALDASPORT_444.jpg?v=1782728904",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ALDS002_1_a493ff79-31d6-4a15-8d2f-693d115cd7d8.jpg?v=1740663686",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALDASPORT_444.jpg?v=1782728904",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4493_a55ddb24-3402-4a06-b9ea-85c90effac8c.jpg?v=1740663686",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4174_ef3932e7-62d2-4ab3-b07a-cdfe25c29d14.jpg?v=1740663686",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ALDS001_4_b99d7e7d-c683-42b8-a98c-f385c929a2ef.jpg?v=1740663686",
@@ -4194,8 +4196,8 @@
           "color": "Tan",
           "sku": "WFALDS",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALDASPORT_444.jpg?v=1782728904",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ALDS002_1_a493ff79-31d6-4a15-8d2f-693d115cd7d8.jpg?v=1740663686",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALDASPORT_444.jpg?v=1782728904",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4493_a55ddb24-3402-4a06-b9ea-85c90effac8c.jpg?v=1740663686",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4174_ef3932e7-62d2-4ab3-b07a-cdfe25c29d14.jpg?v=1740663686",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ALDS001_4_b99d7e7d-c683-42b8-a98c-f385c929a2ef.jpg?v=1740663686",
@@ -4272,9 +4274,9 @@
       "canonicalName": "Alber Sport Tread Sole T Bar Loafer",
       "category": "LOAFER",
       "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4481_897e1072-5301-4cce-833c-9453d071642b.jpg?v=1740663684",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFA21ALSP002.jpg?v=1740663684",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/DSCF9158_97924248-bde6-43d5-bfbf-748734fc8596.jpg?v=1740663684",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4481_897e1072-5301-4cce-833c-9453d071642b.jpg?v=1740663684",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1994_23596415-adb2-4f15-a7b1-034b537e8448.jpg?v=1740663684",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFA21ALSP001_4_f02b11d9-42f0-44e9-9abe-8e378659f9c8.jpg?v=1740663684",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A6593_95ccc1d3-bd8f-4135-ba3a-c66680682383.jpg?v=1740663684",
@@ -4297,9 +4299,9 @@
           "color": "Tan",
           "sku": "WFALSP",
           "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4481_897e1072-5301-4cce-833c-9453d071642b.jpg?v=1740663684",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFA21ALSP002.jpg?v=1740663684",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/DSCF9158_97924248-bde6-43d5-bfbf-748734fc8596.jpg?v=1740663684",
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A4481_897e1072-5301-4cce-833c-9453d071642b.jpg?v=1740663684",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1994_23596415-adb2-4f15-a7b1-034b537e8448.jpg?v=1740663684",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFA21ALSP001_4_f02b11d9-42f0-44e9-9abe-8e378659f9c8.jpg?v=1740663684",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A6593_95ccc1d3-bd8f-4135-ba3a-c66680682383.jpg?v=1740663684"
@@ -4477,8 +4479,8 @@
       "canonicalName": "Juliol Foulard High Cut Deconstructed Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULFOWFA26_Beige.jpg?v=1774278368",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6659.jpg?v=1785826657",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULFOWFA26_Beige.jpg?v=1774278368",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6634.jpg?v=1785826650",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4094.jpg?v=1774278587",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1842.jpg?v=1774278587"
@@ -4491,8 +4493,8 @@
           "color": "Beige",
           "sku": "JULFOWFA26.003.6",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULFOWFA26_Beige.jpg?v=1774278368",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6659.jpg?v=1785826657",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULFOWFA26_Beige.jpg?v=1774278368",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_DROP_02_PRODUCT6634.jpg?v=1785826650",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4094.jpg?v=1774278587",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1842.jpg?v=1774278587"
@@ -4513,8 +4515,8 @@
       "canonicalName": "Juliol Lace Up Deconstructed Shoe",
       "category": "OTHER_FOOTWEAR",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_1.jpg?v=1777029151",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_2.jpg?v=1777029151",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_1.jpg?v=1777029151",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_3.jpg?v=1777029151",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_4.jpg?v=1777029152",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1097.jpg?v=1773996495"
@@ -4527,8 +4529,8 @@
           "color": "Rose",
           "sku": "JULLUWFA26.007.4",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_1.jpg?v=1777029151",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_2.jpg?v=1777029151",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_1.jpg?v=1777029151",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_3.jpg?v=1777029151",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/JULLUWFA26_Rose_4.jpg?v=1777029152",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A1097.jpg?v=1773996495"
@@ -4549,8 +4551,8 @@
       "canonicalName": "Esportiu Mary Jane Woven Sporty Mary Jane Shoe",
       "category": "BALLERINA",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0706.jpg?v=1783925306",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0844.jpg?v=1783925307",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0706.jpg?v=1783925306",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0785.jpg?v=1783925307",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ESMJAWOWFS26_Silver_4.jpg?v=1776349376",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1830.jpg?v=1776348201"
@@ -4563,8 +4565,8 @@
           "color": "Cream",
           "sku": "ESMJAWLWFA26.003.8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0706.jpg?v=1783925306",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0844.jpg?v=1783925307",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0706.jpg?v=1783925306",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_0785.jpg?v=1783925307",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ESMJAWOWFS26_Silver_4.jpg?v=1776349376",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/AW26_MODELO1830.jpg?v=1776348201"
@@ -5370,7 +5372,11 @@
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Black_1.jpg?v=1740663448",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7520.jpg?v=1740663449",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A7480.jpg?v=1740663449",
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_4_9483b598-c7d0-4ec7-9512-7911eaded39e.jpg?v=1740663449"
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_4_9483b598-c7d0-4ec7-9512-7911eaded39e.jpg?v=1740663449",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_1.jpg?v=1740663444",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_2.jpg?v=1740663444",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_3.jpg?v=1740663445",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_4.jpg?v=1740663445"
       ],
       "variants": [
         {
@@ -5390,10 +5396,28 @@
           "inNewArrivals": false,
           "isNew": true,
           "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/metla-polished-almond-toe-mid-calf-boot-tan",
+          "handle": "metla-polished-almond-toe-mid-calf-boot-tan",
+          "title": "METLA POLISHED - Almond Toe Mid Calf Boot",
+          "color": "tan",
+          "sku": "METPWFA24.002.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_1.jpg?v=1740663444",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_2.jpg?v=1740663444",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_3.jpg?v=1740663445",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/METPWFA24_Tan_4.jpg?v=1740663445"
+          ],
+          "category": "BOOT",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
       "isNew": true,
-      "groupingReason": "single-product"
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "hereu--puntera-supple-shiny-pleated-toe-pump--puntera-supple-shiny-pleated-toe-pump-ebony",
@@ -5513,8 +5537,8 @@
       "canonicalName": "Alcala T Bar Loafer",
       "category": "LOAFER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6019.jpg?v=1754403892",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6102.jpg?v=1754403892",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6019.jpg?v=1754403892",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6075.jpg?v=1754403892",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCAWFA25_Black_4_783577fa-8500-4613-9ba8-32e8ffb56c31.jpg?v=1754403892",
         "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCAWFA25_Russet_5.jpg?v=1758200453"
@@ -5527,8 +5551,8 @@
           "color": "Black",
           "sku": "ALCAWFA25.001.1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6019.jpg?v=1754403892",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6102.jpg?v=1754403892",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6019.jpg?v=1754403892",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6075.jpg?v=1754403892",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCAWFA25_Black_4_783577fa-8500-4613-9ba8-32e8ffb56c31.jpg?v=1754403892",
             "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCAWFA25_Russet_5.jpg?v=1758200453"
@@ -5784,6 +5808,537 @@
       ],
       "isNew": true,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--lorea-supple-shiny-mary-jane-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Lorea Supple Shiny Mary Jane Loafer",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_1.jpg?v=1740663259",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_2.jpg?v=1740663259",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_3.jpg?v=1740663259",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_5_2e6c2499-36be-4974-b7de-760541c3907a.jpg?v=1740663259",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9676.jpg?v=1740663263",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Chestnut_1.jpg?v=1740663261",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3107_2.jpg?v=1740663261",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3052_2.jpg?v=1740663261",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_5.jpg?v=1740663263"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/lorea-supple-shiny-mary-jane-loafer-cream",
+          "handle": "lorea-supple-shiny-mary-jane-loafer-cream",
+          "title": "LOREA SUPPLE SHINY - Mary Jane Loafer",
+          "color": "Cream",
+          "sku": "LOSSWFS25.003.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_1.jpg?v=1740663259",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_2.jpg?v=1740663259",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_3.jpg?v=1740663259",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_5_2e6c2499-36be-4974-b7de-760541c3907a.jpg?v=1740663259",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9676.jpg?v=1740663263"
+          ],
+          "category": "BALLERINA",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/lorea-supple-shiny-mary-jane-loafer-chestnut",
+          "handle": "lorea-supple-shiny-mary-jane-loafer-chestnut",
+          "title": "LOREA SUPPLE SHINY - Mary Jane Loafer",
+          "color": "Chestnut",
+          "sku": "LOSSWFS25.002.6",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Chestnut_1.jpg?v=1740663261",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3107_2.jpg?v=1740663261",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A3052_2.jpg?v=1740663261",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSSWFS25_Cream_5.jpg?v=1740663263",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A9676.jpg?v=1740663263"
+          ],
+          "category": "BALLERINA",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "hereu--lorea-grainy-mary-jane-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Lorea Grainy Mary Jane Loafer",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00057.jpg?v=1767963640",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00203.jpg?v=1767963696",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00061.jpg?v=1767963696",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355_1.jpg?v=1768922539"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/lorea-grainy-mary-jane-loafer-coffee",
+          "handle": "lorea-grainy-mary-jane-loafer-coffee",
+          "title": "LOREA GRAINY - Mary Jane Loafer",
+          "color": "Coffee",
+          "sku": "LOGRWFS26.002.39",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00057.jpg?v=1767963640",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00203.jpg?v=1767963696",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SS26_DROP01_00061.jpg?v=1767963696",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6355_1.jpg?v=1768922539"
+          ],
+          "category": "BALLERINA",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--sineu-interlaced-detail-slip-on-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Sineu Interlaced Detail Slip On Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1466.webp?v=1740663593",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3153.webp?v=1740663594",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/SINEUBACK.jpg?v=1740663594",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3149.webp?v=1740663594",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A0223.jpg?v=1740663594",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/001_0072.jpg?v=1740663594",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6976_d22ae1d1-0d68-4a62-afe6-6458f9453757.jpg?v=1742477876",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFSINE_DarkNavy_1.jpg?v=1741789553",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6909_418cd162-762b-48a2-b2bd-5cdd73fcfb0b.jpg?v=1742477876",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1953_5595370d-d620-4ad5-b320-a5cef6a995b1.webp?v=1742477876",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SINEWFS24_Tan_5.jpg?v=1773236657",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000000250007_5d2c1a94-97cc-48aa-bd39-7291427911d6.jpg?v=1740663597",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3118.webp?v=1740663597",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A0930_3c385053-7dca-4308-a299-0fb468a841fc.webp?v=1740663597",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A0908.webp?v=1740663597",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4716_6231c48d-6b3a-4a74-98d8-20d36c5d9ba8_VIBRAM.jpg?v=1773236657",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/590A0957.jpg?v=1753368967",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFSINE_DarkBrown_1.jpg?v=1753368967",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/590A0933.jpg?v=1753368967",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7797_sineu_brown_cdda5d3a-cf27-4ec3-919d-510320fefc2b.jpg?v=1753370416"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-tan",
+          "handle": "sineu-interlaced-detail-slip-on-loafer-tan",
+          "title": "SINEU - Interlaced Detail Slip-On Loafer",
+          "color": "Tan",
+          "sku": "WFSINE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1466.webp?v=1740663593",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3153.webp?v=1740663594",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/SINEUBACK.jpg?v=1740663594",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3149.webp?v=1740663594",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A0223.jpg?v=1740663594",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/001_0072.jpg?v=1740663594"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-dark-navy",
+          "handle": "sineu-interlaced-detail-slip-on-loafer-dark-navy",
+          "title": "SINEU - Interlaced Detail Slip-On Loafer",
+          "color": "navy",
+          "sku": "WFSINE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6976_d22ae1d1-0d68-4a62-afe6-6458f9453757.jpg?v=1742477876",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFSINE_DarkNavy_1.jpg?v=1741789553",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A6909_418cd162-762b-48a2-b2bd-5cdd73fcfb0b.jpg?v=1742477876",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1953_5595370d-d620-4ad5-b320-a5cef6a995b1.webp?v=1742477876",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SINEWFS24_Tan_5.jpg?v=1773236657"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-black",
+          "handle": "sineu-interlaced-detail-slip-on-loafer-black",
+          "title": "SINEU - Interlaced Detail Slip-On Loafer",
+          "color": "Black",
+          "sku": "WFSINE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/000000250007_5d2c1a94-97cc-48aa-bd39-7291427911d6.jpg?v=1740663597",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A3118.webp?v=1740663597",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A0930_3c385053-7dca-4308-a299-0fb468a841fc.webp?v=1740663597",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A0908.webp?v=1740663597",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1953_5595370d-d620-4ad5-b320-a5cef6a995b1.webp?v=1742477876",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4716_6231c48d-6b3a-4a74-98d8-20d36c5d9ba8_VIBRAM.jpg?v=1773236657",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SINEWFS24_Tan_5.jpg?v=1773236657"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        },
+        {
+          "productUrl": "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-dark-brown",
+          "handle": "sineu-interlaced-detail-slip-on-loafer-dark-brown",
+          "title": "SINEU - Interlaced Detail Slip-On Loafer",
+          "color": "Dark Brown",
+          "sku": "WFSINE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/590A0957.jpg?v=1753368967",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/WFSINE_DarkBrown_1.jpg?v=1753368967",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/590A0933.jpg?v=1753368967",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7797_sineu_brown_cdda5d3a-cf27-4ec3-919d-510320fefc2b.jpg?v=1753370416",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4716_6231c48d-6b3a-4a74-98d8-20d36c5d9ba8_VIBRAM.jpg?v=1773236657",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SINEWFS24_Tan_5.jpg?v=1773236657"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "hereu--roqueta-slingback-t-bar-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Roqueta Slingback T Bar Loafer",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A8022_ff9f6304-6a44-4524-ab63-f2b0148d6ffb.jpg?v=1773996641",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/14_WEB.jpg?v=1773996641",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU002_1_e8039d58-e903-408d-bfce-688ac9c62c43.jpg?v=1773996641",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7878_e8384162-3ca9-4b4f-9e60-5afe0aba0b65.jpg?v=1773996641",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7938_2d12ba92-5fdb-4562-8a2b-9c1c9392f644.jpg?v=1773996641",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/roqueta-slingback-moccasin-reddish-tan",
+          "handle": "roqueta-slingback-moccasin-reddish-tan",
+          "title": "ROQUETA - Slingback T-bar loafer",
+          "color": "Tan",
+          "sku": "WFROQU",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A8022_ff9f6304-6a44-4524-ab63-f2b0148d6ffb.jpg?v=1773996641",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/14_WEB.jpg?v=1773996641",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU002_1_e8039d58-e903-408d-bfce-688ac9c62c43.jpg?v=1773996641",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7878_e8384162-3ca9-4b4f-9e60-5afe0aba0b65.jpg?v=1773996641",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7938_2d12ba92-5fdb-4562-8a2b-9c1c9392f644.jpg?v=1773996641",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+          ],
+          "category": "SLINGBACK",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--roqueta-slingback-t-bar-loafer--roqueta-slingback-t-bar-loafer-custard",
+      "brand": "HEREU",
+      "canonicalName": "Roqueta Slingback T Bar Loafer",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_2.jpg?v=1740663712",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_1.jpg?v=1740663711",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_3.jpg?v=1740663712",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_4.jpg?v=1740663712",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/roqueta-slingback-t-bar-loafer-custard",
+          "handle": "roqueta-slingback-t-bar-loafer-custard",
+          "title": "ROQUETA - Slingback T-bar Loafer",
+          "color": "Custard",
+          "sku": "WFROQU",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_2.jpg?v=1740663712",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_1.jpg?v=1740663711",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_3.jpg?v=1740663712",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU003_4.jpg?v=1740663712",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+          ],
+          "category": "SLINGBACK",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--alcover-supple-shiny-braided-seams-t-bar-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Alcover Supple Shiny Braided Seams T Bar Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCOSSMFS25_Cream_1-New.jpg?v=1740663309",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A5085copy.jpg?v=1740663309",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A5043.jpg?v=1740663309",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_3f118a38-af75-4684-96f5-4f60f85ca1e6.jpg?v=1740663309",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCOSSWFS25_Cream_1.jpg?v=1761746487"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/alcover-supple-shiny-braided-seams-t-bar-loafer-cream",
+          "handle": "alcover-supple-shiny-braided-seams-t-bar-loafer-cream",
+          "title": "ALCOVER SUPPLE SHINY - Braided Seams T-bar Loafer",
+          "color": "Cream",
+          "sku": "ALCOSSWFS25.003.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCOSSMFS25_Cream_1-New.jpg?v=1740663309",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A5085copy.jpg?v=1740663309",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A5043.jpg?v=1740663309",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279_3f118a38-af75-4684-96f5-4f60f85ca1e6.jpg?v=1740663309",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCOSSWFS25_Cream_1.jpg?v=1761746487"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--roqueta-slingback-t-bar-loafer--roqueta-slingback-moccasin-black",
+      "brand": "HEREU",
+      "canonicalName": "Roqueta Slingback T Bar Loafer",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU001_1.jpg?v=1740663676",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/roquetablack_fd4d4b40-bc89-4c3a-b3e6-9ddf44c19f2b.jpg?v=1740663676",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/blackroquetaback_10c7a969-b2ba-4024-b11b-51db12c939f2.jpg?v=1740663676",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7935_1e8a7393-10c7-4ff4-be78-3a6538b04a4b.jpg?v=1740663676",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/roqueta-slingback-moccasin-black",
+          "handle": "roqueta-slingback-moccasin-black",
+          "title": "ROQUETA - Slingback T-bar loafer",
+          "color": "Black",
+          "sku": "WFROQU",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/WFP21ROQU001_1.jpg?v=1740663676",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/roquetablack_fd4d4b40-bc89-4c3a-b3e6-9ddf44c19f2b.jpg?v=1740663676",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/blackroquetaback_10c7a969-b2ba-4024-b11b-51db12c939f2.jpg?v=1740663676",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7935_1e8a7393-10c7-4ff4-be78-3a6538b04a4b.jpg?v=1740663676",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A7497.jpg?v=1780923845"
+          ],
+          "category": "SLINGBACK",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--sineu-interlaced-detail-slip-on-loafer--sineu-interlaced-detail-slip-on-loafer-custard",
+      "brand": "HEREU",
+      "canonicalName": "Sineu Interlaced Detail Slip On Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1365.png?v=1740663595",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1465_31c17047-276b-4286-904e-008c007cd545.webp?v=1740663595",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/HereuStudio-Day1-537-2.webp?v=1740663595",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1289.jpg?v=1740663596",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7797_d3f2e858-15c7-44a6-90a4-51ea16de8795.jpg?v=1740663596"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-custard",
+          "handle": "sineu-interlaced-detail-slip-on-loafer-custard",
+          "title": "SINEU - Interlaced Detail Slip-On Loafer",
+          "color": "Custard",
+          "sku": "WFSINE",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A1365.png?v=1740663595",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1465_31c17047-276b-4286-904e-008c007cd545.webp?v=1740663595",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/HereuStudio-Day1-537-2.webp?v=1740663595",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A1289.jpg?v=1740663596",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/products/CF0A7797_d3f2e858-15c7-44a6-90a4-51ea16de8795.jpg?v=1740663596"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--lorea-mary-jane-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Lorea Mary Jane Loafer",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_2.jpg?v=1740663251",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_1.jpg?v=1740663251",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_3.jpg?v=1740663252",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Beige_4.jpg?v=1740663256",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_4.jpg?v=1740663252"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/lorea-suede-mary-jane-loafer-tabac",
+          "handle": "lorea-suede-mary-jane-loafer-tabac",
+          "title": "LOREA SUEDE - Mary Jane Loafer",
+          "color": "Tabac",
+          "sku": "LOSUWFS25.002.26",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_2.jpg?v=1740663251",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_1.jpg?v=1740663251",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_3.jpg?v=1740663252",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Beige_4.jpg?v=1740663256",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/LOSUWFS25_Tabac_4.jpg?v=1740663252"
+          ],
+          "category": "BALLERINA",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--marti-slip-on-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Marti Slip On Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_1.jpg?v=1761902358",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_2.jpg?v=1740663427",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_3.jpg?v=1740663427",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTMFA24_Tan_4_27f82115-413d-4a0c-9db1-2bd2f14639a3.jpg?v=1740663427",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4716_6231c48d-6b3a-4a74-98d8-20d36c5d9ba8_VIBRAM.jpg?v=1773236657",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_5.jpg?v=1753183513"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/marti-slip-on-loafer-dark-brown",
+          "handle": "marti-slip-on-loafer-dark-brown",
+          "title": "MARTI - Slip-On Loafer",
+          "color": "Dark Brown",
+          "sku": "MARTWFA24.002.3",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_1.jpg?v=1761902358",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_2.jpg?v=1740663427",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_3.jpg?v=1740663427",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTMFA24_Tan_4_27f82115-413d-4a0c-9db1-2bd2f14639a3.jpg?v=1740663427",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/F0A4716_6231c48d-6b3a-4a74-98d8-20d36c5d9ba8_VIBRAM.jpg?v=1773236657",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/MARTWFA24_DarkBrown_5.jpg?v=1753183513"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--barraca-buckle-strap-mule-loafer",
+      "brand": "HEREU",
+      "canonicalName": "Barraca Buckle Strap Mule Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3991.jpg?v=1759311751",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3999.jpg?v=1759311752",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3971.jpg?v=1759317492",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCSHWFA25_Sand_4.jpg?v=1759317492"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/barraca-buckle-strap-mule-loafer-grey",
+          "handle": "barraca-buckle-strap-mule-loafer-grey",
+          "title": "BARRACA - Buckle-strap Mule Loafer",
+          "color": "grey",
+          "sku": "BASUWFS24.006.1",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3991.jpg?v=1759311751",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3999.jpg?v=1759311752",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/90A3971.jpg?v=1759317492",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/ALCSHWFA25_Sand_4.jpg?v=1759317492"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "hereu--sastre-supple-shiny-braided-seam-slip-on-loafer--sastre-supple-shiny-braided-seam-slip-on-loafer-burgundy",
+      "brand": "HEREU",
+      "canonicalName": "Sastre Supple Shiny Braided Seam Slip On Loafer",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1792.jpg?v=1795430294",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1880.jpg?v=1795430295",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1850.jpg?v=1795430294",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279.jpg?v=1766405955",
+        "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSMFS25_Chestnut_4.jpg?v=1740663248"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://hereustudio.com/products/sastre-supple-shiny-braided-seam-slip-on-loafer-burgundy",
+          "handle": "sastre-supple-shiny-braided-seam-slip-on-loafer-burgundy",
+          "title": "SASTRE SUPPLE SHINY - Braided Seam Slip-On Loafer",
+          "color": "Burgundy",
+          "sku": "SASTSSWFA26.007.7",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1792.jpg?v=1795430294",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1880.jpg?v=1795430295",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/RS27_DROP_1_1850.jpg?v=1795430294",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/CF0A3279.jpg?v=1766405955",
+            "https://cdn.shopify.com/s/files/1/0637/5794/3000/files/SASTSSMFS25_Chestnut_4.jpg?v=1740663248"
+          ],
+          "category": "LOAFER",
+          "productType": "SHOES",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
     }
   ],
   "productUrls": [
@@ -5795,8 +6350,8 @@
     "https://hereustudio.com/products/tilla-shearling-deconstructed-babouche-black",
     "https://hereustudio.com/products/juliol-boot-soft-ankle-boot-black",
     "https://hereustudio.com/products/juliol-foulard-high-cut-deconstructed-loafer-black-c",
+    "https://hereustudio.com/products/resso-bow-detail-wedged-mule-black",
     "https://hereustudio.com/products/juliol-boot-heeled-soft-low-calf-boot-black",
-    "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-black",
     "https://hereustudio.com/products/juliol-boot-heeled-soft-low-calf-boot-dark-brown",
     "https://hereustudio.com/products/tilla-shearling-deconstructed-babouche-dark-brown",
     "https://hereustudio.com/products/juliol-w-suede-high-cut-deconstructed-loafer-dark-brown",
@@ -5816,6 +6371,7 @@
     "https://hereustudio.com/products/llasada-supple-shiny-front-knot-pump-chestnut",
     "https://hereustudio.com/products/corbati-suede-bow-detail-slip-on-loafer-dark-brown",
     "https://hereustudio.com/products/guera-2-polished-interwoven-slip-on-loafer-brown",
+    "https://hereustudio.com/products/resso-bow-detail-wedged-mule-burgundy",
     "https://hereustudio.com/products/sineu-mule-interlaced-detail-slip-on-mule-loafer-tan",
     "https://hereustudio.com/products/llasada-metallic-front-knot-pump-burgundy",
     "https://hereustudio.com/products/bena-mid-velvet-interwoven-knotted-t-bar-heeled-sandal-burgundy",
@@ -5828,7 +6384,6 @@
     "https://hereustudio.com/products/pesca-heeled-womens-fisherman-sandal-burgundy",
     "https://hereustudio.com/products/plegada-shiny-deconstructed-lace-up-shoe-mahogany",
     "https://hereustudio.com/products/pesca-fisherman-sandal-burgundy",
-    "https://hereustudio.com/products/resso-bow-detail-wedged-mule-burgundy",
     "https://hereustudio.com/products/soller-sport-tread-sole-t-bar-loafer-burgundy",
     "https://hereustudio.com/products/nombela-r-sport-tread-sole-interwoven-detail-slip-on-loafer-burgundy",
     "https://hereustudio.com/products/andreu-r-sport-polished-low-calf-zipped-boot-dark-brown",
@@ -5843,12 +6398,11 @@
     "https://hereustudio.com/products/plegada-suede-deconstructed-lace-up-shoe-dark-purple",
     "https://hereustudio.com/products/sarga-pleated-detail-ankle-boot-black",
     "https://hereustudio.com/products/aresta-pointy-moccasin-flat-black",
-    "https://hereustudio.com/products/resso-bow-detail-wedged-mule-black",
     "https://hereustudio.com/products/sio-2-polished-mary-jane-shoe-black",
     "https://hereustudio.com/products/sastre-velvet-braided-seam-slip-on-loafer-black",
     "https://hereustudio.com/products/alber-crinkled-glossy-womens-t-bar-loafer-black",
     "https://hereustudio.com/products/juliol-boot-calf-hair-heeled-soft-low-calf-boot-black",
-    "https://hereustudio.com/products/resso-boot-bow-detail-wedged-boot-black",
+    "https://hereustudio.com/products/resso-boot-wedged-boot-black",
     "https://hereustudio.com/products/soller-sport-tread-sole-t-bar-loafer-black",
     "https://hereustudio.com/products/ondina-pleated-flat-pump-black",
     "https://hereustudio.com/products/bena-mid-velvet-interwoven-knotted-t-bar-heeled-sandal-black",
@@ -5883,8 +6437,8 @@
     "https://hereustudio.com/products/alber-t-bar-moccasin-reddish-tan",
     "https://hereustudio.com/products/anancla-cut-out-slip-on-loafer-tan",
     "https://hereustudio.com/products/tabella-woven-saddle-loafer-russet",
-    "https://hereustudio.com/products/nombela-sport-tread-sole-interwoven-detail-slip-on-loafer-tan",
     "https://hereustudio.com/products/juliol-w-supple-shiny-high-cut-deconstructed-loafer-chestnut",
+    "https://hereustudio.com/products/nombela-sport-tread-sole-interwoven-detail-slip-on-loafer-tan",
     "https://hereustudio.com/products/floreta-t-bar-sandal-tan",
     "https://hereustudio.com/products/soller-womens-t-bar-moccasin-tan",
     "https://hereustudio.com/products/bonell-womens-woven-t-bar-mule-loafer-tan",
@@ -5928,6 +6482,7 @@
     "https://hereustudio.com/products/alber-heeled-womens-t-bar-loafer-black",
     "https://hereustudio.com/products/alda-womens-mid-calf-chelsea-boot-black",
     "https://hereustudio.com/products/sala-square-toe-high-cut-loafer-black",
+    "https://hereustudio.com/products/juliol-boot-suede-soft-ankle-boot-black",
     "https://hereustudio.com/products/plegada-crinkled-glossy-deconstructed-lace-up-shoe-black",
     "https://hereustudio.com/products/cairel-mule-tasseled-mule-loafer-black",
     "https://hereustudio.com/products/alda-sport-mid-calf-chelsea-boot-black",
@@ -5967,6 +6522,23 @@
     "https://hereustudio.com/products/soller-womens-t-bar-moccasin-dark-brown",
     "https://hereustudio.com/products/alber-t-bar-loafer-dark-brown",
     "https://hereustudio.com/products/nombela-suede-interwoven-detail-slip-on-loafer-dark-brown",
-    "https://hereustudio.com/products/tabella-boot-woven-saddle-ankle-boot-dark-brown"
+    "https://hereustudio.com/products/tabella-boot-woven-saddle-ankle-boot-dark-brown",
+    "https://hereustudio.com/products/lorea-supple-shiny-mary-jane-loafer-cream",
+    "https://hereustudio.com/products/metla-polished-almond-toe-mid-calf-boot-tan",
+    "https://hereustudio.com/products/lorea-grainy-mary-jane-loafer-coffee",
+    "https://hereustudio.com/products/lorea-supple-shiny-mary-jane-loafer-chestnut",
+    "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-tan",
+    "https://hereustudio.com/products/roqueta-slingback-moccasin-reddish-tan",
+    "https://hereustudio.com/products/roqueta-slingback-t-bar-loafer-custard",
+    "https://hereustudio.com/products/alcover-supple-shiny-braided-seams-t-bar-loafer-cream",
+    "https://hereustudio.com/products/roqueta-slingback-moccasin-black",
+    "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-dark-navy",
+    "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-custard",
+    "https://hereustudio.com/products/lorea-suede-mary-jane-loafer-tabac",
+    "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-black",
+    "https://hereustudio.com/products/marti-slip-on-loafer-dark-brown",
+    "https://hereustudio.com/products/barraca-buckle-strap-mule-loafer-grey",
+    "https://hereustudio.com/products/sineu-interlaced-detail-slip-on-loafer-dark-brown",
+    "https://hereustudio.com/products/sastre-supple-shiny-braided-seam-slip-on-loafer-burgundy"
   ]
 }

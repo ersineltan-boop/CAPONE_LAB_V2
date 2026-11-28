@@ -65,6 +65,17 @@ describe("complete automatic refresh", () => {
     expect(workflow.match(/run: npm run build/g)).toHaveLength(1);
     expect(workflow).toContain("bash scripts/publish-validated-automation-pr.sh");
     expect(workflow).toContain("inputs.dry_run != true");
+    const restoreAt = workflow.indexOf("scripts/refresh-archive-handoff.ts hydrate");
+    const collectAt = workflow.indexOf("name: Refresh all active sources with lane rollback");
+    expect(restoreAt).toBeGreaterThan(workflow.indexOf("scripts/run-refresh-cycle.ts --plan-only"));
+    expect(collectAt).toBeGreaterThan(restoreAt);
+    const runner = await readFile("scripts/run-refresh-cycle.ts", "utf8");
+    const stager = await readFile("scripts/stage-refresh-cycle.ts", "utf8");
+    const restoreCall = runner.indexOf("await hydrateRefreshArchive(root)");
+    expect(restoreCall).toBeGreaterThan(runner.indexOf('includes("--plan-only")'));
+    expect(restoreCall).toBeLessThan(runner.indexOf("await cycleCatalogSnapshot(root)"));
+    expect(stager).toContain("stageRefreshArchive");
+    expect(stager).not.toContain("products.json");
     for (const name of ["brand-onboarding", "daily-refresh", "issue-91-refresh", "expansion-refresh", "priority-sources-refresh", "marketplace-refresh", "new-brand-onboarding"]) {
       const child = await readFile(`.github/workflows/capone-${name}.yml`, "utf8");
       expect(child).not.toMatch(/^  (schedule|push):/m);
