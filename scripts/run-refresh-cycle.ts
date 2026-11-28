@@ -1,11 +1,13 @@
 import { spawnSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { buildRefreshCyclePlan } from "../src/refresh/refreshCycle";
+import { BRAND_ONBOARDING_LANE_ID, buildRefreshCyclePlan } from "../src/refresh/refreshCycle";
 import { hydrateRefreshArchive } from "../src/refresh/refreshArchiveHandoff";
 import { transactionalRefreshLane } from "../src/refresh/transactionalLane";
 import { cycleCatalogSnapshot } from "../src/refresh/cycleCatalogSnapshot";
 import type { MarketplaceGateReport } from "../src/marketplaces/automation";
+import { ADAPTERS_PATH, REPORT_PATH } from "../src/onboarding/policy";
+import type { BrandOnboardingReportFile } from "../src/onboarding/types";
 
 const root = process.cwd();
 const audit = join(root, "logs/refresh-cycle");
@@ -23,11 +25,11 @@ const baseline = await cycleCatalogSnapshot(root);
 await writeFile(join(audit, "baseline.json"), JSON.stringify(baseline));
 // Source publishers isolate failures; lane rollback remains for process/runtime failures.
 // Keep the final archive identity gate even when every collection lane completes.
-const protectedPaths = ["data/multibrand", "data/brands/wave50/last-good", "data/onboarding/validated", "data/registry", "src/registry/data/brands.ts"];
+const protectedPaths = ["data/multibrand", "data/brands/wave50/last-good", "data/onboarding/validated", "data/registry", "src/registry/data/brands.ts", ADAPTERS_PATH];
 // Leave time for the single test/build and guarded Preview/Production publication.
 const collectionDeadline = Date.now() + 210 * 60 * 1000;
-function run(args: string[], env: Record<string, string> = {}): boolean {
-  const remaining = collectionDeadline - Date.now();
+function run(args: string[], env: Record<string, string> = {}, deadline = collectionDeadline): boolean {
+  const remaining = deadline - Date.now();
   if (remaining <= 0) { console.error("Cycle collection budget exhausted; preserve this lane's last-good."); return false; }
   const result = spawnSync(process.execPath, ["--import", "tsx", `scripts/${args[0]}`, ...args.slice(1)], {
     cwd: root, stdio: "inherit", timeout: Math.min(45 * 60 * 1000, remaining),
@@ -41,9 +43,15 @@ for (const lane of plan.lanes) {
   const startedAt = new Date().toISOString();
   const freshReports: string[] = [];
   const succeeded = await transactionalRefreshLane(root, protectedPaths, async () => {
+    const isOnboarding = lane.id === BRAND_ONBOARDING_LANE_ID;
+    // Candidate scans run after active sources with their own small time budget.
+    const deadline = isOnboarding ? Date.now() + 25 * 60 * 1000 : collectionDeadline;
+    const previousModels = isOnboarding ? (await cycleCatalogSnapshot(root)).modelIds : [];
     let succeeded = true;
     for (const command of lane.scripts) {
-      if (!run(command)) { succeeded = false; break; }
+      const args = command[0] === "onboard-brands.ts" && restored.source === "archive"
+        ? [...command, "--archive-delivery"] : command;
+      if (!run(args, {}, deadline)) { succeeded = false; break; }
     }
     // Marketplace collection stages raw products; rebuild its accepted deliveries once.
     if (succeeded && lane.id === "marketplaces") {
@@ -70,6 +78,17 @@ for (const lane of plan.lanes) {
         await writeFile(join(audit, name), body);
         freshReports.push(name);
       } catch { /* Missing evidence is explicitly reported, never treated as fresh. */ }
+    }
+    if (succeeded && isOnboarding) {
+      const report = JSON.parse(await readFile(join(root, REPORT_PATH), "utf8")) as BrandOnboardingReportFile;
+      if (freshReports.length !== lane.reports.length) throw new Error("Candidate scan did not produce both current reports.");
+      if (report.summary.activated > 0) {
+        await buildRefreshCyclePlan(root);
+        const deliveredModels = new Set((await cycleCatalogSnapshot(root)).modelIds);
+        if (previousModels.some((id) => !deliveredModels.has(id))) {
+          throw new Error("Candidate activation would remove existing catalog models.");
+        }
+      }
     }
     return succeeded;
   });

@@ -57,7 +57,7 @@ jobs:
       - name: Install approved marketplace browser runtime
         continue-on-error: true
         run: npx playwright install --with-deps chromium
-      - name: Refresh all active sources with lane rollback
+      - name: Refresh active sources and scan candidate brands with lane rollback
         id: collect
         env:
           NODE_OPTIONS: --max-old-space-size=4096
@@ -90,7 +90,7 @@ jobs:
           AUTOMATION_DISPATCH_CI: "true"
           AUTOMATION_COMMIT_MESSAGE: "chore(data): publish complete twice-weekly refresh"
           AUTOMATION_PR_TITLE: "chore(data): complete automatic CAPONE refresh"
-          AUTOMATION_PR_BODY: "All active brands and marketplaces covered in one cycle. Failed lanes roll back, failed sources preserve last-good. One full test/build gate, exact-head Vercel Preview, guarded merge and Production verification. NEW is based on explicit official-source evidence."
+          AUTOMATION_PR_BODY: "All active brands and marketplaces covered in one cycle, followed by a bounded official-source brand candidate scan. Failed lanes roll back, failed sources preserve last-good. One full test/build gate, exact-head Vercel Preview, guarded merge and Production verification. NEW is based on explicit official-source evidence."
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

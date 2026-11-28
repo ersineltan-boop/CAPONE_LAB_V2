@@ -84,8 +84,8 @@ export default function BrandOnboardingDashboard() {
       <div className="border-b border-line pb-6">
         <h2 className="font-serif text-3xl tracking-wide sm:text-5xl">Marka Adayları</h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">
-          Yeni marka taraması şu anda elle başlatılıyor. Markalar, resmî kadın ayakkabısı
-          kataloğu ve görselleri doğrulandıktan sonra eklenebiliyor.
+          Yeni marka adayları pazar ve çarşamba günleri Türkiye saatiyle 06.00'da otomatik taranır.
+          Resmî kadın ayakkabısı kataloğu ve görselleri doğrulanan markalar kataloğa eklenebilir.
         </p>
       </div>
 
@@ -99,10 +99,22 @@ export default function BrandOnboardingDashboard() {
       </div>
 
       <div className="mb-5 border border-line bg-cream-dark/50 p-4 text-xs leading-5 text-ink-muted sm:flex sm:items-center sm:justify-between">
-        <p><span className="font-medium text-ink">Son kayıtlı tarama</span> · {formatDate(dashboard.lastRunAt)}</p>
-        {dashboard.lastRunAt ? (
-          <p>{dashboard.lastRunAttempted} aday denendi · {dashboard.lastRunActivated} marka eklendi</p>
-        ) : null}
+        {dashboard.lastRun ? (
+          <>
+            <p>
+              <span className="font-medium text-ink">Son kayıtlı tarama</span> ·{" "}
+              <time dateTime={dashboard.lastRun.at}>{formatDate(dashboard.lastRun.at)}</time>
+            </p>
+            <p>
+              {dashboard.lastRun.attempted} aday denendi ·{" "}
+              {dashboard.lastRun.activated > 0
+                ? `${dashboard.lastRun.activated} marka eklendi`
+                : "Yeni marka eklenmedi"}
+            </p>
+          </>
+        ) : (
+          <p>Henüz kayıtlı tarama yok.</p>
+        )}
       </div>
 
       <div className="mb-5 grid gap-3 sm:grid-cols-[1fr_auto]">

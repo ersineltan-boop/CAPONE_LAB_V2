@@ -5,6 +5,8 @@ import { buildCloudRefreshPlan, CLOUD_REFRESH_TRACKED_DATA_PATHS } from "./refre
 import { buildBrandAutomationPlan } from "../brands/automation/plan";
 import { loadAdapterFile } from "../onboarding/adapterStore";
 import { loadQueueFile } from "../onboarding/queue";
+import { DISCOVERY_REPORT_PATH, ONBOARDING_EXTRA_STAGE_PATHS, REPORT_PATH } from "../onboarding/policy";
+import { SCHEDULED_ONBOARDING_MAX_ACTIVATIONS, SCHEDULED_ONBOARDING_MAX_ATTEMPTS } from "../onboarding/selection";
 import { OFFICIAL_SHOPIFY_BRAND_TARGETS, NEXT_OFFICIAL_SHOPIFY_BRAND_TARGETS } from "../brands/officialShopify/candidates";
 import { EXPANSION_REFRESH_IDS } from "../onboarding/expansionRefresh";
 import { AUTOMATED_MARKETPLACE_IDS } from "../marketplaces/automation";
@@ -21,16 +23,16 @@ export interface RefreshLane {
 // One checkout, source-isolated collection, one final validation/publication gate.
 export const CYCLE_DELIVERY_PATHS = [
   ...CLOUD_REFRESH_TRACKED_DATA_PATHS,
+  ...ONBOARDING_EXTRA_STAGE_PATHS,
   "data/multibrand/model-families",
   "data/multibrand/taxonomy-qa-report.json",
   "data/brands/wave50/last-good",
   "data/onboarding/validated",
-  "data/registry/brand-universe.json",
-  "data/registry/brand-universe-report.json",
   "data/registry/priority-brand-coverage.json",
   "data/registry/marketplace-pilot.json",
-  "src/registry/data/brands.ts",
 ] as const;
+
+export const BRAND_ONBOARDING_LANE_ID = "brand-onboarding";
 
 export function assertRefreshCoverage(brands: string[], marketplaces: string[], lanes: RefreshLane[]): void {
   const coveredBrands = new Set(lanes.flatMap((lane) => lane.brands));
@@ -68,6 +70,17 @@ export async function buildRefreshCyclePlan(root: string) {
     { id: "expansion", brands: active(EXPANSION_REFRESH_IDS), marketplaces: [], scripts: [["refresh-expansion-brands.ts"]], reports: ["data/onboarding/staging/expansion-refresh/report.json"] },
     { id: "priority", brands: active(["massimo-dutti", "ala-a", "maison-margiela"]), marketplaces: [], scripts: [["refresh-priority-sources.ts"]], reports: ["data/onboarding/staging/priority-refresh/report.json"] },
     { id: "marketplaces", brands: [], marketplaces: [...AUTOMATED_MARKETPLACE_IDS], scripts: [["refresh-marketplaces-automated.ts", "--the-webster-subset"]], reports: ["data/onboarding/staging/marketplace-refresh/report.json"] },
+    {
+      id: BRAND_ONBOARDING_LANE_ID,
+      brands: [],
+      marketplaces: [],
+      scripts: [
+        ["build-brand-discovery-report.ts"],
+        ["onboard-brands.ts", "--scheduled", "--limit", String(SCHEDULED_ONBOARDING_MAX_ATTEMPTS),
+          "--max-activations", String(SCHEDULED_ONBOARDING_MAX_ACTIVATIONS)],
+      ],
+      reports: [REPORT_PATH, DISCOVERY_REPORT_PATH],
+    },
   ];
   assertRefreshCoverage(activeBrands, activeMarketplaces, lanes);
   return { schemaVersion: 1, startedAt: new Date().toISOString(), activeBrands, activeMarketplaces, lanes };

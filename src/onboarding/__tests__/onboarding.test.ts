@@ -1,11 +1,13 @@
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { getCollectableBrands } from "../../registry/collection/brandToCollector";
 import { loadBrandRegistry } from "../../registry/data";
 import type { PilotProduct } from "../../collector/types";
+import { analyzeProducts } from "../../analysis/analyzeProduct";
+import { buildModelFamilies } from "../../modelFamily/buildFamilies";
 import { isGenericModelTitle } from "../../modelFamily/genericModelTitle";
 import {
   createInitialQueue,
@@ -19,6 +21,8 @@ import {
 import { retryAt, INITIAL_ONBOARDING_BRANDS } from "../policy";
 import { fingerprintStorefront } from "../platforms";
 import { probeBrandSource } from "../probe";
+import * as probeModule from "../probe";
+import * as collectModule from "../collect";
 import { createBudgetedProbeHttp } from "../http";
 import {
   auditFootwearLeakage,
@@ -153,6 +157,22 @@ describe("onboarding queue policy", () => {
     expect(remainingActivationSlots(3, 3)).toBe(0);
     expect(blockedDoesNotConsumeActivationQuota("PRIORITY_BLOCKED")).toBe(true);
     expect(blockedDoesNotConsumeActivationQuota("ACTIVE")).toBe(false);
+  });
+
+  it("rotates a scheduled slot across candidates with a due official source", () => {
+    const now = new Date("2026-11-29T03:00:00.000Z");
+    const queue = createInitialQueue();
+    queue.entries = [
+      { ...queue.entries[0]!, sourceUrl: "https://priority.example", lastAttemptAt: "2026-11-01T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "recent", sourceUrl: "https://recent.example", priority: 100, lastAttemptAt: "2026-11-20T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "oldest", sourceUrl: "https://oldest.example", priority: 200, lastAttemptAt: "2026-10-01T00:00:00.000Z" },
+      { ...queue.entries[0]!, slug: "future", sourceUrl: "https://future.example", priority: 300, nextRetryAt: retryAt(now) },
+      { ...queue.entries[0]!, slug: "missing-source", sourceUrl: null, priority: 400 },
+    ];
+    expect(selectQueueCandidates(queue, { now, limit: 2, scheduled: true }).map(entry => entry.slug))
+      .toEqual(["naked-wolfe", "oldest"]);
+    expect(selectQueueCandidates(queue, { now, limit: 2 }).map(entry => entry.slug))
+      .toEqual(["naked-wolfe", "recent"]);
   });
 
   it("preserves queue state across reruns", () => {
@@ -307,12 +327,21 @@ describe("onboarding safety gates", () => {
     expect(evaluateOfficialSourceCoverage({ ...complete, hitCollectionCrawlCap: undefined }).full).toBe(false);
   });
 
-  it("starts the first official brand catalog without false NEW badges", () => {
-    const incoming = shoe({ isNewArrivalsCollection: true, hasNewBadge: true });
-    expect(prepareFirstBrandBaseline([incoming])[0]).toMatchObject({
+  it.each(["collectionPath", "sourceCategoryPath"] as const)("does not derive baseline NEW from %s", (pathField) => {
+    const newPath = "/collections/new-arrivals-shoes";
+    const category = { categoryId: "pumps", categoryName: "Pumps", categoryPath: "/collections/pumps" };
+    const incoming = shoe({ [pathField]: newPath, sourceCategories: [category], isNewArrivalsCollection: true, hasNewBadge: true });
+    const baseline = prepareFirstBrandBaseline([incoming]);
+    expect(baseline[0]).toMatchObject({
+      [pathField]: null,
+      category: "PUMP",
+      sourceCategories: [category],
       isNewArrivalsCollection: false,
       hasNewBadge: false,
     });
+    const { families } = buildModelFamilies(analyzeProducts(baseline as never));
+    expect(families[0]?.sourceSightings?.[0]?.newness?.status).toBe("NOT_VERIFIED");
+    expect(incoming[pathField]).toBe(newPath);
     expect(incoming.isNewArrivalsCollection).toBe(true);
   });
 
@@ -676,6 +705,42 @@ describe("onboarding run", () => {
     await cleanupStaging(root);
     await expect(readFile(join(root, "data/onboarding/staging/mango/products.json"), "utf-8")).rejects.toThrow();
     await rm(root, { recursive: true, force: true });
+  });
+
+  it("records a collector exception and continues the scheduled queue", async () => {
+    const root = await tempRoot();
+    const probe = vi.spyOn(probeModule, "probeBrandSource").mockImplementation(async ({ sourceUrl }) => ({
+      platform: "UNKNOWN",
+      strategy: "structured-data",
+      status: "VALIDATING",
+      sourceUrl,
+      collectionPaths: [],
+      footwearPaths: [],
+      products: [],
+      blocker: null,
+      notes: null,
+    }));
+    const collect = vi.spyOn(collectModule, "collectCandidateToStaging")
+      .mockRejectedValueOnce(new Error("Source temporarily unavailable"))
+      .mockResolvedValueOnce({ products: [], discoveredLinks: new Set(), errors: [], method: "none" });
+    try {
+      const result = await runBrandOnboarding(root, {
+        dryRun: false,
+        scheduled: true,
+        only: ["maison-margiela", "isabel-marant"],
+      });
+      expect(result.attempted).toEqual(["maison-margiela", "isabel-marant"]);
+      expect(result.report.attempts[0]).toMatchObject({
+        status: "FAILED",
+        blocker: "Source temporarily unavailable",
+      });
+      expect(collect).toHaveBeenCalledTimes(2);
+      expect(result.activated).toEqual([]);
+    } finally {
+      probe.mockRestore();
+      collect.mockRestore();
+      await rm(root, { recursive: true, force: true });
+    }
   });
 
   it("activation merge cannot rewrite another official source", async () => {

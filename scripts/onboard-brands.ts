@@ -18,6 +18,8 @@ const maxActivationsRaw = argValue("--max-activations");
 
 const result = await runBrandOnboarding(ROOT, {
   dryRun,
+  scheduled: process.argv.includes("--scheduled"),
+  archiveDelivery: process.argv.includes("--archive-delivery"),
   limit: limitRaw ? Number(limitRaw) : undefined,
   maxActivations: maxActivationsRaw ? Number(maxActivationsRaw) : undefined,
   only: onlyRaw ? onlyRaw.split(",").map((item) => item.trim()).filter(Boolean) : undefined,

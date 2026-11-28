@@ -65,14 +65,12 @@ export async function runBrandOnboarding(
   // collectors that are already wired into the legacy catalog, so using it here
   // under-reports active brands after successful onboarding waves.
   const activeBefore = universe.brands.filter((entry) => entry.isActive).length;
-  const catalogProducts = dryRun
-    ? await loadJson<PilotProduct[]>(join(root, "data/multibrand/products.json"), [])
-    : [];
 
   const candidates = selectQueueCandidates(queue, {
     now,
     limit: options.limit,
     only: options.only,
+    scheduled: options.scheduled,
     skipSlugs: new Set(
       universe.brands.filter((entry) => entry.isActive).map((entry) => entry.id),
     ),
@@ -82,6 +80,9 @@ export async function runBrandOnboarding(
   const attempted: string[] = [];
   const activated: string[] = [];
   let activatedCount = 0;
+  const catalogProducts = candidates.length
+    ? await loadJson<PilotProduct[]>(join(root, "data/multibrand/products.json"), [])
+    : [];
 
   for (const candidate of candidates) {
     attempted.push(candidate.slug);
@@ -128,10 +129,7 @@ export async function runBrandOnboarding(
       };
     }
 
-    const marketplace = marketplaceCoverageForBrand(
-      catalogProducts.length ? catalogProducts : await loadJson<PilotProduct[]>(join(root, "data/multibrand/products.json"), []),
-      candidate.brand,
-    );
+    const marketplace = marketplaceCoverageForBrand(catalogProducts, candidate.brand);
 
     if (probe.status === "PRIORITY_BLOCKED" || probe.status === "CUSTOM_ADAPTER_REQUIRED" || probe.status === "FAILED") {
       queue = updateQueueEntry(queue, candidate.slug, {
@@ -169,13 +167,28 @@ export async function runBrandOnboarding(
       hitCollectionCrawlCap: false,
     };
     if (!dryRun && probe.strategy !== "none") {
-      const collected = await collectCandidateToStaging({
-        slug: candidate.slug,
-        brand: candidate.brand,
-        sourceUrl,
-        probe,
-        http,
-      });
+      let collected;
+      try {
+        collected = await collectCandidateToStaging({ slug: candidate.slug, brand: candidate.brand, sourceUrl, probe, http });
+      } catch (error) {
+        const blocker = error instanceof Error ? error.message : String(error);
+        queue = updateQueueEntry(queue, candidate.slug, {
+          status: "FAILED",
+          detectedPlatform: probe.platform,
+          collectorStrategy: probe.strategy,
+          blocker,
+          nextRetryAt: retryAt(now),
+        }, now);
+        attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
+          status: "FAILED",
+          detectedPlatform: probe.platform,
+          sourceStrategy: probe.strategy,
+          blocker,
+          marketplaceCoverage: marketplace,
+          activationDecision: "blocked",
+        }));
+        continue;
+      }
       if (collected.products.length > 0) products = collected.products;
       coverageEvidence = {
         errors: collected.errors,
@@ -281,8 +294,7 @@ export async function runBrandOnboarding(
     const slots = remainingActivationSlots(maxActivations, activatedCount);
     const canActivate = !dryRun && slots > 0;
     if (canActivate) {
-      const storage = await inspectTrackedFileSizes(root);
-      if (storage.storageStatus === "STORAGE_LIMIT") {
+      if (!options.archiveDelivery && (await inspectTrackedFileSizes(root)).storageStatus === "STORAGE_LIMIT") {
         queue = updateQueueEntry(queue, candidate.slug, {
           status: "STORAGE_LIMIT",
           blocker: "products.json or analyzed-products.json would exceed the 90 MB safety limit",
@@ -368,7 +380,7 @@ export async function runBrandOnboarding(
     }
   }
 
-  await cleanupStaging(root);
+  if (!options.scheduled) await cleanupStaging(root);
   await saveQueueFile(root, queue);
 
   const activeAfter = dryRun ? activeBefore : activeBefore + activated.length;
@@ -387,7 +399,8 @@ export async function runBrandOnboarding(
       ).length,
       customAdapterRequired: attempts.filter((item) => item.status === "CUSTOM_ADAPTER_REQUIRED").length,
       failed: attempts.filter((item) => item.status === "FAILED").length,
-      storageStatus: (await inspectTrackedFileSizes(root)).storageStatus,
+      // The combined cycle verifies the size and integrity of each archive part at staging.
+      storageStatus: options.archiveDelivery ? "ok" : (await inspectTrackedFileSizes(root)).storageStatus,
     },
     attempts,
   };
