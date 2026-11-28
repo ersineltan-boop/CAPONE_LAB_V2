@@ -7,6 +7,8 @@ interface HeaderProps {
   currentView: AppView;
 }
 
+const NAV_LINK_CLASS = "touch-target whitespace-nowrap py-1 capitalize underline-offset-[5px] transition-colors hover:text-ink hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink";
+
 export default function Header({ onNavigate, currentView }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-cream/95 backdrop-blur-sm">
@@ -25,42 +27,34 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
             </p>
           </button>
 
-          <nav aria-label="Ana menü" className="space-y-0.5">
-            <div className="flex flex-wrap gap-1 sm:justify-end">
+          <nav aria-label="Ana menü" className="flex min-w-0 flex-col sm:shrink-0">
+            <div className="flex flex-wrap items-center gap-x-5 sm:gap-x-6">
               {CATALOG_NAV_ITEMS.map((item) => (
                 <button
                   key={item.id}
                   type="button"
                   aria-current={currentView === item.id ? "page" : undefined}
                   onClick={() => onNavigate(item.id)}
-                  className={`touch-target border px-2.5 py-1.5 text-[10px] tracking-widest transition-colors ${
-                    currentView === item.id
-                      ? "border-ink bg-ink text-cream"
-                      : "border-line text-ink-muted hover:border-ink"
+                  className={`${NAV_LINK_CLASS} text-[13px] font-medium ${
+                    currentView === item.id ? "text-ink underline" : "text-ink-muted"
                   }`}
                 >
-                  {item.label}
+                  {item.label.toLocaleLowerCase(item.id === "visual-wall" ? "en" : "tr")}
                 </button>
               ))}
             </div>
-            <div className="flex flex-wrap items-center gap-1 sm:justify-end">
+            <div className="flex flex-wrap items-center gap-x-4">
               {SECONDARY_NAV_ITEMS.map((item) => (
                 <button
                   key={item.id}
                   type="button"
                   aria-current={currentView === item.id ? "page" : undefined}
                   onClick={() => onNavigate(item.id)}
-                  className={item.id === "saved"
-                    ? `touch-target border px-3 py-1.5 text-xs font-semibold tracking-wide transition-colors ${
-                        currentView === item.id
-                          ? "border-ink bg-ink text-cream"
-                          : "border-ink bg-white/60 text-ink hover:bg-cream-dark"
-                      }`
-                    : `touch-target px-2.5 py-1 text-[9px] tracking-wide underline-offset-4 hover:underline ${
-                        currentView === item.id ? "text-ink underline" : "text-ink-muted"
-                      }`}
+                  className={`${NAV_LINK_CLASS} ${
+                    item.id === "saved" ? "text-xs font-medium" : "text-[11px]"
+                  } ${currentView === item.id ? "text-ink underline" : "text-ink-muted"}`}
                 >
-                  {item.label}
+                  {item.label.toLocaleLowerCase("tr")}
                 </button>
               ))}
             </div>
