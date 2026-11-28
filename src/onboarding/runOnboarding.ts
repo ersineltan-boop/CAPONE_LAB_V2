@@ -167,13 +167,28 @@ export async function runBrandOnboarding(
       hitCollectionCrawlCap: false,
     };
     if (!dryRun && probe.strategy !== "none") {
-      const collected = await collectCandidateToStaging({
-        slug: candidate.slug,
-        brand: candidate.brand,
-        sourceUrl,
-        probe,
-        http,
-      });
+      let collected;
+      try {
+        collected = await collectCandidateToStaging({ slug: candidate.slug, brand: candidate.brand, sourceUrl, probe, http });
+      } catch (error) {
+        const blocker = error instanceof Error ? error.message : String(error);
+        queue = updateQueueEntry(queue, candidate.slug, {
+          status: "FAILED",
+          detectedPlatform: probe.platform,
+          collectorStrategy: probe.strategy,
+          blocker,
+          nextRetryAt: retryAt(now),
+        }, now);
+        attempts.push(attemptReport(candidate.brand, candidate.slug, now, {
+          status: "FAILED",
+          detectedPlatform: probe.platform,
+          sourceStrategy: probe.strategy,
+          blocker,
+          marketplaceCoverage: marketplace,
+          activationDecision: "blocked",
+        }));
+        continue;
+      }
       if (collected.products.length > 0) products = collected.products;
       coverageEvidence = {
         errors: collected.errors,

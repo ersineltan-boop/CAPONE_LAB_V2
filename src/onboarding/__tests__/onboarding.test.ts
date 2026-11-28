@@ -1,7 +1,7 @@
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { getCollectableBrands } from "../../registry/collection/brandToCollector";
 import { loadBrandRegistry } from "../../registry/data";
@@ -19,6 +19,8 @@ import {
 import { retryAt, INITIAL_ONBOARDING_BRANDS } from "../policy";
 import { fingerprintStorefront } from "../platforms";
 import { probeBrandSource } from "../probe";
+import * as probeModule from "../probe";
+import * as collectModule from "../collect";
 import { createBudgetedProbeHttp } from "../http";
 import {
   auditFootwearLeakage,
@@ -692,6 +694,42 @@ describe("onboarding run", () => {
     await cleanupStaging(root);
     await expect(readFile(join(root, "data/onboarding/staging/mango/products.json"), "utf-8")).rejects.toThrow();
     await rm(root, { recursive: true, force: true });
+  });
+
+  it("records a collector exception and continues the scheduled queue", async () => {
+    const root = await tempRoot();
+    const probe = vi.spyOn(probeModule, "probeBrandSource").mockImplementation(async ({ sourceUrl }) => ({
+      platform: "UNKNOWN",
+      strategy: "structured-data",
+      status: "VALIDATING",
+      sourceUrl,
+      collectionPaths: [],
+      footwearPaths: [],
+      products: [],
+      blocker: null,
+      notes: null,
+    }));
+    const collect = vi.spyOn(collectModule, "collectCandidateToStaging")
+      .mockRejectedValueOnce(new Error("Source temporarily unavailable"))
+      .mockResolvedValueOnce({ products: [], discoveredLinks: new Set(), errors: [], method: "none" });
+    try {
+      const result = await runBrandOnboarding(root, {
+        dryRun: false,
+        scheduled: true,
+        only: ["maison-margiela", "isabel-marant"],
+      });
+      expect(result.attempted).toEqual(["maison-margiela", "isabel-marant"]);
+      expect(result.report.attempts[0]).toMatchObject({
+        status: "FAILED",
+        blocker: "Source temporarily unavailable",
+      });
+      expect(collect).toHaveBeenCalledTimes(2);
+      expect(result.activated).toEqual([]);
+    } finally {
+      probe.mockRestore();
+      collect.mockRestore();
+      await rm(root, { recursive: true, force: true });
+    }
   });
 
   it("activation merge cannot rewrite another official source", async () => {

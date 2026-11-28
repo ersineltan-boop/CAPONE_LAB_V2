@@ -54,6 +54,14 @@ export function selectQueueCandidates(
     const lastAttempt = (entry: BrandOnboardingQueueEntry) => entry.lastAttemptAt ?? "";
     const oldest = eligible.slice(limit - 1).reduce((a, b) => lastAttempt(a) <= lastAttempt(b) ? a : b);
     selected[selected.length - 1] = oldest;
+    if (limit >= 3) {
+      const strongestPartial = eligible
+        .filter((entry) => entry.status === "PARTIAL" && entry.productsFound > 0)
+        .sort((a, b) => b.productsFound - a.productsFound || lastAttempt(a).localeCompare(lastAttempt(b)))[0];
+      if (strongestPartial && !selected.includes(strongestPartial)) {
+        selected[selected.length - 2] = strongestPartial;
+      }
+    }
     return selected;
   }
 
