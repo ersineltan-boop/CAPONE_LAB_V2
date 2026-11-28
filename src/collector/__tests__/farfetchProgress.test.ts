@@ -215,6 +215,14 @@ describe('bounded Farfetch progress',()=>{
  });
 });
 describe('source retry windows',()=>{
+ it.each([200, 503])('pauses only an explicit Free People challenge on HTTP %i', async status => {
+  const dir = await directory();
+  const now = Date.now();
+  await recordSourceRetry(dir, 'free-people', [`Free People anti-bot/challenge page at /shoes/ (HTTP ${status})`], now);
+  expect(await sourceRetryPause(dir, 'free-people', now + 86400_000)).not.toBeNull();
+  await recordSourceRetry(dir, 'free-people', [`Free People request returned ordinary HTTP ${status}`], now);
+  expect(await sourceRetryPause(dir, 'free-people', now)).toBeNull();
+ });
  it('pauses further collection after a human-verification page with HTTP 200',async()=>{
   const dir=await directory(),now=Date.now();await recordSourceRetry(dir,'farfetch',['Farfetch product access blocked (HTTP 200)'],now);
   expect(await sourceRetryPause(dir,'farfetch',now+86400_000)).not.toBeNull();

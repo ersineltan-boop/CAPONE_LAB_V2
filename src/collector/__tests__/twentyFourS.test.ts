@@ -22,7 +22,20 @@ describe('24S collection',()=>{
     .replace('Fersi loafers','Awar lace up').replace('fersi-loafers','awar-lace-up');
   const result=await collect24S(async url=>url.includes('awar-lace-up')
     ? {ok:false,status:403,text:'Forbidden',url}:{ok:true,status:200,text:listing,url});
-  expect(result.coverage.status).toBe('PARTIAL');expect(result.coverage.errors[0]).toContain('no retry/bypass');
+  expect(result.coverage.status).toBe('PARTIAL');expect(result.coverage.errors[0]).toContain('detail access blocked (HTTP 403)');
+ });
+ it.each([403, 429, 200])('stops all remaining requests after a listing access block (%i)', async status => {
+  const listing = page(0, 'ABC').replace('Fersi loafers', 'Awar lace up').replace('fersi-loafers', 'awar-lace-up');
+  const requests: string[] = [];
+  const result = await collect24S(async url => {
+   requests.push(url);
+   return requests.length === 1
+    ? {ok:true, status:200, text:listing, url}
+    : {ok:status === 200, status, text:'<title>Verify you are human</title>', url};
+  });
+  expect(result.coverage.status).toBe('PARTIAL');
+  expect(result.coverage.errors[0]).toContain(status === 200 ? 'access blocked' : `HTTP ${status}`);
+  expect(requests).toEqual(['https://www.24s.com/en-us/women/shoes', 'https://www.24s.com/en-us/women/shoes?page=2']);
  });
  it('requires the women footwear source and preserves real image URLs',()=>{
   const p=parse24SPage(page(0,'ABC'));expect(p.products[0].brand).toBe('ISABEL MARANT');

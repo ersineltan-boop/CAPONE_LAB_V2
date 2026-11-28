@@ -14,7 +14,7 @@ export async function sourceRetryPause(directory: string, sourceId: string, now 
   } catch (error) {if ((error as NodeJS.ErrnoException).code === 'ENOENT' || error instanceof SyntaxError) return null; throw error;}
 }
 export async function recordSourceRetry(directory: string, sourceId: string, errors: readonly string[], now = Date.now()) {
-  const reason = errors.find(error => /HTTP\s*(?:401|403)\b|access blocked|verify (?:that )?you are human/i.test(error)) ?? errors.find(error => /HTTP\s*429\b/.test(error)) ?? null;
+  const reason = errors.find(error => /HTTP\s*(?:401|403)\b|access blocked|anti-bot\/challenge page|verify (?:that )?you are human/i.test(error)) ?? errors.find(error => /HTTP\s*429\b/.test(error)) ?? null;
   // Denied access and human-verification pages require access work; 429 is temporary throttling. Do not classify
   // schema/pagination failures or ordinary timeouts as permanent access blocks.
   const delay = reason ? (/HTTP\s*429\b/.test(reason) ? 3600_000 : 7 * 86400_000) : 0;
