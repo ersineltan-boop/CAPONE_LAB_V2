@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T10:01:23.307Z",
-  "digerCount": 386,
-  "totalFamilies": 17738,
+  "generatedAt": "2026-11-28T09:27:47.194Z",
+  "digerCount": 381,
+  "totalFamilies": 19661,
   "reasonCounts": {
-    "MISSING_SOURCE_CATEGORY": 36,
-    "GENERIC_SOURCE_CATEGORY": 151,
+    "MISSING_SOURCE_CATEGORY": 30,
+    "GENERIC_SOURCE_CATEGORY": 138,
     "CONFLICTING_SOURCE_CATEGORIES": 2,
-    "UNMAPPED_SOURCE_CATEGORY": 197,
+    "UNMAPPED_SOURCE_CATEGORY": 211,
     "NO_SAFE_FALLBACK": 0
   },
   "items": [
@@ -340,8 +340,8 @@
       "modelFamilyId": "cecilie-bahnsen--id-shopify-cecilie-bahnsen-3-26kni53004-cbfleetwood-vest-winter-lambswool-winter-yellow-unclassified-base",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
-        "New In",
-        "Shoes & Accessories"
+        "Shoes & Accessories",
+        "New In"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -388,8 +388,8 @@
       "modelFamilyId": "cecilie-bahnsen--name-cecilie-bahnsen-cbfleetwood-vest-winter-lambswool-unclassified-base",
       "brand": "CECILIE BAHNSEN",
       "sourceCategories": [
-        "New In",
-        "Shoes & Accessories"
+        "Shoes & Accessories",
+        "New In"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -407,10 +407,11 @@
       "modelFamilyId": "christen--name-christen-home-slipper-unclassified-base",
       "brand": "CHRISTEN",
       "sourceCategories": [
-        "Shoes"
+        "Shoes",
+        "Flats"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "christian-louboutin--id-level-shoes-christian-louboutin-chanme-donna-boat-shoes-beige-nubuck-leather-women-loafers-qmmbfn-html-unclassified-base",
@@ -1403,6 +1404,18 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
+      "modelFamilyId": "pazzion--name-pazzion-alessandra-glitter-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Round Toe Shoes",
+        "Sales - Flats",
+        "Silver Flats",
+        "Silver Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
       "modelFamilyId": "pazzion--name-pazzion-alina-lace-diamante-foldable-flat-unclassified-base",
       "brand": "PAZZION",
       "sourceCategories": [
@@ -1460,12 +1473,27 @@
       "sourceCategories": [
         "Beige Flats",
         "Beige Shoes",
+        "Best Seller - Flats",
         "Casual Shoes",
         "Flats",
         "New Arrivals",
         "Shoes",
         "Square Toe Shoes",
         "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-giselle-double-buckle-flat-unclassified-mesh",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Almond Flats",
+        "Almond Shoes",
+        "Black Flats",
+        "Black Shoes",
+        "Round Toe Shoes",
+        "Sales - Flats"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1496,6 +1524,7 @@
         "Diamante Shoes",
         "Flats",
         "Pointed-Toe Shoes",
+        "Sales - Flats",
         "Shoes",
         "Silver Flats",
         "Silver Shoes",
@@ -1529,11 +1558,22 @@
         "Diamante Shoes",
         "Flats",
         "Pointed-Toe Shoes",
+        "Sales - Flats",
         "Shoes",
         "Silver Flats",
         "Silver Shoes",
         "Silver Wedding Shoes",
         "Women's Shoes"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "pazzion--name-pazzion-mini-alessandra-glitter-flat-unclassified-base",
+      "brand": "PAZZION",
+      "sourceCategories": [
+        "Round Toe Shoes",
+        "Silver Shoes"
       ],
       "primaryCategory": "UNCLASSIFIED",
       "reason": "UNMAPPED_SOURCE_CATEGORY"
@@ -1572,6 +1612,7 @@
         "Pink Flats",
         "Pink Shoes",
         "Pointed-Toe Shoes",
+        "Sales - Flats",
         "Shoes",
         "Women's Shoes"
       ],
@@ -1607,6 +1648,7 @@
         "Diamante Shoes",
         "Flats",
         "Pointed-Toe Shoes",
+        "Sales - Flats",
         "Shoes",
         "Women's Shoes"
       ],
@@ -1806,24 +1848,13 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "proenza-schouler--id-shopify-proenza-schouler-ruched-tee-slippers-in-shearling-chocolate-unclassified-shearling",
-      "brand": "PROENZA SCHOULER",
-      "sourceCategories": [
-        "Flats",
-        "Shoes",
-        "shoes_taxes-exclusion",
-        "Tee Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "proenza-schouler--name-proenza-schouler-slant-crochet-flat-unclassified-base",
       "brand": "PROENZA SCHOULER",
       "sourceCategories": [
         "Flats",
         "Handbags and Shoes",
         "New Arrivals White Label",
+        "Sale Shoes",
         "Shoes",
         "shoes_taxes-exclusion",
         "Slant Shoes",
@@ -2503,100 +2534,176 @@
       "modelFamilyId": "zara--id-zara-11519810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-11527810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-11560810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-11578810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "FLATS",
+        "SHOES",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-12520810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-12533810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-12539810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-13504810-unclassified-laceup",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-13514810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-13538810-unclassified-laceup",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-13539810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-13540810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-13542810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "FLATS",
+        "SHOES",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-14220810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "LEATHER",
+        "SHOES",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
+    },
+    {
+      "modelFamilyId": "zara--id-zara-14503810-unclassified-base",
+      "brand": "ZARA",
+      "sourceCategories": [
+        "FLATS",
+        "LEATHER",
+        "SHOES",
+        "VIEW ALL"
+      ],
+      "primaryCategory": "UNCLASSIFIED",
+      "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
       "modelFamilyId": "zara--id-zara-14503810-unclassified-braided-mule",
@@ -2609,15 +2716,6 @@
     },
     {
       "modelFamilyId": "zara--id-zara-14507710-unclassified-base",
-      "brand": "ZARA",
-      "sourceCategories": [
-        "VIEW ALL"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "GENERIC_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "zara--id-zara-15870810-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
         "VIEW ALL"
@@ -2647,6 +2745,7 @@
       "modelFamilyId": "zara--id-zara-40235782-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2665,6 +2764,7 @@
       "modelFamilyId": "zara--id-zara-40238762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2683,6 +2783,7 @@
       "modelFamilyId": "zara--id-zara-40243762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2692,6 +2793,7 @@
       "modelFamilyId": "zara--id-zara-40244762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2701,6 +2803,7 @@
       "modelFamilyId": "zara--id-zara-40248762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2710,6 +2813,7 @@
       "modelFamilyId": "zara--id-zara-40249762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2719,6 +2823,7 @@
       "modelFamilyId": "zara--id-zara-40253762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2728,6 +2833,7 @@
       "modelFamilyId": "zara--id-zara-40256762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2737,6 +2843,7 @@
       "modelFamilyId": "zara--id-zara-40263762-unclassified-wood",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2746,6 +2853,7 @@
       "modelFamilyId": "zara--id-zara-40264762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2755,6 +2863,7 @@
       "modelFamilyId": "zara--id-zara-40265762-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -2764,6 +2873,7 @@
       "modelFamilyId": "zara--id-zara-40268043-unclassified-base",
       "brand": "ZARA",
       "sourceCategories": [
+        "SHOES",
         "VIEW ALL"
       ],
       "primaryCategory": "UNCLASSIFIED",
@@ -3174,28 +3284,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "khaite--handle-khaite-milly-flat-in-unclassified-base-milly-flat",
-      "brand": "KHAITE",
-      "sourceCategories": [
-        "Flats",
-        "Milly Flat",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "khaite--id-shopify-khaite-milly-flat-in-black-pebbled-leather-unclassified-base",
-      "brand": "KHAITE",
-      "sourceCategories": [
-        "Flats",
-        "Milly Flat",
-        "Shoes"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-agnes-sabot-nougat-leather-cream-shearling-unclassified-shearling",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [],
@@ -3210,59 +3298,7 @@
       "reason": "MISSING_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-luna-slipper-black-shearling-unclassified-shearling",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-black-mesh-crystals-unclassified-mesh",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-burgundy-knotted-leather-unclassified-base",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-mica-flat-tomato-satin-unclassified-satin",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [
-        "New Season Pre Spring Spring 26 Test",
-        "Pre Spring 26 TEST"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "le-monde-beryl--id-shopify-le-monde-beryl-stella-slipper-ivory-satin-unclassified-satin",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--style-le-monde-beryl-dbt-unclassified-shearling",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--style-le-monde-beryl-mef-unclassified-base",
-      "brand": "LE MONDE BERYL",
-      "sourceCategories": [],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "MISSING_SOURCE_CATEGORY"
-    },
-    {
-      "modelFamilyId": "le-monde-beryl--style-le-monde-beryl-reg-unclassified-braided",
       "brand": "LE MONDE BERYL",
       "sourceCategories": [],
       "primaryCategory": "UNCLASSIFIED",
@@ -3579,15 +3615,6 @@
       "reason": "UNMAPPED_SOURCE_CATEGORY"
     },
     {
-      "modelFamilyId": "staud--style-staud-f26s4032-unclassified-base",
-      "brand": "STAUD",
-      "sourceCategories": [
-        "SALE | SHOES"
-      ],
-      "primaryCategory": "UNCLASSIFIED",
-      "reason": "UNMAPPED_SOURCE_CATEGORY"
-    },
-    {
       "modelFamilyId": "steve-madden--style-steve-madden-egret-unclassified-base",
       "brand": "STEVE MADDEN",
       "sourceCategories": [],
@@ -3700,9 +3727,9 @@
     },
     {
       "sourceCategory": "Flats",
-      "count": 23,
+      "count": 21,
       "brands": [
-        "KHAITE",
+        "CHRISTEN",
         "MARGAUX",
         "PAZZION",
         "PROENZA SCHOULER",
@@ -3723,6 +3750,15 @@
       "count": 16,
       "brands": [
         "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "FLATS",
+      "count": 15,
+      "brands": [
+        "PARIS TEXAS",
+        "ZARA"
       ],
       "proposedMapping": null
     },
@@ -3751,10 +3787,34 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "LEATHER",
+      "count": 11,
+      "brands": [
+        "ZARA"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Round Toe Shoes",
+      "count": 9,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "Shoes & Accessories",
       "count": 8,
       "brands": [
         "CECILIE BAHNSEN"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Best Seller - Flats",
+      "count": 8,
+      "brands": [
+        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -3767,7 +3827,7 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Best Seller - Flats",
+      "sourceCategory": "Silver Shoes",
       "count": 7,
       "brands": [
         "PAZZION"
@@ -3775,16 +3835,8 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Round Toe Shoes",
-      "count": 6,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Black Flats",
-      "count": 6,
+      "count": 7,
       "brands": [
         "PAZZION"
       ],
@@ -3792,6 +3844,22 @@
     },
     {
       "sourceCategory": "Black Shoes",
+      "count": 7,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Silver Flats",
+      "count": 6,
+      "brands": [
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Sales - Flats",
       "count": 6,
       "brands": [
         "PAZZION"
@@ -3811,22 +3879,6 @@
       "count": 6,
       "brands": [
         "AEYDE"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Silver Flats",
-      "count": 5,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Silver Shoes",
-      "count": 5,
-      "brands": [
-        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -3879,10 +3931,18 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "shoes_taxes-exclusion",
+      "sourceCategory": "Almond Flats",
       "count": 3,
       "brands": [
-        "PROENZA SCHOULER"
+        "PAZZION"
+      ],
+      "proposedMapping": null
+    },
+    {
+      "sourceCategory": "Almond Shoes",
+      "count": 3,
+      "brands": [
+        "PAZZION"
       ],
       "proposedMapping": null
     },
@@ -3953,22 +4013,6 @@
       "proposedMapping": null
     },
     {
-      "sourceCategory": "Almond Flats",
-      "count": 2,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Almond Shoes",
-      "count": 2,
-      "brands": [
-        "PAZZION"
-      ],
-      "proposedMapping": null
-    },
-    {
       "sourceCategory": "Black Formal Shoes",
       "count": 2,
       "brands": [
@@ -3985,50 +4029,34 @@
       "proposedMapping": null
     },
     {
+      "sourceCategory": "shoes_taxes-exclusion",
+      "count": 2,
+      "brands": [
+        "PROENZA SCHOULER"
+      ],
+      "proposedMapping": null
+    },
+    {
       "sourceCategory": "FALL WINTER 25/26 - SHOES",
       "count": 2,
       "brands": [
         "AMINA MUADDI"
       ],
       "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Fw25 Shoes 1",
-      "count": 2,
-      "brands": [
-        "AMINA MUADDI"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "SHOE CHARMS",
-      "count": 2,
-      "brands": [
-        "DOLCE VITA"
-      ],
-      "proposedMapping": null
-    },
-    {
-      "sourceCategory": "Slim Sport Shoes",
-      "count": 2,
-      "brands": [
-        "HEREU"
-      ],
-      "proposedMapping": null
     }
   ],
   "visualCounts": {
-    "tumu": 17738,
-    "babet": 1709,
-    "loafer": 1237,
-    "topuklu": 2678,
-    "sandal": 4734,
-    "mule": 1529,
-    "bot-cizme": 3611,
-    "sneaker": 1556,
-    "espadril": 159,
-    "oxford-derby": 34,
-    "clog": 105,
-    "diger": 386
+    "tumu": 19661,
+    "babet": 1894,
+    "loafer": 1412,
+    "topuklu": 3027,
+    "sandal": 5232,
+    "mule": 1705,
+    "bot-cizme": 4059,
+    "sneaker": 1639,
+    "espadril": 164,
+    "oxford-derby": 38,
+    "clog": 110,
+    "diger": 381
   }
 }

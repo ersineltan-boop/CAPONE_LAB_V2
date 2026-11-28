@@ -2,8 +2,8 @@
   "slug": "emme-parsons",
   "brand": "EMME PARSONS",
   "officialUrl": "https://emmeparsons.com",
-  "snapshotId": "emme-parsons:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "emme-parsons:2026-11-28T08:59:32.656Z",
+  "collectedAt": "2026-11-28T08:59:32.656Z",
   "catalogPaths": [
     "/collections/all"
   ],
@@ -11,13 +11,13 @@
     "/collections/new-arrivals-carousel"
   ],
   "coverage": {
-    "sourceTotal": 90,
-    "collected": 90,
+    "sourceTotal": 108,
+    "collected": 108,
     "missing": 0,
     "coverage": 100,
-    "excluded": 14,
+    "excluded": 29,
     "paginationExhausted": true,
-    "galleryComplete": 90,
+    "galleryComplete": 108,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -28,6 +28,42 @@
   "referenceFootwearMatch": null,
   "referenceNewArrivalsMatch": null,
   "families": [
+    {
+      "modelFamilyId": "emme-parsons--chelsea-in-black-suede",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Chelsea in Black Suede",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_SIDE-2.jpg?v=1741376967",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_A.jpg?v=1774202368",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_B.jpg?v=1774202368",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_C.jpg?v=1774202368",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_TOP-2.jpg?v=1774202368"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/chelsea-in-black",
+          "handle": "chelsea-in-black",
+          "title": "Chelsea in Black Suede",
+          "color": null,
+          "sku": "00052-001-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_SIDE-2.jpg?v=1741376967",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_A.jpg?v=1774202368",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_B.jpg?v=1774202368",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_C.jpg?v=1774202368",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CHELSEA_BLACK_SUEDE_TOP-2.jpg?v=1774202368"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
     {
       "modelFamilyId": "emme-parsons--flat-mule-in-black-suede",
       "brand": "EMME PARSONS",
@@ -49,6 +85,38 @@
             "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_SUEDE_SIDE-2.jpg?v=1741381649",
             "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_SUEDE_A_998d2e30-5f1e-4c56-b792-57a0bdb0ac65.jpg?v=1753810118",
             "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_-2.jpg?v=1753810118"
+          ],
+          "category": "MULE",
+          "productType": "Flats",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--flat-mule-in-caramel-suede",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Flat Mule in Caramel Suede",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_SIDE_a8c0c309-cc34-4b5e-8a95-5c91703c26ab.jpg?v=1741377170",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_A.jpg?v=1760808901",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_TOP_2196f1ff-4db0-4d05-8175-ea2fd5c3a42b.jpg?v=1760808901"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/flat-mule-in-caramel-suede",
+          "handle": "flat-mule-in-caramel-suede",
+          "title": "Flat Mule in Caramel Suede",
+          "color": null,
+          "sku": "00083-260-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_SIDE_a8c0c309-cc34-4b5e-8a95-5c91703c26ab.jpg?v=1741377170",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_A.jpg?v=1760808901",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_CARAMEL_SUEDE_TOP_2196f1ff-4db0-4d05-8175-ea2fd5c3a42b.jpg?v=1760808901"
           ],
           "category": "MULE",
           "productType": "Flats",
@@ -93,6 +161,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "emme-parsons--agnes-calfskin",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Agnes Calfskin",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_SIDE_a72da8d4-b975-4801-a2be-073185736d1e.jpg?v=1746126397",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_SIDE-2_63b72944-2f9a-4491-836a-353c076e8d17.jpg?v=1746126437",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_TOP_afd35c03-6dff-4e7e-aafe-03b8ed1f15f0.jpg?v=1746126437"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/agnes-in-black-shiny-calf",
+          "handle": "agnes-in-black-shiny-calf",
+          "title": "Agnes in Black Calfskin",
+          "color": "Agnes in Black Calfskin",
+          "sku": "00061-003-36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_SIDE_a72da8d4-b975-4801-a2be-073185736d1e.jpg?v=1746126397",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_SIDE-2_63b72944-2f9a-4491-836a-353c076e8d17.jpg?v=1746126437",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/AGNES_BLACK_CALFSKIN_TOP_afd35c03-6dff-4e7e-aafe-03b8ed1f15f0.jpg?v=1746126437"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "emme-parsons--aya-exclusive",
       "brand": "EMME PARSONS",
       "canonicalName": "Aya Exclusive",
@@ -116,12 +216,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -285,7 +385,7 @@
       "category": "SANDAL",
       "images": [
         "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_TAN_SIDE-2.jpg?v=1776165323",
-        "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_ALL-OVER_TAN_A.jpg?v=1790541411",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_ALL-OVER_TAN_A_d85cabc7-f795-408c-8bda-bc4a317f4fac.jpg?v=1795104015",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_TAN_TOP-3.jpg?v=1776165323"
       ],
       "variants": [
@@ -297,7 +397,7 @@
           "sku": "00029-261NP-35",
           "images": [
             "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_TAN_SIDE-2.jpg?v=1776165323",
-            "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_ALL-OVER_TAN_A.jpg?v=1790541411",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_ALL-OVER_TAN_A_d85cabc7-f795-408c-8bda-bc4a317f4fac.jpg?v=1795104015",
             "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_TAN_TOP-3.jpg?v=1776165323"
           ],
           "category": "SANDAL",
@@ -375,6 +475,36 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "emme-parsons--bari-pool-slide-rubber--bari-pool-slide-sandal-exclusive-espresso-w-black-string",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Bari Pool Slide Rubber",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_POOL_SLIDE_ESPRESSO_BLACK_SIDE.jpg?v=1785852844",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_POOL_SLIDE_ESPRESSO_BLACK_TOP.jpg?v=1785852844"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/bari-pool-slide-sandal-exclusive-espresso-w-black-string",
+          "handle": "bari-pool-slide-sandal-exclusive-espresso-w-black-string",
+          "title": "Bari Pool Slide in Black Nappa and Espresso Rubber",
+          "color": "Bari Pool Slide in Black Nappa and Espresso Rubber",
+          "sku": "00066-217NP-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_POOL_SLIDE_ESPRESSO_BLACK_SIDE.jpg?v=1785852844",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/BARI_POOL_SLIDE_ESPRESSO_BLACK_TOP.jpg?v=1785852844"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "emme-parsons--bari-pool-slide-rubber--bari-pool-slide-in-black-nappa-rubber",
       "brand": "EMME PARSONS",
       "canonicalName": "Bari Pool Slide Rubber",
@@ -432,18 +562,18 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "emme-parsons--cecilia-calfskin",
+      "modelFamilyId": "emme-parsons--cecilia-in-black-calfskin",
       "brand": "EMME PARSONS",
-      "canonicalName": "Cecilia Calfskin",
+      "canonicalName": "Cecilia in Black Calfskin",
       "category": "SANDAL",
       "images": [
         "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_SIDE-2.jpg?v=1741375982",
@@ -451,14 +581,17 @@
         "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_B.jpg?v=1774202162",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_C.jpg?v=1774202162",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_A_13d34a78-42fa-4152-9734-d9b06040b409.jpg?v=1774202162",
-        "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_TOP-2.jpg?v=1774202162"
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_TOP-2.jpg?v=1774202162",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_NAPPA_SIDE-2.jpg?v=1741376504",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_A_ec727f54-e4af-4046-b48f-8955505e579c.jpg?v=1750883736",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_NAPPA_TOP-2.jpg?v=1750883736"
       ],
       "variants": [
         {
           "productUrl": "https://emmeparsons.com/products/cecilia-in-black",
           "handle": "cecilia-in-black",
           "title": "Cecilia in Black Calfskin",
-          "color": "Cecilia in Black Calfskin",
+          "color": null,
           "sku": "00002-001-35",
           "images": [
             "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_BLACK_SIDE-2.jpg?v=1741375982",
@@ -473,10 +606,27 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://emmeparsons.com/products/cecilia-in-silver-nappa",
+          "handle": "cecilia-in-silver-nappa",
+          "title": "Cecilia in Silver Nappa",
+          "color": "Cecilia in Silver Nappa",
+          "sku": "00002-044-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_NAPPA_SIDE-2.jpg?v=1741376504",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_A_ec727f54-e4af-4046-b48f-8955505e579c.jpg?v=1750883736",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/CECILIA_SILVER_NAPPA_TOP-2.jpg?v=1750883736"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
         }
       ],
-      "isNew": false,
-      "groupingReason": "single-product"
+      "isNew": true,
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "emme-parsons--chelsea-washed",
@@ -617,9 +767,9 @@
           ],
           "category": "PUMP",
           "productType": "Heels",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         },
         {
           "productUrl": "https://emmeparsons.com/products/delicat-gold-nappa",
@@ -659,7 +809,7 @@
           "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "handle-family"
     },
     {
@@ -686,12 +836,12 @@
           ],
           "category": "PUMP",
           "productType": "Heels",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -752,12 +902,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -886,12 +1036,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -920,12 +1070,12 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Flats",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1103,6 +1253,72 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "emme-parsons--flat-mule-shearling",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Flat Mule Shearling",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_NAPPA_SHEARLING_SIDE.jpg?v=1761214752",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_SHEARLING_BLACK_A.jpg?v=1761214752",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_NAPPA_SHEARLING_TOP.jpg?v=1761214752"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/flat-mule-black-shearling-nappa",
+          "handle": "flat-mule-black-shearling-nappa",
+          "title": "Flat Mule in Black Shearling Nappa",
+          "color": "Flat Mule in Black Shearling Nappa",
+          "sku": "00083-109NP-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_NAPPA_SHEARLING_SIDE.jpg?v=1761214752",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_SHEARLING_BLACK_A.jpg?v=1761214752",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_BLACK_NAPPA_SHEARLING_TOP.jpg?v=1761214752"
+          ],
+          "category": "MULE",
+          "productType": "Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--flat-mule-in-leopard-calf-hair",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Flat Mule in Leopard Calf Hair",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_SIDE.jpg?v=1792008721",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_A.jpg?v=1792008749",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_B.jpg?v=1792008926",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_TOP.jpg?v=1792008731"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/flat-mule-leopard-print",
+          "handle": "flat-mule-leopard-print",
+          "title": "Flat Mule in Leopard Calf Hair",
+          "color": null,
+          "sku": "00083-800CF-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_SIDE.jpg?v=1792008721",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_A.jpg?v=1792008749",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_B.jpg?v=1792008926",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FLAT_MULE_LEOPARD_TOP.jpg?v=1792008731"
+          ],
+          "category": "MULE",
+          "productType": "Flats",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "emme-parsons--flat-mule-optic-woven",
       "brand": "EMME PARSONS",
       "canonicalName": "Flat Mule Optic Woven",
@@ -1133,6 +1349,58 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "emme-parsons--folded-slide-plonge",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Folded Slide Plonge",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_SIDE_efe81a48-d998-459f-b912-383ff7f3c163.jpg?v=1741382204",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_A.jpg?v=1741382204",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_TOP_abb54b71-d107-4e46-8074-4f472535a2f3.jpg?v=1741382204",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_SIDE-2.jpg?v=1741382545",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_A.jpg?v=1741382545",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_TOP_9c595de1-abbc-4ba9-8664-21a49eed9b97.jpg?v=1741382545"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/folded-slide-in-black-nappa",
+          "handle": "folded-slide-in-black-nappa",
+          "title": "Folded Slide in Black Plongé Nappa",
+          "color": "Folded Slide in Black Plongé Nappa",
+          "sku": "00051-001-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_SIDE_efe81a48-d998-459f-b912-383ff7f3c163.jpg?v=1741382204",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_A.jpg?v=1741382204",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_BLACK_TOP_abb54b71-d107-4e46-8074-4f472535a2f3.jpg?v=1741382204"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://emmeparsons.com/products/folded-slide-in-ivory-nappa",
+          "handle": "folded-slide-in-ivory-nappa",
+          "title": "Folded Slide in Ivory Plongé Nappa",
+          "color": "Folded Slide in Ivory Plongé Nappa",
+          "sku": "00051-101-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_SIDE-2.jpg?v=1741382545",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_A.jpg?v=1741382545",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/FOLDED_SLIDE_IVORY_TOP_9c595de1-abbc-4ba9-8664-21a49eed9b97.jpg?v=1741382545"
+          ],
+          "category": "SANDAL",
+          "productType": "Sandals",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "emme-parsons--girona-penny-loafer-kidskin",
       "brand": "EMME PARSONS",
       "canonicalName": "Girona Penny Loafer Kidskin",
@@ -1156,12 +1424,12 @@
           ],
           "category": "LOAFER",
           "productType": "Flats",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -1190,13 +1458,67 @@
           ],
           "category": "LOAFER",
           "productType": "Flats",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--high-stretch-boot",
+      "brand": "EMME PARSONS",
+      "canonicalName": "High Stretch Boot",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_NAPPA_SIDE.jpg?v=1792007482",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_A.jpg?v=1792008631",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_B.jpg?v=1792008648",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_TOP.jpg?v=1792007492",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_NAPPA_SIDE.jpg?v=1792008685",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_A.jpg?v=1792008668",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_TOP.jpg?v=1792008699"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/high-stretch-boot-black-calf",
+          "handle": "high-stretch-boot-black-calf",
+          "title": "High Stretch Boot in Black Calf",
+          "color": "in Black Calf",
+          "sku": "00113-001CF-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_NAPPA_SIDE.jpg?v=1792007482",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_A.jpg?v=1792008631",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_B.jpg?v=1792008648",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_BLACK_TOP.jpg?v=1792007492"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        },
+        {
+          "productUrl": "https://emmeparsons.com/products/high-stretch-boot-espresso-calf",
+          "handle": "high-stretch-boot-espresso-calf",
+          "title": "High Stretch Boot in Espresso Calf",
+          "color": "in Espresso Calf",
+          "sku": "00113-215CF-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_NAPPA_SIDE.jpg?v=1792008685",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_A.jpg?v=1792008668",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HIGH_STRETCH_BOOT_ESPRESSO_TOP.jpg?v=1792008699"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "emme-parsons--high-throat-ballerina-woven",
@@ -1254,6 +1576,38 @@
           ],
           "category": "BALLERINA",
           "productType": "Flats",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--hugo-shearling",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Hugo Shearling",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_SIDE.jpg?v=1746310472",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_A.jpg?v=1746310472",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_TOP.jpg?v=1746310469"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/hugo-in-black-calf-and-shearling",
+          "handle": "hugo-in-black-calf-and-shearling",
+          "title": "Hugo in Black Calf and Shearling",
+          "color": "Hugo in Black Calf and Shearling",
+          "sku": "00054-109-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_SIDE.jpg?v=1746310472",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_A.jpg?v=1746310472",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/HUGO_BLACK_SHEARLING_TOP.jpg?v=1746310469"
+          ],
+          "category": "SANDAL",
+          "productType": "Heels",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1351,6 +1705,38 @@
       "groupingReason": "single-product"
     },
     {
+      "modelFamilyId": "emme-parsons--knot-pool-slide-rubber",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Knot Pool Slide Rubber",
+      "category": "SANDAL",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK_SIDE_9d84ffae-3c79-4562-bc9f-e49fb55298d1.jpg?v=1741376394",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK.jpg?v=1741376394",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK_TOP_10313ef9-85c1-41b8-9018-f9d93a5f9a82.jpg?v=1741376403"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/knot-pool-slide-in-black-nappa-and-rubber",
+          "handle": "knot-pool-slide-in-black-nappa-and-rubber",
+          "title": "Knot Pool Slide in Black Nappa and Rubber",
+          "color": "Knot Pool Slide in Black Nappa and Rubber",
+          "sku": "00084-001-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK_SIDE_9d84ffae-3c79-4562-bc9f-e49fb55298d1.jpg?v=1741376394",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK.jpg?v=1741376394",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/KNOT_POOL_SLIDE_BLACK_TOP_10313ef9-85c1-41b8-9018-f9d93a5f9a82.jpg?v=1741376403"
+          ],
+          "category": "SANDAL",
+          "productType": "Flats",
+          "inNewArrivals": false,
+          "isNew": true,
+          "newnessEvidence": "SOURCE_BADGE"
+        }
+      ],
+      "isNew": true,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "emme-parsons--leandra",
       "brand": "EMME PARSONS",
       "canonicalName": "Leandra",
@@ -1361,7 +1747,11 @@
         "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_PATENT_TOP_c8805739-4a59-4fc6-bc1c-fee6610a3421.jpg?v=1741391857",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SUEDE_SIDE_0fbdee19-09c4-4926-8b9f-ba91326489d8.jpg?v=1741391915",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SUEDE_A.jpg?v=1741391915",
-        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SUEDE_TOP_9e038783-0f9d-492c-8beb-d950e2f924a6.jpg?v=1741391906"
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SUEDE_TOP_9e038783-0f9d-492c-8beb-d950e2f924a6.jpg?v=1741391906",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_SIDE_2493dd20-2627-4294-a688-cd072c5f13b4.jpg?v=1761397090",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_A.jpg?v=1761397358",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_B.jpg?v=1761397358",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_TOP.jpg?v=1761397358"
       ],
       "variants": [
         {
@@ -1397,10 +1787,60 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://emmeparsons.com/products/leandra-in-burgundy-patent",
+          "handle": "leandra-in-burgundy-patent",
+          "title": "Leandra in Burgundy Patent",
+          "color": "in Burgundy Patent",
+          "sku": "00069-608-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_SIDE_2493dd20-2627-4294-a688-cd072c5f13b4.jpg?v=1761397090",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_A.jpg?v=1761397358",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_B.jpg?v=1761397358",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BURGUNDY_PATENT_TOP.jpg?v=1761397358"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
       "isNew": false,
       "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "emme-parsons--leandra-satin",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Leandra Satin",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_SIDE_9273b67a-82d1-4c4e-91fd-e0df761f7896.jpg?v=1761580391",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_A.jpg?v=1761580391",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_TOP_83ef2107-87a8-4f4b-ab13-28485a613ac1.jpg?v=1761580391"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/leandra-in-black-satin",
+          "handle": "leandra-in-black-satin",
+          "title": "Leandra in Black Satin",
+          "color": "Leandra in Black Satin",
+          "sku": "00069-101-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_SIDE_9273b67a-82d1-4c4e-91fd-e0df761f7896.jpg?v=1761580391",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_A.jpg?v=1761580391",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/LEANDRA_BLACK_SATIN_TOP_83ef2107-87a8-4f4b-ab13-28485a613ac1.jpg?v=1761580391"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "emme-parsons--meta",
@@ -1500,12 +1940,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -1570,7 +2010,12 @@
         "https://cdn.shopify.com/s/files/1/2246/7919/files/PHOTO-2025-09-11-14-10-22.jpg?v=1761384003",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/PHOTO-2025-09-11-14-10-35.jpg?v=1757690400",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_NAPPA_A.jpg?v=1757690400",
-        "https://cdn.shopify.com/s/files/1/2246/7919/files/PHOTO-2025-09-11-14-10-50.jpg?v=1757690400"
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/PHOTO-2025-09-11-14-10-50.jpg?v=1757690400",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_SIDE.jpg?v=1795019497",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_B.jpg?v=1793911032",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_TOP.jpg?v=1795019497",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_C.jpg?v=1793911043",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_A.jpg?v=1793911024"
       ],
       "variants": [
         {
@@ -1607,9 +2052,28 @@
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://emmeparsons.com/products/minori-boot-espresso-suede",
+          "handle": "minori-boot-espresso-suede",
+          "title": "Minori Boot in Espresso Suede",
+          "color": "in Espresso Suede",
+          "sku": "00090-225SU-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_SIDE.jpg?v=1795019497",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_B.jpg?v=1793911032",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_TOP.jpg?v=1795019497",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_C.jpg?v=1793911043",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/MINORI_ESPRESSO_SUEDE_A.jpg?v=1793911024"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "handle-family"
     },
     {
@@ -2108,12 +2572,12 @@
           ],
           "category": "PUMP",
           "productType": "Heels",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2123,7 +2587,7 @@
       "category": "PUMP",
       "images": [
         "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_SIDE.jpg?v=1779064349",
-        "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_B.jpg?v=1784515929",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_C.jpg?v=1793642358",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_A.jpg?v=1779067301",
         "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_TOP.jpg?v=1779150373"
       ],
@@ -2136,18 +2600,18 @@
           "sku": "00097-451NP-35",
           "images": [
             "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_SIDE.jpg?v=1779064349",
-            "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_B.jpg?v=1784515929",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_C.jpg?v=1793642358",
             "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_A.jpg?v=1779067301",
             "https://cdn.shopify.com/s/files/1/2246/7919/files/STASERA_MARINE_BLUE_TOP.jpg?v=1779150373"
           ],
           "category": "PUMP",
           "productType": "Heels",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2424,12 +2888,12 @@
           ],
           "category": "SANDAL",
           "productType": "Sandals",
-          "inNewArrivals": true,
-          "isNew": true,
-          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
         }
       ],
-      "isNew": true,
+      "isNew": false,
       "groupingReason": "single-product"
     },
     {
@@ -2462,6 +2926,40 @@
         }
       ],
       "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--veneto-bijoux",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Veneto Bijoux",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_SIDE.jpg?v=1792025367",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_IVORY_A.jpg?v=1792025330",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_IVORY_B.jpg?v=1792025338",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_TOP.jpg?v=1792025377"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/veneto-bijoux-cream-nappa",
+          "handle": "veneto-bijoux-cream-nappa",
+          "title": "Veneto Bijoux in Cream Nappa",
+          "color": "in Cream Nappa",
+          "sku": "00114-112NP-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_SIDE.jpg?v=1792025367",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_IVORY_A.jpg?v=1792025330",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_IVORY_B.jpg?v=1792025338",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_BIJOUX_TOP.jpg?v=1792025377"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2528,6 +3026,38 @@
         }
       ],
       "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "emme-parsons--veneto--veneto-leopard-print",
+      "brand": "EMME PARSONS",
+      "canonicalName": "Veneto",
+      "category": "PUMP",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_SIDE_66ac7490-fb4a-4a1c-8b7d-ec3043458dad.jpg?v=1792026655",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_A.jpg?v=1792026683",
+        "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_TOP_d3c5b5dd-f40f-4354-82fc-4c2b627b1708.jpg?v=1792026666"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://emmeparsons.com/products/veneto-leopard-print",
+          "handle": "veneto-leopard-print",
+          "title": "Veneto in Leopard Calf Hair",
+          "color": "in Leopard Calf Hair",
+          "sku": "00077-800CF-35",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_SIDE_66ac7490-fb4a-4a1c-8b7d-ec3043458dad.jpg?v=1792026655",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_A.jpg?v=1792026683",
+            "https://cdn.shopify.com/s/files/1/2246/7919/files/VENETO_LEOPARD_TOP_d3c5b5dd-f40f-4354-82fc-4c2b627b1708.jpg?v=1792026666"
+          ],
+          "category": "PUMP",
+          "productType": "Heels",
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
+        }
+      ],
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2624,12 +3154,12 @@
           ],
           "category": "BOOT",
           "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     },
     {
@@ -2656,16 +3186,17 @@
           ],
           "category": "BOOT",
           "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
+          "inNewArrivals": true,
+          "isNew": true,
+          "newnessEvidence": "NEW_ARRIVALS_COLLECTION"
         }
       ],
-      "isNew": false,
+      "isNew": true,
       "groupingReason": "single-product"
     }
   ],
   "productUrls": [
+    "https://emmeparsons.com/products/agnes-in-black-shiny-calf",
     "https://emmeparsons.com/products/aya-black-w-black-sole",
     "https://emmeparsons.com/products/aya-in-taupe-suede",
     "https://emmeparsons.com/products/bari-black-nappa-black-sole",
@@ -2676,9 +3207,12 @@
     "https://emmeparsons.com/products/bari-in-tobacco-online-exclusive",
     "https://emmeparsons.com/products/bari-in-tobacco-nappa",
     "https://emmeparsons.com/products/bari-pool-slide-in-beige-nappa-rubber",
+    "https://emmeparsons.com/products/bari-pool-slide-sandal-exclusive-espresso-w-black-string",
     "https://emmeparsons.com/products/bari-pool-slide-in-black-nappa-rubber",
     "https://emmeparsons.com/products/cecilia-t-strap-sandal-beige-patent",
     "https://emmeparsons.com/products/cecilia-in-black",
+    "https://emmeparsons.com/products/cecilia-in-silver-nappa",
+    "https://emmeparsons.com/products/chelsea-in-black",
     "https://emmeparsons.com/products/chelsea-in-washed-gold-nappa",
     "https://emmeparsons.com/products/danielle-in-black-embossed-croc",
     "https://emmeparsons.com/products/danielle-in-espresso-embossed-croc",
@@ -2700,18 +3234,29 @@
     "https://emmeparsons.com/products/ernest-in-black",
     "https://emmeparsons.com/products/ernest-in-espresso",
     "https://emmeparsons.com/products/ernest-in-ivory",
+    "https://emmeparsons.com/products/flat-mule-black-shearling-nappa",
     "https://emmeparsons.com/products/flat-mule-in-black-suede",
+    "https://emmeparsons.com/products/flat-mule-in-caramel-suede",
     "https://emmeparsons.com/products/flat-mule-espresso-suede",
+    "https://emmeparsons.com/products/flat-mule-leopard-print",
     "https://emmeparsons.com/products/flat-mule-optic-white-woven",
+    "https://emmeparsons.com/products/folded-slide-in-black-nappa",
+    "https://emmeparsons.com/products/folded-slide-in-ivory-nappa",
     "https://emmeparsons.com/products/girona-penny-loafer-black-kidskin",
     "https://emmeparsons.com/products/girona-penny-loafer-camel-suede",
+    "https://emmeparsons.com/products/high-stretch-boot-black-calf",
+    "https://emmeparsons.com/products/high-stretch-boot-espresso-calf",
     "https://emmeparsons.com/products/high-throat-ballerina-black-woven",
     "https://emmeparsons.com/products/high-throat-ballerina-optic-white-woven",
+    "https://emmeparsons.com/products/hugo-in-black-calf-and-shearling",
     "https://emmeparsons.com/products/isabel-black-calf",
     "https://emmeparsons.com/products/isabel-espresso-emb-lizard",
     "https://emmeparsons.com/products/isabel-ivory-calf",
+    "https://emmeparsons.com/products/knot-pool-slide-in-black-nappa-and-rubber",
     "https://emmeparsons.com/products/leandra-in-black-patent",
+    "https://emmeparsons.com/products/leandra-in-black-satin",
     "https://emmeparsons.com/products/leandra-in-black-suede",
+    "https://emmeparsons.com/products/leandra-in-burgundy-patent",
     "https://emmeparsons.com/products/meta-black-embossed-croc",
     "https://emmeparsons.com/products/meta-clear-recycled-tpu",
     "https://emmeparsons.com/products/meta-espresso-embossed-croc",
@@ -2720,6 +3265,7 @@
     "https://emmeparsons.com/products/meta-tan-suede",
     "https://emmeparsons.com/products/minori-boot-black-nappa",
     "https://emmeparsons.com/products/minori-boot-espresso-nappa",
+    "https://emmeparsons.com/products/minori-boot-espresso-suede",
     "https://emmeparsons.com/products/monceaux-mule-black-kidskin",
     "https://emmeparsons.com/products/monceaux-mule-chocolate-suede",
     "https://emmeparsons.com/products/monroe-black-suede",
@@ -2750,8 +3296,10 @@
     "https://emmeparsons.com/products/susan-slide-marine-blue-nappa",
     "https://emmeparsons.com/products/susan-slide-in-tan",
     "https://emmeparsons.com/products/susan-slide-in-washed-gold",
+    "https://emmeparsons.com/products/veneto-bijoux-cream-nappa",
     "https://emmeparsons.com/products/veneto-burgundy-satin",
     "https://emmeparsons.com/products/veneto-chocolate-nappa",
+    "https://emmeparsons.com/products/veneto-leopard-print",
     "https://emmeparsons.com/products/western-minori-black-grosgrain",
     "https://emmeparsons.com/products/western-minori-tan-grosgrain",
     "https://emmeparsons.com/products/western-stretch-boot-black-grosgrain",

@@ -2,8 +2,8 @@
   "slug": "pavement",
   "brand": "PAVEMENT",
   "officialUrl": "https://pavement-official.com",
-  "snapshotId": "pavement:2026-10-11T09:39:48.122Z",
-  "collectedAt": "2026-10-11T09:39:48.122Z",
+  "snapshotId": "pavement:2026-11-28T08:59:32.656Z",
+  "collectedAt": "2026-11-28T08:59:32.656Z",
   "catalogPaths": [
     "/collections/boots",
     "/collections/espadrilles",
@@ -15,13 +15,13 @@
   ],
   "newArrivalsPaths": [],
   "coverage": {
-    "sourceTotal": 204,
-    "collected": 204,
+    "sourceTotal": 232,
+    "collected": 232,
     "missing": 0,
     "coverage": 100,
     "excluded": 0,
     "paginationExhausted": true,
-    "galleryComplete": 204,
+    "galleryComplete": 232,
     "taxonomyPassed": true,
     "womenFootwearOnly": true,
     "sampleOnly": false
@@ -33,11 +33,380 @@
   "referenceNewArrivalsMatch": null,
   "families": [
     {
+      "modelFamilyId": "pavement--pabillie",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pabillie",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052.jpg?v=1795681388",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-1.jpg?v=1795681387",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-2.jpg?v=1795681387",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-3.jpg?v=1795681387",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-4.jpg?v=1795681387",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-5.jpg?v=1795681387",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067.jpg?v=1795681375",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-1.jpg?v=1795681375",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-2.jpg?v=1795681375",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-3.jpg?v=1795681375",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-4.jpg?v=1795681375",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-5.jpg?v=1795681375"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pabillie-boots-tan",
+          "handle": "pabillie-boots-tan",
+          "title": "PABillie - Tan",
+          "color": "Tan",
+          "sku": "26391\\052\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052.jpg?v=1795681388",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-1.jpg?v=1795681387",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-2.jpg?v=1795681387",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-3.jpg?v=1795681387",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-4.jpg?v=1795681387",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Tan_052-5.jpg?v=1795681387"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/pabillie-boots-brown",
+          "handle": "pabillie-boots-brown",
+          "title": "PABillie - Brown",
+          "color": "Brown",
+          "sku": "26391\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067.jpg?v=1795681375",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-1.jpg?v=1795681375",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-2.jpg?v=1795681375",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-3.jpg?v=1795681375",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-4.jpg?v=1795681375",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PABillie-Boots-26391-Brown_067-5.jpg?v=1795681375"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--pajenny",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pajenny",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020.jpg?v=1795602975",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-1.jpg?v=1795602976",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-2.jpg?v=1795602975",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-3.jpg?v=1795602975",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-4.jpg?v=1795602975"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/jenny-boots-black",
+          "handle": "jenny-boots-black",
+          "title": "PAJenny - Black",
+          "color": "Black",
+          "sku": "23482\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020.jpg?v=1795602975",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-1.jpg?v=1795602976",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-2.jpg?v=1795602975",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-3.jpg?v=1795602975",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJenny-Boots-23482-Black_020-4.jpg?v=1795602975"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--paelva",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paelva",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067.jpg?v=1795603101",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-1.jpg?v=1795603101",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-2.jpg?v=1795603101",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-3.jpg?v=1795603101",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-4.jpg?v=1795603101"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paelva-boots-brown",
+          "handle": "paelva-boots-brown",
+          "title": "PAElva - Brown",
+          "color": "Brown",
+          "sku": "24423\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067.jpg?v=1795603101",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-1.jpg?v=1795603101",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-2.jpg?v=1795603101",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-3.jpg?v=1795603101",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Brown_067-4.jpg?v=1795603101"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pawilma",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pawilma",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347.jpg?v=1794555005",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-1.jpg?v=1794555005",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-2.jpg?v=1794555005",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-3.jpg?v=1794555004",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-4.jpg?v=1794555004",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020.jpg?v=1753967543",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-1.jpg?v=1753967543",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-2.jpg?v=1753967543",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-3.jpg?v=1753967544",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-4.jpg?v=1753967543"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/wilma-boots-brown-suede",
+          "handle": "wilma-boots-brown-suede",
+          "title": "PAWilma - Brown suede",
+          "color": "Brown suede",
+          "sku": "24482\\347\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347.jpg?v=1794555005",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-1.jpg?v=1794555005",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-2.jpg?v=1794555005",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-3.jpg?v=1794555004",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAWilma-Boots-24482-Brown_suede_347-4.jpg?v=1794555004"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/wilma-boots-black",
+          "handle": "wilma-boots-black",
+          "title": "PAWilma - Black",
+          "color": "Black",
+          "sku": "24482\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020.jpg?v=1753967543",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-1.jpg?v=1753967543",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-2.jpg?v=1753967543",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-3.jpg?v=1753967544",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-4.jpg?v=1753967543"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--esmara-oil",
+      "brand": "PAVEMENT",
+      "canonicalName": "Esmara Oil",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484.jpg?v=1794554990",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-1.jpg?v=1794554990",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-2.jpg?v=1794554990",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-3.jpg?v=1794554990",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-4.jpg?v=1794554990"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/esmara-boots-tan-oil",
+          "handle": "esmara-boots-tan-oil",
+          "title": "Esmara - Tan Oil",
+          "color": "Esmara - Tan Oil",
+          "sku": "25198\\484\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484.jpg?v=1794554990",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-1.jpg?v=1794554990",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-2.jpg?v=1794554990",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-3.jpg?v=1794554990",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Tan_Oil_484-4.jpg?v=1794554990"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--esmara",
+      "brand": "PAVEMENT",
+      "canonicalName": "Esmara",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020.jpg?v=1794554973",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-1.jpg?v=1794554974",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-2.jpg?v=1794554973",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-3.jpg?v=1794554973",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-4.jpg?v=1794554974",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898.jpg?v=1762345457",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-1.jpg?v=1762345457",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-2.jpg?v=1762345457",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-3.jpg?v=1762345458",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-4.jpg?v=1762345457"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/esmara-boots-black",
+          "handle": "esmara-boots-black",
+          "title": "Esmara - Black",
+          "color": "Black",
+          "sku": "25198\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020.jpg?v=1794554973",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-1.jpg?v=1794554974",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-2.jpg?v=1794554973",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-3.jpg?v=1794554973",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Black_020-4.jpg?v=1794554974"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/esmara-boots-olive",
+          "handle": "esmara-boots-olive",
+          "title": "Esmara - Olive",
+          "color": "Olive",
+          "sku": "25198\\898\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898.jpg?v=1762345457",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-1.jpg?v=1762345457",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-2.jpg?v=1762345457",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-3.jpg?v=1762345458",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-4.jpg?v=1762345457"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--paanneli",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paanneli",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717.jpg?v=1794472228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-1.jpg?v=1794472228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-2.jpg?v=1794472228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-3.jpg?v=1794472228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-4.jpg?v=1794472228"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/anneli-vintage-boots-tan-vintage",
+          "handle": "anneli-vintage-boots-tan-vintage",
+          "title": "PAAnneli Vintage - Tan Vintage",
+          "color": "Vintage - Tan Vintage",
+          "sku": "23339-1\\717\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717.jpg?v=1794472228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-1.jpg?v=1794472228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-2.jpg?v=1794472228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-3.jpg?v=1794472228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Tan_Vintage_717-4.jpg?v=1794472228"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--paanneli--anneli-vintage-boots-brown",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paanneli",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067.jpg?v=1794472204",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-1.jpg?v=1794472205",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-2.jpg?v=1794472204",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-3.jpg?v=1794472204",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-4.jpg?v=1794472204"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/anneli-vintage-boots-brown",
+          "handle": "anneli-vintage-boots-brown",
+          "title": "PAAnneli Vintage - Brown",
+          "color": "Vintage - Brown",
+          "sku": "23339-1\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067.jpg?v=1794472204",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-1.jpg?v=1794472205",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-2.jpg?v=1794472204",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-3.jpg?v=1794472204",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-4.jpg?v=1794472204"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
       "modelFamilyId": "pavement--paalmira",
       "brand": "PAVEMENT",
       "canonicalName": "Paalmira",
       "category": "BOOT",
       "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1792415370",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1792415371",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1792415371",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1792415371",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1792415370",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020.jpg?v=1791371242",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-1.jpg?v=1791371242",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira_Croco-Boots-25283-2-Black_020-2.jpg?v=1791371242",
@@ -47,14 +416,28 @@
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-1.jpg?v=1788268448",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448"
       ],
       "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paalmira-boots-black",
+          "handle": "paalmira-boots-black",
+          "title": "PAAlmira - Black",
+          "color": "Black",
+          "sku": "25283\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1792415370",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1792415371",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1792415371",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1792415371",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1792415370"
+          ],
+          "category": "BOOT",
+          "productType": "Boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
         {
           "productUrl": "https://pavement-official.com/products/paalmira-croco-boots-black",
           "handle": "paalmira-croco-boots-black",
@@ -86,25 +469,6 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-2.jpg?v=1788268448",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-3.jpg?v=1788268448",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Brown_067-4.jpg?v=1788268448"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/paalmira-boots-black",
-          "handle": "paalmira-boots-black",
-          "title": "PAAlmira - Black",
-          "color": "Black",
-          "sku": "25283\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020.jpg?v=1788176783",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-1.jpg?v=1788176783",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-2.jpg?v=1788176782",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-3.jpg?v=1788176782",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAlmira-Boots-25283-Black_020-4.jpg?v=1788176782"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -309,38 +673,24 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--pa-gerda",
+      "modelFamilyId": "pavement--pagemma",
       "brand": "PAVEMENT",
-      "canonicalName": "Pa Gerda",
+      "canonicalName": "Pagemma",
       "category": "BOOT",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Brown_067.jpg?v=1788269925",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Black_020.jpg?v=1788269917"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Brown_067-1.jpg?v=1791972096"
       ],
       "variants": [
         {
           "productUrl": "https://pavement-official.com/products/pa-gerda-boots-brown",
           "handle": "pa-gerda-boots-brown",
-          "title": "PA Gerda - Brown",
+          "title": "PAGemma - Brown",
           "color": "Brown",
           "sku": "25580\\067\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Brown_067.jpg?v=1788269925"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/pa-gerda-boots-black",
-          "handle": "pa-gerda-boots-black",
-          "title": "PA Gerda - Black",
-          "color": "Black",
-          "sku": "25580\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Black_020.jpg?v=1788269917"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Brown_067.jpg?v=1788269925",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Gerda-Boots-25580-Brown_067-1.jpg?v=1791972096"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -350,7 +700,7 @@
         }
       ],
       "isNew": false,
-      "groupingReason": "handle-family"
+      "groupingReason": "single-product"
     },
     {
       "modelFamilyId": "pavement--pamyrna",
@@ -658,11 +1008,11 @@
       "canonicalName": "Anine",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020.jpg?v=1786005624",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-1.jpg?v=1786005624",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-2.jpg?v=1786005624",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-3.jpg?v=1786005624",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-4.jpg?v=1786005624",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020.jpg?v=1793270283",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-1.jpg?v=1793270284",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-2.jpg?v=1793270283",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-3.jpg?v=1793270283",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-4.jpg?v=1793270284",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine_suede-Boots-25475-1-Brown_suede_347.jpg?v=1771858272",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine_suede-Boots-25475-1-Brown_suede_347-1.jpg?v=1771858272",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine_suede-Boots-25475-1-Brown_suede_347-2.jpg?v=1771858272",
@@ -677,11 +1027,11 @@
           "color": "Black",
           "sku": "25475\\020\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020.jpg?v=1786005624",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-1.jpg?v=1786005624",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-2.jpg?v=1786005624",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-3.jpg?v=1786005624",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-4.jpg?v=1786005624"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020.jpg?v=1793270283",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-1.jpg?v=1793270284",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-2.jpg?v=1793270283",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-3.jpg?v=1793270283",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anine-Boots-25475-Black_020-4.jpg?v=1793270284"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -718,11 +1068,11 @@
       "canonicalName": "Patanja",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777.jpg?v=1776169700",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-1.jpg?v=1776169701",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-2.jpg?v=1776169701",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-3.jpg?v=1776169701",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-4.jpg?v=1776169701"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777.jpg?v=1794908513",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-1.jpg?v=1794908513",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-2.jpg?v=1794908513",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-3.jpg?v=1794908514",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-4.jpg?v=1794908513"
       ],
       "variants": [
         {
@@ -732,11 +1082,11 @@
           "color": "Vintage - Brown/White",
           "sku": "25598-1\\777\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777.jpg?v=1776169700",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-1.jpg?v=1776169701",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-2.jpg?v=1776169701",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-3.jpg?v=1776169701",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-4.jpg?v=1776169701"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777.jpg?v=1794908513",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-1.jpg?v=1794908513",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-2.jpg?v=1794908513",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-3.jpg?v=1794908514",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PATanja_Vintage-Boots-25598-1-Brown_White_777-4.jpg?v=1794908513"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -941,7 +1291,7 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pavement--pajenny",
+      "modelFamilyId": "pavement--pajenny--jenny-vntage-boots-tan-vintage",
       "brand": "PAVEMENT",
       "canonicalName": "Pajenny",
       "category": "BOOT",
@@ -1085,78 +1435,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--anneli",
-      "brand": "PAVEMENT",
-      "canonicalName": "Anneli",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067.jpg?v=1764606746",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-1.jpg?v=1764606747",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-2.jpg?v=1764606746",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-3.jpg?v=1764606746",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-4.jpg?v=1764606747"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/anneli-vintage-boots-brown",
-          "handle": "anneli-vintage-boots-brown",
-          "title": "Anneli Vintage - Brown",
-          "color": "Vintage - Brown",
-          "sku": "23339-1\\067\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067.jpg?v=1764606746",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-1.jpg?v=1764606747",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-2.jpg?v=1764606746",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-3.jpg?v=1764606746",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Anneli_Vintage-Boots-23339-1-Brown_067-4.jpg?v=1764606747"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--esmara",
-      "brand": "PAVEMENT",
-      "canonicalName": "Esmara",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898.jpg?v=1762345457",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-1.jpg?v=1762345457",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-2.jpg?v=1762345457",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-3.jpg?v=1762345458",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-4.jpg?v=1762345457"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/esmara-boots-olive",
-          "handle": "esmara-boots-olive",
-          "title": "Esmara - Olive",
-          "color": "Olive",
-          "sku": "25198\\898\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898.jpg?v=1762345457",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-1.jpg?v=1762345457",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-2.jpg?v=1762345457",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-3.jpg?v=1762345458",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Esmara-Boots-25198-Olive_898-4.jpg?v=1762345457"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "pavement--pajenny--jenny-vntage-boots-brown",
       "brand": "PAVEMENT",
       "canonicalName": "Pajenny",
@@ -1193,7 +1471,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--anneli--anneli-boots-black",
+      "modelFamilyId": "pavement--anneli",
       "brand": "PAVEMENT",
       "canonicalName": "Anneli",
       "category": "BOOT",
@@ -1409,16 +1687,16 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--paelva",
+      "modelFamilyId": "pavement--paelva--elva-boots-black",
       "brand": "PAVEMENT",
       "canonicalName": "Paelva",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020.jpg?v=1754488268",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-1.jpg?v=1755092417",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-2.jpg?v=1755092417",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-3.jpg?v=1755092417",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-4.jpg?v=1755092417",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020.jpg?v=1795603169",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-1.jpg?v=1795603169",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-2.jpg?v=1795603169",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-3.jpg?v=1795603169",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-4.jpg?v=1795603169",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva_Suede-Boots-24423-1-Brown_suede_347.jpg?v=1753967517",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva_Suede-Boots-24423-1-Brown_suede_347-1.jpg?v=1753967517",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva_Suede-Boots-24423-1-Brown_suede_347-2.jpg?v=1753967517",
@@ -1433,11 +1711,11 @@
           "color": "Black",
           "sku": "24423\\020\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020.jpg?v=1754488268",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-1.jpg?v=1755092417",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-2.jpg?v=1755092417",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-3.jpg?v=1755092417",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elva-Boots-24423-Black_020-4.jpg?v=1755092417"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020.jpg?v=1795603169",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-1.jpg?v=1795603169",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-2.jpg?v=1795603169",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-3.jpg?v=1795603169",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElva-Boots-24423-Black_020-4.jpg?v=1795603169"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -1469,42 +1747,6 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pavement--pawilma",
-      "brand": "PAVEMENT",
-      "canonicalName": "Pawilma",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020.jpg?v=1753967543",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-1.jpg?v=1753967543",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-2.jpg?v=1753967543",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-3.jpg?v=1753967544",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-4.jpg?v=1753967543"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/wilma-boots-black",
-          "handle": "wilma-boots-black",
-          "title": "PAWilma - Black",
-          "color": "Black",
-          "sku": "24482\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020.jpg?v=1753967543",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-1.jpg?v=1753967543",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-2.jpg?v=1753967543",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-3.jpg?v=1753967544",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Wilma-Boots-24482-Black_020-4.jpg?v=1753967543"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "pavement--zevil-matte",
       "brand": "PAVEMENT",
       "canonicalName": "Zevil Matte",
@@ -1529,42 +1771,6 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Zevil_Vintage-Boots-23003-1-Black_matte_069-2.jpg?v=1732797971",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Zevil_Vintage-Boots-23003-1-Black_matte_069-3.jpg?v=1732797971",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Zevil_Vintage-Boots-23003-1-Black_matte_069-4.jpg?v=1732797971"
-          ],
-          "category": "BOOT",
-          "productType": "Boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--tilda",
-      "brand": "PAVEMENT",
-      "canonicalName": "Tilda",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067.jpg?v=1729509620",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-1.jpg?v=1729509620",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-2.jpg?v=1729509620",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-3.jpg?v=1729509620",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-4.jpg?v=1729509620"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/tilda-vintage-boots-brown",
-          "handle": "tilda-vintage-boots-brown",
-          "title": "Tilda Vintage - Brown",
-          "color": "Vintage - Brown",
-          "sku": "23390-1\\067\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067.jpg?v=1729509620",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-1.jpg?v=1729509620",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-2.jpg?v=1729509620",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-3.jpg?v=1729509620",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tilda_Vintage-Boots-23390-1-Brown_067-4.jpg?v=1729509620"
           ],
           "category": "BOOT",
           "productType": "Boots",
@@ -1805,6 +2011,1230 @@
       "groupingReason": "handle-family"
     },
     {
+      "modelFamilyId": "pavement--pavilde-lace",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pavilde Lace",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043.jpg?v=1795778995",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-1.jpg?v=1795778997",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-2.jpg?v=1795778996",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-3.jpg?v=1795778995",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-4.jpg?v=1795778996"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pavilde-lace-loafers-dark-brown-vintage",
+          "handle": "pavilde-lace-loafers-dark-brown-vintage",
+          "title": "PAVilde lace - Dark Brown Vintage",
+          "color": "Dark Brown Vintage",
+          "sku": "24411-1\\043\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043.jpg?v=1795778995",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-1.jpg?v=1795778997",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-2.jpg?v=1795778996",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-3.jpg?v=1795778995",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Dark_Brown_Vintage_043-4.jpg?v=1795778996"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pavilde-lace--pavilde-lace-loafers-tan-suede",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pavilde Lace",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255.jpg?v=1795769662",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-1.jpg?v=1795769662",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-2.jpg?v=1795769662",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-3.jpg?v=1795769662",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-4.jpg?v=1795769662"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pavilde-lace-loafers-tan-suede",
+          "handle": "pavilde-lace-loafers-tan-suede",
+          "title": "PAVilde lace - Tan suede",
+          "color": "Tan suede",
+          "sku": "24411-1\\255\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255.jpg?v=1795769662",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-1.jpg?v=1795769662",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-2.jpg?v=1795769662",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-3.jpg?v=1795769662",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Tan_suede_255-4.jpg?v=1795769662"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--paruby",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paruby",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105.jpg?v=1795422222",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-1.jpg?v=1795422223",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-2.jpg?v=1795422222",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-3.jpg?v=1795422222",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-4.jpg?v=1795422222",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548.jpg?v=1786110029",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-1.jpg?v=1786110029",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-2.jpg?v=1786110029",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-3.jpg?v=1786110029",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-4.jpg?v=1786110029"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paruby-sneakers-beige-croco",
+          "handle": "paruby-sneakers-beige-croco",
+          "title": "PARuby - Beige/croco",
+          "color": "Beige/croco",
+          "sku": "25561\\105\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105.jpg?v=1795422222",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-1.jpg?v=1795422223",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-2.jpg?v=1795422222",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-3.jpg?v=1795422222",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Beige_croco_105-4.jpg?v=1795422222"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/paruby-sneakers-brown-silver",
+          "handle": "paruby-sneakers-brown-silver",
+          "title": "PARuby - Brown/Silver",
+          "color": "Brown/Silver",
+          "sku": "25561\\548\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548.jpg?v=1786110029",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-1.jpg?v=1786110029",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-2.jpg?v=1786110029",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-3.jpg?v=1786110029",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-4.jpg?v=1786110029"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--mandy-1",
+      "brand": "PAVEMENT",
+      "canonicalName": "Mandy 1",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067.jpg?v=1795422185",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-1.jpg?v=1795422185",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-2.jpg?v=1795422186",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-3.jpg?v=1795422185",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-4.jpg?v=1795422186"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/mandy-1-long-boots-brown",
+          "handle": "mandy-1-long-boots-brown",
+          "title": "Mandy 1 - Brown",
+          "color": "Brown",
+          "sku": "22260-1\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067.jpg?v=1795422185",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-1.jpg?v=1795422185",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-2.jpg?v=1795422186",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-3.jpg?v=1795422185",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mandy_1-Long_boots-22260-1-Brown_067-4.jpg?v=1795422186"
+          ],
+          "category": "BOOT",
+          "productType": "Long boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--jamila",
+      "brand": "PAVEMENT",
+      "canonicalName": "Jamila",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067.jpg?v=1795422170",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-1.jpg?v=1795422170",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-2.jpg?v=1795422170",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-3.jpg?v=1795422170",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-4.jpg?v=1795422171",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052.jpg?v=1771858050",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-1.jpg?v=1771858050",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-2.jpg?v=1771858050",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-3.jpg?v=1771858050",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-4.jpg?v=1771858050"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/jamila-loafers-brown",
+          "handle": "jamila-loafers-brown",
+          "title": "Jamila - Brown",
+          "color": "Brown",
+          "sku": "25223\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067.jpg?v=1795422170",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-1.jpg?v=1795422170",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-2.jpg?v=1795422170",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-3.jpg?v=1795422170",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Brown_067-4.jpg?v=1795422171"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/jamila-loafers-tan",
+          "handle": "jamila-loafers-tan",
+          "title": "Jamila - Tan",
+          "color": "Tan",
+          "sku": "25223\\052\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052.jpg?v=1771858050",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-1.jpg?v=1771858050",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-2.jpg?v=1771858050",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-3.jpg?v=1771858050",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-4.jpg?v=1771858050"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--pamyrian",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamyrian",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020.jpg?v=1795422156",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-1.jpg?v=1795422156",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-2.jpg?v=1795422156",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-3.jpg?v=1795422156",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-4.jpg?v=1795422156",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067.jpg?v=1772030430",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-1.jpg?v=1772030430",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-2.jpg?v=1772030430",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-3.jpg?v=1772030430",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-4.jpg?v=1772030430"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamyrian-loafers-black",
+          "handle": "pamyrian-loafers-black",
+          "title": "PAMyrian - Black",
+          "color": "Black",
+          "sku": "25197\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020.jpg?v=1795422156",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-1.jpg?v=1795422156",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-2.jpg?v=1795422156",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-3.jpg?v=1795422156",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Black_020-4.jpg?v=1795422156"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/pamyrian-loafers-brown",
+          "handle": "pamyrian-loafers-brown",
+          "title": "PAMyrian - Brown",
+          "color": "Brown",
+          "sku": "25197\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067.jpg?v=1772030430",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-1.jpg?v=1772030430",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-2.jpg?v=1772030430",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-3.jpg?v=1772030430",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-4.jpg?v=1772030430"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--paelmira-tassel-polido",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paelmira Tassel Polido",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022.jpg?v=1794555033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-1.jpg?v=1794555033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-2.jpg?v=1794555033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-3.jpg?v=1794555033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-4.jpg?v=1794555033"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paelmira-tassel-loafers-black-polido",
+          "handle": "paelmira-tassel-loafers-black-polido",
+          "title": "PAElmira Tassel - Black polido",
+          "color": "PAElmira Tassel - Black polido",
+          "sku": "25596\\022\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022.jpg?v=1794555033",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-1.jpg?v=1794555033",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-2.jpg?v=1794555033",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-3.jpg?v=1794555033",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Tassel-Loafers-25596-Black_polido_022-4.jpg?v=1794555033"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--matilda-croco-black",
+      "brand": "PAVEMENT",
+      "canonicalName": "Matilda Croco - Black",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020.jpg?v=1794557488",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-1.jpg?v=1794557489",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-2.jpg?v=1794557489",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-3.jpg?v=1794557488",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-4.jpg?v=1794557489",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020.jpg?v=1719473431",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-1.jpg?v=1719473431",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-2.jpg?v=1719473431",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-3.jpg?v=1719473431",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-4.jpg?v=1719473431"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/matilda-croco-loafers-black",
+          "handle": "matilda-croco-loafers-black",
+          "title": "Matilda Croco - Black",
+          "color": null,
+          "sku": "23381-2\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020.jpg?v=1794557488",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-1.jpg?v=1794557489",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-2.jpg?v=1794557489",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-3.jpg?v=1794557488",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda_Croco-Loafers-23381-2-Black_020-4.jpg?v=1794557489"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/matilda-loafers-black",
+          "handle": "matilda-loafers-black",
+          "title": "PAMatilda - Black",
+          "color": "PAMatilda - Black",
+          "sku": "23381\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020.jpg?v=1719473431",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-1.jpg?v=1719473431",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-2.jpg?v=1719473431",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-3.jpg?v=1719473431",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-4.jpg?v=1719473431"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--payasma",
+      "brand": "PAVEMENT",
+      "canonicalName": "Payasma",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347.jpg?v=1794554946",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-1.jpg?v=1794554946",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-2.jpg?v=1794554946",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-3.jpg?v=1794554946",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-4.jpg?v=1794554946"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/payasma-loafers-brown-suede",
+          "handle": "payasma-loafers-brown-suede",
+          "title": "PAYasma - Brown suede",
+          "color": "Brown suede",
+          "sku": "25228\\347\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347.jpg?v=1794554946",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-1.jpg?v=1794554946",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-2.jpg?v=1794554946",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-3.jpg?v=1794554946",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma-Mules-25228-Brown_suede_347-4.jpg?v=1794554946"
+          ],
+          "category": "MULE",
+          "productType": "Mules",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pajuno",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pajuno",
+      "category": "SNEAKER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769.jpg?v=1794555776",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-1.jpg?v=1794555776",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-2.jpg?v=1794555776",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-3.jpg?v=1794555776",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-4.jpg?v=1794555776"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pajuno-sneakers-mushroom-suede",
+          "handle": "pajuno-sneakers-mushroom-suede",
+          "title": "PAJuno - Mushroom suede",
+          "color": "Mushroom suede",
+          "sku": "24467\\769\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769.jpg?v=1794555776",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-1.jpg?v=1794555776",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-2.jpg?v=1794555776",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-3.jpg?v=1794555776",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAJuno-Sneakers-24467-Mushroom_suede_769-4.jpg?v=1794555776"
+          ],
+          "category": "SNEAKER",
+          "productType": "Sneakers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889.jpg?v=1794309630",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-1.jpg?v=1794309630",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-2.jpg?v=1794309630",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-3.jpg?v=1794309630",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-4.jpg?v=1794309630"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-loafers-black-vintage",
+          "handle": "pamarin-loafers-black-vintage",
+          "title": "PAMarin - Black Vintage",
+          "color": "Black Vintage",
+          "sku": "24128\\889\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889.jpg?v=1794309630",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-1.jpg?v=1794309630",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-2.jpg?v=1794309630",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-3.jpg?v=1794309630",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Black_Vintage_889-4.jpg?v=1794309630"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--palinn",
+      "brand": "PAVEMENT",
+      "canonicalName": "Palinn",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779.jpg?v=1794306658",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-1.jpg?v=1794306658",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-2.jpg?v=1794306658",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-3.jpg?v=1794306658",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-4.jpg?v=1794306658"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/palinn-ballerinas-brown-vintage",
+          "handle": "palinn-ballerinas-brown-vintage",
+          "title": "PALinn - Brown Vintage",
+          "color": "Brown Vintage",
+          "sku": "26260\\779\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779.jpg?v=1794306658",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-1.jpg?v=1794306658",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-2.jpg?v=1794306658",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-3.jpg?v=1794306658",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Brown_Vintage_779-4.jpg?v=1794306658"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballerinas",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin--pamarin-loafers-navy-suede",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176.jpg?v=1794300587",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-1.jpg?v=1794300587",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-2.jpg?v=1794298806",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-3.jpg?v=1794298806",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-4.jpg?v=1794300587"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-loafers-navy-suede",
+          "handle": "pamarin-loafers-navy-suede",
+          "title": "PAMarin - Navy suede",
+          "color": "Navy suede",
+          "sku": "24128\\176\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176.jpg?v=1794300587",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-1.jpg?v=1794300587",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-2.jpg?v=1794298806",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-3.jpg?v=1794298806",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Navy_suede_176-4.jpg?v=1794300587"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin-lace",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin Lace",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043.jpg?v=1794908900",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-1.jpg?v=1794908900",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-2.jpg?v=1794908900",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-3.jpg?v=1794908900",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-4.jpg?v=1794908900"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-lace-loafers-dark-brown-vintage",
+          "handle": "pamarin-lace-loafers-dark-brown-vintage",
+          "title": "PAMarin Lace - Dark Brown Vintage",
+          "color": "Dark Brown Vintage",
+          "sku": "24128-2\\043\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043.jpg?v=1794908900",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-1.jpg?v=1794908900",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-2.jpg?v=1794908900",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-3.jpg?v=1794908900",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Lace-Loafers-24128-2-Dark_Brown_Vintage_043-4.jpg?v=1794908900"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin-bold-lace",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin Bold Lace",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255.jpg?v=1793875228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-1.jpg?v=1793875228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-2.jpg?v=1793875228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-3.jpg?v=1793875228",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-4.jpg?v=1793875228"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-bold-lace-loafers-tan-suede",
+          "handle": "pamarin-bold-lace-loafers-tan-suede",
+          "title": "PAMarin Bold Lace - Tan suede",
+          "color": "Tan suede",
+          "sku": "25590\\255\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255.jpg?v=1793875228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-1.jpg?v=1793875228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-2.jpg?v=1793875228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-3.jpg?v=1793875228",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Bold_Lace-Loafers-25590-Tan_suede_255-4.jpg?v=1793875228"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin-camo",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin Camo",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988_98da15f2-85c7-428c-aa4f-31df7c786be8.jpg?v=1794236490",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988.jpg?v=1794236392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-1.jpg?v=1794236393",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-2.jpg?v=1794236391",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-3.jpg?v=1794236392"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-loafers-camo-suede",
+          "handle": "pamarin-loafers-camo-suede",
+          "title": "PAMarin - Camo suede",
+          "color": "PAMarin - Camo suede",
+          "sku": "24128\\988\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988_98da15f2-85c7-428c-aa4f-31df7c786be8.jpg?v=1794236490",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988.jpg?v=1794236392",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-1.jpg?v=1794236393",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-2.jpg?v=1794236391",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin-Loafers-24128-Camo_suede_988-3.jpg?v=1794236392"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamarin-polido-lace-polido",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamarin Polido Lace Polido",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674.jpg?v=1794909078",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-1.jpg?v=1794909078",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-2.jpg?v=1794909078",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-3.jpg?v=1794909078",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-4.jpg?v=1794909078"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamarin-polido-lace-loafers-bordeaux-polido",
+          "handle": "pamarin-polido-lace-loafers-bordeaux-polido",
+          "title": "PAMarin Polido Lace - Bordeaux polido",
+          "color": "PAMarin Polido Lace - Bordeaux polido",
+          "sku": "24128-4\\674\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674.jpg?v=1794909078",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-1.jpg?v=1794909078",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-2.jpg?v=1794909078",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-3.jpg?v=1794909078",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMarin_Polido_Lace-Loafers-24128-4-Bordeaux_polido_674-4.jpg?v=1794909078"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pavilde-lace--pavilde-lace-loafers-denim",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pavilde Lace",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317.jpg?v=1793625480",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-1.jpg?v=1793625480",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-2.jpg?v=1793625480",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-3.jpg?v=1793625480",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-4.jpg?v=1793625480"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pavilde-lace-loafers-denim",
+          "handle": "pavilde-lace-loafers-denim",
+          "title": "PAVilde lace - Denim",
+          "color": "Denim",
+          "sku": "24411-1\\317\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317.jpg?v=1793625480",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-1.jpg?v=1793625480",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-2.jpg?v=1793625480",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-3.jpg?v=1793625480",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVilde_lace-Loafers-24411-1-Denim_317-4.jpg?v=1793625480"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--palulu",
+      "brand": "PAVEMENT",
+      "canonicalName": "Palulu",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044.jpg?v=1793624057",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-1.jpg?v=1793624057",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-2.jpg?v=1793624057",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-3.jpg?v=1793624057",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-4.jpg?v=1793624058",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020.jpg?v=1793625838",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-1.jpg?v=1793625839",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-2.jpg?v=1793625838",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-3.jpg?v=1793625839",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-4.jpg?v=1793625838"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/palulu-ballerinas-bordeaux",
+          "handle": "palulu-ballerinas-bordeaux",
+          "title": "PALulu - Bordeaux",
+          "color": "Bordeaux",
+          "sku": "26106\\044\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044.jpg?v=1793624057",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-1.jpg?v=1793624057",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-2.jpg?v=1793624057",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-3.jpg?v=1793624057",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Bordeaux_044-4.jpg?v=1793624058"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballerinas",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/palulu-ballerinas-black",
+          "handle": "palulu-ballerinas-black",
+          "title": "PALulu - Black",
+          "color": "Black",
+          "sku": "26106\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020.jpg?v=1793625838",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-1.jpg?v=1793625839",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-2.jpg?v=1793625838",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-3.jpg?v=1793625839",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALulu-Ballerinas-26106-Black_020-4.jpg?v=1793625838"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballerinas",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--pashelly",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pashelly",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020.jpg?v=1793269685",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-1.jpg?v=1793269686",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-2.jpg?v=1793269686",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-3.jpg?v=1793269686",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-4.jpg?v=1793269686",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051.jpg?v=1758016032",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-1.jpg?v=1758016033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-2.jpg?v=1758016032",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-3.jpg?v=1758016032",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-4.jpg?v=1758016033",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052.jpg?v=1765267080",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-1.jpg?v=1765267080",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-2.jpg?v=1765267080",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-3.jpg?v=1765267080",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-4.jpg?v=1765267080"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/shelly-nappa-loafers-black",
+          "handle": "shelly-nappa-loafers-black",
+          "title": "PAShelly Nappa - Black",
+          "color": "Nappa - Black",
+          "sku": "22323\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020.jpg?v=1793269685",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-1.jpg?v=1793269686",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-2.jpg?v=1793269686",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-3.jpg?v=1793269686",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAShelly_Nappa-Loafers-22323-Black_020-4.jpg?v=1793269686"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/shelly-loafers-dark-grey",
+          "handle": "shelly-loafers-dark-grey",
+          "title": "PAShelly - Dark grey",
+          "color": "Dark grey",
+          "sku": "22323-2\\051\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051.jpg?v=1758016032",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-1.jpg?v=1758016033",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-2.jpg?v=1758016032",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-3.jpg?v=1758016032",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-4.jpg?v=1758016033"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/shelly-loafers-tan",
+          "handle": "shelly-loafers-tan",
+          "title": "PAShelly - Tan",
+          "color": "Tan",
+          "sku": "22323-2\\052\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052.jpg?v=1765267080",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-1.jpg?v=1765267080",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-2.jpg?v=1765267080",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-3.jpg?v=1765267080",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-4.jpg?v=1765267080"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--payasma-lace",
+      "brand": "PAVEMENT",
+      "canonicalName": "Payasma Lace",
+      "category": "MULE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347.png?v=1793267750",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-1.png?v=1793267750",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-2.png?v=1793267751",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-3.jpg?v=1793267519",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-4.png?v=1793267751"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/payasma-lace-loafers-brown-suede",
+          "handle": "payasma-lace-loafers-brown-suede",
+          "title": "PAYasma Lace - Brown suede",
+          "color": "Brown suede",
+          "sku": "25228-1\\347\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347.png?v=1793267750",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-1.png?v=1793267750",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-2.png?v=1793267751",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-3.jpg?v=1793267519",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Mules-25228-1-Brown_suede_347-4.png?v=1793267751"
+          ],
+          "category": "MULE",
+          "productType": "Mules",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--paelmira",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paelmira",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020.jpg?v=1793195129",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-1.jpg?v=1793195130",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-2.jpg?v=1793195129",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-3.jpg?v=1793195129",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-4.jpg?v=1793195129",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067.jpg?v=1761138392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-1.jpg?v=1761138392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-2.jpg?v=1761138392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-3.jpg?v=1761138392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-4.jpg?v=1761138392",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347.jpg?v=1760685297",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-1.jpg?v=1760685297",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-2.jpg?v=1760685297",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-3.jpg?v=1760685297",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-4.jpg?v=1760685297",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255.jpg?v=1750749530",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-1.jpg?v=1750749530",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-2.jpg?v=1750749530",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-3.jpg?v=1750749530",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-4.jpg?v=1750749530"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/elmira-loafers-black",
+          "handle": "elmira-loafers-black",
+          "title": "PAElmira - Black",
+          "color": "Black",
+          "sku": "24139\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020.jpg?v=1793195129",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-1.jpg?v=1793195130",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-2.jpg?v=1793195129",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-3.jpg?v=1793195129",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira-Loafers-24139-Black_020-4.jpg?v=1793195129"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/elmira-loafers-brown",
+          "handle": "elmira-loafers-brown",
+          "title": "PAElmira - Brown",
+          "color": "Brown",
+          "sku": "24139\\067\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067.jpg?v=1761138392",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-1.jpg?v=1761138392",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-2.jpg?v=1761138392",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-3.jpg?v=1761138392",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-4.jpg?v=1761138392"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/elmira-suede-loafers-brown-suede",
+          "handle": "elmira-suede-loafers-brown-suede",
+          "title": "PAElmira Suede - Brown suede",
+          "color": "Suede - Brown suede",
+          "sku": "24139-2\\347\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347.jpg?v=1760685297",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-1.jpg?v=1760685297",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-2.jpg?v=1760685297",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-3.jpg?v=1760685297",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-4.jpg?v=1760685297"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/elmira-suede-loafers-tan-suede",
+          "handle": "elmira-suede-loafers-tan-suede",
+          "title": "PAElmira Suede - Tan suede",
+          "color": "Suede - Tan suede",
+          "sku": "24139-2\\255\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255.jpg?v=1750749530",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-1.jpg?v=1750749530",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-2.jpg?v=1750749530",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-3.jpg?v=1750749530",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-4.jpg?v=1750749530"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--paelmira--paelmira-suede-loafers-black-suede",
+      "brand": "PAVEMENT",
+      "canonicalName": "Paelmira",
+      "category": "LOAFER",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017.jpg?v=1792998857",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-1.jpg?v=1792998857",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-2.jpg?v=1792998857",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-3.jpg?v=1792998857",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-4.jpg?v=1792998858"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/paelmira-suede-loafers-black-suede",
+          "handle": "paelmira-suede-loafers-black-suede",
+          "title": "PAElmira Suede - Black suede",
+          "color": "Suede - Black suede",
+          "sku": "24139-2\\017\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017.jpg?v=1792998857",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-1.jpg?v=1792998857",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-2.jpg?v=1792998857",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-3.jpg?v=1792998857",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Suede-Loafers-24139-2-Black_suede_017-4.jpg?v=1792998858"
+          ],
+          "category": "LOAFER",
+          "productType": "Loafers",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--palinn--palinn-ballerinas-bordeaux",
+      "brand": "PAVEMENT",
+      "canonicalName": "Palinn",
+      "category": "BALLERINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044.jpg?v=1792747594",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-1.jpg?v=1792747593",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-2.jpg?v=1792747594",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-3.jpg?v=1792747593",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-4.jpg?v=1792747594",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020.jpg?v=1792587578",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-1.jpg?v=1792587577",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-2.jpg?v=1792587577",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-3.jpg?v=1792587577",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-4.jpg?v=1792587578"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/palinn-ballerinas-bordeaux",
+          "handle": "palinn-ballerinas-bordeaux",
+          "title": "PALinn - Bordeaux",
+          "color": "Bordeaux",
+          "sku": "26260\\044\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044.jpg?v=1792747594",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-1.jpg?v=1792747593",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-2.jpg?v=1792747594",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-3.jpg?v=1792747593",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Bordeaux_044-4.jpg?v=1792747594"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballerinas",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/palinn-ballerinas-black",
+          "handle": "palinn-ballerinas-black",
+          "title": "PALinn - Black",
+          "color": "Black",
+          "sku": "26260\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020.jpg?v=1792587578",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-1.jpg?v=1792587577",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-2.jpg?v=1792587577",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-3.jpg?v=1792587577",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PALinn-Ballerinas-26260-Black_020-4.jpg?v=1792587578"
+          ],
+          "category": "BALLERINA",
+          "productType": "Ballerinas",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
+      "modelFamilyId": "pavement--agira",
+      "brand": "PAVEMENT",
+      "canonicalName": "Agira",
+      "category": "SLINGBACK",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020.jpg?v=1792483831",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-1.jpg?v=1792483830",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-2.jpg?v=1792483830",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-3.jpg?v=1792483830",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-4.jpg?v=1792483830"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/agira-slingback-black",
+          "handle": "agira-slingback-black",
+          "title": "Agira - Black",
+          "color": "Black",
+          "sku": "24229\\020\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020.jpg?v=1792483831",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-1.jpg?v=1792483830",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-2.jpg?v=1792483830",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-3.jpg?v=1792483830",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Agira-Slingback-24229-Black_020-4.jpg?v=1792483830"
+          ],
+          "category": "SLINGBACK",
+          "productType": "Slingback",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "single-product"
+    },
+    {
+      "modelFamilyId": "pavement--pamaren",
+      "brand": "PAVEMENT",
+      "canonicalName": "Pamaren",
+      "category": "BOOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788.jpg?v=1792392580",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-1.jpg?v=1792392581",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-2.jpg?v=1792392580",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-3.jpg?v=1792392580",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-4.jpg?v=1792392580",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777.jpg?v=1793270462",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-1.jpg?v=1793270462",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-2.jpg?v=1793270462",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-3.jpg?v=1793270461",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-4.jpg?v=1793270462"
+      ],
+      "variants": [
+        {
+          "productUrl": "https://pavement-official.com/products/pamaren-vintage-long-boots-tan-white",
+          "handle": "pamaren-vintage-long-boots-tan-white",
+          "title": "PAMaren Vintage - Tan/White",
+          "color": "Vintage - Tan/White",
+          "sku": "25568-1\\788\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788.jpg?v=1792392580",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-1.jpg?v=1792392581",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-2.jpg?v=1792392580",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-3.jpg?v=1792392580",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Tan_White_788-4.jpg?v=1792392580"
+          ],
+          "category": "BOOT",
+          "productType": "Long boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        },
+        {
+          "productUrl": "https://pavement-official.com/products/pamaren-vintage-long-boots-brown-white",
+          "handle": "pamaren-vintage-long-boots-brown-white",
+          "title": "PAMaren Vintage - Brown/White",
+          "color": "Vintage - Brown/White",
+          "sku": "25568-1\\777\\36",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777.jpg?v=1793270462",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-1.jpg?v=1793270462",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-2.jpg?v=1793270462",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-3.jpg?v=1793270461",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-4.jpg?v=1793270462"
+          ],
+          "category": "BOOT",
+          "productType": "Long boots",
+          "inNewArrivals": false,
+          "isNew": false,
+          "newnessEvidence": null
+        }
+      ],
+      "isNew": false,
+      "groupingReason": "handle-family"
+    },
+    {
       "modelFamilyId": "pavement--pakenny",
       "brand": "PAVEMENT",
       "canonicalName": "Pakenny",
@@ -1846,7 +3276,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKenny-ballerinas-25539-Bordeaux_044-4.jpg?v=1790863559"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1865,7 +3295,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKenny-ballerinas-25539-Black_020-4.jpg?v=1790060109"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1884,7 +3314,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKenny-ballerinas-25539-Tan_052-4.png?v=1786523537"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1903,7 +3333,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKenny-ballerinas-25539-Brown_067-4.jpg?v=1776783057"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1913,10 +3343,10 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pavement--payasma-lace",
+      "modelFamilyId": "pavement--payasma-lace--payasma-denim-lace-loafers-denim",
       "brand": "PAVEMENT",
       "canonicalName": "Payasma Lace",
-      "category": "LOAFER",
+      "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Denim_Lace-Loafers-25228-2-Denim_317.jpg?v=1790579270"
       ],
@@ -1930,36 +3360,8 @@
           "images": [
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Denim_Lace-Loafers-25228-2-Denim_317.jpg?v=1790579270"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--payasma-lace--payasma-lace-loafers-brown-suede",
-      "brand": "PAVEMENT",
-      "canonicalName": "Payasma Lace",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Loafers-25228-1-Brown_suede_347.jpg?v=1790249512"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/payasma-lace-loafers-brown-suede",
-          "handle": "payasma-lace-loafers-brown-suede",
-          "title": "PAYasma Lace - Brown suede",
-          "color": "Brown suede",
-          "sku": "25228-1\\347\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace-Loafers-25228-1-Brown_suede_347.jpg?v=1790249512"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -1972,7 +3374,7 @@
       "modelFamilyId": "pavement--payasma-lace-fur",
       "brand": "PAVEMENT",
       "canonicalName": "Payasma Lace Fur",
-      "category": "LOAFER",
+      "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace_Fur-Loafers-26190-Brown_suede_347.jpg?v=1790249203"
       ],
@@ -1986,8 +3388,8 @@
           "images": [
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAYasma_Lace_Fur-Loafers-26190-Brown_suede_347.jpg?v=1790249203"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -2038,16 +3440,16 @@
       "canonicalName": "Kohia - Beige",
       "category": "SNEAKER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090.jpg?v=1790249120",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-1.jpg?v=1790249120",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-2.jpg?v=1790249120",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-3.jpg?v=1790249120",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-4.jpg?v=1790249120",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067.jpg?v=1789376500",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-1.jpg?v=1789376504",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-2.jpg?v=1789376505",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-3.jpg?v=1789376503",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-4.jpg?v=1789376503",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090.jpg?v=1792747769",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-1.jpg?v=1792747769",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-2.jpg?v=1792747769",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-3.jpg?v=1792747769",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-4.jpg?v=1792747768",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067.jpg?v=1792747781",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-1.jpg?v=1792747782",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-2.jpg?v=1792747781",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-3.jpg?v=1792747781",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-4.jpg?v=1792747781",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-Beige_Brown_494.jpg?v=1774258302",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-Beige_Brown_494-1.jpg?v=1774258302",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-Beige_Brown_494-2.jpg?v=1774258302",
@@ -2062,11 +3464,11 @@
           "color": null,
           "sku": "22335-4\\090\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090.jpg?v=1790249120",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-1.jpg?v=1790249120",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-2.jpg?v=1790249120",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-3.jpg?v=1790249120",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-4.jpg?v=1790249120"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090.jpg?v=1792747769",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-1.jpg?v=1792747769",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-2.jpg?v=1792747769",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-3.jpg?v=1792747769",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Beige_090-4.jpg?v=1792747768"
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
@@ -2081,11 +3483,11 @@
           "color": "Kohia - Brown",
           "sku": "22335-4\\067\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067.jpg?v=1789376500",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-1.jpg?v=1789376504",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-2.jpg?v=1789376505",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-3.jpg?v=1789376503",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-4.jpg?v=1789376503"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067.jpg?v=1792747781",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-1.jpg?v=1792747782",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-2.jpg?v=1792747781",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-3.jpg?v=1792747781",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Kohia-Sneakers-22335-4-Brown_067-4.jpg?v=1792747781"
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
@@ -2254,11 +3656,11 @@
       "canonicalName": "Pakohia",
       "category": "SNEAKER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095.jpg?v=1789376244",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-1.jpg?v=1789376244",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-2.jpg?v=1789376244",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-3.jpg?v=1789376244",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-4.jpg?v=1789376245"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095.jpg?v=1792747840",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-1.jpg?v=1792747840",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-2.jpg?v=1792747840",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-3.jpg?v=1792747840",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-4.jpg?v=1792747840"
       ],
       "variants": [
         {
@@ -2268,11 +3670,11 @@
           "color": "Sand",
           "sku": "22335\\095\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095.jpg?v=1789376244",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-1.jpg?v=1789376244",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-2.jpg?v=1789376244",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-3.jpg?v=1789376244",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-4.jpg?v=1789376245"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095.jpg?v=1792747840",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-1.jpg?v=1792747840",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-2.jpg?v=1792747840",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-3.jpg?v=1792747840",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Sand_095-4.jpg?v=1792747840"
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
@@ -2290,11 +3692,11 @@
       "canonicalName": "Pakohia Combo",
       "category": "SNEAKER",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481.jpg?v=1789376196",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-1.jpg?v=1789376196",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-2.jpg?v=1789376196",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-3.jpg?v=1789376197",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-4.jpg?v=1789376200"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481.jpg?v=1792747863",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-1.jpg?v=1792747863",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-2.jpg?v=1792747864",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-3.jpg?v=1792747863",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-4.jpg?v=1792747864"
       ],
       "variants": [
         {
@@ -2304,48 +3706,14 @@
           "color": "PAKohia - Bordeaux combo",
           "sku": "22335\\481\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481.jpg?v=1789376196",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-1.jpg?v=1789376196",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-2.jpg?v=1789376196",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-3.jpg?v=1789376197",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-4.jpg?v=1789376200"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481.jpg?v=1792747863",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-1.jpg?v=1792747863",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-2.jpg?v=1792747864",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-3.jpg?v=1792747863",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAKohia-Sneakers-22335-Bordeaux_combo_481-4.jpg?v=1792747864"
           ],
           "category": "SNEAKER",
           "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--pamaren",
-      "brand": "PAVEMENT",
-      "canonicalName": "Pamaren",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777.jpg?v=1789041428",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-1.jpg?v=1789041429",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-2.jpg?v=1789041429",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-3.jpg?v=1789041429"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/pamaren-vintage-long-boots-brown-white",
-          "handle": "pamaren-vintage-long-boots-brown-white",
-          "title": "PAMaren Vintage - Brown/White",
-          "color": "Vintage - Brown/White",
-          "sku": "25568-1\\777\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777.jpg?v=1789041428",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-1.jpg?v=1789041429",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-2.jpg?v=1789041429",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMaren_Vintage-Long_boots-25568-1-Brown_White_777-3.jpg?v=1789041429"
-          ],
-          "category": "BOOT",
-          "productType": "Long boots",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -2360,11 +3728,11 @@
       "canonicalName": "Pavioletta Long",
       "category": "BOOT",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347.jpg?v=1788269886",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-1.jpg?v=1788269886",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-2.jpg?v=1788269886",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-3.jpg?v=1788269886",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-4.jpg?v=1788269886"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347.jpg?v=1793270399",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-1.jpg?v=1793270400",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-2.jpg?v=1793270399",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-3.jpg?v=1793270399",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-4.jpg?v=1793270399"
       ],
       "variants": [
         {
@@ -2374,11 +3742,11 @@
           "color": "Brown suede",
           "sku": "24483-2\\347\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347.jpg?v=1788269886",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-1.jpg?v=1788269886",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-2.jpg?v=1788269886",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-3.jpg?v=1788269886",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-4.jpg?v=1788269886"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347.jpg?v=1793270399",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-1.jpg?v=1793270400",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-2.jpg?v=1793270399",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-3.jpg?v=1793270399",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAVioletta_Long-Long_boots-24483-2-Brown_suede_347-4.jpg?v=1793270399"
           ],
           "category": "BOOT",
           "productType": "Long boots",
@@ -2487,9 +3855,9 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pavement--pa-elmira",
+      "modelFamilyId": "pavement--paelmira--pa-elmira-croco-loafers-tan",
       "brand": "PAVEMENT",
-      "canonicalName": "Pa Elmira",
+      "canonicalName": "Paelmira",
       "category": "LOAFER",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PA_Elmira_Croco-Loafers-24139-3-Tan_052.jpg?v=1788176797",
@@ -2507,7 +3875,7 @@
         {
           "productUrl": "https://pavement-official.com/products/pa-elmira-croco-loafers-tan",
           "handle": "pa-elmira-croco-loafers-tan",
-          "title": "PA Elmira Croco - Tan",
+          "title": "PAElmira Croco - Tan",
           "color": "Croco - Tan",
           "sku": "24139-3\\052\\36",
           "images": [
@@ -2526,7 +3894,7 @@
         {
           "productUrl": "https://pavement-official.com/products/pa-elmira-croco-loafers-brown",
           "handle": "pa-elmira-croco-loafers-brown",
-          "title": "PA Elmira Croco - Brown",
+          "title": "PAElmira Croco - Brown",
           "color": "Croco - Brown",
           "sku": "24139-3\\067\\36",
           "images": [
@@ -2679,42 +4047,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--paruby",
-      "brand": "PAVEMENT",
-      "canonicalName": "Paruby",
-      "category": "SNEAKER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548.jpg?v=1786110029",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-1.jpg?v=1786110029",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-2.jpg?v=1786110029",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-3.jpg?v=1786110029",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-4.jpg?v=1786110029"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/paruby-sneakers-brown-silver",
-          "handle": "paruby-sneakers-brown-silver",
-          "title": "PARuby - Brown/Silver",
-          "color": "Brown/Silver",
-          "sku": "25561\\548\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548.jpg?v=1786110029",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-1.jpg?v=1786110029",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-2.jpg?v=1786110029",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-3.jpg?v=1786110029",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PARuby-Sneakers-25561-Brown_Silver_548-4.jpg?v=1786110029"
-          ],
-          "category": "SNEAKER",
-          "productType": "Sneakers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "pavement--pavilde",
       "brand": "PAVEMENT",
       "canonicalName": "Pavilde",
@@ -2754,7 +4086,7 @@
       "modelFamilyId": "pavement--paelmira-mule",
       "brand": "PAVEMENT",
       "canonicalName": "Paelmira Mule",
-      "category": "LOAFER",
+      "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Black_020.jpg?v=1783671033",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Black_020-1.jpg?v=1783671033",
@@ -2781,8 +4113,8 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Black_020-3.jpg?v=1783671032",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Black_020-4.jpg?v=1783671035"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -2800,8 +4132,8 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Brown_suede_347-3.jpg?v=1779438230",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAElmira_Mule-Loafers-26035-Brown_suede_347-4.jpg?v=1779438230"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -2811,7 +4143,7 @@
       "groupingReason": "handle-family"
     },
     {
-      "modelFamilyId": "pavement--pamarin-bold-lace",
+      "modelFamilyId": "pavement--pamarin-bold-lace--marin-loafers-brown-suede-1",
       "brand": "PAVEMENT",
       "canonicalName": "Pamarin Bold Lace",
       "category": "LOAFER",
@@ -2847,7 +4179,7 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--pamarin-lace",
+      "modelFamilyId": "pavement--pamarin-lace--pamarin-lace-loafers-brown-suede-red",
       "brand": "PAVEMENT",
       "canonicalName": "Pamarin Lace",
       "category": "LOAFER",
@@ -2886,7 +4218,7 @@
       "modelFamilyId": "pavement--paeja",
       "brand": "PAVEMENT",
       "canonicalName": "Paeja",
-      "category": "LOAFER",
+      "category": "MULE",
       "images": [
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Taupe_suede_174.jpg?v=1780309469",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Taupe_suede_174-1.jpg?v=1780309469",
@@ -2913,8 +4245,8 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Taupe_suede_174-3.jpg?v=1780309469",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Taupe_suede_174-4.jpg?v=1780309470"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -2932,8 +4264,8 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Black_020-3.jpg?v=1776858989",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/PAEja-Loafers-25617-Black_020-4.jpg?v=1776858989"
           ],
-          "category": "LOAFER",
-          "productType": "Loafers",
+          "category": "MULE",
+          "productType": "Mules",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3184,11 +4516,11 @@
       "canonicalName": "Paaline",
       "category": "SANDAL",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045.jpg?v=1777374451",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-1.jpg?v=1777374451",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-2.jpg?v=1777374451",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-3.jpg?v=1777374451",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-4.jpg?v=1777374451"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045.jpg?v=1792747668",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-1.jpg?v=1792747669",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-2.jpg?v=1792747668",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-3.jpg?v=1792747668",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-4.jpg?v=1792747668"
       ],
       "variants": [
         {
@@ -3198,11 +4530,11 @@
           "color": "Gold",
           "sku": "4955-1\\045\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045.jpg?v=1777374451",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-1.jpg?v=1777374451",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-2.jpg?v=1777374451",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-3.jpg?v=1777374451",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-4.jpg?v=1777374451"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045.jpg?v=1792747668",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-1.jpg?v=1792747669",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-2.jpg?v=1792747668",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-3.jpg?v=1792747668",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAAline-Sandals-4955-1-Gold_045-4.jpg?v=1792747668"
           ],
           "category": "SANDAL",
           "productType": "Sandals",
@@ -3285,114 +4617,6 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--paelmira",
-      "brand": "PAVEMENT",
-      "canonicalName": "Paelmira",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020.jpg?v=1774854497",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-1.jpg?v=1774854497",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-2.jpg?v=1774854497",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-3.jpg?v=1774854497",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-4.jpg?v=1774854498",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067.jpg?v=1761138392",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-1.jpg?v=1761138392",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-2.jpg?v=1761138392",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-3.jpg?v=1761138392",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-4.jpg?v=1761138392",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347.jpg?v=1760685297",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-1.jpg?v=1760685297",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-2.jpg?v=1760685297",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-3.jpg?v=1760685297",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-4.jpg?v=1760685297",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255.jpg?v=1750749530",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-1.jpg?v=1750749530",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-2.jpg?v=1750749530",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-3.jpg?v=1750749530",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-4.jpg?v=1750749530"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/elmira-loafers-black",
-          "handle": "elmira-loafers-black",
-          "title": "PAElmira - Black",
-          "color": "Black",
-          "sku": "24139\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020.jpg?v=1774854497",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-1.jpg?v=1774854497",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-2.jpg?v=1774854497",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-3.jpg?v=1774854497",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Black_020-4.jpg?v=1774854498"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/elmira-loafers-brown",
-          "handle": "elmira-loafers-brown",
-          "title": "PAElmira - Brown",
-          "color": "Brown",
-          "sku": "24139\\067\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067.jpg?v=1761138392",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-1.jpg?v=1761138392",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-2.jpg?v=1761138392",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-3.jpg?v=1761138392",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira-Loafers-24139-Brown_067-4.jpg?v=1761138392"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/elmira-suede-loafers-brown-suede",
-          "handle": "elmira-suede-loafers-brown-suede",
-          "title": "PAElmira Suede - Brown suede",
-          "color": "Suede - Brown suede",
-          "sku": "24139-2\\347\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347.jpg?v=1760685297",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-1.jpg?v=1760685297",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-2.jpg?v=1760685297",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-3.jpg?v=1760685297",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Brown_suede_347-4.jpg?v=1760685297"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/elmira-suede-loafers-tan-suede",
-          "handle": "elmira-suede-loafers-tan-suede",
-          "title": "PAElmira Suede - Tan suede",
-          "color": "Suede - Tan suede",
-          "sku": "24139-2\\255\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255.jpg?v=1750749530",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-1.jpg?v=1750749530",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-2.jpg?v=1750749530",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-3.jpg?v=1750749530",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Elmira_Suede-Loafers-24139-2-Tan_suede_255-4.jpg?v=1750749530"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "pavement--pasabina",
@@ -3732,7 +4956,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-Beige_090-4.jpg?v=1774257994"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3751,7 +4975,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-1-Silver_Black_patent_724-4.jpg?v=1718016838"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3770,7 +4994,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-1-Red_patent_780-4.jpg?v=1714034435"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3789,7 +5013,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-Black_black_patent_112-4.jpg?v=1708937949"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3808,7 +5032,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-1-Navy_suede_176-4.jpg?v=1705668890"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3827,7 +5051,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-Black_nappa_057-4.jpg?v=1705323565"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3846,7 +5070,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-Beige_Black_Patent_719-4.jpg?v=1705323552"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -3865,7 +5089,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Lucy-ballerinas-23171-1-Light_gold_618-4.jpg?v=1705323540"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -4203,42 +5427,6 @@
       "groupingReason": "single-product"
     },
     {
-      "modelFamilyId": "pavement--pamyrian",
-      "brand": "PAVEMENT",
-      "canonicalName": "Pamyrian",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067.jpg?v=1772030430",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-1.jpg?v=1772030430",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-2.jpg?v=1772030430",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-3.jpg?v=1772030430",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-4.jpg?v=1772030430"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/pamyrian-loafers-brown",
-          "handle": "pamyrian-loafers-brown",
-          "title": "PAMyrian - Brown",
-          "color": "Brown",
-          "sku": "25197\\067\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067.jpg?v=1772030430",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-1.jpg?v=1772030430",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-2.jpg?v=1772030430",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-3.jpg?v=1772030430",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/PAMyrian-Loafers-25197-Brown_067-4.jpg?v=1772030430"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
       "modelFamilyId": "pavement--palanza",
       "brand": "PAVEMENT",
       "canonicalName": "Palanza",
@@ -4388,11 +5576,11 @@
       "canonicalName": "Tya",
       "category": "OTHER_FOOTWEAR",
       "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174.jpg?v=1770815601",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-1.jpg?v=1770815601",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-2.jpg?v=1770815601",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-3.jpg?v=1770815601",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-4.jpg?v=1770815601"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174.jpg?v=1793270747",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-1.jpg?v=1793270747",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-2.jpg?v=1793270747",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-3.jpg?v=1793270747",
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-4.jpg?v=1793270747"
       ],
       "variants": [
         {
@@ -4402,11 +5590,11 @@
           "color": "Taupe suede",
           "sku": "Nautico\\174\\36",
           "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174.jpg?v=1770815601",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-1.jpg?v=1770815601",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-2.jpg?v=1770815601",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-3.jpg?v=1770815601",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-4.jpg?v=1770815601"
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174.jpg?v=1793270747",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-1.jpg?v=1793270747",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-2.jpg?v=1793270747",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-3.jpg?v=1793270747",
+            "https://cdn.shopify.com/s/files/1/1934/2925/files/Tya-Espadrilles-Nautico-Taupe_suede_174-4.jpg?v=1793270747"
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Espadrilles",
@@ -4524,12 +5712,7 @@
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-1.jpg?v=1771857962",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-2.jpg?v=1771857962",
         "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-3.jpg?v=1771857962",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-4.jpg?v=1771857962",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347.jpg?v=1771857945",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-1.jpg?v=1771857945",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-2.jpg?v=1771857945",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-3.jpg?v=1771857945",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-4.jpg?v=1771857945"
+        "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-4.jpg?v=1771857962"
       ],
       "variants": [
         {
@@ -4544,61 +5727,6 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-2.jpg?v=1771857962",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-3.jpg?v=1771857962",
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Taupe_suede_174-4.jpg?v=1771857962"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/mona-loafers-brown-suede",
-          "handle": "mona-loafers-brown-suede",
-          "title": "PAMona - Brown suede",
-          "color": "Brown suede",
-          "sku": "25285\\347\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347.jpg?v=1771857945",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-1.jpg?v=1771857945",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-2.jpg?v=1771857945",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-3.jpg?v=1771857945",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Mona-Loafers-25285-Brown_suede_347-4.jpg?v=1771857945"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
-    },
-    {
-      "modelFamilyId": "pavement--jamila",
-      "brand": "PAVEMENT",
-      "canonicalName": "Jamila",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052.jpg?v=1771858050",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-1.jpg?v=1771858050",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-2.jpg?v=1771858050",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-3.jpg?v=1771858050",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-4.jpg?v=1771858050"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/jamila-loafers-tan",
-          "handle": "jamila-loafers-tan",
-          "title": "Jamila - Tan",
-          "color": "Tan",
-          "sku": "25223\\052\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052.jpg?v=1771858050",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-1.jpg?v=1771858050",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-2.jpg?v=1771858050",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-3.jpg?v=1771858050",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Jamila-Loafers-25223-Tan_052-4.jpg?v=1771858050"
           ],
           "category": "LOAFER",
           "productType": "Loafers",
@@ -4698,42 +5826,6 @@
           ],
           "category": "BOOT",
           "productType": "Long boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--arian",
-      "brand": "PAVEMENT",
-      "canonicalName": "Arian",
-      "category": "PUMP",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020.jpg?v=1762514416",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-1.jpg?v=1762514416",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-2.jpg?v=1762514416",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-3.jpg?v=1762514416",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-4.jpg?v=1762514417"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/arian-heels-black",
-          "handle": "arian-heels-black",
-          "title": "Arian - Black",
-          "color": "Black",
-          "sku": "1702\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020.jpg?v=1762514416",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-1.jpg?v=1762514416",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-2.jpg?v=1762514416",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-3.jpg?v=1762514416",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Arian-Heels-1702-Black_020-4.jpg?v=1762514417"
-          ],
-          "category": "PUMP",
-          "productType": "Heels",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -5041,126 +6133,6 @@
       ],
       "isNew": false,
       "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--magie",
-      "brand": "PAVEMENT",
-      "canonicalName": "Magie",
-      "category": "BOOT",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020.jpg?v=1758185053",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-1.jpg?v=1758185053",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-2.jpg?v=1758185053",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-3.jpg?v=1758185053",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-4.jpg?v=1758185053"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/magie-long-boots-black",
-          "handle": "magie-long-boots-black",
-          "title": "Magie - Black",
-          "color": "Black",
-          "sku": "24407\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020.jpg?v=1758185053",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-1.jpg?v=1758185053",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-2.jpg?v=1758185053",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-3.jpg?v=1758185053",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Magie-Long_boots-24407-Black_020-4.jpg?v=1758185053"
-          ],
-          "category": "BOOT",
-          "productType": "Long boots",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--pashelly",
-      "brand": "PAVEMENT",
-      "canonicalName": "Pashelly",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051.jpg?v=1758016032",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-1.jpg?v=1758016033",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-2.jpg?v=1758016032",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-3.jpg?v=1758016032",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-4.jpg?v=1758016033",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020.jpg?v=1691149508",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-1.jpg?v=1691149508",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-2.jpg?v=1691149508",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-3.jpg?v=1691149508",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-4.jpg?v=1691149508",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052.jpg?v=1765267080",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-1.jpg?v=1765267080",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-2.jpg?v=1765267080",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-3.jpg?v=1765267080",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-4.jpg?v=1765267080"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/shelly-loafers-dark-grey",
-          "handle": "shelly-loafers-dark-grey",
-          "title": "PAShelly - Dark grey",
-          "color": "Dark grey",
-          "sku": "22323-2\\051\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051.jpg?v=1758016032",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-1.jpg?v=1758016033",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-2.jpg?v=1758016032",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-3.jpg?v=1758016032",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Dark_grey_051-4.jpg?v=1758016033"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/shelly-nappa-loafers-black",
-          "handle": "shelly-nappa-loafers-black",
-          "title": "PAShelly Nappa - Black",
-          "color": "Nappa - Black",
-          "sku": "22323\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020.jpg?v=1691149508",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-1.jpg?v=1691149508",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-2.jpg?v=1691149508",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-3.jpg?v=1691149508",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly_Nappa-Loafers-22323-Black_020-4.jpg?v=1691149508"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        },
-        {
-          "productUrl": "https://pavement-official.com/products/shelly-loafers-tan",
-          "handle": "shelly-loafers-tan",
-          "title": "PAShelly - Tan",
-          "color": "Tan",
-          "sku": "22323-2\\052\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052.jpg?v=1765267080",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-1.jpg?v=1765267080",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-2.jpg?v=1765267080",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-3.jpg?v=1765267080",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Shelly-Loafers-22323-2-Tan_052-4.jpg?v=1765267080"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "handle-family"
     },
     {
       "modelFamilyId": "pavement--pasoley-matte",
@@ -5825,7 +6797,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Katie_Studs-ballerinas-24242-Black_020-4.jpg?v=1738315437"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -5861,7 +6833,7 @@
             "https://cdn.shopify.com/s/files/1/1934/2925/files/Katie-ballerinas-24243-Light_blue_009-4.jpg?v=1737017032"
           ],
           "category": "BALLERINA",
-          "productType": "ballerinas",
+          "productType": "Ballerinas",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -5934,42 +6906,6 @@
           ],
           "category": "OTHER_FOOTWEAR",
           "productType": "Warm lining",
-          "inNewArrivals": false,
-          "isNew": false,
-          "newnessEvidence": null
-        }
-      ],
-      "isNew": false,
-      "groupingReason": "single-product"
-    },
-    {
-      "modelFamilyId": "pavement--pamatilda",
-      "brand": "PAVEMENT",
-      "canonicalName": "Pamatilda",
-      "category": "LOAFER",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020.jpg?v=1719473431",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-1.jpg?v=1719473431",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-2.jpg?v=1719473431",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-3.jpg?v=1719473431",
-        "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-4.jpg?v=1719473431"
-      ],
-      "variants": [
-        {
-          "productUrl": "https://pavement-official.com/products/matilda-loafers-black",
-          "handle": "matilda-loafers-black",
-          "title": "PAMatilda - Black",
-          "color": "Black",
-          "sku": "23381\\020\\36",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020.jpg?v=1719473431",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-1.jpg?v=1719473431",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-2.jpg?v=1719473431",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-3.jpg?v=1719473431",
-            "https://cdn.shopify.com/s/files/1/1934/2925/files/Matilda-Loafers-23381-Black_020-4.jpg?v=1719473431"
-          ],
-          "category": "LOAFER",
-          "productType": "Loafers",
           "inNewArrivals": false,
           "isNew": false,
           "newnessEvidence": null
@@ -6472,20 +7408,28 @@
     }
   ],
   "productUrls": [
+    "https://pavement-official.com/products/pabillie-boots-tan",
+    "https://pavement-official.com/products/pabillie-boots-brown",
+    "https://pavement-official.com/products/jenny-boots-black",
+    "https://pavement-official.com/products/paelva-boots-brown",
+    "https://pavement-official.com/products/wilma-boots-brown-suede",
+    "https://pavement-official.com/products/esmara-boots-tan-oil",
+    "https://pavement-official.com/products/esmara-boots-black",
+    "https://pavement-official.com/products/anneli-vintage-boots-tan-vintage",
+    "https://pavement-official.com/products/anneli-vintage-boots-brown",
+    "https://pavement-official.com/products/paalmira-boots-black",
     "https://pavement-official.com/products/paalmira-croco-boots-black",
     "https://pavement-official.com/products/pa-tanja-boots-tan-white",
     "https://pavement-official.com/products/paisla-boots-brown-suede",
     "https://pavement-official.com/products/panord-boots-brown",
     "https://pavement-official.com/products/pinja-boots-brown-suede",
     "https://pavement-official.com/products/pa-gerda-boots-brown",
-    "https://pavement-official.com/products/pa-gerda-boots-black",
     "https://pavement-official.com/products/pamyrna-boots-black",
     "https://pavement-official.com/products/paisla-boots-black",
     "https://pavement-official.com/products/pavioletta-boots-brown",
     "https://pavement-official.com/products/pavioletta-boots-black",
     "https://pavement-official.com/products/paalmira-boots-brown",
     "https://pavement-official.com/products/pazana-boots-black",
-    "https://pavement-official.com/products/paalmira-boots-black",
     "https://pavement-official.com/products/pamargot-buffalo-boots-brown",
     "https://pavement-official.com/products/pamargot-buffalo-boots-black",
     "https://pavement-official.com/products/paalmira-buffalo-boots-black",
@@ -6504,7 +7448,6 @@
     "https://pavement-official.com/products/anine-suede-boots-brown-suede",
     "https://pavement-official.com/products/anine-vintage-boots-brown",
     "https://pavement-official.com/products/anine-vintage-boots-tan-vintage",
-    "https://pavement-official.com/products/anneli-vintage-boots-brown",
     "https://pavement-official.com/products/nikki-suede-boots-brown-suede",
     "https://pavement-official.com/products/esmara-boots-olive",
     "https://pavement-official.com/products/jenny-vntage-boots-brown",
@@ -6519,7 +7462,6 @@
     "https://pavement-official.com/products/margot-boots-dark-grey",
     "https://pavement-official.com/products/elva-suede-boots-brown-suede",
     "https://pavement-official.com/products/zevil-vintage-boots-black-matte",
-    "https://pavement-official.com/products/tilda-vintage-boots-brown",
     "https://pavement-official.com/products/zevil-structure-boots-black",
     "https://pavement-official.com/products/nikki-suede-boots-khaki-suede",
     "https://pavement-official.com/products/marit-boots-black",
@@ -6528,9 +7470,36 @@
     "https://pavement-official.com/products/zevia-structure-boots-black",
     "https://pavement-official.com/products/brooke-boots-black-black-patent",
     "https://pavement-official.com/products/brooke-boots-black",
+    "https://pavement-official.com/products/pavilde-lace-loafers-dark-brown-vintage",
+    "https://pavement-official.com/products/pavilde-lace-loafers-tan-suede",
+    "https://pavement-official.com/products/paruby-sneakers-beige-croco",
+    "https://pavement-official.com/products/mandy-1-long-boots-brown",
+    "https://pavement-official.com/products/jamila-loafers-brown",
+    "https://pavement-official.com/products/pamyrian-loafers-black",
+    "https://pavement-official.com/products/paelmira-tassel-loafers-black-polido",
+    "https://pavement-official.com/products/matilda-croco-loafers-black",
+    "https://pavement-official.com/products/payasma-loafers-brown-suede",
+    "https://pavement-official.com/products/pajuno-sneakers-mushroom-suede",
+    "https://pavement-official.com/products/pamarin-loafers-black-vintage",
+    "https://pavement-official.com/products/palinn-ballerinas-brown-vintage",
+    "https://pavement-official.com/products/pamarin-loafers-navy-suede",
+    "https://pavement-official.com/products/pamarin-lace-loafers-dark-brown-vintage",
+    "https://pavement-official.com/products/pamarin-bold-lace-loafers-tan-suede",
+    "https://pavement-official.com/products/pamarin-loafers-camo-suede",
+    "https://pavement-official.com/products/pamarin-polido-lace-loafers-bordeaux-polido",
+    "https://pavement-official.com/products/pavilde-lace-loafers-denim",
+    "https://pavement-official.com/products/palulu-ballerinas-bordeaux",
+    "https://pavement-official.com/products/shelly-nappa-loafers-black",
+    "https://pavement-official.com/products/payasma-lace-loafers-brown-suede",
+    "https://pavement-official.com/products/elmira-loafers-black",
+    "https://pavement-official.com/products/palulu-ballerinas-black",
+    "https://pavement-official.com/products/paelmira-suede-loafers-black-suede",
+    "https://pavement-official.com/products/palinn-ballerinas-bordeaux",
+    "https://pavement-official.com/products/palinn-ballerinas-black",
+    "https://pavement-official.com/products/agira-slingback-black",
+    "https://pavement-official.com/products/pamaren-vintage-long-boots-tan-white",
     "https://pavement-official.com/products/pakenny-ballerinas-bordeaux",
     "https://pavement-official.com/products/payasma-denim-lace-loafers-denim",
-    "https://pavement-official.com/products/payasma-lace-loafers-brown-suede",
     "https://pavement-official.com/products/payasma-lace-fur-loafers-brown-suede",
     "https://pavement-official.com/products/paalvina-suede-loafers-taupe-oil",
     "https://pavement-official.com/products/kohia-sneakers-beige",
@@ -6572,7 +7541,6 @@
     "https://pavement-official.com/products/marin-loafers-grey-suede",
     "https://pavement-official.com/products/marin-loafers-taupe-suede",
     "https://pavement-official.com/products/palava-sandals-black-white",
-    "https://pavement-official.com/products/elmira-loafers-black",
     "https://pavement-official.com/products/helma-heels-black",
     "https://pavement-official.com/products/helios-loafers-brown",
     "https://pavement-official.com/products/maru-sandals-brown",
@@ -6601,13 +7569,11 @@
     "https://pavement-official.com/products/marin-pearls-loafers-light-blue-suede",
     "https://pavement-official.com/products/inga-loafers-brown-black",
     "https://pavement-official.com/products/mona-loafers-taupe-suede",
-    "https://pavement-official.com/products/mona-loafers-brown-suede",
     "https://pavement-official.com/products/jamila-loafers-tan",
     "https://pavement-official.com/products/eline-long-boots-black",
     "https://pavement-official.com/products/eline-long-boots-dark-brown",
     "https://pavement-official.com/products/chantal-long-boots-black",
     "https://pavement-official.com/products/marin-loafers-dark-green-suede",
-    "https://pavement-official.com/products/arian-heels-black",
     "https://pavement-official.com/products/tella-long-boots-black",
     "https://pavement-official.com/products/finka-long-boots-brown-suede",
     "https://pavement-official.com/products/elmira-loafers-brown",
@@ -6617,7 +7583,6 @@
     "https://pavement-official.com/products/suvi-warm-lining-beige",
     "https://pavement-official.com/products/annika-vintage-long-boots-brown",
     "https://pavement-official.com/products/martina-patent-long-boots-black",
-    "https://pavement-official.com/products/magie-long-boots-black",
     "https://pavement-official.com/products/shelly-loafers-dark-grey",
     "https://pavement-official.com/products/soley-loafers-brown-matte",
     "https://pavement-official.com/products/finka-long-boots-black",
@@ -6667,7 +7632,6 @@
     "https://pavement-official.com/products/sinna-heels-taupe-suede",
     "https://pavement-official.com/products/tamera-long-long-boots-black",
     "https://pavement-official.com/products/mandy-long-boots-black-black",
-    "https://pavement-official.com/products/shelly-nappa-loafers-black",
     "https://pavement-official.com/products/shelly-loafers-tan",
     "https://pavement-official.com/products/kohia-sneakers-white-combo",
     "https://pavement-official.com/products/kendra-sandals-tan",
