@@ -25,7 +25,13 @@ export interface CatalogSummary {
   marketplaces: CatalogMarketplaceSummary[];
 }
 
+export interface CatalogBrandFreshness {
+  kind: "verified-update" | "official-product-check";
+  at: string;
+}
+
 export interface CatalogShard {
+  brandFreshness?: CatalogBrandFreshness;
   coverage?: {
     status: "FULL" | "PARTIAL";
     ready: number;
@@ -38,6 +44,11 @@ export interface CatalogShard {
   id: string;
   kind: "brand" | "marketplace";
   families: ModelFamily[];
+}
+
+export interface BrandUpdateEvidence {
+  verifiedAt?: string;
+  coverage?: CatalogShard["coverage"];
 }
 
 export interface FamilyLocator {

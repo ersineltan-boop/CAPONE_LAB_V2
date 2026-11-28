@@ -9,6 +9,7 @@ import {
   filterFamiliesByBasicCategory,
 } from "../../visual/basicCategories";
 import { UI_COPY } from "../../presentation/turkishLabels";
+import { formatDateTurkish } from "../../presentation/turkishDates";
 import SourceProductBrowse from "../source/SourceProductBrowse";
 
 type BrandDetailMode = "all" | "verified-new";
@@ -34,7 +35,9 @@ export default function BrandDetail({
   const categoryId = onSelectCategory ? selectedCategoryId : localCategoryId;
   const { state, retry } = useCatalogResource(() => loadBrandShard(brandId), [brandId]);
 
-  const brandFamilies = state.status === "ready" ? state.data.families : [];
+  const shard = state.status === "ready" && state.data.id === brandId ? state.data : undefined;
+  const brandFamilies = shard?.families ?? [];
+  const freshness = shard?.brandFreshness;
 
   const basicCategories = useMemo(
     () => countFamiliesByBasicCategory(brandFamilies),
@@ -80,13 +83,10 @@ export default function BrandDetail({
           >
             ← {UI_COPY.backToBrands}
           </button>
-          {state.status === "ready" && state.data.coverage?.status === "PARTIAL" ? (
-            <p className="text-xs text-ink-muted">Katalog kısmi · Doğrulanmış ürünler gösteriliyor; koleksiyonun tamamı henüz doğrulanmadı.</p>
-          ) : null}
           <h2 className="font-serif text-3xl font-medium tracking-wide sm:text-4xl">
             {brandName}
           </h2>
-          {state.status === "ready" ? (
+          {shard ? (
             <p className="text-sm text-ink-muted">
               {UI_COPY.productsCount(brandFamilies.length)}
               {verifiedNewCount > 0 ? (
@@ -94,12 +94,27 @@ export default function BrandDetail({
               ) : null}
             </p>
           ) : null}
+          {shard && (
+            <p className="text-xs text-ink-muted">
+              {freshness ? (
+                <>
+                  {freshness.kind === "verified-update"
+                    ? "Son doğrulanmış güncelleme"
+                    : "Resmî kaynakta son ürün kontrolü"}{" "}
+                  <time dateTime={freshness.at}>{formatDateTurkish(freshness.at, "Europe/Istanbul")}</time>
+                </>
+              ) : "Son doğrulanmış güncelleme tarihi bulunamadı."}
+            </p>
+          )}
+          {shard?.coverage?.status === "PARTIAL" && (
+            <p className="text-xs text-ink-muted">Katalog kısmi. Doğrulanmış ürünler gösteriliyor.</p>
+          )}
         </div>
 
         {state.status === "loading" ? <CatalogLoadingState /> : null}
         {state.status === "error" ? <CatalogErrorState onRetry={retry} /> : null}
 
-        {state.status === "ready" ? (
+        {shard ? (
           <>
             <div className="flex flex-wrap gap-2">
               {(

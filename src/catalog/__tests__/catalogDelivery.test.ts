@@ -102,6 +102,60 @@ const summaryFixture: CatalogSummary = {
 };
 
 describe("catalog delivery", () => {
+  it("reports the latest official product check without using marketplace or build dates", () => {
+    const model = family();
+    const official = model.sourceSightings![0]!;
+    model.sourceSightings = [
+      official,
+      { ...official, lastSeenAt: "not a date" },
+      { ...official, sourceId: "farfetch", sourceKind: "LUXURY_MARKETPLACE", lastSeenAt: "2026-11-28T09:00:00Z" },
+    ];
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      generatedAt: "2026-11-30T09:00:00Z",
+      brandUpdates: new Map([["jeffrey-campbell", { verifiedAt: "2026-11-29T09:00:00Z" }]]),
+    });
+    expect(brandShards[0]?.brandFreshness).toEqual({
+      kind: "official-product-check",
+      at: official.lastSeenAt,
+    });
+  });
+
+  it("keeps a published partial refresh date distinct from earlier product observations", () => {
+    const model = family();
+    const coverage = {
+      status: "PARTIAL" as const,
+      ready: 120,
+      pending: 5,
+      lastVerifiedAt: "2026-10-11T10:05:00Z",
+    };
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      brandUpdates: new Map([["jeffrey-campbell", { coverage }]]),
+    });
+    expect(brandShards[0]?.coverage).toEqual(coverage);
+    expect(brandShards[0]?.brandFreshness).toEqual({
+      kind: "verified-update",
+      at: coverage.lastVerifiedAt,
+    });
+  });
+
+  it("shows a verified archive date when it is backed by the shipped official source", () => {
+    const model = family();
+    const verifiedAt = model.sourceSightings![0]!.lastSeenAt;
+    const { brandShards } = buildCatalogDelivery({
+      families: [model],
+      brands: [{ id: "jeffrey-campbell", brand: model.brand, country: "USA", isActive: true }],
+      marketplaces: [],
+      brandUpdates: new Map([["jeffrey-campbell", { verifiedAt }]]),
+    });
+    expect(brandShards[0]?.brandFreshness).toEqual({ kind: "verified-update", at: verifiedAt });
+  });
+
   it("precomputes representative brand images instead of requiring a live full-catalog scan", () => {
     const artifacts = buildCatalogDelivery({
       families: [
