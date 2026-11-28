@@ -52,6 +52,8 @@ jobs:
           restore-keys: capone-marketplace-progress-v1-${{ github.ref_name }}-
       - name: Verify every active source is covered
         run: node --import tsx scripts/run-refresh-cycle.ts --plan-only
+      - name: Restore working catalogs from the last verified archive
+        run: node --import tsx scripts/refresh-archive-handoff.ts hydrate
       - name: Install approved marketplace browser runtime
         continue-on-error: true
         run: npx playwright install --with-deps chromium
@@ -69,7 +71,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
-      - name: Stage validated delivery allowlist
+      - name: Archive both catalogs and stage the delivery under 90 MiB
         id: stage
         run: |
           set -euo pipefail
