@@ -52,9 +52,15 @@ export default function Header({ onNavigate, currentView }: HeaderProps) {
                   type="button"
                   aria-current={currentView === item.id ? "page" : undefined}
                   onClick={() => onNavigate(item.id)}
-                  className={`touch-target px-2.5 py-1 tracking-wide underline-offset-4 hover:underline ${
-                    item.id === "brand-automation" ? "text-[9px]" : "text-[10px] font-medium"
-                  } ${currentView === item.id ? "text-ink underline" : "text-ink-muted"}`}
+                  className={item.id === "saved"
+                    ? `touch-target border px-3 py-1.5 text-xs font-semibold tracking-wide transition-colors ${
+                        currentView === item.id
+                          ? "border-ink bg-ink text-cream"
+                          : "border-ink bg-white/60 text-ink hover:bg-cream-dark"
+                      }`
+                    : `touch-target px-2.5 py-1 text-[9px] tracking-wide underline-offset-4 hover:underline ${
+                        currentView === item.id ? "text-ink underline" : "text-ink-muted"
+                      }`}
                 >
                   {item.label}
                 </button>

@@ -92,19 +92,20 @@ function ProductCardNote({
 }) {
   const inputId = useId();
   const [draft, setDraft] = useState<string | null>(null);
+  const notePanelClass = "space-y-2 border border-line bg-cream-dark/60 p-2.5";
 
   if (draft !== null) {
     return (
       <form
-        className="space-y-2 border-t border-line pt-2"
+        className={notePanelClass}
         onSubmit={(event) => {
           event.preventDefault();
           onSave(draft);
           setDraft(null);
         }}
       >
-        <label htmlFor={inputId} className="block text-xs font-medium text-ink">
-          Ürün notu
+        <label htmlFor={inputId} className="block text-xs font-semibold text-ink">
+          Kişisel not
         </label>
         <textarea
           autoFocus
@@ -112,19 +113,19 @@ function ProductCardNote({
           rows={3}
           value={draft}
           onChange={(event) => setDraft(event.target.value)}
-          className="w-full resize-y border border-line bg-white/60 p-2 text-xs leading-relaxed text-ink"
+          className="w-full resize-y border border-line bg-white/80 p-2 text-base leading-relaxed text-ink sm:text-sm"
         />
         <div className="flex flex-wrap gap-2">
           <button
             type="submit"
-            className="touch-target border border-ink bg-ink px-2 py-1 text-xs text-cream"
+            className="touch-target min-h-8 border border-ink bg-ink px-2 py-1 text-xs font-medium text-cream"
           >
             Notu kaydet
           </button>
           <button
             type="button"
             onClick={() => setDraft(null)}
-            className="touch-target border border-line px-2 py-1 text-xs text-ink-muted hover:border-ink"
+            className="touch-target min-h-8 border border-line bg-cream px-2 py-1 text-xs text-ink hover:border-ink"
           >
             Vazgeç
           </button>
@@ -135,11 +136,11 @@ function ProductCardNote({
 
   const actionLabel = note ? "Notu düzenle" : "Not ekle";
   return (
-    <div className="space-y-1.5 border-t border-line pt-2">
+    <div className={notePanelClass}>
       {note ? (
         <div>
-          <p className="text-xs font-medium text-ink">Ürün notu</p>
-          <p className="mt-1 whitespace-pre-wrap text-xs leading-relaxed text-ink-muted [overflow-wrap:anywhere]">
+          <p className="text-xs font-semibold text-ink">Kişisel not</p>
+          <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-ink [overflow-wrap:anywhere]">
             {note}
           </p>
         </div>
@@ -148,7 +149,7 @@ function ProductCardNote({
         type="button"
         aria-label={`${actionLabel} · ${productName}`}
         onClick={() => setDraft(note ?? "")}
-        className="touch-target border border-line px-2 py-1 text-xs text-ink-muted hover:border-ink"
+        className="touch-target min-h-8 border border-line bg-cream px-2 py-1 text-xs font-medium text-ink hover:border-ink"
       >
         {actionLabel}
       </button>
@@ -199,6 +200,9 @@ function ProductCard({
   const productUrl = selected?.url ?? item.productUrl;
   const reviewed = researchState ? isReviewed(researchState) : false;
   const saved = researchState ? isSaved(researchState) : false;
+  const researchActionSize = onSaveNote
+    ? "px-2 py-1.5 text-xs"
+    : "px-1.5 py-0.5 text-[8px] tracking-wide";
   const priceLabel = resolveVisiblePriceLabel(item, showPrice);
 
   const chipLabels = hideTaxonomy
@@ -250,7 +254,9 @@ function ProductCard({
           {!hideBrand && (
             <p className="text-[9px] uppercase tracking-[0.18em] text-ink-muted">{item.brand}</p>
           )}
-          <h3 className="line-clamp-2 font-serif text-xs leading-snug">{item.canonicalName}</h3>
+          <h3 className={`line-clamp-2 font-serif leading-snug ${onSaveNote ? "text-sm sm:text-base" : "text-xs"}`}>
+            {item.canonicalName}
+          </h3>
           {priceLabel ? (
             <p className="text-[9px] tracking-wide text-ink-muted">{priceLabel}</p>
           ) : null}
@@ -282,7 +288,7 @@ function ProductCard({
             <button
               type="button"
               onClick={() => onToggleReviewed(item.modelFamilyId, !reviewed)}
-              className={`touch-target border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
+              className={`touch-target border transition-colors ${researchActionSize} ${
                 reviewed
                   ? "border-ink bg-ink text-cream"
                   : "border-line text-ink-muted hover:border-ink"
@@ -297,7 +303,7 @@ function ProductCard({
               saved={saved}
               note={researchState?.note ?? null}
               onSave={(nextSaved, note) => onToggleSaved(item.modelFamilyId, nextSaved, note)}
-              className={`touch-target border px-1.5 py-0.5 text-[8px] tracking-wide transition-colors ${
+              className={`touch-target border transition-colors ${researchActionSize} ${
                 saved
                   ? "border-ink bg-ink text-cream"
                   : "border-line text-ink-muted hover:border-ink"
@@ -309,7 +315,9 @@ function ProductCard({
               type="button"
               onClick={() => onSelectItem(item.modelFamilyId)}
               aria-label={`Ürün Detayı · ${item.canonicalName}`}
-              className="touch-target ml-auto border border-ink px-2 py-1 text-[10px] font-medium text-ink transition-colors hover:bg-ink hover:text-cream"
+              className={`touch-target ml-auto border border-ink px-2 py-1 font-medium text-ink transition-colors hover:bg-ink hover:text-cream ${
+                onSaveNote ? "text-xs" : "text-[10px]"
+              }`}
             >
               Ürün Detayı
             </button>

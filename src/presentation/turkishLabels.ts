@@ -442,7 +442,6 @@ export const UI_COPY = {
   addNote: "Not Ekle",
   nextUnreviewed: "Sonraki İncelenmemiş →",
   savedProductsTitle: "KAYDETTİKLERİM",
-  savedProductsSubtitle: "Ürün geliştirme için kaydettiğiniz modeller",
   brandsTitle: "MARKALAR",
   brandsSubtitle: "Resmi marka sitelerinden toplanan kadın ayakkabısı modelleri",
   backToBrands: "Markalara Dön",
