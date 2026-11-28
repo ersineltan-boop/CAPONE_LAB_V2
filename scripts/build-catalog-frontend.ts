@@ -1,9 +1,10 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { applyMarketplaceDeliveries, loadMarketplaceDeliveries } from "../src/collector/marketplaceDelivery";
 import { buildCatalogDelivery } from "../src/catalog/buildCatalogDelivery";
+import { loadBrandUpdateEvidence } from "./load-brand-update-evidence";
 import { buildVisualDelivery } from "../src/visual/buildVisualDelivery";
 import { loadModelFamilies, modelFamilyDatasetMtimeMs } from "../src/modelFamily/dataset";
 import { loadBrandRegistry } from "../src/registry/data/index";
@@ -35,10 +36,12 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
 
   const deliveries = await loadMarketplaceDeliveries(ROOT);
   const families = applyMarketplaceDeliveries(await loadModelFamilies(), deliveries);
+  const brands = loadBrandRegistry().all();
   const artifacts = buildCatalogDelivery({
     families,
-    brands: loadBrandRegistry().all(),
+    brands,
     marketplaces: browsableMarketplaces(),
+    brandUpdates: await loadBrandUpdateEvidence(ROOT, brands.filter((brand) => brand.isActive).map((brand) => brand.id)),
   });
   const emptyBrands = artifacts.brandShards.filter((shard) => shard.families.length === 0);
   if (emptyBrands.length > 0) {
@@ -52,9 +55,7 @@ export async function buildCatalogFrontend(options?: { force?: boolean }): Promi
   await writeFile(join(OUT_DIR, "summary.json"), JSON.stringify(artifacts.summary), "utf-8");
   await writeFile(join(OUT_DIR, "id-index.json"), JSON.stringify(artifacts.idIndex), "utf-8");
 
-  const brandCoverage = JSON.parse(await readFile(join(ROOT, "data/registry/priority-brand-coverage.json"), "utf8").catch((error) => { if (error.code === "ENOENT") return "{}"; throw error; }));
   for (const shard of artifacts.brandShards) {
-    if (brandCoverage[shard.id]) shard.coverage = brandCoverage[shard.id];
     await writeFile(join(OUT_DIR, "brands", `${shard.id}.json`), JSON.stringify(shard), "utf-8");
   }
   for (const shard of artifacts.marketplaceShards) {

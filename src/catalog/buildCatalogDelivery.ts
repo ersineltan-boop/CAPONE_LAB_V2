@@ -7,10 +7,13 @@ import {
   extractMarketplaceBrands,
   filterFamiliesForBrandOfficial,
   filterFamiliesForMarketplaceSource,
+  isOfficialChannelSighting,
   slugifyBrandId,
 } from "../source/sourceProductQuery";
 import { slimFamilyForDelivery } from "./slimFamily";
 import type {
+  BrandUpdateEvidence,
+  CatalogBrandFreshness,
   CatalogIdIndex,
   CatalogShard,
   CatalogSummary,
@@ -23,6 +26,7 @@ export interface CatalogDeliveryInput {
   families: ModelFamily[];
   brands: Array<Pick<BrandRegistryEntry, "id" | "brand" | "country" | "isActive">>;
   marketplaces: Array<Pick<MarketplaceRegistryEntry, "id" | "name" | "isActive">>;
+  brandUpdates?: ReadonlyMap<string, BrandUpdateEvidence>;
   generatedAt?: string;
 }
 
@@ -33,16 +37,55 @@ export interface CatalogDeliveryArtifacts {
   idIndex: CatalogIdIndex;
 }
 
+function resolveBrandFreshness(
+  families: readonly ModelFamily[],
+  evidence: BrandUpdateEvidence | undefined,
+): CatalogBrandFreshness | undefined {
+  let latestCheckAt: string | undefined;
+  let latestCheck = -Infinity;
+  for (const family of families) {
+    for (const sighting of family.sourceSightings ?? []) {
+      const checked = Date.parse(sighting.lastSeenAt);
+      if (checked > latestCheck && isOfficialChannelSighting(family, sighting)) {
+        latestCheckAt = sighting.lastSeenAt;
+        latestCheck = checked;
+      }
+    }
+  }
+
+  const coverageDate = evidence?.coverage?.lastVerifiedAt;
+  const archiveDate = evidence?.verifiedAt;
+  // A last-good collector export must be backed by evidence in the shipped catalog.
+  const archiveTime = Date.parse(archiveDate ?? "");
+  const coverageTime = Date.parse(coverageDate ?? "");
+  const verifiedAt = archiveDate && archiveTime <= latestCheck &&
+    (!Number.isFinite(coverageTime) || archiveTime > coverageTime)
+    ? archiveDate
+    : coverageDate;
+
+  if (verifiedAt && Number.isFinite(Date.parse(verifiedAt))) {
+    return { kind: "verified-update", at: verifiedAt };
+  }
+  if (latestCheckAt) return { kind: "official-product-check", at: latestCheckAt };
+}
+
 export function buildCatalogDelivery(input: CatalogDeliveryInput): CatalogDeliveryArtifacts {
   const generatedAt = input.generatedAt ?? new Date().toISOString();
   const activeBrands = input.brands.filter((entry) => entry.isActive);
   const marketplaceIds = new Set(input.marketplaces.map((entry) => entry.id));
 
   const brandShards: CatalogShard[] = activeBrands.map((entry) => {
+    const evidence = input.brandUpdates?.get(entry.id);
     const families = filterFamiliesForBrandOfficial(input.families, entry.brand).map(
       slimFamilyForDelivery,
     );
-    return { id: entry.id, kind: "brand", families };
+    return {
+      id: entry.id,
+      kind: "brand",
+      families,
+      coverage: evidence?.coverage,
+      brandFreshness: resolveBrandFreshness(families, evidence),
+    };
   });
 
   const marketplaceShards: CatalogShard[] = input.marketplaces
